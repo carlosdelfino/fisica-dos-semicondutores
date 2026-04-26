@@ -1,0 +1,21 @@
+{
+  "name": "diagrama-bandas-semicondutores",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Simulador educacional de bandas de energia em semicondutores (Si intrínseco, Si:P, Si:B) com Fermi-Dirac, Maxwell-Boltzmann e estatística quântica.",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview --host"
+  },
+  "dependencies": {
+    "katex": "^0.16.11",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.10"
+  }
+}
