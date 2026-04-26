@@ -16,11 +16,16 @@ import QuantumWell3D from './components/QuantumWell3D.jsx';
 import ElectronHoleCard from './components/ElectronHoleCard.jsx';
 import MetalInsulatorSemi from './components/MetalInsulatorSemi.jsx';
 import LearningObjectives from './components/LearningObjectives.jsx';
+import ConceitosQuestoes from './components/ConceitosQuestoes.jsx';
+import Questoes from './components/Questoes.jsx';
+import Sobre from './components/Sobre.jsx';
 import { carrierConcentrations, log_event } from './physics/formulas.js';
 import { MATERIALS, bandgap } from './physics/materials.js';
 
 const TABS = [
   { id: 'objectives', label: '🎯 Roteiro de Estudo' },
+  { id: 'conceptsQ',  label: '📖 Conceitos das Questões' },
+  { id: 'questions',  label: '❓ Questões' },
   { id: 'overview',   label: 'Visão Geral' },
   { id: 'lattice',    label: 'Rede Cristalina' },
   { id: 'atomband',   label: 'Átomos → Bandas' },
@@ -34,6 +39,7 @@ const TABS = [
   { id: 'dos',        label: 'Densidade de Estados' },
   { id: 'arrhenius',  label: 'n(T) Arrhenius' },
   { id: 'formulas',   label: 'Fórmulas & Derivações' },
+  { id: 'about',      label: '👤 Sobre' },
 ];
 
 export default function App() {
@@ -104,6 +110,9 @@ export default function App() {
 
       <main className="content">
         {tab === 'objectives' && <LearningObjectives onNavigate={setTab} />}
+        {tab === 'conceptsQ' && <ConceitosQuestoes onNavigate={setTab} />}
+        {tab === 'questions' && <Questoes onNavigate={setTab} />}
+        {tab === 'about' && <Sobre />}
         {tab === 'overview' && (
           <>
             <BandDiagram state={{ ...calc, type }} />

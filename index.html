@@ -6,8 +6,92 @@
     <meta name="description" content="Simulador educacional interativo de bandas de energia em semicondutores (Si intrínseco, dopado com Fósforo ou Boro), com Fermi-Dirac e Maxwell-Boltzmann." />
     <title>Bandas de Energia · Semicondutores Intrínsecos e Dopados</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous" />
+    <style>
+      /* Tarja "Colabore no GitHub" — fork-me ribbon */
+      .gh-ribbon {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 220px;
+        height: 220px;
+        overflow: hidden;
+        z-index: 9999;
+        pointer-events: none;
+      }
+      .gh-ribbon a {
+        position: absolute;
+        top: 38px;
+        right: -62px;
+        width: 260px;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background: linear-gradient(135deg, #10b981 0%, #1a56db 50%, #0f172a 100%);
+        color: #fff;
+        font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.4px;
+        text-decoration: none;
+        text-align: center;
+        transform: rotate(45deg);
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45),
+                    inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+        pointer-events: auto;
+        transition: filter 0.2s ease, transform 0.2s ease;
+      }
+      .gh-ribbon a:hover {
+        filter: brightness(1.15) saturate(1.1);
+      }
+      .gh-ribbon a:active {
+        filter: brightness(0.95);
+      }
+      .gh-ribbon svg {
+        width: 16px;
+        height: 16px;
+        fill: #ffffff;
+        flex-shrink: 0;
+      }
+      /* Discreto pulse no carregamento, depois acomoda */
+      @keyframes gh-ribbon-attention {
+        0%, 100% { box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45),
+                                inset 0 0 0 1px rgba(255, 255, 255, 0.18); }
+        50%      { box-shadow: 0 4px 22px rgba(34, 211, 238, 0.55),
+                                inset 0 0 0 1px rgba(255, 255, 255, 0.30); }
+      }
+      .gh-ribbon a {
+        animation: gh-ribbon-attention 2.6s ease-in-out 2;
+      }
+      /* Em telas pequenas, encolher para não competir com o conteúdo */
+      @media (max-width: 640px) {
+        .gh-ribbon { width: 160px; height: 160px; }
+        .gh-ribbon a {
+          top: 28px;
+          right: -68px;
+          width: 230px;
+          font-size: 11px;
+          padding: 8px 0;
+        }
+        .gh-ribbon svg { width: 13px; height: 13px; }
+      }
+    </style>
   </head>
   <body>
+    <!-- Tarja superior direita — convite para colaborar -->
+    <aside class="gh-ribbon" aria-label="Colabore no GitHub">
+      <a href="https://github.com/carlosdelfino/fisica-dos-semicondutores"
+         target="_blank" rel="noopener noreferrer"
+         title="Colabore com este projeto no GitHub — Pull Requests bem-vindos!">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2.13c-3.2.7-3.87-1.36-3.87-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.72-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18.91-.25 1.89-.38 2.86-.38.97 0 1.95.13 2.86.38 2.18-1.49 3.14-1.18 3.14-1.18.62 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.13v3.16c0 .31.21.66.8.55C20.21 21.39 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/>
+        </svg>
+        <span>Colabore no GitHub</span>
+      </a>
+    </aside>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
