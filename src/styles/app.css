@@ -877,6 +877,72 @@ code {
   font-size: 0.95em;
 }
 
+/* === Junção PN / componentes interativos === */
+/* Suporte a <label> com <span> + <input> dentro de .effmass-controls */
+.effmass-controls > label {
+  flex: 1 1 220px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--fg-1);
+  font-size: 12px;
+  letter-spacing: 0.2px;
+}
+.effmass-controls > label > span {
+  color: var(--accent);
+  font-weight: 600;
+  text-transform: none;
+}
+.effmass-controls > label > input[type="range"],
+.effmass-controls > label > select {
+  width: 100%;
+  background: var(--bg-2);
+  color: var(--fg-0);
+  border: 1px solid var(--bg-3);
+  border-radius: 5px;
+  padding: 4px 6px;
+}
+
+/* Grid de resultados numéricos das simulações de junção */
+.carrier-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px;
+  margin: 10px 0;
+}
+.carrier-cell {
+  background: rgba(2, 6, 23, 0.5);
+  border: 1px solid var(--bg-3);
+  border-radius: 6px;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.carrier-cell .carrier-label {
+  color: var(--fg-2);
+  font-size: 11.5px;
+}
+.carrier-cell .carrier-val {
+  color: var(--fg-0);
+  font-size: 14px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Nested diagram-card (JunctionPN master containing sub-component cards) */
+.diagram-card .diagram-card {
+  background: rgba(2, 6, 23, 0.35);
+  border: 1px solid var(--bg-3);
+  margin-top: 12px;
+  padding: 14px 16px;
+}
+.diagram-card .diagram-card h3 {
+  font-size: 16px;
+  margin-top: 0;
+}
+
 /* Responsivo */
 @media (max-width: 980px) {
   .app {

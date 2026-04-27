@@ -1,24 +1,37 @@
+import { useState } from 'react';
 import { TeX } from './Math.jsx';
-import { QUESTOES, TAB_LABELS } from '../physics/questoes.js';
+import { MODULOS, TAB_LABELS } from '../physics/questoes.js';
 
 /**
- * Apresenta cada uma das 9 questões com explicação didática completa,
- * key-points estruturados e fórmulas relacionadas. Serve como "estudo
- * antes da prova": o aluno lê cada conceito e em seguida responde as
- * perguntas na aba seguinte.
+ * Apresenta cada questão do módulo selecionado com explicação didática completa,
+ * key-points estruturados e fórmulas relacionadas. Sub-abas por MÓDULO.
  */
 export default function ConceitosQuestoes({ onNavigate }) {
+  const [moduloId, setModuloId] = useState(MODULOS[0].id);
+  const modulo = MODULOS.find((m) => m.id === moduloId) || MODULOS[0];
+
   return (
     <div className="diagram-card">
       <h3>📖 Conceitos das Questões — guia de estudo</h3>
+
+      <nav className="sub-tabs">
+        {MODULOS.map((m) => (
+          <button key={m.id}
+                  className={`sub-tab ${moduloId === m.id ? 'active' : ''}`}
+                  onClick={() => setModuloId(m.id)}>
+            {m.icon} {m.shortLabel || m.label}
+          </button>
+        ))}
+      </nav>
+
       <p style={{ color: '#94a3b8', fontSize: 13, marginTop: 0 }}>
-        As <b>9 questões</b> a seguir são as exigências mínimas para dominar este capítulo.
-        Aqui cada uma é apresentada com sua resposta-modelo, pontos-chave e fórmulas.
-        Após estudar, vá para a aba <b>❓ Questões</b> para se auto-testar.
+        <b>{modulo.label}</b> — {modulo.description} As <b>{modulo.questoes.length} questões</b>
+        {' '}deste módulo são as exigências mínimas para dominá-lo. Após estudar, vá para a aba
+        <b> ❓ Questões</b> para se auto-testar.
       </p>
 
       <ol className="concepts-list">
-        {QUESTOES.map((q, i) => (
+        {modulo.questoes.map((q, i) => (
           <li key={q.id} className={`concept-item depth-${q.depth}`}>
             <div className="concept-header">
               <span className="concept-num">{i + 1}</span>
@@ -56,7 +69,7 @@ export default function ConceitosQuestoes({ onNavigate }) {
             {q.tabs && q.tabs.length > 0 && (
               <div className="concept-tabs">
                 <b>Veja interativamente em: </b>
-                {q.tabs.map((t, j) => (
+                {q.tabs.map((t) => (
                   <button key={t} className="concept-tab-btn"
                           onClick={() => onNavigate?.(t)}>
                     → {TAB_LABELS[t] || t}

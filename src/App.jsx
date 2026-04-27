@@ -19,6 +19,7 @@ import LearningObjectives from './components/LearningObjectives.jsx';
 import ConceitosQuestoes from './components/ConceitosQuestoes.jsx';
 import Questoes from './components/Questoes.jsx';
 import Sobre from './components/Sobre.jsx';
+import JunctionPN from './components/JunctionPN.jsx';
 import { carrierConcentrations, log_event } from './physics/formulas.js';
 import { MATERIALS, bandgap } from './physics/materials.js';
 
@@ -38,6 +39,7 @@ const TABS = [
   { id: 'fermi',      label: 'Fermi-Dirac & MB' },
   { id: 'dos',        label: 'Densidade de Estados' },
   { id: 'arrhenius',  label: 'n(T) Arrhenius' },
+  { id: 'junction',   label: '⚡ Junção PN' },
   { id: 'formulas',   label: 'Fórmulas & Derivações' },
   { id: 'about',      label: '👤 Sobre' },
 ];
@@ -143,6 +145,7 @@ export default function App() {
         {tab === 'arrhenius' && (
           <CarrierVsTemp material={material} ND={effND} NA={effNA} currentT={T} />
         )}
+        {tab === 'junction' && <JunctionPN />}
         {tab === 'formulas' && <FormulasPanel />}
       </main>
 

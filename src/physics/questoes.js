@@ -1,16 +1,24 @@
 /**
- * Banco compartilhado de questões/conceitos centrais.
+ * Banco de questões organizado em MÓDULOS.
  *
- * Cada item tem:
+ * Estrutura escalável: cada módulo é um capítulo do livro/tópico de estudo.
+ * Para adicionar um novo módulo (BJT, MOSFET, células solares, etc.) basta
+ * criar um array de questões e registrá-lo em MODULOS.
+ *
+ * Cada questão tem:
  *   - id          (chave estável)
- *   - question    (pergunta literal traduzida do livro Neamen)
+ *   - question    (pergunta literal)
  *   - shortAnswer (resposta resumida em 1-2 linhas)
  *   - keyPoints   (bullets que estruturam uma boa resposta)
  *   - formulas    (fórmulas-chave em LaTeX, opcional)
  *   - tabs        (lista de IDs de abas que demonstram o conceito)
  *   - depth       ("conceitual" | "matemático")
  */
-export const QUESTOES = [
+
+// ──────────────────────────────────────────────────────────────────────────────
+// MÓDULO 1 — Introdução à Física dos Semicondutores (Neamen, cap. 3)
+// ──────────────────────────────────────────────────────────────────────────────
+export const QUESTOES_INTRO = [
   {
     id: 'q1',
     question: 'O que é o modelo de Kronig-Penney? O que ele representa?',
@@ -180,6 +188,201 @@ export const QUESTOES = [
   },
 ];
 
+// ──────────────────────────────────────────────────────────────────────────────
+// MÓDULO 2 — Introdução aos Componentes PN (Neamen, cap. 4-7)
+// ──────────────────────────────────────────────────────────────────────────────
+export const QUESTOES_PN = [
+  {
+    id: 'pn1',
+    question: 'O que é uma junção PN? Como ela se forma fisicamente?',
+    shortAnswer:
+      'É a interface, dentro de um único cristal semicondutor, entre uma região dopada com aceitadores (tipo P) e outra com doadores (tipo N). Forma-se por difusão ou implantação iônica de dopantes opostos no mesmo substrato.',
+    keyPoints: [
+      'Não é a justaposição de dois cristais — é o mesmo cristal com dopagens locais distintas.',
+      'Métodos de fabricação: difusão térmica (ex.: Boro num substrato N), implantação iônica, epitaxia, ligas crescidas.',
+      'Pode ser abrupta (N_d/N_a muda em poucos átomos) ou gradual (linear, gaussiana, erfc).',
+      'Em equilíbrio, a transição cria um potencial built-in V_bi e uma camada de depleção.',
+      'É o tijolo fundamental de diodos, BJTs (duas junções), células solares, LEDs e muitos sensores.',
+    ],
+    formulas: [
+      String.raw`\text{P: } N_a \gg n_i \;\;|\;\; \text{N: } N_d \gg n_i`,
+    ],
+    tabs: ['junction'],
+    depth: 'conceitual',
+  },
+  {
+    id: 'pn2',
+    question: 'O que é a camada de depleção e por que ela surge em equilíbrio?',
+    shortAnswer:
+      'Região vizinha à junção esvaziada de portadores móveis, contendo apenas as cargas iônicas fixas dos dopantes ionizados (N_a⁻ no lado P, N_d⁺ no lado N).',
+    keyPoints: [
+      'No instante da formação, elétrons (lado N) e lacunas (lado P) difundem por gradiente de concentração.',
+      'Ao saírem, deixam para trás íons fixos (cargas espaciais): N_a⁻ no lado P e N_d⁺ no lado N.',
+      'Esses íons criam um campo elétrico E que aponta de N para P, freando a difusão posterior.',
+      'O equilíbrio é atingido quando J_drift = −J_diff exatamente para elétrons e lacunas.',
+      'A largura W depende de N_a, N_d, V_bi e de uma eventual tensão aplicada V_a.',
+      'Largura típica em Si moderadamente dopado: 0.1–1 µm.',
+    ],
+    formulas: [
+      String.raw`W = \sqrt{\dfrac{2\varepsilon_s (V_{bi} - V_a)}{q}\!\left(\dfrac{N_a + N_d}{N_a N_d}\right)}`,
+      String.raw`x_n = \dfrac{N_a}{N_a+N_d}\,W,\quad x_p = \dfrac{N_d}{N_a+N_d}\,W`,
+    ],
+    tabs: ['junction'],
+    depth: 'matemático',
+  },
+  {
+    id: 'pn3',
+    question: 'O que é o potencial built-in V_bi? Como é calculado?',
+    shortAnswer:
+      'Diferença de potencial eletrostático entre os dois lados da junção em equilíbrio, necessária para anular a corrente líquida. V_bi = (kT/q)·ln(N_a·N_d / n_i²).',
+    keyPoints: [
+      'Existe mesmo sem nenhuma fonte externa — é "interno" (built-in).',
+      'Surge porque E_F deve ser constante em equilíbrio, mas E_c, E_v se deslocam dos lados N e P.',
+      'Para Si dopado com N_a = N_d = 10¹⁶ cm⁻³ a 300 K: V_bi ≈ 0,7 V.',
+      'É a barreira de potencial vista pelos portadores majoritários ao tentarem cruzar.',
+      'Não é diretamente medível com voltímetro — perde-se nos contatos metálicos por contra-tensões.',
+    ],
+    formulas: [
+      String.raw`V_{bi} = \dfrac{kT}{q}\ln\!\dfrac{N_a N_d}{n_i^2}`,
+      String.raw`V_t = \dfrac{kT}{q} \approx 25{,}9\;\text{mV @ 300 K}`,
+    ],
+    tabs: ['junction'],
+    depth: 'matemático',
+  },
+  {
+    id: 'pn4',
+    question: 'Diferencie corrente de difusão e corrente de deriva (drift).',
+    shortAnswer:
+      'Difusão: causada por gradiente de concentração, J ∝ −∇n. Deriva: causada por campo elétrico, J = q·n·μ·E. Em equilíbrio se cancelam exatamente.',
+    keyPoints: [
+      'Drift (deriva): força externa (campo E) acelera os portadores até a velocidade limite v_d = μ·E.',
+      'Difusão: passeio aleatório térmico que tende a uniformizar concentrações; sem campo nenhum.',
+      'Equação de Fick: J_n,diff = q·D_n·∇n; J_p,diff = −q·D_p·∇p.',
+      'Equação de drift: J_n,drift = q·n·μ_n·E; J_p,drift = q·p·μ_p·E.',
+      'Corrente total: J_n = J_n,drift + J_n,diff (idem para p).',
+      'Em equilíbrio termodinâmico estrito: J_n = 0 e J_p = 0 separadamente.',
+    ],
+    formulas: [
+      String.raw`J_n = q n \mu_n E + q D_n \dfrac{dn}{dx}`,
+      String.raw`J_p = q p \mu_p E - q D_p \dfrac{dp}{dx}`,
+    ],
+    tabs: ['junction'],
+    depth: 'matemático',
+  },
+  {
+    id: 'pn5',
+    question: 'Por que existe campo elétrico não-zero dentro de um semicondutor não-uniformemente dopado em equilíbrio?',
+    shortAnswer:
+      'Para que J_n = 0 (e J_p = 0), o gradiente de concentração que gera difusão precisa ser exatamente cancelado por uma corrente de deriva — o que exige um campo elétrico interno auto-induzido.',
+    keyPoints: [
+      'Em equilíbrio, J_n = q·n·μ_n·E + q·D_n·(dn/dx) = 0.',
+      'Resolvendo: E_x = −(D_n/μ_n)·(1/n)·(dn/dx) = −(kT/q)·(1/n)·(dn/dx).',
+      'Equivalente a: E_x = −(1/q)·(dE_F/dx) com E_F constante e E_c(x) inclinado.',
+      'O cristal "redistribui" os elétrons localmente até criar um campo elétrico que se opõe à difusão.',
+      'Esse mesmo princípio gera o campo na camada de depleção da junção PN.',
+      'Em junções graduais (linearly graded), o campo é parabólico em x; em abruptas, triangular.',
+    ],
+    formulas: [
+      String.raw`E_x = -\dfrac{kT}{q}\,\dfrac{1}{n(x)}\,\dfrac{dn}{dx}`,
+      String.raw`E_x = -\dfrac{1}{q}\,\dfrac{dE_F}{dx} \;\;(\text{equil.}\Rightarrow E_F=\text{cte})`,
+    ],
+    tabs: ['junction'],
+    depth: 'matemático',
+  },
+  {
+    id: 'pn6',
+    question: 'Enuncie a relação de Einstein. Por que ela vale mesmo fora do equilíbrio?',
+    shortAnswer:
+      'D/μ = kT/q (ou equivalentemente μ/D = q/kT). Liga difusividade à mobilidade via temperatura. Vale fora do equilíbrio porque μ e D dependem do mesmo mecanismo microscópico (espalhamento térmico), independente da força externa.',
+    keyPoints: [
+      'Mnemônico em inglês: "Dee over mu equals kay-tee over Q" — rima e gruda na memória.',
+      'Forma invertida: "mu over Dee equals Q over kay-tee".',
+      'Tanto μ quanto D são determinados pelo tempo médio entre colisões τ — uma quantidade térmica.',
+      'D = (1/3)·v_th²·τ (passeio aleatório); μ = q·τ/m* (resposta a campo). Razão D/μ = (m*·v_th²)/(3q) = kT/q.',
+      'Fora do equilíbrio (corrente líquida ≠ 0), τ ainda é térmico → relação preserva-se.',
+      'Se aplica a elétrons (D_n/μ_n) e lacunas (D_p/μ_p) separadamente.',
+      'Permite reduzir 4 parâmetros de transporte (μ_n, μ_p, D_n, D_p) a apenas 2 (μ_n, μ_p).',
+    ],
+    formulas: [
+      String.raw`\boxed{\;\dfrac{D}{\mu} = \dfrac{kT}{q}\;}`,
+      String.raw`\dfrac{\mu}{D} = \dfrac{q}{kT}`,
+      String.raw`D_n = \mu_n \dfrac{kT}{q},\quad D_p = \mu_p \dfrac{kT}{q}`,
+    ],
+    tabs: ['junction'],
+    depth: 'matemático',
+  },
+  {
+    id: 'pn7',
+    question: 'Qual a diferença entre material degenerado e não-degenerado?',
+    shortAnswer:
+      'Não-degenerado: dopagem moderada, E_F dentro do gap (≥3kT distante das bandas), Maxwell-Boltzmann válida. Degenerado: dopagem altíssima, E_F dentro da BC ou BV, comporta-se como metal e exige Fermi-Dirac integral.',
+    keyPoints: [
+      'Critério aproximado de não-degenerescência: E_c − E_F ≥ 3kT (lado N) ou E_F − E_v ≥ 3kT (lado P).',
+      'Em Si a 300 K, isso ocorre quando N_d ≪ N_c ≈ 2,8×10¹⁹ cm⁻³ (ou N_a ≪ N_v ≈ 1,04×10¹⁹).',
+      'Não-degenerado: n = N_c·exp(−(E_c−E_F)/kT) — fórmula Boltzmann simples.',
+      'Degenerado: precisa integral de Fermi-Dirac F_{1/2}(η); n = N_c · (2/√π)·F_{1/2}((E_F−E_c)/kT).',
+      'Materiais altamente dopados (>10¹⁹ cm⁻³): comportam-se como metais — usados em contatos ôhmicos.',
+      'Limita a ionização: em material degenerado tipo P forte (B>10²⁰), N_a "fundamentalmente" sai do gap.',
+      'Notação: N⁺ ou P⁺ na literatura indicam dopagem alta (geralmente 10¹⁹–10²⁰ cm⁻³, beirando a degenerescência).',
+    ],
+    formulas: [
+      String.raw`\text{Não-deg.: } n = N_c\,e^{-(E_c - E_F)/kT}`,
+      String.raw`\text{Deg.: } n = N_c\,\dfrac{2}{\sqrt{\pi}}\,F_{1/2}\!\left(\dfrac{E_F - E_c}{kT}\right)`,
+    ],
+    tabs: ['junction', 'fermi'],
+    depth: 'matemático',
+  },
+  {
+    id: 'pn8',
+    question: 'O que acontece com a camada de depleção sob polarização direta e reversa?',
+    shortAnswer:
+      'Direta (V_a > 0): W diminui, barreira efetiva V_bi − V_a cai → corrente cresce exponencialmente. Reversa (V_a < 0): W aumenta, barreira cresce → praticamente só corrente de saturação reversa.',
+    keyPoints: [
+      'Direta: terminal P em + e N em −. V_a opõe-se a V_bi → W ↓, corrente de minoritários ↑↑.',
+      'Reversa: terminal P em − e N em +. V_a soma-se a V_bi → W ↑↑, corrente desprezível (≈ I_s).',
+      'Equação do diodo de Shockley: I = I_s [exp(V_a/V_t) − 1].',
+      'Em reversa elevada: ruptura por avalanche (impacto-ionização) ou Zener (tunneling) — diodos Zener exploram isto.',
+      'A capacitância de junção C_j ∝ 1/√(V_bi − V_a) — base dos varactores (capacitores ajustáveis por tensão).',
+    ],
+    formulas: [
+      String.raw`I = I_s\!\left[e^{V_a/V_t} - 1\right]`,
+      String.raw`W(V_a) = W_0\sqrt{1 - V_a/V_{bi}}`,
+      String.raw`C_j = \dfrac{\varepsilon_s A}{W} \propto (V_{bi} - V_a)^{-1/2}`,
+    ],
+    tabs: ['junction'],
+    depth: 'matemático',
+  },
+];
+
+// ──────────────────────────────────────────────────────────────────────────────
+// REGISTRO DE MÓDULOS — adicione aqui quando criar novos capítulos
+// ──────────────────────────────────────────────────────────────────────────────
+export const MODULOS = [
+  {
+    id: 'intro',
+    label: 'Introdução à Física dos Semicondutores',
+    shortLabel: '🔬 Intro à Física dos Semi.',
+    icon: '🔬',
+    description: 'Bandas de energia, Kronig-Penney, Fermi-Dirac, massa efetiva, densidade de estados.',
+    questoes: QUESTOES_INTRO,
+  },
+  {
+    id: 'pn',
+    label: 'Introdução aos Componentes PN',
+    shortLabel: '⚡ Componentes PN',
+    icon: '⚡',
+    description: 'Junções PN, depleção, V_bi, Einstein, dopagem não-uniforme, degenerescência.',
+    questoes: QUESTOES_PN,
+  },
+  // FUTURO:
+  // { id: 'bjt', label: 'Transistor Bipolar', icon: '🔁', questoes: QUESTOES_BJT },
+  // { id: 'mos', label: 'MOSFET', icon: '🚪', questoes: QUESTOES_MOS },
+  // { id: 'opto', label: 'Optoeletrônica', icon: '💡', questoes: QUESTOES_OPTO },
+];
+
+/** Compatibilidade retroativa — concat de todos os módulos. */
+export const QUESTOES = MODULOS.flatMap((m) => m.questoes);
+
 export const TAB_LABELS = {
   objectives: '🎯 Roteiro de Estudo',
   conceptsQ:  '📖 Conceitos das Questões',
@@ -198,4 +401,5 @@ export const TAB_LABELS = {
   dos:        'Densidade de Estados',
   arrhenius:  'n(T) Arrhenius',
   formulas:   'Fórmulas & Derivações',
+  junction:   '⚡ Junção PN',
 };

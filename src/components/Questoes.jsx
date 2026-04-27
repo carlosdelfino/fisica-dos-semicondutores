@@ -1,34 +1,33 @@
 import { useState } from 'react';
 import { TeX } from './Math.jsx';
-import { QUESTOES, TAB_LABELS } from '../physics/questoes.js';
+import { MODULOS, TAB_LABELS } from '../physics/questoes.js';
 
 /**
- * Apresenta as 9 questões em modo flashcard:
- *   - Mostra apenas a pergunta
- *   - Botão "Tente responder mentalmente" (instrução)
- *   - Botão "Mostrar resposta" revela o gabarito
- *   - Botões de auto-avaliação: ✅ acertei / ❌ errei (mantido em estado local)
- *   - Modo "estudar uma de cada vez" ou "ver todas"
+ * Apresenta as questões em modo flashcard com sub-abas por MÓDULO.
+ *   - Intro à Física dos Semi.   (9 questões)
+ *   - Componentes PN             (8 questões)
+ *   - Futuros: BJT, MOSFET, ...
  */
 export default function Questoes({ onNavigate }) {
-  const [revealed, setRevealed] = useState({}); // { q1: true, q2: false, ... }
-  const [scored, setScored]     = useState({}); // { q1: 'ok' | 'no', ... }
-  const [mode, setMode]         = useState('one'); // 'one' | 'all'
-  const [current, setCurrent]   = useState(0);
+  const [moduloId, setModuloId] = useState(MODULOS[0].id);
+  const [revealed, setRevealed] = useState({});
+  const [scored,   setScored]   = useState({});
+  const [mode,     setMode]     = useState('one');
+  const [current,  setCurrent]  = useState(0);
 
-  const total = QUESTOES.length;
+  const modulo = MODULOS.find((m) => m.id === moduloId) || MODULOS[0];
+  const questoes = modulo.questoes;
+  const total = questoes.length;
+
   const stats = {
-    ok: Object.values(scored).filter((v) => v === 'ok').length,
-    no: Object.values(scored).filter((v) => v === 'no').length,
+    ok: questoes.filter((q) => scored[q.id] === 'ok').length,
+    no: questoes.filter((q) => scored[q.id] === 'no').length,
   };
 
-  const toggleReveal = (id) =>
-    setRevealed((s) => ({ ...s, [id]: !s[id] }));
-  const setScore = (id, v) =>
-    setScored((s) => ({ ...s, [id]: s[id] === v ? null : v }));
-  const resetAll = () => {
-    setRevealed({}); setScored({}); setCurrent(0);
-  };
+  const toggleReveal = (id) => setRevealed((s) => ({ ...s, [id]: !s[id] }));
+  const setScore = (id, v) => setScored((s) => ({ ...s, [id]: s[id] === v ? null : v }));
+  const resetAll = () => { setRevealed({}); setScored({}); setCurrent(0); };
+  const switchModulo = (id) => { setModuloId(id); setCurrent(0); };
 
   const renderCard = (q, i) => {
     const open = !!revealed[q.id];
@@ -110,6 +109,18 @@ export default function Questoes({ onNavigate }) {
     <div className="diagram-card">
       <h3>❓ Questões — auto-avaliação</h3>
 
+      {/* Sub-abas por MÓDULO */}
+      <nav className="sub-tabs">
+        {MODULOS.map((m) => (
+          <button key={m.id}
+                  className={`sub-tab ${moduloId === m.id ? 'active' : ''}`}
+                  onClick={() => switchModulo(m.id)}>
+            {m.icon} {m.shortLabel || m.label}
+          </button>
+        ))}
+      </nav>
+      <p style={{ color: '#94a3b8', fontSize: 13, marginTop: 0 }}>{modulo.description}</p>
+
       {/* Barra de controle */}
       <div className="questions-toolbar">
         <div className="questions-mode">
@@ -119,7 +130,7 @@ export default function Questoes({ onNavigate }) {
           </button>
           <button className={`mode-btn ${mode === 'all' ? 'active' : ''}`}
                   onClick={() => setMode('all')}>
-            📋 Todas as 9
+            📋 Todas ({total})
           </button>
         </div>
 
@@ -143,7 +154,7 @@ export default function Questoes({ onNavigate }) {
             </div>
           </div>
 
-          {renderCard(QUESTOES[current], current)}
+          {renderCard(questoes[Math.min(current, total - 1)], Math.min(current, total - 1))}
 
           <div className="questions-nav">
             <button className="nav-btn" disabled={current === 0}
@@ -159,7 +170,7 @@ export default function Questoes({ onNavigate }) {
         </>
       ) : (
         <div className="questions-list">
-          {QUESTOES.map((q, i) => renderCard(q, i))}
+          {questoes.map((q, i) => renderCard(q, i))}
         </div>
       )}
 
