@@ -35,11 +35,11 @@ jobs:
       - name: 📦 Instalar dependências
         run: npm ci
 
-      - name: 🔧 Calcular BASE_PATH a partir do nome do repositório
+      - name: 🔧 Configurar BASE_PATH para caminhos relativos
         id: base
         run: |
-          REPO_NAME="${GITHUB_REPOSITORY##*/}"
-          BASE_PATH="/${REPO_NAME}/"
+          # Usa caminhos relativos ao index.html para funcionar em qualquer subdiretório
+          BASE_PATH='./'
           echo "ℹ️ BASE_PATH=${BASE_PATH}"
           echo "base_path=${BASE_PATH}" >> "$GITHUB_OUTPUT"
 
