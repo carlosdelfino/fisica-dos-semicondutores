@@ -29,16 +29,25 @@ jobs:
       - name: 🟢 Configurar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'npm'
 
       - name: 📦 Instalar dependências
         run: npm ci
 
+      - name: 🔧 Calcular BASE_PATH a partir do nome do repositório
+        id: base
+        run: |
+          REPO_NAME="${GITHUB_REPOSITORY##*/}"
+          BASE_PATH="/${REPO_NAME}/"
+          echo "ℹ️ BASE_PATH=${BASE_PATH}"
+          echo "base_path=${BASE_PATH}" >> "$GITHUB_OUTPUT"
+
       - name: 🏗️ Executar build (Vite)
         run: npm run build
         env:
           NODE_ENV: production
+          BASE_PATH: ${{ steps.base.outputs.base_path }}
 
       - name: ✅ Verificar saída do build
         run: |
@@ -50,6 +59,11 @@ jobs:
           ls -la dist
           # Garante que o GitHub Pages não trate o site como Jekyll
           touch dist/.nojekyll
+          # Fallback de SPA para evitar 404 em refresh/rotas
+          if [ -f dist/index.html ] && [ ! -f dist/404.html ]; then
+            cp dist/index.html dist/404.html
+            echo "ℹ️ 404.html criado a partir de index.html"
+          fi
 
       - name: 🏁 Publicar no branch site
         uses: peaceiris/actions-gh-pages@v4
