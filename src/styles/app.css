@@ -46,6 +46,7 @@ html, body, #root {
   gap: 10px;
   border-bottom: 1px solid var(--bg-3);
   box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+  position: relative;
 }
 
 .brand {
@@ -66,6 +67,23 @@ html, body, #root {
   margin: 0;
   color: var(--fg-2);
   font-size: 12px;
+}
+
+.visitor-counter {
+  position: absolute;
+  bottom: 14px;
+  right: 80px;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.visitor-counter:hover {
+  opacity: 1;
+}
+
+.visitor-badge {
+  height: 20px;
+  display: block;
 }
 
 .tabs {

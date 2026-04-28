@@ -88,6 +88,13 @@ export default function App() {
             <p>Simulador educacional · Si / Ge / GaAs · intrínseco · dopado P (n) · dopado B (p)</p>
           </div>
         </div>
+        <div className="visitor-counter">
+          <img 
+            src="https://visitor-badge.laobi.icu/badge?page_id=carlosdelfino.fisica-dos-semicondutores.site" 
+            alt="Visitantes"
+            className="visitor-badge"
+          />
+        </div>
         <nav className="tabs">
           {TABS.map((t) => (
             <button key={t.id} className={tab === t.id ? 'tab active' : 'tab'}
