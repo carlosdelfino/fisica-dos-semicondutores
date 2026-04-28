@@ -86,14 +86,14 @@ export default function App() {
           <div>
             <h1>Aprendendo a Física dos Semicondutores</h1>
             <p>Simulador Educacional - Disseminando a Ciência e a Física Avançada</p>
+            <div className="visitor-counter">
+              <img 
+                src="https://visitor-badge.laobi.icu/badge?page_id=carlosdelfino.fisica-dos-semicondutores.site" 
+                alt="Visitantes"
+                className="visitor-badge"
+              />
+            </div>
           </div>
-        </div>
-        <div className="visitor-counter">
-          <img 
-            src="https://visitor-badge.laobi.icu/badge?page_id=carlosdelfino.fisica-dos-semicondutores.site" 
-            alt="Visitantes"
-            className="visitor-badge"
-          />
         </div>
       </header>
 

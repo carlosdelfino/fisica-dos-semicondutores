@@ -70,9 +70,7 @@ html, body, #root {
 }
 
 .visitor-counter {
-  position: absolute;
-  bottom: 14px;
-  right: 80px;
+  margin-top: 4px;
   opacity: 0.6;
   transition: opacity 0.2s ease;
 }
