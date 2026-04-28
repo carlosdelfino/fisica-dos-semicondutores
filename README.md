@@ -15,10 +15,10 @@
 
 <!-- Animated Header -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:1a56db,100:10b981&height=220&section=header&text=Bandas%20de%20Energia&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Simulador%20Educacional%20%7C%20Si%20%C2%B7%20Ge%20%C2%B7%20GaAs%20%7C%20F%C3%ADsica%20Estat%C3%ADstica%20Qu%C3%A2ntica&descSize=18&descAlignY=55&descColor=94a3b8" width="100%" alt="Header"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:1a56db,100:10b981&height=220&section=header&text=Aprendendo%20a%20F%C3%ADsica%20dos%20Semicondutores&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Simulador%20Educacional%20%7C%20Si%20%C2%B7%20Ge%20%C2%B7%20GaAs%20%7C%20F%C3%ADsica%20Estat%C3%ADstica%20Qu%C3%A2ntica&descSize=18&descAlignY=55&descColor=94a3b8" width="100%" alt="Header"/>
 </p>
 
-# Diagrama de Bandas em Semicondutores
+# Aprendendo a Física dos Semicondutores
 
 Aplicação **React + SVG + HTML5 + CSS** que demonstra, com rigor físico e dezenas de gráficos
 interativos, o funcionamento das **bandas de energia** em semicondutores intrínsecos
@@ -314,9 +314,10 @@ CC BY-SA 4.0. Material educacional — sinta-se livre para usar em aulas, citand
 **Data de Criação:** 2026-04-26
 **Autor:** Carlos Delfino Carvalho Pinheiro (com apoio de Claude Opus 4.7 / Rapport Generativa)
 **Versão:** 1.4
-**Última Atualização:** 2026-04-26
+**Última Atualização:** 2026-04-27
 **Atualizado por:** Carlos Delfino
 **Histórico de Alterações:**
+- 2026-04-27 - Atualizado por Carlos Delfino - Favicone para o site....
 - 2026-04-26 - Atualizado por Carlos Delfino - Primeira Versão...
 - 2026-04-26 - Atualizado por Carlos Delfino - Atualização de arquivo...
 - 2026-04-26 - Criado por Rapport Generativa - Versão 1.0 (estrutura inicial: bandas, Fermi-Dirac, MB, DOS, Arrhenius)

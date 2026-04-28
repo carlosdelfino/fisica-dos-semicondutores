@@ -40,7 +40,7 @@ const TABS = [
   { id: 'dos',        label: 'Densidade de Estados' },
   { id: 'arrhenius',  label: 'n(T) Arrhenius' },
   { id: 'junction',   label: '⚡ Junção PN' },
-  { id: 'formulas',   label: 'Fórmulas & Derivações' },
+  { id: 'formulas',   label: '📐 Fórmulas & Símbolos' },
   { id: 'about',      label: '👤 Sobre' },
 ];
 
@@ -84,8 +84,8 @@ export default function App() {
         <div className="brand">
           <span className="logo">⚛︎</span>
           <div>
-            <h1>Bandas de Energia em Semicondutores</h1>
-            <p>Simulador educacional · Si / Ge / GaAs · intrínseco · dopado P (n) · dopado B (p)</p>
+            <h1>Aprendendo a Física dos Semicondutores</h1>
+            <p>Simulador Educacional - Disseminando a Ciência e a Física Avançada</p>
           </div>
         </div>
         <div className="visitor-counter">
@@ -95,17 +95,17 @@ export default function App() {
             className="visitor-badge"
           />
         </div>
-        <nav className="tabs">
+      </header>
+
+      <aside className="sidebar">
+        <nav className="sidebar-tabs">
           {TABS.map((t) => (
-            <button key={t.id} className={tab === t.id ? 'tab active' : 'tab'}
+            <button key={t.id} className={tab === t.id ? 'sidebar-tab active' : 'sidebar-tab'}
                     onClick={() => setTab(t.id)}>
               {t.label}
             </button>
           ))}
         </nav>
-      </header>
-
-      <aside className="sidebar">
         <Controls
           material={material} setMaterial={setMaterial}
           type={type} setType={setType}
