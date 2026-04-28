@@ -242,6 +242,7 @@ function SymbolsContent() {
     { symbol: 'q', name: 'Carga do Elétron', category: 'Constantes', description: 'q = 1.602×10⁻¹⁹ C. Magnitude da carga elementar.' },
     { symbol: 'h', name: 'Constante de Planck', category: 'Constantes', description: 'h = 6.626×10⁻³⁴ J·s. Constante fundamental da mecânica quântica.' },
     { symbol: 'ħ', name: 'Constante de Planck Reduzida', category: 'Constantes', description: 'ħ = h/2π = 1.055×10⁻³⁴ J·s. Usada em mecânica quântica.' },
+    { symbol: 'Ψ, ψ', name: 'Função de Onda', category: 'Mecânica Quântica', description: 'Função de onda quântica. Ψ (maiúsculo) para sistemas de múltiplas partículas, ψ (minúsculo) para partícula única. |ψ|² dá a densidade de probabilidade.' },
     { symbol: 'μn', name: 'Mobilidade de Elétrons', category: 'Transporte', description: 'Mobilidade de elétrons no material. μn = qτn/mn*. Unidade: cm²/(V·s).' },
     { symbol: 'μp', name: 'Mobilidade de Lacunas', category: 'Transporte', description: 'Mobilidade de lacunas no material. μp = qτp/mp*. Unidade: cm²/(V·s).' },
     { symbol: 'τn', name: 'Tempo de Vida do Elétron', category: 'Transporte', description: 'Tempo médio antes que um elétron se recombine com uma lacuna.' },
@@ -270,7 +271,7 @@ function SymbolsContent() {
     { symbol: 'V', name: 'Tensão', category: 'Transporte', description: 'Diferença de potencial elétrico. Unidade: V (volts).' },
   ];
 
-  const categories = ['all', 'Energia', 'Portadores', 'Dopagem', 'Temperatura', 'Massa Efetiva', 'Constantes', 'Transporte', 'Junção PN', 'Espaço-k'];
+  const categories = ['all', 'Energia', 'Portadores', 'Dopagem', 'Temperatura', 'Massa Efetiva', 'Constantes', 'Mecânica Quântica', 'Transporte', 'Junção PN', 'Espaço-k'];
 
   const filteredSymbols = filter === 'all' 
     ? symbols 
