@@ -1,11 +1,9 @@
 import { useEffect, useMemo, useState } from 'react';
-import Controls from './components/Controls.jsx';
 import BandDiagram from './components/BandDiagram.jsx';
 import Lattice from './components/Lattice.jsx';
 import FermiDiracPlot from './components/FermiDiracPlot.jsx';
 import DensityOfStates from './components/DensityOfStates.jsx';
 import CarrierVsTemp from './components/CarrierVsTemp.jsx';
-import CarrierPanel from './components/CarrierPanel.jsx';
 import FormulasPanel from './components/FormulasPanel.jsx';
 import KSpaceDiagram from './components/KSpaceDiagram.jsx';
 import EffectiveMassDemo from './components/EffectiveMassDemo.jsx';
@@ -20,29 +18,11 @@ import ConceitosQuestoes from './components/ConceitosQuestoes.jsx';
 import Questoes from './components/Questoes.jsx';
 import Sobre from './components/Sobre.jsx';
 import JunctionPN from './components/JunctionPN.jsx';
+import PeriodicTable from './components/PeriodicTable.jsx';
+import HierarchicalMenu from './components/HierarchicalMenu.jsx';
+import ControlPanel from './components/ControlPanel.jsx';
 import { carrierConcentrations, log_event } from './physics/formulas.js';
 import { MATERIALS, bandgap } from './physics/materials.js';
-
-const TABS = [
-  { id: 'objectives', label: '🎯 Roteiro de Estudo' },
-  { id: 'conceptsQ',  label: '📖 Conceitos das Questões' },
-  { id: 'questions',  label: '❓ Questões' },
-  { id: 'overview',   label: 'Visão Geral' },
-  { id: 'lattice',    label: 'Rede Cristalina' },
-  { id: 'atomband',   label: 'Átomos → Bandas' },
-  { id: 'allowed',    label: 'Bandas Permitidas/Proibidas' },
-  { id: 'kp',         label: 'Kronig-Penney' },
-  { id: 'mis',        label: 'Metal × Isolante × Semicondutor' },
-  { id: 'kspace',     label: 'Espaço-k (Si × GaAs)' },
-  { id: 'effmass',    label: 'Massa Efetiva' },
-  { id: 'particles',  label: 'Elétron × Lacuna' },
-  { id: 'fermi',      label: 'Fermi-Dirac & MB' },
-  { id: 'dos',        label: 'Densidade de Estados' },
-  { id: 'arrhenius',  label: 'n(T) Arrhenius' },
-  { id: 'junction',   label: '⚡ Junção PN' },
-  { id: 'formulas',   label: '📐 Fórmulas & Símbolos' },
-  { id: 'about',      label: '👤 Sobre' },
-];
 
 export default function App() {
   const [material, setMaterial] = useState('Si');
@@ -98,23 +78,20 @@ export default function App() {
       </header>
 
       <aside className="sidebar">
-        <nav className="sidebar-tabs">
-          {TABS.map((t) => (
-            <button key={t.id} className={tab === t.id ? 'sidebar-tab active' : 'sidebar-tab'}
-                    onClick={() => setTab(t.id)}>
-              {t.label}
-            </button>
-          ))}
-        </nav>
-        <Controls
-          material={material} setMaterial={setMaterial}
-          type={type} setType={setType}
-          T={T} setT={setT}
-          ND={ND} setND={setND}
-          NA={NA} setNA={setNA}
-          EFOverride={EFOverride} setEFOverride={setEFOverride}
+        <ControlPanel
+          controlsProps={{
+            material, setMaterial,
+            type, setType,
+            T, setT,
+            ND, setND,
+            NA, setNA,
+            EFOverride, setEFOverride
+          }}
+          carrierState={{ ...calc, type }}
         />
-        <CarrierPanel state={{ ...calc, type }} />
+        <div className="menu-container">
+          <HierarchicalMenu activeTab={tab} onTabChange={setTab} />
+        </div>
       </aside>
 
       <main className="content">
@@ -153,6 +130,7 @@ export default function App() {
           <CarrierVsTemp material={material} ND={effND} NA={effNA} currentT={T} />
         )}
         {tab === 'junction' && <JunctionPN />}
+        {tab === 'periodic' && <PeriodicTable />}
         {tab === 'formulas' && <FormulasPanel />}
       </main>
 
