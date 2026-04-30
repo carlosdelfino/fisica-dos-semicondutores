@@ -21,6 +21,7 @@ import Sobre from './components/Sobre.jsx';
 import JunctionPN from './components/JunctionPN.jsx';
 import PeriodicTable from './components/PeriodicTable.jsx';
 import TransistorTechPanel from './components/TransistorTechPanel.jsx';
+import CzochralskiPanel from './components/CzochralskiPanel.jsx';
 import HierarchicalMenu from './components/HierarchicalMenu.jsx';
 import ControlPanel from './components/ControlPanel.jsx';
 import { carrierConcentrations, log_event } from './physics/formulas.js';
@@ -50,7 +51,7 @@ function AppContent() {
   }, [material, T, effND, effNA, EFOverride]);
 
   const handleTabChange = (newTab) => {
-    navigate(`#${newTab}`);
+    navigate(`/${newTab}`);
   };
 
   useEffect(() => {
@@ -148,6 +149,7 @@ function AppContent() {
           } />
           <Route path="/junction" element={<JunctionPN />} />
           <Route path="/transistorTech" element={<TransistorTechPanel />} />
+          <Route path="/czochralski" element={<CzochralskiPanel />} />
           <Route path="/periodic" element={<PeriodicTable />} />
           <Route path="/formulas" element={<FormulasPanel />} />
         </Routes>
