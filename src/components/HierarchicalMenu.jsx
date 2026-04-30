@@ -40,6 +40,7 @@ const MENU_STRUCTURE = [
     category: '⚡ Dispositivos',
     items: [
       { id: 'junction',   label: '⚡ Junção PN' },
+      { id: 'transistorTech', label: '🔬 Tecnologias de Transistores' },
     ]
   },
   {

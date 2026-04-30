@@ -19,6 +19,7 @@ import Questoes from './components/Questoes.jsx';
 import Sobre from './components/Sobre.jsx';
 import JunctionPN from './components/JunctionPN.jsx';
 import PeriodicTable from './components/PeriodicTable.jsx';
+import TransistorTechPanel from './components/TransistorTechPanel.jsx';
 import HierarchicalMenu from './components/HierarchicalMenu.jsx';
 import ControlPanel from './components/ControlPanel.jsx';
 import { carrierConcentrations, log_event } from './physics/formulas.js';
@@ -130,6 +131,7 @@ export default function App() {
           <CarrierVsTemp material={material} ND={effND} NA={effNA} currentT={T} />
         )}
         {tab === 'junction' && <JunctionPN />}
+        {tab === 'transistorTech' && <TransistorTechPanel />}
         {tab === 'periodic' && <PeriodicTable />}
         {tab === 'formulas' && <FormulasPanel />}
       </main>
