@@ -6,13 +6,15 @@
   "description": "Simulador educacional de bandas de energia em semicondutores (Si intrínseco, Si:P, Si:B) com Fermi-Dirac, Maxwell-Boltzmann e estatística quântica.",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build",
-    "preview": "vite preview --host"
+    "build": "vite build && node scripts/generate-sitemap.js",
+    "preview": "vite preview --host",
+    "generate-sitemap": "node scripts/generate-sitemap.js"
   },
   "dependencies": {
     "katex": "^0.16.11",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.14.2"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",

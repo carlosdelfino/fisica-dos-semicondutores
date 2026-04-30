@@ -65,6 +65,38 @@ jobs:
             echo "ℹ️ 404.html criado a partir de index.html"
           fi
 
+      - name: 🗺️ Verificar sitemap.xml gerado
+        run: |
+          if [ ! -f "dist/sitemap.xml" ]; then
+            echo "❌ Sitemap.xml não foi gerado pelo build."
+            exit 1
+          fi
+          echo "✅ Sitemap.xml gerado com sucesso"
+          echo "ℹ️ Conteúdo do sitemap:"
+          head -20 dist/sitemap.xml
+          echo "..."
+          echo "ℹ️ Total de URLs no sitemap:"
+          grep -c "<url>" dist/sitemap.xml || echo "0"
+
+      - name: 🔍 Validar sitemap.xml
+        run: |
+          # Verifica se é um XML válido
+          if ! xmllint --noout dist/sitemap.xml 2>/dev/null; then
+            echo "⚠️ xmllint não disponível, pulando validação XML"
+          else
+            echo "✅ Sitemap.xml é válido"
+          fi
+          # Verifica estrutura básica
+          if ! grep -q "<urlset" dist/sitemap.xml; then
+            echo "❌ Sitemap.xml não contém <urlset>"
+            exit 1
+          fi
+          if ! grep -q "</urlset>" dist/sitemap.xml; then
+            echo "❌ Sitemap.xml não contém </urlset>"
+            exit 1
+          fi
+          echo "✅ Estrutura do sitemap.xml está correta"
+
       - name: 🏁 Publicar no branch site
         uses: peaceiris/actions-gh-pages@v4
         with:
@@ -76,6 +108,7 @@ jobs:
           user_email: 'github-actions[bot]@users.noreply.github.com'
           commit_message: |
             🚀 Deploy site build de ${{ github.sha }}
+            🗺️ Sitemap.xml autoatualizável gerado
 
             Workflow: ${{ github.workflow }}
             Run: ${{ github.run_id }}

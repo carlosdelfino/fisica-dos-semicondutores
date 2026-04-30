@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
+import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import BandDiagram from './components/BandDiagram.jsx';
 import Lattice from './components/Lattice.jsx';
 import FermiDiracPlot from './components/FermiDiracPlot.jsx';
@@ -25,14 +26,18 @@ import ControlPanel from './components/ControlPanel.jsx';
 import { carrierConcentrations, log_event } from './physics/formulas.js';
 import { MATERIALS, bandgap } from './physics/materials.js';
 
-export default function App() {
+function AppContent() {
+  const navigate = useNavigate();
+  const location = useLocation();
   const [material, setMaterial] = useState('Si');
   const [type, setType] = useState('intrinsic');
   const [T, setT] = useState(300);
   const [ND, setND] = useState(1e16);
   const [NA, setNA] = useState(1e16);
-  const [tab, setTab] = useState('overview');
   const [EFOverride, setEFOverride] = useState({ enabled: false, value: 0 });
+
+  // Extrai o tab atual da URL hash
+  const tab = location.hash.slice(1) || 'overview';
 
   // dopagem efetiva conforme tipo escolhido
   const effND = type === 'n' ? ND : 0;
@@ -43,6 +48,10 @@ export default function App() {
     const finalEF = EFOverride.enabled ? EFOverride.value : c.EF;
     return { ...c, EF: finalEF, material, T, ND: effND, NA: effNA };
   }, [material, T, effND, effNA, EFOverride]);
+
+  const handleTabChange = (newTab) => {
+    navigate(`#${newTab}`);
+  };
 
   useEffect(() => {
     log_event('DATA', 'Estado atualizado', {
@@ -91,49 +100,57 @@ export default function App() {
           carrierState={{ ...calc, type }}
         />
         <div className="menu-container">
-          <HierarchicalMenu activeTab={tab} onTabChange={setTab} />
+          <HierarchicalMenu activeTab={tab} onTabChange={handleTabChange} />
         </div>
       </aside>
 
       <main className="content">
-        {tab === 'objectives' && <LearningObjectives onNavigate={setTab} />}
-        {tab === 'conceptsQ' && <ConceitosQuestoes onNavigate={setTab} />}
-        {tab === 'questions' && <Questoes onNavigate={setTab} />}
-        {tab === 'about' && <Sobre />}
-        {tab === 'overview' && (
-          <>
-            <BandDiagram state={{ ...calc, type }} />
+        <Routes>
+          <Route path="/" element={
+            <>
+              <BandDiagram state={{ ...calc, type }} />
+              <FermiDiracPlot T={T} EF={calc.EF} Ec={calc.Ec} Ev={calc.Ev} Eg={calc.Eg} />
+            </>
+          } />
+          <Route path="/objectives" element={<LearningObjectives onNavigate={handleTabChange} />} />
+          <Route path="/conceptsQ" element={<ConceitosQuestoes onNavigate={handleTabChange} />} />
+          <Route path="/questions" element={<Questoes onNavigate={handleTabChange} />} />
+          <Route path="/about" element={<Sobre />} />
+          <Route path="/overview" element={
+            <>
+              <BandDiagram state={{ ...calc, type }} />
+              <FermiDiracPlot T={T} EF={calc.EF} Ec={calc.Ec} Ev={calc.Ev} Eg={calc.Eg} />
+            </>
+          } />
+          <Route path="/lattice" element={<Lattice type={type} />} />
+          <Route path="/atomband" element={<AtomToBand />} />
+          <Route path="/allowed" element={<AllowedForbidden />} />
+          <Route path="/kp" element={<KronigPenneyDiagram />} />
+          <Route path="/mis" element={<MetalInsulatorSemi />} />
+          <Route path="/kspace" element={
+            <KSpaceDiagram material={material} T={T}
+                           Eg={calc.Eg} Ec={calc.Ec} Ev={calc.Ev} />
+          } />
+          <Route path="/effmass" element={<EffectiveMassDemo />} />
+          <Route path="/particles" element={<ElectronHoleCard />} />
+          <Route path="/fermi" element={
             <FermiDiracPlot T={T} EF={calc.EF} Ec={calc.Ec} Ev={calc.Ev} Eg={calc.Eg} />
-          </>
-        )}
-        {tab === 'lattice' && <Lattice type={type} />}
-        {tab === 'atomband' && <AtomToBand />}
-        {tab === 'allowed' && <AllowedForbidden />}
-        {tab === 'kp' && <KronigPenneyDiagram />}
-        {tab === 'mis' && <MetalInsulatorSemi />}
-        {tab === 'kspace' && (
-          <KSpaceDiagram material={material} T={T}
-                         Eg={calc.Eg} Ec={calc.Ec} Ev={calc.Ev} />
-        )}
-        {tab === 'effmass' && <EffectiveMassDemo />}
-        {tab === 'particles' && <ElectronHoleCard />}
-        {tab === 'fermi' && (
-          <FermiDiracPlot T={T} EF={calc.EF} Ec={calc.Ec} Ev={calc.Ev} Eg={calc.Eg} />
-        )}
-        {tab === 'dos' && (
-          <>
-            <QuantumWell3D />
-            <DensityOfStates material={material} T={T}
-                             EF={calc.EF} Ec={calc.Ec} Ev={calc.Ev} Eg={calc.Eg} />
-          </>
-        )}
-        {tab === 'arrhenius' && (
-          <CarrierVsTemp material={material} ND={effND} NA={effNA} currentT={T} />
-        )}
-        {tab === 'junction' && <JunctionPN />}
-        {tab === 'transistorTech' && <TransistorTechPanel />}
-        {tab === 'periodic' && <PeriodicTable />}
-        {tab === 'formulas' && <FormulasPanel />}
+          } />
+          <Route path="/dos" element={
+            <>
+              <QuantumWell3D />
+              <DensityOfStates material={material} T={T}
+                               EF={calc.EF} Ec={calc.Ec} Ev={calc.Ev} Eg={calc.Eg} />
+            </>
+          } />
+          <Route path="/arrhenius" element={
+            <CarrierVsTemp material={material} ND={effND} NA={effNA} currentT={T} />
+          } />
+          <Route path="/junction" element={<JunctionPN />} />
+          <Route path="/transistorTech" element={<TransistorTechPanel />} />
+          <Route path="/periodic" element={<PeriodicTable />} />
+          <Route path="/formulas" element={<FormulasPanel />} />
+        </Routes>
       </main>
 
       <footer className="footer">
@@ -147,4 +164,8 @@ export default function App() {
       </footer>
     </div>
   );
+}
+
+export default function App() {
+  return <AppContent />;
 }
