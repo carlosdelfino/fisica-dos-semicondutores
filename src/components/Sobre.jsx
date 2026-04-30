@@ -123,6 +123,12 @@ function AutorTab() {
         <b> Donald A. Neamen</b>, complementadas pela coleção
         <i> Modular Series on Solid State Devices</i> (Robert F. Pierret et al.).
       </p>
+      <p>
+        <b>Este é um projeto sem fins lucrativos</b> que faz parte da{' '}
+        <a href="https://basicaodaeletronica.com.br" target="_blank" rel="noopener noreferrer">
+          rede de sites do Basicão da Eletrônica
+        </a>, dedicada a disseminar conhecimento de eletrônica de forma acessível e gratuita.
+      </p>
 
       <h4>Autor</h4>
       <ul className="sobre-list">

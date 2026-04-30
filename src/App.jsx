@@ -158,6 +158,12 @@ function AppContent() {
           Modelo físico: aproximação parabólica de bandas, ionização completa de dopantes acima da temperatura
           de freeze-out, semicondutor não-degenerado. Fórmula de Varshni para Eg(T). Constantes em SI.
         </p>
+        <p>
+          <b>Projeto sem fins lucrativos</b> · Parte da{' '}
+          <a href="https://basicaodaeletronica.com.br" target="_blank" rel="noopener noreferrer">
+            rede de sites do Basicão da Eletrônica
+          </a>
+        </p>
         <p className="copy">
           © {new Date().getFullYear()} · Educacional CC BY-SA 4.0 · React + SVG + KaTeX
         </p>
