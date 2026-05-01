@@ -41,7 +41,7 @@ const MENU_STRUCTURE = [
     items: [
       { id: 'junction',   label: '⚡ Junção PN' },
       { id: 'transistorTech', label: '🔬 Tecnologias de Transistores' },
-      { id: 'czochralski', label: '🔬 Processo Czochralski' },
+      { id: 'czochralski', label: '🔬 Métodos de Crescimento' },
     ]
   },
   {
