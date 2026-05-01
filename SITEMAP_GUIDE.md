@@ -94,17 +94,17 @@ O sitemap será gerado automaticamente em `dist/sitemap.xml`.
 
 ## Roteamento com Hash
 
-Como o site está hospedado no GitHub Pages, usamos **Hash Routing**. Isso significa que:
-- URLs usam `#` para identificar rotas: `site.github.io/#overview`
+Como o site usa um domínio customizado, usamos **Hash Routing**. Isso significa que:
+- URLs usam `#` para identificar rotas: `semicondutores.tec.br/#overview`
 - Funciona sem configuração de servidor
 - Compatível com SPA (Single Page Applications)
 
 ### Exemplos de URLs
 
-- Home: `https://carlosdelfino.github.io/diagrama-de-bandas-semicondutores/`
-- Visão Geral: `https://carlosdelfino.github.io/diagrama-de-bandas-semicondutores/#overview`
-- Tabela Periódica: `https://carlosdelfino.github.io/diagrama-de-bandas-semicondutores/#periodic`
-- Fórmulas: `https://carlosdelfino.github.io/diagrama-de-bandas-semicondutores/#formulas`
+- Home: `https://semicondutores.tec.br/`
+- Visão Geral: `https://semicondutores.tec.br/#overview`
+- Tabela Periódica: `https://semicondutores.tec.br/#periodic`
+- Fórmulas: `https://semicondutores.tec.br/#formulas`
 
 ## Comandos Disponíveis
 
@@ -163,7 +163,7 @@ Para melhorar a indexação:
    ```txt
    User-agent: *
    Allow: /
-   Sitemap: https://carlosdelfino.github.io/diagrama-de-bandas-semicondutores/sitemap.xml
+   Sitemap: https://semicondutores.tec.br/sitemap.xml
    ```
 
 3. **Meta Tags** (já implementadas no index.html)
@@ -226,5 +226,6 @@ lastmod: '2026-04-30T12:00:00.000Z'
 **Última Atualização:** 2026-04-30
 **Atualizado por:** Carlos Delfino
 **Histórico de Alterações:**
+- 2026-04-30 - Atualizado por Carlos Delfino - Ajustes nas imagens para redes sociais....
 - 2026-04-30 - Atualizado por Carlos Delfino - Adcionado um painel que demonstra as dimenções de ...
 - 2026-04-30 - Criado por Carlos Delfino - Versão 1.0 - Implementação inicial do sistema de sitemap autoatualizável
