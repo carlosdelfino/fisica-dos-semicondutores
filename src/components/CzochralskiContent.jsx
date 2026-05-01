@@ -873,9 +873,9 @@ export default function CzochralskiContent() {
               style={{ cursor: 'pointer', transition: 'all 0.3s ease' }}
               className="svg-clickable"
             />
-            <text x="75" y="165" fontSize="16" fontWeight="600" fill="#0f172a">Haste de puxamento</text>
-            <text x="75" y="188" fontSize="13" fill="#475569">Move a semente para cima</text>
-            <text x="75" y="206" fontSize="13" fill="#475569">com rotação e velocidade controladas.</text>
+            <text x="75" y="165" fontSize="16" fontWeight="600" fill="#0f172a" pointerEvents="none">Haste de puxamento</text>
+            <text x="75" y="188" fontSize="13" fill="#475569" pointerEvents="none">Move a semente para cima</text>
+            <text x="75" y="206" fontSize="13" fill="#475569" pointerEvents="none">com rotação e velocidade controladas.</text>
             <path d="M355 175 C440 175, 520 205, 615 245" fill="none" stroke="#1e293b" strokeWidth="1.8" markerEnd="url(#arrow)"/>
 
             <rect 
@@ -887,9 +887,9 @@ export default function CzochralskiContent() {
               style={{ cursor: 'pointer', transition: 'all 0.3s ease' }}
               className="svg-clickable"
             />
-            <text x="75" y="275" fontSize="16" fontWeight="600" fill="#0f172a">Cristal semente</text>
-            <text x="75" y="298" fontSize="13" fill="#475569">Pequeno monocristal que define</text>
-            <text x="75" y="316" fontSize="13" fill="#475569">a orientação cristalográfica do tarugo.</text>
+            <text x="75" y="275" fontSize="16" fontWeight="600" fill="#0f172a" pointerEvents="none">Cristal semente</text>
+            <text x="75" y="298" fontSize="13" fill="#475569" pointerEvents="none">Pequeno monocristal que define</text>
+            <text x="75" y="316" fontSize="13" fill="#475569" pointerEvents="none">a orientação cristalográfica do tarugo.</text>
             <path d="M355 290 C445 310, 540 360, 617 400" fill="none" stroke="#1e293b" strokeWidth="1.8" markerEnd="url(#arrow)"/>
 
             <rect 
@@ -901,10 +901,10 @@ export default function CzochralskiContent() {
               style={{ cursor: 'pointer', transition: 'all 0.3s ease' }}
               className="svg-clickable"
             />
-            <text x="75" y="395" fontSize="16" fontWeight="600" fill="#0f172a">Tarugo monocristalino</text>
-            <text x="75" y="418" fontSize="13" fill="#475569">Regiões típicas: pescoço, ombro</text>
-            <text x="75" y="436" fontSize="13" fill="#475569">e corpo cilíndrico útil para corte</text>
-            <text x="75" y="454" fontSize="13" fill="#475569">posterior em wafers.</text>
+            <text x="75" y="395" fontSize="16" fontWeight="600" fill="#0f172a" pointerEvents="none">Tarugo monocristalino</text>
+            <text x="75" y="418" fontSize="13" fill="#475569" pointerEvents="none">Regiões típicas: pescoço, ombro</text>
+            <text x="75" y="436" fontSize="13" fill="#475569" pointerEvents="none">e corpo cilíndrico útil para corte</text>
+            <text x="75" y="454" fontSize="13" fill="#475569" pointerEvents="none">posterior em wafers.</text>
             <path d="M355 420 C450 450, 520 510, 568 565" fill="none" stroke="#1e293b" strokeWidth="1.8" markerEnd="url(#arrow)"/>
 
             <rect 
@@ -916,9 +916,9 @@ export default function CzochralskiContent() {
               style={{ cursor: 'pointer', transition: 'all 0.3s ease' }}
               className="svg-clickable"
             />
-            <text x="75" y="540" fontSize="16" fontWeight="600" fill="#0f172a">Cadinho de quartzo</text>
-            <text x="75" y="563" fontSize="13" fill="#475569">Recipiente de SiO₂ que contém</text>
-            <text x="75" y="581" fontSize="13" fill="#475569">o silício fundido.</text>
+            <text x="75" y="540" fontSize="16" fontWeight="600" fill="#0f172a" pointerEvents="none">Cadinho de quartzo</text>
+            <text x="75" y="563" fontSize="13" fill="#475569" pointerEvents="none">Recipiente de SiO₂ que contém</text>
+            <text x="75" y="581" fontSize="13" fill="#475569" pointerEvents="none">o silício fundido.</text>
             <path d="M355 555 C435 590, 465 650, 500 690" fill="none" stroke="#1e293b" strokeWidth="1.8" markerEnd="url(#arrow)"/>
 
             <rect 
@@ -930,10 +930,10 @@ export default function CzochralskiContent() {
               style={{ cursor: 'pointer', transition: 'all 0.3s ease' }}
               className="svg-clickable"
             />
-            <text x="75" y="665" fontSize="16" fontWeight="600" fill="#0f172a">Silício fundido</text>
-            <text x="75" y="688" fontSize="13" fill="#475569">Silício policristalino é fundido</text>
-            <text x="75" y="706" fontSize="13" fill="#475569">e recristalizado na interface</text>
-            <text x="75" y="724" fontSize="13" fill="#475569">sólido-líquido.</text>
+            <text x="75" y="665" fontSize="16" fontWeight="600" fill="#0f172a" pointerEvents="none">Silício fundido</text>
+            <text x="75" y="688" fontSize="13" fill="#475569" pointerEvents="none">Silício policristalino é fundido</text>
+            <text x="75" y="706" fontSize="13" fill="#475569" pointerEvents="none">e recristalizado na interface</text>
+            <text x="75" y="724" fontSize="13" fill="#475569" pointerEvents="none">sólido-líquido.</text>
             <path d="M355 685 C430 675, 500 665, 570 664" fill="none" stroke="#1e293b" strokeWidth="1.8" markerEnd="url(#arrow)"/>
 
             {/* callout boxes right */}
@@ -946,9 +946,9 @@ export default function CzochralskiContent() {
               style={{ cursor: 'pointer', transition: 'all 0.3s ease' }}
               className="svg-clickable"
             />
-            <text x="930" y="165" fontSize="16" fontWeight="600" fill="#0f172a">Câmara de crescimento</text>
-            <text x="930" y="188" fontSize="13" fill="#475569">Invólucro fechado para controle de atmosfera,</text>
-            <text x="930" y="206" fontSize="13" fill="#475569">pressão, contaminação e fluxo gasoso.</text>
+            <text x="930" y="165" fontSize="16" fontWeight="600" fill="#0f172a" pointerEvents="none">Câmara de crescimento</text>
+            <text x="930" y="188" fontSize="13" fill="#475569" pointerEvents="none">Invólucro fechado para controle de atmosfera,</text>
+            <text x="930" y="206" fontSize="13" fill="#475569" pointerEvents="none">pressão, contaminação e fluxo gasoso.</text>
             <path d="M910 180 C845 205, 806 270, 784 350" fill="none" stroke="#1e293b" strokeWidth="1.8" markerEnd="url(#arrow)"/>
 
             <rect 
@@ -960,9 +960,9 @@ export default function CzochralskiContent() {
               style={{ cursor: 'pointer', transition: 'all 0.3s ease' }}
               className="svg-clickable"
             />
-            <text x="930" y="285" fontSize="16" fontWeight="600" fill="#0f172a">Gás inerte: argônio</text>
-            <text x="930" y="308" fontSize="13" fill="#475569">Usado para reduzir oxidação e arraste</text>
-            <text x="930" y="326" fontSize="13" fill="#475569">de contaminantes durante o crescimento.</text>
+            <text x="930" y="285" fontSize="16" fontWeight="600" fill="#0f172a" pointerEvents="none">Gás inerte: argônio</text>
+            <text x="930" y="308" fontSize="13" fill="#475569" pointerEvents="none">Usado para reduzir oxidação e arraste</text>
+            <text x="930" y="326" fontSize="13" fill="#475569" pointerEvents="none">de contaminantes durante o crescimento.</text>
             <path d="M910 300 C825 310, 780 330, 725 370" fill="none" stroke="#1e293b" strokeWidth="1.8" markerEnd="url(#arrow)"/>
 
             <rect 
@@ -974,10 +974,10 @@ export default function CzochralskiContent() {
               style={{ cursor: 'pointer', transition: 'all 0.3s ease' }}
               className="svg-clickable"
             />
-            <text x="930" y="405" fontSize="16" fontWeight="600" fill="#0f172a">Controle de diâmetro</text>
-            <text x="930" y="428" fontSize="13" fill="#475569">A taxa de puxamento, a potência térmica</text>
-            <text x="930" y="446" fontSize="13" fill="#475569">e a rotação influenciam o diâmetro</text>
-            <text x="930" y="464" fontSize="13" fill="#475569">do cristal em crescimento.</text>
+            <text x="930" y="405" fontSize="16" fontWeight="600" fill="#0f172a" pointerEvents="none">Controle de diâmetro</text>
+            <text x="930" y="428" fontSize="13" fill="#475569" pointerEvents="none">A taxa de puxamento, a potência térmica</text>
+            <text x="930" y="446" fontSize="13" fill="#475569" pointerEvents="none">e a rotação influenciam o diâmetro</text>
+            <text x="930" y="464" fontSize="13" fill="#475569" pointerEvents="none">do cristal em crescimento.</text>
             <path d="M910 420 C825 430, 745 500, 682 570" fill="none" stroke="#1e293b" strokeWidth="1.8" markerEnd="url(#arrow)"/>
 
             <rect 
@@ -989,10 +989,10 @@ export default function CzochralskiContent() {
               style={{ cursor: 'pointer', transition: 'all 0.3s ease' }}
               className="svg-clickable"
             />
-            <text x="930" y="540" fontSize="16" fontWeight="600" fill="#0f172a">Susceptor de grafite</text>
-            <text x="930" y="563" fontSize="13" fill="#475569">Estrutura que sustenta o cadinho</text>
-            <text x="930" y="581" fontSize="13" fill="#475569">e ajuda no acoplamento térmico</text>
-            <text x="930" y="599" fontSize="13" fill="#475569">com o sistema de aquecimento.</text>
+            <text x="930" y="540" fontSize="16" fontWeight="600" fill="#0f172a" pointerEvents="none">Susceptor de grafite</text>
+            <text x="930" y="563" fontSize="13" fill="#475569" pointerEvents="none">Estrutura que sustenta o cadinho</text>
+            <text x="930" y="581" fontSize="13" fill="#475569" pointerEvents="none">e ajuda no acoplamento térmico</text>
+            <text x="930" y="599" fontSize="13" fill="#475569" pointerEvents="none">com o sistema de aquecimento.</text>
             <path d="M910 560 C820 585, 790 640, 775 685" fill="none" stroke="#1e293b" strokeWidth="1.8" markerEnd="url(#arrow)"/>
 
             <rect 
@@ -1004,10 +1004,10 @@ export default function CzochralskiContent() {
               style={{ cursor: 'pointer', transition: 'all 0.3s ease' }}
               className="svg-clickable"
             />
-            <text x="930" y="670" fontSize="16" fontWeight="600" fill="#0f172a">Aquecedor e isolamento térmico</text>
-            <text x="930" y="693" fontSize="13" fill="#475569">Fornecem energia para manter o silício</text>
-            <text x="930" y="711" fontSize="13" fill="#475569">fundido e controlar o gradiente térmico.</text>
-            <text x="930" y="729" fontSize="13" fill="#475569">O isolamento reduz perdas de calor.</text>
+            <text x="930" y="670" fontSize="16" fontWeight="600" fill="#0f172a" pointerEvents="none">Aquecedor e isolamento térmico</text>
+            <text x="930" y="693" fontSize="13" fill="#475569" pointerEvents="none">Fornecem energia para manter o silício</text>
+            <text x="930" y="711" fontSize="13" fill="#475569" pointerEvents="none">fundido e controlar o gradiente térmico.</text>
+            <text x="930" y="729" fontSize="13" fill="#475569" pointerEvents="none">O isolamento reduz perdas de calor.</text>
             <path d="M910 700 C840 700, 825 700, 806 700" fill="none" stroke="#1e293b" strokeWidth="1.8" markerEnd="url(#arrow)"/>
 
             {/* process annotations */}
