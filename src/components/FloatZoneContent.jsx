@@ -223,8 +223,8 @@ export default function FloatZoneContent() {
             <h4>💎 Propriedades do Produto</h4>
             <ul>
               <li>Resistividade: 1-10.000 Ω·cm</li>
-              <li>Oxigênio: < 5 ppba (vs 10-20 ppm em CZ)</li>
-              <li>Carbono: < 0.1 ppma</li>
+              <li>Oxigênio: &lt; 5 ppba (vs 10-20 ppm em CZ)</li>
+              <li>Carbono: &lt; 0.1 ppma</li>
               <li>Diâmetro máximo: ~200 mm</li>
             </ul>
           </div>
