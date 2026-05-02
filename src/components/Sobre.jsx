@@ -118,10 +118,11 @@ function AutorTab() {
       <p>
         Este projeto visa <b>facilitar o aprendizado da Física dos Semicondutores</b> e
         será continuamente <b>ampliado conforme meu próprio avanço nos estudos</b>.
-        Foi construído usando <b>Claude Opus 4.7</b> como par de programação, com base
-        nas leituras que tenho feito do livro <i>Semiconductor Physics and Devices</i> de
-        <b> Donald A. Neamen</b>, complementadas pela coleção
-        <i> Modular Series on Solid State Devices</i> (Robert F. Pierret et al.).
+        Foi construído usando <b>Claude Opus 4.7</b> como par de programação, com
+        <b>SWE-1.6</b> para ajustes de menor complexidade, com base nas leituras que tenho
+        feito do livro <i>Semiconductor Physics and Devices</i> de <b> Donald A. Neamen</b>,
+        complementadas pela coleção <i> Modular Series on Solid State Devices</i>
+        (Robert F. Pierret et al.).
       </p>
       <p>
         <b>Este é um projeto sem fins lucrativos</b> que faz parte da{' '}

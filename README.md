@@ -156,9 +156,9 @@ através da função `log_event()` em `src/physics/formulas.js`.
 
 Este projeto visa **facilitar o aprendizado da Física dos Semicondutores** e será continuamente
 ampliado conforme meu próprio avanço nos estudos. Foi construído usando **Claude Opus 4.7** como
-par de programação, com base nas leituras que tenho feito do livro
-*Semiconductor Physics and Devices* de **Donald A. Neamen**, complementadas pela coleção
-*Modular Series on Solid State Devices* (Robert F. Pierret et al.).
+par de programação, com **SWE-1.6** para ajustes de menor complexidade, com base nas leituras que
+tenho feito do livro *Semiconductor Physics and Devices* de **Donald A. Neamen**, complementadas
+pela coleção *Modular Series on Solid State Devices* (Robert F. Pierret et al.).
 
 ### Bibliografia de referência
 
@@ -312,11 +312,12 @@ CC BY-SA 4.0. Material educacional — sinta-se livre para usar em aulas, citand
 ---
 **Resumo:** Simulador educacional interativo em React + SVG + KaTeX que demonstra bandas de energia em semicondutores, modelo de Kronig-Penney, massa efetiva, espaço-k, distribuições de Fermi-Dirac e Maxwell-Boltzmann, densidade de estados e estatística quântica de elétrons.
 **Data de Criação:** 2026-04-26
-**Autor:** Carlos Delfino Carvalho Pinheiro (com apoio de Claude Opus 4.7 / Rapport Generativa)
+**Autor:** Carlos Delfino Carvalho Pinheiro (com apoio de Claude Opus 4.7 / SWE-1.6 / Rapport Generativa)
 **Versão:** 1.4
-**Última Atualização:** 2026-04-27
+**Última Atualização:** 2026-05-02
 **Atualizado por:** Carlos Delfino
 **Histórico de Alterações:**
+- 2026-05-02 - Atualizado por Carlos Delfino - Correção do clicar nas decrições...
 - 2026-04-27 - Atualizado por Carlos Delfino - Favicone para o site....
 - 2026-04-26 - Atualizado por Carlos Delfino - Primeira Versão...
 - 2026-04-26 - Atualizado por Carlos Delfino - Atualização de arquivo...
