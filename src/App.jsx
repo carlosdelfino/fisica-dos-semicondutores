@@ -22,6 +22,7 @@ import JunctionPN from './components/JunctionPN.jsx';
 import PeriodicTable from './components/PeriodicTable.jsx';
 import TransistorTechPanel from './components/TransistorTechPanel.jsx';
 import CrystalGrowthMethods from './components/CrystalGrowthMethods.jsx';
+import PerovskitesContent from './components/PerovskitesContent.jsx';
 import HierarchicalMenu from './components/HierarchicalMenu.jsx';
 import ControlPanel from './components/ControlPanel.jsx';
 import { carrierConcentrations, log_event } from './physics/formulas.js';
@@ -150,6 +151,7 @@ function AppContent() {
           <Route path="/junction" element={<JunctionPN />} />
           <Route path="/transistorTech" element={<TransistorTechPanel />} />
           <Route path="/czochralski" element={<CrystalGrowthMethods />} />
+          <Route path="/perovskites" element={<PerovskitesContent />} />
           <Route path="/periodic" element={<PeriodicTable />} />
           <Route path="/formulas" element={<FormulasPanel />} />
         </Routes>
