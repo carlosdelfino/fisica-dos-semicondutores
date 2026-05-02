@@ -7,6 +7,7 @@ const MENU_STRUCTURE = [
       { id: 'objectives', label: '🎯 Roteiro de Estudo' },
       { id: 'conceptsQ',  label: '📖 Conceitos das Questões' },
       { id: 'questions',  label: '❓ Questões' },
+      { id: 'glossary',   label: '📚 Glossário' },
     ]
   },
   {
@@ -14,6 +15,7 @@ const MENU_STRUCTURE = [
     items: [
       { id: 'overview',   label: 'Visão Geral' },
       { id: 'lattice',    label: 'Rede Cristalina' },
+      { id: 'crystal-structures', label: '💎 Estruturas Cristalinas' },
       { id: 'atomband',   label: 'Átomos → Bandas' },
       { id: 'allowed',    label: 'Bandas Permitidas/Proibidas' },
       { id: 'kp',         label: 'Kronig-Penney' },
