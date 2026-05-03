@@ -126,6 +126,12 @@ const routes = [
     lastmod: new Date().toISOString(),
   },
   {
+    path: '#fetTypes',
+    changefreq: 'monthly',
+    priority: '0.8',
+    lastmod: new Date().toISOString(),
+  },
+  {
     path: '#periodic',
     changefreq: 'monthly',
     priority: '0.8',

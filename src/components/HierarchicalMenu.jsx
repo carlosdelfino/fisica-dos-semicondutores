@@ -43,6 +43,7 @@ const MENU_STRUCTURE = [
     items: [
       { id: 'junction',   label: '⚡ Junção PN' },
       { id: 'transistorTech', label: '🔬 Tecnologias de Transistores' },
+      { id: 'fetTypes', label: '🧪 Tipos de Transistores FET' },
       { id: 'czochralski', label: '🔬 Métodos de Crescimento' },
       { id: 'perovskites', label: '☀️ Perovskites 2D' },
     ]

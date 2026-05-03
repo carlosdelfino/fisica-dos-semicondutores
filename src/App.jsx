@@ -21,6 +21,7 @@ import Sobre from './components/Sobre.jsx';
 import JunctionPN from './components/JunctionPN.jsx';
 import PeriodicTable from './components/PeriodicTable.jsx';
 import TransistorTechPanel from './components/TransistorTechPanel.jsx';
+import FetTypesPanel from './components/FetTypesPanel.jsx';
 import CrystalGrowthMethods from './components/CrystalGrowthMethods.jsx';
 import PerovskitesContent from './components/PerovskitesContent.jsx';
 import SemiconductorCrystalStructures from './components/SemiconductorCrystalStructures.jsx';
@@ -152,6 +153,7 @@ function AppContent() {
           } />
           <Route path="/junction" element={<JunctionPN />} />
           <Route path="/transistorTech" element={<TransistorTechPanel />} />
+          <Route path="/fetTypes" element={<FetTypesPanel />} />
           <Route path="/czochralski" element={<CrystalGrowthMethods />} />
           <Route path="/perovskites" element={<PerovskitesContent />} />
           <Route path="/crystal-structures" element={<SemiconductorCrystalStructures />} />
