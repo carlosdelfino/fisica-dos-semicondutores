@@ -90,7 +90,7 @@ export default function FloatZoneContent() {
           </div>
           <div className="overview-card">
             <h4>💎 Alta Pureza</h4>
-            <p>O método FZ produz silício com pureza extremamente alta (resistividade > 10.000 Ω·cm) pois não há contaminação por cadinho de quartzo.</p>
+            <p>O método FZ produz silício com pureza extremamente alta (resistividade &gt; 10.000 Ω·cm) pois não há contaminação por cadinho de quartzo.</p>
           </div>
           <div className="overview-card">
             <h4>⚡ Aplicações</h4>
