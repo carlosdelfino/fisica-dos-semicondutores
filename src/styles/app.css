@@ -3891,6 +3891,82 @@ code {
   color: var(--fg-1);
 }
 
+.fet-layers {
+  margin-top: 18px;
+  background: var(--bg-2);
+  border: 1px solid var(--bg-3);
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.fet-layers h4 {
+  margin: 0 0 6px 0;
+  color: var(--accent);
+  font-size: 15px;
+}
+
+.fet-layers-intro {
+  margin: 0 0 10px 0;
+  font-size: 12.5px;
+  color: var(--fg-2);
+  line-height: 1.5;
+}
+
+.fet-layers-table {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--bg-3);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.fet-layers-row {
+  display: grid;
+  grid-template-columns: 1.1fr 1.1fr 1.3fr 1.4fr 2.1fr;
+  gap: 10px;
+  padding: 10px 12px;
+  font-size: 12.5px;
+  line-height: 1.45;
+  border-top: 1px solid var(--bg-3);
+  color: var(--fg-1);
+}
+
+.fet-layers-row:first-child {
+  border-top: 0;
+}
+
+.fet-layers-row.fet-layers-head {
+  background: var(--bg-3);
+  font-weight: 700;
+  color: var(--fg-0, #111827);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.fet-layers-row:nth-child(even):not(.fet-layers-head) {
+  background: var(--bg-1);
+}
+
+@media (max-width: 900px) {
+  .fet-layers-row {
+    grid-template-columns: 1fr;
+    gap: 2px;
+    padding: 10px 12px;
+  }
+  .fet-layers-row.fet-layers-head {
+    display: none;
+  }
+  .fet-layers-row span[role="cell"] {
+    display: block;
+  }
+  .fet-layers-row span[role="cell"]:nth-child(1)::before { content: "Camada: "; font-weight: 700; color: var(--accent); }
+  .fet-layers-row span[role="cell"]:nth-child(2)::before { content: "Material: "; font-weight: 700; color: var(--accent); }
+  .fet-layers-row span[role="cell"]:nth-child(3)::before { content: "Dopagem: "; font-weight: 700; color: var(--accent); }
+  .fet-layers-row span[role="cell"]:nth-child(4)::before { content: "Função: "; font-weight: 700; color: var(--accent); }
+  .fet-layers-row span[role="cell"]:nth-child(5)::before { content: "Impacto: "; font-weight: 700; color: var(--accent); }
+}
+
 /* Responsive for Czochralski panel */
 @media (max-width: 1200px) {
   .panel-layout {
