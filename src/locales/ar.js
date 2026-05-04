@@ -1,4 +1,7 @@
+import fetTypes from './fetTypes/ar.js';
+
 export default {
+  fetTypes,
   meta: {
     code: 'ar',
     name: 'Arabic',

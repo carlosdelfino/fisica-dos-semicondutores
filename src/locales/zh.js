@@ -1,4 +1,7 @@
+import fetTypes from './fetTypes/zh.js';
+
 export default {
+  fetTypes,
   meta: {
     code: 'zh',
     name: 'Chinese (Mandarin)',

@@ -1,4 +1,7 @@
+import fetTypes from './fetTypes/hi.js';
+
 export default {
+  fetTypes,
   meta: {
     code: 'hi',
     name: 'Hindi',
