@@ -73,3 +73,36 @@
   margin: 0;
   font-style: italic;
 }
+
+.splashscreen-welcome {
+  list-style: none;
+  padding: 0;
+  margin: 1.75rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.25rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.splashscreen-welcome li {
+  position: relative;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  animation: welcomeFade 600ms ease-out both;
+}
+
+.splashscreen-welcome li:nth-child(1) { animation-delay: 200ms; }
+.splashscreen-welcome li:nth-child(2) { animation-delay: 400ms; }
+.splashscreen-welcome li:nth-child(3) { animation-delay: 600ms; }
+.splashscreen-welcome li:nth-child(4) { animation-delay: 800ms; }
+.splashscreen-welcome li:nth-child(5) { animation-delay: 1000ms; }
+
+@keyframes welcomeFade {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

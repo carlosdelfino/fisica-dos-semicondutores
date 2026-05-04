@@ -39,6 +39,13 @@ function Splashscreen({ onComplete }) {
           <p className="splashscreen-tagline">
             Capilarizando a Ciência, a Engenharia e o Conhecimento
           </p>
+          <ul className="splashscreen-welcome" aria-label="Bem-vindo em vários idiomas">
+            <li lang="pt-BR">Bem-Vindo</li>
+            <li lang="en-GB">Welcome</li>
+            <li lang="ar" dir="rtl">أهلاً وسهلاً</li>
+            <li lang="hi">स्वागत है</li>
+            <li lang="zh">欢迎</li>
+          </ul>
         </div>
       </div>
     </div>
