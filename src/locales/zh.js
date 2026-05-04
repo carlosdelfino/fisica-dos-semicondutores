@@ -1,7 +1,9 @@
 import fetTypes from './fetTypes/zh.js';
+import transistorTech from './transistorTech/zh.js';
 
 export default {
   fetTypes,
+  transistorTech,
   meta: {
     code: 'zh',
     name: 'Chinese (Mandarin)',

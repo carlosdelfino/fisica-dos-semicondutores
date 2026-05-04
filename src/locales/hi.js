@@ -1,7 +1,9 @@
 import fetTypes from './fetTypes/hi.js';
+import transistorTech from './transistorTech/hi.js';
 
 export default {
   fetTypes,
+  transistorTech,
   meta: {
     code: 'hi',
     name: 'Hindi',

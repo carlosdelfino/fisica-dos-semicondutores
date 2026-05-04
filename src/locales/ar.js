@@ -1,7 +1,9 @@
 import fetTypes from './fetTypes/ar.js';
+import transistorTech from './transistorTech/ar.js';
 
 export default {
   fetTypes,
+  transistorTech,
   meta: {
     code: 'ar',
     name: 'Arabic',

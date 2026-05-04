@@ -1,7 +1,9 @@
 import fetTypes from './fetTypes/en.js';
+import transistorTech from './transistorTech/en.js';
 
 export default {
   fetTypes,
+  transistorTech,
   meta: {
     code: 'en',
     name: 'English (UK)',
