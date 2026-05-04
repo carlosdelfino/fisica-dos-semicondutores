@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { TeX } from './Math.jsx';
 import { MODULOS, TAB_LABELS } from '../physics/questoes.js';
+import { useTranslation } from '../contexts/LanguageContext.jsx';
 
 /**
  * Apresenta as questões em modo flashcard com sub-abas por MÓDULO.
@@ -9,6 +10,7 @@ import { MODULOS, TAB_LABELS } from '../physics/questoes.js';
  *   - Futuros: BJT, MOSFET, ...
  */
 export default function Questoes({ onNavigate }) {
+  const { t } = useTranslation();
   const [moduloId, setModuloId] = useState(MODULOS[0].id);
   const [revealed, setRevealed] = useState({});
   const [scored,   setScored]   = useState({});
@@ -42,22 +44,22 @@ export default function Questoes({ onNavigate }) {
         {!open ? (
           <div className="question-prompt">
             <p style={{ color: '#94a3b8', fontSize: 13, marginTop: 6 }}>
-              <b>1. Tente formular sua resposta mentalmente</b> em 30 segundos.<br />
-              <b>2. Liste os principais pontos</b> que você incluiria.<br />
-              <b>3. Quando estiver pronto</b>, clique abaixo para conferir.
+              <b>{t('questions.card.prompt1')}</b><br />
+              <b>{t('questions.card.prompt2')}</b><br />
+              <b>{t('questions.card.prompt3')}</b>
             </p>
             <button className="question-btn-primary" onClick={() => toggleReveal(q.id)}>
-              👁️ Mostrar resposta
+              {t('questions.card.show')}
             </button>
           </div>
         ) : (
           <div className="question-answer">
             <div className="answer-summary">
-              <b>Resposta-modelo: </b>{q.shortAnswer}
+              <b>{t('questions.card.modelAnswer')} </b>{q.shortAnswer}
             </div>
 
             <div className="answer-keys">
-              <b>Pontos-chave:</b>
+              <b>{t('questions.card.keyPoints')}</b>
               <ul>
                 {q.keyPoints.map((kp, j) => <li key={j}>{kp}</li>)}
               </ul>
@@ -75,28 +77,28 @@ export default function Questoes({ onNavigate }) {
 
             {q.tabs && q.tabs.length > 0 && (
               <div className="concept-tabs" style={{ marginTop: 8 }}>
-                <b>Demonstrações: </b>
-                {q.tabs.map((t) => (
-                  <button key={t} className="concept-tab-btn"
-                          onClick={() => onNavigate?.(t)}>
-                    → {TAB_LABELS[t] || t}
+                <b>{t('questions.card.demos')} </b>
+                {q.tabs.map((tb) => (
+                  <button key={tb} className="concept-tab-btn"
+                          onClick={() => onNavigate?.(tb)}>
+                    → {t(`menu.items.${tb}`) !== `menu.items.${tb}` ? t(`menu.items.${tb}`) : (TAB_LABELS[tb] || tb)}
                   </button>
                 ))}
               </div>
             )}
 
             <div className="question-score">
-              <span style={{ color: '#cbd5e1', fontSize: 13 }}>Como você se saiu?</span>
+              <span style={{ color: '#cbd5e1', fontSize: 13 }}>{t('questions.card.score')}</span>
               <button className={`score-btn ok ${sc === 'ok' ? 'active' : ''}`}
                       onClick={() => setScore(q.id, 'ok')}>
-                ✅ Acertei
+                {t('questions.card.scoreOk')}
               </button>
               <button className={`score-btn no ${sc === 'no' ? 'active' : ''}`}
                       onClick={() => setScore(q.id, 'no')}>
-                ❌ Errei / parcial
+                {t('questions.card.scoreNo')}
               </button>
               <button className="score-btn" onClick={() => toggleReveal(q.id)}>
-                🔁 Esconder
+                {t('questions.card.hide')}
               </button>
             </div>
           </div>
@@ -107,7 +109,7 @@ export default function Questoes({ onNavigate }) {
 
   return (
     <div className="diagram-card">
-      <h3>❓ Questões — auto-avaliação</h3>
+      <h3>{t('questions.title')}</h3>
 
       {/* Sub-abas por MÓDULO */}
       <nav className="sub-tabs">
@@ -126,20 +128,20 @@ export default function Questoes({ onNavigate }) {
         <div className="questions-mode">
           <button className={`mode-btn ${mode === 'one' ? 'active' : ''}`}
                   onClick={() => setMode('one')}>
-            📇 Uma por vez
+            {t('questions.modeOne')}
           </button>
           <button className={`mode-btn ${mode === 'all' ? 'active' : ''}`}
                   onClick={() => setMode('all')}>
-            📋 Todas ({total})
+            {t('questions.modeAll')} ({total})
           </button>
         </div>
 
         <div className="questions-stats">
           <span style={{ color: '#22c55e' }}>✅ {stats.ok}</span>
           <span style={{ color: '#ef4444' }}>❌ {stats.no}</span>
-          <span style={{ color: '#94a3b8' }}>· {total - stats.ok - stats.no} pendentes</span>
-          <button className="mode-btn" onClick={resetAll} title="Reiniciar tudo">
-            ♻️ Reiniciar
+          <span style={{ color: '#94a3b8' }}>· {total - stats.ok - stats.no} {t('questions.stats.pending')}</span>
+          <button className="mode-btn" onClick={resetAll} title={t('questions.stats.resetTitle')}>
+            {t('questions.stats.reset')}
           </button>
         </div>
       </div>
@@ -147,7 +149,7 @@ export default function Questoes({ onNavigate }) {
       {mode === 'one' ? (
         <>
           <div className="questions-progress">
-            <span>Questão {current + 1} de {total}</span>
+            <span>{t('questions.progress', { current: current + 1, total })}</span>
             <div className="progress-bar">
               <div className="progress-fill"
                    style={{ width: `${((current + 1) / total) * 100}%` }} />
@@ -159,12 +161,12 @@ export default function Questoes({ onNavigate }) {
           <div className="questions-nav">
             <button className="nav-btn" disabled={current === 0}
                     onClick={() => setCurrent((c) => Math.max(0, c - 1))}>
-              ← Anterior
+              {t('questions.nav.previous')}
             </button>
             <button className="nav-btn primary"
                     disabled={current >= total - 1}
                     onClick={() => setCurrent((c) => Math.min(total - 1, c + 1))}>
-              Próxima →
+              {t('questions.nav.next')}
             </button>
           </div>
         </>
@@ -177,9 +179,7 @@ export default function Questoes({ onNavigate }) {
       <div style={{ background: 'rgba(2,6,23,0.6)', padding: 14, borderRadius: 8,
                     marginTop: 16, fontSize: 13, color: '#cbd5e1' }}>
         <p style={{ margin: 0 }}>
-          <b>Como usar:</b> tente formular a resposta antes de revelar. Use a auto-avaliação
-          para identificar os pontos fracos. Reveja o conceito na aba <b>📖 Conceitos das Questões</b>
-          ou clique nas <i>demonstrações interativas</i> para fixar visualmente.
+          <b>{t('questions.usage.title')}</b> {t('questions.usage.body')} <b>{t('menu.items.conceptsQ')}</b>.
         </p>
       </div>
     </div>

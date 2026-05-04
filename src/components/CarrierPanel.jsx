@@ -1,14 +1,16 @@
 import { TeX } from './Math.jsx';
+import { useTranslation } from '../contexts/LanguageContext.jsx';
 
 const fmt = (v, d = 3) => (v === 0 ? '0' : v.toExponential(d));
 
 export default function CarrierPanel({ state }) {
+  const { t } = useTranslation();
   const { material, T, Eg, Ec, Ev, EF, n, p, ni, Nc, Nv, type, ND, NA } = state;
   return (
     <div className="diagram-card carrier-panel">
-      <h3>Valores numéricos calculados</h3>
+      <h3>{t('carrierPanel.title')}</h3>
       <div className="kv-grid">
-        <div><span>Material</span><b>{material}</b></div>
+        <div><span>{t('carrierPanel.material')}</span><b>{material}</b></div>
         <div><span>T</span><b>{T} K</b></div>
         <div><span><TeX math="E_g" /></span><b>{Eg.toFixed(3)} eV</b></div>
         <div><span><TeX math="E_c" /></span><b>{Ec.toFixed(3)} eV</b></div>
@@ -24,8 +26,7 @@ export default function CarrierPanel({ state }) {
         {type === 'p' && <div><span><TeX math="N_A" /></span><b>{fmt(NA, 2)} cm⁻³</b></div>}
       </div>
       <p className="hint">
-        Observe que <TeX math="n \cdot p = n_i^2" /> é mantido (lei de ação de massas) qualquer que seja a dopagem,
-        desde que o semicondutor permaneça <i>não-degenerado</i> (E_F a pelo menos 3kT das bordas das bandas).
+        {t('carrierPanel.hint', { formula: 'n · p = n_i²' })}
       </p>
     </div>
   );

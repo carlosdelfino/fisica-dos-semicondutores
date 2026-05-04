@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from '../contexts/LanguageContext.jsx';
 
 const BIBLIOGRAFIA = [
   {
@@ -112,50 +113,38 @@ const BIBLIOGRAFIA = [
 ];
 
 function AutorTab() {
+  const { t } = useTranslation();
   return (
     <div className="sobre-content">
-      <h4>Sobre o projeto</h4>
-      <p>
-        Este projeto visa <b>facilitar o aprendizado da Física dos Semicondutores</b> e
-        será continuamente <b>ampliado conforme meu próprio avanço nos estudos</b>.
-        Foi construído usando <b>Claude Opus 4.7</b> como par de programação, com
-        <b>SWE-1.6</b> para ajustes de menor complexidade, com base nas leituras que tenho
-        feito do livro <i>Semiconductor Physics and Devices</i> de <b> Donald A. Neamen</b>,
-        complementadas pela coleção <i> Modular Series on Solid State Devices</i>
-        (Robert F. Pierret et al.).
-      </p>
-      <p>
-        <b>Este é um projeto sem fins lucrativos</b> que faz parte da{' '}
-        <a href="https://basicaodaeletronica.com.br" target="_blank" rel="noopener noreferrer">
-          rede de sites do Basicão da Eletrônica
-        </a>, dedicada a disseminar conhecimento de eletrônica de forma acessível e gratuita.
-      </p>
+      <h4>{t('about.section.about')}</h4>
+      <p>{t('about.project.p1body')}</p>
+      <p>{t('about.project.p2body')}</p>
 
-      <h4>Autor</h4>
+      <h4>{t('about.section.author')}</h4>
       <ul className="sobre-list">
-        <li><b>Nome:</b> Carlos Delfino Carvalho Pinheiro</li>
-        <li><b>E-mail:</b> <a href="mailto:consultoria@carlosdelfino.eti.br">consultoria@carlosdelfino.eti.br</a></li>
-        <li><b>WhatsApp:</b> <a href="https://wa.me/5585985205490" target="_blank" rel="noopener noreferrer">+55 (85) 98520-5490</a></li>
+        <li><b>{t('about.authorInfo.name')}</b> Carlos Delfino Carvalho Pinheiro</li>
+        <li><b>{t('about.authorInfo.email')}</b> <a href="mailto:consultoria@carlosdelfino.eti.br">consultoria@carlosdelfino.eti.br</a></li>
+        <li><b>{t('about.authorInfo.whatsapp')}</b> <a href="https://wa.me/5585985205490" target="_blank" rel="noopener noreferrer">+55 (85) 98520-5490</a></li>
         <li>
-          <b>Comunidade WhatsApp — Física dos Semicondutores:</b>{' '}
+          <b>{t('about.authorInfo.community')}</b>{' '}
           <a href="https://chat.whatsapp.com/C3vtPfTwaSlIPmcl8aHS1X" target="_blank" rel="noopener noreferrer">
-            Entrar no grupo
+            {t('about.authorInfo.joinGroup')}
           </a>
         </li>
         <li>
-          <b>LinkedIn:</b>{' '}
+          <b>{t('about.authorInfo.linkedin')}</b>{' '}
           <a href="https://linkedin.com/in/carlosdelfino" target="_blank" rel="noopener noreferrer">
             linkedin.com/in/carlosdelfino
           </a>
         </li>
         <li>
-          <b>GitHub:</b>{' '}
+          <b>{t('about.authorInfo.github')}</b>{' '}
           <a href="https://github.com/carlosdelfino" target="_blank" rel="noopener noreferrer">
             github.com/carlosdelfino
           </a>
         </li>
         <li>
-          <b>X (Twitter):</b>{' '}
+          <b>{t('about.authorInfo.twitter')}</b>{' '}
           <a href="https://x.com/carlosdelfinoCP" target="_blank" rel="noopener noreferrer">
             @carlosdelfinoCP
           </a>
@@ -183,16 +172,11 @@ function AutorTab() {
         </a>
       </div>
 
-      <h4>Contribua — críticas e sugestões via Pull Request</h4>
+      <h4>{t('about.section.contribute')}</h4>
 
       <div className="pr-callout">
         <p style={{ margin: 0 }}>
-          <b>🎯 Mensagem essencial:</b> a <i>melhor forma</i> de criticar, sugerir,
-          corrigir ou aprimorar este projeto é abrindo um <b>Pull Request</b>. Sua
-          contribuição é <b>sempre bem-vinda</b>, seja uma vírgula numa explicação ou
-          um capítulo inteiro de novas visualizações. Mesmo que a PR não seja aceita
-          exatamente como está, ela abre uma discussão valiosa que costuma evoluir
-          para algo incorporado ao projeto.
+          <b>{t('about.pr.heading')}</b> {t('about.pr.body')}
         </p>
       </div>
 
@@ -200,60 +184,32 @@ function AutorTab() {
         <a className="pr-btn primary"
            href="https://github.com/carlosdelfino/fisica-dos-semicondutores/compare"
            target="_blank" rel="noopener noreferrer">
-          🚀 Abrir Pull Request
+          {t('about.pr.openPR')}
         </a>
         <a className="pr-btn"
            href="https://github.com/carlosdelfino/fisica-dos-semicondutores/blob/main/CONTRIBUTING.md"
            target="_blank" rel="noopener noreferrer">
-          📖 Guia de Contribuição (CONTRIBUTING.md)
+          {t('about.pr.guide')}
         </a>
         <a className="pr-btn"
            href="https://github.com/carlosdelfino/fisica-dos-semicondutores/issues/new/choose"
            target="_blank" rel="noopener noreferrer">
-          🐛 Abrir Issue
+          {t('about.pr.openIssue')}
         </a>
       </div>
 
-      <h5>🌊 Use o Windsurf — o projeto já está preparado</h5>
-      <p>
-        Recomendo fortemente o{' '}
-        <a href="https://windsurf.com" target="_blank" rel="noopener noreferrer">
-          <b>Windsurf</b>
-        </a>{' '}
-        como editor para contribuir. O projeto contém <b>regras de codificação</b> em
-        <code> .windsurf/rules/</code> que o editor aplica automaticamente: padrão de
-        logging (PDCL), formatação de markdown, estrutura de componentes — tudo já
-        configurado. Há também <b>workflows pré-prontos</b> em
-        <code> .windsurf/workflows/</code> (ex.: <code>/pdcl</code>) que automatizam
-        tarefas comuns. O agente <b>Cascade</b> entende a metodologia <b>PDCL</b>
-        (Plan, Do, Check, Loop) adotada aqui e orienta naturalmente novas
-        implementações dentro desse fluxo.
-      </p>
-      <p>
-        Se preferir VS Code, Cursor ou outro editor, tudo funciona — apenas observe
-        manualmente as regras descritas em <code>.windsurf/rules/</code>.
-      </p>
+      <h5>{t('about.windsurf.heading')}</h5>
+      <p>{t('about.windsurf.p1')}</p>
+      <p>{t('about.windsurf.p2')}</p>
 
-      <h5>⚙️ Hook <code>pre-commit</code> — documentação padronizada automaticamente</h5>
-      <p>
-        Há um <b>script automático</b> em{' '}
-        <code>scripts/markdown_history_manager.py</code>, ativado por{' '}
-        <code>.git/hooks/pre-commit</code>. A cada commit que envolva arquivos{' '}
-        <code>.md</code>, ele detecta autor e data, e adiciona uma entrada no{' '}
-        <i>Histórico de Alterações</i> seguindo o padrão definido em{' '}
-        <code>.windsurf/rules/documentacao.md</code>.
-      </p>
-      <pre className="pr-codeblock">{`# garantir execução
-chmod +x .git/hooks/pre-commit
+      <h5>{t('about.hook.heading')}</h5>
+      <p>{t('about.hook.body')}</p>
+      <pre className="pr-codeblock">{`chmod +x .git/hooks/pre-commit
 
-git commit -m "docs: ajusta seção X"
-# 🚀 Iniciando atualização de histórico de arquivos markdown...
-# ✅ Histórico atualizado: README.md`}</pre>
-      <p>
-        Use sempre — é o que mantém a documentação rastreável e padronizada.
-      </p>
+git commit -m "docs: ajusta seção X"`}</pre>
+      <p>{t('about.hook.useAlways')}</p>
 
-      <h4>Repositório</h4>
+      <h4>{t('about.section.repository')}</h4>
       <p>
         <a href="https://github.com/carlosdelfino/fisica-dos-semicondutores"
            target="_blank" rel="noopener noreferrer">
@@ -265,6 +221,7 @@ git commit -m "docs: ajusta seção X"
 }
 
 function BibliografiaTab() {
+  const { t } = useTranslation();
   const destaques = BIBLIOGRAFIA.filter((b) => b.destaque);
   const demais    = BIBLIOGRAFIA.filter((b) => !b.destaque);
 
@@ -281,28 +238,25 @@ function BibliografiaTab() {
       </div>
       <a href={b.amazon} target="_blank" rel="noopener noreferrer"
          className="biblio-amazon-btn"
-         title="Comprar/buscar na Amazon">
-        🛒 Amazon
+         title={t('about.biblio.amazonTitle')}>
+        {t('about.biblio.amazonBtn')}
       </a>
     </li>
   );
 
   return (
     <div className="sobre-content">
-      <h4>Bibliografia recomendada</h4>
+      <h4>{t('about.biblio.heading')}</h4>
       <p style={{ color: '#94a3b8', fontSize: 13 }}>
-        Lista organizada com {BIBLIOGRAFIA.length} títulos. Os dois primeiros são as
-        referências principais usadas na construção deste sistema; os demais
-        complementam a teoria de bandas, dispositivos e física do estado sólido.
-        Cada item tem link para a Amazon (busca ou produto direto).
+        {t('about.biblio.intro', { count: BIBLIOGRAFIA.length })}
       </p>
 
-      <h5 className="biblio-section-title">📌 Referências principais do projeto</h5>
+      <h5 className="biblio-section-title">{t('about.biblio.mainRefs')}</h5>
       <ol className="biblio-list">
         {destaques.map((b, i) => renderItem(b, i))}
       </ol>
 
-      <h5 className="biblio-section-title">📚 Bibliografia complementar</h5>
+      <h5 className="biblio-section-title">{t('about.biblio.supplementary')}</h5>
       <ol className="biblio-list" start={destaques.length + 1}>
         {demais.map((b, i) => renderItem(b, i))}
       </ol>
@@ -310,11 +264,7 @@ function BibliografiaTab() {
       <div style={{ background: 'rgba(2,6,23,0.6)', padding: 12, borderRadius: 8,
                     marginTop: 14, fontSize: 12, color: '#94a3b8' }}>
         <p style={{ margin: 0 }}>
-          <b>Nota:</b> alguns links direcionam para uma página de produto específica
-          quando disponível na Amazon Brasil; outros levam à busca pelo título/autor,
-          retornando a edição mais próxima disponível. Edições antigas podem estar
-          esgotadas — busque também sebos virtuais, bibliotecas universitárias e
-          plataformas como Z-Library, IEEE Xplore e Google Books.
+          <b>{t('about.biblio.note')}</b> {t('about.biblio.noteBody')}
         </p>
       </div>
     </div>
@@ -322,20 +272,21 @@ function BibliografiaTab() {
 }
 
 export default function Sobre() {
+  const { t } = useTranslation();
   const [sub, setSub] = useState('autor');
 
   return (
     <div className="diagram-card">
-      <h3>👤 Sobre</h3>
+      <h3>{t('about.title')}</h3>
 
       <nav className="sub-tabs">
         <button className={`sub-tab ${sub === 'autor' ? 'active' : ''}`}
                 onClick={() => setSub('autor')}>
-          👤 Autor
+          {t('about.tabs.author')}
         </button>
         <button className={`sub-tab ${sub === 'bibliografia' ? 'active' : ''}`}
                 onClick={() => setSub('bibliografia')}>
-          📚 Bibliografia
+          {t('about.tabs.bibliography')}
         </button>
       </nav>
 

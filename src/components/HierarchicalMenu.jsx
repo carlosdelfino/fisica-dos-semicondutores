@@ -1,64 +1,35 @@
 import { useState } from 'react';
+import { useTranslation } from '../contexts/LanguageContext.jsx';
 
 const MENU_STRUCTURE = [
   {
-    category: '📚 Aprendizado',
-    items: [
-      { id: 'objectives', label: '🎯 Roteiro de Estudo' },
-      { id: 'conceptsQ',  label: '📖 Conceitos das Questões' },
-      { id: 'questions',  label: '❓ Questões' },
-      { id: 'glossary',   label: '📚 Glossário' },
-    ]
+    key: 'learning',
+    items: ['objectives', 'conceptsQ', 'questions', 'glossary']
   },
   {
-    category: '🔬 Fundamentos',
-    items: [
-      { id: 'overview',   label: 'Visão Geral' },
-      { id: 'lattice',    label: 'Rede Cristalina' },
-      { id: 'crystal-structures', label: '💎 Estruturas Cristalinas' },
-      { id: 'atomband',   label: 'Átomos → Bandas' },
-      { id: 'allowed',    label: 'Bandas Permitidas/Proibidas' },
-      { id: 'kp',         label: 'Kronig-Penney' },
-      { id: 'mis',        label: 'Metal × Isolante × Semicondutor' },
-    ]
+    key: 'fundamentals',
+    items: ['overview', 'lattice', 'crystal-structures', 'atomband', 'allowed', 'kp', 'mis']
   },
   {
-    category: '⚛️ Estrutura de Bandas',
-    items: [
-      { id: 'kspace',     label: 'Espaço-k (Si × GaAs)' },
-      { id: 'effmass',    label: 'Massa Efetiva' },
-      { id: 'particles',  label: 'Elétron × Lacuna' },
-    ]
+    key: 'bandStructure',
+    items: ['kspace', 'effmass', 'particles']
   },
   {
-    category: '📊 Estatística Quântica',
-    items: [
-      { id: 'fermi',      label: 'Fermi-Dirac & MB' },
-      { id: 'dos',        label: 'Densidade de Estados' },
-      { id: 'arrhenius',  label: 'n(T) Arrhenius' },
-    ]
+    key: 'quantumStatistics',
+    items: ['fermi', 'dos', 'arrhenius']
   },
   {
-    category: '⚡ Dispositivos',
-    items: [
-      { id: 'junction',   label: '⚡ Junção PN' },
-      { id: 'transistorTech', label: '🔬 Tecnologias de Transistores' },
-      { id: 'fetTypes', label: '🧪 Tipos de Transistores FET' },
-      { id: 'czochralski', label: '🔬 Métodos de Crescimento' },
-      { id: 'perovskites', label: '☀️ Perovskites 2D' },
-    ]
+    key: 'devices',
+    items: ['junction', 'transistorTech', 'fetTypes', 'czochralski', 'perovskites']
   },
   {
-    category: '📐 Referência',
-    items: [
-      { id: 'formulas',   label: '📐 Fórmulas & Símbolos' },
-      { id: 'periodic',   label: '⚛️ Tabela Periódica' },
-      { id: 'about',      label: '👤 Sobre' },
-    ]
+    key: 'reference',
+    items: ['formulas', 'periodic', 'about']
   },
 ];
 
 export default function HierarchicalMenu({ activeTab, onTabChange }) {
+  const { t } = useTranslation();
   const [expandedCategories, setExpandedCategories] = useState(
     MENU_STRUCTURE.map(() => true)
   );
@@ -71,40 +42,38 @@ export default function HierarchicalMenu({ activeTab, onTabChange }) {
     });
   };
 
-  const findCategoryForTab = (tabId) => {
+  const findCategoryKeyForTab = (tabId) => {
     for (const cat of MENU_STRUCTURE) {
-      if (cat.items.some(item => item.id === tabId)) {
-        return cat.category;
-      }
+      if (cat.items.includes(tabId)) return cat.key;
     }
     return null;
   };
 
-  const activeCategory = findCategoryForTab(activeTab);
+  const activeCategoryKey = findCategoryKeyForTab(activeTab);
 
   return (
     <nav className="hierarchical-menu">
       {MENU_STRUCTURE.map((category, catIndex) => (
-        <div key={category.category} className="menu-category">
+        <div key={category.key} className="menu-category">
           <button
-            className={`category-header ${activeCategory === category.category ? 'active' : ''}`}
+            className={`category-header ${activeCategoryKey === category.key ? 'active' : ''}`}
             onClick={() => toggleCategory(catIndex)}
           >
             <span className="category-toggle">
               {expandedCategories[catIndex] ? '▼' : '▶'}
             </span>
-            <span className="category-name">{category.category}</span>
+            <span className="category-name">{t(`menu.categories.${category.key}`)}</span>
           </button>
-          
+
           {expandedCategories[catIndex] && (
             <div className="category-items">
-              {category.items.map((item) => (
+              {category.items.map((itemId) => (
                 <button
-                  key={item.id}
-                  className={`menu-item ${activeTab === item.id ? 'active' : ''}`}
-                  onClick={() => onTabChange(item.id)}
+                  key={itemId}
+                  className={`menu-item ${activeTab === itemId ? 'active' : ''}`}
+                  onClick={() => onTabChange(itemId)}
                 >
-                  {item.label}
+                  {t(`menu.items.${itemId}`)}
                 </button>
               ))}
             </div>

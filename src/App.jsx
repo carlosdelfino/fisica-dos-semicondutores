@@ -1,5 +1,8 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
+import { LanguageProvider, useTranslation } from './contexts/LanguageContext.jsx';
+import LanguageSelector from './components/LanguageSelector.jsx';
+import './styles/LanguageSelector.css';
 import BandDiagram from './components/BandDiagram.jsx';
 import Lattice from './components/Lattice.jsx';
 import FermiDiracPlot from './components/FermiDiracPlot.jsx';
@@ -34,6 +37,7 @@ import { MATERIALS, bandgap } from './physics/materials.js';
 function AppContent() {
   const navigate = useNavigate();
   const location = useLocation();
+  const { t } = useTranslation();
   const [material, setMaterial] = useState('Si');
   const [type, setType] = useState('intrinsic');
   const [T, setT] = useState(300);
@@ -41,8 +45,8 @@ function AppContent() {
   const [NA, setNA] = useState(1e16);
   const [EFOverride, setEFOverride] = useState({ enabled: false, value: 0 });
 
-  // Extrai o tab atual da URL hash
-  const tab = location.hash.slice(1) || 'overview';
+  // Extrai o tab atual da URL (pathname), consistente com handleTabChange -> navigate(`/${newTab}`)
+  const tab = location.pathname.replace(/^\/+/, '') || 'overview';
 
   // dopagem efetiva conforme tipo escolhido
   const effND = type === 'n' ? ND : 0;
@@ -76,11 +80,14 @@ function AppContent() {
   return (
     <div className="app">
       <header className="topbar">
+        <div className="language-selector-container">
+          <LanguageSelector />
+        </div>
         <div className="brand">
           <span className="logo">⚛︎</span>
           <div>
-            <h1>Aprendendo a Física dos Semicondutores</h1>
-            <p>Simulador Educacional - Disseminando a Ciência e a Física Avançada</p>
+            <h1>{t('header.title')}</h1>
+            <p>{t('header.subtitle')}</p>
             <div className="visitor-counter">
               <img 
                 src="https://visitor-badge.laobi.icu/badge?page_id=carlosdelfino.fisica-dos-semicondutores.site" 
@@ -164,18 +171,15 @@ function AppContent() {
       </main>
 
       <footer className="footer">
+        <p>{t('footer.model')}</p>
         <p>
-          Modelo físico: aproximação parabólica de bandas, ionização completa de dopantes acima da temperatura
-          de freeze-out, semicondutor não-degenerado. Fórmula de Varshni para Eg(T). Constantes em SI.
-        </p>
-        <p>
-          <b>Projeto sem fins lucrativos</b> · Parte da{' '}
+          <b>{t('footer.nonprofit')}</b> · {t('footer.partOf')}{' '}
           <a href="https://basicaodaeletronica.com.br" target="_blank" rel="noopener noreferrer">
-            rede de sites do Basicão da Eletrônica
+            {t('footer.network')}
           </a>
         </p>
         <p className="copy">
-          © {new Date().getFullYear()} · Educacional CC BY-SA 4.0 · React + SVG + KaTeX
+          © {new Date().getFullYear()} · {t('footer.copyright')}
         </p>
       </footer>
     </div>
@@ -183,5 +187,9 @@ function AppContent() {
 }
 
 export default function App() {
-  return <AppContent />;
+  return (
+    <LanguageProvider>
+      <AppContent />
+    </LanguageProvider>
+  );
 }

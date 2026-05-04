@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import Controls from './Controls.jsx';
 import CarrierPanel from './CarrierPanel.jsx';
+import { useTranslation } from '../contexts/LanguageContext.jsx';
 
 export default function ControlPanel({ controlsProps, carrierState }) {
+  const { t } = useTranslation();
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
@@ -12,7 +14,7 @@ export default function ControlPanel({ controlsProps, carrierState }) {
         onClick={() => setIsExpanded(!isExpanded)}
       >
         <span className="panel-title-toggle">{isExpanded ? '▼' : '▶'}</span>
-        <span className="panel-title">⚙️ Parâmetros do Sistema</span>
+        <span className="panel-title">{t('controlPanel.title')}</span>
       </button>
       
       {isExpanded && (

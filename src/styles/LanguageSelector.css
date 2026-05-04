@@ -1,0 +1,203 @@
+.language-selector {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.language-flags {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.language-flag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.5rem;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 50px;
+  position: relative;
+}
+
+.language-flag:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.language-flag.active {
+  background: rgba(59, 130, 246, 0.3);
+  border-color: #3b82f6;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+}
+
+.language-flag.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  background: #3b82f6;
+  border-radius: 50%;
+}
+
+.flag-emoji {
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.language-code {
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.language-flag.active .language-code {
+  color: #3b82f6;
+  font-weight: 700;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .language-selector {
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .language-flags {
+    gap: 0.25rem;
+  }
+  
+  .language-flag {
+    padding: 0.2rem 0.3rem;
+    min-width: 40px;
+  }
+  
+  .flag-emoji {
+    font-size: 1.2rem;
+  }
+  
+  .language-code {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .language-flag {
+    flex-direction: row;
+    gap: 0.25rem;
+    min-width: auto;
+    padding: 0.25rem 0.4rem;
+  }
+  
+  .flag-emoji {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  
+  .language-code {
+    font-size: 0.45rem;
+  }
+}
+
+/* Tema escuro */
+@media (prefers-color-scheme: dark) {
+  .language-selector {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  .language-flag {
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
+  .language-flag:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* Animações */
+@keyframes flagPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.language-flag.active {
+  animation: flagPulse 2s ease-in-out infinite;
+}
+
+/* Foco para acessibilidade */
+.language-flag:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.language-flag:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Suporte RTL (árabe) - mantém a barra de idiomas em LTR para leitura das bandeiras */
+html[dir="rtl"] .language-flags {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .app {
+  grid-template-columns: 1fr 320px;
+  grid-template-areas:
+    "topbar topbar"
+    "content sidebar"
+    "footer footer";
+}
+
+html[dir="rtl"] .radio-row {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .hierarchical-menu .category-toggle {
+  transform: scaleX(-1);
+}
+
+/* Em RTL: tarja de idiomas à ESQUERDA, tarja do GitHub fica à DIREITA (fixa).
+   Título (brand) ocupa o centro/direita com padding suficiente para não sobrepor. */
+html[dir="rtl"] .language-selector-container {
+  left: 20px;
+  right: auto;
+}
+
+html[dir="rtl"] .topbar {
+  /* Espaço para a tarja de idiomas (~300px) à esquerda; título fica alinhado à direita,
+     com espaço para a tarja do GitHub (~120px) no canto superior direito. */
+  padding-left: 320px;
+  padding-right: 140px;
+  align-items: flex-end;
+}
+
+html[dir="rtl"] .brand {
+  flex-direction: row-reverse;
+  text-align: right;
+  justify-content: flex-end;
+  align-self: flex-end;
+  width: 100%;
+}

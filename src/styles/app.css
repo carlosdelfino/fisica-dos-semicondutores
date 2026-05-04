@@ -49,6 +49,13 @@ html, body, #root {
   position: relative;
 }
 
+.language-selector-container {
+  position: absolute;
+  top: 10px;
+  right: 120px;
+  z-index: 10;
+}
+
 .brand {
   display: flex;
   align-items: center;
