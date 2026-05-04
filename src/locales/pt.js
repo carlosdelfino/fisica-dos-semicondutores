@@ -1,4 +1,7 @@
+import fetTypes from './fetTypes/pt.js';
+
 export default {
+  fetTypes,
   meta: {
     code: 'pt',
     name: 'Português',
