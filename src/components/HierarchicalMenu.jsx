@@ -24,7 +24,16 @@ const MENU_STRUCTURE = [
   },
   {
     key: 'reference',
-    items: ['formulas', 'periodic', 'about']
+    items: [
+      'formulas',
+      'periodic',
+      'about',
+      {
+        id: 'community',
+        href: 'https://github.com/carlosdelfino/fisica-dos-semicondutores/discussions',
+        external: true,
+      },
+    ]
   },
 ];
 
@@ -44,7 +53,8 @@ export default function HierarchicalMenu({ activeTab, onTabChange }) {
 
   const findCategoryKeyForTab = (tabId) => {
     for (const cat of MENU_STRUCTURE) {
-      if (cat.items.includes(tabId)) return cat.key;
+      const ids = cat.items.map((it) => (typeof it === 'string' ? it : it.id));
+      if (ids.includes(tabId)) return cat.key;
     }
     return null;
   };
@@ -67,15 +77,34 @@ export default function HierarchicalMenu({ activeTab, onTabChange }) {
 
           {expandedCategories[catIndex] && (
             <div className="category-items">
-              {category.items.map((itemId) => (
-                <button
-                  key={itemId}
-                  className={`menu-item ${activeTab === itemId ? 'active' : ''}`}
-                  onClick={() => onTabChange(itemId)}
-                >
-                  {t(`menu.items.${itemId}`)}
-                </button>
-              ))}
+              {category.items.map((item) => {
+                const isExternal = typeof item === 'object' && item.external;
+                const itemId = typeof item === 'string' ? item : item.id;
+                if (isExternal) {
+                  return (
+                    <a
+                      key={itemId}
+                      className="menu-item menu-item-external"
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title={t(`menu.items.${itemId}_title`)}
+                    >
+                      {t(`menu.items.${itemId}`)}
+                      <span className="external-icon" aria-hidden="true"> ↗</span>
+                    </a>
+                  );
+                }
+                return (
+                  <button
+                    key={itemId}
+                    className={`menu-item ${activeTab === itemId ? 'active' : ''}`}
+                    onClick={() => onTabChange(itemId)}
+                  >
+                    {t(`menu.items.${itemId}`)}
+                  </button>
+                );
+              })}
             </div>
           )}
         </div>

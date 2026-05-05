@@ -307,6 +307,16 @@ html, body, #root {
   font-weight: 600;
 }
 
+a.menu-item {
+  display: block;
+  text-decoration: none;
+}
+
+.menu-item-external .external-icon {
+  opacity: 0.6;
+  font-size: 11px;
+}
+
 .sidebar-tabs {
   display: flex;
   flex-direction: column;

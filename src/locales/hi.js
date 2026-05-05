@@ -57,7 +57,9 @@ export default {
       perovskites: '☀️ 2D पेरोवस्काइट',
       formulas: '📐 सूत्र और प्रतीक',
       periodic: '⚛️ आवर्त सारणी',
-      about: '👤 परिचय'
+      about: '👤 परिचय',
+      community: '💬 समुदाय',
+      community_title: 'GitHub चर्चा फ़ोरम — भाग लेने के लिए GitHub खाता आवश्यक है'
     }
   },
   controlPanel: {

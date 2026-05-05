@@ -57,7 +57,9 @@ export default {
       perovskites: '☀️ 二维钙钛矿',
       formulas: '📐 公式与符号',
       periodic: '⚛️ 元素周期表',
-      about: '👤 关于'
+      about: '👤 关于',
+      community: '💬 社区',
+      community_title: 'GitHub 讨论论坛 — 需要 GitHub 账号才能参与'
     }
   },
   controlPanel: {

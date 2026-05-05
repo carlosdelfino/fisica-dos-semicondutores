@@ -57,7 +57,9 @@ export default {
       perovskites: '☀️ بيروفسكيت ثنائي الأبعاد',
       formulas: '📐 الصيغ والرموز',
       periodic: '⚛️ الجدول الدوري',
-      about: '👤 حول'
+      about: '👤 حول',
+      community: '💬 المجتمع',
+      community_title: 'منتدى المناقشات على GitHub — يتطلب حساب GitHub للمشاركة'
     }
   },
   controlPanel: {

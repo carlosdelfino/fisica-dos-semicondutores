@@ -57,7 +57,9 @@ export default {
       perovskites: '☀️ 2D Perovskites',
       formulas: '📐 Formulas & Symbols',
       periodic: '⚛️ Periodic Table',
-      about: '👤 About'
+      about: '👤 About',
+      community: '💬 Community',
+      community_title: 'GitHub Discussions forum — GitHub account required to participate'
     }
   },
   controlPanel: {
