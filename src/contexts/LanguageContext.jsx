@@ -8,6 +8,31 @@ import zh from '../locales/zh.js';
 const translations = { pt, en, ar, hi, zh };
 const DEFAULT_LANGUAGE = 'pt';
 
+// Lê o idioma da query string (?lang=xx) se presente
+function getLanguageFromURL() {
+  if (typeof window === 'undefined') return null;
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const lang = params.get('lang');
+    if (lang && translations[lang]) return lang;
+  } catch (e) { /* noop */ }
+  return null;
+}
+
+// Atualiza a query string ?lang=xx sem recarregar a página, preservando hash
+function updateURLLanguage(lang) {
+  if (typeof window === 'undefined') return;
+  try {
+    const url = new URL(window.location.href);
+    if (lang === DEFAULT_LANGUAGE) {
+      url.searchParams.delete('lang');
+    } else {
+      url.searchParams.set('lang', lang);
+    }
+    window.history.replaceState({}, '', url.toString());
+  } catch (e) { /* noop */ }
+}
+
 const LanguageContext = createContext(null);
 
 export function useTranslation() {
@@ -40,6 +65,9 @@ function interpolate(template, vars) {
 
 export function LanguageProvider({ children }) {
   const [language, setLanguage] = useState(() => {
+    // Prioridade: 1) query string (?lang=xx), 2) localStorage, 3) navegador
+    const fromURL = getLanguageFromURL();
+    if (fromURL) return fromURL;
     try {
       const saved = localStorage.getItem('language');
       if (saved && translations[saved]) return saved;
@@ -55,6 +83,19 @@ export function LanguageProvider({ children }) {
     // Atualiza atributos do documento para suporte a RTL e idioma
     document.documentElement.lang = meta.code;
     document.documentElement.dir = meta.dir || 'ltr';
+    // Sincroniza a URL para que buscadores e usuários possam compartilhar o idioma
+    updateURLLanguage(language);
+  }, [language]);
+
+  // Reage a mudanças de query string via navegação (botão voltar/avançar)
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const handler = () => {
+      const fromURL = getLanguageFromURL();
+      if (fromURL && fromURL !== language) setLanguage(fromURL);
+    };
+    window.addEventListener('popstate', handler);
+    return () => window.removeEventListener('popstate', handler);
   }, [language]);
 
   const t = useMemo(() => {

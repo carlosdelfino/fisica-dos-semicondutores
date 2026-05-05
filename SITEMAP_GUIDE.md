@@ -151,6 +151,33 @@ npm run preview
 - **weekly**: Home e páginas principais
 - **monthly**: Painéis educacionais (conteúdo estável)
 
+## Internacionalização (hreflang)
+
+O sitemap inclui automaticamente **todas as URLs traduzidas** de cada rota, seguindo o padrão Google/Sitemaps (`xhtml:link rel="alternate" hreflang="..."`).
+
+### Como o idioma é representado na URL
+
+- Idioma padrão (PT): URL canônica, sem parâmetro. Ex.: `https://semicondutores.tec.br/#overview`
+- Demais idiomas: query string `?lang=xx` adicionada **antes do hash**. Ex.: `https://semicondutores.tec.br/?lang=en#overview`
+- O `LanguageContext` lê `?lang=` na primeira carga (prioridade sobre `localStorage`) e sincroniza a URL ao trocar o idioma via `history.replaceState`, mantendo o hash ativo e preservando o botão Voltar/Avançar.
+
+### Como adicionar um novo idioma ao sitemap
+
+1. Crie a tradução em `src/locales/<code>.js` e importe em `src/contexts/LanguageContext.jsx`.
+2. Acrescente uma entrada em `LANGUAGES` dentro de `routes.config.js`:
+
+```javascript
+{ code: 'es', hreflang: 'es' }
+```
+
+3. Rode `npm run build`. Todas as rotas passam a ter também a variante nesse idioma, cruzadas por `xhtml:link`.
+
+Cada `<url>` do sitemap expõe:
+
+- um `<loc>` para a variante daquele idioma;
+- um `<xhtml:link>` por idioma disponível;
+- um `<xhtml:link hreflang="x-default">` apontando para a URL canônica (PT).
+
 ## SEO e Sistemas de Busca
 
 Para melhorar a indexação:
@@ -223,9 +250,10 @@ lastmod: '2026-04-30T12:00:00.000Z'
 **Data de Criação:** 2026-04-30
 **Autor:** Carlos Delfino
 **Versão:** 1.0
-**Última Atualização:** 2026-04-30
+**Última Atualização:** 2026-05-04
 **Atualizado por:** Carlos Delfino
 **Histórico de Alterações:**
+- 2026-05-04 - Atualizado por Carlos Delfino - Traduzido o painel de tecnológia de Transistores....
 - 2026-04-30 - Atualizado por Carlos Delfino - Ajustes nas imagens para redes sociais....
 - 2026-04-30 - Atualizado por Carlos Delfino - Adcionado um painel que demonstra as dimenções de ...
 - 2026-04-30 - Criado por Carlos Delfino - Versão 1.0 - Implementação inicial do sistema de sitemap autoatualizável

@@ -10,6 +10,25 @@
 
 const SITE_URL = 'https://semicondutores.tec.br';
 
+/**
+ * Idiomas suportados pelo site.
+ * - `code`: código usado internamente e na query string (?lang=xx)
+ * - `hreflang`: valor para o atributo `hreflang` do sitemap/links alternativos
+ * - `default`: marca o idioma padrão (também é referenciado como `x-default`)
+ *
+ * Ao adicionar um novo idioma:
+ * 1. Crie o arquivo de tradução em `src/locales/<code>.js`
+ * 2. Importe-o em `src/contexts/LanguageContext.jsx`
+ * 3. Adicione a entrada aqui para que apareça no sitemap
+ */
+const LANGUAGES = [
+  { code: 'pt', hreflang: 'pt-BR', default: true },
+  { code: 'en', hreflang: 'en' },
+  { code: 'ar', hreflang: 'ar' },
+  { code: 'hi', hreflang: 'hi' },
+  { code: 'zh', hreflang: 'zh' },
+];
+
 const routes = [
   {
     path: '/',
@@ -145,4 +164,4 @@ const routes = [
   },
 ];
 
-export { routes, SITE_URL };
+export { routes, SITE_URL, LANGUAGES };
