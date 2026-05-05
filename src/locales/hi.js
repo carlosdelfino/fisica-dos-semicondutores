@@ -58,8 +58,8 @@ export default {
       formulas: '📐 सूत्र और प्रतीक',
       periodic: '⚛️ आवर्त सारणी',
       about: '👤 परिचय',
-      community: '💬 समुदाय',
-      community_title: 'GitHub चर्चा फ़ोरम — भाग लेने के लिए GitHub खाता आवश्यक है'
+      community: '🤝 GitHub पर योगदान दें',
+      community_title: 'GitHub चर्चा फ़ोरम में शामिल हों — योगदान देने के लिए GitHub खाता आवश्यक है'
     }
   },
   controlPanel: {

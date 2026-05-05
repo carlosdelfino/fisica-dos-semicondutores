@@ -58,8 +58,8 @@ export default {
       formulas: '📐 Formulas & Symbols',
       periodic: '⚛️ Periodic Table',
       about: '👤 About',
-      community: '💬 Community',
-      community_title: 'GitHub Discussions forum — GitHub account required to participate'
+      community: '🤝 Collaborate on GitHub',
+      community_title: 'Join the GitHub Discussions forum — a GitHub account is required to collaborate'
     }
   },
   controlPanel: {

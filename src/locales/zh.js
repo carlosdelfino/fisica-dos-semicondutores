@@ -58,8 +58,8 @@ export default {
       formulas: '📐 公式与符号',
       periodic: '⚛️ 元素周期表',
       about: '👤 关于',
-      community: '💬 社区',
-      community_title: 'GitHub 讨论论坛 — 需要 GitHub 账号才能参与'
+      community: '🤝 在 GitHub 上协作',
+      community_title: '加入 GitHub 讨论论坛 — 需要 GitHub 账号才能参与协作'
     }
   },
   controlPanel: {

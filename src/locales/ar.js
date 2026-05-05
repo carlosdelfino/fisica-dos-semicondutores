@@ -58,8 +58,8 @@ export default {
       formulas: '📐 الصيغ والرموز',
       periodic: '⚛️ الجدول الدوري',
       about: '👤 حول',
-      community: '💬 المجتمع',
-      community_title: 'منتدى المناقشات على GitHub — يتطلب حساب GitHub للمشاركة'
+      community: '🤝 ساهم على GitHub',
+      community_title: 'انضم إلى منتدى المناقشات على GitHub — يتطلب حساب GitHub للمساهمة'
     }
   },
   controlPanel: {
