@@ -1,0 +1,241 @@
+{
+  "chapter": "3.2 Electrical Conduction in Solids",
+  "section": "Not specified",
+  "questions": [],
+  "answers": [],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "J = -e \\sum v_i",
+      "genericFormula": "J = -e \\sum v_i",
+      "description": "Esta fórmula representa a densidade de corrente elétrica em um material semicondutor, onde a corrente é gerada pelo movimento de portadores de carga, que podem ser elétrons ou lacunas. A densidade de corrente é uma medida de quão rápida e em que quantidade a carga elétrica está se movendo através de uma área específica.",
+      "concepts": [
+        "Densidade de corrente elétrica",
+        "Movimento de portadores de carga",
+        "Elétrons e lacunas em semicondutores",
+        "Soma de velocidades dos portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "J",
+          "description": "Representa a densidade de corrente elétrica, que é a quantidade de carga que passa por uma unidade de área em um determinado tempo."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a carga elétrica de um único elétron, uma constante fundamental na física."
+        },
+        {
+          "symbol": "v_i",
+          "description": "Representa a velocidade de cada portador de carga, onde 'i' indica que pode haver múltiplos portadores contribuindo para a corrente."
+        }
+      ]
+    },
+    {
+      "originalFormula": "F_{total} = F_{ext} + F_{int} = ma",
+      "genericFormula": "F_{total} = F_{ext} + F_{int} = ma",
+      "description": "Esta fórmula representa a relação entre a força total atuando em um objeto, a força externa aplicada, a força interna e a massa do objeto multiplicada pela sua aceleração. Ela é fundamental na segunda lei de Newton, que descreve como as forças influenciam o movimento dos corpos.",
+      "concepts": [
+        "Força total",
+        "Força externa",
+        "Força interna",
+        "Massa",
+        "Aceleração",
+        "Segunda lei de Newton"
+      ],
+      "symbols": [
+        {
+          "symbol": "F_{total}",
+          "description": "Representa a força total que atua sobre um objeto, resultante da soma de todas as forças que agem sobre ele."
+        },
+        {
+          "symbol": "F_{ext}",
+          "description": "Representa a força externa que é aplicada a um objeto, como empurrões ou puxões de fora."
+        },
+        {
+          "symbol": "F_{int}",
+          "description": "Representa a força interna que atua dentro do sistema do objeto, como as forças entre as partículas que compõem o objeto."
+        },
+        {
+          "symbol": "m",
+          "description": "Representa a massa do objeto, que é uma medida da quantidade de matéria que ele contém."
+        },
+        {
+          "symbol": "a",
+          "description": "Representa a aceleração do objeto, que é a taxa de variação da velocidade do objeto em relação ao tempo."
+        }
+      ]
+    },
+    {
+      "originalFormula": "F_{ext} = m^{*}a",
+      "genericFormula": "F_{ext} = m^{*}a",
+      "description": "Esta fórmula representa a relação entre a força externa aplicada a um objeto, sua massa efetiva e a aceleração que o objeto experimenta como resultado dessa força. É uma aplicação da segunda lei de Newton, que nos diz que a força resultante sobre um corpo é igual ao produto da massa do corpo e sua aceleração.",
+      "concepts": [
+        "Força",
+        "Massa",
+        "Aceleração",
+        "Segunda Lei de Newton"
+      ],
+      "symbols": [
+        {
+          "symbol": "F_{ext}",
+          "description": "Representa a força externa aplicada a um objeto. É a força que atua sobre o corpo a partir de uma fonte externa."
+        },
+        {
+          "symbol": "m^{*}",
+          "description": "Representa a massa efetiva do objeto. Esta é a massa que considera os efeitos de forças externas e outras interações que podem alterar a resposta do objeto à força aplicada."
+        },
+        {
+          "symbol": "a",
+          "description": "Representa a aceleração do objeto. É a taxa de variação da velocidade do objeto em relação ao tempo, indicando como a velocidade do objeto muda quando uma força é aplicada."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E_g = 3.5 \\text{ to } 6.0 \\text{ eV}",
+      "genericFormula": "E_g",
+      "description": "Esta fórmula representa a energia de bandgap de um material semicondutor, que é a energia necessária para mover um elétron da banda de valência para a banda de condução, permitindo que o material conduza eletricidade.",
+      "concepts": [
+        "Energia de bandgap",
+        "Banda de valência",
+        "Banda de condução",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_g",
+          "description": "Representa a energia de bandgap, que é a diferença de energia entre a banda de valência e a banda de condução em um material semicondutor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E_g \\approx 1 \\text{ eV}",
+      "genericFormula": "E_g \\approx x \\text{ eV}",
+      "description": "Esta fórmula representa a energia de bandgap de um semicondutor, que é a quantidade de energia necessária para mover um elétron da banda de valência para a banda de condução. O valor aproximado de 1 eV indica que é um semicondutor típico, como o silício, que possui uma energia de bandgap em torno desse valor.",
+      "concepts": [
+        "Energia de bandgap",
+        "Semicondutores",
+        "Transição eletrônica",
+        "Banda de valência",
+        "Banda de condução"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_g",
+          "description": "Representa a energia de bandgap, que é a diferença de energia entre a banda de valência e a banda de condução em um material semicondutor."
+        },
+        {
+          "symbol": "eV",
+          "description": "Representa o elétron-volt, que é uma unidade de medida de energia utilizada frequentemente em física de semicondutores, equivalente à energia adquirida por um elétron ao ser acelerado por uma diferença de potencial de um volt."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106
+  ],
+  "lastUpdated": "2026-05-08T20:19:20.954Z"
+}

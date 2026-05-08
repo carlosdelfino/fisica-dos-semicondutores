@@ -16,7 +16,7 @@ const MENU_STRUCTURE = [
   },
   {
     key: 'quantumStatistics',
-    items: ['fermi', 'dos', 'arrhenius']
+    items: ['fermi', 'dos', 'arrhenius', 'fermi-edu', 'dos-edu']
   },
   {
     key: 'devices',

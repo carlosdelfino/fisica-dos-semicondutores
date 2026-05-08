@@ -1,0 +1,479 @@
+{
+  "chapter": "2.3 Applications of Schrödinger's Wave Equation",
+  "section": "Example 2.3",
+  "questions": [
+    {
+      "number": "Ex 2.3 (a)",
+      "text": "Determine the first three allowed energy levels (in eV) for an electron.",
+      "formulas": []
+    },
+    {
+      "number": "Ex 2.3 (b)",
+      "text": "Repeat part (a) for a proton.",
+      "formulas": []
+    },
+    {
+      "number": "Ex 2.4",
+      "text": "The probability of finding a particle at a distance d in region II compared with that at x = 0 is given by exp(-2kd). Consider an electron traveling in region I at a velocity of 10^{6} m/s incident on a potential barrier whose height is three times the kinetic energy of the electron. Find the probability of finding the electron at a distance d compared with x = 0 where d is (a) 10 Å and (b) 100 Å into the potential barrier.",
+      "formulas": [
+        {
+          "originalFormula": "k_d = \\sqrt{ \\frac{2m(V_0 - E)}{\\hbar^2} }",
+          "genericFormula": "k_d = \\sqrt{ \\frac{2m(V_0 - E)}{\\hbar^2} }",
+          "description": "Esta fórmula representa a constante de onda em uma região de potencial onde a energia total de uma partícula é menor que a energia do potencial. Isso é comum em problemas de mecânica quântica, especialmente em situações de barreiras de potencial.",
+          "concepts": [
+            "Mecânica quântica",
+            "Potencial quântico",
+            "Energia de partículas",
+            "Constante de onda"
+          ],
+          "symbols": [
+            {
+              "symbol": "k_d",
+              "description": "Representa a constante de onda na região onde a partícula está em uma barreira de potencial."
+            },
+            {
+              "symbol": "m",
+              "description": "Representa a massa da partícula que está sendo analisada."
+            },
+            {
+              "symbol": "V_0",
+              "description": "Representa a altura do potencial, ou seja, o valor do potencial na barreira."
+            },
+            {
+              "symbol": "E",
+              "description": "Representa a energia total da partícula, que é menor que a energia do potencial na barreira."
+            },
+            {
+              "symbol": "\\hbar",
+              "description": "Representa a constante reduzida de Planck, que é uma constante fundamental na mecânica quântica."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "Objective",
+      "text": "Calculate the probability of an electron tunneling through a potential barrier.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "Ex 2.3 (a)",
+      "text": "E_1 = 1.51 eV, E_2 = 6.04 eV, E_3 = 13.59 eV",
+      "formulas": [
+        {
+          "originalFormula": "E_n = \\frac{\\hbar^2 \\pi^2 n^2}{2 m a^2}",
+          "genericFormula": "E_n = \\frac{\\hbar^2 \\pi^2 n^2}{2 m a^2}",
+          "description": "Esta fórmula representa a energia quantizada de uma partícula em uma caixa unidimensional, onde a partícula está confinada em um espaço limitado. A energia é quantizada, ou seja, só pode assumir valores discretos, que dependem do número quântico n, da massa da partícula m, e das dimensões da caixa a.",
+          "concepts": [
+            "Energia quantizada",
+            "Partícula em uma caixa",
+            "Número quântico",
+            "Mecânica quântica"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_n",
+              "description": "Representa a energia da partícula para um determinado estado quântico n."
+            },
+            {
+              "symbol": "ℏ",
+              "description": "Representa a constante de Planck reduzida, que relaciona a energia de um fóton à sua frequência."
+            },
+            {
+              "symbol": "π",
+              "description": "Representa a constante matemática pi, que é a razão entre a circunferência de um círculo e seu diâmetro."
+            },
+            {
+              "symbol": "n",
+              "description": "Representa o número quântico, que é um número inteiro positivo que indica o estado da partícula na caixa."
+            },
+            {
+              "symbol": "m",
+              "description": "Representa a massa da partícula que está sendo considerada na caixa."
+            },
+            {
+              "symbol": "a",
+              "description": "Representa o comprimento da caixa unidimensional em que a partícula está confinada."
+            }
+          ]
+        },
+        {
+          "originalFormula": "E_n = \\frac{n^2 (2.41 \\times 10^{-19})}{1.6 \\times 10^{-19}} = n^2 (1.51) eV",
+          "genericFormula": "E_n = n^2 (k)",
+          "description": "Esta fórmula representa a energia de um nível quântico específico em um sistema de partículas, como elétrons em um átomo. A energia é proporcional ao quadrado do número quântico principal, que indica o nível de energia em que a partícula se encontra. Assim, conforme o número quântico aumenta, a energia também aumenta de forma quadrática.",
+          "concepts": [
+            "Níveis quânticos de energia",
+            "Número quântico principal",
+            "Energia em sistemas quânticos",
+            "Efeito da quantização da energia"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_n",
+              "description": "Representa a energia do nível quântico n."
+            },
+            {
+              "symbol": "n",
+              "description": "É o número quântico principal, que assume valores inteiros positivos e indica o nível de energia da partícula."
+            },
+            {
+              "symbol": "k",
+              "description": "É uma constante que representa a relação entre a energia e o número quântico, que foi derivada a partir de valores específicos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Objective",
+      "text": "Equation (2.63) is the tunneling probability. The factor k_{z} is k_{z} = \\sqrt{\\frac{2m(V_{0} - E)}{\\hbar^{2}}} = \\sqrt{\\frac{(29.11 \\times 10^{-31})(20) - 2)(1.6 \\times 10^{-19})}{(1.054 \\times 10^{-34})^{2}}}",
+      "formulas": [
+        {
+          "originalFormula": "k_{z} = \\sqrt{\\frac{2m(V_{0} - E)}{\\hbar^{2}}}",
+          "genericFormula": "k_{z} = \\sqrt{\\frac{2m(V_{0} - E)}{\\hbar^{2}}}",
+          "description": "Esta fórmula representa o número de onda na direção z para uma partícula em uma região de potencial, onde a energia da partícula é menor que a energia do potencial. O número de onda está relacionado ao comportamento da partícula em uma barreira de potencial.",
+          "concepts": [
+            "Número de onda",
+            "Potencial",
+            "Energia",
+            "Mecânica quântica"
+          ],
+          "symbols": [
+            {
+              "symbol": "k_{z}",
+              "description": "Representa o número de onda na direção z, que está relacionado à variação de fase da onda associada à partícula."
+            },
+            {
+              "symbol": "m",
+              "description": "Representa a massa da partícula que está sendo considerada na equação."
+            },
+            {
+              "symbol": "V_{0}",
+              "description": "Representa a altura do potencial, ou seja, o valor da energia potencial na barreira que a partícula está tentando atravessar."
+            },
+            {
+              "symbol": "E",
+              "description": "Representa a energia total da partícula, que é a soma da energia cinética e da energia potencial."
+            },
+            {
+              "symbol": "\\hbar",
+              "description": "Representa a constante de Planck reduzida, que é uma constante fundamental na mecânica quântica, relacionada à quantização da energia."
+            }
+          ]
+        },
+        {
+          "originalFormula": "k_{z} = 2.17 \\times 10^{6} \\, m^{-1}",
+          "genericFormula": "k_{z} = C \\, m^{-1}",
+          "description": "Esta fórmula representa a constante de onda na direção z, que é uma medida de quantas ondas cabem em uma unidade de comprimento ao longo dessa direção. Quanto maior o valor, mais ondas existem em um determinado espaço.",
+          "concepts": [
+            "Constante de onda",
+            "Direção de propagação",
+            "Física de ondas"
+          ],
+          "symbols": [
+            {
+              "symbol": "k_{z}",
+              "description": "Representa a constante de onda na direção z, que indica a quantidade de ciclos de onda por unidade de comprimento nessa direção."
+            },
+            {
+              "symbol": "C",
+              "description": "Um valor genérico que substitui o número específico na fórmula, representando a constante de onda em unidades de metros inversos."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "E_n = \\frac{\\hbar^2 \\pi^2 n^2}{2 m a^2}",
+      "genericFormula": "E_n = \\frac{\\hbar^2 \\pi^2 n^2}{2 m a^2}",
+      "description": "Esta fórmula representa a energia quantizada de uma partícula em uma caixa unidimensional, onde a partícula está confinada em um espaço limitado. A energia é discreta e depende de um número quântico, que é um inteiro positivo, além de outras constantes físicas.",
+      "concepts": [
+        "Energia quantizada",
+        "Partículas em potencial confinado",
+        "Número quântico",
+        "Princípio da incerteza de Heisenberg"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_n",
+          "description": "Representa a energia da partícula para um determinado estado quântico, identificado pelo número quântico n."
+        },
+        {
+          "symbol": "ℏ",
+          "description": "Representa a constante de Planck reduzida, que é uma constante fundamental na mecânica quântica, relacionada à quantização de energia."
+        },
+        {
+          "symbol": "π",
+          "description": "Representa o número pi, uma constante matemática que relaciona a circunferência de um círculo ao seu diâmetro."
+        },
+        {
+          "symbol": "n",
+          "description": "Representa o número quântico principal, que é um número inteiro positivo que indica o estado da partícula dentro da caixa."
+        },
+        {
+          "symbol": "m",
+          "description": "Representa a massa da partícula que está sendo considerada na fórmula."
+        },
+        {
+          "symbol": "a",
+          "description": "Representa o comprimento da caixa, ou seja, a distância que a partícula está confinada."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\frac{\\partial^2 \\psi(x)}{\\partial x^2} + \\frac{2m}{\\hbar^2}(E - V(x))\\psi(x) = 0",
+      "genericFormula": "\\frac{\\partial^2 \\psi(x)}{\\partial x^2} + \\frac{2m}{\\hbar^2}(E - V(x))\\psi(x) = 0",
+      "description": "Esta fórmula é a equação de Schrödinger independente do tempo, que descreve como a função de onda de uma partícula se comporta em um potencial. Ela é fundamental na mecânica quântica e permite entender a distribuição de probabilidade de encontrar uma partícula em uma determinada posição.",
+      "concepts": [
+        "Equação de Schrödinger",
+        "Função de onda",
+        "Potencial",
+        "Energia total",
+        "Mecânica quântica"
+      ],
+      "symbols": [
+        {
+          "symbol": "ψ(x)",
+          "description": "Representa a função de onda da partícula, que contém informações sobre a probabilidade de encontrar a partícula em uma posição específica."
+        },
+        {
+          "symbol": "x",
+          "description": "Representa a posição espacial onde a função de onda está sendo avaliada."
+        },
+        {
+          "symbol": "m",
+          "description": "Representa a massa da partícula que está sendo analisada na equação."
+        },
+        {
+          "symbol": "ℏ",
+          "description": "Representa a constante de Planck reduzida, que é uma constante fundamental na mecânica quântica, relacionada à quantização de energia."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa a energia total da partícula, que é uma quantidade conservada em sistemas isolados."
+        },
+        {
+          "symbol": "V(x)",
+          "description": "Representa a função potencial, que descreve como a energia potencial da partícula varia com a posição."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E = T = \\frac{1}{2} mv^{2} = 4.56 \\times 10^{-21} \\text{ J} = 2.85 \\times 10^{-20} \\text{ eV}",
+      "genericFormula": "E = T = \\frac{1}{2} mv^{2}",
+      "description": "Esta fórmula representa a energia cinética de um objeto em movimento. A energia cinética é a energia que um corpo possui devido ao seu movimento e depende da massa do corpo e da velocidade com que ele se move.",
+      "concepts": [
+        "Energia cinética",
+        "Massa",
+        "Velocidade",
+        "Conservação de energia"
+      ],
+      "symbols": [
+        {
+          "symbol": "E",
+          "description": "Representa a energia cinética do objeto, medida em joules ou elétron-volts."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a energia cinética, sendo uma notação alternativa para a mesma grandeza de energia."
+        },
+        {
+          "symbol": "m",
+          "description": "Representa a massa do objeto, que é uma medida da quantidade de matéria que ele contém."
+        },
+        {
+          "symbol": "v",
+          "description": "Representa a velocidade do objeto, que é a taxa de variação da posição do objeto em relação ao tempo."
+        }
+      ]
+    },
+    {
+      "originalFormula": "d = \\sqrt{ \\frac{\\hbar^{2}}{2mE} } = \\frac{1.054 \\times 10^{-34}}{\\sqrt{(29.11 \\times 10^{-31})(4.56 \\times 10^{-23})}} = 11.6 \\times 10^{-10} \\text{ m}",
+      "genericFormula": "d = \\sqrt{ \\frac{\\hbar^{2}}{2mE} }",
+      "description": "Esta fórmula calcula a distância característica, d, que está relacionada com a energia de uma partícula em um potencial. Ela é derivada da mecânica quântica e reflete como a energia e a massa de uma partícula influenciam seu comportamento em escalas muito pequenas.",
+      "concepts": [
+        "Mecânica Quântica",
+        "Energia de Partículas",
+        "Massa",
+        "Constante de Planck reduzida"
+      ],
+      "symbols": [
+        {
+          "symbol": "d",
+          "description": "Representa a distância característica, que é uma medida de escala em que os efeitos quânticos se tornam significativos."
+        },
+        {
+          "symbol": "\\hbar",
+          "description": "É a constante de Planck reduzida, que é uma constante fundamental na mecânica quântica, relacionada à quantização da energia."
+        },
+        {
+          "symbol": "m",
+          "description": "Representa a massa da partícula, que influencia como ela se comporta sob a ação de forças e em relação à sua energia."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa a energia da partícula, que é um fator crucial para determinar a distância característica e o comportamento quântico da partícula."
+        }
+      ]
+    },
+    {
+      "originalFormula": "d = 11.6 \\text{ Å}",
+      "genericFormula": "d = D",
+      "description": "Esta fórmula representa a distância entre planos atômicos em uma estrutura cristalina, onde 'd' é a distância que estamos medindo e 'D' é uma variável que pode representar qualquer valor de distância em angströms.",
+      "concepts": [
+        "Estruturas cristalinas",
+        "Distância interplanar",
+        "Angströms como unidade de medida"
+      ],
+      "symbols": [
+        {
+          "symbol": "d",
+          "description": "Representa a distância entre planos atômicos em um cristal, que é uma medida crucial para entender a estrutura e as propriedades do material."
+        },
+        {
+          "symbol": "D",
+          "description": "Uma variável genérica que representa a distância entre planos atômicos, podendo assumir diferentes valores dependendo do contexto do cristal analisado."
+        }
+      ]
+    },
+    {
+      "originalFormula": "T \\approx 16 \\left( \\frac{E}{V_{0}} \\right) \\left( 1 - \\frac{E}{V_{0}} \\right) \\exp(-2k_{a})",
+      "genericFormula": "T \\approx 16 \\left( \\frac{E}{V} \\right) \\left( 1 - \\frac{E}{V} \\right) \\exp(-2k)",
+      "description": "Esta fórmula representa uma aproximação para a temperatura em um sistema físico, onde a temperatura depende da relação entre a energia E e um potencial V, além de um fator exponencial que envolve uma constante k. A expressão mostra como a temperatura varia com a energia e o potencial, considerando também um efeito de decaimento exponencial.",
+      "concepts": [
+        "Temperatura",
+        "Energia",
+        "Potencial",
+        "Decaimento exponencial"
+      ],
+      "symbols": [
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura do sistema em questão."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa a energia do sistema ou partícula que está sendo considerada."
+        },
+        {
+          "symbol": "V_{0}",
+          "description": "Representa um potencial de referência ou limite que está sendo comparado com a energia E."
+        },
+        {
+          "symbol": "k_{a}",
+          "description": "Representa uma constante que está relacionada ao processo de decaimento ou atenuação no sistema."
+        }
+      ]
+    },
+    {
+      "originalFormula": "T = 16(0.1)(1 - 0.1) \\exp(-2[2.17 \\times 10^{6}](3 \\times 10^{-10}])",
+      "genericFormula": "T = 16p(1 - p) \\exp(-2[\\lambda][\\tau])",
+      "description": "Esta fórmula representa a temperatura T em um sistema que depende de variáveis como a probabilidade p, um parâmetro lambda e um tempo tau. A fórmula combina um fator de temperatura com um termo exponencial que descreve a diminuição da temperatura em função de um processo que ocorre no sistema.",
+      "concepts": [
+        "Temperatura",
+        "Probabilidade",
+        "Exponencial",
+        "Processos de decaimento"
+      ],
+      "symbols": [
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura do sistema em questão."
+        },
+        {
+          "symbol": "p",
+          "description": "Representa a probabilidade de um evento ocorrer, variando entre 0 e 1."
+        },
+        {
+          "symbol": "λ",
+          "description": "Um parâmetro que pode representar uma taxa ou constante relacionada ao sistema."
+        },
+        {
+          "symbol": "τ",
+          "description": "Representa um tempo característico ou um intervalo de tempo relevante para o processo em análise."
+        },
+        {
+          "symbol": "exp",
+          "description": "Função exponencial que descreve o comportamento de decaimento ou crescimento em muitos processos físicos."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70
+  ],
+  "lastUpdated": "2026-05-08T20:01:29.263Z"
+}

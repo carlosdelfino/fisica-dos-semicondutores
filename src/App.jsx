@@ -8,6 +8,8 @@ import Lattice from './components/Lattice.jsx';
 import FermiDiracPlot from './components/FermiDiracPlot.jsx';
 import DensityOfStates from './components/DensityOfStates.jsx';
 import CarrierVsTemp from './components/CarrierVsTemp.jsx';
+import FermiDiracEducational from './components/FermiDiracEducational.jsx';
+import DensityOfStatesEducational from './components/DensityOfStatesEducational.jsx';
 import FormulasPanel from './components/FormulasPanel.jsx';
 import ExercisesPanel from './components/ExercisesPanel.jsx';
 import KSpaceDiagram from './components/KSpaceDiagram.jsx';
@@ -161,12 +163,18 @@ function AppContent() {
           <Route path="/fermi" element={
             <FermiDiracPlot T={T} EF={calc.EF} Ec={calc.Ec} Ev={calc.Ev} Eg={calc.Eg} />
           } />
+          <Route path="/fermi-edu" element={
+            <FermiDiracEducational />
+          } />
           <Route path="/dos" element={
             <>
               <QuantumWell3D />
               <DensityOfStates material={material} T={T}
                                EF={calc.EF} Ec={calc.Ec} Ev={calc.Ev} Eg={calc.Eg} />
             </>
+          } />
+          <Route path="/dos-edu" element={
+            <DensityOfStatesEducational />
           } />
           <Route path="/arrhenius" element={
             <CarrierVsTemp material={material} ND={effND} NA={effNA} currentT={T} />

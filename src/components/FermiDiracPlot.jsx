@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 import { fermiDirac, maxwellBoltzmann } from '../physics/formulas.js';
 import { k_B_eV } from '../physics/constants.js';
+import FormulaNavigation from './FormulaNavigation.jsx';
 
 /**
  * Plot interativo de f(E) Fermi-Dirac com aproximação Maxwell-Boltzmann.
@@ -129,6 +130,11 @@ export default function FermiDiracPlot({ T, EF, Ec, Ev, Eg }) {
         sobre uma faixa de ~k_BT ≈ {(k_B_eV * T * 1000).toFixed(2)} meV. A aproximação de Maxwell-Boltzmann
         (rosa tracejado) coincide com a Fermi-Dirac apenas onde |E − E_F| ≫ k_BT (faixa verde).
       </p>
+      
+      <FormulaNavigation 
+        currentPanel="fermi"
+        relatedFormulas={['Fermi-Dirac', 'Maxwell-Boltzmann', 'Distribuição de Probabilidade']}
+      />
     </div>
   );
 }

@@ -1,0 +1,374 @@
+{
+  "chapter": "4 The Semiconductor in Equilibrium",
+  "section": "4.0 PREVIEW",
+  "questions": [
+    {
+      "number": "1",
+      "text": "Derive the thermal-equilibrium concentrations of electrons and holes in a semiconductor as a function of the Fermi energy level.",
+      "formulas": []
+    },
+    {
+      "number": "2",
+      "text": "Discuss the process by which the properties of a semiconductor material can be favorably altered by adding specific impurity atoms to the semiconductor.",
+      "formulas": []
+    },
+    {
+      "number": "3",
+      "text": "Determine the thermal-equilibrium concentrations of electrons and holes in a semiconductor as a function of the concentration of dopant atoms added to the semiconductor.",
+      "formulas": []
+    },
+    {
+      "number": "4",
+      "text": "Determine the position of the Fermi energy level as a function of the concentrations of dopant atoms added to the semiconductor.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "1",
+      "text": "The probability that a quantum state at E = Ef + kT/2 is occupied by an electron is given by f(E).",
+      "formulas": [
+        {
+          "originalFormula": "f(E) = \\frac{1}{1 + \\exp\\left(\\frac{E - E_f}{kT}\\right)}",
+          "genericFormula": "f(E) = \\frac{1}{1 + \\exp\\left(\\frac{E - E_f}{kT}\\right)}",
+          "description": "Esta fórmula representa a função de distribuição de Fermi-Dirac, que descreve a probabilidade de ocupação de estados eletrônicos em um material em função da energia. Ela é fundamental para entender como os elétrons se distribuem em diferentes níveis de energia em semicondutores e metais.",
+          "concepts": [
+            "Distribuição de Fermi-Dirac",
+            "Níveis de energia em semicondutores",
+            "Probabilidade de ocupação de estados eletrônicos",
+            "Equilíbrio térmico"
+          ],
+          "symbols": [
+            {
+              "symbol": "f(E)",
+              "description": "Representa a probabilidade de um estado eletrônico de energia E estar ocupado por um elétron."
+            },
+            {
+              "symbol": "E",
+              "description": "Representa a energia do estado eletrônico em consideração."
+            },
+            {
+              "symbol": "E_f",
+              "description": "Representa a energia de Fermi, que é o nível de energia mais alto ocupado por elétrons a temperatura zero absoluto."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas térmicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura do sistema em Kelvin, que influencia a distribuição de ocupação dos estados eletrônicos."
+            },
+            {
+              "symbol": "exp",
+              "description": "Representa a função exponencial, que é uma função matemática que cresce rapidamente e é usada para modelar muitos fenômenos físicos."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "n_0 = \\int_{E_c}^{\\infty} \\frac{4\\pi(2m^*_e)^{3/2}}{h^3} \\sqrt{E - E_c} \\exp\\left(-\\frac{(E - E_f)}{kT}\\right) dE",
+      "genericFormula": "n_0 = \\int_{E_c}^{\\infty} \\frac{4\\pi(2m^*_e)^{3/2}}{h^3} \\sqrt{E - E_c} \\exp\\left(-\\frac{(E - E_f)}{kT}\\right) dE",
+      "description": "Esta fórmula representa a densidade de estados eletrônicos em um semicondutor, especificamente a quantidade de portadores de carga que podem ser encontrados em um nível de energia acima da energia de condução, considerando a temperatura e a energia de Fermi.",
+      "concepts": [
+        "Densidade de estados",
+        "Energia de condução",
+        "Energia de Fermi",
+        "Distribuição de Boltzmann",
+        "Temperatura"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_0",
+          "description": "Representa a densidade de portadores de carga no semicondutor em um determinado nível de energia."
+        },
+        {
+          "symbol": "E_c",
+          "description": "É a energia mínima necessária para que um elétron possa se mover livremente no semicondutor, conhecido como nível de energia de condução."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa a energia variável que está sendo integrada, abrangendo todos os níveis de energia acima de E_c."
+        },
+        {
+          "symbol": "E_f",
+          "description": "É a energia de Fermi, que representa o nível de energia mais alto ocupado por elétrons em um sistema a temperatura zero absoluto."
+        },
+        {
+          "symbol": "m^*_e",
+          "description": "É a massa efetiva do elétron, que leva em conta as interações do elétron com a rede cristalina do semicondutor."
+        },
+        {
+          "symbol": "h",
+          "description": "É a constante de Planck, uma constante fundamental que relaciona a energia de um fóton à frequência da radiação eletromagnética."
+        },
+        {
+          "symbol": "k",
+          "description": "É a constante de Boltzmann, que relaciona a temperatura de um sistema à energia térmica média dos seus constituintes."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura do sistema, que influencia a distribuição de energia dos portadores de carga."
+        }
+      ]
+    },
+    {
+      "originalFormula": "n_0 = \\frac{4}{h^3} \\left(2m^*_e kT\\right)^{3/2} \\exp\\left(-\\frac{(E_c - E_f)}{kT}\\right)",
+      "genericFormula": "n_0 = \\frac{4}{h^3} \\left(2m^* kT\\right)^{3/2} \\exp\\left(-\\frac{(E_c - E_f)}{kT}\\right)",
+      "description": "Esta fórmula representa a densidade de portadores de carga em um semicondutor intrínseco em equilíbrio térmico. Ela calcula a concentração de elétrons livres no nível de energia da banda de condução, levando em consideração a temperatura e a diferença de energia entre a banda de condução e o nível de Fermi.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Semicondutores",
+        "Equilíbrio térmico",
+        "Temperatura",
+        "Energia de Fermi",
+        "Banda de condução"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_0",
+          "description": "Representa a densidade de portadores de carga, especificamente a concentração de elétrons livres em um semicondutor."
+        },
+        {
+          "symbol": "h",
+          "description": "É a constante de Planck, que relaciona a energia de um fóton à sua frequência, e é fundamental na mecânica quântica."
+        },
+        {
+          "symbol": "m^*_e",
+          "description": "É a massa efetiva do elétron, que considera como os elétrons se comportam em um cristal, levando em conta as interações com a rede cristalina."
+        },
+        {
+          "symbol": "k",
+          "description": "É a constante de Boltzmann, que relaciona a temperatura de um sistema à energia térmica média de suas partículas."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura do sistema em Kelvin, que afeta a energia térmica dos portadores de carga."
+        },
+        {
+          "symbol": "E_c",
+          "description": "É a energia do nível superior da banda de condução, que é a energia mínima necessária para que um elétron possa conduzir eletricidade."
+        },
+        {
+          "symbol": "E_f",
+          "description": "É o nível de Fermi, que representa a energia máxima ocupada por elétrons em um semicondutor a temperatura zero absoluto."
+        },
+        {
+          "symbol": "exp",
+          "description": "Representa a função exponencial, que é uma função matemática que descreve o crescimento ou decaimento de quantidades em muitos fenômenos físicos."
+        }
+      ]
+    },
+    {
+      "originalFormula": "N_c = \\frac{2}{\\left(2\\pi\\right)^{3/2}} \\left(\\frac{2m^*_e kT}{h^2}\\right)^{3/2}",
+      "genericFormula": "N_c = \\frac{2}{\\left(2\\pi\\right)^{3/2}} \\left(\\frac{2m^* kT}{h^2}\\right)^{3/2}",
+      "description": "Esta fórmula representa a densidade de estados efetiva no nível de condução de um semicondutor, que é uma medida de quantos estados eletrônicos estão disponíveis para os elétrons ocuparem em uma determinada faixa de energia.",
+      "concepts": [
+        "Densidade de estados em semicondutores",
+        "Energias térmicas",
+        "Massa efetiva de elétrons",
+        "Constantes físicas"
+      ],
+      "symbols": [
+        {
+          "symbol": "N_c",
+          "description": "Representa a densidade de estados efetiva no nível de condução do semicondutor."
+        },
+        {
+          "symbol": "m^*_e",
+          "description": "Refere-se à massa efetiva dos elétrons, que é uma medida de como os elétrons se comportam em um material semicondutor sob a influência de um campo elétrico."
+        },
+        {
+          "symbol": "k",
+          "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura do sistema em Kelvin, que é uma medida da energia térmica média das partículas."
+        },
+        {
+          "symbol": "h",
+          "description": "É a constante de Planck, que é uma constante fundamental na mecânica quântica que relaciona a energia de um fóton à frequência da radiação eletromagnética."
+        }
+      ]
+    },
+    {
+      "originalFormula": "n_0 = N_c \\exp\\left(-\\frac{(E_c - E_f)}{kT}\\right)",
+      "genericFormula": "n_0 = N_c \\exp\\left(-\\frac{(E_c - E_f)}{kT}\\right)",
+      "description": "Esta fórmula representa a densidade de portadores de carga eletrônica em um semicondutor intrínseco em equilíbrio térmico. Ela mostra como a concentração de elétrons livres (n_0) depende da densidade de estados disponíveis no nível de energia de condução (N_c), da diferença de energia entre a banda de condução e o nível de Fermi (E_c - E_f), e da temperatura do sistema (T).",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Níveis de energia em semicondutores",
+        "Equilíbrio térmico",
+        "Efeito da temperatura na condutividade"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_0",
+          "description": "Representa a densidade de portadores de carga eletrônica livres no semicondutor."
+        },
+        {
+          "symbol": "N_c",
+          "description": "Representa a densidade de estados disponíveis na banda de condução do semicondutor."
+        },
+        {
+          "symbol": "E_c",
+          "description": "Representa a energia do nível superior da banda de condução."
+        },
+        {
+          "symbol": "E_f",
+          "description": "Representa a energia do nível de Fermi, que indica a probabilidade de ocupação dos estados de energia."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas térmicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura do sistema em Kelvin, que influencia a movimentação dos portadores de carga."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135
+  ],
+  "lastUpdated": "2026-05-08T20:30:46.897Z"
+}

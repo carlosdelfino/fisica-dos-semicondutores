@@ -1,0 +1,79 @@
+{
+  "chapter": "1.7 Growth of Semiconductor Materials",
+  "section": "1.7.1 Growth from a Melt",
+  "questions": [],
+  "answers": [],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "C_{z} = \\frac{C_{s}}{C_{l}}",
+      "genericFormula": "C_{z} = \\frac{C_{s}}{C_{l}}",
+      "description": "Esta fórmula representa a capacitância de um capacitor em um circuito, onde a capacitância total é determinada pela relação entre a capacitância de um capacitor específico e a capacitância de outro capacitor em paralelo ou em série.",
+      "concepts": [
+        "Capacitância",
+        "Circuitos elétricos",
+        "Componentes eletrônicos"
+      ],
+      "symbols": [
+        {
+          "symbol": "C_{z}",
+          "description": "Representa a capacitância total ou equivalente do circuito."
+        },
+        {
+          "symbol": "C_{s}",
+          "description": "Representa a capacitância de um capacitor específico em consideração."
+        },
+        {
+          "symbol": "C_{l}",
+          "description": "Representa a capacitância de outro capacitor que está em relação com o capacitor específico."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44
+  ],
+  "lastUpdated": "2026-05-08T19:52:14.066Z"
+}

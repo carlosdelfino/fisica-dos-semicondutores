@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 import { dosConduction, dosValence, fermiDirac } from '../physics/formulas.js';
 import { MATERIALS } from '../physics/materials.js';
+import FormulaNavigation from './FormulaNavigation.jsx';
 
 /**
  * Plota g(E), f(E), e n(E) = g_c(E) f(E), p(E) = g_v(E)(1-f(E)).
@@ -133,6 +134,11 @@ export default function DensityOfStates({ material, T, EF, Ec, Ev, Eg }) {
         As áreas coloridas no terceiro painel mostram o produto g(E)·f(E), revelando que apenas as caudas das bandas
         próximas a E_c e E_v efetivamente contribuem aos portadores.
       </p>
+      
+      <FormulaNavigation 
+        currentPanel="dos"
+        relatedFormulas={['Densidade de Estados', 'Fermi-Dirac', 'Concentração de Portadores']}
+      />
     </div>
   );
 }

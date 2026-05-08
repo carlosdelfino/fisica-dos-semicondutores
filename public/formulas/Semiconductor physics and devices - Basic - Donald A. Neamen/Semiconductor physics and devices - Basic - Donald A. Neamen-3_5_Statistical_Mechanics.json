@@ -1,0 +1,399 @@
+{
+  "chapter": "3.5 Statistical Mechanics",
+  "section": "Example 3.6",
+  "questions": [
+    {
+      "number": "Ex.3.6",
+      "text": "Assume the Fermi energy level is 0.30 eV below the conduction band energy Ec. Assume T = 300 K. (a) Determine the probability of a state being occupied by an electron at E = E_{c} + kT/4. (b) Repeat part (a) for an energy state at E = E_{c} + kT.",
+      "formulas": [
+        {
+          "originalFormula": "f_{d}(E) = \\frac{1}{1 + \\exp\\left(\\frac{E - E_{F}}{kT}\\right)}",
+          "genericFormula": "f_{d}(E) = \\frac{1}{1 + \\exp\\left(\\frac{E - E_{F}}{kT}\\right)}",
+          "description": "Esta fórmula representa a função de distribuição de Fermi-Dirac, que descreve a probabilidade de ocupação de estados quânticos em um sistema de partículas, como elétrons, em função da energia desses estados. Ela é fundamental para entender como os elétrons se distribuem em diferentes níveis de energia em um material a uma temperatura específica.",
+          "concepts": [
+            "Distribuição de Fermi-Dirac",
+            "Probabilidade de ocupação de estados quânticos",
+            "Energia de Fermi",
+            "Temperatura",
+            "Constante de Boltzmann"
+          ],
+          "symbols": [
+            {
+              "symbol": "f_{d}(E)",
+              "description": "Representa a probabilidade de ocupação de um estado quântico de energia E."
+            },
+            {
+              "symbol": "E",
+              "description": "Representa a energia do estado quântico considerado."
+            },
+            {
+              "symbol": "E_{F}",
+              "description": "Representa a energia de Fermi, que é o nível de energia mais alto ocupado por elétrons em um material a temperatura zero."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura do sistema, medida em Kelvin."
+            },
+            {
+              "symbol": "\\exp",
+              "description": "Representa a função exponencial, que é uma função matemática fundamental usada para descrever crescimento e decaimento em muitos contextos físicos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EXAMPLE 3.8",
+      "text": "Calculate the energy, in terms of kT and E_f, at which the difference between the Boltzmann approximation and the Fermi-Dirac function is 5 percent of the Fermi function.",
+      "formulas": [
+        {
+          "originalFormula": "exp\\left[-\\frac{(E - E_f)}{kT}\\right] = \\frac{1}{1 + exp\\left(\\frac{E - E_f}{kT}\\right)} = 0.05",
+          "genericFormula": "exp\\left[-\\frac{(E - E_f)}{kT}\\right] = \\frac{1}{1 + exp\\left(\\frac{E - E_f}{kT}\\right)}",
+          "description": "Esta fórmula representa a relação entre a energia de um estado eletrônico (E) e a energia de Fermi (E_f) em um semicondutor, descrevendo a probabilidade de ocupação de um nível de energia em função da temperatura (T) e da constante de Boltzmann (k). A equação mostra como a probabilidade de ocupação de um estado eletrônico diminui exponencialmente à medida que a energia do estado se afasta da energia de Fermi.",
+          "concepts": [
+            "Distribuição de Fermi-Dirac",
+            "Energia de Fermi",
+            "Probabilidade de ocupação de estados eletrônicos",
+            "Termodinâmica em sistemas quânticos"
+          ],
+          "symbols": [
+            {
+              "symbol": "E",
+              "description": "Representa a energia de um estado eletrônico específico dentro do semicondutor."
+            },
+            {
+              "symbol": "E_f",
+              "description": "Representa a energia de Fermi, que é o nível de energia mais alto ocupado por elétrons a temperatura zero."
+            },
+            {
+              "symbol": "k",
+              "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas estatísticos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta do sistema, medida em Kelvin."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "Exercise Problem",
+      "text": "Repeat Example 3.8 for the case when the difference between the Boltzmann approximation and the Fermi-Dirac function is 2 percent of the function.",
+      "formulas": []
+    },
+    {
+      "number": "3.29",
+      "text": "For silicon, find the ratio of the density of states in the conduction band at E = E_{c} + kT to the density of states in the valence band at E = E_{v} - kT.",
+      "formulas": []
+    },
+    {
+      "number": "3.30",
+      "text": "Plot the Fermi-Dirac probability function, given by Equation (3.79), over the range -0.2 ≤ E - E_{F} ≤ 0.2 eV for (a) T = 200 K, (b) T = 300 K, and (c) T = 400 K.",
+      "formulas": []
+    },
+    {
+      "number": "3.31",
+      "text": "Repeat Example 3.5 for the case when g = 10 and N = 7. (b) Repeat part (a) for g = 12, N = 10 and (ii) g = 12, N = 8.",
+      "formulas": []
+    },
+    {
+      "number": "3.32",
+      "text": "Determine the probability that an energy level is occupied by an electron if the state is above the Fermi level by (a) kT, (b) 5kT, and (c) 10kT.",
+      "formulas": []
+    },
+    {
+      "number": "3.33",
+      "text": "Determine the probability that an energy level is empty of an electron if the state is below the Fermi level by (a) kT, (b) 5kT, and (c) 10kT.",
+      "formulas": []
+    },
+    {
+      "number": "3.34",
+      "text": "(a) The Fermi energy in silicon is 0.30 eV below the conduction band energy E_{c} at T = 300 K. Plot the probability of a state being occupied by an electron in the conduction band over the range E_{c} ≤ E ≤ E_{c} + 2kT. (b) The Fermi energy in silicon is 0.25 eV above the valence band energy E_{v}. Plot the probability of a state being empty by an electron in the valence band over the range E_{v} - 2kT ≤ E ≤ E_{v}.",
+      "formulas": []
+    },
+    {
+      "number": "3.35",
+      "text": "The probability that a state at E_{c} + kT is occupied by an electron is equal to the probability that a state at E_{v} - kT is empty. Determine the position of the Fermi energy level as a function of E_{c} and E_{v}.",
+      "formulas": []
+    },
+    {
+      "number": "3.36",
+      "text": "Six free electrons exist in a one-dimensional infinite potential well of width a = 12 Å. Determine the Fermi energy level at T = 0 K.",
+      "formulas": []
+    },
+    {
+      "number": "3.37",
+      "text": "(a) Five free electrons exist in a three-dimensional infinite potential well with all three widths equal to a = 12 Å. Determine the Fermi energy level at T = 0 K. (b) Repeat part (a) for 13 electrons.",
+      "formulas": []
+    },
+    {
+      "number": "3.38",
+      "text": "Show that the probability of an energy state being occupied ΔE above the Fermi energy is the same as the probability of a state being occupied ΔE below the Fermi level.",
+      "formulas": []
+    },
+    {
+      "number": "3.39",
+      "text": "Determine for what energy above E_{F} (in terms of kT) the Fermi-Dirac probability function is within 1 percent of the Boltzmann approximation. (b) Give the value of the probability function at this energy.",
+      "formulas": []
+    },
+    {
+      "number": "3.40",
+      "text": "The Fermi energy level for a particular material at T = 300 K is 5.50 eV. The electrons in this material follow the Fermi-Dirac distribution function. (a) Find the probability of an electron occupying an energy at 5.80 eV. (b) Repeat part (a) if the temperature is increased to T = 700 K. (Assume that E_{F} is constant.) (c) Determine the temperature at which there is a 2 percent probability that a state 0.25 eV below the Fermi level will be empty of an electron.",
+      "formulas": []
+    },
+    {
+      "number": "3.41",
+      "text": "The Fermi energy for copper at T = 300 K is 7.0 eV. The electrons in copper follow the Fermi-Dirac distribution function. (a) Find the probability of an energy level at 7.15 eV being occupied by an electron. (b) Repeat part (a) for T = 1000 K. (Assume that E_{F} is constant.) (c) Repeat part (a) for E_{F} = 6.85 eV and T = 300 K. (d) Determine the probability of the energy state at E = E_{F} being occupied at T = 300 K and at T = 1000 K.",
+      "formulas": []
+    },
+    {
+      "number": "3.42",
+      "text": "Consider the energy levels shown in Figure P3.42. Let T = 300 K. (a) If E_{1} - E_{F} = 0.30 eV, determine the probability that an energy state at E = E_{1} is occupied by",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "Ex.3.6",
+      "text": "The probability that an energy state above E_{F} is occupied by an electron is f_{d}(E) = 0.0474 = 4.74%.",
+      "formulas": [
+        {
+          "originalFormula": "f_{d}(E) = \\frac{1}{1 + 20.09} = 0.0474",
+          "genericFormula": "f_{d}(E) = \\frac{1}{1 + x}",
+          "description": "Esta fórmula representa a função de distribuição de Fermi-Dirac, que descreve a probabilidade de ocupação de estados quânticos em um sistema de partículas, como elétrons em um semicondutor, em função da energia. A fórmula mostra como a ocupação de um estado depende da energia do estado e de um parâmetro relacionado à temperatura e à energia de Fermi.",
+          "concepts": [
+            "Distribuição de Fermi-Dirac",
+            "Probabilidade de ocupação de estados quânticos",
+            "Energia de Fermi",
+            "Efeito da temperatura na ocupação de estados"
+          ],
+          "symbols": [
+            {
+              "symbol": "f_{d}(E)",
+              "description": "Representa a função de distribuição de Fermi-Dirac para um estado de energia E, indicando a probabilidade de que esse estado esteja ocupado por uma partícula."
+            },
+            {
+              "symbol": "x",
+              "description": "Um parâmetro que representa a soma de 1 e um valor relacionado à energia, que pode incluir a energia de Fermi e outros fatores que influenciam a ocupação dos estados."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "EXAMPLE 3.8",
+      "text": "(E - E_f) = kT \\ln\\left(\\frac{1}{0.05}\\right) \\approx 3kT",
+      "formulas": [
+        {
+          "originalFormula": "(E - E_f) = kT \\ln\\left(\\frac{1}{0.05}\\right) \\approx 3kT",
+          "genericFormula": "(E - E_f) = kT \\ln\\left(\\frac{1}{x}\\right)",
+          "description": "Esta fórmula representa a diferença de energia entre um nível de energia E e o nível de Fermi E_f em um semicondutor, que é proporcional à temperatura e ao logaritmo da razão entre a concentração de portadores de carga e um valor de referência.",
+          "concepts": [
+            "Nível de energia",
+            "Nível de Fermi",
+            "Temperatura",
+            "Logaritmo natural",
+            "Concentração de portadores de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "E",
+              "description": "Representa um nível de energia específico dentro do material semicondutor."
+            },
+            {
+              "symbol": "E_f",
+              "description": "É o nível de Fermi, que indica a energia máxima dos elétrons em um semicondutor em equilíbrio térmico."
+            },
+            {
+              "symbol": "k",
+              "description": "É a constante de Boltzmann, que relaciona a temperatura à energia em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura do sistema em Kelvin, que influencia a energia térmica dos portadores de carga."
+            },
+            {
+              "symbol": "ln",
+              "description": "É a função logaritmo natural, que é usada para calcular a relação exponencial entre grandezas em sistemas físicos."
+            },
+            {
+              "symbol": "x",
+              "description": "Representa uma concentração de portadores de carga em relação a um valor de referência, que neste caso é 0.05."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "1 - f_{d}(E) = 1 - \\frac{1}{1 + \\exp\\left(\\frac{E - E_{F}}{kT}\\right)}",
+      "genericFormula": "1 - f_{d}(E) = 1 - \\frac{1}{1 + \\exp\\left(\\frac{E - E_{F}}{kT}\\right)}",
+      "description": "Esta fórmula representa a probabilidade de ocupação de um estado de energia em um sistema de partículas, como elétrons em um semicondutor, em função da energia do estado, da energia de Fermi, da constante de Boltzmann e da temperatura. A fórmula mostra como a ocupação de estados varia com a energia e a temperatura do sistema.",
+      "concepts": [
+        "Distribuição de Fermi-Dirac",
+        "Energia de Fermi",
+        "Temperatura",
+        "Constante de Boltzmann"
+      ],
+      "symbols": [
+        {
+          "symbol": "f_{d}(E)",
+          "description": "Representa a função de distribuição de Fermi-Dirac, que indica a probabilidade de um estado de energia E estar ocupado por uma partícula."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa a energia do estado que está sendo considerado no sistema."
+        },
+        {
+          "symbol": "E_{F}",
+          "description": "Representa a energia de Fermi, que é o nível de energia mais alto ocupado por elétrons a temperatura zero absoluto."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas estatísticos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura do sistema, medida em Kelvin, que influencia a ocupação dos estados de energia."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128
+  ],
+  "lastUpdated": "2026-05-08T20:27:47.293Z"
+}

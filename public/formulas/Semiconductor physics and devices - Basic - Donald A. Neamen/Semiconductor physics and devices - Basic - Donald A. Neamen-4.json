@@ -1,0 +1,234 @@
+{
+  "chapter": "4",
+  "section": "The Semiconductor in Equilibrium",
+  "questions": [],
+  "answers": [],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "g_{c}(E) = n(E)",
+      "genericFormula": "g_{c}(E) = n(E)",
+      "description": "Esta fórmula representa a densidade de estados de condução em um semicondutor, que é uma função do nível de energia E. A densidade de estados de condução indica quantos estados eletrônicos estão disponíveis para os elétrons ocuparem em uma determinada faixa de energia.",
+      "concepts": [
+        "densidade de estados",
+        "nível de energia",
+        "semicondutores",
+        "eletrônica"
+      ],
+      "symbols": [
+        {
+          "symbol": "g_{c}(E)",
+          "description": "Representa a densidade de estados de condução, que é a quantidade de estados eletrônicos disponíveis para os elétrons em uma faixa de energia específica."
+        },
+        {
+          "symbol": "n(E)",
+          "description": "Representa a densidade de portadores de carga, que é o número de elétrons que ocupam os estados disponíveis em uma faixa de energia específica."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa o nível de energia, que é a quantidade de energia que um elétron pode ter em um semicondutor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "g_{v}(E)(1 - f_{f}(E)) = p(E)",
+      "genericFormula": "g_{v}(E)(1 - f_{f}(E)) = p(E)",
+      "description": "Esta fórmula representa a relação entre a densidade de estados disponíveis em um material semicondutor, a probabilidade de ocupação desses estados e a densidade de portadores de carga em uma determinada energia. Em termos simples, ela mostra como a quantidade de portadores de carga em um nível de energia específico depende da densidade de estados e da probabilidade de que esses estados estejam ocupados.",
+      "concepts": [
+        "Densidade de estados",
+        "Probabilidade de ocupação",
+        "Portadores de carga",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "g_{v}(E)",
+          "description": "Representa a densidade de estados disponíveis no material em uma energia específica, indicando quantos estados eletrônicos estão disponíveis para serem ocupados pelos elétrons."
+        },
+        {
+          "symbol": "f_{f}(E)",
+          "description": "Denota a função de Fermi-Dirac, que fornece a probabilidade de que um estado eletrônico em uma energia específica esteja ocupado por um elétron a uma temperatura dada."
+        },
+        {
+          "symbol": "p(E)",
+          "description": "Representa a densidade de portadores de carga positivos (buracos) em uma energia específica, que é influenciada pela densidade de estados e pela probabilidade de ocupação dos estados."
+        }
+      ]
+    },
+    {
+      "originalFormula": "f_{f}(E) = 0",
+      "genericFormula": "f_{f}(E) = 0",
+      "description": "Esta fórmula representa uma condição em que uma função, denotada como f sub f, é igual a zero em relação a uma variável de energia, E. Isso pode indicar um estado de equilíbrio ou uma condição crítica em um sistema físico.",
+      "concepts": [
+        "Funções matemáticas",
+        "Condições de equilíbrio",
+        "Energia em sistemas físicos"
+      ],
+      "symbols": [
+        {
+          "symbol": "f_{f}",
+          "description": "Representa uma função específica que depende de uma variável, neste caso, a energia. Pode estar relacionada a propriedades físicas ou estados de um sistema."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa a energia, que é uma quantidade física fundamental que mede a capacidade de realizar trabalho ou provocar mudanças em um sistema."
+        }
+      ]
+    },
+    {
+      "originalFormula": "f_{f}(E) = 1",
+      "genericFormula": "f_{f}(E) = 1",
+      "description": "Esta fórmula representa uma função que é constante e igual a um. Em contextos de física de semicondutores, pode ser interpretada como uma condição onde a densidade de estados ou a função de distribuição de partículas é uniforme em relação à energia, indicando que não há variação na quantidade de partículas em diferentes níveis de energia.",
+      "concepts": [
+        "Função de distribuição",
+        "Densidade de estados",
+        "Energia em sistemas de partículas"
+      ],
+      "symbols": [
+        {
+          "symbol": "f_{f}(E)",
+          "description": "Esta notação representa uma função que depende da energia, indicando uma propriedade física que é constante em relação a essa energia."
+        },
+        {
+          "symbol": "E",
+          "description": "Este símbolo representa a energia, que é uma grandeza física fundamental que mede a capacidade de realizar trabalho ou causar mudanças em um sistema."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133
+  ],
+  "lastUpdated": "2026-05-08T20:29:30.953Z"
+}

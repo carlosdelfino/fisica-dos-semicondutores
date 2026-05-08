@@ -110,13 +110,16 @@ function filterRelevantFiles(filesData, threshold = 10) {
  */
 export default function ExercisesPanel() {
   const [selectedBook, setSelectedBook] = useState('');
+  const [selectedChapter, setSelectedChapter] = useState('');
   const [selectedFile, setSelectedFile] = useState('');
   const [fileData, setFileData] = useState(null);
   const [availableBooks, setAvailableBooks] = useState([]);
+  const [availableChapters, setAvailableChapters] = useState([]);
   const [availableFiles, setAvailableFiles] = useState([]);
   const [relevantFiles, setRelevantFiles] = useState([]);
   const [filteredOutFiles, setFilteredOutFiles] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loadingBooks, setLoadingBooks] = useState(true);
+  const [loadingFiles, setLoadingFiles] = useState(false);
   const [showFiltered, setShowFiltered] = useState(false);
 
   // Lista de livros conhecidos (subpastas em public/formulas)
@@ -125,16 +128,41 @@ export default function ExercisesPanel() {
     'Semiconductor Devices - Kanaan Kano'
   ];
 
-  // Carregar lista de livros disponíveis
+  // Carregar lista de livros disponíveis e verificar conteúdo
   useEffect(() => {
     const loadBooks = async () => {
+      setLoadingBooks(true);
       try {
         const validBooks = [];
         
         for (const book of KNOWN_BOOKS) {
           try {
-            const response = await fetch(`/formulas/${book}/`, { method: 'HEAD' });
-            if (response.ok || response.status === 404) {
+            // Verificar se o livro tem arquivos JSON válidos
+            const possiblePatterns = [
+              ...Array.from({ length: 20 }, (_, i) => `${book}-${i + 1}.json`),
+              `${book}-metadata.json`,
+              `${book}-index.json`,
+            ];
+
+            let hasValidContent = false;
+            for (const fileName of possiblePatterns) {
+              try {
+                const response = await fetch(`/formulas/${book}/${fileName}`);
+                if (response.ok) {
+                  const data = await response.json();
+                  // Verificar se tem algum conteúdo relevante
+                  const { score } = calculateRelevanceScore(data);
+                  if (score > 0) {
+                    hasValidContent = true;
+                    break;
+                  }
+                }
+              } catch (e) {
+                // Arquivo não existe, continuar
+              }
+            }
+
+            if (hasValidContent) {
               validBooks.push(book);
             }
           } catch (e) {
@@ -150,7 +178,7 @@ export default function ExercisesPanel() {
       } catch (error) {
         console.error('Erro ao carregar livros:', error);
       } finally {
-        setLoading(false);
+        setLoadingBooks(false);
       }
     };
 
@@ -162,15 +190,17 @@ export default function ExercisesPanel() {
     const loadFiles = async () => {
       if (!selectedBook) return;
       
+      setLoadingFiles(true);
       try {
         const possiblePatterns = [
           ...Array.from({ length: 20 }, (_, i) => `${selectedBook}-${i + 1}.json`),
-          `${selectedBook}-metadata.json`,
-          `${selectedBook}-index.json`,
+          `${book}-metadata.json`,
+          `${book}-index.json`,
         ];
 
         const validFiles = [];
         const filesData = [];
+        const chaptersSet = new Set();
 
         for (const fileName of possiblePatterns) {
           try {
@@ -179,6 +209,13 @@ export default function ExercisesPanel() {
               const data = await response.json();
               validFiles.push(fileName);
               filesData.push({ fileName, data });
+              
+              // Extrair número do capítulo do nome do arquivo
+              const chapterMatch = fileName.match(/-\d+\.json/);
+              if (chapterMatch) {
+                const chapterNum = chapterMatch[0].replace(/-/g, '').replace('.json', '');
+                chaptersSet.add(chapterNum);
+              }
             }
           } catch (e) {
             // Arquivo não existe, continuar
@@ -190,10 +227,18 @@ export default function ExercisesPanel() {
         setAvailableFiles(validFiles);
         setRelevantFiles(relevant);
         setFilteredOutFiles(filteredOut);
+        setAvailableChapters(Array.from(chaptersSet).sort((a, b) => parseInt(a) - parseInt(b)));
 
         if (relevant.length > 0) {
           setSelectedFile(relevant[0].fileName);
           setFileData(relevant[0].data);
+          
+          // Selecionar o capítulo do primeiro arquivo relevante
+          const chapterMatch = relevant[0].fileName.match(/-\d+\.json/);
+          if (chapterMatch) {
+            const chapterNum = chapterMatch[0].replace(/-/g, '').replace('.json', '');
+            setSelectedChapter(chapterNum);
+          }
         } else if (filesData.length > 0) {
           setSelectedFile(filesData[0].fileName);
           setFileData(filesData[0].data);
@@ -203,51 +248,58 @@ export default function ExercisesPanel() {
         setAvailableFiles([]);
         setRelevantFiles([]);
         setFilteredOutFiles([]);
+        setAvailableChapters([]);
+      } finally {
+        setLoadingFiles(false);
       }
     };
 
     loadFiles();
   }, [selectedBook]);
 
-  // Carregar dados do arquivo selecionado
+  // Filtrar arquivos por capítulo selecionado
   useEffect(() => {
-    const loadFileData = async () => {
-      if (!selectedFile || !selectedBook) return;
-      
-      try {
-        const response = await fetch(`/formulas/${selectedBook}/${selectedFile}`);
-        
-        if (!response.ok) {
-          throw new Error(`Falha ao carregar arquivo ${selectedFile}`);
-        }
-        
-        const data = await response.json();
-        setFileData(data);
-      } catch (error) {
-        console.error('Erro ao carregar dados do arquivo:', error);
-        setFileData(null);
-      }
-    };
-
-    loadFileData();
-  }, [selectedFile, selectedBook]);
+    if (!selectedChapter) {
+      setRelevantFiles(prevRelevant => prevRelevant);
+      return;
+    }
+    
+    // Filtrar relevantFiles pelo capítulo selecionado
+    const chapterFiles = relevantFiles.filter(file => 
+      file.fileName.includes(`-${selectedChapter}.json`)
+    );
+    
+    if (chapterFiles.length > 0) {
+      setSelectedFile(chapterFiles[0].fileName);
+      setFileData(chapterFiles[0].data);
+    }
+  }, [selectedChapter]);
 
   return (
     <div className="exercises-panel">
       <h2>📝 Exercícios e Fórmulas</h2>
       
-      {loading ? (
-        <p>Carregando livros...</p>
+      {loadingBooks ? (
+        <div className="loading-container">
+          <div className="spinner"></div>
+          <p>Carregando livros...</p>
+        </div>
       ) : (
         <>
-          <div className="book-selector">
+          <div className="control-group">
             <label htmlFor="book-select">Selecione o Livro:</label>
             <select
               id="book-select"
               value={selectedBook}
-              onChange={(e) => setSelectedBook(e.target.value)}
+              onChange={(e) => {
+                setSelectedBook(e.target.value);
+                setSelectedChapter('');
+                setSelectedFile('');
+                setFileData(null);
+              }}
               className="book-select"
             >
+              {availableBooks.length === 0 && <option value="">Nenhum livro com conteúdo</option>}
               {availableBooks.map(book => (
                 <option key={book} value={book}>
                   {book}
@@ -256,62 +308,90 @@ export default function ExercisesPanel() {
             </select>
           </div>
 
-          {relevantFiles.length > 0 ? (
+          {loadingFiles ? (
+            <div className="loading-container">
+              <div className="spinner"></div>
+              <p>Carregando arquivos...</p>
+            </div>
+          ) : selectedBook && availableChapters.length > 0 ? (
             <>
-              <div className="file-selector">
-                <label htmlFor="file-select">Selecione o Arquivo:</label>
+              <div className="control-group">
+                <label htmlFor="chapter-select">Selecione o Capítulo:</label>
                 <select
-                  id="file-select"
-                  value={selectedFile}
-                  onChange={(e) => setSelectedFile(e.target.value)}
-                  className="file-select"
+                  id="chapter-select"
+                  value={selectedChapter}
+                  onChange={(e) => setSelectedChapter(e.target.value)}
+                  className="chapter-select"
                 >
-                  {relevantFiles.map(file => (
-                    <option key={file.fileName} value={file.fileName}>
-                      {file.fileName} (Pontuação: {file.relevance.score})
+                  <option value="">Todos os capítulos</option>
+                  {availableChapters.map(chapter => (
+                    <option key={chapter} value={chapter}>
+                      Capítulo {chapter}
                     </option>
                   ))}
                 </select>
               </div>
 
-              <div className="relevance-info">
-                <p>📊 {relevantFiles.length} arquivos relevantes encontrados</p>
-                {filteredOutFiles.length > 0 && (
-                  <button 
-                    className="toggle-filtered-btn"
-                    onClick={() => setShowFiltered(!showFiltered)}
-                  >
-                    {showFiltered ? `Ocultar ${filteredOutFiles.length} arquivos filtrados` : `Ver ${filteredOutFiles.length} arquivos filtrados`}
-                  </button>
-                )}
-              </div>
+              {relevantFiles.length > 0 ? (
+                <>
+                  <div className="control-group">
+                    <label htmlFor="file-select">Selecione o Arquivo:</label>
+                    <select
+                      id="file-select"
+                      value={selectedFile}
+                      onChange={(e) => setSelectedFile(e.target.value)}
+                      className="file-select"
+                    >
+                      {relevantFiles.map(file => (
+                        <option key={file.fileName} value={file.fileName}>
+                          {file.fileName} (Pontuação: {file.relevance.score})
+                        </option>
+                      ))}
+                    </select>
+                  </div>
 
-              {showFiltered && filteredOutFiles.length > 0 && (
-                <div className="filtered-files-section">
-                  <h4>Arquivos Filtrados (Pontuação inferior a 10)</h4>
-                  <ul>
-                    {filteredOutFiles.map(file => (
-                      <li key={file.fileName}>
-                        <strong>{file.fileName}</strong> - Pontuação: {file.relevance.score}
-                        <br />
-                        <small>{file.relevance.reasons.join(', ')}</small>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+                  <div className="relevance-info">
+                    <p>📊 {relevantFiles.length} arquivos relevantes encontrados</p>
+                    {filteredOutFiles.length > 0 && (
+                      <button 
+                        className="toggle-filtered-btn"
+                        onClick={() => setShowFiltered(!showFiltered)}
+                      >
+                        {showFiltered ? `Ocultar ${filteredOutFiles.length} arquivos filtrados` : `Ver ${filteredOutFiles.length} arquivos filtrados`}
+                      </button>
+                    )}
+                  </div>
 
-              {fileData ? (
-                <DynamicFormulaContent data={fileData} />
+                  {showFiltered && filteredOutFiles.length > 0 && (
+                    <div className="filtered-files-section">
+                      <h4>Arquivos Filtrados (Pontuação inferior a 10)</h4>
+                      <ul>
+                        {filteredOutFiles.map(file => (
+                          <li key={file.fileName}>
+                            <strong>{file.fileName}</strong> - Pontuação: {file.relevance.score}
+                            <br />
+                            <small>{file.relevance.reasons.join(', ')}</small>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {fileData ? (
+                    <DynamicFormulaContent data={fileData} />
+                  ) : (
+                    <p>Selecione um arquivo para ver as fórmulas.</p>
+                  )}
+                </>
+              ) : availableFiles.length > 0 ? (
+                <p>Nenhum arquivo com conteúdo relevante encontrado. Todos os arquivos têm pontuação baixa.</p>
               ) : (
-                <p>Selecione um arquivo para ver as fórmulas.</p>
+                <p>Nenhum arquivo disponível para este livro.</p>
               )}
             </>
-          ) : availableFiles.length > 0 ? (
-            <p>Nenhum arquivo com conteúdo relevante encontrado. Todos os arquivos têm pontuação baixa.</p>
-          ) : (
+          ) : selectedBook ? (
             <p>Nenhum arquivo disponível para este livro.</p>
-          )}
+          ) : null}
         </>
       )}
     </div>

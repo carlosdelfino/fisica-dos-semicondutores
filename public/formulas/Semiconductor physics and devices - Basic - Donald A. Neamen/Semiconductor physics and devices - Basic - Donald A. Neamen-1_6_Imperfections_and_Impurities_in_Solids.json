@@ -1,0 +1,82 @@
+{
+  "chapter": "1.6 Imperfections and Impurities in Solids",
+  "section": "unknown",
+  "questions": [
+    {
+      "number": "1",
+      "text": "What is a vacancy defect in a crystal lattice?",
+      "formulas": []
+    },
+    {
+      "number": "2",
+      "text": "How does an interstitial defect differ from a vacancy defect?",
+      "formulas": []
+    },
+    {
+      "number": "3",
+      "text": "What is a line dislocation and how does it affect the properties of a material?",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "1",
+      "text": "A vacancy defect occurs when an entire row of atoms is missing from its normal lattice site.",
+      "formulas": []
+    },
+    {
+      "questionNumber": "2",
+      "text": "An interstitial defect involves single atoms or single-atom locations, which can alter the electrical properties differently than vacancy defects.",
+      "formulas": []
+    },
+    {
+      "questionNumber": "3",
+      "text": "A line dislocation disrupts the normal geometric periodicity of the lattice and can alter the electrical properties of the material in a more unpredictable manner.",
+      "formulas": []
+    }
+  ],
+  "standaloneFormulas": [],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "lastUpdated": "2026-05-08T19:51:42.108Z"
+}
