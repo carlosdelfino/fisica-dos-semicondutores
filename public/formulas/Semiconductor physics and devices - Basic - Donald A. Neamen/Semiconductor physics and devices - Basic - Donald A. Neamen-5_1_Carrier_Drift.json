@@ -87,6 +87,124 @@
           ]
         }
       ]
+    },
+    {
+      "number": "Ex 5.4",
+      "text": "A bar of p-type silicon, as shown in Figure 5.5, has a cross-sectional area A = 10^{-6} cm^{2} and a length L = 1.2 \\times 10^{-3} cm. For an applied voltage of 5 V, a current of 2 mA is required. What is the required (a) resistance, (b) resistivity, and (c) impurity doping concentration? (d) What is the resulting hole mobility?",
+      "formulas": [
+        {
+          "originalFormula": "R = \\frac{V}{I}",
+          "genericFormula": "R = \\frac{V}{I}",
+          "description": "Esta fórmula representa a relação entre a tensão elétrica, a corrente elétrica e a resistência em um circuito. Ela nos diz que a resistência é igual à tensão dividida pela corrente, o que é fundamental para entender como os componentes elétricos funcionam em um circuito.",
+          "concepts": [
+            "Resistência elétrica",
+            "Tensão elétrica",
+            "Corrente elétrica",
+            "Lei de Ohm"
+          ],
+          "symbols": [
+            {
+              "symbol": "R",
+              "description": "Representa a resistência elétrica, que é a oposição que um material oferece ao fluxo de corrente elétrica."
+            },
+            {
+              "symbol": "V",
+              "description": "Representa a tensão elétrica, que é a diferença de potencial elétrico entre dois pontos em um circuito."
+            },
+            {
+              "symbol": "I",
+              "description": "Representa a corrente elétrica, que é o fluxo de carga elétrica que passa por um condutor em um determinado intervalo de tempo."
+            }
+          ]
+        },
+        {
+          "originalFormula": "\\rho = R \\frac{A}{L}",
+          "genericFormula": "\\rho = R \\frac{A}{L}",
+          "description": "Esta fórmula representa a relação entre a resistividade de um material, a resistência elétrica, a área da seção transversal do condutor e o comprimento do condutor. Ela nos ajuda a entender como as propriedades físicas do material e suas dimensões influenciam a resistência ao fluxo de corrente elétrica.",
+          "concepts": [
+            "Resistividade",
+            "Resistência elétrica",
+            "Área da seção transversal",
+            "Comprimento do condutor"
+          ],
+          "symbols": [
+            {
+              "symbol": "ρ",
+              "description": "Representa a resistividade do material, que é uma medida da capacidade do material de resistir ao fluxo de corrente elétrica."
+            },
+            {
+              "symbol": "R",
+              "description": "Representa a resistência elétrica do condutor, que é a oposição que o material oferece ao fluxo de corrente elétrica."
+            },
+            {
+              "symbol": "A",
+              "description": "Representa a área da seção transversal do condutor, que é a área através da qual a corrente elétrica flui."
+            },
+            {
+              "symbol": "L",
+              "description": "Representa o comprimento do condutor, que é a distância que a corrente elétrica deve percorrer através do material."
+            }
+          ]
+        },
+        {
+          "originalFormula": "N_d = \\frac{I}{q \\mu_p E}",
+          "genericFormula": "N_d = \\frac{I}{q \\mu_p E}",
+          "description": "Esta fórmula representa a densidade de portadores de carga do tipo doador em um semicondutor, calculada a partir da corrente elétrica, da carga elementar, da mobilidade dos portadores de carga e do campo elétrico aplicado.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Corrente elétrica",
+            "Carga elementar",
+            "Mobilidade dos portadores de carga",
+            "Campo elétrico"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_d",
+              "description": "Representa a densidade de portadores de carga do tipo doador em um semicondutor, que indica quantos portadores de carga estão presentes por unidade de volume."
+            },
+            {
+              "symbol": "I",
+              "description": "Representa a corrente elétrica que flui através do semicondutor, medida em amperes, que indica a quantidade de carga que passa por um ponto em um segundo."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elementar, que é a menor unidade de carga elétrica, equivalente à carga de um único elétron, aproximadamente igual a 1.6 x 10^-19 coulombs."
+            },
+            {
+              "symbol": "μ_p",
+              "description": "Representa a mobilidade dos portadores de carga do tipo 'p', que indica a facilidade com que os portadores de carga se movem através do semicondutor sob a influência de um campo elétrico."
+            },
+            {
+              "symbol": "E",
+              "description": "Representa o campo elétrico aplicado ao semicondutor, que é uma medida da força elétrica por unidade de carga, influenciando o movimento dos portadores de carga."
+            }
+          ]
+        },
+        {
+          "originalFormula": "E = \\frac{V}{L}",
+          "genericFormula": "E = \\frac{V}{L}",
+          "description": "Esta fórmula representa a relação entre a intensidade do campo elétrico, a diferença de potencial elétrico e a distância entre duas placas condutoras. Em termos simples, ela nos diz como a força elétrica por unidade de carga varia com a diferença de tensão aplicada e a distância entre as placas.",
+          "concepts": [
+            "Campo elétrico",
+            "Diferença de potencial elétrico",
+            "Distância entre placas condutoras"
+          ],
+          "symbols": [
+            {
+              "symbol": "E",
+              "description": "Representa a intensidade do campo elétrico, que é a força elétrica por unidade de carga."
+            },
+            {
+              "symbol": "V",
+              "description": "Representa a diferença de potencial elétrico entre duas placas, que é a quantidade de energia por unidade de carga que é convertida em trabalho."
+            },
+            {
+              "symbol": "L",
+              "description": "Representa a distância entre as duas placas condutoras, que é a separação física que influencia a intensidade do campo elétrico."
+            }
+          ]
+        }
+      ]
     }
   ],
   "answers": [
@@ -123,6 +241,45 @@
             {
               "symbol": "B",
               "description": "Um valor constante que representa uma densidade de portadores de referência, que neste caso é 10 elevado a 17, indicando uma densidade específica de portadores."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Ex 5.4",
+      "text": "The conductivity is then \\sigma = e \\mu_p (N_a - N_d) = (1.6 \\\times 10^{-19})(410)(1.25 \\\times 10^{16} - 5 \\\times 10^{15}) = 0.492",
+      "formulas": [
+        {
+          "originalFormula": "\\sigma = e \\mu_p (N_a - N_d)",
+          "genericFormula": "\\sigma = e \\mu_p (N_a - N_d)",
+          "description": "Esta fórmula representa a condutividade elétrica de um semicondutor dopado, onde a condutividade é influenciada pela carga elétrica, mobilidade dos portadores de carga e a diferença entre a concentração de portadores de carga positiva e negativa.",
+          "concepts": [
+            "Condutividade elétrica",
+            "Dopagem de semicondutores",
+            "Mobilidade de portadores de carga",
+            "Concentração de portadores de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "σ",
+              "description": "Representa a condutividade elétrica do material, que indica a capacidade do semicondutor de conduzir eletricidade."
+            },
+            {
+              "symbol": "e",
+              "description": "Representa a carga elementar, que é a quantidade de carga elétrica transportada por um único elétron."
+            },
+            {
+              "symbol": "μ_p",
+              "description": "Representa a mobilidade dos portadores de carga positiva, que é uma medida de quão rapidamente os buracos (portadores de carga positiva) podem se mover através do semicondutor quando um campo elétrico é aplicado."
+            },
+            {
+              "symbol": "N_a",
+              "description": "Representa a concentração de átomos dopantes do tipo aceito, que introduzem buracos no semicondutor, aumentando a quantidade de portadores de carga positiva."
+            },
+            {
+              "symbol": "N_d",
+              "description": "Representa a concentração de átomos dopantes do tipo doador, que introduzem elétrons no semicondutor, aumentando a quantidade de portadores de carga negativa."
             }
           ]
         }
@@ -281,6 +438,68 @@
         {
           "symbol": "m",
           "description": "Representa a massa da partícula, que é uma medida de quanta matéria a partícula contém e influencia sua aceleração sob a força."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\sigma_i = e(\\mu_n + \\mu_p)n",
+      "genericFormula": "\\sigma = e(\\mu_n + \\mu_p)n",
+      "description": "Esta fórmula representa a condutividade elétrica de um semicondutor intrínseco, onde a condutividade é influenciada pela mobilidade dos portadores de carga e pela densidade de portadores.",
+      "concepts": [
+        "Condutividade elétrica",
+        "Mobilidade dos portadores de carga",
+        "Densidade de portadores",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "σ",
+          "description": "Representa a condutividade elétrica, que é uma medida de quão bem um material conduz eletricidade."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a quantidade de carga elétrica de um único elétron."
+        },
+        {
+          "symbol": "μ_n",
+          "description": "Representa a mobilidade dos elétrons, que é uma medida de quão rapidamente os elétrons podem se mover através do semicondutor quando um campo elétrico é aplicado."
+        },
+        {
+          "symbol": "μ_p",
+          "description": "Representa a mobilidade dos buracos, que é uma medida de quão rapidamente os buracos (defeitos que representam a ausência de um elétron) podem se mover através do semicondutor."
+        },
+        {
+          "symbol": "n",
+          "description": "Representa a densidade de portadores de carga, que é o número de portadores de carga (elétrons e buracos) por unidade de volume no semicondutor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\frac{1}{2} m_e v^2 = \\frac{3}{2} kT = \\frac{3}{2}(0.0259) = 0.03885 \\text{ eV}",
+      "genericFormula": "\\frac{1}{2} m v^2 = \\frac{3}{2} k T",
+      "description": "Esta fórmula representa a relação entre a energia cinética média de uma partícula e a temperatura de um sistema. A primeira parte da equação mostra que a energia cinética média de uma partícula é proporcional ao quadrado da sua velocidade, enquanto a segunda parte relaciona essa energia à temperatura do sistema através da constante de Boltzmann.",
+      "concepts": [
+        "Energia cinética",
+        "Temperatura",
+        "Constante de Boltzmann",
+        "Partículas em movimento"
+      ],
+      "symbols": [
+        {
+          "symbol": "m",
+          "description": "massa da partícula em questão, que determina a quantidade de matéria que ela contém."
+        },
+        {
+          "symbol": "v",
+          "description": "velocidade da partícula, que é a taxa de variação da sua posição em relação ao tempo."
+        },
+        {
+          "symbol": "k",
+          "description": "constante de Boltzmann, que relaciona a temperatura de um sistema à energia térmica média das partículas que o compõem."
+        },
+        {
+          "symbol": "T",
+          "description": "temperatura do sistema, que é uma medida da energia cinética média das partículas em movimento."
         }
       ]
     }
@@ -477,7 +696,9 @@
     189,
     190,
     191,
-    192
+    192,
+    193,
+    194
   ],
-  "lastUpdated": "2026-05-08T20:54:47.926Z"
+  "lastUpdated": "2026-05-08T20:56:35.903Z"
 }

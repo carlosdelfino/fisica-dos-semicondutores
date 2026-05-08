@@ -7,3 +7,4 @@ logs/
 .env.local
 .DS_Store
 tmp
+docs
