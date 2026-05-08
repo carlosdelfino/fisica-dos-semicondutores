@@ -1,0 +1,1052 @@
+{
+  "chapter": "8 Bipolar Transistors I: Characteristics and First-Order Model",
+  "questions": [
+    {
+      "number": "1",
+      "text": "Why will the holes cross into the collector?",
+      "formulas": []
+    },
+    {
+      "number": "Q8-1",
+      "text": "Identify the junction voltages and their signs in each of the four modes of operation for an NPN transistor.",
+      "formulas": []
+    },
+    {
+      "number": "Q8-2",
+      "text": "Identify the components of each of the three terminal currents for an NPN transistor.",
+      "formulas": []
+    },
+    {
+      "number": "Q8-3",
+      "text": "What is meant by emitter efficiency?",
+      "formulas": []
+    },
+    {
+      "number": "Q8-4",
+      "text": "What is meant by base transport factor?",
+      "formulas": []
+    },
+    {
+      "number": "Q8-5",
+      "text": "State, in equation form, the relationship between the three voltages for a PNP transistor.",
+      "formulas": []
+    },
+    {
+      "number": "Q8-6",
+      "text": "Why is the collector current in a PNP transistor in the inverse active region much smaller than in the active region?",
+      "formulas": []
+    },
+    {
+      "number": "Q8-7",
+      "text": "Why does the collector current decrease when the transistor is operated in the saturation region?",
+      "formulas": []
+    },
+    {
+      "number": "Q8-8",
+      "text": "What is the function of the buried layer?",
+      "formulas": []
+    },
+    {
+      "number": "Q8-9",
+      "text": "Why are the devices placed in tubs?",
+      "formulas": []
+    },
+    {
+      "number": "a",
+      "text": "I_{E}n, I_{E}p, and I_{E}",
+      "formulas": []
+    },
+    {
+      "number": "b",
+      "text": "I_{C}n, I_{C}p, and I_{C}",
+      "formulas": []
+    },
+    {
+      "number": "c",
+      "text": "I_{B}",
+      "formulas": []
+    },
+    {
+      "number": "d",
+      "text": "\\beta",
+      "formulas": []
+    },
+    {
+      "number": "8.7",
+      "text": "For the device of Problem 8.6, given \\( \\tau_{nE} = 10^{-8}s \\), \\( \\tau_{pB} = 10^{-7}s \\), and \\( \\tau_{nC} = 10^{-6}s \\). Determine:",
+      "formulas": []
+    },
+    {
+      "number": "8.8",
+      "text": "For the device of Problem 8.7, determine:",
+      "formulas": []
+    },
+    {
+      "number": "8.9",
+      "text": "Assume that the minority carrier distribution in the base of a PNP BJT is linear when the BJT is operating in the active region with \\( |V_{BC}| \\gg |V_{BE}| \\) and \\( |V_{BE}| \\gg kT/q \\). Derive expressions for:",
+      "formulas": []
+    },
+    {
+      "number": "8.10",
+      "text": "The Ebers-Moll model of the BJT includes three device properties only, namely: \\( I_{SM}, \\alpha_F, \\) and \\( \\alpha_R \\). Briefly explain how you would determine these for an NPN device from measurements carried out on the BJT.",
+      "formulas": []
+    },
+    {
+      "number": "8.11",
+      "text": "A silicon PNP transistor is operating at 300K and: \\( N_{A} = 1 \\times 10^{18}cm^{-3}, N_{B} = 1 \\times 10^{15}cm^{-3}, L_{nE} = L_{pB} = L_{nC} = 10\\mu m, W_{B} = 1\\mu m, \\) and \\( A = 1mm^{2} \\). Determine the collector current, \\( I_{C} \\), when the BJT is operating in the active mode for:",
+      "formulas": []
+    },
+    {
+      "number": "8.12",
+      "text": "Briefly explain why \\( I_{C}/I_{B} \\) for an NPN BJT, operating in saturation, decreases as \\( V_{CE} \\) is reduced. Does \\( I_{C} \\) decrease? Does \\( I_{B} \\) increase?",
+      "formulas": []
+    },
+    {
+      "number": "8.13",
+      "text": "A silicon NPN BJT has \\( N_{D} = 5 \\times 10^{17}cm^{-3}, N_{A} = 10^{16}cm^{-3}, W_{B} = 5\\mu m, \\) and \\( \\tau_{pC} = 1\\mu s \\). Determine \\( \\beta_{F} \\) at \\( T = 300K \\) for:",
+      "formulas": []
+    },
+    {
+      "number": "8.14",
+      "text": "A silicon NPN BJT has \\( N_{A} = 10^{16}cm^{-3} \\) and \\( \\tau_{pB} = 1\\mu s \\). Determine \\( W_{B} \\) so that the transport factor is 0.995 at \\( T = 300K \\). Assume \\( (W_{B}/L_{p}) \\ll 1 \\).",
+      "formulas": []
+    },
+    {
+      "number": "8.15",
+      "text": "The expression for \\( |V_{CESAT}| \\) of a BJT in saturation is given by \\( |V_{CESAT}| = V_{T} \\ln \\left( \\frac{1}{\\alpha_{R} + \\beta_{S}/\\beta_{R}} \\right) \\frac{1}{1 - \\beta_{S}/\\beta_{F}} \\right) \\) where \\( \\beta_{S} = \\frac{I_{C}}{I_{B}} \\). Use the Ebers-Moll model equations and the equality of \\( \\alpha_{F}I_{C} \\) to derive the above expression.",
+      "formulas": []
+    },
+    {
+      "number": "8.16",
+      "text": "For an NPN BJT having \\( \\alpha_{F} = 0.99 \\) and \\( \\alpha_{R} = 0.5 \\), plot \\( I_{C}/I_{B} \\) as \\( I_{C}/I_{B} \\) varies from 20 to 95. T = 300K.",
+      "formulas": []
+    },
+    {
+      "number": "8.17",
+      "text": "An NPN BJT at \\( T = 300K \\) has \\( \\alpha_{F} = 0.995 \\) and \\( \\alpha_{R} = 0.15 \\) at \\( I_{C} = 1mA \\). Determine \\( I_{B} \\) for \\( V_{CESAT} \\) equal to:",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "a",
+      "text": "I_{E}n = 1908.47 \\mu A, I_{E}p = 1.76438 \\times 10^{-6} A, I_{E} = 1910.2343 \\mu A",
+      "formulas": []
+    },
+    {
+      "questionNumber": "b",
+      "text": "I_{C}n = 1908.358 \\mu A, I_{C}p = 5.523 \\times 10^{-15} A, I_{C} = 1908.35 \\mu A",
+      "formulas": []
+    },
+    {
+      "questionNumber": "c",
+      "text": "I_{B} = 1.8639 \\times 10^{-6} A",
+      "formulas": []
+    },
+    {
+      "questionNumber": "d",
+      "text": "\\beta = \\frac{I_{C}}{I_{B}} = 1024",
+      "formulas": []
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "R_{c} = \\frac{R_{c,0}}{20}",
+      "genericFormula": "R_{c} = \\frac{R_{c,0}}{k}",
+      "description": "Esta fórmula representa a relação entre a resistência de um componente, denotada como R_c, e uma resistência de referência, R_{c,0}, dividida por um fator constante, que neste caso é 20. Essa relação é importante para entender como a resistência de um circuito pode ser ajustada ou normalizada em relação a um valor padrão.",
+      "concepts": [
+        "Resistência elétrica",
+        "Relação de proporcionalidade",
+        "Normalização de valores"
+      ],
+      "symbols": [
+        {
+          "symbol": "R_{c}",
+          "description": "Representa a resistência do componente em questão, que pode variar dependendo das condições do circuito."
+        },
+        {
+          "symbol": "R_{c,0}",
+          "description": "É a resistência de referência ou inicial, que serve como um padrão para comparação."
+        },
+        {
+          "symbol": "k",
+          "description": "É um fator constante que, neste caso, é igual a 20, e que determina a relação entre a resistência de referência e a resistência do componente."
+        }
+      ]
+    },
+    {
+      "originalFormula": "p/p(0) \\approx \\frac{\\sinh\\left[(W_{B} - x)/L_{p}\\right]}{\\sinh(W_{B}/L_{p})}",
+      "genericFormula": "p/p(0) \\approx \\frac{\\sinh\\left[(W - x)/L\\right]}{\\sinh(W/L)}",
+      "description": "Esta fórmula representa a relação entre a densidade de portadores de carga em um determinado ponto em um material semicondutor e a densidade de portadores de carga em um ponto de referência, levando em consideração a variação da largura da barreira e o comprimento de difusão.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Barreira potencial",
+        "Comprimento de difusão",
+        "Função hiperbólica seno"
+      ],
+      "symbols": [
+        {
+          "symbol": "p",
+          "description": "Representa a densidade de portadores de carga em um ponto específico do material semicondutor."
+        },
+        {
+          "symbol": "p(0)",
+          "description": "Representa a densidade de portadores de carga em um ponto de referência, geralmente em uma condição inicial ou em um limite conhecido."
+        },
+        {
+          "symbol": "W_{B}",
+          "description": "Representa a largura da barreira potencial no material semicondutor, que influencia a movimentação dos portadores de carga."
+        },
+        {
+          "symbol": "x",
+          "description": "Representa a posição ao longo do material semicondutor onde a densidade de portadores de carga está sendo avaliada."
+        },
+        {
+          "symbol": "L_{p}",
+          "description": "Representa o comprimento de difusão, que é uma medida de quão longe os portadores de carga podem se mover antes de serem recombinados ou perderem sua energia."
+        }
+      ]
+    },
+    {
+      "originalFormula": "I_E = q A \\left[ \\frac{D_p p_0}{W_B} + \\frac{D_n n_{0E}}{L_n E} \\right] \\left[ \\exp \\left( \\frac{q V_{EB}}{kT} \\right) - 1 \\right]",
+      "genericFormula": "I_E = q A \\left[ \\frac{D_p p_0}{W_B} + \\frac{D_n n_{0E}}{L_n E} \\right] \\left[ \\exp \\left( \\frac{q V_{EB}}{kT} \\right) - 1 \\right]",
+      "description": "Esta fórmula representa a corrente de emissão em um dispositivo semicondutor, levando em conta a contribuição de portadores de carga e a influência da tensão aplicada. Ela descreve como a corrente varia em função de diversos parâmetros físicos e elétricos.",
+      "concepts": [
+        "Corrente elétrica",
+        "Portadores de carga",
+        "Difusão de portadores",
+        "Tensão elétrica",
+        "Temperatura",
+        "Constante de Boltzmann"
+      ],
+      "symbols": [
+        {
+          "symbol": "I_E",
+          "description": "Representa a corrente de emissão, que é a quantidade de carga que flui através do dispositivo por unidade de tempo."
+        },
+        {
+          "symbol": "q",
+          "description": "É a carga elementar, que representa a carga de um único elétron."
+        },
+        {
+          "symbol": "A",
+          "description": "É a área da seção transversal do dispositivo semicondutor onde a corrente está sendo medida."
+        },
+        {
+          "symbol": "D_p",
+          "description": "É o coeficiente de difusão dos portadores de carga do tipo 'p', que indica a facilidade com que esses portadores se movem através do material."
+        },
+        {
+          "symbol": "p_0",
+          "description": "É a concentração de portadores do tipo 'p' no equilíbrio, ou seja, a quantidade de lacunas disponíveis no material."
+        },
+        {
+          "symbol": "W_B",
+          "description": "É a largura da barreira potencial que os portadores devem atravessar para contribuir com a corrente."
+        },
+        {
+          "symbol": "D_n",
+          "description": "É o coeficiente de difusão dos portadores de carga do tipo 'n', que também indica a facilidade de movimento desses portadores."
+        },
+        {
+          "symbol": "n_{0E}",
+          "description": "É a concentração de portadores do tipo 'n' no equilíbrio, representando a quantidade de elétrons disponíveis no material."
+        },
+        {
+          "symbol": "L_n",
+          "description": "É o comprimento de difusão dos portadores do tipo 'n', que indica a distância média que esses portadores podem se mover antes de recombinar."
+        },
+        {
+          "symbol": "E",
+          "description": "É o campo elétrico aplicado, que influencia o movimento dos portadores de carga."
+        },
+        {
+          "symbol": "V_{EB}",
+          "description": "É a tensão de base-emissor, que é a diferença de potencial aplicada entre a base e o emissor do dispositivo."
+        },
+        {
+          "symbol": "k",
+          "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia térmica dos portadores."
+        },
+        {
+          "symbol": "T",
+          "description": "É a temperatura absoluta do sistema, medida em Kelvin, que afeta a energia dos portadores de carga."
+        }
+      ]
+    },
+    {
+      "originalFormula": "I_C = q A \\left[ \\frac{D_p p_0}{W_B} \\right] \\left[ \\exp \\left( \\frac{q V_{EB}}{kT} \\right) - 1 \\right]",
+      "genericFormula": "I_C = q A \\left[ \\frac{D_p p_0}{W_B} \\right] \\left[ \\exp \\left( \\frac{q V_{EB}}{kT} \\right) - 1 \\right]",
+      "description": "Esta fórmula representa a corrente de coletor em um transistor bipolar, onde a corrente é influenciada pela difusão de portadores de carga e pela tensão aplicada entre o emissor e a base do transistor.",
+      "concepts": [
+        "Corrente elétrica",
+        "Transistores bipolares",
+        "Difusão de portadores de carga",
+        "Efeito da temperatura na corrente",
+        "Tensão aplicada"
+      ],
+      "symbols": [
+        {
+          "symbol": "I_C",
+          "description": "Representa a corrente de coletor do transistor, que é a corrente que flui do coletor para o emissor."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elementar, que é a carga de um único elétron."
+        },
+        {
+          "symbol": "A",
+          "description": "Representa a área da junção entre o emissor e a base do transistor, que influencia a quantidade de portadores que podem atravessar essa junção."
+        },
+        {
+          "symbol": "D_p",
+          "description": "Representa o coeficiente de difusão dos portadores de carga do tipo positivo (buracos) no material semicondutor."
+        },
+        {
+          "symbol": "p_0",
+          "description": "Representa a concentração de portadores de carga do tipo positivo (buracos) na base do transistor, antes da aplicação da tensão."
+        },
+        {
+          "symbol": "W_B",
+          "description": "Representa a largura da base do transistor, que afeta a quantidade de portadores que podem ser injetados na base."
+        },
+        {
+          "symbol": "V_{EB}",
+          "description": "Representa a tensão entre o emissor e a base do transistor, que é crucial para a operação do transistor."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura ao comportamento estatístico das partículas."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta em Kelvin, que influencia a energia térmica dos portadores de carga."
+        }
+      ]
+    },
+    {
+      "originalFormula": "I_{EF} \\equiv q A \\left[ \\frac{D_p p_0}{W_B} + \\frac{D_n n_{0E}}{L_n E} \\right] \\left[ \\exp \\left( \\frac{q V_{EB}}{kT} \\right) - 1 \\right]",
+      "genericFormula": "I_{EF} \\equiv q A \\left[ \\frac{D_p p_0}{W_B} + \\frac{D_n n_{0E}}{L_n E} \\right] \\left[ \\exp \\left( \\frac{q V_{EB}}{kT} \\right) - 1 \\right]",
+      "description": "Esta fórmula representa a corrente elétrica em um dispositivo semicondutor, levando em consideração os efeitos de difusão de portadores de carga e a relação entre a tensão aplicada e a temperatura do sistema. Ela é fundamental para entender como a corrente se comporta em função de variáveis como concentração de portadores e a energia térmica.",
+      "concepts": [
+        "Corrente elétrica",
+        "Difusão de portadores de carga",
+        "Tensão elétrica",
+        "Temperatura",
+        "Efeito da energia térmica"
+      ],
+      "symbols": [
+        {
+          "symbol": "I_{EF}",
+          "description": "Representa a corrente elétrica que flui através do semicondutor."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica elementar, que é a carga de um único elétron."
+        },
+        {
+          "symbol": "A",
+          "description": "Representa a área da seção transversal do semicondutor onde a corrente está fluindo."
+        },
+        {
+          "symbol": "D_p",
+          "description": "Representa o coeficiente de difusão dos portadores de carga do tipo 'p' (buracos)."
+        },
+        {
+          "symbol": "p_0",
+          "description": "Representa a concentração de portadores do tipo 'p' (buracos) em equilíbrio."
+        },
+        {
+          "symbol": "W_B",
+          "description": "Representa a largura da região de depleção em um dispositivo semicondutor."
+        },
+        {
+          "symbol": "D_n",
+          "description": "Representa o coeficiente de difusão dos portadores de carga do tipo 'n' (elétrons)."
+        },
+        {
+          "symbol": "n_{0E}",
+          "description": "Representa a concentração de portadores do tipo 'n' (elétrons) em equilíbrio."
+        },
+        {
+          "symbol": "L_n",
+          "description": "Representa o comprimento de difusão dos portadores do tipo 'n' (elétrons)."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa o campo elétrico aplicado no semicondutor."
+        },
+        {
+          "symbol": "V_{EB}",
+          "description": "Representa a tensão entre a junção do emissor e a base em um transistor."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia térmica."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta do sistema em Kelvin."
+        }
+      ]
+    },
+    {
+      "originalFormula": "I_{CR} \\equiv q A \\left[ \\frac{D_p p_0}{W_B} + \\frac{D_n n_{0C}}{L_n C} \\right] \\left[ \\exp \\left( \\frac{q V_{CB}}{kT} \\right) - 1 \\right]",
+      "genericFormula": "I_{CR} \\equiv q A \\left[ \\frac{D_p p_0}{W_B} + \\frac{D_n n_{0C}}{L_n C} \\right] \\left[ \\exp \\left( \\frac{q V_{CB}}{kT} \\right) - 1 \\right]",
+      "description": "Esta fórmula representa a corrente de recombinação em um dispositivo semicondutor, que é influenciada pela difusão de portadores de carga e pela tensão aplicada. A corrente é uma medida da quantidade de carga que flui através do dispositivo devido a esses fenômenos.",
+      "concepts": [
+        "Corrente elétrica",
+        "Recombinação de portadores de carga",
+        "Difusão de portadores",
+        "Tensão elétrica",
+        "Temperatura em sistemas semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "I_{CR}",
+          "description": "Representa a corrente de recombinação, que é a quantidade de carga que flui devido à recombinação de portadores de carga em um semicondutor."
+        },
+        {
+          "symbol": "q",
+          "description": "É a carga elementar, que representa a quantidade de carga de um único elétron."
+        },
+        {
+          "symbol": "A",
+          "description": "É a área da junção do semicondutor, que influencia a quantidade de corrente que pode fluir através dela."
+        },
+        {
+          "symbol": "D_p",
+          "description": "É o coeficiente de difusão dos portadores de carga positivos (buracos) no material semicondutor."
+        },
+        {
+          "symbol": "p_0",
+          "description": "É a densidade de portadores de carga positivos (buracos) em equilíbrio térmico no semicondutor."
+        },
+        {
+          "symbol": "W_B",
+          "description": "É a largura da região de depleção, que afeta a recombinação de portadores de carga."
+        },
+        {
+          "symbol": "D_n",
+          "description": "É o coeficiente de difusão dos portadores de carga negativos (elétrons) no material semicondutor."
+        },
+        {
+          "symbol": "n_{0C}",
+          "description": "É a densidade de portadores de carga negativos (elétrons) em equilíbrio térmico no semicondutor."
+        },
+        {
+          "symbol": "L_n",
+          "description": "É o comprimento de difusão dos portadores de carga negativos (elétrons), que influencia a eficiência da corrente."
+        },
+        {
+          "symbol": "C",
+          "description": "É uma constante que pode representar a capacitância ou um fator de geometria que afeta a corrente."
+        },
+        {
+          "symbol": "V_{CB}",
+          "description": "É a tensão aplicada entre a junção do coletor e a base do semicondutor, que influencia a corrente de recombinação."
+        },
+        {
+          "symbol": "k",
+          "description": "É a constante de Boltzmann, que relaciona a temperatura ao comportamento estatístico das partículas."
+        },
+        {
+          "symbol": "T",
+          "description": "É a temperatura absoluta do sistema, que afeta a energia térmica dos portadores de carga."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\alpha_F \\equiv \\left( \\frac{D_p p_0}{W_B} \\right) \\left[ \\frac{D_p p_0}{W_B} + \\frac{D_n n_{0E}}{L_n E} \\right]",
+      "genericFormula": "\\alpha_F \\equiv \\left( \\frac{D_p P_0}{W_B} \\right) \\left[ \\frac{D_p P_0}{W_B} + \\frac{D_n N_{0E}}{L_n E} \\right]",
+      "description": "Esta fórmula representa a taxa de recombinação de portadores de carga em um semicondutor, levando em consideração a difusão de portadores de carga e a largura da região de depleção.",
+      "concepts": [
+        "Difusão de portadores de carga",
+        "Recombinação de portadores",
+        "Semicondutores",
+        "Região de depleção"
+      ],
+      "symbols": [
+        {
+          "symbol": "α_F",
+          "description": "Representa a taxa de recombinação de portadores de carga no semicondutor."
+        },
+        {
+          "symbol": "D_p",
+          "description": "É o coeficiente de difusão dos portadores de carga do tipo positivo (buracos)."
+        },
+        {
+          "symbol": "p_0",
+          "description": "É a densidade de portadores de carga do tipo positivo (buracos) em equilíbrio térmico."
+        },
+        {
+          "symbol": "W_B",
+          "description": "É a largura da região de depleção em um semicondutor."
+        },
+        {
+          "symbol": "D_n",
+          "description": "É o coeficiente de difusão dos portadores de carga do tipo negativo (elétrons)."
+        },
+        {
+          "symbol": "n_{0E}",
+          "description": "É a densidade de portadores de carga do tipo negativo (elétrons) em equilíbrio térmico."
+        },
+        {
+          "symbol": "L_n",
+          "description": "É a largura da região onde os portadores de carga do tipo negativo (elétrons) se difundem."
+        },
+        {
+          "symbol": "E",
+          "description": "É o campo elétrico aplicado no semicondutor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\alpha_R \\equiv \\left( \\frac{D_p p_0}{W_B} \\right) \\left[ \\frac{D_p p_0}{W_B} + \\frac{D_n n_{0C}}{L_n C} \\right]",
+      "genericFormula": "\\alpha_R \\equiv \\left( \\frac{D_p P_0}{W_B} \\right) \\left[ \\frac{D_p P_0}{W_B} + \\frac{D_n N_{0C}}{L_n C} \\right]",
+      "description": "Esta fórmula representa a taxa de recombinação de portadores de carga em um semicondutor, levando em conta a difusão de portadores positivos e negativos e suas respectivas concentrações e mobilidades.",
+      "concepts": [
+        "Difusão de portadores de carga",
+        "Recombinação de portadores",
+        "Concentração de portadores",
+        "Mobilidade de portadores",
+        "Geometria do semicondutor"
+      ],
+      "symbols": [
+        {
+          "symbol": "α_R",
+          "description": "Representa a taxa de recombinação de portadores de carga em um semicondutor."
+        },
+        {
+          "symbol": "D_p",
+          "description": "É o coeficiente de difusão dos portadores positivos (buracos) no material semicondutor."
+        },
+        {
+          "symbol": "p_0",
+          "description": "É a concentração de portadores positivos (buracos) em equilíbrio no semicondutor."
+        },
+        {
+          "symbol": "W_B",
+          "description": "É a largura da região de base do semicondutor, que influencia a taxa de recombinação."
+        },
+        {
+          "symbol": "D_n",
+          "description": "É o coeficiente de difusão dos portadores negativos (elétrons) no material semicondutor."
+        },
+        {
+          "symbol": "n_{0C}",
+          "description": "É a concentração de portadores negativos (elétrons) em equilíbrio no semicondutor."
+        },
+        {
+          "symbol": "L_n",
+          "description": "É o comprimento de difusão dos portadores negativos, que afeta a recombinação."
+        },
+        {
+          "symbol": "C",
+          "description": "É uma constante que pode representar a capacitância ou outro fator relevante no contexto da recombinação."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498
+  ],
+  "lastUpdated": "2026-05-08T19:05:42.062Z"
+}

@@ -56,6 +56,7 @@ export default {
       czochralski: '🔬 晶体生长方法',
       perovskites: '☀️ 二维钙钛矿',
       formulas: '📐 公式与符号',
+      exercises: '📝 练习',
       periodic: '⚛️ 元素周期表',
       about: '👤 关于',
       community: '🤝 在 GitHub 上协作',

@@ -1,0 +1,1176 @@
+{
+  "chapter": "11",
+  "questions": [
+    {
+      "number": "a",
+      "text": "Determine the pinchoff voltage, V_{p}.",
+      "formulas": [
+        {
+          "originalFormula": "V_{p} = \\frac{a^{2} q n_{D}}{2 \\epsilon}",
+          "genericFormula": "V_{p} = \\frac{a^{2} q n_{D}}{2 \\epsilon}",
+          "description": "Esta fórmula representa a tensão de polarização em um semicondutor, que é uma medida da quantidade de energia elétrica armazenada em um determinado volume do material. A tensão de polarização é influenciada por fatores como a densidade de portadores de carga e as propriedades elétricas do material.",
+          "concepts": [
+            "Tensão de polarização",
+            "Densidade de portadores de carga",
+            "Permissividade elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{p}",
+              "description": "Representa a tensão de polarização, que é a diferença de potencial elétrico em um semicondutor."
+            },
+            {
+              "symbol": "a",
+              "description": "Representa uma dimensão característica do semicondutor, como o comprimento ou a largura de uma região do material."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elétrica elementar, que é a carga de um único elétron ou próton."
+            },
+            {
+              "symbol": "n_{D}",
+              "description": "Representa a densidade de portadores de carga do tipo doador, que é a quantidade de portadores de carga positiva disponíveis no semicondutor."
+            },
+            {
+              "symbol": "\\epsilon",
+              "description": "Representa a permissividade elétrica do material, que é uma medida de como o material responde a um campo elétrico aplicado."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "b",
+      "text": "Determine the threshold voltage, V_{T}.",
+      "formulas": [
+        {
+          "originalFormula": "V_{T} = V_{bi} - V_{p}",
+          "genericFormula": "V_{T} = V_{bi} - V_{p}",
+          "description": "Esta fórmula representa a tensão de polarização de um diodo, onde a tensão total é determinada pela diferença entre a tensão de built-in e a tensão de polarização aplicada ao diodo. Essa relação é fundamental para entender como os diodos conduzem corrente elétrica sob diferentes condições de polarização.",
+          "concepts": [
+            "Tensão de polarização",
+            "Tensão de built-in",
+            "Diodo",
+            "Condução de corrente elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{T}",
+              "description": "Representa a tensão de polarização total do diodo."
+            },
+            {
+              "symbol": "V_{bi}",
+              "description": "Representa a tensão de built-in, que é a tensão interna do diodo quando não há corrente fluindo."
+            },
+            {
+              "symbol": "V_{p}",
+              "description": "Representa a tensão de polarização aplicada externamente ao diodo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "c",
+      "text": "Determine the type of device.",
+      "formulas": []
+    },
+    {
+      "number": "d",
+      "text": "Determine the drain current at saturation for V_{G} = 0.",
+      "formulas": []
+    },
+    {
+      "number": "Q11-9",
+      "text": "Identify the major structural and material differences between the JFET and the MESFET.",
+      "formulas": []
+    },
+    {
+      "number": "Q11-10",
+      "text": "Give one major reason why the GaAs MESFET has better high frequency response than other transistors.",
+      "formulas": []
+    },
+    {
+      "number": "Q11-11",
+      "text": "Distinguish between an enhancement-mode and a depletion-mode MESFET, both in construction and in properties.",
+      "formulas": []
+    },
+    {
+      "number": "Q11-12",
+      "text": "Define the threshold voltage for each of the modes of operation.",
+      "formulas": []
+    },
+    {
+      "number": "Q11-13",
+      "text": "What are the signs of V_{p}, V_{G} and V_{T} for each of the two modes?",
+      "formulas": []
+    },
+    {
+      "number": "11.5",
+      "text": "Gold is deposited on N-type GaAs to form a Schottky barrier diode. Determine, at T = 300K, the saturation current density using a value of 8Acm^{-2}K^{-2} for Richardson's constant.",
+      "formulas": []
+    },
+    {
+      "number": "11.6",
+      "text": "A Schottky barrier diode is made from aluminum deposited on N-type GaAs. The diameter of the junction is 100μm. Plot the current-voltage characteristic for the diode starting at a reverse voltage of 1V and up to a forward voltage of 0.6V. Use R = 8Acm^{-2}K^{-2} and T = 300K.",
+      "formulas": []
+    },
+    {
+      "number": "11.7",
+      "text": "A Schottky barrier diode is being compared to a P+N junction diode. The Schottky diode is made from aluminum on N-type silicon. The PN diode has N_A = 10^{18}cm^{-3}, N_D = 10^{16}cm^{-3}. Determine, at T = 300K, the voltages that need to be applied to each diode to obtain a current density of 1Acm^{-2}.",
+      "formulas": []
+    },
+    {
+      "number": "11.8a",
+      "text": "A Schottky barrier diode is made from tungsten on silicon doped with antimony at a density of 5 × 10^{15}cm^{-3}. The junction area is 0.5mm². Determine, at T = 300K, the current at a forward bias of 0.3V.",
+      "formulas": []
+    },
+    {
+      "number": "11.8b",
+      "text": "The current, at V_a = 0.3V, in a P+N silicon junction diode having N_A = 10^{18}cm^{-3}, N_D = 10^{15}cm^{-3}, and τ_p = τ_n = 1μs.",
+      "formulas": []
+    },
+    {
+      "number": "11.9a",
+      "text": "A Schottky barrier contact is made from gold on N-type silicon having N_D = 10^{15}cm^{-3}. The junction area is 1.0mm². Determine, at T = 300K, the depletion layer capacitance at an applied voltage of -3V.",
+      "formulas": []
+    },
+    {
+      "number": "11.9b",
+      "text": "Draw the 1/C² versus V relationship identifying the values of the capacitance and the voltage at the respective intercepts.",
+      "formulas": []
+    },
+    {
+      "number": "11.10a",
+      "text": "A Schottky barrier diode is made from PtSi on silicon doped with N_D = 10^{16}cm^{-3}. The junction area is 10^{-5}cm². Determine the small-signal capacitance at zero DC bias.",
+      "formulas": []
+    },
+    {
+      "number": "11.10b",
+      "text": "The reverse bias at which C is reduced by 30 percent.",
+      "formulas": []
+    },
+    {
+      "number": "11.11a",
+      "text": "A Schottky barrier diode is made on N silicon having doping N_D = 1.5 × 10^{15}cm^{-3}. The metal work function is 5.1V. Determine the barrier height.",
+      "formulas": []
+    },
+    {
+      "number": "11.11b",
+      "text": "The built-in voltage.",
+      "formulas": []
+    },
+    {
+      "number": "11.11c",
+      "text": "The depletion layer width at zero bias.",
+      "formulas": []
+    },
+    {
+      "number": "11.12",
+      "text": "A Schottky barrier diode is made on N silicon with a junction diameter of 50μm. The slope of the 1/C² versus V_a plot is -4 × 10^{23}F^{-2}V^{-1}. Determine the doping density in the silicon.",
+      "formulas": []
+    },
+    {
+      "number": "11.13a",
+      "text": "Tungsten is deposited on N-type silicon, with N_D = 10^{15}cm^{-3}, to form a Schottky barrier diode that has an area of 10^{-4}cm². Determine the diode current at V_a = 0.4V.",
+      "formulas": []
+    },
+    {
+      "number": "11.13b",
+      "text": "The voltage that has to be applied to a P+N junction diode, to obtain the same current, with the P+N diode having the same area and N_A = 10^{18}cm^{-3}, N_D = 10^{15}cm^{-3}, and τ_p = τ_n = 1μs.",
+      "formulas": []
+    },
+    {
+      "number": "11.14a",
+      "text": "A GaAs MESFET uses gold as a Schottky barrier gate. The channel doping is N_D = 10^{16}cm^{-3} and its width is 0.6μm. Determine, at T = 300K, the pinch-off voltage.",
+      "formulas": []
+    },
+    {
+      "number": "11.14b",
+      "text": "The built-in voltage.",
+      "formulas": []
+    },
+    {
+      "number": "11.14c",
+      "text": "The threshold voltage.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "a",
+      "text": "V_{p} = 4.31 V",
+      "formulas": [
+        {
+          "originalFormula": "V_{p} = \\frac{(0.25) \\times 10^{-8} \\times 1.6 \\times 10^{-19} \\times 10^{17}}{2 \\times 13.1 \\times 8.85 \\times 10^{-14}}",
+          "genericFormula": "V_{p} = \\frac{A \\times B \\times C \\times D}{E \\times F \\times G}",
+          "description": "Esta fórmula calcula a tensão de polarização em um sistema, onde diferentes constantes e parâmetros físicos são utilizados para determinar o valor da tensão resultante. A tensão é uma medida da energia por unidade de carga elétrica, e é fundamental em circuitos elétricos e dispositivos semicondutores.",
+          "concepts": [
+            "Tensão elétrica",
+            "Carga elétrica",
+            "Constantes físicas",
+            "Polarização em semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{p}",
+              "description": "Representa a tensão de polarização, que é a diferença de potencial elétrico em um sistema."
+            },
+            {
+              "symbol": "A",
+              "description": "Um coeficiente que pode representar uma constante de proporcionalidade ou um fator de ajuste no cálculo."
+            },
+            {
+              "symbol": "B",
+              "description": "Representa a carga elétrica, que é uma propriedade física que causa a interação eletromagnética entre partículas."
+            },
+            {
+              "symbol": "C",
+              "description": "Um fator que pode representar uma constante física, como a carga elementar, que é a menor unidade de carga elétrica."
+            },
+            {
+              "symbol": "D",
+              "description": "Um fator que pode representar uma potência de dez, que é frequentemente usada para simplificar a notação de números muito grandes ou muito pequenos."
+            },
+            {
+              "symbol": "E",
+              "description": "Um fator que representa uma constante ou um coeficiente que é parte do denominador da fórmula."
+            },
+            {
+              "symbol": "F",
+              "description": "Outro coeficiente que pode representar uma constante física ou um fator de ajuste no cálculo."
+            },
+            {
+              "symbol": "G",
+              "description": "Um fator que pode representar uma constante física, como a permissividade do vácuo, que é uma medida de como um campo elétrico se comporta em um meio."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "b",
+      "text": "V_{T} = -3.467 V",
+      "formulas": [
+        {
+          "originalFormula": "V_{T} = V_{bi} - V_{p}",
+          "genericFormula": "V_{T} = V_{bi} - V_{p}",
+          "description": "Esta fórmula representa a tensão de polarização de um dispositivo semicondutor, onde a tensão total é calculada subtraindo a tensão de polarização de um potencial interno específico do dispositivo.",
+          "concepts": [
+            "Tensão de polarização",
+            "Potencial interno",
+            "Semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{T}",
+              "description": "Representa a tensão total ou tensão de polarização do dispositivo semicondutor."
+            },
+            {
+              "symbol": "V_{bi}",
+              "description": "Representa a tensão de potencial interno, que é a tensão que existe na junção do semicondutor em equilíbrio térmico."
+            },
+            {
+              "symbol": "V_{p}",
+              "description": "Representa a tensão de polarização aplicada ao dispositivo, que pode influenciar o funcionamento do semicondutor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "c",
+      "text": "It is a depletion-mode device.",
+      "formulas": []
+    },
+    {
+      "questionNumber": "d",
+      "text": "The drain current at saturation for V_{G} = 0 is calculated using the provided equations.",
+      "formulas": [
+        {
+          "originalFormula": "I_{D} = G_{0} \\left[ V_{D} - \\frac{2V_{p}}{3} \\left( \\frac{V_{bi} + V_{D} - V_{G}}{V_{p}} \\right)^{3/2} + \\frac{2}{3}V_{p} \\left( \\frac{V_{bi} - V_{G}}{V_{p}} \\right)^{3/2} \\right]",
+          "genericFormula": "I_{D} = G_{0} \\left[ V_{D} - \\frac{2V_{p}}{3} \\left( \\frac{V_{bi} + V_{D} - V_{G}}{V_{p}} \\right)^{3/2} + \\frac{2}{3}V_{p} \\left( \\frac{V_{bi} - V_{G}}{V_{p}} \\right)^{3/2} \\right]",
+          "description": "Esta fórmula representa a corrente de dreno em um dispositivo semicondutor, como um transistor, em função de várias tensões aplicadas e parâmetros do dispositivo. Ela leva em consideração a tensão de dreno, a tensão de polarização e outros fatores que influenciam a corrente que flui através do dispositivo.",
+          "concepts": [
+            "Corrente elétrica",
+            "Tensão elétrica",
+            "Transistores",
+            "Polarização de semicondutores",
+            "Efeito de campo em dispositivos semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_{D}",
+              "description": "Representa a corrente que flui através do dreno do dispositivo semicondutor."
+            },
+            {
+              "symbol": "G_{0}",
+              "description": "É uma constante que representa a condutância do dispositivo, indicando a relação entre a corrente e a tensão."
+            },
+            {
+              "symbol": "V_{D}",
+              "description": "É a tensão aplicada ao dreno do dispositivo semicondutor."
+            },
+            {
+              "symbol": "V_{p}",
+              "description": "É a tensão de polarização, que é um parâmetro importante que afeta o funcionamento do dispositivo."
+            },
+            {
+              "symbol": "V_{bi}",
+              "description": "É a tensão de potencial interno do dispositivo, que influencia a corrente em condições de equilíbrio."
+            },
+            {
+              "symbol": "V_{G}",
+              "description": "É a tensão aplicada à porta do dispositivo, que controla a corrente que flui através do dreno."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "q \\Phi_B = q(\\Phi_m - \\chi) \\ (11.1)",
+      "genericFormula": "q \\Phi_B = q(\\Phi_m - \\chi)",
+      "description": "Esta fórmula representa a relação entre a energia potencial elétrica de uma carga em um campo elétrico e a energia de ligação de um material semicondutor. Ela mostra como a energia de uma carga é influenciada pela diferença entre a energia de Fermi do material e a energia de afinidade do semicondutor.",
+      "concepts": [
+        "Energia potencial elétrica",
+        "Energia de Fermi",
+        "Energia de afinidade",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica, que é uma propriedade física que causa a interação eletromagnética entre partículas."
+        },
+        {
+          "symbol": "\\Phi_B",
+          "description": "Representa a energia potencial elétrica da carga em um campo elétrico, que é a energia que a carga possui devido à sua posição em relação a outras cargas."
+        },
+        {
+          "symbol": "\\Phi_m",
+          "description": "Representa a energia de Fermi do material, que é o nível de energia mais alto ocupado por elétrons em um material a temperatura zero."
+        },
+        {
+          "symbol": "\\chi",
+          "description": "Representa a energia de afinidade do semicondutor, que é a energia necessária para remover um elétron de um átomo ou molécula do material."
+        }
+      ]
+    },
+    {
+      "originalFormula": "qV_{bi} = q(\\Phi_m - \\Phi_s)",
+      "genericFormula": "qV_{bi} = q(\\Phi_m - \\Phi_s)",
+      "description": "Esta fórmula representa a relação entre a energia potencial elétrica em uma junção de semicondutores e as diferenças de potencial associadas às energias de afinidade dos materiais envolvidos. Ela é fundamental para entender como as barreiras de potencial se formam em dispositivos semicondutores.",
+      "concepts": [
+        "Energia potencial elétrica",
+        "Diferença de potencial",
+        "Energia de afinidade",
+        "Junções de semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica elementar, que é a quantidade de carga transportada por um único elétron."
+        },
+        {
+          "symbol": "V_{bi}",
+          "description": "Representa a tensão de barreira interna, que é a diferença de potencial elétrico que se forma na junção de dois materiais semicondutores."
+        },
+        {
+          "symbol": "\\Phi_m",
+          "description": "Representa a função de trabalho do metal, que é a energia necessária para remover um elétron da superfície do metal."
+        },
+        {
+          "symbol": "\\Phi_s",
+          "description": "Representa a função de trabalho do semicondutor, que é a energia necessária para remover um elétron da superfície do semicondutor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "V_{bi} = \\Phi_B - \\Phi_D \\ (11.3)",
+      "genericFormula": "V_{bi} = \\Phi_B - \\Phi_D",
+      "description": "Esta fórmula representa a tensão de built-in (ou tensão de polarização) em uma junção de semicondutor. A tensão de built-in é a diferença de potencial que se estabelece na junção de dois materiais semicondutores, como o tipo P e o tipo N, devido à diferença nas energias de Fermi dos materiais envolvidos.",
+      "concepts": [
+        "Tensão de built-in",
+        "Energia de Fermi",
+        "Junção de semicondutores",
+        "Diferença de potencial"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_{bi}",
+          "description": "Representa a tensão de built-in, que é a diferença de potencial elétrico que se forma na junção de dois materiais semicondutores."
+        },
+        {
+          "symbol": "\\Phi_B",
+          "description": "Representa a energia de afinidade do semicondutor do tipo P, que é a energia necessária para remover um elétron da superfície do material para o nível de energia do vácuo."
+        },
+        {
+          "symbol": "\\Phi_D",
+          "description": "Representa a energia de afinidade do semicondutor do tipo N, que é a energia necessária para remover um elétron da superfície do material do tipo N para o nível de energia do vácuo."
+        }
+      ]
+    },
+    {
+      "originalFormula": "RC",
+      "genericFormula": "RC",
+      "description": "A fórmula RC representa o produto da resistência elétrica e da capacitância em um circuito elétrico. Esse produto é importante para entender o comportamento de circuitos que contêm resistores e capacitores, especialmente em relação ao tempo de carregamento e descarregamento do capacitor.",
+      "concepts": [
+        "Resistência elétrica",
+        "Capacitância",
+        "Circuitos elétricos",
+        "Tempo de resposta em circuitos RC"
+      ],
+      "symbols": [
+        {
+          "symbol": "R",
+          "description": "Representa a resistência elétrica, que é a oposição ao fluxo de corrente elétrica em um circuito."
+        },
+        {
+          "symbol": "C",
+          "description": "Representa a capacitância, que é a capacidade de um componente, como um capacitor, de armazenar carga elétrica."
+        }
+      ]
+    },
+    {
+      "originalFormula": "C_j",
+      "genericFormula": "C_j",
+      "description": "A fórmula representa a capacitância de um capacitor, que é uma medida de sua capacidade de armazenar carga elétrica. A capacitância é uma propriedade fundamental em circuitos elétricos e semicondutores, influenciando como os dispositivos reagem a tensões e correntes.",
+      "concepts": [
+        "Capacitância",
+        "Carga elétrica",
+        "Circuitos elétricos",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "C_j",
+          "description": "Representa a capacitância de um capacitor específico, onde 'j' pode indicar um tipo ou estado particular do capacitor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "q \\Phi_B",
+      "genericFormula": "q \\Phi_B",
+      "description": "Esta fórmula representa a energia potencial elétrica de uma carga em um campo elétrico. A energia potencial é a energia que uma carga possui devido à sua posição em relação a outras cargas ou a um campo elétrico.",
+      "concepts": [
+        "Energia potencial elétrica",
+        "Campo elétrico",
+        "Carga elétrica"
+      ],
+      "symbols": [
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica, que é uma propriedade física de partículas subatômicas que determina a interação eletromagnética entre elas."
+        },
+        {
+          "symbol": "\\Phi_B",
+          "description": "Representa o potencial elétrico em um ponto específico no espaço, que indica a quantidade de energia potencial elétrica por unidade de carga que uma carga de teste teria nesse ponto."
+        }
+      ]
+    },
+    {
+      "originalFormula": "N_{d} = 10^{12} \\, \\text{cm}^{-3}",
+      "genericFormula": "N_{d} = 10^{12} \\, \\text{cm}^{-3}",
+      "description": "Não foi possível gerar descrição automática",
+      "concepts": [],
+      "symbols": [],
+      "rawText": "{\n  \"originalFormula\": \"N_{d} = 10^{12} \\, \\text{cm}^{-3}\",\n  \"genericFormula\": \"N_{d} = N_{d\\_0} \\, \\text{cm}^{-3}\",\n  \"description\": \"Esta fórmula representa a densidade de dopantes do tipo doador em um semicondutor, que é a quantidade de átomos doadores por centímetro cúbico no material. O valor específico indica que há uma quantidade muito alta de dopantes, o que pode influenciar as propriedades elétricas do semicondutor.\",\n  \"concepts\": [\n    \"Dopagem de semicondutores\",\n    \"Densidade de portadores de carga\",\n    \"Propriedades elétricas de materiais\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"N_{d}\",\n      \"description\": \"Representa a densidade de dopantes do tipo doador em um semicondutor, medida em átomos por centímetro cúbico.\"\n    },\n    {\n      \"symbol\": \"10^{12}\",\n      \"description\": \"Um valor numérico que indica a quantidade de dopantes por centímetro cúbico, neste caso, um número muito alto.\"\n    },\n    {\n      \"symbol\": \"cm^{-3}\",\n      \"description\": \"Uma unidade de medida que indica a quantidade de átomos em um volume de um centímetro cúbico.\"\n    }\n  ]\n}"
+    },
+    {
+      "originalFormula": "N_{d} = 10^{15} \\, \\text{cm}^{-3}",
+      "genericFormula": "N_{d} = 10^{15} \\, \\text{cm}^{-3}",
+      "description": "Não foi possível gerar descrição automática",
+      "concepts": [],
+      "symbols": [],
+      "rawText": "{\n  \"originalFormula\": \"N_{d} = 10^{15} \\, \\\\text{cm}^{-3}\",\n  \"genericFormula\": \"N_{d} = C \\, \\\\text{cm}^{-3}\",\n  \"description\": \"Esta fórmula representa a densidade de dopantes do tipo doador em um material semicondutor, que é uma medida de quantos átomos de dopante estão presentes por centímetro cúbico no material.\",\n  \"concepts\": [\n    \"Dopagem em semicondutores\",\n    \"Densidade de portadores de carga\",\n    \"Semicondutores do tipo n\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"N_{d}\",\n      \"description\": \"Representa a densidade de dopantes do tipo doador, que são átomos adicionados ao semicondutor para aumentar a quantidade de portadores de carga positivos.\"\n    },\n    {\n      \"symbol\": \"C\",\n      \"description\": \"Representa uma constante que indica a densidade de dopantes em unidades de átomos por centímetro cúbico.\"\n    }\n  ]\n}"
+    },
+    {
+      "originalFormula": "T_{anneal} = 850^{\\circ}C",
+      "genericFormula": "T_{anneal} = T_{valor}",
+      "description": "Esta fórmula representa a temperatura de um processo de recozimento, que é uma etapa importante na fabricação de semicondutores. O recozimento é utilizado para aliviar tensões internas e melhorar as propriedades elétricas do material.",
+      "concepts": [
+        "Temperatura de recozimento",
+        "Processos térmicos em semicondutores",
+        "Propriedades elétricas dos materiais"
+      ],
+      "symbols": [
+        {
+          "symbol": "T_{anneal}",
+          "description": "Representa a temperatura de recozimento, que é a temperatura à qual um material é aquecido durante o processo de recozimento."
+        },
+        {
+          "symbol": "T_{valor}",
+          "description": "Representa um valor genérico de temperatura que pode ser ajustado conforme necessário para diferentes processos."
+        }
+      ]
+    },
+    {
+      "originalFormula": "T_{GaAs} = 600^{\\circ}C",
+      "genericFormula": "T_{GaAs} = 600^{\\circ}C",
+      "description": "Não foi possível gerar descrição automática",
+      "concepts": [],
+      "symbols": [],
+      "rawText": "{\n  \"originalFormula\": \"T_{GaAs} = 600^{\\\\circ}C\",\n  \"genericFormula\": \"T_{GaAs} = T_{0}\",\n  \"description\": \"Esta fórmula representa a temperatura de um material semicondutor específico, que neste caso é o arseneto de gálio (GaAs). A temperatura é um fator crucial que influencia as propriedades elétricas e ópticas do material.\",\n  \"concepts\": [\n    \"Temperatura\",\n    \"Propriedades dos semicondutores\",\n    \"Efeito da temperatura nas características elétricas\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"T_{GaAs}\",\n      \"description\": \"Representa a temperatura do arseneto de gálio, um material semicondutor com propriedades específicas que dependem da temperatura.\"\n    },\n    {\n      \"symbol\": \"600^{\\circ}C\",\n      \"description\": \"Refere-se a um valor específico de temperatura, que neste caso é 600 graus Celsius, uma condição que pode afetar o desempenho do material.\"\n    },\n    {\n      \"symbol\": \"T_{0}\",\n      \"description\": \"Representa uma temperatura genérica, que pode ser ajustada conforme o contexto ou o experimento em questão.\"\n    }\n  ]\n}"
+    },
+    {
+      "originalFormula": "T_{GaAs \\, melt} = 1238^{\\circ}C",
+      "genericFormula": "T_{GaAs \\, melt} = 1238^{\\circ}C",
+      "description": "Não foi possível gerar descrição automática",
+      "concepts": [],
+      "symbols": [],
+      "rawText": "{\n  \"originalFormula\": \"T_{GaAs \\, melt} = 1238^{\\\\circ}C\",\n  \"genericFormula\": \"T_{GaAs \\, melt} = T_{melt}\",\n  \"description\": \"Esta fórmula representa a temperatura de fusão do arseneto de gálio (GaAs), que é um material semicondutor amplamente utilizado em dispositivos eletrônicos e optoeletrônicos. A temperatura de fusão é o ponto em que o material passa do estado sólido para o estado líquido.\",\n  \"concepts\": [\n    \"Temperatura de fusão\",\n    \"Propriedades dos semicondutores\",\n    \"Mudança de fase\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"T_{GaAs \\, melt}\",\n      \"description\": \"Representa a temperatura de fusão do arseneto de gálio, que é a temperatura em que o material se transforma de sólido para líquido.\"\n    },\n    {\n      \"symbol\": \"T_{melt}\",\n      \"description\": \"Representa a temperatura de fusão genérica de um material, que é o ponto de transição entre os estados sólido e líquido.\"\n    }\n  ]\n}"
+    },
+    {
+      "originalFormula": "T_{anneal} = 400^{\\circ}C",
+      "genericFormula": "T_{anneal} = T",
+      "description": "Esta fórmula representa a temperatura de um processo de recozimento, que é uma etapa importante na fabricação de semicondutores. O recozimento é realizado para aliviar tensões internas e melhorar as propriedades do material.",
+      "concepts": [
+        "Temperatura de recozimento",
+        "Processos térmicos em materiais",
+        "Propriedades físicas de semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "T_{anneal}",
+          "description": "Representa a temperatura de recozimento, que é a temperatura na qual um material é tratado para alterar suas propriedades físicas."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa uma temperatura genérica, que pode variar dependendo do contexto do processo."
+        }
+      ]
+    },
+    {
+      "originalFormula": "W = \\sqrt{\\frac{2e}{qN_d} (V_{bi} - V_a)}",
+      "genericFormula": "W = \\sqrt{\\frac{2e}{qN_d} (V_{bi} - V_a)}",
+      "description": "Esta fórmula calcula a largura de uma região de depleção em um semicondutor, que é uma área onde os portadores de carga (elétrons e lacunas) são escassos devido à presença de uma junção p-n. A largura da região de depleção é importante para entender o comportamento elétrico do dispositivo semicondutor.",
+      "concepts": [
+        "Região de depleção",
+        "Junção p-n",
+        "Potencial elétrico",
+        "Carga elétrica"
+      ],
+      "symbols": [
+        {
+          "symbol": "W",
+          "description": "Representa a largura da região de depleção no semicondutor."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a menor unidade de carga elétrica, equivalente à carga de um elétron."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica de um portador de carga, que pode ser um elétron ou uma lacuna, dependendo do tipo de semicondutor."
+        },
+        {
+          "symbol": "N_d",
+          "description": "Representa a densidade de dopagem do semicondutor, que indica a quantidade de átomos dopantes introduzidos no material."
+        },
+        {
+          "symbol": "V_{bi}",
+          "description": "Representa o potencial de built-in, que é a diferença de potencial elétrico que se estabelece na junção p-n quando não há corrente fluindo."
+        },
+        {
+          "symbol": "V_a",
+          "description": "Representa a tensão aplicada externamente ao semicondutor, que pode influenciar a largura da região de depleção."
+        }
+      ]
+    },
+    {
+      "originalFormula": "V_{pinchoff} = V_{G} - V_{a} - V_{bi}",
+      "genericFormula": "V_{pinchoff} = V_{G} - V_{a} - V_{bi}",
+      "description": "Esta fórmula representa a tensão de pinçamento em um transistor de efeito de campo (FET), que é a tensão necessária para interromper a condução de corrente entre o dreno e a fonte do transistor. O valor de pinçamento é crucial para entender como o transistor opera em diferentes regiões de polarização.",
+      "concepts": [
+        "Transistor de Efeito de Campo (FET)",
+        "Tensão de Pinçamento",
+        "Polarização de Transistores",
+        "Controle de Corrente"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_{pinchoff}",
+          "description": "Representa a tensão de pinçamento, que é a tensão na qual o canal do transistor se fecha, interrompendo a condução de corrente."
+        },
+        {
+          "symbol": "V_{G}",
+          "description": "Representa a tensão aplicada ao terminal de gate (porta) do transistor, que controla a formação do canal condutor."
+        },
+        {
+          "symbol": "V_{a}",
+          "description": "Representa a tensão de polarização da fonte, que é a tensão aplicada ao terminal de fonte do transistor."
+        },
+        {
+          "symbol": "V_{bi}",
+          "description": "Representa a tensão de potencial interno, que é a tensão necessária para criar uma barreira de potencial no dispositivo."
+        }
+      ]
+    },
+    {
+      "originalFormula": "q(V_{bi} - V_G) = qV_P",
+      "genericFormula": "q(V_{bi} - V_G) = qV_P",
+      "description": "Esta fórmula representa a relação entre a carga elétrica, a diferença de potencial e a tensão em um semicondutor. Ela descreve como a diferença de potencial entre a barreira de potencial interna e a tensão aplicada afeta a corrente elétrica em um dispositivo semicondutor.",
+      "concepts": [
+        "Carga elétrica",
+        "Diferença de potencial",
+        "Tensão",
+        "Semicondutores",
+        "Barreira de potencial"
+      ],
+      "symbols": [
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica, que é uma propriedade física que causa a interação eletromagnética entre partículas."
+        },
+        {
+          "symbol": "V_{bi}",
+          "description": "Representa a tensão da barreira de potencial interna, que é a diferença de potencial que impede o fluxo de corrente em um semicondutor em equilíbrio."
+        },
+        {
+          "symbol": "V_G",
+          "description": "Representa a tensão aplicada ao semicondutor, que pode influenciar o fluxo de corrente ao alterar a condição de equilíbrio do dispositivo."
+        },
+        {
+          "symbol": "V_P",
+          "description": "Representa a tensão de polarização, que é a tensão necessária para permitir que a corrente flua através do semicondutor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "I_{SAT} = G_{0} \\left[ V_{p} - V_{bi} + V_{G} - \\frac{2V_{p}}{3} + \\frac{2V_{p}}{3} \\left( \\frac{V_{bi} - V_{G}}{V_{p}} \\right)^{3/2} \\right]",
+      "genericFormula": "I_{SAT} = G_{0} \\left[ V_{p} - V_{bi} + V_{G} - \\frac{2V_{p}}{3} + \\frac{2V_{p}}{3} \\left( \\frac{V_{bi} - V_{G}}{V_{p}} \\right)^{3/2} \\right]",
+      "description": "Esta fórmula representa a corrente de saturação em um dispositivo semicondutor, levando em consideração várias tensões que afetam o comportamento do dispositivo. A corrente de saturação é uma medida importante que indica a quantidade de corrente que flui através do dispositivo quando ele está em operação em sua condição de saturação.",
+      "concepts": [
+        "Corrente de saturação",
+        "Tensões em semicondutores",
+        "Efeito de campo elétrico em dispositivos semicondutores",
+        "Comportamento não linear de dispositivos"
+      ],
+      "symbols": [
+        {
+          "symbol": "I_{SAT}",
+          "description": "Representa a corrente de saturação, que é a corrente máxima que um dispositivo pode conduzir sob condições específicas."
+        },
+        {
+          "symbol": "G_{0}",
+          "description": "É uma constante que representa a condutância do dispositivo em condições específicas, influenciando a corrente que flui através dele."
+        },
+        {
+          "symbol": "V_{p}",
+          "description": "É a tensão de polarização do dispositivo, que afeta a operação do semicondutor e a corrente que ele pode conduzir."
+        },
+        {
+          "symbol": "V_{bi}",
+          "description": "Representa a tensão de barreira interna do dispositivo, que é a tensão necessária para superar a barreira de potencial e permitir a condução de corrente."
+        },
+        {
+          "symbol": "V_{G}",
+          "description": "É a tensão aplicada ao terminal de gate do dispositivo, que influencia a corrente de saturação e o comportamento do semicondutor."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498
+  ],
+  "lastUpdated": "2026-05-08T19:05:41.875Z"
+}

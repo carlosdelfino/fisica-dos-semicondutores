@@ -1,0 +1,1114 @@
+{
+  "chapter": "10 Junction Field-Effect Transistors",
+  "questions": [
+    {
+      "number": "E10-1",
+      "text": "An N-channel double-gate silicon JFET, operating at 300K, has N_{A} = 5 \\times 10^{18} cm^{-3}, a = 1.5 \\mu m, L = 10 \\mu m, and Z/L = 5. Determine: a) the built-in voltage and b) the pinchoff voltage.",
+      "formulas": []
+    },
+    {
+      "number": "E10-2",
+      "text": "An N-channel double-gate silicon JFET operating at 300K has N_{A} = 10^{19} cm^{-3}, a = 0.5 \\mu m, L = 25 \\mu m, Z = 0.05 cm, and \\mu_{n} = 1200 cm^{2}/V \\cdot s. Determine: a) the drain current for V_{D} = V_{P} with the gate connected to the source, b) the gate voltage at which, for all V_{D}, the transistor is OFF.",
+      "formulas": []
+    },
+    {
+      "number": "10.1 a",
+      "text": "Determine the pinchoff voltage.",
+      "formulas": []
+    },
+    {
+      "number": "10.1 b",
+      "text": "Determine the gate bias required to make the width of the undepleted channel equal to 0.15μm at V_d = 0.",
+      "formulas": []
+    },
+    {
+      "number": "10.2 a",
+      "text": "Determine the built-in voltage.",
+      "formulas": []
+    },
+    {
+      "number": "10.2 b",
+      "text": "Determine the pinchoff voltage.",
+      "formulas": []
+    },
+    {
+      "number": "10.3",
+      "text": "Determine:",
+      "formulas": []
+    },
+    {
+      "number": "10.11",
+      "text": "Determine the ratio Z/L to realize I_{SAT} = 2mA at V_{G} = 0. Assume the channel resistivity is 3 ohm-cm.",
+      "formulas": []
+    },
+    {
+      "number": "10.12",
+      "text": "An N-channel silicon JFET has V_{p} = 4V, V_{bi} = 0.8V and I_{DSS} = 1mA(V_{G} = 0).",
+      "subquestions": [
+        {
+          "letter": "a",
+          "text": "G_{g}",
+          "formulas": []
+        },
+        {
+          "letter": "b",
+          "text": "the saturation current at V_{G} = -2V.",
+          "formulas": []
+        },
+        {
+          "letter": "c",
+          "text": "the transconductance at V_{G} = -2V.",
+          "formulas": []
+        }
+      ]
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "E10-1",
+      "text": "a) V_{bi} = 0.816V b) V_{P} = 1.72V",
+      "formulas": [
+        {
+          "originalFormula": "V_{bi} = 0.816",
+          "genericFormula": "V_{bi} = V_{0}",
+          "description": "Esta fórmula representa a tensão de built-in (ou tensão de polarização interna) em um semicondutor, que é a diferença de potencial elétrico que se estabelece em uma junção de semicondutores quando não há corrente fluindo através dela.",
+          "concepts": [
+            "Tensão de built-in",
+            "Semicondutores",
+            "Juncões p-n",
+            "Equilíbrio elétrico"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{bi}",
+              "description": "Representa a tensão de built-in, que é a diferença de potencial elétrico em uma junção de semicondutores quando não há corrente fluindo."
+            },
+            {
+              "symbol": "V_{0}",
+              "description": "Representa a tensão de built-in de forma genérica, sem valores numéricos específicos."
+            }
+          ]
+        },
+        {
+          "originalFormula": "V_{P} = 1.72",
+          "genericFormula": "V_{P} = k",
+          "description": "Esta fórmula representa um valor específico de tensão, que pode ser interpretado como a tensão de pico em um circuito elétrico ou em um dispositivo semicondutor. O valor numérico indica a magnitude dessa tensão, que é uma característica importante para entender o funcionamento do dispositivo em questão.",
+          "concepts": [
+            "Tensão elétrica",
+            "Circuitos elétricos",
+            "Dispositivos semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{P}",
+              "description": "Representa a tensão de pico, que é a máxima tensão alcançada em um ciclo de uma onda elétrica."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa um valor genérico que pode ser substituído por qualquer número que indique a tensão de pico em um contexto específico."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "E10-2",
+      "text": "a) I_{D} = 0.21 mA, b) V_{G} = -1.0V.",
+      "formulas": [
+        {
+          "originalFormula": "I_{D} = 0.21 \\text{ mA}",
+          "genericFormula": "I_{D} = I_{D_{0}}",
+          "description": "Esta fórmula representa a corrente que flui através de um dispositivo semicondutor, como um diodo ou transistor, em um determinado estado de operação. A corrente é uma medida da quantidade de carga elétrica que passa por um ponto em um circuito por unidade de tempo.",
+          "concepts": [
+            "Corrente elétrica",
+            "Dispositivos semicondutores",
+            "Diodos",
+            "Transistores"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_{D}",
+              "description": "Representa a corrente que flui através do dispositivo semicondutor, especificamente a corrente de drenagem em um transistor ou a corrente através de um diodo."
+            },
+            {
+              "symbol": "I_{D_{0}}",
+              "description": "Representa a corrente de drenagem em uma condição genérica, sem valores numéricos específicos."
+            }
+          ]
+        },
+        {
+          "originalFormula": "V_{G} = -1.0",
+          "genericFormula": "V_{G} = C",
+          "description": "Esta fórmula representa um valor de tensão, onde V_{G} é a tensão em um determinado ponto de um circuito ou sistema. O valor específico de -1.0 indica que a tensão é negativa em relação a um ponto de referência, o que pode ter implicações importantes em circuitos eletrônicos e semicondutores.",
+          "concepts": [
+            "Tensão elétrica",
+            "Referência de potencial",
+            "Circuitos elétricos"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{G}",
+              "description": "Representa a tensão em um ponto específico do circuito, que pode influenciar o comportamento de dispositivos eletrônicos."
+            },
+            {
+              "symbol": "C",
+              "description": "Um valor genérico que representa a tensão, que pode ser positiva ou negativa, dependendo do contexto do circuito."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "E10-4 a",
+      "text": "g_m = G_0",
+      "formulas": [
+        {
+          "originalFormula": "g_m = G_0",
+          "genericFormula": "g_m = G_0",
+          "description": "Esta fórmula representa a relação entre a condutância transcondutiva, que é uma medida da capacidade de um dispositivo semicondutor de conduzir corrente elétrica em resposta a uma variação de tensão, e a condutância de referência, que é um valor padrão utilizado para comparação.",
+          "concepts": [
+            "Condutância transcondutiva",
+            "Dispositivos semicondutores",
+            "Corrente elétrica",
+            "Variação de tensão"
+          ],
+          "symbols": [
+            {
+              "symbol": "g_m",
+              "description": "Representa a condutância transcondutiva, que indica quão eficientemente um dispositivo semicondutor pode conduzir corrente em resposta a uma variação de tensão."
+            },
+            {
+              "symbol": "G_0",
+              "description": "Representa a condutância de referência, um valor padrão que serve como base para comparação com a condutância transcondutiva do dispositivo em questão."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "E10-4 b",
+      "text": "For FET g_m/I = 3/V_p and for BJT g_m/I = 38.6",
+      "formulas": [
+        {
+          "originalFormula": "g_m/I = \\frac{3}{V_p}",
+          "genericFormula": "g_m/I = \\frac{3}{V_p}",
+          "description": "Esta fórmula relaciona a transcondutância de um dispositivo semicondutor com a corrente de polarização e a tensão de pico. A transcondutância é uma medida de quão eficientemente um dispositivo pode controlar a corrente elétrica em resposta a uma tensão de entrada.",
+          "concepts": [
+            "Transcondutância",
+            "Corrente elétrica",
+            "Tensão elétrica",
+            "Dispositivos semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "g_m",
+              "description": "Representa a transcondutância, que é a razão entre a variação da corrente de saída e a variação da tensão de entrada em um dispositivo semicondutor."
+            },
+            {
+              "symbol": "I",
+              "description": "Representa a corrente elétrica que flui através do dispositivo semicondutor."
+            },
+            {
+              "symbol": "V_p",
+              "description": "Representa a tensão de pico, que é a máxima tensão aplicada ao dispositivo durante seu funcionamento."
+            }
+          ]
+        },
+        {
+          "originalFormula": "g_m/I = 38.6",
+          "genericFormula": "g_m/I = k",
+          "description": "Esta fórmula relaciona a condutância de um material, representada por g_m, com a corrente elétrica que passa por ele, I. O valor k é uma constante que pode variar dependendo das propriedades do material e das condições do experimento.",
+          "concepts": [
+            "Condutância elétrica",
+            "Corrente elétrica",
+            "Propriedades dos semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "g_m",
+              "description": "Representa a condutância do material, que é uma medida de quão facilmente a corrente elétrica pode passar através dele."
+            },
+            {
+              "symbol": "I",
+              "description": "Representa a corrente elétrica que flui através do material, medida em amperes."
+            },
+            {
+              "symbol": "k",
+              "description": "Uma constante que representa a razão entre a condutância e a corrente, que pode ser ajustada dependendo do material e das condições experimentais."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Example 10.3 a",
+      "text": "C_s = 1.305pF",
+      "formulas": [
+        {
+          "originalFormula": "C_s = \\frac{2eZL}{a}",
+          "genericFormula": "C_s = \\frac{2eZL}{a}",
+          "description": "Esta fórmula representa a capacitância de uma estrutura semicondutora, onde a capacitância é uma medida da capacidade de um sistema de armazenar carga elétrica. A fórmula indica como a capacitância depende de vários fatores, como a carga elétrica, a geometria da estrutura e a distância entre as placas condutoras.",
+          "concepts": [
+            "Capacitância",
+            "Carga elétrica",
+            "Geometria de semicondutores",
+            "Distância entre placas condutoras"
+          ],
+          "symbols": [
+            {
+              "symbol": "C_s",
+              "description": "Representa a capacitância da estrutura semicondutora."
+            },
+            {
+              "symbol": "e",
+              "description": "Representa a carga elementar, que é a quantidade de carga elétrica transportada por um único elétron."
+            },
+            {
+              "symbol": "Z",
+              "description": "Representa um fator relacionado à geometria ou configuração da estrutura semicondutora."
+            },
+            {
+              "symbol": "L",
+              "description": "Representa uma dimensão característica da estrutura, como o comprimento ou a largura."
+            },
+            {
+              "symbol": "a",
+              "description": "Representa a distância entre as placas condutoras ou entre as regiões de carga na estrutura semicondutora."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Example 10.3 b",
+      "text": "f_T = 253MHz",
+      "formulas": [
+        {
+          "originalFormula": "f_T = \\frac{q \\mu_n a^2 N_D}{4 \\pi \\epsilon L^2}",
+          "genericFormula": "f_T = \\frac{q \\mu_n a^2 N_D}{4 \\pi \\epsilon L^2}",
+          "description": "Esta fórmula representa a força de atração ou repulsão entre cargas elétricas em um semicondutor, levando em consideração a mobilidade dos portadores de carga, a densidade de dopagem e as propriedades do meio.",
+          "concepts": [
+            "Força elétrica",
+            "Mobilidade de portadores de carga",
+            "Dopagem em semicondutores",
+            "Constante dielétrica",
+            "Geometria do sistema"
+          ],
+          "symbols": [
+            {
+              "symbol": "f_T",
+              "description": "Representa a força resultante em um semicondutor devido à interação entre cargas."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elétrica de um portador de carga, como um elétron ou um buraco."
+            },
+            {
+              "symbol": "μ_n",
+              "description": "Representa a mobilidade dos portadores de carga negativa (elétrons) no semicondutor, que indica quão rapidamente eles podem se mover sob a influência de um campo elétrico."
+            },
+            {
+              "symbol": "a",
+              "description": "Representa uma dimensão característica do sistema, que pode ser relacionada ao tamanho ou à distância entre as cargas."
+            },
+            {
+              "symbol": "N_D",
+              "description": "Representa a densidade de dopagem do semicondutor, ou seja, a quantidade de átomos dopantes que introduzem portadores de carga no material."
+            },
+            {
+              "symbol": "ε",
+              "description": "Representa a constante dielétrica do meio, que indica a capacidade do material de armazenar energia elétrica em um campo elétrico."
+            },
+            {
+              "symbol": "L",
+              "description": "Representa uma distância característica no sistema, que pode estar relacionada à separação entre as cargas ou ao comprimento do caminho que os portadores de carga percorrem."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "Z = 2a",
+      "genericFormula": "Z = 2a",
+      "description": "Esta fórmula representa uma relação direta entre duas variáveis, onde o valor de Z é o dobro do valor de a. Essa relação é linear, indicando que, à medida que a aumenta, Z também aumenta proporcionalmente.",
+      "concepts": [
+        "Relação linear",
+        "Proporcionalidade",
+        "Variáveis independentes"
+      ],
+      "symbols": [
+        {
+          "symbol": "Z",
+          "description": "Z representa uma variável dependente que é calculada com base no valor de outra variável."
+        },
+        {
+          "symbol": "a",
+          "description": "a representa uma variável independente que, ao ser multiplicada por dois, determina o valor de Z."
+        }
+      ]
+    },
+    {
+      "originalFormula": "L",
+      "genericFormula": "L",
+      "description": "A letra L representa uma grandeza física que pode variar dependendo do contexto. Em muitos casos, L é utilizada para denotar comprimento ou indutância em circuitos elétricos, mas sem um contexto específico, não podemos determinar seu significado exato.",
+      "concepts": [
+        "comprimento",
+        "indutância",
+        "grandezas físicas"
+      ],
+      "symbols": [
+        {
+          "symbol": "L",
+          "description": "A letra L pode representar comprimento em metros ou indutância em henries, dependendo do contexto em que está sendo utilizada."
+        }
+      ]
+    },
+    {
+      "originalFormula": "g_{d} = \\frac{\\partial I_{D}}{\\partial V_{G}} \\bigg|_{V_{G} = constant}",
+      "genericFormula": "g_{d} = \\frac{\\partial I_{D}}{\\partial V_{G}} \\bigg|_{V_{G} = constant}",
+      "description": "Esta fórmula representa a condutância dinâmica de um dispositivo semicondutor, que é a taxa de variação da corrente de dreno em relação à variação da tensão de porta, mantendo a tensão de porta constante. Isso é importante para entender como o dispositivo responde a pequenas mudanças na tensão aplicada.",
+      "concepts": [
+        "Condutância dinâmica",
+        "Corrente de dreno",
+        "Tensão de porta",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "g_{d}",
+          "description": "Representa a condutância dinâmica do dispositivo, que indica a sensibilidade da corrente de dreno em relação à tensão de porta."
+        },
+        {
+          "symbol": "I_{D}",
+          "description": "Representa a corrente que flui através do dreno do dispositivo semicondutor."
+        },
+        {
+          "symbol": "V_{G}",
+          "description": "Representa a tensão aplicada à porta do dispositivo semicondutor."
+        },
+        {
+          "symbol": "\\partial",
+          "description": "Indica que estamos lidando com uma derivada parcial, que é uma medida de como uma quantidade muda em relação a outra, mantendo outras variáveis constantes."
+        }
+      ]
+    },
+    {
+      "originalFormula": "g_{d} = G_{0} \\left\\{ 1 - \\left[ \\frac{(V_{bi} + V_{D} - V_{G})}{V_{P}} \\right]^{1/2} \\right\\}",
+      "genericFormula": "g_{d} = G_{0} \\left\\{ 1 - \\left[ \\frac{(V_{bi} + V_{D} - V_{G})}{V_{P}} \\right]^{1/2} \\right\\}",
+      "description": "Esta fórmula representa a condutância de um dispositivo semicondutor em função de várias tensões aplicadas. A condutância é uma medida de quão facilmente a corrente elétrica pode fluir através do dispositivo, e a fórmula mostra como essa condutância varia com as tensões internas e externas.",
+      "concepts": [
+        "Condutância",
+        "Tensão de polarização",
+        "Tensão de junção",
+        "Dispositivos semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "g_{d}",
+          "description": "Representa a condutância do dispositivo, que indica a capacidade do dispositivo de conduzir corrente elétrica."
+        },
+        {
+          "symbol": "G_{0}",
+          "description": "É a condutância máxima do dispositivo, que representa o valor da condutância quando as condições são ideais."
+        },
+        {
+          "symbol": "V_{bi}",
+          "description": "É a tensão de built-in, que é a tensão interna do dispositivo em equilíbrio, sem a aplicação de tensões externas."
+        },
+        {
+          "symbol": "V_{D}",
+          "description": "Representa a tensão aplicada no dispositivo, que pode influenciar a corrente que flui através dele."
+        },
+        {
+          "symbol": "V_{G}",
+          "description": "É a tensão de gate, que é uma tensão de controle aplicada em dispositivos semicondutores, como transistores."
+        },
+        {
+          "symbol": "V_{P}",
+          "description": "Representa a tensão de polarização, que é a tensão necessária para polarizar o dispositivo e permitir a condução de corrente."
+        }
+      ]
+    },
+    {
+      "originalFormula": "i_d = I_D + i_d = I_D (V_D + v_{ds} V_G + v_{gs})",
+      "genericFormula": "i_d = I_D (V_D + v_{ds} V_G + v_{gs})",
+      "description": "Esta fórmula representa a corrente de dreno em um transistor, onde a corrente total é composta pela corrente de polarização e a variação da corrente em função das tensões aplicadas. É uma expressão que descreve como a corrente de dreno é afetada por diferentes tensões no dispositivo.",
+      "concepts": [
+        "Transistores",
+        "Corrente elétrica",
+        "Tensões em circuitos",
+        "Polarização de dispositivos semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "i_d",
+          "description": "Representa a corrente de dreno, que é a corrente que flui do dreno do transistor."
+        },
+        {
+          "symbol": "I_D",
+          "description": "É a corrente de dreno de polarização, que é a corrente que flui quando o transistor está em estado estável."
+        },
+        {
+          "symbol": "V_D",
+          "description": "É a tensão no dreno do transistor, que influencia a corrente de dreno."
+        },
+        {
+          "symbol": "v_{ds}",
+          "description": "Representa a tensão entre o dreno e a fonte do transistor, que afeta a operação do dispositivo."
+        },
+        {
+          "symbol": "V_G",
+          "description": "É a tensão de porta, que controla a condutividade do transistor."
+        },
+        {
+          "symbol": "v_{gs}",
+          "description": "É a tensão entre a porta e a fonte, que também influencia a corrente que flui através do transistor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "L_d = \\frac{\\partial I_D}{\\partial V_G} v_{gs} + \\frac{\\partial I_D}{\\partial V_D} v_{ds} + \\text{higher order terms}",
+      "genericFormula": "L_d = \\frac{\\partial I_D}{\\partial V_G} V_{gs} + \\frac{\\partial I_D}{\\partial V_D} V_{ds} + \\text{higher order terms}",
+      "description": "Esta fórmula representa a derivada da corrente de dreno em relação a variações nas tensões de porta e dreno, e como essas variações afetam a corrente total em um transistor. O termo L_d é uma medida da resposta do transistor a pequenas mudanças nas tensões aplicadas.",
+      "concepts": [
+        "Transistores",
+        "Corrente de dreno",
+        "Tensões de porta e dreno",
+        "Derivadas parciais",
+        "Análise de pequenas variações"
+      ],
+      "symbols": [
+        {
+          "symbol": "L_d",
+          "description": "Representa a resposta da corrente de dreno em relação a variações nas tensões aplicadas."
+        },
+        {
+          "symbol": "I_D",
+          "description": "Denota a corrente que flui através do dreno do transistor."
+        },
+        {
+          "symbol": "V_G",
+          "description": "Representa a tensão aplicada à porta do transistor."
+        },
+        {
+          "symbol": "V_{gs}",
+          "description": "Indica a tensão entre a porta e a fonte do transistor, que influencia a corrente de dreno."
+        },
+        {
+          "symbol": "V_D",
+          "description": "Denota a tensão aplicada ao dreno do transistor."
+        },
+        {
+          "symbol": "V_{ds}",
+          "description": "Representa a tensão entre o dreno e a fonte do transistor, que também afeta a corrente de dreno."
+        },
+        {
+          "symbol": "higher order terms",
+          "description": "Refere-se a termos adicionais que podem ser considerados em uma análise mais detalhada, mas que são negligenciados em uma aproximação linear."
+        }
+      ]
+    },
+    {
+      "originalFormula": "i_d = g_m v_{gs} + g_d v_{ds}",
+      "genericFormula": "i_d = g_m v_{gs} + g_d v_{ds}",
+      "description": "Esta fórmula representa a corrente de dreno em um transistor de efeito de campo (FET), onde a corrente é influenciada por duas componentes: a transcondutância e a resistência de saída. A corrente de dreno é uma medida de quão facilmente os portadores de carga podem fluir através do transistor, dependendo das tensões aplicadas entre os terminais do dispositivo.",
+      "concepts": [
+        "Transistor de efeito de campo (FET)",
+        "Transcondutância",
+        "Resistência de saída",
+        "Corrente elétrica"
+      ],
+      "symbols": [
+        {
+          "symbol": "i_d",
+          "description": "Representa a corrente que flui do dreno do transistor, indicando a quantidade de carga elétrica que passa por um ponto em um determinado intervalo de tempo."
+        },
+        {
+          "symbol": "g_m",
+          "description": "Representa a transcondutância do transistor, que é uma medida de quão eficazmente uma variação na tensão de gate-source pode controlar a corrente de dreno."
+        },
+        {
+          "symbol": "v_{gs}",
+          "description": "Representa a tensão entre o gate e o source do transistor, que é a tensão que controla a operação do dispositivo."
+        },
+        {
+          "symbol": "g_d",
+          "description": "Representa a condutância de saída do transistor, que é uma medida de quão facilmente a corrente flui do dreno para a fonte em resposta a uma tensão aplicada."
+        },
+        {
+          "symbol": "v_{ds}",
+          "description": "Representa a tensão entre o dreno e a fonte do transistor, que influencia a corrente que flui através do dispositivo."
+        }
+      ]
+    },
+    {
+      "originalFormula": "V_{bi} = 0.894V",
+      "genericFormula": "V_{bi} = V",
+      "description": "Esta fórmula representa a tensão de built-in, que é a tensão elétrica que se estabelece em uma junção de semicondutores em equilíbrio térmico, sem a aplicação de nenhuma tensão externa. Essa tensão é crucial para entender o comportamento de dispositivos semicondutores, como diodos e transistores.",
+      "concepts": [
+        "Tensão de built-in",
+        "Equilíbrio térmico",
+        "Junções de semicondutores",
+        "Diodos",
+        "Transistores"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_{bi}",
+          "description": "Representa a tensão de built-in, que é a tensão elétrica que se forma em uma junção de semicondutores quando não há corrente fluindo através dela."
+        },
+        {
+          "symbol": "V",
+          "description": "Representa uma tensão genérica, que pode ser utilizada para indicar qualquer valor de tensão em um contexto elétrico."
+        }
+      ]
+    },
+    {
+      "originalFormula": "W = 2\\mu m",
+      "genericFormula": "W = 2\\mu m",
+      "description": "Esta fórmula representa a relação entre a largura de uma estrutura, que é o dobro do parâmetro micro, que pode ser uma medida de distância ou tamanho em um contexto específico, como em semicondutores ou materiais.",
+      "concepts": [
+        "largura",
+        "parâmetro micro",
+        "geometria de estruturas"
+      ],
+      "symbols": [
+        {
+          "symbol": "W",
+          "description": "Representa a largura da estrutura em questão, que pode ser uma medida de distância em milímetros ou micrômetros."
+        },
+        {
+          "symbol": "\\mu",
+          "description": "Representa o parâmetro micro, que é uma unidade de medida que geralmente se refere a micrômetros, uma medida muito pequena comumente usada em física e engenharia."
+        },
+        {
+          "symbol": "m",
+          "description": "Representa a unidade de medida de comprimento no Sistema Internacional, que é o metro. Neste contexto, pode estar relacionado ao tamanho da estrutura em micrômetros."
+        }
+      ]
+    },
+    {
+      "originalFormula": "W_B = 2.32 \\mu m",
+      "genericFormula": "W_B = W",
+      "description": "Esta fórmula representa a largura de uma estrutura ou camada em um dispositivo semicondutor, onde a largura é expressa em micrômetros.",
+      "concepts": [
+        "largura de camada",
+        "dispositivos semicondutores",
+        "escala micro"
+      ],
+      "symbols": [
+        {
+          "symbol": "W_B",
+          "description": "Representa a largura da camada ou estrutura em um dispositivo semicondutor."
+        },
+        {
+          "symbol": "\\mu m",
+          "description": "Uma unidade de medida que representa micrômetro, que é um milionésimo de metro, frequentemente usado para medir dimensões em escalas muito pequenas, como em eletrônica e semicondutores."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498
+  ],
+  "lastUpdated": "2026-05-08T19:05:42.102Z"
+}

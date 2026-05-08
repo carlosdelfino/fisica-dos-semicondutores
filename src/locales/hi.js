@@ -56,6 +56,7 @@ export default {
       czochralski: '🔬 वृद्धि विधियाँ',
       perovskites: '☀️ 2D पेरोवस्काइट',
       formulas: '📐 सूत्र और प्रतीक',
+      exercises: '📝 अभ्यास',
       periodic: '⚛️ आवर्त सारणी',
       about: '👤 परिचय',
       community: '🤝 GitHub पर योगदान दें',

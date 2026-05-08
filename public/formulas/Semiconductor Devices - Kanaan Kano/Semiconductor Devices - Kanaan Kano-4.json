@@ -1,0 +1,1362 @@
+{
+  "chapter": "4",
+  "questions": [
+    {
+      "number": "1",
+      "text": "Why is it that, in the inset of Fig. 4.4, the mobility is seen to increase with an increase of temperature in a certain temperature range, yet decreases with an increase of temperature in another temperature range?",
+      "formulas": []
+    },
+    {
+      "number": "Q4-1",
+      "text": "Identify the processes that cause scattering.",
+      "formulas": []
+    },
+    {
+      "number": "Q4-2",
+      "text": "Upon what physical factors does mobility depend?",
+      "formulas": []
+    },
+    {
+      "number": "Q4-3",
+      "text": "Why is the electron mobility in GaAs about three times that in silicon?",
+      "formulas": []
+    },
+    {
+      "number": "Q4-4",
+      "text": "Why and how does the mobility depend on doping? Explain.",
+      "formulas": []
+    },
+    {
+      "number": "Q4-5",
+      "text": "An electric field is applied to a sample of semiconductor in thermal equilibrium. If the field is in the positive x-direction, in what directions are the motions of holes and electrons?",
+      "formulas": []
+    },
+    {
+      "number": "Q4-6",
+      "text": "In the above question, in what directions are the electron and hole currents?",
+      "formulas": []
+    },
+    {
+      "number": "E4-1",
+      "text": "A sample of silicon is doped with 10^{15} cm^{-3} of phosphorus and 5 \\\times 10^{15}cm^{-3} of boron. Determine: a) the density of holes and electrons b) the mobility of holes and electrons",
+      "formulas": []
+    },
+    {
+      "number": "E4-2",
+      "text": "An electric field is applied to a sample of Ge that is doped with 10^{15}cm^{-3} of boron. The field has intensity of 100 V/cm. Calculate: a) the velocity of electrons and holes b) the conductivity of the sample",
+      "formulas": []
+    },
+    {
+      "number": "E4-3",
+      "text": "For the sample in E4-2 calculate a) the resistivity b) the drift current density J_{d}",
+      "formulas": []
+    },
+    {
+      "number": "E4-4",
+      "text": "Determine the resistance of the sample in E4-2 if its length is 10 cm and its area is 1 cm^{2}.",
+      "formulas": []
+    },
+    {
+      "number": "Q4-7",
+      "text": "Explain, in your own words, what is meant by diffusion in general and, as relating to semiconductors, in particular.",
+      "formulas": []
+    },
+    {
+      "number": "Q4-8",
+      "text": "If the electron density at one end of a semiconductor bar is increased relative to the other end, does the hole density take on a similar distribution? Why?",
+      "formulas": []
+    },
+    {
+      "number": "Q4-9",
+      "text": "Explain why the rate of generation of electrons in a semiconductor is given by \\( \\\frac{n_0}{\\tau_n} \\), where \\( n_0 \\) is the equilibrium electron density and \\( \\tau_n \\) is the lifetime of the minority carrier electrons.",
+      "formulas": [
+        {
+          "originalFormula": "\\frac{n_0}{\\tau_n}",
+          "genericFormula": "\\frac{n}{\\tau}",
+          "description": "Esta fórmula representa a densidade de corrente de elétrons em um semicondutor, onde a densidade de corrente é a quantidade de carga elétrica que passa por uma unidade de área em um determinado intervalo de tempo.",
+          "concepts": [
+            "Densidade de corrente elétrica",
+            "Semicondutores",
+            "Elétrons livres",
+            "Tempo de vida dos portadores de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "n_0",
+              "description": "Representa a densidade de portadores de carga, especificamente a densidade de elétrons livres em um semicondutor."
+            },
+            {
+              "symbol": "τ_n",
+              "description": "Representa o tempo médio de vida dos elétrons, que é o tempo médio que um elétron livre permanece em estado livre antes de recombinar com um buraco."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "Q4-10",
+      "text": "What is the rate of recombination and what does it depend on?",
+      "formulas": []
+    },
+    {
+      "number": "Q4-11",
+      "text": "Explain the following statement: \"If the minority carrier density at one point in a semiconductor exceeds the thermal equilibrium value, the recombination rate exceeds the generation rate.\"",
+      "formulas": []
+    },
+    {
+      "number": "4.1",
+      "text": "The intrinsic resistivity of a semiconductor at 300K is 3 × 10^5 ohm-cm. Given \\( \\mu_n = 1700 \\) and \\( \\mu_p = 350 \\) cm²/V-s, determine the intrinsic carrier density.",
+      "formulas": []
+    },
+    {
+      "number": "4.2",
+      "text": "An intrinsic semiconductor has resistivity of 2 × 10^5 ohm-cm at T = 300K and has \\( \\mu_n = 4000 \\) and \\( \\mu_p = 1000 \\) cm²/V-s. Calculate the resistivity for a) An acceptor doping of \\( 10^{15} \\) cm⁻³. b) A donor doping of \\( 10^{17} \\) cm⁻³.",
+      "formulas": []
+    },
+    {
+      "number": "4.3",
+      "text": "A semiconductor (N-type) bar is injected at one end by minority carrier holes and an electric field of 100V/cm is uniformly applied along the length of the bar that moves the holes a distance of 2cm in 10µs. Determine a) The drift velocity of holes. b) The diffusion constant of holes at T = 300K.",
+      "formulas": []
+    },
+    {
+      "number": "4.4",
+      "text": "An N-type semiconductor bar is 2cm long, has a cross-sectional area of 0.1cm², an electron density of \\( 5 \\\times 10^{14} \\) cm⁻³ and a resistivity of 10 ohm-cm. A 10V battery is connected across the ends of the bar. Determine a) The time it takes an electron to travel the length of the bar. b) The energy in eV and in Joules delivered to the bar.",
+      "formulas": []
+    },
+    {
+      "number": "4.5",
+      "text": "At T = 300K, the intrinsic carrier density of a GaAs sample is \\( 1.8 \\\times 10^6 \\) cm⁻³, \\( \\mu_n = 8500 \\) and \\( \\mu_p = 400 \\) cm²/V-s. An electric field applied to a bar of extrinsic GaAs causes equal electron and hole densities. Determine a) The equilibrium electron and hole densities. b) The net doping density.",
+      "formulas": []
+    },
+    {
+      "number": "4.6",
+      "text": "A semiconductor has an intrinsic resistivity of \\( 3 \\\times 10^4 \\) ohm-cm. Donor and acceptor atoms are added with densities of \\( 10^{14} \\) cm⁻³ and \\( 5 \\\times 10^{12} \\) cm⁻³ respectively. Given \\( \\mu_n = 1600 \\) and \\( \\mu_p = 600 \\) cm²/V-s, determine the current density if the applied electric field is 100mV/cm.",
+      "formulas": []
+    },
+    {
+      "number": "4.7",
+      "text": "A bar of intrinsic semiconductor has a resistance of 5 ohms at 360K and 50 ohms at 330K. Assume that the change in resistance is a result of the change in \\( n_i \\) only. Calculate the band gap energy of the semiconductor.",
+      "formulas": []
+    },
+    {
+      "number": "4.8",
+      "text": "A certain silicon sample has \\( N_A = 5.01 \\\times 10^{16} \\) cm⁻³ and \\( N_D = 5.02 \\\times 10^{16} \\) cm⁻³. Given \\( \\mu_n = 1200 \\) and \\( \\mu_p = 400 \\) cm²/V-s, determine",
+      "formulas": []
+    },
+    {
+      "number": "4.9",
+      "text": "Determine the resistance of a bar of silicon that has the following properties: length L = 0.8cm, area A = 1mm², N_d = 3 × 10^{16}cm^{-3}, N_A = 10^{14}cm^{-3}, \\mu_n = 1000 \\, cm^{2}/V-s, \\mu_p = 500 \\, cm^{2}/V-s.",
+      "formulas": []
+    },
+    {
+      "number": "4.10",
+      "text": "A silicon bar has a length of 1cm, a height of 0.01cm, and a depth of 0.2cm. At T = 300K, determine the resistance of the bar for the following conditions: a) Intrinsic. b) A donor doping of 10^{15}cm^{-3}. c) An acceptor doping of 10^{15}cm^{-3}.",
+      "formulas": []
+    },
+    {
+      "number": "4.11",
+      "text": "a) For minimum conductivity of a semiconductor sample, determine an expression for the electron and hole density, at a given temperature, in terms of \\mu_n, \\mu_p, and the intrinsic carrier density. b) Use \\mu_n = 3900, \\mu_p = 1800 \\, cm^{2}/V-s, and n_i = 10^{10}cm^{-3} to calculate the hole density and the maximum resistivity.",
+      "formulas": []
+    },
+    {
+      "number": "4.12",
+      "text": "Given a Ge sample that has, at a given temperature, n_i = 2.5 × 10^{13}cm^{-3}, \\mu_n = 3900 \\, cm^{2}/V-s, determine: a) The intrinsic conductivity. b) The minimum conductivity.",
+      "formulas": []
+    },
+    {
+      "number": "4.13",
+      "text": "Given a semiconductor that has a mobility ratio that is independent of impurity density given by K = \\frac{\\mu_n}{\\mu_p} and K > 1, determine an expression for the maximum resistivity in terms of K and the intrinsic resistivity.",
+      "formulas": []
+    },
+    {
+      "number": "4.14",
+      "text": "Determine all the possible values of hole and electron densities that cause the conductivity of a semiconductor to be equal to the intrinsic conductivity.",
+      "formulas": []
+    },
+    {
+      "number": "4.15",
+      "text": "An electric field of 10V/cm is applied to an intrinsic silicon sample. If the carriers drift 1cm in 100\\mu s, determine, at T = 300K: a) The drift velocity. b) The diffusion constant. c) The conductivity.",
+      "formulas": []
+    },
+    {
+      "number": "4.16",
+      "text": "A bar of heavily doped P-silicon, to which an electric field is applied, has a drift current density of 50A/cm². The hole drift velocity is 50cm/s. Determine the hole density.",
+      "formulas": []
+    },
+    {
+      "number": "4.17",
+      "text": "An N-type Ge bar has a resistivity of 5 ohm-cm. Determine the time it takes an electron to travel 5 × 10^{-3}cm if the current density is 0.1A/cm².",
+      "formulas": []
+    },
+    {
+      "number": "4.18",
+      "text": "A voltage is applied between two contacts that establishes an electric field of 100V/cm in the space separating the contacts. For an electron starting from rest at the first contact, determine: a) The drift velocity of an electron if the space between the contacts is occupied by an N-semiconductor having \\mu_n = 3900 \\, cm^{2}/V-s. b) The velocity of an electron at a distance of 1cm if the space between the contacts is a vacuum.",
+      "formulas": []
+    },
+    {
+      "number": "4.19",
+      "text": "A bar of N-type silicon 1cm long is doped with 10^{15}cm^{-3} of donor atoms at T = 300K and a voltage of 5V is applied to the ends of the bar. Determine: a) The hole drift current density.",
+      "formulas": []
+    },
+    {
+      "number": "4.20(a)",
+      "text": "Determine the steady-state excess hole density at x = 0.",
+      "formulas": []
+    },
+    {
+      "number": "4.20(b)",
+      "text": "Repeat part (a) at x = 100μm.",
+      "formulas": []
+    },
+    {
+      "number": "4.21(a)",
+      "text": "Determine the rate of generation of electron-hole pairs at x = 100μm.",
+      "formulas": []
+    },
+    {
+      "number": "4.21(b)",
+      "text": "Determine the rate of recombination of electron-hole pairs at x = 100μm.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "1",
+      "text": "At low temperatures, lattice vibrations are so small that as the temperature increases, the carriers receive thermal energy that increases their velocity, thus reducing the time that the electron spends in the vicinity of the lattice and impurity atoms. This reduces the scattering cross section, which causes the mobility to increase with temperature. The increase of mobility with temperature continues until, at a certain temperature, the lattice vibrations dominate and the scattering cross section increases, thus increasing the possibility of collision with the lattice and decreasing the mobility with an increase of temperature.",
+      "formulas": []
+    },
+    {
+      "questionNumber": "Q4-1",
+      "text": "",
+      "formulas": []
+    },
+    {
+      "questionNumber": "Q4-2",
+      "text": "",
+      "formulas": []
+    },
+    {
+      "questionNumber": "Q4-3",
+      "text": "",
+      "formulas": []
+    },
+    {
+      "questionNumber": "Q4-4",
+      "text": "",
+      "formulas": []
+    },
+    {
+      "questionNumber": "Q4-5",
+      "text": "",
+      "formulas": []
+    },
+    {
+      "questionNumber": "Q4-6",
+      "text": "",
+      "formulas": []
+    },
+    {
+      "questionNumber": "E4-1",
+      "text": "a) p = 4 \\\times 10^{15}cm^{-3}, n = 2.5 \\\times 10^{14}cm^{-3} b) \\mu_{p} = 350cm^{2}/V-s, \\mu_{n} = 1500cm^{2}/V-s",
+      "formulas": [
+        {
+          "originalFormula": "p = 4 \\times 10^{15} \\text{cm}^{-3}",
+          "genericFormula": "p = C \\times 10^{n} \\text{cm}^{-3}",
+          "description": "Esta fórmula representa a densidade de portadores de carga em um material semicondutor, onde 'p' é a quantidade de portadores de carga por unidade de volume, medida em centímetros cúbicos.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Semicondutores",
+            "Cargas elétricas"
+          ],
+          "symbols": [
+            {
+              "symbol": "p",
+              "description": "Representa a densidade de portadores de carga, que é a quantidade de portadores (como buracos ou elétrons) por unidade de volume."
+            },
+            {
+              "symbol": "C",
+              "description": "Um valor constante que representa a parte numérica da densidade de portadores de carga, que pode variar dependendo do material semicondutor."
+            },
+            {
+              "symbol": "n",
+              "description": "Um expoente que indica a ordem de grandeza da densidade de portadores de carga, mostrando quantas vezes a base 10 deve ser multiplicada."
+            }
+          ]
+        },
+        {
+          "originalFormula": "n = 2.5 \\times 10^{14} \\text{cm}^{-3}",
+          "genericFormula": "n = N \\times 10^{x} \\text{cm}^{-3}",
+          "description": "Esta fórmula representa a densidade de portadores de carga em um material semicondutor, onde 'n' é o número de portadores de carga por unidade de volume.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Semicondutores",
+            "Portadores de carga (elétrons e lacunas)"
+          ],
+          "symbols": [
+            {
+              "symbol": "n",
+              "description": "Representa a densidade de portadores de carga, que é a quantidade de portadores (elétrons ou lacunas) por unidade de volume no material."
+            },
+            {
+              "symbol": "N",
+              "description": "Representa um valor genérico que indica a densidade de portadores de carga em unidades de cm cúbicos."
+            },
+            {
+              "symbol": "x",
+              "description": "Representa um expoente que indica a ordem de grandeza da densidade de portadores de carga, mostrando quantas vezes a densidade deve ser multiplicada por 10."
+            }
+          ]
+        },
+        {
+          "originalFormula": "\\mu_{p} = 350 \\text{ cm}^2/\\text{V-s}",
+          "genericFormula": "\\mu_{p} = X \\text{ cm}^2/\\text{V-s}",
+          "description": "Esta fórmula representa a mobilidade dos portadores de carga positiva, que são os buracos, em um semicondutor. A mobilidade é uma medida de quão rapidamente os portadores de carga podem se mover através do material quando um campo elétrico é aplicado.",
+          "concepts": [
+            "Mobilidade de portadores de carga",
+            "Semicondutores",
+            "Buracos como portadores de carga positiva",
+            "Campo elétrico"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\mu_{p}",
+              "description": "Representa a mobilidade dos portadores de carga positiva, que são os buracos, em um semicondutor."
+            }
+          ]
+        },
+        {
+          "originalFormula": "\\mu_{n} = 1500 \\text{ cm}^{2}/\\text{V-s}",
+          "genericFormula": "\\mu_{n} = \\text{valor} \\text{ cm}^{2}/\\text{V-s}",
+          "description": "Esta fórmula representa a mobilidade dos portadores de carga negativa, especificamente elétrons, em um semicondutor. A mobilidade é uma medida de quão rapidamente os portadores de carga podem se mover através do material quando um campo elétrico é aplicado.",
+          "concepts": [
+            "Mobilidade elétrica",
+            "Portadores de carga",
+            "Semicondutores",
+            "Campo elétrico"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\mu_{n}",
+              "description": "Representa a mobilidade dos elétrons em um semicondutor, que indica a facilidade com que os elétrons podem se mover sob a influência de um campo elétrico."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "E4-2",
+      "text": "a) v_{d}(n) = 5 \\\times 10^{5}cm/s, v_{d}(p) = 2 \\\times 10^{5}cm/s b) \\sigma = 0.16 (ohm-cm)^{-1}",
+      "formulas": [
+        {
+          "originalFormula": "v_{d}(n) = 5 \\times 10^{5} \\text{ cm/s}",
+          "genericFormula": "v_{d}(n) = k \\text{ cm/s}",
+          "description": "Esta fórmula representa a velocidade de deriva dos portadores de carga (neste caso, elétrons) em um semicondutor. A velocidade de deriva é a velocidade média que os portadores de carga adquirem quando um campo elétrico é aplicado.",
+          "concepts": [
+            "Velocidade de deriva",
+            "Portadores de carga",
+            "Campo elétrico",
+            "Semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "v_{d}(n)",
+              "description": "Representa a velocidade de deriva dos portadores de carga, especificamente dos elétrons em um semicondutor."
+            },
+            {
+              "symbol": "k",
+              "description": "Um valor constante que representa a magnitude da velocidade de deriva em centímetros por segundo."
+            }
+          ]
+        },
+        {
+          "originalFormula": "v_{d}(p) = 2 \\times 10^{5} \\text{cm/s}",
+          "genericFormula": "v_{d}(p) = k \\text{cm/s}",
+          "description": "Esta fórmula representa a velocidade de deriva dos portadores de carga em um semicondutor do tipo p. A velocidade de deriva é a velocidade média que os portadores de carga (neste caso, buracos) atingem quando um campo elétrico é aplicado.",
+          "concepts": [
+            "velocidade de deriva",
+            "portadores de carga",
+            "semicondutores",
+            "campo elétrico"
+          ],
+          "symbols": [
+            {
+              "symbol": "v_{d}(p)",
+              "description": "representa a velocidade de deriva dos portadores de carga do tipo p, que são os buracos em um semicondutor."
+            },
+            {
+              "symbol": "k",
+              "description": "representa uma constante que indica a velocidade de deriva em centímetros por segundo, que pode variar dependendo das condições do semicondutor e do campo elétrico aplicado."
+            }
+          ]
+        },
+        {
+          "originalFormula": "\\sigma = 0.16 \\; (\\text{ohm-cm})^{-1}",
+          "genericFormula": "\\sigma = C \\; (\\text{ohm-cm})^{-1}",
+          "description": "Esta fórmula representa a condutividade elétrica de um material, que é uma medida de quão bem o material pode conduzir eletricidade. Quanto maior o valor da condutividade, melhor o material é em permitir a passagem de corrente elétrica.",
+          "concepts": [
+            "Condutividade elétrica",
+            "Corrente elétrica",
+            "Materiais condutores e isolantes"
+          ],
+          "symbols": [
+            {
+              "symbol": "σ",
+              "description": "Representa a condutividade elétrica do material, que indica a capacidade do material de conduzir eletricidade."
+            },
+            {
+              "symbol": "C",
+              "description": "Um valor constante que representa a condutividade específica do material em questão, que pode variar dependendo do tipo de material."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "E4-3",
+      "text": "a) \\rho = 3.12 ohm-cm, b) J_{d} = 32 A/cm^{2}",
+      "formulas": [
+        {
+          "originalFormula": "\\rho = 3.12 \\text{ ohm-cm}",
+          "genericFormula": "\\rho = R \\cdot A / L",
+          "description": "Esta fórmula representa a resistividade de um material, que é uma medida de quão bem o material resiste ao fluxo de corrente elétrica. A resistividade é uma propriedade intrínseca do material e é importante para entender como diferentes materiais conduzem eletricidade.",
+          "concepts": [
+            "Resistividade",
+            "Condução elétrica",
+            "Materiais semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "ρ",
+              "description": "Representa a resistividade do material, que indica a capacidade do material de resistir ao fluxo de corrente elétrica."
+            },
+            {
+              "symbol": "R",
+              "description": "Representa a resistência elétrica do material, que é a oposição ao fluxo de corrente em um circuito."
+            },
+            {
+              "symbol": "A",
+              "description": "Representa a área da seção transversal do material, que influencia a quantidade de corrente que pode passar através dele."
+            },
+            {
+              "symbol": "L",
+              "description": "Representa o comprimento do material, que também afeta a resistência e, consequentemente, a resistividade."
+            }
+          ]
+        },
+        {
+          "originalFormula": "J_{d} = 32 \\text{ A/cm}^{2}",
+          "genericFormula": "J_{d} = I / A",
+          "description": "Esta fórmula representa a densidade de corrente, que é a quantidade de corrente elétrica que flui por unidade de área em um material. A densidade de corrente é uma medida importante em semicondutores, pois influencia o comportamento dos dispositivos eletrônicos.",
+          "concepts": [
+            "Densidade de corrente",
+            "Corrente elétrica",
+            "Área",
+            "Semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "J_{d}",
+              "description": "Representa a densidade de corrente, que é a corrente elétrica por unidade de área."
+            },
+            {
+              "symbol": "I",
+              "description": "Representa a corrente elétrica total que flui através do material."
+            },
+            {
+              "symbol": "A",
+              "description": "Representa a área através da qual a corrente elétrica está fluindo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "E4-4",
+      "text": "R = 31.2 \\Omega",
+      "formulas": [
+        {
+          "originalFormula": "R = 31.2 \\Omega",
+          "genericFormula": "R = R_0",
+          "description": "Esta fórmula representa a resistência elétrica de um componente ou circuito, onde a resistência é medida em ohms. A resistência é uma propriedade que determina quão difícil é para a corrente elétrica passar através de um material.",
+          "concepts": [
+            "Resistência elétrica",
+            "Corrente elétrica",
+            "Circuitos elétricos"
+          ],
+          "symbols": [
+            {
+              "symbol": "R",
+              "description": "Representa a resistência elétrica, que é a oposição ao fluxo de corrente em um circuito."
+            },
+            {
+              "symbol": "Ω",
+              "description": "É a unidade de medida da resistência elétrica, chamada ohm."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "\\rho = \\frac{1}{(q \\mu_n n_0 + q \\mu_p p_0)}",
+      "genericFormula": "\\rho = \\frac{1}{(q \\mu_n n + q \\mu_p p)}",
+      "description": "Esta fórmula representa a resistividade elétrica de um semicondutor em função da concentração de portadores de carga e suas mobilidades. A resistividade é uma medida de quão fortemente um material se opõe ao fluxo de corrente elétrica.",
+      "concepts": [
+        "Resistividade elétrica",
+        "Portadores de carga",
+        "Mobilidade de portadores",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "ρ",
+          "description": "Representa a resistividade elétrica do material, que indica a capacidade do material de resistir ao fluxo de corrente elétrica."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica elementar, que é a quantidade de carga transportada por um único portador de carga, como um elétron ou um buraco."
+        },
+        {
+          "symbol": "μ_n",
+          "description": "Representa a mobilidade dos elétrons no semicondutor, que é uma medida de quão rapidamente os elétrons podem se mover através do material quando um campo elétrico é aplicado."
+        },
+        {
+          "symbol": "n_0",
+          "description": "Representa a concentração de elétrons livres no semicondutor, que é a quantidade de elétrons disponíveis para conduzir corrente elétrica."
+        },
+        {
+          "symbol": "μ_p",
+          "description": "Representa a mobilidade dos buracos no semicondutor, que é uma medida de quão rapidamente os buracos (deficiências de elétrons) podem se mover através do material sob a influência de um campo elétrico."
+        },
+        {
+          "symbol": "p_0",
+          "description": "Representa a concentração de buracos no semicondutor, que é a quantidade de buracos disponíveis para conduzir corrente elétrica."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\rho \\approx \\frac{1}{(q \\mu_n N_D)}",
+      "genericFormula": "\\rho \\approx \\frac{1}{(q \\mu N)}",
+      "description": "Esta fórmula representa a resistividade de um material semicondutor dopado, que é uma medida da oposição que o material oferece à passagem de corrente elétrica. A resistividade é inversamente proporcional ao produto da carga elétrica dos portadores de carga, sua mobilidade e a densidade de portadores de carga no material.",
+      "concepts": [
+        "Resistividade",
+        "Dopagem de semicondutores",
+        "Mobilidade de portadores de carga",
+        "Carga elétrica"
+      ],
+      "symbols": [
+        {
+          "symbol": "ρ",
+          "description": "Representa a resistividade do material, que indica quão bem ele conduz eletricidade."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica de um portador de carga, que é a quantidade de eletricidade transportada por um único portador."
+        },
+        {
+          "symbol": "μ_n",
+          "description": "Representa a mobilidade dos portadores de carga negativos (elétrons) no semicondutor, que é uma medida de quão rapidamente os portadores podem se mover sob a influência de um campo elétrico."
+        },
+        {
+          "symbol": "N_D",
+          "description": "Representa a densidade de dopagem do semicondutor, que é a quantidade de átomos dopantes introduzidos no material por unidade de volume."
+        },
+        {
+          "symbol": "μ",
+          "description": "Representa a mobilidade geral dos portadores de carga, que pode incluir tanto elétrons quanto lacunas, dependendo do tipo de semicondutor."
+        },
+        {
+          "symbol": "N",
+          "description": "Representa a densidade total de portadores de carga no semicondutor, que é a soma dos portadores de carga positivos e negativos."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\rho \\approx \\frac{1}{(q \\mu_p N_A)}",
+      "genericFormula": "\\rho \\approx \\frac{1}{(q \\mu_p N_A)}",
+      "description": "Esta fórmula representa a resistividade elétrica de um semicondutor dopado, onde a resistividade é inversamente proporcional ao produto da carga elétrica dos portadores, a mobilidade dos portadores de carga e a concentração de portadores de carga dopados.",
+      "concepts": [
+        "Resistividade elétrica",
+        "Dopagem de semicondutores",
+        "Mobilidade de portadores de carga",
+        "Concentração de portadores de carga"
+      ],
+      "symbols": [
+        {
+          "symbol": "ρ",
+          "description": "Representa a resistividade elétrica do material, que indica a capacidade do material de resistir ao fluxo de corrente elétrica."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica elementar, que é a quantidade de carga transportada por um único portador de carga, como um elétron ou um buraco."
+        },
+        {
+          "symbol": "μ_p",
+          "description": "Representa a mobilidade dos portadores de carga, que é uma medida de quão rapidamente os portadores de carga podem se mover através do material quando um campo elétrico é aplicado."
+        },
+        {
+          "symbol": "N_A",
+          "description": "Representa a concentração de portadores de carga dopados, que é a quantidade de átomos dopantes por unidade de volume no semicondutor, influenciando a quantidade de portadores de carga disponíveis para conduzir eletricidade."
+        }
+      ]
+    },
+    {
+      "originalFormula": "J_n = q \\mu_n n E + q D_n \\frac{dn}{dx}",
+      "genericFormula": "J_n = q \\mu_n n E + q D_n \\frac{dn}{dx}",
+      "description": "Esta fórmula representa a densidade de corrente de portadores de carga negativa (elétrons) em um semicondutor. A densidade de corrente é influenciada tanto pela mobilidade dos portadores em um campo elétrico quanto pelo gradiente de concentração de portadores.",
+      "concepts": [
+        "Densidade de corrente",
+        "Mobilidade de portadores",
+        "Campo elétrico",
+        "Difusão de portadores",
+        "Gradiente de concentração"
+      ],
+      "symbols": [
+        {
+          "symbol": "J_n",
+          "description": "Representa a densidade de corrente dos portadores de carga negativa, medida em amperes por metro quadrado."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica do portador, que é a carga elementar dos elétrons."
+        },
+        {
+          "symbol": "μ_n",
+          "description": "Representa a mobilidade dos portadores de carga negativa, que indica quão facilmente os elétrons podem se mover através do semicondutor quando um campo elétrico é aplicado."
+        },
+        {
+          "symbol": "n",
+          "description": "Representa a concentração de portadores de carga negativa, ou seja, o número de elétrons por unidade de volume no semicondutor."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa a intensidade do campo elétrico aplicado ao semicondutor, que influencia o movimento dos portadores de carga."
+        },
+        {
+          "symbol": "D_n",
+          "description": "Representa o coeficiente de difusão dos portadores de carga negativa, que descreve a taxa de difusão dos elétrons devido a um gradiente de concentração."
+        },
+        {
+          "symbol": "dn/dx",
+          "description": "Representa o gradiente de concentração de portadores de carga negativa, ou seja, a taxa de variação da concentração de elétrons em relação à distância."
+        }
+      ]
+    },
+    {
+      "originalFormula": "J_p = q \\mu_p p E - q D_p \\frac{dp}{dx}",
+      "genericFormula": "J_p = q \\mu_p p E - q D_p \\frac{dp}{dx}",
+      "description": "Esta fórmula representa a densidade de corrente de buracos em um semicondutor, que é influenciada tanto pela mobilidade dos buracos quanto pelo gradiente de concentração deles. A corrente de buracos é gerada pela aplicação de um campo elétrico e também é afetada pela difusão dos buracos devido a diferenças de concentração.",
+      "concepts": [
+        "Densidade de corrente",
+        "Mobilidade de portadores de carga",
+        "Campo elétrico",
+        "Difusão de partículas",
+        "Gradiente de concentração"
+      ],
+      "symbols": [
+        {
+          "symbol": "J_p",
+          "description": "Representa a densidade de corrente de buracos, que indica a quantidade de carga que flui por unidade de área por unidade de tempo."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elementar, que é a carga de um único elétron ou buraco, e é uma constante fundamental na física."
+        },
+        {
+          "symbol": "μ_p",
+          "description": "Representa a mobilidade dos buracos, que é uma medida de quão rapidamente os buracos podem se mover através do semicondutor quando um campo elétrico é aplicado."
+        },
+        {
+          "symbol": "p",
+          "description": "Representa a concentração de buracos, que é a quantidade de buracos presentes por unidade de volume no semicondutor."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa a intensidade do campo elétrico aplicado, que influencia a movimentação dos buracos no material."
+        },
+        {
+          "symbol": "D_p",
+          "description": "Representa o coeficiente de difusão dos buracos, que quantifica a taxa de difusão dos buracos em resposta a um gradiente de concentração."
+        },
+        {
+          "symbol": "dp/dx",
+          "description": "Representa o gradiente de concentração de buracos, que é a taxa de variação da concentração de buracos em relação à posição no semicondutor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "J_t = J_n + J_p",
+      "genericFormula": "J_t = J_n + J_p",
+      "description": "Esta fórmula representa a densidade de corrente total em um semicondutor, que é a soma das densidades de corrente dos portadores de carga negativa (elétrons) e dos portadores de carga positiva (lacunas).",
+      "concepts": [
+        "Densidade de corrente",
+        "Portadores de carga",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "J_t",
+          "description": "Representa a densidade de corrente total, que é a quantidade de carga que passa por uma unidade de área em um determinado tempo."
+        },
+        {
+          "symbol": "J_n",
+          "description": "Representa a densidade de corrente dos portadores de carga negativa, ou seja, dos elétrons que contribuem para o fluxo de corrente elétrica."
+        },
+        {
+          "symbol": "J_p",
+          "description": "Representa a densidade de corrente dos portadores de carga positiva, que são as lacunas criadas na estrutura do semicondutor quando um elétron se move."
+        }
+      ]
+    },
+    {
+      "originalFormula": "n, p = \\text{electron, hole density, } cm^{-3}",
+      "genericFormula": "n, p = \\text{densidade de elétrons e lacunas, } cm^{-3}",
+      "description": "Esta fórmula representa a densidade de portadores de carga em um semicondutor, onde 'n' é a densidade de elétrons livres e 'p' é a densidade de lacunas. Essas densidades são fundamentais para entender como os semicondutores conduzem eletricidade.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Elétrons livres",
+        "Lacunas",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "n",
+          "description": "Representa a densidade de elétrons livres em um semicondutor, que são os portadores de carga negativa."
+        },
+        {
+          "symbol": "p",
+          "description": "Representa a densidade de lacunas em um semicondutor, que são os portadores de carga positiva resultantes da ausência de elétrons."
+        }
+      ]
+    },
+    {
+      "originalFormula": "n_0, p_0 = n_{0}, p_{0} \\text{ (densidade de elétrons e lacunas em equilíbrio térmico, cm}^{-3}\\text{)}",
+      "genericFormula": "n, p = n, p \\text{ (densidade de elétrons e lacunas em equilíbrio térmico, cm}^{-3}\\text{)}",
+      "description": "Esta fórmula representa as densidades de elétrons e lacunas em um semicondutor em condições de equilíbrio térmico. Em um semicondutor, a densidade de portadores de carga, que inclui elétrons (n) e lacunas (p), é fundamental para entender suas propriedades elétricas e ópticas.",
+      "concepts": [
+        "Equilíbrio térmico",
+        "Densidade de portadores de carga",
+        "Semicondutores",
+        "Elétrons",
+        "Lacunas"
+      ],
+      "symbols": [
+        {
+          "symbol": "n",
+          "description": "Representa a densidade de elétrons livres em um semicondutor, que são portadores de carga negativa."
+        },
+        {
+          "symbol": "p",
+          "description": "Representa a densidade de lacunas em um semicondutor, que são consideradas portadores de carga positiva."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\Delta n = n - n_0 = \\text{deviation of electron density from the thermal equilibrium value}",
+      "genericFormula": "\\Delta n = n - n_0",
+      "description": "Esta fórmula representa a variação da densidade de elétrons em um material semicondutor em relação ao seu valor de equilíbrio térmico. A diferença entre a densidade atual de elétrons e a densidade de elétrons em equilíbrio térmico é importante para entender como os semicondutores se comportam sob diferentes condições, como a aplicação de temperatura ou campos elétricos.",
+      "concepts": [
+        "Densidade de elétrons",
+        "Equilíbrio térmico",
+        "Semicondutores",
+        "Variação de densidade"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\Delta n",
+          "description": "Representa a variação da densidade de elétrons, ou seja, a diferença entre a densidade de elétrons atual e a densidade de elétrons em equilíbrio térmico."
+        },
+        {
+          "symbol": "n",
+          "description": "Representa a densidade de elétrons atual em um material semicondutor sob determinadas condições."
+        },
+        {
+          "symbol": "n_0",
+          "description": "Representa a densidade de elétrons em equilíbrio térmico, que é a densidade de elétrons quando não há perturbações externas, como temperatura ou campos elétricos."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\Delta p = p - p_0",
+      "genericFormula": "\\Delta p = p - p_0",
+      "description": "Esta fórmula representa a variação na densidade de lacunas em um semicondutor em relação ao seu valor de equilíbrio térmico. A diferença entre a densidade de lacunas atual e a densidade de lacunas em equilíbrio térmico é o que chamamos de desvio.",
+      "concepts": [
+        "Densidade de lacunas",
+        "Equilíbrio térmico",
+        "Semicondutores",
+        "Desvio de densidade"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\Delta p",
+          "description": "Representa a variação na densidade de lacunas, que é a diferença entre a densidade atual de lacunas e a densidade de lacunas em equilíbrio térmico."
+        },
+        {
+          "symbol": "p",
+          "description": "Representa a densidade de lacunas atual no semicondutor, que pode variar com condições externas como temperatura e dopagem."
+        },
+        {
+          "symbol": "p_0",
+          "description": "Representa a densidade de lacunas em equilíbrio térmico, que é a densidade de lacunas quando o sistema está em um estado estável e não sujeito a perturbações externas."
+        }
+      ]
+    },
+    {
+      "originalFormula": "N_T = \\text{number of recombination-generation centers (traps) per cm}^{3}",
+      "genericFormula": "N_T = \\text{number of recombination-generation centers (traps) per cm}^{3}",
+      "description": "Esta fórmula representa a quantidade de centros de recombinação e geração, também conhecidos como armadilhas, presentes em um centímetro cúbico de material semicondutor. Esses centros são locais onde os portadores de carga (elétrons e lacunas) podem ser capturados, afetando a eficiência do material em conduzir eletricidade.",
+      "concepts": [
+        "Recombinação de portadores de carga",
+        "Geração de portadores de carga",
+        "Centros de armadilha",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "N_T",
+          "description": "Representa o número total de centros de recombinação e geração por centímetro cúbico."
+        }
+      ]
+    },
+    {
+      "originalFormula": "n_{i} = \\sqrt{N_{c} N_{v}} e^{-E_{g} / 2kT}",
+      "genericFormula": "n_{i} = \\sqrt{N_{c} N_{v}} e^{-E_{g} / 2kT}",
+      "description": "Esta fórmula representa a concentração de portadores intrínsecos em um semicondutor, que é a quantidade de elétrons e buracos presentes em um material semicondutor puro em equilíbrio térmico. A fórmula mostra como essa concentração depende das propriedades do material e da temperatura.",
+      "concepts": [
+        "Semicondutores",
+        "Concentração de portadores intrínsecos",
+        "Energia de bandgap",
+        "Temperatura",
+        "Densidade de estados"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_{i}",
+          "description": "Representa a concentração de portadores intrínsecos, ou seja, a quantidade de elétrons e buracos em um semicondutor puro."
+        },
+        {
+          "symbol": "N_{c}",
+          "description": "Representa a densidade de estados na banda de condução do semicondutor, que indica quantos estados eletrônicos estão disponíveis para os elétrons na banda de condução."
+        },
+        {
+          "symbol": "N_{v}",
+          "description": "Representa a densidade de estados na banda de valência do semicondutor, que indica quantos estados eletrônicos estão disponíveis para os buracos na banda de valência."
+        },
+        {
+          "symbol": "E_{g}",
+          "description": "Representa a energia de bandgap, que é a diferença de energia entre a banda de condução e a banda de valência em um semicondutor. Essa energia determina a capacidade do semicondutor de conduzir eletricidade."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia térmica em sistemas físicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta do sistema em Kelvin, que afeta a energia térmica e, consequentemente, a movimentação dos portadores de carga no semicondutor."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498
+  ],
+  "lastUpdated": "2026-05-08T19:05:41.807Z"
+}

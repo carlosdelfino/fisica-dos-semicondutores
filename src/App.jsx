@@ -9,6 +9,7 @@ import FermiDiracPlot from './components/FermiDiracPlot.jsx';
 import DensityOfStates from './components/DensityOfStates.jsx';
 import CarrierVsTemp from './components/CarrierVsTemp.jsx';
 import FormulasPanel from './components/FormulasPanel.jsx';
+import ExercisesPanel from './components/ExercisesPanel.jsx';
 import KSpaceDiagram from './components/KSpaceDiagram.jsx';
 import EffectiveMassDemo from './components/EffectiveMassDemo.jsx';
 import KronigPenneyDiagram from './components/KronigPenneyDiagram.jsx';
@@ -178,6 +179,7 @@ function AppContent() {
           <Route path="/crystal-structures" element={<SemiconductorCrystalStructures />} />
           <Route path="/glossary" element={<Glossary />} />
           <Route path="/periodic" element={<PeriodicTable />} />
+          <Route path="/exercises" element={<ExercisesPanel />} />
           <Route path="/formulas" element={<FormulasPanel />} />
         </Routes>
       </main>

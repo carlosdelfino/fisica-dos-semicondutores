@@ -56,6 +56,7 @@ export default {
       czochralski: '🔬 Growth Methods',
       perovskites: '☀️ 2D Perovskites',
       formulas: '📐 Formulas & Symbols',
+      exercises: '📝 Exercises',
       periodic: '⚛️ Periodic Table',
       about: '👤 About',
       community: '🤝 Collaborate on GitHub',

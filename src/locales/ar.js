@@ -56,6 +56,7 @@ export default {
       czochralski: '🔬 طرق النمو',
       perovskites: '☀️ بيروفسكيت ثنائي الأبعاد',
       formulas: '📐 الصيغ والرموز',
+      exercises: '📝 التمارين',
       periodic: '⚛️ الجدول الدوري',
       about: '👤 حول',
       community: '🤝 ساهم على GitHub',

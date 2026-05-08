@@ -26,6 +26,7 @@ const MENU_STRUCTURE = [
     key: 'reference',
     items: [
       'formulas',
+      'exercises',
       'periodic',
       'about',
       {

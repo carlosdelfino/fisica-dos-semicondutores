@@ -1,0 +1,1200 @@
+{
+  "chapter": "14",
+  "questions": [
+    {
+      "number": "EXAMPLE 14.1",
+      "text": "An 0.3μm single crystal of silicon is subjected to incident light normal to the surface having power of 20mW. Given the attenuation factor for silicon at the frequency of the light is 5 × 10^4/cm and the index of refraction of silicon is 3.5, determine the power absorbed by the crystal.",
+      "formulas": [
+        {
+          "originalFormula": "R_y = \\frac{(3.5)^{1/2}}{(3.5 + 1)} = 0.308",
+          "genericFormula": "R_y = \\frac{(x)^{1/2}}{(x + y)}",
+          "description": "Esta fórmula representa a razão entre a raiz quadrada de um valor e a soma desse valor com outro. Essa razão pode ser utilizada em diversas aplicações, como em circuitos elétricos ou em análises de eficiência.",
+          "concepts": [
+            "raiz quadrada",
+            "razão",
+            "soma",
+            "eficiência"
+          ],
+          "symbols": [
+            {
+              "symbol": "R_y",
+              "description": "Representa a razão calculada, que pode estar relacionada a uma eficiência ou proporção em um determinado contexto."
+            },
+            {
+              "symbol": "x",
+              "description": "Representa um valor que está sendo analisado, que pode ser uma quantidade física ou uma medida em um experimento."
+            },
+            {
+              "symbol": "y",
+              "description": "Representa um segundo valor que é somado ao primeiro, podendo ser uma constante ou outra medida relevante para o cálculo."
+            }
+          ]
+        },
+        {
+          "originalFormula": "P_a = 20 \\times (1 - R_y)(1 - 0.223) = 10.74mW",
+          "genericFormula": "P_a = P_{max} \\times (1 - R_y)(1 - k)",
+          "description": "Esta fórmula calcula a potência absorvida por um material em função da potência máxima disponível, da reflectância do material e de um fator de atenuação. A potência absorvida é importante em aplicações de semicondutores e fotônica, onde a eficiência na absorção de luz ou energia é crucial.",
+          "concepts": [
+            "Potência absorvida",
+            "Reflectância",
+            "Fatores de atenuação",
+            "Eficiência de absorção"
+          ],
+          "symbols": [
+            {
+              "symbol": "P_a",
+              "description": "Representa a potência absorvida pelo material."
+            },
+            {
+              "symbol": "P_{max}",
+              "description": "Representa a potência máxima disponível que pode ser absorvida pelo material."
+            },
+            {
+              "symbol": "R_y",
+              "description": "Representa a reflectância do material, que é a fração da potência que é refletida em vez de ser absorvida."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa um fator de atenuação que pode ser associado a perdas adicionais, como absorção ou dispersão."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "text": "What value of load resistance will cause the photocell to deliver maximum power to the load?",
+      "formulas": [
+        {
+          "originalFormula": "P = VI",
+          "genericFormula": "P = VI",
+          "description": "Esta fórmula representa a potência elétrica em um circuito, que é o produto da tensão elétrica e da corrente elétrica. Em termos simples, ela nos diz quanta energia é consumida ou gerada por um dispositivo elétrico a cada segundo.",
+          "concepts": [
+            "Potência elétrica",
+            "Tensão elétrica",
+            "Corrente elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "P",
+              "description": "Representa a potência elétrica, que é a taxa de consumo ou geração de energia em um circuito elétrico."
+            },
+            {
+              "symbol": "V",
+              "description": "Representa a tensão elétrica, que é a diferença de potencial elétrico entre dois pontos em um circuito. É o que 'empurra' a corrente elétrica."
+            },
+            {
+              "symbol": "I",
+              "description": "Representa a corrente elétrica, que é o fluxo de carga elétrica que passa por um ponto em um circuito em um determinado intervalo de tempo."
+            }
+          ]
+        },
+        {
+          "originalFormula": "\\frac{dP}{dI} = V + I \\frac{dV}{dI} = 0",
+          "genericFormula": "\\frac{dP}{dI} = V + I \\frac{dV}{dI} = 0",
+          "description": "Esta fórmula representa a relação entre a variação da potência em relação à corrente e a tensão, além de mostrar que a soma da tensão e do produto da corrente pela variação da tensão em relação à corrente é igual a zero. Isso é importante em circuitos elétricos, onde a potência e a corrente estão interligadas.",
+          "concepts": [
+            "Potência elétrica",
+            "Corrente elétrica",
+            "Tensão elétrica",
+            "Derivadas",
+            "Equilíbrio em circuitos"
+          ],
+          "symbols": [
+            {
+              "symbol": "dP",
+              "description": "Representa a variação da potência elétrica em um circuito."
+            },
+            {
+              "symbol": "dI",
+              "description": "Representa a variação da corrente elétrica."
+            },
+            {
+              "symbol": "V",
+              "description": "Representa a tensão elétrica em volts."
+            },
+            {
+              "symbol": "I",
+              "description": "Representa a corrente elétrica em amperes."
+            },
+            {
+              "symbol": "dV",
+              "description": "Representa a variação da tensão elétrica."
+            }
+          ]
+        },
+        {
+          "originalFormula": "\\frac{dV}{dI} = -\\frac{V}{I} = -R_L",
+          "genericFormula": "\\frac{dV}{dI} = -\\frac{V}{I} = -R_L",
+          "description": "Esta fórmula representa a relação entre a variação da tensão e a variação da corrente em um circuito, mostrando que a razão entre essas variações é igual à resistência do circuito. Essa relação é fundamental para entender como a tensão e a corrente se comportam em um resistor.",
+          "concepts": [
+            "Lei de Ohm",
+            "Resistência elétrica",
+            "Circuitos elétricos",
+            "Variação de tensão e corrente"
+          ],
+          "symbols": [
+            {
+              "symbol": "dV",
+              "description": "Representa a variação na tensão elétrica em volts."
+            },
+            {
+              "symbol": "dI",
+              "description": "Representa a variação na corrente elétrica em amperes."
+            },
+            {
+              "symbol": "V",
+              "description": "Representa a tensão elétrica em volts."
+            },
+            {
+              "symbol": "I",
+              "description": "Representa a corrente elétrica em amperes."
+            },
+            {
+              "symbol": "R_L",
+              "description": "Representa a resistência elétrica do circuito em ohms."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "E14-3",
+      "text": "A photodetector slab is illuminated by a 0.6μm light having incident power density of 2mW/cm². The semiconductor has E_g = 2eV, μ_n = 500cm²/V-s, and lifetime = 10⁻⁴s. The slab dimensions are l = 0.5cm, w = 0.24cm, and d = 0.02cm. Determine the photon current when 6V is applied to the device.",
+      "formulas": []
+    },
+    {
+      "number": "E14-4",
+      "text": "In solar cell applications, and to obtain the required voltage and current, cells are connected in series and blocks of these are connected in parallel. Consider two cells connected in parallel. One cell has V_{oc} = 0.6V and I_{sc} = 1.2A, and the other cell has V_{oc} = 0.72V and I_{sc} = 0.9A. Determine: a) the resulting V_{oc} b) the resulting I_{sc}.",
+      "formulas": []
+    },
+    {
+      "number": "14.1(a)",
+      "text": "The fraction of light reflected.",
+      "formulas": []
+    },
+    {
+      "number": "14.1(b)",
+      "text": "Repeat part (a) for glass that has an index of refraction of 1.5.",
+      "formulas": []
+    },
+    {
+      "number": "14.2(a)",
+      "text": "The thickness that will absorb 90 percent of the radiation.",
+      "formulas": []
+    },
+    {
+      "number": "14.2(b)",
+      "text": "Repeat part (a) if 99 percent of the radiation is absorbed.",
+      "formulas": []
+    },
+    {
+      "number": "14.3(a)",
+      "text": "The number of photons generated per second.",
+      "formulas": []
+    },
+    {
+      "number": "14.3(b)",
+      "text": "The optical power that is generated.",
+      "formulas": []
+    },
+    {
+      "number": "14.4(a)",
+      "text": "The energy absorbed each second by the crystal.",
+      "formulas": []
+    },
+    {
+      "number": "14.4(b)",
+      "text": "The rate of dissipation of heat energy in the lattice.",
+      "formulas": []
+    },
+    {
+      "number": "14.4(c)",
+      "text": "The number of photons per second emitted from recombination.",
+      "formulas": []
+    },
+    {
+      "number": "14.5(a)",
+      "text": "The open-circuit voltage.",
+      "formulas": []
+    },
+    {
+      "number": "14.5(b)",
+      "text": "The energy-conversion efficiency assuming a fill factor of unity.",
+      "formulas": []
+    },
+    {
+      "number": "14.5(c)",
+      "text": "Repeat part (b) for a fill factor of 0.3.",
+      "formulas": []
+    },
+    {
+      "number": "14.6(a)",
+      "text": "The rate at which electron-hole pairs are generated.",
+      "formulas": []
+    },
+    {
+      "number": "14.6(b)",
+      "text": "The carrier density if the lifetime is 10^{-8}s.",
+      "formulas": []
+    },
+    {
+      "number": "14.7(a)",
+      "text": "The photocurrent in the diode, assuming that W << L_{n}, L_{p}.",
+      "formulas": []
+    },
+    {
+      "number": "14.7(b)",
+      "text": "Repeat part (a) but include the width of the depletion layer.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "EXAMPLE 14.1",
+      "text": "The fraction of light reflected from the silicon is R_y = 0.308. The fraction of the power in the sample that reaches the end of the sample is 0.223. The power absorbed by the silicon becomes 10.74mW.",
+      "formulas": [
+        {
+          "originalFormula": "R_y = \\frac{(3.5)^{1/2}}{(3.5 + 1)}",
+          "genericFormula": "R_y = \\frac{(x)^{1/2}}{(x + y)}",
+          "description": "Esta fórmula representa a razão R_y, que é uma relação entre a raiz quadrada de um valor e a soma desse valor com outro. Essa razão pode ser utilizada em diversos contextos, como em análises de eficiência ou proporções em sistemas físicos.",
+          "concepts": [
+            "Relação entre grandezas",
+            "Raiz quadrada",
+            "Soma de valores"
+          ],
+          "symbols": [
+            {
+              "symbol": "R_y",
+              "description": "Representa a razão ou proporção que está sendo calculada."
+            },
+            {
+              "symbol": "x",
+              "description": "Um valor que está sendo utilizado na fórmula, que pode representar uma quantidade específica em um contexto físico."
+            },
+            {
+              "symbol": "y",
+              "description": "Outro valor que é somado ao valor x na fórmula, representando uma segunda quantidade que influencia o resultado."
+            }
+          ]
+        },
+        {
+          "originalFormula": "P_a = 20 \\times (1 - R_y)(1 - 0.223)",
+          "genericFormula": "P_a = C \\times (1 - R_y)(1 - k)",
+          "description": "Esta fórmula calcula a potência de saída de um sistema, levando em consideração a perda de potência devido a refletância e um fator de correção específico. A potência de saída é influenciada pela quantidade de potência inicial e pela fração de potência que não é refletida.",
+          "concepts": [
+            "Potência de saída",
+            "Refletância",
+            "Perda de potência"
+          ],
+          "symbols": [
+            {
+              "symbol": "P_a",
+              "description": "Representa a potência de saída do sistema."
+            },
+            {
+              "symbol": "R_y",
+              "description": "Representa a refletância, que é a fração da potência que é refletida de volta e não utilizada."
+            },
+            {
+              "symbol": "C",
+              "description": "Representa a potência inicial do sistema antes de considerar as perdas."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa um fator de correção específico que influencia a potência de saída."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "1",
+      "text": "Maximum power is delivered when the load resistance is equal to the negative of the slope of the cell characteristics at the operating point.",
+      "formulas": [
+        {
+          "originalFormula": "FF = \\frac{V_m I_m}{V_{oc} I_{sc}}",
+          "genericFormula": "FF = \\frac{V_m I_m}{V_{oc} I_{sc}}",
+          "description": "A fórmula representa o fator de preenchimento (FF) de uma célula solar, que é uma medida da eficiência da célula em converter a energia solar em eletricidade. O fator de preenchimento é uma relação entre a potência máxima que a célula pode fornecer e a potência máxima teórica que poderia ser gerada, considerando as tensões e correntes máximas.",
+          "concepts": [
+            "Fator de preenchimento",
+            "Células solares",
+            "Eficiência de conversão de energia",
+            "Potência elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "FF",
+              "description": "Representa o fator de preenchimento, que indica a eficiência da célula solar em converter energia solar em energia elétrica."
+            },
+            {
+              "symbol": "V_m",
+              "description": "Representa a tensão máxima que a célula solar pode fornecer sob condições de operação ideais."
+            },
+            {
+              "symbol": "I_m",
+              "description": "Representa a corrente máxima que a célula solar pode fornecer sob condições de operação ideais."
+            },
+            {
+              "symbol": "V_{oc}",
+              "description": "Representa a tensão de circuito aberto, que é a tensão máxima que a célula pode gerar quando não há carga conectada."
+            },
+            {
+              "symbol": "I_{sc}",
+              "description": "Representa a corrente de curto-circuito, que é a corrente máxima que flui quando os terminais da célula solar estão em curto-circuito."
+            }
+          ]
+        },
+        {
+          "originalFormula": "\\eta_p = \\frac{V_m I_m}{P_{ph}} = \\frac{(V_{oc} I_{sc})FF}{P_{ph}}",
+          "genericFormula": "\\eta_p = \\frac{V_m I_m}{P_{ph}} = \\frac{(V_{oc} I_{sc})FF}{P_{ph}}",
+          "description": "Esta fórmula representa a eficiência de um dispositivo fotovoltaico, que é a razão entre a potência elétrica gerada e a potência da radiação solar que incide sobre o dispositivo. A eficiência é uma medida de quão bem o dispositivo converte a energia solar em energia elétrica.",
+          "concepts": [
+            "Eficiência fotovoltaica",
+            "Potência elétrica",
+            "Potência da radiação solar",
+            "Tensão de circuito aberto",
+            "Corrente de curto-circuito",
+            "Fator de forma"
+          ],
+          "symbols": [
+            {
+              "symbol": "η_p",
+              "description": "Representa a eficiência do dispositivo fotovoltaico, que indica a fração da energia solar convertida em energia elétrica."
+            },
+            {
+              "symbol": "V_m",
+              "description": "Representa a tensão máxima que o dispositivo pode gerar sob condições de operação ideais."
+            },
+            {
+              "symbol": "I_m",
+              "description": "Representa a corrente máxima que o dispositivo pode gerar sob condições de operação ideais."
+            },
+            {
+              "symbol": "P_{ph}",
+              "description": "Representa a potência da radiação solar que incide sobre o dispositivo, que é a energia solar disponível para conversão."
+            },
+            {
+              "symbol": "V_{oc}",
+              "description": "Representa a tensão de circuito aberto, que é a tensão máxima que o dispositivo pode gerar quando não há carga conectada."
+            },
+            {
+              "symbol": "I_{sc}",
+              "description": "Representa a corrente de curto-circuito, que é a corrente máxima que flui quando os terminais do dispositivo estão conectados diretamente."
+            },
+            {
+              "symbol": "FF",
+              "description": "Representa o fator de forma, que é uma medida da eficiência da conversão da potência máxima em relação à potência ideal, considerando perdas no sistema."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "E14-4",
+      "text": "a) 0.646V b) 2.1A",
+      "formulas": []
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "I_{ph} = (q \\mu_{n} n_{d} \\mathcal{E}) w d",
+      "genericFormula": "I_{ph} = (q \\mu_{n} n_{d} \\mathcal{E}) w d",
+      "description": "Esta fórmula representa a corrente fotovoltaica gerada em um semicondutor quando exposto à luz. A corrente é proporcional à densidade de portadores de carga e à força elétrica que atua sobre eles, além de depender das dimensões do material semicondutor.",
+      "concepts": [
+        "Corrente elétrica",
+        "Portadores de carga",
+        "Semicondutores",
+        "Força elétrica",
+        "Densidade de corrente"
+      ],
+      "symbols": [
+        {
+          "symbol": "I_{ph}",
+          "description": "Representa a corrente fotovoltaica gerada pelo semicondutor."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elementar, que é a carga de um único elétron."
+        },
+        {
+          "symbol": "\\mu_{n}",
+          "description": "Representa a mobilidade dos elétrons, que é uma medida de quão rapidamente os elétrons podem se mover através do semicondutor quando uma força elétrica é aplicada."
+        },
+        {
+          "symbol": "n_{d}",
+          "description": "Representa a densidade de portadores de carga negativa (elétrons) no semicondutor dopado."
+        },
+        {
+          "symbol": "\\mathcal{E}",
+          "description": "Representa a intensidade do campo elétrico aplicado ao semicondutor."
+        },
+        {
+          "symbol": "w",
+          "description": "Representa a largura do semicondutor, que é a dimensão na direção da corrente."
+        },
+        {
+          "symbol": "d",
+          "description": "Representa a espessura do semicondutor, que é a dimensão perpendicular à corrente."
+        }
+      ]
+    },
+    {
+      "originalFormula": "I_{ph} = \\left( q \\mu_{n} \\tau \\frac{V}{\\ell^{2}} \\right) \\left( \\frac{n_{ph}}{h \\nu} \\right)",
+      "genericFormula": "I_{ph} = \\left( q \\mu_{n} \\tau \\frac{V}{\\ell^{2}} \\right) \\left( \\frac{n_{ph}}{h \\nu} \\right)",
+      "description": "Esta fórmula representa a corrente fotovoltaica gerada em um material semicondutor quando ele é iluminado. A corrente fotovoltaica é a corrente elétrica que flui devido à geração de portadores de carga (elétrons e lacunas) quando a luz incide sobre o material.",
+      "concepts": [
+        "Corrente elétrica",
+        "Fotovoltaico",
+        "Semicondutores",
+        "Geração de portadores de carga",
+        "Efeito fotoelétrico"
+      ],
+      "symbols": [
+        {
+          "symbol": "I_{ph}",
+          "description": "Representa a corrente fotovoltaica gerada pelo material semicondutor."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elementar, que é a carga de um único elétron."
+        },
+        {
+          "symbol": "\\mu_{n}",
+          "description": "Representa a mobilidade dos elétrons no semicondutor, que indica quão facilmente os elétrons podem se mover através do material."
+        },
+        {
+          "symbol": "\\tau",
+          "description": "Representa o tempo de vida dos portadores de carga, que é o tempo médio que um portador de carga permanece livre antes de recombinar."
+        },
+        {
+          "symbol": "V",
+          "description": "Representa o potencial elétrico aplicado ao semicondutor, que pode influenciar a separação dos portadores de carga."
+        },
+        {
+          "symbol": "\\ell",
+          "description": "Representa o comprimento de difusão dos portadores de carga, que é a distância média que um portador pode se mover antes de recombinar."
+        },
+        {
+          "symbol": "n_{ph}",
+          "description": "Representa a densidade de fótons incidentes sobre o semicondutor, que é a quantidade de fótons que atingem uma determinada área em um determinado tempo."
+        },
+        {
+          "symbol": "h",
+          "description": "Representa a constante de Planck, que é uma constante fundamental na física que relaciona a energia de um fóton à sua frequência."
+        },
+        {
+          "symbol": "\\nu",
+          "description": "Representa a frequência da luz incidente, que está relacionada à energia dos fótons."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\lambda < \\lambda_{max}",
+      "genericFormula": "\\lambda < \\lambda_{max}",
+      "description": "Esta fórmula representa uma condição que indica que um comprimento de onda específico, denotado por lambda, é menor do que um comprimento de onda máximo, denotado por lambda máximo. Essa relação é frequentemente utilizada em contextos como a física de semicondutores, onde a absorção de luz ou a emissão de radiação pode depender do comprimento de onda.",
+      "concepts": [
+        "Comprimento de onda",
+        "Limite máximo de absorção ou emissão",
+        "Propriedades ópticas de materiais"
+      ],
+      "symbols": [
+        {
+          "symbol": "λ",
+          "description": "Representa o comprimento de onda de uma onda eletromagnética, que é a distância entre dois pontos consecutivos em fase, como cristas ou vales."
+        },
+        {
+          "symbol": "λ_{max}",
+          "description": "Representa o comprimento de onda máximo permitido em um determinado contexto, que pode estar relacionado a limites de absorção ou emissão de um material."
+        }
+      ]
+    },
+    {
+      "originalFormula": "P(x) = P(0)e^{\\alpha x}",
+      "genericFormula": "P(x) = P(0)e^{\\alpha x}",
+      "description": "Esta fórmula representa a função de probabilidade de um evento em um determinado ponto x, onde a probabilidade inicial é multiplicada por um fator exponencial que depende de x. Essa relação é comum em processos que envolvem crescimento ou decaimento exponencial, como a distribuição de partículas ou a intensidade de uma radiação.",
+      "concepts": [
+        "Crescimento exponencial",
+        "Decaimento exponencial",
+        "Funções de probabilidade",
+        "Processos estocásticos"
+      ],
+      "symbols": [
+        {
+          "symbol": "P(x)",
+          "description": "Representa a probabilidade de um evento ocorrer em um ponto específico x."
+        },
+        {
+          "symbol": "P(0)",
+          "description": "Representa a probabilidade inicial do evento antes de qualquer influência de x."
+        },
+        {
+          "symbol": "e",
+          "description": "É a base do logaritmo natural, aproximadamente igual a 2,718, e é usado em funções exponenciais."
+        },
+        {
+          "symbol": "\\alpha",
+          "description": "É uma constante que representa a taxa de crescimento ou decaimento do evento em relação a x."
+        },
+        {
+          "symbol": "x",
+          "description": "Representa a variável independente, que pode ser o tempo, a distância ou outra medida que afeta a probabilidade."
+        }
+      ]
+    },
+    {
+      "originalFormula": "P_d = P_0(1 - R_y)e^{-\\alpha w_p}",
+      "genericFormula": "P_d = P_0(1 - R_y)e^{-\\alpha w_p}",
+      "description": "Esta fórmula representa a potência de um sinal que é transmitido através de um meio, levando em consideração a perda de potência devido à reflexão e à absorção. A potência transmitida é afetada pela potência inicial, pela fração de potência refletida e pela atenuação do meio.",
+      "concepts": [
+        "Atenuação de sinal",
+        "Reflexão de potência",
+        "Transmissão de energia em meios",
+        "Exponencial decaimento"
+      ],
+      "symbols": [
+        {
+          "symbol": "P_d",
+          "description": "Representa a potência do sinal que chega ao detector ou receptor após a transmissão."
+        },
+        {
+          "symbol": "P_0",
+          "description": "É a potência inicial do sinal antes de passar pelo meio."
+        },
+        {
+          "symbol": "R_y",
+          "description": "É a fração da potência refletida pelo meio, que não é transmitida adiante."
+        },
+        {
+          "symbol": "e",
+          "description": "É a base do logaritmo natural, uma constante que aparece frequentemente em processos de crescimento e decaimento exponencial."
+        },
+        {
+          "symbol": "\\alpha",
+          "description": "Representa o coeficiente de atenuação do meio, que indica o quanto a potência do sinal diminui por unidade de comprimento."
+        },
+        {
+          "symbol": "w_p",
+          "description": "É a largura do meio ou a distância que o sinal percorre dentro do material."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\eta_0 = (1 - R_y)e^{-\\alpha w_p}(1 - e^{-\\alpha W})",
+      "genericFormula": "\\eta_0 = (1 - R)e^{-\\alpha w}(1 - e^{-\\alpha W})",
+      "description": "Esta fórmula representa a eficiência de um processo em um material, levando em consideração a reflexão, a absorção e a transmissão de luz ou outra radiação em um meio. A eficiência é afetada pela quantidade de radiação que é refletida, absorvida e transmitida através do material.",
+      "concepts": [
+        "Eficiência de absorção",
+        "Reflexão",
+        "Absorção",
+        "Transmissão de radiação",
+        "Atuação de coeficientes de absorção"
+      ],
+      "symbols": [
+        {
+          "symbol": "η_0",
+          "description": "Representa a eficiência do processo em questão, que é uma medida de quão efetivamente a radiação é absorvida ou transmitida pelo material."
+        },
+        {
+          "symbol": "R_y",
+          "description": "Representa a fração da radiação que é refletida pelo material, ou seja, a parte da radiação que não penetra no material."
+        },
+        {
+          "symbol": "α",
+          "description": "É o coeficiente de absorção do material, que indica a taxa com que a radiação é absorvida à medida que passa pelo material."
+        },
+        {
+          "symbol": "w_p",
+          "description": "Representa a espessura do material em uma determinada direção, que influencia a quantidade de radiação que pode ser absorvida."
+        },
+        {
+          "symbol": "W",
+          "description": "Representa uma espessura adicional ou uma distância que pode estar relacionada a outra camada ou parte do material que está sendo considerada na análise."
+        }
+      ]
+    },
+    {
+      "originalFormula": "FF = \\frac{V_m I_m}{V_{oc} I_{sc}}",
+      "genericFormula": "FF = \\frac{V_m I_m}{V_{oc} I_{sc}}",
+      "description": "Esta fórmula representa o fator de preenchimento (FF) de uma célula solar, que é uma medida da eficiência da célula em converter a energia solar em energia elétrica. O fator de preenchimento é uma razão que compara a potência máxima que a célula pode fornecer com a potência máxima teórica que poderia ser gerada se a célula operasse em condições ideais.",
+      "concepts": [
+        "Fator de preenchimento",
+        "Potência máxima",
+        "Eficiência de células solares",
+        "Condições ideais de operação"
+      ],
+      "symbols": [
+        {
+          "symbol": "FF",
+          "description": "Representa o fator de preenchimento, que indica a eficiência da célula solar em converter energia."
+        },
+        {
+          "symbol": "V_m",
+          "description": "Representa a tensão máxima que a célula solar pode fornecer sob carga."
+        },
+        {
+          "symbol": "I_m",
+          "description": "Representa a corrente máxima que a célula solar pode fornecer sob carga."
+        },
+        {
+          "symbol": "V_{oc}",
+          "description": "Representa a tensão de circuito aberto, que é a tensão máxima que a célula pode gerar quando não há carga conectada."
+        },
+        {
+          "symbol": "I_{sc}",
+          "description": "Representa a corrente de curto-circuito, que é a corrente máxima que a célula pode fornecer quando os terminais estão em curto-circuito."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\eta_p = \\frac{V_m I_m}{P_{ph}} = \\frac{(V_{oc} I_{sc})FF}{P_{ph}}",
+      "genericFormula": "\\eta_p = \\frac{V_m I_m}{P_{ph}} = \\frac{(V_{oc} I_{sc})FF}{P_{ph}}",
+      "description": "Esta fórmula representa a eficiência de um dispositivo fotovoltaico, que é a razão entre a potência elétrica gerada pelo dispositivo e a potência da luz solar que incide sobre ele. Em outras palavras, ela mede quão eficaz um painel solar é em converter a energia da luz em energia elétrica.",
+      "concepts": [
+        "Eficiência de conversão de energia",
+        "Potência elétrica",
+        "Potência da luz solar",
+        "Parâmetros de desempenho de células solares"
+      ],
+      "symbols": [
+        {
+          "symbol": "η_p",
+          "description": "Representa a eficiência do dispositivo fotovoltaico, indicando a fração da energia solar convertida em energia elétrica."
+        },
+        {
+          "symbol": "V_m",
+          "description": "Representa a tensão máxima gerada pelo dispositivo fotovoltaico durante a operação."
+        },
+        {
+          "symbol": "I_m",
+          "description": "Representa a corrente máxima gerada pelo dispositivo fotovoltaico durante a operação."
+        },
+        {
+          "symbol": "P_{ph}",
+          "description": "Representa a potência da luz solar que incide sobre o dispositivo fotovoltaico."
+        },
+        {
+          "symbol": "V_{oc}",
+          "description": "Representa a tensão de circuito aberto, que é a tensão máxima que o dispositivo pode gerar quando não há corrente fluindo."
+        },
+        {
+          "symbol": "I_{sc}",
+          "description": "Representa a corrente de curto-circuito, que é a corrente máxima que flui quando os terminais do dispositivo estão conectados diretamente."
+        },
+        {
+          "symbol": "FF",
+          "description": "Representa o fator de preenchimento, que é uma medida da qualidade da curva de corrente-tensão do dispositivo fotovoltaico."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E = 1.12 \\, \\text{eV}",
+      "genericFormula": "E = 1.12 \\, \\text{eV}",
+      "description": "Não foi possível gerar descrição automática",
+      "concepts": [],
+      "symbols": [],
+      "rawText": "{\n  \"originalFormula\": \"E = 1.12 \\, \\\\text{eV}\",\n  \"genericFormula\": \"E = E_0\",\n  \"description\": \"Esta fórmula representa a energia de bandgap de um material semicondutor, que é a quantidade mínima de energia necessária para que um elétron possa se mover da banda de valência para a banda de condução.\",\n  \"concepts\": [\n    \"Energia de bandgap\",\n    \"Semicondutores\",\n    \"Transição eletrônica\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"E\",\n      \"description\": \"Representa a energia, que é a capacidade de realizar trabalho ou causar mudanças em um sistema.\"\n    },\n    {\n      \"symbol\": \"eV\",\n      \"description\": \"Representa electronvolt, uma unidade de medida de energia que é comumente usada em física de partículas e semicondutores.\"\n    },\n    {\n      \"symbol\": \"E_0\",\n      \"description\": \"Representa a energia de bandgap em uma forma genérica, que é uma constante específica para cada material semicondutor.\"\n    }\n  ]\n}"
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498
+  ],
+  "lastUpdated": "2026-05-08T19:05:41.902Z"
+}
