@@ -1,0 +1,909 @@
+{
+  "chapter": "11 Metal-Oxide-Semiconductor Field-Effect Transistor: Additional Concepts",
+  "section": "11.1 NONIDEAL EFFECTS",
+  "questions": [
+    {
+      "number": "1",
+      "text": "Describe and analyze various voltage breakdown mechanisms in MOSFETs.",
+      "formulas": []
+    },
+    {
+      "number": "2",
+      "text": "Describe and analyze the technique of threshold voltage adjustment by ion implantation.",
+      "formulas": []
+    },
+    {
+      "number": "3",
+      "text": "Consider the introduction of trapped oxide charges by ionizing radiation and hot electron effects.",
+      "formulas": []
+    },
+    {
+      "number": "11.8",
+      "text": "An n-channel MOSFET has a substrate doping concentration of N_{d} = 10^{16} cm^{-3} and V_{ds(sat)} = 2 V. Using Equation (11.10), plot \\Delta L versus V_{DS} over the range 2.5 V to 5 V for E_{a} = 10^{4} V/cm and E_{a} = 2 \\times 10^{4} V/cm.",
+      "formulas": [
+        {
+          "originalFormula": "\\Delta L = f(V_{DS})",
+          "genericFormula": "\\Delta L = f(V_{DS})",
+          "description": "Esta fórmula representa a relação entre a variação do comprimento de um dispositivo semicondutor e a tensão aplicada entre os terminais do dispositivo. A variação do comprimento pode ser influenciada pela tensão, que altera as condições elétricas e, consequentemente, as propriedades do material semicondutor.",
+          "concepts": [
+            "Semicondutores",
+            "Tensão elétrica",
+            "Propriedades elétricas de materiais",
+            "Efeito da tensão em dispositivos eletrônicos"
+          ],
+          "symbols": [
+            {
+              "symbol": "ΔL",
+              "description": "Representa a variação do comprimento do dispositivo semicondutor em resposta a uma mudança nas condições elétricas."
+            },
+            {
+              "symbol": "f",
+              "description": "Indica que a variação do comprimento é uma função da tensão aplicada, mostrando que a relação entre as duas variáveis pode ser complexa e dependente de outros fatores."
+            },
+            {
+              "symbol": "V_{DS}",
+              "description": "Representa a tensão entre os terminais do dispositivo semicondutor, que é um fator crucial que influencia o comportamento elétrico e as propriedades do material."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "11.9",
+      "text": "Assume that the lateral electric field at the point where the inversion charge pinches off is given by E_{E} = \\frac{V_{ds(sat)}}{L}. (a) Determine E_{E} for L = 3, 1.0, 0.5, and 0.13 \\mu m. (b) For each case given in part (a), estimate the carrier drift velocity.",
+      "formulas": [
+        {
+          "originalFormula": "E_{E} = \\frac{V_{ds(sat)}}{L}",
+          "genericFormula": "E_{E} = \\frac{V_{ds}}{L}",
+          "description": "Esta fórmula representa o campo elétrico efetivo em um dispositivo semicondutor, que é calculado pela razão entre a tensão de saturação e o comprimento do canal do dispositivo. O campo elétrico é uma medida da força que uma carga elétrica experimenta por unidade de carga.",
+          "concepts": [
+            "Campo elétrico",
+            "Tensão de saturação",
+            "Comprimento do canal"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{E}",
+              "description": "Representa o campo elétrico efetivo no dispositivo semicondutor."
+            },
+            {
+              "symbol": "V_{ds(sat)}",
+              "description": "Representa a tensão de saturação entre os terminais de drenagem e fonte do dispositivo."
+            },
+            {
+              "symbol": "L",
+              "description": "Representa o comprimento do canal do dispositivo semicondutor."
+            }
+          ]
+        },
+        {
+          "originalFormula": "v_{d} = \\mu E_{E}",
+          "genericFormula": "v_{d} = \\mu E",
+          "description": "Esta fórmula representa a relação entre a velocidade de deriva de portadores de carga em um semicondutor e o campo elétrico aplicado. A velocidade de deriva é a velocidade média que os portadores de carga (como elétrons ou lacunas) adquirem devido à ação de um campo elétrico.",
+          "concepts": [
+            "Velocidade de deriva",
+            "Mobilidade dos portadores de carga",
+            "Campo elétrico"
+          ],
+          "symbols": [
+            {
+              "symbol": "v_{d}",
+              "description": "Representa a velocidade de deriva dos portadores de carga, que é a velocidade média que eles atingem quando são influenciados por um campo elétrico."
+            },
+            {
+              "symbol": "\\mu",
+              "description": "Representa a mobilidade dos portadores de carga, que é uma medida de quão rapidamente os portadores podem se mover através do material quando um campo elétrico é aplicado."
+            },
+            {
+              "symbol": "E_{E}",
+              "description": "Representa a intensidade do campo elétrico aplicado, que é a força por unidade de carga que atua sobre os portadores de carga no semicondutor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "11.10",
+      "text": "A silicon n-channel MOSFET has the following parameters: V_{th} = 0.45 V, \\mu_{n} = 425 cm^{2}/V\\cdot s, L = 2 \\mu m, and W = 20 \\mu m. The substrate doping is N_{a} = 3 \\times 10^{16} cm^{-3}. (a) Using Equations (11.4) and (11.11), calculate the output resistance, r_{o} = \\frac{1}{g_{m}} for V_{GS} = 0.8 V and \\Delta V_{DS} = 2 V. (b) Repeat part (a) if the channel length is reduced to L = 0.8 \\mu m.",
+      "formulas": [
+        {
+          "originalFormula": "g_{m} = \\frac{2I_{D}}{V_{GS} - V_{th}}",
+          "genericFormula": "g_{m} = \\frac{2I}{V_{G} - V_{th}}",
+          "description": "Esta fórmula representa a transcondutância de um transistor de efeito de campo (FET), que é uma medida de quão eficientemente o transistor pode controlar a corrente que flui através dele em resposta a uma variação na tensão de porta. A transcondutância é uma característica fundamental que indica a sensibilidade do dispositivo a mudanças na tensão de entrada.",
+          "concepts": [
+            "Transcondutância",
+            "Transistor de efeito de campo (FET)",
+            "Corrente de dreno",
+            "Tensão de porta",
+            "Tensão de limiar"
+          ],
+          "symbols": [
+            {
+              "symbol": "g_{m}",
+              "description": "Representa a transcondutância do transistor, que é a razão entre a variação da corrente de dreno e a variação da tensão de porta."
+            },
+            {
+              "symbol": "I_{D}",
+              "description": "Representa a corrente que flui através do dreno do transistor, que é a corrente principal que o dispositivo controla."
+            },
+            {
+              "symbol": "V_{GS}",
+              "description": "Representa a tensão entre a porta e a fonte do transistor, que é a tensão que controla a operação do dispositivo."
+            },
+            {
+              "symbol": "V_{th}",
+              "description": "Representa a tensão de limiar do transistor, que é a tensão mínima necessária para que o transistor comece a conduzir."
+            }
+          ]
+        },
+        {
+          "originalFormula": "r_{o} = \\frac{1}{g_{m}}",
+          "genericFormula": "r_{o} = \\frac{1}{g_{m}}",
+          "description": "Esta fórmula representa a relação entre a resistência de saída de um transistor e sua transcondutância. A resistência de saída é uma medida de quão bem o transistor pode operar em circuitos, enquanto a transcondutância indica a relação entre a variação da corrente de saída e a variação da tensão de entrada.",
+          "concepts": [
+            "Resistência de saída",
+            "Transcondutância",
+            "Transistores",
+            "Circuitos eletrônicos"
+          ],
+          "symbols": [
+            {
+              "symbol": "r_{o}",
+              "description": "Representa a resistência de saída do transistor, que indica como a corrente de saída do transistor se comporta em relação à tensão aplicada."
+            },
+            {
+              "symbol": "g_{m}",
+              "description": "Representa a transcondutância do transistor, que é a razão entre a variação da corrente de saída e a variação da tensão de entrada, mostrando a eficiência do transistor em amplificar sinais."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "11.11",
+      "text": "(a) Consider an n-channel enhancement mode MOSFET with V_{th} = 0. Assume a capacitance C_{ox} = 6.9 \\times 10^{-8} F/cm^{2}, and V_{T} = 1 V. Assume a constant mobility \\mu_{n} = 500 cm^{2}/V\\cdot s. Plot V_{DS} versus V_{GS} for 0 \\leq V_{GS} \\leq 5 V when the transistor is biased in the saturation region. (b) Now assume that the effective mobility in the channel is given by \\mu_{eff} = \\mu_{0} \\left( \\frac{E_{T}}{E_{c}} \\right)^{-1/3} where \\mu_{0} = 1000 cm^{2}/V\\cdot s and E_{T} = V_{DS}/L. Using \\mu in place of \\mu_{n} in the V_{T} versus V_{GS} plot over the same V_{GS} range as in part (a). (c) Plot the curves from parts (a) and (b) on the same graph. What can be said about the slopes of the two curves?",
+      "formulas": [
+        {
+          "originalFormula": "\\mu_{eff} = \\mu_{0} \\left( \\frac{E_{T}}{E_{c}} \\right)^{-1/3}",
+          "genericFormula": "\\mu_{eff} = \\mu_{0} \\left( \\frac{E_{T}}{E_{c}} \\right)^{-1/3}",
+          "description": "Esta fórmula representa a mobilidade efetiva de portadores de carga em um semicondutor, que é uma medida de quão facilmente os portadores (elétrons ou lacunas) podem se mover através do material quando um campo elétrico é aplicado. A mobilidade efetiva é influenciada por fatores como a energia térmica e a estrutura de bandas do semicondutor.",
+          "concepts": [
+            "Mobilidade efetiva",
+            "Semicondutores",
+            "Estrutura de bandas",
+            "Campo elétrico",
+            "Energia térmica"
+          ],
+          "symbols": [
+            {
+              "symbol": "μ_{eff}",
+              "description": "Representa a mobilidade efetiva dos portadores de carga em um semicondutor."
+            },
+            {
+              "symbol": "μ_{0}",
+              "description": "É a mobilidade dos portadores de carga em condições ideais, sem a influência de impurezas ou defeitos."
+            },
+            {
+              "symbol": "E_{T}",
+              "description": "Representa a energia térmica, que está relacionada à temperatura do sistema e à movimentação dos portadores de carga."
+            },
+            {
+              "symbol": "E_{c}",
+              "description": "É a energia da banda de condução, que é o nível de energia que os elétrons devem alcançar para se mover livremente no semicondutor."
+            }
+          ]
+        },
+        {
+          "originalFormula": "E_{T} = \\frac{V_{DS}}{L}",
+          "genericFormula": "E_{T} = \\frac{V_{DS}}{L}",
+          "description": "Esta fórmula representa o campo elétrico total em um dispositivo semicondutor, onde o campo elétrico é calculado pela razão entre a tensão aplicada e o comprimento do canal do dispositivo. Isso é importante para entender como a tensão influencia o movimento de portadores de carga dentro do semicondutor.",
+          "concepts": [
+            "Campo elétrico",
+            "Tensão elétrica",
+            "Comprimento do canal",
+            "Semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{T}",
+              "description": "Representa o campo elétrico total no dispositivo semicondutor."
+            },
+            {
+              "symbol": "V_{DS}",
+              "description": "Representa a tensão entre o dreno e a fonte do dispositivo semicondutor."
+            },
+            {
+              "symbol": "L",
+              "description": "Representa o comprimento do canal do dispositivo semicondutor, que é a distância entre o dreno e a fonte."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "11.12",
+      "text": "One model used to describe the variation in electron mobility in an NMOS device is \\mu_{eff} = \\frac{\\mu_{0}}{1 + \\theta(V_{GS} - V_{th})} where \\theta is called the mobility degradation parameter. Assume the following parameters: C_{ox} = 10^{-8} F/cm^{2}, (W/L) = 25, \\lambda = 800 cm^{2}/V\\cdot s, and V_{T} = 0.5 V. Plot, on the same graph, \\sqrt{V_{GS}} versus V_{DS} for the NMOS device biased in the saturation region over the range 0 \\leq V_{GS} \\leq 3 V for (a) θ = 0 ideal case and (b) θ = 0.5 V^{-1}.",
+      "formulas": [
+        {
+          "originalFormula": "\\mu_{eff} = \\frac{\\mu_{0}}{1 + \\theta(V_{GS} - V_{th})}",
+          "genericFormula": "\\mu_{eff} = \\frac{\\mu_{0}}{1 + \\theta(V_{GS} - V_{th})}",
+          "description": "Esta fórmula representa a mobilidade efetiva de portadores de carga em um semicondutor, levando em consideração a tensão de porta e a tensão de limiar. A mobilidade efetiva é uma medida de quão rapidamente os portadores de carga (elétrons ou lacunas) podem se mover através do material quando um campo elétrico é aplicado.",
+          "concepts": [
+            "Mobilidade de portadores de carga",
+            "Efeito da tensão de porta em semicondutores",
+            "Tensão de limiar em transistores",
+            "Comportamento de semicondutores sob diferentes condições elétricas"
+          ],
+          "symbols": [
+            {
+              "symbol": "μ_{eff}",
+              "description": "Mobilidade efetiva dos portadores de carga, que indica a eficiência com que eles podem se mover em resposta a um campo elétrico."
+            },
+            {
+              "symbol": "μ_{0}",
+              "description": "Mobilidade intrínseca dos portadores de carga em condições ideais, sem a influência de tensões externas."
+            },
+            {
+              "symbol": "θ",
+              "description": "Um parâmetro que representa a sensibilidade da mobilidade à variação da tensão de porta em relação à tensão de limiar."
+            },
+            {
+              "symbol": "V_{GS}",
+              "description": "Tensão entre o terminal de porta e a fonte em um transistor, que controla a condução de corrente no dispositivo."
+            },
+            {
+              "symbol": "V_{th}",
+              "description": "Tensão de limiar, que é a tensão mínima necessária para que o transistor comece a conduzir corrente entre o dreno e a fonte."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "11.13",
+      "text": "The parameters of an n-channel enhancement-mode MOSFET are V_{th} = 0.40 V, \\mu_{n} = 20 nm = 200 A, L = 1.0 \\mu m, and W = 10 \\mu m. (a) Assuming a constant mobility of \\mu_{n} = 475 cm^{2}/V\\cdot s, calculate I_{D} for V_{GS} = 2.0 V when biased at (i) V_{DS} = 0.5 V, (ii) V_{DS} = 1.0 V, (iii) V_{DS} = 1.25 V and (iv) V_{DS} = 2.0 V. (b) Consider the piecewise linear model of the carrier velocity versus V_{DS} shown in Figure P11.13. Calculate I_{D} for the same voltage values given in part (a). [See Equation (11.17).] (c) Determine the V_{DS(sat)} values for parts (a) and (b).",
+      "formulas": [
+        {
+          "originalFormula": "I_{D} = \\frac{1}{2} \\mu_{n} C_{ox} \\frac{W}{L} (V_{GS} - V_{th})^{2}",
+          "genericFormula": "I_{D} = \\frac{1}{2} \\mu C_{ox} \\frac{W}{L} (V_{GS} - V_{th})^{2}",
+          "description": "Esta fórmula representa a corrente de dreno em um transistor de efeito de campo (FET) na região de saturação. Ela mostra como a corrente que flui através do transistor depende da mobilidade dos portadores de carga, da capacitância da camada de óxido, das dimensões do transistor e da diferença de tensão entre a porta e o limiar.",
+          "concepts": [
+            "Corrente de dreno em transistores",
+            "Mobilidade dos portadores de carga",
+            "Capacitância da camada de óxido",
+            "Relação entre largura e comprimento do canal do transistor",
+            "Tensão de porta e tensão de limiar"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_{D}",
+              "description": "Representa a corrente que flui do dreno para a fonte em um transistor."
+            },
+            {
+              "symbol": "\\mu_{n}",
+              "description": "Representa a mobilidade dos portadores de carga (elétrons) no canal do transistor."
+            },
+            {
+              "symbol": "C_{ox}",
+              "description": "Representa a capacitância da camada de óxido que separa a porta do canal do transistor."
+            },
+            {
+              "symbol": "W",
+              "description": "Representa a largura do canal do transistor."
+            },
+            {
+              "symbol": "L",
+              "description": "Representa o comprimento do canal do transistor."
+            },
+            {
+              "symbol": "V_{GS}",
+              "description": "Representa a tensão entre a porta e a fonte do transistor."
+            },
+            {
+              "symbol": "V_{th}",
+              "description": "Representa a tensão de limiar, que é a tensão mínima necessária para que o transistor comece a conduzir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "11.23",
+      "text": "Consider the short-channel effect. Plot V_{T} - V_{T0} versus L as shown in Figure 11.16 over the range 0.5 \\leq L \\leq 6 \\, \\mu m. Use the parameters given in the figure and assume V_{SB} = 0.",
+      "formulas": []
+    },
+    {
+      "number": "11.24",
+      "text": "Repeat Problem 11.23 at N_{s} = 10^{16} \\, \\text{and} \\, 10^{17} \\, \\text{cm}^{-3} for V_{SB} = 0, 2, \\text{and} \\, 6 \\, V.",
+      "formulas": []
+    },
+    {
+      "number": "11.25",
+      "text": "Equation (11.29) describes the shift in threshold voltage due to short channel effects. If constant-field scaling is applied, what is the scaling factor in \\Delta V_{T}?",
+      "formulas": []
+    },
+    {
+      "number": "11.26",
+      "text": "An n-channel MOSFET has parameters of N_{s} = 3 \\times 10^{16} \\, \\text{cm}^{-3}, \\, W = 2.2 \\, \\mu m, \\, and \\, t_{ox} = 8 \\, \\text{nm} = 80 \\, \\text{Å}. Neglecting short-channel effects, calculate the shift in threshold voltage due to narrow-channel effects. Assume the fitting parameter \\xi = \\frac{l}{2}.",
+      "formulas": []
+    },
+    {
+      "number": "11.27",
+      "text": "Consider an n-channel MOSFET with N_{s} = 10^{16} \\, \\text{cm}^{-3} and t_{ox} = 120 \\, \\text{Å}. The depletion region at each end of the channel can be approximated by a triangular region, as shown in Figure P11.27. Assume both the lateral and vertical depletion widths are equal to x_{T}. The threshold voltage shift due to narrow-channel effects is to be limited to \\Delta V_{T} = +0.40 \\, V. Determine the minimum channel width W. Neglect short-channel effects.",
+      "formulas": []
+    },
+    {
+      "number": "11.28",
+      "text": "Consider the narrow-channel effect. Use the transistor parameters described in Example 11.4. Plot V_{T} - V_{T0} over the range 0.5 \\, W \\leq 5 \\, \\mu m for a long-channel device.",
+      "formulas": []
+    },
+    {
+      "number": "11.29",
+      "text": "Equation (11.35) describes the shift in threshold voltage due to narrow-channel effects. If constant-field scaling is applied, what is the scaling factor in \\Delta V_{T}?",
+      "formulas": []
+    },
+    {
+      "number": "11.30",
+      "text": "(a) A MOS device has a silicon dioxide insulator with a thickness of t_{ox} = 20 \\, \\text{nm} = 200 \\, \\text{Å}. (i) Determine the ideal breakdown voltage. (ii) If a safety factor of 3 is required, determine the maximum safe gate voltage that may be applied. (b) Repeat part (a) for an oxide thickness of t_{ox} = 8 \\, \\text{nm} = 80 \\, \\text{Å}.",
+      "formulas": []
+    },
+    {
+      "number": "11.31",
+      "text": "(a) In a power MOSFET, a maximum gate voltage of 8 \\, V is to be applied. Determine the minimum oxide thickness necessary if a safety factor of 3 is specified. (b) Repeat part (a) if the maximum gate voltage is 12 \\, V.",
+      "formulas": []
+    },
+    {
+      "number": "11.42",
+      "text": "A MOSFET has the following parameters: n+ poly gate, L = 80 \\mu m, N_{d} = 10^{17} cm^{-3}, and Q_{ox} = 5 \\times 10^{-2} cm^{-2}. (a) What is the threshold voltage of this MOSFET? Is the device enhancement- or depletion-mode? (b) What type of implant and dose are required such that V_{t} = 0?",
+      "formulas": []
+    },
+    {
+      "number": "11.43",
+      "text": "One rad (Si) produces on the average 8 \\times 10^{12} electron-hole pairs/cm^{3} in silicon dioxide. Assume that a pulse of ionizing radiation with a total dose of 10^{6} rads (Si) is incident on an MOS device with a 750 \\AA oxide. Assume that there is no electron-hole recombination and that the electrons are swept out through the gate terminal. If 10 percent of the generated holes are trapped at the oxide-semiconductor interface, calculate the threshold voltage shift.",
+      "formulas": []
+    },
+    {
+      "number": "11.44",
+      "text": "Reconsider Problem 11.43. If the threshold voltage shift is to be no more than \\Delta V_{t} = -0.50 V, calculate the maximum percentage of holes that can be trapped.",
+      "formulas": []
+    },
+    {
+      "number": "11.45",
+      "text": "Show that, for the simple model for radiation-induced hole trapping we have considered, the threshold voltage shift is proportional to \\Delta V_{t} \\propto -t_{ox}. Thin oxides are one requirement for radiation-tolerant MOS devices.",
+      "formulas": []
+    },
+    {
+      "number": "*11.46",
+      "text": "Design a silicon n-channel MOSFET with a polysilicon gate to have a threshold voltage of V_{t} = +0.30 V. The oxide thickness is to be L = 12 nm = 120 \\AA and the channel length is to be L = 0.80 \\mu m. Assume I_{D} = 80 \\mu A at V_{S} = 1.25 V and V_{DS} = 0.25 V. Determine the substrate doping concentration, channel width, and type of gate material. Specify any possible ion implantation processes and take short channel effects into account.",
+      "formulas": []
+    },
+    {
+      "number": "*11.47",
+      "text": "A particular process produces an n-channel MOSFET with the following properties: \\tau_{ox} = 325 \\AA, N_{d} = 10^{16} cm^{-3}, W = 20 \\mu m, n^{+} polysilicon gate, \\eta = 0.35 nm. Q_{ox} = 10^{11} cm^{-2}. The desired threshold voltage is V_{t} = 0.35 V at T = 300 K. Design an additional process to achieve this objective by using ion implantation, which produces a step function profile that is 0.35 \\mu m deep.",
+      "formulas": []
+    },
+    {
+      "number": "*11.48",
+      "text": "A CMOS inverter is to be designed in which both the n-channel and p-channel devices have the same magnitude of doping concentration equal to 10^{16} cm^{-3}, equal oxide thickness of L_{ox} = 150 \\AA, equal oxide trapped charge of Q_{ox} = 8 \\times 10^{10} cm^{-2}. The gate of the n channel is p^{+} poly and the gate of the p channel is n^{+} poly. Determine the type of ion implant and the implant dose in each device such that the final threshold voltages are V_{IN} = +0.5 V and V_{P} = -0.5 V.",
+      "formulas": []
+    }
+  ],
+  "answers": [],
+  "standaloneFormulas": [],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498,
+    499,
+    500,
+    501,
+    502,
+    503,
+    504,
+    505,
+    506,
+    507,
+    508,
+    509,
+    510,
+    511,
+    512,
+    513
+  ],
+  "lastUpdated": "2026-05-08T22:47:28.305Z"
+}

@@ -1,9 +1,88 @@
 {
-  "chapter": "unknown",
-  "section": "unknown",
+  "chapter": "12.1 The Bipolar Transistor Action",
+  "section": "12.1.1 The Basic Principle of Operation",
   "questions": [],
   "answers": [],
-  "standaloneFormulas": [],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "n_{p} = 10^{19}, 10^{17}, \\text{ and } 10^{15} \\text{ cm}^{-3}",
+      "genericFormula": "n_{p} = N_{1}, N_{2}, \\text{ and } N_{3} \\text{ cm}^{-3}",
+      "description": "Esta fórmula representa a densidade de portadores de carga positiva, ou buracos, em um material semicondutor. Os valores indicam diferentes concentrações de buracos em centímetros cúbicos, que são fundamentais para entender as propriedades elétricas do semicondutor.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Semicondutores",
+        "Buracos como portadores de carga positiva"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_{p}",
+          "description": "Representa a densidade de buracos em um semicondutor, que é a quantidade de portadores de carga positiva por unidade de volume."
+        },
+        {
+          "symbol": "10^{19}, 10^{17}, 10^{15}",
+          "description": "Estes são valores numéricos que representam diferentes concentrações de buracos, em unidades de centímetros cúbicos."
+        },
+        {
+          "symbol": "cm^{-3}",
+          "description": "Esta unidade indica que a densidade é medida em centímetros cúbicos, ou seja, quantos buracos existem em um volume de um centímetro cúbico."
+        }
+      ]
+    },
+    {
+      "originalFormula": "i_C = e D_{A_{e}} A_{e} \\frac{d n(x)}{dx} = -e D_{A_{e}} \\frac{n_{b}(0) - n_{b}}{0 - x_{b}} = -e D_{A_{e}} \\frac{n_{b}(0)}{x_{b}} n_{b} \\exp \\left( \\frac{V_{BE}}{V_{T}} \\right)",
+      "genericFormula": "i_C = e D_{A} A \\frac{d n(x)}{dx} = -e D_{A} \\frac{n_{b}(0) - n_{b}}{0 - x_{b}} = -e D_{A} \\frac{n_{b}(0)}{x_{b}} n_{b} \\exp \\left( \\frac{V_{BE}}{V_{T}} \\right)",
+      "description": "Esta fórmula representa a corrente de carga em um semicondutor, especificamente a corrente de buracos em um transistor bipolar. Ela relaciona a densidade de portadores de carga (buracos) com a variação da concentração de portadores ao longo de uma distância e a tensão aplicada no transistor.",
+      "concepts": [
+        "Corrente elétrica",
+        "Densidade de portadores de carga",
+        "Difusão de portadores em semicondutores",
+        "Transistores bipolares",
+        "Efeito da tensão na corrente"
+      ],
+      "symbols": [
+        {
+          "symbol": "i_C",
+          "description": "Representa a corrente de carga que flui através do semicondutor."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a carga de um único elétron."
+        },
+        {
+          "symbol": "D_{A}",
+          "description": "Representa o coeficiente de difusão dos buracos, que indica a facilidade com que os buracos se movem através do material."
+        },
+        {
+          "symbol": "A",
+          "description": "Representa a área através da qual a corrente está fluindo."
+        },
+        {
+          "symbol": "n(x)",
+          "description": "Representa a densidade de portadores de carga (buracos) em uma posição específica x ao longo do semicondutor."
+        },
+        {
+          "symbol": "n_{b}(0)",
+          "description": "Representa a densidade de portadores de carga (buracos) na posição inicial (x igual a zero)."
+        },
+        {
+          "symbol": "n_{b}",
+          "description": "Representa a densidade de portadores de carga (buracos) em uma posição x específica."
+        },
+        {
+          "symbol": "x_{b}",
+          "description": "Representa a distância ao longo do semicondutor onde a densidade de portadores está sendo avaliada."
+        },
+        {
+          "symbol": "V_{BE}",
+          "description": "Representa a tensão entre a base e o emissor em um transistor bipolar."
+        },
+        {
+          "symbol": "V_{T}",
+          "description": "Representa a tensão térmica, que é uma constante relacionada à temperatura do sistema e ao comportamento dos portadores de carga."
+        }
+      ]
+    }
+  ],
   "processedPages": [
     1,
     2,
@@ -524,120 +603,7 @@
     517,
     518,
     519,
-    520,
-    521,
-    522,
-    523,
-    524,
-    525,
-    526,
-    527,
-    528,
-    529,
-    530,
-    531,
-    532,
-    533,
-    534,
-    535,
-    536,
-    537,
-    538,
-    539,
-    540,
-    541,
-    542,
-    543,
-    544,
-    545,
-    546,
-    547,
-    548,
-    549,
-    550,
-    551,
-    552,
-    553,
-    554,
-    555,
-    556,
-    557,
-    558,
-    559,
-    560,
-    561,
-    562,
-    563,
-    564,
-    565,
-    566,
-    567,
-    568,
-    569,
-    570,
-    571,
-    572,
-    573,
-    574,
-    575,
-    576,
-    577,
-    578,
-    579,
-    580,
-    581,
-    582,
-    583,
-    584,
-    585,
-    586,
-    587,
-    588,
-    589,
-    590,
-    591,
-    592,
-    593,
-    594,
-    595,
-    596,
-    597,
-    598,
-    599,
-    600,
-    601,
-    602,
-    603,
-    604,
-    605,
-    606,
-    607,
-    608,
-    609,
-    610,
-    611,
-    612,
-    613,
-    614,
-    615,
-    616,
-    617,
-    618,
-    619,
-    620,
-    621,
-    622,
-    623,
-    624,
-    625,
-    626,
-    627,
-    628,
-    629,
-    630,
-    631
+    520
   ],
-  "lastUpdated": "2026-05-08T23:28:19.416Z",
-  "bookTitle": "Semiconductor Physics and Devices - Basic",
-  "author": "Donald A. Neamen"
+  "lastUpdated": "2026-05-08T22:48:38.158Z"
 }

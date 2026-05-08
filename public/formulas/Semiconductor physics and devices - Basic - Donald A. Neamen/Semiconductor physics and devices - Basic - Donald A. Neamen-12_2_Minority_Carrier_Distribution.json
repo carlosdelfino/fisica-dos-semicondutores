@@ -1,0 +1,951 @@
+{
+  "chapter": "12.2 Minority Carrier Distribution",
+  "section": "unknown",
+  "questions": [
+    {
+      "number": "TYU 12.1",
+      "text": "The emitter and base of a silicon npn bipolar transistor are uniformly doped at impurity concentrations of 10^{18} cm^{-3} and 10^{16} cm^{-3}, respectively. A forward-bias B–E voltage of V_{BE} = 0.610 V is applied. The neutral base width is x_{B} = 2 \\, \\mu m and the minority carrier diffusion length in the base is L_{n} = 10 \\, nm. Calculate the excess minority carrier concentration in the base at (a) x = 0 and (b) x = x_{B}/2 [Equation (12.15a) to (12.15b)]. Determine the ratio of the actual minority carrier concentration at x = x_{B}/2 [Equation (12.15a) to the ideal case of a linear minority carrier distribution Equation (12.15b)].",
+      "formulas": [
+        {
+          "originalFormula": "\\delta n_{x} \\approx \\frac{n_{p0}}{n_{b}} \\left[ \\left( \\exp \\left( \\frac{eV_{BE}}{kT} \\right) - 1 \\right) (x_{B} - x) \\right]",
+          "genericFormula": "\\delta n_{x} \\approx \\frac{n_{p0}}{n_{b}} \\left[ \\left( \\exp \\left( \\frac{eV}{kT} \\right) - 1 \\right) (x_{B} - x) \\right]",
+          "description": "Esta fórmula representa a variação da densidade de portadores de carga em uma região de um semicondutor, especificamente em relação a um potencial aplicado em um diodo. Ela mostra como a densidade de portadores de carga varia em função de um potencial aplicado, considerando a temperatura e as características do material.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Potencial elétrico",
+            "Efeito da temperatura em semicondutores",
+            "Exponencial de Boltzmann"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\delta n_{x}",
+              "description": "Representa a variação da densidade de portadores de carga em uma posição x dentro do semicondutor."
+            },
+            {
+              "symbol": "n_{p0}",
+              "description": "É a densidade de portadores de carga do tipo p em equilíbrio, ou seja, a densidade de lacunas em condições normais."
+            },
+            {
+              "symbol": "n_{b}",
+              "description": "Representa a densidade de portadores de carga do tipo n, que é a densidade de elétrons em uma região do semicondutor."
+            },
+            {
+              "symbol": "eV_{BE}",
+              "description": "É o potencial elétrico aplicado entre a junção base-emissor de um transistor, que influencia a corrente que flui através do dispositivo."
+            },
+            {
+              "symbol": "k",
+              "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia térmica em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta em Kelvin, que afeta a mobilidade e a densidade de portadores em semicondutores."
+            },
+            {
+              "symbol": "x_{B}",
+              "description": "É a posição da junção base-emissor no semicondutor, onde ocorre a interação entre os portadores de carga."
+            },
+            {
+              "symbol": "x",
+              "description": "Representa uma posição qualquer dentro do semicondutor, onde estamos avaliando a variação da densidade de portadores de carga."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "TYU 12.2",
+      "text": "Consider a silicon npn bipolar transistor with emitter and base regions uniformly doped at concentrations of 10^{18} cm^{-3} and 10^{16} cm^{-3}, respectively. A forward-bias B–E voltage of V_{BE} = 0.610 V is applied. The neutral emitter width is x_{e} = 4 \\, \\mu m and the minority carrier diffusion length in the emitter is L_{e} = 4 \\, \\mu m. Calculate the excess minority carrier concentration in the emitter at (a) x' = 0 and (b) x' = x_{e}/2.",
+      "formulas": [
+        {
+          "originalFormula": "D_{c} \\frac{d^{2} \\delta p_{c}(x')}{dx'^{2}} - \\frac{\\delta p_{c}(x')}{\\tau_{c}} = 0",
+          "genericFormula": "D_{c} \\frac{d^{2} \\delta p_{c}(x')}{dx'^{2}} - \\frac{\\delta p_{c}(x')}{\\tau_{c}} = 0",
+          "description": "Esta fórmula representa uma equação diferencial que descreve a evolução de uma perturbação na densidade de portadores de carga em um semicondutor ao longo de uma dimensão espacial. Ela relaciona a difusão da perturbação com o seu decaimento temporal.",
+          "concepts": [
+            "Difusão de portadores de carga",
+            "Equações diferenciais",
+            "Perturbações em sistemas físicos",
+            "Tempo de relaxação"
+          ],
+          "symbols": [
+            {
+              "symbol": "D_{c}",
+              "description": "Representa o coeficiente de difusão dos portadores de carga, que indica a taxa na qual os portadores se espalham no material."
+            },
+            {
+              "symbol": "\\delta p_{c}(x')",
+              "description": "Denota a perturbação na densidade de portadores de carga em uma posição específica ao longo do eixo x'."
+            },
+            {
+              "symbol": "x'",
+              "description": "Uma variável que representa a posição ao longo do espaço onde a perturbação na densidade de portadores está sendo analisada."
+            },
+            {
+              "symbol": "\\tau_{c}",
+              "description": "É o tempo de relaxação dos portadores de carga, que indica quanto tempo leva para a perturbação na densidade de portadores se dissipar."
+            }
+          ]
+        },
+        {
+          "originalFormula": "\\delta p_{c}(x') = p_{c} (x') - p_{c0}",
+          "genericFormula": "\\delta p_{c}(x') = p_{c} (x') - p_{c0}",
+          "description": "Esta fórmula representa a variação da pressão de um determinado ponto em um sistema, onde a pressão em um ponto específico é subtraída da pressão de referência. A diferença resultante indica como a pressão naquele ponto se desvia da pressão padrão ou de referência.",
+          "concepts": [
+            "Variação de pressão",
+            "Pressão em um ponto específico",
+            "Pressão de referência"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\delta p_{c}(x')",
+              "description": "Representa a variação da pressão em um ponto específico do sistema."
+            },
+            {
+              "symbol": "p_{c}(x')",
+              "description": "Representa a pressão medida em um ponto específico do sistema."
+            },
+            {
+              "symbol": "p_{c0}",
+              "description": "Representa a pressão de referência ou a pressão padrão em que a variação está sendo comparada."
+            }
+          ]
+        },
+        {
+          "originalFormula": "\\delta p_{c}(x') = G e^{\\left( \\frac{x'}{L_{c}} \\right)} + H e^{\\left( -\\frac{x'}{L_{c}} \\right)}",
+          "genericFormula": "\\delta p_{c}(x') = G e^{\\left( \\frac{x'}{L_{c}} \\right)} + H e^{\\left( -\\frac{x'}{L_{c}} \\right)}",
+          "description": "Esta fórmula representa a variação da pressão em uma determinada posição x' em um sistema físico, onde a pressão é afetada por dois termos exponenciais que dependem da distância x' e de parâmetros específicos do sistema.",
+          "concepts": [
+            "Variação de pressão",
+            "Funções exponenciais",
+            "Comportamento de sistemas físicos em função da distância"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\delta p_{c}(x')",
+              "description": "Representa a variação da pressão em uma posição específica x' no sistema."
+            },
+            {
+              "symbol": "G",
+              "description": "Um coeficiente que representa uma constante relacionada ao sistema, podendo estar associado a uma condição inicial ou a um parâmetro físico específico."
+            },
+            {
+              "symbol": "H",
+              "description": "Outro coeficiente que também representa uma constante do sistema, similar ao G, mas pode estar relacionado a diferentes condições ou características do sistema."
+            },
+            {
+              "symbol": "e",
+              "description": "A base do logaritmo natural, um número irracional que é fundamental em cálculos envolvendo crescimento exponencial e decaimento."
+            },
+            {
+              "symbol": "x'",
+              "description": "A variável que representa a posição no espaço onde a pressão está sendo avaliada."
+            },
+            {
+              "symbol": "L_{c}",
+              "description": "Um comprimento característico do sistema, que determina a escala na qual a variação da pressão se torna significativa."
+            }
+          ]
+        },
+        {
+          "originalFormula": "\\delta p_{c}(0) = \\delta p_{c}(x' = 0) = p_{c}(x' = 0) - p_{c0} = 0 - p_{c0} = -p_{c0}",
+          "genericFormula": "\\delta p_{c}(0) = \\delta p_{c}(x' = 0) = p_{c}(x' = 0) - p_{c0}",
+          "description": "Esta fórmula representa a variação da pressão de carga em um ponto específico, onde a pressão de carga em um determinado ponto é subtraída da pressão de carga em um estado de referência. A diferença resultante indica como a pressão de carga muda em relação a esse estado de referência.",
+          "concepts": [
+            "Variação de pressão",
+            "Pressão de carga",
+            "Estado de referência"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\delta p_{c}(0)",
+              "description": "Representa a variação da pressão de carga em um ponto específico, neste caso, no ponto inicial."
+            },
+            {
+              "symbol": "\\delta p_{c}(x' = 0)",
+              "description": "Representa a variação da pressão de carga em um ponto específico, onde a coordenada x' é igual a zero."
+            },
+            {
+              "symbol": "p_{c}(x' = 0)",
+              "description": "Representa a pressão de carga no ponto onde a coordenada x' é igual a zero."
+            },
+            {
+              "symbol": "p_{c0}",
+              "description": "Representa a pressão de carga em um estado de referência, que é considerado como a pressão de carga inicial ou padrão."
+            }
+          ]
+        },
+        {
+          "originalFormula": "\\delta p_{c}(x') = -p_{c0} e^{\\left( -\\frac{x'}{L_{c}} \\right)}",
+          "genericFormula": "\\delta p_{c}(x') = -p_{c0} e^{\\left( -\\frac{x'}{L_{c}} \\right)}",
+          "description": "Esta fórmula representa a variação da pressão de carga em um ponto específico, x', em um material semicondutor. A pressão de carga diminui exponencialmente à medida que nos afastamos de um ponto de referência, caracterizado pela constante de comprimento Lc.",
+          "concepts": [
+            "Pressão de carga",
+            "Decaimento exponencial",
+            "Semicondutores",
+            "Distância em um material"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\delta p_{c}(x')",
+              "description": "Representa a variação da pressão de carga em um ponto específico x' no material."
+            },
+            {
+              "symbol": "p_{c0}",
+              "description": "É a pressão de carga inicial ou de referência, que serve como ponto de partida para a variação."
+            },
+            {
+              "symbol": "e",
+              "description": "É a base do logaritmo natural, uma constante matemática que aparece em muitos fenômenos naturais, especialmente aqueles que envolvem crescimento ou decaimento exponencial."
+            },
+            {
+              "symbol": "x'",
+              "description": "Representa a distância a partir de um ponto de referência no material semicondutor, onde a variação da pressão de carga está sendo medida."
+            },
+            {
+              "symbol": "L_{c}",
+              "description": "É a constante de comprimento que caracteriza a taxa de decaimento da pressão de carga no material. Quanto maior for Lc, mais lentamente a pressão de carga diminui."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "TYU 12.3",
+      "text": "Consider the collector region of an npn bipolar transistor biased in the forward-active region. At what value of x', compared to L_{c}, does the magnitude of the minority carrier concentration reach 95 percent of the thermal-equilibrium value?",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "TYU 12.2",
+      "text": "The excess minority carrier hole concentration in the collector is given by \\delta p_{c}(x') = -p_{c0} e^{\\left( -\\frac{x'}{L_{c}} \\right)}.",
+      "formulas": [
+        {
+          "originalFormula": "\\delta p_{c}(x') = -p_{c0} e^{\\left( -\\frac{x'}{L_{c}} \\right)}",
+          "genericFormula": "\\delta p_{c}(x') = -p_{c} e^{\\left( -\\frac{x'}{L} \\right)}",
+          "description": "Esta fórmula representa a variação da pressão em um determinado ponto x' em um meio, onde a pressão diminui exponencialmente à medida que nos afastamos de uma referência inicial. O termo negativo indica que a pressão diminui em relação ao valor inicial.",
+          "concepts": [
+            "Pressão",
+            "Decaimento exponencial",
+            "Distância em um meio",
+            "Condições iniciais"
+          ],
+          "symbols": [
+            {
+              "symbol": "δp_{c}(x')",
+              "description": "Representa a variação da pressão em um ponto específico x' em um meio."
+            },
+            {
+              "symbol": "p_{c0}",
+              "description": "Representa a pressão inicial ou a pressão de referência no ponto de origem."
+            },
+            {
+              "symbol": "e",
+              "description": "É a base do logaritmo natural, uma constante matemática que aparece em muitos fenômenos de crescimento e decaimento exponencial."
+            },
+            {
+              "symbol": "x'",
+              "description": "Representa a distância a partir do ponto de referência onde a pressão está sendo medida."
+            },
+            {
+              "symbol": "L_{c}",
+              "description": "Representa a constante de comprimento característico, que indica a taxa de decaimento da pressão em relação à distância."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "TYU 12.3",
+      "text": "To find the value of x' where the minority carrier concentration reaches 95 percent of the thermal-equilibrium value, we set up the equation \\delta p_{c}(x') = 0.95 p_{c0}.",
+      "formulas": []
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "D_{c} \\frac{d^{2} \\delta p_{c}(x')}{dx'^2} - \\frac{\\delta p_{c}(x')}{\\tau_{c}} = 0",
+      "genericFormula": "D_{c} \\frac{d^{2} \\delta p_{c}(x')}{dx'^2} - \\frac{\\delta p_{c}(x')}{\\tau_{c}} = 0",
+      "description": "Esta fórmula representa uma equação diferencial que descreve como a perturbação da pressão em um meio, denotada por delta p, se comporta ao longo de uma dimensão espacial. A equação é usada para modelar fenômenos como a propagação de ondas ou a difusão em materiais, considerando tanto a variação espacial da pressão quanto o tempo de relaxação do sistema.",
+      "concepts": [
+        "Equações diferenciais",
+        "Difusão",
+        "Perturbações em sistemas físicos",
+        "Propagação de ondas"
+      ],
+      "symbols": [
+        {
+          "symbol": "D_{c}",
+          "description": "Representa o coeficiente de difusão do meio, que indica a capacidade do material de permitir a propagação de uma perturbação."
+        },
+        {
+          "symbol": "\\delta p_{c}(x')",
+          "description": "Denota a perturbação na pressão em uma posição específica, x', dentro do meio considerado."
+        },
+        {
+          "symbol": "x'",
+          "description": "Representa a coordenada espacial ao longo da qual a perturbação da pressão está sendo analisada."
+        },
+        {
+          "symbol": "\\tau_{c}",
+          "description": "É o tempo de relaxação do sistema, que indica quanto tempo leva para a perturbação se dissipar ou se estabilizar após uma mudança."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\delta p_{c}(x') = p_{c} (x') - p_{c0}",
+      "genericFormula": "\\delta p_{c}(x') = p_{c} (x') - p_{c0}",
+      "description": "Esta fórmula representa a variação da pressão de um determinado ponto em um sistema em relação a uma pressão de referência. A diferença entre a pressão no ponto 'x' e a pressão de referência 'p_{c0}' fornece uma medida de como a pressão muda em relação a essa referência.",
+      "concepts": [
+        "Variação de pressão",
+        "Pressão de referência",
+        "Sistema físico"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\delta p_{c}(x')",
+          "description": "Representa a variação da pressão em um ponto específico 'x' no sistema."
+        },
+        {
+          "symbol": "p_{c}(x')",
+          "description": "Representa a pressão medida no ponto 'x' do sistema."
+        },
+        {
+          "symbol": "p_{c0}",
+          "description": "Representa a pressão de referência, que é um valor constante usado para comparação."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\delta p_{c}(x') = G e^{\\left( \\frac{x'}{L_{c}} \\right)} + H e^{\\left( -\\frac{x'}{L_{c}} \\right)}",
+      "genericFormula": "\\delta p_{c}(x') = G e^{\\left( \\frac{x'}{L_{c}} \\right)} + H e^{\\left( -\\frac{x'}{L_{c}} \\right)}",
+      "description": "Esta fórmula representa a variação da pressão em um ponto específico, considerando dois componentes exponenciais que dependem da posição. Os termos da fórmula indicam como a pressão muda ao longo de uma direção, influenciada por constantes e a distância a partir de um ponto de referência.",
+      "concepts": [
+        "Variação de pressão",
+        "Funções exponenciais",
+        "Comportamento de sistemas físicos em relação à posição"
+      ],
+      "symbols": [
+        {
+          "symbol": "δp_{c}(x')",
+          "description": "Representa a variação da pressão em um ponto específico, que depende da posição x'."
+        },
+        {
+          "symbol": "G",
+          "description": "Uma constante que representa a contribuição de um dos componentes da pressão na fórmula."
+        },
+        {
+          "symbol": "H",
+          "description": "Outra constante que representa a contribuição do segundo componente da pressão na fórmula."
+        },
+        {
+          "symbol": "e",
+          "description": "A base do logaritmo natural, uma constante matemática que é fundamental em cálculos envolvendo crescimento exponencial."
+        },
+        {
+          "symbol": "x'",
+          "description": "Uma variável que representa a posição ao longo da qual a pressão está sendo medida ou analisada."
+        },
+        {
+          "symbol": "L_{c}",
+          "description": "Uma constante de comprimento que caracteriza a escala na qual a variação da pressão ocorre em relação à posição."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\delta p_{c}(0) = \\delta p_{c}(x' = 0) = p_{c}(x' = 0) - p_{c0} = 0 - p_{c0} = -p_{c0}",
+      "genericFormula": "\\delta p_{c}(0) = \\delta p_{c}(x' = 0) = p_{c}(x' = 0) - p_{c0}",
+      "description": "Esta fórmula representa a variação da pressão de um componente em um ponto específico, onde a pressão em um determinado ponto é subtraída da pressão de referência. O resultado indica que a pressão no ponto considerado é menor do que a pressão de referência.",
+      "concepts": [
+        "Variação de pressão",
+        "Pressão em um ponto específico",
+        "Pressão de referência"
+      ],
+      "symbols": [
+        {
+          "symbol": "δp_{c}(0)",
+          "description": "Representa a variação da pressão do componente em um ponto específico, neste caso, no ponto zero."
+        },
+        {
+          "symbol": "δp_{c}(x' = 0)",
+          "description": "Representa a variação da pressão do componente em um ponto específico, onde a coordenada x' é igual a zero."
+        },
+        {
+          "symbol": "p_{c}(x' = 0)",
+          "description": "Representa a pressão do componente no ponto onde a coordenada x' é igual a zero."
+        },
+        {
+          "symbol": "p_{c0}",
+          "description": "Representa a pressão de referência do componente, que é utilizada como base para calcular a variação de pressão."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\delta p_{c}(x') = -p_{c0} e^{\\left( -\\frac{x'}{L_{c}} \\right)}",
+      "genericFormula": "\\delta p_{c}(x') = -p_{c} e^{\\left( -\\frac{x'}{L} \\right)}",
+      "description": "Esta fórmula representa a variação da pressão de um fluido em função da distância a partir de um ponto de referência. A pressão diminui exponencialmente à medida que nos afastamos desse ponto, indicando como a pressão se dissipa em um meio ao longo de uma distância característica.",
+      "concepts": [
+        "Pressão",
+        "Dissipação de energia",
+        "Decaimento exponencial",
+        "Distância característica"
+      ],
+      "symbols": [
+        {
+          "symbol": "δp_{c}(x')",
+          "description": "Representa a variação da pressão em um ponto específico ao longo da distância x'."
+        },
+        {
+          "symbol": "p_{c0}",
+          "description": "É a pressão inicial ou a pressão no ponto de referência, antes de considerar a variação ao longo da distância."
+        },
+        {
+          "symbol": "e",
+          "description": "É a base do logaritmo natural, uma constante matemática que aparece em muitos fenômenos de crescimento e decaimento exponencial."
+        },
+        {
+          "symbol": "x'",
+          "description": "Representa a distância a partir do ponto de referência onde a variação da pressão está sendo medida."
+        },
+        {
+          "symbol": "L_{c}",
+          "description": "É a distância característica, que define a taxa de decaimento da pressão ao longo da distância x'."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498,
+    499,
+    500,
+    501,
+    502,
+    503,
+    504,
+    505,
+    506,
+    507,
+    508,
+    509,
+    510,
+    511,
+    512,
+    513,
+    514,
+    515,
+    516,
+    517,
+    518,
+    519,
+    520,
+    521,
+    522,
+    523,
+    524,
+    525,
+    526,
+    527,
+    528,
+    529,
+    530,
+    531,
+    532
+  ],
+  "lastUpdated": "2026-05-08T22:51:21.513Z"
+}

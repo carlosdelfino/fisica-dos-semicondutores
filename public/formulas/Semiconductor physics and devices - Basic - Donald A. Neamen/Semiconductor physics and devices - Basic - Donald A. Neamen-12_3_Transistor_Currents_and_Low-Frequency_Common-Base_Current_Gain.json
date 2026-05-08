@@ -1,0 +1,1051 @@
+{
+  "chapter": "12.3 Transistor Currents and Low-Frequency Common-Base Current Gain",
+  "section": "12.3.1 Current Gain—Contributing Factors",
+  "questions": [
+    {
+      "number": "Ex 12.1",
+      "text": "Repeat Example 12.1 if the base and emitter doping concentrations are N_{b} = 5 \\times 10^{15} cm^{-3} and N_{e} = 10^{18} cm^{-3}, respectively.",
+      "formulas": []
+    },
+    {
+      "number": "Objective",
+      "text": "Calculate the recombination factor. Assume the following transistor parameters: x_{je} = 0.10 \\mu m, \\tau_e = 10^{-7} s, N_b = 5 \\times 10^{15} cm^{-3}, D_e = 20 cm^2/s, L_b = 10 \\mu m, and x_b = 0.80 \\mu m. Assume V_{be} = 0.50 V.",
+      "formulas": []
+    },
+    {
+      "number": "Ex 12.7",
+      "text": "Assume that \\( \\gamma = 0.9980, J_0 = 5 \\times 10^{-9} A/cm^2, \\) and \\( J_e = 2 \\times 10^{-11} A/cm^2. \\) Determine the common-emitter current gain \\( \\beta \\) for (a) \\( V_{be} = 0.550 V \\) and (b) \\( V_{be} = 0.650 V \\).",
+      "formulas": []
+    },
+    {
+      "number": "TYU 12.4",
+      "text": "If the emitter doping concentration is \\( N_e = 5 \\times 10^{18} cm^{-3}, \\) find the base doping concentration such that the emitter injection efficiency is \\( \\gamma = 0.9950. \\) Assume \\( x_e = 2 \\mu m. \\)",
+      "formulas": []
+    },
+    {
+      "number": "TYU 12.5",
+      "text": "Assume that \\( \\alpha_r = 0.968, x_{np} = x_e = 1 \\mu m, N_e = 5 \\times 10^{16} cm^{-3}. \\) Determine the common-emitter current gain \\( \\beta. \\)",
+      "formulas": []
+    },
+    {
+      "number": "TYU 12.6",
+      "text": "Assume that \\( \\gamma = 0.9967 \\) and \\( x_{np} = 0.80 \\mu m. \\) Determine the common-emitter current gain \\( \\beta. \\)",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "Ex 12.1",
+      "text": "Using the given parameters, we find the emitter injection efficiency as follows:",
+      "formulas": [
+        {
+          "originalFormula": "\\gamma \\approx \\frac{1}{1 + \\frac{N_{e}}{N_{b}} \\frac{D_{e}}{D_{b}} \\frac{x_{b}}{x_{e}}} = \\frac{1}{1 + \\frac{(10^{18}) (10) (0.80)}{(5 \\times 10^{15}) (20) (0.60)}} = 0.9934",
+          "genericFormula": "\\gamma \\approx \\frac{1}{1 + \\frac{N_{e}}{N_{b}} \\frac{D_{e}}{D_{b}} \\frac{x_{b}}{x_{e}}}",
+          "description": "Esta fórmula representa a relação entre a densidade de elétrons e buracos em um semicondutor, levando em consideração as mobilidades dos portadores de carga e suas concentrações. O resultado, que é uma aproximação para o fator gama, indica como a eficiência de transporte de carga é afetada pela relação entre elétrons e buracos.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Mobilidade de elétrons e buracos",
+            "Relação de concentração em semicondutores",
+            "Efeito da temperatura e estrutura do material"
+          ],
+          "symbols": [
+            {
+              "symbol": "γ",
+              "description": "Representa o fator gama, que é uma medida da eficiência de transporte de carga em um semicondutor."
+            },
+            {
+              "symbol": "N_{e}",
+              "description": "Representa a densidade de elétrons livres no semicondutor, que são os portadores de carga negativa."
+            },
+            {
+              "symbol": "N_{b}",
+              "description": "Representa a densidade de buracos no semicondutor, que são os portadores de carga positiva."
+            },
+            {
+              "symbol": "D_{e}",
+              "description": "Representa a mobilidade dos elétrons, que é a capacidade dos elétrons de se moverem através do material sob a influência de um campo elétrico."
+            },
+            {
+              "symbol": "D_{b}",
+              "description": "Representa a mobilidade dos buracos, que é a capacidade dos buracos de se moverem através do material sob a influência de um campo elétrico."
+            },
+            {
+              "symbol": "x_{b}",
+              "description": "Representa uma fração ou proporção relacionada aos buracos, que pode estar associada a uma característica do material ou do ambiente."
+            },
+            {
+              "symbol": "x_{e}",
+              "description": "Representa uma fração ou proporção relacionada aos elétrons, que pode estar associada a uma característica do material ou do ambiente."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Objective",
+      "text": "From Equation (12.41), we find J_{e} = \\frac{e^{\\frac{x_{je}}{2\\tau_e}}}{2(1.6 \\times 10^{-19})(0.10 \\times 10^{-6})(1.5 \\times 10^{10})}{2(10^{-7})} = 1.2 \\times 10^{-7} A/cm^2",
+      "formulas": [
+        {
+          "originalFormula": "J_{e} = \\frac{e^{\\frac{x_{je}}{2\\tau_e}}}{2(1.6 \\times 10^{-19})(0.10 \\times 10^{-6})(1.5 \\times 10^{10})}{2(10^{-7})}",
+          "genericFormula": "J_{e} = \\frac{e^{\\frac{x_{je}}{2\\tau_e}}}{2(q)(d)(N)}{2(L)}",
+          "description": "Esta fórmula representa a densidade de corrente elétrica em um semicondutor, considerando a contribuição de portadores de carga que se movem sob a influência de um campo elétrico. A densidade de corrente é uma medida de quão rapidamente a carga elétrica está fluindo através de uma área específica.",
+          "concepts": [
+            "Densidade de corrente elétrica",
+            "Movimento de portadores de carga",
+            "Semicondutores",
+            "Efeito de campo elétrico"
+          ],
+          "symbols": [
+            {
+              "symbol": "J_{e}",
+              "description": "Representa a densidade de corrente elétrica, que é a quantidade de carga que passa por uma unidade de área em um determinado tempo."
+            },
+            {
+              "symbol": "x_{je}",
+              "description": "Representa a distância ou posição em relação a um ponto de referência no material semicondutor onde a densidade de corrente está sendo avaliada."
+            },
+            {
+              "symbol": "\\tau_e",
+              "description": "Representa o tempo de vida dos portadores de carga, que é o tempo médio que um portador permanece em um estado excitado antes de recombinar."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elétrica de um único portador, que para elétrons é aproximadamente 1.6 x 10^{-19} coulombs."
+            },
+            {
+              "symbol": "d",
+              "description": "Representa a largura ou espessura do material semicondutor através do qual a corrente está fluindo."
+            },
+            {
+              "symbol": "N",
+              "description": "Representa a densidade de portadores de carga, que é a quantidade de portadores por unidade de volume no semicondutor."
+            },
+            {
+              "symbol": "L",
+              "description": "Representa uma constante de comprimento que pode estar relacionada a características geométricas do semicondutor ou ao caminho que a corrente percorre."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Objective",
+      "text": "From Equation (12.43), we find J_{0} = \\frac{e D_{n} n_{i} / L_{b}}{L_{b} \\tanh(\\frac{x_{je}}{L_{b}})} = \\frac{e D_{n} n_{i} / N_{b}}{L_{b} \\tanh(\\frac{x_{je}}{L_{b}})} = 1.804 \\times 10^{-9} A/cm^2",
+      "formulas": [
+        {
+          "originalFormula": "J_{0} = \\frac{e D_{n} n_{i} / L_{b}}{L_{b} \\tanh(\\frac{x_{je}}{L_{b}})}",
+          "genericFormula": "J_{0} = \\frac{e D_{n} n_{i}}{L_{b}^{2} \\tanh(\\frac{x_{je}}{L_{b}})}",
+          "description": "Esta fórmula representa a densidade de corrente em um semicondutor, levando em consideração a difusão de portadores de carga. A densidade de corrente é uma medida de quão rapidamente a carga elétrica está se movendo através de um material.",
+          "concepts": [
+            "Densidade de corrente",
+            "Difusão de portadores de carga",
+            "Semicondutores",
+            "Função hiperbólica tangente"
+          ],
+          "symbols": [
+            {
+              "symbol": "J_{0}",
+              "description": "Representa a densidade de corrente, que é a quantidade de carga elétrica que passa por uma unidade de área em um determinado tempo."
+            },
+            {
+              "symbol": "e",
+              "description": "Representa a carga elementar, que é a carga elétrica de um único elétron."
+            },
+            {
+              "symbol": "D_{n}",
+              "description": "Representa o coeficiente de difusão dos portadores de carga do tipo n, que indica a facilidade com que os elétrons se movem através do semicondutor."
+            },
+            {
+              "symbol": "n_{i}",
+              "description": "Representa a concentração intrínseca de portadores de carga, que é a quantidade de portadores de carga gerados termicamente em um semicondutor puro."
+            },
+            {
+              "symbol": "L_{b}",
+              "description": "Representa o comprimento de difusão, que é a distância média que os portadores de carga podem se mover antes de serem recombinados."
+            },
+            {
+              "symbol": "x_{je}",
+              "description": "Representa a distância a partir da junção onde a densidade de corrente está sendo avaliada."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "J_{e} = J_{e_{in}} - J_{e_{out}}",
+      "genericFormula": "J_{e} = J_{e_{in}} - J_{e_{out}}",
+      "description": "Esta fórmula representa a densidade de corrente elétrica em um material semicondutor, onde a densidade de corrente total é igual à diferença entre a densidade de corrente que entra e a densidade de corrente que sai do sistema.",
+      "concepts": [
+        "Densidade de corrente elétrica",
+        "Semicondutores",
+        "Conservação de carga elétrica"
+      ],
+      "symbols": [
+        {
+          "symbol": "J_{e}",
+          "description": "Representa a densidade de corrente elétrica total em um material semicondutor."
+        },
+        {
+          "symbol": "J_{e_{in}}",
+          "description": "Representa a densidade de corrente elétrica que está entrando no sistema."
+        },
+        {
+          "symbol": "J_{e_{out}}",
+          "description": "Representa a densidade de corrente elétrica que está saindo do sistema."
+        }
+      ]
+    },
+    {
+      "originalFormula": "J_{h_{in}} = J_{h_{out}}",
+      "genericFormula": "J_{h_{in}} = J_{h_{out}}",
+      "description": "Esta fórmula representa a condição de equilíbrio de corrente em um sistema de semicondutores, onde a corrente de hole que entra em uma região é igual à corrente de hole que sai dessa região. Isso é fundamental para entender como os portadores de carga se comportam em dispositivos semicondutores.",
+      "concepts": [
+        "Equilíbrio de corrente",
+        "Semicondutores",
+        "Portadores de carga",
+        "Holes"
+      ],
+      "symbols": [
+        {
+          "symbol": "J_{h_{in}}",
+          "description": "Representa a densidade de corrente dos holes que estão entrando em uma região específica do semicondutor."
+        },
+        {
+          "symbol": "J_{h_{out}}",
+          "description": "Representa a densidade de corrente dos holes que estão saindo dessa mesma região do semicondutor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "J_{c} = J_{e} + J_{h_{in}}",
+      "genericFormula": "J_{c} = J_{e} + J_{h_{in}}",
+      "description": "Esta fórmula representa a corrente total em um semicondutor, que é a soma das correntes de elétrons e de lacunas (ou buracos) que contribuem para a condução elétrica. A corrente total é importante para entender como os semicondutores funcionam em dispositivos eletrônicos.",
+      "concepts": [
+        "Corrente elétrica",
+        "Semicondutores",
+        "Elétrons",
+        "Lacunas (ou buracos)"
+      ],
+      "symbols": [
+        {
+          "symbol": "J_{c}",
+          "description": "Representa a corrente total que flui através do semicondutor."
+        },
+        {
+          "symbol": "J_{e}",
+          "description": "Representa a corrente de elétrons que contribui para a condução elétrica."
+        },
+        {
+          "symbol": "J_{h_{in}}",
+          "description": "Representa a corrente de lacunas (ou buracos) que também contribui para a condução elétrica."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\gamma = \\frac{1}{1 + \\frac{p_{b0} D_{b} L_{b}}{n_{b0} D_{e} L_{e}} \\tanh \\left( \\frac{x_{b}}{L_{b}} \\right) \\tanh \\left( \\frac{x_{e}}{L_{e}} \\right)}",
+      "genericFormula": "\\gamma = \\frac{1}{1 + \\frac{p_{0} D_{b} L_{b}}{n_{0} D_{e} L_{e}} \\tanh \\left( \\frac{x_{b}}{L_{b}} \\right) \\tanh \\left( \\frac{x_{e}}{L_{e}} \\right)}",
+      "description": "Esta fórmula representa um fator de correção, denotado por gamma, que é utilizado para descrever a relação entre diferentes parâmetros físicos em um sistema que envolve transporte de carga em semicondutores. O fator de correção é influenciado por propriedades como densidade de portadores, difusividade e comprimento característico do material.",
+      "concepts": [
+        "Transporte de carga em semicondutores",
+        "Densidade de portadores",
+        "Difusividade",
+        "Comprimento característico",
+        "Função hiperbólica tangente"
+      ],
+      "symbols": [
+        {
+          "symbol": "γ",
+          "description": "Representa o fator de correção que quantifica a relação entre diferentes parâmetros no sistema."
+        },
+        {
+          "symbol": "p_{b0}",
+          "description": "Densidade de portadores de carga positiva no material b em condições iniciais."
+        },
+        {
+          "symbol": "D_{b}",
+          "description": "Coeficiente de difusão para os portadores de carga no material b."
+        },
+        {
+          "symbol": "L_{b}",
+          "description": "Comprimento característico do material b, que influencia o transporte de carga."
+        },
+        {
+          "symbol": "n_{b0}",
+          "description": "Densidade de portadores de carga negativa no material b em condições iniciais."
+        },
+        {
+          "symbol": "D_{e}",
+          "description": "Coeficiente de difusão para os portadores de carga no material e."
+        },
+        {
+          "symbol": "L_{e}",
+          "description": "Comprimento característico do material e, que também afeta o transporte de carga."
+        },
+        {
+          "symbol": "x_{b}",
+          "description": "Posição no material b onde a função tangente hiperbólica é avaliada."
+        },
+        {
+          "symbol": "x_{e}",
+          "description": "Posição no material e onde a função tangente hiperbólica é avaliada."
+        }
+      ]
+    },
+    {
+      "originalFormula": "p_{b0} = \\frac{n_{i}^{2}}{N_{E}}",
+      "genericFormula": "p_{b0} = \\frac{n_{i}^{2}}{N_{E}}",
+      "description": "Esta fórmula representa a densidade de portadores de buracos em um semicondutor intrínseco em equilíbrio térmico. Ela relaciona a concentração de buracos com a concentração de portadores de elétrons e uma constante que depende das características do material.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Semicondutores",
+        "Equilíbrio térmico",
+        "Concentração de portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "p_{b0}",
+          "description": "Representa a densidade de buracos em um semicondutor em equilíbrio térmico."
+        },
+        {
+          "symbol": "n_{i}",
+          "description": "Representa a concentração de portadores de elétrons em um semicondutor intrínseco."
+        },
+        {
+          "symbol": "N_{E}",
+          "description": "Representa a densidade de estados disponíveis para os portadores de carga no semicondutor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "n_{b0} = \\frac{n_{i}^{2}}{N_{b}}",
+      "genericFormula": "n_{b0} = \\frac{n_{i}^{2}}{N_{b}}",
+      "description": "Esta fórmula representa a densidade de portadores de carga em uma região de equilíbrio de um semicondutor, onde a densidade de portadores de carga do tipo n é calculada a partir da densidade intrínseca de portadores e da densidade de átomos do tipo dopante.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Semicondutores",
+        "Equilíbrio térmico",
+        "Dopagem"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_{b0}",
+          "description": "Representa a densidade de portadores de carga do tipo n em equilíbrio, ou seja, a quantidade de elétrons disponíveis na região dopada do semicondutor."
+        },
+        {
+          "symbol": "n_{i}",
+          "description": "Representa a densidade intrínseca de portadores de carga em um semicondutor puro, que é a quantidade de elétrons e lacunas gerados termicamente em um material não dopado."
+        },
+        {
+          "symbol": "N_{b}",
+          "description": "Representa a densidade de átomos dopantes do tipo aceitante (ou doador) no semicondutor, que influencia a quantidade de portadores de carga disponíveis."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\delta = \\frac{1}{1 + J_{0} \\exp\\left(\\frac{eV_{be}}{2kT}\\right)}",
+      "genericFormula": "\\delta = \\frac{1}{1 + J_{0} \\exp\\left(\\frac{eV_{be}}{2kT}\\right)}",
+      "description": "Esta fórmula representa a relação entre a variação de uma grandeza, denotada por delta, e outros parâmetros físicos, como a corrente de saturação, a tensão base-emissor e a temperatura. É frequentemente utilizada em contextos de semicondutores para descrever o comportamento de dispositivos como transistores.",
+      "concepts": [
+        "Efeito da temperatura em semicondutores",
+        "Corrente de saturação em junções PN",
+        "Comportamento de dispositivos semicondutores sob tensão aplicada"
+      ],
+      "symbols": [
+        {
+          "symbol": "δ",
+          "description": "Representa a variação ou a quantidade que está sendo medida ou calculada na fórmula."
+        },
+        {
+          "symbol": "J_{0}",
+          "description": "É a corrente de saturação, que é uma medida da quantidade de corrente que flui através de uma junção PN quando não há tensão aplicada."
+        },
+        {
+          "symbol": "e",
+          "description": "É a base do logaritmo natural, uma constante matemática que aparece frequentemente em equações relacionadas ao crescimento exponencial e processos de decaimento."
+        },
+        {
+          "symbol": "V_{be}",
+          "description": "É a tensão entre a base e o emissor de um transistor, que influencia o fluxo de corrente através do dispositivo."
+        },
+        {
+          "symbol": "k",
+          "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos, especialmente em contextos de partículas e semicondutores."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta em Kelvin, que é uma medida da energia térmica das partículas em um sistema."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\alpha_r = \\frac{1}{\\cosh(\\frac{0.70 \\times 10^{-4}}{3.54 \\times 10^{-3}})} = 0.9998",
+      "genericFormula": "\\alpha_r = \\frac{1}{\\cosh(\\frac{a}{b})}",
+      "description": "Esta fórmula representa a relação entre a absorção de um material e a sua dependência em relação a uma variável que envolve a função cosseno hiperbólico. O resultado indica a eficiência de absorção em um determinado contexto físico, onde valores próximos a 1 sugerem uma absorção quase total.",
+      "concepts": [
+        "Função cosseno hiperbólico",
+        "Absorção de materiais",
+        "Relação entre variáveis físicas"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\alpha_r",
+          "description": "Representa a taxa de absorção do material em questão."
+        },
+        {
+          "symbol": "\\cosh",
+          "description": "Função matemática conhecida como cosseno hiperbólico, que é utilizada para descrever comportamentos em sistemas físicos, especialmente em contextos que envolvem crescimento exponencial."
+        },
+        {
+          "symbol": "a",
+          "description": "Um parâmetro que pode representar uma quantidade física, como uma distância ou uma constante relacionada ao material."
+        },
+        {
+          "symbol": "b",
+          "description": "Outro parâmetro que pode representar uma quantidade física, frequentemente relacionado a uma escala ou uma referência no contexto do problema."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\delta = \\frac{5 \\times 10^{-5}}{J_0} \\exp \\left( \\frac{-0.65}{2(0.0259)} \\right)",
+      "genericFormula": "\\delta = \\frac{A}{J_0} \\exp \\left( \\frac{-B}{C} \\right)",
+      "description": "Esta fórmula representa a relação entre uma variável delta e a densidade de corrente J_0, onde delta é uma quantidade que pode estar relacionada a processos como a recombinação de portadores de carga em um semicondutor. A fórmula envolve uma constante A, que pode ser interpretada como uma taxa, e uma exponencial que depende de parâmetros B e C, que estão relacionados à energia térmica e à energia de ativação do sistema.",
+      "concepts": [
+        "Recombinação de portadores de carga",
+        "Densidade de corrente",
+        "Efeito da temperatura em semicondutores",
+        "Fatores exponenciais em processos físicos"
+      ],
+      "symbols": [
+        {
+          "symbol": "δ",
+          "description": "Representa uma quantidade que pode estar relacionada a processos de recombinação ou outra variável dependente do sistema em análise."
+        },
+        {
+          "symbol": "J_0",
+          "description": "Representa a densidade de corrente, que é a quantidade de carga elétrica que passa por uma unidade de área em um determinado tempo."
+        },
+        {
+          "symbol": "A",
+          "description": "Uma constante que pode ser interpretada como uma taxa ou fator de proporcionalidade no contexto da fórmula."
+        },
+        {
+          "symbol": "B",
+          "description": "Um parâmetro que representa uma energia de ativação ou uma quantidade relacionada à energia térmica do sistema."
+        },
+        {
+          "symbol": "C",
+          "description": "Um parâmetro que geralmente representa a energia térmica, que é a energia média das partículas em um sistema em função da temperatura."
+        }
+      ]
+    },
+    {
+      "originalFormula": "J_0 = \\frac{e}{D_{n}} \\frac{d n_{n}}{dx} \\bigg|_{x=0}",
+      "genericFormula": "J = \\frac{e}{D} \\frac{d n}{dx} \\bigg|_{x=0}",
+      "description": "Esta fórmula representa a densidade de corrente de elétrons em um semicondutor em um ponto específico, onde a variação da concentração de elétrons em relação à posição é considerada. A densidade de corrente é influenciada pela mobilidade dos elétrons e pela taxa de variação da concentração de portadores de carga.",
+      "concepts": [
+        "Densidade de corrente",
+        "Concentração de portadores de carga",
+        "Gradiente de concentração",
+        "Difusão de elétrons"
+      ],
+      "symbols": [
+        {
+          "symbol": "J",
+          "description": "Representa a densidade de corrente elétrica, que é a quantidade de carga que passa por uma unidade de área em um determinado tempo."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a menor unidade de carga elétrica que existe, correspondente à carga de um único elétron."
+        },
+        {
+          "symbol": "D",
+          "description": "Representa o coeficiente de difusão, que é uma medida de como os portadores de carga se espalham em um material ao longo do tempo."
+        },
+        {
+          "symbol": "n",
+          "description": "Representa a concentração de portadores de carga, especificamente a concentração de elétrons em um semicondutor."
+        },
+        {
+          "symbol": "x",
+          "description": "Representa a posição ao longo do material semicondutor, onde a variação da concentração de elétrons está sendo medida."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\beta = \\frac{\\alpha}{1 - \\alpha} = \\frac{0.9940}{1 - 0.9940} = 167",
+      "genericFormula": "\\beta = \\frac{\\alpha}{1 - \\alpha}",
+      "description": "Esta fórmula representa a relação entre duas variáveis, onde beta é a razão entre alpha e a diferença de alpha de 1. Essa relação é frequentemente utilizada em contextos como a teoria de probabilidades ou em modelos estatísticos, onde beta pode representar uma taxa ou uma proporção ajustada em relação a um total.",
+      "concepts": [
+        "razão",
+        "proporção",
+        "ajuste estatístico",
+        "teoria de probabilidades"
+      ],
+      "symbols": [
+        {
+          "symbol": "β",
+          "description": "Representa uma razão ou uma proporção ajustada, que pode ser interpretada como uma medida de intensidade ou taxa em relação a um total."
+        },
+        {
+          "symbol": "α",
+          "description": "Representa uma variável que pode ser uma taxa ou proporção inicial, frequentemente usada em contextos estatísticos ou probabilísticos."
+        },
+        {
+          "symbol": "1 - α",
+          "description": "Representa a complementação da variável alpha, ou seja, a parte que não está incluída em alpha, sendo fundamental para calcular a razão."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498,
+    499,
+    500,
+    501,
+    502,
+    503,
+    504,
+    505,
+    506,
+    507,
+    508,
+    509,
+    510,
+    511,
+    512,
+    513,
+    514,
+    515,
+    516,
+    517,
+    518,
+    519,
+    520,
+    521,
+    522,
+    523,
+    524,
+    525,
+    526,
+    527,
+    528,
+    529,
+    530,
+    531,
+    532,
+    533,
+    534,
+    535,
+    536,
+    537,
+    538,
+    539,
+    540,
+    541,
+    542,
+    543,
+    544,
+    545,
+    546
+  ],
+  "lastUpdated": "2026-05-08T22:58:10.263Z"
+}

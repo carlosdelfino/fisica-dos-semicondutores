@@ -194,6 +194,158 @@
       "number": "TVU 7.2",
       "text": "Repeat Exercise Problem E.7.2 for a GaAs pn junction.",
       "formulas": []
+    },
+    {
+      "number": "7.15",
+      "text": "Calculate L_{D} and find the ratio of L_{D}/L_{x} for the following conditions. The p-type doping concentration is (a) N_{a} = 8 \\times 10^{17} \\, \\text{cm}^{-3} and the n-type doping concentration is (b) N_{d} = 2.2 \\times 10^{16} \\, \\text{cm}^{-3} and (c) N_{d} = 8 \\times 10^{17} \\, \\text{cm}^{-3}.",
+      "formulas": [
+        {
+          "originalFormula": "L_{D} = \\sqrt{\\frac{\\epsilon k T}{e^{2} N_{e}}}",
+          "genericFormula": "L_{D} = \\sqrt{\\frac{\\epsilon k T}{e^{2} N_{e}}}",
+          "description": "Esta fórmula representa o comprimento de Debye, que é uma medida da distância sobre a qual as cargas elétricas podem se influenciar em um material semicondutor. O comprimento de Debye é importante para entender como as cargas se distribuem em um semicondutor e como isso afeta suas propriedades elétricas.",
+          "concepts": [
+            "Comprimento de Debye",
+            "Eletrostática em semicondutores",
+            "Distribuição de cargas",
+            "Propriedades elétricas de materiais"
+          ],
+          "symbols": [
+            {
+              "symbol": "L_{D}",
+              "description": "Representa o comprimento de Debye, que é a distância característica na qual as interações eletrostáticas entre as cargas são significativas."
+            },
+            {
+              "symbol": "\\epsilon",
+              "description": "Representa a permissividade elétrica do material, que é uma medida de como um material responde a um campo elétrico."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia térmica em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta do sistema, medida em Kelvin, que influencia a energia das partículas."
+            },
+            {
+              "symbol": "e",
+              "description": "Representa a carga elementar, que é a carga elétrica de um único elétron."
+            },
+            {
+              "symbol": "N_{e}",
+              "description": "Representa a densidade de elétrons livres no material, que é o número de elétrons por unidade de volume."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "7.16",
+      "text": "Calculate (a) V_{bi} (b) W (c) E_{max} at (i) V_{rk} = 0 and (ii) V_{rk} = 5.",
+      "formulas": []
+    },
+    {
+      "number": "7.17",
+      "text": "Determine (a) N_{a}, N_{d}, (b) V_{bi}, (c) E_{max} and (d) C.",
+      "formulas": []
+    },
+    {
+      "number": "7.18",
+      "text": "Determine the ratio of junction capacitance when the acceptor doping is N_{a}, compared to that when the acceptor doping is N_{c}. Why does the junction capacitance increase when the doping concentration increases?",
+      "formulas": []
+    },
+    {
+      "number": "7.19",
+      "text": "(a) The peak electric field in a reverse-biased silicon p-n junction is E_{max} = 3 \\times 10^{6} \\, \\text{V/m}. The doping concentrations are N_{a} = 4 \\times 10^{15} \\, \\text{cm}^{-3} and N_{d} = 4 \\times 10^{17} \\, \\text{cm}^{-3}. Find the magnitude of the reverse-biased voltage. (b) Repeat part (a) for N_{a} = 4 \\times 10^{16} \\, \\text{cm}^{-3} and N_{d} = 4 \\times 10^{17} \\, \\text{cm}^{-3}.",
+      "formulas": [
+        {
+          "originalFormula": "E_{max} = \\frac{V_{rk}}{W}",
+          "genericFormula": "E_{max} = \\frac{V_{rk}}{W}",
+          "description": "Esta fórmula representa a energia máxima que pode ser extraída de um sistema em relação à tensão de ruptura e a largura da barreira potencial. É uma relação importante em física de semicondutores, especialmente ao considerar a movimentação de cargas em dispositivos eletrônicos.",
+          "concepts": [
+            "Energia máxima",
+            "Tensão de ruptura",
+            "Largura da barreira potencial",
+            "Movimentação de cargas em semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{max}",
+              "description": "Representa a energia máxima que pode ser extraída do sistema."
+            },
+            {
+              "symbol": "V_{rk}",
+              "description": "Representa a tensão de ruptura, que é a tensão necessária para superar a barreira potencial em um semicondutor."
+            },
+            {
+              "symbol": "W",
+              "description": "Representa a largura da barreira potencial, que é a distância que as cargas precisam atravessar para se moverem através do semicondutor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "7.21",
+      "text": "Calculate the ratio of the following parameters for junction A (a) W, (b) E_{max} and (c) C_{j}.",
+      "formulas": []
+    },
+    {
+      "number": "7.22",
+      "text": "Determine (a) C_{i}(0) and (b) C_{j}(0).",
+      "formulas": [
+        {
+          "originalFormula": "C_{j}(0) = 3.13",
+          "genericFormula": "C_{j}(0) = C_{j, \text{genérico}}",
+          "description": "Esta fórmula representa a capacitância de uma junção em um determinado ponto, que é frequentemente utilizado em análises de dispositivos semicondutores, como diodos ou transistores. O valor específico indica a capacitância em uma condição particular, geralmente em uma junção de um dispositivo em equilíbrio.",
+          "concepts": [
+            "Capacitância",
+            "Junção de semicondutores",
+            "Equilíbrio elétrico"
+          ],
+          "symbols": [
+            {
+              "symbol": "C_{j}(0)",
+              "description": "Representa a capacitância da junção em um ponto específico, geralmente em condições de equilíbrio elétrico."
+            },
+            {
+              "symbol": "C_{j, \text{genérico}}",
+              "description": "Representa a capacitância da junção em uma forma genérica, sem valores numéricos específicos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "7.30",
+      "text": "A silicon p'n junction has doping concentrations of N_{d} = 2 \\times 10^{17} \\, \\text{cm}^{-3} and N_{a} = 2 \\times 10^{15} \\, \\text{cm}^{-3}. The cross-sectional area is 10^{-6} \\, \\text{cm}^{2}. Calculate (a) V_{bi} and (b) the junction capacitance at (i) V_{R} = 1 \\, V, (ii) V_{R} = 3 \\, V, and (iii) V_{R} = 5 \\, V. Show that the slope can be used to find N_{a} and the intercept at the voltage axis yields V_{s}."
+    },
+    {
+      "number": "7.31",
+      "text": "The total junction capacitance of a GaAs p-n junction at T = 300 \\, K is found to be 1.10 \\, pF at V_{R} = 1 \\, V. The doping concentration in one region is measured and found to be 8 \\times 10^{16} \\, \\text{cm}^{-3}, and the built-in potential is found to be V_{bi} = 1.20 \\, V. Determine (a) the doping in the other region of the pn junction and (b) the cross-sectional area. (c) The reverse-biased voltage is changed and the capacitance is found to be 0.80 \\, pF. What is the value of V_{R}?"
+    },
+    {
+      "number": "7.32",
+      "text": "Examine how the capacitance C' and the function (1/C^{2}) vary with reverse-biased voltage V_{R} as the doping concentrations change. In particular, consider these plots for N_{a} = 100 \\, N_{d} and N_{a} = 100 \\, N_{c}."
+    },
+    {
+      "number": "7.33",
+      "text": "An junction has the doping profile shown in Figure P7.33. Assume that x > x_{0} for all reverse-biased voltages. (a) What is the built-in potential across the junction? (b) For the abrupt junction approximation, sketch the charge density through the junction. (c) Derive the expression for the electric field through the space charge region."
+    },
+    {
+      "number": "7.34",
+      "text": "A silicon PIN junction has the doping profile shown in Figure P7.34. The 'I' corresponds to an ideal intrinsic region in which there is no impurity doping concentration. A reverse-biased voltage is applied to the PIN junction so that the total depletion width extends from -2 \\, \\mu m to +2 \\, \\mu m. (a) Using Poisson's equation, calculate the magnitude of the electric field at x = 0. (b) Sketch the electric field through the PIN junction. (c) Calculate the reverse-biased voltage that must be applied."
+    },
+    {
+      "number": "7.35",
+      "text": "Consider a silicon n'p junction diode. The critical electric field for breakdown in silicon is approximately E_{b} = 4 \\times 10^{6} \\, \\text{V/cm}. Determine the maximum p-type doping concentration such that the breakdown voltage is (a) 40 \\, V and (b) 20 \\, V."
+    },
+    {
+      "number": "7.36",
+      "text": "Design an abrupt silicon n'p junction diode that has a reverse breakdown voltage of 80 \\, V."
+    },
+    {
+      "number": "7.37",
+      "text": "(a) The n-type doping concentration in an abrupt p'n GaAs junction diode is N_{d} = 10^{16} \\, \\text{cm}^{-3}. Determine the breakdown voltage. (b) Repeat part (a) for N_{d} = 10^{15} \\, \\text{cm}^{-3}."
     }
   ],
   "answers": [
@@ -598,7 +750,30 @@
     272,
     273,
     274,
-    275
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298
   ],
-  "lastUpdated": "2026-05-08T21:30:52.369Z"
+  "lastUpdated": "2026-05-08T21:43:35.290Z"
 }

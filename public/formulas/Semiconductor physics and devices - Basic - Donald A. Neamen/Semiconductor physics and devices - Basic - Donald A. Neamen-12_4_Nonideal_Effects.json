@@ -1,0 +1,986 @@
+{
+  "chapter": "12.4 Nonideal Effects",
+  "section": "Example 12.8",
+  "questions": [
+    {
+      "number": "Objective",
+      "text": "Calculate the change in collector current with a change in neutral base width, and estimate the Early voltage.",
+      "formulas": []
+    },
+    {
+      "number": "12.10",
+      "text": "The metallurgical base width of a silicon npn bipolar transistor is x_{B} = 0.80 \\, \\mu m. The base and collector doping concentrations are N_{E} = 5 \\times 10^{16} \\, cm^{-3} and N_{C} = 2 \\times 10^{15} \\, cm^{-3}, respectively. (a) Determine the punch-through voltage. (b) What is the expected avalanche breakdown voltage?",
+      "formulas": [
+        {
+          "originalFormula": "A = q",
+          "genericFormula": "A = q",
+          "description": "Esta fórmula representa a relação entre a área A e a carga elétrica q. Em contextos de física, a carga elétrica pode ser distribuída sobre uma área, e essa fórmula pode ser usada para descrever essa distribuição em situações específicas.",
+          "concepts": [
+            "Carga elétrica",
+            "Área",
+            "Distribuição de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "A",
+              "description": "Representa a área sobre a qual a carga elétrica está distribuída."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a quantidade de carga elétrica, que pode ser positiva ou negativa."
+            }
+          ]
+        },
+        {
+          "originalFormula": "I_{CBO} = A (V) 'suv'",
+          "genericFormula": "I_{CBO} = A(V)",
+          "description": "Esta fórmula representa a corrente de fuga do coletor para a base em um transistor bipolar, que é uma medida da corrente que flui do coletor para a base quando a junção base-coletor está reversamente polarizada. A corrente de fuga é importante para entender o comportamento do transistor em condições de polarização inversa.",
+          "concepts": [
+            "Transistor bipolar",
+            "Corrente de fuga",
+            "Polarização reversa",
+            "Junções semicondutoras"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_{CBO}",
+              "description": "Representa a corrente de fuga do coletor para a base em um transistor bipolar."
+            },
+            {
+              "symbol": "A",
+              "description": "Representa uma constante que pode ser relacionada à área da junção ou a um fator de proporcionalidade específico do dispositivo."
+            },
+            {
+              "symbol": "V",
+              "description": "Representa a tensão aplicada entre o coletor e a base do transistor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "12.11",
+      "text": "Design a bipolar transistor to meet a breakdown voltage specification.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "Objective",
+      "text": "Assuming x_{b} \\ll L_{b}, the excess minority carrier electron concentration in the base can be approximated by Equation (12.15b). The collector current is |I_{C}| = e^{\\frac{D_{n}}{D_{n}}} \\frac{d}{dx}[\\delta n_{b}(x)] = \\frac{D_{n} n_{i}^{2}}{N_{b}} e^{\\frac{V_{BE}}{V_{T}}}",
+      "formulas": [
+        {
+          "originalFormula": "|I_{C}| = e^{\\frac{D_{n}}{D_{n}}} \\frac{d}{dx}[\\delta n_{b}(x)] = \\frac{D_{n} n_{i}^{2}}{N_{b}} e^{\\frac{V_{BE}}{V_{T}}}",
+          "genericFormula": "|I_{C}| = e^{\\frac{D_{n}}{D_{n}}} \\frac{d}{dx}[\\delta n_{b}(x)] = \\frac{D_{n} n_{i}^{2}}{N_{b}} e^{\\frac{V_{BE}}{V_{T}}}",
+          "description": "Não foi possível gerar descrição automática",
+          "concepts": [],
+          "symbols": [],
+          "rawText": "```json\n{\n  \"originalFormula\": \"|I_{C}| = e^{\\frac{D_{n}}{D_{n}}} \\frac{d}{dx}[\\delta n_{b}(x)] = \\frac{D_{n} n_{i}^{2}}{N_{b}} e^{\\frac{V_{BE}}{V_{T}}}\",\n  \"genericFormula\": \"|I_{C}| = e^{\\frac{D_{n}}{D_{n}}} \\frac{d}{dx}[\\delta n_{b}(x)] = \\frac{D_{n} n_{i}^{2}}{N_{b}} e^{\\frac{V_{BE}}{V_{T}}}\",\n  \"description\": \"Esta fórmula descreve a corrente de coletor em um transistor bipolar, que é influenciada pela difusão de portadores de carga e pela tensão aplicada entre a base e o emissor. A corrente de coletor é uma medida de quão bem o transistor pode amplificar um sinal elétrico.\",\n  \"concepts\": [\n    \"Transistores bipolares\",\n    \"Corrente elétrica\",\n    \"Difusão de portadores de carga\",\n    \"Tensão entre a base e o emissor\",\n    \"Equilíbrio de cargas em semicondutores\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"I_{C}\",\n      \"description\": \"Representa a corrente de coletor do transistor, que é a corrente que flui do coletor para o emissor.\"\n    },\n    {\n      \"symbol\": \"D_{n}\",\n      \"description\": \"É o coeficiente de difusão dos portadores de carga do tipo n, que indica a eficiência com que os elétrons se movem através do material semicondutor.\"\n    },\n    {\n      \"symbol\": \"d\",\n      \"description\": \"Representa a variável de posição, que indica a distância ao longo da qual a variação da densidade de portadores é considerada.\"\n    },\n    {\n      \"symbol\": \"x\",\n      \"description\": \"É a coordenada espacial ao longo do material semicondutor, onde a densidade de portadores está sendo analisada.\"\n    },\n    {\n      \"symbol\": \"δ n_{b}(x)\",\n      \"description\": \"Representa a variação na densidade de portadores de carga na região da base do transistor em função da posição x.\"\n    },\n    {\n      \"symbol\": \"n_{i}\",\n      \"description\": \"É a densidade intrínseca de portadores de carga no semicondutor, que é a quantidade de portadores gerados termicamente no material.\"\n    },\n    {\n      \"symbol\": \"N_{b}\",\n      \"description\": \"Representa a concentração de dopantes na base do transistor, que afeta a quantidade de portadores disponíveis.\"\n    },\n    {\n      \"symbol\": \"V_{BE}\",\n      \"description\": \"É a tensão entre a base e o emissor do transistor, que controla a operação do dispositivo e a quantidade de corrente que flui.\"\n    },\n    {\n      \"symbol\": \"V_{T}\",\n      \"description\": \"Representa a tensão térmica, que é uma constante relacionada à temperatura do semicondutor e afeta a corrente de portadores.\"\n    }\n  ]\n}\n```"
+        }
+      ]
+    },
+    {
+      "questionNumber": "12.10",
+      "text": "The punch-through voltage can be determined using the relevant equations, and the expected avalanche breakdown voltage can be calculated based on the given parameters.",
+      "formulas": []
+    },
+    {
+      "questionNumber": "12.11",
+      "text": "Consider a silicon bipolar transistor with a common-emitter current gain of \\beta = 100 and a base doping concentration of N_{e} = 10^{17} \\text{ cm}^{-3}. The minimum open-base breakdown voltage is to be 15 V.",
+      "formulas": [
+        {
+          "originalFormula": "B V_{C E0} = B V_{C B0} \\sqrt{1 - \\alpha}",
+          "genericFormula": "B V_{C E} = B V_{C B} \\sqrt{1 - \\alpha}",
+          "description": "Esta fórmula relaciona a tensão de coletor-emissor de um transistor bipolar com a tensão de coletor-base, levando em consideração um fator de correção que depende do parâmetro alfa, que é a razão de corrente do transistor. Essa relação é importante para entender como as tensões se comportam em circuitos que utilizam transistores.",
+          "concepts": [
+            "Transistor bipolar",
+            "Tensão de coletor-emissor",
+            "Tensão de coletor-base",
+            "Fator de correção alfa"
+          ],
+          "symbols": [
+            {
+              "symbol": "B V_{C E}",
+              "description": "Representa a tensão entre o coletor e o emissor do transistor."
+            },
+            {
+              "symbol": "B V_{C B}",
+              "description": "Representa a tensão entre o coletor e a base do transistor."
+            },
+            {
+              "symbol": "\\sqrt{1 - \\alpha}",
+              "description": "Representa a raiz quadrada de um fator que depende do parâmetro alfa, que é a razão de corrente do transistor, indicando a eficiência do transistor em conduzir corrente."
+            },
+            {
+              "symbol": "\\alpha",
+              "description": "É um parâmetro que representa a razão de corrente do transistor, indicando a fração da corrente que flui do coletor para a base em relação à corrente total que flui do coletor."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "g_{o} = \\frac{dI_{C}}{dV_{CE}} = \\frac{I_{C}}{V_{CE} + V_{A}} = \\frac{1}{r_{o}}",
+      "genericFormula": "g_{o} = \\frac{dI_{C}}{dV_{CE}} = \\frac{I_{C}}{V_{CE} + V_{A}} = \\frac{1}{r_{o}}",
+      "description": "Esta fórmula representa a transcondutância de um transistor, que é uma medida de quão bem o dispositivo pode controlar a corrente de saída em resposta a uma variação na tensão de entrada. A transcondutância é uma característica importante em circuitos eletrônicos, pois indica a eficiência do transistor em amplificar sinais.",
+      "concepts": [
+        "Transcondutância",
+        "Transistor",
+        "Corrente de Coletor",
+        "Tensão de Coletor-Emissor",
+        "Resistência de Saída"
+      ],
+      "symbols": [
+        {
+          "symbol": "g_{o}",
+          "description": "Representa a transcondutância do transistor, que indica a relação entre a variação da corrente de coletor e a variação da tensão de coletor-emissor."
+        },
+        {
+          "symbol": "dI_{C}",
+          "description": "Representa a variação na corrente de coletor, que é a corrente que flui através do terminal de coletor do transistor."
+        },
+        {
+          "symbol": "dV_{CE}",
+          "description": "Representa a variação na tensão entre o coletor e o emissor do transistor, que é a tensão aplicada entre esses dois terminais."
+        },
+        {
+          "symbol": "I_{C}",
+          "description": "Representa a corrente de coletor, que é a corrente principal que flui através do coletor do transistor."
+        },
+        {
+          "symbol": "V_{CE}",
+          "description": "Representa a tensão de coletor-emissor, que é a diferença de potencial entre o coletor e o emissor do transistor."
+        },
+        {
+          "symbol": "V_{A}",
+          "description": "Representa a tensão de Early, que é uma tensão que considera o efeito da modulação da largura da base em transistores bipolares."
+        },
+        {
+          "symbol": "r_{o}",
+          "description": "Representa a resistência de saída do transistor, que é a resistência vista pelo coletor quando a tensão de coletor-emissor é aplicada."
+        }
+      ]
+    },
+    {
+      "originalFormula": "I_{C} = g_{o}(V_{CE} + V_{A}) = \\frac{1}{r_{o}}(V_{CE} + V_{A})",
+      "genericFormula": "I_{C} = g_{o}(V_{CE} + V_{A}) = \\frac{1}{r_{o}}(V_{CE} + V_{A})",
+      "description": "Esta fórmula representa a corrente de coletor em um transistor, onde a corrente é proporcional à soma da tensão entre o coletor e o emissor e a tensão de saída. A relação mostra como a corrente de coletor é influenciada por essas tensões e pela resistência de saída do transistor.",
+      "concepts": [
+        "Corrente de coletor",
+        "Tensão entre coletor e emissor",
+        "Tensão de saída",
+        "Resistência de saída"
+      ],
+      "symbols": [
+        {
+          "symbol": "I_{C}",
+          "description": "Representa a corrente que flui do coletor do transistor."
+        },
+        {
+          "symbol": "g_{o}",
+          "description": "Representa a transcondutância, que é uma medida de quão bem o transistor pode controlar a corrente de saída em resposta a uma tensão de entrada."
+        },
+        {
+          "symbol": "V_{CE}",
+          "description": "Representa a tensão entre o coletor e o emissor do transistor."
+        },
+        {
+          "symbol": "V_{A}",
+          "description": "Representa a tensão de saída que afeta a corrente de coletor."
+        },
+        {
+          "symbol": "r_{o}",
+          "description": "Representa a resistência de saída do transistor, que está relacionada à sua capacidade de suportar variações na tensão."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\gamma = \\frac{1}{1 + \\frac{p_{n0} D_{e} L_{e}}{n_{i} D_{0} L_{b}} \\tanh \\left( \\frac{L_{e}}{L_{b}} \\right) \\tanh \\left( \\frac{L_{e}}{L_{b}} \\right)}",
+      "genericFormula": "\\gamma = \\frac{1}{1 + \\frac{p_{n} D_{e} L_{e}}{n_{i} D_{0} L_{b}} \\tanh \\left( \\frac{L_{e}}{L_{b}} \\right) \\tanh \\left( \\frac{L_{e}}{L_{b}} \\right)}",
+      "description": "Esta fórmula representa um fator de correção, chamado de gama, que é utilizado em contextos de transporte de portadores em semicondutores. Ele leva em consideração a relação entre diferentes parâmetros que influenciam a mobilidade e a difusão de portadores de carga em materiais semicondutores.",
+      "concepts": [
+        "Transporte de portadores em semicondutores",
+        "Difusão de portadores de carga",
+        "Mobilidade elétrica",
+        "Efeitos de comprimento de difusão"
+      ],
+      "symbols": [
+        {
+          "symbol": "γ",
+          "description": "Representa o fator de correção que quantifica a eficiência do transporte de portadores em um material semicondutor."
+        },
+        {
+          "symbol": "p_{n0}",
+          "description": "Representa a densidade de portadores de carga do tipo n em equilíbrio térmico."
+        },
+        {
+          "symbol": "D_{e}",
+          "description": "Representa o coeficiente de difusão dos portadores de carga do tipo n."
+        },
+        {
+          "symbol": "L_{e}",
+          "description": "Representa o comprimento de difusão dos portadores de carga do tipo n."
+        },
+        {
+          "symbol": "n_{i}",
+          "description": "Representa a densidade intrínseca de portadores de carga em um semicondutor."
+        },
+        {
+          "symbol": "D_{0}",
+          "description": "Representa o coeficiente de difusão dos portadores de carga do tipo p."
+        },
+        {
+          "symbol": "L_{b}",
+          "description": "Representa o comprimento de difusão dos portadores de carga do tipo p."
+        },
+        {
+          "symbol": "tanh",
+          "description": "Representa a função hiperbólica tangente, que é utilizada para descrever a relação entre os comprimentos de difusão e a eficiência do transporte."
+        }
+      ]
+    },
+    {
+      "originalFormula": "N_{C} = 8.38 \\times 10^{14} \\, cm^{-3}",
+      "genericFormula": "N_{C} = C \\times 10^{D} \\, cm^{-3}",
+      "description": "Esta fórmula representa a densidade de estados de condução em um semicondutor, que é uma medida de quantos estados eletrônicos estão disponíveis para os elétrons se moverem e contribuírem para a condução elétrica.",
+      "concepts": [
+        "Densidade de estados",
+        "Semicondutores",
+        "Condução elétrica"
+      ],
+      "symbols": [
+        {
+          "symbol": "N_{C}",
+          "description": "Representa a densidade de estados de condução, que indica quantos estados eletrônicos estão disponíveis para os elétrons em um semicondutor."
+        },
+        {
+          "symbol": "C",
+          "description": "Um coeficiente que representa a parte numérica da densidade de estados, que pode variar dependendo do material semicondutor em questão."
+        },
+        {
+          "symbol": "D",
+          "description": "Um expoente que indica a ordem de grandeza da densidade de estados, refletindo como a densidade muda em relação a potências de dez."
+        }
+      ]
+    },
+    {
+      "originalFormula": "x_{C} = x_{C} = 5.97 \\, \\mu m",
+      "genericFormula": "x_{C} = x_{C} = 5.97 \\, \\mu m",
+      "description": "Não foi possível gerar descrição automática",
+      "concepts": [],
+      "symbols": [],
+      "rawText": "```json\n{\n  \"originalFormula\": \"x_{C} = 5.97 \\, \\\\mu m\",\n  \"genericFormula\": \"x_{C} = x_{C}\",\n  \"description\": \"Esta fórmula representa uma medida de comprimento, onde 'x_C' é uma variável que indica uma posição ou uma dimensão específica em micrômetros. Neste caso, a fórmula indica que a posição ou dimensão é igual a 5.97 micrômetros.\",\n  \"concepts\": [\"medida de comprimento\", \"unidade de medida\", \"micrômetros\"],\n  \"symbols\": [\n    {\n      \"symbol\": \"x_{C}\",\n      \"description\": \"representa uma variável que indica uma posição ou dimensão específica em um sistema físico.\"\n    },\n    {\n      \"symbol\": \"\\\\mu m\",\n      \"description\": \"é uma unidade de medida que representa um micrômetro, equivalente a um milionésimo de metro.\"\n    }\n  ]\n}\n```"
+    },
+    {
+      "originalFormula": "\\alpha M = 1",
+      "genericFormula": "\\alpha M = 1",
+      "description": "Esta fórmula representa uma relação de proporcionalidade entre duas grandezas, onde o produto de uma constante, representada por alfa, e uma variável, representada por M, é igual a um. Essa relação é frequentemente utilizada em contextos onde se busca entender como uma variável se comporta em relação a uma constante.",
+      "concepts": [
+        "proporcionalidade",
+        "constantes físicas",
+        "variáveis"
+      ],
+      "symbols": [
+        {
+          "symbol": "α",
+          "description": "Representa uma constante que pode ser utilizada para descrever uma relação entre duas grandezas. Essa constante pode ter diferentes significados dependendo do contexto em que é aplicada."
+        },
+        {
+          "symbol": "M",
+          "description": "Representa uma variável que pode variar em um determinado contexto. Essa variável pode ser uma medida de massa, um parâmetro físico ou qualquer outra grandeza que se relacione com a constante alfa."
+        }
+      ]
+    },
+    {
+      "originalFormula": "1 - \\frac{B V_{C E0}}{B V_{C B0}} = 1",
+      "genericFormula": "1 - \\frac{B V_{C E}}{B V_{C B}} = 1",
+      "description": "Esta fórmula representa uma relação entre duas tensões em um circuito, onde a diferença entre a tensão coletor-emissor e a tensão coletor-base é analisada. A fórmula indica que a razão entre essas tensões, multiplicadas por um fator B, resulta em uma igualdade que é sempre verdadeira, sugerindo que a condição é sempre satisfeita sob certas circunstâncias.",
+      "concepts": [
+        "circuitos elétricos",
+        "tensões em transistores",
+        "análise de circuitos"
+      ],
+      "symbols": [
+        {
+          "symbol": "B",
+          "description": "Um fator que pode representar uma constante de proporcionalidade ou ganho em circuitos, frequentemente associado a transistores."
+        },
+        {
+          "symbol": "V_{C E}",
+          "description": "A tensão entre o coletor e o emissor de um transistor, que é uma medida importante para entender o funcionamento do dispositivo."
+        },
+        {
+          "symbol": "V_{C B}",
+          "description": "A tensão entre o coletor e a base de um transistor, que também é crucial para a operação e controle do transistor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "B V_{C E0} = B V_{C B0} \\sqrt{1 - \\alpha}",
+      "genericFormula": "B V_{C E} = B V_{C B} \\sqrt{1 - \\alpha}",
+      "description": "Esta fórmula relaciona a tensão de coletor-emissor de um transistor bipolar com a tensão de coletor-base, levando em consideração um fator de correção que depende do parâmetro alpha, que é a corrente de saída em relação à corrente de entrada.",
+      "concepts": [
+        "Transistor bipolar",
+        "Tensão de coletor-emissor",
+        "Tensão de coletor-base",
+        "Fator de correção alpha"
+      ],
+      "symbols": [
+        {
+          "symbol": "B V_{C E0}",
+          "description": "Representa a tensão entre o coletor e o emissor do transistor em uma condição inicial ou de referência."
+        },
+        {
+          "symbol": "B V_{C B0}",
+          "description": "Representa a tensão entre o coletor e a base do transistor em uma condição inicial ou de referência."
+        },
+        {
+          "symbol": "\\sqrt{1 - \\alpha}",
+          "description": "Representa a raiz quadrada de um fator que depende do parâmetro alpha, que é uma medida da eficiência do transistor em conduzir corrente."
+        },
+        {
+          "symbol": "B",
+          "description": "Representa um fator de proporcionalidade que pode estar relacionado à configuração do circuito ou ao tipo de transistor utilizado."
+        },
+        {
+          "symbol": "\\alpha",
+          "description": "Representa o coeficiente de corrente do transistor, que indica a fração da corrente de coletor que é influenciada pela corrente de base."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\beta = \\frac{\\alpha}{1 - \\alpha}",
+      "genericFormula": "\\beta = \\frac{\\alpha}{1 - \\alpha}",
+      "description": "Esta fórmula representa a relação entre duas variáveis, onde beta é uma função da variável alpha. Ela é frequentemente utilizada em contextos onde se analisa a proporção de um fenômeno em relação a um total, como em estatísticas ou modelos de probabilidade.",
+      "concepts": [
+        "Relações proporcionais",
+        "Modelagem estatística",
+        "Probabilidade"
+      ],
+      "symbols": [
+        {
+          "symbol": "β",
+          "description": "Representa uma variável dependente que é calculada a partir de outra variável, neste caso, alpha."
+        },
+        {
+          "symbol": "α",
+          "description": "Representa uma variável independente, que pode ser uma fração ou proporção de um total."
+        },
+        {
+          "symbol": "1 - α",
+          "description": "Representa a parte complementar da variável alpha, ou seja, a fração do total que não está incluída em alpha."
+        }
+      ]
+    },
+    {
+      "originalFormula": "1 - \\alpha \\approx \\frac{1}{\\beta}",
+      "genericFormula": "1 - \\alpha \\approx \\frac{1}{\\beta}",
+      "description": "Esta fórmula expressa uma relação aproximada entre duas variáveis, onde a diferença entre um valor constante e uma variável (alpha) é aproximadamente igual ao inverso de outra variável (beta). Essa relação pode ser útil em contextos onde se deseja entender como pequenas mudanças em uma variável podem afetar outra.",
+      "concepts": [
+        "Relações aproximadas",
+        "Variáveis independentes",
+        "Análise de sistemas físicos"
+      ],
+      "symbols": [
+        {
+          "symbol": "α",
+          "description": "Representa uma variável que pode ser uma fração ou proporção, frequentemente usada para indicar uma quantidade que está sendo medida ou considerada em relação a um total."
+        },
+        {
+          "symbol": "β",
+          "description": "Representa outra variável que está relacionada à primeira, e cujo inverso é considerado na análise, podendo indicar uma taxa ou um coeficiente em um sistema físico."
+        }
+      ]
+    },
+    {
+      "originalFormula": "B V_{C E0} = \\frac{B V_{C B0}}{\\sqrt{\\beta}}",
+      "genericFormula": "B V_{C E} = \\frac{B V_{C B}}{\\sqrt{\\beta}}",
+      "description": "Esta fórmula relaciona a tensão de coletor-emissor de um transistor bipolar com a tensão de coletor-base, levando em consideração o ganho de corrente do transistor. Ela mostra como a tensão de coletor-emissor é influenciada pela tensão de coletor-base e pelo fator de ganho do transistor.",
+      "concepts": [
+        "Transistor bipolar",
+        "Tensão elétrica",
+        "Ganho de corrente",
+        "Relação entre tensões"
+      ],
+      "symbols": [
+        {
+          "symbol": "B V_{C E0}",
+          "description": "Representa a tensão entre o coletor e o emissor do transistor em uma condição específica, onde o índice zero indica uma condição de referência ou inicial."
+        },
+        {
+          "symbol": "B V_{C B0}",
+          "description": "Representa a tensão entre o coletor e a base do transistor em uma condição específica, onde o índice zero também indica uma condição de referência ou inicial."
+        },
+        {
+          "symbol": "\\beta",
+          "description": "Representa o ganho de corrente do transistor, que é a razão entre a corrente de coletor e a corrente de base. Este valor é crucial para entender como o transistor amplifica sinais."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498,
+    499,
+    500,
+    501,
+    502,
+    503,
+    504,
+    505,
+    506,
+    507,
+    508,
+    509,
+    510,
+    511,
+    512,
+    513,
+    514,
+    515,
+    516,
+    517,
+    518,
+    519,
+    520,
+    521,
+    522,
+    523,
+    524,
+    525,
+    526,
+    527,
+    528,
+    529,
+    530,
+    531,
+    532,
+    533,
+    534,
+    535,
+    536,
+    537,
+    538,
+    539,
+    540,
+    541,
+    542,
+    543,
+    544,
+    545,
+    546,
+    547,
+    548,
+    549,
+    550,
+    551,
+    552,
+    553,
+    554,
+    555,
+    556,
+    557,
+    558,
+    559,
+    560
+  ],
+  "lastUpdated": "2026-05-08T23:03:11.423Z"
+}
