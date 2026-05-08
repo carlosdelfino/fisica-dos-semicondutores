@@ -41,7 +41,12 @@
               "symbol": "n",
               "description": "Representa o número quântico principal, que indica o nível de energia em que o elétron se encontra."
             }
-          ]
+          ],
+          "chapter": "2",
+          "section": "Introduction to Quantum Mechanics",
+          "source": "question",
+          "questionNumber": "Ex 2.6",
+          "page": 1
         }
       ]
     },
@@ -121,7 +126,12 @@
               "symbol": "\\hbar",
               "description": "Representa a constante de Planck reduzida, que é uma constante fundamental na mecânica quântica e relaciona a energia de uma partícula à sua frequência."
             }
-          ]
+          ],
+          "chapter": "2",
+          "section": "Introduction to Quantum Mechanics",
+          "source": "question",
+          "questionNumber": "*2.38",
+          "page": 9
         },
         {
           "originalFormula": "k_v = \\sqrt{\\frac{2m}{\\hbar^2}(E - V_0)}",
@@ -154,7 +164,12 @@
               "symbol": "V_0",
               "description": "Representa a energia potencial em uma determinada região do espaço onde a partícula está se movendo."
             }
-          ]
+          ],
+          "chapter": "2",
+          "section": "Introduction to Quantum Mechanics",
+          "source": "question",
+          "questionNumber": "*2.38",
+          "page": 17
         },
         {
           "originalFormula": "k_s = \\sqrt{\\frac{2m}{\\hbar^2}(E - V_s)}",
@@ -188,7 +203,12 @@
               "symbol": "V",
               "description": "Representa a energia potencial na região onde a partícula se encontra."
             }
-          ]
+          ],
+          "chapter": "2",
+          "section": "Introduction to Quantum Mechanics",
+          "source": "question",
+          "questionNumber": "*2.38",
+          "page": 25
         }
       ]
     },
@@ -243,7 +263,12 @@
               "symbol": "n",
               "description": "Representa o número quântico principal, que indica o nível de energia do elétron no átomo."
             }
-          ]
+          ],
+          "chapter": "2",
+          "section": "Introduction to Quantum Mechanics",
+          "source": "answer",
+          "questionNumber": "Ex 2.6",
+          "page": 33
         }
       ]
     }
@@ -272,7 +297,11 @@
           "symbol": "λ",
           "description": "Representa o comprimento de onda, que é a distância entre dois pontos consecutivos em uma onda, como cristas ou vales."
         }
-      ]
+      ],
+      "chapter": "2",
+      "section": "Introduction to Quantum Mechanics",
+      "source": "standalone",
+      "page": 41
     },
     {
       "originalFormula": "\\lambda = \\frac{h}{p}",
@@ -297,7 +326,11 @@
           "symbol": "p",
           "description": "Representa a quantidade de movimento de uma partícula, que é o produto da massa da partícula pela sua velocidade."
         }
-      ]
+      ],
+      "chapter": "2",
+      "section": "Introduction to Quantum Mechanics",
+      "source": "standalone",
+      "page": 49
     },
     {
       "originalFormula": "E_n = -\\frac{m e^4}{(4\\pi \\epsilon_0)^2 \\hbar^2 n^2}",
@@ -338,7 +371,11 @@
           "symbol": "4\\pi",
           "description": "É uma constante que aparece na fórmula devido à geometria da interação eletrostática em três dimensões."
         }
-      ]
+      ],
+      "chapter": "2",
+      "section": "Introduction to Quantum Mechanics",
+      "source": "standalone",
+      "page": 57
     },
     {
       "originalFormula": "s = \\frac{1}{2} \\text{ or } -\\frac{1}{2}",
@@ -354,7 +391,11 @@
           "symbol": "s",
           "description": "Representa uma grandeza que pode ser um deslocamento ou uma medida que pode assumir valores positivos ou negativos."
         }
-      ]
+      ],
+      "chapter": "2",
+      "section": "Introduction to Quantum Mechanics",
+      "source": "standalone",
+      "page": 65
     },
     {
       "originalFormula": "m = 0, \\, -1, \\, +1",
@@ -362,7 +403,11 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"m = 0, \\, -1, \\, +1\",\n  \"genericFormula\": \"m = 0, \\, -1, \\, +1\",\n  \"description\": \"Esta fórmula representa os possíveis valores do número quântico magnético, que descreve a orientação de um orbital atômico em um campo magnético. Os valores indicam diferentes orientações que um orbital pode ter em relação a um campo magnético aplicado.\",\n  \"concepts\": [\n    \"Número quântico magnético\",\n    \"Orientação de orbitais atômicos\",\n    \"Interação com campos magnéticos\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"m\",\n      \"description\": \"Representa o número quântico magnético, que determina a orientação de um orbital em um campo magnético.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"m = 0, \\, -1, \\, +1\",\n  \"genericFormula\": \"m = 0, \\, -1, \\, +1\",\n  \"description\": \"Esta fórmula representa os possíveis valores do número quântico magnético, que descreve a orientação de um orbital atômico em um campo magnético. Os valores indicam diferentes orientações que um orbital pode ter em relação a um campo magnético aplicado.\",\n  \"concepts\": [\n    \"Número quântico magnético\",\n    \"Orientação de orbitais atômicos\",\n    \"Interação com campos magnéticos\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"m\",\n      \"description\": \"Representa o número quântico magnético, que determina a orientação de um orbital em um campo magnético.\"\n    }\n  ]\n}",
+      "chapter": "2",
+      "section": "Introduction to Quantum Mechanics",
+      "source": "standalone",
+      "page": 73
     }
   ],
   "processedPages": [
@@ -448,5 +493,7 @@
     80,
     81
   ],
-  "lastUpdated": "2026-05-08T20:07:43.192Z"
+  "lastUpdated": "2026-05-08T18:19:12.938114",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
 }

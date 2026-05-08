@@ -40,7 +40,12 @@
               "symbol": "E",
               "description": "representa a energia do sistema ou da partícula em questão."
             }
-          ]
+          ],
+          "chapter": "3.4 Density of States Function",
+          "section": "N/A",
+          "source": "answer",
+          "questionNumber": "Objective",
+          "page": 1
         }
       ]
     }
@@ -81,7 +86,11 @@
           "symbol": "a",
           "description": "Representa um parâmetro que pode estar relacionado ao volume ou à dimensão do sistema em que as partículas estão sendo consideradas."
         }
-      ]
+      ],
+      "chapter": "3.4 Density of States Function",
+      "section": "N/A",
+      "source": "standalone",
+      "page": 17
     },
     {
       "originalFormula": "k^{2} = \\frac{2mE}{\\hbar^{2}}",
@@ -110,7 +119,11 @@
           "symbol": "\\hbar",
           "description": "Representa a constante de Planck reduzida, que é uma constante fundamental na mecânica quântica e relaciona a energia de uma partícula à sua frequência."
         }
-      ]
+      ],
+      "chapter": "3.4 Density of States Function",
+      "section": "N/A",
+      "source": "standalone",
+      "page": 33
     },
     {
       "originalFormula": "k = \\frac{1}{\\hbar} \\sqrt{2mE}",
@@ -139,7 +152,11 @@
           "symbol": "E",
           "description": "Representa a energia da partícula, que é a capacidade da partícula de realizar trabalho ou causar mudanças."
         }
-      ]
+      ],
+      "chapter": "3.4 Density of States Function",
+      "section": "N/A",
+      "source": "standalone",
+      "page": 49
     },
     {
       "originalFormula": "dk = \\frac{1}{\\hbar} \\sqrt{\\frac{m}{2E}} dE",
@@ -172,7 +189,11 @@
           "symbol": "dE",
           "description": "representa uma pequena variação na energia da partícula, que é utilizada para analisar como mudanças na energia afetam o vetor de onda."
         }
-      ]
+      ],
+      "chapter": "3.4 Density of States Function",
+      "section": "N/A",
+      "source": "standalone",
+      "page": 65
     },
     {
       "originalFormula": "g(E) dE = \\frac{m\\pi}{\\hbar^{2}} \\left( \\frac{2mE}{\\hbar^{2}} \\right)^{\\frac{1}{2}} \\cdot \\frac{1}{\\hbar} \\sqrt{m/2E} dE",
@@ -209,7 +230,11 @@
           "symbol": "\\pi",
           "description": "Uma constante matemática que representa a razão entre a circunferência de um círculo e seu diâmetro, frequentemente utilizada em fórmulas relacionadas a geometria e ondas."
         }
-      ]
+      ],
+      "chapter": "3.4 Density of States Function",
+      "section": "N/A",
+      "source": "standalone",
+      "page": 81
     },
     {
       "originalFormula": "g(E) = \\frac{4\\pi(2m)^{3/2}}{\\hbar^{3}} \\sqrt{E}",
@@ -242,7 +267,11 @@
           "symbol": "\\pi",
           "description": "Representa a constante matemática pi, que é a razão entre a circunferência de um círculo e seu diâmetro, frequentemente utilizada em fórmulas que envolvem geometria."
         }
-      ]
+      ],
+      "chapter": "3.4 Density of States Function",
+      "section": "N/A",
+      "source": "standalone",
+      "page": 97
     }
   ],
   "processedPages": [
@@ -359,5 +388,7 @@
     111,
     112
   ],
-  "lastUpdated": "2026-05-08T20:22:01.536Z"
+  "lastUpdated": "2026-05-08T18:19:13.010712",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
 }

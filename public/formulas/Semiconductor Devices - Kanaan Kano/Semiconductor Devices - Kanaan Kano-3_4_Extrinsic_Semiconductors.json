@@ -36,7 +36,11 @@
               "symbol": "h",
               "description": "Representa a constante de Planck, que é uma constante fundamental na mecânica quântica relacionada à quantização da energia."
             }
-          ]
+          ],
+          "chapter": "3.4 Extrinsic Semiconductors",
+          "source": "question",
+          "questionNumber": "N/A",
+          "page": 1
         }
       ]
     },
@@ -90,7 +94,10 @@
           "symbol": "h",
           "description": "Representa a constante de Planck, que é uma constante fundamental na mecânica quântica relacionada à quantização da energia."
         }
-      ]
+      ],
+      "chapter": "3.4 Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 250
     }
   ],
   "processedPages": [
@@ -593,5 +600,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.956Z"
+  "lastUpdated": "2026-05-08T18:19:13.874958",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

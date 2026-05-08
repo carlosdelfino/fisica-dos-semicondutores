@@ -54,7 +54,12 @@
               "symbol": "S_{61}",
               "description": "Representa um termo específico que pode estar relacionado a uma função ou constante particular do sistema."
             }
-          ]
+          ],
+          "chapter": "4.3 The Extrinsic Semiconductor",
+          "section": "4.3.1 Equilibrium Distribution of Electrons and Holes",
+          "source": "question",
+          "questionNumber": "TYU 4.7 (a)",
+          "page": 1
         }
       ]
     },
@@ -109,7 +114,11 @@
           "symbol": "S_{61}",
           "description": "Representa um termo que pode estar relacionado a uma função ou um fator específico no contexto do sistema."
         }
-      ]
+      ],
+      "chapter": "4.3 The Extrinsic Semiconductor",
+      "section": "4.3.1 Equilibrium Distribution of Electrons and Holes",
+      "source": "standalone",
+      "page": 75
     }
   ],
   "processedPages": [
@@ -262,5 +271,7 @@
     147,
     148
   ],
-  "lastUpdated": "2026-05-08T20:37:21.366Z"
+  "lastUpdated": "2026-05-08T18:19:13.041369",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
 }

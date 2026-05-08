@@ -35,7 +35,11 @@
               "symbol": "\\epsilon",
               "description": "Representa a permissividade elétrica do material, que é uma medida de como o material responde a um campo elétrico aplicado."
             }
-          ]
+          ],
+          "chapter": "11",
+          "source": "question",
+          "questionNumber": "a",
+          "page": 1
         }
       ]
     },
@@ -66,7 +70,11 @@
               "symbol": "V_{p}",
               "description": "Representa a tensão de polarização aplicada externamente ao diodo."
             }
-          ]
+          ],
+          "chapter": "11",
+          "source": "question",
+          "questionNumber": "b",
+          "page": 24
         }
       ]
     },
@@ -244,7 +252,11 @@
               "symbol": "G",
               "description": "Um fator que pode representar uma constante física, como a permissividade do vácuo, que é uma medida de como um campo elétrico se comporta em um meio."
             }
-          ]
+          ],
+          "chapter": "11",
+          "source": "answer",
+          "questionNumber": "a",
+          "page": 48
         }
       ]
     },
@@ -274,7 +286,11 @@
               "symbol": "V_{p}",
               "description": "Representa a tensão de polarização aplicada ao dispositivo, que pode influenciar o funcionamento do semicondutor."
             }
-          ]
+          ],
+          "chapter": "11",
+          "source": "answer",
+          "questionNumber": "b",
+          "page": 72
         }
       ]
     },
@@ -323,7 +339,11 @@
               "symbol": "V_{G}",
               "description": "É a tensão aplicada à porta do dispositivo, que controla a corrente que flui através do dreno."
             }
-          ]
+          ],
+          "chapter": "11",
+          "source": "answer",
+          "questionNumber": "d",
+          "page": 95
         }
       ]
     }
@@ -356,7 +376,10 @@
           "symbol": "\\chi",
           "description": "Representa a energia de afinidade do semicondutor, que é a energia necessária para remover um elétron de um átomo ou molécula do material."
         }
-      ]
+      ],
+      "chapter": "11",
+      "source": "standalone",
+      "page": 119
     },
     {
       "originalFormula": "qV_{bi} = q(\\Phi_m - \\Phi_s)",
@@ -385,7 +408,10 @@
           "symbol": "\\Phi_s",
           "description": "Representa a função de trabalho do semicondutor, que é a energia necessária para remover um elétron da superfície do semicondutor."
         }
-      ]
+      ],
+      "chapter": "11",
+      "source": "standalone",
+      "page": 143
     },
     {
       "originalFormula": "V_{bi} = \\Phi_B - \\Phi_D \\ (11.3)",
@@ -410,7 +436,10 @@
           "symbol": "\\Phi_D",
           "description": "Representa a energia de afinidade do semicondutor do tipo N, que é a energia necessária para remover um elétron da superfície do material do tipo N para o nível de energia do vácuo."
         }
-      ]
+      ],
+      "chapter": "11",
+      "source": "standalone",
+      "page": 167
     },
     {
       "originalFormula": "RC",
@@ -431,7 +460,10 @@
           "symbol": "C",
           "description": "Representa a capacitância, que é a capacidade de um componente, como um capacitor, de armazenar carga elétrica."
         }
-      ]
+      ],
+      "chapter": "11",
+      "source": "standalone",
+      "page": 190
     },
     {
       "originalFormula": "C_j",
@@ -448,7 +480,10 @@
           "symbol": "C_j",
           "description": "Representa a capacitância de um capacitor específico, onde 'j' pode indicar um tipo ou estado particular do capacitor."
         }
-      ]
+      ],
+      "chapter": "11",
+      "source": "standalone",
+      "page": 214
     },
     {
       "originalFormula": "q \\Phi_B",
@@ -468,7 +503,10 @@
           "symbol": "\\Phi_B",
           "description": "Representa o potencial elétrico em um ponto específico no espaço, que indica a quantidade de energia potencial elétrica por unidade de carga que uma carga de teste teria nesse ponto."
         }
-      ]
+      ],
+      "chapter": "11",
+      "source": "standalone",
+      "page": 238
     },
     {
       "originalFormula": "N_{d} = 10^{12} \\, \\text{cm}^{-3}",
@@ -476,7 +514,10 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"N_{d} = 10^{12} \\, \\text{cm}^{-3}\",\n  \"genericFormula\": \"N_{d} = N_{d\\_0} \\, \\text{cm}^{-3}\",\n  \"description\": \"Esta fórmula representa a densidade de dopantes do tipo doador em um semicondutor, que é a quantidade de átomos doadores por centímetro cúbico no material. O valor específico indica que há uma quantidade muito alta de dopantes, o que pode influenciar as propriedades elétricas do semicondutor.\",\n  \"concepts\": [\n    \"Dopagem de semicondutores\",\n    \"Densidade de portadores de carga\",\n    \"Propriedades elétricas de materiais\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"N_{d}\",\n      \"description\": \"Representa a densidade de dopantes do tipo doador em um semicondutor, medida em átomos por centímetro cúbico.\"\n    },\n    {\n      \"symbol\": \"10^{12}\",\n      \"description\": \"Um valor numérico que indica a quantidade de dopantes por centímetro cúbico, neste caso, um número muito alto.\"\n    },\n    {\n      \"symbol\": \"cm^{-3}\",\n      \"description\": \"Uma unidade de medida que indica a quantidade de átomos em um volume de um centímetro cúbico.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"N_{d} = 10^{12} \\, \\text{cm}^{-3}\",\n  \"genericFormula\": \"N_{d} = N_{d\\_0} \\, \\text{cm}^{-3}\",\n  \"description\": \"Esta fórmula representa a densidade de dopantes do tipo doador em um semicondutor, que é a quantidade de átomos doadores por centímetro cúbico no material. O valor específico indica que há uma quantidade muito alta de dopantes, o que pode influenciar as propriedades elétricas do semicondutor.\",\n  \"concepts\": [\n    \"Dopagem de semicondutores\",\n    \"Densidade de portadores de carga\",\n    \"Propriedades elétricas de materiais\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"N_{d}\",\n      \"description\": \"Representa a densidade de dopantes do tipo doador em um semicondutor, medida em átomos por centímetro cúbico.\"\n    },\n    {\n      \"symbol\": \"10^{12}\",\n      \"description\": \"Um valor numérico que indica a quantidade de dopantes por centímetro cúbico, neste caso, um número muito alto.\"\n    },\n    {\n      \"symbol\": \"cm^{-3}\",\n      \"description\": \"Uma unidade de medida que indica a quantidade de átomos em um volume de um centímetro cúbico.\"\n    }\n  ]\n}",
+      "chapter": "11",
+      "source": "standalone",
+      "page": 261
     },
     {
       "originalFormula": "N_{d} = 10^{15} \\, \\text{cm}^{-3}",
@@ -484,7 +525,10 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"N_{d} = 10^{15} \\, \\\\text{cm}^{-3}\",\n  \"genericFormula\": \"N_{d} = C \\, \\\\text{cm}^{-3}\",\n  \"description\": \"Esta fórmula representa a densidade de dopantes do tipo doador em um material semicondutor, que é uma medida de quantos átomos de dopante estão presentes por centímetro cúbico no material.\",\n  \"concepts\": [\n    \"Dopagem em semicondutores\",\n    \"Densidade de portadores de carga\",\n    \"Semicondutores do tipo n\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"N_{d}\",\n      \"description\": \"Representa a densidade de dopantes do tipo doador, que são átomos adicionados ao semicondutor para aumentar a quantidade de portadores de carga positivos.\"\n    },\n    {\n      \"symbol\": \"C\",\n      \"description\": \"Representa uma constante que indica a densidade de dopantes em unidades de átomos por centímetro cúbico.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"N_{d} = 10^{15} \\, \\\\text{cm}^{-3}\",\n  \"genericFormula\": \"N_{d} = C \\, \\\\text{cm}^{-3}\",\n  \"description\": \"Esta fórmula representa a densidade de dopantes do tipo doador em um material semicondutor, que é uma medida de quantos átomos de dopante estão presentes por centímetro cúbico no material.\",\n  \"concepts\": [\n    \"Dopagem em semicondutores\",\n    \"Densidade de portadores de carga\",\n    \"Semicondutores do tipo n\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"N_{d}\",\n      \"description\": \"Representa a densidade de dopantes do tipo doador, que são átomos adicionados ao semicondutor para aumentar a quantidade de portadores de carga positivos.\"\n    },\n    {\n      \"symbol\": \"C\",\n      \"description\": \"Representa uma constante que indica a densidade de dopantes em unidades de átomos por centímetro cúbico.\"\n    }\n  ]\n}",
+      "chapter": "11",
+      "source": "standalone",
+      "page": 285
     },
     {
       "originalFormula": "T_{anneal} = 850^{\\circ}C",
@@ -504,7 +548,10 @@
           "symbol": "T_{valor}",
           "description": "Representa um valor genérico de temperatura que pode ser ajustado conforme necessário para diferentes processos."
         }
-      ]
+      ],
+      "chapter": "11",
+      "source": "standalone",
+      "page": 309
     },
     {
       "originalFormula": "T_{GaAs} = 600^{\\circ}C",
@@ -512,7 +559,10 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"T_{GaAs} = 600^{\\\\circ}C\",\n  \"genericFormula\": \"T_{GaAs} = T_{0}\",\n  \"description\": \"Esta fórmula representa a temperatura de um material semicondutor específico, que neste caso é o arseneto de gálio (GaAs). A temperatura é um fator crucial que influencia as propriedades elétricas e ópticas do material.\",\n  \"concepts\": [\n    \"Temperatura\",\n    \"Propriedades dos semicondutores\",\n    \"Efeito da temperatura nas características elétricas\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"T_{GaAs}\",\n      \"description\": \"Representa a temperatura do arseneto de gálio, um material semicondutor com propriedades específicas que dependem da temperatura.\"\n    },\n    {\n      \"symbol\": \"600^{\\circ}C\",\n      \"description\": \"Refere-se a um valor específico de temperatura, que neste caso é 600 graus Celsius, uma condição que pode afetar o desempenho do material.\"\n    },\n    {\n      \"symbol\": \"T_{0}\",\n      \"description\": \"Representa uma temperatura genérica, que pode ser ajustada conforme o contexto ou o experimento em questão.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"T_{GaAs} = 600^{\\\\circ}C\",\n  \"genericFormula\": \"T_{GaAs} = T_{0}\",\n  \"description\": \"Esta fórmula representa a temperatura de um material semicondutor específico, que neste caso é o arseneto de gálio (GaAs). A temperatura é um fator crucial que influencia as propriedades elétricas e ópticas do material.\",\n  \"concepts\": [\n    \"Temperatura\",\n    \"Propriedades dos semicondutores\",\n    \"Efeito da temperatura nas características elétricas\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"T_{GaAs}\",\n      \"description\": \"Representa a temperatura do arseneto de gálio, um material semicondutor com propriedades específicas que dependem da temperatura.\"\n    },\n    {\n      \"symbol\": \"600^{\\circ}C\",\n      \"description\": \"Refere-se a um valor específico de temperatura, que neste caso é 600 graus Celsius, uma condição que pode afetar o desempenho do material.\"\n    },\n    {\n      \"symbol\": \"T_{0}\",\n      \"description\": \"Representa uma temperatura genérica, que pode ser ajustada conforme o contexto ou o experimento em questão.\"\n    }\n  ]\n}",
+      "chapter": "11",
+      "source": "standalone",
+      "page": 333
     },
     {
       "originalFormula": "T_{GaAs \\, melt} = 1238^{\\circ}C",
@@ -520,7 +570,10 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"T_{GaAs \\, melt} = 1238^{\\\\circ}C\",\n  \"genericFormula\": \"T_{GaAs \\, melt} = T_{melt}\",\n  \"description\": \"Esta fórmula representa a temperatura de fusão do arseneto de gálio (GaAs), que é um material semicondutor amplamente utilizado em dispositivos eletrônicos e optoeletrônicos. A temperatura de fusão é o ponto em que o material passa do estado sólido para o estado líquido.\",\n  \"concepts\": [\n    \"Temperatura de fusão\",\n    \"Propriedades dos semicondutores\",\n    \"Mudança de fase\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"T_{GaAs \\, melt}\",\n      \"description\": \"Representa a temperatura de fusão do arseneto de gálio, que é a temperatura em que o material se transforma de sólido para líquido.\"\n    },\n    {\n      \"symbol\": \"T_{melt}\",\n      \"description\": \"Representa a temperatura de fusão genérica de um material, que é o ponto de transição entre os estados sólido e líquido.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"T_{GaAs \\, melt} = 1238^{\\\\circ}C\",\n  \"genericFormula\": \"T_{GaAs \\, melt} = T_{melt}\",\n  \"description\": \"Esta fórmula representa a temperatura de fusão do arseneto de gálio (GaAs), que é um material semicondutor amplamente utilizado em dispositivos eletrônicos e optoeletrônicos. A temperatura de fusão é o ponto em que o material passa do estado sólido para o estado líquido.\",\n  \"concepts\": [\n    \"Temperatura de fusão\",\n    \"Propriedades dos semicondutores\",\n    \"Mudança de fase\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"T_{GaAs \\, melt}\",\n      \"description\": \"Representa a temperatura de fusão do arseneto de gálio, que é a temperatura em que o material se transforma de sólido para líquido.\"\n    },\n    {\n      \"symbol\": \"T_{melt}\",\n      \"description\": \"Representa a temperatura de fusão genérica de um material, que é o ponto de transição entre os estados sólido e líquido.\"\n    }\n  ]\n}",
+      "chapter": "11",
+      "source": "standalone",
+      "page": 356
     },
     {
       "originalFormula": "T_{anneal} = 400^{\\circ}C",
@@ -540,7 +593,10 @@
           "symbol": "T",
           "description": "Representa uma temperatura genérica, que pode variar dependendo do contexto do processo."
         }
-      ]
+      ],
+      "chapter": "11",
+      "source": "standalone",
+      "page": 380
     },
     {
       "originalFormula": "W = \\sqrt{\\frac{2e}{qN_d} (V_{bi} - V_a)}",
@@ -577,7 +633,10 @@
           "symbol": "V_a",
           "description": "Representa a tensão aplicada externamente ao semicondutor, que pode influenciar a largura da região de depleção."
         }
-      ]
+      ],
+      "chapter": "11",
+      "source": "standalone",
+      "page": 404
     },
     {
       "originalFormula": "V_{pinchoff} = V_{G} - V_{a} - V_{bi}",
@@ -606,7 +665,10 @@
           "symbol": "V_{bi}",
           "description": "Representa a tensão de potencial interno, que é a tensão necessária para criar uma barreira de potencial no dispositivo."
         }
-      ]
+      ],
+      "chapter": "11",
+      "source": "standalone",
+      "page": 427
     },
     {
       "originalFormula": "q(V_{bi} - V_G) = qV_P",
@@ -636,7 +698,10 @@
           "symbol": "V_P",
           "description": "Representa a tensão de polarização, que é a tensão necessária para permitir que a corrente flua através do semicondutor."
         }
-      ]
+      ],
+      "chapter": "11",
+      "source": "standalone",
+      "page": 451
     },
     {
       "originalFormula": "I_{SAT} = G_{0} \\left[ V_{p} - V_{bi} + V_{G} - \\frac{2V_{p}}{3} + \\frac{2V_{p}}{3} \\left( \\frac{V_{bi} - V_{G}}{V_{p}} \\right)^{3/2} \\right]",
@@ -669,7 +734,10 @@
           "symbol": "V_{G}",
           "description": "É a tensão aplicada ao terminal de gate do dispositivo, que influencia a corrente de saturação e o comportamento do semicondutor."
         }
-      ]
+      ],
+      "chapter": "11",
+      "source": "standalone",
+      "page": 475
     }
   ],
   "processedPages": [
@@ -1172,5 +1240,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.875Z"
+  "lastUpdated": "2026-05-08T18:19:13.364133",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

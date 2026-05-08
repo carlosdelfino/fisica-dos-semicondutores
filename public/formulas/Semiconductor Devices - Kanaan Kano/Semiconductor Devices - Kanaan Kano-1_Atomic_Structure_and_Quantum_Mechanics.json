@@ -71,7 +71,11 @@
               "symbol": "f",
               "description": "o resultado final da equação, que é o total após realizar todas as operações."
             }
-          ]
+          ],
+          "chapter": "1 Atomic Structure and Quantum Mechanics",
+          "source": "answer",
+          "questionNumber": "1.1a",
+          "page": 1
         }
       ]
     },
@@ -587,5 +591,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.914Z"
+  "lastUpdated": "2026-05-08T18:19:13.926465",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

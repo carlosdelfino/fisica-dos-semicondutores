@@ -27,7 +27,11 @@
           "symbol": "v_i",
           "description": "Representa a velocidade de cada portador de carga, onde 'i' indica que pode haver múltiplos portadores contribuindo para a corrente."
         }
-      ]
+      ],
+      "chapter": "3.2 Electrical Conduction in Solids",
+      "section": "Not specified",
+      "source": "standalone",
+      "page": 1
     },
     {
       "originalFormula": "F_{total} = F_{ext} + F_{int} = ma",
@@ -62,7 +66,11 @@
           "symbol": "a",
           "description": "Representa a aceleração do objeto, que é a taxa de variação da velocidade do objeto em relação ao tempo."
         }
-      ]
+      ],
+      "chapter": "3.2 Electrical Conduction in Solids",
+      "section": "Not specified",
+      "source": "standalone",
+      "page": 22
     },
     {
       "originalFormula": "F_{ext} = m^{*}a",
@@ -87,7 +95,11 @@
           "symbol": "a",
           "description": "Representa a aceleração do objeto. É a taxa de variação da velocidade do objeto em relação ao tempo, indicando como a velocidade do objeto muda quando uma força é aplicada."
         }
-      ]
+      ],
+      "chapter": "3.2 Electrical Conduction in Solids",
+      "section": "Not specified",
+      "source": "standalone",
+      "page": 43
     },
     {
       "originalFormula": "E_g = 3.5 \\text{ to } 6.0 \\text{ eV}",
@@ -104,7 +116,11 @@
           "symbol": "E_g",
           "description": "Representa a energia de bandgap, que é a diferença de energia entre a banda de valência e a banda de condução em um material semicondutor."
         }
-      ]
+      ],
+      "chapter": "3.2 Electrical Conduction in Solids",
+      "section": "Not specified",
+      "source": "standalone",
+      "page": 64
     },
     {
       "originalFormula": "E_g \\approx 1 \\text{ eV}",
@@ -126,7 +142,11 @@
           "symbol": "eV",
           "description": "Representa o elétron-volt, que é uma unidade de medida de energia utilizada frequentemente em física de semicondutores, equivalente à energia adquirida por um elétron ao ser acelerado por uma diferença de potencial de um volt."
         }
-      ]
+      ],
+      "chapter": "3.2 Electrical Conduction in Solids",
+      "section": "Not specified",
+      "source": "standalone",
+      "page": 85
     }
   ],
   "processedPages": [
@@ -237,5 +257,7 @@
     105,
     106
   ],
-  "lastUpdated": "2026-05-08T20:19:20.954Z"
+  "lastUpdated": "2026-05-08T18:19:12.917899",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
 }

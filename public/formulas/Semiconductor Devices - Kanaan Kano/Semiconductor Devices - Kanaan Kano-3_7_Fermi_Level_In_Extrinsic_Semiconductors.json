@@ -41,7 +41,11 @@
               "symbol": "n_{i}",
               "description": "Representa a concentração de portadores intrínsecos, que são os elétrons e lacunas gerados termicamente em um semicondutor puro."
             }
-          ]
+          ],
+          "chapter": "3.7 Fermi Level In Extrinsic Semiconductors",
+          "source": "question",
+          "questionNumber": "(a)",
+          "page": 1
         },
         {
           "originalFormula": "E_{i} = \\frac{E_{c} + E_{v}}{2} - 0.0073 \\text{ eV}",
@@ -70,7 +74,11 @@
               "symbol": "E_{0}",
               "description": "Representa uma energia de correção ou um valor constante que ajusta o nível de energia intrínseca em relação às energias de condução e valência."
             }
-          ]
+          ],
+          "chapter": "3.7 Fermi Level In Extrinsic Semiconductors",
+          "source": "question",
+          "questionNumber": "(a)",
+          "page": 34
         },
         {
           "originalFormula": "E_{F} = E_{i} + 0.358 \\text{ eV}",
@@ -99,7 +107,11 @@
               "symbol": "\\Delta E",
               "description": "Representa a diferença de energia entre dois níveis, neste caso, entre o nível de Fermi e o nível interno."
             }
-          ]
+          ],
+          "chapter": "3.7 Fermi Level In Extrinsic Semiconductors",
+          "source": "question",
+          "questionNumber": "(a)",
+          "page": 67
         }
       ]
     },
@@ -139,7 +151,11 @@
               "symbol": "N_{2}",
               "description": "Representa a concentração de portadores de carga em outra condição ou estado, que pode ser a concentração de portadores em um semicondutor não dopado ou em equilíbrio."
             }
-          ]
+          ],
+          "chapter": "3.7 Fermi Level In Extrinsic Semiconductors",
+          "source": "question",
+          "questionNumber": "(b)",
+          "page": 100
         },
         {
           "originalFormula": "E_{F} - E_{v} = 0.255 \\text{ eV}",
@@ -164,7 +180,11 @@
               "symbol": "E_{g}",
               "description": "Representa a energia de bandgap, que é a diferença de energia entre o nível de Fermi e o nível de valência, indicando a quantidade de energia necessária para mover um elétron do nível de valência para a banda de condução."
             }
-          ]
+          ],
+          "chapter": "3.7 Fermi Level In Extrinsic Semiconductors",
+          "source": "question",
+          "questionNumber": "(b)",
+          "page": 133
         }
       ]
     },
@@ -194,7 +214,11 @@
               "symbol": "x",
               "description": "Representa um expoente que indica a potência de dez que multiplica a densidade de portadores intrínsecos, refletindo a ordem de grandeza desse valor."
             }
-          ]
+          ],
+          "chapter": "3.7 Fermi Level In Extrinsic Semiconductors",
+          "source": "question",
+          "questionNumber": "(c)",
+          "page": 167
         },
         {
           "originalFormula": "E_{F} - E_{i} = 0.05166 \\ln \\frac{3.337 \\times 10^{15}}{1.2 \\times 10^{16}}",
@@ -227,7 +251,11 @@
               "symbol": "N_{2}",
               "description": "Representa a concentração de portadores de carga em outra condição, como a concentração de portadores em um semicondutor puro."
             }
-          ]
+          ],
+          "chapter": "3.7 Fermi Level In Extrinsic Semiconductors",
+          "source": "question",
+          "questionNumber": "(c)",
+          "page": 200
         }
       ]
     },
@@ -267,7 +295,11 @@
               "symbol": "N_{i}",
               "description": "Representa a concentração de portadores intrínsecos no semicondutor, que é a quantidade de portadores de carga que existem naturalmente no material."
             }
-          ]
+          ],
+          "chapter": "3.7 Fermi Level In Extrinsic Semiconductors",
+          "source": "question",
+          "questionNumber": "(d)",
+          "page": 233
         }
       ]
     }
@@ -300,7 +332,11 @@
               "symbol": "E_{d}",
               "description": "Representa a energia de ativação, que é a quantidade de energia necessária para mover um elétron da banda de valência para a banda de condução."
             }
-          ]
+          ],
+          "chapter": "3.7 Fermi Level In Extrinsic Semiconductors",
+          "source": "answer",
+          "questionNumber": "(a)",
+          "page": 266
         }
       ]
     },
@@ -335,7 +371,11 @@
               "symbol": "E_{0}",
               "description": "Representa uma quantidade genérica de energia que pode ser adicionada à energia do nível de valência para encontrar a energia do nível de Fermi."
             }
-          ]
+          ],
+          "chapter": "3.7 Fermi Level In Extrinsic Semiconductors",
+          "source": "answer",
+          "questionNumber": "(b)",
+          "page": 299
         }
       ]
     },
@@ -370,7 +410,11 @@
               "symbol": "k",
               "description": "Representa uma constante genérica que pode variar dependendo do contexto, mas aqui refere-se à energia de ativação que é adicionada à energia intrínseca."
             }
-          ]
+          ],
+          "chapter": "3.7 Fermi Level In Extrinsic Semiconductors",
+          "source": "answer",
+          "questionNumber": "(c)",
+          "page": 333
         }
       ]
     },
@@ -401,7 +445,11 @@
               "symbol": "E_{0}",
               "description": "Representa uma energia específica, que neste caso é a diferença de energia entre o nível de Fermi e a borda da banda de condução, expressa em electronvolts."
             }
-          ]
+          ],
+          "chapter": "3.7 Fermi Level In Extrinsic Semiconductors",
+          "source": "answer",
+          "questionNumber": "(d)",
+          "page": 366
         }
       ]
     }
@@ -443,7 +491,10 @@
           "symbol": "ln",
           "description": "Representa o logaritmo natural, que é uma função matemática que indica a potência à qual a base 'e' deve ser elevada para obter um determinado número."
         }
-      ]
+      ],
+      "chapter": "3.7 Fermi Level In Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 399
     },
     {
       "originalFormula": "E_{i} = \\frac{E_{c} + E_{v}}{2}",
@@ -469,7 +520,10 @@
           "symbol": "E_{v}",
           "description": "Representa a energia da banda de valência, que é a faixa de energia onde os elétrons estão ligados aos átomos e não podem se mover livremente."
         }
-      ]
+      ],
+      "chapter": "3.7 Fermi Level In Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 432
     },
     {
       "originalFormula": "E_{F} = E_{c} - 0.209 eV + E_{v} + 0.9107 eV",
@@ -477,7 +531,10 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"E_{F} = E_{c} - 0.209 \\, \\\\text{eV} + E_{v} + 0.9107 \\, \\\\text{eV}\",\n  \"genericFormula\": \"E_{F} = E_{c} + E_{v} + C\",\n  \"description\": \"Esta fórmula representa a energia do nível de Fermi em um material semicondutor, que é a energia máxima que os elétrons podem ter a temperaturas absolutas próximas do zero. A fórmula mostra como essa energia é influenciada pelas energias de condução e de valência, além de um termo constante.\",\n  \"concepts\": [\n    \"Nível de Fermi\",\n    \"Energia de condução\",\n    \"Energia de valência\",\n    \"Energia em semicondutores\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"E_{F}\",\n      \"description\": \"Representa a energia do nível de Fermi, que é a energia máxima ocupada por elétrons em um material a temperatura zero.\"\n    },\n    {\n      \"symbol\": \"E_{c}\",\n      \"description\": \"Representa a energia da banda de condução, que é o nível de energia onde os elétrons podem se mover livremente e conduzir eletricidade.\"\n    },\n    {\n      \"symbol\": \"E_{v}\",\n      \"description\": \"Representa a energia da banda de valência, que é o nível de energia onde os elétrons estão ligados aos átomos e não podem conduzir eletricidade.\"\n    },\n    {\n      \"symbol\": \"C\",\n      \"description\": \"Representa um termo constante que pode incluir correções ou ajustes na energia, como a diferença de energia em relação a um ponto de referência.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"E_{F} = E_{c} - 0.209 \\, \\\\text{eV} + E_{v} + 0.9107 \\, \\\\text{eV}\",\n  \"genericFormula\": \"E_{F} = E_{c} + E_{v} + C\",\n  \"description\": \"Esta fórmula representa a energia do nível de Fermi em um material semicondutor, que é a energia máxima que os elétrons podem ter a temperaturas absolutas próximas do zero. A fórmula mostra como essa energia é influenciada pelas energias de condução e de valência, além de um termo constante.\",\n  \"concepts\": [\n    \"Nível de Fermi\",\n    \"Energia de condução\",\n    \"Energia de valência\",\n    \"Energia em semicondutores\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"E_{F}\",\n      \"description\": \"Representa a energia do nível de Fermi, que é a energia máxima ocupada por elétrons em um material a temperatura zero.\"\n    },\n    {\n      \"symbol\": \"E_{c}\",\n      \"description\": \"Representa a energia da banda de condução, que é o nível de energia onde os elétrons podem se mover livremente e conduzir eletricidade.\"\n    },\n    {\n      \"symbol\": \"E_{v}\",\n      \"description\": \"Representa a energia da banda de valência, que é o nível de energia onde os elétrons estão ligados aos átomos e não podem conduzir eletricidade.\"\n    },\n    {\n      \"symbol\": \"C\",\n      \"description\": \"Representa um termo constante que pode incluir correções ou ajustes na energia, como a diferença de energia em relação a um ponto de referência.\"\n    }\n  ]\n}",
+      "chapter": "3.7 Fermi Level In Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 465
     }
   ],
   "processedPages": [
@@ -980,5 +1037,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.962Z"
+  "lastUpdated": "2026-05-08T18:19:13.930700",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

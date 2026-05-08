@@ -71,6 +71,111 @@
       "number": "3.19",
       "text": "The E versus k diagrams for a free electron (curve A) and for an electron in a semiconductor (curve B) are shown in Figure P3.19. Sketch (a) \\frac{dE}{dk} versus k and (b) \\frac{dE}{dk} versus k for each curve. (c) What conclusion can you make concerning a comparison in effective masses for the two cases?",
       "formulas": []
+    },
+    {
+      "number": "5.4(a)",
+      "text": "The required conductivity of an n-type silicon sample at T = 300 K is to be σ = 10 (Ω·cm)^{-1}. What donor impurity concentration is required? What is the electron mobility corresponding to this impurity concentration?",
+      "formulas": []
+    },
+    {
+      "number": "5.4(b)",
+      "text": "A p-type silicon material is required to have a resistivity of ρ = 0.20 (Ω·cm). What acceptor impurity concentration is required and what is the corresponding hole mobility?",
+      "formulas": []
+    },
+    {
+      "number": "5.4(a)",
+      "text": "The resistivity of a p-type GaAs material at T = 300 K is required to be ρ = 0.35 (Ω·cm). Determine the acceptor impurity concentration that is required. What is the hole mobility corresponding to this impurity concentration?",
+      "formulas": []
+    },
+    {
+      "number": "5.4(b)",
+      "text": "An n-type GaAs material is required to have a conductivity of σ = 120 (Ω·cm)^{-1}. What donor impurity concentration is required and what is the corresponding electron mobility?",
+      "formulas": []
+    },
+    {
+      "number": "5.5(a)",
+      "text": "Calculate the thermal-equilibrium values of electron and hole concentrations.",
+      "formulas": []
+    },
+    {
+      "number": "5.5(b)",
+      "text": "For an applied E-field of 10 V/cm, calculate the drift current density.",
+      "formulas": []
+    },
+    {
+      "number": "5.5(c)",
+      "text": "Repeat parts (a) and (b) if N_i = 0 and N_d = 10^{16} cm^{-3}.",
+      "formulas": []
+    },
+    {
+      "number": "5.8(a)",
+      "text": "Calculate the current in the resistor.",
+      "formulas": []
+    },
+    {
+      "number": "5.8(b)",
+      "text": "Repeat part (a) if the length is increased by a factor of three.",
+      "formulas": []
+    },
+    {
+      "number": "5.9(a)",
+      "text": "Determine the drift velocity of holes in parts (a) and (b).",
+      "formulas": []
+    },
+    {
+      "number": "5.10(a)",
+      "text": "Find the electron mobility.",
+      "formulas": []
+    },
+    {
+      "number": "5.10(b)",
+      "text": "If the electron mobility in part (a) were 800 cm^2/V·s, what is the average electron drift velocity?",
+      "formulas": []
+    },
+    {
+      "number": "5.11",
+      "text": "Determine the transit time of electrons through a 1-μm distance in these materials for an electric field of (a) 1 kV/cm and (b) 50 kV/cm.",
+      "formulas": []
+    },
+    {
+      "number": "5.12(a)",
+      "text": "Determine the resistivity of silicon at T = 300 K in which the impurity concentrations are N_a = N_d = 10^{16} cm^{-3}.",
+      "formulas": []
+    },
+    {
+      "number": "5.12(b)",
+      "text": "Determine the resistivity of silicon at T = 300 K in which the impurity concentrations are N_a = N_d = 10^{16} cm^{-3}.",
+      "formulas": []
+    },
+    {
+      "number": "5.12(c)",
+      "text": "Determine the resistivity of silicon at T = 300 K in which the impurity concentrations are N_a = N_d = 10^{16} cm^{-3}.",
+      "formulas": []
+    },
+    {
+      "number": "6.15",
+      "text": "Silicon at T = 300 K is uniformly doped with impurity atoms at concentrations of N_{D} = 2 \\times 10^{16} \\, \\text{cm}^{-3} and N_{A} = 6 \\times 10^{15} \\, \\text{cm}^{-3} and is in thermal equilibrium for I < 0. A light source turns on at t = 0 producing excess carriers with a uniform generation rate of g' = 2 \\times 10^{10} \\, \\text{cm}^{-3} \\, \\text{s}^{-1}. (a) If the maximum, steady-state excess carrier concentrations are \\Delta n = \\Delta p = 5 \\times 10^{14} \\, \\text{cm}^{-3}$, determine the minority carrier lifetime. (b) Derive the expressions for the excess carrier concentration and excess carrier recombination rate as a function of time. (c) Determine the times at which the excess carrier concentration is equal to (i) one-fourth, (ii) one-half, (iii) 95% of the steady-state value.",
+      "formulas": []
+    },
+    {
+      "number": "6.16",
+      "text": "In GaAs material at T = 300 K, the doping concentrations are N_{D} = 8 \\times 10^{15} \\, \\text{cm}^{-3} and N_{A} = 2 \\times 10^{15} \\, \\text{cm}^{-3}. The thermal equilibrium recombination rate is R_{e} = 4 \\times 10^{10} \\, \\text{cm}^{-3} \\, \\text{s}^{-1}. (a) What is the minority carrier lifetime? (b) A uniform generation rate for excess carriers results in an excess carrier recombination rate of R' = 2 \\times 10^{12} \\, \\text{cm}^{-3} \\, \\text{s}^{-1}. What is the steady-state excess carrier concentration? (c) What is the excess carrier lifetime?",
+      "formulas": []
+    },
+    {
+      "number": "6.17",
+      "text": "Consider a silicon sample at T = 300 K doped with 10^{18} \\, \\text{cm}^{-3} donor atoms. Let \\tau_{p} = 5 \\times 10^{-7} \\, \\text{s}. A light source turns on at t = 0 producing excess carriers with a uniform generation rate of g' = 5 \\times 10^{20} \\, \\text{cm}^{-3} \\, \\text{s}^{-1}. At t = 5 \\times 10^{-7} \\, \\text{s}, the light source turns off. (a) Derive the expression(s) for the excess carrier concentration as a function of time over the range 0 \\leq t \\leq \\infty. (b) What is the value of the excess concentration when the light source turns off? (c) Sketch the excess minority carrier concentrations versus time for parts (a) and (b).",
+      "formulas": []
+    },
+    {
+      "number": "6.18",
+      "text": "A semiconductor is uniformly doped with 10^{17} \\, \\text{cm}^{-3} acceptor atoms and has the following properties: D = 27 \\, \\text{cm}^{2}/\\text{s}, \\tau_{n} = 12 \\, \\text{cm}^{2}/\\text{s}, \\tau_{p} = 5 \\times 10^{-7} \\, \\text{s}, and \\tau_{n} = 10^{-7} \\, \\text{s}. An external source has been turned on for t = 0 producing a uniform concentration of excess carriers at a generation rate of g' = 10^{21} \\, \\text{cm}^{-3} \\, \\text{s}^{-1}. The source turns off at time t = 0 and back at time t = 2 \\times 10^{-6} \\, \\text{s}. (a) Derive the expressions for the excess carrier concentration as a function of time for 0 \\leq t \\leq \\infty. (b) Determine the value of excess carrier concentration at (i) t = 0, (ii) t = 2 \\times 10^{-6} \\, \\text{s}, and (iii) t = ∞. (c) Plot the excess carrier concentration as a function of time.",
+      "formulas": []
+    },
+    {
+      "number": "6.19",
+      "text": "Consider a b-type silicon that is uniformly doped to a value of N_{A} = 2 \\times 10^{16} \\, \\text{cm}^{-3} at T = 300 \\, \\text{K}. The applied electric field is zero. A light source is incident on the end of the semiconductor as shown in Figure P6.19. The steady-state concentration of excess carriers generated at x = 0 is \\delta n(0) = \\delta p(0) = 2 \\times 10^{14} \\, \\text{cm}^{-3}. Assume the following.",
+      "formulas": []
     }
   ],
   "answers": [],
@@ -201,7 +306,143 @@
     123,
     124,
     125,
-    126
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260
   ],
-  "lastUpdated": "2026-05-08T20:27:06.634Z"
+  "lastUpdated": "2026-05-08T21:23:39.350Z",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
 }

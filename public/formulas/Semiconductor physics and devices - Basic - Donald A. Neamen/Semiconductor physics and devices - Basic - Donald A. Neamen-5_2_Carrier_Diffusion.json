@@ -1,0 +1,385 @@
+{
+  "chapter": "5.2 Carrier Diffusion",
+  "section": "Example 5.5",
+  "questions": [
+    {
+      "number": "Ex 5.5",
+      "text": "Assume the hole diffusion coefficient is D_{p} = 8 cm^{2}/s. Determine the hole diffusion current density at (a) x = 0, (b) x = 2 \\times 10^{-4} cm, and (c) x = 10^{-3} cm.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "Ex 5.5",
+      "text": "The diffusion current density is given by J_{d} = e_{D} \\frac{d n}{d x} = e_{D} \\frac{\\Delta n}{\\Delta x}",
+      "formulas": [
+        {
+          "originalFormula": "J_{d} = e_{D} \\frac{d n}{d x} = e_{D} \\frac{\\Delta n}{\\Delta x} = (1.6 \\times 10^{-19})(225) \\left( \\frac{(1 \\times 10^{18}) - (7 \\times 10^{17})}{0.10} \\right) = 108 \\, A/cm^{2}",
+          "genericFormula": "J_{d} = e_{D} \\frac{d n}{d x} = e_{D} \\frac{\\Delta n}{\\Delta x}",
+          "description": "Esta fórmula representa a densidade de corrente difusiva em um semicondutor, que é a quantidade de carga que flui por unidade de área em resposta a um gradiente de concentração de portadores de carga.",
+          "concepts": [
+            "Densidade de corrente",
+            "Difusão de portadores de carga",
+            "Gradiente de concentração",
+            "Semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "J_{d}",
+              "description": "Representa a densidade de corrente difusiva, que é a corrente elétrica por unidade de área."
+            },
+            {
+              "symbol": "e_{D}",
+              "description": "Representa a carga elementar, que é a quantidade de carga elétrica transportada por um único elétron."
+            },
+            {
+              "symbol": "d n",
+              "description": "Representa a variação na densidade de portadores de carga, ou seja, a quantidade de portadores por unidade de volume."
+            },
+            {
+              "symbol": "d x",
+              "description": "Representa a variação na posição ao longo da qual a densidade de portadores muda, ou seja, a distância em que ocorre a variação."
+            },
+            {
+              "symbol": "\\Delta n",
+              "description": "Representa a diferença na densidade de portadores de carga entre dois pontos."
+            },
+            {
+              "symbol": "\\Delta x",
+              "description": "Representa a distância entre os dois pontos onde a diferença na densidade de portadores é medida."
+            }
+          ],
+          "chapter": "5.2 Carrier Diffusion",
+          "section": "Example 5.5",
+          "source": "answer",
+          "questionNumber": "Ex 5.5",
+          "page": 1
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "J = e n_{1} E_{x} + e p \\mu_{p} E_{x} + e D_{n} \\frac{d n}{d x} - e D_{p} \\frac{d p}{d x}",
+      "genericFormula": "J = e n E_{x} + e p \\mu_{p} E_{x} + e D_{n} \\frac{d n}{d x} - e D_{p} \\frac{d p}{d x}",
+      "description": "Esta fórmula representa a densidade de corrente elétrica em um semicondutor, levando em conta diferentes contribuições de portadores de carga, como elétrons e lacunas, sob a influência de um campo elétrico e gradientes de concentração.",
+      "concepts": [
+        "Densidade de corrente elétrica",
+        "Portadores de carga (elétrons e lacunas)",
+        "Campo elétrico",
+        "Mobilidade dos portadores",
+        "Difusão de portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "J",
+          "description": "Representa a densidade de corrente elétrica, que é a quantidade de carga que passa por uma unidade de área em um determinado tempo."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a carga elétrica de um único elétron."
+        },
+        {
+          "symbol": "n",
+          "description": "Representa a densidade de portadores de carga negativa (elétrons) em um semicondutor."
+        },
+        {
+          "symbol": "E_{x}",
+          "description": "Representa a intensidade do campo elétrico aplicado na direção x."
+        },
+        {
+          "symbol": "p",
+          "description": "Representa a densidade de portadores de carga positiva (lacunas) em um semicondutor."
+        },
+        {
+          "symbol": "\\mu_{p}",
+          "description": "Representa a mobilidade dos portadores de carga positiva (lacunas), que indica quão rapidamente as lacunas podem se mover sob a influência de um campo elétrico."
+        },
+        {
+          "symbol": "D_{n}",
+          "description": "Representa o coeficiente de difusão dos portadores de carga negativa (elétrons), que mede a taxa de difusão dos elétrons em resposta a um gradiente de concentração."
+        },
+        {
+          "symbol": "D_{p}",
+          "description": "Representa o coeficiente de difusão dos portadores de carga positiva (lacunas), que mede a taxa de difusão das lacunas em resposta a um gradiente de concentração."
+        },
+        {
+          "symbol": "\\frac{d n}{d x}",
+          "description": "Representa a taxa de variação da densidade de portadores de carga negativa (elétrons) em relação à posição x, indicando como a concentração de elétrons muda ao longo do material."
+        },
+        {
+          "symbol": "\\frac{d p}{d x}",
+          "description": "Representa a taxa de variação da densidade de portadores de carga positiva (lacunas) em relação à posição x, indicando como a concentração de lacunas muda ao longo do material."
+        }
+      ],
+      "chapter": "5.2 Carrier Diffusion",
+      "section": "Example 5.5",
+      "source": "standalone",
+      "page": 67
+    },
+    {
+      "originalFormula": "J = e n_{1} E + e p \\mu_{p} E + e D_{n} \\nabla n - e D_{p} \\nabla p",
+      "genericFormula": "J = e n E + e p \\mu E + e D_{n} \\nabla n - e D_{p} \\nabla p",
+      "description": "Esta fórmula representa a densidade de corrente elétrica em um semicondutor, levando em consideração diferentes contribuições: a corrente de portadores de carga devido ao campo elétrico, a corrente de difusão de elétrons e lacunas, e a influência dos gradientes de concentração desses portadores.",
+      "concepts": [
+        "Densidade de corrente elétrica",
+        "Portadores de carga",
+        "Campo elétrico",
+        "Mobilidade",
+        "Difusão",
+        "Gradiente de concentração"
+      ],
+      "symbols": [
+        {
+          "symbol": "J",
+          "description": "Representa a densidade de corrente elétrica, que é a quantidade de carga que passa por uma unidade de área em um determinado tempo."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a menor unidade de carga elétrica, associada a partículas como elétrons e lacunas."
+        },
+        {
+          "symbol": "n",
+          "description": "Representa a densidade de portadores de carga negativa, ou seja, a quantidade de elétrons disponíveis em uma unidade de volume do semicondutor."
+        },
+        {
+          "symbol": "p",
+          "description": "Representa a densidade de portadores de carga positiva, ou seja, a quantidade de lacunas disponíveis em uma unidade de volume do semicondutor."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa o campo elétrico aplicado, que é uma força por unidade de carga que atua sobre os portadores de carga no semicondutor."
+        },
+        {
+          "symbol": "μ_{p}",
+          "description": "Representa a mobilidade dos portadores de carga positiva, que é uma medida de quão rapidamente as lacunas podem se mover sob a influência de um campo elétrico."
+        },
+        {
+          "symbol": "D_{n}",
+          "description": "Representa o coeficiente de difusão dos elétrons, que é uma medida de como os elétrons se espalham em resposta a um gradiente de concentração."
+        },
+        {
+          "symbol": "D_{p}",
+          "description": "Representa o coeficiente de difusão das lacunas, que é uma medida de como as lacunas se espalham em resposta a um gradiente de concentração."
+        },
+        {
+          "symbol": "∇n",
+          "description": "Representa o gradiente de concentração de elétrons, que indica como a densidade de elétrons varia em diferentes pontos do semicondutor."
+        },
+        {
+          "symbol": "∇p",
+          "description": "Representa o gradiente de concentração de lacunas, que indica como a densidade de lacunas varia em diferentes pontos do semicondutor."
+        }
+      ],
+      "chapter": "5.2 Carrier Diffusion",
+      "section": "Example 5.5",
+      "source": "standalone",
+      "page": 134
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200
+  ],
+  "lastUpdated": "2026-05-08T18:19:12.905373",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
+}

@@ -1,0 +1,467 @@
+{
+  "chapter": "6.5 Excess Carrier Lifetime",
+  "section": "unknown",
+  "questions": [],
+  "answers": [],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "E_{F} = E_{c} - 0.2982 \\, eV",
+      "genericFormula": "E_{F} = E_{c} - 0.2982 \\, eV",
+      "description": "Não foi possível gerar descrição automática",
+      "concepts": [],
+      "symbols": [],
+      "rawText": "{\n  \"originalFormula\": \"E_{F} = E_{c} - 0.2982 \\, eV\",\n  \"genericFormula\": \"E_{F} = E_{c} - E_{0}\",\n  \"description\": \"Esta fórmula representa a relação entre a energia do nível de Fermi e a energia da borda da banda de condução em um material semicondutor. O nível de Fermi é uma medida da energia dos elétrons em um sistema à temperatura zero, enquanto a energia da borda da banda de condução é a energia mínima necessária para que um elétron possa se mover livremente e contribuir para a condução elétrica. O valor subtraído indica uma diferença de energia que pode ser influenciada por fatores como dopagem ou temperatura.\",\n  \"concepts\": [\n    \"Nível de Fermi\",\n    \"Energia da borda da banda de condução\",\n    \"Semicondutores\",\n    \"Dopagem\",\n    \"Condução elétrica\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"E_{F}\",\n      \"description\": \"Representa a energia do nível de Fermi, que indica a máxima energia que os elétrons podem ter a temperatura zero.\"\n    },\n    {\n      \"symbol\": \"E_{c}\",\n      \"description\": \"Representa a energia da borda da banda de condução, que é a energia mínima necessária para que um elétron se mova livremente no material.\"\n    },\n    {\n      \"symbol\": \"0.2982 \\, eV\",\n      \"description\": \"Representa uma diferença de energia específica, que pode ser vista como uma quantidade de energia que deve ser subtraída da energia da borda da banda de condução para encontrar o nível de Fermi.\"\n    }\n  ]\n}",
+      "chapter": "6.5 Excess Carrier Lifetime",
+      "section": "unknown",
+      "source": "standalone",
+      "page": 1
+    },
+    {
+      "originalFormula": "E_{F} = E_{v} + 0.179 \\, eV",
+      "genericFormula": "E_{F} = E_{v} + 0.179 \\, eV",
+      "description": "Não foi possível gerar descrição automática",
+      "concepts": [],
+      "symbols": [],
+      "rawText": "{\n  \"originalFormula\": \"E_{F} = E_{v} + 0.179 \\, eV\",\n  \"genericFormula\": \"E_{F} = E_{v} + C\",\n  \"description\": \"Esta fórmula representa a relação entre a energia do nível de Fermi e a energia do nível de valência em um material semicondutor. O nível de Fermi é uma medida da energia máxima ocupada por elétrons em um sistema a temperatura zero, enquanto o nível de valência é a energia dos elétrons que estão ligados aos átomos do material. A diferença entre esses dois níveis é uma constante que representa a energia necessária para mover um elétron do nível de valência para o nível de Fermi.\",\n  \"concepts\": [\n    \"Nível de Fermi\",\n    \"Nível de Valência\",\n    \"Energia de Bandas\",\n    \"Semicondutores\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"E_{F}\",\n      \"description\": \"Representa a energia do nível de Fermi, que é a energia máxima ocupada por elétrons em um material a temperatura zero.\"\n    },\n    {\n      \"symbol\": \"E_{v}\",\n      \"description\": \"Representa a energia do nível de valência, que é a energia dos elétrons que estão ligados aos átomos do material.\"\n    },\n    {\n      \"symbol\": \"C\",\n      \"description\": \"Representa uma constante que indica a diferença de energia entre o nível de valência e o nível de Fermi, neste caso, uma energia de 0.179 electronvolts.\"\n    }\n  ]\n}",
+      "chapter": "6.5 Excess Carrier Lifetime",
+      "section": "unknown",
+      "source": "standalone",
+      "page": 124
+    },
+    {
+      "originalFormula": "R_{n} = C_{n}N_{t}[1 - f_{F}(E_{t})]n",
+      "genericFormula": "R = C N_{t}[1 - f_{F}(E)]n",
+      "description": "Esta fórmula representa a densidade de portadores de carga em um semicondutor, levando em consideração a concentração de portadores, a temperatura e a função de distribuição de Fermi. Ela mostra como a densidade de portadores varia com a energia e a temperatura, influenciando as propriedades elétricas do material.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Concentração de portadores",
+        "Função de distribuição de Fermi",
+        "Energia do nível de Fermi",
+        "Temperatura"
+      ],
+      "symbols": [
+        {
+          "symbol": "R",
+          "description": "Representa a densidade de portadores de carga no semicondutor."
+        },
+        {
+          "symbol": "C",
+          "description": "Representa uma constante que relaciona a densidade de portadores com a concentração de portadores."
+        },
+        {
+          "symbol": "N_{t}",
+          "description": "Representa a concentração total de estados disponíveis para os portadores de carga no semicondutor."
+        },
+        {
+          "symbol": "f_{F}(E)",
+          "description": "Representa a função de distribuição de Fermi, que descreve a probabilidade de ocupação dos estados de energia pelos portadores de carga em função da energia."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa a energia do nível de Fermi, que é o nível de energia no qual a probabilidade de ocupação é de 50% a uma temperatura específica."
+        },
+        {
+          "symbol": "n",
+          "description": "Representa um expoente que pode estar relacionado a fatores como a temperatura ou a natureza do material semicondutor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "f_{F}(E_{t}) = \\frac{1}{1 + \\exp\\left(\\frac{E_{t} - E_{F}}{kT}\\right)}",
+      "genericFormula": "f_{F}(E_{t}) = \\frac{1}{1 + \\exp\\left(\\frac{E_{t} - E_{F}}{kT}\\right)}",
+      "description": "Esta fórmula representa a função de distribuição de Fermi-Dirac, que descreve a probabilidade de ocupação de um nível de energia por um elétron em um sistema de partículas indistinguíveis a uma temperatura específica. Ela é fundamental para entender como os elétrons se distribuem em diferentes níveis de energia em materiais semicondutores e metais.",
+      "concepts": [
+        "Distribuição de Fermi-Dirac",
+        "Níveis de energia",
+        "Probabilidade de ocupação",
+        "Temperatura",
+        "Energia térmica"
+      ],
+      "symbols": [
+        {
+          "symbol": "f_{F}(E_{t})",
+          "description": "Representa a probabilidade de ocupação de um nível de energia específico, E_t, por um elétron."
+        },
+        {
+          "symbol": "E_{t}",
+          "description": "Representa a energia do nível que está sendo considerado para a ocupação por um elétron."
+        },
+        {
+          "symbol": "E_{F}",
+          "description": "Representa a energia de Fermi, que é o nível de energia mais alto ocupado por elétrons a temperatura zero absoluto."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura do sistema em Kelvin, que influencia a distribuição de ocupação dos níveis de energia."
+        },
+        {
+          "symbol": "exp",
+          "description": "Representa a função exponencial, que é uma função matemática que cresce rapidamente e é utilizada para modelar fenômenos de crescimento e decaimento."
+        }
+      ]
+    },
+    {
+      "originalFormula": "R_{n} = E_{n}N_{t}f_{F}(E_{t})",
+      "genericFormula": "R = E N_{t} f_{F}(E_{t})",
+      "description": "Esta fórmula representa a taxa de recombinação de portadores de carga em um semicondutor, onde a taxa é influenciada pela energia dos portadores, a densidade de estados disponíveis e a função de distribuição de Fermi.",
+      "concepts": [
+        "Recombinação de portadores de carga",
+        "Energia dos portadores",
+        "Densidade de estados",
+        "Função de distribuição de Fermi"
+      ],
+      "symbols": [
+        {
+          "symbol": "R",
+          "description": "Representa a taxa de recombinação de portadores de carga em um semicondutor."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa a energia dos portadores de carga, que pode influenciar a probabilidade de recombinação."
+        },
+        {
+          "symbol": "N_{t}",
+          "description": "Representa a densidade de estados disponíveis para a recombinação, ou seja, quantos estados estão disponíveis para os portadores de carga."
+        },
+        {
+          "symbol": "f_{F}(E_{t})",
+          "description": "Representa a função de distribuição de Fermi, que descreve a probabilidade de ocupação dos estados de energia pelos portadores de carga a uma determinada temperatura."
+        },
+        {
+          "symbol": "E_{t}",
+          "description": "Representa a energia em que a função de distribuição de Fermi é avaliada, relacionada ao nível de energia dos portadores."
+        }
+      ]
+    },
+    {
+      "originalFormula": "R_{n} = R_{n}",
+      "genericFormula": "R_{n} = R_{n}",
+      "description": "Esta fórmula representa uma relação de identidade, onde a resistência em um determinado estado ou condição é igual a ela mesma. Isso é uma afirmação trivial, mas pode ser útil em contextos onde se deseja enfatizar que a resistência em um estado específico não muda.",
+      "concepts": [
+        "Identidade",
+        "Resistência elétrica"
+      ],
+      "symbols": [
+        {
+          "symbol": "R_{n}",
+          "description": "Representa a resistência elétrica em um estado ou condição específica, onde 'n' pode indicar um índice ou uma condição particular."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E_{n}N_{t}f_{F}(E_{t}) = C_{n}N_{t}[1 - f_{F}(E_{t})]n_{0}",
+      "genericFormula": "E_{n}N_{t}f_{F}(E_{t}) = C_{n}N_{t}[1 - f_{F}(E_{t})]n_{0}",
+      "description": "Esta fórmula representa uma relação entre a energia de um nível de energia em um material semicondutor, a densidade de estados, a função de distribuição de Fermi e a concentração de portadores de carga. Ela descreve como a energia e a densidade de portadores se relacionam em um sistema em equilíbrio térmico.",
+      "concepts": [
+        "Níveis de energia em semicondutores",
+        "Densidade de estados",
+        "Função de distribuição de Fermi",
+        "Concentração de portadores de carga",
+        "Equilíbrio térmico"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{n}",
+          "description": "Representa a energia do nível de energia n em um material semicondutor."
+        },
+        {
+          "symbol": "N_{t}",
+          "description": "Refere-se à densidade total de estados disponíveis no material."
+        },
+        {
+          "symbol": "f_{F}(E_{t})",
+          "description": "É a função de distribuição de Fermi, que indica a probabilidade de ocupação de um nível de energia E_{t} por um elétron."
+        },
+        {
+          "symbol": "C_{n}",
+          "description": "Representa uma constante que pode estar relacionada a fatores como a mobilidade dos portadores ou características do material."
+        },
+        {
+          "symbol": "n_{0}",
+          "description": "É a concentração de portadores de carga no sistema, que pode ser elétrons ou lacunas, dependendo do tipo de semicondutor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E_{s} = \\frac{n'}{C_{s}}",
+      "genericFormula": "E_{s} = \\frac{n}{C}",
+      "description": "Esta fórmula representa a relação entre a energia de um sistema, a quantidade de partículas no sistema e a capacidade do sistema de armazenar energia. Ela mostra como a energia é distribuída em relação ao número de partículas e à capacidade do sistema.",
+      "concepts": [
+        "Energia do sistema",
+        "Quantidade de partículas",
+        "Capacidade de armazenamento de energia"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{s}",
+          "description": "Representa a energia do sistema, que é a quantidade total de energia disponível ou armazenada no sistema."
+        },
+        {
+          "symbol": "n'",
+          "description": "Representa a quantidade de partículas no sistema, que pode ser o número de átomos, moléculas ou outras entidades que compõem o sistema."
+        },
+        {
+          "symbol": "C_{s}",
+          "description": "Representa a capacidade do sistema de armazenar energia, que pode ser influenciada por fatores como temperatura, pressão e propriedades materiais."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248
+  ],
+  "lastUpdated": "2026-05-08T21:20:04.494Z",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
+}

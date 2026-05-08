@@ -28,7 +28,11 @@
               "symbol": "μ_n",
               "description": "Representa a mobilidade dos portadores de carga, que é uma medida de quão rapidamente os elétrons podem se mover através do semicondutor quando um campo elétrico é aplicado."
             }
-          ]
+          ],
+          "chapter": "4.7 Resistivity and Resistance",
+          "source": "question",
+          "questionNumber": "a",
+          "page": 1
         },
         {
           "originalFormula": "\\sigma_p = q \\mu_p",
@@ -53,7 +57,11 @@
               "symbol": "\\mu_p",
               "description": "Representa a mobilidade dos portadores de carga positiva, que indica a facilidade com que os buracos se movem através do material quando um campo elétrico é aplicado."
             }
-          ]
+          ],
+          "chapter": "4.7 Resistivity and Resistance",
+          "source": "question",
+          "questionNumber": "a",
+          "page": 46
         },
         {
           "originalFormula": "p + N_d = n + N_a",
@@ -81,7 +89,11 @@
               "symbol": "N_a",
               "description": "Representa a densidade de dopantes do tipo P, que são átomos que criam buracos ao remover elétrons do semicondutor."
             }
-          ]
+          ],
+          "chapter": "4.7 Resistivity and Resistance",
+          "source": "question",
+          "questionNumber": "a",
+          "page": 91
         },
         {
           "originalFormula": "p_n = n_i^2",
@@ -102,7 +114,11 @@
               "symbol": "n_i",
               "description": "representa a concentração de portadores de carga eletrônica, que são os eletrões em um semicondutor."
             }
-          ]
+          ],
+          "chapter": "4.7 Resistivity and Resistance",
+          "source": "question",
+          "questionNumber": "a",
+          "page": 136
         }
       ]
     },
@@ -142,7 +158,11 @@
               "symbol": "σ",
               "description": "Representa a condutividade do material, que é o inverso da resistividade e indica a capacidade do material de conduzir corrente elétrica."
             }
-          ]
+          ],
+          "chapter": "4.7 Resistivity and Resistance",
+          "source": "question",
+          "questionNumber": "b",
+          "page": 182
         }
       ]
     }
@@ -170,7 +190,11 @@
               "symbol": "N",
               "description": "Representa uma quantidade genérica que pode ser substituída por um valor específico para a densidade de portadores de carga."
             }
-          ]
+          ],
+          "chapter": "4.7 Resistivity and Resistance",
+          "source": "answer",
+          "questionNumber": "a",
+          "page": 227
         },
         {
           "originalFormula": "p = 1 \\times 10^{10} \\text{ cm}^{-3}",
@@ -191,7 +215,11 @@
               "symbol": "N",
               "description": "Representa uma quantidade genérica de portadores de carga por centímetro cúbico, que pode ser ajustada dependendo do contexto."
             }
-          ]
+          ],
+          "chapter": "4.7 Resistivity and Resistance",
+          "source": "answer",
+          "questionNumber": "a",
+          "page": 272
         },
         {
           "originalFormula": "\\mu_n = 626 \\text{ cm}^2/\\text{V-s}",
@@ -208,7 +236,11 @@
               "symbol": "μ_n",
               "description": "Representa a mobilidade dos portadores de carga negativa, que são os elétrons, em um semicondutor."
             }
-          ]
+          ],
+          "chapter": "4.7 Resistivity and Resistance",
+          "source": "answer",
+          "questionNumber": "a",
+          "page": 317
         },
         {
           "originalFormula": "\\mu_p = 292 \\text{ cm}^2/\\text{V-s}",
@@ -237,7 +269,11 @@
               "symbol": "s",
               "description": "Representa a unidade de medida do tempo, indicando que a mobilidade é uma medida de velocidade em relação ao tempo."
             }
-          ]
+          ],
+          "chapter": "4.7 Resistivity and Resistance",
+          "source": "answer",
+          "questionNumber": "a",
+          "page": 363
         }
       ]
     },
@@ -267,7 +303,11 @@
               "symbol": "\\sigma_p",
               "description": "Representa a condutividade elétrica associada aos portadores de carga positiva, que são as lacunas no semicondutor."
             }
-          ]
+          ],
+          "chapter": "4.7 Resistivity and Resistance",
+          "source": "answer",
+          "questionNumber": "b",
+          "page": 408
         },
         {
           "originalFormula": "\\rho = \\frac{1}{\\sigma}",
@@ -287,7 +327,11 @@
               "symbol": "σ",
               "description": "Representa a condutividade elétrica de um material, que indica a capacidade do material de conduzir corrente elétrica."
             }
-          ]
+          ],
+          "chapter": "4.7 Resistivity and Resistance",
+          "source": "answer",
+          "questionNumber": "b",
+          "page": 453
         }
       ]
     }
@@ -793,5 +837,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.981Z"
+  "lastUpdated": "2026-05-08T18:19:13.975699",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

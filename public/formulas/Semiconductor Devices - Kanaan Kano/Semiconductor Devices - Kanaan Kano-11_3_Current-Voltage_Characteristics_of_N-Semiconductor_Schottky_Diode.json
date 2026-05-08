@@ -38,7 +38,10 @@
           "symbol": "v_{th}",
           "description": "Representa a velocidade térmica média dos portadores de carga, que é influenciada pela temperatura do semicondutor."
         }
-      ]
+      ],
+      "chapter": "11.3 Current-Voltage Characteristics of N-Semiconductor Schottky Diode",
+      "source": "standalone",
+      "page": 1
     },
     {
       "originalFormula": "I_{sm} = -I_{ms} = -qA\\left(\\frac{v_{th}}{4}\\right) N_{D} \\exp\\left(-\\frac{qV_{bi}}{kT}\\right)",
@@ -89,7 +92,10 @@
           "symbol": "T",
           "description": "Temperatura absoluta em Kelvin, que afeta a mobilidade e a densidade de portadores de carga em um semicondutor."
         }
-      ]
+      ],
+      "chapter": "11.3 Current-Voltage Characteristics of N-Semiconductor Schottky Diode",
+      "source": "standalone",
+      "page": 84
     },
     {
       "originalFormula": "I_{ms} = -qA\\left(\\frac{v_{th}}{4}\\right) N_{c} \\exp\\left(-\\frac{q\\Phi_{B}}{kT}\\right)",
@@ -136,7 +142,10 @@
           "symbol": "T",
           "description": "é a temperatura absoluta em Kelvin, que afeta a movimentação dos portadores de carga."
         }
-      ]
+      ],
+      "chapter": "11.3 Current-Voltage Characteristics of N-Semiconductor Schottky Diode",
+      "source": "standalone",
+      "page": 167
     },
     {
       "originalFormula": "n_{s} = N_{D} \\exp[-q(V_{bi} - V_{a})/kT]",
@@ -177,7 +186,10 @@
           "symbol": "T",
           "description": "Representa a temperatura absoluta do sistema, medida em Kelvin, que afeta a energia térmica dos portadores de carga."
         }
-      ]
+      ],
+      "chapter": "11.3 Current-Voltage Characteristics of N-Semiconductor Schottky Diode",
+      "source": "standalone",
+      "page": 250
     },
     {
       "originalFormula": "n_{s} = [N_{D} \\exp(-qV_{bi}/kT)][\\exp qV_{a}/kT]",
@@ -219,7 +231,10 @@
           "symbol": "V_{a}",
           "description": "Representa a tensão aplicada externamente ao semicondutor, que pode alterar a distribuição de portadores de carga e a corrente elétrica."
         }
-      ]
+      ],
+      "chapter": "11.3 Current-Voltage Characteristics of N-Semiconductor Schottky Diode",
+      "source": "standalone",
+      "page": 333
     },
     {
       "originalFormula": "n_{s} = [N_{c} \\exp(-q\\Phi_{B}/kT)][\\exp qV_{a}/kT]",
@@ -261,7 +276,10 @@
           "symbol": "V_{a}",
           "description": "Representa a tensão aplicada ao semicondutor, que pode influenciar a densidade de portadores."
         }
-      ]
+      ],
+      "chapter": "11.3 Current-Voltage Characteristics of N-Semiconductor Schottky Diode",
+      "source": "standalone",
+      "page": 416
     }
   ],
   "processedPages": [
@@ -764,5 +782,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.138Z"
+  "lastUpdated": "2026-05-08T18:19:13.261778",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

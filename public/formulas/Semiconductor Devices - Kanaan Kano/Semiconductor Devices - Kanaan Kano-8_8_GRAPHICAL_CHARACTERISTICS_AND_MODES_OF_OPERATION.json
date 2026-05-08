@@ -28,7 +28,11 @@
               "symbol": "I_{Ep}",
               "description": "Representa a corrente de descarga, que é a corrente que flui para fora do capacitor durante o processo de descarregamento."
             }
-          ]
+          ],
+          "chapter": "8.8 GRAPHICAL CHARACTERISTICS AND MODES OF OPERATION",
+          "source": "question",
+          "questionNumber": "a",
+          "page": 1
         }
       ]
     },
@@ -63,7 +67,11 @@
               "symbol": "I_{EN}",
               "description": "Representa a corrente do ruído, que é a parte da corrente que não contém a informação desejada e pode interferir no sinal útil."
             }
-          ]
+          ],
+          "chapter": "8.8 GRAPHICAL CHARACTERISTICS AND MODES OF OPERATION",
+          "source": "question",
+          "questionNumber": "b",
+          "page": 50
         }
       ]
     },
@@ -93,7 +101,11 @@
               "symbol": "γ",
               "description": "Representa a variável gama, que também pode ser um coeficiente ou fator que, junto com delta, determina o valor de alfa."
             }
-          ]
+          ],
+          "chapter": "8.8 GRAPHICAL CHARACTERISTICS AND MODES OF OPERATION",
+          "source": "question",
+          "questionNumber": "c",
+          "page": 100
         },
         {
           "originalFormula": "\\beta = \\frac{\\alpha}{(1 - \\alpha)} = 65.67",
@@ -117,7 +129,11 @@
               "symbol": "1 - α",
               "description": "Representa a parte restante ou complementar da quantidade alpha, indicando o que não está incluído na proporção de alpha."
             }
-          ]
+          ],
+          "chapter": "8.8 GRAPHICAL CHARACTERISTICS AND MODES OF OPERATION",
+          "source": "question",
+          "questionNumber": "c",
+          "page": 150
         }
       ]
     },
@@ -155,7 +171,11 @@
               "symbol": "I_{En}",
               "description": "Representa a corrente de portadores minoritários que fluem do coletor para a base."
             }
-          ]
+          ],
+          "chapter": "8.8 GRAPHICAL CHARACTERISTICS AND MODES OF OPERATION",
+          "source": "question",
+          "questionNumber": "d",
+          "page": 200
         },
         {
           "originalFormula": "I_{CBO} = I_C - \\alpha I_E = 1.15\\mu A",
@@ -184,7 +204,11 @@
               "symbol": "I_E",
               "description": "Representa a corrente que flui do emissor do transistor, que é a corrente que entra no transistor a partir do terminal do emissor."
             }
-          ]
+          ],
+          "chapter": "8.8 GRAPHICAL CHARACTERISTICS AND MODES OF OPERATION",
+          "source": "question",
+          "questionNumber": "d",
+          "page": 250
         },
         {
           "originalFormula": "I_{CEO} = \\frac{I_{CBO}}{(1 - \\alpha)} = 76.67\\mu A",
@@ -209,7 +233,11 @@
               "symbol": "\\alpha",
               "description": "Representa o fator de amplificação do transistor, que é a razão entre a corrente de coletor e a corrente de base em um transistor bipolar."
             }
-          ]
+          ],
+          "chapter": "8.8 GRAPHICAL CHARACTERISTICS AND MODES OF OPERATION",
+          "source": "question",
+          "questionNumber": "d",
+          "page": 299
         }
       ]
     },
@@ -239,7 +267,11 @@
               "symbol": "b",
               "description": "Representa o denominador da fração, que é o valor pelo qual o numerador está sendo dividido."
             }
-          ]
+          ],
+          "chapter": "8.8 GRAPHICAL CHARACTERISTICS AND MODES OF OPERATION",
+          "source": "question",
+          "questionNumber": "e",
+          "page": 349
         },
         {
           "originalFormula": "\\alpha = \\delta \\gamma = 0.995 \\times 0.99502 = 0.990",
@@ -263,7 +295,11 @@
               "symbol": "γ",
               "description": "Representa outra variável que também influencia a variável resultante, similar a delta."
             }
-          ]
+          ],
+          "chapter": "8.8 GRAPHICAL CHARACTERISTICS AND MODES OF OPERATION",
+          "source": "question",
+          "questionNumber": "e",
+          "page": 399
         },
         {
           "originalFormula": "\\beta = \\frac{\\alpha}{(1 - \\alpha)} = 99.49",
@@ -287,7 +323,11 @@
               "symbol": "1 - α",
               "description": "Representa a diferença entre 1 e alpha, que indica a parte complementar da variável alpha, ou seja, a fração que não está incluída em alpha."
             }
-          ]
+          ],
+          "chapter": "8.8 GRAPHICAL CHARACTERISTICS AND MODES OF OPERATION",
+          "source": "question",
+          "questionNumber": "e",
+          "page": 449
         }
       ]
     }
@@ -794,5 +834,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.069Z"
+  "lastUpdated": "2026-05-08T18:19:13.971384",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

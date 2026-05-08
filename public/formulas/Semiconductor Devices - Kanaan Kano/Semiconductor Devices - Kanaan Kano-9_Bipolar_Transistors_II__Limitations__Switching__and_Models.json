@@ -40,7 +40,11 @@
               "symbol": "N_{A}",
               "description": "É a densidade de dopagem do semicondutor, que indica a quantidade de átomos dopantes por unidade de volume no material semicondutor."
             }
-          ]
+          ],
+          "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+          "source": "question",
+          "questionNumber": "a",
+          "page": 1
         },
         {
           "originalFormula": "BV_{CEO} = BV_{CBO} \\left( \\frac{100}{(100)}^{0.25} \\right) = 31.22V",
@@ -69,7 +73,11 @@
               "symbol": "x",
               "description": "Um expoente que representa a fração da tensão que está sendo ajustada, neste caso, 0.25."
             }
-          ]
+          ],
+          "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+          "source": "question",
+          "questionNumber": "a",
+          "page": 18
         }
       ]
     },
@@ -139,7 +147,11 @@
               "symbol": "x",
               "description": "Representa a variável de integração, que indica a posição ao longo da largura da região considerada."
             }
-          ]
+          ],
+          "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+          "source": "question",
+          "questionNumber": "9.30",
+          "page": 35
         }
       ]
     },
@@ -175,7 +187,11 @@
               "symbol": "dQ_B(t)/dt",
               "description": "Representa a taxa de variação da carga na base em relação ao tempo, indicando como a carga está mudando ao longo do tempo."
             }
-          ]
+          ],
+          "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+          "source": "question",
+          "questionNumber": "9.34",
+          "page": 52
         }
       ]
     },
@@ -222,7 +238,11 @@
               "symbol": "\\Delta V_{EB}",
               "description": "Representa a variação do potencial elétrico entre dois pontos em um semicondutor."
             }
-          ]
+          ],
+          "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+          "source": "question",
+          "questionNumber": "9.51",
+          "page": 69
         }
       ]
     },
@@ -278,7 +298,11 @@
               "symbol": "dx",
               "description": "Representa um elemento infinitesimal de comprimento ao longo do qual a integração está sendo realizada."
             }
-          ]
+          ],
+          "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+          "source": "question",
+          "questionNumber": "9.56",
+          "page": 86
         }
       ]
     },
@@ -346,7 +370,11 @@
               "symbol": "F",
               "description": "um valor que pode representar uma constante relacionada ao campo elétrico aplicado."
             }
-          ]
+          ],
+          "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+          "source": "answer",
+          "questionNumber": "a",
+          "page": 104
         }
       ]
     },
@@ -385,7 +413,11 @@
               "symbol": "R",
               "description": "Representa a resistência elétrica de um componente ou circuito, medida em ohms."
             }
-          ]
+          ],
+          "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+          "source": "answer",
+          "questionNumber": "9.2",
+          "page": 121
         }
       ]
     },
@@ -417,7 +449,11 @@
               "symbol": "D_{p}",
               "description": "representa o coeficiente de difusão dos portadores de carga, que é uma medida de quão rapidamente os portadores se espalham através do material semicondutor."
             }
-          ]
+          ],
+          "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+          "source": "answer",
+          "questionNumber": "9.2",
+          "page": 138
         }
       ]
     },
@@ -478,7 +514,11 @@
               "symbol": "T",
               "description": "Representa a temperatura do sistema, que afeta a energia térmica e a movimentação dos portadores de carga."
             }
-          ]
+          ],
+          "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+          "source": "answer",
+          "questionNumber": "9.56",
+          "page": 155
         }
       ]
     },
@@ -516,7 +556,10 @@
           "symbol": "I_{B}",
           "description": "Representa a corrente que flui para a base do transistor, que controla a quantidade de corrente que flui do coletor."
         }
-      ]
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 172
     },
     {
       "originalFormula": "I_{C} = I_{CEO} + \\beta I_{B}",
@@ -545,7 +588,10 @@
           "symbol": "I_{B}",
           "description": "Representa a corrente que flui para a base do transistor."
         }
-      ]
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 189
     },
     {
       "originalFormula": "g_{max} = \\left[ 2 V_{A} q N_{A} N_{D} / e (N_{A} + N_{D}) \\right]^{0.5}",
@@ -582,7 +628,10 @@
           "symbol": "e",
           "description": "Representa a constante de permissividade do meio, que influencia a interação entre as cargas."
         }
-      ]
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 207
     },
     {
       "originalFormula": "v(x) = \\frac{D_p}{W_B(1 - \\frac{x}{W_B})} = \\tau_B",
@@ -615,7 +664,10 @@
           "symbol": "\\tau_B",
           "description": "Representa o tempo de recombinação dos portadores de carga, que é o tempo médio que um portador leva para recombinar após ter sido gerado."
         }
-      ]
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 224
     },
     {
       "originalFormula": "Q_B = qA \\int_{0}^{W_B} p'(x)dx",
@@ -648,7 +700,10 @@
           "symbol": "dx",
           "description": "Representa um elemento infinitesimal de comprimento ao longo do eixo x, usado na integração para somar as contribuições da densidade de carga."
         }
-      ]
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 241
     },
     {
       "originalFormula": "\\frac{\\partial}{\\partial t}(p'(x)qA) = -\\frac{qA p'}{\\tau_p} - \\frac{qA \\frac{dJ_p}{dx}}",
@@ -685,7 +740,10 @@
           "symbol": "dJ_p/dx",
           "description": "Representa a derivada da densidade de corrente em relação à posição, indicando como a corrente varia ao longo do espaço."
         }
-      ]
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 258
     },
     {
       "originalFormula": "\\frac{\\partial}{\\partial t} \\int_{0}^{W_B} p'(x)qA dx = -\\int_{0}^{W_B} \\frac{qA p'}{\\tau_p} dx - \\int_{0}^{W_B} qA \\frac{dJ_p}{dx}",
@@ -735,7 +793,10 @@
           "symbol": "dx",
           "description": "Representa um pequeno incremento na variável x, usado na integração para somar as contribuições ao longo do intervalo."
         }
-      ]
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 275
     },
     {
       "originalFormula": "i_{cp} \\simeq i_c - i_n",
@@ -760,7 +821,10 @@
           "symbol": "i_n",
           "description": "Representa a corrente de ruído, que é a corrente indesejada que pode interferir no funcionamento do dispositivo, geralmente causada por flutuações aleatórias."
         }
-      ]
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 292
     },
     {
       "originalFormula": "i_E \\simeq i_c",
@@ -781,7 +845,10 @@
           "symbol": "i_c",
           "description": "Representa a corrente que flui para o coletor do transistor."
         }
-      ]
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 310
     },
     {
       "originalFormula": "t_{s} = \\tau_{p} \\ln\\left(\\frac{Q_{B}(0)}{Q_{SAT}}\\right)",
@@ -810,7 +877,10 @@
           "symbol": "Q_{SAT}",
           "description": "É a carga de saturação, que é o nível máximo de carga que o semicondutor pode acumular antes de atingir a saturação."
         }
-      ]
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 327
     },
     {
       "originalFormula": "t_{p} = 2.3\\tau_{p}",
@@ -834,7 +904,10 @@
           "symbol": "k",
           "description": "Representa uma constante de proporcionalidade, que neste caso é 2.3, e ajusta a relação entre o tempo de resposta e o parâmetro de tempo característico."
         }
-      ]
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 344
     },
     {
       "originalFormula": "I_{E_{n}} = \\frac{qADn_{e}n_{0E}}{L_{nE}} \\left[ \\exp \\left( \\frac{q V_{EB}}{kT} \\right) - 1 \\right]",
@@ -889,7 +962,10 @@
           "symbol": "T",
           "description": "é a temperatura absoluta do sistema, medida em Kelvin."
         }
-      ]
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 361
     },
     {
       "originalFormula": "I_{E_{n}} = \\frac{qADn_{e}n_{0E} p_{1}(0)}{L_{nE} p_{0}}",
@@ -939,7 +1015,10 @@
           "symbol": "p_{0}",
           "description": "Representa a densidade de portadores de carga do tipo buraco em um estado de equilíbrio."
         }
-      ]
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 378
     },
     {
       "originalFormula": "\\Delta I_{E_{n}} = \\frac{qADn_{e}n_{0E}}{L_{nE} p_{0}} \\Delta p(0)",
@@ -989,7 +1068,10 @@
           "symbol": "\\Delta p(0)",
           "description": "Representa a variação na pressão ou em outro parâmetro que afeta a densidade de portadores de carga no semicondutor."
         }
-      ]
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 395
     },
     {
       "originalFormula": "\\Delta I_{rec} = \\left( \\frac{qAW_{B}}{2\\tau_{p}} \\right) \\Delta p(0)",
@@ -1027,7 +1109,10 @@
           "symbol": "Δp(0)",
           "description": "Representa a variação da densidade de portadores de carga em um ponto específico, geralmente no ponto de equilíbrio."
         }
-      ]
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 413
     },
     {
       "originalFormula": "\\Delta I_{B} = p_{1}(0) \\left( \\frac{q}{kT} \\right) \\Delta V_{EB} + \\frac{qAW_{B}}{2\\tau_{p}}",
@@ -1077,7 +1162,10 @@
           "symbol": "τ_{p}",
           "description": "Representa o tempo de vida dos portadores de carga na base, que afeta a eficiência do transistor."
         }
-      ]
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 430
     },
     {
       "originalFormula": "\\Delta I_C = \\frac{\\partial I_C}{\\partial W_B} \\Delta W_B = -\\frac{q A p_{1}^{'}(0)}{W_B^2} \\frac{\\Delta W_B}{\\Delta V_{BC}} D_p \\quad (9.72)",
@@ -1126,7 +1214,10 @@
           "symbol": "D_p",
           "description": "É a difusividade dos portadores de carga, que indica como os portadores se movem através do material."
         }
-      ]
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 447
     },
     {
       "originalFormula": "\\Delta I_C = -\\frac{I_C \\Delta W_B}{W_B \\Delta V_{BC}} \\quad (9.73)",
@@ -1159,7 +1250,10 @@
           "symbol": "\\Delta V_{BC}",
           "description": "Representa a variação na tensão entre a base e o coletor, que é a diferença de potencial elétrico que influencia o funcionamento do transistor."
         }
-      ]
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 464
     },
     {
       "originalFormula": "V_A = -W_B \\frac{dV_{BC}}{dW_B}",
@@ -1192,7 +1286,10 @@
           "symbol": "dW_B",
           "description": "Representa a variação do trabalho realizado em B."
         }
-      ]
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 481
     }
   ],
   "processedPages": [
@@ -1695,5 +1792,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.087Z"
+  "lastUpdated": "2026-05-08T18:19:13.806603",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

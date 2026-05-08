@@ -41,7 +41,11 @@
               "symbol": "\\epsilon",
               "description": "Representa a permissividade elétrica do material, que indica como o material responde a um campo elétrico."
             }
-          ]
+          ],
+          "chapter": "10",
+          "source": "question",
+          "questionNumber": "a",
+          "page": 1
         }
       ]
     },
@@ -84,7 +88,11 @@
               "symbol": "L",
               "description": "Representa a largura do material semicondutor, que pode afetar a condutividade ao determinar o volume do material através do qual os portadores de carga podem se mover."
             }
-          ]
+          ],
+          "chapter": "10",
+          "source": "question",
+          "questionNumber": "b",
+          "page": 30
         }
       ]
     },
@@ -131,7 +139,11 @@
               "symbol": "n_i",
               "description": "É a concentração intrínseca de portadores de carga (elétrons e lacunas) em um semicondutor puro, sem dopagem."
             }
-          ]
+          ],
+          "chapter": "10",
+          "source": "question",
+          "questionNumber": "c",
+          "page": 59
         }
       ]
     },
@@ -191,7 +203,11 @@
               "symbol": "h",
               "description": "Outro coeficiente que pode influenciar a corrente, possivelmente relacionado a outro aspecto do dispositivo."
             }
-          ]
+          ],
+          "chapter": "10",
+          "source": "question",
+          "questionNumber": "d",
+          "page": 88
         }
       ]
     },
@@ -232,7 +248,11 @@
               "symbol": "V_p",
               "description": "Representa a tensão no ponto P do circuito."
             }
-          ]
+          ],
+          "chapter": "10",
+          "source": "question",
+          "questionNumber": "10.5",
+          "page": 118
         },
         {
           "originalFormula": "V_G = -\\frac{V_p}{9}",
@@ -256,7 +276,11 @@
               "symbol": "9",
               "description": "Um fator numérico que indica como a tensão de referência é dividida. Neste caso, a tensão de entrada é dividida por nove."
             }
-          ]
+          ],
+          "chapter": "10",
+          "source": "question",
+          "questionNumber": "10.5",
+          "page": 147
         },
         {
           "originalFormula": "V_G = -2V_p",
@@ -280,7 +304,11 @@
               "symbol": "k",
               "description": "Representa um fator de proporcionalidade que, neste caso, é igual a 2, indicando que a tensão de gate é o dobro da tensão de polarização, mas com sinal oposto."
             }
-          ]
+          ],
+          "chapter": "10",
+          "source": "question",
+          "questionNumber": "10.5",
+          "page": 176
         }
       ]
     },
@@ -335,7 +363,11 @@
               "symbol": "V_{p}",
               "description": "Representa a tensão de polarização, que é a tensão necessária para que o transistor comece a conduzir, também conhecida como tensão de limiar."
             }
-          ]
+          ],
+          "chapter": "10",
+          "source": "question",
+          "questionNumber": "10.7",
+          "page": 206
         }
       ]
     },
@@ -427,7 +459,10 @@
           "symbol": "R_{channel}",
           "description": "Representa a resistência do canal do dispositivo semicondutor, que influencia a quantidade de corrente que pode fluir através dele."
         }
-      ]
+      ],
+      "chapter": "10",
+      "source": "standalone",
+      "page": 235
     },
     {
       "originalFormula": "R_1 = \\frac{V_D}{I_{D1}}",
@@ -452,7 +487,10 @@
           "symbol": "I",
           "description": "Representa a corrente elétrica, que é o fluxo de carga elétrica que passa por um ponto em um circuito em um determinado tempo."
         }
-      ]
+      ],
+      "chapter": "10",
+      "source": "standalone",
+      "page": 264
     },
     {
       "originalFormula": "R_2 = \\frac{V_D}{I_{D2}}, \\quad R_2 > R_1, \\quad I_{D2} < I_{D1}",
@@ -477,7 +515,10 @@
           "symbol": "I",
           "description": "Representa a corrente elétrica, que é o fluxo de carga elétrica que passa por um ponto em um circuito por unidade de tempo."
         }
-      ]
+      ],
+      "chapter": "10",
+      "source": "standalone",
+      "page": 293
     },
     {
       "originalFormula": "R_3 = \\frac{V_D}{I_{D3}}, \\quad R_3 > R_2, \\quad I_{D3} < I_{D2}",
@@ -510,7 +551,10 @@
           "symbol": "I_{D2}",
           "description": "Representa a corrente elétrica que passa pelo componente 2."
         }
-      ]
+      ],
+      "chapter": "10",
+      "source": "standalone",
+      "page": 323
     },
     {
       "originalFormula": "I_D = I_{D1}, I_{D2}, I_{D3}",
@@ -538,7 +582,10 @@
           "symbol": "I_{D3}",
           "description": "Representa a terceira contribuição da corrente que flui através do dispositivo."
         }
-      ]
+      ],
+      "chapter": "10",
+      "source": "standalone",
+      "page": 352
     },
     {
       "originalFormula": "V_{D1}, V_{D2}, V_{D3}",
@@ -562,7 +609,10 @@
           "symbol": "V_{D3}",
           "description": "Representa a tensão elétrica no diodo 3."
         }
-      ]
+      ],
+      "chapter": "10",
+      "source": "standalone",
+      "page": 381
     },
     {
       "originalFormula": "I_{D} = I_{SAT} \\text{ for } V_{D} \\geq V_{SAT}",
@@ -591,7 +641,10 @@
           "symbol": "V_{SAT}",
           "description": "Representa a tensão de saturação, que é o valor mínimo da tensão de dreno necessário para que o transistor entre na região de saturação."
         }
-      ]
+      ],
+      "chapter": "10",
+      "source": "standalone",
+      "page": 411
     },
     {
       "originalFormula": "V_{G} \\leq V_{P}",
@@ -612,7 +665,10 @@
           "symbol": "V_P",
           "description": "Representa a tensão de pico, que é o valor máximo de tensão que um dispositivo pode suportar sem falhar."
         }
-      ]
+      ],
+      "chapter": "10",
+      "source": "standalone",
+      "page": 440
     },
     {
       "originalFormula": "V_{D} < V_{SAT}",
@@ -632,7 +688,10 @@
           "symbol": "V_{SAT}",
           "description": "Representa a tensão de saturação do diodo, que é a tensão mínima necessária para que o diodo comece a conduzir efetivamente."
         }
-      ]
+      ],
+      "chapter": "10",
+      "source": "standalone",
+      "page": 469
     }
   ],
   "processedPages": [
@@ -1135,5 +1194,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.864Z"
+  "lastUpdated": "2026-05-08T18:19:14.009286",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

@@ -34,7 +34,11 @@
               "symbol": "V_G",
               "description": "Representa a tensão aplicada ao gate do dispositivo, que controla sua operação."
             }
-          ]
+          ],
+          "chapter": "10.1 Construction and Operation",
+          "source": "answer",
+          "questionNumber": "1",
+          "page": 1
         }
       ]
     }
@@ -62,7 +66,10 @@
           "symbol": "V_G",
           "description": "Representa a tensão de gate, que é a tensão aplicada ao terminal de controle do dispositivo semicondutor, influenciando sua condutividade."
         }
-      ]
+      ],
+      "chapter": "10.1 Construction and Operation",
+      "source": "standalone",
+      "page": 250
     }
   ],
   "processedPages": [
@@ -565,5 +572,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.105Z"
+  "lastUpdated": "2026-05-08T18:19:13.521419",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

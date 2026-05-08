@@ -45,7 +45,11 @@
               "symbol": "V_i",
               "description": "Representa a tensão aplicada na junção, que afeta a capacitância e a distribuição de cargas no semicondutor."
             }
-          ]
+          ],
+          "chapter": "7 Limitations to Ideal Diode Theory",
+          "source": "question",
+          "questionNumber": "a",
+          "page": 1
         }
       ]
     },
@@ -71,7 +75,11 @@
               "symbol": "C",
               "description": "Representa a capacitância em uma forma genérica, sem valores numéricos específicos."
             }
-          ]
+          ],
+          "chapter": "7 Limitations to Ideal Diode Theory",
+          "source": "question",
+          "questionNumber": "b",
+          "page": 24
         }
       ]
     }
@@ -112,7 +120,11 @@
               "symbol": "k",
               "description": "Um valor constante que pode representar um fator de ajuste ou uma propriedade específica do material ou dispositivo em questão."
             }
-          ]
+          ],
+          "chapter": "7 Limitations to Ideal Diode Theory",
+          "source": "answer",
+          "questionNumber": "a",
+          "page": 48
         }
       ]
     },
@@ -152,7 +164,11 @@
               "symbol": "b",
               "description": "Outro valor constante que pode representar um fator de escala ou normalização na fórmula."
             }
-          ]
+          ],
+          "chapter": "7 Limitations to Ideal Diode Theory",
+          "source": "answer",
+          "questionNumber": "b",
+          "page": 72
         }
       ]
     },
@@ -191,7 +207,11 @@
               "symbol": "0.07",
               "description": "É outra constante adimensional que pode representar uma característica específica do material ou do dispositivo."
             }
-          ]
+          ],
+          "chapter": "7 Limitations to Ideal Diode Theory",
+          "source": "answer",
+          "questionNumber": "c",
+          "page": 95
         }
       ]
     }
@@ -216,7 +236,10 @@
           "symbol": "V_{0}",
           "description": "Representa uma tensão genérica que pode ser utilizada para descrever a tensão de built-in em diferentes contextos ou dispositivos."
         }
-      ]
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 119
     },
     {
       "originalFormula": "C_{p0} = 2 \\times 10^{-5} \\text{F}",
@@ -236,7 +259,10 @@
           "symbol": "k",
           "description": "Um valor genérico que representa a capacitância em farads, que é a unidade de medida da capacitância."
         }
-      ]
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 143
     },
     {
       "originalFormula": "C_s = \\frac{Aq^2L_p p_{on}}{kT} \\exp \\left( \\frac{qV_a}{kT} \\right)",
@@ -282,7 +308,10 @@
           "symbol": "V_a",
           "description": "Representa a tensão aplicada ao semicondutor, que influencia a capacitância e a distribuição de cargas."
         }
-      ]
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 167
     },
     {
       "originalFormula": "p_{on} = \\frac{n_i^2}{N_D} = \\frac{10^{20}}{10^{15}} = 10^5 \\, \\text{cm}^{-3}",
@@ -307,7 +336,10 @@
           "symbol": "N_D",
           "description": "Representa a concentração de dopantes do tipo doador em um semicondutor, que são átomos adicionados ao material para aumentar a quantidade de elétrons disponíveis."
         }
-      ]
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 190
     },
     {
       "originalFormula": "L_p = \\left( D \\tau_p \\right)^{0.5} = \\left( 16 \\times 0.1 \\times 10^{-6} \\right)^{0.5} = 1.26 \\times 10^{-3} \\, \\text{cm}",
@@ -332,7 +364,10 @@
           "symbol": "τ_p",
           "description": "Representa o tempo médio de vida dos portadores de carga, que é o tempo médio que um portador de carga permanece livre antes de se recombinar com uma carga oposta."
         }
-      ]
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 214
     },
     {
       "originalFormula": "r_d = \\frac{dV_a}{dI} (7.24)",
@@ -357,7 +392,10 @@
           "symbol": "dI",
           "description": "Representa a variação na corrente que flui através do dispositivo, medida em amperes."
         }
-      ]
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 238
     },
     {
       "originalFormula": "I = \\left( q A D_p \\frac{p_{on}}{l_p} \\right) \\exp \\left( \\frac{q V_a}{k T} \\right)",
@@ -407,7 +445,10 @@
           "symbol": "T",
           "description": "Representa a temperatura absoluta do semicondutor, medida em Kelvin."
         }
-      ]
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 261
     },
     {
       "originalFormula": "r_d = \\left( \\frac{dI}{dV_a} \\right)^{-1} = \\frac{I_p}{(q/kT)A D_p p_{on} \\exp \\left( \\frac{qV_a}{kT} \\right)} = \\frac{kT}{q} I",
@@ -469,7 +510,10 @@
           "symbol": "I",
           "description": "Representa a corrente elétrica total que flui através do dispositivo."
         }
-      ]
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 285
     },
     {
       "originalFormula": "r_d C_s = \\frac{L^2}{D_p} = \\tau_p (7.27)",
@@ -503,7 +547,10 @@
           "symbol": "τ_p",
           "description": "Representa o tempo de relaxação, que é o tempo necessário para que um sistema retorne ao seu estado de equilíbrio após uma perturbação."
         }
-      ]
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 309
     },
     {
       "originalFormula": "r_d = \\frac{kT}{q I_S \\exp \\left( \\frac{qV_a}{kT} \\right)}",
@@ -545,7 +592,10 @@
           "symbol": "exp",
           "description": "É a função exponencial, que descreve como uma quantidade cresce em relação a uma base constante, sendo fundamental em muitos fenômenos físicos, incluindo a condução em semicondutores."
         }
-      ]
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 333
     },
     {
       "originalFormula": "p'(x) = p_{on} \\left[ \\exp \\left( \\frac{qV_a}{kT} \\right) \\left( 1 - \\frac{x'}{W_n} \\right) \\right]",
@@ -590,7 +640,10 @@
           "symbol": "W_n",
           "description": "Representa a largura da região de depleção ou a largura da zona onde a densidade de portadores é afetada pela tensão aplicada."
         }
-      ]
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 356
     },
     {
       "originalFormula": "I = -qD_p \\frac{dp'}{dx'} = \\frac{qAD_p}{W_n} p_{on} \\left[ \\exp \\left( \\frac{qV_a}{kT} \\right) - 1 \\right]",
@@ -645,7 +698,10 @@
           "symbol": "T",
           "description": "Representa a temperatura absoluta do semicondutor, que afeta a mobilidade e a densidade de portadores."
         }
-      ]
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 380
     },
     {
       "originalFormula": "Q_B = q A L_p p_{on} \\left[ \\exp \\left( \\frac{q V_a}{kT} \\right) - 1 \\right]",
@@ -692,7 +748,10 @@
           "symbol": "T",
           "description": "É a temperatura absoluta em Kelvin, que afeta a mobilidade e a densidade de portadores no semicondutor."
         }
-      ]
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 404
     },
     {
       "originalFormula": "Q_B = \\frac{L_p^2}{D_p} I_F = \\tau_p I_F",
@@ -725,7 +784,10 @@
           "symbol": "\\tau_p",
           "description": "Representa o tempo de vida dos portadores de carga, que é o tempo médio que um portador de carga permanece livre antes de recombinar."
         }
-      ]
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 427
     },
     {
       "originalFormula": "Q_B = I_F \\frac{W_n^2}{2D_p}",
@@ -754,7 +816,10 @@
           "symbol": "D_p",
           "description": "Representa a difusividade do portador de carga, que é uma medida de quão rapidamente os portadores de carga se espalham através do material."
         }
-      ]
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 451
     },
     {
       "originalFormula": "I_R = \\frac{V_R + V_a}{R_R} \\approx \\frac{V_R}{R_R}",
@@ -795,7 +860,10 @@
           "symbol": "R",
           "description": "Representa a resistência em geral, que é uma medida da oposição ao fluxo de corrente elétrica."
         }
-      ]
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 475
     }
   ],
   "processedPages": [
@@ -1298,5 +1366,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.045Z"
+  "lastUpdated": "2026-05-08T18:19:13.189118",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

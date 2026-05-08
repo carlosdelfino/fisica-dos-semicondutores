@@ -37,7 +37,11 @@
               "symbol": "A",
               "description": "Representa a área da seção transversal do condutor, que é a área através da qual a corrente elétrica flui."
             }
-          ]
+          ],
+          "chapter": "4. VELOCITY LIMITATIONS",
+          "source": "question",
+          "questionNumber": "1",
+          "page": 1
         }
       ]
     }
@@ -544,5 +548,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.964Z"
+  "lastUpdated": "2026-05-08T18:19:13.991959",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

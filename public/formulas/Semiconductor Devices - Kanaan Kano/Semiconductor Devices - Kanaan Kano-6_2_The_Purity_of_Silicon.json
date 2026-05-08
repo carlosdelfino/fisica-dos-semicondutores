@@ -34,7 +34,11 @@
               "symbol": "SiCl_{4}",
               "description": "Representa o composto tetracloreto de silício, que é um líquido incolor e volátil, utilizado em processos químicos e na fabricação de semicondutores."
             }
-          ]
+          ],
+          "chapter": "6.2 The Purity of Silicon",
+          "source": "answer",
+          "questionNumber": "1",
+          "page": 1
         }
       ]
     }
@@ -62,7 +66,10 @@
           "symbol": "SiCl_{4}",
           "description": "Representa o tetracloreto de silício, um composto químico formado pela reação entre silício e cloro, utilizado em diversas aplicações industriais."
         }
-      ]
+      ],
+      "chapter": "6.2 The Purity of Silicon",
+      "source": "standalone",
+      "page": 250
     }
   ],
   "processedPages": [
@@ -565,5 +572,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.035Z"
+  "lastUpdated": "2026-05-08T18:19:13.763820",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

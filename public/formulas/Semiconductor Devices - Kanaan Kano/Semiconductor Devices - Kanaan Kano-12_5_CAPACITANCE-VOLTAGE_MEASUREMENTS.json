@@ -33,7 +33,11 @@
           "description": "Não foi possível gerar descrição automática",
           "concepts": [],
           "symbols": [],
-          "rawText": "{\n  \"originalFormula\": \"W_{m} = \\left( \\frac{4e\\phi_{f}}{qN_{A}} \\right)^{0.5}\",\n  \"genericFormula\": \"W_{m} = \\left( \\frac{4e\\phi_{f}}{qN} \\right)^{0.5}\",\n  \"description\": \"Esta fórmula representa a largura da região de depleção em um semicondutor dopado, que é uma medida da distância ao longo da qual a carga elétrica é separada devido à presença de impurezas. Essa largura é importante para entender como os semicondutores funcionam em dispositivos eletrônicos.\",\n  \"concepts\": [\n    \"Região de depleção\",\n    \"Dopagem de semicondutores\",\n    \"Potencial elétrico\",\n    \"Carga elétrica\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"W_{m}\",\n      \"description\": \"Representa a largura da região de depleção em um semicondutor.\"\n    },\n    {\n      \"symbol\": \"e\",\n      \"description\": \"Representa a carga elementar, que é a menor unidade de carga elétrica que existe.\"\n    },\n    {\n      \"symbol\": \"\\\\phi_{f}\",\n      \"description\": \"Representa o potencial de Fermi, que é a energia máxima que os elétrons podem ter em um material em equilíbrio térmico.\"\n    },\n    {\n      \"symbol\": \"q\",\n      \"description\": \"Representa a carga elétrica de um elétron, que é uma constante fundamental na física.\"\n    },\n    {\n      \"symbol\": \"N_{A}\",\n      \"description\": \"Representa a concentração de dopantes do tipo aceito no semicondutor, ou seja, a quantidade de impurezas que criam buracos para a condução de corrente.\"\n    }\n  ]\n}"
+          "rawText": "{\n  \"originalFormula\": \"W_{m} = \\left( \\frac{4e\\phi_{f}}{qN_{A}} \\right)^{0.5}\",\n  \"genericFormula\": \"W_{m} = \\left( \\frac{4e\\phi_{f}}{qN} \\right)^{0.5}\",\n  \"description\": \"Esta fórmula representa a largura da região de depleção em um semicondutor dopado, que é uma medida da distância ao longo da qual a carga elétrica é separada devido à presença de impurezas. Essa largura é importante para entender como os semicondutores funcionam em dispositivos eletrônicos.\",\n  \"concepts\": [\n    \"Região de depleção\",\n    \"Dopagem de semicondutores\",\n    \"Potencial elétrico\",\n    \"Carga elétrica\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"W_{m}\",\n      \"description\": \"Representa a largura da região de depleção em um semicondutor.\"\n    },\n    {\n      \"symbol\": \"e\",\n      \"description\": \"Representa a carga elementar, que é a menor unidade de carga elétrica que existe.\"\n    },\n    {\n      \"symbol\": \"\\\\phi_{f}\",\n      \"description\": \"Representa o potencial de Fermi, que é a energia máxima que os elétrons podem ter em um material em equilíbrio térmico.\"\n    },\n    {\n      \"symbol\": \"q\",\n      \"description\": \"Representa a carga elétrica de um elétron, que é uma constante fundamental na física.\"\n    },\n    {\n      \"symbol\": \"N_{A}\",\n      \"description\": \"Representa a concentração de dopantes do tipo aceito no semicondutor, ou seja, a quantidade de impurezas que criam buracos para a condução de corrente.\"\n    }\n  ]\n}",
+          "chapter": "12.5 CAPACITANCE-VOLTAGE MEASUREMENTS",
+          "source": "answer",
+          "questionNumber": "a",
+          "page": 1
         }
       ]
     },
@@ -69,7 +73,11 @@
               "symbol": "W_{m}",
               "description": "Representa a energia necessária para mover um portador de carga dentro do material semicondutor, frequentemente associada à energia de ativação."
             }
-          ]
+          ],
+          "chapter": "12.5 CAPACITANCE-VOLTAGE MEASUREMENTS",
+          "source": "answer",
+          "questionNumber": "b",
+          "page": 84
         }
       ]
     },
@@ -113,7 +121,11 @@
               "symbol": "T",
               "description": "Representa a temperatura absoluta do sistema, medida em Kelvin."
             }
-          ]
+          ],
+          "chapter": "12.5 CAPACITANCE-VOLTAGE MEASUREMENTS",
+          "source": "answer",
+          "questionNumber": "c",
+          "page": 167
         }
       ]
     },
@@ -149,7 +161,11 @@
               "symbol": "C_{ox}",
               "description": "Representa a capacitância do óxido, que é uma medida da capacidade do material isolante de armazenar carga elétrica."
             }
-          ]
+          ],
+          "chapter": "12.5 CAPACITANCE-VOLTAGE MEASUREMENTS",
+          "source": "answer",
+          "questionNumber": "d",
+          "page": 250
         }
       ]
     }
@@ -190,7 +206,10 @@
           "symbol": "n_{i}",
           "description": "É a concentração intrínseca de portadores de carga (elétrons e buracos) em um semicondutor puro, sem dopagem."
         }
-      ]
+      ],
+      "chapter": "12.5 CAPACITANCE-VOLTAGE MEASUREMENTS",
+      "source": "standalone",
+      "page": 333
     },
     {
       "originalFormula": "C_{ox} = \\frac{\\epsilon_{ox}}{t_{ox}} = \\frac{(3.9 \\times 8.854 \\times 10^{-14})}{90 \\times 10^{-8}} = 3.83 \\times 10^{-7} \\text{ F/cm}^{2}",
@@ -215,7 +234,10 @@
           "symbol": "t_{ox}",
           "description": "Representa a espessura da camada de óxido, que é a distância entre as placas do capacitor formado pelo óxido e o material subjacente."
         }
-      ]
+      ],
+      "chapter": "12.5 CAPACITANCE-VOLTAGE MEASUREMENTS",
+      "source": "standalone",
+      "page": 416
     }
   ],
   "processedPages": [
@@ -718,5 +740,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.156Z"
+  "lastUpdated": "2026-05-08T18:19:13.387203",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

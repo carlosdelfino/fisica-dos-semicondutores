@@ -37,7 +37,12 @@
           "description": "Não foi possível gerar descrição automática",
           "concepts": [],
           "symbols": [],
-          "rawText": "{\n  \"originalFormula\": \"a_{c} = 5 \\, \\\\text{Å}\",\n  \"genericFormula\": \"a_{c} = x \\, \\\\text{Å}\",\n  \"description\": \"Esta fórmula representa a constante de rede cúbica, que é a distância entre os átomos em uma estrutura cristalina cúbica. A constante de rede é uma medida fundamental que ajuda a entender como os átomos estão organizados em um cristal.\",\n  \"concepts\": [\n    \"Constante de rede\",\n    \"Estruturas cristalinas\",\n    \"Cristalografia\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"a_{c}\",\n      \"description\": \"Representa a constante de rede cúbica, que é a distância entre os átomos em um cristal cúbico.\"\n    },\n    {\n      \"symbol\": \"Å\",\n      \"description\": \"Representa o angstrom, uma unidade de medida que equivale a 10^{-10} metros, frequentemente usada para medir distâncias em escala atômica.\"\n    },\n    {\n      \"symbol\": \"x\",\n      \"description\": \"Representa um valor genérico que pode ser substituído por qualquer número que indique a distância entre os átomos na estrutura cristalina.\"\n    }\n  ]\n}"
+          "rawText": "{\n  \"originalFormula\": \"a_{c} = 5 \\, \\\\text{Å}\",\n  \"genericFormula\": \"a_{c} = x \\, \\\\text{Å}\",\n  \"description\": \"Esta fórmula representa a constante de rede cúbica, que é a distância entre os átomos em uma estrutura cristalina cúbica. A constante de rede é uma medida fundamental que ajuda a entender como os átomos estão organizados em um cristal.\",\n  \"concepts\": [\n    \"Constante de rede\",\n    \"Estruturas cristalinas\",\n    \"Cristalografia\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"a_{c}\",\n      \"description\": \"Representa a constante de rede cúbica, que é a distância entre os átomos em um cristal cúbico.\"\n    },\n    {\n      \"symbol\": \"Å\",\n      \"description\": \"Representa o angstrom, uma unidade de medida que equivale a 10^{-10} metros, frequentemente usada para medir distâncias em escala atômica.\"\n    },\n    {\n      \"symbol\": \"x\",\n      \"description\": \"Representa um valor genérico que pode ser substituído por qualquer número que indique a distância entre os átomos na estrutura cristalina.\"\n    }\n  ]\n}",
+          "chapter": "1",
+          "section": "The Crystal Structure of Solids",
+          "source": "question",
+          "questionNumber": "Example 1.3",
+          "page": 1
         }
       ]
     }
@@ -97,5 +102,7 @@
     44,
     45
   ],
-  "lastUpdated": "2026-05-08T19:52:20.794Z"
+  "lastUpdated": "2026-05-08T18:19:12.955254",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
 }

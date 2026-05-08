@@ -38,7 +38,11 @@
               "symbol": "\\chi",
               "description": "Representa a eletronegatividade do semicondutor, que é uma medida da tendência de um átomo ou material em atrair elétrons."
             }
-          ]
+          ],
+          "chapter": "11 Metal-Semiconductor Junctions and Devices",
+          "source": "question",
+          "questionNumber": "11.1",
+          "page": 1
         },
         {
           "originalFormula": "V_{b} = \\Phi_{m} - \\Phi_{s}",
@@ -62,7 +66,11 @@
               "symbol": "\\Phi_{s}",
               "description": "Representa a função de trabalho do semicondutor, que é a energia necessária para remover um elétron da superfície do semicondutor."
             }
-          ]
+          ],
+          "chapter": "11 Metal-Semiconductor Junctions and Devices",
+          "source": "question",
+          "questionNumber": "11.1",
+          "page": 19
         }
       ]
     },
@@ -97,7 +105,11 @@
               "symbol": "\\chi",
               "description": "Representa a energia de afinidade do material, que é a quantidade de energia necessária para remover um elétron do nível de Fermi para o nível de energia do vácuo."
             }
-          ]
+          ],
+          "chapter": "11 Metal-Semiconductor Junctions and Devices",
+          "source": "question",
+          "questionNumber": "11.3",
+          "page": 37
         },
         {
           "originalFormula": "W = \\sqrt{\\frac{2 \\epsilon_{0} \\epsilon_{r} V_{b}}{q N_{D}}}",
@@ -135,7 +147,11 @@
               "symbol": "N_{D}",
               "description": "É a concentração de dopantes do tipo doador no semicondutor, que afeta a quantidade de portadores de carga disponíveis."
             }
-          ]
+          ],
+          "chapter": "11 Metal-Semiconductor Junctions and Devices",
+          "source": "question",
+          "questionNumber": "11.3",
+          "page": 56
         },
         {
           "originalFormula": "E_{max} = \\frac{V_{b}}{W}",
@@ -159,7 +175,11 @@
               "symbol": "W",
               "description": "Representa o trabalho realizado por unidade de carga ou o trabalho necessário para mover uma carga dentro do sistema."
             }
-          ]
+          ],
+          "chapter": "11 Metal-Semiconductor Junctions and Devices",
+          "source": "question",
+          "questionNumber": "11.3",
+          "page": 74
         }
       ]
     },
@@ -190,7 +210,11 @@
               "symbol": "\\Phi_{p}",
               "description": "Representa o potencial elétrico do material que está em contato com o semicondutor, geralmente associado à região do material que possui menor energia de carga."
             }
-          ]
+          ],
+          "chapter": "11 Metal-Semiconductor Junctions and Devices",
+          "source": "question",
+          "questionNumber": "11.4",
+          "page": 93
         },
         {
           "originalFormula": "W = \\sqrt{\\frac{2 \\epsilon_{0} \\epsilon_{r} V_{b}}{q N_{A}}}",
@@ -227,7 +251,11 @@
               "symbol": "N_{A}",
               "description": "É a concentração de dopantes do tipo aceito (p), que indica quantos átomos dopantes estão presentes por unidade de volume no semicondutor."
             }
-          ]
+          ],
+          "chapter": "11 Metal-Semiconductor Junctions and Devices",
+          "source": "question",
+          "questionNumber": "11.4",
+          "page": 111
         }
       ]
     },
@@ -371,7 +399,11 @@
               "symbol": "V_{0}",
               "description": "Representa uma tensão genérica, que pode ser utilizada para descrever a tensão de built-in em diferentes contextos ou dispositivos."
             }
-          ]
+          ],
+          "chapter": "11 Metal-Semiconductor Junctions and Devices",
+          "source": "answer",
+          "questionNumber": "E11-1",
+          "page": 130
         },
         {
           "originalFormula": "W = 0.57 \\mu m",
@@ -391,7 +423,11 @@
               "symbol": "\\mu m",
               "description": "Representa micrômetros, que é uma unidade de medida equivalente a um milionésimo de metro, frequentemente utilizada para medir dimensões em escalas muito pequenas, como as encontradas em dispositivos eletrônicos."
             }
-          ]
+          ],
+          "chapter": "11 Metal-Semiconductor Junctions and Devices",
+          "source": "answer",
+          "questionNumber": "E11-1",
+          "page": 148
         }
       ]
     },
@@ -417,7 +453,11 @@
               "symbol": "C",
               "description": "Representa a capacitância genérica, que é a mesma que C_j, mas sem valores numéricos específicos."
             }
-          ]
+          ],
+          "chapter": "11 Metal-Semiconductor Junctions and Devices",
+          "source": "answer",
+          "questionNumber": "E11-2(a)",
+          "page": 167
         },
         {
           "originalFormula": "C_s = 0.193 \\mu F",
@@ -437,7 +477,11 @@
               "symbol": "C",
               "description": "Representa a capacitância genérica, que é uma propriedade fundamental de todos os capacitores."
             }
-          ]
+          ],
+          "chapter": "11 Metal-Semiconductor Junctions and Devices",
+          "source": "answer",
+          "questionNumber": "E11-2(a)",
+          "page": 185
         },
         {
           "originalFormula": "C_j = 72 \\text{ pF}",
@@ -457,7 +501,11 @@
               "symbol": "C",
               "description": "Representa a capacitância em uma forma genérica, sem valores numéricos específicos."
             }
-          ]
+          ],
+          "chapter": "11 Metal-Semiconductor Junctions and Devices",
+          "source": "answer",
+          "questionNumber": "E11-2(a)",
+          "page": 203
         },
         {
           "originalFormula": "C_s = 0",
@@ -473,7 +521,11 @@
               "symbol": "C_s",
               "description": "Representa a capacitância superficial, que é uma medida da capacidade de uma superfície de armazenar carga elétrica."
             }
-          ]
+          ],
+          "chapter": "11 Metal-Semiconductor Junctions and Devices",
+          "source": "answer",
+          "questionNumber": "E11-2(a)",
+          "page": 222
         }
       ]
     }
@@ -515,7 +567,10 @@
           "symbol": "T",
           "description": "Representa a temperatura do sistema em Kelvin, que influencia a energia térmica dos portadores de carga."
         }
-      ]
+      ],
+      "chapter": "11 Metal-Semiconductor Junctions and Devices",
+      "source": "standalone",
+      "page": 240
     },
     {
       "originalFormula": "q \\Phi_B = qV_{bi} + (E_c - E_f) \\quad (11.10)",
@@ -548,7 +603,10 @@
           "symbol": "E_f",
           "description": "Representa o nível de Fermi, que é o nível de energia mais alto que os elétrons ocupam a temperatura zero absoluto e indica a probabilidade de ocupação dos estados eletrônicos."
         }
-      ]
+      ],
+      "chapter": "11 Metal-Semiconductor Junctions and Devices",
+      "source": "standalone",
+      "page": 259
     },
     {
       "originalFormula": "n = N_c \\exp \\left[ -\\frac{(E_c - E_f)}{kT} \\right] \\approx N_d",
@@ -591,7 +649,10 @@
           "symbol": "N_d",
           "description": "É a densidade de dopantes do tipo doador, que indica a quantidade de átomos dopantes que introduzem elétrons livres no semicondutor por unidade de volume."
         }
-      ]
+      ],
+      "chapter": "11 Metal-Semiconductor Junctions and Devices",
+      "source": "standalone",
+      "page": 277
     },
     {
       "originalFormula": "n_s = N_c \\left[ \\exp \\left( -\\frac{qV_{bi}}{kT} \\right) \\exp \\left( -\\frac{(E_c - E_f)}{kT} \\right) \\right]",
@@ -636,7 +697,10 @@
           "symbol": "E_f",
           "description": "Representa o nível de Fermi, que é o nível de energia mais alto ocupado por elétrons em um semicondutor à temperatura zero."
         }
-      ]
+      ],
+      "chapter": "11 Metal-Semiconductor Junctions and Devices",
+      "source": "standalone",
+      "page": 296
     },
     {
       "originalFormula": "n_s = N_d \\exp \\left( -\\frac{qV_{bi}}{kT} \\right)",
@@ -674,7 +738,10 @@
           "symbol": "T",
           "description": "Representa a temperatura absoluta do sistema em Kelvin, que influencia a energia térmica dos portadores de carga."
         }
-      ]
+      ],
+      "chapter": "11 Metal-Semiconductor Junctions and Devices",
+      "source": "standalone",
+      "page": 314
     },
     {
       "originalFormula": "I_{ms} = qA n_s \\frac{v_h}{4}",
@@ -708,7 +775,10 @@
           "symbol": "v_h",
           "description": "Representa a velocidade dos portadores de carga, que é a velocidade média com que os portadores se movem através do semicondutor."
         }
-      ]
+      ],
+      "chapter": "11 Metal-Semiconductor Junctions and Devices",
+      "source": "standalone",
+      "page": 333
     },
     {
       "originalFormula": "I_{ms} = \\frac{qA(v_{th}N_{C})}{4} \\exp \\left( -\\frac{q\\Phi_{B}}{kT} \\right) \\exp \\left( \\frac{qV_{a}}{kT} \\right)",
@@ -759,7 +829,10 @@
           "symbol": "V_{a}",
           "description": "É a tensão aplicada ao dispositivo semicondutor, que influencia a corrente que flui através dele."
         }
-      ]
+      ],
+      "chapter": "11 Metal-Semiconductor Junctions and Devices",
+      "source": "standalone",
+      "page": 351
     },
     {
       "originalFormula": "I = I_{ms} + I_{sm} = qA\\left( \\frac{v_{th}}{4} \\right)N_{c} \\exp \\left( -\\frac{q\\Phi_{B}}{kT} \\right) \\left[ \\exp \\left( \\frac{qV_{a}}{kT} \\right) - 1 \\right]",
@@ -818,7 +891,10 @@
           "symbol": "V_{a}",
           "description": "Representa a tensão aplicada ao dispositivo semicondutor."
         }
-      ]
+      ],
+      "chapter": "11 Metal-Semiconductor Junctions and Devices",
+      "source": "standalone",
+      "page": 369
     },
     {
       "originalFormula": "I = ART^{2}\\left[ \\exp \\left( -\\frac{q\\Phi_{B}}{kT} \\right) \\right] \\left[ \\exp \\left( \\frac{qV_{a}}{kT} \\right) - 1 \\right]",
@@ -865,7 +941,10 @@
           "symbol": "V_{a}",
           "description": "Representa a tensão aplicada ao semicondutor, que influencia a corrente que flui através do dispositivo."
         }
-      ]
+      ],
+      "chapter": "11 Metal-Semiconductor Junctions and Devices",
+      "source": "standalone",
+      "page": 388
     },
     {
       "originalFormula": "I = I_{s}\\left[ \\exp \\left( \\frac{qV_{a}}{kT} \\right) - 1 \\right]",
@@ -904,7 +983,10 @@
           "symbol": "T",
           "description": "representa a temperatura absoluta em Kelvin, que é uma medida da energia térmica do sistema."
         }
-      ]
+      ],
+      "chapter": "11 Metal-Semiconductor Junctions and Devices",
+      "source": "standalone",
+      "page": 406
     },
     {
       "originalFormula": "I_{s} = ART^{2} \\exp \\left( -\\frac{q\\Phi_{B}}{kT} \\right)",
@@ -945,7 +1027,10 @@
           "symbol": "k",
           "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
         }
-      ]
+      ],
+      "chapter": "11 Metal-Semiconductor Junctions and Devices",
+      "source": "standalone",
+      "page": 425
     },
     {
       "originalFormula": "E > W",
@@ -965,7 +1050,10 @@
           "symbol": "W",
           "description": "Representa o trabalho realizado sobre ou pelo sistema, que é a transferência de energia que ocorre quando uma força é aplicada ao longo de uma distância."
         }
-      ]
+      ],
+      "chapter": "11 Metal-Semiconductor Junctions and Devices",
+      "source": "standalone",
+      "page": 443
     },
     {
       "originalFormula": "W = \\text{width of the depletion layer}",
@@ -983,7 +1071,10 @@
           "symbol": "W",
           "description": "Representa a largura da camada de depleção, que é a distância entre as regiões onde os portadores de carga são escassos em um semicondutor."
         }
-      ]
+      ],
+      "chapter": "11 Metal-Semiconductor Junctions and Devices",
+      "source": "standalone",
+      "page": 462
     },
     {
       "originalFormula": "n_i = \\sqrt{N_c N_v} e^{-E_g / 2kT}",
@@ -1021,7 +1112,10 @@
           "symbol": "T",
           "description": "Representa a temperatura absoluta do sistema, medida em Kelvin."
         }
-      ]
+      ],
+      "chapter": "11 Metal-Semiconductor Junctions and Devices",
+      "source": "standalone",
+      "page": 480
     }
   ],
   "processedPages": [
@@ -1524,5 +1618,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.131Z"
+  "lastUpdated": "2026-05-08T18:19:13.214328",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

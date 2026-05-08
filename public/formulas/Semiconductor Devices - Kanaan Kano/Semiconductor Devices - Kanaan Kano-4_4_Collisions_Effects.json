@@ -25,7 +25,10 @@
           "symbol": "V",
           "description": "Representa a diferença de potencial elétrico, que é a quantidade de energia por unidade de carga que é necessária para mover uma carga entre dois pontos em um campo elétrico."
         }
-      ]
+      ],
+      "chapter": "4.4 Collisions Effects",
+      "source": "standalone",
+      "page": 1
     }
   ],
   "processedPages": [
@@ -528,5 +531,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.972Z"
+  "lastUpdated": "2026-05-08T18:19:13.982773",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

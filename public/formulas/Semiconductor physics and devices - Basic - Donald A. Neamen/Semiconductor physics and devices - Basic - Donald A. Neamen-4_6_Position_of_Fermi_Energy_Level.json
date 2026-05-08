@@ -33,7 +33,12 @@
               "symbol": "N_d",
               "description": "Representa a concentração de átomos doadores no semicondutor."
             }
-          ]
+          ],
+          "chapter": "4.6 Position of Fermi Energy Level",
+          "section": "Exercise Problem",
+          "source": "question",
+          "questionNumber": "Ex 4.11",
+          "page": 1
         }
       ]
     },
@@ -88,7 +93,12 @@
               "symbol": "n_{i}",
               "description": "Representa a concentração de portadores intrínsecos, que é a quantidade de portadores de carga em um semicondutor puro, sem dopagem."
             }
-          ]
+          ],
+          "chapter": "4.6 Position of Fermi Energy Level",
+          "section": "Exercise Problem",
+          "source": "question",
+          "questionNumber": "Ex 4.12",
+          "page": 18
         },
         {
           "originalFormula": "E_{F} - E_{c} = k_{T} \\ln \\left( \\frac{N_{d}}{p_{0}} \\right)",
@@ -122,7 +132,12 @@
               "symbol": "p_{0}",
               "description": "Representa a concentração de portadores de carga do tipo p, que são lacunas ou buracos deixados por elétrons em um semicondutor."
             }
-          ]
+          ],
+          "chapter": "4.6 Position of Fermi Energy Level",
+          "section": "Exercise Problem",
+          "source": "question",
+          "questionNumber": "Ex 4.12",
+          "page": 36
         },
         {
           "originalFormula": "E_{F} - E_{v} = k_{T} \\ln \\left( \\frac{N_{a}}{n_{i}} \\right)",
@@ -156,7 +171,12 @@
               "symbol": "n_{i}",
               "description": "Representa a concentração intrínseca de portadores de carga em um semicondutor, que é a quantidade de elétrons e buracos gerados termicamente em um material puro."
             }
-          ]
+          ],
+          "chapter": "4.6 Position of Fermi Energy Level",
+          "section": "Exercise Problem",
+          "source": "question",
+          "questionNumber": "Ex 4.12",
+          "page": 54
         }
       ]
     },
@@ -212,7 +232,12 @@
               "symbol": "n_{i}",
               "description": "Representa a concentração de portadores intrínsecos no semicondutor."
             }
-          ]
+          ],
+          "chapter": "4.6 Position of Fermi Energy Level",
+          "section": "Exercise Problem",
+          "source": "question",
+          "questionNumber": "Ex 4.13",
+          "page": 72
         }
       ]
     },
@@ -268,7 +293,12 @@
           "description": "Não foi possível gerar descrição automática",
           "concepts": [],
           "symbols": [],
-          "rawText": "```json\n{\n  \"originalFormula\": \"N_{e} = n_{i} \\exp \\\\left( \\\\frac{0.437}{0.0259} \\\\right) = 3.2 \\\\times 10^{17} \\\\, \\\\text{cm}^{-3}\",\n  \"genericFormula\": \"N_{e} = n_{i} \\exp \\\\left( \\\\frac{E_{g}}{k_{B} T} \\\\right)\",\n  \"description\": \"Esta fórmula representa a densidade de portadores de carga eletrônica em um semicondutor intrínseco em função da densidade de portadores intrínsecos, da energia da banda proibida e da temperatura. Ela mostra como a temperatura e a energia da banda proibida afetam a quantidade de elétrons disponíveis para condução elétrica.\",\n  \"concepts\": [\n    \"Densidade de portadores de carga\",\n    \"Semicondutores\",\n    \"Energia da banda proibida\",\n    \"Temperatura\",\n    \"Exponencial\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"N_{e}\",\n      \"description\": \"Representa a densidade de portadores de carga eletrônica no semicondutor, geralmente medida em número de portadores por centímetro cúbico.\"\n    },\n    {\n      \"symbol\": \"n_{i}\",\n      \"description\": \"Representa a densidade de portadores intrínsecos, que é a quantidade de portadores de carga em um semicondutor puro sem dopagem.\"\n    },\n    {\n      \"symbol\": \"E_{g}\",\n      \"description\": \"Representa a energia da banda proibida do semicondutor, que é a energia necessária para que um elétron se mova da banda de valência para a banda de condução.\"\n    },\n    {\n      \"symbol\": \"k_{B}\",\n      \"description\": \"Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos.\"\n    },\n    {\n      \"symbol\": \"T\",\n      \"description\": \"Representa a temperatura do sistema, geralmente medida em Kelvin.\"\n    },\n    {\n      \"symbol\": \"exp\",\n      \"description\": \"Representa a função exponencial, que é uma função matemática que descreve o crescimento ou decaimento de quantidades em muitos fenômenos físicos.\"\n    }\n  ]\n}\n```"
+          "rawText": "```json\n{\n  \"originalFormula\": \"N_{e} = n_{i} \\exp \\\\left( \\\\frac{0.437}{0.0259} \\\\right) = 3.2 \\\\times 10^{17} \\\\, \\\\text{cm}^{-3}\",\n  \"genericFormula\": \"N_{e} = n_{i} \\exp \\\\left( \\\\frac{E_{g}}{k_{B} T} \\\\right)\",\n  \"description\": \"Esta fórmula representa a densidade de portadores de carga eletrônica em um semicondutor intrínseco em função da densidade de portadores intrínsecos, da energia da banda proibida e da temperatura. Ela mostra como a temperatura e a energia da banda proibida afetam a quantidade de elétrons disponíveis para condução elétrica.\",\n  \"concepts\": [\n    \"Densidade de portadores de carga\",\n    \"Semicondutores\",\n    \"Energia da banda proibida\",\n    \"Temperatura\",\n    \"Exponencial\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"N_{e}\",\n      \"description\": \"Representa a densidade de portadores de carga eletrônica no semicondutor, geralmente medida em número de portadores por centímetro cúbico.\"\n    },\n    {\n      \"symbol\": \"n_{i}\",\n      \"description\": \"Representa a densidade de portadores intrínsecos, que é a quantidade de portadores de carga em um semicondutor puro sem dopagem.\"\n    },\n    {\n      \"symbol\": \"E_{g}\",\n      \"description\": \"Representa a energia da banda proibida do semicondutor, que é a energia necessária para que um elétron se mova da banda de valência para a banda de condução.\"\n    },\n    {\n      \"symbol\": \"k_{B}\",\n      \"description\": \"Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos.\"\n    },\n    {\n      \"symbol\": \"T\",\n      \"description\": \"Representa a temperatura do sistema, geralmente medida em Kelvin.\"\n    },\n    {\n      \"symbol\": \"exp\",\n      \"description\": \"Representa a função exponencial, que é uma função matemática que descreve o crescimento ou decaimento de quantidades em muitos fenômenos físicos.\"\n    }\n  ]\n}\n```",
+          "chapter": "4.6 Position of Fermi Energy Level",
+          "section": "Exercise Problem",
+          "source": "answer",
+          "questionNumber": "Ex 4.13",
+          "page": 90
         }
       ]
     }
@@ -306,7 +336,11 @@
           "symbol": "n_{i}",
           "description": "Representa a densidade intrínseca de portadores, que é a quantidade de portadores presentes em um semicondutor puro, sem dopagem."
         }
-      ]
+      ],
+      "chapter": "4.6 Position of Fermi Energy Level",
+      "section": "Exercise Problem",
+      "source": "standalone",
+      "page": 107
     },
     {
       "originalFormula": "E_{F} - E_{c} = k_{T} \\ln \\left( \\frac{N_{d}}{p_{0}} \\right)",
@@ -340,7 +374,11 @@
           "symbol": "p_{0}",
           "description": "Representa a concentração de lacunas, que são os locais onde não há elétrons e que também contribuem para a condução elétrica em semicondutores."
         }
-      ]
+      ],
+      "chapter": "4.6 Position of Fermi Energy Level",
+      "section": "Exercise Problem",
+      "source": "standalone",
+      "page": 125
     },
     {
       "originalFormula": "E_{F} - E_{v} = k_{T} \\ln \\left( \\frac{N_{a}}{n_{i}} \\right)",
@@ -375,7 +413,11 @@
           "symbol": "n_{i}",
           "description": "Representa a densidade de portadores intrínsecos, que é a quantidade de portadores de carga (elétrons e buracos) presentes em um semicondutor puro sem dopagem."
         }
-      ]
+      ],
+      "chapter": "4.6 Position of Fermi Energy Level",
+      "section": "Exercise Problem",
+      "source": "standalone",
+      "page": 143
     },
     {
       "originalFormula": "n_{i} = 3 \\times 10^{17} \\, \\text{cm}^{-3}",
@@ -395,7 +437,11 @@
           "symbol": "N",
           "description": "Representa uma densidade genérica de portadores, que pode ser ajustada conforme o contexto do semicondutor em questão."
         }
-      ]
+      ],
+      "chapter": "4.6 Position of Fermi Energy Level",
+      "section": "Exercise Problem",
+      "source": "standalone",
+      "page": 161
     }
   ],
   "processedPages": [
@@ -578,5 +624,7 @@
     177,
     178
   ],
-  "lastUpdated": "2026-05-08T20:50:57.984Z"
+  "lastUpdated": "2026-05-08T18:19:12.852948",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
 }

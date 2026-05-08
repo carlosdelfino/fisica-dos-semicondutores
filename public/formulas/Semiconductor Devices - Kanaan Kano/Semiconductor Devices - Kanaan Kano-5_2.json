@@ -40,7 +40,11 @@
               "symbol": "x_{p0}",
               "description": "Representa a posição de um ponto de referência no semicondutor, que pode estar relacionado à posição de um nível de dopagem ou à interface de um material."
             }
-          ]
+          ],
+          "chapter": "5.2",
+          "source": "question",
+          "questionNumber": "5.20",
+          "page": 1
         }
       ]
     },
@@ -91,7 +95,11 @@
               "symbol": "x",
               "description": "Representa a posição ao longo do semicondutor, onde a energia da banda de condução está sendo avaliada."
             }
-          ]
+          ],
+          "chapter": "5.2",
+          "source": "question",
+          "questionNumber": "5.21",
+          "page": 100
         }
       ]
     }
@@ -136,7 +144,11 @@
               "symbol": "x_{p0}",
               "description": "É uma posição de referência no semicondutor, que pode estar relacionada a uma interface ou a um ponto de dopagem específico."
             }
-          ]
+          ],
+          "chapter": "5.2",
+          "source": "answer",
+          "questionNumber": "5.20",
+          "page": 200
         }
       ]
     },
@@ -183,7 +195,11 @@
               "symbol": "x_{p0}",
               "description": "Representa a largura da região de depleção para portadores do tipo p, que é a distância ao longo da qual a carga é distribuída."
             }
-          ]
+          ],
+          "chapter": "5.2",
+          "source": "answer",
+          "questionNumber": "5.21",
+          "page": 299
         }
       ]
     }
@@ -216,7 +232,10 @@
           "symbol": "x_{n0}",
           "description": "Representa a posição limite onde a energia de condução atinge um valor específico, além do qual a fórmula não se aplica."
         }
-      ]
+      ],
+      "chapter": "5.2",
+      "source": "standalone",
+      "page": 399
     }
   ],
   "processedPages": [
@@ -719,5 +738,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.009Z"
+  "lastUpdated": "2026-05-08T18:19:13.753338",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

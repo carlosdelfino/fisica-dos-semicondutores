@@ -31,7 +31,11 @@
               "symbol": "R_3",
               "description": "Representa a terceira resistência no circuito, que é o produto das duas primeiras resistências."
             }
-          ]
+          ],
+          "chapter": "8.9",
+          "source": "question",
+          "questionNumber": "Example 8.6",
+          "page": 1
         }
       ]
     }
@@ -59,7 +63,11 @@
               "symbol": "x",
               "description": "Um valor genérico que representa o fator de forma, que pode variar dependendo das propriedades do material semicondutor em questão."
             }
-          ]
+          ],
+          "chapter": "8.9",
+          "source": "answer",
+          "questionNumber": "Example 8.6",
+          "page": 125
         }
       ]
     }
@@ -108,7 +116,10 @@
           "symbol": "N_{AE}",
           "description": "Representa a densidade de estados de armadilhas de captura, que são locais onde os portadores de carga podem ser capturados durante o transporte."
         }
-      ]
+      ],
+      "chapter": "8.9",
+      "source": "standalone",
+      "page": 250
     },
     {
       "originalFormula": "\\frac{1}{\\beta_F} = \\frac{1 - \\alpha_F}{\\alpha_F} = \\frac{1}{2 I_p^2} + \\frac{D_n n_e W_B N_{DB}}{D_p L_{int} N_{AE}} + \\frac{1}{2 I_p^2} \\frac{D_n W_B N_{DB}}{D_p L_{int} N_{AE}}",
@@ -161,7 +172,10 @@
           "symbol": "N_{AE}",
           "description": "Representa a densidade de estados de aceitação, que são estados que permitem a captura de portadores no material."
         }
-      ]
+      ],
+      "chapter": "8.9",
+      "source": "standalone",
+      "page": 374
     }
   ],
   "processedPages": [
@@ -664,5 +678,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.080Z"
+  "lastUpdated": "2026-05-08T18:19:13.115820",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

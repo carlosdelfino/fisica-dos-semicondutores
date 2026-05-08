@@ -31,7 +31,10 @@
           "symbol": "E_{g}",
           "description": "Representa a energia de bandgap, que é a quantidade de energia necessária para mover um elétron da banda de valência para a banda de condução em um semicondutor."
         }
-      ]
+      ],
+      "chapter": "4.10 Recombination and Generation",
+      "source": "standalone",
+      "page": 1
     },
     {
       "originalFormula": "n_0 >> p_0",
@@ -52,7 +55,10 @@
           "symbol": "p_0",
           "description": "Representa a densidade de portadores de carga positiva, ou seja, a quantidade de lacunas (defeitos onde um elétron poderia estar) disponíveis para condução em uma unidade de volume do semicondutor."
         }
-      ]
+      ],
+      "chapter": "4.10 Recombination and Generation",
+      "source": "standalone",
+      "page": 125
     },
     {
       "originalFormula": "n_0 = n_0 + \\Delta n",
@@ -76,7 +82,10 @@
           "symbol": "n",
           "description": "Representa a nova densidade de portadores de carga após a variação."
         }
-      ]
+      ],
+      "chapter": "4.10 Recombination and Generation",
+      "source": "standalone",
+      "page": 250
     },
     {
       "originalFormula": "\\Delta p << n_0",
@@ -96,7 +105,10 @@
           "symbol": "n_0",
           "description": "Representa a densidade de portadores de carga em equilíbrio, ou seja, a quantidade de portadores presentes no material em condições normais, sem a influência de fatores externos."
         }
-      ]
+      ],
+      "chapter": "4.10 Recombination and Generation",
+      "source": "standalone",
+      "page": 374
     }
   ],
   "processedPages": [
@@ -599,5 +611,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.994Z"
+  "lastUpdated": "2026-05-08T18:19:13.869473",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

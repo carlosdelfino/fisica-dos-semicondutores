@@ -172,7 +172,10 @@
           "symbol": "k",
           "description": "É um fator constante que, neste caso, é igual a 20, e que determina a relação entre a resistência de referência e a resistência do componente."
         }
-      ]
+      ],
+      "chapter": "8 Bipolar Transistors I: Characteristics and First-Order Model",
+      "source": "standalone",
+      "page": 1
     },
     {
       "originalFormula": "p/p(0) \\approx \\frac{\\sinh\\left[(W_{B} - x)/L_{p}\\right]}{\\sinh(W_{B}/L_{p})}",
@@ -205,7 +208,10 @@
           "symbol": "L_{p}",
           "description": "Representa o comprimento de difusão, que é uma medida de quão longe os portadores de carga podem se mover antes de serem recombinados ou perderem sua energia."
         }
-      ]
+      ],
+      "chapter": "8 Bipolar Transistors I: Characteristics and First-Order Model",
+      "source": "standalone",
+      "page": 63
     },
     {
       "originalFormula": "I_E = q A \\left[ \\frac{D_p p_0}{W_B} + \\frac{D_n n_{0E}}{L_n E} \\right] \\left[ \\exp \\left( \\frac{q V_{EB}}{kT} \\right) - 1 \\right]",
@@ -272,7 +278,10 @@
           "symbol": "T",
           "description": "É a temperatura absoluta do sistema, medida em Kelvin, que afeta a energia dos portadores de carga."
         }
-      ]
+      ],
+      "chapter": "8 Bipolar Transistors I: Characteristics and First-Order Model",
+      "source": "standalone",
+      "page": 125
     },
     {
       "originalFormula": "I_C = q A \\left[ \\frac{D_p p_0}{W_B} \\right] \\left[ \\exp \\left( \\frac{q V_{EB}}{kT} \\right) - 1 \\right]",
@@ -322,7 +331,10 @@
           "symbol": "T",
           "description": "Representa a temperatura absoluta em Kelvin, que influencia a energia térmica dos portadores de carga."
         }
-      ]
+      ],
+      "chapter": "8 Bipolar Transistors I: Characteristics and First-Order Model",
+      "source": "standalone",
+      "page": 187
     },
     {
       "originalFormula": "I_{EF} \\equiv q A \\left[ \\frac{D_p p_0}{W_B} + \\frac{D_n n_{0E}}{L_n E} \\right] \\left[ \\exp \\left( \\frac{q V_{EB}}{kT} \\right) - 1 \\right]",
@@ -388,7 +400,10 @@
           "symbol": "T",
           "description": "Representa a temperatura absoluta do sistema em Kelvin."
         }
-      ]
+      ],
+      "chapter": "8 Bipolar Transistors I: Characteristics and First-Order Model",
+      "source": "standalone",
+      "page": 250
     },
     {
       "originalFormula": "I_{CR} \\equiv q A \\left[ \\frac{D_p p_0}{W_B} + \\frac{D_n n_{0C}}{L_n C} \\right] \\left[ \\exp \\left( \\frac{q V_{CB}}{kT} \\right) - 1 \\right]",
@@ -454,7 +469,10 @@
           "symbol": "T",
           "description": "É a temperatura absoluta do sistema, que afeta a energia térmica dos portadores de carga."
         }
-      ]
+      ],
+      "chapter": "8 Bipolar Transistors I: Characteristics and First-Order Model",
+      "source": "standalone",
+      "page": 312
     },
     {
       "originalFormula": "\\alpha_F \\equiv \\left( \\frac{D_p p_0}{W_B} \\right) \\left[ \\frac{D_p p_0}{W_B} + \\frac{D_n n_{0E}}{L_n E} \\right]",
@@ -499,7 +517,10 @@
           "symbol": "E",
           "description": "É o campo elétrico aplicado no semicondutor."
         }
-      ]
+      ],
+      "chapter": "8 Bipolar Transistors I: Characteristics and First-Order Model",
+      "source": "standalone",
+      "page": 374
     },
     {
       "originalFormula": "\\alpha_R \\equiv \\left( \\frac{D_p p_0}{W_B} \\right) \\left[ \\frac{D_p p_0}{W_B} + \\frac{D_n n_{0C}}{L_n C} \\right]",
@@ -545,7 +566,10 @@
           "symbol": "C",
           "description": "É uma constante que pode representar a capacitância ou outro fator relevante no contexto da recombinação."
         }
-      ]
+      ],
+      "chapter": "8 Bipolar Transistors I: Characteristics and First-Order Model",
+      "source": "standalone",
+      "page": 436
     }
   ],
   "processedPages": [
@@ -1048,5 +1072,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.062Z"
+  "lastUpdated": "2026-05-08T18:19:13.410296",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

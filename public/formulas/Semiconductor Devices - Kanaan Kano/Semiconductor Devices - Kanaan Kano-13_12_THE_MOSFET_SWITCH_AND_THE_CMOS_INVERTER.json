@@ -35,7 +35,11 @@
               "symbol": "k",
               "description": "Uma constante que representa a razão entre a transcondutância e a corrente de coletor, indicando a eficiência do transistor na amplificação."
             }
-          ]
+          ],
+          "chapter": "13.12 THE MOSFET SWITCH AND THE CMOS INVERTER",
+          "source": "answer",
+          "questionNumber": "E13-3",
+          "page": 1
         },
         {
           "originalFormula": "\\frac{g_{m}}{I_{D}} = 0.87",
@@ -60,7 +64,11 @@
               "symbol": "k",
               "description": "Uma constante que representa a razão entre a transcondutância e a corrente de dreno, que pode variar dependendo das características do transistor e das condições de operação."
             }
-          ]
+          ],
+          "chapter": "13.12 THE MOSFET SWITCH AND THE CMOS INVERTER",
+          "source": "answer",
+          "questionNumber": "E13-3",
+          "page": 250
         }
       ]
     }
@@ -566,5 +574,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.181Z"
+  "lastUpdated": "2026-05-08T18:19:13.209478",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

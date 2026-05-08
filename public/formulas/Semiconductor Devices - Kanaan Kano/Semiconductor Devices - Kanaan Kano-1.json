@@ -32,7 +32,11 @@
               "symbol": "N_A",
               "description": "Representa o número de Avogadro, que é a quantidade de átomos ou moléculas em um mole, aproximadamente igual a 6.023 x 10^23."
             }
-          ]
+          ],
+          "chapter": "1",
+          "source": "question",
+          "questionNumber": "Example 1.2",
+          "page": 1
         }
       ]
     },
@@ -62,7 +66,11 @@
               "symbol": "v",
               "description": "representa a frequência da radiação eletromagnética, que é o número de ciclos que ocorrem em um segundo."
             }
-          ]
+          ],
+          "chapter": "1",
+          "source": "question",
+          "questionNumber": "1",
+          "page": 21
         }
       ]
     },
@@ -97,7 +105,11 @@
               "symbol": "c",
               "description": "Representa a velocidade da luz no vácuo, que é uma constante universal, aproximadamente 299.792.458 metros por segundo."
             }
-          ]
+          ],
+          "chapter": "1",
+          "source": "question",
+          "questionNumber": "3",
+          "page": 42
         }
       ]
     },
@@ -141,7 +153,11 @@
               "symbol": "d_{0}",
               "description": "Um parâmetro que pode representar uma constante de decaimento ou uma distância característica associada à função exponencial."
             }
-          ]
+          ],
+          "chapter": "1",
+          "source": "question",
+          "questionNumber": "b",
+          "page": 63
         }
       ]
     },
@@ -167,7 +183,11 @@
               "symbol": "a",
               "description": "Representa um valor genérico que pode ser substituído por qualquer número que indique uma variação de posição em metros."
             }
-          ]
+          ],
+          "chapter": "1",
+          "source": "question",
+          "questionNumber": "E1-3",
+          "page": 84
         }
       ]
     },
@@ -193,7 +213,11 @@
               "symbol": "a",
               "description": "Representa uma variável que pode estar relacionada a um parâmetro do sistema, como comprimento ou outra medida que influencia a área."
             }
-          ]
+          ],
+          "chapter": "1",
+          "source": "question",
+          "questionNumber": "E1-4",
+          "page": 104
         }
       ]
     },
@@ -223,7 +247,11 @@
               "symbol": "n",
               "description": "Um número inteiro que indica a potência de dez pela qual a constante é multiplicada."
             }
-          ]
+          ],
+          "chapter": "1",
+          "source": "question",
+          "questionNumber": "E1-5",
+          "page": 125
         }
       ]
     },
@@ -336,7 +364,11 @@
               "symbol": "c",
               "description": "Representa a velocidade da luz no vácuo, que é uma constante universal, aproximadamente 299.792.458 metros por segundo."
             }
-          ]
+          ],
+          "chapter": "1",
+          "source": "answer",
+          "questionNumber": "3",
+          "page": 146
         },
         {
           "originalFormula": "p = \\frac{h}{\\lambda}",
@@ -361,7 +393,11 @@
               "symbol": "λ",
               "description": "é o comprimento de onda da onda associada à partícula, que é a distância entre dois picos consecutivos da onda."
             }
-          ]
+          ],
+          "chapter": "1",
+          "source": "answer",
+          "questionNumber": "3",
+          "page": 167
         }
       ]
     },
@@ -387,7 +423,11 @@
               "symbol": "A",
               "description": "A representa outra grandeza ou quantidade que é igual à grandeza D."
             }
-          ]
+          ],
+          "chapter": "1",
+          "source": "answer",
+          "questionNumber": "b",
+          "page": 187
         },
         {
           "originalFormula": "aC = \\frac{A}{d_{0}}",
@@ -412,7 +452,11 @@
               "symbol": "d",
               "description": "Representa a distância entre as placas do capacitor, que afeta a força do campo elétrico e, portanto, a capacitância."
             }
-          ]
+          ],
+          "chapter": "1",
+          "source": "answer",
+          "questionNumber": "b",
+          "page": 208
         },
         {
           "originalFormula": "C = \\frac{A}{a_{0}}",
@@ -436,7 +480,11 @@
               "symbol": "a",
               "description": "Representa a distância entre as placas do capacitor. Quanto menor a distância, maior a capacitância."
             }
-          ]
+          ],
+          "chapter": "1",
+          "source": "answer",
+          "questionNumber": "b",
+          "page": 229
         },
         {
           "originalFormula": "B = 0, D = A, C = -\\frac{A}{a_{0}}",
@@ -468,7 +516,11 @@
               "symbol": "a",
               "description": "Representa uma constante que pode ser uma propriedade do sistema, como uma constante de proporcionalidade ou uma medida característica do material."
             }
-          ]
+          ],
+          "chapter": "1",
+          "source": "answer",
+          "questionNumber": "b",
+          "page": 250
         }
       ]
     },
@@ -512,7 +564,10 @@
           "symbol": "volume",
           "description": "Representa o espaço tridimensional ocupado pelo material, medido em unidades cúbicas."
         }
-      ]
+      ],
+      "chapter": "1",
+      "source": "standalone",
+      "page": 270
     },
     {
       "originalFormula": "E_{n} = nhv \\quad \\text{for } n = 0,1,2,3,\\ldots",
@@ -541,7 +596,10 @@
           "symbol": "v",
           "description": "representa a frequência da radiação associada ao nível de energia."
         }
-      ]
+      ],
+      "chapter": "1",
+      "source": "standalone",
+      "page": 291
     },
     {
       "originalFormula": "F = -\\frac{q^2}{4\\pi\\epsilon_0 r^2}",
@@ -575,7 +633,10 @@
           "symbol": "r",
           "description": "Representa a distância entre as duas cargas elétricas."
         }
-      ]
+      ],
+      "chapter": "1",
+      "source": "standalone",
+      "page": 312
     },
     {
       "originalFormula": "\\mathcal{E} = \\frac{q}{4\\pi\\epsilon_0 r^2}",
@@ -609,7 +670,10 @@
           "symbol": "π",
           "description": "Representa a constante matemática pi, que é a razão entre a circunferência de um círculo e seu diâmetro. É uma constante que aparece em várias fórmulas da física e matemática."
         }
-      ]
+      ],
+      "chapter": "1",
+      "source": "standalone",
+      "page": 333
     },
     {
       "originalFormula": "V = -\\int_{0}^{x} \\mathcal{E} \\, dx",
@@ -646,7 +710,10 @@
           "symbol": "dx",
           "description": "Representa um pequeno deslocamento na direção do eixo x, que é utilizado na integração para somar as contribuições do campo elétrico ao longo do caminho."
         }
-      ]
+      ],
+      "chapter": "1",
+      "source": "standalone",
+      "page": 353
     },
     {
       "originalFormula": "V = \\int_{\\infty}^{r} -\\frac{q}{4\\pi\\epsilon_0 r^2} \\, dr",
@@ -679,7 +746,10 @@
           "symbol": "π",
           "description": "Representa a constante matemática pi, que é a razão entre a circunferência de um círculo e seu diâmetro, aproximadamente igual a 3,14159."
         }
-      ]
+      ],
+      "chapter": "1",
+      "source": "standalone",
+      "page": 374
     },
     {
       "originalFormula": "W(P.E.) = V(-q) = -\\frac{q^2}{4\\pi\\epsilon_0 r}",
@@ -716,7 +786,10 @@
           "symbol": "4\\pi",
           "description": "Um fator que aparece na fórmula devido à geometria esférica do campo elétrico gerado por uma carga pontual."
         }
-      ]
+      ],
+      "chapter": "1",
+      "source": "standalone",
+      "page": 395
     },
     {
       "originalFormula": "E = \\frac{h}{v}",
@@ -741,7 +814,10 @@
           "symbol": "v",
           "description": "Representa a velocidade da onda associada à partícula."
         }
-      ]
+      ],
+      "chapter": "1",
+      "source": "standalone",
+      "page": 416
     },
     {
       "originalFormula": "\\lambda mv = h",
@@ -770,7 +846,10 @@
           "symbol": "h",
           "description": "Representa a constante de Planck, que é uma constante fundamental na física quântica, usada para descrever a quantização da energia."
         }
-      ]
+      ],
+      "chapter": "1",
+      "source": "standalone",
+      "page": 436
     },
     {
       "originalFormula": "\\Psi_{1} = \\frac{A}{a_{0}} \\sin(ax) + A \\cos(ax)",
@@ -804,7 +883,10 @@
           "symbol": "x",
           "description": "Representa a posição ao longo do espaço onde a função de onda é avaliada."
         }
-      ]
+      ],
+      "chapter": "1",
+      "source": "standalone",
+      "page": 457
     },
     {
       "originalFormula": "\\Psi_{2} = A e^{-x/d_{0}}",
@@ -836,7 +918,10 @@
           "symbol": "d_{0}",
           "description": "É uma constante que define a taxa de decaimento da função, indicando a distância na qual a quantidade Ψ diminui significativamente."
         }
-      ]
+      ],
+      "chapter": "1",
+      "source": "standalone",
+      "page": 478
     }
   ],
   "processedPages": [
@@ -1339,5 +1424,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.785Z"
+  "lastUpdated": "2026-05-08T18:19:13.890202",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

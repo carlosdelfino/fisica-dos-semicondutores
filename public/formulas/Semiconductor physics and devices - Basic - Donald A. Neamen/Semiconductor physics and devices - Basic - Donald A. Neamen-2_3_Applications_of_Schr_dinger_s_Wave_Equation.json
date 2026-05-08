@@ -47,7 +47,12 @@
               "symbol": "\\hbar",
               "description": "Representa a constante reduzida de Planck, que é uma constante fundamental na mecânica quântica."
             }
-          ]
+          ],
+          "chapter": "2.3 Applications of Schrödinger's Wave Equation",
+          "section": "Example 2.3",
+          "source": "question",
+          "questionNumber": "Ex 2.4",
+          "page": 1
         }
       ]
     },
@@ -97,7 +102,12 @@
               "symbol": "a",
               "description": "Representa o comprimento da caixa unidimensional em que a partícula está confinada."
             }
-          ]
+          ],
+          "chapter": "2.3 Applications of Schrödinger's Wave Equation",
+          "section": "Example 2.3",
+          "source": "answer",
+          "questionNumber": "Ex 2.3 (a)",
+          "page": 6
         },
         {
           "originalFormula": "E_n = \\frac{n^2 (2.41 \\times 10^{-19})}{1.6 \\times 10^{-19}} = n^2 (1.51) eV",
@@ -122,7 +132,12 @@
               "symbol": "k",
               "description": "É uma constante que representa a relação entre a energia e o número quântico, que foi derivada a partir de valores específicos."
             }
-          ]
+          ],
+          "chapter": "2.3 Applications of Schrödinger's Wave Equation",
+          "section": "Example 2.3",
+          "source": "answer",
+          "questionNumber": "Ex 2.3 (a)",
+          "page": 12
         }
       ]
     },
@@ -161,7 +176,12 @@
               "symbol": "\\hbar",
               "description": "Representa a constante de Planck reduzida, que é uma constante fundamental na mecânica quântica, relacionada à quantização da energia."
             }
-          ]
+          ],
+          "chapter": "2.3 Applications of Schrödinger's Wave Equation",
+          "section": "Example 2.3",
+          "source": "answer",
+          "questionNumber": "Objective",
+          "page": 18
         },
         {
           "originalFormula": "k_{z} = 2.17 \\times 10^{6} \\, m^{-1}",
@@ -181,7 +201,12 @@
               "symbol": "C",
               "description": "Um valor genérico que substitui o número específico na fórmula, representando a constante de onda em unidades de metros inversos."
             }
-          ]
+          ],
+          "chapter": "2.3 Applications of Schrödinger's Wave Equation",
+          "section": "Example 2.3",
+          "source": "answer",
+          "questionNumber": "Objective",
+          "page": 24
         }
       ]
     }
@@ -222,7 +247,11 @@
           "symbol": "a",
           "description": "Representa o comprimento da caixa, ou seja, a distância que a partícula está confinada."
         }
-      ]
+      ],
+      "chapter": "2.3 Applications of Schrödinger's Wave Equation",
+      "section": "Example 2.3",
+      "source": "standalone",
+      "page": 30
     },
     {
       "originalFormula": "\\frac{\\partial^2 \\psi(x)}{\\partial x^2} + \\frac{2m}{\\hbar^2}(E - V(x))\\psi(x) = 0",
@@ -260,7 +289,11 @@
           "symbol": "V(x)",
           "description": "Representa a função potencial, que descreve como a energia potencial da partícula varia com a posição."
         }
-      ]
+      ],
+      "chapter": "2.3 Applications of Schrödinger's Wave Equation",
+      "section": "Example 2.3",
+      "source": "standalone",
+      "page": 36
     },
     {
       "originalFormula": "E = T = \\frac{1}{2} mv^{2} = 4.56 \\times 10^{-21} \\text{ J} = 2.85 \\times 10^{-20} \\text{ eV}",
@@ -289,7 +322,11 @@
           "symbol": "v",
           "description": "Representa a velocidade do objeto, que é a taxa de variação da posição do objeto em relação ao tempo."
         }
-      ]
+      ],
+      "chapter": "2.3 Applications of Schrödinger's Wave Equation",
+      "section": "Example 2.3",
+      "source": "standalone",
+      "page": 41
     },
     {
       "originalFormula": "d = \\sqrt{ \\frac{\\hbar^{2}}{2mE} } = \\frac{1.054 \\times 10^{-34}}{\\sqrt{(29.11 \\times 10^{-31})(4.56 \\times 10^{-23})}} = 11.6 \\times 10^{-10} \\text{ m}",
@@ -318,7 +355,11 @@
           "symbol": "E",
           "description": "Representa a energia da partícula, que é um fator crucial para determinar a distância característica e o comportamento quântico da partícula."
         }
-      ]
+      ],
+      "chapter": "2.3 Applications of Schrödinger's Wave Equation",
+      "section": "Example 2.3",
+      "source": "standalone",
+      "page": 47
     },
     {
       "originalFormula": "d = 11.6 \\text{ Å}",
@@ -338,7 +379,11 @@
           "symbol": "D",
           "description": "Uma variável genérica que representa a distância entre planos atômicos, podendo assumir diferentes valores dependendo do contexto do cristal analisado."
         }
-      ]
+      ],
+      "chapter": "2.3 Applications of Schrödinger's Wave Equation",
+      "section": "Example 2.3",
+      "source": "standalone",
+      "page": 53
     },
     {
       "originalFormula": "T \\approx 16 \\left( \\frac{E}{V_{0}} \\right) \\left( 1 - \\frac{E}{V_{0}} \\right) \\exp(-2k_{a})",
@@ -367,7 +412,11 @@
           "symbol": "k_{a}",
           "description": "Representa uma constante que está relacionada ao processo de decaimento ou atenuação no sistema."
         }
-      ]
+      ],
+      "chapter": "2.3 Applications of Schrödinger's Wave Equation",
+      "section": "Example 2.3",
+      "source": "standalone",
+      "page": 59
     },
     {
       "originalFormula": "T = 16(0.1)(1 - 0.1) \\exp(-2[2.17 \\times 10^{6}](3 \\times 10^{-10}])",
@@ -400,7 +449,11 @@
           "symbol": "exp",
           "description": "Função exponencial que descreve o comportamento de decaimento ou crescimento em muitos processos físicos."
         }
-      ]
+      ],
+      "chapter": "2.3 Applications of Schrödinger's Wave Equation",
+      "section": "Example 2.3",
+      "source": "standalone",
+      "page": 65
     }
   ],
   "processedPages": [
@@ -475,5 +528,7 @@
     69,
     70
   ],
-  "lastUpdated": "2026-05-08T20:01:29.263Z"
+  "lastUpdated": "2026-05-08T18:19:12.944639",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
 }

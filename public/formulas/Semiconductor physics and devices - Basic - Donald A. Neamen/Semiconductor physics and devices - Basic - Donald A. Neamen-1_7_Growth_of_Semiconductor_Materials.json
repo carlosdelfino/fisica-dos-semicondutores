@@ -26,7 +26,11 @@
           "symbol": "C_{l}",
           "description": "Representa a capacitância de outro capacitor que está em relação com o capacitor específico."
         }
-      ]
+      ],
+      "chapter": "1.7 Growth of Semiconductor Materials",
+      "section": "1.7.1 Growth from a Melt",
+      "source": "standalone",
+      "page": 1
     }
   ],
   "processedPages": [
@@ -75,5 +79,7 @@
     43,
     44
   ],
-  "lastUpdated": "2026-05-08T19:52:14.066Z"
+  "lastUpdated": "2026-05-08T18:19:12.859901",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
 }

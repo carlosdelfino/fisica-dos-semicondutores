@@ -101,7 +101,12 @@
               "symbol": "1/1",
               "description": "Representa uma fração onde 1 é o numerador e 1 é o denominador, indicando que a parte é igual ao todo, ou seja, representa a totalidade."
             }
-          ]
+          ],
+          "chapter": "1 The Crystal Structure of Solids",
+          "section": "1.1 A portion of the periodic table",
+          "source": "answer",
+          "questionNumber": "Ex 1.2",
+          "page": 1
         }
       ]
     }
@@ -146,7 +151,11 @@
           "symbol": "c",
           "description": "É um terceiro vetor que também contribui para a força total, podendo representar outra direção e magnitude."
         }
-      ]
+      ],
+      "chapter": "1 The Crystal Structure of Solids",
+      "section": "1.1 A portion of the periodic table",
+      "source": "standalone",
+      "page": 17
     },
     {
       "originalFormula": "\\left( \\frac{1}{3}, \\frac{1}{2}, \\frac{1}{1} \\right)",
@@ -170,7 +179,11 @@
           "symbol": "c",
           "description": "Representa a última fração genérica do conjunto, que segue a mesma lógica das anteriores."
         }
-      ]
+      ],
+      "chapter": "1 The Crystal Structure of Solids",
+      "section": "1.1 A portion of the periodic table",
+      "source": "standalone",
+      "page": 33
     }
   ],
   "processedPages": [
@@ -224,5 +237,7 @@
     48,
     49
   ],
-  "lastUpdated": "2026-05-08T19:53:19.547Z"
+  "lastUpdated": "2026-05-08T18:19:13.032741",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
 }

@@ -95,7 +95,12 @@
               "symbol": "n_{y}",
               "description": "é o número quântico associado à direção y, que indica o estado quântico da partícula nessa direção."
             }
-          ]
+          ],
+          "chapter": "Problems",
+          "section": "Section 1.3 Space Lattices",
+          "source": "question",
+          "questionNumber": "2.31",
+          "page": 1
         }
       ]
     },
@@ -143,6 +148,345 @@
       "number": "12",
       "text": "What is the relevance of the Fermi energy?",
       "formulas": []
+    },
+    {
+      "number": "5.22 (a)",
+      "text": "Show that the minimum value of conductivity, \\sigma_{min}, can be written as \\sigma_{i} = \\frac{2 \\sigma_{e} (\\mu_{e} \\mu_{h})^{1/2}}{(\\mu_{e} + \\mu_{h})}",
+      "formulas": [
+        {
+          "originalFormula": "\\sigma_{i} = \\frac{2 \\sigma_{e} (\\mu_{e} \\mu_{h})^{1/2}}{(\\mu_{e} + \\mu_{h})}",
+          "genericFormula": "\\sigma_{i} = \\frac{2 \\sigma_{e} (\\mu_{e} \\mu_{h})^{1/2}}{(\\mu_{e} + \\mu_{h})}",
+          "description": "Esta fórmula representa a condutividade elétrica intrínseca de um semicondutor em função das mobilidades dos portadores de carga e da condutividade elétrica do material.",
+          "concepts": [
+            "Condutividade elétrica",
+            "Mobilidade dos portadores de carga",
+            "Semicondutores",
+            "Interação entre elétrons e lacunas"
+          ],
+          "symbols": [
+            {
+              "symbol": "σ_{i}",
+              "description": "Representa a condutividade elétrica intrínseca do semicondutor, que é uma medida de quão facilmente a corrente elétrica pode fluir através do material."
+            },
+            {
+              "symbol": "σ_{e}",
+              "description": "Representa a condutividade elétrica dos elétrons no semicondutor, que indica a contribuição dos portadores de carga negativa para a condutividade."
+            },
+            {
+              "symbol": "μ_{e}",
+              "description": "Representa a mobilidade dos elétrons, que é a medida de quão rapidamente os elétrons podem se mover através do semicondutor quando um campo elétrico é aplicado."
+            },
+            {
+              "symbol": "μ_{h}",
+              "description": "Representa a mobilidade das lacunas, que são os portadores de carga positiva no semicondutor, indicando a rapidez com que essas lacunas podem se mover sob a influência de um campo elétrico."
+            }
+          ],
+          "chapter": "Problems",
+          "section": "Section 1.3 Space Lattices",
+          "source": "question",
+          "questionNumber": "5.22 (a)",
+          "page": 22
+        }
+      ]
+    },
+    {
+      "number": "5.22 (b)",
+      "text": "Show that the corresponding hole concentration is p_{0} = n \\left( \\frac{\\mu_{h}}{\\mu_{e}} \\right)^{1/2}.",
+      "formulas": [
+        {
+          "originalFormula": "p_{0} = n \\left( \\frac{\\mu_{h}}{\\mu_{e}} \\right)^{1/2}",
+          "genericFormula": "p_{0} = n \\left( \\frac{\\mu_{h}}{\\mu_{e}} \\right)^{1/2}",
+          "description": "Esta fórmula relaciona a densidade de portadores de carga positiva em um semicondutor, representada por p_{0}, com a densidade de portadores de carga negativa, representada por n, e as mobilidades dos portadores de carga positiva e negativa. A fórmula indica que a densidade de portadores positivos é proporcional à densidade de portadores negativos multiplicada pela raiz quadrada da razão entre as mobilidades dos portadores positivos e negativos.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Mobilidade de portadores",
+            "Semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "p_{0}",
+              "description": "Representa a densidade de portadores de carga positiva em um semicondutor, ou seja, a quantidade de lacunas disponíveis para condução de corrente elétrica."
+            },
+            {
+              "symbol": "n",
+              "description": "Representa a densidade de portadores de carga negativa em um semicondutor, ou seja, a quantidade de elétrons disponíveis para condução de corrente elétrica."
+            },
+            {
+              "symbol": "μ_{h}",
+              "description": "Representa a mobilidade dos portadores de carga positiva, que são as lacunas, em um semicondutor. A mobilidade é uma medida de quão rapidamente os portadores podem se mover através do material quando um campo elétrico é aplicado."
+            },
+            {
+              "symbol": "μ_{e}",
+              "description": "Representa a mobilidade dos portadores de carga negativa, que são os elétrons, em um semicondutor. Assim como a mobilidade dos portadores positivos, é uma medida de quão rapidamente os elétrons podem se mover sob a influência de um campo elétrico."
+            }
+          ],
+          "chapter": "Problems",
+          "section": "Section 1.3 Space Lattices",
+          "source": "question",
+          "questionNumber": "5.22 (b)",
+          "page": 43
+        }
+      ]
+    },
+    {
+      "number": "5.23",
+      "text": "Consider three samples of silicon at T = 300 K. The n-type sample is doped with arsenic atoms to a concentration of N_{d} = 5 \\times 10^{16} \\text{ cm}^{-3}. The p-type sample is doped with boron atoms to a concentration of N_{a} = 2 \\times 10^{16} \\text{ cm}^{-3}. (a) Determine the majority carrier mobility in each sample, (b) calculate the conductivity of each sample, (c) and determine the electric field required in each sample to induce a drift current density of J = 120 \\text{ A/cm}^{2}.",
+      "formulas": [
+        {
+          "originalFormula": "J = \\sigma E",
+          "genericFormula": "J = \\sigma E",
+          "description": "Esta fórmula representa a relação entre a densidade de corrente elétrica e o campo elétrico em um material condutor. A densidade de corrente elétrica é a quantidade de carga elétrica que passa por uma unidade de área em um determinado tempo, enquanto o campo elétrico é a força por unidade de carga que atua sobre as cargas elétricas no material.",
+          "concepts": [
+            "Densidade de corrente elétrica",
+            "Condutividade elétrica",
+            "Campo elétrico"
+          ],
+          "symbols": [
+            {
+              "symbol": "J",
+              "description": "Representa a densidade de corrente elétrica, que é a quantidade de carga elétrica que flui através de uma área unitária por unidade de tempo."
+            },
+            {
+              "symbol": "σ",
+              "description": "Representa a condutividade elétrica do material, que indica a capacidade do material de conduzir eletricidade. Quanto maior a condutividade, melhor o material conduz eletricidade."
+            },
+            {
+              "symbol": "E",
+              "description": "Representa o campo elétrico, que é uma medida da força que uma carga elétrica experimenta por unidade de carga em um ponto específico no espaço."
+            }
+          ],
+          "chapter": "Problems",
+          "section": "Section 1.3 Space Lattices",
+          "source": "question",
+          "questionNumber": "5.23",
+          "page": 64
+        }
+      ]
+    },
+    {
+      "number": "5.24",
+      "text": "Three scattering mechanisms are present in a particular semiconductor material. If only the first scattering mechanism were present, the mobility would be \\mu_{1} = 1500 \\text{ cm}^{2}/\\text{V-s}. If only the second mechanism were present, the mobility would be \\mu_{2} = 500 \\text{ cm}^{2}/\\text{V-s}. What is the net mobility?",
+      "formulas": [
+        {
+          "originalFormula": "\\frac{1}{\\mu_{net}} = \\frac{1}{\\mu_{1}} + \\frac{1}{\\mu_{2}}",
+          "genericFormula": "\\frac{1}{\\mu_{net}} = \\frac{1}{\\mu_{1}} + \\frac{1}{\\mu_{2}}",
+          "description": "Esta fórmula representa a relação entre as mobilidades efetivas de duas espécies de portadores de carga em um semicondutor. A mobilidade efetiva é uma medida de quão rapidamente os portadores de carga (elétrons ou lacunas) podem se mover através do material quando um campo elétrico é aplicado. A fórmula indica que a mobilidade efetiva total é inversamente proporcional à soma das mobilidades individuais.",
+          "concepts": [
+            "Mobilidade de portadores de carga",
+            "Semicondutores",
+            "Condução elétrica",
+            "Efeito de múltiplas espécies de portadores"
+          ],
+          "symbols": [
+            {
+              "symbol": "μ_{net}",
+              "description": "Representa a mobilidade efetiva total dos portadores de carga no semicondutor, que é uma medida de quão rapidamente os portadores podem se mover sob a influência de um campo elétrico."
+            },
+            {
+              "symbol": "μ_{1}",
+              "description": "Representa a mobilidade de uma das espécies de portadores de carga, como os elétrons, que contribui para a condução elétrica no material."
+            },
+            {
+              "symbol": "μ_{2}",
+              "description": "Representa a mobilidade da outra espécie de portadores de carga, como as lacunas, que também contribui para a condução elétrica no semicondutor."
+            }
+          ],
+          "chapter": "Problems",
+          "section": "Section 1.3 Space Lattices",
+          "source": "question",
+          "questionNumber": "5.24",
+          "page": 85
+        }
+      ]
+    },
+    {
+      "number": "5.25 (a)",
+      "text": "Assume that the mobility of electrons in silicon at T = 300 K is \\mu = 1300 \\text{ cm}^{2}/\\text{V-s}. Determine the electron mobility at (a) T = 200 K and (b) T = 400 K.",
+      "formulas": [
+        {
+          "originalFormula": "\\mu(T) = \\mu_{0} \\left( \\frac{T}{300} \\right)^{-3/2}",
+          "genericFormula": "\\mu(T) = \\mu_{0} \\left( \\frac{T}{T_{0}} \\right)^{-3/2}",
+          "description": "Esta fórmula representa a mobilidade de portadores de carga em um semicondutor em função da temperatura. A mobilidade é uma medida de quão facilmente os portadores de carga (elétrons ou lacunas) podem se mover através do material quando um campo elétrico é aplicado. A fórmula mostra que a mobilidade diminui com o aumento da temperatura, o que é um comportamento típico em semicondutores.",
+          "concepts": [
+            "Mobilidade de portadores de carga",
+            "Temperatura",
+            "Semicondutores",
+            "Efeito da temperatura na condutividade"
+          ],
+          "symbols": [
+            {
+              "symbol": "μ(T)",
+              "description": "Representa a mobilidade dos portadores de carga em função da temperatura T."
+            },
+            {
+              "symbol": "μ₀",
+              "description": "Representa a mobilidade dos portadores de carga em uma temperatura de referência, geralmente 300 Kelvin."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura em Kelvin, que é a unidade de medida da temperatura no sistema internacional."
+            },
+            {
+              "symbol": "300",
+              "description": "Representa a temperatura de referência em Kelvin, que é comumente utilizada como padrão em muitas análises de semicondutores."
+            }
+          ],
+          "chapter": "Problems",
+          "section": "Section 1.3 Space Lattices",
+          "source": "question",
+          "questionNumber": "5.25 (a)",
+          "page": 107
+        }
+      ]
+    },
+    {
+      "number": "5.26",
+      "text": "Two scattering mechanisms exist in a semiconductor. If only the first mechanism were present, the mobility would be 250 \\text{ cm}^{2}/\\text{V-s}. If only the second mechanism were present, the mobility would be 500 \\text{ cm}^{2}/\\text{V-s}. Determine the mobility when both scattering mechanisms exist at the same time.",
+      "formulas": [
+        {
+          "originalFormula": "\\frac{1}{\\mu_{net}} = \\frac{1}{\\mu_{1}} + \\frac{1}{\\mu_{2}}",
+          "genericFormula": "\\frac{1}{\\mu_{net}} = \\frac{1}{\\mu_{1}} + \\frac{1}{\\mu_{2}}",
+          "description": "Esta fórmula representa a relação entre as mobilidades efetivas de dois tipos de portadores de carga em um semicondutor. A mobilidade efetiva é uma medida de quão rapidamente os portadores de carga (elétrons ou lacunas) podem se mover através do material quando um campo elétrico é aplicado. A fórmula mostra que a mobilidade efetiva total é inversamente proporcional à soma das mobilidades individuais dos portadores.",
+          "concepts": [
+            "Mobilidade de portadores de carga",
+            "Semicondutores",
+            "Efeito de campo elétrico",
+            "Condução elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "μ_{net}",
+              "description": "Mobilidade efetiva total dos portadores de carga em um semicondutor, que considera a contribuição de diferentes tipos de portadores."
+            },
+            {
+              "symbol": "μ_{1}",
+              "description": "Mobilidade do primeiro tipo de portador de carga, que pode ser, por exemplo, a mobilidade dos elétrons em um semicondutor."
+            },
+            {
+              "symbol": "μ_{2}",
+              "description": "Mobilidade do segundo tipo de portador de carga, que pode ser, por exemplo, a mobilidade das lacunas em um semicondutor."
+            }
+          ],
+          "chapter": "Problems",
+          "section": "Section 1.3 Space Lattices",
+          "source": "question",
+          "questionNumber": "5.26",
+          "page": 128
+        }
+      ]
+    },
+    {
+      "number": "5.27",
+      "text": "The effective density of states functions in silicon can be written in the form N_{c} = 2.8 \\times 10^{19} \\left( \\frac{T}{300} \\right)^{3/2} and N_{v} = 1.04 \\times 10^{19} \\left( \\frac{T}{300} \\right)^{3/2}.",
+      "formulas": [
+        {
+          "originalFormula": "N_{c} = 2.8 \\times 10^{19} \\left( \\frac{T}{300} \\right)^{3/2}",
+          "genericFormula": "N_{c} = C \\left( \\frac{T}{T_{0}} \\right)^{3/2}",
+          "description": "Esta fórmula representa a densidade de estados efetiva no nível de condução de um semicondutor, que é uma medida de quantos estados eletrônicos estão disponíveis para os elétrons se moverem e contribuírem para a condução elétrica em função da temperatura.",
+          "concepts": [
+            "Densidade de estados efetiva",
+            "Semicondutores",
+            "Temperatura",
+            "Condução elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_{c}",
+              "description": "Representa a densidade de estados efetiva no nível de condução do semicondutor."
+            },
+            {
+              "symbol": "C",
+              "description": "É uma constante que depende das propriedades do material e é usada para escalar a relação com a temperatura."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura em Kelvin, que afeta a quantidade de energia disponível para os elétrons."
+            },
+            {
+              "symbol": "T_{0}",
+              "description": "É uma temperatura de referência, geralmente 300 Kelvin, que é uma temperatura ambiente comum."
+            }
+          ],
+          "chapter": "Problems",
+          "section": "Section 1.3 Space Lattices",
+          "source": "question",
+          "questionNumber": "5.27",
+          "page": 149
+        },
+        {
+          "originalFormula": "N_{v} = 1.04 \times 10^{19} \\left( \\frac{T}{300} \\right)^{3/2}",
+          "genericFormula": "N_{v} = C \\left( \\frac{T}{T_{0}} \\right)^{3/2}",
+          "description": "Esta fórmula representa a densidade de estados na banda de valência de um semicondutor em função da temperatura. Ela mostra como a densidade de estados varia com a temperatura, indicando que, à medida que a temperatura aumenta, a densidade de estados também aumenta.",
+          "concepts": [
+            "densidade de estados",
+            "banda de valência",
+            "temperatura",
+            "semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_{v}",
+              "description": "Representa a densidade de estados na banda de valência do semicondutor, que indica quantos estados eletrônicos estão disponíveis para os elétrons ocuparem na banda de valência."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura em Kelvin, que é uma medida da energia térmica média das partículas em um sistema."
+            },
+            {
+              "symbol": "C",
+              "description": "Um coeficiente constante que depende das propriedades do material semicondutor, como a sua estrutura cristalina e a massa efetiva dos portadores de carga."
+            },
+            {
+              "symbol": "T_{0}",
+              "description": "Representa uma temperatura de referência, que neste caso é 300 Kelvin, correspondente à temperatura ambiente."
+            }
+          ],
+          "chapter": "Problems",
+          "section": "Section 1.3 Space Lattices",
+          "source": "question",
+          "questionNumber": "5.27",
+          "page": 170
+        }
+      ]
+    },
+    {
+      "number": "5.28 (a)",
+      "text": "Assume that the electron mobility in an n-type semiconductor is given by \\mu_{e} = \\frac{1350}{(1 + \\frac{N_{d}}{5 \\times 10^{16}})} \\text{ cm}^{2}/\\text{V-s} where N_{d} is the donor concentration in \\text{ cm}^{-3}.",
+      "formulas": [
+        {
+          "originalFormula": "\\mu_{e} = \\frac{1350}{(1 + \\frac{N_{d}}{5 \\times 10^{16}})}",
+          "genericFormula": "\\mu_{e} = \\frac{A}{(1 + \\frac{N_{d}}{B})}",
+          "description": "Esta fórmula representa a mobilidade dos elétrons em um semicondutor dopado, onde a mobilidade é uma medida de quão rapidamente os elétrons podem se mover através do material quando um campo elétrico é aplicado.",
+          "concepts": [
+            "Mobilidade dos portadores de carga",
+            "Dopagem de semicondutores",
+            "Efeito da concentração de dopantes na mobilidade"
+          ],
+          "symbols": [
+            {
+              "symbol": "μ_{e}",
+              "description": "Representa a mobilidade dos elétrons, que é a capacidade dos elétrons de se moverem através do semicondutor sob a influência de um campo elétrico."
+            },
+            {
+              "symbol": "N_{d}",
+              "description": "Representa a concentração de dopantes do tipo doador no semicondutor, que influencia a quantidade de elétrons disponíveis para condução."
+            },
+            {
+              "symbol": "A",
+              "description": "Um valor constante que representa a mobilidade máxima dos elétrons em condições ideais, sem a influência de dopantes."
+            },
+            {
+              "symbol": "B",
+              "description": "Um valor constante que representa a concentração de dopantes em que a mobilidade dos elétrons começa a ser afetada significativamente."
+            }
+          ],
+          "chapter": "Problems",
+          "section": "Section 1.3 Space Lattices",
+          "source": "question",
+          "questionNumber": "5.28 (a)",
+          "page": 191
+        }
+      ]
     }
   ],
   "answers": [],
@@ -321,7 +665,93 @@
     171,
     172,
     173,
-    174
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258
   ],
-  "lastUpdated": "2026-05-08T20:49:06.807Z"
+  "lastUpdated": "2026-05-08T21:23:03.920Z",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
 }

@@ -26,7 +26,10 @@
           "symbol": "diffusion currents",
           "description": "Refere-se às correntes geradas pelo movimento de portadores de carga (elétrons ou lacunas) devido a um gradiente de concentração."
         }
-      ]
+      ],
+      "chapter": "9.2 Effects at Very Low and High Injection",
+      "source": "standalone",
+      "page": 1
     },
     {
       "originalFormula": "I_B \\propto \\exp\\left(\\frac{q V_{EB}}{kT}\\right)",
@@ -60,7 +63,10 @@
           "symbol": "T",
           "description": "é a temperatura absoluta do sistema, medida em Kelvin."
         }
-      ]
+      ],
+      "chapter": "9.2 Effects at Very Low and High Injection",
+      "source": "standalone",
+      "page": 250
     }
   ],
   "processedPages": [
@@ -563,5 +569,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.093Z"
+  "lastUpdated": "2026-05-08T18:19:13.853316",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

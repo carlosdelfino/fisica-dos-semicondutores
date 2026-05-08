@@ -26,7 +26,10 @@
           "symbol": "V_D",
           "description": "Representa a tensão aplicada ao dreno do transistor, que também influencia a corrente de dreno."
         }
-      ]
+      ],
+      "chapter": "10.5 SMALL-SIGNAL EQUIVALENT CIRCUIT",
+      "source": "standalone",
+      "page": 1
     }
   ],
   "processedPages": [
@@ -529,5 +532,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.114Z"
+  "lastUpdated": "2026-05-08T18:19:13.655613",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

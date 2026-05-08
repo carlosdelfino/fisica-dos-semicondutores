@@ -38,7 +38,12 @@
               "symbol": "v",
               "description": "Representa a velocidade do objeto."
             }
-          ]
+          ],
+          "chapter": "3.1 Allowed and Forbidden Energy Bands",
+          "section": "3.1.1 Formation of Energy Bands",
+          "source": "question",
+          "questionNumber": "Ex 3.1",
+          "page": 1
         }
       ]
     }
@@ -75,7 +80,12 @@
               "symbol": "t",
               "description": "Representa o tempo durante o qual a partícula mantém a sua velocidade, que é um fator importante para calcular a variação de energia."
             }
-          ]
+          ],
+          "chapter": "3.1 Allowed and Forbidden Energy Bands",
+          "section": "3.1.1 Formation of Energy Bands",
+          "source": "answer",
+          "questionNumber": "Ex 3.1",
+          "page": 12
         },
         {
           "originalFormula": "\\Delta E = \\frac{9.11 \\times 10^{-38}}{1.6 \\times 10^{-19}} = 5.7 \\times 10^{-20} \\text{ eV}",
@@ -100,7 +110,12 @@
               "symbol": "q",
               "description": "Representa a carga elétrica da partícula, que é uma propriedade fundamental que determina como a partícula interage com campos elétricos e magnéticos."
             }
-          ]
+          ],
+          "chapter": "3.1 Allowed and Forbidden Energy Bands",
+          "section": "3.1.1 Formation of Energy Bands",
+          "source": "answer",
+          "questionNumber": "Ex 3.1",
+          "page": 24
         }
       ]
     },
@@ -135,7 +150,12 @@
               "symbol": "aa",
               "description": "Um ângulo em radianos ou graus, que é uma medida da rotação em torno de um ponto."
             }
-          ]
+          ],
+          "chapter": "3.1 Allowed and Forbidden Energy Bands",
+          "section": "3.1.1 Formation of Energy Bands",
+          "source": "answer",
+          "questionNumber": "1",
+          "page": 36
         }
       ]
     }
@@ -168,7 +188,11 @@
           "symbol": "\\hbar",
           "description": "Representa a constante de Planck reduzida, que é uma constante fundamental na mecânica quântica e relaciona a energia de uma partícula com a frequência de sua onda associada."
         }
-      ]
+      ],
+      "chapter": "3.1 Allowed and Forbidden Energy Bands",
+      "section": "3.1.1 Formation of Energy Bands",
+      "source": "standalone",
+      "page": 48
     },
     {
       "originalFormula": "u_{I}(x) = Ae^{\\alpha x} + Be^{-\\alpha x} \\quad (0 < x < a)",
@@ -176,7 +200,11 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"u_{I}(x) = Ae^{\\alpha x} + Be^{-\\alpha x} \\\\quad (0 < x < a)\",\n  \"genericFormula\": \"u_{I}(x) = Ae^{\\alpha x} + Be^{-\\alpha x} \\\\quad (0 < x < a)\",\n  \"description\": \"Esta fórmula representa a solução de uma equação diferencial que descreve o comportamento de uma função em um meio onde há uma variação exponencial, comum em problemas de física, como a distribuição de potencial elétrico ou a propagação de ondas em um meio. A função é definida em um intervalo específico, que vai de zero a um valor a.\",\n  \"concepts\": [\n    \"Equações diferenciais\",\n    \"Soluções exponenciais\",\n    \"Comportamento de funções em meios físicos\",\n    \"Distribuição de potencial\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"u_{I}(x)\",\n      \"description\": \"Representa a função que descreve o comportamento de um sistema em relação à posição x.\"\n    },\n    {\n      \"symbol\": \"A\",\n      \"description\": \"É uma constante que determina a amplitude da parte da função que cresce exponencialmente com x.\"\n    },\n    {\n      \"symbol\": \"B\",\n      \"description\": \"É uma constante que determina a amplitude da parte da função que decresce exponencialmente com x.\"\n    },\n    {\n      \"symbol\": \"e\",\n      \"description\": \"É a base do logaritmo natural, uma constante matemática que é aproximadamente igual a 2.71828, utilizada em funções exponenciais.\"\n    },\n    {\n      \"symbol\": \"\\\\alpha\",\n      \"description\": \"É uma constante que representa a taxa de crescimento ou decrescimento exponencial da função.\"\n    },\n    {\n      \"symbol\": \"x\",\n      \"description\": \"Representa a variável independente, que geralmente corresponde à posição ou distância em um determinado contexto físico.\"\n    },\n    {\n      \"symbol\": \"a\",\n      \"description\": \"É um valor que define o limite superior do intervalo em que a função é considerada, ou seja, a função é válida para valores de x que vão de zero até a.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"u_{I}(x) = Ae^{\\alpha x} + Be^{-\\alpha x} \\\\quad (0 < x < a)\",\n  \"genericFormula\": \"u_{I}(x) = Ae^{\\alpha x} + Be^{-\\alpha x} \\\\quad (0 < x < a)\",\n  \"description\": \"Esta fórmula representa a solução de uma equação diferencial que descreve o comportamento de uma função em um meio onde há uma variação exponencial, comum em problemas de física, como a distribuição de potencial elétrico ou a propagação de ondas em um meio. A função é definida em um intervalo específico, que vai de zero a um valor a.\",\n  \"concepts\": [\n    \"Equações diferenciais\",\n    \"Soluções exponenciais\",\n    \"Comportamento de funções em meios físicos\",\n    \"Distribuição de potencial\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"u_{I}(x)\",\n      \"description\": \"Representa a função que descreve o comportamento de um sistema em relação à posição x.\"\n    },\n    {\n      \"symbol\": \"A\",\n      \"description\": \"É uma constante que determina a amplitude da parte da função que cresce exponencialmente com x.\"\n    },\n    {\n      \"symbol\": \"B\",\n      \"description\": \"É uma constante que determina a amplitude da parte da função que decresce exponencialmente com x.\"\n    },\n    {\n      \"symbol\": \"e\",\n      \"description\": \"É a base do logaritmo natural, uma constante matemática que é aproximadamente igual a 2.71828, utilizada em funções exponenciais.\"\n    },\n    {\n      \"symbol\": \"\\\\alpha\",\n      \"description\": \"É uma constante que representa a taxa de crescimento ou decrescimento exponencial da função.\"\n    },\n    {\n      \"symbol\": \"x\",\n      \"description\": \"Representa a variável independente, que geralmente corresponde à posição ou distância em um determinado contexto físico.\"\n    },\n    {\n      \"symbol\": \"a\",\n      \"description\": \"É um valor que define o limite superior do intervalo em que a função é considerada, ou seja, a função é válida para valores de x que vão de zero até a.\"\n    }\n  ]\n}",
+      "chapter": "3.1 Allowed and Forbidden Energy Bands",
+      "section": "3.1.1 Formation of Energy Bands",
+      "source": "standalone",
+      "page": 59
     },
     {
       "originalFormula": "u_{II}(x) = Ce^{\beta x} + De^{-\beta x} \\quad (-b < x < 0)",
@@ -220,7 +248,11 @@
           "symbol": "0",
           "description": "Um limite superior para a variável x, indicando que a função é válida apenas até esse ponto."
         }
-      ]
+      ],
+      "chapter": "3.1 Allowed and Forbidden Energy Bands",
+      "section": "3.1.1 Formation of Energy Bands",
+      "source": "standalone",
+      "page": 71
     },
     {
       "originalFormula": "E - V_0 = \\alpha^2 - \\frac{2mV_0}{\\hbar^2} = \\beta^2",
@@ -258,7 +290,11 @@
           "symbol": "\\beta",
           "description": "Outra quantidade que pode estar relacionada a um parâmetro de onda ou a um valor característico do sistema, similar a \\alpha."
         }
-      ]
+      ],
+      "chapter": "3.1 Allowed and Forbidden Energy Bands",
+      "section": "3.1.1 Formation of Energy Bands",
+      "source": "standalone",
+      "page": 83
     }
   ],
   "processedPages": [
@@ -357,5 +393,7 @@
     93,
     94
   ],
-  "lastUpdated": "2026-05-08T20:14:16.547Z"
+  "lastUpdated": "2026-05-08T18:19:13.045924",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
 }

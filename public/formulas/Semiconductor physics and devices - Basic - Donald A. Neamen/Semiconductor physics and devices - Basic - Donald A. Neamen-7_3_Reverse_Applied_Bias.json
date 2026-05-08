@@ -1,0 +1,823 @@
+{
+  "chapter": "7.3 Reverse Applied Bias",
+  "section": "7.3.1 Space Charge Width and Electric Field",
+  "questions": [
+    {
+      "number": "Ex 7.3 (a)",
+      "text": "Determine V_{x}, V_{xn}, and V_{p}. A reverse-biased voltage of V_{r} = 4 \\, V is applied.",
+      "formulas": []
+    },
+    {
+      "number": "Ex 7.3 (b)",
+      "text": "Repeat part (a) for V_{r} = 8 \\, V.",
+      "formulas": []
+    },
+    {
+      "number": "Example 7.5",
+      "text": "Calculate the junction capacitance of a pn junction. Consider the same pn junction as that in Example 7.3. Again assume that V_k = 5 V.",
+      "formulas": [
+        {
+          "originalFormula": "C' = \\left\\{ \\frac{ee_nN_dN_h}{2(V_{k} + V_{x})[N_{a} + N_{d}]} \\right\\}^{1/2}",
+          "genericFormula": "C' = \\left\\{ \\frac{ee_nN_dN_h}{2(V_{k} + V_{x})[N_{a} + N_{d}]} \\right\\}^{1/2}",
+          "description": "Esta fórmula representa a capacitância efetiva de um semicondutor dopado, levando em consideração a concentração de portadores de carga e as tensões aplicadas. A capacitância é uma medida de quão bem um sistema pode armazenar carga elétrica.",
+          "concepts": [
+            "Capacitância",
+            "Dopagem de semicondutores",
+            "Portadores de carga",
+            "Tensão elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "C'",
+              "description": "Representa a capacitância efetiva do semicondutor, que indica a capacidade de armazenar carga elétrica."
+            },
+            {
+              "symbol": "e",
+              "description": "Representa a carga elementar, que é a menor unidade de carga elétrica que existe."
+            },
+            {
+              "symbol": "e_n",
+              "description": "Representa a mobilidade dos elétrons, que é uma medida de quão rapidamente os elétrons podem se mover através do semicondutor quando um campo elétrico é aplicado."
+            },
+            {
+              "symbol": "N_d",
+              "description": "Representa a concentração de dopantes do tipo n, que são átomos adicionados ao semicondutor para aumentar a quantidade de elétrons livres."
+            },
+            {
+              "symbol": "N_h",
+              "description": "Representa a concentração de portadores de carga do tipo p, que são lacunas deixadas por elétrons e atuam como portadores de carga positiva."
+            },
+            {
+              "symbol": "V_k",
+              "description": "Representa uma tensão de referência ou potencial que pode estar associada ao sistema em análise."
+            },
+            {
+              "symbol": "V_x",
+              "description": "Representa uma tensão aplicada ao sistema, que influencia a distribuição de cargas no semicondutor."
+            },
+            {
+              "symbol": "N_a",
+              "description": "Representa a concentração de dopantes do tipo p, que são átomos que criam lacunas no semicondutor, aumentando a quantidade de portadores de carga positiva."
+            }
+          ]
+        },
+        {
+          "originalFormula": "C = C' \\cdot A",
+          "genericFormula": "C = C' \\cdot A",
+          "description": "Esta fórmula representa a relação entre a capacitância de um capacitor, a capacitância por unidade de área e a área das placas do capacitor. Em termos simples, quanto maior a área das placas, maior será a capacitância do capacitor.",
+          "concepts": [
+            "Capacitância",
+            "Capacitância por unidade de área",
+            "Área das placas do capacitor"
+          ],
+          "symbols": [
+            {
+              "symbol": "C",
+              "description": "Representa a capacitância total do capacitor, que é a capacidade de armazenar carga elétrica."
+            },
+            {
+              "symbol": "C'",
+              "description": "Representa a capacitância por unidade de área, que é uma medida da capacitância relativa a uma área específica das placas do capacitor."
+            },
+            {
+              "symbol": "A",
+              "description": "Representa a área das placas do capacitor, que influencia diretamente a quantidade de carga que o capacitor pode armazenar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "text": "Determine the impurity doping concentrations in a p-n junction given the parameters from Figure 7.11.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "Ex 7.3 (a)",
+      "text": "The maximum electric field is given by Equation (7.36). Neglecting V_{n} compared to V_{p}, we can write |E_{max}| = \\left| \\frac{2eV_{r}}{\\epsilon_{i}} \\left( \\frac{N_{n} N_{p}}{N_{n} + N_{p}} \\right)^{\\frac{1}{2}} \\right|.",
+      "formulas": [
+        {
+          "originalFormula": "E_{max} = \\frac{-eN_{n}x_{p}}{\\epsilon_{i}}",
+          "genericFormula": "E_{max} = \\frac{-eN_{n}x_{p}}{\\epsilon_{i}}",
+          "description": "Esta fórmula representa o campo elétrico máximo em um semicondutor, que é gerado pela separação de cargas em uma região de depleção. O campo elétrico é crucial para entender como os portadores de carga se movem dentro do material, especialmente em dispositivos semicondutores.",
+          "concepts": [
+            "Campo elétrico",
+            "Semicondutores",
+            "Carga elétrica",
+            "Região de depleção"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{max}",
+              "description": "Representa o valor máximo do campo elétrico gerado na região de depleção do semicondutor."
+            },
+            {
+              "symbol": "e",
+              "description": "Representa a carga elementar, que é a menor unidade de carga elétrica, associada a partículas como elétrons."
+            },
+            {
+              "symbol": "N_{n}",
+              "description": "Representa a densidade de portadores de carga negativa (elétrons) na região de depleção do semicondutor."
+            },
+            {
+              "symbol": "x_{p}",
+              "description": "Representa a largura da região de depleção, que é a distância ao longo da qual as cargas estão separadas."
+            },
+            {
+              "symbol": "\\epsilon_{i}",
+              "description": "Representa a permissividade elétrica do material semicondutor, que indica a capacidade do material de permitir a formação de um campo elétrico."
+            }
+          ]
+        },
+        {
+          "originalFormula": "E_{max} = -\\frac{2e(V_{w} + V_{p})}{\\epsilon_{i}} \\left( \\frac{N_{n} N_{p}}{N_{n} + N_{p}} \\right)^{\\frac{1}{2}}",
+          "genericFormula": "E_{max} = -\\frac{2e(V_{w} + V_{p})}{\\epsilon_{i}} \\left( \\frac{N_{n} N_{p}}{N_{n} + N_{p}} \\right)^{\\frac{1}{2}}",
+          "description": "Esta fórmula calcula o valor máximo do campo elétrico em um dispositivo semicondutor, levando em consideração as tensões aplicadas e as concentrações de portadores de carga. O campo elétrico é uma medida da força que uma carga elétrica experimenta em um ponto no espaço.",
+          "concepts": [
+            "Campo elétrico",
+            "Tensão elétrica",
+            "Concentração de portadores de carga",
+            "Material semicondutor",
+            "Permissividade do material"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{max}",
+              "description": "Representa o valor máximo do campo elétrico no semicondutor."
+            },
+            {
+              "symbol": "e",
+              "description": "Representa a carga elementar, que é a carga de um único elétron."
+            },
+            {
+              "symbol": "V_{w}",
+              "description": "Representa a tensão aplicada em uma das extremidades do dispositivo semicondutor."
+            },
+            {
+              "symbol": "V_{p}",
+              "description": "Representa a tensão aplicada em outra extremidade do dispositivo semicondutor."
+            },
+            {
+              "symbol": "\\epsilon_{i}",
+              "description": "Representa a permissividade do material semicondutor, que indica a capacidade do material de permitir a passagem de um campo elétrico."
+            },
+            {
+              "symbol": "N_{n}",
+              "description": "Representa a concentração de portadores de carga do tipo n (elétrons) no semicondutor."
+            },
+            {
+              "symbol": "N_{p}",
+              "description": "Representa a concentração de portadores de carga do tipo p (lacunas) no semicondutor."
+            }
+          ]
+        },
+        {
+          "originalFormula": "E_{max} = -\\frac{2(V_{w} + V_{p})}{W}",
+          "genericFormula": "E_{max} = -\\frac{2(V_{w} + V_{p})}{W}",
+          "description": "Esta fórmula representa a máxima intensidade do campo elétrico em um determinado sistema, que é influenciado pela soma de dois potenciais e a largura do sistema.",
+          "concepts": [
+            "Campo elétrico",
+            "Potencial elétrico",
+            "Geometria de dispositivos semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{max}",
+              "description": "Representa a máxima intensidade do campo elétrico no sistema."
+            },
+            {
+              "symbol": "V_{w}",
+              "description": "Representa o potencial elétrico em uma das extremidades do sistema, que pode ser associado a uma região específica do dispositivo."
+            },
+            {
+              "symbol": "V_{p}",
+              "description": "Representa o potencial elétrico em outra extremidade do sistema, geralmente associado a outra região do dispositivo."
+            },
+            {
+              "symbol": "W",
+              "description": "Representa a largura do sistema, que é a distância entre as duas extremidades onde os potenciais estão medidos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Example 7.5",
+      "text": "The junction capacitance is found from Equation (7.42) as C' = \\left\\{ \\frac{1.6 \\times 10^{-19}(11.7)(8.85 \\times 10^{-14})(10^{10})(10^{15})}{2(0.635 + 5)(10^{6} + 10^{5})} \\right\\}^{1/2} = 3.66 \\times 10^{-9} \\text{ F/cm}^2.",
+      "formulas": [
+        {
+          "originalFormula": "C' = 3.66 \\times 10^{-9} \\text{ F/cm}^2",
+          "genericFormula": "C' = k \\text{ F/cm}^2",
+          "description": "Esta fórmula representa a capacitância por unidade de área de um material, onde a capacitância é uma medida de quão bem um componente pode armazenar carga elétrica em relação à tensão aplicada.",
+          "concepts": [
+            "Capacitância",
+            "Carga elétrica",
+            "Tensão elétrica",
+            "Unidade de área"
+          ],
+          "symbols": [
+            {
+              "symbol": "C'",
+              "description": "Representa a capacitância por unidade de área, que indica a capacidade de um material de armazenar carga elétrica em relação à sua área."
+            },
+            {
+              "symbol": "k",
+              "description": "Um valor constante que representa a capacitância específica do material em questão, em farads por centímetro quadrado."
+            }
+          ]
+        },
+        {
+          "originalFormula": "C = 0.366 \\times 10^{-12} \\text{ F} = 0.366 \\text{ pF}",
+          "genericFormula": "C = k \\times 10^{-12} \\text{ F}",
+          "description": "Esta fórmula representa a capacitância de um capacitor, que é a capacidade que ele tem de armazenar carga elétrica. A unidade de medida utilizada é o farad, que é uma medida da capacitância.",
+          "concepts": [
+            "Capacitância",
+            "Carga elétrica",
+            "Capacitores"
+          ],
+          "symbols": [
+            {
+              "symbol": "C",
+              "description": "Representa a capacitância do capacitor, que é a quantidade de carga elétrica que ele pode armazenar por unidade de tensão."
+            },
+            {
+              "symbol": "k",
+              "description": "Um valor numérico que representa a capacitância em picoFarads, que é uma subunidade do farad."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "1",
+      "text": "The slope of the curve in Figure 7.11 is given by \\( N_d = \\frac{2}{\\epsilon_0} \\cdot \\frac{1}{\\text{slope}} \\), so we may write \\( N_d = \\frac{2}{\\epsilon_0} \\cdot \\frac{2}{(1.6 \\times 10^{-19})11.7 \\cdot 8.85 \\times 10^{-14} \\cdot 6.15 \\times 10^{15})} \\).",
+      "formulas": [
+        {
+          "originalFormula": "N_d = \\frac{2}{\\epsilon_0} \\cdot \\frac{1}{\\text{slope}}",
+          "genericFormula": "N_d = \\frac{2}{\\epsilon} \\cdot \\frac{1}{m}",
+          "description": "Esta fórmula representa a densidade de dopagem de um semicondutor, que é uma medida de quantos átomos dopantes estão presentes em um volume específico do material. A densidade de dopagem é crucial para determinar as propriedades elétricas do semicondutor, como a condutividade e a mobilidade dos portadores de carga.",
+          "concepts": [
+            "Dopagem de semicondutores",
+            "Densidade de portadores de carga",
+            "Propriedades elétricas de materiais"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_d",
+              "description": "Representa a densidade de dopagem, que indica a quantidade de átomos dopantes por unidade de volume no semicondutor."
+            },
+            {
+              "symbol": "ε_0",
+              "description": "É a permissividade do vácuo, uma constante que mede a capacidade de um material em permitir a formação de campos elétricos."
+            },
+            {
+              "symbol": "slope",
+              "description": "Refere-se à inclinação da curva em um gráfico que relaciona a resposta elétrica do material com a quantidade de dopagem, representando a taxa de variação da resposta em relação à dopagem."
+            }
+          ]
+        },
+        {
+          "originalFormula": "N_d = 1.96 \\times 10^{15} \\text{ cm}^{-3}",
+          "genericFormula": "N_d = C \\text{ cm}^{-3}",
+          "description": "Esta fórmula representa a densidade de dopantes do tipo doador em um semicondutor, que é uma medida de quantas partículas dopantes estão presentes por centímetro cúbico do material.",
+          "concepts": [
+            "Dopagem de semicondutores",
+            "Densidade de portadores de carga",
+            "Semicondutores do tipo n"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_d",
+              "description": "Representa a densidade de dopantes do tipo doador, que são átomos adicionados ao semicondutor para aumentar a quantidade de portadores de carga positivos."
+            },
+            {
+              "symbol": "C",
+              "description": "Um valor genérico que representa a densidade de dopantes do tipo doador em unidades de partículas por centímetro cúbico."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "1",
+      "text": "From the expression for \\( V_{bi} \\), which is \\( V_{bi} = V_t \\ln \\left( \\frac{N_d N_a}{n_i^2} \\right) \\), we can solve for \\( N_a \\) as follows:",
+      "formulas": [
+        {
+          "originalFormula": "V_{bi} = V_t \\ln \\left( \\frac{N_d N_a}{n_i^2} \\right)",
+          "genericFormula": "V_{bi} = V_t \\ln \\left( \\frac{N_d N_a}{n_i^2} \\right)",
+          "description": "Esta fórmula representa a tensão de built-in, que é a diferença de potencial elétrico que se forma em uma junção p-n em um semicondutor. Essa tensão é crucial para entender como os dispositivos semicondutores funcionam, especialmente diodos e transistores.",
+          "concepts": [
+            "Tensão de built-in",
+            "Junção p-n",
+            "Semicondutores",
+            "Equilíbrio de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{bi}",
+              "description": "Representa a tensão de built-in, que é a diferença de potencial elétrico na junção p-n quando não há corrente fluindo."
+            },
+            {
+              "symbol": "V_t",
+              "description": "Representa a tensão térmica, que é uma medida da energia térmica disponível por portador de carga em um semicondutor a uma temperatura específica."
+            },
+            {
+              "symbol": "N_d",
+              "description": "Representa a concentração de dopantes do tipo doador no semicondutor, que são átomos adicionados para aumentar a quantidade de portadores de carga negativa."
+            },
+            {
+              "symbol": "N_a",
+              "description": "Representa a concentração de dopantes do tipo aceitador no semicondutor, que são átomos adicionados para aumentar a quantidade de portadores de carga positiva."
+            },
+            {
+              "symbol": "n_i",
+              "description": "Representa a concentração intrínseca de portadores de carga no semicondutor puro, que é a quantidade de elétrons e lacunas presentes sem dopagem."
+            }
+          ]
+        },
+        {
+          "originalFormula": "N_a = \\frac{n_i^2}{N_d} \\exp \\left( \\frac{V_{bi}}{V_t} \\right) = \\frac{(1.5 \\times 10^{10})^2}{1.963 \\times 10^{13}} \\exp \\left( \\frac{0.725}{0.0259} \\right)",
+          "genericFormula": "N_a = \\frac{n_i^2}{N_d} \\exp \\left( \\frac{V_{bi}}{V_t} \\right)",
+          "description": "Esta fórmula calcula a concentração de dopantes aceitantes em um semicondutor tipo p, levando em consideração a concentração intrínseca de portadores de carga, a concentração de dopantes do tipo n e a tensão de built-in do sistema.",
+          "concepts": [
+            "Dopagem de semicondutores",
+            "Concentração de portadores de carga",
+            "Equilíbrio térmico",
+            "Tensão de built-in"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_a",
+              "description": "Representa a concentração de dopantes aceitantes em um semicondutor tipo p."
+            },
+            {
+              "symbol": "n_i",
+              "description": "É a concentração intrínseca de portadores de carga em um semicondutor, que depende da temperatura."
+            },
+            {
+              "symbol": "N_d",
+              "description": "Representa a concentração de dopantes do tipo n em um semicondutor."
+            },
+            {
+              "symbol": "V_{bi}",
+              "description": "É a tensão de built-in, que é a diferença de potencial elétrico que se forma em uma junção p-n quando não há corrente fluindo."
+            },
+            {
+              "symbol": "V_t",
+              "description": "É a tensão térmica, que é uma medida da energia térmica disponível para os portadores de carga em um semicondutor a uma temperatura específica."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "V_{total} = |\\phi_{n}| + |\\phi_{p}| + V_{R}",
+      "genericFormula": "V_{total} = |\\phi_{n}| + |\\phi_{p}| + V_{R}",
+      "description": "Não foi possível gerar descrição automática",
+      "concepts": [],
+      "symbols": [],
+      "rawText": "{\n  \"originalFormula\": \"V_{total} = |\\phi_{n}| + |\\phi_{p}| + V_{R}\",\n  \"genericFormula\": \"V_{total} = |\\phi_{n}| + |\\phi_{p}| + V_{R}\",\n  \"description\": \"Esta fórmula representa a tensão total em um circuito que envolve a soma das tensões de dois potenciais elétricos, um associado a portadores de carga negativa e outro a portadores de carga positiva, além de uma tensão adicional que pode ser de um resistor ou outra fonte.\",\n  \"concepts\": [\n    \"Potencial elétrico\",\n    \"Tensão em circuitos elétricos\",\n    \"Portadores de carga em semicondutores\",\n    \"Resistência elétrica\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"V_{total}\",\n      \"description\": \"Representa a tensão total do circuito, que é a soma das tensões individuais.\"\n    },\n    {\n      \"symbol\": \"|\\phi_{n}|\",\n      \"description\": \"Representa o valor absoluto do potencial elétrico associado a portadores de carga negativa, como elétrons.\"\n    },\n    {\n      \"symbol\": \"|\\phi_{p}|\",\n      \"description\": \"Representa o valor absoluto do potencial elétrico associado a portadores de carga positiva, como lacunas em um semicondutor.\"\n    },\n    {\n      \"symbol\": \"V_{R}\",\n      \"description\": \"Representa a tensão em um resistor ou outra fonte de tensão no circuito.\"\n    }\n  ]\n}"
+    },
+    {
+      "originalFormula": "V_{total} = V_{h} + V_{R}",
+      "genericFormula": "V_{total} = V_{h} + V_{R}",
+      "description": "Esta fórmula representa a relação entre a tensão total em um circuito elétrico e as tensões individuais em diferentes componentes do circuito. A tensão total é a soma das tensões em cada parte do circuito, que pode incluir uma fonte de tensão e uma resistência.",
+      "concepts": [
+        "Tensão elétrica",
+        "Circuitos elétricos",
+        "Soma de tensões"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_{total}",
+          "description": "Representa a tensão total do circuito, que é a soma de todas as tensões individuais presentes."
+        },
+        {
+          "symbol": "V_{h}",
+          "description": "Representa a tensão fornecida por uma fonte de tensão, como uma bateria ou um gerador."
+        },
+        {
+          "symbol": "V_{R}",
+          "description": "Representa a tensão que é dissipada em uma resistência dentro do circuito."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E_{max} = \\frac{-eN_{n}x_{p}}{\\epsilon_{i}}",
+      "genericFormula": "E_{max} = \\frac{-eN_{n}x_{p}}{\\epsilon_{i}}",
+      "description": "Esta fórmula representa a intensidade máxima do campo elétrico em um material semicondutor, onde a intensidade é influenciada pela densidade de portadores de carga, a distância da região de carga e a permissividade do material.",
+      "concepts": [
+        "Campo elétrico",
+        "Densidade de portadores de carga",
+        "Permissividade do material",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{max}",
+          "description": "Representa a intensidade máxima do campo elétrico."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a carga de um único elétron."
+        },
+        {
+          "symbol": "N_{n}",
+          "description": "Representa a densidade de portadores de carga negativa, como elétrons, em um semicondutor."
+        },
+        {
+          "symbol": "x_{p}",
+          "description": "Representa a distância da região de carga onde o campo elétrico é medido."
+        },
+        {
+          "symbol": "\\epsilon_{i}",
+          "description": "Representa a permissividade do material, que é uma medida de como um material responde a um campo elétrico."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E_{max} = -\\frac{2e(V_{w} + V_{p})}{\\epsilon_{i}} \\left( \\frac{N_{n} N_{p}}{N_{n} + N_{p}} \\right)^{\\frac{1}{2}}",
+      "genericFormula": "E_{max} = -\\frac{2e(V_{w} + V_{p})}{\\epsilon_{i}} \\left( \\frac{N_{n} N_{p}}{N_{n} + N_{p}} \\right)^{\\frac{1}{2}}",
+      "description": "Esta fórmula calcula a intensidade máxima do campo elétrico em um semicondutor, levando em consideração as tensões aplicadas e as concentrações de portadores de carga.",
+      "concepts": [
+        "Campo elétrico",
+        "Tensão elétrica",
+        "Concentração de portadores de carga",
+        "Permissividade do material"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{max}",
+          "description": "Representa a intensidade máxima do campo elétrico."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a carga de um único elétron."
+        },
+        {
+          "symbol": "V_{w}",
+          "description": "Representa a tensão aplicada em um dos terminais do semicondutor."
+        },
+        {
+          "symbol": "V_{p}",
+          "description": "Representa a tensão aplicada em outro terminal do semicondutor."
+        },
+        {
+          "symbol": "\\epsilon_{i}",
+          "description": "Representa a permissividade do material semicondutor, que indica como o material responde a um campo elétrico."
+        },
+        {
+          "symbol": "N_{n}",
+          "description": "Representa a concentração de portadores de carga negativa (elétrons) no semicondutor."
+        },
+        {
+          "symbol": "N_{p}",
+          "description": "Representa a concentração de portadores de carga positiva (lacunas) no semicondutor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E_{max} = -\\frac{2(V_{w} + V_{p})}{W}",
+      "genericFormula": "E_{max} = -\\frac{2(V_{1} + V_{2})}{W}",
+      "description": "Esta fórmula representa a energia máxima, que é calculada a partir da soma de dois potenciais, dividida pela largura de um determinado sistema. O sinal negativo indica que a energia é considerada em um contexto onde a energia potencial é negativa em relação a um ponto de referência.",
+      "concepts": [
+        "Energia máxima",
+        "Potenciais elétricos",
+        "Largura de um sistema"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{max}",
+          "description": "Representa a energia máxima do sistema, que é a quantidade máxima de energia que pode ser armazenada ou transferida."
+        },
+        {
+          "symbol": "V_{w}",
+          "description": "Representa um potencial elétrico específico, que pode ser associado a uma condição ou posição dentro do sistema."
+        },
+        {
+          "symbol": "V_{p}",
+          "description": "Representa outro potencial elétrico, que também pode estar relacionado a uma condição ou posição diferente dentro do sistema."
+        },
+        {
+          "symbol": "W",
+          "description": "Representa a largura do sistema, que é uma medida da dimensão física do espaço em que a energia está sendo considerada."
+        }
+      ]
+    },
+    {
+      "originalFormula": "C' = \\frac{dQ'}{dV_{R}}",
+      "genericFormula": "C' = \\frac{dQ}{dV}",
+      "description": "Esta fórmula representa a capacitância de um capacitor, que é a relação entre a variação da carga elétrica armazenada no capacitor e a variação da tensão aplicada a ele. Em outras palavras, a capacitância indica quanta carga elétrica é necessária para produzir uma certa variação de tensão.",
+      "concepts": [
+        "Capacitância",
+        "Carga elétrica",
+        "Tensão elétrica",
+        "Variação de carga",
+        "Variação de tensão"
+      ],
+      "symbols": [
+        {
+          "symbol": "C'",
+          "description": "Representa a capacitância do capacitor, que é uma medida da capacidade do dispositivo de armazenar carga elétrica por unidade de tensão."
+        },
+        {
+          "symbol": "dQ'",
+          "description": "Representa a variação da carga elétrica armazenada no capacitor. Esta quantidade indica quanto a carga muda quando a tensão é alterada."
+        },
+        {
+          "symbol": "dV_{R}",
+          "description": "Representa a variação da tensão elétrica aplicada ao capacitor. Esta quantidade indica quanto a tensão muda durante o processo de carga ou descarga do capacitor."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282
+  ],
+  "lastUpdated": "2026-05-08T21:35:37.809Z"
+}

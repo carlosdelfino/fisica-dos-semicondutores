@@ -44,7 +44,10 @@
           "symbol": "I_{ph}",
           "description": "é a corrente gerada pela luz, que é a corrente adicional que flui devido à incidência de luz sobre o diodo."
         }
-      ]
+      ],
+      "chapter": "14.3 Photodetectors",
+      "source": "standalone",
+      "page": 1
     },
     {
       "originalFormula": "I_{ph} = qg_{ph}A(W + L_n + L_p)",
@@ -86,7 +89,10 @@
           "symbol": "L_p",
           "description": "Representa o comprimento de difusão dos buracos no semicondutor."
         }
-      ]
+      ],
+      "chapter": "14.3 Photodetectors",
+      "source": "standalone",
+      "page": 56
     },
     {
       "originalFormula": "g_{ph} \\text{ increases with light intensity}",
@@ -103,7 +109,10 @@
           "symbol": "g_{ph}",
           "description": "Representa a condutividade fotográfica, que é uma medida de quão bem um material pode conduzir eletricidade quando exposto à luz."
         }
-      ]
+      ],
+      "chapter": "14.3 Photodetectors",
+      "source": "standalone",
+      "page": 111
     },
     {
       "originalFormula": "E_g = 0.66 \\, \\text{eV}",
@@ -111,7 +120,10 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"E_g = 0.66 \\, \\\\text{eV}\",\n  \"genericFormula\": \"E_g = E_g\",\n  \"description\": \"Esta fórmula representa a energia de bandgap de um semicondutor, que é a quantidade mínima de energia necessária para mover um elétron da banda de valência para a banda de condução, permitindo que ele conduza eletricidade.\",\n  \"concepts\": [\n    \"Energia de bandgap\",\n    \"Semicondutores\",\n    \"Banda de valência\",\n    \"Banda de condução\",\n    \"Condução elétrica\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"E_g\",\n      \"description\": \"Representa a energia de bandgap, que é a diferença de energia entre a banda de valência e a banda de condução em um semicondutor.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"E_g = 0.66 \\, \\\\text{eV}\",\n  \"genericFormula\": \"E_g = E_g\",\n  \"description\": \"Esta fórmula representa a energia de bandgap de um semicondutor, que é a quantidade mínima de energia necessária para mover um elétron da banda de valência para a banda de condução, permitindo que ele conduza eletricidade.\",\n  \"concepts\": [\n    \"Energia de bandgap\",\n    \"Semicondutores\",\n    \"Banda de valência\",\n    \"Banda de condução\",\n    \"Condução elétrica\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"E_g\",\n      \"description\": \"Representa a energia de bandgap, que é a diferença de energia entre a banda de valência e a banda de condução em um semicondutor.\"\n    }\n  ]\n}",
+      "chapter": "14.3 Photodetectors",
+      "source": "standalone",
+      "page": 167
     },
     {
       "originalFormula": "E_g = 0.23 \\, \\text{eV}",
@@ -119,7 +131,10 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"E_g = 0.23 \\, \\\\text{eV}\",\n  \"genericFormula\": \"E_g = E_g\",\n  \"description\": \"Esta fórmula representa a energia de bandgap de um material semicondutor, que é a quantidade mínima de energia necessária para mover um elétron da banda de valência para a banda de condução.\",\n  \"concepts\": [\n    \"Energia de bandgap\",\n    \"Semicondutores\",\n    \"Transição eletrônica\",\n    \"Propriedades eletrônicas dos materiais\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"E_g\",\n      \"description\": \"Representa a energia de bandgap, que é a diferença de energia entre a banda de valência e a banda de condução em um material semicondutor.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"E_g = 0.23 \\, \\\\text{eV}\",\n  \"genericFormula\": \"E_g = E_g\",\n  \"description\": \"Esta fórmula representa a energia de bandgap de um material semicondutor, que é a quantidade mínima de energia necessária para mover um elétron da banda de valência para a banda de condução.\",\n  \"concepts\": [\n    \"Energia de bandgap\",\n    \"Semicondutores\",\n    \"Transição eletrônica\",\n    \"Propriedades eletrônicas dos materiais\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"E_g\",\n      \"description\": \"Representa a energia de bandgap, que é a diferença de energia entre a banda de valência e a banda de condução em um material semicondutor.\"\n    }\n  ]\n}",
+      "chapter": "14.3 Photodetectors",
+      "source": "standalone",
+      "page": 222
     },
     {
       "originalFormula": "E_g = 0.18 \\, \\text{eV}",
@@ -127,7 +142,10 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"E_g = 0.18 \\, \\\\text{eV}\",\n  \"genericFormula\": \"E_g = E_g\",\n  \"description\": \"Essa fórmula representa a energia de bandgap de um semicondutor, que é a energia mínima necessária para que um elétron possa ser excitado da banda de valência para a banda de condução.\",\n  \"concepts\": [\n    \"Energia de bandgap\",\n    \"Semicondutores\",\n    \"Transição eletrônica\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"E_g\",\n      \"description\": \"Representa a energia de bandgap, que é a diferença de energia entre a banda de valência e a banda de condução em um material semicondutor.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"E_g = 0.18 \\, \\\\text{eV}\",\n  \"genericFormula\": \"E_g = E_g\",\n  \"description\": \"Essa fórmula representa a energia de bandgap de um semicondutor, que é a energia mínima necessária para que um elétron possa ser excitado da banda de valência para a banda de condução.\",\n  \"concepts\": [\n    \"Energia de bandgap\",\n    \"Semicondutores\",\n    \"Transição eletrônica\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"E_g\",\n      \"description\": \"Representa a energia de bandgap, que é a diferença de energia entre a banda de valência e a banda de condução em um material semicondutor.\"\n    }\n  ]\n}",
+      "chapter": "14.3 Photodetectors",
+      "source": "standalone",
+      "page": 277
     },
     {
       "originalFormula": "E_g = 0.04 \\, \\text{eV}",
@@ -135,7 +153,10 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"E_g = 0.04 \\, \\\\text{eV}\",\n  \"genericFormula\": \"E_g = E_g\",\n  \"description\": \"Esta fórmula representa a energia da banda proibida de um semicondutor, que é a quantidade mínima de energia necessária para que um elétron possa se mover da banda de valência para a banda de condução.\",\n  \"concepts\": [\n    \"Energia da banda proibida\",\n    \"Semicondutores\",\n    \"Transição eletrônica\",\n    \"Condução elétrica\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"E_g\",\n      \"description\": \"Representa a energia da banda proibida de um semicondutor, que é a diferença de energia entre a banda de valência e a banda de condução.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"E_g = 0.04 \\, \\\\text{eV}\",\n  \"genericFormula\": \"E_g = E_g\",\n  \"description\": \"Esta fórmula representa a energia da banda proibida de um semicondutor, que é a quantidade mínima de energia necessária para que um elétron possa se mover da banda de valência para a banda de condução.\",\n  \"concepts\": [\n    \"Energia da banda proibida\",\n    \"Semicondutores\",\n    \"Transição eletrônica\",\n    \"Condução elétrica\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"E_g\",\n      \"description\": \"Representa a energia da banda proibida de um semicondutor, que é a diferença de energia entre a banda de valência e a banda de condução.\"\n    }\n  ]\n}",
+      "chapter": "14.3 Photodetectors",
+      "source": "standalone",
+      "page": 333
     },
     {
       "originalFormula": "\\lambda_{max} = 1.4 \\, \\mu m",
@@ -155,7 +176,10 @@
           "symbol": "μm",
           "description": "Micrômetro, uma unidade de medida que equivale a um milionésimo de metro, usada para expressar comprimentos muito pequenos, como os comprimentos de onda da luz."
         }
-      ]
+      ],
+      "chapter": "14.3 Photodetectors",
+      "source": "standalone",
+      "page": 388
     },
     {
       "originalFormula": "\\lambda = 32 \\, \\mu m",
@@ -179,7 +203,10 @@
           "symbol": "L",
           "description": "Representa uma variável genérica que pode ser utilizada para descrever o comprimento de onda em uma forma mais geral."
         }
-      ]
+      ],
+      "chapter": "14.3 Photodetectors",
+      "source": "standalone",
+      "page": 443
     }
   ],
   "processedPages": [
@@ -682,5 +709,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.205Z"
+  "lastUpdated": "2026-05-08T18:19:13.320237",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

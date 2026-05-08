@@ -45,7 +45,11 @@
               "symbol": "V_{2}",
               "description": "Representa um valor de potencial elétrico do outro material na interface."
             }
-          ]
+          ],
+          "chapter": "12",
+          "source": "question",
+          "questionNumber": "12.3",
+          "page": 1
         },
         {
           "originalFormula": "Q_{dm} = -16.66 \\times 10^{-8} \\text{ C/cm}^{2}",
@@ -74,7 +78,11 @@
               "symbol": "cm^{2}",
               "description": "Representa a unidade de medida de área, o centímetro quadrado."
             }
-          ]
+          ],
+          "chapter": "12",
+          "source": "question",
+          "questionNumber": "12.3",
+          "page": 25
         },
         {
           "originalFormula": "V_T = \\phi_{ms} - \\frac{Q_f}{C_{ox}} - \\frac{Q_{dm}}{C_{ox}} + 2\\phi_F",
@@ -111,7 +119,11 @@
               "symbol": "\\phi_F",
               "description": "Representa a energia de Fermi, que é a energia máxima ocupada por elétrons em um material a temperatura zero."
             }
-          ]
+          ],
+          "chapter": "12",
+          "source": "question",
+          "questionNumber": "12.3",
+          "page": 50
         },
         {
           "originalFormula": "V_r = -1.027 = 0.046 + 0.965V + 0.834",
@@ -143,7 +155,11 @@
               "symbol": "c",
               "description": "É um coeficiente que representa um valor fixo adicional na equação, que pode ser considerado um ajuste na tensão resultante."
             }
-          ]
+          ],
+          "chapter": "12",
+          "source": "question",
+          "questionNumber": "12.3",
+          "page": 75
         }
       ]
     },
@@ -186,7 +202,11 @@
               "symbol": "n_i",
               "description": "É a concentração intrínseca de portadores de carga (elétrons e lacunas) em um semicondutor puro, sem dopagem."
             }
-          ]
+          ],
+          "chapter": "12",
+          "source": "question",
+          "questionNumber": "12.4",
+          "page": 100
         },
         {
           "originalFormula": "\\phi_m = 4.1 \\text{V}, \\chi_s = 4.15 \\text{V}, E_g/2q = 0.56 \\text{V}, \\text{ and } \\phi_F = -0.298",
@@ -219,7 +239,11 @@
               "symbol": "\\phi_F",
               "description": "Representa o potencial de Fermi, que é o nível de energia mais alto ocupado por elétrons em um material a temperatura zero."
             }
-          ]
+          ],
+          "chapter": "12",
+          "source": "question",
+          "questionNumber": "12.4",
+          "page": 125
         },
         {
           "originalFormula": "\\phi_{ms} = -0.312V",
@@ -239,7 +263,11 @@
               "symbol": "V",
               "description": "Representa a unidade de medida de tensão ou diferença de potencial elétrico, que é expressa em volts."
             }
-          ]
+          ],
+          "chapter": "12",
+          "source": "question",
+          "questionNumber": "12.4",
+          "page": 150
         }
       ]
     }
@@ -281,7 +309,11 @@
               "symbol": "C_{ox}",
               "description": "Representa a capacitância do óxido, que é uma medida da capacidade do óxido isolante de armazenar carga elétrica."
             }
-          ]
+          ],
+          "chapter": "12",
+          "source": "answer",
+          "questionNumber": "1",
+          "page": 175
         }
       ]
     },
@@ -337,7 +369,10 @@
           "symbol": "φ_F",
           "description": "Representa o potencial de Fermi, que é a energia máxima ocupada por elétrons em um material em equilíbrio térmico."
         }
-      ]
+      ],
+      "chapter": "12",
+      "source": "standalone",
+      "page": 200
     },
     {
       "originalFormula": "V_g = \\frac{|Q_{n}|}{C_{ox}} + \\phi_s",
@@ -367,7 +402,10 @@
           "symbol": "\\phi_s",
           "description": "Representa a função de trabalho do semicondutor, que é a energia necessária para mover um elétron do nível de Fermi para o nível de vácuo."
         }
-      ]
+      ],
+      "chapter": "12",
+      "source": "standalone",
+      "page": 225
     },
     {
       "originalFormula": "Q_M",
@@ -387,7 +425,10 @@
           "symbol": "M",
           "description": "Representa um índice ou uma designação que pode indicar um tipo específico de carga ou um material específico em que a carga está sendo medida ou considerada."
         }
-      ]
+      ],
+      "chapter": "12",
+      "source": "standalone",
+      "page": 250
     },
     {
       "originalFormula": "Q_C",
@@ -407,7 +448,10 @@
           "symbol": "C",
           "description": "Representa a capacitância do capacitor, que é a capacidade do dispositivo de armazenar carga elétrica. É medida em farads."
         }
-      ]
+      ],
+      "chapter": "12",
+      "source": "standalone",
+      "page": 274
     },
     {
       "originalFormula": "Q_{it}",
@@ -427,7 +471,10 @@
           "symbol": "it",
           "description": "Refere-se a um índice ou um instante de tempo específico, indicando que a carga está sendo considerada em um momento particular ou em um estado específico do sistema."
         }
-      ]
+      ],
+      "chapter": "12",
+      "source": "standalone",
+      "page": 299
     },
     {
       "originalFormula": "Q_{mO}",
@@ -446,7 +493,10 @@
           "symbol": "mO",
           "description": "Refere-se a um estado ou condição específica do material ou objeto, que pode estar relacionado a um tipo particular de material ou a uma configuração específica em que a carga é medida."
         }
-      ]
+      ],
+      "chapter": "12",
+      "source": "standalone",
+      "page": 324
     },
     {
       "originalFormula": "Q_i = 5 \\times 10^{10} \\times 1.6 \\times 10^{-19} = 0.8 \\times 10^{-8} \\text{ C/cm}^{2}",
@@ -471,7 +521,10 @@
           "symbol": "e",
           "description": "Representa a carga elementar, que é a carga de um único elétron, aproximadamente igual a 1.6 vezes 10 elevado a menos 19 coulombs."
         }
-      ]
+      ],
+      "chapter": "12",
+      "source": "standalone",
+      "page": 349
     },
     {
       "originalFormula": "t_{ox} = 200 \\times 10^{-8} = 2 \\times 10^{-6} \\text{ cm}",
@@ -495,7 +548,10 @@
           "symbol": "b",
           "description": "Um número que indica a potência de dez que deve ser aplicada a 'a' para obter a espessura total em centímetros."
         }
-      ]
+      ],
+      "chapter": "12",
+      "source": "standalone",
+      "page": 374
     },
     {
       "originalFormula": "C_{ox} = \\frac{3.9 \\times 8.85}{2} \\times 10^{-8} = 1.725 \\times 10^{-7} \\text{ F/cm}^{2}",
@@ -524,7 +580,10 @@
           "symbol": "d",
           "description": "Representa a espessura da camada de óxido, que é a distância entre as placas do capacitor."
         }
-      ]
+      ],
+      "chapter": "12",
+      "source": "standalone",
+      "page": 399
     },
     {
       "originalFormula": "V_T = \\phi_{ms} - \\frac{Q_f}{C_{ox}} - \\frac{Q_{dm}}{C_{ox}} + 2\\phi_F",
@@ -562,7 +621,10 @@
           "symbol": "\\phi_F",
           "description": "Representa a energia de Fermi, que é o nível de energia no qual a probabilidade de encontrar elétrons é 50% em um material semicondutor."
         }
-      ]
+      ],
+      "chapter": "12",
+      "source": "standalone",
+      "page": 424
     },
     {
       "originalFormula": "V_{FB} = -1.033 \\text{V}",
@@ -582,7 +644,10 @@
           "symbol": "V_{0}",
           "description": "Representa um valor genérico de potencial de Fermi, sem um valor numérico específico."
         }
-      ]
+      ],
+      "chapter": "12",
+      "source": "standalone",
+      "page": 449
     },
     {
       "originalFormula": "V_T = -0.967 - 0.282 + 0.473 + 0.714 = -0.016V",
@@ -614,7 +679,10 @@
           "symbol": "D",
           "description": "O último valor que é considerado no cálculo da tensão total."
         }
-      ]
+      ],
+      "chapter": "12",
+      "source": "standalone",
+      "page": 474
     }
   ],
   "processedPages": [
@@ -1117,5 +1185,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.885Z"
+  "lastUpdated": "2026-05-08T18:19:13.450716",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

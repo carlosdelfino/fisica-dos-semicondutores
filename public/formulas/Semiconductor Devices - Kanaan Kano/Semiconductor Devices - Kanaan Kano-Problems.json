@@ -36,7 +36,11 @@
               "symbol": "W_n",
               "description": "Representa a largura da barreira potencial que influencia a movimentação dos portadores de carga no semicondutor."
             }
-          ]
+          ],
+          "chapter": "Problems",
+          "source": "question",
+          "questionNumber": "5.60",
+          "page": 1
         }
       ]
     },
@@ -74,7 +78,11 @@
               "symbol": "exp",
               "description": "Representa a função exponencial, que é uma função matemática que descreve o crescimento ou decaimento em muitos processos naturais."
             }
-          ]
+          ],
+          "chapter": "Problems",
+          "source": "question",
+          "questionNumber": "5.61",
+          "page": 125
         }
       ]
     },
@@ -113,7 +121,11 @@
               "symbol": "W_n",
               "description": "Representa a largura total do material em consideração, que é utilizada para calcular a variação da pressão."
             }
-          ]
+          ],
+          "chapter": "Problems",
+          "source": "question",
+          "questionNumber": "5.63",
+          "page": 250
         }
       ]
     },
@@ -148,7 +160,11 @@
               "symbol": "W_n",
               "description": "Representa a largura da região onde a densidade de portadores é considerada, influenciando a variação da densidade ao longo da distância."
             }
-          ]
+          ],
+          "chapter": "Problems",
+          "source": "question",
+          "questionNumber": "5.64",
+          "page": 374
         }
       ]
     }
@@ -655,5 +671,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.022Z"
+  "lastUpdated": "2026-05-08T18:19:13.314833",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

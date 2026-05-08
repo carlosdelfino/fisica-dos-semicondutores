@@ -31,7 +31,11 @@
               "symbol": "V_{T0}",
               "description": "Representa a forma genérica da tensão de limiar, sem valores numéricos específicos."
             }
-          ]
+          ],
+          "chapter": "11.7 MODELS FOR SHORT-CHANNEL MESFETS",
+          "source": "answer",
+          "questionNumber": "E11-3",
+          "page": 1
         }
       ]
     }
@@ -64,7 +68,10 @@
           "symbol": "v_s",
           "description": "Representa a velocidade de saturação dos portadores de carga, que é a velocidade máxima que os portadores podem atingir em um campo elétrico forte."
         }
-      ]
+      ],
+      "chapter": "11.7 MODELS FOR SHORT-CHANNEL MESFETS",
+      "source": "standalone",
+      "page": 250
     }
   ],
   "processedPages": [
@@ -567,5 +574,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.151Z"
+  "lastUpdated": "2026-05-08T18:19:13.923488",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

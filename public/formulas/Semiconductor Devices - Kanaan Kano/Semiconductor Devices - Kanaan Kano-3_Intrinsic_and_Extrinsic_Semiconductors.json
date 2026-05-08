@@ -37,7 +37,11 @@
               "symbol": "b",
               "description": "Representa a temperatura em unidades apropriadas, que influencia a ocupação dos estados eletrônicos."
             }
-          ]
+          ],
+          "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+          "source": "question",
+          "questionNumber": "(a) i)",
+          "page": 1
         }
       ]
     },
@@ -76,7 +80,11 @@
               "symbol": "T",
               "description": "Representa a temperatura do sistema, medida em Kelvin, que influencia a ocupação dos estados de energia."
             }
-          ]
+          ],
+          "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+          "source": "question",
+          "questionNumber": "(a) ii)",
+          "page": 16
         }
       ]
     },
@@ -115,7 +123,11 @@
               "symbol": "T",
               "description": "Temperatura do sistema, medida em Kelvin, que influencia a ocupação dos estados quânticos."
             }
-          ]
+          ],
+          "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+          "source": "question",
+          "questionNumber": "(a) iii)",
+          "page": 31
         }
       ]
     },
@@ -153,7 +165,11 @@
               "symbol": "exp",
               "description": "A função exponencial, que é uma função matemática que descreve o crescimento contínuo e é fundamental em várias áreas da física."
             }
-          ]
+          ],
+          "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+          "source": "question",
+          "questionNumber": "(b)",
+          "page": 46
         }
       ]
     },
@@ -191,7 +207,11 @@
               "symbol": "exp",
               "description": "Representa a função exponencial, que é uma função matemática que cresce rapidamente e é usada para modelar fenômenos em física, como a ocupação de estados em sistemas quânticos."
             }
-          ]
+          ],
+          "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+          "source": "question",
+          "questionNumber": "(c)",
+          "page": 61
         }
       ]
     },
@@ -236,7 +256,11 @@
               "symbol": "D",
               "description": "Um expoente que indica a ordem de grandeza da densidade de portadores de carga, refletindo como a densidade varia com a temperatura."
             }
-          ]
+          ],
+          "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+          "source": "question",
+          "questionNumber": "E3-2",
+          "page": 76
         }
       ]
     },
@@ -297,7 +321,11 @@
               "symbol": "C",
               "description": "Uma constante que representa a densidade de estados na banda de valência em uma forma genérica, sem valores numéricos específicos."
             }
-          ]
+          ],
+          "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+          "source": "question",
+          "questionNumber": "Q3-14",
+          "page": 91
         },
         {
           "originalFormula": "N_c = 2 \\times 10^{23}",
@@ -321,7 +349,11 @@
               "symbol": "n",
               "description": "Um expoente que indica a potência de dez, refletindo a ordem de grandeza da densidade de estados."
             }
-          ]
+          ],
+          "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+          "source": "question",
+          "questionNumber": "Q3-14",
+          "page": 106
         }
       ]
     },
@@ -397,7 +429,11 @@
               "symbol": "T",
               "description": "Representa a temperatura do sistema em Kelvin, que afeta a distribuição de ocupação dos estados."
             }
-          ]
+          ],
+          "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+          "source": "answer",
+          "questionNumber": "1",
+          "page": 121
         }
       ]
     },
@@ -428,7 +464,11 @@
               "symbol": "D",
               "description": "Um expoente que indica a ordem de grandeza da densidade de portadores de carga, refletindo a variação da densidade com a temperatura e outros fatores."
             }
-          ]
+          ],
+          "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+          "source": "answer",
+          "questionNumber": "E3-2",
+          "page": 136
         }
       ]
     },
@@ -459,7 +499,11 @@
               "symbol": "\\Delta E",
               "description": "Representa a diferença de energia entre dois níveis de energia, neste caso, entre a banda de condução e o nível de Fermi. Essa diferença é crucial para entender a condutividade elétrica do material."
             }
-          ]
+          ],
+          "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+          "source": "answer",
+          "questionNumber": "E3-3",
+          "page": 151
         }
       ]
     }
@@ -496,7 +540,10 @@
           "symbol": "T",
           "description": "Representa a temperatura do sistema em Kelvin, que influencia a ocupação dos estados eletrônicos."
         }
-      ]
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 167
     },
     {
       "originalFormula": "np = n_i^2 = N_c N_v \\exp\\left(-\\frac{E_c - E_v}{kT}\\right)",
@@ -544,7 +591,10 @@
           "symbol": "T",
           "description": "Representa a temperatura absoluta do sistema, medida em Kelvin, que afeta a movimentação e a energia dos portadores de carga."
         }
-      ]
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 182
     },
     {
       "originalFormula": "n_i = K_1 T^{3/2} \\exp\\left(-\\frac{E_g}{2kT}\\right)",
@@ -583,7 +633,10 @@
           "symbol": "exp",
           "description": "Representa a função exponencial, que descreve o comportamento de decaimento ou crescimento em muitos fenômenos físicos."
         }
-      ]
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 197
     },
     {
       "originalFormula": "n_i = 2 \\left(\\frac{2\\pi k T}{h^2}\\right)^{3/2} \\left(m_{n}^* m_{p}^*\\right)^{3/4} \\exp\\left(-\\frac{E_g}{2kT}\\right)",
@@ -630,7 +683,10 @@
           "symbol": "exp",
           "description": "Representa a função exponencial, que é uma função matemática que descreve crescimento ou decaimento em muitos fenômenos físicos."
         }
-      ]
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 212
     },
     {
       "originalFormula": "n_i = N_v \\exp\\left(\\frac{E_y - E_i}{kT}\\right)",
@@ -669,7 +725,10 @@
           "symbol": "T",
           "description": "Representa a temperatura absoluta em Kelvin, que é uma medida da energia térmica do sistema e influencia a movimentação dos portadores de carga."
         }
-      ]
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 227
     },
     {
       "originalFormula": "N_c \\exp\\left(-\\frac{E_C}{kT}\\right) = n_i \\exp\\left(-\\frac{E_i}{kT}\\right)",
@@ -707,7 +766,10 @@
           "symbol": "E_i",
           "description": "É a energia do nível intrínseco, que é a energia média entre a banda de condução e a banda de valência em um semicondutor não dopado."
         }
-      ]
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 242
     },
     {
       "originalFormula": "N_v \\exp\\left(\\frac{E_y}{kT}\\right) = n_i \\exp\\left(\\frac{E_i}{kT}\\right)",
@@ -745,7 +807,10 @@
           "symbol": "E_i",
           "description": "Representa a energia do nível de Fermi na banda proibida, que é a energia em que a probabilidade de encontrar um portador é significativa."
         }
-      ]
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 257
     },
     {
       "originalFormula": "n = n_i \\exp\\left(\\frac{E_F - E_i}{kT}\\right) = n_0",
@@ -787,7 +852,10 @@
           "symbol": "n_0",
           "description": "Representa uma concentração de portadores de carga em um estado específico, que pode ser considerado como uma referência ou condição inicial."
         }
-      ]
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 272
     },
     {
       "originalFormula": "p = n_i \\exp\\left(\\frac{E_i - E_F}{kT}\\right) = p_0",
@@ -829,7 +897,10 @@
           "symbol": "p_0",
           "description": "Representa a densidade de buracos em condições de equilíbrio térmico, que é igual à densidade calculada pela fórmula."
         }
-      ]
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 287
     },
     {
       "originalFormula": "E_F - E_i = kT \\ln\\left(\\frac{n_0}{n_i}\\right) \\equiv kT \\ln\\left(\\frac{N_D}{n_i}\\right)",
@@ -871,7 +942,10 @@
           "symbol": "N_D",
           "description": "Representa a concentração de átomos dopantes do tipo doador em um semicondutor, que aumenta a quantidade de portadores de carga."
         }
-      ]
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 302
     },
     {
       "originalFormula": "E_i - E_F = kT \\ln\\left(\\frac{p_0}{n_i}\\right) \\equiv kT \\ln\\left(\\frac{N_A}{n_i}\\right)",
@@ -917,7 +991,10 @@
           "symbol": "ln",
           "description": "Função logarítmica natural, que é usada para descrever a relação exponencial entre as concentrações de portadores de carga."
         }
-      ]
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 317
     },
     {
       "originalFormula": "5 \\times 10^{22}",
@@ -937,21 +1014,30 @@
           "symbol": "x",
           "description": "Representa o expoente da potência de dez, indicando quantas casas decimais o número deve ser multiplicado para se obter o valor real."
         }
-      ]
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 333
     },
     {
       "originalFormula": "1.12",
       "genericFormula": "1.12",
       "description": "A fórmula representa um valor numérico específico, que pode ser uma constante ou um resultado de um cálculo em um contexto físico. Neste caso, a fórmula não possui variáveis ou símbolos que a tornem dependente de outros fatores, sendo um valor fixo.",
       "concepts": [],
-      "symbols": []
+      "symbols": [],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 348
     },
     {
       "originalFormula": "1.182",
       "genericFormula": "1.182",
       "description": "A fórmula apresentada é um valor numérico específico, que não representa uma relação ou equação física, mas pode ser um resultado de um cálculo ou uma constante em um determinado contexto.",
       "concepts": [],
-      "symbols": []
+      "symbols": [],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 363
     },
     {
       "originalFormula": "0.81",
@@ -967,7 +1053,10 @@
           "symbol": "x",
           "description": "Uma variável que representa um valor numérico que pode ser utilizado em cálculos ou medições."
         }
-      ]
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 378
     },
     {
       "originalFormula": "3.22 \\times 10^{19}",
@@ -984,7 +1073,10 @@
           "symbol": "N",
           "description": "representa o número total de entidades, como átomos ou moléculas, em um sistema."
         }
-      ]
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 393
     },
     {
       "originalFormula": "1.83 \\times 10^{19}",
@@ -1000,7 +1092,10 @@
           "symbol": "N",
           "description": "Representa a quantidade total de partículas em um sistema, que pode incluir átomos, moléculas ou outras entidades discretas."
         }
-      ]
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 408
     },
     {
       "originalFormula": "1 \\times 10^{10}",
@@ -1020,14 +1115,20 @@
           "symbol": "b",
           "description": "O expoente que indica quantas casas decimais o coeficiente deve ser multiplicado por dez, definindo a magnitude do número."
         }
-      ]
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 423
     },
     {
       "originalFormula": "1350",
       "genericFormula": "1350",
       "description": "Esta fórmula representa um valor numérico específico, que pode ser uma constante ou um resultado de um cálculo em um contexto particular. Sem mais informações, não é possível determinar o que esse número representa fisicamente.",
       "concepts": [],
-      "symbols": []
+      "symbols": [],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 438
     },
     {
       "originalFormula": "3 \\times 10^{5}",
@@ -1047,21 +1148,30 @@
           "symbol": "n",
           "description": "Representa o expoente da potência de dez. Este número indica quantas casas decimais o coeficiente deve ser deslocado, podendo ser positivo (para números grandes) ou negativo (para números pequenos)."
         }
-      ]
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 453
     },
     {
       "originalFormula": "11.8",
       "genericFormula": "x",
       "description": "A fórmula apresentada é um número isolado e não representa uma relação física ou matemática específica. Portanto, não podemos extrair uma interpretação física ou matemática dela sem um contexto adicional.",
       "concepts": [],
-      "symbols": []
+      "symbols": [],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 468
     },
     {
       "originalFormula": "1410",
       "genericFormula": "1410",
       "description": "A fórmula apresentada é um valor numérico específico e não representa uma relação física ou matemática que possa ser analisada em termos de variáveis ou símbolos. Portanto, não há uma descrição didática a ser feita em relação a uma fórmula independente como esta.",
       "concepts": [],
-      "symbols": []
+      "symbols": [],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 483
     }
   ],
   "processedPages": [
@@ -1564,5 +1674,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.946Z"
+  "lastUpdated": "2026-05-08T18:19:13.536103",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

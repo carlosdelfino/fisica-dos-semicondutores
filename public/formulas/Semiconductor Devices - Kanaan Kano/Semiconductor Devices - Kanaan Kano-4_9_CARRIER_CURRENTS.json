@@ -44,7 +44,11 @@
               "symbol": "μ_n",
               "description": "É a mobilidade dos portadores de carga negativos, que indica a facilidade com que os elétrons se movem sob a influência de um campo elétrico."
             }
-          ]
+          ],
+          "chapter": "4.9 CARRIER CURRENTS",
+          "source": "answer",
+          "questionNumber": "4.4",
+          "page": 1
         },
         {
           "originalFormula": "J_n = 1.6 \\times 10^{-19} \\times (-10^{14}) \\times 34.48 \\times (-0.55 \\, \\text{mA/cm}^2)",
@@ -52,7 +56,11 @@
           "description": "Não foi possível gerar descrição automática",
           "concepts": [],
           "symbols": [],
-          "rawText": "{\n  \"originalFormula\": \"J_n = 1.6 \\\\times 10^{-19} \\\\times (-10^{14}) \\\\times 34.48 \\\\times (-0.55 \\, \\\\text{mA/cm}^2)\",\n  \"genericFormula\": \"J_n = q \\\\times N \\\\times A \\\\times I\",\n  \"description\": \"Esta fórmula representa a densidade de corrente de portadores negativos (elétrons) em um semicondutor. A densidade de corrente é uma medida de quão intensa é a corrente elétrica que flui por unidade de área, considerando a contribuição de elétrons que se movem sob a influência de um campo elétrico.\",\n  \"concepts\": [\n    \"Densidade de corrente\",\n    \"Portadores de carga\",\n    \"Semicondutores\",\n    \"Campo elétrico\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"J_n\",\n      \"description\": \"Representa a densidade de corrente dos portadores negativos, que é a quantidade de corrente elétrica por unidade de área, especificamente para elétrons em um semicondutor.\"\n    },\n    {\n      \"symbol\": \"q\",\n      \"description\": \"Representa a carga elementar, que é a carga de um único elétron, uma constante fundamental na física.\"\n    },\n    {\n      \"symbol\": \"N\",\n      \"description\": \"Representa a concentração de portadores de carga, ou seja, o número de elétrons disponíveis por unidade de volume no semicondutor.\"\n    },\n    {\n      \"symbol\": \"A\",\n      \"description\": \"Representa a área através da qual a corrente está fluindo, geralmente medida em centímetros quadrados.\"\n    },\n    {\n      \"symbol\": \"I\",\n      \"description\": \"Representa a corrente elétrica, que é o fluxo de carga elétrica, medida em miliamperes por centímetro quadrado neste contexto.\"\n    }\n  ]\n}"
+          "rawText": "{\n  \"originalFormula\": \"J_n = 1.6 \\\\times 10^{-19} \\\\times (-10^{14}) \\\\times 34.48 \\\\times (-0.55 \\, \\\\text{mA/cm}^2)\",\n  \"genericFormula\": \"J_n = q \\\\times N \\\\times A \\\\times I\",\n  \"description\": \"Esta fórmula representa a densidade de corrente de portadores negativos (elétrons) em um semicondutor. A densidade de corrente é uma medida de quão intensa é a corrente elétrica que flui por unidade de área, considerando a contribuição de elétrons que se movem sob a influência de um campo elétrico.\",\n  \"concepts\": [\n    \"Densidade de corrente\",\n    \"Portadores de carga\",\n    \"Semicondutores\",\n    \"Campo elétrico\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"J_n\",\n      \"description\": \"Representa a densidade de corrente dos portadores negativos, que é a quantidade de corrente elétrica por unidade de área, especificamente para elétrons em um semicondutor.\"\n    },\n    {\n      \"symbol\": \"q\",\n      \"description\": \"Representa a carga elementar, que é a carga de um único elétron, uma constante fundamental na física.\"\n    },\n    {\n      \"symbol\": \"N\",\n      \"description\": \"Representa a concentração de portadores de carga, ou seja, o número de elétrons disponíveis por unidade de volume no semicondutor.\"\n    },\n    {\n      \"symbol\": \"A\",\n      \"description\": \"Representa a área através da qual a corrente está fluindo, geralmente medida em centímetros quadrados.\"\n    },\n    {\n      \"symbol\": \"I\",\n      \"description\": \"Representa a corrente elétrica, que é o fluxo de carga elétrica, medida em miliamperes por centímetro quadrado neste contexto.\"\n    }\n  ]\n}",
+          "chapter": "4.9 CARRIER CURRENTS",
+          "source": "answer",
+          "questionNumber": "4.4",
+          "page": 100
         }
       ]
     }
@@ -64,7 +72,10 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"p_0 = 10^{15} \\, \\\\text{cm}^{-3}, n_0 = 1 \\\\times 10^{5} \\, \\\\text{cm}^{-3}\",\n  \"genericFormula\": \"p_0 = P \\, \\\\text{cm}^{-3}, n_0 = N \\, \\\\text{cm}^{-3}\",\n  \"description\": \"Esta fórmula representa as concentrações de portadores de carga em um semicondutor. O primeiro termo, p_0, é a concentração de lacunas (portadores positivos) e o segundo termo, n_0, é a concentração de elétrons (portadores negativos). Essas concentrações são fundamentais para entender o comportamento elétrico do material semicondutor.\",\n  \"concepts\": [\n    \"Semicondutores\",\n    \"Portadores de carga\",\n    \"Concentração de lacunas\",\n    \"Concentração de elétrons\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"p_0\",\n      \"description\": \"Representa a concentração de lacunas em um semicondutor, que são os locais onde um elétron poderia estar, mas não está presente, agindo como portadores de carga positiva.\"\n    },\n    {\n      \"symbol\": \"n_0\",\n      \"description\": \"Representa a concentração de elétrons em um semicondutor, que são os portadores de carga negativa responsáveis pela condução elétrica.\"\n    },\n    {\n      \"symbol\": \"P\",\n      \"description\": \"É uma variável genérica que representa a concentração de lacunas em um semicondutor, em unidades de número por centímetro cúbico.\"\n    },\n    {\n      \"symbol\": \"N\",\n      \"description\": \"É uma variável genérica que representa a concentração de elétrons em um semicondutor, também em unidades de número por centímetro cúbico.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"p_0 = 10^{15} \\, \\\\text{cm}^{-3}, n_0 = 1 \\\\times 10^{5} \\, \\\\text{cm}^{-3}\",\n  \"genericFormula\": \"p_0 = P \\, \\\\text{cm}^{-3}, n_0 = N \\, \\\\text{cm}^{-3}\",\n  \"description\": \"Esta fórmula representa as concentrações de portadores de carga em um semicondutor. O primeiro termo, p_0, é a concentração de lacunas (portadores positivos) e o segundo termo, n_0, é a concentração de elétrons (portadores negativos). Essas concentrações são fundamentais para entender o comportamento elétrico do material semicondutor.\",\n  \"concepts\": [\n    \"Semicondutores\",\n    \"Portadores de carga\",\n    \"Concentração de lacunas\",\n    \"Concentração de elétrons\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"p_0\",\n      \"description\": \"Representa a concentração de lacunas em um semicondutor, que são os locais onde um elétron poderia estar, mas não está presente, agindo como portadores de carga positiva.\"\n    },\n    {\n      \"symbol\": \"n_0\",\n      \"description\": \"Representa a concentração de elétrons em um semicondutor, que são os portadores de carga negativa responsáveis pela condução elétrica.\"\n    },\n    {\n      \"symbol\": \"P\",\n      \"description\": \"É uma variável genérica que representa a concentração de lacunas em um semicondutor, em unidades de número por centímetro cúbico.\"\n    },\n    {\n      \"symbol\": \"N\",\n      \"description\": \"É uma variável genérica que representa a concentração de elétrons em um semicondutor, também em unidades de número por centímetro cúbico.\"\n    }\n  ]\n}",
+      "chapter": "4.9 CARRIER CURRENTS",
+      "source": "standalone",
+      "page": 200
     },
     {
       "originalFormula": "\\mu_n = 1331 \\, \\text{cm}^2/(V \\cdot s)",
@@ -81,7 +92,10 @@
           "symbol": "\\mu_n",
           "description": "Representa a mobilidade dos portadores de carga negativa, que é a capacidade dos elétrons de se moverem em resposta a um campo elétrico."
         }
-      ]
+      ],
+      "chapter": "4.9 CARRIER CURRENTS",
+      "source": "standalone",
+      "page": 299
     },
     {
       "originalFormula": "D_n = \\frac{k T}{q} \\mu_n",
@@ -115,7 +129,10 @@
           "symbol": "μ_n",
           "description": "Representa a mobilidade dos portadores de carga negativa, que indica a facilidade com que os elétrons se movem através do semicondutor quando um campo elétrico é aplicado."
         }
-      ]
+      ],
+      "chapter": "4.9 CARRIER CURRENTS",
+      "source": "standalone",
+      "page": 399
     }
   ],
   "processedPages": [
@@ -618,5 +635,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.990Z"
+  "lastUpdated": "2026-05-08T18:19:13.967873",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

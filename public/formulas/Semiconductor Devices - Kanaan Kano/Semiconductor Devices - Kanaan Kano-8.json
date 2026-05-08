@@ -46,7 +46,11 @@
               "symbol": "W_B",
               "description": "É a largura da base do transistor, que é a região entre o emissor e o coletor."
             }
-          ]
+          ],
+          "chapter": "8",
+          "source": "question",
+          "questionNumber": "1",
+          "page": 1
         }
       ]
     },
@@ -98,7 +102,11 @@
               "symbol": "I_E",
               "description": "Representa a corrente elétrica que flui através do emissor de um transistor."
             }
-          ]
+          ],
+          "chapter": "8",
+          "source": "question",
+          "questionNumber": "8.4a",
+          "page": 12
         },
         {
           "originalFormula": "I_C = 0.3389 \\text{mA}",
@@ -118,7 +126,11 @@
               "symbol": "I",
               "description": "Representa a corrente elétrica em geral, que pode ser medida em diferentes unidades como amperes ou miliamperes."
             }
-          ]
+          ],
+          "chapter": "8",
+          "source": "question",
+          "questionNumber": "8.4a",
+          "page": 23
         }
       ]
     },
@@ -149,7 +161,11 @@
               "symbol": "I_E",
               "description": "Representa a corrente que flui do emissor do transistor, que é a corrente de entrada do dispositivo."
             }
-          ]
+          ],
+          "chapter": "8",
+          "source": "question",
+          "questionNumber": "8.4b",
+          "page": 34
         }
       ]
     },
@@ -208,7 +224,11 @@
               "symbol": "q",
               "description": "É a carga elementar, que é a carga de um único elétron."
             }
-          ]
+          ],
+          "chapter": "8",
+          "source": "question",
+          "questionNumber": "Example 8.8",
+          "page": 45
         },
         {
           "originalFormula": "V_{EB} = 0.63V, V_{CB} = 0.53V, V_{EC} = 0.1V",
@@ -233,7 +253,11 @@
               "symbol": "V_{EC}",
               "description": "Tensão entre o emissor e o coletor do transistor."
             }
-          ]
+          ],
+          "chapter": "8",
+          "source": "question",
+          "questionNumber": "Example 8.8",
+          "page": 56
         },
         {
           "originalFormula": "|V_{EB}| = |V_{CB}| >> \frac{kT}{q}, V_{EB} < 0, V_{CB} < 0",
@@ -266,7 +290,11 @@
               "symbol": "q",
               "description": "Carga elementar, que é a carga de um único elétron, fundamental para entender as interações elétricas."
             }
-          ]
+          ],
+          "chapter": "8",
+          "source": "question",
+          "questionNumber": "Example 8.8",
+          "page": 67
         },
         {
           "originalFormula": "|V_{EB}| >> \frac{kT}{q} V_{CB} = 0.63V, V_{EB} < 0",
@@ -299,7 +327,11 @@
               "symbol": "V_{CB}",
               "description": "Tensão entre o coletor e a base do transistor, que também afeta seu funcionamento e a corrente que flui através dele."
             }
-          ]
+          ],
+          "chapter": "8",
+          "source": "question",
+          "questionNumber": "Example 8.8",
+          "page": 78
         }
       ]
     },
@@ -482,7 +514,11 @@
               "symbol": "I_E",
               "description": "Representa a corrente que flui para o emissor do transistor, que é a corrente de entrada do dispositivo."
             }
-          ]
+          ],
+          "chapter": "8",
+          "source": "answer",
+          "questionNumber": "8.4b",
+          "page": 89
         }
       ]
     },
@@ -517,7 +553,11 @@
               "symbol": "\\beta_{F}",
               "description": "Representa o ganho de corrente do transistor, que é a razão entre a corrente de coletor e a corrente de base."
             }
-          ]
+          ],
+          "chapter": "8",
+          "source": "answer",
+          "questionNumber": "Example 8.8",
+          "page": 100
         },
         {
           "originalFormula": "I_{E} = -0.0941 \\times 10^{-15}A, I_{C} = 9.404 \\times 10^{-15}A, I_{B} = -9.31 \\times 10^{-15}A",
@@ -545,7 +585,11 @@
               "symbol": "A",
               "description": "Representa a unidade de medida da corrente elétrica, que é o ampere."
             }
-          ]
+          ],
+          "chapter": "8",
+          "source": "answer",
+          "questionNumber": "Example 8.8",
+          "page": 111
         },
         {
           "originalFormula": "I_{E} = 0.6684 \\text{mA}, \\ I_{C} = 0.658437 \\text{mA}, \\ I_{B} = 0.009996 \\text{mA}",
@@ -569,7 +613,11 @@
               "symbol": "I_{B}",
               "description": "Representa a corrente que flui para a base do transistor."
             }
-          ]
+          ],
+          "chapter": "8",
+          "source": "answer",
+          "questionNumber": "Example 8.8",
+          "page": 122
         },
         {
           "originalFormula": "I_{E} = 0.6792 \\text{mA}, \\ I_{C} = -1.0245 \\text{mA}, \\ I_{B} = 0.344 \\text{mA}",
@@ -595,7 +643,11 @@
               "symbol": "I_{B}",
               "description": "Representa a corrente que flui para a base do transistor."
             }
-          ]
+          ],
+          "chapter": "8",
+          "source": "answer",
+          "questionNumber": "Example 8.8",
+          "page": 133
         },
         {
           "originalFormula": "\\frac{I_{C}}{I_{B}} = 66",
@@ -619,7 +671,11 @@
               "symbol": "\\beta",
               "description": "Representa o ganho de corrente do transistor, que é a razão entre a corrente coletora e a corrente base."
             }
-          ]
+          ],
+          "chapter": "8",
+          "source": "answer",
+          "questionNumber": "Example 8.8",
+          "page": 144
         },
         {
           "originalFormula": "I_{C} = -0.6792mA, I_{E} = -1.0245mA, \\frac{I_{C}}{I_{B}} = 1.97 = \\beta",
@@ -649,7 +705,11 @@
               "symbol": "\\beta",
               "description": "Representa o ganho de corrente do transistor, que é a razão entre a corrente coletora e a corrente base."
             }
-          ]
+          ],
+          "chapter": "8",
+          "source": "answer",
+          "questionNumber": "Example 8.8",
+          "page": 155
         }
       ]
     }
@@ -673,7 +733,10 @@
           "symbol": "V_{valor}",
           "description": "Representa um valor genérico de tensão elétrica, que pode ser qualquer valor numérico, dependendo do contexto do circuito."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 167
     },
     {
       "originalFormula": "V_{EB} = 0.5V",
@@ -694,7 +757,10 @@
           "symbol": "V_{0}",
           "description": "Representa uma tensão de referência genérica, que pode ser ajustada conforme as condições do circuito."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 178
     },
     {
       "originalFormula": "I_C = q A_E D_p \\frac{p(0)}{W_B} \\exp\\left(\\frac{q V_{EB}}{kT}\\right)",
@@ -744,7 +810,10 @@
           "symbol": "T",
           "description": "Representa a temperatura absoluta em Kelvin, que afeta a mobilidade e a concentração dos portadores de carga."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 189
     },
     {
       "originalFormula": "I_B = q A_E D_p n_{E0} \\frac{n_E(0)}{L_{nE}} = \\left(\\frac{q A_E D_p n_{E0}}{L_{nE}}\\right) \\exp\\left(\\frac{q V_{EB}}{kT}\\right)",
@@ -798,7 +867,10 @@
           "symbol": "T",
           "description": "Representa a temperatura absoluta em Kelvin, que afeta a movimentação dos portadores de carga."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 200
     },
     {
       "originalFormula": "p = p_0 + p_0 \\left[ \\exp \\left( \\frac{qV_{EB}}{kT} \\right) - 1 \\right] \\frac{\\sinh \\left( \\frac{W_B - x}{L_p} \\right)}{\\sinh \\left( \\frac{W_B}{L_p} \\right)} + p_0 \\left[ \\exp \\left( \\frac{qV_{CB}}{kT} \\right) - 1 \\right] \\frac{\\sinh \\left( \\frac{x}{L_p} \\right)}{\\sinh \\left( \\frac{W_B}{L_p} \\right)}",
@@ -851,7 +923,10 @@
           "symbol": "V_{CB}",
           "description": "É a tensão aplicada entre a região de coletor e a base do dispositivo semicondutor."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 211
     },
     {
       "originalFormula": "I_{Ep} = \\frac{q A D_p p_0}{L_p} \\left[ \\left( \\exp \\left( \\frac{qV_{EB}}{kT} \\right) - 1 \\right) \\coth \\left( \\frac{W_B}{L_p} \\right) - \\left( \\exp \\left( \\frac{qV_{CB}}{kT} \\right) - 1 \\right) \\frac{1}{\\sinh \\left( \\frac{W_B}{L_p} \\right)} \\right]",
@@ -909,7 +984,10 @@
           "symbol": "V_{CB}",
           "description": "É a tensão aplicada entre a região de coletor e a base do dispositivo semicondutor."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 222
     },
     {
       "originalFormula": "n'_E = n'_E(0) \\exp \\left( -\\frac{x'}{L_{nE}} \\right)",
@@ -938,7 +1016,10 @@
           "symbol": "L_{nE}",
           "description": "Representa o comprimento de difusão, que é uma medida da distância média que os portadores de carga podem se mover antes de sofrerem recombinação ou serem capturados."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 233
     },
     {
       "originalFormula": "I_{En} = - q A D_{nE} \\frac{dn'_E}{dx'} \\bigg|_{x' = 0} = \\frac{q A D_{nE} n_{0E}}{L_{nE}} \\left[ \\exp \\left( \\frac{qV_{EB}}{kT} \\right) - 1 \\right]",
@@ -997,7 +1078,10 @@
           "symbol": "T",
           "description": "Representa a temperatura absoluta do semicondutor, que afeta a movimentação e a densidade dos portadores de carga."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 244
     },
     {
       "originalFormula": "I_E = I_{Ep} + I_{En} = \\left[ \\frac{q A D_p p_0}{L_p} \\coth \\left( \\frac{W_B}{L_p} \\right) + \\frac{q A D_{nE} n_{0E}}{L_{nE}} \\left[ \\exp \\left( \\frac{qV_{EB}}{kT} \\right) - 1 \\right] - \\left[ \\frac{q A D_p p_0}{L_p \\sinh \\left( \\frac{W_B}{L_p} \\right)} \\right] \\left[ \\exp \\left( \\frac{qV_{CB}}{kT} \\right) - 1 \\right] \\right]",
@@ -1076,7 +1160,10 @@
           "symbol": "V_{CB}",
           "description": "Representa a tensão aplicada na junção que afeta a corrente de lacunas."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 255
     },
     {
       "originalFormula": "D_{p} = D_{n}P_{0} \\quad L_{p} = L_{n}",
@@ -1109,7 +1196,10 @@
           "symbol": "L_{n}",
           "description": "Representa o comprimento de difusão dos portadores de carga do tipo negativo, que é a distância média que esses portadores podem percorrer antes de recombinar."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 266
     },
     {
       "originalFormula": "D_{nE} = D_{pE}n_{0}e \\quad L_{nE} = L_{pE}",
@@ -1146,7 +1236,10 @@
           "symbol": "L_{pE}",
           "description": "Representa o comprimento de difusão dos buracos, que é a distância média que os buracos podem se mover devido à difusão antes de serem recombinados ou capturados."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 277
     },
     {
       "originalFormula": "D_{nC} = D_{pC}n_{0}c \\quad L_{nC} = L_{pC}",
@@ -1183,7 +1276,10 @@
           "symbol": "L_{pC}",
           "description": "Representa a largura de difusão dos portadores positivos, que é a distância que as lacunas podem se mover antes de serem recombinadas."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 288
     },
     {
       "originalFormula": "V_{EB} = V_{BE} \\quad V_{CB} = V_{CB}",
@@ -1207,7 +1303,10 @@
           "symbol": "V_{CB}",
           "description": "Representa a tensão entre o coletor e a base do transistor."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 299
     },
     {
       "originalFormula": "L = (D_{n})^{1/2}",
@@ -1226,7 +1325,10 @@
           "symbol": "D",
           "description": "Representa a densidade de portadores de carga, que é a quantidade de portadores de carga elétrica por unidade de volume."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 310
     },
     {
       "originalFormula": "\\mu_{n} = 826 \\text{ cm}^{2}/\\text{V-sec}",
@@ -1247,7 +1349,10 @@
           "symbol": "cm^{2}/V-sec",
           "description": "Unidade de medida que expressa a mobilidade elétrica, indicando quantos centímetros quadrados de área um portador de carga pode percorrer em um segundo sob a influência de um volt por centímetro."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 321
     },
     {
       "originalFormula": "\\mu_{p} = 447 \\text{ cm}^{2}/\\text{V-sec}",
@@ -1279,7 +1384,10 @@
           "symbol": "sec",
           "description": "Abreviação de segundo, que é a unidade de tempo utilizada para medir a duração do movimento dos portadores de carga."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 333
     },
     {
       "originalFormula": "\\mu_{n,c} = 1330 \\text{ cm}^{2}/\\text{V-sec}",
@@ -1299,7 +1407,10 @@
           "symbol": "A",
           "description": "Um valor numérico que representa a mobilidade em centímetros quadrados por volt-segundo, que é uma unidade de medida."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 344
     },
     {
       "originalFormula": "\\mu_{p,c} = 34.5 \\text{ cm}^{2}/\\text{sec}",
@@ -1316,7 +1427,10 @@
           "symbol": "\\mu_{p,c}",
           "description": "Representa a mobilidade dos portadores de carga positiva, que são os buracos, em um semicondutor."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 355
     },
     {
       "originalFormula": "L_{nE} = 4.62 \\times 10^{-3} \\text{ cm}",
@@ -1333,7 +1447,10 @@
           "symbol": "L_{nE}",
           "description": "Representa um comprimento específico, que pode estar associado a características de um material ou fenômeno em semicondutores."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 366
     },
     {
       "originalFormula": "L_{p} = 3.4 \\times 10^{-3} \\text{ cm}",
@@ -1349,7 +1466,10 @@
           "symbol": "L_{p}",
           "description": "Representa o comprimento de difusão dos portadores de carga em um semicondutor."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 377
     },
     {
       "originalFormula": "L_{nC} = 5.87 \\times 10^{-3} \\text{ cm}",
@@ -1365,7 +1485,10 @@
           "symbol": "L_{nC}",
           "description": "Representa o comprimento de uma camada ou região específica em um material semicondutor."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 388
     },
     {
       "originalFormula": "n_{OE} = 2 \\times 10^{3}cm^{-3}",
@@ -1389,7 +1512,10 @@
           "symbol": "n",
           "description": "Um expoente que indica a ordem de grandeza da densidade, mostrando quantas vezes a base 10 deve ser multiplicada."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 399
     },
     {
       "originalFormula": "\\mu_{nE} = 1016cm^{2}/V\\cdot s",
@@ -1397,7 +1523,10 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"\\\\mu_{nE} = 10^{16} \\\\text{cm}^{2}/\\\\text{V} \\\\cdot \\\\text{s}\",\n  \"genericFormula\": \"\\\\mu_{nE} = X \\\\text{cm}^{2}/\\\\text{V} \\\\cdot \\\\text{s}\",\n  \"description\": \"Esta fórmula representa a mobilidade dos portadores de carga negativa em um semicondutor, que é uma medida de quão rapidamente os elétrons podem se mover através do material quando um campo elétrico é aplicado.\",\n  \"concepts\": [\n    \"Mobilidade dos portadores de carga\",\n    \"Semicondutores\",\n    \"Campo elétrico\",\n    \"Transporte de carga elétrica\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"μ_{nE}\",\n      \"description\": \"Representa a mobilidade dos portadores de carga negativa, que indica a eficiência com que os elétrons se movem em resposta a um campo elétrico.\"\n    },\n    {\n      \"symbol\": \"cm^{2}/V \\cdot s\",\n      \"description\": \"Unidade de medida da mobilidade, que expressa a distância que um portador de carga se desloca em centímetros por cada volt por segundo aplicado.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"\\\\mu_{nE} = 10^{16} \\\\text{cm}^{2}/\\\\text{V} \\\\cdot \\\\text{s}\",\n  \"genericFormula\": \"\\\\mu_{nE} = X \\\\text{cm}^{2}/\\\\text{V} \\\\cdot \\\\text{s}\",\n  \"description\": \"Esta fórmula representa a mobilidade dos portadores de carga negativa em um semicondutor, que é uma medida de quão rapidamente os elétrons podem se mover através do material quando um campo elétrico é aplicado.\",\n  \"concepts\": [\n    \"Mobilidade dos portadores de carga\",\n    \"Semicondutores\",\n    \"Campo elétrico\",\n    \"Transporte de carga elétrica\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"μ_{nE}\",\n      \"description\": \"Representa a mobilidade dos portadores de carga negativa, que indica a eficiência com que os elétrons se movem em resposta a um campo elétrico.\"\n    },\n    {\n      \"symbol\": \"cm^{2}/V \\cdot s\",\n      \"description\": \"Unidade de medida da mobilidade, que expressa a distância que um portador de carga se desloca em centímetros por cada volt por segundo aplicado.\"\n    }\n  ]\n}",
+      "chapter": "8",
+      "source": "standalone",
+      "page": 410
     },
     {
       "originalFormula": "D_{nE} = 26.3cm^{2}/s",
@@ -1405,7 +1534,10 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"D_{nE} = 26.3 \\, \\\\text{cm}^2/\\\\text{s}\",\n  \"genericFormula\": \"D_{nE} = D_{nE_{gen}}\",\n  \"description\": \"Esta fórmula representa a difusividade do portador de carga, especificamente um elétron, em um semicondutor. A difusividade é uma medida de quão rapidamente os elétrons se espalham através do material devido a um gradiente de concentração.\",\n  \"concepts\": [\n    \"Difusividade\",\n    \"Semicondutores\",\n    \"Portadores de carga\",\n    \"Gradiente de concentração\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"D_{nE}\",\n      \"description\": \"Representa a difusividade dos elétrons em um semicondutor, que indica a taxa de dispersão dos elétrons no material.\"\n    },\n    {\n      \"symbol\": \"cm^{2}/s\",\n      \"description\": \"Unidade de medida da difusividade, que indica quantos centímetros quadrados de área são cobertos por um elétron em um segundo.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"D_{nE} = 26.3 \\, \\\\text{cm}^2/\\\\text{s}\",\n  \"genericFormula\": \"D_{nE} = D_{nE_{gen}}\",\n  \"description\": \"Esta fórmula representa a difusividade do portador de carga, especificamente um elétron, em um semicondutor. A difusividade é uma medida de quão rapidamente os elétrons se espalham através do material devido a um gradiente de concentração.\",\n  \"concepts\": [\n    \"Difusividade\",\n    \"Semicondutores\",\n    \"Portadores de carga\",\n    \"Gradiente de concentração\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"D_{nE}\",\n      \"description\": \"Representa a difusividade dos elétrons em um semicondutor, que indica a taxa de dispersão dos elétrons no material.\"\n    },\n    {\n      \"symbol\": \"cm^{2}/s\",\n      \"description\": \"Unidade de medida da difusividade, que indica quantos centímetros quadrados de área são cobertos por um elétron em um segundo.\"\n    }\n  ]\n}",
+      "chapter": "8",
+      "source": "standalone",
+      "page": 421
     },
     {
       "originalFormula": "sinh\\left(\\frac{W_B}{L_p}\\right) = 0.05888574",
@@ -1433,7 +1565,10 @@
           "symbol": "C",
           "description": "Representa uma constante que é o resultado da aplicação da função seno hiperbólico à razão entre a largura e o comprimento do dispositivo, podendo variar dependendo do contexto específico em que a fórmula é aplicada."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 432
     },
     {
       "originalFormula": "coth\\left(\\frac{W_B}{L_p}\\right) = 17.01962",
@@ -1461,7 +1596,10 @@
           "symbol": "C",
           "description": "representa uma constante que é o resultado da relação entre a largura e o comprimento do dispositivo, indicando um valor específico que pode ser utilizado para análise e comparação."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 443
     },
     {
       "originalFormula": "I_{ES} = I_{ES} \\exp \\left( \\frac{q V_{EB}}{kT} - 1 \\right)",
@@ -1503,7 +1641,10 @@
           "symbol": "T",
           "description": "Representa a temperatura em Kelvin, que afeta a energia térmica das partículas no material semicondutor."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 454
     },
     {
       "originalFormula": "I_{C} = I_{C}S \\exp \\left( \\frac{q V_{CB}}{kT} - 1 \\right)",
@@ -1542,7 +1683,10 @@
           "symbol": "T",
           "description": "Representa a temperatura absoluta em Kelvin, que afeta o comportamento dos portadores de carga em um semicondutor."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 465
     },
     {
       "originalFormula": "I_{C} = \\alpha_{f} I_{E} + I_{CS} (1 - \\alpha_{f} \\alpha_{R}) = \\alpha_{f} I_{E} + I_{CBO}",
@@ -1580,7 +1724,10 @@
           "symbol": "I_{CBO}",
           "description": "É a corrente de fuga do coletor para a base quando o transistor está em modo de corte."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 476
     },
     {
       "originalFormula": "I_{C} = \\left( \\frac{\\alpha_{f}}{1 - \\alpha_{p}} \\right) I_{B} + \\frac{I_{CBO}}{1 - \\alpha_{F}} I_{B} + I_{CEO}",
@@ -1622,7 +1769,10 @@
           "symbol": "I_{CEO}",
           "description": "Representa a corrente de coletor com a base em curto-circuito, que é a corrente que flui do coletor para o emissor quando não há corrente de base."
         }
-      ]
+      ],
+      "chapter": "8",
+      "source": "standalone",
+      "page": 487
     }
   ],
   "processedPages": [
@@ -2125,5 +2275,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.838Z"
+  "lastUpdated": "2026-05-08T18:19:13.269915",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

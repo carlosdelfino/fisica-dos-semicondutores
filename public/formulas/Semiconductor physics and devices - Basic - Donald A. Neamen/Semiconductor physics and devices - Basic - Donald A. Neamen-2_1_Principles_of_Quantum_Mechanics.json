@@ -32,7 +32,12 @@
               "symbol": "\\lambda",
               "description": "É o comprimento de onda da luz, que é a distância entre dois picos consecutivos de uma onda eletromagnética."
             }
-          ]
+          ],
+          "chapter": "2.1 Principles of Quantum Mechanics",
+          "section": "2.1",
+          "source": "question",
+          "questionNumber": "Ex 2.1",
+          "page": 1
         }
       ]
     },
@@ -62,7 +67,12 @@
               "symbol": "v",
               "description": "Representa a velocidade do objeto, que é a taxa de variação da posição do objeto em relação ao tempo, também um vetor que indica direção e magnitude."
             }
-          ]
+          ],
+          "chapter": "2.1 Principles of Quantum Mechanics",
+          "section": "2.1",
+          "source": "question",
+          "questionNumber": "Ex 2.2 (a)",
+          "page": 4
         },
         {
           "originalFormula": "\\lambda = \\frac{h}{p}",
@@ -87,7 +97,12 @@
               "symbol": "p",
               "description": "Representa a quantidade de movimento, que é o produto da massa de um objeto pela sua velocidade, descrevendo o movimento de um corpo."
             }
-          ]
+          ],
+          "chapter": "2.1 Principles of Quantum Mechanics",
+          "section": "2.1",
+          "source": "question",
+          "questionNumber": "Ex 2.2 (a)",
+          "page": 7
         }
       ]
     },
@@ -118,7 +133,12 @@
               "symbol": "v",
               "description": "Representa a velocidade do objeto, que é a taxa de variação da posição do objeto em relação ao tempo."
             }
-          ]
+          ],
+          "chapter": "2.1 Principles of Quantum Mechanics",
+          "section": "2.1",
+          "source": "question",
+          "questionNumber": "Ex 2.2 (b)",
+          "page": 10
         },
         {
           "originalFormula": "\\lambda = \\frac{h}{p}",
@@ -142,7 +162,12 @@
               "symbol": "p",
               "description": "Representa a quantidade de movimento de uma partícula, que é o produto da massa da partícula pela sua velocidade."
             }
-          ]
+          ],
+          "chapter": "2.1 Principles of Quantum Mechanics",
+          "section": "2.1",
+          "source": "question",
+          "questionNumber": "Ex 2.2 (b)",
+          "page": 13
         }
       ]
     },
@@ -177,7 +202,12 @@
               "symbol": "W",
               "description": "Representa a energia de trabalho, que é a quantidade de energia necessária para remover um elétron de um material."
             }
-          ]
+          ],
+          "chapter": "2.1 Principles of Quantum Mechanics",
+          "section": "2.1",
+          "source": "question",
+          "questionNumber": "2.5",
+          "page": 16
         }
       ]
     },
@@ -208,7 +238,12 @@
               "symbol": "v",
               "description": "representa a velocidade do objeto, que é a taxa de variação da posição do objeto em relação ao tempo."
             }
-          ]
+          ],
+          "chapter": "2.1 Principles of Quantum Mechanics",
+          "section": "2.1",
+          "source": "question",
+          "questionNumber": "2.6",
+          "page": 19
         },
         {
           "originalFormula": "E = hf",
@@ -233,7 +268,12 @@
               "symbol": "f",
               "description": "Representa a frequência do fóton, que é o número de ciclos que uma onda completa em um segundo. Frequência está relacionada à cor da luz e à energia do fóton."
             }
-          ]
+          ],
+          "chapter": "2.1 Principles of Quantum Mechanics",
+          "section": "2.1",
+          "source": "question",
+          "questionNumber": "2.6",
+          "page": 22
         }
       ]
     },
@@ -264,7 +304,12 @@
               "symbol": "p",
               "description": "Representa a quantidade de movimento de uma partícula, que é o produto da massa da partícula pela sua velocidade."
             }
-          ]
+          ],
+          "chapter": "2.1 Principles of Quantum Mechanics",
+          "section": "2.1",
+          "source": "question",
+          "questionNumber": "2.7",
+          "page": 25
         },
         {
           "originalFormula": "E_k = \\frac{p^2}{2m}",
@@ -288,7 +333,12 @@
               "symbol": "m",
               "description": "Representa a massa da partícula, que é uma medida da quantidade de matéria que ela contém."
             }
-          ]
+          ],
+          "chapter": "2.1 Principles of Quantum Mechanics",
+          "section": "2.1",
+          "source": "question",
+          "questionNumber": "2.7",
+          "page": 29
         }
       ]
     },
@@ -320,7 +370,12 @@
               "symbol": "T",
               "description": "Representa a temperatura absoluta do sistema, medida em Kelvin."
             }
-          ]
+          ],
+          "chapter": "2.1 Principles of Quantum Mechanics",
+          "section": "2.1",
+          "source": "question",
+          "questionNumber": "2.8",
+          "page": 32
         }
       ]
     },
@@ -350,7 +405,12 @@
               "symbol": "m",
               "description": "Representa a massa da partícula, que é uma medida da quantidade de matéria que ela contém."
             }
-          ]
+          ],
+          "chapter": "2.1 Principles of Quantum Mechanics",
+          "section": "2.1",
+          "source": "question",
+          "questionNumber": "2.10",
+          "page": 35
         },
         {
           "originalFormula": "p = mv",
@@ -374,7 +434,12 @@
               "symbol": "v",
               "description": "Representa a velocidade do objeto, que é a taxa de variação da posição do objeto em relação ao tempo."
             }
-          ]
+          ],
+          "chapter": "2.1 Principles of Quantum Mechanics",
+          "section": "2.1",
+          "source": "question",
+          "questionNumber": "2.10",
+          "page": 38
         }
       ]
     },
@@ -409,7 +474,12 @@
               "symbol": "\\lambda",
               "description": "É o comprimento de onda da radiação eletromagnética, que é a distância entre dois picos consecutivos de uma onda."
             }
-          ]
+          ],
+          "chapter": "2.1 Principles of Quantum Mechanics",
+          "section": "2.1",
+          "source": "question",
+          "questionNumber": "2.11",
+          "page": 41
         }
       ]
     },
@@ -440,7 +510,12 @@
               "symbol": "ℏ",
               "description": "Representa a constante de Planck reduzida, que é uma constante fundamental na mecânica quântica, relacionada à quantização da energia e ao comportamento das partículas em escalas muito pequenas."
             }
-          ]
+          ],
+          "chapter": "2.1 Principles of Quantum Mechanics",
+          "section": "2.1",
+          "source": "question",
+          "questionNumber": "2.12",
+          "page": 44
         }
       ]
     },
@@ -471,7 +546,12 @@
               "symbol": "Δx",
               "description": "Representa a incerteza na posição de uma partícula, que é a medida de quão precisamente podemos determinar onde a partícula se encontra."
             }
-          ]
+          ],
+          "chapter": "2.1 Principles of Quantum Mechanics",
+          "section": "2.1",
+          "source": "question",
+          "questionNumber": "2.13",
+          "page": 47
         }
       ]
     },
@@ -502,7 +582,12 @@
               "symbol": "ℏ",
               "description": "Representa a constante de Planck reduzida, que é uma constante fundamental na mecânica quântica, relacionada às escalas de energia e comprimento na descrição de sistemas quânticos."
             }
-          ]
+          ],
+          "chapter": "2.1 Principles of Quantum Mechanics",
+          "section": "2.1",
+          "source": "question",
+          "questionNumber": "2.14",
+          "page": 50
         }
       ]
     },
@@ -533,7 +618,12 @@
               "symbol": "ℏ",
               "description": "Representa a constante de Planck reduzida, que é uma constante fundamental na mecânica quântica, relacionada à quantização de energia."
             }
-          ]
+          ],
+          "chapter": "2.1 Principles of Quantum Mechanics",
+          "section": "2.1",
+          "source": "question",
+          "questionNumber": "2.15",
+          "page": 54
         }
       ]
     }
@@ -570,7 +660,12 @@
               "symbol": "d",
               "description": "É uma medida de distância, que pode representar o comprimento de onda da luz em unidades específicas."
             }
-          ]
+          ],
+          "chapter": "2.1 Principles of Quantum Mechanics",
+          "section": "2.1",
+          "source": "answer",
+          "questionNumber": "Ex 2.1(a)",
+          "page": 57
         }
       ]
     },
@@ -605,7 +700,12 @@
               "symbol": "\\lambda",
               "description": "Representa o comprimento de onda da luz, que é a distância entre dois picos consecutivos de uma onda. É uma medida importante na descrição das propriedades da luz."
             }
-          ]
+          ],
+          "chapter": "2.1 Principles of Quantum Mechanics",
+          "section": "2.1",
+          "source": "answer",
+          "questionNumber": "Ex 2.1(b)",
+          "page": 60
         }
       ]
     },
@@ -636,7 +736,12 @@
               "symbol": "v",
               "description": "representa a velocidade do objeto, que é a taxa de variação da posição do objeto em relação ao tempo."
             }
-          ]
+          ],
+          "chapter": "2.1 Principles of Quantum Mechanics",
+          "section": "2.1",
+          "source": "answer",
+          "questionNumber": "Ex 2.2 (a)",
+          "page": 63
         },
         {
           "originalFormula": "\\lambda = \\frac{h}{p} = \\frac{6.625 \\times 10^{-34}}{9.11 \\times 10^{-26}} = 7.27 \\times 10^{-9} m",
@@ -661,7 +766,12 @@
               "symbol": "p",
               "description": "Representa a quantidade de movimento de uma partícula, que é o produto da massa da partícula pela sua velocidade."
             }
-          ]
+          ],
+          "chapter": "2.1 Principles of Quantum Mechanics",
+          "section": "2.1",
+          "source": "answer",
+          "questionNumber": "Ex 2.2 (a)",
+          "page": 66
         }
       ]
     }
@@ -707,7 +817,11 @@
           "symbol": "ν₀",
           "description": "Representa a frequência mínima necessária para que um fóton consiga liberar um elétron do material, correspondente à função trabalho."
         }
-      ]
+      ],
+      "chapter": "2.1 Principles of Quantum Mechanics",
+      "section": "2.1",
+      "source": "standalone",
+      "page": 69
     },
     {
       "originalFormula": "\\Phi = h\\nu_{0}",
@@ -731,7 +845,11 @@
           "symbol": "\\nu",
           "description": "representa a frequência da radiação eletromagnética, que é o número de ciclos que ocorrem em um segundo."
         }
-      ]
+      ],
+      "chapter": "2.1 Principles of Quantum Mechanics",
+      "section": "2.1",
+      "source": "standalone",
+      "page": 72
     },
     {
       "originalFormula": "\\lambda = 72.7 \\text{ Å}",
@@ -751,7 +869,11 @@
           "symbol": "L",
           "description": "Representa uma variável genérica que também pode ser utilizada para denotar o comprimento de onda em contextos mais amplos."
         }
-      ]
+      ],
+      "chapter": "2.1 Principles of Quantum Mechanics",
+      "section": "2.1",
+      "source": "standalone",
+      "page": 75
     }
   ],
   "processedPages": [
@@ -834,5 +956,7 @@
     77,
     78
   ],
-  "lastUpdated": "2026-05-08T20:05:53.614Z"
+  "lastUpdated": "2026-05-08T18:19:13.083783",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
 }

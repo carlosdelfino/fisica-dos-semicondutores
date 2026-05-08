@@ -26,7 +26,10 @@
           "symbol": "n",
           "description": "Um expoente que indica a ordem de grandeza do campo elétrico, ajudando a expressar a magnitude em termos de potências de dez."
         }
-      ]
+      ],
+      "chapter": "13 Semiconductor Field-Effect Transistor",
+      "source": "standalone",
+      "page": 1
     }
   ],
   "processedPages": [
@@ -529,5 +532,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.178Z"
+  "lastUpdated": "2026-05-08T18:19:13.430873",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

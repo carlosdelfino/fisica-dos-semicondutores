@@ -36,7 +36,11 @@
               "symbol": "E_g",
               "description": "Representa a energia de bandgap do material semicondutor, que é a energia necessária para mover um elétron da banda de valência para a banda de condução."
             }
-          ]
+          ],
+          "chapter": "11.4 Comparison of Schottky Diode with P+N Diode",
+          "source": "question",
+          "questionNumber": "a",
+          "page": 1
         }
       ]
     },
@@ -62,7 +66,11 @@
               "symbol": "I_0",
               "description": "Representa um valor genérico da corrente elétrica, que pode ser alterado dependendo das condições do circuito."
             }
-          ]
+          ],
+          "chapter": "11.4 Comparison of Schottky Diode with P+N Diode",
+          "source": "question",
+          "questionNumber": "b",
+          "page": 72
         },
         {
           "originalFormula": "I_s = q \\cdot p_{0} n_{0} A / L_{p}",
@@ -100,7 +108,11 @@
               "symbol": "L_{p}",
               "description": "Representa o comprimento do semicondutor, que é a distância que a corrente percorre dentro do material."
             }
-          ]
+          ],
+          "chapter": "11.4 Comparison of Schottky Diode with P+N Diode",
+          "source": "question",
+          "questionNumber": "b",
+          "page": 143
         },
         {
           "originalFormula": "L_{p} = 3.4 \\times 10^{-3} \\text{ cm}, \\quad p_{0} = 10^{\\text{cm}^{-3}}",
@@ -121,7 +133,11 @@
               "symbol": "p_{0}",
               "description": "Representa a densidade de portadores de carga, que é a quantidade de portadores de carga por unidade de volume no material semicondutor."
             }
-          ]
+          ],
+          "chapter": "11.4 Comparison of Schottky Diode with P+N Diode",
+          "source": "question",
+          "questionNumber": "b",
+          "page": 214
         }
       ]
     },
@@ -207,7 +223,11 @@
               "symbol": "k",
               "description": "é a constante de Boltzmann, que relaciona a temperatura à energia térmica dos portadores de carga."
             }
-          ]
+          ],
+          "chapter": "11.4 Comparison of Schottky Diode with P+N Diode",
+          "source": "answer",
+          "questionNumber": "a",
+          "page": 285
         }
       ]
     },
@@ -229,7 +249,11 @@
               "symbol": "V",
               "description": "Representa a tensão elétrica, que é a diferença de potencial elétrico entre dois pontos em um circuito. É medida em volts."
             }
-          ]
+          ],
+          "chapter": "11.4 Comparison of Schottky Diode with P+N Diode",
+          "source": "answer",
+          "questionNumber": "b",
+          "page": 356
         }
       ]
     }
@@ -272,7 +296,10 @@
           "symbol": "L_{p}",
           "description": "representa o comprimento de difusão dos portadores de carga, que é a distância média que os portadores de carga podem se mover antes de recombinar."
         }
-      ]
+      ],
+      "chapter": "11.4 Comparison of Schottky Diode with P+N Diode",
+      "source": "standalone",
+      "page": 427
     }
   ],
   "processedPages": [
@@ -775,5 +802,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.145Z"
+  "lastUpdated": "2026-05-08T18:19:13.667761",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

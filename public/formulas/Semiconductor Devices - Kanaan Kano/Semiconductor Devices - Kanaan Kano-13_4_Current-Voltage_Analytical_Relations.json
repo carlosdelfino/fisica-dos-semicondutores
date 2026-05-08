@@ -47,7 +47,10 @@
           "symbol": "V_{D1}",
           "description": "Representa outra tensão específica em um ponto do circuito que serve como referência na comparação."
         }
-      ]
+      ],
+      "chapter": "13.4 Current-Voltage Analytical Relations",
+      "source": "standalone",
+      "page": 1
     },
     {
       "originalFormula": "V_{D3} \\gg V_{SAT} \\quad \\text{and} \\quad I_D = I_{SAT}",
@@ -77,7 +80,10 @@
           "symbol": "I_{SAT}",
           "description": "Representa a corrente de saturação, que é a corrente máxima que pode fluir através do dispositivo quando ele está em sua região de saturação."
         }
-      ]
+      ],
+      "chapter": "13.4 Current-Voltage Analytical Relations",
+      "source": "standalone",
+      "page": 250
     }
   ],
   "processedPages": [
@@ -580,5 +586,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.169Z"
+  "lastUpdated": "2026-05-08T18:19:13.174757",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

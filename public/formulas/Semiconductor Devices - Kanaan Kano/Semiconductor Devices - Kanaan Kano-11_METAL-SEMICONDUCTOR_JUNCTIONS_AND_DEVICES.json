@@ -18,7 +18,10 @@
           "symbol": "E_{0}",
           "description": "Representa a energia no estado fundamental de um sistema, que é a menor quantidade de energia que o sistema pode ter."
         }
-      ]
+      ],
+      "chapter": "11 METAL-SEMICONDUCTOR JUNCTIONS AND DEVICES",
+      "source": "standalone",
+      "page": 1
     },
     {
       "originalFormula": "E_{g}",
@@ -35,7 +38,10 @@
           "symbol": "E_{g}",
           "description": "Representa a energia de bandgap, que é a quantidade de energia necessária para mover um elétron da banda de valência para a banda de condução em um semicondutor."
         }
-      ]
+      ],
+      "chapter": "11 METAL-SEMICONDUCTOR JUNCTIONS AND DEVICES",
+      "source": "standalone",
+      "page": 250
     }
   ],
   "processedPages": [
@@ -538,5 +544,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.121Z"
+  "lastUpdated": "2026-05-08T18:19:13.445977",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

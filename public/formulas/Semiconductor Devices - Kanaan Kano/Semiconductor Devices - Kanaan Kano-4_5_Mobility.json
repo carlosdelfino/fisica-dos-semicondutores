@@ -21,7 +21,10 @@
           "symbol": "C",
           "description": "Um valor constante que representa a velocidade térmica em centímetros por segundo, que pode variar dependendo do material e das condições."
         }
-      ]
+      ],
+      "chapter": "4.5 Mobility",
+      "source": "standalone",
+      "page": 1
     }
   ],
   "processedPages": [
@@ -524,5 +527,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.976Z"
+  "lastUpdated": "2026-05-08T18:19:13.159632",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

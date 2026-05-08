@@ -1,0 +1,999 @@
+{
+  "chapter": "6.3 Ambipolar Transport",
+  "section": "unknown",
+  "questions": [
+    {
+      "number": "1",
+      "text": "Determine the steady-state spatial dependence of the excess carrier concentration.",
+      "formulas": []
+    },
+    {
+      "number": "TYU 6.3",
+      "text": "Excess electrons and holes are generated at the end of a silicon bar (x = 0). The silicon is doped with phosphorus atoms to a concentration of N_{d} = 10^{17} \\, \\text{cm}^{-3}. The minority carrier lifetime is 1 \\, \\mu s, the electron diffusion coefficient is D_{n} = 25 \\, \\text{cm}^{2}/s, and the hole diffusion coefficient is D_{p} = 10 \\, \\text{cm}^{2}/s. If \\delta n(0) = 10^{6} \\, \\text{cm}^{-3}, determine the steady-state electron and hole concentrations in the silicon for x > 0.",
+      "formulas": []
+    },
+    {
+      "number": "TYU 6.4",
+      "text": "Using the parameters given in TYU 6.3, calculate the electron and hole diffusion current densities at x = 10 \\, \\mu m.",
+      "formulas": []
+    },
+    {
+      "number": "Objective",
+      "text": "Calculate the dielectric relaxation time constant for a particular semiconductor. Consider n-type silicon with a donor impurity concentration of N_d = 10^{16} \\, \\text{cm}^{-3}.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "1",
+      "text": "The solution to Equation (6.63) is given by δn(x) = A e^{-x/L_{n}} + B e^{x/L_{n}}.",
+      "formulas": [
+        {
+          "originalFormula": "\\delta n(x) = A e^{-x/L_{n}} + B e^{x/L_{n}}",
+          "genericFormula": "\\delta n(x) = A e^{-x/L} + B e^{x/L}",
+          "description": "Esta fórmula representa a variação da densidade de portadores de carga em um semicondutor em função da posição ao longo de um determinado eixo. A densidade de portadores é afetada por dois termos exponenciais que descrevem como essa densidade se comporta em relação à distância, levando em conta fatores como a concentração de portadores e a largura de difusão.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Difusão em semicondutores",
+            "Comportamento exponencial"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\delta n(x)",
+              "description": "Representa a variação da densidade de portadores de carga em uma posição específica ao longo do eixo x."
+            },
+            {
+              "symbol": "A",
+              "description": "Um coeficiente que representa a contribuição inicial da densidade de portadores na direção negativa do eixo x."
+            },
+            {
+              "symbol": "B",
+              "description": "Um coeficiente que representa a contribuição inicial da densidade de portadores na direção positiva do eixo x."
+            },
+            {
+              "symbol": "e",
+              "description": "A base do logaritmo natural, uma constante matemática que é aproximadamente igual a 2,71828, utilizada em funções exponenciais."
+            },
+            {
+              "symbol": "x",
+              "description": "A variável que representa a posição ao longo do eixo em que a densidade de portadores está sendo avaliada."
+            },
+            {
+              "symbol": "L_{n}",
+              "description": "Um parâmetro que representa a largura de difusão dos portadores de carga, indicando a distância em que a densidade de portadores decai significativamente."
+            }
+          ],
+          "chapter": "6.3 Ambipolar Transport",
+          "section": "unknown",
+          "source": "answer",
+          "questionNumber": "1",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "questionNumber": "TYU 6.3",
+      "text": "The one-dimensional ambipolar transport equation for the minority carrier holes can be written from Equation (6.56) as D_{p} \\frac{\\partial \\delta p(x, t)}{\\partial x} - \\mu_{p} E_{0} \\frac{\\partial \\delta p}{\\partial t} = 0.",
+      "formulas": [
+        {
+          "originalFormula": "D_{p} \\frac{\\partial \\delta p(x, t)}{\\partial x} - \\mu_{p} E_{0} \\frac{\\partial \\delta p(x, t)}{\\partial t} = 0",
+          "genericFormula": "D_{p} \\frac{\\partial \\delta p(x, t)}{\\partial x} - \\mu_{p} E \\frac{\\partial \\delta p(x, t)}{\\partial t} = 0",
+          "description": "Esta fórmula representa uma equação que descreve como a variação da densidade de portadores de carga (como buracos em um semicondutor) se comporta em relação à posição e ao tempo, levando em consideração a difusão e a mobilidade dos portadores sob a influência de um campo elétrico.",
+          "concepts": [
+            "Difusão de portadores de carga",
+            "Mobilidade de portadores",
+            "Campo elétrico",
+            "Variação temporal e espacial de densidade de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "D_{p}",
+              "description": "Representa o coeficiente de difusão dos portadores de carga, que indica a taxa na qual os portadores se espalham em um material."
+            },
+            {
+              "symbol": "\\delta p(x, t)",
+              "description": "Representa a variação da densidade de portadores de carga em função da posição e do tempo."
+            },
+            {
+              "symbol": "x",
+              "description": "Representa a posição no espaço onde a densidade de portadores de carga está sendo analisada."
+            },
+            {
+              "symbol": "t",
+              "description": "Representa o tempo em que a variação da densidade de portadores de carga está sendo considerada."
+            },
+            {
+              "symbol": "\\mu_{p}",
+              "description": "Representa a mobilidade dos portadores de carga, que é uma medida de quão rapidamente os portadores podem se mover através do material quando um campo elétrico é aplicado."
+            },
+            {
+              "symbol": "E_{0}",
+              "description": "Representa a intensidade do campo elétrico aplicado que influencia o movimento dos portadores de carga."
+            }
+          ],
+          "chapter": "6.3 Ambipolar Transport",
+          "section": "unknown",
+          "source": "answer",
+          "questionNumber": "TYU 6.3",
+          "page": 14
+        }
+      ]
+    },
+    {
+      "questionNumber": "TYU 6.4",
+      "text": "By substituting Equation (6.67) into Equation (6.66), we are left with the partial differential equation D_{p} \\frac{\\partial^{2} p(x, t)}{\\partial x^{2}} - \\mu_{p} E_{0} \\frac{\\partial p(x, t)}{\\partial t} = 0.",
+      "formulas": [
+        {
+          "originalFormula": "D_{p} \\frac{\\partial^{2} p(x, t)}{\\partial x^{2}} - \\mu_{p} E_{0} \\frac{\\partial p(x, t)}{\\partial t} = 0",
+          "genericFormula": "D_{p} \\frac{\\partial^{2} p(x, t)}{\\partial x^{2}} - \\mu_{p} E_{0} \\frac{\\partial p(x, t)}{\\partial t} = 0",
+          "description": "Esta fórmula representa uma equação diferencial que descreve a evolução temporal e espacial da densidade de portadores de carga em um material semicondutor, levando em consideração a difusão e a mobilidade dos portadores sob a influência de um campo elétrico.",
+          "concepts": [
+            "Difusão de portadores de carga",
+            "Mobilidade de portadores",
+            "Campo elétrico",
+            "Equações diferenciais parciais"
+          ],
+          "symbols": [
+            {
+              "symbol": "D_{p}",
+              "description": "Representa o coeficiente de difusão dos portadores de carga, que quantifica a taxa de difusão dos portadores em um material."
+            },
+            {
+              "symbol": "p(x, t)",
+              "description": "Denota a densidade de portadores de carga em uma posição x e em um instante de tempo t."
+            },
+            {
+              "symbol": "\\frac{\\partial^{2} p(x, t)}{\\partial x^{2}}",
+              "description": "Representa a segunda derivada da densidade de portadores em relação à posição, indicando como a densidade varia ao longo do espaço."
+            },
+            {
+              "symbol": "\\mu_{p}",
+              "description": "É a mobilidade dos portadores de carga, que descreve a facilidade com que os portadores se movem sob a influência de um campo elétrico."
+            },
+            {
+              "symbol": "E_{0}",
+              "description": "Representa a intensidade do campo elétrico aplicado, que influencia o movimento dos portadores de carga."
+            },
+            {
+              "symbol": "\\frac{\\partial p(x, t)}{\\partial t}",
+              "description": "Denota a derivada da densidade de portadores em relação ao tempo, mostrando como a densidade muda ao longo do tempo."
+            }
+          ],
+          "chapter": "6.3 Ambipolar Transport",
+          "section": "unknown",
+          "source": "answer",
+          "questionNumber": "TYU 6.4",
+          "page": 27
+        }
+      ]
+    },
+    {
+      "questionNumber": "Objective",
+      "text": "The conductivity is found as \\sigma \\approx \\mu_n N_d = (1.6 \\times 10^{-19})(1200)(10^{16}) = 1.92 \\, \\Omega^{-1} \\cdot \\text{cm}^{-1}. The dielectric relaxation time constant is then \\tau_j = \\frac{\\epsilon}{\\sigma} = \\frac{(11.7)(8.85 \\times 10^{-14})}{1.92} = 5.39 \\times 10^{-13} \\, \\text{s} or \\tau_j = 0.539 \\, \\text{ps}.",
+      "formulas": [
+        {
+          "originalFormula": "\\sigma \\approx \\mu_n N_d",
+          "genericFormula": "\\sigma \\approx \\mu N_d",
+          "description": "Esta fórmula representa a condutividade elétrica de um semicondutor dopado, onde a condutividade é aproximadamente igual à mobilidade dos portadores de carga multiplicada pela densidade de portadores de carga. Isso indica como a capacidade de um material de conduzir eletricidade depende da quantidade de portadores de carga disponíveis e de quão rapidamente eles podem se mover.",
+          "concepts": [
+            "Condutividade elétrica",
+            "Mobilidade de portadores de carga",
+            "Dopagem de semicondutores",
+            "Densidade de portadores de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "σ",
+              "description": "Representa a condutividade elétrica do material, que é uma medida de como bem ele pode conduzir eletricidade."
+            },
+            {
+              "symbol": "μ_n",
+              "description": "Representa a mobilidade dos portadores de carga negativos (elétrons) no semicondutor, que indica a rapidez com que esses portadores podem se mover sob a influência de um campo elétrico."
+            },
+            {
+              "symbol": "N_d",
+              "description": "Representa a densidade de portadores de carga dopantes, que é o número de portadores de carga disponíveis por unidade de volume no semicondutor, resultante da dopagem."
+            }
+          ],
+          "chapter": "6.3 Ambipolar Transport",
+          "section": "unknown",
+          "source": "answer",
+          "questionNumber": "Objective",
+          "page": 41
+        },
+        {
+          "originalFormula": "\\tau_j = \\frac{\\epsilon}{\\sigma}",
+          "genericFormula": "\\tau_j = \\frac{\\epsilon}{\\sigma}",
+          "description": "Esta fórmula representa o tempo de relaxamento de um sistema em resposta a uma perturbação, onde a tensão é proporcional à deformação e inversamente proporcional à condutividade elétrica.",
+          "concepts": [
+            "tempo de relaxamento",
+            "tensão",
+            "deformação",
+            "condutividade elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "τ_j",
+              "description": "Representa o tempo de relaxamento do sistema, que é o tempo necessário para que a tensão se ajuste após uma perturbação."
+            },
+            {
+              "symbol": "ε",
+              "description": "Representa a tensão aplicada ao sistema, que é a força por unidade de área que causa a deformação."
+            },
+            {
+              "symbol": "σ",
+              "description": "Representa a condutividade elétrica do material, que é uma medida de quão facilmente a corrente elétrica pode fluir através do material."
+            }
+          ],
+          "chapter": "6.3 Ambipolar Transport",
+          "section": "unknown",
+          "source": "answer",
+          "questionNumber": "Objective",
+          "page": 54
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "G_{e0} = R_{e0}",
+      "genericFormula": "G_{e} = R_{e}",
+      "description": "Esta fórmula representa a relação entre a condutância e a resistência em um circuito elétrico. A condutância é uma medida de quão facilmente a corrente elétrica pode fluir através de um componente, enquanto a resistência é a medida da oposição ao fluxo de corrente. A igualdade sugere que, para um determinado estado ou condição, a condutância e a resistência são equivalentes em termos de suas magnitudes.",
+      "concepts": [
+        "Condutância",
+        "Resistência",
+        "Circuitos elétricos"
+      ],
+      "symbols": [
+        {
+          "symbol": "G_{e}",
+          "description": "Representa a condutância elétrica, que é a capacidade de um material ou componente de conduzir corrente elétrica."
+        },
+        {
+          "symbol": "R_{e}",
+          "description": "Representa a resistência elétrica, que é a oposição que um material ou componente oferece ao fluxo de corrente elétrica."
+        }
+      ],
+      "chapter": "6.3 Ambipolar Transport",
+      "section": "unknown",
+      "source": "standalone",
+      "page": 68
+    },
+    {
+      "originalFormula": "g - R = g_{e}' - R_{e}' - \\frac{\\delta n}{\\tau_{n}}",
+      "genericFormula": "g - R = g_{e}' - R_{e}' - \\frac{\\delta n}{\\tau_{n}}",
+      "description": "Esta fórmula representa a relação entre a taxa de geração e recombinação de portadores de carga em um semicondutor, levando em consideração a densidade de portadores e o tempo de vida dos mesmos. Ela mostra como a diferença entre a geração e a recombinação de portadores afeta a densidade de portadores em um material semicondutor.",
+      "concepts": [
+        "Geração de portadores",
+        "Recombinação de portadores",
+        "Densidade de portadores",
+        "Tempo de vida dos portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "g",
+          "description": "Representa a taxa total de geração de portadores de carga no semicondutor."
+        },
+        {
+          "symbol": "R",
+          "description": "Representa a taxa total de recombinação de portadores de carga no semicondutor."
+        },
+        {
+          "symbol": "g_{e}'",
+          "description": "Representa a taxa de geração de portadores de carga em um estado de equilíbrio ou em uma condição específica."
+        },
+        {
+          "symbol": "R_{e}'",
+          "description": "Representa a taxa de recombinação de portadores de carga em um estado de equilíbrio ou em uma condição específica."
+        },
+        {
+          "symbol": "\\delta n",
+          "description": "Representa a variação na densidade de portadores de carga, indicando a diferença entre a densidade atual e a densidade em equilíbrio."
+        },
+        {
+          "symbol": "\\tau_{n}",
+          "description": "Representa o tempo de vida médio dos portadores de carga, que é o tempo médio que um portador permanece livre antes de recombinar."
+        }
+      ],
+      "chapter": "6.3 Ambipolar Transport",
+      "section": "unknown",
+      "source": "standalone",
+      "page": 81
+    },
+    {
+      "originalFormula": "g - R = g_{h}' - R_{h}' - \\frac{\\delta p}{\\tau_{p}}",
+      "genericFormula": "g - R = g_{h}' - R_{h}' - \\frac{\\delta p}{\\tau_{p}}",
+      "description": "Esta fórmula representa a relação entre diferentes forças e pressões em um sistema, onde a diferença entre a aceleração gravitacional e uma resistência é igual à diferença entre a aceleração gravitacional em um estado alterado e uma resistência também alterada, subtraindo um termo que envolve a variação de pressão e um tempo característico.",
+      "concepts": [
+        "Aceleração gravitacional",
+        "Resistência",
+        "Variação de pressão",
+        "Tempo característico"
+      ],
+      "symbols": [
+        {
+          "symbol": "g",
+          "description": "Representa a aceleração gravitacional, que é a força de atração que a Terra exerce sobre os objetos."
+        },
+        {
+          "symbol": "R",
+          "description": "Representa uma resistência, que pode ser uma força que se opõe ao movimento de um objeto."
+        },
+        {
+          "symbol": "g_{h}'",
+          "description": "Representa a aceleração gravitacional em um estado alterado, que pode ser influenciada por fatores externos ou mudanças no sistema."
+        },
+        {
+          "symbol": "R_{h}'",
+          "description": "Representa uma resistência alterada, que pode ser diferente da resistência original devido a mudanças nas condições do sistema."
+        },
+        {
+          "symbol": "\\delta p",
+          "description": "Representa a variação de pressão, que é a diferença entre duas pressões em um sistema."
+        },
+        {
+          "symbol": "\\tau_{p}",
+          "description": "Representa um tempo característico, que é um intervalo de tempo relevante para a dinâmica do sistema em questão."
+        }
+      ],
+      "chapter": "6.3 Ambipolar Transport",
+      "section": "unknown",
+      "source": "standalone",
+      "page": 95
+    },
+    {
+      "originalFormula": "g - R = g_{e}' - R_{e}' - \\frac{\\delta n}{\\tau_{n}}",
+      "genericFormula": "g - R = g_{e}' - R_{e}' - \\frac{\\delta n}{\\tau_{n}}",
+      "description": "Esta fórmula relaciona a diferença entre duas grandezas, onde a variação de uma quantidade é expressa em termos de outras variáveis que representam estados ou condições específicas de um sistema. Ela é frequentemente utilizada em contextos que envolvem a dinâmica de portadores de carga em semicondutores, especialmente em relação à densidade de portadores e suas taxas de recombinação.",
+      "concepts": [
+        "Dinâmica de portadores de carga",
+        "Recombinação de portadores",
+        "Densidade de portadores",
+        "Taxa de vida dos portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "g",
+          "description": "Representa uma grandeza relacionada à geração de portadores de carga no material semicondutor."
+        },
+        {
+          "symbol": "R",
+          "description": "Representa uma taxa de recombinação de portadores de carga, indicando a quantidade de portadores que se recombinam por unidade de tempo."
+        },
+        {
+          "symbol": "g_{e}'",
+          "description": "Representa a geração de portadores em um estado específico ou sob condições específicas, geralmente em um contexto de equilíbrio."
+        },
+        {
+          "symbol": "R_{e}'",
+          "description": "Representa a taxa de recombinação em um estado específico ou sob condições específicas, também geralmente em um contexto de equilíbrio."
+        },
+        {
+          "symbol": "\\delta n",
+          "description": "Representa a variação na densidade de portadores de carga, indicando como a quantidade de portadores muda em resposta a diferentes condições."
+        },
+        {
+          "symbol": "\\tau_{n}",
+          "description": "Representa o tempo médio de vida dos portadores de carga, ou seja, o tempo médio que um portador permanece livre antes de se recombinar."
+        }
+      ],
+      "chapter": "6.3 Ambipolar Transport",
+      "section": "unknown",
+      "source": "standalone",
+      "page": 108
+    },
+    {
+      "originalFormula": "g - R = g_{h}' - R_{h}' - \\frac{\\delta p}{\\tau_{p}}",
+      "genericFormula": "g - R = g_{h}' - R_{h}' - \\frac{\\delta p}{\\tau_{p}}",
+      "description": "Esta fórmula representa a relação entre diferentes forças ou pressões em um sistema, onde a diferença entre a gravidade e uma resistência é igual à diferença entre a gravidade em um estado modificado e uma resistência também modificada, subtraindo a razão entre uma variação de pressão e um tempo característico.",
+      "concepts": [
+        "Força gravitacional",
+        "Resistência",
+        "Variação de pressão",
+        "Tempo característico"
+      ],
+      "symbols": [
+        {
+          "symbol": "g",
+          "description": "Representa a aceleração devido à gravidade, que é a força que atrai os objetos em direção ao centro da Terra."
+        },
+        {
+          "symbol": "R",
+          "description": "Representa uma resistência, que pode ser uma força que se opõe ao movimento ou à ação de outra força."
+        },
+        {
+          "symbol": "g_{h}'",
+          "description": "Representa a aceleração gravitacional em um estado modificado ou em uma condição específica, que pode ser diferente da gravidade padrão."
+        },
+        {
+          "symbol": "R_{h}'",
+          "description": "Representa uma resistência em um estado modificado, que pode ser alterada devido a condições específicas do sistema."
+        },
+        {
+          "symbol": "\\delta p",
+          "description": "Representa a variação de pressão, que é a diferença entre duas pressões em um sistema."
+        },
+        {
+          "symbol": "\\tau_{p}",
+          "description": "Representa um tempo característico, que é um intervalo de tempo relevante para a dinâmica do sistema em questão."
+        }
+      ],
+      "chapter": "6.3 Ambipolar Transport",
+      "section": "unknown",
+      "source": "standalone",
+      "page": 122
+    },
+    {
+      "originalFormula": "D_{h} \\frac{\\partial}{\\partial x} \\left( \\frac{\\delta n}{\\delta x} \\right) + \\mu_{h} E \\frac{\\delta (\\delta n)}{\\delta x} + g' - \\frac{\\delta n}{\\tau_{n}} = \\frac{\\delta (\\delta n)}{\\delta t}",
+      "genericFormula": "D_{h} \\frac{\\partial}{\\partial x} \\left( \\frac{\\delta n}{\\delta x} \\right) + \\mu_{h} E \\frac{\\delta (\\delta n)}{\\delta x} + g' - \\frac{\\delta n}{\\tau_{n}} = \\frac{\\delta (\\delta n)}{\\delta t}",
+      "description": "Esta fórmula representa a dinâmica da densidade de portadores de carga em um material semicondutor, levando em consideração a difusão, a mobilidade dos portadores sob a influência de um campo elétrico, a geração e recombinação de portadores, e a variação temporal da densidade de portadores.",
+      "concepts": [
+        "Difusão de portadores de carga",
+        "Mobilidade de portadores sob campo elétrico",
+        "Geração e recombinação de portadores",
+        "Variação temporal da densidade de portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "D_{h}",
+          "description": "Coeficiente de difusão dos portadores de carga do tipo hole, que indica a taxa de difusão dos portadores em resposta a um gradiente de concentração."
+        },
+        {
+          "symbol": "\\frac{\\partial}{\\partial x}",
+          "description": "Operador de derivada parcial em relação à posição, que indica como uma quantidade varia ao longo do espaço."
+        },
+        {
+          "symbol": "\\delta n",
+          "description": "Variação na densidade de portadores de carga, que representa a diferença na concentração de portadores em um dado ponto."
+        },
+        {
+          "symbol": "\\mu_{h}",
+          "description": "Mobilidade dos portadores de carga do tipo hole, que mede a capacidade dos portadores de se moverem sob a influência de um campo elétrico."
+        },
+        {
+          "symbol": "E",
+          "description": "Campo elétrico aplicado, que influencia o movimento dos portadores de carga no material semicondutor."
+        },
+        {
+          "symbol": "g'",
+          "description": "Taxa de geração líquida de portadores de carga, que representa a quantidade de portadores gerados por unidade de volume e tempo."
+        },
+        {
+          "symbol": "\\tau_{n}",
+          "description": "Tempo de vida dos portadores de carga, que indica quanto tempo, em média, os portadores permanecem antes de se recombinarem."
+        },
+        {
+          "symbol": "\\frac{\\delta}{\\delta t}",
+          "description": "Operador de derivada em relação ao tempo, que indica como a densidade de portadores varia ao longo do tempo."
+        }
+      ],
+      "chapter": "6.3 Ambipolar Transport",
+      "section": "unknown",
+      "source": "standalone",
+      "page": 135
+    },
+    {
+      "originalFormula": "D_{n} \\frac{\\partial}{\\partial x} \\left( \\frac{\\delta p}{\\delta x} \\right) - \\mu_{n} E \\frac{\\delta (\\delta p)}{\\delta x} + g' - \\frac{\\delta p}{\\tau_{p}} = \\frac{\\delta (\\delta p)}{\\delta t}",
+      "genericFormula": "D_{n} \\frac{\\partial}{\\partial x} \\left( \\frac{\\delta p}{\\delta x} \\right) - \\mu_{n} E \\frac{\\delta (\\delta p)}{\\delta x} + g' - \\frac{\\delta p}{\\tau_{p}} = \\frac{\\delta (\\delta p)}{\\delta t}",
+      "description": "Esta fórmula representa uma equação que descreve a dinâmica de um sistema físico, onde a variação de uma quantidade (denotada por delta p) em relação ao tempo e à posição é influenciada por diversos fatores, como difusão, mobilidade, forças externas e taxas de relaxação.",
+      "concepts": [
+        "Difusão",
+        "Mobilidade de portadores de carga",
+        "Campo elétrico",
+        "Forças externas",
+        "Taxa de relaxação"
+      ],
+      "symbols": [
+        {
+          "symbol": "D_{n}",
+          "description": "Representa o coeficiente de difusão, que indica a taxa na qual as partículas se espalham em um meio."
+        },
+        {
+          "symbol": "\\frac{\\partial}{\\partial x}",
+          "description": "Denota a derivada parcial em relação à posição, que mede como uma quantidade muda em função da posição."
+        },
+        {
+          "symbol": "\\delta p",
+          "description": "Refere-se a uma pequena variação de uma quantidade física, que pode ser a densidade de portadores de carga ou outra propriedade relevante."
+        },
+        {
+          "symbol": "\\mu_{n}",
+          "description": "É a mobilidade dos portadores de carga, que quantifica a rapidez com que eles se movem sob a influência de um campo elétrico."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa o campo elétrico aplicado, que exerce uma força sobre as partículas carregadas."
+        },
+        {
+          "symbol": "g'",
+          "description": "Denota uma força externa ou um termo que representa a contribuição de forças adicionais no sistema."
+        },
+        {
+          "symbol": "\\tau_{p}",
+          "description": "É o tempo de relaxação, que indica quanto tempo leva para a quantidade se estabilizar após uma perturbação."
+        },
+        {
+          "symbol": "\\frac{\\delta (\\delta p)}{\\delta t}",
+          "description": "Representa a taxa de variação da quantidade delta p em relação ao tempo, indicando como ela muda ao longo do tempo."
+        }
+      ],
+      "chapter": "6.3 Ambipolar Transport",
+      "section": "unknown",
+      "source": "standalone",
+      "page": 148
+    },
+    {
+      "originalFormula": "D_{n} \\frac{\\partial^{2} \\delta n}{\\partial x^{2}} + \\mu_{n} E \\frac{\\partial \\delta n}{\\partial x} - \\frac{\\delta n}{\\tau_{n}} = 0",
+      "genericFormula": "D_{n} \\frac{\\partial^{2} \\delta n}{\\partial x^{2}} + \\mu_{n} E \\frac{\\partial \\delta n}{\\partial x} - \\frac{\\delta n}{\\tau_{n}} = 0",
+      "description": "Esta fórmula representa uma equação diferencial que descreve a dinâmica da densidade de portadores de carga em um semicondutor, considerando a difusão, a mobilidade em um campo elétrico e a recombinação dos portadores.",
+      "concepts": [
+        "Difusão de portadores de carga",
+        "Mobilidade elétrica",
+        "Campo elétrico",
+        "Recombinação de portadores",
+        "Equações diferenciais parciais"
+      ],
+      "symbols": [
+        {
+          "symbol": "D_{n}",
+          "description": "Representa o coeficiente de difusão dos portadores de carga do tipo n, que indica a taxa de difusão dos portadores em resposta a um gradiente de concentração."
+        },
+        {
+          "symbol": "\\delta n",
+          "description": "Denota a variação na densidade de portadores de carga do tipo n em relação à posição, representando como a densidade muda ao longo do espaço."
+        },
+        {
+          "symbol": "x",
+          "description": "É a variável espacial que representa a posição ao longo da qual a densidade de portadores está sendo analisada."
+        },
+        {
+          "symbol": "\\mu_{n}",
+          "description": "Representa a mobilidade dos portadores de carga do tipo n, que é a capacidade dos portadores de se moverem sob a influência de um campo elétrico."
+        },
+        {
+          "symbol": "E",
+          "description": "É o campo elétrico aplicado, que influencia o movimento dos portadores de carga no semicondutor."
+        },
+        {
+          "symbol": "\\tau_{n}",
+          "description": "Denota o tempo de vida médio dos portadores de carga do tipo n, que é o tempo médio que um portador leva antes de se recombinar."
+        }
+      ],
+      "chapter": "6.3 Ambipolar Transport",
+      "section": "unknown",
+      "source": "standalone",
+      "page": 162
+    },
+    {
+      "originalFormula": "\\frac{d}{dx} \\left( D_{n} \\frac{d \\delta n}{dx} \\right) - \\frac{\\delta n}{D_{n} L_{n}^{2}} = 0",
+      "genericFormula": "\\frac{d}{dx} \\left( D \\frac{d \\delta n}{dx} \\right) - \\frac{\\delta n}{D L^{2}} = 0",
+      "description": "Esta fórmula representa uma equação diferencial que descreve a variação da densidade de portadores de carga em um semicondutor, levando em conta a difusão e a influência de um comprimento característico. A equação é usada para modelar como a densidade de portadores muda ao longo de uma dimensão espacial.",
+      "concepts": [
+        "Difusão de portadores de carga",
+        "Equações diferenciais",
+        "Densidade de portadores",
+        "Comprimento de difusão"
+      ],
+      "symbols": [
+        {
+          "symbol": "d/dx",
+          "description": "Representa a derivada em relação à posição, indicando como uma quantidade muda ao longo de uma dimensão espacial."
+        },
+        {
+          "symbol": "D_{n}",
+          "description": "Representa o coeficiente de difusão dos portadores de carga, que mede a facilidade com que os portadores se espalham através do material."
+        },
+        {
+          "symbol": "\\delta n",
+          "description": "Representa a variação na densidade de portadores de carga em relação a um valor de referência, indicando como a densidade local difere da densidade média."
+        },
+        {
+          "symbol": "L_{n}",
+          "description": "Representa o comprimento de difusão, que é uma medida característica da distância média que os portadores de carga podem se mover devido à difusão antes de serem recombinados."
+        }
+      ],
+      "chapter": "6.3 Ambipolar Transport",
+      "section": "unknown",
+      "source": "standalone",
+      "page": 175
+    },
+    {
+      "originalFormula": "\\delta n(x) = \\delta n(0) e^{-x/L_{n}} \\quad x \\geq 0",
+      "genericFormula": "\\delta n(x) = \\delta n(0) e^{-x/L_{n}} \\quad x \\geq 0",
+      "description": "Esta fórmula descreve como a densidade de portadores de carga em um semicondutor varia ao longo de uma distância x a partir de um ponto de referência, onde a densidade inicial é dada por \\delta n(0). A função exponencial indica que a densidade diminui à medida que nos afastamos desse ponto, com uma taxa de decaimento caracterizada pelo comprimento de difusão L_{n}.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Decaimento exponencial",
+        "Comprimento de difusão"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\delta n(x)",
+          "description": "Representa a densidade de portadores de carga em uma posição x ao longo do material semicondutor."
+        },
+        {
+          "symbol": "\\delta n(0)",
+          "description": "Representa a densidade de portadores de carga no ponto de referência, que é a posição inicial (x igual a zero)."
+        },
+        {
+          "symbol": "e",
+          "description": "É a base do logaritmo natural, um número irracional que é aproximadamente igual a 2.71828, utilizado em funções exponenciais."
+        },
+        {
+          "symbol": "-x/L_{n}",
+          "description": "A parte do expoente que indica a relação entre a distância x e o comprimento de difusão L_{n}, onde L_{n} é uma medida de quão longe os portadores de carga podem se difundir a partir do ponto inicial."
+        },
+        {
+          "symbol": "L_{n}",
+          "description": "Representa o comprimento de difusão dos portadores de carga, que é uma medida da distância média que os portadores podem se mover antes de serem recombinados ou se dispersarem."
+        },
+        {
+          "symbol": "x",
+          "description": "Representa a distância a partir do ponto de referência (x igual a zero) ao longo do material semicondutor."
+        }
+      ],
+      "chapter": "6.3 Ambipolar Transport",
+      "section": "unknown",
+      "source": "standalone",
+      "page": 189
+    },
+    {
+      "originalFormula": "D_{p} \\frac{\\partial \\delta p(x, t)}{\\partial x} - \\mu_{p} E_{0} \\frac{\\partial \\delta p}{\\partial t} = 0",
+      "genericFormula": "D_{p} \\frac{\\partial \\delta p}{\\partial x} - \\mu_{p} E_{0} \\frac{\\partial \\delta p}{\\partial t} = 0",
+      "description": "Esta fórmula representa uma equação que descreve a relação entre a variação da densidade de portadores de carga em um material semicondutor ao longo do espaço e do tempo. Ela é fundamental para entender como as perturbações na densidade de portadores se propagam em resposta a um campo elétrico e a difusão.",
+      "concepts": [
+        "Difusão de portadores de carga",
+        "Mobilidade de portadores",
+        "Campo elétrico",
+        "Variação temporal e espacial de densidade"
+      ],
+      "symbols": [
+        {
+          "symbol": "D_{p}",
+          "description": "Representa o coeficiente de difusão dos portadores de carga, que indica a taxa na qual os portadores se espalham através do material."
+        },
+        {
+          "symbol": "\\delta p(x, t)",
+          "description": "Representa a variação da densidade de portadores de carga em função da posição e do tempo."
+        },
+        {
+          "symbol": "\\mu_{p}",
+          "description": "Representa a mobilidade dos portadores de carga, que é uma medida de quão rapidamente os portadores podem se mover sob a influência de um campo elétrico."
+        },
+        {
+          "symbol": "E_{0}",
+          "description": "Representa a intensidade do campo elétrico aplicado ao material, que influencia o movimento dos portadores de carga."
+        },
+        {
+          "symbol": "\\frac{\\partial}{\\partial x}",
+          "description": "Indica a derivada parcial em relação à posição, que mede como a densidade de portadores muda ao longo do espaço."
+        },
+        {
+          "symbol": "\\frac{\\partial}{\\partial t}",
+          "description": "Indica a derivada parcial em relação ao tempo, que mede como a densidade de portadores muda ao longo do tempo."
+        }
+      ],
+      "chapter": "6.3 Ambipolar Transport",
+      "section": "unknown",
+      "source": "standalone",
+      "page": 202
+    },
+    {
+      "originalFormula": "D_{p} \\frac{\\partial^{2} p(x, t)}{\\partial x^{2}} - \\mu_{p} E_{0} \\frac{\\partial p(x, t)}{\\partial t} = 0",
+      "genericFormula": "D_{p} \\frac{\\partial^{2} p(x, t)}{\\partial x^{2}} - \\mu_{p} E_{0} \\frac{\\partial p(x, t)}{\\partial t} = 0",
+      "description": "Esta fórmula representa uma equação que descreve a dinâmica de uma quantidade 'p' em relação ao espaço e ao tempo, levando em conta a difusão e a influência de um campo elétrico. É uma forma da equação de difusão modificada por um termo que considera a mobilidade da quantidade sob a ação de um campo elétrico.",
+      "concepts": [
+        "Difusão",
+        "Mobilidade",
+        "Campo elétrico",
+        "Equações diferenciais parciais"
+      ],
+      "symbols": [
+        {
+          "symbol": "D_{p}",
+          "description": "Representa o coeficiente de difusão da quantidade 'p', que indica a taxa na qual 'p' se espalha através do espaço."
+        },
+        {
+          "symbol": "p(x, t)",
+          "description": "Denota a quantidade 'p' que varia com a posição 'x' e o tempo 't'."
+        },
+        {
+          "symbol": "x",
+          "description": "Representa a coordenada espacial onde a quantidade 'p' está sendo avaliada."
+        },
+        {
+          "symbol": "t",
+          "description": "Representa o tempo em que a quantidade 'p' está sendo observada."
+        },
+        {
+          "symbol": "μ_{p}",
+          "description": "É a mobilidade da quantidade 'p', que indica como 'p' responde a um campo elétrico aplicado."
+        },
+        {
+          "symbol": "E_{0}",
+          "description": "Representa a intensidade do campo elétrico que está influenciando a quantidade 'p'."
+        }
+      ],
+      "chapter": "6.3 Ambipolar Transport",
+      "section": "unknown",
+      "source": "standalone",
+      "page": 216
+    },
+    {
+      "originalFormula": "\\tau_j = \\frac{\\epsilon}{\\sigma}",
+      "genericFormula": "\\tau_j = \\frac{\\epsilon}{\\sigma}",
+      "description": "Esta fórmula relaciona o tempo de relaxamento de um portador de carga em um semicondutor com a permissividade elétrica e a condutividade elétrica do material. O tempo de relaxamento é um parâmetro importante que indica quanto tempo um portador de carga leva para perder sua energia cinética devido a interações com a rede cristalina ou impurezas.",
+      "concepts": [
+        "Tempo de relaxamento",
+        "Permissividade elétrica",
+        "Condutividade elétrica",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "τ_j",
+          "description": "Representa o tempo de relaxamento dos portadores de carga, que é o tempo médio que um portador leva para perder sua energia cinética."
+        },
+        {
+          "symbol": "ε",
+          "description": "Representa a permissividade elétrica do material, que é uma medida da capacidade do material de armazenar energia elétrica em um campo elétrico."
+        },
+        {
+          "symbol": "σ",
+          "description": "Representa a condutividade elétrica do material, que é uma medida de quão bem o material conduz eletricidade."
+        }
+      ],
+      "chapter": "6.3 Ambipolar Transport",
+      "section": "unknown",
+      "source": "standalone",
+      "page": 229
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242
+  ],
+  "lastUpdated": "2026-05-08T18:19:12.819285",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
+}

@@ -47,7 +47,10 @@
           "symbol": "\\Psi^*",
           "description": "Representa o conjugado complexo da função de onda, que é utilizado para calcular a densidade de probabilidade e garante que o resultado seja um número real."
         }
-      ]
+      ],
+      "chapter": "Section 1.9",
+      "source": "standalone",
+      "page": 1
     }
   ],
   "processedPages": [
@@ -550,5 +553,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.922Z"
+  "lastUpdated": "2026-05-08T18:19:13.899117",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

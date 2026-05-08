@@ -136,7 +136,11 @@
               "symbol": "V",
               "description": "Representa a unidade de medida de tensão elétrica, que é a diferença de potencial elétrico entre dois pontos."
             }
-          ]
+          ],
+          "chapter": "12 Metal-Oxide-Silicon Systems",
+          "source": "answer",
+          "questionNumber": "E12-1",
+          "page": 1
         }
       ]
     },
@@ -184,7 +188,11 @@
               "symbol": "n_i",
               "description": "Representa a concentração intrínseca de portadores de carga em um semicondutor puro, que é a quantidade de elétrons e lacunas presentes sem dopagem."
             }
-          ]
+          ],
+          "chapter": "12 Metal-Oxide-Silicon Systems",
+          "source": "answer",
+          "questionNumber": "12.6",
+          "page": 42
         }
       ]
     }
@@ -229,7 +237,10 @@
           "symbol": "\\Phi_{p}",
           "description": "Representa a energia de afinidade do semicondutor, que é a energia liberada quando um elétron é adicionado a um átomo do semicondutor."
         }
-      ]
+      ],
+      "chapter": "12 Metal-Oxide-Silicon Systems",
+      "source": "standalone",
+      "page": 84
     },
     {
       "originalFormula": "E_{i} = E_{f} + E_{s}",
@@ -254,7 +265,10 @@
           "symbol": "E_{s}",
           "description": "Representa a energia que foi dissipada ou transformada durante o processo, que não está mais disponível como energia útil no sistema."
         }
-      ]
+      ],
+      "chapter": "12 Metal-Oxide-Silicon Systems",
+      "source": "standalone",
+      "page": 125
     },
     {
       "originalFormula": "N_{d} = 4 \\times 10^{15} \\text{ cm}^{-3}",
@@ -278,7 +292,10 @@
           "symbol": "n",
           "description": "Um expoente que indica a potência de 10 que multiplica o coeficiente, refletindo a ordem de grandeza da densidade de dopantes."
         }
-      ]
+      ],
+      "chapter": "12 Metal-Oxide-Silicon Systems",
+      "source": "standalone",
+      "page": 167
     },
     {
       "originalFormula": "\\Phi_{m}^{Al} = 4.1V, E_{g} = 1.12eV, x_{s} = 4.15V",
@@ -302,7 +319,10 @@
           "symbol": "x_{s}",
           "description": "Representa a tensão de superfície, que é a diferença de potencial elétrico na interface entre o semicondutor e o metal."
         }
-      ]
+      ],
+      "chapter": "12 Metal-Oxide-Silicon Systems",
+      "source": "standalone",
+      "page": 208
     },
     {
       "originalFormula": "C_{ox} = 1.725 \\times 10^{-7} \\text{F/cm}^2, Q_{f}/C_{ox} = -0.046V",
@@ -327,7 +347,10 @@
           "symbol": "V_{f}",
           "description": "Representa a tensão resultante da relação entre a carga na superfície do óxido e a capacitância."
         }
-      ]
+      ],
+      "chapter": "12 Metal-Oxide-Silicon Systems",
+      "source": "standalone",
+      "page": 250
     },
     {
       "originalFormula": "Q_{dm} = (4 \\epsilon_{0} \\phi_{F} q N_{d})^{0.5}",
@@ -360,7 +383,10 @@
           "symbol": "N_{d}",
           "description": "É a densidade de dopagem, que indica a quantidade de átomos dopantes adicionados a um semicondutor para modificar suas propriedades elétricas."
         }
-      ]
+      ],
+      "chapter": "12 Metal-Oxide-Silicon Systems",
+      "source": "standalone",
+      "page": 291
     },
     {
       "originalFormula": "V_{FB} = \\phi_{ms} - \\frac{Q_{f}}{C_{ox}} = -0.312 - 0.046 = -0.358V",
@@ -389,7 +415,10 @@
           "symbol": "C_{ox}",
           "description": "Representa a capacitância da camada de óxido, que é a capacidade do material de armazenar carga elétrica por unidade de tensão aplicada."
         }
-      ]
+      ],
+      "chapter": "12 Metal-Oxide-Silicon Systems",
+      "source": "standalone",
+      "page": 333
     },
     {
       "originalFormula": "V_{T} = \\phi_{ms} - \\frac{Q_{f}}{C_{ox}} + \\frac{Q_{dm}}{C_{ox}} + 2\\phi_{F}",
@@ -427,7 +456,10 @@
           "symbol": "\\phi_{F}",
           "description": "Representa a potencial de Fermi no semicondutor, que é uma medida da energia dos portadores de carga no material."
         }
-      ]
+      ],
+      "chapter": "12 Metal-Oxide-Silicon Systems",
+      "source": "standalone",
+      "page": 374
     },
     {
       "originalFormula": "V_{T} = -0.312 - 0.046 - 0.0817 - 0.596",
@@ -460,7 +492,10 @@
           "symbol": "d",
           "description": "Um termo que representa outra contribuição para a tensão de limiar, que pode incluir efeitos de ambiente ou estrutura do dispositivo."
         }
-      ]
+      ],
+      "chapter": "12 Metal-Oxide-Silicon Systems",
+      "source": "standalone",
+      "page": 416
     },
     {
       "originalFormula": "\\Phi_{ms} = \\frac{1}{q} \\left[ (E_C - E_F)_{poly-si} - (E_C - E_F)_{substrate} \\right]",
@@ -497,7 +532,10 @@
           "symbol": "(E_C - E_F)_{substrate}",
           "description": "Representa a diferença de energia entre o nível de condução e o nível de Fermi do substrato, que pode ser um outro material semicondutor ou isolante."
         }
-      ]
+      ],
+      "chapter": "12 Metal-Oxide-Silicon Systems",
+      "source": "standalone",
+      "page": 457
     }
   ],
   "processedPages": [
@@ -1000,5 +1038,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.153Z"
+  "lastUpdated": "2026-05-08T18:19:13.708937",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

@@ -76,7 +76,10 @@
           "symbol": "d",
           "description": "Representa a espessura ou profundidade da seção transversal do condutor, que também influencia a resistência ao fluxo de corrente."
         }
-      ]
+      ],
+      "chapter": "6",
+      "source": "standalone",
+      "page": 1
     }
   ],
   "processedPages": [
@@ -579,5 +582,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.823Z"
+  "lastUpdated": "2026-05-08T18:19:13.650236",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

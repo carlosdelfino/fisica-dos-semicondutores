@@ -37,7 +37,10 @@
           "symbol": "n_i",
           "description": "Representa a densidade de portadores intrínsecos, que é a quantidade de elétrons ou lacunas em um semicondutor puro em equilíbrio térmico."
         }
-      ]
+      ],
+      "chapter": "3.5 THERMAL EQUILIBRIUM",
+      "source": "standalone",
+      "page": 1
     },
     {
       "originalFormula": "n p = n_i^2 = N_c N_v \\exp \\left( -\\frac{E_g}{kT} \\right)",
@@ -83,7 +86,10 @@
           "symbol": "T",
           "description": "representa a temperatura absoluta do semicondutor, medida em Kelvin."
         }
-      ]
+      ],
+      "chapter": "3.5 THERMAL EQUILIBRIUM",
+      "source": "standalone",
+      "page": 250
     }
   ],
   "processedPages": [
@@ -586,5 +592,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.959Z"
+  "lastUpdated": "2026-05-08T18:19:13.343890",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

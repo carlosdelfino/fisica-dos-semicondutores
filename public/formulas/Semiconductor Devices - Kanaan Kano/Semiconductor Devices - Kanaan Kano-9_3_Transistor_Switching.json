@@ -24,7 +24,11 @@
               "symbol": "\\mu m",
               "description": "Unidade de medida que representa micrômetros, uma medida muito pequena usada frequentemente em física de semicondutores para descrever dimensões em escala micro."
             }
-          ]
+          ],
+          "chapter": "9.3 Transistor Switching",
+          "source": "question",
+          "questionNumber": "E9-1",
+          "page": 1
         }
       ]
     },
@@ -68,7 +72,11 @@
               "symbol": "\\tau_p",
               "description": "Representa a constante de tempo do circuito, que determina a rapidez com que a corrente responde a mudanças."
             }
-          ]
+          ],
+          "chapter": "9.3 Transistor Switching",
+          "source": "question",
+          "questionNumber": "9.40",
+          "page": 72
         }
       ]
     },
@@ -115,7 +123,11 @@
               "symbol": "\\tau_B",
               "description": "É a constante de tempo associada ao portador de carga negativo em um semicondutor."
             }
-          ]
+          ],
+          "chapter": "9.3 Transistor Switching",
+          "source": "question",
+          "questionNumber": "9.41",
+          "page": 143
         }
       ]
     },
@@ -150,7 +162,11 @@
               "symbol": "\\tau_p",
               "description": "O tempo característico ou constante de tempo do circuito, que indica a rapidez com que a carga diminui."
             }
-          ]
+          ],
+          "chapter": "9.3 Transistor Switching",
+          "source": "question",
+          "questionNumber": "9.42",
+          "page": 214
         }
       ]
     },
@@ -189,7 +205,11 @@
               "symbol": "τ_p",
               "description": "É a constante de tempo do circuito, que determina a rapidez com que a carga no capacitor diminui. Quanto menor for essa constante, mais rapidamente a carga se esgota."
             }
-          ]
+          ],
+          "chapter": "9.3 Transistor Switching",
+          "source": "question",
+          "questionNumber": "9.43",
+          "page": 285
         }
       ]
     },
@@ -237,7 +257,11 @@
               "symbol": "e^{-t/τ_p}",
               "description": "Representa um fator de decaimento exponencial que descreve como a corrente diminui ao longo do tempo após a carga inicial."
             }
-          ]
+          ],
+          "chapter": "9.3 Transistor Switching",
+          "source": "question",
+          "questionNumber": "9.44",
+          "page": 356
         }
       ]
     },
@@ -280,7 +304,11 @@
               "symbol": "τ_p",
               "description": "Representa o tempo de vida dos portadores de carga, que indica quanto tempo, em média, os portadores permanecem ativos antes de recombinar."
             }
-          ]
+          ],
+          "chapter": "9.3 Transistor Switching",
+          "source": "question",
+          "questionNumber": "9.45",
+          "page": 427
         }
       ]
     }
@@ -793,5 +821,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.096Z"
+  "lastUpdated": "2026-05-08T18:19:13.393910",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

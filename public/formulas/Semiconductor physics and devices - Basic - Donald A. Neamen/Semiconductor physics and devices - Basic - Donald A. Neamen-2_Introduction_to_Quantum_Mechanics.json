@@ -128,7 +128,11 @@
           "symbol": "ν",
           "description": "Representa a frequência da onda eletromagnética, que é o número de ciclos que ocorrem em um segundo. É medida em hertz (Hz)."
         }
-      ]
+      ],
+      "chapter": "2 Introduction to Quantum Mechanics",
+      "section": "2.1 PRINCIPLES OF QUANTUM MECHANICS",
+      "source": "standalone",
+      "page": 1
     },
     {
       "originalFormula": "T = 3.17 \\times 10^{-6}",
@@ -148,7 +152,11 @@
           "symbol": "3.17 \\times 10^{-6}",
           "description": "um valor numérico que indica a magnitude da quantidade representada por T, sendo um número muito pequeno."
         }
-      ]
+      ],
+      "chapter": "2 Introduction to Quantum Mechanics",
+      "section": "2.1 PRINCIPLES OF QUANTUM MECHANICS",
+      "source": "standalone",
+      "page": 40
     }
   ],
   "processedPages": [
@@ -232,5 +240,7 @@
     78,
     79
   ],
-  "lastUpdated": "2026-05-08T20:06:27.995Z"
+  "lastUpdated": "2026-05-08T18:19:13.065768",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
 }

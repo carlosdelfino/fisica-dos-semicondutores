@@ -89,7 +89,11 @@
               "symbol": "τ_n",
               "description": "Representa o tempo médio de vida dos elétrons, que é o tempo médio que um elétron livre permanece em estado livre antes de recombinar com um buraco."
             }
-          ]
+          ],
+          "chapter": "4",
+          "source": "question",
+          "questionNumber": "Q4-9",
+          "page": 1
         }
       ]
     },
@@ -281,7 +285,11 @@
               "symbol": "n",
               "description": "Um expoente que indica a ordem de grandeza da densidade de portadores de carga, mostrando quantas vezes a base 10 deve ser multiplicada."
             }
-          ]
+          ],
+          "chapter": "4",
+          "source": "answer",
+          "questionNumber": "E4-1",
+          "page": 22
         },
         {
           "originalFormula": "n = 2.5 \\times 10^{14} \\text{cm}^{-3}",
@@ -305,7 +313,11 @@
               "symbol": "x",
               "description": "Representa um expoente que indica a ordem de grandeza da densidade de portadores de carga, mostrando quantas vezes a densidade deve ser multiplicada por 10."
             }
-          ]
+          ],
+          "chapter": "4",
+          "source": "answer",
+          "questionNumber": "E4-1",
+          "page": 44
         },
         {
           "originalFormula": "\\mu_{p} = 350 \\text{ cm}^2/\\text{V-s}",
@@ -322,7 +334,11 @@
               "symbol": "\\mu_{p}",
               "description": "Representa a mobilidade dos portadores de carga positiva, que são os buracos, em um semicondutor."
             }
-          ]
+          ],
+          "chapter": "4",
+          "source": "answer",
+          "questionNumber": "E4-1",
+          "page": 65
         },
         {
           "originalFormula": "\\mu_{n} = 1500 \\text{ cm}^{2}/\\text{V-s}",
@@ -339,7 +355,11 @@
               "symbol": "\\mu_{n}",
               "description": "Representa a mobilidade dos elétrons em um semicondutor, que indica a facilidade com que os elétrons podem se mover sob a influência de um campo elétrico."
             }
-          ]
+          ],
+          "chapter": "4",
+          "source": "answer",
+          "questionNumber": "E4-1",
+          "page": 87
         }
       ]
     },
@@ -366,7 +386,11 @@
               "symbol": "k",
               "description": "Um valor constante que representa a magnitude da velocidade de deriva em centímetros por segundo."
             }
-          ]
+          ],
+          "chapter": "4",
+          "source": "answer",
+          "questionNumber": "E4-2",
+          "page": 109
         },
         {
           "originalFormula": "v_{d}(p) = 2 \\times 10^{5} \\text{cm/s}",
@@ -387,7 +411,11 @@
               "symbol": "k",
               "description": "representa uma constante que indica a velocidade de deriva em centímetros por segundo, que pode variar dependendo das condições do semicondutor e do campo elétrico aplicado."
             }
-          ]
+          ],
+          "chapter": "4",
+          "source": "answer",
+          "questionNumber": "E4-2",
+          "page": 130
         },
         {
           "originalFormula": "\\sigma = 0.16 \\; (\\text{ohm-cm})^{-1}",
@@ -407,7 +435,11 @@
               "symbol": "C",
               "description": "Um valor constante que representa a condutividade específica do material em questão, que pode variar dependendo do tipo de material."
             }
-          ]
+          ],
+          "chapter": "4",
+          "source": "answer",
+          "questionNumber": "E4-2",
+          "page": 152
         }
       ]
     },
@@ -441,7 +473,11 @@
               "symbol": "L",
               "description": "Representa o comprimento do material, que também afeta a resistência e, consequentemente, a resistividade."
             }
-          ]
+          ],
+          "chapter": "4",
+          "source": "answer",
+          "questionNumber": "E4-3",
+          "page": 174
         },
         {
           "originalFormula": "J_{d} = 32 \\text{ A/cm}^{2}",
@@ -466,7 +502,11 @@
               "symbol": "A",
               "description": "Representa a área através da qual a corrente elétrica está fluindo."
             }
-          ]
+          ],
+          "chapter": "4",
+          "source": "answer",
+          "questionNumber": "E4-3",
+          "page": 195
         }
       ]
     },
@@ -492,7 +532,11 @@
               "symbol": "Ω",
               "description": "É a unidade de medida da resistência elétrica, chamada ohm."
             }
-          ]
+          ],
+          "chapter": "4",
+          "source": "answer",
+          "questionNumber": "E4-4",
+          "page": 217
         }
       ]
     }
@@ -533,7 +577,10 @@
           "symbol": "p_0",
           "description": "Representa a concentração de buracos no semicondutor, que é a quantidade de buracos disponíveis para conduzir corrente elétrica."
         }
-      ]
+      ],
+      "chapter": "4",
+      "source": "standalone",
+      "page": 239
     },
     {
       "originalFormula": "\\rho \\approx \\frac{1}{(q \\mu_n N_D)}",
@@ -570,7 +617,10 @@
           "symbol": "N",
           "description": "Representa a densidade total de portadores de carga no semicondutor, que é a soma dos portadores de carga positivos e negativos."
         }
-      ]
+      ],
+      "chapter": "4",
+      "source": "standalone",
+      "page": 260
     },
     {
       "originalFormula": "\\rho \\approx \\frac{1}{(q \\mu_p N_A)}",
@@ -599,7 +649,10 @@
           "symbol": "N_A",
           "description": "Representa a concentração de portadores de carga dopados, que é a quantidade de átomos dopantes por unidade de volume no semicondutor, influenciando a quantidade de portadores de carga disponíveis para conduzir eletricidade."
         }
-      ]
+      ],
+      "chapter": "4",
+      "source": "standalone",
+      "page": 282
     },
     {
       "originalFormula": "J_n = q \\mu_n n E + q D_n \\frac{dn}{dx}",
@@ -641,7 +694,10 @@
           "symbol": "dn/dx",
           "description": "Representa o gradiente de concentração de portadores de carga negativa, ou seja, a taxa de variação da concentração de elétrons em relação à distância."
         }
-      ]
+      ],
+      "chapter": "4",
+      "source": "standalone",
+      "page": 304
     },
     {
       "originalFormula": "J_p = q \\mu_p p E - q D_p \\frac{dp}{dx}",
@@ -683,7 +739,10 @@
           "symbol": "dp/dx",
           "description": "Representa o gradiente de concentração de buracos, que é a taxa de variação da concentração de buracos em relação à posição no semicondutor."
         }
-      ]
+      ],
+      "chapter": "4",
+      "source": "standalone",
+      "page": 325
     },
     {
       "originalFormula": "J_t = J_n + J_p",
@@ -707,7 +766,10 @@
           "symbol": "J_p",
           "description": "Representa a densidade de corrente dos portadores de carga positiva, que são as lacunas criadas na estrutura do semicondutor quando um elétron se move."
         }
-      ]
+      ],
+      "chapter": "4",
+      "source": "standalone",
+      "page": 347
     },
     {
       "originalFormula": "n, p = \\text{electron, hole density, } cm^{-3}",
@@ -728,7 +790,10 @@
           "symbol": "p",
           "description": "Representa a densidade de lacunas em um semicondutor, que são os portadores de carga positiva resultantes da ausência de elétrons."
         }
-      ]
+      ],
+      "chapter": "4",
+      "source": "standalone",
+      "page": 369
     },
     {
       "originalFormula": "n_0, p_0 = n_{0}, p_{0} \\text{ (densidade de elétrons e lacunas em equilíbrio térmico, cm}^{-3}\\text{)}",
@@ -750,7 +815,10 @@
           "symbol": "p",
           "description": "Representa a densidade de lacunas em um semicondutor, que são consideradas portadores de carga positiva."
         }
-      ]
+      ],
+      "chapter": "4",
+      "source": "standalone",
+      "page": 390
     },
     {
       "originalFormula": "\\Delta n = n - n_0 = \\text{deviation of electron density from the thermal equilibrium value}",
@@ -775,7 +843,10 @@
           "symbol": "n_0",
           "description": "Representa a densidade de elétrons em equilíbrio térmico, que é a densidade de elétrons quando não há perturbações externas, como temperatura ou campos elétricos."
         }
-      ]
+      ],
+      "chapter": "4",
+      "source": "standalone",
+      "page": 412
     },
     {
       "originalFormula": "\\Delta p = p - p_0",
@@ -800,7 +871,10 @@
           "symbol": "p_0",
           "description": "Representa a densidade de lacunas em equilíbrio térmico, que é a densidade de lacunas quando o sistema está em um estado estável e não sujeito a perturbações externas."
         }
-      ]
+      ],
+      "chapter": "4",
+      "source": "standalone",
+      "page": 434
     },
     {
       "originalFormula": "N_T = \\text{number of recombination-generation centers (traps) per cm}^{3}",
@@ -817,7 +891,10 @@
           "symbol": "N_T",
           "description": "Representa o número total de centros de recombinação e geração por centímetro cúbico."
         }
-      ]
+      ],
+      "chapter": "4",
+      "source": "standalone",
+      "page": 455
     },
     {
       "originalFormula": "n_{i} = \\sqrt{N_{c} N_{v}} e^{-E_{g} / 2kT}",
@@ -855,7 +932,10 @@
           "symbol": "T",
           "description": "Representa a temperatura absoluta do sistema em Kelvin, que afeta a energia térmica e, consequentemente, a movimentação dos portadores de carga no semicondutor."
         }
-      ]
+      ],
+      "chapter": "4",
+      "source": "standalone",
+      "page": 477
     }
   ],
   "processedPages": [
@@ -1358,5 +1438,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.807Z"
+  "lastUpdated": "2026-05-08T18:19:13.878573",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

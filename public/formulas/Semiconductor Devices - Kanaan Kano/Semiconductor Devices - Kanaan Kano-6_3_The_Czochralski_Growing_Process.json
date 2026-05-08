@@ -27,7 +27,11 @@
               "symbol": "C_\\ell",
               "description": "Representa a concentração total de átomos no material, também em centímetros cúbicos."
             }
-          ]
+          ],
+          "chapter": "6.3 The Czochralski Growing Process",
+          "source": "question",
+          "questionNumber": "a",
+          "page": 1
         }
       ]
     },
@@ -57,7 +61,11 @@
               "symbol": "Y",
               "description": "Representa a densidade do silício, que é a massa por unidade de volume, geralmente expressa em gramas por centímetro cúbico."
             }
-          ]
+          ],
+          "chapter": "6.3 The Czochralski Growing Process",
+          "source": "question",
+          "questionNumber": "b",
+          "page": 125
         },
         {
           "originalFormula": "N = 2.85 \\times 10^{16} \\times 1.976 \\times 10^{4} = 5.63 \\times 10^{20}",
@@ -81,7 +89,11 @@
               "symbol": "B",
               "description": "Representa um segundo fator que pode ser um volume ou uma quantidade de material em que os átomos de fósforo estão distribuídos."
             }
-          ]
+          ],
+          "chapter": "6.3 The Czochralski Growing Process",
+          "source": "question",
+          "questionNumber": "b",
+          "page": 250
         },
         {
           "originalFormula": "Amount \\, of \\, phosphorus = \\frac{5.63 \\times 10^{20} \\, \\text{atoms} \\times 30.975 \\, \\text{g/mole}}{6.023 \\times 10^{23} \\, \\text{atoms/mole}} = 28.95 \\, \\text{g}",
@@ -89,7 +101,11 @@
           "description": "Não foi possível gerar descrição automática",
           "concepts": [],
           "symbols": [],
-          "rawText": "{\n  \"originalFormula\": \"Amount \\, of \\, phosphorus = \\\\frac{5.63 \\\\times 10^{20} \\, \\\\text{atoms} \\\\times 30.975 \\, \\\\text{g/mole}}{6.023 \\\\times 10^{23} \\, \\\\text{atoms/mole}} = 28.95 \\, \\\\text{g}\",\n  \"genericFormula\": \"Amount \\, of \\, phosphorus = \\\\frac{N \\times M}{N_A}\",\n  \"description\": \"Esta fórmula calcula a quantidade de fósforo em gramas a partir do número de átomos de fósforo, utilizando a massa molar do fósforo e a constante de Avogadro. Ela nos permite entender como converter uma quantidade de átomos em uma medida de massa, que é mais prática para aplicações em química.\",\n  \"concepts\": [\n    \"Massa molar\",\n    \"Número de Avogadro\",\n    \"Conversão de unidades\",\n    \"Quantidade de substância\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"N\",\n      \"description\": \"Representa o número de átomos de fósforo que estamos considerando.\"\n    },\n    {\n      \"symbol\": \"M\",\n      \"description\": \"Representa a massa molar do fósforo, que é a quantidade de gramas por mol de fósforo.\"\n    },\n    {\n      \"symbol\": \"N_A\",\n      \"description\": \"Representa o número de Avogadro, que é a quantidade de átomos ou moléculas em um mol de qualquer substância, aproximadamente 6.022 x 10^23.\"\n    }\n  ]\n}"
+          "rawText": "{\n  \"originalFormula\": \"Amount \\, of \\, phosphorus = \\\\frac{5.63 \\\\times 10^{20} \\, \\\\text{atoms} \\\\times 30.975 \\, \\\\text{g/mole}}{6.023 \\\\times 10^{23} \\, \\\\text{atoms/mole}} = 28.95 \\, \\\\text{g}\",\n  \"genericFormula\": \"Amount \\, of \\, phosphorus = \\\\frac{N \\times M}{N_A}\",\n  \"description\": \"Esta fórmula calcula a quantidade de fósforo em gramas a partir do número de átomos de fósforo, utilizando a massa molar do fósforo e a constante de Avogadro. Ela nos permite entender como converter uma quantidade de átomos em uma medida de massa, que é mais prática para aplicações em química.\",\n  \"concepts\": [\n    \"Massa molar\",\n    \"Número de Avogadro\",\n    \"Conversão de unidades\",\n    \"Quantidade de substância\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"N\",\n      \"description\": \"Representa o número de átomos de fósforo que estamos considerando.\"\n    },\n    {\n      \"symbol\": \"M\",\n      \"description\": \"Representa a massa molar do fósforo, que é a quantidade de gramas por mol de fósforo.\"\n    },\n    {\n      \"symbol\": \"N_A\",\n      \"description\": \"Representa o número de Avogadro, que é a quantidade de átomos ou moléculas em um mol de qualquer substância, aproximadamente 6.022 x 10^23.\"\n    }\n  ]\n}",
+          "chapter": "6.3 The Czochralski Growing Process",
+          "source": "question",
+          "questionNumber": "b",
+          "page": 374
         }
       ]
     }
@@ -607,5 +623,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.038Z"
+  "lastUpdated": "2026-05-08T18:19:13.956114",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

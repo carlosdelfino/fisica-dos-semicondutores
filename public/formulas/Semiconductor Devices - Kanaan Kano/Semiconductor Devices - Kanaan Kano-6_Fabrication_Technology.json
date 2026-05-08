@@ -27,7 +27,11 @@
               "symbol": "D",
               "description": "Representa a densidade da substância, que é a relação entre a massa e o volume, expressa em gramas por centímetro cúbico."
             }
-          ]
+          ],
+          "chapter": "6 Fabrication Technology",
+          "source": "question",
+          "questionNumber": "Example 6.2",
+          "page": 1
         },
         {
           "originalFormula": "V_{Si} = \\frac{28.09 \\, g/mole}{2.33 \\, g/cm^3} = 12.055 \\, cm^3",
@@ -51,7 +55,11 @@
               "symbol": "\\rho",
               "description": "Representa a densidade do material, que é a massa por unidade de volume, geralmente expressa em gramas por centímetro cúbico."
             }
-          ]
+          ],
+          "chapter": "6 Fabrication Technology",
+          "source": "question",
+          "questionNumber": "Example 6.2",
+          "page": 36
         }
       ]
     },
@@ -113,7 +121,11 @@
               "symbol": "t",
               "description": "Representa o tempo em que a carga está sendo acumulada."
             }
-          ]
+          ],
+          "chapter": "6 Fabrication Technology",
+          "source": "question",
+          "questionNumber": "6.4",
+          "page": 72
         },
         {
           "originalFormula": "C(x,t) = C_{s} \\text{erfc} \\left[ \\frac{x}{(2VDt)} \\right]",
@@ -154,7 +166,11 @@
               "symbol": "D",
               "description": "Representa o coeficiente de difusão, que é uma constante que quantifica a taxa de difusão da substância em um meio específico."
             }
-          ]
+          ],
+          "chapter": "6 Fabrication Technology",
+          "source": "question",
+          "questionNumber": "6.4",
+          "page": 107
         }
       ]
     },
@@ -198,7 +214,11 @@
               "symbol": "k",
               "description": "Representa a fração do total de silício que é consumida, que neste caso é 0.44, indicando que 44% do total é utilizado."
             }
-          ]
+          ],
+          "chapter": "6 Fabrication Technology",
+          "source": "answer",
+          "questionNumber": "Example 6.2",
+          "page": 143
         }
       ]
     }
@@ -231,7 +251,10 @@
           "symbol": "T_0",
           "description": "Uma temperatura de referência, que neste caso é 300 Kelvin, onde a concentração de portadores é medida."
         }
-      ]
+      ],
+      "chapter": "6 Fabrication Technology",
+      "source": "standalone",
+      "page": 178
     },
     {
       "originalFormula": "n_i = 10^{15} \\, \\text{cm}^{-3} \\, \\text{ at } T = 400K",
@@ -263,7 +286,10 @@
           "symbol": "T_{0}",
           "description": "Representa uma temperatura específica em Kelvin, que é utilizada para determinar a concentração de portadores intrínsecos."
         }
-      ]
+      ],
+      "chapter": "6 Fabrication Technology",
+      "source": "standalone",
+      "page": 214
     },
     {
       "originalFormula": "E_g = 1.12 \\text{ eV} \\text{ for silicon}",
@@ -280,7 +306,10 @@
           "symbol": "E_g",
           "description": "Representa a energia de bandgap, que é a diferença de energia entre a banda de valência e a banda de condução em um material semicondutor."
         }
-      ]
+      ],
+      "chapter": "6 Fabrication Technology",
+      "source": "standalone",
+      "page": 250
     },
     {
       "originalFormula": "E_g = 0.66 \\text{ eV for germanium}",
@@ -298,7 +327,10 @@
           "symbol": "E_g",
           "description": "Representa a energia de bandgap do material, que é a diferença de energia entre a banda de valência e a banda de condução."
         }
-      ]
+      ],
+      "chapter": "6 Fabrication Technology",
+      "source": "standalone",
+      "page": 285
     },
     {
       "originalFormula": "T_{melt} = 1690 \\, K",
@@ -306,7 +338,10 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"T_{melt} = 1690 \\, K\",\n  \"genericFormula\": \"T_{melt} = T\",\n  \"description\": \"Esta fórmula representa a temperatura de fusão de um material, que é a temperatura na qual ele passa do estado sólido para o estado líquido.\",\n  \"concepts\": [\"temperatura de fusão\", \"mudança de estado\", \"propriedades térmicas dos materiais\"],\n  \"symbols\": [\n    {\n      \"symbol\": \"T_{melt}\",\n      \"description\": \"Representa a temperatura de fusão, que é a temperatura específica em que um material sólido se transforma em líquido.\"\n    },\n    {\n      \"symbol\": \"T\",\n      \"description\": \"Representa uma temperatura genérica, que pode ser usada para indicar qualquer temperatura em um contexto físico.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"T_{melt} = 1690 \\, K\",\n  \"genericFormula\": \"T_{melt} = T\",\n  \"description\": \"Esta fórmula representa a temperatura de fusão de um material, que é a temperatura na qual ele passa do estado sólido para o estado líquido.\",\n  \"concepts\": [\"temperatura de fusão\", \"mudança de estado\", \"propriedades térmicas dos materiais\"],\n  \"symbols\": [\n    {\n      \"symbol\": \"T_{melt}\",\n      \"description\": \"Representa a temperatura de fusão, que é a temperatura específica em que um material sólido se transforma em líquido.\"\n    },\n    {\n      \"symbol\": \"T\",\n      \"description\": \"Representa uma temperatura genérica, que pode ser usada para indicar qualquer temperatura em um contexto físico.\"\n    }\n  ]\n}",
+      "chapter": "6 Fabrication Technology",
+      "source": "standalone",
+      "page": 321
     },
     {
       "originalFormula": "T_{melting} = 1685 \\, K",
@@ -314,7 +349,10 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"T_{melting} = 1685 \\, K\",\n  \"genericFormula\": \"T_{melting} = T\",\n  \"description\": \"Esta fórmula representa a temperatura de fusão de um material, que é a temperatura na qual ele passa do estado sólido para o estado líquido.\",\n  \"concepts\": [\"temperatura de fusão\", \"mudança de estado\", \"propriedades térmicas dos materiais\"],\n  \"symbols\": [\n    {\n      \"symbol\": \"T_{melting}\",\n      \"description\": \"Representa a temperatura de fusão, que é a temperatura específica em que um material sólido se transforma em líquido.\"\n    },\n    {\n      \"symbol\": \"K\",\n      \"description\": \"Representa a unidade Kelvin, que é uma escala de temperatura utilizada na física e na engenharia, onde zero Kelvin é o ponto de referência absoluto.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"T_{melting} = 1685 \\, K\",\n  \"genericFormula\": \"T_{melting} = T\",\n  \"description\": \"Esta fórmula representa a temperatura de fusão de um material, que é a temperatura na qual ele passa do estado sólido para o estado líquido.\",\n  \"concepts\": [\"temperatura de fusão\", \"mudança de estado\", \"propriedades térmicas dos materiais\"],\n  \"symbols\": [\n    {\n      \"symbol\": \"T_{melting}\",\n      \"description\": \"Representa a temperatura de fusão, que é a temperatura específica em que um material sólido se transforma em líquido.\"\n    },\n    {\n      \"symbol\": \"K\",\n      \"description\": \"Representa a unidade Kelvin, que é uma escala de temperatura utilizada na física e na engenharia, onde zero Kelvin é o ponto de referência absoluto.\"\n    }\n  ]\n}",
+      "chapter": "6 Fabrication Technology",
+      "source": "standalone",
+      "page": 356
     },
     {
       "originalFormula": "SiH_{4} \\rightarrow Si + 2H_{2}",
@@ -339,7 +377,10 @@
           "symbol": "H_{2}",
           "description": "Representa o hidrogênio molecular, que é uma molécula composta por dois átomos de hidrogênio."
         }
-      ]
+      ],
+      "chapter": "6 Fabrication Technology",
+      "source": "standalone",
+      "page": 392
     },
     {
       "originalFormula": "SiC_{4} + H_{2} \\rightarrow Si + 4HC_{l}",
@@ -371,7 +412,10 @@
           "symbol": "4",
           "description": "Um coeficiente que indica que quatro moléculas de ácido clorídrico são produzidas na reação."
         }
-      ]
+      ],
+      "chapter": "6 Fabrication Technology",
+      "source": "standalone",
+      "page": 427
     },
     {
       "originalFormula": "R = \\frac{L}{\\sigma A}",
@@ -399,7 +443,10 @@
           "symbol": "A",
           "description": "Representa a área da seção transversal do condutor, que é a área através da qual a corrente elétrica flui. Uma área maior permite que mais corrente passe."
         }
-      ]
+      ],
+      "chapter": "6 Fabrication Technology",
+      "source": "standalone",
+      "page": 463
     }
   ],
   "processedPages": [
@@ -902,5 +949,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.031Z"
+  "lastUpdated": "2026-05-08T18:19:13.612556",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

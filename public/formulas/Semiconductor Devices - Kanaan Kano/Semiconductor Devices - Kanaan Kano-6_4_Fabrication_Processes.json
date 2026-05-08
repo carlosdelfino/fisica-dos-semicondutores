@@ -34,7 +34,10 @@
           "symbol": "T",
           "description": "Representa a temperatura absoluta do sistema, geralmente medida em Kelvin, que influencia a energia cinética das partículas."
         }
-      ]
+      ],
+      "chapter": "6.4 Fabrication Processes",
+      "source": "standalone",
+      "page": 1
     },
     {
       "originalFormula": "D_1 = 2.5 \\times 10^{-14} \\, \\text{cm}^2/\\text{s}",
@@ -55,7 +58,10 @@
           "symbol": "D",
           "description": "Representa o coeficiente de difusão genérico, que pode variar dependendo das condições do sistema e da substância em questão."
         }
-      ]
+      ],
+      "chapter": "6.4 Fabrication Processes",
+      "source": "standalone",
+      "page": 125
     },
     {
       "originalFormula": "D_2 = 2.5 \\times 10^{-12} \\, \\text{cm}^2/\\text{s}",
@@ -79,7 +85,10 @@
           "symbol": "n",
           "description": "Um expoente que indica a ordem de grandeza do coeficiente de difusão, refletindo a escala em que a difusão ocorre."
         }
-      ]
+      ],
+      "chapter": "6.4 Fabrication Processes",
+      "source": "standalone",
+      "page": 250
     },
     {
       "originalFormula": "C_s = 10^{21} \\, \\text{cm}^{-3}",
@@ -87,7 +96,10 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"C_s = 10^{21} \\, \\\\text{cm}^{-3}\",\n  \"genericFormula\": \"C_s = N \\, \\\\text{cm}^{-3}\",\n  \"description\": \"Esta fórmula representa a concentração de portadores de carga em um semicondutor, onde a quantidade de portadores é expressa em número por centímetro cúbico.\",\n  \"concepts\": [\n    \"Concentração de portadores de carga\",\n    \"Semicondutores\",\n    \"Densidade de portadores\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"C_s\",\n      \"description\": \"Representa a concentração de portadores de carga em um semicondutor, medida em número de portadores por centímetro cúbico.\"\n    },\n    {\n      \"symbol\": \"N\",\n      \"description\": \"Representa uma quantidade genérica de portadores de carga, também medida em número de portadores por centímetro cúbico.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"C_s = 10^{21} \\, \\\\text{cm}^{-3}\",\n  \"genericFormula\": \"C_s = N \\, \\\\text{cm}^{-3}\",\n  \"description\": \"Esta fórmula representa a concentração de portadores de carga em um semicondutor, onde a quantidade de portadores é expressa em número por centímetro cúbico.\",\n  \"concepts\": [\n    \"Concentração de portadores de carga\",\n    \"Semicondutores\",\n    \"Densidade de portadores\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"C_s\",\n      \"description\": \"Representa a concentração de portadores de carga em um semicondutor, medida em número de portadores por centímetro cúbico.\"\n    },\n    {\n      \"symbol\": \"N\",\n      \"description\": \"Representa uma quantidade genérica de portadores de carga, também medida em número de portadores por centímetro cúbico.\"\n    }\n  ]\n}",
+      "chapter": "6.4 Fabrication Processes",
+      "source": "standalone",
+      "page": 374
     }
   ],
   "processedPages": [
@@ -590,5 +602,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.040Z"
+  "lastUpdated": "2026-05-08T18:19:13.605642",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

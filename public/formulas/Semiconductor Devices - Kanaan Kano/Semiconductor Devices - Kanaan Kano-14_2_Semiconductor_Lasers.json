@@ -53,7 +53,11 @@
               "symbol": "n",
               "description": "Representa o expoente que indica a potência de dez, que ajusta a escala da largura de banda."
             }
-          ]
+          ],
+          "chapter": "14.2 Semiconductor Lasers",
+          "source": "question",
+          "questionNumber": "E14-2",
+          "page": 1
         }
       ]
     }
@@ -91,7 +95,11 @@
               "symbol": "D",
               "description": "Representa a potência de dez que indica a escala da largura de banda em termos de terahertz."
             }
-          ]
+          ],
+          "chapter": "14.2 Semiconductor Lasers",
+          "source": "answer",
+          "questionNumber": "E14-2",
+          "page": 250
         }
       ]
     }
@@ -597,5 +605,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.203Z"
+  "lastUpdated": "2026-05-08T18:19:13.512049",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

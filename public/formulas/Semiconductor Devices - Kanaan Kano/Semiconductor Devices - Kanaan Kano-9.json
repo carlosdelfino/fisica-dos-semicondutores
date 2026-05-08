@@ -24,7 +24,11 @@
               "symbol": "V_{EC}",
               "description": "Representa a tensão entre o emissor e o coletor do transistor."
             }
-          ]
+          ],
+          "chapter": "9",
+          "source": "question",
+          "questionNumber": "1",
+          "page": 1
         }
       ]
     },
@@ -85,7 +89,11 @@
               "symbol": "T",
               "description": "Representa a temperatura absoluta em Kelvin."
             }
-          ]
+          ],
+          "chapter": "9",
+          "source": "question",
+          "questionNumber": "9.1",
+          "page": 16
         }
       ]
     },
@@ -129,7 +137,11 @@
               "symbol": "dV_{EC}",
               "description": "Representa uma pequena variação na tensão entre o emissor e o coletor."
             }
-          ]
+          ],
+          "chapter": "9",
+          "source": "question",
+          "questionNumber": "9.2",
+          "page": 32
         }
       ]
     },
@@ -165,7 +177,11 @@
               "symbol": "dW_B/dV_{EC}",
               "description": "Representa a taxa de variação da largura da base em relação à variação da tensão entre o emissor e o coletor."
             }
-          ]
+          ],
+          "chapter": "9",
+          "source": "question",
+          "questionNumber": "9.3",
+          "page": 47
         }
       ]
     },
@@ -203,7 +219,11 @@
               "symbol": "dW_B",
               "description": "Representa uma pequena variação no trabalho realizado pelo sistema B."
             }
-          ]
+          ],
+          "chapter": "9",
+          "source": "question",
+          "questionNumber": "9.4",
+          "page": 63
         }
       ]
     },
@@ -255,7 +275,11 @@
               "symbol": "V_A",
               "description": "É a tensão de avalanche, que é uma característica do transistor que afeta seu funcionamento em altas tensões."
             }
-          ]
+          ],
+          "chapter": "9",
+          "source": "question",
+          "questionNumber": "9.5",
+          "page": 78
         }
       ]
     },
@@ -269,7 +293,11 @@
           "description": "Não foi possível gerar descrição automática",
           "concepts": [],
           "symbols": [],
-          "rawText": "{\n  \"originalFormula\": \"t_{s} = 2.5 \\times 10^{-7} \\ln\\\\left(\\\\frac{27.5}{20}\\\\right)\",\n  \"genericFormula\": \"t_{s} = k \\\\ln\\\\left(\\\\frac{a}{b}\\\\right)\",\n  \"description\": \"Esta fórmula representa o tempo de resposta ou o tempo de estabilização de um sistema em função de uma razão entre duas quantidades. O tempo é proporcional ao logaritmo natural da razão entre essas quantidades, multiplicado por uma constante.\",\n  \"concepts\": [\n    \"logaritmo natural\",\n    \"razão entre quantidades\",\n    \"tempo de resposta\",\n    \"estabilização de sistemas\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"t_{s}\",\n      \"description\": \"representa o tempo de estabilização ou resposta do sistema.\"\n    },\n    {\n      \"symbol\": \"k\",\n      \"description\": \"é uma constante que determina a relação entre o logaritmo e o tempo de estabilização.\"\n    },\n    {\n      \"symbol\": \"a\",\n      \"description\": \"representa uma quantidade inicial ou um valor de referência que está sendo comparado.\"\n    },\n    {\n      \"symbol\": \"b\",\n      \"description\": \"representa outra quantidade que está sendo usada como base de comparação com a quantidade a.\"\n    }\n  ]\n}"
+          "rawText": "{\n  \"originalFormula\": \"t_{s} = 2.5 \\times 10^{-7} \\ln\\\\left(\\\\frac{27.5}{20}\\\\right)\",\n  \"genericFormula\": \"t_{s} = k \\\\ln\\\\left(\\\\frac{a}{b}\\\\right)\",\n  \"description\": \"Esta fórmula representa o tempo de resposta ou o tempo de estabilização de um sistema em função de uma razão entre duas quantidades. O tempo é proporcional ao logaritmo natural da razão entre essas quantidades, multiplicado por uma constante.\",\n  \"concepts\": [\n    \"logaritmo natural\",\n    \"razão entre quantidades\",\n    \"tempo de resposta\",\n    \"estabilização de sistemas\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"t_{s}\",\n      \"description\": \"representa o tempo de estabilização ou resposta do sistema.\"\n    },\n    {\n      \"symbol\": \"k\",\n      \"description\": \"é uma constante que determina a relação entre o logaritmo e o tempo de estabilização.\"\n    },\n    {\n      \"symbol\": \"a\",\n      \"description\": \"representa uma quantidade inicial ou um valor de referência que está sendo comparado.\"\n    },\n    {\n      \"symbol\": \"b\",\n      \"description\": \"representa outra quantidade que está sendo usada como base de comparação com a quantidade a.\"\n    }\n  ]\n}",
+          "chapter": "9",
+          "source": "question",
+          "questionNumber": "2",
+          "page": 94
         }
       ]
     },
@@ -360,7 +388,11 @@
               "symbol": "τ_P",
               "description": "Representa o tempo característico de captura de portadores de carga."
             }
-          ]
+          ],
+          "chapter": "9",
+          "source": "question",
+          "questionNumber": "9.8",
+          "page": 109
         }
       ]
     },
@@ -466,7 +498,10 @@
           "symbol": "V_{BC}",
           "description": "Representa a tensão entre a base e o coletor do transistor."
         }
-      ]
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 125
     },
     {
       "originalFormula": "B V_{CBO}",
@@ -486,7 +521,10 @@
           "symbol": "V_{CBO}",
           "description": "Representa a tensão entre o coletor e a base de um transistor bipolar, que é um parâmetro importante para determinar o comportamento do transistor em um circuito."
         }
-      ]
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 141
     },
     {
       "originalFormula": "B V_{CEO}",
@@ -506,7 +544,10 @@
           "symbol": "V_{CEO}",
           "description": "Representa a tensão entre o coletor e o emissor do transistor, que é a diferença de potencial elétrico entre essas duas regiões."
         }
-      ]
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 156
     },
     {
       "originalFormula": "V_{EC} = -V_{A}",
@@ -526,7 +567,10 @@
           "symbol": "V_{A}",
           "description": "Representa a tensão em um terminal específico, denominado A, que pode ser parte de um circuito maior."
         }
-      ]
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 172
     },
     {
       "originalFormula": "x_{CB} = x_{CO} \\left[ 1 + \\left( \\frac{I_C}{I_o} \\right) \\right]^{-0.5}",
@@ -555,7 +599,10 @@
           "symbol": "I_o",
           "description": "Representa a corrente de saturação, que é a corrente mínima necessária para que o transistor opere em sua região ativa."
         }
-      ]
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 187
     },
     {
       "originalFormula": "p(x) = p_0 - \\frac{p_0}{W_B} x",
@@ -583,7 +630,10 @@
           "symbol": "x",
           "description": "Representa a posição ao longo do eixo onde a pressão está sendo medida."
         }
-      ]
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 203
     },
     {
       "originalFormula": "Q_{SAT} = I_{CSAT} \\cdot t_{B} = 20pC",
@@ -608,7 +658,10 @@
           "symbol": "t_{B}",
           "description": "Representa o tempo durante o qual a corrente flui para o capacitor, medido em segundos."
         }
-      ]
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 218
     },
     {
       "originalFormula": "C_{bu} = \\frac{W_{b}^{2} I_{C}}{2 D_{p} V_{A}}",
@@ -642,7 +695,10 @@
           "symbol": "V_{A}",
           "description": "Representa a tensão aplicada ao dispositivo, que é a força que impulsiona a carga elétrica através do circuito."
         }
-      ]
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 234
     },
     {
       "originalFormula": "C_{bu} = \\frac{C_{b} I_{C}}{8 m V_{A}} = \\frac{k T C_{b}}{q V_{A}}",
@@ -689,7 +745,10 @@
           "symbol": "q",
           "description": "Representa a carga elétrica elementar, que é a carga de um único elétron."
         }
-      ]
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 250
     },
     {
       "originalFormula": "f_T = \\frac{g_m}{2\\pi(C_{\\pi} + C_u)} \\quad (9.88)",
@@ -722,7 +781,10 @@
           "symbol": "\\pi",
           "description": "É uma constante matemática que representa a razão entre a circunferência de um círculo e seu diâmetro, aproximadamente igual a 3.14159."
         }
-      ]
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 265
     },
     {
       "originalFormula": "\\tau_T = C_{\\pi} + C_u = \\frac{C_b}{g_m} + \\frac{C_u + C_{je}}{g_m} \\quad (9.89)",
@@ -759,7 +821,10 @@
           "symbol": "C_je",
           "description": "Representa a capacitância de junção de emissor, que é uma capacitância adicional que pode afetar o desempenho do circuito."
         }
-      ]
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 281
     },
     {
       "originalFormula": "\\tau_T = \\tau_B + \\frac{C_u + C_{je}}{g_m} \\quad (9.90)",
@@ -792,7 +857,10 @@
           "symbol": "g_m",
           "description": "Representa a transcondutância, que é a relação entre a variação da corrente de saída e a variação da tensão de entrada em um dispositivo ativo, como um transistor."
         }
-      ]
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 296
     },
     {
       "originalFormula": "Q_{G} = qA \\int_{0}^{W_{B}} n(x)dx",
@@ -829,7 +897,10 @@
           "symbol": "x",
           "description": "Representa a variável de integração, que indica a posição ao longo da largura da região onde a densidade de portadores é medida."
         }
-      ]
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 312
     },
     {
       "originalFormula": "Q_{G0} = qA \\int_{0}^{W_{B}} N_{DB}dx",
@@ -866,7 +937,10 @@
           "symbol": "dx",
           "description": "Representa um elemento infinitesimal de largura, utilizado na integração para somar as contribuições da densidade de portadores ao longo da largura total."
         }
-      ]
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 327
     },
     {
       "originalFormula": "Q_{G} = Q_{G0} + Q_{E} + Q_{C} + Q_{F} + Q_{R}",
@@ -902,7 +976,10 @@
           "symbol": "Q_{R}",
           "description": "Representa a carga resultante de reações químicas ou processos de ionização."
         }
-      ]
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 343
     },
     {
       "originalFormula": "Q_{G0} = net \\, majority \\, carrier \\, charge \\, commensurate \\, with \\, space \\, charge \\, neutrality",
@@ -910,7 +987,10 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"Q_{G0} = net \\, majority \\, carrier \\, charge \\, commensurate \\, with \\, space \\, charge \\, neutrality\",\n  \"genericFormula\": \"Q_{G0} = net \\, majority \\, carrier \\, charge \\, commensurate \\, with \\, space \\, charge \\, neutrality\",\n  \"description\": \"Esta fórmula representa a carga líquida dos portadores majoritários em um semicondutor, que deve estar em equilíbrio com a neutralidade de carga espacial. Em outras palavras, a quantidade de carga positiva dos portadores majoritários deve ser igual à quantidade de carga negativa para manter o sistema em equilíbrio elétrico.\",\n  \"concepts\": [\n    \"Carga elétrica\",\n    \"Portadores majoritários\",\n    \"Neutralidade de carga\",\n    \"Equilíbrio elétrico\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"Q_{G0}\",\n      \"description\": \"Representa a carga líquida dos portadores majoritários em um semicondutor.\"\n    },\n    {\n      \"symbol\": \"net \\, majority \\, carrier \\, charge\",\n      \"description\": \"Refere-se à quantidade total de carga elétrica contribuída pelos portadores majoritários, que são os portadores de carga que predominam no material semicondutor.\"\n    },\n    {\n      \"symbol\": \"space \\, charge \\, neutrality\",\n      \"description\": \"É o princípio que afirma que a carga total em uma região deve ser zero, ou seja, a soma das cargas positivas e negativas deve se igualar para manter o equilíbrio elétrico.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"Q_{G0} = net \\, majority \\, carrier \\, charge \\, commensurate \\, with \\, space \\, charge \\, neutrality\",\n  \"genericFormula\": \"Q_{G0} = net \\, majority \\, carrier \\, charge \\, commensurate \\, with \\, space \\, charge \\, neutrality\",\n  \"description\": \"Esta fórmula representa a carga líquida dos portadores majoritários em um semicondutor, que deve estar em equilíbrio com a neutralidade de carga espacial. Em outras palavras, a quantidade de carga positiva dos portadores majoritários deve ser igual à quantidade de carga negativa para manter o sistema em equilíbrio elétrico.\",\n  \"concepts\": [\n    \"Carga elétrica\",\n    \"Portadores majoritários\",\n    \"Neutralidade de carga\",\n    \"Equilíbrio elétrico\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"Q_{G0}\",\n      \"description\": \"Representa a carga líquida dos portadores majoritários em um semicondutor.\"\n    },\n    {\n      \"symbol\": \"net \\, majority \\, carrier \\, charge\",\n      \"description\": \"Refere-se à quantidade total de carga elétrica contribuída pelos portadores majoritários, que são os portadores de carga que predominam no material semicondutor.\"\n    },\n    {\n      \"symbol\": \"space \\, charge \\, neutrality\",\n      \"description\": \"É o princípio que afirma que a carga total em uma região deve ser zero, ou seja, a soma das cargas positivas e negativas deve se igualar para manter o equilíbrio elétrico.\"\n    }\n  ]\n}",
+      "chapter": "9",
+      "source": "standalone",
+      "page": 358
     },
     {
       "originalFormula": "N_{AE} = 10^{20} \\text{ cm}^{-3}",
@@ -934,7 +1014,10 @@
           "symbol": "cm^{-3}",
           "description": "Unidade de medida que representa a densidade, indicando o número de portadores por cada centímetro cúbico."
         }
-      ]
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 374
     },
     {
       "originalFormula": "N_{DB} = 10^{16} \\text{ cm}^{-3}",
@@ -958,7 +1041,10 @@
           "symbol": "cm^{-3}",
           "description": "Representa a unidade de medida para a densidade, que é centímetro cúbico, indicando que a densidade é calculada em relação a um volume de um centímetro cúbico."
         }
-      ]
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 390
     },
     {
       "originalFormula": "D_{PB} = 30 \\text{ cm}^{2}/\\text{s}",
@@ -978,7 +1064,10 @@
           "symbol": "k",
           "description": "Um valor genérico que representa a taxa de difusão, que pode variar dependendo do material e das condições experimentais."
         }
-      ]
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 405
     },
     {
       "originalFormula": "\\tau_{p} = 10 \\mu s",
@@ -998,7 +1087,10 @@
           "symbol": "10 \\mu s",
           "description": "Um valor específico que indica a duração do tempo de vida dos portadores, onde '10' é um número e 'μs' significa microsegundos, uma unidade de tempo."
         }
-      ]
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 421
     },
     {
       "originalFormula": "A = 10^{-3} cm^{2}",
@@ -1006,7 +1098,10 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"A = 10^{-3} cm^{2}\",\n  \"genericFormula\": \"A = k \\, cm^{2}\",\n  \"description\": \"Esta fórmula representa a área de uma superfície em centímetros quadrados. O valor específico dado é uma medida de área, e a fórmula genérica indica que a área pode ser representada por uma constante multiplicada por centímetros quadrados.\",\n  \"concepts\": [\n    \"Área\",\n    \"Unidades de medida\",\n    \"Geometria\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"A\",\n      \"description\": \"Representa a área da superfície em centímetros quadrados.\"\n    },\n    {\n      \"symbol\": \"k\",\n      \"description\": \"Representa uma constante que pode assumir diferentes valores, dependendo da área específica que está sendo medida.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"A = 10^{-3} cm^{2}\",\n  \"genericFormula\": \"A = k \\, cm^{2}\",\n  \"description\": \"Esta fórmula representa a área de uma superfície em centímetros quadrados. O valor específico dado é uma medida de área, e a fórmula genérica indica que a área pode ser representada por uma constante multiplicada por centímetros quadrados.\",\n  \"concepts\": [\n    \"Área\",\n    \"Unidades de medida\",\n    \"Geometria\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"A\",\n      \"description\": \"Representa a área da superfície em centímetros quadrados.\"\n    },\n    {\n      \"symbol\": \"k\",\n      \"description\": \"Representa uma constante que pode assumir diferentes valores, dependendo da área específica que está sendo medida.\"\n    }\n  ]\n}",
+      "chapter": "9",
+      "source": "standalone",
+      "page": 436
     },
     {
       "originalFormula": "W_{B} = 12 \\mu m",
@@ -1026,7 +1121,10 @@
           "symbol": "\\mu m",
           "description": "É uma unidade de medida que representa um micrômetro, que é um milionésimo de metro."
         }
-      ]
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 452
     },
     {
       "originalFormula": "T = 300 \\text{K}",
@@ -1046,7 +1144,10 @@
           "symbol": "T_0",
           "description": "Representa uma temperatura de referência, que pode ser qualquer valor em Kelvin, dependendo do contexto do experimento ou cálculo."
         }
-      ]
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 467
     },
     {
       "originalFormula": "I_{C} = 2 \\text{ mA}",
@@ -1070,7 +1171,10 @@
           "symbol": "mA",
           "description": "Uma unidade de medida que representa miliamperes, onde um miliampere é um milésimo de ampere."
         }
-      ]
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 483
     }
   ],
   "processedPages": [
@@ -1573,5 +1677,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.853Z"
+  "lastUpdated": "2026-05-08T18:19:13.329407",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

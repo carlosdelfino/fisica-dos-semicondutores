@@ -42,7 +42,12 @@
               "symbol": "\\exp",
               "description": "Representa a função exponencial, que é uma função matemática fundamental usada para descrever crescimento e decaimento em muitos contextos físicos."
             }
-          ]
+          ],
+          "chapter": "3.5 Statistical Mechanics",
+          "section": "Example 3.6",
+          "source": "question",
+          "questionNumber": "Ex.3.6",
+          "page": 1
         }
       ]
     },
@@ -77,7 +82,12 @@
               "symbol": "T",
               "description": "Representa a temperatura absoluta do sistema, medida em Kelvin."
             }
-          ]
+          ],
+          "chapter": "3.5 Statistical Mechanics",
+          "section": "Example 3.6",
+          "source": "question",
+          "questionNumber": "EXAMPLE 3.8",
+          "page": 26
         }
       ]
     },
@@ -181,7 +191,12 @@
               "symbol": "x",
               "description": "Um parâmetro que representa a soma de 1 e um valor relacionado à energia, que pode incluir a energia de Fermi e outros fatores que influenciam a ocupação dos estados."
             }
-          ]
+          ],
+          "chapter": "3.5 Statistical Mechanics",
+          "section": "Example 3.6",
+          "source": "answer",
+          "questionNumber": "Ex.3.6",
+          "page": 52
         }
       ]
     },
@@ -225,7 +240,12 @@
               "symbol": "x",
               "description": "Representa uma concentração de portadores de carga em relação a um valor de referência, que neste caso é 0.05."
             }
-          ]
+          ],
+          "chapter": "3.5 Statistical Mechanics",
+          "section": "Example 3.6",
+          "source": "answer",
+          "questionNumber": "EXAMPLE 3.8",
+          "page": 77
         }
       ]
     }
@@ -262,7 +282,11 @@
           "symbol": "T",
           "description": "Representa a temperatura do sistema, medida em Kelvin, que influencia a ocupação dos estados de energia."
         }
-      ]
+      ],
+      "chapter": "3.5 Statistical Mechanics",
+      "section": "Example 3.6",
+      "source": "standalone",
+      "page": 103
     }
   ],
   "processedPages": [
@@ -395,5 +419,7 @@
     127,
     128
   ],
-  "lastUpdated": "2026-05-08T20:27:47.293Z"
+  "lastUpdated": "2026-05-08T18:19:12.949330",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
 }

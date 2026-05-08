@@ -32,7 +32,11 @@
               "symbol": "V_p",
               "description": "É a tensão de polarização, que é a tensão aplicada externamente ao dispositivo semicondutor para controlar seu comportamento elétrico."
             }
-          ]
+          ],
+          "chapter": "10.3 Channel Conductance and JFET Transconductance",
+          "source": "question",
+          "questionNumber": "a",
+          "page": 1
         }
       ]
     },
@@ -83,7 +87,11 @@
               "symbol": "G",
               "description": "Um expoente que indica a relação não linear entre as variáveis, sugerindo que a influência de F sobre a corrente não é direta."
             }
-          ]
+          ],
+          "chapter": "10.3 Channel Conductance and JFET Transconductance",
+          "source": "question",
+          "questionNumber": "b",
+          "page": 63
         }
       ]
     },
@@ -122,7 +130,11 @@
               "symbol": "c",
               "description": "Um expoente que pode indicar a dependência da mobilidade em relação a alguma variável, como a temperatura ou a concentração de portadores."
             }
-          ]
+          ],
+          "chapter": "10.3 Channel Conductance and JFET Transconductance",
+          "source": "question",
+          "questionNumber": "c",
+          "page": 125
         }
       ]
     }
@@ -150,7 +162,11 @@
               "symbol": "g_d",
               "description": "representa a condutância do componente em siemens, que indica a facilidade com que a corrente elétrica pode fluir através do componente."
             }
-          ]
+          ],
+          "chapter": "10.3 Channel Conductance and JFET Transconductance",
+          "source": "answer",
+          "questionNumber": "a",
+          "page": 187
         }
       ]
     },
@@ -172,7 +188,11 @@
               "symbol": "I_{SAT}",
               "description": "Representa a corrente de saturação, que é a corrente máxima que flui através do dispositivo quando ele está completamente ligado e operando em sua capacidade máxima."
             }
-          ]
+          ],
+          "chapter": "10.3 Channel Conductance and JFET Transconductance",
+          "source": "answer",
+          "questionNumber": "b",
+          "page": 250
         }
       ]
     },
@@ -207,7 +227,11 @@
               "symbol": "S",
               "description": "Representa a unidade de medida da condutância, que é o siemens."
             }
-          ]
+          ],
+          "chapter": "10.3 Channel Conductance and JFET Transconductance",
+          "source": "answer",
+          "questionNumber": "c",
+          "page": 312
         }
       ]
     }
@@ -240,7 +264,10 @@
           "symbol": "V_p",
           "description": "Representa a tensão de polarização aplicada, que é a tensão externa que é aplicada ao dispositivo para controlar seu comportamento elétrico."
         }
-      ]
+      ],
+      "chapter": "10.3 Channel Conductance and JFET Transconductance",
+      "source": "standalone",
+      "page": 374
     },
     {
       "originalFormula": "g_m = G_0 \\left[ 1 - \\left( \\frac{V_{bi} - V_G}{V_p} \\right)^{1/2} \\right]",
@@ -273,7 +300,10 @@
           "symbol": "V_p",
           "description": "É a tensão de referência ou de polarização, que serve como um ponto de comparação para a tensão de gate."
         }
-      ]
+      ],
+      "chapter": "10.3 Channel Conductance and JFET Transconductance",
+      "source": "standalone",
+      "page": 436
     }
   ],
   "processedPages": [
@@ -776,5 +806,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.111Z"
+  "lastUpdated": "2026-05-08T18:19:13.402078",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

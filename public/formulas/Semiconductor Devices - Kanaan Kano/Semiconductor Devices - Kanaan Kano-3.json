@@ -41,7 +41,11 @@
               "symbol": "T",
               "description": "Representa a temperatura absoluta do sistema, medida em Kelvin, que influencia a energia térmica dos portadores de carga no semicondutor."
             }
-          ]
+          ],
+          "chapter": "3",
+          "source": "question",
+          "questionNumber": "a",
+          "page": 1
         }
       ]
     },
@@ -85,7 +89,11 @@
               "symbol": "T_0",
               "description": "Temperatura de referência, normalmente considerada como a temperatura ambiente, que é utilizada para comparação."
             }
-          ]
+          ],
+          "chapter": "3",
+          "source": "question",
+          "questionNumber": "b",
+          "page": 42
         }
       ]
     },
@@ -112,7 +120,11 @@
               "symbol": "n_{i}",
               "description": "Representa a concentração de portadores intrínsecos, que é a quantidade de elétrons e buracos em um semicondutor puro, sem dopagem."
             }
-          ]
+          ],
+          "chapter": "3",
+          "source": "question",
+          "questionNumber": "3.4a",
+          "page": 84
         },
         {
           "originalFormula": "n + N_{A} = p + N_{D}",
@@ -141,7 +153,11 @@
               "symbol": "N_{D}",
               "description": "representa a concentração de átomos dopantes do tipo doador, que fornecem elétrons ao semicondutor."
             }
-          ]
+          ],
+          "chapter": "3",
+          "source": "question",
+          "questionNumber": "3.4a",
+          "page": 125
         },
         {
           "originalFormula": "n + 9 \\times 10^{16} = p + 10^{17}",
@@ -169,7 +185,11 @@
               "symbol": "N_{a}",
               "description": "Representa a densidade de dopantes do tipo p, que criam lacunas no semicondutor."
             }
-          ]
+          ],
+          "chapter": "3",
+          "source": "question",
+          "questionNumber": "3.4a",
+          "page": 167
         },
         {
           "originalFormula": "n \\approx 10^{16} \\ \\text{cm}^{-3}",
@@ -189,7 +209,11 @@
               "symbol": "N",
               "description": "Representa uma quantidade genérica que pode ser utilizada para indicar a densidade de portadores de carga em um material semicondutor, sem um valor específico."
             }
-          ]
+          ],
+          "chapter": "3",
+          "source": "question",
+          "questionNumber": "3.4a",
+          "page": 208
         },
         {
           "originalFormula": "p = \\frac{n_{i}^{2}}{n} = 10^{4} \\text{cm}^{-3}",
@@ -214,7 +238,11 @@
               "symbol": "n",
               "description": "Representa a densidade de portadores de carga negativa, ou elétrons, em um semicondutor."
             }
-          ]
+          ],
+          "chapter": "3",
+          "source": "question",
+          "questionNumber": "3.4a",
+          "page": 250
         }
       ]
     },
@@ -245,7 +273,11 @@
               "symbol": "N",
               "description": "Representa o produto da densidade de portadores de carga negativa e a densidade de portadores de carga positiva, que é uma constante que pode ser utilizada para caracterizar o material semicondutor."
             }
-          ]
+          ],
+          "chapter": "3",
+          "source": "question",
+          "questionNumber": "3.4b",
+          "page": 291
         },
         {
           "originalFormula": "n + 9 \\times 10^{16} = p + 10^{17}",
@@ -273,7 +305,11 @@
               "symbol": "N_{A}",
               "description": "Representa a densidade de dopantes do tipo p, que são átomos que criam lacunas ao retirar elétrons do semicondutor."
             }
-          ]
+          ],
+          "chapter": "3",
+          "source": "question",
+          "questionNumber": "3.4b",
+          "page": 333
         },
         {
           "originalFormula": "n \\approx 1.1 \\times 10^{16} \\text{cm}^{-3}",
@@ -297,7 +333,11 @@
               "symbol": "D",
               "description": "Um expoente que indica a ordem de grandeza da densidade de portadores, ajudando a expressar a magnitude do valor em termos de potências de dez."
             }
-          ]
+          ],
+          "chapter": "3",
+          "source": "question",
+          "questionNumber": "3.4b",
+          "page": 374
         },
         {
           "originalFormula": "p = \\frac{n_{i}^{2}}{n} = 1.014 \\times 10^{15} \\text{cm}^{-3}",
@@ -322,7 +362,11 @@
               "symbol": "n",
               "description": "Representa a densidade de portadores livres, que é a concentração de elétrons disponíveis para condução em um semicondutor dopado."
             }
-          ]
+          ],
+          "chapter": "3",
+          "source": "question",
+          "questionNumber": "3.4b",
+          "page": 416
         }
       ]
     },
@@ -414,7 +458,11 @@
               "symbol": "C",
               "description": "Representa uma constante que, neste contexto, seria um valor específico da concentração de portadores intrínsecos a uma temperatura dada."
             }
-          ]
+          ],
+          "chapter": "3",
+          "source": "answer",
+          "questionNumber": "b",
+          "page": 457
         }
       ]
     }
@@ -920,5 +968,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.798Z"
+  "lastUpdated": "2026-05-08T18:19:13.862751",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

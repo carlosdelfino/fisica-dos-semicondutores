@@ -52,7 +52,11 @@
               "symbol": "n",
               "description": "Representa um parâmetro que indica a sensibilidade do dispositivo à tensão aplicada, geralmente relacionado ao tipo de material e à estrutura do semicondutor."
             }
-          ]
+          ],
+          "chapter": "7",
+          "source": "question",
+          "questionNumber": "EXAMPLE 7.2",
+          "page": 1
         }
       ]
     },
@@ -122,7 +126,11 @@
               "symbol": "C_j",
               "description": "Representa a capacitância do dispositivo, que é a capacidade do dispositivo de armazenar carga elétrica em um campo elétrico."
             }
-          ]
+          ],
+          "chapter": "7",
+          "source": "question",
+          "questionNumber": "Example 7.5",
+          "page": 17
         }
       ]
     },
@@ -165,7 +173,11 @@
               "symbol": "I_f",
               "description": "Representa a corrente de fuga, que é a quantidade de carga elétrica que flui através do semicondutor quando ele não está em operação normal."
             }
-          ]
+          ],
+          "chapter": "7",
+          "source": "question",
+          "questionNumber": "Q7-10",
+          "page": 34
         },
         {
           "originalFormula": "I_R",
@@ -181,7 +193,11 @@
               "symbol": "I_R",
               "description": "Representa a corrente elétrica que passa pelo resistor, medida em amperes (A)."
             }
-          ]
+          ],
+          "chapter": "7",
+          "source": "question",
+          "questionNumber": "Q7-10",
+          "page": 50
         }
       ]
     },
@@ -385,7 +401,11 @@
               "symbol": "V_{a}",
               "description": "Representa a tensão aplicada externamente à junção, que pode afetar a capacitância ao alterar a distribuição de carga."
             }
-          ]
+          ],
+          "chapter": "7",
+          "source": "question",
+          "questionNumber": "7.14",
+          "page": 67
         }
       ]
     }
@@ -438,7 +458,11 @@
               "symbol": "V_{br}",
               "description": "Representa a tensão de ruptura, que é a tensão crítica na qual o dispositivo começa a conduzir de forma significativa, alterando seu comportamento."
             }
-          ]
+          ],
+          "chapter": "7",
+          "source": "answer",
+          "questionNumber": "EXAMPLE 7.2",
+          "page": 84
         }
       ]
     },
@@ -467,7 +491,11 @@
           "description": "Não foi possível gerar descrição automática",
           "concepts": [],
           "symbols": [],
-          "rawText": "{\n  \"originalFormula\": \"r_d = 558.6 \\, \\\\Omega\",\n  \"genericFormula\": \"r_d = R\",\n  \"description\": \"Esta fórmula representa a resistência de um dispositivo semicondutor, onde 'r_d' é a resistência dinâmica e 'R' é uma resistência genérica. A resistência dinâmica é uma medida de quão facilmente a corrente elétrica pode passar através do dispositivo quando ele está em operação.\",\n  \"concepts\": [\n    \"Resistência elétrica\",\n    \"Dispositivos semicondutores\",\n    \"Corrente elétrica\",\n    \"Comportamento dinâmico de circuitos\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"r_d\",\n      \"description\": \"Representa a resistência dinâmica do dispositivo semicondutor, que é a resistência medida quando o dispositivo está operando em uma condição específica.\"\n    },\n    {\n      \"symbol\": \"R\",\n      \"description\": \"Representa uma resistência genérica, que pode ser utilizada para descrever a resistência em diferentes contextos ou dispositivos.\"\n    }\n  ]\n}"
+          "rawText": "{\n  \"originalFormula\": \"r_d = 558.6 \\, \\\\Omega\",\n  \"genericFormula\": \"r_d = R\",\n  \"description\": \"Esta fórmula representa a resistência de um dispositivo semicondutor, onde 'r_d' é a resistência dinâmica e 'R' é uma resistência genérica. A resistência dinâmica é uma medida de quão facilmente a corrente elétrica pode passar através do dispositivo quando ele está em operação.\",\n  \"concepts\": [\n    \"Resistência elétrica\",\n    \"Dispositivos semicondutores\",\n    \"Corrente elétrica\",\n    \"Comportamento dinâmico de circuitos\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"r_d\",\n      \"description\": \"Representa a resistência dinâmica do dispositivo semicondutor, que é a resistência medida quando o dispositivo está operando em uma condição específica.\"\n    },\n    {\n      \"symbol\": \"R\",\n      \"description\": \"Representa uma resistência genérica, que pode ser utilizada para descrever a resistência em diferentes contextos ou dispositivos.\"\n    }\n  ]\n}",
+          "chapter": "7",
+          "source": "answer",
+          "questionNumber": "Example 7.5",
+          "page": 100
         },
         {
           "originalFormula": "r_d = 81 \\, \\Omega",
@@ -475,7 +503,11 @@
           "description": "Não foi possível gerar descrição automática",
           "concepts": [],
           "symbols": [],
-          "rawText": "{\n  \"originalFormula\": \"r_d = 81 \\, \\\\Omega\",\n  \"genericFormula\": \"r_d = R\",\n  \"description\": \"Esta fórmula representa a resistência de um dispositivo semicondutor, onde 'r_d' é a resistência dinâmica e 'R' é uma resistência genérica que pode variar dependendo das condições do circuito.\",\n  \"concepts\": [\n    \"Resistência elétrica\",\n    \"Semicondutores\",\n    \"Condições de operação de dispositivos eletrônicos\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"r_d\",\n      \"description\": \"Representa a resistência dinâmica de um dispositivo semicondutor, que é a resistência medida em condições específicas de operação.\"\n    },\n    {\n      \"symbol\": \"R\",\n      \"description\": \"Representa uma resistência genérica, que pode ser utilizada para descrever a resistência em diferentes contextos ou dispositivos.\"\n    }\n  ]\n}"
+          "rawText": "{\n  \"originalFormula\": \"r_d = 81 \\, \\\\Omega\",\n  \"genericFormula\": \"r_d = R\",\n  \"description\": \"Esta fórmula representa a resistência de um dispositivo semicondutor, onde 'r_d' é a resistência dinâmica e 'R' é uma resistência genérica que pode variar dependendo das condições do circuito.\",\n  \"concepts\": [\n    \"Resistência elétrica\",\n    \"Semicondutores\",\n    \"Condições de operação de dispositivos eletrônicos\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"r_d\",\n      \"description\": \"Representa a resistência dinâmica de um dispositivo semicondutor, que é a resistência medida em condições específicas de operação.\"\n    },\n    {\n      \"symbol\": \"R\",\n      \"description\": \"Representa uma resistência genérica, que pode ser utilizada para descrever a resistência em diferentes contextos ou dispositivos.\"\n    }\n  ]\n}",
+          "chapter": "7",
+          "source": "answer",
+          "questionNumber": "Example 7.5",
+          "page": 117
         }
       ]
     },
@@ -503,7 +535,11 @@
               "symbol": "V_{0}",
               "description": "Representa uma tensão genérica, que pode ser utilizada para descrever a tensão de built-in em diferentes contextos."
             }
-          ]
+          ],
+          "chapter": "7",
+          "source": "answer",
+          "questionNumber": "E7-4",
+          "page": 133
         }
       ]
     },
@@ -525,7 +561,11 @@
               "symbol": "t",
               "description": "Representa o intervalo de tempo, que é a duração de um evento ou processo."
             }
-          ]
+          ],
+          "chapter": "7",
+          "source": "answer",
+          "questionNumber": "E7-5",
+          "page": 150
         },
         {
           "originalFormula": "2.5 \\times 10^{-6} s",
@@ -541,7 +581,11 @@
               "symbol": "t",
               "description": "Representa o intervalo de tempo em que um evento ocorre. É uma medida que quantifica a duração entre o início e o fim de um processo."
             }
-          ]
+          ],
+          "chapter": "7",
+          "source": "answer",
+          "questionNumber": "E7-5",
+          "page": 167
         }
       ]
     },
@@ -593,7 +637,10 @@
           "symbol": "T",
           "description": "É a temperatura absoluta do sistema, medida em Kelvin."
         }
-      ]
+      ],
+      "chapter": "7",
+      "source": "standalone",
+      "page": 183
     },
     {
       "originalFormula": "I_{R0} = \\frac{A q n_i W}{2 \\tau_0}",
@@ -630,7 +677,10 @@
           "symbol": "\\tau",
           "description": "Representa o tempo de vida dos portadores de carga, que é o tempo médio que um portador de carga permanece livre antes de recombinar."
         }
-      ]
+      ],
+      "chapter": "7",
+      "source": "standalone",
+      "page": 200
     },
     {
       "originalFormula": "I = I_L + I_R = I_S \\left[ \\exp \\left( \\frac{qV_a}{kT} \\right) - 1 \\right] + I_{R0} \\exp \\left( \\frac{qV_a}{2kT} \\right) - 1",
@@ -681,7 +731,10 @@
           "symbol": "I_{R0}",
           "description": "Representa a corrente de saturação da resistência, que é a corrente que flui quando a tensão é zero."
         }
-      ]
+      ],
+      "chapter": "7",
+      "source": "standalone",
+      "page": 216
     },
     {
       "originalFormula": "n_{on} = 10^{16} \\text{ cm}^{-3}, \\quad p_{on} = 1 \\times 10^{4} \\text{ cm}^{-3}",
@@ -714,7 +767,10 @@
           "symbol": "cm^{-3}",
           "description": "Uma unidade de medida que indica a densidade em termos de número de partículas por centímetro cúbico."
         }
-      ]
+      ],
+      "chapter": "7",
+      "source": "standalone",
+      "page": 233
     },
     {
       "originalFormula": "p_{n}(0) \\approx 10^{10} \\text{ cm}^{-3}",
@@ -735,7 +791,10 @@
           "symbol": "N",
           "description": "Representa um valor genérico para a concentração de portadores de carga do tipo n, que pode variar dependendo do material e das condições do semicondutor."
         }
-      ]
+      ],
+      "chapter": "7",
+      "source": "standalone",
+      "page": 250
     },
     {
       "originalFormula": "p_{n}(0) \\approx 1.1 \\times 10^{16} \\text{ cm}^{-3}, \\Delta p_{n}(0) \\approx 1.1 \\times 10^{16} \\text{ cm}^{-3}",
@@ -764,7 +823,10 @@
           "symbol": "\\Delta N_{n}",
           "description": "Representa uma variação genérica na densidade de portadores de carga negativa, mostrando como essa densidade pode mudar em diferentes situações."
         }
-      ]
+      ],
+      "chapter": "7",
+      "source": "standalone",
+      "page": 266
     },
     {
       "originalFormula": "n_{on} = 10^{16} \\text{ cm}^{-3}, \\Delta n_{n}(0) \\approx \\Delta p_{n}(0)",
@@ -793,7 +855,10 @@
           "symbol": "\\Delta p_{n}(0)",
           "description": "Representa a variação na densidade de portadores de carga do tipo buraco em um ponto específico no tempo ou espaço."
         }
-      ]
+      ],
+      "chapter": "7",
+      "source": "standalone",
+      "page": 283
     },
     {
       "originalFormula": "n_{n}(0) = 2.1 \\times 10^{16} \\text{ cm}^{-3}",
@@ -813,7 +878,10 @@
           "symbol": "N",
           "description": "Representa um valor genérico que indica a densidade de portadores de carga negativos, que pode variar dependendo do material e das condições."
         }
-      ]
+      ],
+      "chapter": "7",
+      "source": "standalone",
+      "page": 299
     },
     {
       "originalFormula": "I = \\frac{2AqD_p n_i}{L_p} \\exp \\left( \\frac{qV_d}{2kT} \\right)",
@@ -863,7 +931,10 @@
           "symbol": "T",
           "description": "Representa a temperatura absoluta em Kelvin, que afeta a mobilidade e a concentração de portadores em um semicondutor."
         }
-      ]
+      ],
+      "chapter": "7",
+      "source": "standalone",
+      "page": 316
     },
     {
       "originalFormula": "E_g",
@@ -879,7 +950,10 @@
           "symbol": "E_g",
           "description": "Representa a energia da banda proibida, que é a diferença de energia entre a banda de valência e a banda de condução em um material semicondutor."
         }
-      ]
+      ],
+      "chapter": "7",
+      "source": "standalone",
+      "page": 333
     },
     {
       "originalFormula": "C_j = \\frac{dQ_s}{dV_j} = A \\left( \\frac{q e N_A N_D}{2(N_A + N_D)} \\right)^{0.5} V_j^{-0.5} \\ (7.16)",
@@ -929,7 +1003,10 @@
           "symbol": "V_j",
           "description": "Representa a tensão aplicada na junção."
         }
-      ]
+      ],
+      "chapter": "7",
+      "source": "standalone",
+      "page": 349
     },
     {
       "originalFormula": "C_j \\approx A \\left( \\frac{q e N_D}{2 V_j} \\right)^{0.5} = A \\left[ \\frac{q e N_D}{2(V_{bi} - V_a)} \\right]^{1/2}",
@@ -975,7 +1052,10 @@
           "symbol": "V_a",
           "description": "Representa a tensão aplicada externamente ao dispositivo, que pode alterar a capacitância da junção."
         }
-      ]
+      ],
+      "chapter": "7",
+      "source": "standalone",
+      "page": 366
     },
     {
       "originalFormula": "x_n \\approx \\left( \\frac{2 e V_j}{q N_D} \\right)^{1/2}",
@@ -1008,7 +1088,10 @@
           "symbol": "N_D",
           "description": "É a densidade de dopagem do semicondutor tipo N, que indica a quantidade de átomos dopantes que introduzem portadores de carga negativa (elétrons) no material."
         }
-      ]
+      ],
+      "chapter": "7",
+      "source": "standalone",
+      "page": 382
     },
     {
       "originalFormula": "V_j \\approx \\frac{x_n^2 q N_D}{2e} \\ (7.19)",
@@ -1041,7 +1124,10 @@
           "symbol": "e",
           "description": "Representa a carga elementar, que é a menor unidade de carga elétrica que pode existir isoladamente."
         }
-      ]
+      ],
+      "chapter": "7",
+      "source": "standalone",
+      "page": 399
     },
     {
       "originalFormula": "C_j = \\frac{\\epsilon A}{x_n} \\ (7.20)",
@@ -1070,7 +1156,10 @@
           "symbol": "x_n",
           "description": "Representa a distância entre as placas do capacitor, que afeta a capacitância de forma inversa; quanto maior a distância, menor a capacitância."
         }
-      ]
+      ],
+      "chapter": "7",
+      "source": "standalone",
+      "page": 416
     },
     {
       "originalFormula": "V_a",
@@ -1087,7 +1176,10 @@
           "symbol": "V_a",
           "description": "Representa a tensão elétrica em um ponto 'a' de um circuito, que indica a diferença de potencial elétrico entre esse ponto e um ponto de referência, geralmente o terra."
         }
-      ]
+      ],
+      "chapter": "7",
+      "source": "standalone",
+      "page": 432
     },
     {
       "originalFormula": "W_n \\gg L_p",
@@ -1108,7 +1200,10 @@
           "symbol": "L_p",
           "description": "Representa o comprimento de um portador de carga, que é a distância média que um portador de carga (como um elétron ou um buraco) pode se mover antes de sofrer uma colisão ou recombinar."
         }
-      ]
+      ],
+      "chapter": "7",
+      "source": "standalone",
+      "page": 449
     },
     {
       "originalFormula": "I_F",
@@ -1124,7 +1219,10 @@
           "symbol": "I_F",
           "description": "Representa a corrente elétrica, que é a quantidade de carga elétrica que passa por um ponto em um circuito por unidade de tempo."
         }
-      ]
+      ],
+      "chapter": "7",
+      "source": "standalone",
+      "page": 465
     },
     {
       "originalFormula": "1/C_{j} = 7.48 \\times 10^{18}(13 - 20V_{a})",
@@ -1149,7 +1247,10 @@
           "symbol": "k",
           "description": "Uma constante que representa a relação entre a capacitância e a tensão aplicada, dependendo das características do diodo."
         }
-      ]
+      ],
+      "chapter": "7",
+      "source": "standalone",
+      "page": 482
     }
   ],
   "processedPages": [
@@ -1652,5 +1753,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.832Z"
+  "lastUpdated": "2026-05-08T18:19:13.476883",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

@@ -38,7 +38,11 @@
               "symbol": "V_T",
               "description": "Representa a tensão de limiar do transistor, que é a tensão mínima necessária para que o transistor comece a conduzir corrente."
             }
-          ]
+          ],
+          "chapter": "13",
+          "source": "question",
+          "questionNumber": "a",
+          "page": 1
         },
         {
           "originalFormula": "I_{D1} = k_p \\left[ (V_G - V_T) V_D - \\frac{V_D^2}{2} \\right] = k_p \\frac{Z}{L} = 5.75 \\times 10^{-4} A V^{-2}",
@@ -79,7 +83,11 @@
               "symbol": "L",
               "description": "É o comprimento do canal do transistor, que também influencia a corrente de dreno."
             }
-          ]
+          ],
+          "chapter": "13",
+          "source": "question",
+          "questionNumber": "a",
+          "page": 10
         }
       ]
     },
@@ -110,7 +118,11 @@
               "symbol": "V_T",
               "description": "Representa a tensão de limiar, que é a tensão mínima necessária para que o transistor comece a conduzir corrente."
             }
-          ]
+          ],
+          "chapter": "13",
+          "source": "question",
+          "questionNumber": "b",
+          "page": 19
         },
         {
           "originalFormula": "I_{D1S} = \\frac{k_p}{2} (V_G - V_T)^2 = 1.41mA",
@@ -140,7 +152,11 @@
               "symbol": "V_T",
               "description": "É a tensão de limiar do transistor, que é a tensão mínima necessária na porta para que o transistor comece a conduzir."
             }
-          ]
+          ],
+          "chapter": "13",
+          "source": "question",
+          "questionNumber": "b",
+          "page": 28
         }
       ]
     },
@@ -166,7 +182,11 @@
               "symbol": "V",
               "description": "Representa uma tensão genérica, que pode ser qualquer valor de tensão aplicado ao gate."
             }
-          ]
+          ],
+          "chapter": "13",
+          "source": "question",
+          "questionNumber": "Example 13.2",
+          "page": 37
         },
         {
           "originalFormula": "V_{FB} = -1.02V",
@@ -187,7 +207,11 @@
               "symbol": "V_{0}",
               "description": "Representa uma tensão genérica que pode ser utilizada para indicar a tensão de flat-band em uma forma mais geral."
             }
-          ]
+          ],
+          "chapter": "13",
+          "source": "question",
+          "questionNumber": "Example 13.2",
+          "page": 46
         },
         {
           "originalFormula": "\\phi_{F} = 0.4V",
@@ -208,7 +232,11 @@
               "symbol": "V",
               "description": "Representa a unidade de medida de tensão elétrica, que é o volt. Neste contexto, indica a quantidade de energia por unidade de carga elétrica."
             }
-          ]
+          ],
+          "chapter": "13",
+          "source": "question",
+          "questionNumber": "Example 13.2",
+          "page": 55
         },
         {
           "originalFormula": "\\frac{eqN_{i}}{C_{ox}} = 0.63V",
@@ -233,7 +261,11 @@
               "symbol": "V",
               "description": "Representa a tensão elétrica, que é a diferença de potencial elétrico entre dois pontos em um circuito."
             }
-          ]
+          ],
+          "chapter": "13",
+          "source": "question",
+          "questionNumber": "Example 13.2",
+          "page": 64
         },
         {
           "originalFormula": "V_{SAT2} = 2.25V",
@@ -254,7 +286,11 @@
               "symbol": "V_{SAT}",
               "description": "Representa a tensão de saturação de forma genérica, sem especificar um valor numérico."
             }
-          ]
+          ],
+          "chapter": "13",
+          "source": "question",
+          "questionNumber": "Example 13.2",
+          "page": 73
         }
       ]
     },
@@ -311,7 +347,11 @@
               "symbol": "V_{SAT}",
               "description": "Representa a tensão de saturação, que é a tensão mínima que deve ser aplicada a um dispositivo semicondutor para que ele comece a conduzir corrente de forma significativa."
             }
-          ]
+          ],
+          "chapter": "13",
+          "source": "question",
+          "questionNumber": "E13-1",
+          "page": 82
         }
       ]
     },
@@ -341,7 +381,11 @@
               "symbol": "k",
               "description": "Um fator de proporcionalidade que indica quantas vezes a quantidade Z é maior que L, sendo igual a 9 no caso específico da fórmula original."
             }
-          ]
+          ],
+          "chapter": "13",
+          "source": "question",
+          "questionNumber": "E13-2",
+          "page": 91
         }
       ]
     },
@@ -396,7 +440,11 @@
               "symbol": "\\Delta V_T",
               "description": "Representa a variação na tensão de limiar, que é a diferença entre a tensão de limiar ajustada e a original."
             }
-          ]
+          ],
+          "chapter": "13",
+          "source": "question",
+          "questionNumber": "Example 13.3 a",
+          "page": 100
         }
       ]
     },
@@ -451,7 +499,11 @@
               "symbol": "V_D",
               "description": "É a tensão aplicada entre o dreno e a fonte do transistor, que influencia a corrente de dreno e, consequentemente, a transcondutância."
             }
-          ]
+          ],
+          "chapter": "13",
+          "source": "question",
+          "questionNumber": "EXAMPLE 13.6 a",
+          "page": 109
         }
       ]
     },
@@ -491,7 +543,11 @@
               "symbol": "\\lambda_p",
               "description": "É o fator de modulação da tensão de drenagem, que indica como a corrente de dreno é afetada pela tensão de dreno aplicada."
             }
-          ]
+          ],
+          "chapter": "13",
+          "source": "question",
+          "questionNumber": "EXAMPLE 13.6 b",
+          "page": 118
         }
       ]
     },
@@ -538,7 +594,11 @@
               "symbol": "10^{-8}",
               "description": "Um fator que indica uma escala muito pequena, frequentemente utilizado em contextos que envolvem propriedades microscópicas ou nanométricas."
             }
-          ]
+          ],
+          "chapter": "13",
+          "source": "question",
+          "questionNumber": "Example 13.7",
+          "page": 127
         }
       ]
     },
@@ -826,7 +886,11 @@
               "symbol": "I_{D2S_{gen}}",
               "description": "Representa a corrente elétrica em uma forma genérica, sem valores numéricos específicos."
             }
-          ]
+          ],
+          "chapter": "13",
+          "source": "answer",
+          "questionNumber": "Example 13.2",
+          "page": 136
         }
       ]
     },
@@ -862,7 +926,11 @@
               "symbol": "V",
               "description": "Representa uma tensão genérica, que pode ser aplicada em diferentes contextos dentro de um circuito elétrico."
             }
-          ]
+          ],
+          "chapter": "13",
+          "source": "answer",
+          "questionNumber": "Example 13.3 a",
+          "page": 145
         }
       ]
     },
@@ -899,7 +967,11 @@
               "symbol": "V_D",
               "description": "Representa a tensão aplicada ao dreno do transistor, que influencia a corrente que flui através do dispositivo."
             }
-          ]
+          ],
+          "chapter": "13",
+          "source": "answer",
+          "questionNumber": "1",
+          "page": 154
         },
         {
           "originalFormula": "i_D = I_D + i_d = I_D(V_G + v_{gs}, V_D + v_d)",
@@ -940,7 +1012,11 @@
               "symbol": "v_d",
               "description": "Representa a variação da tensão de dreno em relação à tensão contínua, que é a parte do sinal alternado."
             }
-          ]
+          ],
+          "chapter": "13",
+          "source": "answer",
+          "questionNumber": "1",
+          "page": 163
         },
         {
           "originalFormula": "i_D = I_D + \\frac{\\partial I_D}{\\partial V_G} v_G + \\frac{\\partial I_D}{\\partial V_D} v_D",
@@ -978,7 +1054,11 @@
               "symbol": "v_D",
               "description": "Representa a variação na tensão de dreno aplicada ao dispositivo, que também pode influenciar a corrente que flui."
             }
-          ]
+          ],
+          "chapter": "13",
+          "source": "answer",
+          "questionNumber": "1",
+          "page": 173
         }
       ]
     },
@@ -992,7 +1072,11 @@
           "description": "Não foi possível gerar descrição automática",
           "concepts": [],
           "symbols": [],
-          "rawText": "{\n  \"originalFormula\": \"g_m = k_p(V_G - V_T)(1 + \\lambda_p V_D)\",\n  \"genericFormula\": \"g_m = k_p(V_G - V_T)(1 + \\lambda_p V_D)\",\n  \"description\": \"Esta fórmula representa a transcondutância de um transistor de efeito de campo (FET), que é uma medida de quão bem o dispositivo pode controlar a corrente elétrica que flui através dele, em resposta a uma tensão de entrada. A transcondutância é uma característica importante que indica a eficiência do transistor em amplificar sinais.\",\n  \"concepts\": [\n    \"Transcondutância\",\n    \"Transistor de Efeito de Campo (FET)\",\n    \"Tensão de gate\",\n    \"Tensão de limiar\",\n    \"Tensão de dreno\",\n    \"Parâmetro de canal\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"g_m\",\n      \"description\": \"Representa a transcondutância, que é a relação entre a variação da corrente de dreno e a variação da tensão de gate, indicando a capacidade de amplificação do transistor.\"\n    },\n    {\n      \"symbol\": \"k_p\",\n      \"description\": \"É a constante de transcondutância do transistor, que depende das propriedades do material semicondutor e da geometria do dispositivo.\"\n    },\n    {\n      \"symbol\": \"V_G\",\n      \"description\": \"Representa a tensão aplicada ao terminal de gate do transistor, que controla a corrente que flui entre o dreno e a fonte.\"\n    },\n    {\n      \"symbol\": \"V_T\",\n      \"description\": \"É a tensão de limiar, que é a tensão mínima necessária no gate para que o transistor comece a conduzir corrente.\"\n    },\n    {\n      \"symbol\": \"λ_p\",\n      \"description\": \"É o parâmetro de canal que representa a modulação da transcondutância em função da tensão de dreno, indicando como a corrente de dreno é afetada pela tensão aplicada.\"\n    },\n    {\n      \"symbol\": \"V_D\",\n      \"description\": \"Representa a tensão aplicada ao terminal de dreno do transistor, que influencia a corrente que flui entre o dreno e a fonte.\"\n    }\n  ]\n}"
+          "rawText": "{\n  \"originalFormula\": \"g_m = k_p(V_G - V_T)(1 + \\lambda_p V_D)\",\n  \"genericFormula\": \"g_m = k_p(V_G - V_T)(1 + \\lambda_p V_D)\",\n  \"description\": \"Esta fórmula representa a transcondutância de um transistor de efeito de campo (FET), que é uma medida de quão bem o dispositivo pode controlar a corrente elétrica que flui através dele, em resposta a uma tensão de entrada. A transcondutância é uma característica importante que indica a eficiência do transistor em amplificar sinais.\",\n  \"concepts\": [\n    \"Transcondutância\",\n    \"Transistor de Efeito de Campo (FET)\",\n    \"Tensão de gate\",\n    \"Tensão de limiar\",\n    \"Tensão de dreno\",\n    \"Parâmetro de canal\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"g_m\",\n      \"description\": \"Representa a transcondutância, que é a relação entre a variação da corrente de dreno e a variação da tensão de gate, indicando a capacidade de amplificação do transistor.\"\n    },\n    {\n      \"symbol\": \"k_p\",\n      \"description\": \"É a constante de transcondutância do transistor, que depende das propriedades do material semicondutor e da geometria do dispositivo.\"\n    },\n    {\n      \"symbol\": \"V_G\",\n      \"description\": \"Representa a tensão aplicada ao terminal de gate do transistor, que controla a corrente que flui entre o dreno e a fonte.\"\n    },\n    {\n      \"symbol\": \"V_T\",\n      \"description\": \"É a tensão de limiar, que é a tensão mínima necessária no gate para que o transistor comece a conduzir corrente.\"\n    },\n    {\n      \"symbol\": \"λ_p\",\n      \"description\": \"É o parâmetro de canal que representa a modulação da transcondutância em função da tensão de dreno, indicando como a corrente de dreno é afetada pela tensão aplicada.\"\n    },\n    {\n      \"symbol\": \"V_D\",\n      \"description\": \"Representa a tensão aplicada ao terminal de dreno do transistor, que influencia a corrente que flui entre o dreno e a fonte.\"\n    }\n  ]\n}",
+          "chapter": "13",
+          "source": "answer",
+          "questionNumber": "EXAMPLE 13.6 a",
+          "page": 182
         }
       ]
     },
@@ -1022,7 +1106,11 @@
               "symbol": "I_{D1S}",
               "description": "Representa a intensidade da corrente elétrica que flui através do dispositivo, que é um fluxo de cargas elétricas em movimento."
             }
-          ]
+          ],
+          "chapter": "13",
+          "source": "answer",
+          "questionNumber": "EXAMPLE 13.6 b",
+          "page": 191
         }
       ]
     },
@@ -1069,7 +1157,11 @@
               "symbol": "10^{-8}",
               "description": "Um fator que representa uma potência de dez, indicando uma quantidade muito pequena, frequentemente usada em contextos de medidas em escala nanométrica."
             }
-          ]
+          ],
+          "chapter": "13",
+          "source": "answer",
+          "questionNumber": "Example 13.7",
+          "page": 200
         }
       ]
     }
@@ -1098,7 +1190,10 @@
           "symbol": "V_T",
           "description": "Representa a tensão de limiar, que é a tensão mínima necessária no gate para que o transistor comece a conduzir corrente entre o drenagem e a fonte."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 209
     },
     {
       "originalFormula": "V_{r}",
@@ -1115,7 +1210,10 @@
           "symbol": "V_{r}",
           "description": "Representa a tensão elétrica em um ponto específico de um circuito, geralmente referida como tensão residual ou tensão em um resistor."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 218
     },
     {
       "originalFormula": "N_{A}",
@@ -1131,7 +1229,10 @@
           "symbol": "N_{A}",
           "description": "Representa a densidade de átomos de dopante do tipo aceito em um semicondutor, que é a quantidade de átomos de dopante por unidade de volume."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 227
     },
     {
       "originalFormula": "N_{D}",
@@ -1147,7 +1248,10 @@
           "symbol": "N_{D}",
           "description": "Representa a densidade de dopantes do tipo doador, que são átomos adicionados ao semicondutor para aumentar a quantidade de portadores de carga negativa."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 236
     },
     {
       "originalFormula": "SiH_{4} + O_{2} \\rightarrow SiO_{2} + H_{2}",
@@ -1184,7 +1288,10 @@
           "symbol": "\\rightarrow",
           "description": "Indica a direção da reação, mostrando que as substâncias à esquerda se transformam nas substâncias à direita."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 245
     },
     {
       "originalFormula": "V_{r} = 20 - 30V",
@@ -1208,7 +1315,10 @@
           "symbol": "V_{2}",
           "description": "Representa outra tensão que está sendo subtraída da tensão de referência."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 254
     },
     {
       "originalFormula": "V(y) = V_{SAT}",
@@ -1228,7 +1338,10 @@
           "symbol": "V_{SAT}",
           "description": "Representa a tensão de saturação, que é o valor máximo de tensão que um dispositivo semicondutor pode suportar antes de saturar."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 263
     },
     {
       "originalFormula": "V_T = \\Phi_{ms} - \\frac{Q_{f}}{C_{ox}} + 2\\Phi_{f}",
@@ -1261,7 +1374,10 @@
           "symbol": "\\Phi_{f}",
           "description": "Representa o potencial de Fermi do semicondutor, que está relacionado à concentração de portadores de carga no material."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 272
     },
     {
       "originalFormula": "\\Phi_{f} = \\frac{kT}{q} \\ln \\frac{N_A}{n_i} = 0.4V",
@@ -1303,7 +1419,10 @@
           "symbol": "ln",
           "description": "Representa o logaritmo natural, que é uma função matemática que ajuda a descrever o crescimento exponencial e a relação entre diferentes quantidades."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 281
     },
     {
       "originalFormula": "\\Phi_{ms} = (E_C - E_{P_{polys}}) = (E_C - E_{P_{subs}}) = 0.96V",
@@ -1332,7 +1451,10 @@
           "symbol": "E_{P_{subs}}",
           "description": "É a energia do nível de Fermi do substrato que está em contato com o semicondutor."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 290
     },
     {
       "originalFormula": "C_{ox} = \\frac{\\epsilon_{ox}}{t_{ox}} = 3.9 \\times 8.85 \\times 10^{-14}/300 \\times 10^{-8} = 11.50 \\times 10^{-8} Fcm^{-2}",
@@ -1358,7 +1480,10 @@
           "symbol": "t_{ox}",
           "description": "Representa a espessura da camada de óxido, que é a distância física que a carga elétrica deve atravessar."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 299
     },
     {
       "originalFormula": "V_{FB} = \\Phi_{ms} - 0.96 = \\frac{5 \\times 10^{10} \\times 1.6 \\times 10^{-19}}{C_{ox}} = 1.02V",
@@ -1394,7 +1519,10 @@
           "symbol": "C_{ox}",
           "description": "Representa a capacitância da camada de óxido, que é uma medida da capacidade do óxido de armazenar carga elétrica."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 308
     },
     {
       "originalFormula": "Q_{dm} = -V_{4eb}qN_A = -11.53 \\times 10^{-8} \\text{ Ccm}^{-2}",
@@ -1423,7 +1551,10 @@
           "symbol": "N_A",
           "description": "Representa a concentração de portadores de carga do tipo aceito no material, geralmente medido em número de portadores por centímetro cúbico."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 317
     },
     {
       "originalFormula": "V_T = 0.96 - \\frac{0.8}{11.5} + \\frac{11.5}{11.5} + 0.8",
@@ -1455,7 +1586,10 @@
           "symbol": "d",
           "description": "Um valor que representa uma contribuição adicional de tensão no circuito."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 326
     },
     {
       "originalFormula": "I_{D2S} = 0.72 \\text{mA}",
@@ -1471,7 +1605,10 @@
           "symbol": "I_{D2S}",
           "description": "Representa a corrente elétrica que flui do dreno para a fonte em um transistor ou dispositivo semicondutor."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 336
     },
     {
       "originalFormula": "\\phi_S(y) = 2\\phi_F + V_{CS} + V_{SB} = 2\\phi_F + V(y) + V_{SB}",
@@ -1504,7 +1641,10 @@
           "symbol": "V(y)",
           "description": "Representa uma tensão variável que pode depender da posição y dentro do semicondutor."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 345
     },
     {
       "originalFormula": "V_{GB} = V_{ox} + \\phi_S(y) + V_{FB} = V_{ox} + 2\\phi_F + V(y) + V_{SB} + V_{FB}",
@@ -1547,7 +1687,10 @@
           "symbol": "V_{SB}",
           "description": "Tensão entre o substrato e a fonte do transistor."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 354
     },
     {
       "originalFormula": "Q_n(y) = -C_{ox}[V_{GS} + V_{SB} - V_{FB} - 2\\phi_F - V(y)] + \\sqrt{2eqN_A[2\\phi_F + V(y) + V_{SB}]}",
@@ -1600,7 +1743,10 @@
           "symbol": "N_A",
           "description": "Densidade de dopagem do semicondutor, que indica a quantidade de átomos dopantes por unidade de volume."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 363
     },
     {
       "originalFormula": "I_{D3} = \\mu_n C_{ox} \\frac{Z}{L} \\left( V_{GS} - V_{FB} - 2\\phi_F - \\frac{V_{DS}}{2} \\right) V_{DS} - \\frac{\\left(\\frac{2}{3}C_{ox}\\right)\\sqrt{2eqN_A}}{\\left[V_{DS} + 2\\phi_F - V_B\\right]^{3/2}} - \\left(2\\phi_F - V_B\\right)^{3/2}",
@@ -1667,7 +1813,10 @@
           "symbol": "N_A",
           "description": "Concentração de dopantes aceitores no semicondutor."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 372
     },
     {
       "originalFormula": "V_T' = V_{FB} + 2\\phi_F + \\frac{2\\sqrt{qN_A(2\\phi_F - V_B)}}{C_{ox}}",
@@ -1709,7 +1858,10 @@
           "symbol": "C_{ox}",
           "description": "Representa a capacitância da camada de óxido, que é a capacitância entre o terminal do gate e o canal do transistor."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 381
     },
     {
       "originalFormula": "I_{DLS} = \\frac{k_p}{2}(V_G - V_T)^2(1 + \\lambda_p V_D)",
@@ -1747,7 +1899,10 @@
           "symbol": "\\lambda_p",
           "description": "É o parâmetro de modulação da tensão de drenagem, que representa o efeito de aumento da corrente de drenagem devido à tensão no dreno."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 390
     },
     {
       "originalFormula": "k \\cdot T / q",
@@ -1772,7 +1927,10 @@
           "symbol": "q",
           "description": "Carga elétrica da partícula, que pode ser positiva ou negativa, e determina a interação da partícula com campos elétricos."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 399
     },
     {
       "originalFormula": "I_D = I_D(V_G, V_D)",
@@ -1797,7 +1955,10 @@
           "symbol": "V_D",
           "description": "Representa a tensão no dreno do transistor, que também influencia a corrente de dreno."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 408
     },
     {
       "originalFormula": "i_D = I_D + i_d = I_D(V_G + v_{gs}, V_D + v_d)",
@@ -1838,7 +1999,10 @@
           "symbol": "v_d",
           "description": "Representa a variação da tensão de dreno em relação a um ponto de referência, geralmente em pequenas oscilações."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 417
     },
     {
       "originalFormula": "i_d = g_m v_g + g_d v_d",
@@ -1871,7 +2035,10 @@
           "symbol": "v_d",
           "description": "É a tensão aplicada no terminal de drenagem do transistor, que também influencia a corrente de drenagem."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 426
     },
     {
       "originalFormula": "g_m = \\frac{\\partial I_{D1S}}{\\partial V_G} \\bigg|_{V_D}",
@@ -1901,7 +2068,10 @@
           "symbol": "V_D",
           "description": "Representa a tensão aplicada ao dreno do transistor, que deve ser mantida constante durante a medição da transcondutância."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 435
     },
     {
       "originalFormula": "g_d = \\frac{\\partial I_{D1S}}{\\partial V_D} \\bigg|_{V_G}",
@@ -1930,7 +2100,10 @@
           "symbol": "V_G",
           "description": "Representa a tensão de porta, que é a tensão aplicada ao terminal de porta do dispositivo semicondutor, e que é mantida constante durante a medição."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 444
     },
     {
       "originalFormula": "g_m = \\sqrt{2 k_p I_{D1S}}",
@@ -1956,7 +2129,10 @@
           "symbol": "I_{D1S}",
           "description": "Representa a corrente de dreno do transistor em um estado específico, que é a corrente que flui através do terminal de dreno do transistor."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 453
     },
     {
       "originalFormula": "g_d = \\lambda_p I_{D1S}",
@@ -1980,7 +2156,10 @@
           "symbol": "I_{D1S}",
           "description": "Representa a corrente que flui através do dispositivo, que é a quantidade de carga elétrica que passa por uma seção transversal do dispositivo em um determinado intervalo de tempo."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 462
     },
     {
       "originalFormula": "g_d = \\frac{dI_D}{dV_D} = k_p (V_G - V_T)",
@@ -2019,7 +2198,10 @@
           "symbol": "V_T",
           "description": "É a tensão de limiar, que é a tensão mínima necessária na porta para que o transistor comece a conduzir corrente."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 471
     },
     {
       "originalFormula": "r_d = \\frac{1}{g_d} = \\frac{1}{k_p (V_G - V_T)}",
@@ -2053,7 +2235,10 @@
           "symbol": "V_T",
           "description": "Representa a tensão de limiar do transistor, que é a tensão mínima necessária para que o transistor comece a conduzir."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 480
     },
     {
       "originalFormula": "f_{T} = \\frac{g_{m}}{2 \\pi (C_{gs} + C_{gd})}",
@@ -2086,7 +2271,10 @@
           "symbol": "2 \\pi",
           "description": "Um fator constante que aparece na fórmula, relacionado à conversão entre frequência e período, uma vez que a frequência é medida em ciclos por segundo."
         }
-      ]
+      ],
+      "chapter": "13",
+      "source": "standalone",
+      "page": 489
     }
   ],
   "processedPages": [
@@ -2589,5 +2777,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.896Z"
+  "lastUpdated": "2026-05-08T18:19:13.126910",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

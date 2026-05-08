@@ -51,7 +51,11 @@
           "description": "Não foi possível gerar descrição automática",
           "concepts": [],
           "symbols": [],
-          "rawText": "{\n  \"originalFormula\": \"p = 10^{10} \\, \\\\text{cm}^{-3}\",\n  \"genericFormula\": \"p = N \\, \\\\text{cm}^{-3}\",\n  \"description\": \"Esta fórmula representa a densidade de portadores de carga em um semicondutor, onde 'p' é a concentração de portadores de carga positiva, geralmente buracos, em um volume específico do material.\",\n  \"concepts\": [\n    \"Densidade de portadores de carga\",\n    \"Semicondutores\",\n    \"Buracos como portadores de carga\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"p\",\n      \"description\": \"Representa a densidade de portadores de carga positiva, como buracos, em um semicondutor, medida em número de portadores por centímetro cúbico.\"\n    },\n    {\n      \"symbol\": \"N\",\n      \"description\": \"Representa um valor genérico que indica a densidade de portadores de carga, que pode variar dependendo do material e das condições do semicondutor.\"\n    }\n  ]\n}"
+          "rawText": "{\n  \"originalFormula\": \"p = 10^{10} \\, \\\\text{cm}^{-3}\",\n  \"genericFormula\": \"p = N \\, \\\\text{cm}^{-3}\",\n  \"description\": \"Esta fórmula representa a densidade de portadores de carga em um semicondutor, onde 'p' é a concentração de portadores de carga positiva, geralmente buracos, em um volume específico do material.\",\n  \"concepts\": [\n    \"Densidade de portadores de carga\",\n    \"Semicondutores\",\n    \"Buracos como portadores de carga\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"p\",\n      \"description\": \"Representa a densidade de portadores de carga positiva, como buracos, em um semicondutor, medida em número de portadores por centímetro cúbico.\"\n    },\n    {\n      \"symbol\": \"N\",\n      \"description\": \"Representa um valor genérico que indica a densidade de portadores de carga, que pode variar dependendo do material e das condições do semicondutor.\"\n    }\n  ]\n}",
+          "chapter": "2 Energy Bands and Current Carriers in Semiconductors",
+          "source": "question",
+          "questionNumber": "E2-5 a",
+          "page": 1
         }
       ]
     },
@@ -77,7 +81,11 @@
               "symbol": "N",
               "description": "Representa o número total de eventos ou condições em que o evento considerado não ocorre."
             }
-          ]
+          ],
+          "chapter": "2 Energy Bands and Current Carriers in Semiconductors",
+          "source": "question",
+          "questionNumber": "E2-5 b",
+          "page": 42
         }
       ]
     },
@@ -123,7 +131,11 @@
               "symbol": "x",
               "description": "Representa a posição ao longo de uma direção específica onde o potencial elétrico está sendo avaliado."
             }
-          ]
+          ],
+          "chapter": "2 Energy Bands and Current Carriers in Semiconductors",
+          "source": "question",
+          "questionNumber": "2.3",
+          "page": 84
         }
       ]
     },
@@ -171,7 +183,11 @@
               "symbol": "E_{v}",
               "description": "Representa a energia do nível mais alto da banda de valência, onde os elétrons estão normalmente presentes antes de serem excitados para a banda de condução."
             }
-          ]
+          ],
+          "chapter": "2 Energy Bands and Current Carriers in Semiconductors",
+          "source": "answer",
+          "questionNumber": "1",
+          "page": 125
         }
       ]
     },
@@ -193,7 +209,10 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"E_{g} = 8 \\, eV \\, \\\\text{for} \\, SiO_{2}\",\n  \"genericFormula\": \"E_{g} = E_{g, \\\\text{material}}\",\n  \"description\": \"Esta fórmula representa a energia de bandgap, que é a quantidade de energia necessária para mover um elétron de uma banda de energia para outra em um material semicondutor, especificamente no caso do dióxido de silício (SiO2).\",\n  \"concepts\": [\n    \"Energia de bandgap\",\n    \"Semicondutores\",\n    \"Propriedades elétricas de materiais\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"E_{g}\",\n      \"description\": \"Representa a energia de bandgap, que é a energia mínima necessária para excitar um elétron de uma banda de valência para a banda de condução.\"\n    },\n    {\n      \"symbol\": \"eV\",\n      \"description\": \"Representa o elétron-volt, que é uma unidade de medida de energia usada frequentemente em física, especialmente em contextos de semicondutores e partículas subatômicas.\"\n    },\n    {\n      \"symbol\": \"SiO_{2}\",\n      \"description\": \"Representa o dióxido de silício, um material semicondutor amplamente utilizado em eletrônica e optoeletrônica.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"E_{g} = 8 \\, eV \\, \\\\text{for} \\, SiO_{2}\",\n  \"genericFormula\": \"E_{g} = E_{g, \\\\text{material}}\",\n  \"description\": \"Esta fórmula representa a energia de bandgap, que é a quantidade de energia necessária para mover um elétron de uma banda de energia para outra em um material semicondutor, especificamente no caso do dióxido de silício (SiO2).\",\n  \"concepts\": [\n    \"Energia de bandgap\",\n    \"Semicondutores\",\n    \"Propriedades elétricas de materiais\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"E_{g}\",\n      \"description\": \"Representa a energia de bandgap, que é a energia mínima necessária para excitar um elétron de uma banda de valência para a banda de condução.\"\n    },\n    {\n      \"symbol\": \"eV\",\n      \"description\": \"Representa o elétron-volt, que é uma unidade de medida de energia usada frequentemente em física, especialmente em contextos de semicondutores e partículas subatômicas.\"\n    },\n    {\n      \"symbol\": \"SiO_{2}\",\n      \"description\": \"Representa o dióxido de silício, um material semicondutor amplamente utilizado em eletrônica e optoeletrônica.\"\n    }\n  ]\n}",
+      "chapter": "2 Energy Bands and Current Carriers in Semiconductors",
+      "source": "standalone",
+      "page": 167
     },
     {
       "originalFormula": "E_{g} = 1.12 \\, eV \\, \\text{at} \\, T = 300K",
@@ -201,7 +220,10 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"E_{g} = 1.12 \\, eV \\, \\\\text{at} \\, T = 300K\",\n  \"genericFormula\": \"E_{g} = E_{g,0} \\, \\\\text{at} \\, T = T_{0}\",\n  \"description\": \"Esta fórmula representa a energia de bandgap de um material semicondutor, que é a quantidade mínima de energia necessária para mover um elétron da banda de valência para a banda de condução. A energia de bandgap é uma característica fundamental que determina as propriedades eletrônicas e ópticas do semicondutor.\",\n  \"concepts\": [\n    \"Energia de bandgap\",\n    \"Semicondutores\",\n    \"Temperatura\",\n    \"Propriedades eletrônicas\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"E_{g}\",\n      \"description\": \"Representa a energia de bandgap do semicondutor, que é a diferença de energia entre a banda de valência e a banda de condução.\"\n    },\n    {\n      \"symbol\": \"eV\",\n      \"description\": \"Representa electronvolt, uma unidade de medida de energia comumente utilizada em física de semicondutores, onde 1 eV é a energia adquirida por um elétron ao passar por uma diferença de potencial de 1 volt.\"\n    },\n    {\n      \"symbol\": \"T\",\n      \"description\": \"Representa a temperatura em Kelvin, que é uma medida da energia térmica das partículas em um sistema. A temperatura pode afetar a energia de bandgap de um material.\"\n    },\n    {\n      \"symbol\": \"T_{0}\",\n      \"description\": \"Representa uma temperatura de referência, que neste caso é 300 Kelvin, uma temperatura comum para medições em física de semicondutores.\"\n    },\n    {\n      \"symbol\": \"E_{g,0}\",\n      \"description\": \"Representa a energia de bandgap em uma temperatura de referência, que é a energia de bandgap medida a 300 Kelvin.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"E_{g} = 1.12 \\, eV \\, \\\\text{at} \\, T = 300K\",\n  \"genericFormula\": \"E_{g} = E_{g,0} \\, \\\\text{at} \\, T = T_{0}\",\n  \"description\": \"Esta fórmula representa a energia de bandgap de um material semicondutor, que é a quantidade mínima de energia necessária para mover um elétron da banda de valência para a banda de condução. A energia de bandgap é uma característica fundamental que determina as propriedades eletrônicas e ópticas do semicondutor.\",\n  \"concepts\": [\n    \"Energia de bandgap\",\n    \"Semicondutores\",\n    \"Temperatura\",\n    \"Propriedades eletrônicas\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"E_{g}\",\n      \"description\": \"Representa a energia de bandgap do semicondutor, que é a diferença de energia entre a banda de valência e a banda de condução.\"\n    },\n    {\n      \"symbol\": \"eV\",\n      \"description\": \"Representa electronvolt, uma unidade de medida de energia comumente utilizada em física de semicondutores, onde 1 eV é a energia adquirida por um elétron ao passar por uma diferença de potencial de 1 volt.\"\n    },\n    {\n      \"symbol\": \"T\",\n      \"description\": \"Representa a temperatura em Kelvin, que é uma medida da energia térmica das partículas em um sistema. A temperatura pode afetar a energia de bandgap de um material.\"\n    },\n    {\n      \"symbol\": \"T_{0}\",\n      \"description\": \"Representa uma temperatura de referência, que neste caso é 300 Kelvin, uma temperatura comum para medições em física de semicondutores.\"\n    },\n    {\n      \"symbol\": \"E_{g,0}\",\n      \"description\": \"Representa a energia de bandgap em uma temperatura de referência, que é a energia de bandgap medida a 300 Kelvin.\"\n    }\n  ]\n}",
+      "chapter": "2 Energy Bands and Current Carriers in Semiconductors",
+      "source": "standalone",
+      "page": 208
     },
     {
       "originalFormula": "E_g(T) = E_g(0) - \\frac{\\alpha T^2}{T + \\beta} \\text{ (eV), T in K}",
@@ -233,7 +255,10 @@
           "symbol": "β",
           "description": "É uma constante que ajuda a modelar a dependência da temperatura na fórmula, influenciando a forma como a energia do gap muda com a temperatura."
         }
-      ]
+      ],
+      "chapter": "2 Energy Bands and Current Carriers in Semiconductors",
+      "source": "standalone",
+      "page": 250
     },
     {
       "originalFormula": "E = -\\frac{e^2}{4\\pi\\epsilon_0 r}",
@@ -266,7 +291,10 @@
           "symbol": "r",
           "description": "Representa a distância entre a carga pontual e o ponto onde o potencial elétrico está sendo calculado."
         }
-      ]
+      ],
+      "chapter": "2 Energy Bands and Current Carriers in Semiconductors",
+      "source": "standalone",
+      "page": 291
     },
     {
       "originalFormula": "kL = \\pm n \\pi",
@@ -295,7 +323,10 @@
           "symbol": "π",
           "description": "uma constante matemática que representa a razão entre a circunferência de um círculo e seu diâmetro, aproximadamente igual a 3,14159."
         }
-      ]
+      ],
+      "chapter": "2 Energy Bands and Current Carriers in Semiconductors",
+      "source": "standalone",
+      "page": 333
     },
     {
       "originalFormula": "E = h \nu",
@@ -303,7 +334,10 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"E = h u\",\n  \"genericFormula\": \"E = h \\cdot \\nu\",\n  \"description\": \"Esta fórmula relaciona a energia de uma onda eletromagnética com sua frequência. A energia é diretamente proporcional à frequência da onda, onde a constante de proporcionalidade é a constante de Planck.\",\n  \"concepts\": [\"energia\", \"frequência\", \"ondas eletromagnéticas\", \"constante de Planck\"],\n  \"symbols\": [\n    {\n      \"symbol\": \"E\",\n      \"description\": \"Representa a energia da onda eletromagnética, que é a capacidade de realizar trabalho ou causar mudanças em um sistema.\"\n    },\n    {\n      \"symbol\": \"h\",\n      \"description\": \"É a constante de Planck, uma constante fundamental na física que relaciona a energia de um fóton à sua frequência. Seu valor é aproximadamente 6.626 x 10^-34 Joule segundo.\"\n    },\n    {\n      \"symbol\": \"ν\",\n      \"description\": \"Representa a frequência da onda eletromagnética, que é o número de ciclos que ocorrem em um segundo. É medida em Hertz (Hz).\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"E = h u\",\n  \"genericFormula\": \"E = h \\cdot \\nu\",\n  \"description\": \"Esta fórmula relaciona a energia de uma onda eletromagnética com sua frequência. A energia é diretamente proporcional à frequência da onda, onde a constante de proporcionalidade é a constante de Planck.\",\n  \"concepts\": [\"energia\", \"frequência\", \"ondas eletromagnéticas\", \"constante de Planck\"],\n  \"symbols\": [\n    {\n      \"symbol\": \"E\",\n      \"description\": \"Representa a energia da onda eletromagnética, que é a capacidade de realizar trabalho ou causar mudanças em um sistema.\"\n    },\n    {\n      \"symbol\": \"h\",\n      \"description\": \"É a constante de Planck, uma constante fundamental na física que relaciona a energia de um fóton à sua frequência. Seu valor é aproximadamente 6.626 x 10^-34 Joule segundo.\"\n    },\n    {\n      \"symbol\": \"ν\",\n      \"description\": \"Representa a frequência da onda eletromagnética, que é o número de ciclos que ocorrem em um segundo. É medida em Hertz (Hz).\"\n    }\n  ]\n}",
+      "chapter": "2 Energy Bands and Current Carriers in Semiconductors",
+      "source": "standalone",
+      "page": 374
     },
     {
       "originalFormula": "T = 0K",
@@ -324,7 +358,10 @@
           "symbol": "0K",
           "description": "Indica a temperatura zero Kelvin, que é equivalente a -273,15 graus Celsius e representa a ausência total de energia térmica."
         }
-      ]
+      ],
+      "chapter": "2 Energy Bands and Current Carriers in Semiconductors",
+      "source": "standalone",
+      "page": 416
     },
     {
       "originalFormula": "E = V(x)",
@@ -348,7 +385,10 @@
           "symbol": "x",
           "description": "Representa a posição ou coordenada ao longo da qual o potencial elétrico está sendo avaliado."
         }
-      ]
+      ],
+      "chapter": "2 Energy Bands and Current Carriers in Semiconductors",
+      "source": "standalone",
+      "page": 457
     }
   ],
   "processedPages": [
@@ -851,5 +891,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.932Z"
+  "lastUpdated": "2026-05-08T18:19:13.150300",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

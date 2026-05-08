@@ -24,7 +24,11 @@
               "symbol": "E",
               "description": "Representa a energia de um sistema, que pode se manifestar de várias formas, como energia cinética, potencial, térmica, entre outras."
             }
-          ]
+          ],
+          "chapter": "2",
+          "source": "question",
+          "questionNumber": "2.6",
+          "page": 1
         },
         {
           "originalFormula": "r_0",
@@ -40,7 +44,11 @@
               "symbol": "r_0",
               "description": "Representa o raio inicial ou de referência de uma esfera ou círculo, que pode ser utilizado para descrever dimensões em contextos físicos."
             }
-          ]
+          ],
+          "chapter": "2",
+          "source": "question",
+          "questionNumber": "2.6",
+          "page": 36
         }
       ]
     },
@@ -62,7 +70,11 @@
               "symbol": "n",
               "description": "Representa um número inteiro que pode indicar o nível de energia ou a quantidade de partículas em um sistema."
             }
-          ]
+          ],
+          "chapter": "2",
+          "source": "question",
+          "questionNumber": "1",
+          "page": 72
         }
       ]
     },
@@ -130,7 +142,11 @@
               "symbol": "n!",
               "description": "O fatorial de n, que é o produto de todos os números inteiros positivos até n, representando o número de maneiras de organizar n itens."
             }
-          ]
+          ],
+          "chapter": "2",
+          "source": "question",
+          "questionNumber": "2.6 d",
+          "page": 107
         }
       ]
     }
@@ -159,7 +175,11 @@
               "symbol": "E",
               "description": "Representa a energia, que pode ser encontrada em várias formas, como energia cinética, potencial, térmica, entre outras."
             }
-          ]
+          ],
+          "chapter": "2",
+          "source": "answer",
+          "questionNumber": "2.6",
+          "page": 143
         },
         {
           "originalFormula": "r_0",
@@ -176,7 +196,11 @@
               "symbol": "r_0",
               "description": "Representa um raio ou uma distância inicial em um contexto físico ou geométrico."
             }
-          ]
+          ],
+          "chapter": "2",
+          "source": "answer",
+          "questionNumber": "2.6",
+          "page": 178
         }
       ]
     },
@@ -198,7 +222,11 @@
               "symbol": "n",
               "description": "Uma variável que representa uma quantidade que pode variar. Dependendo do contexto, pode ser um número inteiro, uma medida de comprimento, ou qualquer outra grandeza que se deseja analisar."
             }
-          ]
+          ],
+          "chapter": "2",
+          "source": "answer",
+          "questionNumber": "1",
+          "page": 214
         }
       ]
     }
@@ -243,7 +271,10 @@
           "symbol": "I(φ)",
           "description": "É uma função que depende apenas do ângulo azimutal, representando a parte angular da função de onda em relação ao ângulo azimutal."
         }
-      ]
+      ],
+      "chapter": "2",
+      "source": "standalone",
+      "page": 250
     },
     {
       "originalFormula": "E = \\frac{h^2 n^2}{8 m L^2}",
@@ -276,7 +307,10 @@
           "symbol": "L",
           "description": "é o comprimento da caixa unidimensional onde a partícula está confinada."
         }
-      ]
+      ],
+      "chapter": "2",
+      "source": "standalone",
+      "page": 285
     },
     {
       "originalFormula": "J_{ub} = \\sum q v_d",
@@ -300,7 +334,10 @@
           "symbol": "v_d",
           "description": "Representa a velocidade de deriva, que é a velocidade média com que as cargas elétricas se movem através do material quando um campo elétrico é aplicado."
         }
-      ]
+      ],
+      "chapter": "2",
+      "source": "standalone",
+      "page": 321
     },
     {
       "originalFormula": "p = \\frac{hk}{2\\pi}",
@@ -329,7 +366,10 @@
           "symbol": "π",
           "description": "É a constante matemática pi, que é a razão entre a circunferência de um círculo e seu diâmetro, aproximadamente igual a 3,14159."
         }
-      ]
+      ],
+      "chapter": "2",
+      "source": "standalone",
+      "page": 356
     },
     {
       "originalFormula": "E = \\frac{h^2 k^2}{8 \\pi m^{*}_n}",
@@ -363,7 +403,10 @@
           "symbol": "\\pi",
           "description": "É uma constante matemática que representa a razão entre a circunferência de um círculo e seu diâmetro, aproximadamente igual a 3,14159."
         }
-      ]
+      ],
+      "chapter": "2",
+      "source": "standalone",
+      "page": 392
     },
     {
       "originalFormula": "m^{*}_n \\propto \\left( \\frac{d^2 E}{dk^2} \\right)^{-1}",
@@ -392,7 +435,10 @@
           "symbol": "d^2 E/dk^2",
           "description": "Representa a segunda derivada da energia em relação ao vetor de onda, que indica a curvatura da relação energia-momento. Essa curvatura é fundamental para determinar a massa efetiva do portador."
         }
-      ]
+      ],
+      "chapter": "2",
+      "source": "standalone",
+      "page": 427
     },
     {
       "originalFormula": "a = \\frac{q \\mathcal{E}}{m}",
@@ -422,7 +468,10 @@
           "symbol": "m",
           "description": "Representa a massa da partícula, que é uma medida da quantidade de matéria que a partícula possui e influencia sua resistência à mudança de movimento."
         }
-      ]
+      ],
+      "chapter": "2",
+      "source": "standalone",
+      "page": 463
     }
   ],
   "processedPages": [
@@ -925,5 +974,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.790Z"
+  "lastUpdated": "2026-05-08T18:19:13.904028",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

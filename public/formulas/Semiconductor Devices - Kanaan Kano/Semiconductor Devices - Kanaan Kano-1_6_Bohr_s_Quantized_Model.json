@@ -35,7 +35,10 @@
           "symbol": "\\nu",
           "description": "Frequência do fóton, que está relacionada à energia que ele carrega."
         }
-      ]
+      ],
+      "chapter": "1.6 Bohr's Quantized Model",
+      "source": "standalone",
+      "page": 1
     },
     {
       "originalFormula": "mvr_{n} = \\frac{nh}{2\\pi} \\quad n = 1,2,3,\\ldots",
@@ -72,7 +75,10 @@
           "symbol": "π",
           "description": "representa a constante matemática pi, que é a razão entre a circunferência de um círculo e seu diâmetro."
         }
-      ]
+      ],
+      "chapter": "1.6 Bohr's Quantized Model",
+      "source": "standalone",
+      "page": 72
     },
     {
       "originalFormula": "v = \\left( \\frac{q^{2}}{4\\pi\\epsilon_{0}rm} \\right)^{1/2}",
@@ -110,7 +116,10 @@
           "symbol": "π",
           "description": "Representa a constante matemática pi, que é aproximadamente 3,14159."
         }
-      ]
+      ],
+      "chapter": "1.6 Bohr's Quantized Model",
+      "source": "standalone",
+      "page": 143
     },
     {
       "originalFormula": "r_{n} = \\frac{nh^{2}\\epsilon_{0}}{m\\pi q^{2}}",
@@ -151,7 +160,10 @@
           "symbol": "q",
           "description": "é a carga do elétron, que é uma medida da quantidade de eletricidade que o elétron possui."
         }
-      ]
+      ],
+      "chapter": "1.6 Bohr's Quantized Model",
+      "source": "standalone",
+      "page": 214
     },
     {
       "originalFormula": "v = \\frac{q^{2}}{2\\epsilon_{0}nh}",
@@ -184,7 +196,10 @@
           "symbol": "h",
           "description": "Representa a constante de Planck, que é uma constante fundamental na mecânica quântica relacionada à quantização da energia."
         }
-      ]
+      ],
+      "chapter": "1.6 Bohr's Quantized Model",
+      "source": "standalone",
+      "page": 285
     },
     {
       "originalFormula": "E_{n} = -\\frac{q^{4}m}{8n^{2}h^{2}\\epsilon_{0}^{2}}",
@@ -221,7 +236,10 @@
           "symbol": "\\epsilon_{0}",
           "description": "Representa a permissividade do vácuo, que é uma constante física que descreve como um campo elétrico se comporta no vácuo."
         }
-      ]
+      ],
+      "chapter": "1.6 Bohr's Quantized Model",
+      "source": "standalone",
+      "page": 356
     },
     {
       "originalFormula": "E_{n}(eV) = -\\frac{13.6}{n^{2}}, \\quad n = 1,2,3,\\ldots",
@@ -246,7 +264,10 @@
           "symbol": "n",
           "description": "Um número inteiro positivo que representa o nível quântico do elétron, onde n = 1 é o nível mais baixo de energia."
         }
-      ]
+      ],
+      "chapter": "1.6 Bohr's Quantized Model",
+      "source": "standalone",
+      "page": 427
     }
   ],
   "processedPages": [
@@ -749,5 +770,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.915Z"
+  "lastUpdated": "2026-05-08T18:19:13.226150",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

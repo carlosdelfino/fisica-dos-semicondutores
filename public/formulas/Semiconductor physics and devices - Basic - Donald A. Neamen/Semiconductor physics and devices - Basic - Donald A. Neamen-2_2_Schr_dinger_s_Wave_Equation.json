@@ -29,7 +29,12 @@
               "symbol": "Δx",
               "description": "Representa a variação na posição da partícula, ou seja, a distância que a partícula se desloca em um determinado intervalo de tempo."
             }
-          ]
+          ],
+          "chapter": "2.2 Schrödinger's Wave Equation",
+          "section": "Test Your Understanding",
+          "source": "question",
+          "questionNumber": "TYU 2.1 (a)",
+          "page": 1
         }
       ]
     },
@@ -60,7 +65,12 @@
               "symbol": "m",
               "description": "Representa a massa do objeto, que é a quantidade de matéria que ele contém e influencia sua resistência a mudanças em seu estado de movimento."
             }
-          ]
+          ],
+          "chapter": "2.2 Schrödinger's Wave Equation",
+          "section": "Test Your Understanding",
+          "source": "question",
+          "questionNumber": "TYU 2.1 (b)",
+          "page": 10
         }
       ]
     },
@@ -95,7 +105,12 @@
               "symbol": "π",
               "description": "Representa o número pi, uma constante matemática que relaciona a circunferência de um círculo ao seu diâmetro."
             }
-          ]
+          ],
+          "chapter": "2.2 Schrödinger's Wave Equation",
+          "section": "Test Your Understanding",
+          "source": "question",
+          "questionNumber": "TYU 2.2 (a)",
+          "page": 19
         }
       ]
     },
@@ -130,7 +145,12 @@
               "symbol": "π",
               "description": "É o número pi, uma constante matemática que representa a razão entre a circunferência de um círculo e seu diâmetro, aproximadamente igual a 3,14159."
             }
-          ]
+          ],
+          "chapter": "2.2 Schrödinger's Wave Equation",
+          "section": "Test Your Understanding",
+          "source": "question",
+          "questionNumber": "TYU 2.2 (b)",
+          "page": 29
         }
       ]
     }
@@ -168,7 +188,11 @@
           "symbol": "φ",
           "description": "Representa a parte temporal da função de onda, que descreve como a probabilidade de encontrar a partícula varia com o tempo."
         }
-      ]
+      ],
+      "chapter": "2.2 Schrödinger's Wave Equation",
+      "section": "Test Your Understanding",
+      "source": "standalone",
+      "page": 38
     },
     {
       "originalFormula": "-\\frac{h^2}{2m} \\frac{\\partial^2Ψ(x, t)}{\\partial x^2} + V(x)Ψ(x, t) = i\\hbar \\frac{\\partial Ψ(x, t)}{\\partial t}",
@@ -210,7 +234,11 @@
           "symbol": "t",
           "description": "Representa o tempo, que é uma variável fundamental na evolução dos sistemas físicos."
         }
-      ]
+      ],
+      "chapter": "2.2 Schrödinger's Wave Equation",
+      "section": "Test Your Understanding",
+      "source": "standalone",
+      "page": 47
     }
   ],
   "processedPages": [
@@ -271,5 +299,7 @@
     55,
     56
   ],
-  "lastUpdated": "2026-05-08T19:57:16.486Z"
+  "lastUpdated": "2026-05-08T18:19:12.925347",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
 }

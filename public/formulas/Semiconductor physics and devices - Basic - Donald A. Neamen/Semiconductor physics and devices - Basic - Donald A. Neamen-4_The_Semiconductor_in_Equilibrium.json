@@ -32,7 +32,12 @@
           "description": "Não foi possível gerar descrição automática",
           "concepts": [],
           "symbols": [],
-          "rawText": "{\n  \"originalFormula\": \"p_0 = N_s \\exp \\left( -\\\\frac{E_{F} - E_{v}}{kT} \\\\right)\",\n  \"genericFormula\": \"p_0 = N_s \\exp \\\\left( -\\\\frac{E_{F} - E_{v}}{kT} \\\\right)\",\n  \"description\": \"Esta fórmula representa a densidade de portadores de carga positiva (buracos) em um semicondutor do tipo p em equilíbrio térmico. Ela relaciona a concentração de buracos à densidade de estados disponíveis e à energia de Fermi em relação à energia do valor de energia.\",\n  \"concepts\": [\n    \"Densidade de portadores de carga\",\n    \"Energia de Fermi\",\n    \"Energia do valor\",\n    \"Temperatura\",\n    \"Densidade de estados\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"p_0\",\n      \"description\": \"Representa a densidade de buracos, que são portadores de carga positiva em um semicondutor.\"\n    },\n    {\n      \"symbol\": \"N_s\",\n      \"description\": \"Representa a densidade de estados disponíveis para os buracos no semicondutor.\"\n    },\n    {\n      \"symbol\": \"E_{F}\",\n      \"description\": \"Representa a energia de Fermi, que é o nível de energia mais alto ocupado por elétrons em um semicondutor a temperatura zero.\"\n    },\n    {\n      \"symbol\": \"E_{v}\",\n      \"description\": \"Representa a energia do valor, que é o nível de energia mais alto na banda de valência onde os buracos são encontrados.\"\n    },\n    {\n      \"symbol\": \"k\",\n      \"description\": \"Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas térmicos.\"\n    },\n    {\n      \"symbol\": \"T\",\n      \"description\": \"Representa a temperatura do sistema em Kelvin, que influencia a distribuição de portadores de carga.\"\n    }\n  ]\n}"
+          "rawText": "{\n  \"originalFormula\": \"p_0 = N_s \\exp \\left( -\\\\frac{E_{F} - E_{v}}{kT} \\\\right)\",\n  \"genericFormula\": \"p_0 = N_s \\exp \\\\left( -\\\\frac{E_{F} - E_{v}}{kT} \\\\right)\",\n  \"description\": \"Esta fórmula representa a densidade de portadores de carga positiva (buracos) em um semicondutor do tipo p em equilíbrio térmico. Ela relaciona a concentração de buracos à densidade de estados disponíveis e à energia de Fermi em relação à energia do valor de energia.\",\n  \"concepts\": [\n    \"Densidade de portadores de carga\",\n    \"Energia de Fermi\",\n    \"Energia do valor\",\n    \"Temperatura\",\n    \"Densidade de estados\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"p_0\",\n      \"description\": \"Representa a densidade de buracos, que são portadores de carga positiva em um semicondutor.\"\n    },\n    {\n      \"symbol\": \"N_s\",\n      \"description\": \"Representa a densidade de estados disponíveis para os buracos no semicondutor.\"\n    },\n    {\n      \"symbol\": \"E_{F}\",\n      \"description\": \"Representa a energia de Fermi, que é o nível de energia mais alto ocupado por elétrons em um semicondutor a temperatura zero.\"\n    },\n    {\n      \"symbol\": \"E_{v}\",\n      \"description\": \"Representa a energia do valor, que é o nível de energia mais alto na banda de valência onde os buracos são encontrados.\"\n    },\n    {\n      \"symbol\": \"k\",\n      \"description\": \"Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas térmicos.\"\n    },\n    {\n      \"symbol\": \"T\",\n      \"description\": \"Representa a temperatura do sistema em Kelvin, que influencia a distribuição de portadores de carga.\"\n    }\n  ]\n}",
+          "chapter": "4 The Semiconductor in Equilibrium",
+          "section": "4.0 PREVIEW",
+          "source": "question",
+          "questionNumber": "Example 4.2",
+          "page": 1
         }
       ]
     },
@@ -87,7 +92,12 @@
               "symbol": "N_{a}",
               "description": "Concentração de átomos dopantes do tipo aceitador, que criam lacunas ao remover elétrons do semicondutor."
             }
-          ]
+          ],
+          "chapter": "4 The Semiconductor in Equilibrium",
+          "section": "4.0 PREVIEW",
+          "source": "question",
+          "questionNumber": "Ex 4.9",
+          "page": 5
         }
       ]
     },
@@ -122,7 +132,12 @@
               "symbol": "n_i",
               "description": "Representa a concentração intrínseca de portadores de carga em um semicondutor puro, sem dopagem."
             }
-          ]
+          ],
+          "chapter": "4 The Semiconductor in Equilibrium",
+          "section": "4.0 PREVIEW",
+          "source": "question",
+          "questionNumber": "4.11",
+          "page": 10
         },
         {
           "originalFormula": "n_0 = \\frac{n_i^{2}}{p_0}",
@@ -147,7 +162,12 @@
               "symbol": "p_0",
               "description": "Representa a densidade de portadores de lacunas em um semicondutor em equilíbrio térmico."
             }
-          ]
+          ],
+          "chapter": "4 The Semiconductor in Equilibrium",
+          "section": "4.0 PREVIEW",
+          "source": "question",
+          "questionNumber": "4.11",
+          "page": 15
         }
       ]
     },
@@ -191,7 +211,12 @@
               "symbol": "N_{i}",
               "description": "É a concentração intrínseca de portadores de carga no semicondutor, que representa a quantidade de portadores gerados naturalmente no material sem dopagem."
             }
-          ]
+          ],
+          "chapter": "4 The Semiconductor in Equilibrium",
+          "section": "4.0 PREVIEW",
+          "source": "question",
+          "questionNumber": "Example 4.12",
+          "page": 20
         },
         {
           "originalFormula": "N_{d} - N_{s} = N_{s} \\exp \\left[ -\\frac{(E_{c} - E_{f})}{kT} \\right]",
@@ -229,7 +254,12 @@
               "symbol": "T",
               "description": "Representa a temperatura absoluta do sistema, medida em Kelvin."
             }
-          ]
+          ],
+          "chapter": "4 The Semiconductor in Equilibrium",
+          "section": "4.0 PREVIEW",
+          "source": "question",
+          "questionNumber": "Example 4.12",
+          "page": 25
         }
       ]
     },
@@ -260,7 +290,12 @@
               "symbol": "g",
               "description": "Uma constante que pode representar uma diferença de energia ou um fator que influencia a energia no sistema, dependendo do contexto específico da questão."
             }
-          ]
+          ],
+          "chapter": "4 The Semiconductor in Equilibrium",
+          "section": "4.0 PREVIEW",
+          "source": "question",
+          "questionNumber": "TYU 4.14",
+          "page": 30
         }
       ]
     },
@@ -291,7 +326,12 @@
               "symbol": "g",
               "description": "Representa uma quantidade que pode estar relacionada a uma força ou campo que atua sobre os portadores de carga no material, influenciando a distribuição de energia."
             }
-          ]
+          ],
+          "chapter": "4 The Semiconductor in Equilibrium",
+          "section": "4.0 PREVIEW",
+          "source": "question",
+          "questionNumber": "TYU 4.15",
+          "page": 34
         }
       ]
     },
@@ -461,7 +501,12 @@
               "symbol": "exp",
               "description": "Representa a função exponencial, que é uma função matemática que cresce rapidamente e é usada para modelar muitos fenômenos físicos."
             }
-          ]
+          ],
+          "chapter": "4 The Semiconductor in Equilibrium",
+          "section": "4.0 PREVIEW",
+          "source": "answer",
+          "questionNumber": "1",
+          "page": 39
         }
       ]
     },
@@ -495,7 +540,12 @@
               "symbol": "T_0",
               "description": "É a temperatura de referência, também em Kelvin, que é utilizada para comparar com a temperatura atual."
             }
-          ]
+          ],
+          "chapter": "4 The Semiconductor in Equilibrium",
+          "section": "4.0 PREVIEW",
+          "source": "answer",
+          "questionNumber": "Example 4.2",
+          "page": 44
         },
         {
           "originalFormula": "kT = (0.0259) \\left( \\frac{400}{300} \\right) = 0.03453 \\text{ eV}",
@@ -524,7 +574,12 @@
               "symbol": "T_2",
               "description": "Representa a temperatura final ou outra temperatura do sistema, em Kelvin, que é comparada com a temperatura inicial."
             }
-          ]
+          ],
+          "chapter": "4 The Semiconductor in Equilibrium",
+          "section": "4.0 PREVIEW",
+          "source": "answer",
+          "questionNumber": "Example 4.2",
+          "page": 49
         }
       ]
     },
@@ -564,7 +619,12 @@
               "symbol": "T",
               "description": "Temperatura absoluta do sistema em Kelvin."
             }
-          ]
+          ],
+          "chapter": "4 The Semiconductor in Equilibrium",
+          "section": "4.0 PREVIEW",
+          "source": "answer",
+          "questionNumber": "Ex 4.5",
+          "page": 54
         },
         {
           "originalFormula": "p_0 = (1.04 \\times 10^{19}) \\exp\\left(\\frac{-0.87}{0.025}\\right)",
@@ -593,7 +653,12 @@
               "symbol": "T",
               "description": "A temperatura em Kelvin, que influencia a movimentação e a energia dos portadores de carga no material."
             }
-          ]
+          ],
+          "chapter": "4 The Semiconductor in Equilibrium",
+          "section": "4.0 PREVIEW",
+          "source": "answer",
+          "questionNumber": "Ex 4.5",
+          "page": 59
         }
       ]
     },
@@ -632,7 +697,12 @@
               "symbol": "\\eta_{F}",
               "description": "Representa a energia em relação à energia de Fermi, que é um parâmetro importante para determinar a ocupação dos níveis de energia em um semicondutor."
             }
-          ]
+          ],
+          "chapter": "4 The Semiconductor in Equilibrium",
+          "section": "4.0 PREVIEW",
+          "source": "answer",
+          "questionNumber": "Example 4.6",
+          "page": 63
         }
       ]
     },
@@ -658,7 +728,12 @@
               "symbol": "N",
               "description": "Representa um valor genérico que indica a densidade de lacunas, podendo variar dependendo do material e das condições."
             }
-          ]
+          ],
+          "chapter": "4 The Semiconductor in Equilibrium",
+          "section": "4.0 PREVIEW",
+          "source": "answer",
+          "questionNumber": "4.11",
+          "page": 68
         },
         {
           "originalFormula": "n_0 \\approx 3.21 \\times 10^{4} \\text{ cm}^{-3}",
@@ -679,7 +754,12 @@
               "symbol": "N",
               "description": "Representa uma quantidade genérica de portadores de carga por centímetro cúbico, que pode variar dependendo das condições do semicondutor."
             }
-          ]
+          ],
+          "chapter": "4 The Semiconductor in Equilibrium",
+          "section": "4.0 PREVIEW",
+          "source": "answer",
+          "questionNumber": "4.11",
+          "page": 73
         }
       ]
     },
@@ -713,7 +793,12 @@
               "symbol": "B",
               "description": "Representa a densidade total de portadores de carga no semicondutor após a adição do dopante."
             }
-          ]
+          ],
+          "chapter": "4 The Semiconductor in Equilibrium",
+          "section": "4.0 PREVIEW",
+          "source": "answer",
+          "questionNumber": "Example 4.12",
+          "page": 78
         }
       ]
     }
@@ -763,7 +848,11 @@
           "symbol": "T",
           "description": "Representa a temperatura do sistema, que influencia a distribuição de energia dos portadores de carga."
         }
-      ]
+      ],
+      "chapter": "4 The Semiconductor in Equilibrium",
+      "section": "4.0 PREVIEW",
+      "source": "standalone",
+      "page": 83
     },
     {
       "originalFormula": "n_0 = \\frac{4}{h^3} \\left(2m^*_e kT\\right)^{3/2} \\exp\\left(-\\frac{(E_c - E_f)}{kT}\\right)",
@@ -810,7 +899,11 @@
           "symbol": "exp",
           "description": "Representa a função exponencial, que é uma função matemática que descreve o crescimento ou decaimento de quantidades em muitos fenômenos físicos."
         }
-      ]
+      ],
+      "chapter": "4 The Semiconductor in Equilibrium",
+      "section": "4.0 PREVIEW",
+      "source": "standalone",
+      "page": 88
     },
     {
       "originalFormula": "N_c = \\frac{2}{\\left(2\\pi\\right)^{3/2}} \\left(\\frac{2m^*_e kT}{h^2}\\right)^{3/2}",
@@ -843,7 +936,11 @@
           "symbol": "h",
           "description": "É a constante de Planck, que é uma constante fundamental na mecânica quântica que relaciona a energia de um fóton à frequência da radiação eletromagnética."
         }
-      ]
+      ],
+      "chapter": "4 The Semiconductor in Equilibrium",
+      "section": "4.0 PREVIEW",
+      "source": "standalone",
+      "page": 92
     },
     {
       "originalFormula": "n_0 = N_c \\exp\\left(-\\frac{(E_c - E_f)}{kT}\\right)",
@@ -880,7 +977,11 @@
           "symbol": "T",
           "description": "Representa a temperatura do sistema em Kelvin, que influencia a movimentação dos portadores de carga."
         }
-      ]
+      ],
+      "chapter": "4 The Semiconductor in Equilibrium",
+      "section": "4.0 PREVIEW",
+      "source": "standalone",
+      "page": 97
     },
     {
       "originalFormula": "p_0 = N_s \\exp \\left( -\\frac{E_{F} - E_{v}}{kT} \\right)",
@@ -918,7 +1019,11 @@
           "symbol": "T",
           "description": "Representa a temperatura absoluta do sistema, medida em Kelvin."
         }
-      ]
+      ],
+      "chapter": "4 The Semiconductor in Equilibrium",
+      "section": "4.0 PREVIEW",
+      "source": "standalone",
+      "page": 102
     },
     {
       "originalFormula": "E = -\\frac{ke^2}{r}",
@@ -947,7 +1052,11 @@
           "symbol": "r",
           "description": "É a distância entre as duas cargas elétricas."
         }
-      ]
+      ],
+      "chapter": "4 The Semiconductor in Equilibrium",
+      "section": "4.0 PREVIEW",
+      "source": "standalone",
+      "page": 107
     },
     {
       "originalFormula": "T = \\frac{m^{*} e^{2}}{2(h)(r^{2})(4\\pi)}",
@@ -984,7 +1093,11 @@
           "symbol": "\\pi",
           "description": "Representa a constante matemática pi, que é a razão entre a circunferência de um círculo e seu diâmetro, frequentemente utilizada em fórmulas que envolvem geometria."
         }
-      ]
+      ],
+      "chapter": "4 The Semiconductor in Equilibrium",
+      "section": "4.0 PREVIEW",
+      "source": "standalone",
+      "page": 112
     },
     {
       "originalFormula": "V = -\\frac{e^{2}}{4\\pi \\epsilon_{0} r} - \\frac{m^{*} e^{2}}{(h)(r^{2})(4\\pi)}",
@@ -1026,7 +1139,11 @@
           "symbol": "h",
           "description": "Representa a constante de Planck, que é uma constante fundamental na mecânica quântica relacionada à quantização da energia."
         }
-      ]
+      ],
+      "chapter": "4 The Semiconductor in Equilibrium",
+      "section": "4.0 PREVIEW",
+      "source": "standalone",
+      "page": 117
     },
     {
       "originalFormula": "E = T + V = -\\frac{m^{*} e^{2}}{2(h)(4\\pi)}",
@@ -1069,7 +1186,11 @@
           "symbol": "4\\pi",
           "description": "É um fator que aparece em várias equações relacionadas a esferas e fenômenos de simetria esférica na física."
         }
-      ]
+      ],
+      "chapter": "4 The Semiconductor in Equilibrium",
+      "section": "4.0 PREVIEW",
+      "source": "standalone",
+      "page": 121
     },
     {
       "originalFormula": "n_0 = N_{c} \\exp\\left(\\frac{E_{c} - E_{F}}{kT}\\right)",
@@ -1107,7 +1228,11 @@
           "symbol": "T",
           "description": "Representa a temperatura absoluta em Kelvin, que é uma medida da energia térmica média das partículas em um sistema."
         }
-      ]
+      ],
+      "chapter": "4 The Semiconductor in Equilibrium",
+      "section": "4.0 PREVIEW",
+      "source": "standalone",
+      "page": 126
     },
     {
       "originalFormula": "n_0 = N \\exp\\left(\\frac{E_{c} - E_{F}}{kT}\\right)",
@@ -1145,7 +1270,11 @@
           "symbol": "T",
           "description": "Representa a temperatura absoluta do sistema, medida em Kelvin."
         }
-      ]
+      ],
+      "chapter": "4 The Semiconductor in Equilibrium",
+      "section": "4.0 PREVIEW",
+      "source": "standalone",
+      "page": 131
     },
     {
       "originalFormula": "n_i = N \\exp\\left(\\frac{E_{c} - E_{F}}{kT}\\right)",
@@ -1183,7 +1312,11 @@
           "symbol": "T",
           "description": "Representa a temperatura absoluta do sistema em Kelvin, que influencia a energia térmica dos portadores."
         }
-      ]
+      ],
+      "chapter": "4 The Semiconductor in Equilibrium",
+      "section": "4.0 PREVIEW",
+      "source": "standalone",
+      "page": 136
     },
     {
       "originalFormula": "n_{0} = \\frac{4 \\pi}{h^{3}} \\left( \\frac{2 m^{*} k T}{h^{2}} \\right)^{3/2} \\int_{E_{c}}^{E_{F}} \\frac{(E - E_{v})^{1/2}}{1 + \\exp \\left( \\frac{E - E_{F}}{k T} \\right)} dE",
@@ -1233,7 +1366,11 @@
           "symbol": "E",
           "description": "Variável de integração que representa a energia dos portadores de carga dentro do intervalo considerado."
         }
-      ]
+      ],
+      "chapter": "4 The Semiconductor in Equilibrium",
+      "section": "4.0 PREVIEW",
+      "source": "standalone",
+      "page": 141
     },
     {
       "originalFormula": "F_{1/2}(\\eta_{F}) = \\int_{0}^{\\infty} \\frac{\\eta^{1/2}}{1 + \\exp \\left( \\eta - \\eta_{F} \\right)} d\\eta",
@@ -1241,7 +1378,11 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"F_{1/2}(\\eta_{F}) = \\\\int_{0}^{\\\\infty} \\\\frac{\\\\eta^{1/2}}{1 + \\\\exp \\\\left( \\\\eta - \\\\eta_{F} \\\\right)} d\\\\eta\",\n  \"genericFormula\": \"F_{1/2}(\\\\eta_{F}) = \\\\int_{0}^{\\\\infty} \\\\frac{\\\\eta^{1/2}}{1 + \\\\exp \\\\left( \\\\eta - \\\\eta_{F} \\\\right)} d\\\\eta\",\n  \"description\": \"Esta fórmula representa uma integral que calcula uma função F em termos de uma variável eta, que é uma variável contínua que varia de zero ao infinito. A função F é influenciada por um parâmetro eta_F, que pode ser interpretado como uma energia de Fermi ou um nível de energia de referência em sistemas quânticos.\",\n  \"concepts\": [\n    \"Integração\",\n    \"Distribuição de Fermi-Dirac\",\n    \"Teoria quântica de semicondutores\",\n    \"Propriedades estatísticas de partículas\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"F_{1/2}(\\eta_{F})\",\n      \"description\": \"Representa a função F avaliada em um parâmetro específico eta_F.\"\n    },\n    {\n      \"symbol\": \"eta\",\n      \"description\": \"Uma variável contínua que representa uma energia ou um parâmetro relacionado ao sistema em consideração.\"\n    },\n    {\n      \"symbol\": \"eta_{F}\",\n      \"description\": \"Um parâmetro específico que pode ser interpretado como a energia de Fermi, que é um nível de energia de referência em sistemas quânticos.\"\n    },\n    {\n      \"symbol\": \"exp\",\n      \"description\": \"A função exponencial, que é uma função matemática que cresce rapidamente e é usada para descrever fenômenos que envolvem crescimento exponencial ou decaimento.\"\n    },\n    {\n      \"symbol\": \"d\\\\eta\",\n      \"description\": \"Um elemento infinitesimal de integração que representa uma pequena variação na variável eta.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"F_{1/2}(\\eta_{F}) = \\\\int_{0}^{\\\\infty} \\\\frac{\\\\eta^{1/2}}{1 + \\\\exp \\\\left( \\\\eta - \\\\eta_{F} \\\\right)} d\\\\eta\",\n  \"genericFormula\": \"F_{1/2}(\\\\eta_{F}) = \\\\int_{0}^{\\\\infty} \\\\frac{\\\\eta^{1/2}}{1 + \\\\exp \\\\left( \\\\eta - \\\\eta_{F} \\\\right)} d\\\\eta\",\n  \"description\": \"Esta fórmula representa uma integral que calcula uma função F em termos de uma variável eta, que é uma variável contínua que varia de zero ao infinito. A função F é influenciada por um parâmetro eta_F, que pode ser interpretado como uma energia de Fermi ou um nível de energia de referência em sistemas quânticos.\",\n  \"concepts\": [\n    \"Integração\",\n    \"Distribuição de Fermi-Dirac\",\n    \"Teoria quântica de semicondutores\",\n    \"Propriedades estatísticas de partículas\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"F_{1/2}(\\eta_{F})\",\n      \"description\": \"Representa a função F avaliada em um parâmetro específico eta_F.\"\n    },\n    {\n      \"symbol\": \"eta\",\n      \"description\": \"Uma variável contínua que representa uma energia ou um parâmetro relacionado ao sistema em consideração.\"\n    },\n    {\n      \"symbol\": \"eta_{F}\",\n      \"description\": \"Um parâmetro específico que pode ser interpretado como a energia de Fermi, que é um nível de energia de referência em sistemas quânticos.\"\n    },\n    {\n      \"symbol\": \"exp\",\n      \"description\": \"A função exponencial, que é uma função matemática que cresce rapidamente e é usada para descrever fenômenos que envolvem crescimento exponencial ou decaimento.\"\n    },\n    {\n      \"symbol\": \"d\\\\eta\",\n      \"description\": \"Um elemento infinitesimal de integração que representa uma pequena variação na variável eta.\"\n    }\n  ]\n}",
+      "chapter": "4 The Semiconductor in Equilibrium",
+      "section": "4.0 PREVIEW",
+      "source": "standalone",
+      "page": 146
     },
     {
       "originalFormula": "\\eta' = \\frac{E_{c} - E}{kT} \\quad (4.49a)",
@@ -1274,7 +1415,11 @@
           "symbol": "T",
           "description": "É a temperatura absoluta do sistema, medida em Kelvin, que influencia a distribuição de partículas e a energia térmica no material."
         }
-      ]
+      ],
+      "chapter": "4 The Semiconductor in Equilibrium",
+      "section": "4.0 PREVIEW",
+      "source": "standalone",
+      "page": 150
     },
     {
       "originalFormula": "\\eta_f = \\frac{E_{f} - E_{v}}{kT} \\quad (4.49b)",
@@ -1308,7 +1453,11 @@
           "symbol": "T",
           "description": "Representa a temperatura absoluta do sistema, medida em Kelvin."
         }
-      ]
+      ],
+      "chapter": "4 The Semiconductor in Equilibrium",
+      "section": "4.0 PREVIEW",
+      "source": "standalone",
+      "page": 155
     },
     {
       "originalFormula": "E_{c} - E_{f} = kT \\ln \\left( \\frac{N_{d}}{N_{i}} \\right)",
@@ -1347,7 +1496,11 @@
           "symbol": "N_{i}",
           "description": "Representa a concentração de portadores intrínsecos em um semicondutor, ou seja, a quantidade de elétrons e lacunas presentes em um material não dopado."
         }
-      ]
+      ],
+      "chapter": "4 The Semiconductor in Equilibrium",
+      "section": "4.0 PREVIEW",
+      "source": "standalone",
+      "page": 160
     },
     {
       "originalFormula": "N_{d} - N_{s} = N_{s} \\exp \\left[ -\\frac{(E_{c} - E_{f})}{kT} \\right]",
@@ -1385,7 +1538,11 @@
           "symbol": "T",
           "description": "Temperatura absoluta em Kelvin, que é uma medida da energia térmica média das partículas em um sistema."
         }
-      ]
+      ],
+      "chapter": "4 The Semiconductor in Equilibrium",
+      "section": "4.0 PREVIEW",
+      "source": "standalone",
+      "page": 165
     },
     {
       "originalFormula": "E_F = E_c - kT \\ln \\left( \\frac{N_c}{n} \\right)",
@@ -1423,7 +1580,11 @@
           "symbol": "n",
           "description": "Representa a densidade de elétrons livres no semicondutor, que indica quantos elétrons estão efetivamente disponíveis para condução."
         }
-      ]
+      ],
+      "chapter": "4 The Semiconductor in Equilibrium",
+      "section": "4.0 PREVIEW",
+      "source": "standalone",
+      "page": 170
     },
     {
       "originalFormula": "E_F = E_v + kT \\ln \\left( \\frac{N_v}{p} \\right)",
@@ -1461,7 +1622,11 @@
           "symbol": "p",
           "description": "Representa a concentração de portadores de carga positiva (lacunas) no semicondutor, que é uma medida de quantas lacunas estão disponíveis para conduzir corrente elétrica."
         }
-      ]
+      ],
+      "chapter": "4 The Semiconductor in Equilibrium",
+      "section": "4.0 PREVIEW",
+      "source": "standalone",
+      "page": 175
     }
   ],
   "processedPages": [
@@ -1645,5 +1810,7 @@
     178,
     179
   ],
-  "lastUpdated": "2026-05-08T20:51:19.721Z"
+  "lastUpdated": "2026-05-08T18:19:12.829220",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
 }

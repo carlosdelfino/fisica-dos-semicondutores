@@ -38,7 +38,10 @@
           "symbol": "\\pi",
           "description": "Representa a constante matemática pi, que é a razão entre a circunferência de um círculo e seu diâmetro, e aparece frequentemente em fórmulas relacionadas a ondas e ciclos."
         }
-      ]
+      ],
+      "chapter": "3 INTRINSIC AND EXTRINSIC SEMICONDUCTORS",
+      "source": "standalone",
+      "page": 1
     }
   ],
   "processedPages": [
@@ -541,5 +544,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.942Z"
+  "lastUpdated": "2026-05-08T18:19:13.919690",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

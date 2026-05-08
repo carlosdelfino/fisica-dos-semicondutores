@@ -55,7 +55,10 @@
           "symbol": "W_B",
           "description": "Largura da base do transistor."
         }
-      ]
+      ],
+      "chapter": "8.8 Graphical Characteristics and Modes of Operation",
+      "source": "standalone",
+      "page": 1
     },
     {
       "originalFormula": "n_E \\gg n_C",
@@ -75,7 +78,10 @@
           "symbol": "n_C",
           "description": "Representa a densidade de portadores de carga positivos, que são as lacunas deixadas pelos elétrons em um semicondutor."
         }
-      ]
+      ],
+      "chapter": "8.8 Graphical Characteristics and Modes of Operation",
+      "source": "standalone",
+      "page": 125
     },
     {
       "originalFormula": "A_C \\gg A_E",
@@ -95,7 +101,10 @@
           "symbol": "A_E",
           "description": "Representa a área de outro componente, que é comparado ao primeiro e é considerado menor."
         }
-      ]
+      ],
+      "chapter": "8.8 Graphical Characteristics and Modes of Operation",
+      "source": "standalone",
+      "page": 250
     },
     {
       "originalFormula": "\\frac{I_C}{I_B} \\text{ is slightly greater than unity}",
@@ -115,7 +124,10 @@
           "symbol": "I_B",
           "description": "Representa a corrente que flui para a base do transistor, que é a corrente de entrada necessária para controlar a operação do transistor."
         }
-      ]
+      ],
+      "chapter": "8.8 Graphical Characteristics and Modes of Operation",
+      "source": "standalone",
+      "page": 374
     }
   ],
   "processedPages": [
@@ -618,5 +630,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.072Z"
+  "lastUpdated": "2026-05-08T18:19:13.945912",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

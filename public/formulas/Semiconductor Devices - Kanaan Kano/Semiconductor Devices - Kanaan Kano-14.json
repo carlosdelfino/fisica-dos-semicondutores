@@ -28,7 +28,11 @@
               "symbol": "y",
               "description": "Representa um segundo valor que é somado ao primeiro, podendo ser uma constante ou outra medida relevante para o cálculo."
             }
-          ]
+          ],
+          "chapter": "14",
+          "source": "question",
+          "questionNumber": "EXAMPLE 14.1",
+          "page": 1
         },
         {
           "originalFormula": "P_a = 20 \\times (1 - R_y)(1 - 0.223) = 10.74mW",
@@ -57,7 +61,11 @@
               "symbol": "k",
               "description": "Representa um fator de atenuação que pode ser associado a perdas adicionais, como absorção ou dispersão."
             }
-          ]
+          ],
+          "chapter": "14",
+          "source": "question",
+          "questionNumber": "EXAMPLE 14.1",
+          "page": 28
         }
       ]
     },
@@ -87,7 +95,11 @@
               "symbol": "I",
               "description": "Representa a corrente elétrica, que é o fluxo de carga elétrica que passa por um ponto em um circuito em um determinado intervalo de tempo."
             }
-          ]
+          ],
+          "chapter": "14",
+          "source": "question",
+          "questionNumber": "1",
+          "page": 56
         },
         {
           "originalFormula": "\\frac{dP}{dI} = V + I \\frac{dV}{dI} = 0",
@@ -121,7 +133,11 @@
               "symbol": "dV",
               "description": "Representa a variação da tensão elétrica."
             }
-          ]
+          ],
+          "chapter": "14",
+          "source": "question",
+          "questionNumber": "1",
+          "page": 84
         },
         {
           "originalFormula": "\\frac{dV}{dI} = -\\frac{V}{I} = -R_L",
@@ -154,7 +170,11 @@
               "symbol": "R_L",
               "description": "Representa a resistência elétrica do circuito em ohms."
             }
-          ]
+          ],
+          "chapter": "14",
+          "source": "question",
+          "questionNumber": "1",
+          "page": 111
         }
       ]
     },
@@ -276,7 +296,11 @@
               "symbol": "y",
               "description": "Outro valor que é somado ao valor x na fórmula, representando uma segunda quantidade que influencia o resultado."
             }
-          ]
+          ],
+          "chapter": "14",
+          "source": "answer",
+          "questionNumber": "EXAMPLE 14.1",
+          "page": 139
         },
         {
           "originalFormula": "P_a = 20 \\times (1 - R_y)(1 - 0.223)",
@@ -304,7 +328,11 @@
               "symbol": "k",
               "description": "Representa um fator de correção específico que influencia a potência de saída."
             }
-          ]
+          ],
+          "chapter": "14",
+          "source": "answer",
+          "questionNumber": "EXAMPLE 14.1",
+          "page": 167
         }
       ]
     },
@@ -343,7 +371,11 @@
               "symbol": "I_{sc}",
               "description": "Representa a corrente de curto-circuito, que é a corrente máxima que flui quando os terminais da célula solar estão em curto-circuito."
             }
-          ]
+          ],
+          "chapter": "14",
+          "source": "answer",
+          "questionNumber": "1",
+          "page": 194
         },
         {
           "originalFormula": "\\eta_p = \\frac{V_m I_m}{P_{ph}} = \\frac{(V_{oc} I_{sc})FF}{P_{ph}}",
@@ -386,7 +418,11 @@
               "symbol": "FF",
               "description": "Representa o fator de forma, que é uma medida da eficiência da conversão da potência máxima em relação à potência ideal, considerando perdas no sistema."
             }
-          ]
+          ],
+          "chapter": "14",
+          "source": "answer",
+          "questionNumber": "1",
+          "page": 222
         }
       ]
     },
@@ -437,7 +473,10 @@
           "symbol": "d",
           "description": "Representa a espessura do semicondutor, que é a dimensão perpendicular à corrente."
         }
-      ]
+      ],
+      "chapter": "14",
+      "source": "standalone",
+      "page": 250
     },
     {
       "originalFormula": "I_{ph} = \\left( q \\mu_{n} \\tau \\frac{V}{\\ell^{2}} \\right) \\left( \\frac{n_{ph}}{h \\nu} \\right)",
@@ -487,7 +526,10 @@
           "symbol": "\\nu",
           "description": "Representa a frequência da luz incidente, que está relacionada à energia dos fótons."
         }
-      ]
+      ],
+      "chapter": "14",
+      "source": "standalone",
+      "page": 277
     },
     {
       "originalFormula": "\\lambda < \\lambda_{max}",
@@ -507,7 +549,10 @@
           "symbol": "λ_{max}",
           "description": "Representa o comprimento de onda máximo permitido em um determinado contexto, que pode estar relacionado a limites de absorção ou emissão de um material."
         }
-      ]
+      ],
+      "chapter": "14",
+      "source": "standalone",
+      "page": 305
     },
     {
       "originalFormula": "P(x) = P(0)e^{\\alpha x}",
@@ -540,7 +585,10 @@
           "symbol": "x",
           "description": "Representa a variável independente, que pode ser o tempo, a distância ou outra medida que afeta a probabilidade."
         }
-      ]
+      ],
+      "chapter": "14",
+      "source": "standalone",
+      "page": 333
     },
     {
       "originalFormula": "P_d = P_0(1 - R_y)e^{-\\alpha w_p}",
@@ -577,7 +625,10 @@
           "symbol": "w_p",
           "description": "É a largura do meio ou a distância que o sinal percorre dentro do material."
         }
-      ]
+      ],
+      "chapter": "14",
+      "source": "standalone",
+      "page": 360
     },
     {
       "originalFormula": "\\eta_0 = (1 - R_y)e^{-\\alpha w_p}(1 - e^{-\\alpha W})",
@@ -611,7 +662,10 @@
           "symbol": "W",
           "description": "Representa uma espessura adicional ou uma distância que pode estar relacionada a outra camada ou parte do material que está sendo considerada na análise."
         }
-      ]
+      ],
+      "chapter": "14",
+      "source": "standalone",
+      "page": 388
     },
     {
       "originalFormula": "FF = \\frac{V_m I_m}{V_{oc} I_{sc}}",
@@ -644,7 +698,10 @@
           "symbol": "I_{sc}",
           "description": "Representa a corrente de curto-circuito, que é a corrente máxima que a célula pode fornecer quando os terminais estão em curto-circuito."
         }
-      ]
+      ],
+      "chapter": "14",
+      "source": "standalone",
+      "page": 416
     },
     {
       "originalFormula": "\\eta_p = \\frac{V_m I_m}{P_{ph}} = \\frac{(V_{oc} I_{sc})FF}{P_{ph}}",
@@ -685,7 +742,10 @@
           "symbol": "FF",
           "description": "Representa o fator de preenchimento, que é uma medida da qualidade da curva de corrente-tensão do dispositivo fotovoltaico."
         }
-      ]
+      ],
+      "chapter": "14",
+      "source": "standalone",
+      "page": 443
     },
     {
       "originalFormula": "E = 1.12 \\, \\text{eV}",
@@ -693,7 +753,10 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"E = 1.12 \\, \\\\text{eV}\",\n  \"genericFormula\": \"E = E_0\",\n  \"description\": \"Esta fórmula representa a energia de bandgap de um material semicondutor, que é a quantidade mínima de energia necessária para que um elétron possa se mover da banda de valência para a banda de condução.\",\n  \"concepts\": [\n    \"Energia de bandgap\",\n    \"Semicondutores\",\n    \"Transição eletrônica\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"E\",\n      \"description\": \"Representa a energia, que é a capacidade de realizar trabalho ou causar mudanças em um sistema.\"\n    },\n    {\n      \"symbol\": \"eV\",\n      \"description\": \"Representa electronvolt, uma unidade de medida de energia que é comumente usada em física de partículas e semicondutores.\"\n    },\n    {\n      \"symbol\": \"E_0\",\n      \"description\": \"Representa a energia de bandgap em uma forma genérica, que é uma constante específica para cada material semicondutor.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"E = 1.12 \\, \\\\text{eV}\",\n  \"genericFormula\": \"E = E_0\",\n  \"description\": \"Esta fórmula representa a energia de bandgap de um material semicondutor, que é a quantidade mínima de energia necessária para que um elétron possa se mover da banda de valência para a banda de condução.\",\n  \"concepts\": [\n    \"Energia de bandgap\",\n    \"Semicondutores\",\n    \"Transição eletrônica\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"E\",\n      \"description\": \"Representa a energia, que é a capacidade de realizar trabalho ou causar mudanças em um sistema.\"\n    },\n    {\n      \"symbol\": \"eV\",\n      \"description\": \"Representa electronvolt, uma unidade de medida de energia que é comumente usada em física de partículas e semicondutores.\"\n    },\n    {\n      \"symbol\": \"E_0\",\n      \"description\": \"Representa a energia de bandgap em uma forma genérica, que é uma constante específica para cada material semicondutor.\"\n    }\n  ]\n}",
+      "chapter": "14",
+      "source": "standalone",
+      "page": 471
     }
   ],
   "processedPages": [
@@ -1196,5 +1259,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.902Z"
+  "lastUpdated": "2026-05-08T18:19:13.846410",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

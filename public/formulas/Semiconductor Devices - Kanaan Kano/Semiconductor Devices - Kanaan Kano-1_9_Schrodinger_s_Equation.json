@@ -173,7 +173,11 @@
               "symbol": "x",
               "description": "A variável independente que representa a posição no espaço onde a função de onda está sendo avaliada."
             }
-          ]
+          ],
+          "chapter": "1.9 Schrodinger's Equation",
+          "source": "answer",
+          "questionNumber": "a",
+          "page": 1
         }
       ]
     }
@@ -679,5 +683,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.925Z"
+  "lastUpdated": "2026-05-08T18:19:13.681261",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

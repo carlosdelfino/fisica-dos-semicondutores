@@ -49,7 +49,11 @@
               "symbol": "L_{p}",
               "description": "Representa o comprimento de difusão dos portadores de carga, que indica a distância em que a densidade de portadores decai exponencialmente."
             }
-          ]
+          ],
+          "chapter": "7.3",
+          "source": "question",
+          "questionNumber": "1",
+          "page": 1
         }
       ]
     },
@@ -101,7 +105,11 @@
               "symbol": "T",
               "description": "Representa a temperatura absoluta do sistema, medida em Kelvin."
             }
-          ]
+          ],
+          "chapter": "7.3",
+          "source": "question",
+          "questionNumber": "2",
+          "page": 84
         }
       ]
     },
@@ -166,7 +174,11 @@
               "symbol": "\\exp",
               "description": "Função exponencial, que descreve como a capacitância varia com a tensão aplicada."
             }
-          ]
+          ],
+          "chapter": "7.3",
+          "source": "question",
+          "questionNumber": "3",
+          "page": 167
         }
       ]
     }
@@ -219,7 +231,11 @@
               "symbol": "L_{p}",
               "description": "Representa o comprimento de difusão dos portadores de carga, que indica até que ponto os portadores se espalham ao longo do material."
             }
-          ]
+          ],
+          "chapter": "7.3",
+          "source": "answer",
+          "questionNumber": "1",
+          "page": 250
         }
       ]
     },
@@ -271,7 +287,11 @@
               "symbol": "T",
               "description": "Representa a temperatura absoluta em Kelvin."
             }
-          ]
+          ],
+          "chapter": "7.3",
+          "source": "answer",
+          "questionNumber": "2",
+          "page": 333
         }
       ]
     },
@@ -336,7 +356,11 @@
               "symbol": "exp",
               "description": "Função exponencial, que descreve o crescimento ou decaimento de quantidades em relação a uma variável, neste caso, a tensão aplicada."
             }
-          ]
+          ],
+          "chapter": "7.3",
+          "source": "answer",
+          "questionNumber": "3",
+          "page": 416
         }
       ]
     }
@@ -842,5 +866,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.049Z"
+  "lastUpdated": "2026-05-08T18:19:13.232594",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

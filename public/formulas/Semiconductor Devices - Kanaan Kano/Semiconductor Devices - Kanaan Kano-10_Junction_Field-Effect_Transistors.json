@@ -87,7 +87,11 @@
               "symbol": "V_{0}",
               "description": "Representa a tensão de built-in de forma genérica, sem valores numéricos específicos."
             }
-          ]
+          ],
+          "chapter": "10 Junction Field-Effect Transistors",
+          "source": "answer",
+          "questionNumber": "E10-1",
+          "page": 1
         },
         {
           "originalFormula": "V_{P} = 1.72",
@@ -107,7 +111,11 @@
               "symbol": "k",
               "description": "Representa um valor genérico que pode ser substituído por qualquer número que indique a tensão de pico em um contexto específico."
             }
-          ]
+          ],
+          "chapter": "10 Junction Field-Effect Transistors",
+          "source": "answer",
+          "questionNumber": "E10-1",
+          "page": 27
         }
       ]
     },
@@ -134,7 +142,11 @@
               "symbol": "I_{D_{0}}",
               "description": "Representa a corrente de drenagem em uma condição genérica, sem valores numéricos específicos."
             }
-          ]
+          ],
+          "chapter": "10 Junction Field-Effect Transistors",
+          "source": "answer",
+          "questionNumber": "E10-2",
+          "page": 53
         },
         {
           "originalFormula": "V_{G} = -1.0",
@@ -154,7 +166,11 @@
               "symbol": "C",
               "description": "Um valor genérico que representa a tensão, que pode ser positiva ou negativa, dependendo do contexto do circuito."
             }
-          ]
+          ],
+          "chapter": "10 Junction Field-Effect Transistors",
+          "source": "answer",
+          "questionNumber": "E10-2",
+          "page": 79
         }
       ]
     },
@@ -181,7 +197,11 @@
               "symbol": "G_0",
               "description": "Representa a condutância de referência, um valor padrão que serve como base para comparação com a condutância transcondutiva do dispositivo em questão."
             }
-          ]
+          ],
+          "chapter": "10 Junction Field-Effect Transistors",
+          "source": "answer",
+          "questionNumber": "E10-4 a",
+          "page": 105
         }
       ]
     },
@@ -212,7 +232,11 @@
               "symbol": "V_p",
               "description": "Representa a tensão de pico, que é a máxima tensão aplicada ao dispositivo durante seu funcionamento."
             }
-          ]
+          ],
+          "chapter": "10 Junction Field-Effect Transistors",
+          "source": "answer",
+          "questionNumber": "E10-4 b",
+          "page": 132
         },
         {
           "originalFormula": "g_m/I = 38.6",
@@ -236,7 +260,11 @@
               "symbol": "k",
               "description": "Uma constante que representa a razão entre a condutância e a corrente, que pode ser ajustada dependendo do material e das condições experimentais."
             }
-          ]
+          ],
+          "chapter": "10 Junction Field-Effect Transistors",
+          "source": "answer",
+          "questionNumber": "E10-4 b",
+          "page": 158
         }
       ]
     },
@@ -275,7 +303,11 @@
               "symbol": "a",
               "description": "Representa a distância entre as placas condutoras ou entre as regiões de carga na estrutura semicondutora."
             }
-          ]
+          ],
+          "chapter": "10 Junction Field-Effect Transistors",
+          "source": "answer",
+          "questionNumber": "Example 10.3 a",
+          "page": 184
         }
       ]
     },
@@ -323,7 +355,11 @@
               "symbol": "L",
               "description": "Representa uma distância característica no sistema, que pode estar relacionada à separação entre as cargas ou ao comprimento do caminho que os portadores de carga percorrem."
             }
-          ]
+          ],
+          "chapter": "10 Junction Field-Effect Transistors",
+          "source": "answer",
+          "questionNumber": "Example 10.3 b",
+          "page": 210
         }
       ]
     }
@@ -347,7 +383,10 @@
           "symbol": "a",
           "description": "a representa uma variável independente que, ao ser multiplicada por dois, determina o valor de Z."
         }
-      ]
+      ],
+      "chapter": "10 Junction Field-Effect Transistors",
+      "source": "standalone",
+      "page": 236
     },
     {
       "originalFormula": "L",
@@ -363,7 +402,10 @@
           "symbol": "L",
           "description": "A letra L pode representar comprimento em metros ou indutância em henries, dependendo do contexto em que está sendo utilizada."
         }
-      ]
+      ],
+      "chapter": "10 Junction Field-Effect Transistors",
+      "source": "standalone",
+      "page": 263
     },
     {
       "originalFormula": "g_{d} = \\frac{\\partial I_{D}}{\\partial V_{G}} \\bigg|_{V_{G} = constant}",
@@ -392,7 +434,10 @@
           "symbol": "\\partial",
           "description": "Indica que estamos lidando com uma derivada parcial, que é uma medida de como uma quantidade muda em relação a outra, mantendo outras variáveis constantes."
         }
-      ]
+      ],
+      "chapter": "10 Junction Field-Effect Transistors",
+      "source": "standalone",
+      "page": 289
     },
     {
       "originalFormula": "g_{d} = G_{0} \\left\\{ 1 - \\left[ \\frac{(V_{bi} + V_{D} - V_{G})}{V_{P}} \\right]^{1/2} \\right\\}",
@@ -429,7 +474,10 @@
           "symbol": "V_{P}",
           "description": "Representa a tensão de polarização, que é a tensão necessária para polarizar o dispositivo e permitir a condução de corrente."
         }
-      ]
+      ],
+      "chapter": "10 Junction Field-Effect Transistors",
+      "source": "standalone",
+      "page": 315
     },
     {
       "originalFormula": "i_d = I_D + i_d = I_D (V_D + v_{ds} V_G + v_{gs})",
@@ -466,7 +514,10 @@
           "symbol": "v_{gs}",
           "description": "É a tensão entre a porta e a fonte, que também influencia a corrente que flui através do transistor."
         }
-      ]
+      ],
+      "chapter": "10 Junction Field-Effect Transistors",
+      "source": "standalone",
+      "page": 341
     },
     {
       "originalFormula": "L_d = \\frac{\\partial I_D}{\\partial V_G} v_{gs} + \\frac{\\partial I_D}{\\partial V_D} v_{ds} + \\text{higher order terms}",
@@ -508,7 +559,10 @@
           "symbol": "higher order terms",
           "description": "Refere-se a termos adicionais que podem ser considerados em uma análise mais detalhada, mas que são negligenciados em uma aproximação linear."
         }
-      ]
+      ],
+      "chapter": "10 Junction Field-Effect Transistors",
+      "source": "standalone",
+      "page": 367
     },
     {
       "originalFormula": "i_d = g_m v_{gs} + g_d v_{ds}",
@@ -541,7 +595,10 @@
           "symbol": "v_{ds}",
           "description": "Representa a tensão entre o dreno e a fonte do transistor, que influencia a corrente que flui através do dispositivo."
         }
-      ]
+      ],
+      "chapter": "10 Junction Field-Effect Transistors",
+      "source": "standalone",
+      "page": 394
     },
     {
       "originalFormula": "V_{bi} = 0.894V",
@@ -563,7 +620,10 @@
           "symbol": "V",
           "description": "Representa uma tensão genérica, que pode ser utilizada para indicar qualquer valor de tensão em um contexto elétrico."
         }
-      ]
+      ],
+      "chapter": "10 Junction Field-Effect Transistors",
+      "source": "standalone",
+      "page": 420
     },
     {
       "originalFormula": "W = 2\\mu m",
@@ -587,7 +647,10 @@
           "symbol": "m",
           "description": "Representa a unidade de medida de comprimento no Sistema Internacional, que é o metro. Neste contexto, pode estar relacionado ao tamanho da estrutura em micrômetros."
         }
-      ]
+      ],
+      "chapter": "10 Junction Field-Effect Transistors",
+      "source": "standalone",
+      "page": 446
     },
     {
       "originalFormula": "W_B = 2.32 \\mu m",
@@ -607,7 +670,10 @@
           "symbol": "\\mu m",
           "description": "Uma unidade de medida que representa micrômetro, que é um milionésimo de metro, frequentemente usado para medir dimensões em escalas muito pequenas, como em eletrônica e semicondutores."
         }
-      ]
+      ],
+      "chapter": "10 Junction Field-Effect Transistors",
+      "source": "standalone",
+      "page": 472
     }
   ],
   "processedPages": [
@@ -1110,5 +1176,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.102Z"
+  "lastUpdated": "2026-05-08T18:19:13.960893",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

@@ -50,7 +50,11 @@
               "symbol": "V_{T}",
               "description": "Representa a tensão de limiar, que é a tensão mínima necessária para que o transistor comece a conduzir corrente."
             }
-          ]
+          ],
+          "chapter": "11.6 The MESFET",
+          "source": "question",
+          "questionNumber": "Example 11.4",
+          "page": 1
         }
       ]
     }
@@ -105,7 +109,11 @@
               "symbol": "V_{T}",
               "description": "Representa a tensão de limiar, que é a tensão mínima necessária na porta para que o transistor comece a conduzir corrente."
             }
-          ]
+          ],
+          "chapter": "11.6 The MESFET",
+          "source": "answer",
+          "questionNumber": "Example 11.4",
+          "page": 84
         }
       ]
     }
@@ -142,7 +150,10 @@
           "symbol": "e",
           "description": "Representa a constante de permissividade do vácuo, que é uma medida da capacidade de um material de permitir a passagem de um campo elétrico."
         }
-      ]
+      ],
+      "chapter": "11.6 The MESFET",
+      "source": "standalone",
+      "page": 167
     },
     {
       "originalFormula": "V_{p} = V_{bi} - V_{T} \\quad (11.26)",
@@ -167,7 +178,10 @@
           "symbol": "V_{T}",
           "description": "Representa a tensão térmica, que é uma medida da energia térmica disponível por portador de carga em um semicondutor, geralmente relacionada à temperatura do sistema."
         }
-      ]
+      ],
+      "chapter": "11.6 The MESFET",
+      "source": "standalone",
+      "page": 250
     },
     {
       "originalFormula": "V_{T} = V_{bi} - V_{p}",
@@ -191,7 +205,10 @@
           "symbol": "V_{p}",
           "description": "Representa a tensão de polarização aplicada ao dispositivo, que pode ser positiva ou negativa dependendo do tipo de polarização."
         }
-      ]
+      ],
+      "chapter": "11.6 The MESFET",
+      "source": "standalone",
+      "page": 333
     },
     {
       "originalFormula": "I_{SAT} \\approx \\left( \\mu_{n} \\epsilon Z / (2 a L) \\right) (V_{G} - V_{T})^2",
@@ -238,7 +255,10 @@
           "symbol": "V_{T}",
           "description": "Representa a tensão de limiar, que é a tensão mínima necessária para criar um canal condutor entre o source e o drain no transistor."
         }
-      ]
+      ],
+      "chapter": "11.6 The MESFET",
+      "source": "standalone",
+      "page": 416
     }
   ],
   "processedPages": [
@@ -741,5 +761,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.149Z"
+  "lastUpdated": "2026-05-08T18:19:13.354492",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

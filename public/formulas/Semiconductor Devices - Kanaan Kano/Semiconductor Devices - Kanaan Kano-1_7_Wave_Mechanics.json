@@ -55,7 +55,11 @@
               "symbol": "E_0",
               "description": "Representa a energia de referência, que é geralmente considerada como zero em relação aos níveis de energia do sistema."
             }
-          ]
+          ],
+          "chapter": "1.7 Wave Mechanics",
+          "source": "answer",
+          "questionNumber": "E1-1a",
+          "page": 1
         },
         {
           "originalFormula": "E = 0.02 \\times 10^{-19} \\text{ J}",
@@ -79,7 +83,11 @@
               "symbol": "n",
               "description": "Um número inteiro que indica a potência de dez, que neste caso é negativa, sugerindo que a energia é uma fração muito pequena."
             }
-          ]
+          ],
+          "chapter": "1.7 Wave Mechanics",
+          "source": "answer",
+          "questionNumber": "E1-1a",
+          "page": 167
         }
       ]
     },
@@ -101,7 +109,11 @@
               "symbol": "λ",
               "description": "representa o comprimento de onda, que é a distância entre dois pontos equivalentes em uma onda, como cristas ou vales."
             }
-          ]
+          ],
+          "chapter": "1.7 Wave Mechanics",
+          "source": "answer",
+          "questionNumber": "E1-2b",
+          "page": 333
         }
       ]
     }
@@ -607,5 +619,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.916Z"
+  "lastUpdated": "2026-05-08T18:19:13.907739",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

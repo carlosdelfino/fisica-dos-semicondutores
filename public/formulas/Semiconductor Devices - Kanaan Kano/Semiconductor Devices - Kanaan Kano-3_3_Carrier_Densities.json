@@ -80,7 +80,10 @@
           "symbol": "E_v",
           "description": "Representa a energia de valência, que é o nível de energia máximo ocupado por elétrons em uma banda de valência em um semicondutor."
         }
-      ]
+      ],
+      "chapter": "3.3 Carrier Densities",
+      "source": "standalone",
+      "page": 1
     },
     {
       "originalFormula": "n = N_c \\exp\\left(-\\frac{E_c - E_F}{kT}\\right)",
@@ -118,7 +121,10 @@
           "symbol": "T",
           "description": "Representa a temperatura absoluta do sistema em Kelvin, que influencia a distribuição de portadores de carga."
         }
-      ]
+      ],
+      "chapter": "3.3 Carrier Densities",
+      "source": "standalone",
+      "page": 56
     },
     {
       "originalFormula": "p = N_v \\exp\\left(-\\frac{E_F - E_v}{kT}\\right)",
@@ -156,7 +162,10 @@
           "symbol": "T",
           "description": "Representa a temperatura absoluta do sistema, medida em Kelvin."
         }
-      ]
+      ],
+      "chapter": "3.3 Carrier Densities",
+      "source": "standalone",
+      "page": 111
     },
     {
       "originalFormula": "N_c = 2 \\left( \\frac{2 \\pi m^* n k T}{h^2} \\right)^{3/2}",
@@ -194,7 +203,10 @@
           "symbol": "h",
           "description": "Representa a constante de Planck, que é uma constante fundamental na mecânica quântica e relaciona a energia de um fóton à frequência da radiação eletromagnética."
         }
-      ]
+      ],
+      "chapter": "3.3 Carrier Densities",
+      "source": "standalone",
+      "page": 167
     },
     {
       "originalFormula": "N_v = 2 \\left( \\frac{2 \\pi m^* p T}{h^2} \\right)^{3/2}",
@@ -228,7 +240,10 @@
           "symbol": "h",
           "description": "Representa a constante de Planck, que é uma constante fundamental na mecânica quântica e está relacionada à quantização de energia."
         }
-      ]
+      ],
+      "chapter": "3.3 Carrier Densities",
+      "source": "standalone",
+      "page": 222
     },
     {
       "originalFormula": "n p = N_c N_v \\exp\\left(-\\frac{E_c - E_v}{k T}\\right)",
@@ -274,7 +289,10 @@
           "symbol": "T",
           "description": "Representa a temperatura em Kelvin, que afeta a energia térmica dos portadores de carga."
         }
-      ]
+      ],
+      "chapter": "3.3 Carrier Densities",
+      "source": "standalone",
+      "page": 277
     },
     {
       "originalFormula": "E_{i} = \\frac{E_{C} + E_{V}}{2} + \\frac{kT}{2} \\ln \\left( \\frac{N_{v}}{N_{c}} \\right)",
@@ -315,7 +333,10 @@
           "symbol": "N_{c}",
           "description": "Representa a densidade de estados na banda de condução, ou seja, quantos estados de energia estão disponíveis para os elétrons na banda de condução."
         }
-      ]
+      ],
+      "chapter": "3.3 Carrier Densities",
+      "source": "standalone",
+      "page": 333
     },
     {
       "originalFormula": "E_{i} = \\frac{(E_{C} + E_{V})}{2} - 0.0073 \\text{ eV}",
@@ -345,7 +366,10 @@
           "symbol": "E_{0}",
           "description": "Representa um valor constante que é subtraído da média das energias das bandas, geralmente relacionado a correções específicas do material ou condições experimentais."
         }
-      ]
+      ],
+      "chapter": "3.3 Carrier Densities",
+      "source": "standalone",
+      "page": 388
     },
     {
       "originalFormula": "E_{i} = \\frac{(E_{C} + E_{V})}{2} + 0.0403 \\text{ eV}",
@@ -375,7 +399,10 @@
           "symbol": "E_{0}",
           "description": "Representa uma constante que pode ser adicionada para ajustar a energia intrínseca, frequentemente relacionada a fatores como temperatura ou características específicas do material."
         }
-      ]
+      ],
+      "chapter": "3.3 Carrier Densities",
+      "source": "standalone",
+      "page": 443
     }
   ],
   "processedPages": [
@@ -878,5 +905,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.954Z"
+  "lastUpdated": "2026-05-08T18:19:13.252985",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

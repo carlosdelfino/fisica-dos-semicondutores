@@ -56,7 +56,12 @@
               "symbol": "k_{0}",
               "description": "Representa um valor de referência do vetor de onda, que pode ser considerado como o vetor de onda em um estado de equilíbrio ou em condições específicas."
             }
-          ]
+          ],
+          "chapter": "3 Introduction to the Quantum Theory of Solids",
+          "section": "TEST YOUR UNDERSTANDING",
+          "source": "question",
+          "questionNumber": "3.20",
+          "page": 1
         }
       ]
     },
@@ -116,7 +121,12 @@
               "symbol": "E",
               "description": "Representa a energia em consideração na integral, que varia entre os limites definidos."
             }
-          ]
+          ],
+          "chapter": "3 Introduction to the Quantum Theory of Solids",
+          "section": "TEST YOUR UNDERSTANDING",
+          "source": "answer",
+          "questionNumber": "Ex3.4",
+          "page": 32
         },
         {
           "originalFormula": "g(E) = \\frac{4\\pi}{(2\\pi)^{3}} \\left( \\frac{2m_{n}^{*}}{\\hbar^{2}} \\right)^{\\frac{3}{2}} \\sqrt{E - E_{c}}",
@@ -150,7 +160,12 @@
               "symbol": "\\hbar",
               "description": "representa a constante de Planck reduzida, que é uma constante fundamental na mecânica quântica, relacionada à quantização de energia."
             }
-          ]
+          ],
+          "chapter": "3 Introduction to the Quantum Theory of Solids",
+          "section": "TEST YOUR UNDERSTANDING",
+          "source": "answer",
+          "questionNumber": "Ex3.4",
+          "page": 64
         }
       ]
     }
@@ -192,7 +207,11 @@
           "symbol": "E",
           "description": "Representa a energia variável dentro da faixa de integração, que é usada para calcular a densidade de estados entre as energias de condução e valência."
         }
-      ]
+      ],
+      "chapter": "3 Introduction to the Quantum Theory of Solids",
+      "section": "TEST YOUR UNDERSTANDING",
+      "source": "standalone",
+      "page": 96
     }
   ],
   "processedPages": [
@@ -324,5 +343,7 @@
     126,
     127
   ],
-  "lastUpdated": "2026-05-08T20:27:21.530Z"
+  "lastUpdated": "2026-05-08T18:19:12.969497",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
 }

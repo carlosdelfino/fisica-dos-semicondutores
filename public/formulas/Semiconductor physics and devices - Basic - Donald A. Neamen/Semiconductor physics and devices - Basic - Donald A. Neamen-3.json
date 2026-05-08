@@ -36,7 +36,12 @@
               "symbol": "v_{1}",
               "description": "Representa a velocidade inicial do objeto antes da mudança de movimento."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "question",
+          "questionNumber": "Example 3.1",
+          "page": 1
         }
       ]
     },
@@ -62,7 +67,12 @@
               "symbol": "u_{2}(0)",
               "description": "Representa a tensão elétrica no ponto 2 do circuito no instante inicial, ou seja, no tempo zero."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "question",
+          "questionNumber": "3.9",
+          "page": 4
         },
         {
           "originalFormula": "A + B - C - D = 0",
@@ -90,7 +100,12 @@
               "symbol": "D",
               "description": "Representa outra quantidade ou força que se opõe às forças A e B, contribuindo para o desequilíbrio se não for compensada."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "question",
+          "questionNumber": "3.9",
+          "page": 8
         }
       ]
     },
@@ -124,7 +139,12 @@
               "symbol": "x",
               "description": "É a variável independente na qual as funções u1 e u2 dependem, e neste contexto, estamos interessados especificamente no valor zero."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "question",
+          "questionNumber": "3.10",
+          "page": 12
         }
       ]
     },
@@ -170,7 +190,12 @@
               "symbol": "D",
               "description": "Outra variável que, junto com C, também contribui para a soma que é subtraída na equação."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "question",
+          "questionNumber": "3.11",
+          "page": 16
         }
       ]
     },
@@ -204,7 +229,12 @@
               "symbol": "-b",
               "description": "Representa um ponto negativo na variável independente da função u1, que é o oposto de b."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "question",
+          "questionNumber": "3.12",
+          "page": 19
         }
       ]
     },
@@ -260,7 +290,12 @@
               "symbol": "β",
               "description": "Outro parâmetro que pode representar uma constante de decaimento ou crescimento, similar a α, mas possivelmente relacionado a um aspecto diferente do sistema."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "question",
+          "questionNumber": "3.13",
+          "page": 23
         }
       ]
     },
@@ -274,7 +309,12 @@
           "description": "Não foi possível gerar descrição automática",
           "concepts": [],
           "symbols": [],
-          "rawText": "```json\n{\n  \"originalFormula\": \"-\\\\frac{(\\alpha^{2} + \\beta^{2})}{2\\\\alpha\\\\beta}(\\\\sin(\\\\alpha a)(\\\\sin(\\\\beta b)) + (\\\\cos(\\\\alpha a)(\\\\cos(\\\\beta b)) = \\\\cos(k(a + b))\",\n  \"genericFormula\": \"-\\\\frac{(\\\\alpha^{2} + \\\\beta^{2})}{2\\\\alpha\\\\beta}(\\\\sin(\\\\alpha x)(\\\\sin(\\\\beta y)) + (\\\\cos(\\\\alpha x)(\\\\cos(\\\\beta y)) = \\\\cos(k(x + y))\",\n  \"description\": \"Esta fórmula representa uma relação entre funções trigonométricas que descrevem ondas, mostrando como a combinação de duas ondas senoidais pode resultar em uma onda cosenoidal. Essa relação é frequentemente utilizada em física para analisar fenômenos de interferência e ressonância em sistemas oscilatórios.\",\n  \"concepts\": [\n    \"Interferência de ondas\",\n    \"Ressonância\",\n    \"Funções trigonométricas\",\n    \"Ondas senoidais e cosenoidais\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"α\",\n      \"description\": \"Um parâmetro que representa a frequência ou o número de onda de uma das ondas senoidais.\"\n    },\n    {\n      \"symbol\": \"β\",\n      \"description\": \"Um parâmetro que representa a frequência ou o número de onda da outra onda senoidal.\"\n    },\n    {\n      \"symbol\": \"a\",\n      \"description\": \"Uma variável que representa a posição ou a distância em uma direção relacionada à primeira onda.\"\n    },\n    {\n      \"symbol\": \"b\",\n      \"description\": \"Uma variável que representa a posição ou a distância em uma direção relacionada à segunda onda.\"\n    },\n    {\n      \"symbol\": \"k\",\n      \"description\": \"Um parâmetro que representa o número de onda resultante da combinação das duas ondas.\"\n    },\n    {\n      \"symbol\": \"sin\",\n      \"description\": \"Uma função trigonométrica que representa a relação entre o ângulo e a razão entre o cateto oposto e a hipotenusa em um triângulo retângulo.\"\n    },\n    {\n      \"symbol\": \"cos\",\n      \"description\": \"Uma função trigonométrica que representa a relação entre o ângulo e a razão entre o cateto adjacente e a hipotenusa em um triângulo retângulo.\"\n    }\n  ]\n}\n```"
+          "rawText": "```json\n{\n  \"originalFormula\": \"-\\\\frac{(\\alpha^{2} + \\beta^{2})}{2\\\\alpha\\\\beta}(\\\\sin(\\\\alpha a)(\\\\sin(\\\\beta b)) + (\\\\cos(\\\\alpha a)(\\\\cos(\\\\beta b)) = \\\\cos(k(a + b))\",\n  \"genericFormula\": \"-\\\\frac{(\\\\alpha^{2} + \\\\beta^{2})}{2\\\\alpha\\\\beta}(\\\\sin(\\\\alpha x)(\\\\sin(\\\\beta y)) + (\\\\cos(\\\\alpha x)(\\\\cos(\\\\beta y)) = \\\\cos(k(x + y))\",\n  \"description\": \"Esta fórmula representa uma relação entre funções trigonométricas que descrevem ondas, mostrando como a combinação de duas ondas senoidais pode resultar em uma onda cosenoidal. Essa relação é frequentemente utilizada em física para analisar fenômenos de interferência e ressonância em sistemas oscilatórios.\",\n  \"concepts\": [\n    \"Interferência de ondas\",\n    \"Ressonância\",\n    \"Funções trigonométricas\",\n    \"Ondas senoidais e cosenoidais\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"α\",\n      \"description\": \"Um parâmetro que representa a frequência ou o número de onda de uma das ondas senoidais.\"\n    },\n    {\n      \"symbol\": \"β\",\n      \"description\": \"Um parâmetro que representa a frequência ou o número de onda da outra onda senoidal.\"\n    },\n    {\n      \"symbol\": \"a\",\n      \"description\": \"Uma variável que representa a posição ou a distância em uma direção relacionada à primeira onda.\"\n    },\n    {\n      \"symbol\": \"b\",\n      \"description\": \"Uma variável que representa a posição ou a distância em uma direção relacionada à segunda onda.\"\n    },\n    {\n      \"symbol\": \"k\",\n      \"description\": \"Um parâmetro que representa o número de onda resultante da combinação das duas ondas.\"\n    },\n    {\n      \"symbol\": \"sin\",\n      \"description\": \"Uma função trigonométrica que representa a relação entre o ângulo e a razão entre o cateto oposto e a hipotenusa em um triângulo retângulo.\"\n    },\n    {\n      \"symbol\": \"cos\",\n      \"description\": \"Uma função trigonométrica que representa a relação entre o ângulo e a razão entre o cateto adjacente e a hipotenusa em um triângulo retângulo.\"\n    }\n  ]\n}\n```",
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "question",
+          "questionNumber": "3.14",
+          "page": 27
         }
       ]
     },
@@ -313,7 +353,12 @@
               "symbol": "cos",
               "description": "É uma função trigonométrica que relaciona o ângulo de um triângulo retângulo com a razão entre o comprimento do lado adjacente ao ângulo e a hipotenusa."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "question",
+          "questionNumber": "1",
+          "page": 31
         },
         {
           "originalFormula": "\\alpha a = \\sqrt{\\frac{2mE_{z}}{\\hbar^{2}}} : a = \\pi",
@@ -346,7 +391,12 @@
               "symbol": "ℏ",
               "description": "Representa a constante de Planck reduzida, que é uma constante fundamental na mecânica quântica, relacionada à quantização de energia."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "question",
+          "questionNumber": "1",
+          "page": 34
         }
       ]
     },
@@ -389,7 +439,12 @@
               "symbol": "dk",
               "description": "Representa uma pequena variação no número de onda, indicando uma mudança na frequência ou comprimento de onda da onda."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "question",
+          "questionNumber": "3.38",
+          "page": 38
         }
       ]
     },
@@ -425,7 +480,12 @@
               "symbol": "m",
               "description": "Representa a massa da partícula em questão, que é um fator importante na determinação do comportamento dinâmico da partícula em um campo de forças."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "question",
+          "questionNumber": "3.40",
+          "page": 42
         }
       ]
     },
@@ -464,7 +524,12 @@
               "symbol": "E",
               "description": "Representa a intensidade do campo elétrico, que é uma medida da força que uma carga elétrica experimentaria em um ponto no espaço."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "question",
+          "questionNumber": "3.42",
+          "page": 46
         }
       ]
     },
@@ -500,7 +565,12 @@
               "symbol": "m",
               "description": "Representa a massa da partícula, que é uma medida da quantidade de matéria que a partícula contém e influencia sua resistência a mudanças em seu estado de movimento."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "question",
+          "questionNumber": "3.43",
+          "page": 49
         }
       ]
     },
@@ -560,7 +630,12 @@
               "symbol": "L",
               "description": "Representa o comprimento da caixa em que a partícula está confinada, substituindo o símbolo 'a' na forma genérica."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "question",
+          "questionNumber": "3.23",
+          "page": 53
         }
       ]
     },
@@ -599,7 +674,12 @@
               "symbol": "a",
               "description": "Uma constante que pode representar uma dimensão ou parâmetro específico do sistema em análise."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "question",
+          "questionNumber": "N/A",
+          "page": 57
         }
       ]
     },
@@ -625,7 +705,12 @@
               "symbol": "a",
               "description": "Representa uma medida linear, como o comprimento de um lado de um cubo ou uma aresta de um objeto."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "question",
+          "questionNumber": "N/A",
+          "page": 61
         }
       ]
     },
@@ -664,7 +749,12 @@
               "symbol": "dE",
               "description": "Um elemento infinitesimal de variação de energia, utilizado no contexto de integrais para representar pequenas mudanças na energia."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "question",
+          "questionNumber": "Ex 3.3",
+          "page": 64
         }
       ]
     },
@@ -702,7 +792,12 @@
               "symbol": "!",
               "description": "Representa o fatorial de um número, que é o produto de todos os números inteiros positivos até aquele número."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "question",
+          "questionNumber": "Ex.3.5",
+          "page": 68
         }
       ]
     },
@@ -738,7 +833,12 @@
               "symbol": "T",
               "description": "Representa a temperatura do sistema, medida em Kelvin, que influencia o comportamento térmico dos elétrons."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "question",
+          "questionNumber": "TYU 3.5",
+          "page": 72
         },
         {
           "originalFormula": "E_{F} - \\frac{3kT}{2}",
@@ -763,7 +863,12 @@
               "symbol": "T",
               "description": "Representa a temperatura do sistema, medida em Kelvin, que influencia a energia térmica dos portadores de carga."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "question",
+          "questionNumber": "TYU 3.5",
+          "page": 76
         }
       ]
     },
@@ -790,6 +895,41 @@
     {
       "number": "3.47",
       "text": "Calculate the energy range (in eV) between f_{n} = 0.95 and f_{n} = 0.05 for E_{f} = 5.0 eV at (a) T = 200 K and (b) T = 400 K.",
+      "formulas": []
+    },
+    {
+      "number": "5.36",
+      "text": "Determine the electric field as a function of x which must exist in the semiconductor.",
+      "formulas": []
+    },
+    {
+      "number": "5.37",
+      "text": "(a) Determine the expression for the electron concentration at x = 0 and at x = 50 μm. (b) Calculate the electron and diffusion current densities at x = 50 μm.",
+      "formulas": []
+    },
+    {
+      "number": "5.38",
+      "text": "(a) Write the expression for the electron concentration over the distance. (b) If the electron diffusion coefficient is D_{n} = 25 cm²/s, calculate the electron diffusion current density at x = 0 and x = 50 μm.",
+      "formulas": []
+    },
+    {
+      "number": "5.39",
+      "text": "(a) Determine the required electric field versus distance function. (b) Repeat part (a) if J = -20 A/cm².",
+      "formulas": []
+    },
+    {
+      "number": "5.40",
+      "text": "(a) Determine the electric field as a function of x for 0 ≤ x ≤ L. (b) Calculate the potential difference between x = 0 and x = 1 μm.",
+      "formulas": []
+    },
+    {
+      "number": "5.41",
+      "text": "(a) Determine the expression for the electron diffusion current density versus distance over the given range of x. (b) Determine the induced electric field that compensates the diffusion current density.",
+      "formulas": []
+    },
+    {
+      "number": "5.44",
+      "text": "(a) Repeat part (a) if the electron diffusion coefficient is given by D_{n} = (0.0259)μ.",
       "formulas": []
     }
   ],
@@ -820,7 +960,12 @@
               "symbol": "\\Delta v",
               "description": "Representa a variação na velocidade do objeto, que pode ser positiva ou negativa, dependendo se o objeto está acelerando ou desacelerando."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "answer",
+          "questionNumber": "Example 3.1",
+          "page": 79
         }
       ]
     },
@@ -859,7 +1004,12 @@
               "symbol": "a",
               "description": "Largura da caixa quântica, que é a distância entre as paredes da caixa onde a partícula está confinada."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "answer",
+          "questionNumber": "1",
+          "page": 83
         },
         {
           "originalFormula": "E_{2} = \\frac{(5.141)^{2}\\h^{2}}{2ma^{2}} \\cdot \\frac{(5.141)(1.054 \\times 10^{-34})^{2}}{29.11 \\times 10^{-31}}(4.5 \\times 10^{-19}) = 7.958 \\times 10^{-19} \\text{ J}",
@@ -904,7 +1054,12 @@
               "symbol": "E_{0}",
               "description": "Uma energia de referência ou energia inicial que pode ser utilizada para calcular a energia do sistema."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "answer",
+          "questionNumber": "1",
+          "page": 87
         }
       ]
     },
@@ -967,7 +1122,12 @@
               "symbol": "L",
               "description": "Representa uma dimensão genérica do sistema, utilizada para substituir o comprimento da caixa na forma genérica."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "answer",
+          "questionNumber": "3.23",
+          "page": 91
         }
       ]
     },
@@ -1005,7 +1165,12 @@
               "symbol": "a",
               "description": "Uma constante que pode representar um comprimento ou uma distância em um contexto físico específico."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "answer",
+          "questionNumber": "N/A",
+          "page": 94
         }
       ]
     },
@@ -1032,7 +1197,12 @@
               "symbol": "a",
               "description": "Representa o comprimento total de um lado do cubo antes de ser dividido por dois."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "answer",
+          "questionNumber": "N/A",
+          "page": 98
         }
       ]
     },
@@ -1072,7 +1242,12 @@
               "symbol": "q",
               "description": "Representa a carga do elétron, que é uma medida da propriedade elétrica do elétron, sendo uma quantidade negativa."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "answer",
+          "questionNumber": "Ex 3.3",
+          "page": 102
         }
       ]
     },
@@ -1106,7 +1281,12 @@
               "symbol": "!",
               "description": "Denota o fatorial de um número, que é o produto de todos os números inteiros positivos até aquele número."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "answer",
+          "questionNumber": "Ex.3.5",
+          "page": 106
         },
         {
           "originalFormula": "W_i = \\frac{10!}{9!(10-9)!} = 10",
@@ -1134,7 +1314,12 @@
               "symbol": "!",
               "description": "Indica o fatorial de um número, que é o produto de todos os números inteiros positivos até esse número."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "answer",
+          "questionNumber": "Ex.3.5",
+          "page": 109
         }
       ]
     },
@@ -1161,7 +1346,12 @@
               "symbol": "T",
               "description": "A temperatura do sistema, medida em Kelvin, que indica o nível de energia térmica das partículas."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "answer",
+          "questionNumber": "Ex 3.7",
+          "page": 113
         },
         {
           "originalFormula": "T' = 756 \\text{ K}",
@@ -1181,7 +1371,12 @@
               "symbol": "T",
               "description": "Representa a temperatura genérica em Kelvin, que pode ser aplicada a diferentes contextos."
             }
-          ]
+          ],
+          "chapter": "3",
+          "section": "Introduction to the Quantum Theory of Solids",
+          "source": "answer",
+          "questionNumber": "Ex 3.7",
+          "page": 117
         }
       ]
     }
@@ -1217,7 +1412,11 @@
           "symbol": "E_{n2}",
           "description": "Representa a energia de um nível eletrônico genérico mais baixo."
         }
-      ]
+      ],
+      "chapter": "3",
+      "section": "Introduction to the Quantum Theory of Solids",
+      "source": "standalone",
+      "page": 121
     },
     {
       "originalFormula": "u_{1}(0) = u_{2}(0)",
@@ -1237,7 +1436,11 @@
           "symbol": "u_{2}(0)",
           "description": "Representa a tensão elétrica no ponto 2 no instante inicial, ou seja, no tempo igual a zero."
         }
-      ]
+      ],
+      "chapter": "3",
+      "section": "Introduction to the Quantum Theory of Solids",
+      "source": "standalone",
+      "page": 124
     },
     {
       "originalFormula": "A + B - C - D = 0",
@@ -1265,7 +1468,11 @@
           "symbol": "D",
           "description": "Representa uma outra quantidade ou valor que também está sendo subtraído, afetando o equilíbrio da equação."
         }
-      ]
+      ],
+      "chapter": "3",
+      "section": "Introduction to the Quantum Theory of Solids",
+      "source": "standalone",
+      "page": 128
     },
     {
       "originalFormula": "\\frac{du_{1}}{dx}\\bigg|_{x=0} = \\frac{du_{2}}{dx}\\bigg|_{x=0}",
@@ -1293,7 +1500,11 @@
           "symbol": "x",
           "description": "É a variável independente, que pode representar uma posição ou outra quantidade em um sistema físico."
         }
-      ]
+      ],
+      "chapter": "3",
+      "section": "Introduction to the Quantum Theory of Solids",
+      "source": "standalone",
+      "page": 132
     },
     {
       "originalFormula": "(\\alpha - k\\beta)(A + B) - (\\beta - k)(C + D) = 0",
@@ -1333,7 +1544,11 @@
           "symbol": "D",
           "description": "Outra variável que, junto com C, forma um grupo que influencia a segunda parte da equação."
         }
-      ]
+      ],
+      "chapter": "3",
+      "section": "Introduction to the Quantum Theory of Solids",
+      "source": "standalone",
+      "page": 136
     },
     {
       "originalFormula": "u_{2}(a) = u_{1}(-b)",
@@ -1361,7 +1576,11 @@
           "symbol": "b",
           "description": "Representa uma variável ou ponto específico onde a função u1 é avaliada, sendo considerado negativo na relação."
         }
-      ]
+      ],
+      "chapter": "3",
+      "section": "Introduction to the Quantum Theory of Solids",
+      "source": "standalone",
+      "page": 139
     },
     {
       "originalFormula": "(\\alpha - k)A e^{\\alpha a} - (\\alpha + k)B e^{-\\alpha a} - (\\beta - k)C e^{\\beta b} - (\\beta + k)D e^{-\\beta b} = 0",
@@ -1410,7 +1629,11 @@
           "symbol": "β",
           "description": "Outra constante que pode representar uma taxa de crescimento ou decaimento, semelhante a 'α', mas para um processo diferente."
         }
-      ]
+      ],
+      "chapter": "3",
+      "section": "Introduction to the Quantum Theory of Solids",
+      "source": "standalone",
+      "page": 143
     },
     {
       "originalFormula": "-\\frac{(\\alpha^{2} + \\beta^{2})}{2\\alpha\\beta}(\\sin(\\alpha a)(\\sin(\\beta b)) + (\\cos(\\alpha a)(\\cos(\\beta b)) = \\cos(k(a + b))",
@@ -1443,7 +1666,11 @@
           "symbol": "k",
           "description": "Um número de onda que está relacionado à frequência da onda resultante, indicando quantas ondas cabem em uma unidade de distância."
         }
-      ]
+      ],
+      "chapter": "3",
+      "section": "Introduction to the Quantum Theory of Solids",
+      "source": "standalone",
+      "page": 147
     },
     {
       "originalFormula": "E_{g} = E_{2} - E_{1} = 7.958 \\times 10^{-19} - 2.972 \\times 10^{-19} = 4.986 \\times 10^{-19} \\text{ J}",
@@ -1468,7 +1695,11 @@
           "symbol": "E_{1}",
           "description": "Representa a energia do primeiro nível de energia, que é outro estado eletrônico em um material semicondutor."
         }
-      ]
+      ],
+      "chapter": "3",
+      "section": "Introduction to the Quantum Theory of Solids",
+      "source": "standalone",
+      "page": 151
     },
     {
       "originalFormula": "J = qN_{u_{l}} \\, \\text{A/cm}^2",
@@ -1476,7 +1707,11 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"J = qN_{u_{l}} \\, \\\\text{A/cm}^2\",\n  \"genericFormula\": \"J = qN_{u_{l}}\",\n  \"description\": \"Esta fórmula representa a densidade de corrente elétrica em um material semicondutor, que é a quantidade de carga elétrica que passa por uma unidade de área em um determinado tempo. A densidade de corrente é uma medida importante para entender como os semicondutores conduzem eletricidade.\",\n  \"concepts\": [\n    \"Densidade de corrente elétrica\",\n    \"Carga elétrica\",\n    \"Concentração de portadores de carga\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"J\",\n      \"description\": \"Representa a densidade de corrente elétrica, que é a quantidade de corrente que flui por unidade de área.\"\n    },\n    {\n      \"symbol\": \"q\",\n      \"description\": \"Representa a carga elétrica de um único portador de carga, como um elétron ou um buraco, que é uma medida fundamental da eletricidade.\"\n    },\n    {\n      \"symbol\": \"N_{u_{l}}\",\n      \"description\": \"Representa a concentração de portadores de carga livres no material semicondutor, ou seja, o número de portadores de carga por unidade de volume.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"J = qN_{u_{l}} \\, \\\\text{A/cm}^2\",\n  \"genericFormula\": \"J = qN_{u_{l}}\",\n  \"description\": \"Esta fórmula representa a densidade de corrente elétrica em um material semicondutor, que é a quantidade de carga elétrica que passa por uma unidade de área em um determinado tempo. A densidade de corrente é uma medida importante para entender como os semicondutores conduzem eletricidade.\",\n  \"concepts\": [\n    \"Densidade de corrente elétrica\",\n    \"Carga elétrica\",\n    \"Concentração de portadores de carga\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"J\",\n      \"description\": \"Representa a densidade de corrente elétrica, que é a quantidade de corrente que flui por unidade de área.\"\n    },\n    {\n      \"symbol\": \"q\",\n      \"description\": \"Representa a carga elétrica de um único portador de carga, como um elétron ou um buraco, que é uma medida fundamental da eletricidade.\"\n    },\n    {\n      \"symbol\": \"N_{u_{l}}\",\n      \"description\": \"Representa a concentração de portadores de carga livres no material semicondutor, ou seja, o número de portadores de carga por unidade de volume.\"\n    }\n  ]\n}",
+      "chapter": "3",
+      "section": "Introduction to the Quantum Theory of Solids",
+      "source": "standalone",
+      "page": 154
     },
     {
       "originalFormula": "J = q \\sum_{i=1}^{N} v_{i}",
@@ -1504,7 +1739,11 @@
           "symbol": "v_{i}",
           "description": "Representa a velocidade da i-ésima partícula que está se movendo e contribuindo para a densidade de corrente."
         }
-      ]
+      ],
+      "chapter": "3",
+      "section": "Introduction to the Quantum Theory of Solids",
+      "source": "standalone",
+      "page": 158
     },
     {
       "originalFormula": "dE = F \\, dx = F \\, v \\, dt",
@@ -1512,7 +1751,11 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"dE = F \\, dx = F \\, v \\, dt\",\n  \"genericFormula\": \"dE = F \\, dx = F \\, v \\, dt\",\n  \"description\": \"Esta fórmula representa a variação de energia em um sistema físico, que pode ser causada pelo trabalho realizado por uma força. A variação de energia é igual ao produto da força aplicada pela distância percorrida ou, alternativamente, pela velocidade e pelo intervalo de tempo durante o qual a força é aplicada.\",\n  \"concepts\": [\n    \"Energia\",\n    \"Trabalho\",\n    \"Força\",\n    \"Movimento\",\n    \"Velocidade\",\n    \"Tempo\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"dE\",\n      \"description\": \"Representa a variação infinitesimal de energia em um sistema.\"\n    },\n    {\n      \"symbol\": \"F\",\n      \"description\": \"Representa a força aplicada ao sistema, que pode causar movimento ou alteração de energia.\"\n    },\n    {\n      \"symbol\": \"dx\",\n      \"description\": \"Representa a variação infinitesimal na posição, ou seja, a distância percorrida pelo objeto sob a ação da força.\"\n    },\n    {\n      \"symbol\": \"v\",\n      \"description\": \"Representa a velocidade do objeto, que é a taxa de variação da posição em relação ao tempo.\"\n    },\n    {\n      \"symbol\": \"dt\",\n      \"description\": \"Representa a variação infinitesimal no tempo, ou seja, o intervalo de tempo durante o qual a força é aplicada.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"dE = F \\, dx = F \\, v \\, dt\",\n  \"genericFormula\": \"dE = F \\, dx = F \\, v \\, dt\",\n  \"description\": \"Esta fórmula representa a variação de energia em um sistema físico, que pode ser causada pelo trabalho realizado por uma força. A variação de energia é igual ao produto da força aplicada pela distância percorrida ou, alternativamente, pela velocidade e pelo intervalo de tempo durante o qual a força é aplicada.\",\n  \"concepts\": [\n    \"Energia\",\n    \"Trabalho\",\n    \"Força\",\n    \"Movimento\",\n    \"Velocidade\",\n    \"Tempo\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"dE\",\n      \"description\": \"Representa a variação infinitesimal de energia em um sistema.\"\n    },\n    {\n      \"symbol\": \"F\",\n      \"description\": \"Representa a força aplicada ao sistema, que pode causar movimento ou alteração de energia.\"\n    },\n    {\n      \"symbol\": \"dx\",\n      \"description\": \"Representa a variação infinitesimal na posição, ou seja, a distância percorrida pelo objeto sob a ação da força.\"\n    },\n    {\n      \"symbol\": \"v\",\n      \"description\": \"Representa a velocidade do objeto, que é a taxa de variação da posição em relação ao tempo.\"\n    },\n    {\n      \"symbol\": \"dt\",\n      \"description\": \"Representa a variação infinitesimal no tempo, ou seja, o intervalo de tempo durante o qual a força é aplicada.\"\n    }\n  ]\n}",
+      "chapter": "3",
+      "section": "Introduction to the Quantum Theory of Solids",
+      "source": "standalone",
+      "page": 162
     },
     {
       "originalFormula": "E = \\frac{p^2}{2m} = \\frac{\\hbar^2 k^2}{2m}",
@@ -1546,7 +1789,11 @@
           "symbol": "k",
           "description": "Representa o vetor de onda, que está relacionado ao comprimento de onda da partícula."
         }
-      ]
+      ],
+      "chapter": "3",
+      "section": "Introduction to the Quantum Theory of Solids",
+      "source": "standalone",
+      "page": 166
     },
     {
       "originalFormula": "v = \\frac{1}{\\hbar} \\frac{dE}{dk}",
@@ -1583,7 +1830,11 @@
           "symbol": "dk",
           "description": "Representa a variação no número de onda."
         }
-      ]
+      ],
+      "chapter": "3",
+      "section": "Introduction to the Quantum Theory of Solids",
+      "source": "standalone",
+      "page": 169
     },
     {
       "originalFormula": "\\frac{1}{\\hbar} \\frac{d^2E}{dk^2} = \\frac{1}{m}",
@@ -1612,7 +1863,11 @@
           "symbol": "m",
           "description": "Massa da partícula, que é uma medida da quantidade de matéria que ela possui e influencia seu comportamento em um campo de força."
         }
-      ]
+      ],
+      "chapter": "3",
+      "section": "Introduction to the Quantum Theory of Solids",
+      "source": "standalone",
+      "page": 173
     },
     {
       "originalFormula": "F = ma = -eE",
@@ -1647,7 +1902,11 @@
           "symbol": "E",
           "description": "Representa o campo elétrico, que é uma região ao redor de uma carga elétrica onde outras cargas experimentam uma força."
         }
-      ]
+      ],
+      "chapter": "3",
+      "section": "Introduction to the Quantum Theory of Solids",
+      "source": "standalone",
+      "page": 177
     },
     {
       "originalFormula": "a = -\\frac{eE}{m}",
@@ -1676,7 +1935,11 @@
           "symbol": "m",
           "description": "Representa a massa da partícula, que é uma medida da quantidade de matéria que ela contém e influencia sua resistência a mudanças de movimento."
         }
-      ]
+      ],
+      "chapter": "3",
+      "section": "Introduction to the Quantum Theory of Solids",
+      "source": "standalone",
+      "page": 181
     },
     {
       "originalFormula": "J = -e \\sum_{i (filled)} v_i",
@@ -1704,7 +1967,11 @@
           "symbol": "i",
           "description": "Representa o índice que indica a soma sobre todos os portadores de carga que estão preenchidos, ou seja, aqueles que contribuem para a corrente."
         }
-      ]
+      ],
+      "chapter": "3",
+      "section": "Introduction to the Quantum Theory of Solids",
+      "source": "standalone",
+      "page": 184
     },
     {
       "originalFormula": "J = -e v_{(total)} + e \\sum_{t (empty)} v_i",
@@ -1733,7 +2000,11 @@
           "symbol": "\\sum_{t (empty)} v_i",
           "description": "Representa a soma das velocidades dos portadores de carga que estão em estados vazios, ou seja, as lacunas que podem ser preenchidas por elétrons."
         }
-      ]
+      ],
+      "chapter": "3",
+      "section": "Introduction to the Quantum Theory of Solids",
+      "source": "standalone",
+      "page": 188
     },
     {
       "originalFormula": "v(E) = \\frac{1}{\\hbar} \\left( \\frac{dE}{dk} \\right)",
@@ -1762,7 +2033,11 @@
           "symbol": "dk",
           "description": "Representa uma pequena variação no número de onda, que está relacionado à frequência da onda e à sua propagação no espaço."
         }
-      ]
+      ],
+      "chapter": "3",
+      "section": "Introduction to the Quantum Theory of Solids",
+      "source": "standalone",
+      "page": 192
     },
     {
       "originalFormula": "g_r(k) dk = \\frac{1}{2} \\left( \\frac{4\\pi k^2 dk}{\\pi^3} \\right)",
@@ -1791,7 +2066,11 @@
           "symbol": "π",
           "description": "É uma constante matemática que representa a razão entre a circunferência de um círculo e seu diâmetro, aproximadamente igual a 3,14159."
         }
-      ]
+      ],
+      "chapter": "3",
+      "section": "Introduction to the Quantum Theory of Solids",
+      "source": "standalone",
+      "page": 196
     },
     {
       "originalFormula": "E = E_{c} + \\frac{\\hbar^{2} k^{2}}{2m^{*}}",
@@ -1824,7 +2103,11 @@
           "symbol": "m^{*}",
           "description": "Representa a massa efetiva do elétron, que é uma medida de como o elétron se comporta sob a influência de forças em um semicondutor, levando em conta as interações com a rede cristalina."
         }
-      ]
+      ],
+      "chapter": "3",
+      "section": "Introduction to the Quantum Theory of Solids",
+      "source": "standalone",
+      "page": 199
     },
     {
       "originalFormula": "W = \\prod_{i=1}^{n} \\frac{g!}{N_i!(g_i - N_i)!}",
@@ -1861,7 +2144,11 @@
           "symbol": "i",
           "description": "Um índice que varia de 1 até n, representando cada uma das categorias na distribuição."
         }
-      ]
+      ],
+      "chapter": "3",
+      "section": "Introduction to the Quantum Theory of Solids",
+      "source": "standalone",
+      "page": 203
     },
     {
       "originalFormula": "N(E) = \\bar{f}_E(E) = \\frac{1}{1 + \\exp\\left(\\frac{E - E_f}{kT}\\right)}",
@@ -1903,7 +2190,11 @@
           "symbol": "\\exp",
           "description": "Representa a função exponencial, que é uma função matemática fundamental utilizada para descrever crescimento e decaimento em muitos contextos físicos."
         }
-      ]
+      ],
+      "chapter": "3",
+      "section": "Introduction to the Quantum Theory of Solids",
+      "source": "standalone",
+      "page": 207
     },
     {
       "originalFormula": "f_{k}(E) \\approx \\exp\\left(-\\frac{E - E_{F}}{kT}\\right)",
@@ -1936,7 +2227,11 @@
           "symbol": "T",
           "description": "Representa a temperatura do sistema em Kelvin, que influencia a ocupação dos estados eletrônicos."
         }
-      ]
+      ],
+      "chapter": "3",
+      "section": "Introduction to the Quantum Theory of Solids",
+      "source": "standalone",
+      "page": 211
     }
   ],
   "processedPages": [
@@ -2068,7 +2363,94 @@
     126,
     127,
     128,
-    129
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214
   ],
-  "lastUpdated": "2026-05-08T20:28:02.013Z"
+  "lastUpdated": "2026-05-08T18:19:12.993065",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
 }

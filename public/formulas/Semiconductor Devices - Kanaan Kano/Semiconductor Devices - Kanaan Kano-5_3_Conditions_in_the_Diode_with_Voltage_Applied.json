@@ -26,7 +26,10 @@
           "symbol": "V_a",
           "description": "Representa a tensão aplicada externamente ao dispositivo semicondutor, que pode influenciar o seu comportamento elétrico."
         }
-      ]
+      ],
+      "chapter": "5.3 Conditions in the Diode with Voltage Applied",
+      "source": "standalone",
+      "page": 1
     },
     {
       "originalFormula": "E = \\frac{qN_D}{\\epsilon}",
@@ -54,7 +57,10 @@
           "symbol": "ε",
           "description": "Representa a permissividade do material, que é uma medida de como um material responde a um campo elétrico, influenciando a capacidade de armazenar carga elétrica."
         }
-      ]
+      ],
+      "chapter": "5.3 Conditions in the Diode with Voltage Applied",
+      "source": "standalone",
+      "page": 125
     },
     {
       "originalFormula": "E_{max} = \\text{max electric field}",
@@ -71,7 +77,10 @@
           "symbol": "E_{max}",
           "description": "Representa o valor máximo do campo elétrico, que é a intensidade máxima da força elétrica que atuaria sobre uma carga unitária colocada nesse campo."
         }
-      ]
+      ],
+      "chapter": "5.3 Conditions in the Diode with Voltage Applied",
+      "source": "standalone",
+      "page": 250
     },
     {
       "originalFormula": "E_g = \\text{energy gap}",
@@ -89,7 +98,10 @@
           "symbol": "E_g",
           "description": "Representa a energia do gap, que é a diferença de energia entre a banda de valência e a banda de condução em um semicondutor."
         }
-      ]
+      ],
+      "chapter": "5.3 Conditions in the Diode with Voltage Applied",
+      "source": "standalone",
+      "page": 374
     }
   ],
   "processedPages": [
@@ -592,5 +604,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.017Z"
+  "lastUpdated": "2026-05-08T18:19:13.596415",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

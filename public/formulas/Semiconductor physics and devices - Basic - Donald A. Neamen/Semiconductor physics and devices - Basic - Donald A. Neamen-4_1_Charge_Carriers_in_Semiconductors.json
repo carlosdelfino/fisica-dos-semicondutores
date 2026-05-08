@@ -28,7 +28,12 @@
               "symbol": "f_{F}(E)",
               "description": "Representa a função de distribuição de Fermi, que descreve a probabilidade de ocupação dos estados eletrônicos em um nível de energia E a uma temperatura específica."
             }
-          ]
+          ],
+          "chapter": "4.1 Charge Carriers in Semiconductors",
+          "section": "4.1.1 Equilibrium Distribution of Electrons and Holes",
+          "source": "question",
+          "questionNumber": "1",
+          "page": 1
         }
       ]
     },
@@ -67,7 +72,12 @@
               "symbol": "dE",
               "description": "É um elemento infinitesimal de energia, usado na integração para somar as contribuições de todos os estados eletrônicos disponíveis."
             }
-          ]
+          ],
+          "chapter": "4.1 Charge Carriers in Semiconductors",
+          "section": "4.1.1 Equilibrium Distribution of Electrons and Holes",
+          "source": "question",
+          "questionNumber": "2",
+          "page": 7
         }
       ]
     },
@@ -98,7 +108,12 @@
               "symbol": "f_{v}(E)",
               "description": "Representa a função de distribuição de Fermi, que indica a probabilidade de ocupação dos estados na banda de valência para a energia E."
             }
-          ]
+          ],
+          "chapter": "4.1 Charge Carriers in Semiconductors",
+          "section": "4.1.1 Equilibrium Distribution of Electrons and Holes",
+          "source": "question",
+          "questionNumber": "3",
+          "page": 13
         }
       ]
     },
@@ -137,7 +152,12 @@
               "symbol": "dE",
               "description": "Representa um pequeno intervalo de energia, que é utilizado na integração para calcular a densidade total de portadores ao longo de todas as energias disponíveis."
             }
-          ]
+          ],
+          "chapter": "4.1 Charge Carriers in Semiconductors",
+          "section": "4.1.1 Equilibrium Distribution of Electrons and Holes",
+          "source": "question",
+          "questionNumber": "4",
+          "page": 20
         }
       ]
     },
@@ -181,7 +201,12 @@
               "symbol": "T",
               "description": "Representa a temperatura absoluta do sistema, medida em Kelvin, que influencia a distribuição de energia dos portadores de carga."
             }
-          ]
+          ],
+          "chapter": "4.1 Charge Carriers in Semiconductors",
+          "section": "4.1.1 Equilibrium Distribution of Electrons and Holes",
+          "source": "question",
+          "questionNumber": "Ex 4.1",
+          "page": 26
         },
         {
           "originalFormula": "n_0 = 1.80 \\times 10^{15} \\text{ cm}^{-3}",
@@ -201,7 +226,12 @@
               "symbol": "N",
               "description": "Representa um valor genérico que indica a densidade de portadores de carga, que pode variar dependendo das condições do semicondutor."
             }
-          ]
+          ],
+          "chapter": "4.1 Charge Carriers in Semiconductors",
+          "section": "4.1.1 Equilibrium Distribution of Electrons and Holes",
+          "source": "question",
+          "questionNumber": "Ex 4.1",
+          "page": 33
         }
       ]
     },
@@ -253,7 +283,12 @@
               "symbol": "T",
               "description": "Representa a temperatura absoluta do semicondutor, medida em Kelvin."
             }
-          ]
+          ],
+          "chapter": "4.1 Charge Carriers in Semiconductors",
+          "section": "4.1.1 Equilibrium Distribution of Electrons and Holes",
+          "source": "question",
+          "questionNumber": "TYU 4.1",
+          "page": 39
         }
       ]
     },
@@ -305,7 +340,12 @@
               "symbol": "T",
               "description": "Representa a temperatura absoluta do semicondutor, medida em Kelvin."
             }
-          ]
+          ],
+          "chapter": "4.1 Charge Carriers in Semiconductors",
+          "section": "4.1.1 Equilibrium Distribution of Electrons and Holes",
+          "source": "question",
+          "questionNumber": "TYU 4.2",
+          "page": 46
         }
       ]
     },
@@ -380,7 +420,12 @@
               "symbol": "T_0",
               "description": "Representa uma temperatura de referência, que pode ser utilizada para normalizar a temperatura do sistema."
             }
-          ]
+          ],
+          "chapter": "4.1 Charge Carriers in Semiconductors",
+          "section": "4.1.1 Equilibrium Distribution of Electrons and Holes",
+          "source": "answer",
+          "questionNumber": "Ex 4.3 (a)",
+          "page": 52
         }
       ]
     },
@@ -429,7 +474,12 @@
               "symbol": "T_0",
               "description": "Uma temperatura de referência, geralmente 300 K, que é usada para normalizar a temperatura do sistema."
             }
-          ]
+          ],
+          "chapter": "4.1 Charge Carriers in Semiconductors",
+          "section": "4.1.1 Equilibrium Distribution of Electrons and Holes",
+          "source": "answer",
+          "questionNumber": "TYU 4.3 (a)",
+          "page": 59
         }
       ]
     },
@@ -478,7 +528,12 @@
               "symbol": "m_{h}^{*}",
               "description": "É a massa efetiva dos buracos, que representa a 'massa' dos estados vazios deixados pelos elétrons em um semicondutor."
             }
-          ]
+          ],
+          "chapter": "4.1 Charge Carriers in Semiconductors",
+          "section": "4.1.1 Equilibrium Distribution of Electrons and Holes",
+          "source": "answer",
+          "questionNumber": "Ex 4.4",
+          "page": 65
         }
       ]
     }
@@ -507,7 +562,11 @@
           "symbol": "f_{F}(E)",
           "description": "Representa a função de distribuição de Fermi, que fornece a probabilidade de que um estado eletrônico em uma determinada energia esteja ocupado por um elétron, dependendo da temperatura e da energia do estado."
         }
-      ]
+      ],
+      "chapter": "4.1 Charge Carriers in Semiconductors",
+      "section": "4.1.1 Equilibrium Distribution of Electrons and Holes",
+      "source": "standalone",
+      "page": 72
     },
     {
       "originalFormula": "p(E) = g_{v}(E)(1 - f_{v}(E))",
@@ -531,7 +590,11 @@
           "symbol": "f_{v}(E)",
           "description": "Representa a função de distribuição de Fermi, que indica a probabilidade de que um estado de energia E esteja ocupado por um portador de carga a uma temperatura específica."
         }
-      ]
+      ],
+      "chapter": "4.1 Charge Carriers in Semiconductors",
+      "section": "4.1.1 Equilibrium Distribution of Electrons and Holes",
+      "source": "standalone",
+      "page": 78
     },
     {
       "originalFormula": "p_0 = \\int g_v(E) \\left( 1 - f(E) \\right) dE",
@@ -564,7 +627,11 @@
           "symbol": "dE",
           "description": "É um elemento infinitesimal de energia, utilizado na integral para somar as contribuições de todos os estados de energia."
         }
-      ]
+      ],
+      "chapter": "4.1 Charge Carriers in Semiconductors",
+      "section": "4.1.1 Equilibrium Distribution of Electrons and Holes",
+      "source": "standalone",
+      "page": 84
     },
     {
       "originalFormula": "1 - f(E) = \\frac{1}{1 + \\exp \\left( \\frac{E_f - E}{kT} \\right)}",
@@ -597,7 +664,11 @@
           "symbol": "T",
           "description": "Representa a temperatura do sistema em Kelvin, que influencia a ocupação dos estados de energia."
         }
-      ]
+      ],
+      "chapter": "4.1 Charge Carriers in Semiconductors",
+      "section": "4.1.1 Equilibrium Distribution of Electrons and Holes",
+      "source": "standalone",
+      "page": 91
     },
     {
       "originalFormula": "p_0 = \\int \\frac{4 \\pi (2m)^{3/2}}{h^3} \\sqrt{E_v - E} \\exp \\left( -\\frac{E_f - E}{kT} \\right) dE",
@@ -647,7 +718,11 @@
           "symbol": "dE",
           "description": "Representa um elemento infinitesimal de energia, usado para integrar ao longo do intervalo de energias."
         }
-      ]
+      ],
+      "chapter": "4.1 Charge Carriers in Semiconductors",
+      "section": "4.1.1 Equilibrium Distribution of Electrons and Holes",
+      "source": "standalone",
+      "page": 97
     },
     {
       "originalFormula": "N_c = 2.8 \\times 10^{19}, N_v = 1.04 \\times 10^{19}, m^* / m_0 = 1.08",
@@ -676,7 +751,11 @@
           "symbol": "m_0",
           "description": "É a massa do elétron livre, que é uma constante fundamental na física que representa a massa de um elétron em repouso."
         }
-      ]
+      ],
+      "chapter": "4.1 Charge Carriers in Semiconductors",
+      "section": "4.1.1 Equilibrium Distribution of Electrons and Holes",
+      "source": "standalone",
+      "page": 104
     },
     {
       "originalFormula": "N_c = 4.7 \\times 10^{17}, N_v = 7.0 \\times 10^{18}, m^* / m_0 = 0.67",
@@ -706,7 +785,11 @@
           "symbol": "m_0",
           "description": "Representa a massa de repouso de um elétron, que é a massa que um elétron teria quando não está se movendo em um campo elétrico."
         }
-      ]
+      ],
+      "chapter": "4.1 Charge Carriers in Semiconductors",
+      "section": "4.1.1 Equilibrium Distribution of Electrons and Holes",
+      "source": "standalone",
+      "page": 110
     },
     {
       "originalFormula": "N_c = 1.04 \\times 10^{19}, N_v = 6.0 \\times 10^{18}, m^* / m_0 = 0.55",
@@ -739,7 +822,11 @@
           "symbol": "r",
           "description": "Representa a razão entre a massa efetiva do portador de carga e a massa do elétron livre, indicando como a massa do portador é alterada pelo ambiente do semicondutor."
         }
-      ]
+      ],
+      "chapter": "4.1 Charge Carriers in Semiconductors",
+      "section": "4.1.1 Equilibrium Distribution of Electrons and Holes",
+      "source": "standalone",
+      "page": 117
     },
     {
       "originalFormula": "n_i = 4.90 \\times 10^{15} \\, \\text{cm}^{-3} \\text{ at } T = 250 K",
@@ -772,7 +859,11 @@
           "symbol": "T_0",
           "description": "Uma variável que representa uma temperatura específica em Kelvin, usada para indicar a condição sob a qual a densidade intrínseca é medida."
         }
-      ]
+      ],
+      "chapter": "4.1 Charge Carriers in Semiconductors",
+      "section": "4.1.1 Equilibrium Distribution of Electrons and Holes",
+      "source": "standalone",
+      "page": 123
     },
     {
       "originalFormula": "n_i = 5.67 \\times 10^{24} \\, \\text{cm}^{-3} \\text{ at } T = 400 K",
@@ -801,7 +892,11 @@
           "symbol": "m",
           "description": "Um expoente que pode variar dependendo do material e das condições, indicando como a densidade de portadores muda com a temperatura."
         }
-      ]
+      ],
+      "chapter": "4.1 Charge Carriers in Semiconductors",
+      "section": "4.1.1 Equilibrium Distribution of Electrons and Holes",
+      "source": "standalone",
+      "page": 130
     },
     {
       "originalFormula": "E_{F} - E_{midgap} = -\\frac{3}{4} kT \\ln \\left( \\frac{m_{e}^{*}}{m_{h}^{*}} \\right)",
@@ -839,7 +934,11 @@
           "symbol": "m_{h}^{*}",
           "description": "É a massa efetiva dos buracos, que representa a 'massa' dos portadores de carga positiva em um semicondutor, resultante da ausência de elétrons."
         }
-      ]
+      ],
+      "chapter": "4.1 Charge Carriers in Semiconductors",
+      "section": "4.1.1 Equilibrium Distribution of Electrons and Holes",
+      "source": "standalone",
+      "page": 136
     }
   ],
   "processedPages": [
@@ -986,5 +1085,7 @@
     141,
     142
   ],
-  "lastUpdated": "2026-05-08T20:35:25.228Z"
+  "lastUpdated": "2026-05-08T18:19:12.871726",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
 }

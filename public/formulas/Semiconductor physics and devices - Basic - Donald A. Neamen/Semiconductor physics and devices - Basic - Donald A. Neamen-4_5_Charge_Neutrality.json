@@ -29,7 +29,12 @@
               "symbol": "C",
               "description": "Representa uma constante que contribui para a densidade total de portadores de carga, podendo ser uma densidade de portadores de uma fonte específica."
             }
-          ]
+          ],
+          "chapter": "4.5 Charge Neutrality",
+          "section": "Thermal-Equilibrium Electron Concentration",
+          "source": "question",
+          "questionNumber": "Example 4.9 (a)",
+          "page": 1
         }
       ]
     },
@@ -68,7 +73,12 @@
               "symbol": "D",
               "description": "Um valor adicional que representa uma contribuição extra para a densidade de portadores de carga, neste caso, 1.5 vezes 10 elevado a 10."
             }
-          ]
+          ],
+          "chapter": "4.5 Charge Neutrality",
+          "section": "Thermal-Equilibrium Electron Concentration",
+          "source": "question",
+          "questionNumber": "Example 4.9 (b)",
+          "page": 33
         }
       ]
     }
@@ -101,7 +111,12 @@
               "symbol": "n_0",
               "description": "Representa a concentração de elétrons em um semicondutor dopado ou em equilíbrio, que é a quantidade de portadores de carga negativa presentes."
             }
-          ]
+          ],
+          "chapter": "4.5 Charge Neutrality",
+          "section": "Thermal-Equilibrium Electron Concentration",
+          "source": "answer",
+          "questionNumber": "Example 4.9 (a)",
+          "page": 65
         }
       ]
     },
@@ -132,7 +147,12 @@
               "symbol": "n_0",
               "description": "Representa a densidade de portadores de carga negativa, que é a quantidade de elétrons presentes em um semicondutor dopado ou em equilíbrio."
             }
-          ]
+          ],
+          "chapter": "4.5 Charge Neutrality",
+          "section": "Thermal-Equilibrium Electron Concentration",
+          "source": "answer",
+          "questionNumber": "Example 4.9 (b)",
+          "page": 98
         }
       ]
     }
@@ -165,7 +185,11 @@
           "symbol": "n_i",
           "description": "Representa a densidade intrínseca de portadores de carga no semicondutor, que é a quantidade de portadores presentes em um material não dopado a uma temperatura específica."
         }
-      ]
+      ],
+      "chapter": "4.5 Charge Neutrality",
+      "section": "Thermal-Equilibrium Electron Concentration",
+      "source": "standalone",
+      "page": 130
     }
   ],
   "processedPages": [
@@ -332,5 +356,7 @@
     161,
     162
   ],
-  "lastUpdated": "2026-05-08T20:42:30.258Z"
+  "lastUpdated": "2026-05-08T18:19:13.055366",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
 }

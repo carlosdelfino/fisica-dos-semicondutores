@@ -28,7 +28,11 @@
               "symbol": "C_{ox}",
               "description": "Representa a capacitância da camada de óxido, que é a capacitância associada ao material isolante que separa os terminais do capacitor."
             }
-          ]
+          ],
+          "chapter": "12.5 Capacitance-Voltage Measurements",
+          "source": "question",
+          "questionNumber": "2",
+          "page": 1
         }
       ]
     },
@@ -74,7 +78,11 @@
               "symbol": "\\epsilon",
               "description": "Representa a permissividade do material, que é uma medida de como um material pode ser polarizado por um campo elétrico."
             }
-          ]
+          ],
+          "chapter": "12.5 Capacitance-Voltage Measurements",
+          "source": "question",
+          "questionNumber": "3",
+          "page": 72
         }
       ]
     }
@@ -103,7 +111,11 @@
               "symbol": "C_{ox}",
               "description": "Representa a capacitância do óxido, que é a capacitância associada à camada isolante de óxido em dispositivos semicondutores."
             }
-          ]
+          ],
+          "chapter": "12.5 Capacitance-Voltage Measurements",
+          "source": "answer",
+          "questionNumber": "1",
+          "page": 143
         }
       ]
     },
@@ -130,7 +142,11 @@
               "symbol": "C_{ox}",
               "description": "Representa a capacitância do óxido, que é a capacitância associada ao material isolante (óxido) entre as placas do capacitor."
             }
-          ]
+          ],
+          "chapter": "12.5 Capacitance-Voltage Measurements",
+          "source": "answer",
+          "questionNumber": "2",
+          "page": 214
         }
       ]
     },
@@ -175,7 +191,11 @@
               "symbol": "\\epsilon",
               "description": "Permissividade elétrica do material, que mede a capacidade do material de armazenar carga elétrica."
             }
-          ]
+          ],
+          "chapter": "12.5 Capacitance-Voltage Measurements",
+          "source": "answer",
+          "questionNumber": "3",
+          "page": 285
         }
       ]
     }
@@ -217,7 +237,10 @@
           "symbol": "ε",
           "description": "Permissividade do material, que é uma medida da capacidade do material de armazenar carga elétrica."
         }
-      ]
+      ],
+      "chapter": "12.5 Capacitance-Voltage Measurements",
+      "source": "standalone",
+      "page": 356
     },
     {
       "originalFormula": "1/C_{min} = 1/C_{ox} + W_m/e",
@@ -246,7 +269,10 @@
           "symbol": "e",
           "description": "Representa a carga elementar, que é a menor unidade de carga elétrica, essencial para entender a interação de cargas em semicondutores."
         }
-      ]
+      ],
+      "chapter": "12.5 Capacitance-Voltage Measurements",
+      "source": "standalone",
+      "page": 427
     }
   ],
   "processedPages": [
@@ -749,5 +775,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.160Z"
+  "lastUpdated": "2026-05-08T18:19:13.855525",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

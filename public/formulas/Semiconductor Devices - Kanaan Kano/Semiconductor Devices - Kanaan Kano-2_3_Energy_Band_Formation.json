@@ -37,7 +37,10 @@
           "symbol": "n",
           "description": "Representa uma quantidade genérica que pode ser utilizada para indicar a densidade de átomos em um material, sem valores numéricos específicos."
         }
-      ]
+      ],
+      "chapter": "2.3 Energy Band Formation",
+      "source": "standalone",
+      "page": 1
     }
   ],
   "processedPages": [
@@ -540,5 +543,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.935Z"
+  "lastUpdated": "2026-05-08T18:19:13.582332",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

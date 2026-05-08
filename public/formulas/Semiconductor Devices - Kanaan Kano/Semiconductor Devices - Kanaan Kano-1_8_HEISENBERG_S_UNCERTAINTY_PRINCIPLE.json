@@ -27,7 +27,11 @@
               "symbol": "π",
               "description": "É o número pi, uma constante matemática que representa a razão entre a circunferência de um círculo e seu diâmetro, aproximadamente igual a 3,14159."
             }
-          ]
+          ],
+          "chapter": "1.8 HEISENBERG’S UNCERTAINTY PRINCIPLE",
+          "source": "question",
+          "questionNumber": "1.3a",
+          "page": 1
         }
       ]
     },
@@ -57,7 +61,11 @@
               "symbol": "π",
               "description": "É uma constante matemática que representa a razão entre a circunferência de um círculo e seu diâmetro, aproximadamente igual a 3,14159."
             }
-          ]
+          ],
+          "chapter": "1.8 HEISENBERG’S UNCERTAINTY PRINCIPLE",
+          "source": "question",
+          "questionNumber": "1.3b",
+          "page": 84
         }
       ]
     }
@@ -98,7 +106,11 @@
               "symbol": "Δt",
               "description": "Representa o intervalo de tempo durante o qual a medição é realizada, indicando a duração da observação."
             }
-          ]
+          ],
+          "chapter": "1.8 HEISENBERG’S UNCERTAINTY PRINCIPLE",
+          "source": "answer",
+          "questionNumber": "1.3a",
+          "page": 167
         }
       ]
     },
@@ -137,7 +149,11 @@
               "symbol": "L",
               "description": "Representa uma dimensão relevante do sistema, que pode ser uma medida de comprimento ou outra escala que influencia a incerteza na posição."
             }
-          ]
+          ],
+          "chapter": "1.8 HEISENBERG’S UNCERTAINTY PRINCIPLE",
+          "source": "answer",
+          "questionNumber": "1.3b",
+          "page": 250
         }
       ]
     }
@@ -174,7 +190,10 @@
           "symbol": "ℏ",
           "description": "É a constante de Planck reduzida, que é a constante de Planck dividida por 2π, utilizada frequentemente em mecânica quântica para simplificar as equações."
         }
-      ]
+      ],
+      "chapter": "1.8 HEISENBERG’S UNCERTAINTY PRINCIPLE",
+      "source": "standalone",
+      "page": 333
     },
     {
       "originalFormula": "\\Delta E \\Delta t \\geq \\frac{h}{2\\pi}",
@@ -203,7 +222,10 @@
           "symbol": "π",
           "description": "É uma constante matemática que representa a razão entre a circunferência de um círculo e seu diâmetro, aproximadamente igual a 3,14159."
         }
-      ]
+      ],
+      "chapter": "1.8 HEISENBERG’S UNCERTAINTY PRINCIPLE",
+      "source": "standalone",
+      "page": 416
     }
   ],
   "processedPages": [
@@ -706,5 +728,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.920Z"
+  "lastUpdated": "2026-05-08T18:19:13.784677",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

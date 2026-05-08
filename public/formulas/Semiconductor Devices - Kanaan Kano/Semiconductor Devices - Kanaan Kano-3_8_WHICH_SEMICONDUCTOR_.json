@@ -55,7 +55,11 @@
               "symbol": "x",
               "description": "Representa um expoente que indica a ordem de grandeza da densidade de portadores, mostrando como a densidade pode ser expressa em potências de dez."
             }
-          ]
+          ],
+          "chapter": "3.8 WHICH SEMICONDUCTOR?",
+          "source": "answer",
+          "questionNumber": "E3-4",
+          "page": 1
         }
       ]
     },
@@ -81,7 +85,11 @@
               "symbol": "n",
               "description": "O expoente da base dez, que indica quantas casas decimais o coeficiente deve ser deslocado. Um valor negativo indica que o número é menor que um."
             }
-          ]
+          ],
+          "chapter": "3.8 WHICH SEMICONDUCTOR?",
+          "source": "answer",
+          "questionNumber": "E3-5",
+          "page": 100
         }
       ]
     },
@@ -107,7 +115,11 @@
               "symbol": "B",
               "description": "O expoente que indica quantas casas decimais o coeficiente deve ser movido, podendo ser um número positivo ou negativo."
             }
-          ]
+          ],
+          "chapter": "3.8 WHICH SEMICONDUCTOR?",
+          "source": "answer",
+          "questionNumber": "E3-6",
+          "page": 200
         }
       ]
     },
@@ -133,7 +145,11 @@
               "symbol": "N",
               "description": "Representa um valor genérico que indica a densidade de portadores de carga em um material semicondutor."
             }
-          ]
+          ],
+          "chapter": "3.8 WHICH SEMICONDUCTOR?",
+          "source": "answer",
+          "questionNumber": "E3-7",
+          "page": 299
         }
       ]
     },
@@ -147,7 +163,11 @@
           "description": "Não foi possível gerar descrição automática",
           "concepts": [],
           "symbols": [],
-          "rawText": "{\n  \"originalFormula\": \"E_{C} - E_{F} = 0.16eV\",\n  \"genericFormula\": \"E_{C} - E_{F} = \\Delta E\",\n  \"description\": \"Esta fórmula representa a diferença de energia entre a banda de condução e o nível de Fermi em um semicondutor. A diferença de energia é crucial para entender como os portadores de carga se comportam em materiais semicondutores e como eles podem ser excitados para conduzir eletricidade.\",\n  \"concepts\": [\n    \"Banda de condução\",\n    \"Nível de Fermi\",\n    \"Diferença de energia\",\n    \"Semicondutores\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"E_{C}\",\n      \"description\": \"Representa a energia do topo da banda de condução, que é a energia mínima necessária para que um elétron possa se mover livremente e contribuir para a condução elétrica.\"\n    },\n    {\n      \"symbol\": \"E_{F}\",\n      \"description\": \"Representa o nível de Fermi, que é o nível de energia mais alto ocupado por elétrons a temperatura zero absoluto. Ele indica a probabilidade de ocupação dos estados eletrônicos em um material.\"\n    },\n    {\n      \"symbol\": \"0.16eV\",\n      \"description\": \"Representa um valor específico da diferença de energia entre a banda de condução e o nível de Fermi, medido em electronvolts, que é uma unidade de medida de energia comumente usada em física de semicondutores.\"\n    },\n    {\n      \"symbol\": \"\\\\Delta E\",\n      \"description\": \"Representa a diferença de energia entre dois níveis de energia, neste caso, entre a banda de condução e o nível de Fermi. É uma variável que pode assumir diferentes valores dependendo das condições do material.\"\n    }\n  ]\n}"
+          "rawText": "{\n  \"originalFormula\": \"E_{C} - E_{F} = 0.16eV\",\n  \"genericFormula\": \"E_{C} - E_{F} = \\Delta E\",\n  \"description\": \"Esta fórmula representa a diferença de energia entre a banda de condução e o nível de Fermi em um semicondutor. A diferença de energia é crucial para entender como os portadores de carga se comportam em materiais semicondutores e como eles podem ser excitados para conduzir eletricidade.\",\n  \"concepts\": [\n    \"Banda de condução\",\n    \"Nível de Fermi\",\n    \"Diferença de energia\",\n    \"Semicondutores\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"E_{C}\",\n      \"description\": \"Representa a energia do topo da banda de condução, que é a energia mínima necessária para que um elétron possa se mover livremente e contribuir para a condução elétrica.\"\n    },\n    {\n      \"symbol\": \"E_{F}\",\n      \"description\": \"Representa o nível de Fermi, que é o nível de energia mais alto ocupado por elétrons a temperatura zero absoluto. Ele indica a probabilidade de ocupação dos estados eletrônicos em um material.\"\n    },\n    {\n      \"symbol\": \"0.16eV\",\n      \"description\": \"Representa um valor específico da diferença de energia entre a banda de condução e o nível de Fermi, medido em electronvolts, que é uma unidade de medida de energia comumente usada em física de semicondutores.\"\n    },\n    {\n      \"symbol\": \"\\\\Delta E\",\n      \"description\": \"Representa a diferença de energia entre dois níveis de energia, neste caso, entre a banda de condução e o nível de Fermi. É uma variável que pode assumir diferentes valores dependendo das condições do material.\"\n    }\n  ]\n}",
+          "chapter": "3.8 WHICH SEMICONDUCTOR?",
+          "source": "answer",
+          "questionNumber": "E3-8",
+          "page": 399
         }
       ]
     }
@@ -653,5 +673,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:41.963Z"
+  "lastUpdated": "2026-05-08T18:19:13.566586",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

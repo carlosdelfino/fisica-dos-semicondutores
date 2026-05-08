@@ -81,7 +81,11 @@
               "symbol": "W_n",
               "description": "Representa a largura da região de depleção ou a largura de uma camada no semicondutor."
             }
-          ]
+          ],
+          "chapter": "5 The PN Junction Diode",
+          "source": "question",
+          "questionNumber": "5.36",
+          "page": 1
         },
         {
           "originalFormula": "p' = p - p_{on} = p_{on} \\left[ \\exp \\left( \\frac{qV_a}{kT} \\right) - 1 \\right] \\left( 1 - \\frac{x' - x_n}{W_n} \\right) \\text{ for } W_n << L_p",
@@ -139,7 +143,11 @@
               "symbol": "L_p",
               "description": "Representa o comprimento de difusão dos portadores de carga, que é a distância que os portadores podem se mover antes de recombinar."
             }
-          ]
+          ],
+          "chapter": "5 The PN Junction Diode",
+          "source": "question",
+          "questionNumber": "5.36",
+          "page": 32
         }
       ]
     },
@@ -198,7 +206,11 @@
               "symbol": "L_n",
               "description": "Representa o comprimento de difusão dos portadores de carga, que indica a distância que os portadores podem se mover devido à difusão."
             }
-          ]
+          ],
+          "chapter": "5 The PN Junction Diode",
+          "source": "question",
+          "questionNumber": "5.38",
+          "page": 63
         }
       ]
     },
@@ -237,7 +249,11 @@
               "symbol": "dx",
               "description": "Representa um pequeno deslocamento na posição ao longo do material, usado para calcular o gradiente de concentração."
             }
-          ]
+          ],
+          "chapter": "5 The PN Junction Diode",
+          "source": "question",
+          "questionNumber": "5.39",
+          "page": 94
         }
       ]
     },
@@ -294,7 +310,11 @@
               "symbol": "x'",
               "description": "Representa a posição ao longo do material semicondutor onde a densidade de corrente está sendo calculada."
             }
-          ]
+          ],
+          "chapter": "5 The PN Junction Diode",
+          "source": "question",
+          "questionNumber": "5.40",
+          "page": 125
         }
       ]
     },
@@ -350,7 +370,11 @@
               "symbol": "W_n",
               "description": "Representa a largura da região de depleção ou a largura da junção no semicondutor, que deve ser muito maior que o comprimento de difusão dos buracos para que a fórmula se aplique."
             }
-          ]
+          ],
+          "chapter": "5 The PN Junction Diode",
+          "source": "question",
+          "questionNumber": "5.41",
+          "page": 156
         }
       ]
     },
@@ -529,7 +553,11 @@
               "symbol": "exp",
               "description": "A função exponencial, que descreve como a corrente diminui exponencialmente com o aumento da energia de bandgap e da temperatura."
             }
-          ]
+          ],
+          "chapter": "5 The PN Junction Diode",
+          "source": "question",
+          "questionNumber": "5.20 a",
+          "page": 187
         }
       ]
     },
@@ -591,7 +619,11 @@
               "symbol": "b",
               "description": "Representa outra constante que pode ser relacionada a propriedades específicas do material ou do sistema em questão."
             }
-          ]
+          ],
+          "chapter": "5 The PN Junction Diode",
+          "source": "question",
+          "questionNumber": "5.21 a",
+          "page": 218
         }
       ]
     }
@@ -633,7 +665,11 @@
               "symbol": "ΔE",
               "description": "Representa a diferença de energia entre dois níveis, que neste caso é a diferença entre a energia da banda de condução e o nível de Fermi."
             }
-          ]
+          ],
+          "chapter": "5 The PN Junction Diode",
+          "source": "answer",
+          "questionNumber": "E5-1",
+          "page": 250
         },
         {
           "originalFormula": "E_C - E_F = 0.86 \\text{ eV}",
@@ -658,7 +694,11 @@
               "symbol": "E_{gap}",
               "description": "Representa a energia do bandgap, que é a diferença de energia entre a banda de condução e a banda de valência. Essa energia é fundamental para entender a condutividade e as propriedades eletrônicas dos semicondutores."
             }
-          ]
+          ],
+          "chapter": "5 The PN Junction Diode",
+          "source": "answer",
+          "questionNumber": "E5-1",
+          "page": 281
         }
       ]
     },
@@ -696,7 +736,10 @@
           "symbol": "n",
           "description": "Um número que indica a potência de dez que está sendo utilizada para expressar a carga em uma forma científica."
         }
-      ]
+      ],
+      "chapter": "5 The PN Junction Diode",
+      "source": "standalone",
+      "page": 312
     },
     {
       "originalFormula": "qV_a",
@@ -717,7 +760,10 @@
           "symbol": "V_a",
           "description": "Representa o potencial elétrico em um ponto específico no espaço, que é a quantidade de energia potencial por unidade de carga que uma carga elétrica teria nesse ponto."
         }
-      ]
+      ],
+      "chapter": "5 The PN Junction Diode",
+      "source": "standalone",
+      "page": 343
     },
     {
       "originalFormula": "I = I_0 \\left( e^{\\frac{qV}{kT}} - 1 \\right)",
@@ -760,7 +806,10 @@
           "symbol": "T",
           "description": "é a temperatura do sistema, medida em kelvins, que influencia a energia térmica dos portadores de carga no diodo."
         }
-      ]
+      ],
+      "chapter": "5 The PN Junction Diode",
+      "source": "standalone",
+      "page": 374
     },
     {
       "originalFormula": "D = \\frac{kT}{q} \\cdot \\mu",
@@ -793,7 +842,10 @@
           "symbol": "μ",
           "description": "Representa a mobilidade dos portadores de carga, que é a medida de quão rapidamente os portadores podem se mover sob a influência de um campo elétrico."
         }
-      ]
+      ],
+      "chapter": "5 The PN Junction Diode",
+      "source": "standalone",
+      "page": 405
     },
     {
       "originalFormula": "W = \\sqrt{\\frac{2e(N_A + N_D)}{q N_A N_D} V_{bi}}",
@@ -830,7 +882,10 @@
           "symbol": "V_{bi}",
           "description": "Representa a tensão de polarização interna da junção, que é a diferença de potencial que se estabelece na junção devido à separação de cargas."
         }
-      ]
+      ],
+      "chapter": "5 The PN Junction Diode",
+      "source": "standalone",
+      "page": 436
     },
     {
       "originalFormula": "V_{bi} = \\frac{kT}{q} \\ln \\left( \\frac{N_A N_D}{n_i^2} \\right)",
@@ -871,7 +926,10 @@
           "symbol": "n_i",
           "description": "É a concentração intrínseca de portadores de carga em um semicondutor puro, que é importante para determinar as propriedades elétricas do material."
         }
-      ]
+      ],
+      "chapter": "5 The PN Junction Diode",
+      "source": "standalone",
+      "page": 467
     }
   ],
   "processedPages": [
@@ -1374,5 +1432,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.002Z"
+  "lastUpdated": "2026-05-08T18:19:13.242879",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

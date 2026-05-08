@@ -1,0 +1,569 @@
+{
+  "chapter": "6 Nonequilibrium Excess Carriers in Semiconductors",
+  "section": "6.1 Characteristics of Excess Carriers",
+  "questions": [
+    {
+      "number": "6.1",
+      "text": "Using the parameters in Example 6.1, calculate the recombination rate of the excess carriers for (a) τ = 0, (b) τ = 1 μs, (c) τ = 4 μs, and (d) τ = 10 μs.",
+      "formulas": [
+        {
+          "originalFormula": "R = \\frac{n_{i} - n_{0}}{\\tau}",
+          "genericFormula": "R = \\frac{n_{i} - n_{0}}{\\tau}",
+          "description": "Esta fórmula representa a taxa de recombinação de portadores de carga em um semicondutor. A taxa de recombinação é uma medida de quantos portadores de carga (elétrons e lacunas) estão se recombinando por unidade de tempo em um material semicondutor.",
+          "concepts": [
+            "Recombinação de portadores de carga",
+            "Semicondutores",
+            "Densidade de portadores",
+            "Tempo de vida dos portadores"
+          ],
+          "symbols": [
+            {
+              "symbol": "R",
+              "description": "Representa a taxa de recombinação de portadores de carga, que indica quantas recombinações ocorrem por unidade de tempo."
+            },
+            {
+              "symbol": "n_{i}",
+              "description": "Representa a densidade de portadores de carga intrínsecos, ou seja, o número de portadores de carga (elétrons e lacunas) presentes em um semicondutor puro em equilíbrio térmico."
+            },
+            {
+              "symbol": "n_{0}",
+              "description": "Representa a densidade de portadores de carga em um estado não equilibrado, como em um semicondutor dopado ou sob a influência de um campo elétrico."
+            },
+            {
+              "symbol": "\\tau",
+              "description": "Representa o tempo de vida médio dos portadores de carga, que é o tempo médio que um portador de carga permanece livre antes de se recombinar."
+            }
+          ],
+          "chapter": "6 Nonequilibrium Excess Carriers in Semiconductors",
+          "section": "6.1 Characteristics of Excess Carriers",
+          "source": "question",
+          "questionNumber": "6.1",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "number": "Ex 6.6 (a)",
+      "text": "Consider n-type GaAs doped to N_{d} = 5 \\times 10^{15} \\, \\text{cm}^{-3}. Determine the dielectric relaxation time.",
+      "formulas": []
+    },
+    {
+      "number": "Ex 6.6 (b)",
+      "text": "Repeat part (a) for p-type silicon doped to N_{a} = 2 \\times 10^{16} \\, \\text{cm}^{-3}.",
+      "formulas": []
+    },
+    {
+      "number": "Ex 6.7",
+      "text": "Impurity concentrations of N_d = 3 \\times 10^{15} \\, \\text{cm}^{-3} and N_a = 10^{16} \\, \\text{cm}^{-3} are added to silicon at T = 300 \\, \\text{K}. Excess carriers are generated in the semiconductor such that the steady-state excess carrier concentrations are \\delta n = \\delta p = 4 \\times 10^{13} \\, \\text{cm}^{-3}. (a) Determine the thermal-equilibrium Fermi level with respect to the intrinsic Fermi level. (b) Find E_{n} and E_{p} with respect to E_{g}.",
+      "formulas": []
+    },
+    {
+      "number": "6.5",
+      "text": "Derive Equation (6.27) from Equations (6.18) and (6.20).",
+      "formulas": []
+    },
+    {
+      "number": "6.6",
+      "text": "Consider a one-dimensional hole flux as shown in Figure 6.4. If the generation rate of holes in this differential volume is g_{s} = 10^{20} \\text{ cm}^{-3}\\text{s}^{-1} and the recombination rate is 2 \\times 10^{19} \\text{ cm}^{-3}\\text{s}^{-1}, what must be the gradient in the particle current density to maintain a steady-state hole concentration?",
+      "formulas": []
+    },
+    {
+      "number": "6.7",
+      "text": "Repeat Problem 6.6 if the generation rate becomes zero.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "Ex 6.7",
+      "text": "The Fermi level for thermal equilibrium can be determined from Equation (6.84a). We can write E_{F} - E_{n} = kT \\ln \\left( \\frac{n_{i}}{n_{0}} \\right) = 0.2982 \\, \\text{eV}. E_{n} - E_{F} = kT \\ln \\left( \\frac{n_{0} + \\delta n}{n_{i}} \\right) = 0.2984 \\, \\text{eV}. E_{F} - E_{p} = kT \\ln \\left( \\frac{p_{0} + \\delta p}{n_{i}} \\right) = 0.179 \\, \\text{eV}.",
+      "formulas": [
+        {
+          "originalFormula": "E_{F} - E_{n} = kT \\ln \\left( \\frac{n_{i}}{n_{0}} \\right)",
+          "genericFormula": "E_{F} - E_{n} = kT \\ln \\left( \\frac{n_{i}}{n_{0}} \\right)",
+          "description": "Esta fórmula relaciona a diferença de energia entre o nível de Fermi e um nível de energia específico em um semicondutor com a razão entre a concentração de portadores intrínsecos e a concentração de portadores em equilíbrio. Ela é fundamental para entender como a temperatura e a concentração de portadores afetam as propriedades elétricas dos materiais semicondutores.",
+          "concepts": [
+            "Nível de Fermi",
+            "Energia em semicondutores",
+            "Concentração de portadores",
+            "Efeito da temperatura em semicondutores",
+            "Equilíbrio térmico"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{F}",
+              "description": "Representa o nível de Fermi, que é o nível de energia mais alto ocupado por elétrons em um material a temperatura zero absoluto."
+            },
+            {
+              "symbol": "E_{n}",
+              "description": "Representa um nível de energia específico no semicondutor, que pode ser um nível de energia de um portador de carga, como um elétron."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura ao comportamento estatístico de partículas em um sistema."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta do sistema, medida em Kelvin, que influencia a energia térmica dos portadores de carga."
+            },
+            {
+              "symbol": "n_{i}",
+              "description": "Representa a concentração de portadores intrínsecos, que é a quantidade de portadores de carga gerados naturalmente em um semicondutor puro."
+            },
+            {
+              "symbol": "n_{0}",
+              "description": "Representa a concentração de portadores em equilíbrio, que é a quantidade de portadores de carga em um semicondutor em condições de equilíbrio térmico."
+            }
+          ],
+          "chapter": "6 Nonequilibrium Excess Carriers in Semiconductors",
+          "section": "6.1 Characteristics of Excess Carriers",
+          "source": "answer",
+          "questionNumber": "Ex 6.7",
+          "page": 41
+        },
+        {
+          "originalFormula": "E_{n} - E_{F} = kT \\ln \\left( \\frac{n_{0} + \\delta n}{n_{i}} \\right)",
+          "genericFormula": "E_{n} - E_{F} = kT \\ln \\left( \\frac{n_{0} + \\delta n}{n_{i}} \\right)",
+          "description": "Esta fórmula expressa a diferença de energia entre o nível de energia de um portador de carga em um semicondutor e o nível de Fermi, em função da temperatura e das concentrações de portadores de carga. Ela é fundamental para entender como a temperatura e a dopagem afetam as propriedades elétricas dos semicondutores.",
+          "concepts": [
+            "Nível de energia dos portadores de carga",
+            "Nível de Fermi",
+            "Temperatura térmica",
+            "Concentração de portadores de carga",
+            "Dopagem em semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{n}",
+              "description": "Representa o nível de energia dos portadores de carga em um semicondutor."
+            },
+            {
+              "symbol": "E_{F}",
+              "description": "Representa o nível de Fermi, que é o nível de energia mais alto ocupado por elétrons a temperatura zero."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta do sistema, medida em Kelvin."
+            },
+            {
+              "symbol": "n_{0}",
+              "description": "Representa a concentração inicial de portadores de carga no semicondutor antes da dopagem."
+            },
+            {
+              "symbol": "\\delta n",
+              "description": "Representa a variação na concentração de portadores de carga devido à dopagem ou outras mudanças no sistema."
+            },
+            {
+              "symbol": "n_{i}",
+              "description": "Representa a concentração intrínseca de portadores de carga em um semicondutor não dopado."
+            }
+          ],
+          "chapter": "6 Nonequilibrium Excess Carriers in Semiconductors",
+          "section": "6.1 Characteristics of Excess Carriers",
+          "source": "answer",
+          "questionNumber": "Ex 6.7",
+          "page": 82
+        },
+        {
+          "originalFormula": "E_{F} - E_{p} = kT \\ln \\left( \\frac{p_{0} + \\delta p}{n_{i}} \\right)",
+          "genericFormula": "E_{F} - E_{p} = kT \\ln \\left( \\frac{p_{0} + \\delta p}{n_{i}} \\right)",
+          "description": "Esta fórmula relaciona a diferença de energia entre o nível de Fermi e o nível de energia de um portador de carga em um semicondutor, com a temperatura e a concentração de portadores de carga. Ela é fundamental para entender como a temperatura e a dopagem afetam as propriedades elétricas dos semicondutores.",
+          "concepts": [
+            "Nível de Fermi",
+            "Energia de portadores de carga",
+            "Temperatura",
+            "Concentração de portadores",
+            "Dopagem em semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{F}",
+              "description": "Representa o nível de Fermi, que é a energia máxima ocupada por elétrons em um material a temperatura zero absoluto."
+            },
+            {
+              "symbol": "E_{p}",
+              "description": "Representa a energia de um portador de carga, que pode ser um elétron ou um buraco, dependendo do tipo de semicondutor."
+            },
+            {
+              "symbol": "k",
+              "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta do sistema, medida em Kelvin."
+            },
+            {
+              "symbol": "p_{0}",
+              "description": "É a concentração inicial de portadores de carga, como buracos em um semicondutor do tipo p."
+            },
+            {
+              "symbol": "\\delta p",
+              "description": "Representa a variação na concentração de portadores de carga, que pode ocorrer devido a mudanças nas condições do sistema."
+            },
+            {
+              "symbol": "n_{i}",
+              "description": "É a concentração intrínseca de portadores de carga em um semicondutor puro, sem dopagem."
+            }
+          ],
+          "chapter": "6 Nonequilibrium Excess Carriers in Semiconductors",
+          "section": "6.1 Characteristics of Excess Carriers",
+          "source": "answer",
+          "questionNumber": "Ex 6.7",
+          "page": 123
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "F_{p}^{*}(x + dx) = F_{p}^{*}(x) + \\frac{dF_{p}^{*}}{dx} \\cdot dx",
+      "genericFormula": "F_{p}^{*}(x + \\Delta x) = F_{p}^{*}(x) + \\frac{dF_{p}^{*}}{dx} \\cdot \\Delta x",
+      "description": "Esta fórmula é uma expressão do cálculo diferencial que descreve como uma função muda quando sua variável de entrada sofre uma pequena alteração. Ela representa a aproximação da mudança na função em um ponto específico, levando em conta a taxa de variação da função naquele ponto.",
+      "concepts": [
+        "Cálculo diferencial",
+        "Taxa de variação",
+        "Aproximação linear"
+      ],
+      "symbols": [
+        {
+          "symbol": "F_{p}^{*}(x + dx)",
+          "description": "Representa o valor da função F_{p}^{*} em um ponto que é ligeiramente deslocado de x por uma pequena quantidade dx."
+        },
+        {
+          "symbol": "F_{p}^{*}(x)",
+          "description": "Representa o valor da função F_{p}^{*} em um ponto x específico."
+        },
+        {
+          "symbol": "dF_{p}^{*}",
+          "description": "Denota a variação infinitesimal na função F_{p}^{*} quando a variável x é alterada."
+        },
+        {
+          "symbol": "dx",
+          "description": "Representa uma pequena mudança na variável x."
+        },
+        {
+          "symbol": "\\frac{dF_{p}^{*}}{dx}",
+          "description": "É a derivada da função F_{p}^{*} em relação a x, que indica a taxa de variação da função em relação a pequenas mudanças na variável x."
+        }
+      ],
+      "chapter": "6 Nonequilibrium Excess Carriers in Semiconductors",
+      "section": "6.1 Characteristics of Excess Carriers",
+      "source": "standalone",
+      "page": 164
+    },
+    {
+      "originalFormula": "p_{0} + \\delta p = n_{i} \\exp \\left( \\frac{E_{F_{e}} - E_{F_{h}}}{kT} \\right)",
+      "genericFormula": "p_{0} + \\delta p = n_{i} \\exp \\left( \\frac{E_{F_{e}} - E_{F_{h}}}{kT} \\right)",
+      "description": "Esta fórmula representa a relação entre a densidade de portadores de carga em um semicondutor, onde p_{0} é a densidade de portadores de carga positiva em equilíbrio, \\delta p é a variação na densidade de portadores de carga positiva, n_{i} é a densidade intrínseca de portadores de carga, e a parte exponencial relaciona a diferença de energia entre os níveis de Fermi dos elétrons e buracos com a temperatura do sistema.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Equilíbrio térmico em semicondutores",
+        "Níveis de Fermi",
+        "Efeito da temperatura na condutividade",
+        "Semicondutores intrínsecos e extrínsecos"
+      ],
+      "symbols": [
+        {
+          "symbol": "p_{0}",
+          "description": "Representa a densidade de portadores de carga positiva em equilíbrio no semicondutor."
+        },
+        {
+          "symbol": "\\delta p",
+          "description": "Representa a variação na densidade de portadores de carga positiva, que pode ocorrer devido a mudanças nas condições externas."
+        },
+        {
+          "symbol": "n_{i}",
+          "description": "Representa a densidade intrínseca de portadores de carga, que é a quantidade de portadores de carga em um semicondutor puro sem dopagem."
+        },
+        {
+          "symbol": "E_{F_{e}}",
+          "description": "Representa o nível de Fermi dos elétrons, que é a energia máxima ocupada por elétrons em um semicondutor."
+        },
+        {
+          "symbol": "E_{F_{h}}",
+          "description": "Representa o nível de Fermi dos buracos, que é a energia mínima que pode ser ocupada por buracos em um semicondutor."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas térmicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta do sistema, medida em Kelvin."
+        }
+      ],
+      "chapter": "6 Nonequilibrium Excess Carriers in Semiconductors",
+      "section": "6.1 Characteristics of Excess Carriers",
+      "source": "standalone",
+      "page": 205
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259
+  ],
+  "lastUpdated": "2026-05-08T21:23:15.051Z",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
+}

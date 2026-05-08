@@ -25,7 +25,12 @@
               "symbol": "100",
               "description": "Um índice que indica um estado quântico específico, que pode estar relacionado a diferentes níveis de energia ou outras características do sistema quântico."
             }
-          ]
+          ],
+          "chapter": "Reading List",
+          "section": "unknown",
+          "source": "question",
+          "questionNumber": "2.43",
+          "page": 1
         },
         {
           "originalFormula": "I = I_0 e^{-\\frac{qV}{kT}}",
@@ -67,7 +72,12 @@
               "symbol": "T",
               "description": "Representa a temperatura do sistema em Kelvin, que afeta a condutividade do material."
             }
-          ]
+          ],
+          "chapter": "Reading List",
+          "section": "unknown",
+          "source": "question",
+          "questionNumber": "2.43",
+          "page": 73
         },
         {
           "originalFormula": "2.65",
@@ -75,13 +85,23 @@
           "description": "Não foi possível gerar descrição automática",
           "concepts": [],
           "symbols": [],
-          "rawText": "{\n  \"originalFormula\": \"I = n \\cdot A \\cdot q \\cdot v\",\n  \"genericFormula\": \"I = n \\cdot A \\cdot q \\cdot v\",\n  \"description\": \"Esta fórmula representa a corrente elétrica em um condutor, onde a corrente é o fluxo de carga elétrica que passa por uma seção transversal do material em um determinado intervalo de tempo.\",\n  \"concepts\": [\n    \"Corrente elétrica\",\n    \"Densidade de portadores de carga\",\n    \"Área da seção transversal\",\n    \"Carga elétrica\",\n    \"Velocidade média dos portadores de carga\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"I\",\n      \"description\": \"Representa a corrente elétrica, que é a quantidade de carga que passa por um ponto em um circuito por unidade de tempo.\"\n    },\n    {\n      \"symbol\": \"n\",\n      \"description\": \"Representa a densidade de portadores de carga, ou seja, o número de portadores de carga por unidade de volume no material.\"\n    },\n    {\n      \"symbol\": \"A\",\n      \"description\": \"Representa a área da seção transversal do condutor, que é a área pela qual a corrente elétrica flui.\"\n    },\n    {\n      \"symbol\": \"q\",\n      \"description\": \"Representa a carga elétrica de cada portador de carga, que é a quantidade de eletricidade que cada partícula transporta.\"\n    },\n    {\n      \"symbol\": \"v\",\n      \"description\": \"Representa a velocidade média dos portadores de carga, que é a velocidade com que os portadores se movem através do condutor.\"\n    }\n  ]\n}"
+          "rawText": "{\n  \"originalFormula\": \"I = n \\cdot A \\cdot q \\cdot v\",\n  \"genericFormula\": \"I = n \\cdot A \\cdot q \\cdot v\",\n  \"description\": \"Esta fórmula representa a corrente elétrica em um condutor, onde a corrente é o fluxo de carga elétrica que passa por uma seção transversal do material em um determinado intervalo de tempo.\",\n  \"concepts\": [\n    \"Corrente elétrica\",\n    \"Densidade de portadores de carga\",\n    \"Área da seção transversal\",\n    \"Carga elétrica\",\n    \"Velocidade média dos portadores de carga\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"I\",\n      \"description\": \"Representa a corrente elétrica, que é a quantidade de carga que passa por um ponto em um circuito por unidade de tempo.\"\n    },\n    {\n      \"symbol\": \"n\",\n      \"description\": \"Representa a densidade de portadores de carga, ou seja, o número de portadores de carga por unidade de volume no material.\"\n    },\n    {\n      \"symbol\": \"A\",\n      \"description\": \"Representa a área da seção transversal do condutor, que é a área pela qual a corrente elétrica flui.\"\n    },\n    {\n      \"symbol\": \"q\",\n      \"description\": \"Representa a carga elétrica de cada portador de carga, que é a quantidade de eletricidade que cada partícula transporta.\"\n    },\n    {\n      \"symbol\": \"v\",\n      \"description\": \"Representa a velocidade média dos portadores de carga, que é a velocidade com que os portadores se movem através do condutor.\"\n    }\n  ]\n}",
+          "chapter": "Reading List",
+          "section": "unknown",
+          "source": "question",
+          "questionNumber": "2.43",
+          "page": 145
         }
       ]
     },
     {
       "number": "2.44",
       "text": "What property do H, Li, Na, and K have in common?",
+      "formulas": []
+    },
+    {
+      "number": "1",
+      "text": "Explain the operation of this hot probe technique and sketch a diagram indicating the direction of current for p- and n-type semiconductor samples.",
       "formulas": []
     }
   ],
@@ -267,7 +287,45 @@
     177,
     178,
     179,
-    180
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216
   ],
-  "lastUpdated": "2026-05-08T20:51:23.730Z"
+  "lastUpdated": "2026-05-08T18:19:12.910535",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
 }

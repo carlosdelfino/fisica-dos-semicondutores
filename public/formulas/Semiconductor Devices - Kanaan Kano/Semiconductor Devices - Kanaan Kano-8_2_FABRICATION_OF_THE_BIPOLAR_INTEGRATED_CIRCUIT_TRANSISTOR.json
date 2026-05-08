@@ -9,7 +9,10 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"R_{substrate} = 3-10 \\, \\\\text{ohm-cm}\",\n  \"genericFormula\": \"R_{substrate} = R_{min} - R_{max} \\, \\\\text{ohm-cm}\",\n  \"description\": \"Esta fórmula representa a resistividade de um substrato semicondutor, que é uma medida de quão bem o material conduz eletricidade. A resistividade é expressa em ohm-centímetros e indica a capacidade do substrato de permitir a passagem de corrente elétrica.\",\n  \"concepts\": [\n    \"Resistividade\",\n    \"Condutividade elétrica\",\n    \"Semicondutores\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"R_{substrate}\",\n      \"description\": \"Representa a resistividade do substrato semicondutor, que é a propriedade do material que determina sua capacidade de conduzir corrente elétrica.\"\n    },\n    {\n      \"symbol\": \"3-10\",\n      \"description\": \"Indica o intervalo de valores da resistividade, onde 3 é o valor mínimo e 10 é o valor máximo, ambos em ohm-centímetros.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"R_{substrate} = 3-10 \\, \\\\text{ohm-cm}\",\n  \"genericFormula\": \"R_{substrate} = R_{min} - R_{max} \\, \\\\text{ohm-cm}\",\n  \"description\": \"Esta fórmula representa a resistividade de um substrato semicondutor, que é uma medida de quão bem o material conduz eletricidade. A resistividade é expressa em ohm-centímetros e indica a capacidade do substrato de permitir a passagem de corrente elétrica.\",\n  \"concepts\": [\n    \"Resistividade\",\n    \"Condutividade elétrica\",\n    \"Semicondutores\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"R_{substrate}\",\n      \"description\": \"Representa a resistividade do substrato semicondutor, que é a propriedade do material que determina sua capacidade de conduzir corrente elétrica.\"\n    },\n    {\n      \"symbol\": \"3-10\",\n      \"description\": \"Indica o intervalo de valores da resistividade, onde 3 é o valor mínimo e 10 é o valor máximo, ambos em ohm-centímetros.\"\n    }\n  ]\n}",
+      "chapter": "8.2 FABRICATION OF THE BIPOLAR INTEGRATED CIRCUIT TRANSISTOR",
+      "source": "standalone",
+      "page": 1
     },
     {
       "originalFormula": "d_{buried} = 3 \\, \\mu m",
@@ -17,7 +20,10 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"d_{buried} = 3 \\, \\\\mu m\",\n  \"genericFormula\": \"d_{buried} = d\",\n  \"description\": \"Esta fórmula representa a profundidade de uma camada enterrada em um material semicondutor, medida em micrômetros. A profundidade é uma característica importante em aplicações de dispositivos semicondutores, pois influencia o desempenho e as propriedades elétricas do material.\",\n  \"concepts\": [\n    \"Profundidade de camadas em semicondutores\",\n    \"Estrutura de dispositivos semicondutores\",\n    \"Propriedades elétricas de materiais\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"d_{buried}\",\n      \"description\": \"Representa a profundidade da camada enterrada em um material semicondutor.\"\n    },\n    {\n      \"symbol\": \"\\\\mu m\",\n      \"description\": \"Representa a unidade de medida micrômetro, que é um milionésimo de metro.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"d_{buried} = 3 \\, \\\\mu m\",\n  \"genericFormula\": \"d_{buried} = d\",\n  \"description\": \"Esta fórmula representa a profundidade de uma camada enterrada em um material semicondutor, medida em micrômetros. A profundidade é uma característica importante em aplicações de dispositivos semicondutores, pois influencia o desempenho e as propriedades elétricas do material.\",\n  \"concepts\": [\n    \"Profundidade de camadas em semicondutores\",\n    \"Estrutura de dispositivos semicondutores\",\n    \"Propriedades elétricas de materiais\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"d_{buried}\",\n      \"description\": \"Representa a profundidade da camada enterrada em um material semicondutor.\"\n    },\n    {\n      \"symbol\": \"\\\\mu m\",\n      \"description\": \"Representa a unidade de medida micrômetro, que é um milionésimo de metro.\"\n    }\n  ]\n}",
+      "chapter": "8.2 FABRICATION OF THE BIPOLAR INTEGRATED CIRCUIT TRANSISTOR",
+      "source": "standalone",
+      "page": 125
     },
     {
       "originalFormula": "R_{epitaxial} = 0.1 - 1 \\, \\text{ohm-cm}",
@@ -25,7 +31,10 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"R_{epitaxial} = 0.1 - 1 \\, \\\\text{ohm-cm}\",\n  \"genericFormula\": \"R_{epitaxial} = a - b \\, \\\\text{ohm-cm}\",\n  \"description\": \"Esta fórmula representa a resistência elétrica de um material epitaxial, que é uma camada de material depositada sobre um substrato. A resistência é uma medida de quão difícil é para a corrente elétrica passar através do material. Neste caso, a resistência varia entre dois valores, indicando que o material pode ter diferentes características dependendo de sua composição ou estrutura.\",\n  \"concepts\": [\n    \"Resistência elétrica\",\n    \"Materiais semicondutores\",\n    \"Epitaxia\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"R_{epitaxial}\",\n      \"description\": \"Representa a resistência elétrica do material epitaxial, que é a quantidade que mede a oposição ao fluxo de corrente elétrica através desse material.\"\n    },\n    {\n      \"symbol\": \"a\",\n      \"description\": \"Um valor numérico que representa o limite inferior da resistência do material epitaxial, indicando a menor resistência que pode ser encontrada.\"\n    },\n    {\n      \"symbol\": \"b\",\n      \"description\": \"Um valor numérico que representa o limite superior da resistência do material epitaxial, indicando a maior resistência que pode ser encontrada.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"R_{epitaxial} = 0.1 - 1 \\, \\\\text{ohm-cm}\",\n  \"genericFormula\": \"R_{epitaxial} = a - b \\, \\\\text{ohm-cm}\",\n  \"description\": \"Esta fórmula representa a resistência elétrica de um material epitaxial, que é uma camada de material depositada sobre um substrato. A resistência é uma medida de quão difícil é para a corrente elétrica passar através do material. Neste caso, a resistência varia entre dois valores, indicando que o material pode ter diferentes características dependendo de sua composição ou estrutura.\",\n  \"concepts\": [\n    \"Resistência elétrica\",\n    \"Materiais semicondutores\",\n    \"Epitaxia\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"R_{epitaxial}\",\n      \"description\": \"Representa a resistência elétrica do material epitaxial, que é a quantidade que mede a oposição ao fluxo de corrente elétrica através desse material.\"\n    },\n    {\n      \"symbol\": \"a\",\n      \"description\": \"Um valor numérico que representa o limite inferior da resistência do material epitaxial, indicando a menor resistência que pode ser encontrada.\"\n    },\n    {\n      \"symbol\": \"b\",\n      \"description\": \"Um valor numérico que representa o limite superior da resistência do material epitaxial, indicando a maior resistência que pode ser encontrada.\"\n    }\n  ]\n}",
+      "chapter": "8.2 FABRICATION OF THE BIPOLAR INTEGRATED CIRCUIT TRANSISTOR",
+      "source": "standalone",
+      "page": 250
     },
     {
       "originalFormula": "d_{epitaxial} = 0.5 - 5 \\, \\mu m",
@@ -33,7 +42,10 @@
       "description": "Não foi possível gerar descrição automática",
       "concepts": [],
       "symbols": [],
-      "rawText": "{\n  \"originalFormula\": \"d_{epitaxial} = 0.5 - 5 \\, \\\\mu m\",\n  \"genericFormula\": \"d_{epitaxial} = a - b \\, \\\\mu m\",\n  \"description\": \"Esta fórmula representa a espessura de uma camada epitaxial, que é uma camada de material depositada sobre um substrato, onde a espessura é determinada pela diferença entre um valor constante e um valor que pode variar.\",\n  \"concepts\": [\n    \"Camadas epitaxiais\",\n    \"Deposição de materiais\",\n    \"Espessura de filmes finos\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"d_{epitaxial}\",\n      \"description\": \"Representa a espessura da camada epitaxial em micrômetros.\"\n    },\n    {\n      \"symbol\": \"a\",\n      \"description\": \"Um valor constante que representa a espessura inicial ou base da camada epitaxial.\"\n    },\n    {\n      \"symbol\": \"b\",\n      \"description\": \"Um valor que pode variar, representando a quantidade que é subtraída da espessura base.\"\n    }\n  ]\n}"
+      "rawText": "{\n  \"originalFormula\": \"d_{epitaxial} = 0.5 - 5 \\, \\\\mu m\",\n  \"genericFormula\": \"d_{epitaxial} = a - b \\, \\\\mu m\",\n  \"description\": \"Esta fórmula representa a espessura de uma camada epitaxial, que é uma camada de material depositada sobre um substrato, onde a espessura é determinada pela diferença entre um valor constante e um valor que pode variar.\",\n  \"concepts\": [\n    \"Camadas epitaxiais\",\n    \"Deposição de materiais\",\n    \"Espessura de filmes finos\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"d_{epitaxial}\",\n      \"description\": \"Representa a espessura da camada epitaxial em micrômetros.\"\n    },\n    {\n      \"symbol\": \"a\",\n      \"description\": \"Um valor constante que representa a espessura inicial ou base da camada epitaxial.\"\n    },\n    {\n      \"symbol\": \"b\",\n      \"description\": \"Um valor que pode variar, representando a quantidade que é subtraída da espessura base.\"\n    }\n  ]\n}",
+      "chapter": "8.2 FABRICATION OF THE BIPOLAR INTEGRATED CIRCUIT TRANSISTOR",
+      "source": "standalone",
+      "page": 374
     }
   ],
   "processedPages": [
@@ -536,5 +548,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.054Z"
+  "lastUpdated": "2026-05-08T18:19:13.627909",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }

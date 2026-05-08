@@ -25,7 +25,10 @@
           "symbol": "x",
           "description": "Representa uma posição ou um valor específico que está sendo subtraído do potencial elétrico, podendo indicar uma alteração ou uma referência em relação ao potencial."
         }
-      ]
+      ],
+      "chapter": "11.2 Schottky Barrier Diode",
+      "source": "standalone",
+      "page": 1
     }
   ],
   "processedPages": [
@@ -528,5 +531,7 @@
     497,
     498
   ],
-  "lastUpdated": "2026-05-08T19:05:42.126Z"
+  "lastUpdated": "2026-05-08T18:19:13.896466",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
 }
