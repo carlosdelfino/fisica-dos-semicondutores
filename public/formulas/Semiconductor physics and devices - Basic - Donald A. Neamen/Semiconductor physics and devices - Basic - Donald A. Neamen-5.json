@@ -1,0 +1,375 @@
+{
+  "chapter": "5",
+  "section": "Carrier Transport Phenomena",
+  "questions": [
+    {
+      "number": "5.0",
+      "text": "Describe the mechanism of carrier drift and induced drift current due to an applied electric field.",
+      "formulas": []
+    },
+    {
+      "number": "5.1",
+      "text": "Define and describe the characteristics of carrier mobility.",
+      "formulas": []
+    },
+    {
+      "number": "5.2",
+      "text": "Describe the mechanism of carrier diffusion and induced diffusion current due to a gradient in the carrier concentration.",
+      "formulas": []
+    },
+    {
+      "number": "5.3",
+      "text": "Define the carrier diffusion coefficient.",
+      "formulas": []
+    },
+    {
+      "number": "5.4",
+      "text": "Describe the effects of a nonuniform impurity doping concentration in a semiconductor material.",
+      "formulas": []
+    },
+    {
+      "number": "5.5",
+      "text": "Discuss and analyze the Hall effect in a semiconductor material.",
+      "formulas": []
+    },
+    {
+      "number": "Example 5.1",
+      "text": "Calculate the drift current density in a semiconductor for a given electric field.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "Example 5.1",
+      "text": "Consider a gallium arsenide sample at T = 300 K with doping concentrations of N_{d} = 0 and N_{a} = 10^{16} \\text{cm}^{-3}. Assume complete ionization and assume electron and hole mobilities given in Table 5.1. Calculate the drift current density if the applied electric field is E = 10 \\text{V/cm}.",
+      "formulas": [
+        {
+          "originalFormula": "J_{drift} = e (n \\mu_{n} + p \\mu_{p}) E",
+          "genericFormula": "J_{drift} = e (n \\mu_{n} + p \\mu_{p}) E",
+          "description": "Esta fórmula representa a densidade de corrente de deriva em um semicondutor, que é a corrente elétrica gerada devido ao movimento de portadores de carga sob a influência de um campo elétrico.",
+          "concepts": [
+            "Densidade de corrente",
+            "Portadores de carga",
+            "Campo elétrico",
+            "Mobilidade dos portadores"
+          ],
+          "symbols": [
+            {
+              "symbol": "J_{drift}",
+              "description": "Representa a densidade de corrente de deriva, que é a quantidade de corrente elétrica que flui por unidade de área devido ao movimento dos portadores de carga."
+            },
+            {
+              "symbol": "e",
+              "description": "Representa a carga elementar, que é a carga elétrica de um único elétron."
+            },
+            {
+              "symbol": "n",
+              "description": "Representa a densidade de portadores de carga negativa, ou seja, a quantidade de elétrons livres por unidade de volume em um semicondutor."
+            },
+            {
+              "symbol": "\\mu_{n}",
+              "description": "Representa a mobilidade dos portadores de carga negativa, que é uma medida de quão rapidamente os elétrons podem se mover através do semicondutor quando um campo elétrico é aplicado."
+            },
+            {
+              "symbol": "p",
+              "description": "Representa a densidade de portadores de carga positiva, ou seja, a quantidade de lacunas (ou buracos) por unidade de volume em um semicondutor."
+            },
+            {
+              "symbol": "\\mu_{p}",
+              "description": "Representa a mobilidade dos portadores de carga positiva, que é uma medida de quão rapidamente as lacunas podem se mover através do semicondutor sob a influência de um campo elétrico."
+            },
+            {
+              "symbol": "E",
+              "description": "Representa a intensidade do campo elétrico aplicado, que é a força por unidade de carga que atua sobre os portadores de carga no semicondutor."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "v_{d} = \\mu_{e} E",
+      "genericFormula": "v_{d} = \\mu E",
+      "description": "Esta fórmula representa a relação entre a velocidade de deriva de portadores de carga em um semicondutor e o campo elétrico aplicado. A velocidade de deriva é a velocidade média que os portadores de carga (como elétrons) adquirem quando um campo elétrico é aplicado a eles.",
+      "concepts": [
+        "Velocidade de deriva",
+        "Mobilidade dos portadores de carga",
+        "Campo elétrico"
+      ],
+      "symbols": [
+        {
+          "symbol": "v_{d}",
+          "description": "Representa a velocidade de deriva dos portadores de carga, que é a velocidade média que eles atingem devido à aplicação de um campo elétrico."
+        },
+        {
+          "symbol": "\\mu_{e}",
+          "description": "Representa a mobilidade dos portadores de carga, que é uma medida de quão rapidamente os portadores podem se mover através de um material quando um campo elétrico é aplicado."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa a intensidade do campo elétrico aplicado, que é a força por unidade de carga que atua sobre os portadores de carga."
+        }
+      ]
+    },
+    {
+      "originalFormula": "j_{drift} = (e n) \\mu_{e} E",
+      "genericFormula": "j_{drift} = (e n) \\mu_{e} E",
+      "description": "Esta fórmula representa a densidade de corrente de deriva em um semicondutor, que é a corrente elétrica gerada pelo movimento de portadores de carga sob a influência de um campo elétrico. A densidade de corrente de deriva é uma medida de quão rapidamente os portadores de carga se movem em resposta a um campo elétrico aplicado.",
+      "concepts": [
+        "Densidade de corrente",
+        "Movimento de portadores de carga",
+        "Campo elétrico",
+        "Mobilidade dos portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "j_{drift}",
+          "description": "Representa a densidade de corrente de deriva, que é a quantidade de corrente elétrica por unidade de área gerada pelo movimento dos portadores de carga."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a carga elétrica de um único elétron, um valor fundamental na física que mede a quantidade de carga elétrica."
+        },
+        {
+          "symbol": "n",
+          "description": "Representa a densidade de portadores de carga, que é o número de portadores de carga (como elétrons) por unidade de volume em um semicondutor."
+        },
+        {
+          "symbol": "\\mu_{e}",
+          "description": "Representa a mobilidade dos elétrons, que é uma medida da facilidade com que os elétrons se movem através do material quando um campo elétrico é aplicado."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa a intensidade do campo elétrico, que é uma força que atua sobre as cargas elétricas, fazendo com que elas se movam."
+        }
+      ]
+    },
+    {
+      "originalFormula": "j_{drift} = (e p) \\mu_{p} E",
+      "genericFormula": "j_{drift} = (e p) \\mu_{p} E",
+      "description": "Esta fórmula descreve a densidade de corrente de deriva em um semicondutor, que é a corrente elétrica gerada pelo movimento de portadores de carga sob a influência de um campo elétrico. A densidade de corrente de deriva é diretamente proporcional à concentração de portadores de carga, à mobilidade desses portadores e à intensidade do campo elétrico aplicado.",
+      "concepts": [
+        "Densidade de corrente",
+        "Portadores de carga",
+        "Mobilidade elétrica",
+        "Campo elétrico"
+      ],
+      "symbols": [
+        {
+          "symbol": "j_{drift}",
+          "description": "Representa a densidade de corrente de deriva, que é a quantidade de corrente elétrica que flui por unidade de área em um semicondutor devido ao movimento dos portadores de carga."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a carga elétrica de um único elétron, uma constante fundamental na física."
+        },
+        {
+          "symbol": "p",
+          "description": "Representa a concentração de portadores de carga positiva (buracos) em um semicondutor, que é a quantidade de buracos por unidade de volume."
+        },
+        {
+          "symbol": "\\mu_{p}",
+          "description": "Representa a mobilidade dos portadores de carga positiva, que é uma medida de quão rapidamente os buracos podem se mover através do semicondutor quando um campo elétrico é aplicado."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa a intensidade do campo elétrico aplicado, que é a força por unidade de carga que atua sobre os portadores de carga no semicondutor."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190
+  ],
+  "lastUpdated": "2026-05-08T20:54:16.954Z"
+}

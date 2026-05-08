@@ -1,7 +1,52 @@
 {
   "chapter": "4",
   "section": "The Semiconductor in Equilibrium",
-  "questions": [],
+  "questions": [
+    {
+      "number": "TYU 4.6",
+      "text": "Determine the position of the intrinsic Fermi level with respect to the center of the bandgap in silicon at (a) T = 200 K and (b) T = 400 K. Assume the effective masses are constant over this temperature range.",
+      "formulas": [
+        {
+          "originalFormula": "E_{F} = E_{c} - \\frac{kT}{2} \\ln\\left(\\frac{N_{c}}{n}\\right)",
+          "genericFormula": "E_{F} = E_{c} - \\frac{kT}{2} \\ln\\left(\\frac{N_{c}}{n}\\right)",
+          "description": "Esta fórmula representa a energia do nível de Fermi em um semicondutor, que é a energia máxima que os elétrons podem ter a temperatura zero absoluto. Ela relaciona a energia do nível de condução, a temperatura e a densidade de estados disponíveis para os elétrons.",
+          "concepts": [
+            "Nível de Fermi",
+            "Energia de condução",
+            "Temperatura",
+            "Densidade de estados",
+            "Semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{F}",
+              "description": "Representa a energia do nível de Fermi, que é a energia máxima ocupada por elétrons em um material a temperatura zero absoluto."
+            },
+            {
+              "symbol": "E_{c}",
+              "description": "Representa a energia do nível de condução, que é a energia mínima necessária para que um elétron se mova livremente em um semicondutor."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura à energia em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura do sistema em Kelvin, que influencia a distribuição de elétrons em um material."
+            },
+            {
+              "symbol": "N_{c}",
+              "description": "Representa a densidade de estados no nível de condução, ou seja, o número de estados eletrônicos disponíveis para os elétrons em uma unidade de volume."
+            },
+            {
+              "symbol": "n",
+              "description": "Representa a densidade de portadores de carga (elétrons) no semicondutor, que indica quantos elétrons estão presentes em uma unidade de volume."
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "answers": [],
   "standaloneFormulas": [
     {
@@ -228,7 +273,23 @@
     130,
     131,
     132,
-    133
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149
   ],
-  "lastUpdated": "2026-05-08T20:29:30.953Z"
+  "lastUpdated": "2026-05-08T20:37:28.208Z"
 }

@@ -21,6 +21,404 @@
       "number": "4",
       "text": "Determine the position of the Fermi energy level as a function of the concentrations of dopant atoms added to the semiconductor.",
       "formulas": []
+    },
+    {
+      "number": "Example 4.2",
+      "text": "Calculate the thermal-equilibrium hole concentration in silicon at T = 400 K.",
+      "formulas": [
+        {
+          "originalFormula": "p_0 = N_s \\exp \\left( -\\frac{E_{F} - E_{v}}{kT} \\right)",
+          "genericFormula": "p_0 = N_s \\exp \\left( -\\frac{E_{F} - E_{v}}{kT} \\right)",
+          "description": "Não foi possível gerar descrição automática",
+          "concepts": [],
+          "symbols": [],
+          "rawText": "{\n  \"originalFormula\": \"p_0 = N_s \\exp \\left( -\\\\frac{E_{F} - E_{v}}{kT} \\\\right)\",\n  \"genericFormula\": \"p_0 = N_s \\exp \\\\left( -\\\\frac{E_{F} - E_{v}}{kT} \\\\right)\",\n  \"description\": \"Esta fórmula representa a densidade de portadores de carga positiva (buracos) em um semicondutor do tipo p em equilíbrio térmico. Ela relaciona a concentração de buracos à densidade de estados disponíveis e à energia de Fermi em relação à energia do valor de energia.\",\n  \"concepts\": [\n    \"Densidade de portadores de carga\",\n    \"Energia de Fermi\",\n    \"Energia do valor\",\n    \"Temperatura\",\n    \"Densidade de estados\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"p_0\",\n      \"description\": \"Representa a densidade de buracos, que são portadores de carga positiva em um semicondutor.\"\n    },\n    {\n      \"symbol\": \"N_s\",\n      \"description\": \"Representa a densidade de estados disponíveis para os buracos no semicondutor.\"\n    },\n    {\n      \"symbol\": \"E_{F}\",\n      \"description\": \"Representa a energia de Fermi, que é o nível de energia mais alto ocupado por elétrons em um semicondutor a temperatura zero.\"\n    },\n    {\n      \"symbol\": \"E_{v}\",\n      \"description\": \"Representa a energia do valor, que é o nível de energia mais alto na banda de valência onde os buracos são encontrados.\"\n    },\n    {\n      \"symbol\": \"k\",\n      \"description\": \"Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas térmicos.\"\n    },\n    {\n      \"symbol\": \"T\",\n      \"description\": \"Representa a temperatura do sistema em Kelvin, que influencia a distribuição de portadores de carga.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    {
+      "number": "Ex 4.5",
+      "text": "Determine the thermal-equilibrium concentrations of electrons and holes in silicon at T = 300 K if the Fermi energy level is 0.215 eV above the valence-band energy.",
+      "formulas": []
+    },
+    {
+      "number": "Example 4.6",
+      "text": "Calculate the electron concentration using the Fermi-Dirac integral.",
+      "formulas": []
+    },
+    {
+      "number": "TYU 4.8 (a)",
+      "text": "Calculate the thermal-equilibrium electron concentration in silicon at T = 300 K for the case when E_f = E_c.",
+      "formulas": []
+    },
+    {
+      "number": "TYU 4.8 (b)",
+      "text": "Calculate the thermal-equilibrium hole concentration in silicon at T = 300 K for the case when E_f = E_v.",
+      "formulas": []
+    },
+    {
+      "number": "Ex 4.9",
+      "text": "Find the thermal-equilibrium electron and hole concentrations in silicon with doping concentrations of N_{a} = 7 \\times 10^{5} \\, \\text{cm}^{-3} and N_{d} = 3 \\times 10^{5} \\, \\text{cm}^{-3} for (a) T = 250 K and (b) T = 400 K.",
+      "formulas": [
+        {
+          "originalFormula": "n_{0} = n_{i} \\times \\sqrt{ \\frac{N_{d}}{N_{a}} }",
+          "genericFormula": "n_{0} = n_{i} \\times \\sqrt{ \\frac{N_{D}}{N_{A}} }",
+          "description": "Esta fórmula representa a densidade de portadores de carga livres em um semicondutor dopado, onde n_{0} é a densidade de portadores de carga em equilíbrio, n_{i} é a densidade intrínseca de portadores, N_{d} é a concentração de dopantes do tipo doador e N_{a} é a concentração de dopantes do tipo aceitador.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Dopagem de semicondutores",
+            "Equilíbrio térmico em semicondutores",
+            "Semicondutores do tipo n e tipo p"
+          ],
+          "symbols": [
+            {
+              "symbol": "n_{0}",
+              "description": "Densidade de portadores de carga em equilíbrio no semicondutor dopado."
+            },
+            {
+              "symbol": "n_{i}",
+              "description": "Densidade intrínseca de portadores de carga em um semicondutor puro, sem dopagem."
+            },
+            {
+              "symbol": "N_{d}",
+              "description": "Concentração de átomos dopantes do tipo doador, que adicionam elétrons ao semicondutor."
+            },
+            {
+              "symbol": "N_{a}",
+              "description": "Concentração de átomos dopantes do tipo aceitador, que criam lacunas ao remover elétrons do semicondutor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "4.11",
+      "text": "Calculate the thermal-equilibrium electron and hole concentrations in a compensated p-type semiconductor.",
+      "formulas": [
+        {
+          "originalFormula": "p_0 = \\frac{N_a}{2} + \\sqrt{ \\left( \\frac{N_a - N_d}{2} \\right)^{2} + n_i^{2} }",
+          "genericFormula": "p_0 = \\frac{N_a}{2} + \\sqrt{ \\left( \\frac{N_a - N_d}{2} \\right)^{2} + n_i^{2} }",
+          "description": "Esta fórmula representa a concentração de portadores de carga do tipo 'buraco' em um semicondutor dopado, levando em consideração a dopagem com acceptores e doadores, além da concentração intrínseca de portadores.",
+          "concepts": [
+            "Dopagem de semicondutores",
+            "Concentração de portadores de carga",
+            "Semicondutores intrínsecos e extrínsecos",
+            "Equilíbrio de carga em semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "p_0",
+              "description": "Representa a concentração de buracos, que são portadores de carga positiva em um semicondutor."
+            },
+            {
+              "symbol": "N_a",
+              "description": "Representa a concentração de átomos acceptores, que são impurezas adicionadas ao semicondutor para aumentar a quantidade de buracos."
+            },
+            {
+              "symbol": "N_d",
+              "description": "Representa a concentração de átomos doadores, que são impurezas que fornecem elétrons ao semicondutor, podendo reduzir a quantidade de buracos."
+            },
+            {
+              "symbol": "n_i",
+              "description": "Representa a concentração intrínseca de portadores de carga em um semicondutor puro, sem dopagem."
+            }
+          ]
+        },
+        {
+          "originalFormula": "n_0 = \\frac{n_i^{2}}{p_0}",
+          "genericFormula": "n_0 = \\frac{n_i^{2}}{p_0}",
+          "description": "Esta fórmula representa a relação entre a densidade de portadores de elétrons em um semicondutor intrínseco e a densidade de portadores de lacunas em equilíbrio térmico. Ela mostra como a concentração de elétrons livres em um semicondutor depende da concentração de lacunas e da densidade intrínseca de portadores.",
+          "concepts": [
+            "Densidade de portadores de elétrons",
+            "Densidade de portadores de lacunas",
+            "Equilíbrio térmico em semicondutores",
+            "Semicondutores intrínsecos"
+          ],
+          "symbols": [
+            {
+              "symbol": "n_0",
+              "description": "Representa a densidade de portadores de elétrons livres em um semicondutor em equilíbrio térmico."
+            },
+            {
+              "symbol": "n_i",
+              "description": "Representa a densidade intrínseca de portadores, que é a quantidade de elétrons e lacunas em um semicondutor puro em condições de equilíbrio."
+            },
+            {
+              "symbol": "p_0",
+              "description": "Representa a densidade de portadores de lacunas em um semicondutor em equilíbrio térmico."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "Example 4.12",
+      "text": "Determine the required donor impurity concentration to obtain a specified Fermi energy.",
+      "formulas": [
+        {
+          "originalFormula": "E_{c} - E_{f} = kT \\ln \\left( \\frac{N_{d}}{N_{i}} \\right)",
+          "genericFormula": "E_{c} - E_{f} = kT \\ln \\left( \\frac{N_{d}}{N_{i}} \\right)",
+          "description": "Esta fórmula relaciona a diferença de energia entre a banda de condução e o nível de Fermi em um semicondutor dopado, considerando a concentração de dopantes e a concentração intrínseca de portadores de carga.",
+          "concepts": [
+            "Energia da banda de condução",
+            "Nível de Fermi",
+            "Temperatura",
+            "Concentração de dopantes",
+            "Concentração intrínseca de portadores"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{c}",
+              "description": "Representa a energia da banda de condução, que é o nível de energia onde os elétrons podem se mover livremente e contribuir para a condução elétrica."
+            },
+            {
+              "symbol": "E_{f}",
+              "description": "É o nível de Fermi, que indica o nível de energia mais alto que os elétrons ocupam a temperaturas absolutas zero. Ele também fornece informações sobre a probabilidade de ocupação dos estados eletrônicos."
+            },
+            {
+              "symbol": "k",
+              "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos, especialmente em contextos térmicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta do sistema, medida em Kelvin, que influencia a energia térmica dos portadores de carga."
+            },
+            {
+              "symbol": "N_{d}",
+              "description": "É a concentração de dopantes do tipo doador no semicondutor, que são átomos adicionados para aumentar a quantidade de portadores de carga positiva."
+            },
+            {
+              "symbol": "N_{i}",
+              "description": "É a concentração intrínseca de portadores de carga no semicondutor, que representa a quantidade de portadores gerados naturalmente no material sem dopagem."
+            }
+          ]
+        },
+        {
+          "originalFormula": "N_{d} - N_{s} = N_{s} \\exp \\left[ -\\frac{(E_{c} - E_{f})}{kT} \\right]",
+          "genericFormula": "N_{d} - N_{s} = N_{s} \\exp \\left[ -\\frac{(E_{c} - E_{f})}{kT} \\right]",
+          "description": "Esta fórmula representa a relação entre a densidade de portadores de carga em um semicondutor dopado e a densidade de estados na superfície do semicondutor, levando em consideração a energia de Fermi e a energia da borda da banda de condução. Ela é utilizada para entender como a dopagem e a temperatura afetam a concentração de portadores de carga em um material semicondutor.",
+          "concepts": [
+            "Dopagem de semicondutores",
+            "Densidade de portadores de carga",
+            "Energia de Fermi",
+            "Banda de condução",
+            "Temperatura em semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_{d}",
+              "description": "Representa a densidade de dopantes do tipo doador no semicondutor."
+            },
+            {
+              "symbol": "N_{s}",
+              "description": "Representa a densidade de portadores de carga na superfície do semicondutor."
+            },
+            {
+              "symbol": "E_{c}",
+              "description": "Representa a energia da borda da banda de condução do semicondutor."
+            },
+            {
+              "symbol": "E_{f}",
+              "description": "Representa a energia de Fermi, que indica o nível de energia dos elétrons em um sistema em equilíbrio térmico."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta do sistema, medida em Kelvin."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "TYU 4.14",
+      "text": "Determine the position of the Fermi level with respect to the valence-band energy in p-type GaAs at T = 300 K. The doping concentrations are N_{a} = 5 \\times 10^{16} \\, \\text{cm}^{-3} and N_{d} = 4 \\times 10^{15} \\, \\text{cm}^{-3}. (E_{F} - E_{v} = -g \\, \\text{'surv'})",
+      "formulas": [
+        {
+          "originalFormula": "E_{F} - E_{v} = -g",
+          "genericFormula": "E_{F} - E_{v} = -g",
+          "description": "Esta fórmula representa a diferença de energia entre o nível de Fermi e o nível de valência em um material semicondutor, onde 'g' é uma constante que pode estar relacionada a um fator de energia específico do sistema em questão.",
+          "concepts": [
+            "Nível de Fermi",
+            "Nível de valência",
+            "Energia em semicondutores",
+            "Propriedades eletrônicas de materiais"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{F}",
+              "description": "O nível de Fermi, que é a energia máxima ocupada por elétrons em um material a temperatura zero absoluto."
+            },
+            {
+              "symbol": "E_{v}",
+              "description": "O nível de valência, que é a energia dos elétrons mais altos que estão ligados aos átomos em um material semicondutor."
+            },
+            {
+              "symbol": "g",
+              "description": "Uma constante que pode representar uma diferença de energia ou um fator que influencia a energia no sistema, dependendo do contexto específico da questão."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "TYU 4.15",
+      "text": "Calculate the position of the Fermi energy level in n-type silicon at T = 300 K with respect to the intrinsic Fermi energy level. The doping concentrations are N_{a} = 2 \\times 10^{17} \\, \\text{cm}^{-3} and N_{d} = 3 \\times 10^{16} \\, \\text{cm}^{-3}. (E_{F} - E_{i} = -g \\, \\text{'surv'})",
+      "formulas": [
+        {
+          "originalFormula": "E_{F} - E_{i} = -g",
+          "genericFormula": "E_{F} - E_{i} = -g",
+          "description": "Esta fórmula representa a diferença de energia entre o nível de Fermi e um nível de energia intrínseco em um material semicondutor, onde a diferença é igual a um valor negativo que pode estar relacionado a uma força ou campo aplicado.",
+          "concepts": [
+            "Nível de Fermi",
+            "Níveis de energia em semicondutores",
+            "Energia intrínseca",
+            "Força ou campo elétrico"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{F}",
+              "description": "Representa o nível de Fermi, que é o nível de energia mais alto ocupado por elétrons em um material a temperatura zero absoluto."
+            },
+            {
+              "symbol": "E_{i}",
+              "description": "Representa um nível de energia intrínseco dentro do material semicondutor, que pode ser um nível de energia onde os elétrons podem ser excitados."
+            },
+            {
+              "symbol": "g",
+              "description": "Representa uma quantidade que pode estar relacionada a uma força ou campo que atua sobre os portadores de carga no material, influenciando a distribuição de energia."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "4.5",
+      "text": "Two semiconductor materials have exactly the same properties except material A has a bandgap energy of 0.90 eV and material B has a bandgap energy of 1.10 eV. Determine the ratio of n_i of material B to that of material A for (a) T = 200 K, (b) T = 300 K, and (c) T = 400 K.",
+      "formulas": []
+    },
+    {
+      "number": "4.6",
+      "text": "Determine (a) the magnitude of the product g_c(E_f)/E_c in the conduction band as a function of energy as shown in Figure 4.1. Assume the Boltzmann approximation is valid. Determine the energy with respect to E_c at which the maximum occurs. (b) Repeat part (a) for the magnitude of the product g_v(E) |1 - f(E)| in the valence band.",
+      "formulas": []
+    },
+    {
+      "number": "4.7",
+      "text": "Assume the Boltzmann approximation in a semiconductor is valid. Determine the ratio of n_i(E) = g_c(E_f)/E_c at E = E_f + 4kT to that at E = E_f + kT.",
+      "formulas": []
+    },
+    {
+      "number": "4.8",
+      "text": "Assume that E_c - E_f = 0.20 eV in silicon. Plot n(E) = g_c(E_f)/E_c over the range E_c ≤ E ≤ E_f + 0.10 eV for (a) T = 200 K and (b) T = 400 K.",
+      "formulas": []
+    },
+    {
+      "number": "4.9",
+      "text": "Consider silicon at T = 300 K. Plot the thermal equilibrium electron concentration n_0 (on a log scale) over the energy range 0.2 ≤ E - E_f ≤ 0.4 eV. Repeat part (a) for the hole concentration over the range 0.2 ≤ E - E_f ≤ 0.4 eV.",
+      "formulas": []
+    },
+    {
+      "number": "4.10",
+      "text": "Given the effective masses of electrons and holes in silicon, germanium, and gallium arsenide, calculate the position of the intrinsic Fermi energy level with respect to the center of the bandgap for each semiconductor at T = 300 K.",
+      "formulas": []
+    },
+    {
+      "number": "4.12",
+      "text": "(a) The carrier effective masses in a semiconductor are m_e^* = 1.21 m_0 and m_h^* = 0.70 m_0. Determine the position of the intrinsic Fermi level with respect to the center of the bandgap at T = 300 K. (b) Repeat part (a) if m_e^* = 0.80 m_0 and m_h^* = 0.75 m_0.",
+      "formulas": []
+    },
+    {
+      "number": "4.13",
+      "text": "If the density of states function in the conduction band of a particular semiconductor is a constant equal to K, derive the expression for the thermal-equilibrium concentration of electrons in the conduction band, assuming Fermi-Dirac statistics and assuming the Boltzmann approximation is valid.",
+      "formulas": []
+    },
+    {
+      "number": "4.14",
+      "text": "Repeat Problem 4.13 if the density of states function is given by g(E) = C(E - E_c) for E ≥ E_c, where C is a constant.",
+      "formulas": []
+    },
+    {
+      "number": "4.36",
+      "text": "Consider a germanium semiconductor at T = 300 K. Calculate the thermal equilibrium electron and hole concentrations for (i) N_{D} = 2 \\times 10^{15} cm^{-3}, N_{A} = 0, and (ii) N_{D} = 10^{16} cm^{-3}, N_{A} = 7 \\times 10^{15} cm^{-3}. (b) Repeat part (a) for GaAs. (c) For the case of GaAs in part (b), the minority carrier concentrations are on the order of 10^{-3} cm^{-3}. What does this result mean physically?",
+      "formulas": []
+    },
+    {
+      "number": "4.38",
+      "text": "Assume that silicon, germanium, and gallium arsenide each have dopant concentrations of N_{D} = 1 \\times 10^{20} cm^{-3} and N_{A} = 2.5 \\times 10^{17} cm^{-3} at T = 300 K. For each of the three materials: (a) Is this material n type or p type? (b) Calculate n_{0}.",
+      "formulas": []
+    },
+    {
+      "number": "4.39",
+      "text": "A silicon semiconductor material at T = 300 K is doped with arsenic atoms to a concentration of 2 \\times 10^{15} cm^{-3} and with boron atoms to a concentration of 1.2 \\times 10^{15} cm^{-3}. (a) Is the material n type or p type? (b) Determine n_{0} and p_{0}.",
+      "formulas": []
+    },
+    {
+      "number": "4.40",
+      "text": "The thermal equilibrium hole concentration in silicon at T = 300 K is p_{0} = 2 \\times 10^{6} cm^{-3}. Determine the thermal-equilibrium electron concentration.",
+      "formulas": []
+    },
+    {
+      "number": "4.41",
+      "text": "In a germanium sample at T = 250 K, it is found that p_{0} = 4n_{0} and N_{D} = 0. Determine n_{0}, n_{A}, and N_{e}.",
+      "formulas": []
+    },
+    {
+      "number": "4.42",
+      "text": "Consider a sample of silicon doped with N_{A} = 0 and N_{D} = 10^{14} cm^{-3}. Plot the majority carrier concentration versus temperature over the range 200 K to 575 K.",
+      "formulas": []
+    },
+    {
+      "number": "4.43",
+      "text": "The temperature of a sample of silicon is T = 300 K and the acceptor doping concentration is N_{A} = 10^{5} cm^{-3}. Plot the minority carrier concentration (on a log-log plot) versus N_{A} over the range 10^{15} cm^{-3} \\leq N_{A} \\leq 10^{18} cm^{-3}.",
+      "formulas": []
+    },
+    {
+      "number": "4.45",
+      "text": "A particular semiconductor material is doped at N_{D} = 2 \\times 10^{14} cm^{-3} and N_{A} = 1.2 \\times 10^{14} cm^{-3}. The thermal equilibrium electron concentration is found to be n_{0} = 1.1 \\times 10^{14} cm^{-3}. Assuming complete ionization, determine the intrinsic carrier concentration and the thermal equilibrium hole concentration.",
+      "formulas": []
+    },
+    {
+      "number": "4.46",
+      "text": "Silicon at T = 300 K is uniformly doped with boron atoms to a concentration of 3 \\times 10^{16} cm^{-3} and with arsenic atoms to a concentration of 1.5 \\times 10^{16} cm^{-3}. Is the material in type or p type? Calculate the equilibrium concentrations of majority and minority carriers. (b) Additional impurity atoms are added such that holes are the majority carrier and the thermal equilibrium concentration is p_{0} = 5 \\times 10^{16} cm^{-3}. What must be the new value of n_{0}?",
+      "formulas": []
+    },
+    {
+      "number": "4.47",
+      "text": "In silicon at T = 300 K, it is found that N_{A} = 7 \\times 10^{15} cm^{-3} and n_{0} = 2 \\times 10^{16} cm^{-3}. (a) Is the material in type or p type? (b) What are the majority and minority carrier concentrations? (c) What must be the concentration of donor impurities?",
+      "formulas": []
+    },
+    {
+      "number": "4.58",
+      "text": "Determine the Fermi energy level with respect to the intrinsic Fermi level for each condition given in Problem 4.34.",
+      "formulas": []
+    },
+    {
+      "number": "4.59",
+      "text": "Find the Fermi energy level with respect to the valence-band energy for the conditions given in Problem 4.35.",
+      "formulas": []
+    },
+    {
+      "number": "4.60",
+      "text": "Calculate the position of the Fermi energy level with respect to the intrinsic Fermi for the conditions given in Problem 4.47.",
+      "formulas": []
+    },
+    {
+      "number": "4.61",
+      "text": "A new semiconductor material is to be 'designed.' The semiconductor is to be p type and doped with 5 × 10^{15} cm^{-3} acceptor atoms. Assume complete ionization and assume N_{a} = 0. The effective density of states functions are N_{c} = 1.2 × 10^{19} cm^{-3} and N_{v} = 1.8 × 10^{19} cm^{-3} at T = 300 K and vary as T^{2}. A special semiconductor device fabricated with this material requires that the hole concentration be no greater than 5.08 × 10^{15} cm^{-3} at T = 350 K. What is the minimum bandgap energy required in this new material?",
+      "formulas": []
+    },
+    {
+      "number": "4.62",
+      "text": "Silicon atoms, at a concentration of 7 × 10^{15} cm^{-3}, are added to gallium arsenide. Assume that the silicon atoms act as fully ionized dopant atoms and that 5 percent of the concentration added replace gallium atoms and 95 percent replace arsenic atoms. Let T = 300 K. (a) Determine the donor and acceptor concentrations. (b) Is the material n type or p type? (c) Calculate the electron and hole concentrations. (d) Determine the position of the Fermi level with respect to E_{i}.",
+      "formulas": []
+    },
+    {
+      "number": "4.63",
+      "text": "Defects in a semiconductor material introduce allowed energy states within the forbidden bandgap. Assume that a particular defect in silicon introduces two discrete levels: a donor level 0.25 eV above the top of the valence band and an acceptor level 0.65 eV above the top of the valence band. The charge state of each defect is a function of the position of the Fermi level. (a) Sketch the charge density of each defect as the Fermi level moves from E_{v} to E_{c}. (i) Which defect level dominates in (i) heavily doped n type material and (ii) in heavily doped p type material? (b) Determine the electron and hole concentrations and the location of the Fermi level in (i) in a p type sample doped at N_{a} = 10^{17} cm^{-3} and (ii) in a p type sample doped at N_{a} = 10^{17} cm^{-3}. (c) Determine the Fermi-level position if no dopant atoms are added. Is the material n type, p type, or intrinsic?",
+      "formulas": []
     }
   ],
   "answers": [
@@ -62,6 +460,258 @@
             {
               "symbol": "exp",
               "description": "Representa a função exponencial, que é uma função matemática que cresce rapidamente e é usada para modelar muitos fenômenos físicos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Example 4.2",
+      "text": "The hole concentration is then p_0 = N_s \\exp \\left( -\\frac{(E_{F} - E_{v})}{kT} \\right) = 6.43 \\times 10^{5} \\text{ cm}^{-3}",
+      "formulas": [
+        {
+          "originalFormula": "N_s = (1.04 \\times 10^{19}) \\left( \\frac{400}{300} \\right)^{3/2} = 1.60 \\times 10^{19} \\text{ cm}^{-3}",
+          "genericFormula": "N_s = N_0 \\left( \\frac{T_1}{T_0} \\right)^{3/2}",
+          "description": "Esta fórmula calcula a densidade de portadores de carga em um semicondutor em função da temperatura. Ela mostra como a densidade de portadores varia quando a temperatura do material é alterada em relação a uma temperatura de referência.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Temperatura",
+            "Semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_s",
+              "description": "Representa a densidade de portadores de carga no semicondutor, medida em número de portadores por centímetro cúbico."
+            },
+            {
+              "symbol": "N_0",
+              "description": "É a densidade de portadores de carga em uma temperatura de referência, que serve como base para o cálculo."
+            },
+            {
+              "symbol": "T_1",
+              "description": "Representa a temperatura atual do semicondutor, em Kelvin, que está sendo considerada para o cálculo da densidade de portadores."
+            },
+            {
+              "symbol": "T_0",
+              "description": "É a temperatura de referência, também em Kelvin, que é utilizada para comparar com a temperatura atual."
+            }
+          ]
+        },
+        {
+          "originalFormula": "kT = (0.0259) \\left( \\frac{400}{300} \\right) = 0.03453 \\text{ eV}",
+          "genericFormula": "kT = k \\left( \\frac{T_2}{T_1} \\right)",
+          "description": "Esta fórmula representa a energia térmica média de uma partícula em um sistema físico, onde a energia é proporcional à temperatura do sistema. A constante k é a constante de Boltzmann, que relaciona a temperatura com a energia em unidades de elétron-volts (eV).",
+          "concepts": [
+            "Energia térmica",
+            "Temperatura",
+            "Constante de Boltzmann",
+            "Equilíbrio térmico"
+          ],
+          "symbols": [
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que é uma constante física que relaciona a temperatura de um sistema com a energia térmica média das partículas nesse sistema."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura do sistema, medida em Kelvin. A temperatura é uma medida da energia cinética média das partículas em um material."
+            },
+            {
+              "symbol": "T_1",
+              "description": "Representa a temperatura inicial do sistema, em Kelvin, que é usada como referência para o cálculo."
+            },
+            {
+              "symbol": "T_2",
+              "description": "Representa a temperatura final ou outra temperatura do sistema, em Kelvin, que é comparada com a temperatura inicial."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Ex 4.5",
+      "text": "Using Equation (4.11), we have n_0 = (2.8 \\times 10^{19}) \\exp\\left(\\frac{-0.25}{0.025}\\right) = 1.8 \\times 10^{15} \\text{ cm}^{-3}. From Equation (4.19), we can write p_0 = (1.04 \\times 10^{19}) \\exp\\left(\\frac{-0.87}{0.025}\\right) = 2.7 \\times 10^{15} \\text{ cm}^{-3}.",
+      "formulas": [
+        {
+          "originalFormula": "n_0 = (2.8 \\times 10^{19}) \\exp\\left(\\frac{-0.25}{0.025}\\right)",
+          "genericFormula": "n_0 = A \\exp\\left(\\frac{-E}{kT}\\right)",
+          "description": "Esta fórmula representa a densidade de portadores de carga em um semicondutor intrínseco em equilíbrio térmico. A densidade de portadores é influenciada por fatores como a temperatura e a energia de ativação, que determinam quantos elétrons são excitados para a banda de condução.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Semicondutores",
+            "Equilíbrio térmico",
+            "Efeito da temperatura na condutividade",
+            "Energia de ativação"
+          ],
+          "symbols": [
+            {
+              "symbol": "n_0",
+              "description": "Representa a densidade de portadores de carga no semicondutor em equilíbrio térmico."
+            },
+            {
+              "symbol": "A",
+              "description": "Um fator de proporcionalidade que depende das características do material semicondutor."
+            },
+            {
+              "symbol": "E",
+              "description": "Representa a energia de ativação necessária para que os elétrons sejam excitados da banda de valência para a banda de condução."
+            },
+            {
+              "symbol": "k",
+              "description": "Constante de Boltzmann, que relaciona a temperatura com a energia em sistemas térmicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Temperatura absoluta do sistema em Kelvin."
+            }
+          ]
+        },
+        {
+          "originalFormula": "p_0 = (1.04 \\times 10^{19}) \\exp\\left(\\frac{-0.87}{0.025}\\right)",
+          "genericFormula": "p_0 = A \\exp\\left(\\frac{-B}{T}\\right)",
+          "description": "Esta fórmula representa a densidade de portadores de carga em um semicondutor intrínseco a uma temperatura específica. O valor de p_0 indica a concentração de lacunas (portadores positivos) no material semicondutor.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Semicondutores",
+            "Temperatura",
+            "Efeito da energia térmica"
+          ],
+          "symbols": [
+            {
+              "symbol": "p_0",
+              "description": "Representa a densidade de lacunas em um semicondutor, que é a quantidade de portadores de carga positiva disponíveis."
+            },
+            {
+              "symbol": "A",
+              "description": "Um fator de proporcionalidade que representa a densidade de portadores de carga em condições específicas, como temperatura e tipo de material."
+            },
+            {
+              "symbol": "B",
+              "description": "Uma constante que está relacionada à energia de ativação necessária para criar lacunas no semicondutor."
+            },
+            {
+              "symbol": "T",
+              "description": "A temperatura em Kelvin, que influencia a movimentação e a energia dos portadores de carga no material."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Example 4.6",
+      "text": "Equation (4.46) can be written as n_{0} = \\frac{2}{\\sqrt{\\pi}} N_{F_{1/2}}(\\eta_{F})",
+      "formulas": [
+        {
+          "originalFormula": "n_{0} = \\frac{2}{\\sqrt{\\pi}} N_{F_{1/2}}(\\eta_{F})",
+          "genericFormula": "n_{0} = \\frac{2}{\\sqrt{\\pi}} N_{F_{1/2}}(\\eta_{F})",
+          "description": "Esta fórmula representa a densidade de portadores de carga em um semicondutor em equilíbrio térmico, onde a função de distribuição de Fermi é utilizada para calcular a quantidade de portadores em um nível de energia específico.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Equilíbrio térmico",
+            "Função de distribuição de Fermi",
+            "Níveis de energia em semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "n_{0}",
+              "description": "Representa a densidade de portadores de carga em um semicondutor em equilíbrio térmico."
+            },
+            {
+              "symbol": "N_{F_{1/2}}(\\eta_{F})",
+              "description": "É a função de distribuição de Fermi avaliada em um nível de energia específico, que depende da energia de Fermi e da temperatura do sistema."
+            },
+            {
+              "symbol": "\\pi",
+              "description": "É uma constante matemática que representa a razão entre a circunferência de um círculo e seu diâmetro, aproximadamente igual a 3,14159."
+            },
+            {
+              "symbol": "\\sqrt{\\pi}",
+              "description": "É a raiz quadrada da constante pi, que é um valor que aparece frequentemente em cálculos envolvendo probabilidades e distribuições."
+            },
+            {
+              "symbol": "\\eta_{F}",
+              "description": "Representa a energia em relação à energia de Fermi, que é um parâmetro importante para determinar a ocupação dos níveis de energia em um semicondutor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "4.11",
+      "text": "Since N_a > N_d, the compensated semiconductor is p-type and the thermal-equilibrium majority carrier hole concentration is given by Equation (4.62).",
+      "formulas": [
+        {
+          "originalFormula": "p_0 \\approx 7 \\times 10^{5} \\text{ cm}^{-3}",
+          "genericFormula": "p_0 \\approx N \\text{ cm}^{-3}",
+          "description": "Esta fórmula representa a densidade de portadores de carga positiva, conhecida como lacunas, em um material semicondutor. O valor indica quantas lacunas existem por centímetro cúbico no material.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Semicondutores",
+            "Lacunas"
+          ],
+          "symbols": [
+            {
+              "symbol": "p_0",
+              "description": "Representa a densidade de lacunas em um semicondutor, ou seja, a quantidade de lacunas por unidade de volume."
+            },
+            {
+              "symbol": "N",
+              "description": "Representa um valor genérico que indica a densidade de lacunas, podendo variar dependendo do material e das condições."
+            }
+          ]
+        },
+        {
+          "originalFormula": "n_0 \\approx 3.21 \\times 10^{4} \\text{ cm}^{-3}",
+          "genericFormula": "n_0 \\approx N \\text{ cm}^{-3}",
+          "description": "Esta fórmula representa a densidade de portadores de carga em um semicondutor, especificamente o número de portadores de carga por centímetro cúbico. Neste caso, 'n_0' é a densidade de elétrons em um semicondutor intrínseco ou dopado.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Semicondutores",
+            "Elétrons",
+            "Dopagem"
+          ],
+          "symbols": [
+            {
+              "symbol": "n_0",
+              "description": "Representa a densidade de portadores de carga, especificamente o número de elétrons por centímetro cúbico em um semicondutor."
+            },
+            {
+              "symbol": "N",
+              "description": "Representa uma quantidade genérica de portadores de carga por centímetro cúbico, que pode variar dependendo das condições do semicondutor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Example 4.12",
+      "text": "N_{d} - N_{s} = 2.8 \\times 10^{19} \\exp \\left[ -\\frac{0.20}{0.0259} \\right] = 1.24 \\times 10^{16} \\, \\text{cm}^{-3}",
+      "formulas": [
+        {
+          "originalFormula": "N_{d} = 1.24 \\times 10^{16} + N_{s} = 2.24 \\times 10^{16} \\, \\text{cm}^{-3}",
+          "genericFormula": "N_{d} = A + N_{s} = B \\, \\text{cm}^{-3}",
+          "description": "Esta fórmula representa a densidade de portadores de carga em um semicondutor dopado, onde N_d é a densidade total de portadores do tipo dopante, A é a densidade de portadores do dopante e N_s é a densidade de portadores do tipo semicondutor, resultando em B, que é a densidade total de portadores no material.",
+          "concepts": [
+            "Dopagem de semicondutores",
+            "Densidade de portadores de carga",
+            "Semicondutores tipo n e tipo p"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_{d}",
+              "description": "Representa a densidade total de portadores de carga do tipo dopante no semicondutor."
+            },
+            {
+              "symbol": "N_{s}",
+              "description": "Representa a densidade de portadores de carga do tipo semicondutor, que pode ser proveniente de impurezas ou do próprio material."
+            },
+            {
+              "symbol": "A",
+              "description": "Representa um valor constante que indica a densidade de portadores do dopante específico adicionado ao semicondutor."
+            },
+            {
+              "symbol": "B",
+              "description": "Representa a densidade total de portadores de carga no semicondutor após a adição do dopante."
             }
           ]
         }
@@ -231,6 +881,587 @@
           "description": "Representa a temperatura do sistema em Kelvin, que influencia a movimentação dos portadores de carga."
         }
       ]
+    },
+    {
+      "originalFormula": "p_0 = N_s \\exp \\left( -\\frac{E_{F} - E_{v}}{kT} \\right)",
+      "genericFormula": "p_0 = N_s \\exp \\left( -\\frac{E_{F} - E_{v}}{kT} \\right)",
+      "description": "Esta fórmula representa a densidade de portadores de carga positiva (buracos) em um semicondutor em equilíbrio térmico. Ela relaciona a concentração de buracos com a energia de Fermi, a energia do nível de valência e a temperatura do sistema.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Energia de Fermi",
+        "Nível de valência",
+        "Temperatura",
+        "Distribuição de Boltzmann"
+      ],
+      "symbols": [
+        {
+          "symbol": "p_0",
+          "description": "Representa a densidade de buracos, que são portadores de carga positiva em um semicondutor."
+        },
+        {
+          "symbol": "N_s",
+          "description": "Representa a densidade de estados disponíveis no nível de valência do semicondutor."
+        },
+        {
+          "symbol": "E_F",
+          "description": "Representa a energia de Fermi, que é o nível de energia mais alto ocupado por elétrons em um sistema em equilíbrio térmico."
+        },
+        {
+          "symbol": "E_v",
+          "description": "Representa a energia do nível de valência, que é o nível de energia mais alto ocupado por elétrons em um material semicondutor."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas térmicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta do sistema, medida em Kelvin."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E = -\\frac{ke^2}{r}",
+      "genericFormula": "E = -\\frac{k e^2}{r}",
+      "description": "Esta fórmula representa a energia potencial elétrica entre duas cargas puntuais. A energia é negativa, indicando que as cargas se atraem, e o valor da energia depende da constante eletrostática, das cargas e da distância entre elas.",
+      "concepts": [
+        "Energia potencial elétrica",
+        "Cargas elétricas",
+        "Força eletrostática",
+        "Lei de Coulomb"
+      ],
+      "symbols": [
+        {
+          "symbol": "E",
+          "description": "Representa a energia potencial elétrica entre duas cargas."
+        },
+        {
+          "symbol": "k",
+          "description": "É a constante eletrostática que mede a força da interação entre cargas elétricas no vácuo."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a magnitude da carga elétrica das partículas em questão."
+        },
+        {
+          "symbol": "r",
+          "description": "É a distância entre as duas cargas elétricas."
+        }
+      ]
+    },
+    {
+      "originalFormula": "T = \\frac{m^{*} e^{2}}{2(h)(r^{2})(4\\pi)}",
+      "genericFormula": "T = \\frac{m^{*} e^{2}}{2(h)(r^{2})(4\\pi)}",
+      "description": "Esta fórmula representa o tempo de relaxação de um portador de carga em um semicondutor, que é um parâmetro importante para entender como os elétrons se movem e interagem dentro do material.",
+      "concepts": [
+        "Tempo de relaxação",
+        "Portadores de carga",
+        "Semicondutores",
+        "Interações elétricas"
+      ],
+      "symbols": [
+        {
+          "symbol": "T",
+          "description": "Representa o tempo de relaxação dos portadores de carga em um semicondutor."
+        },
+        {
+          "symbol": "m^{*}",
+          "description": "Representa a massa efetiva do portador de carga, que é uma medida de como a carga se comporta sob a influência de um campo elétrico em um material semicondutor."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a carga elétrica de um único elétron."
+        },
+        {
+          "symbol": "h",
+          "description": "Representa a constante de Planck, que é uma constante fundamental na mecânica quântica e relaciona a energia de um fóton à sua frequência."
+        },
+        {
+          "symbol": "r",
+          "description": "Representa a distância característica, que pode ser a distância entre os portadores de carga ou a distância em que as interações elétricas são significativas."
+        },
+        {
+          "symbol": "\\pi",
+          "description": "Representa a constante matemática pi, que é a razão entre a circunferência de um círculo e seu diâmetro, frequentemente utilizada em fórmulas que envolvem geometria."
+        }
+      ]
+    },
+    {
+      "originalFormula": "V = -\\frac{e^{2}}{4\\pi \\epsilon_{0} r} - \\frac{m^{*} e^{2}}{(h)(r^{2})(4\\pi)}",
+      "genericFormula": "V = -\\frac{e^{2}}{4\\pi \\epsilon_{0} r} - \\frac{m^{*} e^{2}}{(h)(r^{2})(4\\pi)}",
+      "description": "Esta fórmula representa o potencial elétrico gerado por uma carga em um ponto no espaço, levando em consideração tanto a interação eletrostática quanto um termo adicional que pode estar relacionado a efeitos quânticos ou de massa efetiva. O primeiro termo descreve o potencial de Coulomb, enquanto o segundo termo pode representar uma correção devido a propriedades quânticas do sistema.",
+      "concepts": [
+        "Potencial elétrico",
+        "Interação eletrostática",
+        "Cargas elétricas",
+        "Massa efetiva",
+        "Efeitos quânticos"
+      ],
+      "symbols": [
+        {
+          "symbol": "V",
+          "description": "Representa o potencial elétrico em um ponto no espaço."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a carga de um único elétron."
+        },
+        {
+          "symbol": "\\pi",
+          "description": "Uma constante matemática que representa a razão entre a circunferência de um círculo e seu diâmetro, aproximadamente igual a 3,14159."
+        },
+        {
+          "symbol": "\\epsilon_{0}",
+          "description": "Representa a permissividade do vácuo, que é uma constante que mede a capacidade de um campo elétrico de se estabelecer no vácuo."
+        },
+        {
+          "symbol": "r",
+          "description": "Representa a distância entre a carga e o ponto onde se está calculando o potencial elétrico."
+        },
+        {
+          "symbol": "m^{*}",
+          "description": "Representa a massa efetiva de uma partícula em um material semicondutor, que pode diferir da massa real devido a interações com o meio."
+        },
+        {
+          "symbol": "h",
+          "description": "Representa a constante de Planck, que é uma constante fundamental na mecânica quântica relacionada à quantização da energia."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E = T + V = -\\frac{m^{*} e^{2}}{2(h)(4\\pi)}",
+      "genericFormula": "E = T + V = -\\frac{m^{*} e^{2}}{2(h)(4\\pi)}",
+      "description": "Esta fórmula representa a relação entre a energia total de um sistema, que é a soma da energia cinética e da energia potencial. A parte direita da equação mostra como a energia total é calculada em um contexto específico, envolvendo a massa efetiva de uma partícula, a carga elétrica e constantes fundamentais da física.",
+      "concepts": [
+        "Energia total",
+        "Energia cinética",
+        "Energia potencial",
+        "Massa efetiva",
+        "Cargas elétricas",
+        "Constantes físicas"
+      ],
+      "symbols": [
+        {
+          "symbol": "E",
+          "description": "Representa a energia total do sistema."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a energia cinética, que é a energia associada ao movimento de um corpo."
+        },
+        {
+          "symbol": "V",
+          "description": "Representa a energia potencial, que é a energia armazenada devido à posição ou configuração de um sistema."
+        },
+        {
+          "symbol": "m^{*}",
+          "description": "Representa a massa efetiva da partícula, que é uma medida que considera os efeitos de interação com o meio em que a partícula se encontra."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elétrica elementar, que é a carga de um único elétron."
+        },
+        {
+          "symbol": "h",
+          "description": "Representa a constante de Planck, que é uma constante fundamental na mecânica quântica."
+        },
+        {
+          "symbol": "4\\pi",
+          "description": "É um fator que aparece em várias equações relacionadas a esferas e fenômenos de simetria esférica na física."
+        }
+      ]
+    },
+    {
+      "originalFormula": "n_0 = N_{c} \\exp\\left(\\frac{E_{c} - E_{F}}{kT}\\right)",
+      "genericFormula": "n_0 = N_{c} \\exp\\left(\\frac{E_{c} - E_{F}}{kT}\\right)",
+      "description": "Esta fórmula representa a densidade de portadores de carga eletrônica em um semicondutor intrínseco em equilíbrio térmico. Ela relaciona a concentração de elétrons livres no semicondutor com a densidade de estados disponíveis e a energia de Fermi.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Semicondutores",
+        "Equilíbrio térmico",
+        "Energia de Fermi",
+        "Densidade de estados"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_0",
+          "description": "Representa a densidade de portadores de carga eletrônica, ou seja, a quantidade de elétrons livres por unidade de volume no semicondutor."
+        },
+        {
+          "symbol": "N_{c}",
+          "description": "Representa a densidade de estados no nível de energia de condução, que indica quantos estados eletrônicos estão disponíveis para os elétrons na banda de condução."
+        },
+        {
+          "symbol": "E_{c}",
+          "description": "Representa a energia do nível de condução, que é a energia mínima necessária para que um elétron possa se mover livremente no semicondutor."
+        },
+        {
+          "symbol": "E_{F}",
+          "description": "Representa a energia de Fermi, que é o nível de energia mais alto ocupado por elétrons em um material a temperatura zero absoluto."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos e é fundamental para entender o comportamento térmico de partículas."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta em Kelvin, que é uma medida da energia térmica média das partículas em um sistema."
+        }
+      ]
+    },
+    {
+      "originalFormula": "n_0 = N \\exp\\left(\\frac{E_{c} - E_{F}}{kT}\\right)",
+      "genericFormula": "n_0 = N \\exp\\left(\\frac{E_{c} - E_{F}}{kT}\\right)",
+      "description": "Esta fórmula representa a densidade de portadores de carga em um semicondutor intrínseco em equilíbrio térmico. Ela relaciona a concentração de portadores de carga (n_0) com a densidade de estados disponíveis (N), a diferença de energia entre a banda de condução e o nível de Fermi (E_c - E_F), a constante de Boltzmann (k) e a temperatura absoluta (T).",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Banda de condução",
+        "Nível de Fermi",
+        "Energia térmica",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_0",
+          "description": "Representa a densidade de portadores de carga livres no semicondutor."
+        },
+        {
+          "symbol": "N",
+          "description": "Representa a densidade de estados disponíveis na banda de condução do semicondutor."
+        },
+        {
+          "symbol": "E_c",
+          "description": "Representa a energia do nível superior da banda de condução."
+        },
+        {
+          "symbol": "E_F",
+          "description": "Representa a energia do nível de Fermi, que indica a distribuição de elétrons em um semicondutor."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas térmicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta do sistema, medida em Kelvin."
+        }
+      ]
+    },
+    {
+      "originalFormula": "n_i = N \\exp\\left(\\frac{E_{c} - E_{F}}{kT}\\right)",
+      "genericFormula": "n_i = N \\exp\\left(\\frac{E_{c} - E_{F}}{kT}\\right)",
+      "description": "Esta fórmula representa a concentração de portadores intrínsecos em um semicondutor, que é a quantidade de elétrons disponíveis para condução elétrica em um material semicondutor puro, sem dopagem. A fórmula relaciona essa concentração com a diferença de energia entre a banda de condução e o nível de Fermi, além da temperatura do sistema.",
+      "concepts": [
+        "Concentração de portadores intrínsecos",
+        "Banda de condução",
+        "Nível de Fermi",
+        "Temperatura",
+        "Energia térmica"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_i",
+          "description": "Representa a concentração de portadores intrínsecos, ou seja, o número de elétrons disponíveis para condução em um semicondutor puro."
+        },
+        {
+          "symbol": "N",
+          "description": "Representa a densidade de estados na banda de condução do semicondutor, que indica quantos estados eletrônicos estão disponíveis para os elétrons ocuparem."
+        },
+        {
+          "symbol": "E_c",
+          "description": "Representa a energia da borda da banda de condução, que é o nível de energia mais baixo que um elétron pode ter na banda de condução."
+        },
+        {
+          "symbol": "E_F",
+          "description": "Representa o nível de Fermi, que é o nível de energia no qual a probabilidade de encontrar um elétron é de 50% a temperatura zero absoluto."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas térmicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta do sistema em Kelvin, que influencia a energia térmica dos portadores."
+        }
+      ]
+    },
+    {
+      "originalFormula": "n_{0} = \\frac{4 \\pi}{h^{3}} \\left( \\frac{2 m^{*} k T}{h^{2}} \\right)^{3/2} \\int_{E_{c}}^{E_{F}} \\frac{(E - E_{v})^{1/2}}{1 + \\exp \\left( \\frac{E - E_{F}}{k T} \\right)} dE",
+      "genericFormula": "n_{0} = \\frac{4 \\pi}{h^{3}} \\left( \\frac{2 m^{*} k T}{h^{2}} \\right)^{3/2} \\int_{E_{c}}^{E_{F}} \\frac{(E - E_{v})^{1/2}}{1 + \\exp \\left( \\frac{E - E_{F}}{k T} \\right)} dE",
+      "description": "Esta fórmula representa a densidade de estados eletrônicos em um semicondutor em equilíbrio térmico, considerando a contribuição de portadores de carga em uma faixa de energia específica entre a energia de condução e a energia de Fermi.",
+      "concepts": [
+        "Densidade de estados",
+        "Equilíbrio térmico",
+        "Energia de Fermi",
+        "Semicondutores",
+        "Distribuição de Boltzmann"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_{0}",
+          "description": "Representa a densidade de portadores de carga no semicondutor."
+        },
+        {
+          "symbol": "h",
+          "description": "Constante de Planck, que relaciona a energia de um fóton à frequência da radiação eletromagnética."
+        },
+        {
+          "symbol": "m^{*}",
+          "description": "Massa efetiva dos portadores de carga, que descreve como os portadores se comportam em um campo elétrico em comparação com partículas livres."
+        },
+        {
+          "symbol": "k",
+          "description": "Constante de Boltzmann, que relaciona a temperatura com a energia térmica em sistemas estatísticos."
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura do sistema, medida em Kelvin, que afeta a energia térmica dos portadores."
+        },
+        {
+          "symbol": "E_{c}",
+          "description": "Energia da borda da banda de condução, que é o nível de energia mais baixo que os elétrons podem ocupar na banda de condução."
+        },
+        {
+          "symbol": "E_{F}",
+          "description": "Energia de Fermi, que é o nível de energia mais alto ocupado por elétrons a temperatura zero absoluto."
+        },
+        {
+          "symbol": "E_{v}",
+          "description": "Energia da borda da banda de valência, que é o nível de energia mais alto ocupado por elétrons na banda de valência."
+        },
+        {
+          "symbol": "E",
+          "description": "Variável de integração que representa a energia dos portadores de carga dentro do intervalo considerado."
+        }
+      ]
+    },
+    {
+      "originalFormula": "F_{1/2}(\\eta_{F}) = \\int_{0}^{\\infty} \\frac{\\eta^{1/2}}{1 + \\exp \\left( \\eta - \\eta_{F} \\right)} d\\eta",
+      "genericFormula": "F_{1/2}(\\eta_{F}) = \\int_{0}^{\\infty} \\frac{\\eta^{1/2}}{1 + \\exp \\left( \\eta - \\eta_{F} \\right)} d\\eta",
+      "description": "Não foi possível gerar descrição automática",
+      "concepts": [],
+      "symbols": [],
+      "rawText": "{\n  \"originalFormula\": \"F_{1/2}(\\eta_{F}) = \\\\int_{0}^{\\\\infty} \\\\frac{\\\\eta^{1/2}}{1 + \\\\exp \\\\left( \\\\eta - \\\\eta_{F} \\\\right)} d\\\\eta\",\n  \"genericFormula\": \"F_{1/2}(\\\\eta_{F}) = \\\\int_{0}^{\\\\infty} \\\\frac{\\\\eta^{1/2}}{1 + \\\\exp \\\\left( \\\\eta - \\\\eta_{F} \\\\right)} d\\\\eta\",\n  \"description\": \"Esta fórmula representa uma integral que calcula uma função F em termos de uma variável eta, que é uma variável contínua que varia de zero ao infinito. A função F é influenciada por um parâmetro eta_F, que pode ser interpretado como uma energia de Fermi ou um nível de energia de referência em sistemas quânticos.\",\n  \"concepts\": [\n    \"Integração\",\n    \"Distribuição de Fermi-Dirac\",\n    \"Teoria quântica de semicondutores\",\n    \"Propriedades estatísticas de partículas\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"F_{1/2}(\\eta_{F})\",\n      \"description\": \"Representa a função F avaliada em um parâmetro específico eta_F.\"\n    },\n    {\n      \"symbol\": \"eta\",\n      \"description\": \"Uma variável contínua que representa uma energia ou um parâmetro relacionado ao sistema em consideração.\"\n    },\n    {\n      \"symbol\": \"eta_{F}\",\n      \"description\": \"Um parâmetro específico que pode ser interpretado como a energia de Fermi, que é um nível de energia de referência em sistemas quânticos.\"\n    },\n    {\n      \"symbol\": \"exp\",\n      \"description\": \"A função exponencial, que é uma função matemática que cresce rapidamente e é usada para descrever fenômenos que envolvem crescimento exponencial ou decaimento.\"\n    },\n    {\n      \"symbol\": \"d\\\\eta\",\n      \"description\": \"Um elemento infinitesimal de integração que representa uma pequena variação na variável eta.\"\n    }\n  ]\n}"
+    },
+    {
+      "originalFormula": "\\eta' = \\frac{E_{c} - E}{kT} \\quad (4.49a)",
+      "genericFormula": "\\eta' = \\frac{E_{c} - E}{kT}",
+      "description": "Esta fórmula representa a relação entre a energia de um estado específico em um semicondutor e a energia de ativação, levando em conta a temperatura do sistema. Ela é usada para calcular a eficiência de um processo de excitação eletrônica em materiais semicondutores.",
+      "concepts": [
+        "Energia de ativação",
+        "Temperatura",
+        "Semicondutores",
+        "Distribuição de Fermi"
+      ],
+      "symbols": [
+        {
+          "symbol": "η'",
+          "description": "Representa a eficiência ou a função relacionada à excitação eletrônica em um semicondutor."
+        },
+        {
+          "symbol": "E_{c}",
+          "description": "É a energia da banda de condução em um semicondutor, que representa o nível de energia onde os elétrons podem se mover livremente e conduzir eletricidade."
+        },
+        {
+          "symbol": "E",
+          "description": "É a energia do estado específico que está sendo considerado, geralmente relacionada a um nível de energia dentro da banda proibida do semicondutor."
+        },
+        {
+          "symbol": "k",
+          "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos, especialmente em contextos de estatística térmica."
+        },
+        {
+          "symbol": "T",
+          "description": "É a temperatura absoluta do sistema, medida em Kelvin, que influencia a distribuição de partículas e a energia térmica no material."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\eta_f = \\frac{E_{f} - E_{v}}{kT} \\quad (4.49b)",
+      "genericFormula": "\\eta_f = \\frac{E_{f} - E_{v}}{kT}",
+      "description": "Esta fórmula representa a eficiência de um nível de energia em um material semicondutor, onde a eficiência é calculada pela diferença entre a energia do nível de Fermi e a energia da banda de valência, dividida pelo produto da constante de Boltzmann e a temperatura. Essa relação é importante para entender como os portadores de carga se comportam em diferentes condições térmicas.",
+      "concepts": [
+        "Nível de Fermi",
+        "Energia da banda de valência",
+        "Constante de Boltzmann",
+        "Temperatura",
+        "Eficiência em semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "η_f",
+          "description": "Representa a eficiência do nível de Fermi em um material semicondutor."
+        },
+        {
+          "symbol": "E_f",
+          "description": "Representa a energia do nível de Fermi, que é o nível de energia mais alto que os elétrons ocupam a temperatura zero absoluto."
+        },
+        {
+          "symbol": "E_v",
+          "description": "Representa a energia da banda de valência, que é a energia máxima ocupada por elétrons em um material semicondutor."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta do sistema, medida em Kelvin."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E_{c} - E_{f} = kT \\ln \\left( \\frac{N_{d}}{N_{i}} \\right)",
+      "genericFormula": "E_{c} - E_{f} = kT \\ln \\left( \\frac{N_{d}}{N_{i}} \\right)",
+      "description": "Esta fórmula relaciona a diferença de energia entre a banda de condução e o nível de Fermi em um semicondutor dopado, levando em consideração a temperatura e as concentrações de dopantes e portadores intrínsecos. Ela é fundamental para entender como a dopagem afeta as propriedades elétricas dos semicondutores.",
+      "concepts": [
+        "Energia da banda de condução",
+        "Nível de Fermi",
+        "Temperatura",
+        "Dopagem de semicondutores",
+        "Concentrações de portadores",
+        "Equilíbrio térmico"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{c}",
+          "description": "Representa a energia do nível mais alto da banda de condução em um semicondutor."
+        },
+        {
+          "symbol": "E_{f}",
+          "description": "Representa a energia do nível de Fermi, que indica a probabilidade de ocupação dos estados eletrônicos em um semicondutor."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta do sistema, medida em Kelvin."
+        },
+        {
+          "symbol": "N_{d}",
+          "description": "Representa a concentração de átomos dopantes do tipo doador em um semicondutor."
+        },
+        {
+          "symbol": "N_{i}",
+          "description": "Representa a concentração de portadores intrínsecos em um semicondutor, ou seja, a quantidade de elétrons e lacunas presentes em um material não dopado."
+        }
+      ]
+    },
+    {
+      "originalFormula": "N_{d} - N_{s} = N_{s} \\exp \\left[ -\\frac{(E_{c} - E_{f})}{kT} \\right]",
+      "genericFormula": "N_{d} - N_{s} = N_{s} \\exp \\left[ -\\frac{(E_{c} - E_{f})}{kT} \\right]",
+      "description": "Esta fórmula representa a relação entre a densidade de portadores de carga do dopante (N_{d}), a densidade de portadores de carga na região de depleção (N_{s}), e a energia de Fermi (E_{f}) em relação à energia de condução (E_{c}) em um semicondutor. Ela mostra como a diferença entre a densidade de dopantes e a densidade de portadores na região de depleção está relacionada à temperatura e à energia das partículas.",
+      "concepts": [
+        "Dopagem em semicondutores",
+        "Energia de Fermi",
+        "Energia de condução",
+        "Equilíbrio térmico",
+        "Distribuição de Boltzmann"
+      ],
+      "symbols": [
+        {
+          "symbol": "N_{d}",
+          "description": "Densidade de portadores de carga do dopante, que representa a quantidade de átomos dopantes que contribuem para a condução elétrica no semicondutor."
+        },
+        {
+          "symbol": "N_{s}",
+          "description": "Densidade de portadores de carga na região de depleção, que indica a quantidade de portadores de carga que estão disponíveis para a condução elétrica na região onde não há dopagem."
+        },
+        {
+          "symbol": "E_{c}",
+          "description": "Energia de condução, que é o nível de energia mais baixo que os elétrons podem ocupar na banda de condução do semicondutor."
+        },
+        {
+          "symbol": "E_{f}",
+          "description": "Energia de Fermi, que é o nível de energia que separa os estados ocupados dos não ocupados em um semicondutor em equilíbrio térmico."
+        },
+        {
+          "symbol": "k",
+          "description": "Constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos, sendo fundamental para descrever o comportamento térmico das partículas."
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta em Kelvin, que é uma medida da energia térmica média das partículas em um sistema."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E_F = E_c - kT \\ln \\left( \\frac{N_c}{n} \\right)",
+      "genericFormula": "E_F = E_c - kT \\ln \\left( \\frac{N_c}{n} \\right)",
+      "description": "Esta fórmula representa a energia do nível de Fermi em um semicondutor, que é a energia máxima que os elétrons podem ter a temperaturas absolutas. Ela relaciona a energia do nível de condução, a temperatura e a densidade de estados disponíveis para os elétrons.",
+      "concepts": [
+        "Nível de Fermi",
+        "Energia do nível de condução",
+        "Temperatura",
+        "Densidade de estados",
+        "Distribuição de elétrons"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_F",
+          "description": "Representa a energia do nível de Fermi, que é a energia máxima que os elétrons podem ocupar em um material a uma dada temperatura."
+        },
+        {
+          "symbol": "E_c",
+          "description": "Representa a energia do nível de condução, que é a energia mínima necessária para que um elétron possa se mover livremente através do material."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta do sistema, medida em Kelvin, que afeta a energia dos elétrons."
+        },
+        {
+          "symbol": "N_c",
+          "description": "Representa a densidade de estados no nível de condução, que indica quantos estados eletrônicos estão disponíveis para ocupação por elétrons."
+        },
+        {
+          "symbol": "n",
+          "description": "Representa a densidade de elétrons livres no semicondutor, que indica quantos elétrons estão efetivamente disponíveis para condução."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E_F = E_v + kT \\ln \\left( \\frac{N_v}{p} \\right)",
+      "genericFormula": "E_F = E_v + kT \\ln \\left( \\frac{N_v}{p} \\right)",
+      "description": "Esta fórmula representa a energia do nível de Fermi em um semicondutor em equilíbrio térmico. Ela relaciona a energia do nível de Fermi com a energia da banda de valência e a concentração de portadores de carga, levando em consideração a temperatura do sistema.",
+      "concepts": [
+        "Nível de Fermi",
+        "Energia da banda de valência",
+        "Temperatura",
+        "Concentração de portadores de carga",
+        "Equilíbrio térmico"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_F",
+          "description": "Representa a energia do nível de Fermi, que é o nível de energia mais alto ocupado por elétrons em um material a temperatura zero."
+        },
+        {
+          "symbol": "E_v",
+          "description": "Representa a energia da banda de valência, que é o nível de energia máximo que os elétrons podem ocupar na banda de valência de um semicondutor."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura do sistema em Kelvin, que é uma medida da energia térmica média das partículas."
+        },
+        {
+          "symbol": "N_v",
+          "description": "Representa a densidade de estados na banda de valência, que indica quantos estados eletrônicos estão disponíveis para os elétrons na banda de valência."
+        },
+        {
+          "symbol": "p",
+          "description": "Representa a concentração de portadores de carga positiva (lacunas) no semicondutor, que é uma medida de quantas lacunas estão disponíveis para conduzir corrente elétrica."
+        }
+      ]
     }
   ],
   "processedPages": [
@@ -368,7 +1599,51 @@
     132,
     133,
     134,
-    135
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179
   ],
-  "lastUpdated": "2026-05-08T20:30:46.897Z"
+  "lastUpdated": "2026-05-08T20:51:19.721Z"
 }

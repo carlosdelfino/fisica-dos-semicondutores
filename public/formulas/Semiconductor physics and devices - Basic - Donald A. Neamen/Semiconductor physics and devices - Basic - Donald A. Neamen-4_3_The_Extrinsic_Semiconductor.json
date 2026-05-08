@@ -1,0 +1,266 @@
+{
+  "chapter": "4.3 The Extrinsic Semiconductor",
+  "section": "4.3.1 Equilibrium Distribution of Electrons and Holes",
+  "questions": [
+    {
+      "number": "TYU 4.7 (a)",
+      "text": "Calculate the ionization energy and the radius (normalized to the Bohr radius) of a donor electron in its lowest energy state in GaAs.",
+      "formulas": [
+        {
+          "originalFormula": "E_{s} = \\frac{e^{2}}{4 \\pi \\epsilon_0 a_{B}} L^{2} - (q) s^{2} S_{61} = \\frac{1}{L^{2} a_{B} 0^{2}}",
+          "genericFormula": "E_{s} = \\frac{e^{2}}{4 \\pi \\epsilon_0 a_{B}} L^{2} - (q) s^{2} S_{61} = \\frac{1}{L^{2} a_{B} 0^{2}}",
+          "description": "Esta fórmula representa a energia de um sistema em um contexto de semicondutores, onde a energia é influenciada por interações elétricas e propriedades geométricas do sistema. A fórmula mostra como a energia depende de várias constantes físicas e variáveis do sistema.",
+          "concepts": [
+            "Energia potencial elétrica",
+            "Constante de Coulomb",
+            "Permissividade do vácuo",
+            "Raio de Bohr",
+            "Interações elétricas em semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{s}",
+              "description": "Representa a energia do sistema em questão."
+            },
+            {
+              "symbol": "e",
+              "description": "É a carga elementar, que é a menor unidade de carga elétrica que existe."
+            },
+            {
+              "symbol": "\\pi",
+              "description": "É uma constante matemática que representa a razão entre a circunferência de um círculo e seu diâmetro."
+            },
+            {
+              "symbol": "\\epsilon_0",
+              "description": "É a permissividade do vácuo, uma constante que mede a capacidade de um campo elétrico em um vácuo."
+            },
+            {
+              "symbol": "a_{B}",
+              "description": "É o raio de Bohr, que representa a distância média entre o núcleo e o elétron em um átomo de hidrogênio."
+            },
+            {
+              "symbol": "L",
+              "description": "É uma variável que pode representar uma dimensão ou comprimento característico do sistema."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga de uma partícula ou objeto no sistema."
+            },
+            {
+              "symbol": "s",
+              "description": "É uma variável que pode representar uma distância ou um parâmetro relacionado ao sistema."
+            },
+            {
+              "symbol": "S_{61}",
+              "description": "Representa um termo específico que pode estar relacionado a uma função ou constante particular do sistema."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "TYU 4.7 (b)",
+      "text": "Repeat part (a) for Ge.",
+      "formulas": []
+    }
+  ],
+  "answers": [],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "E_{s} = \\frac{e^{2}}{4 \\pi \\epsilon_0 a_{B}} L^{2} - (q) s^{2} S_{61} = \\frac{1}{L^{2} a_{B} 0^{2}}",
+      "genericFormula": "E_{s} = \\frac{e^{2}}{4 \\pi \\epsilon_0 a_{B}} L^{2} - (q) s^{2} S_{61} = \\frac{1}{L^{2} a_{B} 0^{2}}",
+      "description": "Esta fórmula representa a energia de um sistema em um contexto de semicondutores, onde diferentes termos estão relacionados à interação entre cargas elétricas e propriedades do material.",
+      "concepts": [
+        "Energia potencial elétrica",
+        "Interação entre cargas",
+        "Constantes eletrostáticas",
+        "Geometria do sistema"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{s}",
+          "description": "Representa a energia do sistema em questão."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a menor unidade de carga elétrica."
+        },
+        {
+          "symbol": "\\epsilon_0",
+          "description": "Representa a permissividade do vácuo, uma constante que mede a capacidade de um meio de permitir a formação de um campo elétrico."
+        },
+        {
+          "symbol": "a_{B}",
+          "description": "Representa o raio de Bohr, que é uma medida característica do tamanho de átomos em estados excitados."
+        },
+        {
+          "symbol": "L",
+          "description": "Representa uma medida de comprimento que pode estar relacionada à geometria do sistema."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa uma carga elétrica que pode ser positiva ou negativa."
+        },
+        {
+          "symbol": "s",
+          "description": "Representa uma variável que pode estar relacionada à posição ou outra medida no sistema."
+        },
+        {
+          "symbol": "S_{61}",
+          "description": "Representa um termo que pode estar relacionado a uma função ou um fator específico no contexto do sistema."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148
+  ],
+  "lastUpdated": "2026-05-08T20:37:21.366Z"
+}

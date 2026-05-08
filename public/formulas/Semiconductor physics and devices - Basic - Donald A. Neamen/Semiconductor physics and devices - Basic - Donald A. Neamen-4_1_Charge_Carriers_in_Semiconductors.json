@@ -204,9 +204,285 @@
           ]
         }
       ]
+    },
+    {
+      "number": "TYU 4.1",
+      "text": "Calculate the thermal equilibrium electron and hole concentration in silicon at T = 300 K for the case when the Fermi energy level is 0.22 eV below the conduction-band energy E_c. The value of E_i is given in Appendix B.4.",
+      "formulas": [
+        {
+          "originalFormula": "n = p = n_i = \\sqrt{N_c N_v} e^{-E_g / 2kT}",
+          "genericFormula": "n = p = n_i = \\sqrt{N_c N_v} e^{-E_g / 2kT}",
+          "description": "Esta fórmula representa a concentração de portadores de carga em um semicondutor intrínseco, onde n é a concentração de elétrons, p é a concentração de lacunas, e n_i é a concentração intrínseca de portadores. A fórmula mostra como essas concentrações dependem das propriedades do material e da temperatura.",
+          "concepts": [
+            "Semicondutores",
+            "Concentração de portadores de carga",
+            "Temperatura",
+            "Energia de bandgap",
+            "Densidade de estados"
+          ],
+          "symbols": [
+            {
+              "symbol": "n",
+              "description": "Representa a concentração de elétrons livres em um semicondutor."
+            },
+            {
+              "symbol": "p",
+              "description": "Representa a concentração de lacunas, que são os locais onde um elétron poderia estar, mas não está presente."
+            },
+            {
+              "symbol": "n_i",
+              "description": "Representa a concentração intrínseca de portadores de carga em um semicondutor, que é a quantidade de elétrons e lacunas em equilíbrio térmico."
+            },
+            {
+              "symbol": "N_c",
+              "description": "Representa a densidade de estados na banda de condução do semicondutor, que indica quantos estados eletrônicos estão disponíveis para os elétrons na banda de condução."
+            },
+            {
+              "symbol": "N_v",
+              "description": "Representa a densidade de estados na banda de valência do semicondutor, que indica quantos estados eletrônicos estão disponíveis para as lacunas na banda de valência."
+            },
+            {
+              "symbol": "E_g",
+              "description": "Representa a energia de bandgap do semicondutor, que é a diferença de energia entre a banda de condução e a banda de valência."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta do semicondutor, medida em Kelvin."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "TYU 4.2",
+      "text": "Determine the thermal equilibrium electron and hole concentration in GaAs at T = 300 K for the case when the Fermi energy level is 0.30 eV above the valence-band energy E_v. The value of E_i is given in Appendix B.4.",
+      "formulas": [
+        {
+          "originalFormula": "n = p = n_i = \\sqrt{N_c N_v} e^{-E_g / 2kT}",
+          "genericFormula": "n = p = n_i = \\sqrt{N_c N_v} e^{-E_g / 2kT}",
+          "description": "Esta fórmula representa a concentração de portadores de carga em um semicondutor intrínseco, onde n é a concentração de elétrons, p é a concentração de lacunas, e n_i é a concentração intrínseca de portadores. A fórmula mostra como essas concentrações dependem da densidade de estados nas bandas de condução e valência, bem como da energia de bandgap e da temperatura.",
+          "concepts": [
+            "Semicondutores",
+            "Concentração de portadores",
+            "Densidade de estados",
+            "Energia de bandgap",
+            "Temperatura"
+          ],
+          "symbols": [
+            {
+              "symbol": "n",
+              "description": "Representa a concentração de elétrons livres em um semicondutor."
+            },
+            {
+              "symbol": "p",
+              "description": "Representa a concentração de lacunas, que são os locais onde um elétron está ausente em uma banda de valência."
+            },
+            {
+              "symbol": "n_i",
+              "description": "Representa a concentração intrínseca de portadores, que é a quantidade de portadores em um semicondutor puro sem dopagem."
+            },
+            {
+              "symbol": "N_c",
+              "description": "Representa a densidade de estados na banda de condução, que indica quantos estados eletrônicos estão disponíveis para os elétrons na banda de condução."
+            },
+            {
+              "symbol": "N_v",
+              "description": "Representa a densidade de estados na banda de valência, que indica quantos estados eletrônicos estão disponíveis para os elétrons na banda de valência."
+            },
+            {
+              "symbol": "E_g",
+              "description": "Representa a energia de bandgap, que é a diferença de energia entre a banda de condução e a banda de valência em um semicondutor."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta do semicondutor, medida em Kelvin."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "Ex 4.3 (a)",
+      "text": "Calculate the intrinsic carrier concentration in GaAs at T = 400 K and at T = 250 K. Assume that E_g = 1.42 eV is constant over this temperature range.",
+      "formulas": []
+    },
+    {
+      "number": "Ex 4.3 (b)",
+      "text": "What is the ratio of n_i at T = 400 K to that at T = 250 K?",
+      "formulas": []
+    },
+    {
+      "number": "TYU 4.3",
+      "text": "Calculate the intrinsic concentration in silicon at (a) T = 200 K and (b) T = 450 K. (c) Determine the ratio of n_i at T = 450 K to that at T = 200 K.",
+      "formulas": []
+    },
+    {
+      "number": "TYU 4.4",
+      "text": "Repeat TYU 4.3 for GaAs.",
+      "formulas": []
+    },
+    {
+      "number": "TYU 4.5",
+      "text": "Repeat TYU 4.3 for Ge.",
+      "formulas": []
+    },
+    {
+      "number": "Ex 4.4",
+      "text": "Determine the position of the intrinsic Fermi level at T = 300 K with respect to the center of the bandgap for (a) GaAs and (b) Ge.",
+      "formulas": []
     }
   ],
-  "answers": [],
+  "answers": [
+    {
+      "questionNumber": "Ex 4.3 (a)",
+      "text": "n_i = 7.0 \\times 10^{7} \\, \\text{cm}^{-3} \\text{ at } T = 400 K",
+      "formulas": [
+        {
+          "originalFormula": "n_i = (2.8 \\times 10^{19} \\, \\text{cm}^{-3})^{3} \\exp \\left( \\frac{-1.12}{(0.0259)(400/300)} \\right)",
+          "genericFormula": "n_i = (N_0)^{3} \\exp \\left( \\frac{-E_g}{(k)(T/T_0)} \\right)",
+          "description": "Esta fórmula representa a concentração intrínseca de portadores de carga (elétrons e lacunas) em um semicondutor, que depende da temperatura e da energia de bandgap do material. A concentração intrínseca é um parâmetro fundamental para entender o comportamento elétrico de semicondutores.",
+          "concepts": [
+            "Concentração intrínseca de portadores",
+            "Energia de bandgap",
+            "Temperatura",
+            "Constantes físicas"
+          ],
+          "symbols": [
+            {
+              "symbol": "n_i",
+              "description": "Representa a concentração intrínseca de portadores de carga em um semicondutor, medida em número de portadores por centímetro cúbico."
+            },
+            {
+              "symbol": "N_0",
+              "description": "Representa uma constante que está relacionada à densidade de estados disponíveis no semicondutor, que é uma propriedade do material."
+            },
+            {
+              "symbol": "E_g",
+              "description": "Representa a energia de bandgap do semicondutor, que é a energia necessária para excitar um elétron da banda de valência para a banda de condução."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia térmica em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura do sistema em Kelvin, que influencia a quantidade de portadores gerados no semicondutor."
+            },
+            {
+              "symbol": "T_0",
+              "description": "Representa uma temperatura de referência, que pode ser utilizada para normalizar a temperatura do sistema."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Ex 4.3 (b)",
+      "text": "The ratio of n_i at T = 400 K to that at T = 250 K is calculated using the values obtained.",
+      "formulas": []
+    },
+    {
+      "questionNumber": "TYU 4.3 (a)",
+      "text": "n_i = 2.38 \\times 10^{12} \\, \\text{cm}^{-3} \\text{ at } T = 200 K",
+      "formulas": [
+        {
+          "originalFormula": "n_i = (2.8 \\times 10^{19} \\, \\text{cm}^{-3})^{3} \\exp \\left( \\frac{-1.12}{(0.0259)(250/300)} \\right)",
+          "genericFormula": "n_i = (C)^{3} \\exp \\left( \\frac{-E_g}{(k)(T/T_0)} \\right)",
+          "description": "Esta fórmula calcula a concentração intrínseca de portadores de carga em um semicondutor, que é a quantidade de elétrons e lacunas que existem no material em condições de equilíbrio térmico.",
+          "concepts": [
+            "Concentração intrínseca de portadores",
+            "Semicondutores",
+            "Equilíbrio térmico",
+            "Efeito da temperatura na condutividade",
+            "Energia de bandgap"
+          ],
+          "symbols": [
+            {
+              "symbol": "n_i",
+              "description": "Representa a concentração intrínseca de portadores de carga, ou seja, a quantidade de elétrons e lacunas em um semicondutor em equilíbrio térmico."
+            },
+            {
+              "symbol": "C",
+              "description": "Uma constante que representa a concentração de portadores de carga em um semicondutor, que depende do material específico."
+            },
+            {
+              "symbol": "E_g",
+              "description": "A energia de bandgap do semicondutor, que é a energia necessária para mover um elétron da banda de valência para a banda de condução."
+            },
+            {
+              "symbol": "k",
+              "description": "A constante de Boltzmann, que relaciona a temperatura com a energia térmica em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "A temperatura do semicondutor em Kelvin, que influencia a energia térmica dos portadores de carga."
+            },
+            {
+              "symbol": "T_0",
+              "description": "Uma temperatura de referência, geralmente 300 K, que é usada para normalizar a temperatura do sistema."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "TYU 4.3 (b)",
+      "text": "n_i = \\text{value at } T = 450 K",
+      "formulas": []
+    },
+    {
+      "questionNumber": "Ex 4.4",
+      "text": "The intrinsic Fermi level with respect to the center of the bandgap is E_{F} - E_{midgap} = -\\frac{3}{4} kT \\ln \\left( \\frac{m_{e}^{*}}{m_{h}^{*}} \\right) = -\\frac{3}{4} \\cdot 0.0259 \\cdot \\left( \\frac{0.56}{1.08} \\right)",
+      "formulas": [
+        {
+          "originalFormula": "E_{F} - E_{midgap} = -\\frac{3}{4} kT \\ln \\left( \\frac{m_{e}^{*}}{m_{h}^{*}} \\right)",
+          "genericFormula": "E_{F} - E_{midgap} = -\\frac{3}{4} kT \\ln \\left( \\frac{m_{e}^{*}}{m_{h}^{*}} \\right)",
+          "description": "Esta fórmula relaciona a diferença de energia entre o nível de Fermi e o nível de energia no meio do bandgap de um semicondutor com a razão das massas efetivas dos portadores de carga, que são os elétrons e os buracos. Ela mostra como a temperatura e as propriedades dos portadores influenciam a posição do nível de Fermi.",
+          "concepts": [
+            "Nível de Fermi",
+            "Bandgap de semicondutores",
+            "Massas efetivas de portadores de carga",
+            "Termodinâmica em sistemas semicondutores",
+            "Efeito da temperatura na distribuição de portadores"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{F}",
+              "description": "Representa o nível de Fermi, que é a energia máxima ocupada por elétrons em um material a temperatura zero."
+            },
+            {
+              "symbol": "E_{midgap}",
+              "description": "Representa a energia no meio do bandgap, que é a faixa de energia onde não existem estados eletrônicos disponíveis para os elétrons."
+            },
+            {
+              "symbol": "k",
+              "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta do sistema em Kelvin, que influencia a distribuição de energia dos portadores de carga."
+            },
+            {
+              "symbol": "m_{e}^{*}",
+              "description": "É a massa efetiva dos elétrons, que descreve como os elétrons se comportam em um semicondutor sob a influência de um campo elétrico."
+            },
+            {
+              "symbol": "m_{h}^{*}",
+              "description": "É a massa efetiva dos buracos, que representa a 'massa' dos estados vazios deixados pelos elétrons em um semicondutor."
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "standaloneFormulas": [
     {
       "originalFormula": "n(E) = g(E)f_{F}(E)",
@@ -372,6 +648,198 @@
           "description": "Representa um elemento infinitesimal de energia, usado para integrar ao longo do intervalo de energias."
         }
       ]
+    },
+    {
+      "originalFormula": "N_c = 2.8 \\times 10^{19}, N_v = 1.04 \\times 10^{19}, m^* / m_0 = 1.08",
+      "genericFormula": "N_c, N_v, \\frac{m^*}{m_0}",
+      "description": "Esta fórmula representa parâmetros fundamentais de um semicondutor, onde N_c e N_v são as concentrações efetivas de estados de condução e valência, respectivamente, e a razão entre a massa efetiva e a massa do elétron livre é uma medida da resposta do semicondutor a campos elétricos.",
+      "concepts": [
+        "Concentração de portadores de carga",
+        "Massa efetiva de portadores",
+        "Semicondutores",
+        "Estados de condução e valência"
+      ],
+      "symbols": [
+        {
+          "symbol": "N_c",
+          "description": "Representa a concentração efetiva de estados disponíveis para elétrons na banda de condução do semicondutor."
+        },
+        {
+          "symbol": "N_v",
+          "description": "Representa a concentração efetiva de estados disponíveis para lacunas na banda de valência do semicondutor."
+        },
+        {
+          "symbol": "m^*",
+          "description": "Refere-se à massa efetiva dos portadores de carga, que é a massa que um portador parece ter quando sujeito a um campo elétrico."
+        },
+        {
+          "symbol": "m_0",
+          "description": "É a massa do elétron livre, que é uma constante fundamental na física que representa a massa de um elétron em repouso."
+        }
+      ]
+    },
+    {
+      "originalFormula": "N_c = 4.7 \\times 10^{17}, N_v = 7.0 \\times 10^{18}, m^* / m_0 = 0.67",
+      "genericFormula": "N_c = N_c^{gen}, N_v = N_v^{gen}, \\frac{m^*}{m_0} = \\frac{m^*}{m_0}^{gen}",
+      "description": "Esta fórmula apresenta valores fundamentais relacionados às propriedades eletrônicas de um semicondutor. N_c e N_v representam as densidades de estados efetivas na banda de condução e na banda de valência, respectivamente, enquanto a razão entre a massa efetiva e a massa livre de um elétron indica como a massa dos portadores de carga se comporta em um material semicondutor.",
+      "concepts": [
+        "Densidade de estados efetiva",
+        "Banda de condução",
+        "Banda de valência",
+        "Massa efetiva",
+        "Propriedades eletrônicas de semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "N_c",
+          "description": "Representa a densidade de estados efetiva na banda de condução, que indica quantos estados eletrônicos estão disponíveis para os elétrons na banda de condução."
+        },
+        {
+          "symbol": "N_v",
+          "description": "Representa a densidade de estados efetiva na banda de valência, que indica quantos estados eletrônicos estão disponíveis para os buracos na banda de valência."
+        },
+        {
+          "symbol": "m^*",
+          "description": "Representa a massa efetiva dos portadores de carga (elétrons ou buracos) em um semicondutor, que é uma medida de como esses portadores respondem a campos elétricos."
+        },
+        {
+          "symbol": "m_0",
+          "description": "Representa a massa de repouso de um elétron, que é a massa que um elétron teria quando não está se movendo em um campo elétrico."
+        }
+      ]
+    },
+    {
+      "originalFormula": "N_c = 1.04 \\times 10^{19}, N_v = 6.0 \\times 10^{18}, m^* / m_0 = 0.55",
+      "genericFormula": "N_c = N_{c0}, N_v = N_{v0}, \\frac{m^*}{m_0} = r",
+      "description": "Esta fórmula representa parâmetros fundamentais de um semicondutor, onde N_c e N_v são as concentrações efetivas de estados de condução e valência, respectivamente, e a razão entre a massa efetiva de um portador de carga e a massa do elétron livre é dada por m* / m0.",
+      "concepts": [
+        "Concentração efetiva de estados de condução",
+        "Concentração efetiva de estados de valência",
+        "Massa efetiva de portadores de carga",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "N_c",
+          "description": "Representa a concentração efetiva de estados disponíveis para os elétrons na banda de condução do semicondutor."
+        },
+        {
+          "symbol": "N_v",
+          "description": "Representa a concentração efetiva de estados disponíveis para os buracos na banda de valência do semicondutor."
+        },
+        {
+          "symbol": "m^*",
+          "description": "Representa a massa efetiva de um portador de carga, como um elétron, que se comporta de maneira diferente da massa do elétron livre devido à interação com a rede cristalina do semicondutor."
+        },
+        {
+          "symbol": "m_0",
+          "description": "Representa a massa do elétron livre em um vácuo, que é uma constante fundamental na física."
+        },
+        {
+          "symbol": "r",
+          "description": "Representa a razão entre a massa efetiva do portador de carga e a massa do elétron livre, indicando como a massa do portador é alterada pelo ambiente do semicondutor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "n_i = 4.90 \\times 10^{15} \\, \\text{cm}^{-3} \\text{ at } T = 250 K",
+      "genericFormula": "n_i = C \\times 10^{D} \\, \\text{cm}^{-3} \\text{ at } T = T_0",
+      "description": "Esta fórmula representa a densidade intrínseca de portadores de carga em um semicondutor a uma temperatura específica. A densidade intrínseca é o número de portadores de carga (elétrons e lacunas) por centímetro cúbico em um material semicondutor puro, sem dopagem.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Semicondutores",
+        "Temperatura",
+        "Equilíbrio térmico"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_i",
+          "description": "Representa a densidade intrínseca de portadores de carga em um semicondutor, ou seja, o número de portadores por unidade de volume."
+        },
+        {
+          "symbol": "C",
+          "description": "Um coeficiente que representa um valor constante relacionado à densidade intrínseca em uma temperatura específica."
+        },
+        {
+          "symbol": "D",
+          "description": "Um expoente que indica a ordem de grandeza da densidade intrínseca em relação a potências de dez."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura em Kelvin, que influencia a densidade de portadores em um semicondutor."
+        },
+        {
+          "symbol": "T_0",
+          "description": "Uma variável que representa uma temperatura específica em Kelvin, usada para indicar a condição sob a qual a densidade intrínseca é medida."
+        }
+      ]
+    },
+    {
+      "originalFormula": "n_i = 5.67 \\times 10^{24} \\, \\text{cm}^{-3} \\text{ at } T = 400 K",
+      "genericFormula": "n_i = C \\times T^{m}",
+      "description": "Esta fórmula representa a densidade intrínseca de portadores de carga em um semicondutor, que é a quantidade de portadores de carga (elétrons e lacunas) presentes em um material semicondutor em equilíbrio térmico a uma determinada temperatura.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Semicondutores",
+        "Temperatura",
+        "Equilíbrio térmico"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_i",
+          "description": "Representa a densidade intrínseca de portadores de carga em um semicondutor, expressa em número de portadores por centímetro cúbico."
+        },
+        {
+          "symbol": "C",
+          "description": "Uma constante que depende do material semicondutor e é influenciada pela temperatura e pela estrutura do material."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura em Kelvin, que afeta a energia térmica dos portadores de carga no semicondutor."
+        },
+        {
+          "symbol": "m",
+          "description": "Um expoente que pode variar dependendo do material e das condições, indicando como a densidade de portadores muda com a temperatura."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E_{F} - E_{midgap} = -\\frac{3}{4} kT \\ln \\left( \\frac{m_{e}^{*}}{m_{h}^{*}} \\right)",
+      "genericFormula": "E_{F} - E_{midgap} = -\\frac{3}{4} kT \\ln \\left( \\frac{m_{e}^{*}}{m_{h}^{*}} \\right)",
+      "description": "Esta fórmula relaciona a diferença de energia entre o nível de Fermi e o nível de energia no meio do gap em um semicondutor com a razão das massas efetivas dos portadores de carga. Ela é importante para entender como a temperatura e as propriedades dos portadores influenciam as características eletrônicas do material.",
+      "concepts": [
+        "Nível de Fermi",
+        "Energia de gap",
+        "Massas efetivas",
+        "Termodinâmica em semicondutores",
+        "Efeito da temperatura"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{F}",
+          "description": "Representa o nível de Fermi, que é o nível de energia mais alto ocupado por elétrons em um material a temperatura zero."
+        },
+        {
+          "symbol": "E_{midgap}",
+          "description": "Refere-se à energia no meio do gap, que é a energia que separa a banda de valência da banda de condução em um semicondutor."
+        },
+        {
+          "symbol": "k",
+          "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta do sistema, medida em Kelvin."
+        },
+        {
+          "symbol": "m_{e}^{*}",
+          "description": "É a massa efetiva dos elétrons, que descreve como os elétrons se comportam em um campo elétrico dentro do semicondutor."
+        },
+        {
+          "symbol": "m_{h}^{*}",
+          "description": "É a massa efetiva dos buracos, que representa a 'massa' dos portadores de carga positiva em um semicondutor, resultante da ausência de elétrons."
+        }
+      ]
     }
   ],
   "processedPages": [
@@ -510,7 +978,13 @@
     133,
     134,
     135,
-    136
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142
   ],
-  "lastUpdated": "2026-05-08T20:31:45.731Z"
+  "lastUpdated": "2026-05-08T20:35:25.228Z"
 }

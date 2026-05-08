@@ -1,0 +1,382 @@
+{
+  "chapter": "5 Carrier Transport Phenomena",
+  "section": "Exercise Problem 5.3",
+  "questions": [
+    {
+      "number": "Ex 5.3",
+      "text": "Determine the (a) hole mobility, (b) conductivity, and (c) resistivity.",
+      "formulas": [
+        {
+          "originalFormula": "\\sigma \\approx 16 \\; (\\Omega \\cdot \\text{cm})^{-1}",
+          "genericFormula": "\\sigma \\approx C \\; (\\Omega \\cdot \\text{cm})^{-1}",
+          "description": "Esta fórmula representa a condutividade elétrica de um material, que é uma medida de quão bem o material pode conduzir eletricidade. Quanto maior o valor da condutividade, melhor o material é em permitir a passagem de corrente elétrica.",
+          "concepts": [
+            "Condutividade elétrica",
+            "Resistividade",
+            "Corrente elétrica",
+            "Material semicondutor"
+          ],
+          "symbols": [
+            {
+              "symbol": "σ",
+              "description": "Representa a condutividade elétrica do material, que indica a capacidade do material de conduzir eletricidade."
+            },
+            {
+              "symbol": "Ω",
+              "description": "Representa a unidade de resistência elétrica, chamada ohm, que é usada para medir a resistência de um material ao fluxo de corrente elétrica."
+            },
+            {
+              "symbol": "cm",
+              "description": "Representa centímetros, que é uma unidade de medida de comprimento utilizada para descrever dimensões físicas."
+            },
+            {
+              "symbol": "C",
+              "description": "Representa uma constante que pode ser substituída por um valor específico de condutividade elétrica em diferentes contextos ou materiais."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "Ex 5.3",
+      "text": "The calculations yield the following results based on the given impurity concentrations and mobility.",
+      "formulas": [
+        {
+          "originalFormula": "\\mu_p = 510 \\; \\text{cm}^2/\\text{V-s}",
+          "genericFormula": "\\mu_p = x \\; \\text{cm}^2/\\text{V-s}",
+          "description": "Esta fórmula representa a mobilidade dos portadores de carga positiva (buracos) em um semicondutor, que é uma medida de quão rapidamente esses portadores podem se mover através do material quando um campo elétrico é aplicado.",
+          "concepts": [
+            "Mobilidade dos portadores de carga",
+            "Semicondutores",
+            "Campo elétrico",
+            "Transporte de carga elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\mu_p",
+              "description": "Representa a mobilidade dos portadores de carga positiva, que indica a eficiência com que os buracos se movem em resposta a um campo elétrico."
+            },
+            {
+              "symbol": "510",
+              "description": "Um valor numérico específico que representa a mobilidade em centímetros quadrados por volt-segundo, mas que na forma genérica é substituído por uma variável."
+            },
+            {
+              "symbol": "\\text{cm}^2",
+              "description": "Unidade de medida que representa centímetros quadrados, utilizada para expressar a área na qual os portadores de carga se movem."
+            },
+            {
+              "symbol": "\\text{V}",
+              "description": "Representa volts, que é a unidade de medida da tensão elétrica, indicando a força que impulsiona os portadores de carga."
+            },
+            {
+              "symbol": "\\text{s}",
+              "description": "Representa segundos, que é a unidade de medida do tempo, utilizada para indicar a duração do movimento dos portadores de carga."
+            }
+          ]
+        },
+        {
+          "originalFormula": "\\sigma = \\frac{L}{RA} = \\frac{5 \\times 10^{-2}}{(10)(10^{-5})} = 0.50 \\; (\\Omega \\cdot \\text{cm})^{-1}",
+          "genericFormula": "\\sigma = \\frac{L}{RA}",
+          "description": "Esta fórmula representa a condutividade elétrica de um material, que é uma medida de quão bem ele conduz eletricidade. A condutividade é inversamente proporcional à resistência do material e depende de suas dimensões e da resistividade do material.",
+          "concepts": [
+            "Condutividade elétrica",
+            "Resistência elétrica",
+            "Geometria do material",
+            "Resistividade"
+          ],
+          "symbols": [
+            {
+              "symbol": "σ",
+              "description": "Representa a condutividade elétrica do material, que indica a capacidade do material de conduzir corrente elétrica."
+            },
+            {
+              "symbol": "L",
+              "description": "Representa o comprimento do material através do qual a corrente elétrica está fluindo."
+            },
+            {
+              "symbol": "R",
+              "description": "Representa a resistência elétrica do material, que é a oposição que o material oferece ao fluxo de corrente elétrica."
+            },
+            {
+              "symbol": "A",
+              "description": "Representa a área da seção transversal do material, que é a área pela qual a corrente elétrica passa."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "I = \\frac{V}{R} = \\frac{5}{10} = 0.5 \\; \\text{mA}",
+      "genericFormula": "I = \\frac{V}{R}",
+      "description": "Esta fórmula representa a relação entre a corrente elétrica, a tensão e a resistência em um circuito elétrico. Ela nos diz que a corrente que flui em um circuito é igual à tensão aplicada dividida pela resistência do circuito.",
+      "concepts": [
+        "Corrente elétrica",
+        "Tensão elétrica",
+        "Resistência elétrica",
+        "Lei de Ohm"
+      ],
+      "symbols": [
+        {
+          "symbol": "I",
+          "description": "Representa a corrente elétrica, que é a quantidade de carga elétrica que passa por um ponto em um circuito em um determinado período de tempo."
+        },
+        {
+          "symbol": "V",
+          "description": "Representa a tensão elétrica, que é a diferença de potencial elétrico entre dois pontos em um circuito. É a força que impulsiona a corrente elétrica."
+        },
+        {
+          "symbol": "R",
+          "description": "Representa a resistência elétrica, que é a oposição que um material oferece ao fluxo de corrente elétrica. É medida em ohms."
+        }
+      ]
+    },
+    {
+      "originalFormula": "A = \\frac{I}{J} = \\frac{0.5 \\times 10^{-3}}{50} = 10^{-5} \\; \\text{cm}^2",
+      "genericFormula": "A = \\frac{I}{J}",
+      "description": "Esta fórmula representa a área A em função da corrente I e da densidade de corrente J. A área é calculada dividindo-se a corrente total pela densidade de corrente, que é a corrente por unidade de área.",
+      "concepts": [
+        "Área",
+        "Corrente elétrica",
+        "Densidade de corrente"
+      ],
+      "symbols": [
+        {
+          "symbol": "A",
+          "description": "Representa a área através da qual a corrente elétrica está fluindo, medida em centímetros quadrados."
+        },
+        {
+          "symbol": "I",
+          "description": "Representa a corrente elétrica total que flui através da área, medida em amperes."
+        },
+        {
+          "symbol": "J",
+          "description": "Representa a densidade de corrente, que é a corrente elétrica por unidade de área, medida em amperes por centímetro quadrado."
+        }
+      ]
+    },
+    {
+      "originalFormula": "L = \\frac{V}{E} = \\frac{5}{100} = 5 \\times 10^{-2} \\; \\text{cm}",
+      "genericFormula": "L = \\frac{V}{E}",
+      "description": "Esta fórmula representa a relação entre a distância percorrida por uma carga elétrica em um campo elétrico, onde L é a distância, V é a tensão elétrica aplicada e E é a intensidade do campo elétrico. A fórmula indica que a distância é diretamente proporcional à tensão e inversamente proporcional à intensidade do campo.",
+      "concepts": [
+        "Tensão elétrica",
+        "Campo elétrico",
+        "Movimento de cargas elétricas"
+      ],
+      "symbols": [
+        {
+          "symbol": "L",
+          "description": "Representa a distância percorrida pela carga elétrica, medida em centímetros."
+        },
+        {
+          "symbol": "V",
+          "description": "Representa a tensão elétrica aplicada, medida em volts."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa a intensidade do campo elétrico, medida em volts por centímetro."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193
+  ],
+  "lastUpdated": "2026-05-08T20:55:38.553Z"
+}
