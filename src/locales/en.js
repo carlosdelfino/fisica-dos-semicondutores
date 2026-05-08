@@ -57,8 +57,7 @@ export default {
       fetTypes: '🧪 FET Transistor Types',
       czochralski: '🔬 Growth Methods',
       perovskites: '☀️ 2D Perovskites',
-      formulas: '📐 Formulas & Symbols',
-      exercises: '📝 Exercises',
+      exercises: '📝 Exercises & Formulas',
       periodic: '⚛️ Periodic Table',
       about: '👤 About',
       community: '🤝 Collaborate on GitHub',
@@ -97,6 +96,22 @@ export default {
     showMore: 'Show more',
     showLess: 'Show less',
     goTo: 'Go to'
+  },
+  graphs: {
+    title: 'Graph',
+    details: 'Details',
+    formula: 'Formula',
+    description: 'Description',
+    concepts: 'Concepts',
+    symbols: 'Symbols',
+    symbol: 'Symbol',
+    showDetails: 'Show Details',
+    hideDetails: 'Hide Details',
+    replayAnimation: 'Replay Animation',
+    PhotonEnergyGraph: 'Photon Energy',
+    HeisenbergUncertaintyGraph: 'Heisenberg Uncertainty',
+    DensityOfStatesGraph: 'Density of States',
+    BandStructureGraph: 'Band Structure'
   },
   learningObjectives: {
     title: 'Study Roadmap — 8 competencies to develop',

@@ -99,6 +99,7 @@ export default function FormulasPanel() {
                   formula={formula}
                   onNavigate={navigateToVisualization}
                   onSelect={setActiveFormula}
+                  bookName="Semiconductor Devices - Kanaan Kano"
                 />
               ))}
             </div>
@@ -130,6 +131,7 @@ export default function FormulasPanel() {
                             formula={formula}
                             onNavigate={navigateToVisualization}
                             onSelect={setActiveFormula}
+                            bookName="Semiconductor Devices - Kanaan Kano"
                           />
                         ))}
                       </div>
@@ -156,6 +158,7 @@ export default function FormulasPanel() {
                     onNavigate={navigateToVisualization}
                     onSelect={setActiveFormula}
                     compact
+                    bookName="Semiconductor Devices - Kanaan Kano"
                   />
                 ))}
                 {formulas.length > 5 && (

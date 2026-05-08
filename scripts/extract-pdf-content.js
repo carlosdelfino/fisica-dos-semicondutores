@@ -115,43 +115,63 @@ async function enrichFormula(formula, context = '') {
       messages: [
         {
           role: 'system',
-          content: `Você é um especialista em física de semicondutores e educação científica.
+          content: `Você é um especialista em física dos semicondutores, mecânica quântica e física quântica. Sua tarefa é enriquecer fórmulas com informações didáticas e taxonomia.
 
-Sua tarefa é analisar fórmulas matemáticas e físicas e fornecer informações didáticas.
-
-Para cada fórmula, você deve:
-1. Descrever o que a fórmula representa em linguagem clara e acessível
-2. Converter a fórmula para sua forma genérica (remover valores numéricos específicos do exercício)
-3. Explicar os conceitos físicos envolvidos na fórmula
-4. Descrever cada símbolo usado na fórmula (SEM usar notação matemática, apenas descrição textual)
-
-IMPORTANTE:
-- A fórmula genérica deve estar em formato KaTeX/LaTeX compatível
-- As descrições de símbolos devem ser puramente textuais, sem usar fórmulas matemáticas
-- Mantenha a fórmula original separada da versão genérica
-- Use linguagem didática e educacional
-
-Retorne o resultado em formato JSON com a seguinte estrutura:
+Para cada fórmula fornecida, retorne um JSON com o seguinte formato:
 {
-  "originalFormula": "fórmula original em KaTeX",
-  "genericFormula": "fórmula genérica em KaTeX (sem valores numéricos)",
-  "description": "descrição didática do que a fórmula representa",
+  "originalFormula": "fórmula original fornecida",
+  "genericFormula": "fórmula genérica (sem valores numéricos específicos, usando variáveis)",
+  "description": "descrição didática detalhada do que a fórmula representa e quando é usada",
   "concepts": ["lista de conceitos físicos envolvidos"],
   "symbols": [
     {
-      "symbol": "símbolo",
-      "description": "descrição textual do que o símbolo representa"
+      "symbol": "símbolo LaTeX",
+      "description": "descrição do que o símbolo representa"
     }
-  ]
-}`
+  ],
+  "taxonomy": {
+    "category": "uma de: quantum-physics, quantum-mechanics, semiconductor-physics",
+    "subcategory": "subcategoria específica (ex: energy-levels, band-structure, carrier-transport)",
+    "domain": "domínio principal (ex: atomic-physics, solid-state, device-physics)"
+  },
+  "keywords": ["palavras-chave para busca e linkagem (ex: energy, momentum, bandgap, carrier)"],
+  "graphVisualization": {
+    "hasGraph": true/false,
+    "graphType": "tipo de gráfico se aplicável (ex: energy-band, dispersion, density-of-states)",
+    "graphParameters": ["parâmetros para o gráfico (ex: energy, momentum, temperature)"]
+  },
+  "relatedFormulas": ["IDs ou nomes de fórmulas relacionadas (ex: Schrodinger, Fermi-Dirac)"]
+}
+
+CATEGORIAS DE TAXONOMIA:
+- quantum-physics: Fórmulas fundamentais de física quântica (Schrödinger, Heisenberg, Pauli)
+- quantum-mechanics: Aplicações específicas da mecânica quântica (função de onda, operadores, estados)
+- semiconductor-physics: Fórmulas específicas de semicondutores (bandas, portadores, junções)
+
+PALAVRAS-CHAVE ÚTEIS PARA LINKAGEM:
+- Para energia: energy, level, gap, band, state, transition
+- Para momento: momentum, wave-vector, k, effective-mass
+- Para transporte: carrier, mobility, diffusion, conductivity, current
+- Para estrutura de bandas: band, conduction, valence, gap, effective-mass
+- Para estatística: distribution, Fermi-Dirac, Bose-Einstein, concentration
+- Para dispositivos: junction, diode, transistor, depletion, barrier
+
+IMPORTANTE:
+- A fórmula genérica deve estar em formato LaTeX/KaTeX compatível
+- Use \\\\text{} para texto dentro de fórmulas se necessário
+- Escape corretamente barras invertidas: use \\\\text{}, \\\\frac{}, \\\\sqrt{}, etc.
+- A descrição deve ser didática e explicar o contexto físico
+- Os conceitos devem ser termos técnicos relevantes
+- Os símbolos devem incluir todas as variáveis e constantes usadas
+- A taxonomia deve ajudar a categorizar a fórmula para busca
+- As palavras-chave devem facilitar linkagem entre fórmulas e gráficos
+- graphVisualization indica se a fórmula tem representação gráfica
+- NÃO inclua explicações fora do JSON
+- Retorne APENAS JSON válido, sem markdown code blocks`
         },
         {
           role: 'user',
-          content: `Analise a seguinte fórmula${context ? ` do contexto: ${context}` : ''}:
-
-Fórmula: ${formula}
-
-Forneça a análise didática completa seguindo as instruções.`
+          content: `Enriqueça esta fórmula: ${formula}\n\nContexto: ${context}`
         }
       ],
       max_tokens: 2000,
@@ -416,6 +436,29 @@ NÃO inclua explicações, comentários ou texto fora do JSON.`
       cleanContent = cleanContent.replace(/\\right/g, '\\\\right');
       
       jsonData = JSON.parse(cleanContent);
+      
+      // Garantir que campos de taxonomia existam
+      if (!jsonData.taxonomy) {
+        jsonData.taxonomy = {
+          category: 'unknown',
+          subcategory: 'unknown',
+          domain: 'unknown'
+        };
+      }
+      if (!jsonData.keywords) {
+        jsonData.keywords = [];
+      }
+      if (!jsonData.graphVisualization) {
+        jsonData.graphVisualization = {
+          hasGraph: false,
+          graphType: null,
+          graphParameters: []
+        };
+      }
+      if (!jsonData.relatedFormulas) {
+        jsonData.relatedFormulas = [];
+      }
+      
     } catch (parseError) {
       log('WARN', '⚠️', 'Não foi possível fazer parse do JSON, tentando correção adicional', { 
         pageNumber, 
@@ -431,6 +474,28 @@ NÃO inclua explicações, comentários ou texto fora do JSON.`
         aggressiveClean = aggressiveClean.replace(/([^\\])\\([^\\])/g, '$1\\\\$2');
         jsonData = JSON.parse(aggressiveClean);
         log('INFO', '✅', 'Parse bem-sucedido com correção agressiva');
+        
+        // Garantir que campos de taxonomia existam
+        if (!jsonData.taxonomy) {
+          jsonData.taxonomy = {
+            category: 'unknown',
+            subcategory: 'unknown',
+            domain: 'unknown'
+          };
+        }
+        if (!jsonData.keywords) {
+          jsonData.keywords = [];
+        }
+        if (!jsonData.graphVisualization) {
+          jsonData.graphVisualization = {
+            hasGraph: false,
+            graphType: null,
+            graphParameters: []
+          };
+        }
+        if (!jsonData.relatedFormulas) {
+          jsonData.relatedFormulas = [];
+        }
       } catch (secondError) {
         log('WARN', '⚠️', 'Parse falhou mesmo com correção agressiva, retornando texto bruto', { 
           pageNumber, 
@@ -557,11 +622,18 @@ async function saveIncremental(data, pageNumber, pdfPath, processedPages) {
   const chapter = data.chapter || 'unknown';
   const safeChapterName = chapter.replace(/[^a-zA-Z0-9-_]/g, '_');
   
+  // Extrair bookTitle e author do nome do arquivo se possível
+  const bookTitle = baseFilename.replace(/_/g, ' ').replace(/ - Solution Manual.*$/, '').replace(/ - .*$/, '');
+  const authorMatch = baseFilename.match(/ - (.+?)\.pdf$/);
+  const author = authorMatch ? authorMatch[1].replace(/\.pdf$/, '') : 'Unknown';
+  
   // Atualizar arquivo de metadados (sem timestamp)
   const metadataFilename = path.join(outputDir, `${baseFilename}-metadata.json`);
   fs.writeFileSync(metadataFilename, JSON.stringify({
     processedPages: Array.from(processedPages),
-    lastUpdated: new Date().toISOString()
+    lastUpdated: new Date().toISOString(),
+    bookTitle,
+    author
   }, null, 2));
   log('INFO', '💾', 'Metadados atualizados', { pageNumber, filename: metadataFilename });
   
@@ -569,7 +641,15 @@ async function saveIncremental(data, pageNumber, pdfPath, processedPages) {
   const chapterFilename = path.join(outputDir, `${baseFilename}-${safeChapterName}.json`);
   
   // Verificar se existe arquivo anterior do capítulo para mesclar
-  let chapterData = { chapter, section: data.section || 'unknown', questions: [], answers: [], standaloneFormulas: [] };
+  let chapterData = { 
+    chapter, 
+    section: data.section || 'unknown', 
+    questions: [], 
+    answers: [], 
+    standaloneFormulas: [],
+    bookTitle,
+    author
+  };
   
   if (fs.existsSync(chapterFilename)) {
     try {
@@ -601,6 +681,8 @@ async function saveIncremental(data, pageNumber, pdfPath, processedPages) {
   // Adicionar metadados
   chapterData.processedPages = Array.from(processedPages);
   chapterData.lastUpdated = new Date().toISOString();
+  chapterData.bookTitle = bookTitle;
+  chapterData.author = author;
   
   // Salvar arquivo atualizado
   fs.writeFileSync(chapterFilename, JSON.stringify(chapterData, null, 2));
@@ -614,11 +696,18 @@ function saveResults(groupedData, pdfPath, processedPages) {
   const outputDir = getOutputDir(pdfPath);
   const baseFilename = path.basename(pdfPath, path.extname(pdfPath));
   
+  // Extrair bookTitle e author do nome do arquivo se possível
+  const bookTitle = baseFilename.replace(/_/g, ' ').replace(/ - Solution Manual.*$/, '').replace(/ - .*$/, '');
+  const authorMatch = baseFilename.match(/ - (.+?)\.pdf$/);
+  const author = authorMatch ? authorMatch[1].replace(/\.pdf$/, '') : 'Unknown';
+  
   // Salvar arquivo de metadados de páginas processadas (separado dos dados, sem timestamp)
   const metadataFilename = path.join(outputDir, `${baseFilename}-metadata.json`);
   fs.writeFileSync(metadataFilename, JSON.stringify({
     processedPages: Array.from(processedPages),
-    lastUpdated: new Date().toISOString()
+    lastUpdated: new Date().toISOString(),
+    bookTitle,
+    author
   }, null, 2));
   log('INFO', '✅', 'Metadados de páginas salvo', { filename: metadataFilename });
   
@@ -667,6 +756,8 @@ function saveResults(groupedData, pdfPath, processedPages) {
     // Adicionar metadados de páginas processadas
     mergedData.processedPages = Array.from(processedPages);
     mergedData.lastUpdated = new Date().toISOString();
+    mergedData.bookTitle = bookTitle;
+    mergedData.author = author;
     
     fs.writeFileSync(outputFilename, JSON.stringify(mergedData, null, 2));
     log('INFO', '✅', 'Arquivo salvo', { chapter: chapterName, filename: outputFilename });
@@ -677,7 +768,9 @@ function saveResults(groupedData, pdfPath, processedPages) {
   const indexData = {
     ...groupedData,
     processedPages: Array.from(processedPages),
-    lastUpdated: new Date().toISOString()
+    lastUpdated: new Date().toISOString(),
+    bookTitle,
+    author
   };
   fs.writeFileSync(indexFilename, JSON.stringify(indexData, null, 2));
   log('INFO', '✅', 'Índice geral salvo', { filename: indexFilename });

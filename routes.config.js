@@ -157,7 +157,7 @@ const routes = [
     lastmod: new Date().toISOString(),
   },
   {
-    path: '#formulas',
+    path: '#exercises',
     changefreq: 'monthly',
     priority: '0.8',
     lastmod: new Date().toISOString(),

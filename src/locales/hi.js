@@ -57,8 +57,7 @@ export default {
       fetTypes: '🧪 FET ट्रांजिस्टर प्रकार',
       czochralski: '🔬 वृद्धि विधियाँ',
       perovskites: '☀️ 2D पेरोवस्काइट',
-      formulas: '📐 सूत्र और प्रतीक',
-      exercises: '📝 अभ्यास',
+      exercises: '📝 अभ्यास और सूत्र',
       periodic: '⚛️ आवर्त सारणी',
       about: '👤 परिचय',
       community: '🤝 GitHub पर योगदान दें',
@@ -94,9 +93,25 @@ export default {
     search: 'खोजें',
     more: 'अधिक',
     less: 'कम',
-    showMore: 'अधिक दिखाएँ',
-    showLess: 'कम दिखाएँ',
-    goTo: 'जाएँ'
+    showMore: 'अधिक दिखाएं',
+    showLess: 'कम दिखाएं',
+    goTo: 'जाएं'
+  },
+  graphs: {
+    title: 'ग्राफ',
+    details: 'विवरण',
+    formula: 'सूत्र',
+    description: 'विवरण',
+    concepts: 'अवधारणाएं',
+    symbols: 'प्रतीक',
+    symbol: 'प्रतीक',
+    showDetails: 'विवरण दिखाएं',
+    hideDetails: 'विवरण छिपाएं',
+    replayAnimation: 'एनिमेशन पुनः चलाएं',
+    PhotonEnergyGraph: 'फोटॉन ऊर्जा',
+    HeisenbergUncertaintyGraph: 'हाइज़नबर्ग अनिश्चितता',
+    DensityOfStatesGraph: 'स्थितियों की घनत्व',
+    BandStructureGraph: 'बैंड संरचना'
   },
   learningObjectives: {
     title: 'अध्ययन रोडमैप — विकसित करने के लिए 8 दक्षताएँ',

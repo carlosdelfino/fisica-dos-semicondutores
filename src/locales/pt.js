@@ -57,8 +57,7 @@ export default {
       fetTypes: '🧪 Tipos de Transistores FET',
       czochralski: '🔬 Métodos de Crescimento',
       perovskites: '☀️ Perovskites 2D',
-      formulas: '📐 Fórmulas & Símbolos',
-      exercises: '📝 Exercícios',
+      exercises: '📝 Exercícios e Fórmulas',
       periodic: '⚛️ Tabela Periódica',
       about: '👤 Sobre',
       community: '🤝 Colabore no GitHub',
@@ -97,6 +96,22 @@ export default {
     showMore: 'Mostrar mais',
     showLess: 'Mostrar menos',
     goTo: 'Ir para'
+  },
+  graphs: {
+    title: 'Gráfico',
+    details: 'Detalhes',
+    formula: 'Fórmula',
+    description: 'Descrição',
+    concepts: 'Conceitos',
+    symbols: 'Símbolos',
+    symbol: 'Símbolo',
+    showDetails: 'Mostrar Detalhes',
+    hideDetails: 'Ocultar Detalhes',
+    replayAnimation: 'Reproduzir Animação',
+    PhotonEnergyGraph: 'Energia do Fóton',
+    HeisenbergUncertaintyGraph: 'Princípio da Incerteza',
+    DensityOfStatesGraph: 'Densidade de Estados',
+    BandStructureGraph: 'Estrutura de Bandas'
   },
   learningObjectives: {
     title: 'Roteiro de Estudo — 8 competências a desenvolver',
