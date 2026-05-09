@@ -1,42 +1,86 @@
 {
-  "chapter": "unknown",
+  "chapter": "Appendix D",
+  "section": "Unit of Energy—The Electron Volt",
   "questions": [],
   "answers": [],
-  "standaloneFormulas": [],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "F = m_a = m_0 \\frac{d^2 x}{dt^2} = eE",
+      "genericFormula": "F = m_a = m_0 \\frac{d^2 x}{dt^2} = eE",
+      "description": "Esta fórmula representa a relação entre a força, a massa de um objeto, a aceleração que ele experimenta e a força elétrica que atua sobre ele. Ela mostra que a força é igual à massa multiplicada pela aceleração, que por sua vez pode ser expressa em termos da força elétrica quando um campo elétrico está presente.",
+      "concepts": [
+        "Segunda Lei de Newton",
+        "Aceleração",
+        "Massa",
+        "Força elétrica",
+        "Campo elétrico"
+      ],
+      "symbols": [
+        {
+          "symbol": "F",
+          "description": "Representa a força total que atua sobre o objeto."
+        },
+        {
+          "symbol": "m_a",
+          "description": "Representa a massa efetiva do objeto que está sendo acelerado."
+        },
+        {
+          "symbol": "m_0",
+          "description": "Representa a massa em repouso do objeto, ou seja, a massa quando não está sujeito a aceleração."
+        },
+        {
+          "symbol": "d^2 x",
+          "description": "Representa a mudança na posição do objeto em relação ao tempo, especificamente a segunda derivada da posição, que indica a aceleração."
+        },
+        {
+          "symbol": "dt",
+          "description": "Representa um pequeno intervalo de tempo durante o qual a mudança na posição é medida."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elétrica do objeto, que é a quantidade de eletricidade que ele possui."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa a intensidade do campo elétrico que atua sobre o objeto."
+        }
+      ]
+    },
+    {
+      "originalFormula": "v = \\frac{eEt}{m_0}",
+      "genericFormula": "v = \\frac{eEt}{m}",
+      "description": "Esta fórmula representa a velocidade de uma partícula carregada, como um elétron, que se move sob a influência de um campo elétrico. A velocidade é calculada a partir da força exercida pelo campo elétrico sobre a partícula e a sua massa.",
+      "concepts": [
+        "Campo elétrico",
+        "Força elétrica",
+        "Movimento de partículas carregadas",
+        "Massa de partículas"
+      ],
+      "symbols": [
+        {
+          "symbol": "v",
+          "description": "Representa a velocidade da partícula carregada."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elétrica da partícula, como a carga de um elétron."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa a intensidade do campo elétrico que está atuando sobre a partícula."
+        },
+        {
+          "symbol": "t",
+          "description": "Representa o tempo durante o qual a partícula está sob a influência do campo elétrico."
+        },
+        {
+          "symbol": "m_0",
+          "description": "Representa a massa da partícula em repouso, que é uma propriedade intrínseca da partícula."
+        }
+      ]
+    }
+  ],
   "processedPages": [
-    752,
-    753,
-    754,
-    755,
-    756,
-    757,
-    758,
-    759,
-    760,
-    761,
-    762,
-    763,
-    764,
-    765,
-    766,
-    767,
-    768,
-    769,
-    770,
-    771,
-    772,
-    773,
-    774,
-    775,
-    776,
-    777,
-    778,
-    779,
-    780,
-    781,
-    782,
-    783,
-    784,
     1,
     2,
     3,
@@ -781,15 +825,7 @@
     742,
     743,
     744,
-    745,
-    746,
-    747,
-    748,
-    749,
-    750,
-    751
+    745
   ],
-  "lastUpdated": "2026-05-09T00:26:52.998Z",
-  "bookTitle": "Semiconductor physics and devices",
-  "author": "Unknown"
+  "lastUpdated": "2026-05-08T23:59:11.432Z"
 }

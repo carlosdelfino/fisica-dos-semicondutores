@@ -1,42 +1,116 @@
 {
-  "chapter": "unknown",
-  "questions": [],
+  "chapter": "14.5 Light Emitting Diodes",
+  "section": "Reflection Coefficient",
+  "questions": [
+    {
+      "number": "Ex 14.8",
+      "text": "At a wavelength of \\( \\lambda = 0.70 \\mu m \\), the index of refraction for GaAs is \\( n_{GaAs} = 3.8 \\) and that for GaP is \\( n_{GaP} = 3.2 \\). Consider a GaAs<sub>1-x</sub> P<sub>x</sub> material with a mole fraction \\( x = 0.40 \\). Assuming the index of refraction is a linear function of the mole fraction, determine the reflection coefficient, \\( \\Gamma \\), at the GaAs<sub>1-x</sub> P<sub>x</sub>–air interface.",
+      "formulas": [
+        {
+          "originalFormula": "\\Gamma = \\left( \\frac{n_{2} - n_{1}}{n_{2} + n_{1}} \\right)^{2} = \\left( \\frac{3.8 - 1.0}{3.8 + 1.0} \\right)^{2} = 0.34",
+          "genericFormula": "\\Gamma = \\left( \\frac{n_{2} - n_{1}}{n_{2} + n_{1}} \\right)^{2}",
+          "description": "Esta fórmula representa a reflectância de uma interface entre dois meios, onde a reflectância é a fração da luz que é refletida ao invés de transmitida. A fórmula calcula a proporção de luz refletida em relação à luz que incide na interface, considerando os índices de refração dos dois meios.",
+          "concepts": [
+            "Reflectância",
+            "Índice de refração",
+            "Interação da luz com materiais"
+          ],
+          "symbols": [
+            {
+              "symbol": "Γ",
+              "description": "Representa a reflectância, que é a fração da luz refletida por uma superfície."
+            },
+            {
+              "symbol": "n_{1}",
+              "description": "Representa o índice de refração do primeiro meio, que é o meio de onde a luz está vindo."
+            },
+            {
+              "symbol": "n_{2}",
+              "description": "Representa o índice de refração do segundo meio, que é o meio para o qual a luz está se dirigindo."
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "answers": [],
-  "standaloneFormulas": [],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "\\theta_{c} = \\sin^{-1}\\left( \\frac{n_{1}}{n_{2}} \\right)",
+      "genericFormula": "\\theta_{c} = \\sin^{-1}\\left( \\frac{n_{1}}{n_{2}} \\right)",
+      "description": "Esta fórmula representa o ângulo crítico de incidência em um fenômeno conhecido como refração, que ocorre quando a luz passa de um meio para outro com diferentes índices de refração. O ângulo crítico é o ângulo de incidência acima do qual a luz não consegue mais passar para o segundo meio e é totalmente refletida de volta ao primeiro meio.",
+      "concepts": [
+        "Refração da luz",
+        "Índice de refração",
+        "Reflexão total interna"
+      ],
+      "symbols": [
+        {
+          "symbol": "θ_{c}",
+          "description": "O ângulo crítico, que é o ângulo de incidência em que a luz deixa de passar para o segundo meio e é totalmente refletida."
+        },
+        {
+          "symbol": "sin^{-1}",
+          "description": "A função arco seno, que é a função inversa do seno e é usada para determinar o ângulo cujo seno é um determinado valor."
+        },
+        {
+          "symbol": "n_{1}",
+          "description": "O índice de refração do primeiro meio, que é uma medida de como a luz se propaga nesse meio."
+        },
+        {
+          "symbol": "n_{2}",
+          "description": "O índice de refração do segundo meio, que também é uma medida de como a luz se propaga nesse meio."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E_g = 1.9 \\text{ eV}",
+      "genericFormula": "E_g = E_g^{gen}",
+      "description": "Esta fórmula representa a energia de bandgap de um semicondutor, que é a quantidade mínima de energia necessária para mover um elétron da banda de valência para a banda de condução, permitindo assim a condução elétrica.",
+      "concepts": [
+        "Energia de bandgap",
+        "Semicondutores",
+        "Condução elétrica",
+        "Banda de valência",
+        "Banda de condução"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_g",
+          "description": "Representa a energia de bandgap, que é a diferença de energia entre a banda de valência e a banda de condução em um material semicondutor."
+        },
+        {
+          "symbol": "eV",
+          "description": "Representa electronvolt, uma unidade de medida de energia que é frequentemente usada em física de partículas e semicondutores, equivalente à energia adquirida por um elétron ao ser acelerado por uma diferença de potencial de um volt."
+        }
+      ]
+    },
+    {
+      "originalFormula": "0.4 \\text{ to } 0.72 \\mu m",
+      "genericFormula": "a \\text{ to } b \\mu m",
+      "description": "Esta fórmula representa um intervalo de comprimentos de onda, que varia de a micrômetros a b micrômetros. Esse intervalo é frequentemente utilizado em contextos como a óptica e a física de semicondutores, onde diferentes comprimentos de onda podem corresponder a diferentes propriedades de materiais ou fenômenos.",
+      "concepts": [
+        "Comprimento de onda",
+        "Óptica",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "a",
+          "description": "O limite inferior do intervalo de comprimento de onda, representando a menor medida em micrômetros."
+        },
+        {
+          "symbol": "b",
+          "description": "O limite superior do intervalo de comprimento de onda, representando a maior medida em micrômetros."
+        },
+        {
+          "symbol": "μm",
+          "description": "Micrômetro, uma unidade de medida que equivale a um milionésimo de metro, frequentemente usada para medir comprimentos de onda de luz e dimensões em escalas microscópicas."
+        }
+      ]
+    }
+  ],
   "processedPages": [
-    752,
-    753,
-    754,
-    755,
-    756,
-    757,
-    758,
-    759,
-    760,
-    761,
-    762,
-    763,
-    764,
-    765,
-    766,
-    767,
-    768,
-    769,
-    770,
-    771,
-    772,
-    773,
-    774,
-    775,
-    776,
-    777,
-    778,
-    779,
-    780,
-    781,
-    782,
-    783,
-    784,
     1,
     2,
     3,
@@ -714,82 +788,7 @@
     675,
     676,
     677,
-    678,
-    679,
-    680,
-    681,
-    682,
-    683,
-    684,
-    685,
-    686,
-    687,
-    688,
-    689,
-    690,
-    691,
-    692,
-    693,
-    694,
-    695,
-    696,
-    697,
-    698,
-    699,
-    700,
-    701,
-    702,
-    703,
-    704,
-    705,
-    706,
-    707,
-    708,
-    709,
-    710,
-    711,
-    712,
-    713,
-    714,
-    715,
-    716,
-    717,
-    718,
-    719,
-    720,
-    721,
-    722,
-    723,
-    724,
-    725,
-    726,
-    727,
-    728,
-    729,
-    730,
-    731,
-    732,
-    733,
-    734,
-    735,
-    736,
-    737,
-    738,
-    739,
-    740,
-    741,
-    742,
-    743,
-    744,
-    745,
-    746,
-    747,
-    748,
-    749,
-    750,
-    751
+    678
   ],
-  "lastUpdated": "2026-05-09T00:26:52.998Z",
-  "bookTitle": "Semiconductor physics and devices",
-  "author": "Unknown"
+  "lastUpdated": "2026-05-08T23:44:36.238Z"
 }

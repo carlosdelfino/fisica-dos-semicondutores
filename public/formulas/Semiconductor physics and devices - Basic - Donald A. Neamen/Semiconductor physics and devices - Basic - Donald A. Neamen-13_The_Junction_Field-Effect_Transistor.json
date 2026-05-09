@@ -215,6 +215,51 @@
       "number": "6",
       "text": "Define internal pinchoff voltage and pinchoff for a pn JFET.",
       "formulas": []
+    },
+    {
+      "number": "13.28",
+      "text": "(a) Determine the minimum value of L. (b) Repeat part (a) for V_{GS} = -3 V.",
+      "formulas": []
+    },
+    {
+      "number": "13.29",
+      "text": "(a) Determine V_{DS} at which velocity saturation occurs. Let V_{GS} = 0. (b) For V_{GS} = 0, determine h_{ac}. (c) Calculate I_{D}(sat) if velocity saturation occurs. (d) If the electron mobility is a constant and equal to \\mu = 1000 cm^{2}/V\\cdot s, calculate I_{D}(sat) if velocity saturation did not occur.",
+      "formulas": []
+    },
+    {
+      "number": "13.30",
+      "text": "(a) Repeat Problem 13.29 if L = 1 \\mu m and all other parameters remain the same. (b) If velocity saturation occurs, does the relation I_{D}(sat) \\propto L^{-1} still apply? Explain.",
+      "formulas": []
+    },
+    {
+      "number": "13.31",
+      "text": "(a) Calculate the transit time of an electron through the channel assuming (a) a constant mobility of \\mu = 1000 cm^{2}/V\\cdot s applies and (b) velocity saturation applies.",
+      "formulas": []
+    },
+    {
+      "number": "13.32",
+      "text": "(a) Calculate the transit time of an electron through the channel assuming (a) a constant mobility of \\mu = 1000 cm^{2}/V\\cdot s applies and (b) velocity saturation applies.",
+      "formulas": []
+    },
+    {
+      "number": "13.33",
+      "text": "Consider a one-sided silicon n-channel JFET at T = 300 K, depicted as shown. The source-to-gate and drain-to-gate reverse-biased currents are split.",
+      "formulas": []
+    },
+    {
+      "number": "13.42",
+      "text": "Design a one-sided silicon p-channel pin JFET such that V_{g} = 3.2 V, I_{D} (sat) = 1.2 mA at V_{DS} = 0, and r_{f} = 10 GHz. Determine the required values of L, W, and N_{e}.",
+      "formulas": []
+    },
+    {
+      "number": "13.43",
+      "text": "Design a one-sided GaAs n-channel MESFET with a barrier height of d_{bo} = 0.89 V such that V_{g} = +0.12 V, I_{D} = 2.0 \\mu A at V_{GS} = 0.45 V and f_{d} = 50 GHz. Assume \\mu = 7500 \\, cm^{2}/V \\cdot s.",
+      "formulas": []
+    },
+    {
+      "number": "13.44",
+      "text": "Design a pair of complementary n-channel and p-channel silicon JFETs so that I_{D} = 1 mA and |V_{g}| = 3.2 V for each device at T = 300 K. If the devices are to operate for 0 \\leq V_{GS} \\leq 5 V, comment on velocity saturation and channel length modulation effects in your design.",
+      "formulas": []
     }
   ],
   "answers": [
@@ -1414,7 +1459,13 @@
     632,
     633,
     634,
-    635
+    635,
+    636,
+    637,
+    638,
+    639,
+    640,
+    641
   ],
-  "lastUpdated": "2026-05-08T23:30:12.084Z"
+  "lastUpdated": "2026-05-08T23:33:58.122Z"
 }

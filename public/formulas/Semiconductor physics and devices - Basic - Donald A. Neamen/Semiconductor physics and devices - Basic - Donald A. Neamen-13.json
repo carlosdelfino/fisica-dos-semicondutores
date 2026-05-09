@@ -1,7 +1,337 @@
 {
   "chapter": "13",
   "section": "The Junction Field-Effect Transistor",
-  "questions": [],
+  "questions": [
+    {
+      "number": "13.17",
+      "text": "Consider an n-channel GaAs MESFET at T = 300 K with a good Schottky barrier contact. Assume \\( \\phi_{b} = 0.89 \\) V. The channel thickness is \\( a = 0.35 \\) µm. (a) Determine the channel doping concentration so that the threshold voltage is \\( V_{T} = 0.10 \\) V. (b) Using the results of part (a), determine the threshold voltage at \\( T = 400 \\) K.",
+      "formulas": [
+        {
+          "originalFormula": "\\phi_{b} = 0.89",
+          "genericFormula": "\\phi_{b} = x",
+          "description": "Esta fórmula representa a energia de barreira de potencial em um diodo semicondutor, que é a quantidade mínima de energia necessária para que os portadores de carga (elétrons ou lacunas) superem a barreira e contribuam para a condução elétrica.",
+          "concepts": [
+            "Energia de barreira de potencial",
+            "Diodo semicondutor",
+            "Condução elétrica",
+            "Portadores de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "φ_{b}",
+              "description": "Representa a energia de barreira de potencial, que é a energia necessária para que os portadores de carga atravessem a junção de um diodo."
+            },
+            {
+              "symbol": "x",
+              "description": "Um valor genérico que representa a energia de barreira de potencial em unidades de energia, como elétron-volts."
+            }
+          ]
+        },
+        {
+          "originalFormula": "V_{T} = 0.10",
+          "genericFormula": "V_{T} = V_{T, \text{genérico}}",
+          "description": "Esta fórmula representa a tensão de limiar, que é um valor crítico em dispositivos semicondutores. A tensão de limiar é o ponto em que um dispositivo começa a conduzir corrente elétrica de maneira significativa.",
+          "concepts": [
+            "Tensão de limiar",
+            "Condução elétrica em semicondutores",
+            "Dispositivos semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{T}",
+              "description": "Representa a tensão de limiar, que é a tensão mínima necessária para que um dispositivo semicondutor comece a conduzir corrente elétrica."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "13.18",
+      "text": "The barrier height of the metal contact in an n-channel GaAs MESFET is \\( \\phi_{b} = 0.87 \\) V. The channel doping concentration is \\( N_{I} = 2 \\\times 10^{15} \\) cm^{-3}. (a) Determine the channel thickness, as such that the internal pinch-off voltage is \\( V_{po} = 1.5 \\) V. (b) Using the results of part (a), find the threshold voltage \\( V_{T} \\). (c) Calculate the minimum undepleted channel width for \\( V_{GS} = +0.4 \\) V when (i) \\( V_{DS} = 1 \\) V, and (ii) \\( V_{DS} = 4 \\) V.",
+      "formulas": [
+        {
+          "originalFormula": "\\phi_{b} = 0.87",
+          "genericFormula": "\\phi_{b} = x",
+          "description": "A fórmula representa a energia de barreira de potencial em um semicondutor, que é a energia necessária para que um portador de carga (como um elétron) consiga superar a barreira e se mover através do material.",
+          "concepts": [
+            "Energia de barreira",
+            "Semicondutores",
+            "Portadores de carga",
+            "Potencial elétrico"
+          ],
+          "symbols": [
+            {
+              "symbol": "φ_{b}",
+              "description": "Representa a energia de barreira de potencial, que é a quantidade de energia que um portador de carga precisa para superar uma barreira em um semicondutor."
+            },
+            {
+              "symbol": "x",
+              "description": "Um valor genérico que pode representar qualquer quantidade de energia de barreira de potencial, que varia dependendo do material e das condições."
+            }
+          ]
+        },
+        {
+          "originalFormula": "N_{I} = 2 \\times 10^{15}",
+          "genericFormula": "N_{I} = C",
+          "description": "Esta fórmula representa a densidade de portadores intrínsecos em um semicondutor, que é uma medida da quantidade de portadores de carga (elétrons e lacunas) presentes em um material semicondutor puro em equilíbrio térmico.",
+          "concepts": [
+            "Densidade de portadores intrínsecos",
+            "Semicondutores",
+            "Equilíbrio térmico"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_{I}",
+              "description": "Representa a densidade de portadores intrínsecos em um semicondutor, que é o número de portadores de carga por unidade de volume."
+            },
+            {
+              "symbol": "C",
+              "description": "Representa uma constante genérica que pode ser substituída por um valor específico de densidade de portadores intrínsecos."
+            }
+          ]
+        },
+        {
+          "originalFormula": "V_{po} = 1.5",
+          "genericFormula": "V_{po} = V_{valor}",
+          "description": "Esta fórmula representa um valor específico de tensão, que é denotado por V_{po}. O número 1.5 indica o valor dessa tensão em volts, que pode ser utilizado em circuitos elétricos ou em análises de dispositivos semicondutores.",
+          "concepts": [
+            "Tensão elétrica",
+            "Circuitos elétricos",
+            "Dispositivos semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{po}",
+              "description": "Representa a tensão elétrica em um ponto específico de um circuito ou dispositivo. É uma medida da diferença de potencial elétrico entre dois pontos."
+            },
+            {
+              "symbol": "V_{valor}",
+              "description": "Representa um valor genérico de tensão que pode ser substituído por diferentes números, dependendo do contexto do problema."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "13.19",
+      "text": "Two channel GaAs MESFETs have barrier heights of \\( \\phi_{b} = 0.87 \\) V. (a) The channel doping concentration in device 1 is \\( N_{I} = 5 \\\times 10^{15} \\) cm^{-3} and the channel metalurgical thickness is \\( a = 0.50 \\) µm. Determine the threshold voltage. (b) The channel doping concentration in device 2 is \\( N_{s} = 3 \\\times 10^{16} \\) cm^{-3}. Find the metallurgical channel thickness, as such that the threshold voltage is the same as that of device 1.",
+      "formulas": [
+        {
+          "originalFormula": "\\phi_{b} = 0.87",
+          "genericFormula": "\\phi_{b} = x",
+          "description": "Esta fórmula representa a energia de barreira de um semicondutor, que é a quantidade de energia necessária para que um portador de carga (como um elétron) consiga superar a barreira de potencial e se mover através de um material semicondutor.",
+          "concepts": [
+            "Energia de barreira",
+            "Semicondutores",
+            "Portadores de carga",
+            "Potencial elétrico"
+          ],
+          "symbols": [
+            {
+              "symbol": "φ_{b}",
+              "description": "Representa a energia de barreira, que é a energia mínima necessária para que um portador de carga supere a barreira de potencial em um semicondutor."
+            },
+            {
+              "symbol": "x",
+              "description": "Um valor genérico que representa a energia de barreira em unidades de energia, como elétron-volts."
+            }
+          ]
+        },
+        {
+          "originalFormula": "N_{I} = 5 \\times 10^{15}",
+          "genericFormula": "N_{I} = N_{0}",
+          "description": "Esta fórmula representa a concentração de portadores intrínsecos em um semicondutor. O valor indica quantos portadores de carga (elétrons e lacunas) existem por centímetro cúbico em um material semicondutor puro a uma temperatura específica.",
+          "concepts": [
+            "Semicondutores",
+            "Portadores de carga",
+            "Concentração de portadores intrínsecos",
+            "Temperatura e suas influências em semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_{I}",
+              "description": "Representa a concentração de portadores intrínsecos em um semicondutor, ou seja, o número de elétrons e lacunas por centímetro cúbico."
+            },
+            {
+              "symbol": "N_{0}",
+              "description": "Representa uma quantidade genérica de portadores intrínsecos, sem um valor numérico específico, que pode variar dependendo do material e das condições."
+            }
+          ]
+        },
+        {
+          "originalFormula": "N_{s} = 3 \\times 10^{16}",
+          "genericFormula": "N_{s} = N",
+          "description": "Esta fórmula representa a densidade de portadores de carga em um semicondutor, especificamente o número de portadores por unidade de volume. Neste caso, N é o número total de portadores de carga em um determinado volume do material semicondutor.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Semicondutores",
+            "Propriedades elétricas dos materiais"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_{s}",
+              "description": "Representa a densidade de portadores de carga no semicondutor, ou seja, a quantidade de portadores por unidade de volume."
+            },
+            {
+              "symbol": "N",
+              "description": "Representa um valor genérico que indica o número total de portadores de carga em um volume específico do semicondutor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "13.22",
+      "text": "The barrier height of an n-channel GaAs MESFET is \\( \\phi_{b} = 0.90 \\) V. The metallurgical channel thickness is \\( a = 0.65 \\) µm and the channel doping concentration is \\( N_{I} = 2 \\\times 10^{19} \\) cm^{-3}. (a) Determine (i) \\( V_{th} \\), (ii) \\( V_{po} \\), and (iii) \\( V_{DS} \\) for \\( V_{GS} = -1.0 \\) V, \\( V_{GS} = -2.0 \\) V and \\( V_{GS} = -3.0 \\) V.",
+      "formulas": [
+        {
+          "originalFormula": "\\phi_{b} = 0.90",
+          "genericFormula": "\\phi_{b} = x",
+          "description": "Esta fórmula representa o potencial de barreira em um diodo semicondutor, que é a energia necessária para mover um portador de carga através da junção do diodo.",
+          "concepts": [
+            "Potencial de barreira",
+            "Diodo semicondutor",
+            "Portadores de carga",
+            "Energia de ativação"
+          ],
+          "symbols": [
+            {
+              "symbol": "φ_{b}",
+              "description": "Representa o potencial de barreira, que é a energia mínima necessária para que um portador de carga (como um elétron) possa atravessar a junção de um diodo."
+            },
+            {
+              "symbol": "x",
+              "description": "Uma variável que representa um valor genérico do potencial de barreira, que pode variar dependendo das condições do material e da temperatura."
+            }
+          ]
+        },
+        {
+          "originalFormula": "N_{I} = 2 \\times 10^{19}",
+          "genericFormula": "N_{I} = N",
+          "description": "Esta fórmula representa a concentração de portadores intrínsecos em um semicondutor, que é o número de pares de elétrons e buracos gerados por unidade de volume em um material semicondutor em condições de equilíbrio térmico.",
+          "concepts": [
+            "Concentração de portadores intrínsecos",
+            "Semicondutores",
+            "Equilíbrio térmico"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_{I}",
+              "description": "Representa a concentração de portadores intrínsecos, que é o número total de pares de elétrons e buracos gerados em um semicondutor puro."
+            },
+            {
+              "symbol": "N",
+              "description": "Representa uma quantidade genérica que pode ser usada para indicar a concentração de portadores intrínsecos em um semicondutor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "13.24",
+      "text": "The parameters of an n-channel GaAs MESFET are \\( V_{T} = 0.15 \\) V, \\( a = 0.25 \\) µm, \\( L = 1.5 \\) µm, \\( W = 12 \\) µm, and \\( \\mu_{e} = 6500 \\) cm^{2}/V·s. (a) Determine the conduction parameter \\( k \\). (b) Find \\( I_{D} \\) (sat) for \\( V_{GS} = 0.25 \\) V and (ii) \\( V_{GS} = 0.45 \\) V.",
+      "formulas": [
+        {
+          "originalFormula": "V_{T} = 0.15",
+          "genericFormula": "V_{T} = V_{T}",
+          "description": "Esta fórmula representa a tensão de limiar, que é um valor crítico em dispositivos semicondutores, indicando a tensão mínima necessária para que um dispositivo comece a conduzir corrente elétrica.",
+          "concepts": [
+            "Tensão de limiar",
+            "Dispositivos semicondutores",
+            "Condução elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{T}",
+              "description": "Representa a tensão de limiar, que é a tensão mínima necessária para que um dispositivo semicondutor comece a operar e conduzir corrente elétrica."
+            }
+          ]
+        },
+        {
+          "originalFormula": "a = 0.25",
+          "genericFormula": "a = k",
+          "description": "Esta fórmula representa uma relação onde a variável 'a' é igual a um valor constante, que neste caso é 0.25. Essa constante pode ser interpretada como um fator de proporcionalidade ou uma taxa que descreve um fenômeno físico específico.",
+          "concepts": [
+            "proporcionalidade",
+            "constante",
+            "fatores de escala"
+          ],
+          "symbols": [
+            {
+              "symbol": "a",
+              "description": "Representa uma variável que pode ser uma aceleração, uma taxa ou qualquer outra quantidade que está sendo medida ou calculada."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa uma constante que pode ser um valor fixo, como uma taxa de proporcionalidade, que relaciona duas variáveis em um determinado contexto."
+            }
+          ]
+        },
+        {
+          "originalFormula": "L = 1.5",
+          "genericFormula": "L = L_{valor}",
+          "description": "Esta fórmula representa uma quantidade física que é igual a um valor específico, que pode ser uma medida de comprimento, distância ou outra grandeza física. Neste caso, o valor é 1.5, mas na forma genérica, representamos como L_{valor} para indicar que pode ser qualquer valor.",
+          "concepts": [
+            "medida de comprimento",
+            "grandezas físicas",
+            "valores numéricos"
+          ],
+          "symbols": [
+            {
+              "symbol": "L",
+              "description": "Representa uma medida de comprimento ou distância em um determinado contexto."
+            },
+            {
+              "symbol": "1.5",
+              "description": "Um valor numérico específico que representa a quantidade de L, mas na forma genérica, é substituído por L_{valor} para indicar que pode ser qualquer número."
+            }
+          ]
+        },
+        {
+          "originalFormula": "W = 12",
+          "genericFormula": "W = C",
+          "description": "Esta fórmula representa o trabalho realizado, onde 'W' é a quantidade de energia transferida por uma força ao longo de uma distância. O valor 'C' é uma constante que pode variar dependendo do contexto do problema.",
+          "concepts": [
+            "Trabalho mecânico",
+            "Energia",
+            "Força",
+            "Movimento"
+          ],
+          "symbols": [
+            {
+              "symbol": "W",
+              "description": "Representa o trabalho realizado, que é a energia transferida quando uma força é aplicada a um objeto e este se desloca."
+            },
+            {
+              "symbol": "C",
+              "description": "Representa uma constante que pode ser utilizada para indicar um valor específico de trabalho em um contexto particular."
+            }
+          ]
+        },
+        {
+          "originalFormula": "\\mu_{e} = 6500",
+          "genericFormula": "\\mu_{e} = \\mu_{e}",
+          "description": "Esta fórmula representa a mobilidade dos elétrons em um semicondutor. A mobilidade é uma medida de quão rapidamente os elétrons podem se mover através do material quando um campo elétrico é aplicado. Neste caso, o valor específico de 6500 indica a mobilidade em unidades de centímetros quadrados por volt-segundo.",
+          "concepts": [
+            "Mobilidade dos portadores de carga",
+            "Semicondutores",
+            "Eletromobilidade"
+          ],
+          "symbols": [
+            {
+              "symbol": "μ_{e}",
+              "description": "Representa a mobilidade dos elétrons, que é a capacidade dos elétrons de se moverem através de um semicondutor sob a influência de um campo elétrico."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "13.26",
+      "text": "This problem is to compare the JFET drain current as given by Equation (13.14) with that given by Equation (13.35). Choose device parameters such that the drain currents at \\( V_{GS} = 0 \\) are the same from the two equations.",
+      "formulas": []
+    }
+  ],
   "answers": [],
   "standaloneFormulas": [
     {
@@ -668,9 +998,13 @@
     631,
     632,
     633,
-    634
+    634,
+    635,
+    636,
+    637,
+    638
   ],
-  "lastUpdated": "2026-05-08T23:29:59.230Z",
+  "lastUpdated": "2026-05-08T23:33:20.590Z",
   "bookTitle": "Semiconductor Physics and Devices - Basic",
   "author": "Donald A. Neamen"
 }

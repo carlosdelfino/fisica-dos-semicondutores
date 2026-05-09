@@ -1,42 +1,52 @@
 {
-  "chapter": "unknown",
+  "chapter": "15.6 The Thyristor",
+  "section": "unknown",
   "questions": [],
   "answers": [],
-  "standaloneFormulas": [],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "I_a = \\frac{\\alpha_{g} I_{g} + (I_{on} + I_{off})}{1 - (\\alpha_{1} + \\alpha_{2})}",
+      "genericFormula": "I_a = \\frac{\\alpha_{g} I_{g} + (I_{on} + I_{off})}{1 - (\\alpha_{1} + \\alpha_{2})}",
+      "description": "Esta fórmula representa a corrente de saída em um circuito que considera a contribuição de diferentes correntes de entrada e fatores de ganho. Ela é utilizada para entender como a corrente total é afetada por diferentes elementos do circuito.",
+      "concepts": [
+        "Corrente elétrica",
+        "Ganho de corrente",
+        "Circuitos elétricos",
+        "Interação entre componentes"
+      ],
+      "symbols": [
+        {
+          "symbol": "I_a",
+          "description": "Representa a corrente de saída do circuito."
+        },
+        {
+          "symbol": "α_g",
+          "description": "É o ganho associado à corrente de entrada, indicando como a corrente de entrada é amplificada."
+        },
+        {
+          "symbol": "I_g",
+          "description": "É a corrente de entrada que está sendo considerada no circuito."
+        },
+        {
+          "symbol": "I_on",
+          "description": "Representa a corrente que flui quando o dispositivo está 'ligado' ou em operação."
+        },
+        {
+          "symbol": "I_off",
+          "description": "É a corrente que flui quando o dispositivo está 'desligado' ou em estado de repouso."
+        },
+        {
+          "symbol": "α_1",
+          "description": "É um fator de ganho que representa a contribuição de um primeiro componente do circuito."
+        },
+        {
+          "symbol": "α_2",
+          "description": "É um segundo fator de ganho que representa a contribuição de um segundo componente do circuito."
+        }
+      ]
+    }
+  ],
   "processedPages": [
-    752,
-    753,
-    754,
-    755,
-    756,
-    757,
-    758,
-    759,
-    760,
-    761,
-    762,
-    763,
-    764,
-    765,
-    766,
-    767,
-    768,
-    769,
-    770,
-    771,
-    772,
-    773,
-    774,
-    775,
-    776,
-    777,
-    778,
-    779,
-    780,
-    781,
-    782,
-    783,
-    784,
     1,
     2,
     3,
@@ -760,36 +770,7 @@
     721,
     722,
     723,
-    724,
-    725,
-    726,
-    727,
-    728,
-    729,
-    730,
-    731,
-    732,
-    733,
-    734,
-    735,
-    736,
-    737,
-    738,
-    739,
-    740,
-    741,
-    742,
-    743,
-    744,
-    745,
-    746,
-    747,
-    748,
-    749,
-    750,
-    751
+    724
   ],
-  "lastUpdated": "2026-05-09T00:26:52.998Z",
-  "bookTitle": "Semiconductor physics and devices",
-  "author": "Unknown"
+  "lastUpdated": "2026-05-08T23:53:30.848Z"
 }

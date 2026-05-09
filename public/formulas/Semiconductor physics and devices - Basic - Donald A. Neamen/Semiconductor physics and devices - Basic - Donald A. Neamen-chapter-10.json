@@ -1,5 +1,5 @@
 {
-  "chapter": "unknown",
+  "chapter": "chapter-10",
   "questions": [],
   "answers": [],
   "standaloneFormulas": [],
@@ -789,7 +789,7 @@
     750,
     751
   ],
-  "lastUpdated": "2026-05-09T00:26:52.998Z",
+  "lastUpdated": "2026-05-09T00:26:53.011Z",
   "bookTitle": "Semiconductor physics and devices",
   "author": "Unknown"
 }

@@ -686,6 +686,84 @@
       "number": "7.6",
       "text": "A silicon pn junction in thermal equilibrium at T = 300 K is doped such that E_{i} - E_{n} = 0.365 \\text{ eV} in the n region and E_{n} - E_{p} = 0.330 \\text{ eV} in the p region.",
       "formulas": []
+    },
+    {
+      "number": "14.21",
+      "text": "Consider an n-type silicon photodetector that is 1 μm thick, 50 μm wide. If an applied electric field in the longitudinal dimension of 50 V/cm is present, calculate (a) the steady-state excess carrier concentration, (b) the photoconductivity, (c) the steady-state photocard, and (d) the photodetector gain.",
+      "formulas": [
+        {
+          "originalFormula": "n = 1200 \\, \\text{cm}^{-2}\\text{s}^{-1}",
+          "genericFormula": "n = 1200 \\, \\text{cm}^{-2}\\text{s}^{-1}",
+          "description": "Não foi possível gerar descrição automática",
+          "concepts": [],
+          "symbols": [],
+          "rawText": "{\n  \"originalFormula\": \"n = 1200 \\, \\\\text{cm}^{-2}\\\\text{s}^{-1}\",\n  \"genericFormula\": \"n = N \\, \\\\text{cm}^{-2}\\\\text{s}^{-1}\",\n  \"description\": \"Esta fórmula representa a densidade de portadores de carga em um semicondutor, onde 'n' é o número de portadores por unidade de área por unidade de tempo. Isso é importante para entender como os semicondutores conduzem eletricidade.\",\n  \"concepts\": [\n    \"Densidade de portadores de carga\",\n    \"Semicondutores\",\n    \"Condução elétrica\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"n\",\n      \"description\": \"Representa a densidade de portadores de carga, que indica quantos portadores existem em uma área específica por unidade de tempo.\"\n    },\n    {\n      \"symbol\": \"N\",\n      \"description\": \"Representa um valor genérico que indica a densidade de portadores de carga, semelhante a 'n', mas sem um valor numérico específico.\"\n    }\n  ]\n}"
+        },
+        {
+          "originalFormula": "μ_{n} = 450 \\, \\text{cm}^{2}/\\text{V}\\cdot\\text{s}",
+          "genericFormula": "μ_{n} = 450 \\, \\text{cm}^{2}/\\text{V}\\cdot\\text{s}",
+          "description": "Não foi possível gerar descrição automática",
+          "concepts": [],
+          "symbols": [],
+          "rawText": "{\n  \"originalFormula\": \"μ_{n} = 450 \\, \\\\text{cm}^{2}/\\\\text{V}\\\\cdot\\\\text{s}\",\n  \"genericFormula\": \"μ_{n} = X \\, \\\\text{cm}^{2}/\\\\text{V}\\\\cdot\\\\text{s}\",\n  \"description\": \"Esta fórmula representa a mobilidade dos elétrons em um semicondutor, que é uma medida de quão rapidamente os elétrons podem se mover através do material quando um campo elétrico é aplicado.\",\n  \"concepts\": [\n    \"Mobilidade dos portadores de carga\",\n    \"Semicondutores\",\n    \"Campo elétrico\",\n    \"Condução elétrica\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"μ_{n}\",\n      \"description\": \"Representa a mobilidade dos elétrons, que indica a facilidade com que os elétrons se movem em resposta a um campo elétrico.\"\n    },\n    {\n      \"symbol\": \"450\",\n      \"description\": \"Um valor numérico específico que indica a mobilidade em uma unidade padrão, mas que foi removido para a forma genérica.\"\n    },\n    {\n      \"symbol\": \"cm^{2}/V·s\",\n      \"description\": \"Unidade de medida da mobilidade, que combina área (centímetros quadrados), potencial elétrico (volts) e tempo (segundos).\"\n    }\n  ]\n}"
+        },
+        {
+          "originalFormula": "\\tau_{n} = 2 \\times 10^{-7} \\, \\text{s}",
+          "genericFormula": "\\tau_{n} = C \\, \\text{s}",
+          "description": "Esta fórmula representa o tempo de vida médio dos portadores de carga negativa, conhecidos como elétrons, em um semicondutor. O tempo de vida é um parâmetro importante que indica quanto tempo, em média, um elétron pode existir antes de recombinar-se com um buraco.",
+          "concepts": [
+            "tempo de vida dos portadores de carga",
+            "recombinação de elétrons e buracos",
+            "semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "τ_{n}",
+              "description": "Representa o tempo de vida médio dos elétrons em um semicondutor, indicando quanto tempo eles permanecem livres antes de se recombinarem."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "14.22",
+      "text": "A long silicon pin junction photodiode has the following parameters at T = 300 K: N_{a} = 10^{16} \\, \\text{cm}^{-3}, N_{d} = 2 \\times 10^{15} \\, \\text{cm}^{-3}, D_{n} = 10 \\, \\text{cm}^{2}/\\text{s}, D_{p} = 25 \\, \\text{cm}^{2}/\\text{s}, τ_{n} = 10^{-7} \\, \\text{s}, and τ_{p} = 5 \\times 10^{-7} \\, \\text{s}. Assume that a reverse-biased voltage of 5 volts is applied and that a uniform generation rate for electron–hole pairs G_{L} = 10^{6} \\, \\text{cm}^{-3} \\cdot \\text{s}^{-1} exists throughout the entire photodiode. (a) Determine the prompt component of photocurrent. (b) Find the steady-state excess carrier concentrations in the p and n regions for the given condition. (c) Determine the total steady-state photocurrent.",
+      "formulas": []
+    },
+    {
+      "number": "14.23",
+      "text": "Starting with the ambipolar transport equation for minority carrier holes, derive Equation (14.41) using the geometry shown in Figure 14.17.",
+      "formulas": []
+    },
+    {
+      "number": "14.24",
+      "text": "Three silicon PIN photodiodes A, B, and C at T = 300 K have intrinsic region widths of 2, 10, and 80 μm, respectively. A photon flux of φ_{p} = 5 \\times 10^{17} \\, \\text{s}^{-1} is incident on the surface of each diode as shown in Figure 14.19. (a) For an absorption coefficient α = 10 \\, \\text{cm}^{-1}, calculate the prompt photocurrent density in each diode. (b) Repeat part (a) for an absorption coefficient α = 5 \\times 10^{-1} \\, \\text{cm}^{-1}.",
+      "formulas": []
+    },
+    {
+      "number": "14.25",
+      "text": "Consider a silicon PIN photodiode at T = 300 K with the geometry shown in Figure 14.19. The intrinsic region width is 100 μm. Assume that a reverse-biased voltage power is I_{0} = 0.080 \\, \\text{W/cm}^{2}, the absorption coefficient is α = 10 \\, \\text{cm}^{-1}, and the photon energy is 1.5 \\, \\text{eV}. Neglect any absorption in the p^{+} top layer of the photodiode. (a) Determine the steady-state electron–hole generation rate, G_{e}, versus distance in the intrinsic region. (b) Determine the steady-state photocurrent density.",
+      "formulas": []
+    },
+    {
+      "number": "14.26",
+      "text": "A silicon PIN photodiode at T = 300 K has the geometry shown in Figure 14.19. The intrinsic region width is 20 μm and is fully depleted (a). The electron–hole pair generation rate in the intrinsic region is G_{e} = 10^{2} \\, \\text{cm}^{-3} \\cdot \\text{s}^{-1} and is uniform throughout the intrinsic region. Calculate the steady-state photocurrent density for this condition. (b) The generation rate of electron–hole pairs is G_{e} = 10^{2} \\, \\text{cm}^{-3} \\cdot \\text{s}^{-1}. Determine the steady-state photocurrent density for this situation.",
+      "formulas": []
+    },
+    {
+      "number": "14.27",
+      "text": "Consider a silicon PIN photodiode exposed to sunlight. Calculate the intrinsic region width so that at least 90 percent of all photons with wavelengths Δ ≤ 1 μm are absorbed in the intrinsic region. Neglect any absorption in the p^{+} or n^{-} regions.",
+      "formulas": []
+    },
+    {
+      "number": "14.28",
+      "text": "Consider the Al_{x}Ga_{1-x}As system. Determine the range of the direct bandgap energies possible and the corresponding range of wavelengths.",
+      "formulas": []
+    },
+    {
+      "number": "14.29",
+      "text": "Consider the GaAs/InP system. (a) For a mole fraction x = 0.2, determine the (i) bandgap energy and (ii) corresponding photon wavelength. (b) Repeat part (a) for a mole fraction x = 0.32.",
+      "formulas": []
     }
   ],
   "answers": [],
@@ -1326,9 +1404,101 @@
     633,
     634,
     635,
-    636
+    636,
+    637,
+    638,
+    639,
+    640,
+    641,
+    642,
+    643,
+    644,
+    645,
+    646,
+    647,
+    648,
+    649,
+    650,
+    651,
+    652,
+    653,
+    654,
+    655,
+    656,
+    657,
+    658,
+    659,
+    660,
+    661,
+    662,
+    663,
+    664,
+    665,
+    666,
+    667,
+    668,
+    669,
+    670,
+    671,
+    672,
+    673,
+    674,
+    675,
+    676,
+    677,
+    678,
+    679,
+    680,
+    681,
+    682,
+    683,
+    684,
+    685,
+    686,
+    687,
+    688,
+    689,
+    690,
+    691,
+    692,
+    693,
+    694,
+    695,
+    696,
+    697,
+    698,
+    699,
+    700,
+    701,
+    702,
+    703,
+    704,
+    705,
+    706,
+    707,
+    708,
+    709,
+    710,
+    711,
+    712,
+    713,
+    714,
+    715,
+    716,
+    717,
+    718,
+    719,
+    720,
+    721,
+    722,
+    723,
+    724,
+    725,
+    726,
+    727,
+    728
   ],
-  "lastUpdated": "2026-05-08T23:30:21.063Z",
+  "lastUpdated": "2026-05-08T23:54:18.438Z",
   "bookTitle": "Semiconductor Physics and Devices - Basic",
   "author": "Donald A. Neamen"
 }

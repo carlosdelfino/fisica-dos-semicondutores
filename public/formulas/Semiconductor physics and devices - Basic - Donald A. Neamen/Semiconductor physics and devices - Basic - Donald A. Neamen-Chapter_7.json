@@ -1,8 +1,223 @@
 {
-  "chapter": "unknown",
-  "questions": [],
-  "answers": [],
-  "standaloneFormulas": [],
+  "chapter": "Chapter 7",
+  "questions": [
+    {
+      "number": "7.1 (a) (i)",
+      "text": "What is the value of V for N_{a} = N_{d} = 10^{14} cm^{-3}?",
+      "formulas": []
+    },
+    {
+      "number": "7.1 (a) (ii)",
+      "text": "What is the value of V for N_{a} = N_{d} = 10^{16} cm^{-3}?",
+      "formulas": []
+    },
+    {
+      "number": "7.1 (a) (iii)",
+      "text": "What is the value of V for N_{a} = N_{d} = 10^{18} cm^{-3}?",
+      "formulas": []
+    },
+    {
+      "number": "7.3 (a)",
+      "text": "For N_{a} = N_{d} = 10^{16} cm^{-3}, what is V?",
+      "formulas": []
+    },
+    {
+      "number": "7.3 (b)",
+      "text": "For N_{a} = N_{d} = 10^{14} cm^{-3}, what is V?",
+      "formulas": []
+    },
+    {
+      "number": "7.3 (c)",
+      "text": "For Silicon, what is V for N_{a} = N_{d} = 10^{14} cm^{-3}?",
+      "formulas": []
+    },
+    {
+      "number": "7.3 (c)",
+      "text": "For GaAs, what is V for N_{a} = N_{d} = 10^{14} cm^{-3}?",
+      "formulas": []
+    },
+    {
+      "number": "7.5 (a)",
+      "text": "What is the value of V for the side with E_{n} - E_{i} = 0.3635 eV?",
+      "formulas": []
+    },
+    {
+      "number": "7.5 (b)",
+      "text": "What is the value of V for the side with E_{n} - E_{i} = 0.3635 eV?",
+      "formulas": []
+    },
+    {
+      "number": "7.7",
+      "text": "What is the value of E_{n} for T = 300 K?",
+      "formulas": []
+    },
+    {
+      "number": "7.9 (a)",
+      "text": "What is V for T = 400 K?",
+      "formulas": []
+    },
+    {
+      "number": "7.11 (a)",
+      "text": "What is the value of V for T = 380 K?",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "7.1 (a) (i)",
+      "text": "V = 0.611 V",
+      "formulas": []
+    },
+    {
+      "questionNumber": "7.1 (a) (ii)",
+      "text": "V = 0.731 V",
+      "formulas": []
+    },
+    {
+      "questionNumber": "7.1 (a) (iii)",
+      "text": "V = 0.850 V",
+      "formulas": []
+    },
+    {
+      "questionNumber": "7.3 (a)",
+      "text": "V = 0.4561 V",
+      "formulas": []
+    },
+    {
+      "questionNumber": "7.3 (b)",
+      "text": "V = 0.819 V",
+      "formulas": []
+    },
+    {
+      "questionNumber": "7.3 (c)",
+      "text": "For N_{a} = N_{d} = 10^{14} cm^{-3}, V = 0.9237 V",
+      "formulas": []
+    },
+    {
+      "questionNumber": "7.3 (c)",
+      "text": "For GaAs, V = 0.7129 V",
+      "formulas": []
+    },
+    {
+      "questionNumber": "7.5 (a)",
+      "text": "V = 0.7306 V",
+      "formulas": []
+    },
+    {
+      "questionNumber": "7.5 (b)",
+      "text": "V = 0.7305 V",
+      "formulas": []
+    },
+    {
+      "questionNumber": "7.7",
+      "text": "E_{n} = 1.257 V",
+      "formulas": []
+    },
+    {
+      "questionNumber": "7.9 (a)",
+      "text": "V = 0.635 V",
+      "formulas": []
+    },
+    {
+      "questionNumber": "7.11 (a)",
+      "text": "V = 0.456 V",
+      "formulas": []
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "E_{n} - E_{i} = 0.3635 eV",
+      "genericFormula": "E_{n} - E_{i} = \\Delta E",
+      "description": "Esta fórmula representa a diferença de energia entre dois níveis de energia, onde \\(E_{n}\\) é a energia do nível excitado e \\(E_{i}\\) é a energia do nível inicial. A diferença de energia \\(\\Delta E\\) é frequentemente utilizada em contextos de transições eletrônicas, como em átomos ou semicondutores, onde a absorção ou emissão de fótons ocorre quando um elétron transita entre esses níveis.",
+      "concepts": [
+        "níveis de energia",
+        "transições eletrônicas",
+        "fotons"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{n}",
+          "description": "Energia do nível excitado"
+        },
+        {
+          "symbol": "E_{i}",
+          "description": "Energia do nível inicial"
+        },
+        {
+          "symbol": "\\Delta E",
+          "description": "Diferença de energia entre os níveis"
+        }
+      ],
+      "taxonomy": {
+        "category": "quantum-physics",
+        "subcategory": "energy-levels",
+        "domain": "atomic-physics"
+      },
+      "keywords": [
+        "energy",
+        "level",
+        "transition",
+        "photon"
+      ],
+      "graphVisualization": {
+        "hasGraph": false,
+        "graphType": "",
+        "graphParameters": []
+      },
+      "relatedFormulas": []
+    },
+    {
+      "originalFormula": "E_{n} - E_{i} = 0.3653 eV",
+      "genericFormula": "E_{n} - E_{i} = \\Delta E",
+      "description": "Esta fórmula representa a diferença de energia entre dois níveis de energia em um sistema quântico, onde \\(E_{n}\\) é a energia do nível final e \\(E_{i}\\) é a energia do nível inicial. É frequentemente utilizada em contextos como transições eletrônicas em átomos ou semicondutores, onde a energia necessária para uma transição entre estados é crucial para entender fenômenos como absorção e emissão de luz.",
+      "concepts": [
+        "níveis de energia",
+        "transições quânticas",
+        "fotons",
+        "absorção",
+        "emissão"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{n}",
+          "description": "Energia do nível final"
+        },
+        {
+          "symbol": "E_{i}",
+          "description": "Energia do nível inicial"
+        },
+        {
+          "symbol": "\\Delta E",
+          "description": "Diferença de energia entre os níveis"
+        }
+      ],
+      "taxonomy": {
+        "category": "quantum-physics",
+        "subcategory": "energy-levels",
+        "domain": "atomic-physics"
+      },
+      "keywords": [
+        "energy",
+        "transition",
+        "level",
+        "quantum",
+        "photon"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "energy",
+          "transition",
+          "states"
+        ]
+      },
+      "relatedFormulas": [
+        "E = h \nu",
+        "E_{n} = -\\frac{Z^2 \\mu e^4}{2 \\hbar^2 n^2}"
+      ]
+    }
+  ],
   "processedPages": [
     752,
     753,
@@ -789,7 +1004,7 @@
     750,
     751
   ],
-  "lastUpdated": "2026-05-09T00:26:52.998Z",
+  "lastUpdated": "2026-05-09T00:26:53.011Z",
   "bookTitle": "Semiconductor physics and devices",
   "author": "Unknown"
 }

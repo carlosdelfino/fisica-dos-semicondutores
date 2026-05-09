@@ -1,42 +1,68 @@
 {
-  "chapter": "unknown",
+  "chapter": "F - Effective Mass Concepts",
+  "section": "F.1 Energy-Band Structures",
   "questions": [],
   "answers": [],
-  "standaloneFormulas": [],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "m^* = 0.067m_{e}",
+      "genericFormula": "m^* = k m_{e}",
+      "description": "Esta fórmula representa a massa efetiva de um portador de carga em um semicondutor, que é uma medida de como a carga se comporta sob a influência de um campo elétrico em comparação com a massa de um elétron livre.",
+      "concepts": [
+        "massa efetiva",
+        "portadores de carga",
+        "semicondutores",
+        "interação com campos elétricos"
+      ],
+      "symbols": [
+        {
+          "symbol": "m^*",
+          "description": "representa a massa efetiva do portador de carga, que é uma medida que reflete como o portador se comporta em um material semicondutor."
+        },
+        {
+          "symbol": "m_{e}",
+          "description": "representa a massa do elétron livre, que é a massa padrão de um elétron em um vácuo, usada como referência para comparar a massa efetiva."
+        },
+        {
+          "symbol": "k",
+          "description": "representa um fator de proporcionalidade que indica a relação entre a massa efetiva e a massa do elétron livre, neste caso, um valor numérico específico."
+        }
+      ]
+    },
+    {
+      "originalFormula": "m_{t} = 0.19m_{e}, m_{l} = 0.98m_{e}",
+      "genericFormula": "m_{t} = k_{t} m_{e}, m_{l} = k_{l} m_{e}",
+      "description": "Esta fórmula representa a relação entre as massas de duas partículas, onde uma partícula tem uma massa que é uma fração da massa de um elétron, e a outra partícula tem uma massa que é quase igual à massa de um elétron. Essas relações são importantes em física de partículas e semicondutores, pois ajudam a entender as propriedades e comportamentos de diferentes tipos de partículas.",
+      "concepts": [
+        "massa de partículas",
+        "massa do elétron",
+        "relações de proporção"
+      ],
+      "symbols": [
+        {
+          "symbol": "m_{t}",
+          "description": "representa a massa da primeira partícula, que é uma fração da massa do elétron."
+        },
+        {
+          "symbol": "m_{l}",
+          "description": "representa a massa da segunda partícula, que é quase igual à massa do elétron."
+        },
+        {
+          "symbol": "m_{e}",
+          "description": "representa a massa do elétron, uma partícula fundamental com uma massa bem definida."
+        },
+        {
+          "symbol": "k_{t}",
+          "description": "representa a constante de proporcionalidade para a massa da primeira partícula em relação à massa do elétron."
+        },
+        {
+          "symbol": "k_{l}",
+          "description": "representa a constante de proporcionalidade para a massa da segunda partícula em relação à massa do elétron."
+        }
+      ]
+    }
+  ],
   "processedPages": [
-    752,
-    753,
-    754,
-    755,
-    756,
-    757,
-    758,
-    759,
-    760,
-    761,
-    762,
-    763,
-    764,
-    765,
-    766,
-    767,
-    768,
-    769,
-    770,
-    771,
-    772,
-    773,
-    774,
-    775,
-    776,
-    777,
-    778,
-    779,
-    780,
-    781,
-    782,
-    783,
-    784,
     1,
     2,
     3,
@@ -785,11 +811,7 @@
     746,
     747,
     748,
-    749,
-    750,
-    751
+    749
   ],
-  "lastUpdated": "2026-05-09T00:26:52.998Z",
-  "bookTitle": "Semiconductor physics and devices",
-  "author": "Unknown"
+  "lastUpdated": "2026-05-09T00:00:26.012Z"
 }

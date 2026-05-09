@@ -44,6 +44,26 @@
           ]
         }
       ]
+    },
+    {
+      "number": "13.34",
+      "text": "Calculate I_{DC} for (a) V_{GS} = 0, (b) V_{GS} = 1 V, and (c) V_{GS} = 5 V. [Use Equation (8.42) and consider the volume of the depletion region.]",
+      "formulas": []
+    },
+    {
+      "number": "13.35",
+      "text": "Estimate the cutoff frequency of the MESFET in Problem 13.34.",
+      "formulas": []
+    },
+    {
+      "number": "13.36",
+      "text": "Calculate the cutoff frequency using (a) the constant mobility model and (b) the saturation velocity model.",
+      "formulas": []
+    },
+    {
+      "number": "13.37",
+      "text": "Determine the cutoff frequency for (a) L = 3 μm and (b) L = 1.5 μm.",
+      "formulas": []
     }
   ],
   "answers": [
@@ -920,7 +940,21 @@
     623,
     624,
     625,
-    626
+    626,
+    627,
+    628,
+    629,
+    630,
+    631,
+    632,
+    633,
+    634,
+    635,
+    636,
+    637,
+    638,
+    639,
+    640
   ],
-  "lastUpdated": "2026-05-08T23:27:26.495Z"
+  "lastUpdated": "2026-05-08T23:33:44.828Z"
 }

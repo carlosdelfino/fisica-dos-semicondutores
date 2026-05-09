@@ -1,0 +1,1564 @@
+{
+  "chapter": "APPENDIX A",
+  "section": "Selected List of Symbols",
+  "questions": [],
+  "answers": [],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "u(x) = \\text{Periodic wave function}",
+      "genericFormula": "u(x) = \\text{Periodic wave function}",
+      "description": "Esta fórmula representa uma função de onda periódica, que descreve como uma onda se propaga ao longo de uma dimensão. A função de onda é uma ferramenta fundamental na mecânica quântica, pois fornece informações sobre a amplitude e a fase da onda em diferentes pontos no espaço.",
+      "concepts": [
+        "Função de onda",
+        "Periodicidade",
+        "Propagação de ondas",
+        "Mecânica quântica"
+      ],
+      "symbols": [
+        {
+          "symbol": "u(x)",
+          "description": "Representa a função de onda em um ponto específico x, indicando a amplitude da onda naquele ponto."
+        }
+      ]
+    },
+    {
+      "originalFormula": "v = \\text{Velocity (cm/s)}",
+      "genericFormula": "v = \\text{Velocity}",
+      "description": "Esta fórmula representa a velocidade, que é uma medida da rapidez com que um objeto se move em uma determinada direção. A velocidade é uma grandeza vetorial, o que significa que possui tanto magnitude quanto direção.",
+      "concepts": [
+        "Velocidade",
+        "Movimento",
+        "Grandezas vetoriais"
+      ],
+      "symbols": [
+        {
+          "symbol": "v",
+          "description": "Representa a velocidade de um objeto, que indica a rapidez com que ele se desloca em uma direção específica."
+        }
+      ]
+    },
+    {
+      "originalFormula": "v_l = \\text{Carrier drift velocity (cm/s)}",
+      "genericFormula": "v_l = \\text{Carrier drift velocity}",
+      "description": "Esta fórmula representa a velocidade de deriva dos portadores de carga em um semicondutor, que é a velocidade média com que os portadores (elétrons ou lacunas) se movem em resposta a um campo elétrico aplicado.",
+      "concepts": [
+        "Velocidade de deriva",
+        "Portadores de carga",
+        "Campo elétrico",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "v_l",
+          "description": "Representa a velocidade de deriva dos portadores de carga em um semicondutor, medida em centímetros por segundo."
+        }
+      ]
+    },
+    {
+      "originalFormula": "v_{ds}, v_{sat} = \\text{Carrier saturation drift velocity (cm/s)}",
+      "genericFormula": "v_{ds}, v_{sat} = \\text{Carrier saturation drift velocity}",
+      "description": "Esta fórmula representa a velocidade de deriva de saturação dos portadores em um semicondutor, que é a velocidade máxima que os portadores de carga (elétrons ou lacunas) podem alcançar quando um campo elétrico é aplicado. Essa velocidade é importante para entender como os semicondutores se comportam em dispositivos eletrônicos sob diferentes condições de operação.",
+      "concepts": [
+        "Velocidade de deriva",
+        "Saturação de portadores",
+        "Semicondutores",
+        "Campo elétrico"
+      ],
+      "symbols": [
+        {
+          "symbol": "v_{ds}",
+          "description": "Representa a velocidade de deriva dos portadores de carga em um semicondutor sob a influência de um campo elétrico."
+        },
+        {
+          "symbol": "v_{sat}",
+          "description": "Representa a velocidade de saturação dos portadores de carga, que é a velocidade máxima que eles podem atingir em um semicondutor quando o campo elétrico é suficientemente alto."
+        }
+      ]
+    },
+    {
+      "originalFormula": "x, y, z = \\text{Cartesian coordinates}",
+      "genericFormula": "x, y, z = \\text{coordenadas cartesianas}",
+      "description": "Esta fórmula representa um sistema de coordenadas cartesianas, que é um método de localização de pontos em um espaço tridimensional usando três valores numéricos. Cada valor corresponde a uma dimensão: x representa a posição horizontal, y representa a posição vertical e z representa a profundidade.",
+      "concepts": [
+        "Sistema de coordenadas",
+        "Geometria analítica",
+        "Espaço tridimensional"
+      ],
+      "symbols": [
+        {
+          "symbol": "x",
+          "description": "Representa a coordenada na direção horizontal (eixo X) em um espaço tridimensional."
+        },
+        {
+          "symbol": "y",
+          "description": "Representa a coordenada na direção vertical (eixo Y) em um espaço tridimensional."
+        },
+        {
+          "symbol": "z",
+          "description": "Representa a coordenada na direção de profundidade (eixo Z) em um espaço tridimensional."
+        }
+      ]
+    },
+    {
+      "originalFormula": "x = \\text{Mole fraction in compound semiconductors}",
+      "genericFormula": "x = \\text{Mole fraction}",
+      "description": "A fórmula representa a fração molar de um componente em um semicondutor composto, que é uma medida da quantidade relativa de uma substância em relação ao total de substâncias presentes na mistura.",
+      "concepts": [
+        "Fração molar",
+        "Semicondutores compostos",
+        "Composição química"
+      ],
+      "symbols": [
+        {
+          "symbol": "x",
+          "description": "Representa a fração molar, que é a proporção de uma substância em relação ao total de substâncias em uma mistura."
+        }
+      ]
+    },
+    {
+      "originalFormula": "x_{B}, x_{E}, x_{C} = \\text{Neutral base, emitter, and collector region widths (cm)}",
+      "genericFormula": "x_{B}, x_{E}, x_{C}",
+      "description": "Esta fórmula representa as larguras das regiões neutras de um transistor bipolar, que são as áreas onde não há dopagem significativa de portadores de carga. Essas regiões são fundamentais para o funcionamento do transistor, pois influenciam a eficiência e o desempenho do dispositivo.",
+      "concepts": [
+        "Transistor bipolar",
+        "Dopagem de semicondutores",
+        "Regiões neutras",
+        "Portadores de carga"
+      ],
+      "symbols": [
+        {
+          "symbol": "x_{B}",
+          "description": "Representa a largura da região da base do transistor, que é a área onde ocorre a modulação dos portadores de carga."
+        },
+        {
+          "symbol": "x_{E}",
+          "description": "Representa a largura da região do emissor do transistor, que é a área responsável por injetar portadores de carga na base."
+        },
+        {
+          "symbol": "x_{C}",
+          "description": "Representa a largura da região do coletor do transistor, que é a área que coleta os portadores de carga que atravessam a base."
+        }
+      ]
+    },
+    {
+      "originalFormula": "x_{d} = \\text{Induced space charge width (cm)}",
+      "genericFormula": "x_{d} = \\text{Largura da carga espacial induzida (cm)}",
+      "description": "Esta fórmula representa a largura da região de carga espacial induzida em um semicondutor, que é uma medida da extensão da área onde as cargas elétricas se acumulam devido a um campo elétrico ou a uma diferença de potencial. Essa largura é importante para entender como os semicondutores se comportam em dispositivos eletrônicos, especialmente em junções p-n.",
+      "concepts": [
+        "Carga espacial",
+        "Semicondutores",
+        "Campo elétrico",
+        "Junções p-n"
+      ],
+      "symbols": [
+        {
+          "symbol": "x_{d}",
+          "description": "Representa a largura da carga espacial induzida, que é a distância em que as cargas elétricas se acumulam em um semicondutor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "x_{B} - x_{C} = \\text{Space charge width in base and collector (cm)}",
+      "genericFormula": "x_{B} - x_{C} = \\text{Largura da carga espacial na base e coletor}",
+      "description": "Esta fórmula representa a diferença entre as posições de dois pontos, B e C, em um semicondutor, e está relacionada à largura da região de carga espacial que se forma na junção entre a base e o coletor de um transistor. Essa largura é crucial para entender como os portadores de carga se comportam em dispositivos semicondutores.",
+      "concepts": [
+        "Carga espacial",
+        "Transistores",
+        "Semicondutores",
+        "Juncões PN"
+      ],
+      "symbols": [
+        {
+          "symbol": "x_{B}",
+          "description": "Representa a posição do ponto B, que pode ser um limite da região de carga espacial na base do transistor."
+        },
+        {
+          "symbol": "x_{C}",
+          "description": "Representa a posição do ponto C, que pode ser um limite da região de carga espacial no coletor do transistor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "x_{B0} = \\text{Metallurgical base width (cm)}",
+      "genericFormula": "x_{B0} = \\text{Metallurgical base width}",
+      "description": "Esta fórmula representa a largura da base metalúrgica de um dispositivo semicondutor, que é uma medida importante para entender as características elétricas e de transporte de cargas dentro do material.",
+      "concepts": [
+        "Largura da base metalúrgica",
+        "Semicondutores",
+        "Transporte de cargas",
+        "Características elétricas"
+      ],
+      "symbols": [
+        {
+          "symbol": "x_{B0}",
+          "description": "Representa a largura da base metalúrgica, que é a distância entre as regiões dopadas em um semicondutor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "x_{T} = \\text{Maximum space charge width (cm)}",
+      "genericFormula": "x_{T} = \\text{Maximum space charge width}",
+      "description": "Esta fórmula representa a largura máxima da região de carga espacial em um semicondutor. Essa região é onde as cargas elétricas se acumulam devido à presença de um campo elétrico, e sua largura é crucial para entender o comportamento de dispositivos semicondutores, como diodos e transistores.",
+      "concepts": [
+        "Carga espacial",
+        "Semicondutores",
+        "Campo elétrico",
+        "Dispositivos eletrônicos"
+      ],
+      "symbols": [
+        {
+          "symbol": "x_{T}",
+          "description": "Representa a largura máxima da região de carga espacial em centímetros."
+        }
+      ]
+    },
+    {
+      "originalFormula": "x_{n}, x_{p} = \\text{Depletion width from the metallurgical junction into n-type and p-type semiconductor regions (cm)}",
+      "genericFormula": "x_{n}, x_{p} = \\text{Largura de depleção a partir da junção metalúrgica nas regiões semicondutoras do tipo n e p}",
+      "description": "Esta fórmula representa a largura da região de depleção que se forma a partir da junção metalúrgica entre um semicondutor do tipo n e um do tipo p. Essa região é crucial para o funcionamento de dispositivos semicondutores, como diodos e transistores, pois é onde ocorre a separação de cargas.",
+      "concepts": [
+        "Região de depleção",
+        "Junção metalúrgica",
+        "Semicondutores do tipo n e p",
+        "Separação de cargas"
+      ],
+      "symbols": [
+        {
+          "symbol": "x_{n}",
+          "description": "Representa a largura da região de depleção que se estende a partir da junção metalúrgica para a região semicondutora do tipo n."
+        },
+        {
+          "symbol": "x_{p}",
+          "description": "Representa a largura da região de depleção que se estende a partir da junção metalúrgica para a região semicondutora do tipo p."
+        }
+      ]
+    },
+    {
+      "originalFormula": "A = \\text{Area (cm}^2\\text{)}",
+      "genericFormula": "A = \\text{Area}",
+      "description": "Esta fórmula representa a área de uma superfície, que é uma medida da extensão bidimensional de uma forma. A área é expressa em centímetros quadrados, que é uma unidade comum para medir superfícies em um plano.",
+      "concepts": [
+        "Área",
+        "Medidas de superfície",
+        "Unidades de medida"
+      ],
+      "symbols": [
+        {
+          "symbol": "A",
+          "description": "A letra A representa a área da superfície em questão."
+        }
+      ]
+    },
+    {
+      "originalFormula": "A^* = \\text{Effective Richardson constant (A/K}^2\\text{/cm}^2\\text{)}",
+      "genericFormula": "A^* = \\text{Effective Richardson constant (A/K}^2\\text{/cm}^2\\text{)}",
+      "description": "A fórmula representa a constante de Richardson efetiva, que é uma medida da densidade de corrente de emissão térmica de portadores de carga (como elétrons) em um material semicondutor. Essa constante é fundamental para entender como os semicondutores se comportam em altas temperaturas e em dispositivos eletrônicos.",
+      "concepts": [
+        "Emissão térmica",
+        "Densidade de corrente",
+        "Semicondutores",
+        "Temperatura"
+      ],
+      "symbols": [
+        {
+          "symbol": "A^*",
+          "description": "Representa a constante de Richardson efetiva, que quantifica a capacidade de um material de emitir portadores de carga devido ao aquecimento."
+        }
+      ]
+    },
+    {
+      "originalFormula": "B = \\text{Magnetic flux density (Wb/m}^2\\text{)}",
+      "genericFormula": "B = \\text{Magnetic flux density (Wb/m}^2\\text{)}",
+      "description": "A fórmula representa a densidade de fluxo magnético, que é uma medida da quantidade de fluxo magnético que passa por uma área unitária perpendicular ao campo magnético. Em outras palavras, ela indica quão forte é o campo magnético em uma determinada região do espaço.",
+      "concepts": [
+        "Fluxo magnético",
+        "Campo magnético",
+        "Densidade de fluxo magnético"
+      ],
+      "symbols": [
+        {
+          "symbol": "B",
+          "description": "Representa a densidade de fluxo magnético, que indica a intensidade do campo magnético em uma área específica."
+        }
+      ]
+    },
+    {
+      "originalFormula": "B, E, C = \\text{Base, emitter, and collector}",
+      "genericFormula": "B, E, C = \\text{Base, emitter, and collector}",
+      "description": "Esta fórmula representa os três terminais principais de um transistor bipolar, que são a base, o emissor e o coletor. Cada um desses terminais desempenha um papel crucial no funcionamento do transistor, que é um dos componentes fundamentais na eletrônica moderna.",
+      "concepts": [
+        "Transistor bipolar",
+        "Terminais do transistor",
+        "Eletrônica"
+      ],
+      "symbols": [
+        {
+          "symbol": "B",
+          "description": "Representa a base do transistor, que é o terminal responsável por controlar a corrente que flui entre o emissor e o coletor."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa o emissor do transistor, que é o terminal onde a corrente entra no dispositivo."
+        },
+        {
+          "symbol": "C",
+          "description": "Representa o coletor do transistor, que é o terminal onde a corrente sai do dispositivo."
+        }
+      ]
+    },
+    {
+      "originalFormula": "BV_{CBO} = \\text{Breakdown voltage of collector–base junction with emitter open (V)}",
+      "genericFormula": "BV_{CBO} = \\text{Breakdown voltage of collector–base junction with emitter open (V)}",
+      "description": "Esta fórmula representa a tensão de ruptura da junção coletor-base de um transistor, quando o emissor está desconectado. A tensão de ruptura é o valor máximo de tensão que pode ser aplicado entre o coletor e a base antes que ocorra a condução indesejada, levando a um aumento abrupto na corrente.",
+      "concepts": [
+        "Tensão de ruptura",
+        "Transistor",
+        "Junção semicondutora",
+        "Condução elétrica"
+      ],
+      "symbols": [
+        {
+          "symbol": "BV_{CBO}",
+          "description": "Representa a tensão de ruptura da junção coletor-base com o emissor aberto, que é a tensão máxima que pode ser aplicada sem causar falha na junção."
+        }
+      ]
+    },
+    {
+      "originalFormula": "BV_{CEO} = \\text{Breakdown voltage of collector–emitter with base open (V)}",
+      "genericFormula": "BV_{CEO} = \\text{Breakdown voltage of collector–emitter with base open (V)}",
+      "description": "Esta fórmula representa a tensão de ruptura entre o coletor e o emissor de um transistor bipolar quando a base está desconectada. Essa tensão é um parâmetro importante que indica o limite máximo de tensão que pode ser aplicada entre o coletor e o emissor sem que ocorra uma falha no dispositivo.",
+      "concepts": [
+        "Tensão de ruptura",
+        "Transistor bipolar",
+        "Circuitos eletrônicos"
+      ],
+      "symbols": [
+        {
+          "symbol": "BV_{CEO}",
+          "description": "Representa a tensão de ruptura entre o coletor e o emissor de um transistor bipolar com a base aberta."
+        }
+      ]
+    },
+    {
+      "originalFormula": "C = \\text{Capacitance (F)}",
+      "genericFormula": "C = \\text{Capacitance}",
+      "description": "Esta fórmula representa a capacitância, que é a capacidade de um componente elétrico, como um capacitor, de armazenar carga elétrica por unidade de tensão aplicada. Em outras palavras, a capacitância indica quanta carga elétrica um capacitor pode armazenar para uma determinada tensão.",
+      "concepts": [
+        "Capacitância",
+        "Carga elétrica",
+        "Tensão elétrica",
+        "Capacitores"
+      ],
+      "symbols": [
+        {
+          "symbol": "C",
+          "description": "Representa a capacitância, que é a medida da capacidade de um capacitor de armazenar carga elétrica."
+        }
+      ]
+    },
+    {
+      "originalFormula": "C' = \\text{Capacitance per unit area (F/cm}^2\\text{)}",
+      "genericFormula": "C' = \\text{Capacitance per unit area (F/cm}^2\\text{)}",
+      "description": "Esta fórmula representa a capacitância por unidade de área, que é uma medida de quão eficientemente um capacitor pode armazenar carga elétrica em relação à sua área de superfície. Quanto maior a capacitância por unidade de área, mais carga elétrica pode ser armazenada em uma determinada área do capacitor.",
+      "concepts": [
+        "Capacitância",
+        "Capacitores",
+        "Armazenamento de carga elétrica",
+        "Área de superfície"
+      ],
+      "symbols": [
+        {
+          "symbol": "C'",
+          "description": "Representa a capacitância por unidade de área, que indica a quantidade de carga que pode ser armazenada por unidade de área em um capacitor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "C_{d} = \\text{Diffusion capacitance (F)}",
+      "genericFormula": "C_{d} = \\text{Diffusion capacitance}",
+      "description": "Esta fórmula representa a capacitância de difusão, que é uma medida da capacidade de um semicondutor de armazenar carga elétrica devido à difusão de portadores de carga. Essa capacitância é importante em dispositivos semicondutores, pois influencia o comportamento dinâmico e a resposta do dispositivo a variações de tensão.",
+      "concepts": [
+        "Capacitância",
+        "Difusão de portadores de carga",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "C_{d}",
+          "description": "Representa a capacitância de difusão, que é a capacidade de um semicondutor de armazenar carga elétrica devido à movimentação de portadores de carga."
+        }
+      ]
+    },
+    {
+      "originalFormula": "C_{FB} = \\text{Flat-band capacitance (F)}",
+      "genericFormula": "C_{FB} = \\text{Flat-band capacitance}",
+      "description": "A fórmula representa a capacitância de banda plana, que é uma medida da capacidade de um capacitor em um dispositivo semicondutor quando não há tensão aplicada. Essa capacitância é crucial para entender o comportamento elétrico de dispositivos como transistores e diodos.",
+      "concepts": [
+        "Capacitância",
+        "Dispositivos semicondutores",
+        "Efeito de campo elétrico",
+        "Estrutura de bandas"
+      ],
+      "symbols": [
+        {
+          "symbol": "C_{FB}",
+          "description": "Representa a capacitância de banda plana, que é a capacitância medida em um dispositivo semicondutor quando não há tensão aplicada, refletindo a configuração ideal do dispositivo."
+        }
+      ]
+    },
+    {
+      "originalFormula": "C_{gs}, C_{gd}, C_{ds} = \\text{Gate-source, gate-drain, and drain-source capacitance (F)}",
+      "genericFormula": "C_{gs}, C_{gd}, C_{ds} = \\text{Capacitância entre os terminais de um dispositivo semicondutor (F)}",
+      "description": "Esta fórmula representa as capacitâncias entre os terminais de um dispositivo semicondutor, especificamente entre o gate e o source, entre o gate e o drain, e entre o drain e o source. Essas capacitâncias são importantes para entender o comportamento dinâmico do dispositivo em circuitos eletrônicos.",
+      "concepts": [
+        "Capacitância",
+        "Dispositivos semicondutores",
+        "Circuitos eletrônicos",
+        "Interação entre terminais"
+      ],
+      "symbols": [
+        {
+          "symbol": "C_{gs}",
+          "description": "Capacitância entre o terminal do gate e o terminal do source do dispositivo."
+        },
+        {
+          "symbol": "C_{gd}",
+          "description": "Capacitância entre o terminal do gate e o terminal do drain do dispositivo."
+        },
+        {
+          "symbol": "C_{ds}",
+          "description": "Capacitância entre o terminal do drain e o terminal do source do dispositivo."
+        }
+      ]
+    },
+    {
+      "originalFormula": "C_{j} = \\text{Junction capacitance per unit area (F/cm}^2\\text{)}",
+      "genericFormula": "C_{j} = \\text{Capacitância de junção por unidade de área (F/cm}^2\\text{)}",
+      "description": "Esta fórmula representa a capacitância de junção por unidade de área em um dispositivo semicondutor, que é uma medida de quão bem a junção de dois materiais semicondutores pode armazenar carga elétrica por área. A capacitância de junção é fundamental para entender o comportamento elétrico de diodos e transistores.",
+      "concepts": [
+        "Capacitância",
+        "Juncões em semicondutores",
+        "Armazenamento de carga elétrica",
+        "Dispositivos semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "C_{j}",
+          "description": "Representa a capacitância de junção, que é a capacidade de uma junção semicondutora de armazenar carga elétrica."
+        }
+      ]
+    },
+    {
+      "originalFormula": "C_{M} = \\text{Miller capacitance (F)}",
+      "genericFormula": "C_{M} = \\text{Miller capacitance}",
+      "description": "A fórmula representa a capacitância de Miller, que é um conceito importante em circuitos eletrônicos, especialmente em amplificadores. Essa capacitância é uma forma de capacitância efetiva que aparece devido à realimentação em circuitos amplificadores, influenciando a resposta em frequência do circuito.",
+      "concepts": [
+        "Capacitância",
+        "Realimentação",
+        "Circuitos eletrônicos",
+        "Amplificadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "C_{M}",
+          "description": "Representa a capacitância de Miller, que é uma medida da capacidade de um componente de armazenar carga elétrica em um circuito."
+        }
+      ]
+    },
+    {
+      "originalFormula": "C_{m, C} = \\text{Constants related to capture rate of electrons and holes}",
+      "genericFormula": "C_{m, C} = \\text{Constants related to capture rate of electrons and holes}",
+      "description": "Esta fórmula representa constantes que estão relacionadas à taxa de captura de elétrons e lacunas em um material semicondutor. Essas constantes são cruciais para entender como as partículas carregadas interagem dentro do semicondutor, influenciando suas propriedades elétricas e ópticas.",
+      "concepts": [
+        "Taxa de captura de elétrons",
+        "Taxa de captura de lacunas",
+        "Interações em semicondutores",
+        "Propriedades elétricas de materiais"
+      ],
+      "symbols": [
+        {
+          "symbol": "C_{m, C}",
+          "description": "Representa uma constante que está relacionada à taxa de captura de elétrons e lacunas em um material semicondutor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "C_{ox} = \\text{Gate oxide capacitance per unit area (F/cm}^2\\text{)}",
+      "genericFormula": "C_{ox} = \\text{Capacitância do óxido de porta por unidade de área (F/cm}^2\\text{)}",
+      "description": "Esta fórmula representa a capacitância do óxido de porta por unidade de área em dispositivos semicondutores, como transistores de efeito de campo (FETs). A capacitância é uma medida de quão bem um capacitor pode armazenar carga elétrica, e neste contexto, refere-se à capacidade do material isolante (óxido) entre o terminal de porta e o canal do transistor.",
+      "concepts": [
+        "Capacitância",
+        "Óxido de porta",
+        "Transistores de efeito de campo",
+        "Armazenamento de carga elétrica"
+      ],
+      "symbols": [
+        {
+          "symbol": "C_{ox}",
+          "description": "Representa a capacitância do óxido de porta por unidade de área, que indica a capacidade do óxido de armazenar carga elétrica em relação à área da superfície."
+        }
+      ]
+    },
+    {
+      "originalFormula": "C_{k} = \\text{Reverse-biased B–C junction capacitance (F)}",
+      "genericFormula": "C_{k} = \\text{Reverse-biased B–C junction capacitance}",
+      "description": "Esta fórmula representa a capacitância de uma junção base-coletor (B-C) de um transistor quando está em polarização reversa. A capacitância é uma medida de quão bem a junção pode armazenar carga elétrica sob essa condição específica.",
+      "concepts": [
+        "Capacitância",
+        "Polarização reversa",
+        "Junção semicondutora",
+        "Transistores"
+      ],
+      "symbols": [
+        {
+          "symbol": "C_{k}",
+          "description": "Representa a capacitância da junção base-coletor em uma condição de polarização reversa."
+        }
+      ]
+    },
+    {
+      "originalFormula": "D, S, G = \\text{Drain, source, and gate of an FET}",
+      "genericFormula": "D, S, G = \\text{Drain, source, and gate of a Field Effect Transistor (FET)}",
+      "description": "Esta fórmula representa os três terminais principais de um transistor de efeito de campo (FET), que são o dreno, a fonte e o gate. Esses terminais são fundamentais para o funcionamento do FET, permitindo o controle da corrente elétrica que flui através do dispositivo.",
+      "concepts": [
+        "Transistor de efeito de campo (FET)",
+        "Controle de corrente elétrica",
+        "Terminais de dispositivos semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "D",
+          "description": "Representa o terminal de dreno do transistor, onde a corrente sai do dispositivo."
+        },
+        {
+          "symbol": "S",
+          "description": "Representa o terminal de fonte do transistor, onde a corrente entra no dispositivo."
+        },
+        {
+          "symbol": "G",
+          "description": "Representa o terminal de gate do transistor, que controla a condutividade entre o dreno e a fonte."
+        }
+      ]
+    },
+    {
+      "originalFormula": "D' = \\text{Ambipolar diffusion coefficient (cm/s)}",
+      "genericFormula": "D' = \\text{Ambipolar diffusion coefficient}",
+      "description": "A fórmula representa o coeficiente de difusão ambipolar, que é uma medida da capacidade de partículas carregadas, como elétrons e lacunas, de se moverem em um material semicondutor sob a influência de um gradiente de concentração. Esse coeficiente é importante para entender como as portadoras de carga se espalham em um semicondutor, influenciando suas propriedades elétricas.",
+      "concepts": [
+        "Difusão ambipolar",
+        "Movimento de partículas carregadas",
+        "Gradiente de concentração",
+        "Propriedades elétricas de semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "D'",
+          "description": "Representa o coeficiente de difusão ambipolar, que quantifica a taxa de difusão de portadoras de carga em um semicondutor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "D_{B}, D_{E}, D_{C} = \\text{Base, emitter, and collector minority carrier diffusion coefficients (cm/s)}",
+      "genericFormula": "D_{B}, D_{E}, D_{C} = \\text{coeficientes de difusão de portadores minoritários da base, emissor e coletor (cm/s)}",
+      "description": "Esta fórmula representa os coeficientes de difusão dos portadores minoritários em um transistor, especificamente na base, no emissor e no coletor. Esses coeficientes são fundamentais para entender como os portadores de carga (elétrons ou lacunas) se movem através dos diferentes regiões do dispositivo semicondutor.",
+      "concepts": [
+        "Difusão de portadores de carga",
+        "Transistores semicondutores",
+        "Portadores minoritários",
+        "Movimento de partículas em materiais semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "D_{B}",
+          "description": "Coeficiente de difusão dos portadores minoritários na região da base do transistor."
+        },
+        {
+          "symbol": "D_{E}",
+          "description": "Coeficiente de difusão dos portadores minoritários na região do emissor do transistor."
+        },
+        {
+          "symbol": "D_{C}",
+          "description": "Coeficiente de difusão dos portadores minoritários na região do coletor do transistor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "D_{i} = \\text{Density of interface states (#/eV-cm}^3\\text{)}",
+      "genericFormula": "D_{i} = \\text{Density of interface states (#/eV-cm}^3\\text{)}",
+      "description": "Esta fórmula representa a densidade de estados de interface, que é uma medida da quantidade de estados eletrônicos disponíveis em uma interface de materiais semicondutores. Esses estados podem influenciar o comportamento elétrico e ótico dos dispositivos semicondutores.",
+      "concepts": [
+        "Densidade de estados",
+        "Interface de materiais semicondutores",
+        "Comportamento elétrico de semicondutores",
+        "Interação entre materiais"
+      ],
+      "symbols": [
+        {
+          "symbol": "D_{i}",
+          "description": "Representa a densidade de estados de interface, que é a quantidade de estados eletrônicos disponíveis por unidade de energia e por unidade de volume na interface entre dois materiais."
+        }
+      ]
+    },
+    {
+      "originalFormula": "D_{n}, D_{p} = \\text{Minority carrier electron and minority carrier hole diffusion coefficient (cm/s)}",
+      "genericFormula": "D_{n}, D_{p} = \\text{coeficiente de difusão dos portadores minoritários de elétrons e buracos (cm/s)}",
+      "description": "Esta fórmula representa os coeficientes de difusão dos portadores minoritários em um semicondutor, que são os elétrons em um semicondutor do tipo p e os buracos em um semicondutor do tipo n. O coeficiente de difusão é uma medida de quão rapidamente esses portadores se movem através do material devido a um gradiente de concentração.",
+      "concepts": [
+        "Difusão de portadores de carga",
+        "Semicondutores",
+        "Portadores minoritários",
+        "Gradiente de concentração"
+      ],
+      "symbols": [
+        {
+          "symbol": "D_{n}",
+          "description": "Representa o coeficiente de difusão dos elétrons, que são os portadores minoritários em um semicondutor do tipo p."
+        },
+        {
+          "symbol": "D_{p}",
+          "description": "Representa o coeficiente de difusão dos buracos, que são os portadores minoritários em um semicondutor do tipo n."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E = \\text{Energy (J or eV)}",
+      "genericFormula": "E = \\text{Energy}",
+      "description": "Esta fórmula representa a energia, que é uma grandeza física fundamental que mede a capacidade de realizar trabalho ou provocar mudanças em um sistema. A energia pode se manifestar de várias formas, como energia cinética, potencial, térmica, entre outras.",
+      "concepts": [
+        "Energia",
+        "Trabalho",
+        "Sistema físico"
+      ],
+      "symbols": [
+        {
+          "symbol": "E",
+          "description": "Representa a energia, que pode ser medida em joules (J) ou elétron-volts (eV), dependendo do contexto em que está sendo aplicada."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E_{v} = \\text{Acceptor energy level (eV)}",
+      "genericFormula": "E_{v} = \\text{Acceptor energy level}",
+      "description": "Esta fórmula representa o nível de energia dos aceitadores em um material semicondutor. Os aceitadores são impurezas que criam níveis de energia adicionais no bandgap do semicondutor, permitindo que elétrons sejam capturados e contribuam para a condução elétrica.",
+      "concepts": [
+        "Níveis de energia em semicondutores",
+        "Dopagem de semicondutores",
+        "Bandgap",
+        "Condução elétrica em materiais"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{v}",
+          "description": "Representa o nível de energia dos aceitadores, que é uma medida da energia necessária para que um elétron seja aceito por um átomo dopante no material semicondutor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\omega \\text{ (Radian frequency } (s^{-1}))",
+      "genericFormula": "\\omega",
+      "description": "A fórmula representa a frequência em radianos por segundo, que é uma medida da taxa de variação de um ângulo em um sistema oscilatório ou rotacional. Essa frequência é utilizada para descrever como rapidamente um objeto está girando ou oscilando.",
+      "concepts": [
+        "Frequência angular",
+        "Oscilações",
+        "Movimento rotacional"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\omega",
+          "description": "Representa a frequência angular, que indica quantos radianos um objeto percorre em um segundo durante um movimento oscilatório ou rotacional."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\Gamma",
+      "genericFormula": "\\Gamma",
+      "description": "O coeficiente de reflexão representa a fração da onda que é refletida ao encontrar uma descontinuidade em um meio, como ao passar de um semicondutor para um isolante. Ele é uma medida de quão bem uma onda, como a luz ou uma onda eletromagnética, é refletida em uma interface.",
+      "concepts": [
+        "Reflexão de ondas",
+        "Descontinuidade de meios",
+        "Interação de ondas com materiais"
+      ],
+      "symbols": [
+        {
+          "symbol": "Γ",
+          "description": "O coeficiente de reflexão, que quantifica a proporção da intensidade da onda refletida em relação à intensidade da onda incidente."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E \\text{ (Electric field (V/cm))}",
+      "genericFormula": "E \\text{ (Electric field (V/cm))}",
+      "description": "Esta fórmula representa o campo elétrico, que é uma medida da força que uma carga elétrica exerce sobre outra carga em um determinado ponto do espaço. O campo elétrico é uma quantidade vetorial, o que significa que possui tanto magnitude quanto direção.",
+      "concepts": [
+        "Campo elétrico",
+        "Força elétrica",
+        "Carga elétrica"
+      ],
+      "symbols": [
+        {
+          "symbol": "E",
+          "description": "Representa o campo elétrico, que indica a intensidade e a direção da força que uma carga elétrica experimentaria em um ponto específico."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E_{H}",
+      "genericFormula": "E_{H}",
+      "description": "A fórmula representa o campo elétrico de Hall, que é gerado quando uma corrente elétrica passa por um material condutor em presença de um campo magnético. Esse campo elétrico é perpendicular tanto à direção da corrente quanto à direção do campo magnético, e é responsável pela separação de cargas que resulta na formação de uma tensão de Hall.",
+      "concepts": [
+        "Campo elétrico",
+        "Efeito Hall",
+        "Corrente elétrica",
+        "Campo magnético",
+        "Separação de cargas"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{H}",
+          "description": "Representa o campo elétrico de Hall, que é medido em volts por centímetro (V/cm) e indica a intensidade do campo elétrico gerado pela interação da corrente elétrica com o campo magnético."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E_{crit}",
+      "genericFormula": "E_{crit}",
+      "description": "A fórmula representa o campo elétrico crítico, que é o valor máximo do campo elétrico que um material pode suportar antes de ocorrer a ruptura elétrica. Quando o campo elétrico ultrapassa esse limite, o material pode se tornar condutor, levando à falha elétrica.",
+      "concepts": [
+        "Campo elétrico",
+        "Ruptura elétrica",
+        "Condutividade de materiais"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{crit}",
+          "description": "Representa o campo elétrico crítico, que é a intensidade do campo elétrico em volts por centímetro que causa a ruptura de um material isolante."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\Theta(\\theta) \\text{ (Angular wave function)}",
+      "genericFormula": "\\Theta(\\theta)",
+      "description": "A função de onda angular representa a dependência angular de uma onda em um sistema quântico. Ela descreve como a amplitude da onda varia com o ângulo, sendo fundamental na solução de problemas que envolvem simetria esférica, como o átomo de hidrogênio.",
+      "concepts": [
+        "Função de onda",
+        "Mecânica quântica",
+        "Simetria esférica",
+        "Ondas"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\Theta",
+          "description": "Representa a função de onda angular, que descreve a variação da amplitude da onda em relação ao ângulo."
+        },
+        {
+          "symbol": "\\theta",
+          "description": "Representa o ângulo em coordenadas esféricas, que é a variável independente na função de onda angular."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\Phi \\text{ (Photon flux (cm^{-2} s^{-1}))}",
+      "genericFormula": "\\Phi \\text{ (Photon flux (cm^{-2} s^{-1}))}",
+      "description": "A fórmula representa o fluxo de fótons, que é a quantidade de fótons que atravessam uma área unitária em um segundo. É uma medida importante em diversas áreas da física, especialmente na óptica e na física de semicondutores, pois indica a intensidade da luz ou radiação que incide sobre uma superfície.",
+      "concepts": [
+        "Fluxo de fótons",
+        "Intensidade luminosa",
+        "Radiação eletromagnética"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\Phi",
+          "description": "Representa o fluxo de fótons, que é a quantidade de fótons que passam por uma área específica em um determinado intervalo de tempo."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\Phi(\\phi)",
+      "genericFormula": "\\Phi(\\phi)",
+      "description": "Esta fórmula representa a função de onda angular, que descreve como a amplitude de uma onda varia em relação ao ângulo. É uma parte fundamental da mecânica quântica, especialmente em sistemas que possuem simetria esférica, como átomos e moléculas.",
+      "concepts": [
+        "Função de onda",
+        "Mecânica quântica",
+        "Simetria esférica",
+        "Amplitude de onda"
+      ],
+      "symbols": [
+        {
+          "symbol": "Φ",
+          "description": "Representa a função de onda angular, que fornece informações sobre a distribuição da amplitude da onda em relação ao ângulo em um sistema quântico."
+        },
+        {
+          "symbol": "φ",
+          "description": "Representa a variável angular, geralmente medida em radianos, que indica a direção ou posição angular em um sistema tridimensional."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\Psi(x, t) \\text{ (Total wave function)}",
+      "genericFormula": "\\Psi(x, t)",
+      "description": "A fórmula representa a função de onda total de um sistema quântico, que descreve o estado quântico de uma partícula ou de um sistema de partículas em um determinado ponto no espaço e em um dado instante de tempo. A função de onda contém todas as informações sobre o sistema e é fundamental para a compreensão da mecânica quântica.",
+      "concepts": [
+        "Função de onda",
+        "Mecânica quântica",
+        "Estado quântico",
+        "Interferência e superposição"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\Psi",
+          "description": "Representa a função de onda, que é uma descrição matemática do estado quântico de uma partícula ou sistema de partículas."
+        },
+        {
+          "symbol": "x",
+          "description": "Representa a posição no espaço, indicando onde a partícula ou sistema está localizado."
+        },
+        {
+          "symbol": "t",
+          "description": "Representa o tempo, indicando em que momento a função de onda está sendo avaliada."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498,
+    499,
+    500,
+    501,
+    502,
+    503,
+    504,
+    505,
+    506,
+    507,
+    508,
+    509,
+    510,
+    511,
+    512,
+    513,
+    514,
+    515,
+    516,
+    517,
+    518,
+    519,
+    520,
+    521,
+    522,
+    523,
+    524,
+    525,
+    526,
+    527,
+    528,
+    529,
+    530,
+    531,
+    532,
+    533,
+    534,
+    535,
+    536,
+    537,
+    538,
+    539,
+    540,
+    541,
+    542,
+    543,
+    544,
+    545,
+    546,
+    547,
+    548,
+    549,
+    550,
+    551,
+    552,
+    553,
+    554,
+    555,
+    556,
+    557,
+    558,
+    559,
+    560,
+    561,
+    562,
+    563,
+    564,
+    565,
+    566,
+    567,
+    568,
+    569,
+    570,
+    571,
+    572,
+    573,
+    574,
+    575,
+    576,
+    577,
+    578,
+    579,
+    580,
+    581,
+    582,
+    583,
+    584,
+    585,
+    586,
+    587,
+    588,
+    589,
+    590,
+    591,
+    592,
+    593,
+    594,
+    595,
+    596,
+    597,
+    598,
+    599,
+    600,
+    601,
+    602,
+    603,
+    604,
+    605,
+    606,
+    607,
+    608,
+    609,
+    610,
+    611,
+    612,
+    613,
+    614,
+    615,
+    616,
+    617,
+    618,
+    619,
+    620,
+    621,
+    622,
+    623,
+    624,
+    625,
+    626,
+    627,
+    628,
+    629,
+    630,
+    631,
+    632,
+    633,
+    634,
+    635,
+    636,
+    637,
+    638,
+    639,
+    640,
+    641,
+    642,
+    643,
+    644,
+    645,
+    646,
+    647,
+    648,
+    649,
+    650,
+    651,
+    652,
+    653,
+    654,
+    655,
+    656,
+    657,
+    658,
+    659,
+    660,
+    661,
+    662,
+    663,
+    664,
+    665,
+    666,
+    667,
+    668,
+    669,
+    670,
+    671,
+    672,
+    673,
+    674,
+    675,
+    676,
+    677,
+    678,
+    679,
+    680,
+    681,
+    682,
+    683,
+    684,
+    685,
+    686,
+    687,
+    688,
+    689,
+    690,
+    691,
+    692,
+    693,
+    694,
+    695,
+    696,
+    697,
+    698,
+    699,
+    700,
+    701,
+    702,
+    703,
+    704,
+    705,
+    706,
+    707,
+    708,
+    709,
+    710,
+    711,
+    712,
+    713,
+    714,
+    715,
+    716,
+    717,
+    718,
+    719,
+    720,
+    721,
+    722,
+    723,
+    724,
+    725,
+    726,
+    727,
+    728,
+    729,
+    730,
+    731,
+    732,
+    733,
+    734,
+    735,
+    736,
+    737,
+    738,
+    739
+  ],
+  "lastUpdated": "2026-05-08T23:58:33.194Z"
+}

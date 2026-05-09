@@ -1,42 +1,83 @@
 {
-  "chapter": "unknown",
-  "questions": [],
+  "chapter": "14",
+  "section": "Optical Devices",
+  "questions": [
+    {
+      "number": "14.3.5",
+      "text": "Qual é o período de um sinal de modulação?",
+      "formulas": [
+        {
+          "originalFormula": "f = \\frac{1}{2 \\tau} = \\frac{1}{200 \\times 10^{-12}} = 5 \\text{ GHz}",
+          "genericFormula": "f = \\frac{1}{2 \\tau}",
+          "description": "Esta fórmula representa a frequência de um sinal em um circuito, onde a frequência é inversamente proporcional ao tempo de relaxação do sistema. Em outras palavras, quanto menor o tempo de relaxação, maior será a frequência do sinal gerado.",
+          "concepts": [
+            "Frequência",
+            "Tempo de relaxação",
+            "Circuitos elétricos",
+            "Oscilações"
+          ],
+          "symbols": [
+            {
+              "symbol": "f",
+              "description": "Representa a frequência do sinal, que é a quantidade de ciclos que ocorrem em um segundo."
+            },
+            {
+              "symbol": "τ",
+              "description": "Representa o tempo de relaxação, que é o tempo que um sistema leva para retornar ao seu estado de equilíbrio após uma perturbação."
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "answers": [],
-  "standaloneFormulas": [],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "au = \\frac{10^7}{10 \\times 10^{-4}} = 100 \\text{ ps}",
+      "genericFormula": "au = \\frac{A}{B}",
+      "description": "Esta fórmula representa o cálculo de uma unidade de tempo, onde 'au' é o resultado em picosegundos, obtido ao dividir um valor numérico por outro. O resultado final indica uma quantidade de tempo muito curta, que é comum em fenômenos físicos e eletrônicos.",
+      "concepts": [
+        "Unidade de tempo",
+        "Cálculo de razões",
+        "Fenômenos em escalas temporais muito pequenas"
+      ],
+      "symbols": [
+        {
+          "symbol": "au",
+          "description": "Representa o resultado do cálculo, que é uma unidade de tempo medida em picosegundos."
+        },
+        {
+          "symbol": "A",
+          "description": "Representa o numerador da fração, que é um valor numérico que pode ser interpretado como uma quantidade total em uma unidade específica."
+        },
+        {
+          "symbol": "B",
+          "description": "Representa o denominador da fração, que é outro valor numérico que serve para dividir o numerador e determinar a razão entre os dois valores."
+        }
+      ]
+    },
+    {
+      "originalFormula": "f = \\frac{1}{2 \\tau} = \\frac{1}{200 \\times 10^{-12}} = 5 \\text{ GHz}",
+      "genericFormula": "f = \\frac{1}{2 \\tau}",
+      "description": "Esta fórmula representa a frequência de um sinal em um circuito, onde a frequência é inversamente proporcional ao tempo de relaxação ou constante de tempo do circuito. Quanto menor o tempo de relaxação, maior será a frequência do sinal gerado.",
+      "concepts": [
+        "Frequência",
+        "Constante de tempo",
+        "Circuitos elétricos"
+      ],
+      "symbols": [
+        {
+          "symbol": "f",
+          "description": "Representa a frequência do sinal, que é o número de ciclos por segundo, medido em hertz."
+        },
+        {
+          "symbol": "\\tau",
+          "description": "Representa a constante de tempo do circuito, que é o tempo necessário para que a resposta do circuito atinja aproximadamente 63% do seu valor final após uma mudança de condição."
+        }
+      ]
+    }
+  ],
   "processedPages": [
-    752,
-    753,
-    754,
-    755,
-    756,
-    757,
-    758,
-    759,
-    760,
-    761,
-    762,
-    763,
-    764,
-    765,
-    766,
-    767,
-    768,
-    769,
-    770,
-    771,
-    772,
-    773,
-    774,
-    775,
-    776,
-    777,
-    778,
-    779,
-    780,
-    781,
-    782,
-    783,
-    784,
     1,
     2,
     3,
@@ -703,93 +744,7 @@
     664,
     665,
     666,
-    667,
-    668,
-    669,
-    670,
-    671,
-    672,
-    673,
-    674,
-    675,
-    676,
-    677,
-    678,
-    679,
-    680,
-    681,
-    682,
-    683,
-    684,
-    685,
-    686,
-    687,
-    688,
-    689,
-    690,
-    691,
-    692,
-    693,
-    694,
-    695,
-    696,
-    697,
-    698,
-    699,
-    700,
-    701,
-    702,
-    703,
-    704,
-    705,
-    706,
-    707,
-    708,
-    709,
-    710,
-    711,
-    712,
-    713,
-    714,
-    715,
-    716,
-    717,
-    718,
-    719,
-    720,
-    721,
-    722,
-    723,
-    724,
-    725,
-    726,
-    727,
-    728,
-    729,
-    730,
-    731,
-    732,
-    733,
-    734,
-    735,
-    736,
-    737,
-    738,
-    739,
-    740,
-    741,
-    742,
-    743,
-    744,
-    745,
-    746,
-    747,
-    748,
-    749,
-    750,
-    751
+    667
   ],
-  "lastUpdated": "2026-05-09T00:26:52.998Z",
-  "bookTitle": "Semiconductor physics and devices",
-  "author": "Unknown"
+  "lastUpdated": "2026-05-08T23:42:22.872Z"
 }
