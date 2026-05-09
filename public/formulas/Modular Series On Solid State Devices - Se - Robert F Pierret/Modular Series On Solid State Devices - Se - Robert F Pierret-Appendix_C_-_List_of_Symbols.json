@@ -1,0 +1,1858 @@
+{
+  "chapter": "Appendix C - List of Symbols",
+  "questions": [],
+  "answers": [],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "A = \\text{area}",
+      "genericFormula": "A",
+      "description": "A variável 'A' representa a área de uma superfície ou região bidimensional. Em física de semicondutores e física quântica, a área aparece em diversos contextos: na densidade de estados 2D (poços quânticos), na corrente de tunelamento através de barreiras, na intensidade de campos elétricos e magnéticos aplicados, e na normalização de funções de onda em sistemas bidimensionais. Em dispositivos semicondutores, a área da junção p-n ou do gate de um transistor influencia diretamente os parâmetros elétricos do dispositivo.",
+      "concepts": [
+        "área superficial",
+        "geometria bidimensional",
+        "densidade de corrente",
+        "normalização de função de onda",
+        "sistemas 2D",
+        "poços quânticos",
+        "junções semicondutoras"
+      ],
+      "symbols": [
+        {
+          "symbol": "A",
+          "description": "Área de uma superfície ou região bidimensional, tipicamente medida em metros quadrados (m²) no SI"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "device-geometry",
+        "domain": "device-physics"
+      },
+      "keywords": [
+        "area",
+        "surface",
+        "geometry",
+        "2D",
+        "cross-section",
+        "junction",
+        "gate",
+        "current",
+        "normalization"
+      ],
+      "graphVisualization": {
+        "hasGraph": false,
+        "graphType": null,
+        "graphParameters": []
+      },
+      "relatedFormulas": [
+        "current-density",
+        "tunneling-current",
+        "2D-density-of-states",
+        "electric-flux",
+        "Ohm's-law"
+      ]
+    },
+    {
+      "originalFormula": "c_{n} = \\text{electron capture coefficient}",
+      "genericFormula": "c_{n} = \\langle v_{th,n} \\rangle \\cdot \\sigma_{n}",
+      "description": "O coeficiente de captura de elétrons (c_n) quantifica a taxa com que um centro de recombinação (armadilha) captura elétrons da banda de condução. É definido como o produto da velocidade térmica média dos elétrons pela seção transversal de captura do defeito para elétrons. Este parâmetro é fundamental no modelo de Shockley-Read-Hall (SRH), que descreve a recombinação via estados intermediários no gap de energia dos semicondutores. Quanto maior o valor de c_n, mais eficientemente a armadilha captura elétrons, influenciando diretamente o tempo de vida dos portadores minoritários e a taxa de recombinação não-radiativa no material.",
+      "concepts": [
+        "captura de portadores",
+        "recombinação Shockley-Read-Hall (SRH)",
+        "estados de armadilha (traps)",
+        "velocidade térmica",
+        "seção transversal de captura",
+        "tempo de vida de portadores",
+        "defeitos e impurezas em semicondutores",
+        "recombinação não-radiativa",
+        "centros de geração-recombinação"
+      ],
+      "symbols": [
+        {
+          "symbol": "c_{n}",
+          "description": "Coeficiente de captura de elétrons [cm³/s] — taxa de captura por unidade de concentração de elétrons livres"
+        },
+        {
+          "symbol": "\\langle v_{th,n} \\rangle",
+          "description": "Velocidade térmica média dos elétrons [cm/s], dada por sqrt(3k_BT/m*_n) ou sqrt(2k_BT/πm*_n) dependendo da aproximação"
+        },
+        {
+          "symbol": "\\sigma_{n}",
+          "description": "Seção transversal de captura de elétrons pelo centro de armadilha [cm²] — representa a área efetiva de interação entre o elétron e o defeito"
+        },
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann [1.381 × 10⁻²³ J/K]"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta [K]"
+        },
+        {
+          "symbol": "m^*_n",
+          "description": "Massa efetiva do elétron no semicondutor [kg]"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-recombination",
+        "domain": "defect-physics"
+      },
+      "keywords": [
+        "capture",
+        "electron",
+        "trap",
+        "recombination",
+        "SRH",
+        "Shockley-Read-Hall",
+        "carrier-lifetime",
+        "thermal-velocity",
+        "cross-section",
+        "defect",
+        "non-radiative",
+        "generation",
+        "minority-carrier",
+        "energy-level",
+        "gap"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "trap energy level (E_t)",
+          "conduction band (E_c)",
+          "valence band (E_v)",
+          "capture rate vs electron concentration",
+          "capture coefficient vs temperature"
+        ]
+      },
+      "relatedFormulas": [
+        "Shockley-Read-Hall recombination rate",
+        "hole capture coefficient (c_p)",
+        "carrier lifetime (tau_n)",
+        "thermal velocity (v_th)",
+        "capture cross-section (sigma_n)",
+        "SRH recombination lifetime",
+        "generation-recombination rate (U)",
+        "Fermi-Dirac distribution"
+      ]
+    },
+    {
+      "originalFormula": "c_{p} = \\text{hole capture coefficient}",
+      "genericFormula": "c_{p} = \\sigma_{p} \\cdot v_{th,p}",
+      "description": "O coeficiente de captura de lacunas (holes) c_p representa a taxa com que armadilhas (traps) ou centros de recombinação capturam lacunas da banda de valência. É definido como o produto da seção transversal de captura de lacunas (σ_p) pela velocidade térmica das lacunas (v_{th,p}). Este coeficiente é fundamental na teoria de Shockley-Read-Hall (SRH), que descreve os processos de geração e recombinação mediados por defeitos em semicondutores. Um valor alto de c_p indica que o centro de recombinação é eficiente em capturar lacunas, acelerando o processo de recombinação não-radiativa. É especialmente relevante em semicondutores com defeitos intrínsecos ou extrínsecos, como impurezas metálicas ou defeitos de rede cristalina.",
+      "concepts": [
+        "captura de portadores",
+        "recombinação Shockley-Read-Hall (SRH)",
+        "armadilhas e centros de defeito",
+        "seção transversal de captura",
+        "velocidade térmica de portadores",
+        "geração-recombinação mediada por defeitos",
+        "tempo de vida de portadores minoritários",
+        "semicondutores com defeitos"
+      ],
+      "symbols": [
+        {
+          "symbol": "c_{p}",
+          "description": "Coeficiente de captura de lacunas (cm³/s): taxa de captura de lacunas por armadilha por unidade de concentração de lacunas"
+        },
+        {
+          "symbol": "\\sigma_{p}",
+          "description": "Seção transversal de captura de lacunas (cm²): área efetiva do centro de defeito para capturar uma lacuna"
+        },
+        {
+          "symbol": "v_{th,p}",
+          "description": "Velocidade térmica das lacunas (cm/s): velocidade média das lacunas devido à agitação térmica, dada por v_{th,p} = \\sqrt{3k_BT/m_p^*}"
+        },
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann (1,381 × 10⁻²³ J/K): relaciona energia térmica com temperatura"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta (K): temperatura do sistema semicondutor"
+        },
+        {
+          "symbol": "m_{p}^{*}",
+          "description": "Massa efetiva das lacunas (kg): massa efetiva das lacunas na estrutura de bandas do semicondutor"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-recombination",
+        "domain": "defect-physics"
+      },
+      "keywords": [
+        "hole",
+        "capture",
+        "coefficient",
+        "trap",
+        "recombination",
+        "SRH",
+        "Shockley-Read-Hall",
+        "carrier",
+        "defect",
+        "cross-section",
+        "thermal-velocity",
+        "generation",
+        "minority-carrier",
+        "lifetime",
+        "deep-level"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "trap energy level",
+          "capture rate",
+          "carrier concentration",
+          "temperature"
+        ]
+      },
+      "relatedFormulas": [
+        "Shockley-Read-Hall recombination rate",
+        "hole capture rate R_p = c_p * p * N_T",
+        "electron capture coefficient c_n",
+        "minority carrier lifetime tau_p",
+        "thermal velocity v_th",
+        "capture cross-section sigma_p",
+        "SRH recombination lifetime"
+      ]
+    },
+    {
+      "originalFormula": "D_{N} = \\text{electron diffusion coefficient (cm}^{2}\\text{/sec)}",
+      "genericFormula": "D_N = \\mu_n \\cdot \\frac{k_B T}{q}",
+      "description": "O coeficiente de difusão de elétrons D_N quantifica a capacidade dos elétrons de se moverem de regiões de alta concentração para regiões de baixa concentração em um semicondutor, por meio do processo de difusão. Este coeficiente está diretamente relacionado à mobilidade dos elétrons μ_n através da Relação de Einstein: D_N = μ_n · (k_B T / q), onde k_B é a constante de Boltzmann, T é a temperatura absoluta e q é a carga do elétron. A quantidade k_B T / q é chamada de tensão térmica V_T (~26 mV a 300 K). D_N é fundamental para descrever o transporte de portadores minoritários em dispositivos como diodos e transistores bipolares, aparecendo na equação de continuidade e nas equações de corrente de difusão.",
+      "concepts": [
+        "difusão de portadores",
+        "transporte de elétrons",
+        "Relação de Einstein",
+        "corrente de difusão",
+        "portadores minoritários",
+        "tensão térmica",
+        "equação de continuidade",
+        "mobilidade de elétrons"
+      ],
+      "symbols": [
+        {
+          "symbol": "D_N",
+          "description": "Coeficiente de difusão de elétrons (cm²/s) — mede a taxa de espalhamento dos elétrons por difusão"
+        },
+        {
+          "symbol": "\\mu_n",
+          "description": "Mobilidade dos elétrons (cm²/V·s) — facilidade com que os elétrons se movem sob campo elétrico"
+        },
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann (1,381 × 10⁻²³ J/K) — relaciona energia térmica à temperatura"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta em Kelvin (K)"
+        },
+        {
+          "symbol": "q",
+          "description": "Carga elementar do elétron (1,602 × 10⁻¹⁹ C)"
+        },
+        {
+          "symbol": "V_T = \\frac{k_B T}{q}",
+          "description": "Tensão térmica (~26 mV a 300 K) — fator de escala entre mobilidade e coeficiente de difusão"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-transport",
+        "domain": "device-physics"
+      },
+      "keywords": [
+        "diffusion",
+        "carrier",
+        "electron",
+        "mobility",
+        "Einstein relation",
+        "minority carrier",
+        "transport",
+        "current",
+        "thermal voltage",
+        "continuity equation",
+        "drift-diffusion"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "carrier-concentration-profile",
+        "graphParameters": [
+          "carrier concentration",
+          "position",
+          "diffusion current",
+          "temperature"
+        ]
+      },
+      "relatedFormulas": [
+        "Einstein-Relation",
+        "Fick-First-Law",
+        "Drift-Diffusion-Current",
+        "Continuity-Equation",
+        "Minority-Carrier-Diffusion-Equation",
+        "Fermi-Dirac-Distribution",
+        "Electron-Mobility"
+      ]
+    },
+    {
+      "originalFormula": "D_{P} = \\text{hole diffusion coefficient (cm}^{2}\\text{/sec)}",
+      "genericFormula": "D_{P} = \\mu_{P} \\frac{k_B T}{q}",
+      "description": "O coeficiente de difusão de lacunas (D_P) quantifica a capacidade das lacunas (portadores positivos) de se difundirem em um semicondutor sob a influência de um gradiente de concentração, na ausência de campo elétrico externo. Este parâmetro é fundamental para descrever o transporte de portadores minoritários em dispositivos semicondutores. Pela Relação de Einstein, D_P está diretamente ligado à mobilidade das lacunas (μ_P) e à temperatura: D_P = μ_P · (k_B·T/q), onde k_B·T/q é o potencial térmico (V_T ≈ 26 mV a 300 K). O processo de difusão ocorre quando existe uma distribuição não uniforme de lacunas no material — elas migram espontaneamente das regiões de maior concentração para as de menor concentração. O coeficiente é medido em cm²/s e tipicamente vale entre 1 e 50 cm²/s para semicondutores comuns como Si e GaAs.",
+      "concepts": [
+        "difusão de portadores",
+        "coeficiente de difusão",
+        "lacunas",
+        "relação de Einstein",
+        "transporte de portadores minoritários",
+        "gradiente de concentração",
+        "potencial térmico",
+        "equilíbrio termodinâmico",
+        "mobilidade de portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "D_{P}",
+          "description": "Coeficiente de difusão de lacunas, em cm²/s — mede a taxa com que as lacunas se difundem por unidade de gradiente de concentração"
+        },
+        {
+          "symbol": "\\mu_{P}",
+          "description": "Mobilidade das lacunas (cm²/V·s) — facilidade com que as lacunas se movem sob influência de um campo elétrico"
+        },
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann (1,381 × 10⁻²³ J/K) — relaciona energia térmica com temperatura"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta em Kelvin (K) — a 300 K corresponde à temperatura ambiente padrão"
+        },
+        {
+          "symbol": "q",
+          "description": "Carga elementar do elétron (1,602 × 10⁻¹⁹ C)"
+        },
+        {
+          "symbol": "\\frac{k_B T}{q}",
+          "description": "Potencial térmico V_T (≈ 26 mV a 300 K) — fator de proporcionalidade entre D_P e μ_P na Relação de Einstein"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-transport",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "diffusion",
+        "carrier",
+        "hole",
+        "diffusion-coefficient",
+        "minority-carrier",
+        "Einstein-relation",
+        "mobility",
+        "transport",
+        "thermal-voltage",
+        "concentration-gradient"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "carrier-diffusion-profile",
+        "graphParameters": [
+          "hole concentration",
+          "position",
+          "temperature",
+          "diffusion length"
+        ]
+      },
+      "relatedFormulas": [
+        "Einstein-relation",
+        "Fick-first-law",
+        "hole-diffusion-current",
+        "continuity-equation",
+        "minority-carrier-lifetime",
+        "diffusion-length-holes",
+        "D_N-electron-diffusion-coefficient",
+        "mobility-holes"
+      ]
+    },
+    {
+      "originalFormula": "E = \\text{energy}",
+      "genericFormula": "E",
+      "description": "A energia é uma grandeza física fundamental que representa a capacidade de um sistema realizar trabalho ou produzir calor. Na física quântica e de semicondutores, a energia é uma das grandezas mais importantes, aparecendo em contextos como níveis de energia atômicos, estrutura de bandas de semicondutores, transições eletrônicas e relações de dispersão. A energia é quantizada em sistemas quânticos, significando que apenas valores discretos são permitidos, diferentemente da física clássica. A unidade SI de energia é o Joule (J), mas em física de semicondutores e física atômica é comum o uso do elétron-volt (eV), onde 1 eV = 1,602 × 10⁻¹⁹ J.",
+      "concepts": [
+        "energia",
+        "quantização de energia",
+        "níveis de energia",
+        "conservação de energia",
+        "energia cinética",
+        "energia potencial",
+        "energia total",
+        "elétron-volt",
+        "transições de energia"
+      ],
+      "symbols": [
+        {
+          "symbol": "E",
+          "description": "Energia do sistema, medida em Joules (J) no SI ou em elétron-volts (eV) em física atômica e de semicondutores"
+        }
+      ],
+      "taxonomy": {
+        "category": "quantum-physics",
+        "subcategory": "energy-levels",
+        "domain": "atomic-physics"
+      },
+      "keywords": [
+        "energy",
+        "level",
+        "state",
+        "transition",
+        "band",
+        "gap",
+        "quantization",
+        "joule",
+        "electron-volt",
+        "conservation"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "energy",
+          "position",
+          "momentum"
+        ]
+      },
+      "relatedFormulas": [
+        "Schrodinger",
+        "Planck",
+        "de-Broglie",
+        "Fermi-Dirac",
+        "Heisenberg-uncertainty",
+        "Einstein-photoelectric",
+        "band-structure"
+      ]
+    },
+    {
+      "originalFormula": "E_{A} = \\text{acceptor energy level}",
+      "genericFormula": "E_{A}",
+      "description": "O nível de energia do aceitador (E_A) representa a energia associada a impurezas aceitadoras introduzidas intencionalmente em um semicondutor do tipo p. Quando um átomo aceitador (como o Boro no Silício) substitui um átomo da rede cristalina, ele cria um nível de energia discreto localizado ligeiramente acima da banda de valência. Este nível captura elétrons da banda de valência, gerando lacunas (holes) que atuam como portadores de carga majoritários. A diferença entre E_A e o topo da banda de valência (E_V) é chamada de energia de ionização do aceitador, tipicamente da ordem de dezenas de meV em semicondutores comuns, permitindo ionização térmica à temperatura ambiente.",
+      "concepts": [
+        "nível de energia do aceitador",
+        "dopagem tipo p",
+        "impurezas aceitadoras",
+        "ionização térmica",
+        "geração de lacunas",
+        "semicondutor extrínseco",
+        "banda de valência",
+        "estados localizados",
+        "energia de ligação do aceitador"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{A}",
+          "description": "Nível de energia do aceitador, posicionado próximo ao topo da banda de valência dentro do gap de energia do semicondutor"
+        },
+        {
+          "symbol": "E_{V}",
+          "description": "Energia do topo da banda de valência, referência inferior para o gap de energia"
+        },
+        {
+          "symbol": "E_{A} - E_{V}",
+          "description": "Energia de ionização do aceitador, tipicamente entre 10 meV e 100 meV em semicondutores convencionais"
+        },
+        {
+          "symbol": "E_{g}",
+          "description": "Energia do gap do semicondutor, separação entre banda de valência e banda de condução"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "impurity-levels",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "acceptor",
+        "energy",
+        "level",
+        "dopant",
+        "p-type",
+        "impurity",
+        "band",
+        "valence",
+        "gap",
+        "hole",
+        "ionization",
+        "extrinsic",
+        "shallow-level",
+        "carrier"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "E_A (acceptor level)",
+          "E_V (valence band edge)",
+          "E_C (conduction band edge)",
+          "E_g (bandgap)",
+          "ionization energy (E_A - E_V)"
+        ]
+      },
+      "relatedFormulas": [
+        "E_D (donor energy level)",
+        "Fermi-Dirac distribution",
+        "charge neutrality equation",
+        "hole concentration p-type",
+        "ionization energy hydrogen model",
+        "E_F in p-type semiconductor"
+      ]
+    },
+    {
+      "originalFormula": "E_{B} = \\text{binding energy at dopant (donor, acceptor) sites}",
+      "genericFormula": "E_{B} = E_{\\text{ionization}} - E_{\\text{band edge}}",
+      "description": "A energia de ligação E_B em sítios de dopantes (doadores ou aceitadores) representa a energia necessária para ionizar um átomo dopante em um semicondutor, liberando um portador de carga livre. Para doadores, E_B é a energia necessária para promover o elétron do nível do doador até a banda de condução. Para aceitadores, é a energia necessária para promover um elétron da banda de valência até o nível do aceitador, equivalentemente criando um buraco livre. Essa energia determina se o dopante estará ionizado à temperatura de operação: dopantes rasos (shallow) possuem E_B da ordem de meV, sendo facilmente ionizados à temperatura ambiente (kT ≈ 26 meV), enquanto dopantes profundos (deep) possuem E_B de centenas de meV, permanecendo parcialmente neutros à temperatura ambiente e atuando como centros de recombinação ou armadilhas.",
+      "concepts": [
+        "energia de ligação",
+        "dopagem de semicondutores",
+        "doadores e aceitadores",
+        "ionização de impurezas",
+        "níveis de impureza",
+        "dopantes rasos e profundos",
+        "portadores de carga",
+        "modelo hidrogenoide de Bohr",
+        "massa efetiva",
+        "constante dielétrica",
+        "temperatura de ionização"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{B}",
+          "description": "Energia de ligação do dopante (doador ou aceitador), medida em elétron-volts (eV) ou meV"
+        },
+        {
+          "symbol": "E_{\\text{ionization}}",
+          "description": "Energia de ionização do nível do dopante, referida ao vácuo ou à borda da banda"
+        },
+        {
+          "symbol": "E_{\\text{band edge}}",
+          "description": "Energia da borda da banda de condução (E_C) para doadores, ou da banda de valência (E_V) para aceitadores"
+        },
+        {
+          "symbol": "E_{D}",
+          "description": "Nível de energia do doador, localizado abaixo de E_C por E_B (para dopantes rasos)"
+        },
+        {
+          "symbol": "E_{A}",
+          "description": "Nível de energia do aceitador, localizado acima de E_V por E_B (para dopantes rasos)"
+        },
+        {
+          "symbol": "m^{*}",
+          "description": "Massa efetiva do portador no semicondutor, usada no cálculo hidrogenoide de E_B"
+        },
+        {
+          "symbol": "\\varepsilon_{r}",
+          "description": "Constante dielétrica relativa do semicondutor, que reduz a energia de ligação em relação ao átomo de hidrogênio"
+        },
+        {
+          "symbol": "k_{B}T",
+          "description": "Energia térmica à temperatura T, usada para comparar com E_B e determinar o grau de ionização"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "impurity-levels",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "binding energy",
+        "dopant",
+        "donor",
+        "acceptor",
+        "impurity",
+        "ionization",
+        "shallow level",
+        "deep level",
+        "doping",
+        "band",
+        "conduction",
+        "valence",
+        "carrier",
+        "effective-mass",
+        "hydrogen model",
+        "dielectric constant",
+        "energy level",
+        "semiconductor"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "conduction band edge E_C",
+          "valence band edge E_V",
+          "donor level E_D",
+          "acceptor level E_A",
+          "binding energy E_B",
+          "bandgap E_g",
+          "Fermi level E_F"
+        ]
+      },
+      "relatedFormulas": [
+        "Bohr-hydrogen-model",
+        "effective-mass-approximation",
+        "Fermi-Dirac-distribution",
+        "ionization-fraction-dopant",
+        "carrier-concentration-intrinsic",
+        "charge-neutrality-condition",
+        "shallow-donor-energy",
+        "deep-level-recombination-Shockley-Read-Hall"
+      ]
+    },
+    {
+      "originalFormula": "E_{c} = \\text{lowest possible conduction band energy}",
+      "genericFormula": "E_{c}",
+      "description": "E_c representa a energia mínima da banda de condução em um semicondutor ou isolante. É o nível de energia mais baixo que um elétron pode ocupar na banda de condução, ou seja, a borda inferior da banda de condução. Este parâmetro é fundamental para determinar o gap de energia (E_g = E_c - E_v), a posição do nível de Fermi, a concentração de portadores e as propriedades de transporte do material. Em diagramas de banda de energia, E_c é representado como uma linha horizontal que define o limite inferior da banda de condução. Em heteroestruturas e dispositivos, variações espaciais de E_c determinam barreiras de potencial e poços quânticos para elétrons.",
+      "concepts": [
+        "banda de condução",
+        "gap de energia",
+        "borda de banda",
+        "estrutura de bandas",
+        "semicondutores",
+        "níveis de energia",
+        "diagrama de bandas",
+        "heteroestrutura",
+        "barreira de potencial",
+        "elétrons livres"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{c}",
+          "description": "Energia mínima da banda de condução (borda inferior da banda de condução), em elétron-volts (eV) ou Joules (J)"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "band-structure",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "conduction",
+        "band",
+        "energy",
+        "gap",
+        "level",
+        "state",
+        "semiconductor",
+        "edge",
+        "barrier",
+        "electron"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "energy",
+          "position",
+          "band-edge"
+        ]
+      },
+      "relatedFormulas": [
+        "E_v (valence band edge)",
+        "E_g = E_c - E_v (bandgap)",
+        "E_F (Fermi level)",
+        "n = N_c * exp(-(E_c - E_F)/kT)",
+        "N_c (effective density of states in conduction band)"
+      ]
+    },
+    {
+      "originalFormula": "E_{D} = \\text{donor energy level}",
+      "genericFormula": "E_{D}",
+      "description": "O nível de energia do doador (E_D) representa a energia associada aos átomos doadores introduzidos em um semicondutor do tipo n. Quando um átomo pentavalente (como fósforo ou arsênio) é substituído em uma rede cristalina de silício, ele possui um elétron extra fracamente ligado ao núcleo. Esse elétron ocupa um estado de energia discreto localizado logo abaixo da banda de condução, chamado de nível doador. A diferença entre E_D e a borda inferior da banda de condução E_C é chamada de energia de ionização do doador (E_C - E_D ≈ 10–50 meV em silício), que é pequena o suficiente para que os elétrons sejam termicamente excitados para a banda de condução à temperatura ambiente. Esse conceito é fundamental para entender a dopagem do tipo n e o controle da concentração de portadores majoritários em dispositivos semicondutores.",
+      "concepts": [
+        "nível de energia doador",
+        "dopagem tipo n",
+        "ionização de impurezas",
+        "energia de ativação",
+        "semicondutor extrinseco",
+        "banda de condução",
+        "estados localizados",
+        "impurezas rasas"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{D}",
+          "description": "Nível de energia do doador, localizado abaixo da banda de condução no diagrama de bandas de energia"
+        },
+        {
+          "symbol": "E_{C}",
+          "description": "Energia da borda inferior da banda de condução"
+        },
+        {
+          "symbol": "E_{C} - E_{D}",
+          "description": "Energia de ionização do doador, tipicamente entre 10 e 50 meV para impurezas rasas em silício"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "impurity-levels",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "donor",
+        "energy",
+        "level",
+        "band",
+        "conduction",
+        "doping",
+        "n-type",
+        "impurity",
+        "ionization",
+        "activation-energy",
+        "shallow-level",
+        "extrinsic-semiconductor",
+        "carrier",
+        "state"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "energy",
+          "donor-level",
+          "conduction-band-edge",
+          "valence-band-edge",
+          "Fermi-level",
+          "ionization-energy"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac",
+        "carrier-concentration-n-type",
+        "ionization-fraction",
+        "E_C-band-edge",
+        "E_F-Fermi-level",
+        "charge-neutrality",
+        "Bohr-model-impurity"
+      ]
+    },
+    {
+      "originalFormula": "E_{F} = \\text{Fermi energy or Fermi level}",
+      "genericFormula": "E_{F}",
+      "description": "O nível de Fermi (E_F) é um dos conceitos mais fundamentais na física de semicondutores e na mecânica estatística quântica. Ele representa o potencial químico dos elétrons a temperatura zero absoluto (0 K), ou seja, é a energia máxima que um elétron pode possuir em um sistema de férmions no estado fundamental. Em termos estatísticos, E_F é o valor de energia para o qual a função de distribuição de Fermi-Dirac assume o valor de 1/2 (50% de probabilidade de ocupação) a qualquer temperatura finita. Em semicondutores, a posição do nível de Fermi dentro do diagrama de bandas de energia é um indicador crucial do tipo de dopagem: em semicondutores tipo-n, E_F se desloca para próximo da banda de condução; em tipo-p, aproxima-se da banda de valência; e em semicondutores intrínsecos, E_F situa-se próximo ao meio do gap de energia. O nível de Fermi é invariante ao longo de um dispositivo em equilíbrio termodinâmico, sendo uma condição de contorno essencial na análise de junções p-n, transistores e outros dispositivos semicondutores.",
+      "concepts": [
+        "Nível de Fermi",
+        "Energia de Fermi",
+        "Potencial químico",
+        "Distribuição de Fermi-Dirac",
+        "Equilíbrio termodinâmico",
+        "Estatística de Fermi-Dirac",
+        "Férmions",
+        "Princípio de exclusão de Pauli",
+        "Bandas de energia",
+        "Semicondutores intrínsecos e extrínsecos"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{F}",
+          "description": "Energia de Fermi ou Nível de Fermi: energia do potencial químico dos elétrons, definida como a energia para a qual a probabilidade de ocupação é 1/2 na distribuição de Fermi-Dirac"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-statistics",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "Fermi",
+        "Fermi level",
+        "Fermi energy",
+        "energy",
+        "chemical potential",
+        "equilibrium",
+        "band",
+        "distribution",
+        "Fermi-Dirac",
+        "carrier",
+        "state",
+        "occupation",
+        "semiconductor",
+        "doping",
+        "concentration"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "energy",
+          "band-gap",
+          "conduction-band",
+          "valence-band",
+          "Fermi-level-position",
+          "doping-type"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac distribution",
+        "Intrinsic Fermi level",
+        "Carrier concentration",
+        "Boltzmann approximation",
+        "Quasi-Fermi level",
+        "Built-in potential",
+        "Density of states"
+      ]
+    },
+    {
+      "originalFormula": "E_{G} = \\text{band gap or forbidden gap energy}",
+      "genericFormula": "E_{G} = E_{C} - E_{V}",
+      "description": "O band gap (ou gap de energia proibida) é a diferença de energia entre o mínimo da banda de condução (E_C) e o máximo da banda de valência (E_V). Representa a energia mínima necessária para que um elétron seja promovido da banda de valência para a banda de condução, tornando-se um portador livre. É um parâmetro fundamental que determina as propriedades elétricas e ópticas de um semicondutor: materiais com E_G pequeno (ex: Ge ≈ 0,67 eV) são mais condutores, enquanto materiais com E_G grande (ex: GaN ≈ 3,4 eV) se aproximam de isolantes. Em temperatura ambiente, a energia térmica k_BT ≈ 0,026 eV é muito menor que o band gap típico, exigindo dopagem ou excitação óptica para geração de portadores.",
+      "concepts": [
+        "band gap",
+        "energia proibida",
+        "banda de condução",
+        "banda de valência",
+        "semicondutor",
+        "isolante",
+        "transição eletrônica",
+        "estrutura de bandas",
+        "geração de portadores",
+        "excitação óptica"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{G}",
+          "description": "Energia do band gap (gap de energia proibida), diferença entre o mínimo da banda de condução e o máximo da banda de valência, geralmente expressa em elétron-volts (eV)"
+        },
+        {
+          "symbol": "E_{C}",
+          "description": "Energia do mínimo da banda de condução (conduction band edge)"
+        },
+        {
+          "symbol": "E_{V}",
+          "description": "Energia do máximo da banda de valência (valence band edge)"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "band-structure",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "band gap",
+        "forbidden gap",
+        "energy gap",
+        "conduction band",
+        "valence band",
+        "band",
+        "energy",
+        "semiconductor",
+        "bandgap",
+        "transition",
+        "state",
+        "level"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "energy",
+          "position",
+          "conduction band edge",
+          "valence band edge",
+          "band gap"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac distribution",
+        "carrier concentration intrinsic",
+        "effective density of states",
+        "Planck photon energy",
+        "Varshni equation",
+        "np product mass action law"
+      ]
+    },
+    {
+      "originalFormula": "E_{H} = \\text{electron binding energy within the hydrogen atom}",
+      "genericFormula": "E_{H} = -\\frac{m_e e^4}{2(4\\pi\\varepsilon_0)^2 \\hbar^2} = -13.6 \\text{ eV}",
+      "description": "A energia de ligação do elétron no átomo de hidrogênio representa a energia necessária para remover o elétron do estado fundamental (n=1) do átomo de hidrogênio, liberando-o para o infinito com energia cinética nula. Esse valor, aproximadamente -13,6 eV, é derivado a partir da solução da equação de Schrödinger para o potencial coulombiano central. A energia negativa indica que o sistema elétron-próton é um estado ligado. Este valor serve como unidade de referência fundamental em física atômica e é denominado 1 Rydberg (Ry) = 13,6 eV. Em semicondutores, esta energia é usada como parâmetro de escala para calcular a energia de ionização de impurezas rasas (modelo do éxciton ou hidrogenóide), onde a massa efetiva do portador e a constante dielétrica do material substituem os valores do elétron livre e do vácuo.",
+      "concepts": [
+        "energia de ligação",
+        "estado fundamental",
+        "potencial coulombiano",
+        "modelo hidrogenóide",
+        "átomo de hidrogênio",
+        "equação de Schrödinger",
+        "energia de ionização",
+        "Rydberg",
+        "nível de energia atômico",
+        "impurezas rasas em semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{H}",
+          "description": "Energia de ligação do elétron no estado fundamental do átomo de hidrogênio, igual a -13,6 eV"
+        },
+        {
+          "symbol": "m_e",
+          "description": "Massa de repouso do elétron livre, aproximadamente 9,109 × 10⁻³¹ kg"
+        },
+        {
+          "symbol": "e",
+          "description": "Carga elementar do elétron, aproximadamente 1,602 × 10⁻¹⁹ C"
+        },
+        {
+          "symbol": "\\varepsilon_0",
+          "description": "Permissividade elétrica do vácuo, aproximadamente 8,854 × 10⁻¹² F/m"
+        },
+        {
+          "symbol": "\\hbar",
+          "description": "Constante de Planck reduzida (h/2π), aproximadamente 1,055 × 10⁻³⁴ J·s"
+        },
+        {
+          "symbol": "n",
+          "description": "Número quântico principal, inteiro positivo (n = 1, 2, 3, ...), que define o nível de energia"
+        }
+      ],
+      "taxonomy": {
+        "category": "quantum-physics",
+        "subcategory": "energy-levels",
+        "domain": "atomic-physics"
+      },
+      "keywords": [
+        "energy",
+        "binding-energy",
+        "hydrogen",
+        "level",
+        "atomic",
+        "ground-state",
+        "Rydberg",
+        "ionization",
+        "coulomb",
+        "hydrogenic",
+        "impurity",
+        "semiconductor",
+        "state",
+        "transition",
+        "effective-mass"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-levels",
+        "graphParameters": [
+          "energy (eV)",
+          "principal quantum number n",
+          "ionization threshold"
+        ]
+      },
+      "relatedFormulas": [
+        "Schrodinger-equation",
+        "Bohr-model-energy-levels",
+        "hydrogenic-impurity-energy",
+        "Rydberg-constant",
+        "effective-mass-approximation",
+        "Fermi-Dirac-distribution",
+        "donor-acceptor-ionization-energy"
+      ]
+    },
+    {
+      "originalFormula": "E_{I} = \\text{intrinsic Fermi level}",
+      "genericFormula": "E_{I} = \\frac{E_{c} + E_{v}}{2} + \\frac{k_{B}T}{2} \\ln\\left(\\frac{N_{v}}{N_{c}}\\right)",
+      "description": "O nível de Fermi intrínseco (E_I) representa o nível de energia de Fermi em um semicondutor puro (intrínseco), sem dopagem. Ele indica a posição do nível de Fermi quando as concentrações de elétrons e buracos são iguais (n = p = n_i). Em temperatura zero absoluto, E_I estaria exatamente no meio do gap de energia entre as bandas de condução e valência. A temperaturas finitas, E_I se desloca ligeiramente do centro do gap devido à diferença nas massas efetivas dos elétrons e buracos, representada pela razão entre as densidades de estados efetivas N_v e N_c. Para a maioria dos semicondutores comuns como o Si, esse deslocamento é pequeno e E_I é frequentemente aproximado como o ponto médio do gap. O nível intrínseco de Fermi é uma referência fundamental para descrever o efeito de dopantes e calcular as concentrações de portadores em semicondutores extrínsecos.",
+      "concepts": [
+        "nível de Fermi",
+        "semicondutor intrínseco",
+        "gap de energia",
+        "densidade de estados efetiva",
+        "massa efetiva",
+        "concentração intrínseca de portadores",
+        "equilíbrio termodinâmico",
+        "estatística de Fermi-Dirac",
+        "banda de condução",
+        "banda de valência"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{I}",
+          "description": "Nível de Fermi intrínseco: energia de Fermi no semicondutor puro onde n = p = n_i"
+        },
+        {
+          "symbol": "E_{c}",
+          "description": "Energia da borda inferior da banda de condução"
+        },
+        {
+          "symbol": "E_{v}",
+          "description": "Energia da borda superior da banda de valência"
+        },
+        {
+          "symbol": "k_{B}",
+          "description": "Constante de Boltzmann: k_B = 1,381 × 10⁻²³ J/K"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta em Kelvin"
+        },
+        {
+          "symbol": "N_{v}",
+          "description": "Densidade efetiva de estados na banda de valência"
+        },
+        {
+          "symbol": "N_{c}",
+          "description": "Densidade efetiva de estados na banda de condução"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "energy-levels",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "energy",
+        "Fermi",
+        "intrinsic",
+        "band",
+        "gap",
+        "level",
+        "state",
+        "carrier",
+        "concentration",
+        "semiconductor",
+        "conduction",
+        "valence",
+        "effective-mass",
+        "distribution",
+        "Fermi-Dirac",
+        "equilibrium"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "energy",
+          "band-gap",
+          "E_c",
+          "E_v",
+          "E_I",
+          "temperature"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac-distribution",
+        "intrinsic-carrier-concentration",
+        "electron-concentration",
+        "hole-concentration",
+        "density-of-states",
+        "effective-density-of-states-conduction",
+        "effective-density-of-states-valence",
+        "np-product",
+        "Boltzmann-approximation"
+      ]
+    },
+    {
+      "originalFormula": "E_{T} = \\text{trap or R-G center energy level}",
+      "genericFormula": "E_{T}",
+      "description": "E_T representa o nível de energia de uma armadilha (trap) ou centro de recombinação-geração (R-G center) dentro do gap de energia de um semicondutor. Esses centros são estados de energia localizados dentro do gap proibido, introduzidos por impurezas, defeitos cristalinos ou centros de recombinação intencionais. Eles atuam como intermediários no processo de recombinação e geração de portadores de carga: um elétron da banda de condução pode ser capturado pelo centro, seguido pela captura de um buraco da banda de valência, resultando em recombinação não-radiativa. A posição de E_T dentro do gap determina a eficiência do processo — centros próximos ao meio do gap (E_i) são os mais eficientes como centros R-G, conforme descrito pelo modelo de Shockley-Read-Hall (SRH). Este parâmetro é fundamental para análise de tempo de vida de portadores minoritários e correntes de fuga em dispositivos.",
+      "concepts": [
+        "nível de armadilha",
+        "centro de recombinação-geração",
+        "recombinação Shockley-Read-Hall (SRH)",
+        "gap de energia proibido",
+        "estados localizados no gap",
+        "defeitos cristalinos",
+        "captura de portadores",
+        "tempo de vida de portadores minoritários",
+        "recombinação não-radiativa",
+        "geração térmica"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{T}",
+          "description": "Nível de energia da armadilha ou centro de recombinação-geração, localizado dentro do gap de energia proibido do semicondutor (em elétron-volts, eV)"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "recombination-generation",
+        "domain": "defect-physics"
+      },
+      "keywords": [
+        "trap",
+        "energy",
+        "level",
+        "recombination",
+        "generation",
+        "R-G center",
+        "Shockley-Read-Hall",
+        "SRH",
+        "gap",
+        "defect",
+        "carrier",
+        "lifetime",
+        "non-radiative",
+        "impurity",
+        "band"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "energy",
+          "band-gap",
+          "trap-level",
+          "conduction-band",
+          "valence-band",
+          "intrinsic-level"
+        ]
+      },
+      "relatedFormulas": [
+        "Shockley-Read-Hall recombination rate",
+        "minority carrier lifetime (SRH)",
+        "E_i (intrinsic energy level)",
+        "E_c (conduction band edge)",
+        "E_v (valence band edge)",
+        "carrier capture cross-section",
+        "net recombination rate U"
+      ]
+    },
+    {
+      "originalFormula": "E_{v} = \\text{highest possible valence band energy}",
+      "genericFormula": "E_{v}",
+      "description": "E_v representa a energia do topo da banda de valência em um semicondutor ou isolante. É o nível de energia mais alto que um elétron pode ocupar na banda de valência a temperatura zero absoluto (0 K). Este parâmetro é fundamental para determinar o gap de energia (E_g = E_c - E_v), onde E_c é a energia do fundo da banda de condução. O topo da banda de valência serve como referência para calcular a energia de ionização, afinidade eletrônica e posição do nível de Fermi. Em semicondutores tipo-p, o nível de Fermi se aproxima de E_v, indicando maior concentração de lacunas (holes). A posição de E_v no diagrama de bandas é essencial para análise de heterojunções, dispositivos MOS e fotovoltaicos.",
+      "concepts": [
+        "banda de valência",
+        "estrutura de bandas",
+        "gap de energia",
+        "semicondutor",
+        "nível de energia",
+        "lacunas (holes)",
+        "diagrama de bandas",
+        "temperatura zero absoluto"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{v}",
+          "description": "Energia do topo da banda de valência — o nível de energia máximo permitido para elétrons na banda de valência"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "band-structure",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "energy",
+        "band",
+        "valence",
+        "gap",
+        "state",
+        "level",
+        "hole",
+        "Fermi",
+        "semiconductor",
+        "band-edge"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "energy",
+          "position",
+          "band-gap",
+          "valence-band-edge",
+          "conduction-band-edge"
+        ]
+      },
+      "relatedFormulas": [
+        "E_c (conduction band minimum)",
+        "E_g = E_c - E_v (band gap energy)",
+        "E_i (intrinsic Fermi level)",
+        "E_F (Fermi level)",
+        "n_i (intrinsic carrier concentration)",
+        "Fermi-Dirac distribution"
+      ]
+    },
+    {
+      "originalFormula": "f(E) = \\text{Fermi function}",
+      "genericFormula": "f(E) = \\frac{1}{1 + e^{\\frac{E - E_F}{k_B T}}}",
+      "description": "A função de Fermi-Dirac descreve a probabilidade de um estado quântico de energia E estar ocupado por um férmion (como um elétron) em equilíbrio termodinâmico. É fundamental na física de semicondutores e metais, pois governa a distribuição dos elétrons entre os estados de energia disponíveis. Quando E = E_F (energia de Fermi), a probabilidade de ocupação é exatamente 1/2, independentemente da temperatura. A T = 0 K, a função assume um degrau perfeito: todos os estados abaixo de E_F estão completamente ocupados (f = 1) e todos acima estão completamente vazios (f = 0). Para temperaturas finitas, a transição se suaviza em torno de E_F numa faixa de energia da ordem de k_B T. Em semicondutores, quando E_F está a vários k_B T de distância da banda de condução ou de valência, a função de Fermi-Dirac se aproxima da distribuição de Boltzmann, simplificando os cálculos de concentração de portadores.",
+      "concepts": [
+        "Distribuição de Fermi-Dirac",
+        "Princípio de exclusão de Pauli",
+        "Energia de Fermi",
+        "Equilíbrio termodinâmico",
+        "Estatística quântica",
+        "Férmions",
+        "Probabilidade de ocupação",
+        "Aproximação de Boltzmann",
+        "Potencial químico"
+      ],
+      "symbols": [
+        {
+          "symbol": "f(E)",
+          "description": "Probabilidade de ocupação de um estado quântico de energia E por um elétron (valor entre 0 e 1)"
+        },
+        {
+          "symbol": "E",
+          "description": "Energia do estado quântico considerado (em Joules ou eV)"
+        },
+        {
+          "symbol": "E_F",
+          "description": "Nível de Fermi (ou potencial químico): energia para a qual a probabilidade de ocupação é exatamente 1/2"
+        },
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann: k_B = 1,381 × 10⁻²³ J/K = 8,617 × 10⁻⁵ eV/K"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta do sistema em equilíbrio termodinâmico (em Kelvin)"
+        },
+        {
+          "symbol": "k_B T",
+          "description": "Energia térmica: escala de energia que determina a largura da transição em torno de E_F (~0,026 eV a 300 K)"
+        },
+        {
+          "symbol": "e",
+          "description": "Base do logaritmo natural (número de Euler), e ≈ 2,718"
+        }
+      ],
+      "taxonomy": {
+        "category": "quantum-physics",
+        "subcategory": "statistical-distribution",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "Fermi-Dirac",
+        "distribution",
+        "energy",
+        "Fermi",
+        "level",
+        "occupation",
+        "probability",
+        "carrier",
+        "concentration",
+        "electron",
+        "state",
+        "temperature",
+        "equilibrium",
+        "band",
+        "semiconductor",
+        "Boltzmann"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "occupation-probability",
+        "graphParameters": [
+          "energy",
+          "occupation-probability",
+          "temperature",
+          "Fermi-level"
+        ]
+      },
+      "relatedFormulas": [
+        "Boltzmann-approximation",
+        "Bose-Einstein-distribution",
+        "carrier-concentration-electrons",
+        "carrier-concentration-holes",
+        "density-of-states",
+        "intrinsic-carrier-concentration",
+        "Maxwell-Boltzmann"
+      ]
+    },
+    {
+      "originalFormula": "F_{N} = \\text{quasi-Fermi level (or energy) for electrons}",
+      "genericFormula": "F_{N}",
+      "description": "O nível quasi-Fermi para elétrons (F_N) é um conceito fundamental em semicondutores fora do equilíbrio termodinâmico. Em equilíbrio, todos os portadores são descritos por um único nível de Fermi E_F. Quando o semicondutor é perturbado — por exemplo, por iluminação, injeção de corrente ou campo elétrico aplicado — o sistema sai do equilíbrio e as populações de elétrons e buracos deixam de ser descritas por um único nível de Fermi. Nessa situação, define-se um nível quasi-Fermi separado para cada tipo de portador: F_N para elétrons na banda de condução e F_P para buracos na banda de valência. O nível F_N descreve a distribuição estatística dos elétrons como se eles estivessem em equilíbrio interno entre si, mas não com os buracos. A diferença entre F_N e F_P é diretamente proporcional à tensão aplicada em uma junção p-n e representa a energia disponível para realizar trabalho elétrico. Quanto maior a injeção de portadores, maior a separação entre F_N e F_P.",
+      "concepts": [
+        "nível quasi-Fermi",
+        "desequilíbrio termodinâmico",
+        "portadores minoritários e majoritários",
+        "estatística de Fermi-Dirac fora do equilíbrio",
+        "injeção de portadores",
+        "separação dos níveis quasi-Fermi",
+        "junção p-n sob polarização",
+        "geração óptica de portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "F_{N}",
+          "description": "Nível quasi-Fermi para elétrons (também denotado E_{Fn} ou \\mu_n): representa o pseudopotencial químico dos elétrons na banda de condução em condições de não equilíbrio"
+        },
+        {
+          "symbol": "F_{P}",
+          "description": "Nível quasi-Fermi para buracos (análogo a F_N para portadores positivos na banda de valência)"
+        },
+        {
+          "symbol": "E_{F}",
+          "description": "Nível de Fermi em equilíbrio termodinâmico, ao qual F_N e F_P convergem quando o sistema retorna ao equilíbrio"
+        },
+        {
+          "symbol": "F_{N} - F_{P}",
+          "description": "Separação entre os níveis quasi-Fermi, equivalente à tensão aplicada multiplicada pela carga elementar (qV) em uma junção p-n polarizada"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-statistics",
+        "domain": "device-physics"
+      },
+      "keywords": [
+        "quasi-Fermi",
+        "Fermi level",
+        "non-equilibrium",
+        "carrier",
+        "electron",
+        "energy",
+        "distribution",
+        "Fermi-Dirac",
+        "injection",
+        "junction",
+        "band",
+        "conduction",
+        "recombination",
+        "generation",
+        "optical excitation",
+        "minority carrier"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "position",
+          "energy",
+          "conduction band edge",
+          "valence band edge",
+          "quasi-Fermi level electrons",
+          "quasi-Fermi level holes",
+          "carrier concentration"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac distribution",
+        "electron concentration n = N_c exp((F_N - E_c)/kT)",
+        "hole concentration p = N_v exp((E_v - F_P)/kT)",
+        "quasi-Fermi level for holes F_P",
+        "pn product under non-equilibrium",
+        "continuity equation for electrons",
+        "drift-diffusion current equation"
+      ]
+    },
+    {
+      "originalFormula": "F_{P} = \\text{quasi-Fermi level (or energy) for holes}",
+      "genericFormula": "F_{P}",
+      "description": "O nível quasi-Fermi para lacunas (F_P) é um conceito fundamental em semicondutores fora do equilíbrio termodinâmico. Em equilíbrio, elétrons e lacunas compartilham um único nível de Fermi E_F. Quando o semicondutor é perturbado — por iluminação, injeção de portadores ou campo elétrico — as populações de elétrons e lacunas deixam de estar em equilíbrio mútuo, e cada tipo de portador passa a ser descrito por seu próprio nível quasi-Fermi. F_P representa o nível quasi-Fermi das lacunas, ou seja, o pseudopotencial eletroquímico que descreve a distribuição estatística das lacunas na banda de valência sob condições de não equilíbrio. A concentração de lacunas é dada por p = N_v \\exp\\left(\\frac{F_P - E_v}{k_B T}\\right)^{-1} ou, na aproximação de Maxwell-Boltzmann, p \\approx N_v \\exp\\left(\\frac{E_v - F_P}{k_B T}\\right). Quanto mais F_P se afasta de E_v em direção à banda de valência, maior a concentração de lacunas. O conceito de nível quasi-Fermi é essencial para análise de dispositivos fotovoltaicos, LEDs, fotodetectores e transistores bipolares.",
+      "concepts": [
+        "nível quasi-Fermi",
+        "não equilíbrio termodinâmico",
+        "lacunas (holes)",
+        "estatística de Fermi-Dirac",
+        "pseudopotencial eletroquímico",
+        "semicondutores",
+        "geração e recombinação de portadores",
+        "banda de valência",
+        "potencial eletroquímico de portadores minoritários"
+      ],
+      "symbols": [
+        {
+          "symbol": "F_{P}",
+          "description": "Nível quasi-Fermi para lacunas — pseudopotencial eletroquímico que descreve a distribuição estatística das lacunas fora do equilíbrio termodinâmico"
+        },
+        {
+          "symbol": "E_v",
+          "description": "Energia do topo da banda de valência"
+        },
+        {
+          "symbol": "N_v",
+          "description": "Densidade efetiva de estados na banda de valência"
+        },
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann (aproximadamente 8,617 × 10⁻⁵ eV/K)"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta em Kelvin"
+        },
+        {
+          "symbol": "p",
+          "description": "Concentração de lacunas fora do equilíbrio"
+        },
+        {
+          "symbol": "E_F",
+          "description": "Nível de Fermi em equilíbrio termodinâmico (único nível compartilhado por elétrons e lacunas em equilíbrio)"
+        },
+        {
+          "symbol": "F_N",
+          "description": "Nível quasi-Fermi para elétrons (contraparte de F_P para elétrons de condução)"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-statistics",
+        "domain": "device-physics"
+      },
+      "keywords": [
+        "quasi-Fermi",
+        "holes",
+        "lacunas",
+        "non-equilibrium",
+        "Fermi level",
+        "carrier",
+        "valence band",
+        "distribution",
+        "Fermi-Dirac",
+        "concentration",
+        "photovoltaic",
+        "recombination",
+        "generation",
+        "minority carrier",
+        "electrochemical potential"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "posição espacial (x)",
+          "energia (E)",
+          "nível quasi-Fermi para lacunas (F_P)",
+          "nível quasi-Fermi para elétrons (F_N)",
+          "banda de condução (E_c)",
+          "banda de valência (E_v)"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac distribution",
+        "quasi-Fermi level for electrons (F_N)",
+        "carrier concentration (p)",
+        "Shockley-Read-Hall recombination",
+        "continuity equation for holes",
+        "semiconductor drift-diffusion equations",
+        "law of mass action",
+        "Boltzmann approximation"
+      ]
+    },
+    {
+      "originalFormula": "F_{1/2}(\\eta) = \\text{Fermi-Dirac integral of order } 1/2",
+      "genericFormula": "F_{j}(\\eta) = \\int_0^{\\infty} \\frac{\\varepsilon^{j}}{1 + e^{\\varepsilon - \\eta}} d\\varepsilon",
+      "description": "A integral de Fermi-Dirac de ordem 1/2, denotada F_{1/2}(η), é uma função especial fundamental na física de semicondutores. Ela aparece naturalmente no cálculo da densidade de portadores (elétrons ou buracos) em semicondutores, levando em conta a estatística quântica de Fermi-Dirac para férmions. O argumento η = (E_F - E_c) / k_B T é o potencial químico reduzido (nível de Fermi normalizado), onde E_F é o nível de Fermi, E_c é a borda da banda de condução, k_B é a constante de Boltzmann e T é a temperatura. Para η << -1 (regime não-degenerado), F_{1/2}(η) ≈ (√π/2) e^η, recuperando a estatística de Maxwell-Boltzmann. Para η >> 1 (regime fortemente degenerado), F_{1/2}(η) ≈ (2/3) η^{3/2}, comportamento típico de metais. Esta integral não possui forma fechada analítica em geral e requer avaliação numérica ou aproximações, sendo central no cálculo da concentração de elétrons na banda de condução: n = N_c · (2/√π) · F_{1/2}(η).",
+      "concepts": [
+        "Estatística de Fermi-Dirac",
+        "Férmions",
+        "Nível de Fermi",
+        "Degenerescência de portadores",
+        "Concentração de elétrons",
+        "Aproximação de Boltzmann",
+        "Integrais especiais",
+        "Densidade de estados",
+        "Semicondutores degenerados",
+        "Potencial químico reduzido"
+      ],
+      "symbols": [
+        {
+          "symbol": "F_{1/2}(\\eta)",
+          "description": "Integral de Fermi-Dirac de ordem 1/2 avaliada no argumento η"
+        },
+        {
+          "symbol": "j",
+          "description": "Ordem da integral de Fermi-Dirac; j = 1/2 para cálculo de concentração de portadores em 3D"
+        },
+        {
+          "symbol": "\\eta",
+          "description": "Potencial químico reduzido (nível de Fermi normalizado): η = (E_F - E_c) / k_B T"
+        },
+        {
+          "symbol": "\\varepsilon",
+          "description": "Energia eletrônica reduzida (variável de integração): ε = (E - E_c) / k_B T"
+        },
+        {
+          "symbol": "E_F",
+          "description": "Nível de Fermi (energia de Fermi)"
+        },
+        {
+          "symbol": "E_c",
+          "description": "Energia da borda inferior da banda de condução"
+        },
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann: k_B ≈ 1.381 × 10⁻²³ J/K"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta em Kelvin"
+        },
+        {
+          "symbol": "N_c",
+          "description": "Densidade efetiva de estados na banda de condução"
+        },
+        {
+          "symbol": "n",
+          "description": "Concentração de elétrons na banda de condução (cm⁻³)"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-statistics",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "Fermi-Dirac",
+        "integral",
+        "carrier",
+        "concentration",
+        "distribution",
+        "energy",
+        "level",
+        "Fermi",
+        "degeneracy",
+        "band",
+        "conduction",
+        "density-of-states",
+        "statistics",
+        "semiconductor",
+        "electron"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "fermi-dirac-integral",
+        "graphParameters": [
+          "reduced-chemical-potential eta",
+          "F_{1/2} value",
+          "Boltzmann approximation",
+          "degenerate limit"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac distribution",
+        "carrier-concentration",
+        "effective-density-of-states",
+        "Joyce-Dixon approximation",
+        "Boltzmann approximation",
+        "density-of-states-3D",
+        "chemical-potential"
+      ]
+    },
+    {
+      "originalFormula": "g_{c}(E) = \\text{density of conduction band states}",
+      "genericFormula": "g_{c}(E) = \\frac{4\\pi (2m_{e}^{*})^{3/2}}{h^{3}} \\sqrt{E - E_{c}}",
+      "description": "A densidade de estados da banda de condução g_c(E) descreve o número de estados quânticos disponíveis por unidade de volume e por unidade de energia na banda de condução de um semicondutor. Esta função é fundamental para calcular a concentração de elétrons livres, pois determina quantos estados estão disponíveis para serem ocupados. A dependência de raiz quadrada em (E - E_c) é característica de um gás de elétrons tridimensional com massa efetiva m_e*. Para obter a concentração real de portadores, esta função é multiplicada pela distribuição de Fermi-Dirac e integrada sobre todas as energias acima de E_c. Em materiais 2D (como poços quânticos), a DOS torna-se escalonada; em materiais 1D (fios quânticos), diverge como uma raiz quadrada invertida; e em materiais 0D (pontos quânticos), torna-se uma série de funções delta de Dirac.",
+      "concepts": [
+        "densidade de estados",
+        "banda de condução",
+        "massa efetiva do elétron",
+        "estatística quântica",
+        "função de onda",
+        "modelo de banda parabólica",
+        "semicondutor",
+        "energia cinética dos elétrons",
+        "espaço k",
+        "modelo de elétron livre"
+      ],
+      "symbols": [
+        {
+          "symbol": "g_{c}(E)",
+          "description": "Densidade de estados da banda de condução: número de estados quânticos disponíveis por unidade de volume e por unidade de energia na banda de condução [estados/(eV·m³)]"
+        },
+        {
+          "symbol": "E",
+          "description": "Energia do elétron [eV ou J], variável independente da função densidade de estados"
+        },
+        {
+          "symbol": "E_{c}",
+          "description": "Energia da borda inferior da banda de condução [eV ou J]; g_c(E) = 0 para E < E_c"
+        },
+        {
+          "symbol": "m_{e}^{*}",
+          "description": "Massa efetiva do elétron no semicondutor [kg], que incorpora os efeitos da estrutura periódica do cristal; tipicamente m_e* ≈ 0,067 m_0 para GaAs"
+        },
+        {
+          "symbol": "h",
+          "description": "Constante de Planck [J·s], h = 6,626 × 10⁻³⁴ J·s; em algumas formulações usa-se ℏ = h/(2π)"
+        },
+        {
+          "symbol": "\\sqrt{E - E_{c}}",
+          "description": "Fator de dependência energética, característica de DOS 3D parabólica; representa a raiz quadrada do excesso de energia acima da borda da banda"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "density-of-states",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "density-of-states",
+        "conduction-band",
+        "energy",
+        "band",
+        "effective-mass",
+        "carrier",
+        "concentration",
+        "state",
+        "band-structure",
+        "electron",
+        "parabolic-band",
+        "quantum-state",
+        "semiconductor"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "density-of-states",
+        "graphParameters": [
+          "energy",
+          "density-of-states",
+          "conduction-band-edge",
+          "effective-mass",
+          "temperature"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac-distribution",
+        "electron-concentration",
+        "valence-band-DOS",
+        "effective-density-of-states-Nc",
+        "carrier-concentration-intrinsic",
+        "Schrodinger-equation",
+        "k-space-density-of-states",
+        "2D-density-of-states-quantum-well"
+      ]
+    },
+    {
+      "originalFormula": "G_{L} = \\text{photogeneration rate; number of electron-hole pairs created per cm}^{3}\\text{-sec}",
+      "genericFormula": "G_{L} = \\frac{\\Delta n}{\\Delta t} = \\frac{\\Delta p}{\\Delta t}",
+      "description": "A taxa de fotogeração G_L representa o número de pares elétron-buraco criados por unidade de volume por unidade de tempo em um semicondutor sob iluminação. Quando fótons com energia suficiente (hν ≥ E_g) incidem sobre o material, eles são absorvidos e promovem elétrons da banda de valência para a banda de condução, criando simultaneamente um buraco na banda de valência. Esse processo é fundamental para o funcionamento de dispositivos optoeletrônicos como células solares, fotodetectores e LEDs operados em modo de detecção. A taxa G_L depende da intensidade da luz incidente, do coeficiente de absorção do material (α) e do perfil espacial da irradiância ao longo do semicondutor, tipicamente descrito pela Lei de Beer-Lambert. Em regime estacionário, G_L é balanceado pela taxa de recombinação, determinando o excesso de portadores minority no material.",
+      "concepts": [
+        "fotogeração de portadores",
+        "absorção de fótons",
+        "geração de pares elétron-buraco",
+        "excitação banda-a-banda",
+        "efeito fotovoltaico",
+        "Lei de Beer-Lambert",
+        "portadores minoritários em excesso",
+        "optoeletrônica"
+      ],
+      "symbols": [
+        {
+          "symbol": "G_{L}",
+          "description": "Taxa de fotogeração óptica: número de pares elétron-buraco gerados por cm³ por segundo devido à absorção de luz (unidades: cm⁻³·s⁻¹)"
+        },
+        {
+          "symbol": "\\Delta n",
+          "description": "Variação na concentração de elétrons em excesso gerados pela iluminação (cm⁻³)"
+        },
+        {
+          "symbol": "\\Delta p",
+          "description": "Variação na concentração de buracos em excesso gerados pela iluminação (cm⁻³)"
+        },
+        {
+          "symbol": "\\Delta t",
+          "description": "Intervalo de tempo considerado para a geração dos portadores (s)"
+        },
+        {
+          "symbol": "h\\nu",
+          "description": "Energia do fóton incidente, onde h é a constante de Planck e ν é a frequência da luz (eV ou J)"
+        },
+        {
+          "symbol": "E_g",
+          "description": "Energia de gap do semicondutor — condição necessária para absorção banda-a-banda: hν ≥ E_g (eV)"
+        },
+        {
+          "symbol": "\\alpha",
+          "description": "Coeficiente de absorção óptica do semicondutor, que determina a profundidade de penetração da luz no material (cm⁻¹)"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-generation-recombination",
+        "domain": "device-physics"
+      },
+      "keywords": [
+        "photogeneration",
+        "generation rate",
+        "electron-hole pair",
+        "optical absorption",
+        "carrier",
+        "minority carrier",
+        "photodetector",
+        "solar cell",
+        "band-to-band",
+        "photon",
+        "excess carrier",
+        "light"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "photon energy",
+          "absorption coefficient",
+          "generation rate vs depth",
+          "optical intensity vs position"
+        ]
+      },
+      "relatedFormulas": [
+        "Beer-Lambert absorption",
+        "continuity equation",
+        "minority carrier lifetime",
+        "excess carrier concentration",
+        "recombination rate",
+        "Shockley-Read-Hall recombination",
+        "photocurrent density"
+      ]
+    }
+  ],
+  "processedPages": [
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124
+  ],
+  "lastUpdated": "2026-05-09T17:49:30.727Z",
+  "bookTitle": "Modular Series On Solid State Devices",
+  "author": "Unknown"
+}

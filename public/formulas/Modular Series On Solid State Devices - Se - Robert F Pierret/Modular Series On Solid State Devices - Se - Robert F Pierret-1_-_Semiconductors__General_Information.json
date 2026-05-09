@@ -1,0 +1,652 @@
+{
+  "chapter": "1 - Semiconductors: General Information",
+  "section": "1.1.2 Purity / 1.1.3 Structure",
+  "questions": [
+    {
+      "number": "1.1",
+      "text": "The GaAs unit cell is pictured in Fig. 1.4(b). Describe (or sketch) the unit cell for Al_{0.5}Ga_{0.5}As.",
+      "formulas": []
+    },
+    {
+      "number": "1.2",
+      "text": "Given a lattice constant of a = 5.65 × 10^{-8} cm, determine the number of Ge atoms per cm³ at room temperature.",
+      "formulas": [
+        {
+          "originalFormula": "a = 5.65 \\times 10^{-8} \\text{ cm}",
+          "genericFormula": "a = d_{\\text{lattice}}",
+          "description": "Parâmetro de rede cristalina do Arseneto de Gálio (GaAs), com valor aproximado de 5,65 Å (ångströms) ou 5,65 × 10⁻⁸ cm. O parâmetro de rede representa a distância entre os átomos em uma célula unitária cúbica de face centrada (FCC) com base do tipo zincblende, estrutura adotada pelo GaAs. Esse valor é fundamental para o cálculo de densidades atômicas, estrutura de bandas e propriedades mecânicas do material. O GaAs é um semicondutor de gap direto amplamente utilizado em dispositivos optoeletrônicos, como LEDs e lasers.",
+          "concepts": [
+            "parâmetro de rede",
+            "estrutura cristalina zincblende",
+            "célula unitária cúbica de face centrada (FCC)",
+            "semicondutor III-V",
+            "arseneto de gálio (GaAs)",
+            "cristalografia",
+            "densidade atômica"
+          ],
+          "symbols": [
+            {
+              "symbol": "a",
+              "description": "Parâmetro de rede cristalina — distância característica da célula unitária cúbica do cristal"
+            },
+            {
+              "symbol": "5.65 \\times 10^{-8} \\text{ cm}",
+              "description": "Valor numérico do parâmetro de rede do GaAs em centímetros, equivalente a 5,65 Å (ångströms)"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "crystal-structure",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "lattice",
+            "lattice-parameter",
+            "crystal",
+            "GaAs",
+            "zincblende",
+            "FCC",
+            "unit-cell",
+            "atomic-density",
+            "semiconductor",
+            "III-V",
+            "band-structure"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "crystal-structure",
+            "graphParameters": [
+              "lattice constant",
+              "atomic positions",
+              "unit cell geometry"
+            ]
+          },
+          "relatedFormulas": [
+            "atomic-density",
+            "miller-indices",
+            "bragg-diffraction",
+            "band-structure-GaAs",
+            "effective-mass-GaAs"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "1.3",
+      "text": "In terms of the lattice constant a, what is the distance between nearest-neighbor atoms in (a) a bcc lattice? (b) an fcc lattice?",
+      "formulas": []
+    },
+    {
+      "number": "1.4",
+      "text": "The surface of a Si wafer is a (100) plane. (a) Sketch the placement of Si atoms on the surface of the wafer.",
+      "formulas": []
+    },
+    {
+      "number": "1.9",
+      "text": "Given a cubic lattice, indicate how many equivalent planes [parts (a) to (c)] or equivalent directions [parts (d) to (f)] are associated with each of the following designations: (a) {100}, (b) {110}, (c) {111}, (d) ⟨100⟩, (e) ⟨110⟩, (f) ⟨111⟩.",
+      "formulas": []
+    },
+    {
+      "number": "1.10",
+      "text": "Treating atoms as rigid spheres with radii equal to one-half the distance between nearest neighbors, show that the ratio of the volume occupied by the atoms to the total available volume in the various crystal structures is: (a) π/6 or 52% for the simple cubic lattice, (b) √3 π/8 or 68% for the body centered cubic lattice, (c) √2 π/6 or 74% for the face centered cubic lattice, (d) √3 π/16 or 34% for the diamond lattice.",
+      "formulas": [
+        {
+          "originalFormula": "\\frac{\\pi}{6} \\approx 52\\% \\text{ (simple cubic)}",
+          "genericFormula": "APF_{SC} = \\frac{\\frac{4}{3}\\pi r^3}{a^3} = \\frac{\\pi}{6} \\approx 0.52",
+          "description": "O Fator de Empacotamento Atômico (APF - Atomic Packing Factor) para a estrutura cúbica simples (Simple Cubic) representa a fração do volume total da célula unitária que é efetivamente ocupada pelos átomos. Na estrutura cúbica simples, há apenas 1 átomo por célula unitária (8 cantos × 1/8). O raio atômico r está relacionado ao parâmetro de rede a por r = a/2. Substituindo, o volume ocupado por um átomo é (4/3)πr³ = (4/3)π(a/2)³ = πa³/6, e o volume da célula unitária é a³, resultando em APF = π/6 ≈ 0.5236, ou seja, aproximadamente 52% do espaço é ocupado. Este é o menor APF entre as estruturas cristalinas metálicas, o que torna a estrutura cúbica simples relativamente incomum em metais (apenas o Polônio adota essa estrutura em condições normais). O restante (~48%) corresponde ao espaço vazio entre os átomos.",
+          "concepts": [
+            "Fator de Empacotamento Atômico (APF)",
+            "Estrutura Cristalina Cúbica Simples",
+            "Célula Unitária",
+            "Parâmetro de Rede",
+            "Raio Atômico",
+            "Empacotamento Cristalino",
+            "Geometria de Redes de Bravais"
+          ],
+          "symbols": [
+            {
+              "symbol": "APF",
+              "description": "Atomic Packing Factor — fração do volume da célula unitária ocupada pelos átomos"
+            },
+            {
+              "symbol": "r",
+              "description": "Raio atômico (m ou Å)"
+            },
+            {
+              "symbol": "a",
+              "description": "Parâmetro de rede — comprimento da aresta da célula unitária cúbica simples, onde a = 2r"
+            },
+            {
+              "symbol": "\\frac{\\pi}{6}",
+              "description": "Valor exato do APF para a estrutura cúbica simples, resultado da razão entre volume da esfera e volume do cubo"
+            },
+            {
+              "symbol": "\\frac{4}{3}\\pi r^3",
+              "description": "Volume de um átomo esférico de raio r"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "crystal-structure",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "atomic-packing-factor",
+            "APF",
+            "simple-cubic",
+            "crystal-structure",
+            "unit-cell",
+            "lattice-parameter",
+            "packing-efficiency",
+            "bravais-lattice",
+            "cubic",
+            "solid-state"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "crystal-structure",
+            "graphParameters": [
+              "lattice-parameter a",
+              "atomic-radius r",
+              "packing-fraction",
+              "unit-cell-volume",
+              "atomic-volume"
+            ]
+          },
+          "relatedFormulas": [
+            "APF-BCC",
+            "APF-FCC",
+            "APF-Diamond",
+            "APF-HCP",
+            "lattice-parameter-relation"
+          ]
+        },
+        {
+          "originalFormula": "\\frac{\\sqrt{3}\\,\\pi}{8} \\approx 68\\% \\text{ (body centered cubic)}",
+          "genericFormula": "APF_{BCC} = \\frac{\\sqrt{3}\\,\\pi}{8}",
+          "description": "O Fator de Empacotamento Atômico (APF - Atomic Packing Factor) para a estrutura cúbica de corpo centrado (BCC - Body Centered Cubic) representa a fração do volume total da célula unitária que é efetivamente ocupada pelos átomos. Na estrutura BCC, existem 2 átomos por célula unitária (1 no centro + 8 × 1/8 nos cantos). O raio atômico está relacionado ao parâmetro de rede por r = (√3/4)a, onde a é o lado da célula unitária. O APF de aproximadamente 68% indica que 68% do espaço na rede cristalina BCC é preenchido por átomos, sendo menos eficiente que o empacotamento FCC (74%) mas mais eficiente que o SC (52%). Esta estrutura é comum em metais como ferro (α-Fe), tungstênio e molibdênio, sendo fundamental para compreender propriedades mecânicas e eletrônicas dos materiais.",
+          "concepts": [
+            "Fator de Empacotamento Atômico (APF)",
+            "Estrutura Cúbica de Corpo Centrado (BCC)",
+            "Célula Unitária",
+            "Empacotamento Cristalino",
+            "Estrutura Cristalina",
+            "Geometria de Redes de Bravais",
+            "Raio Atômico",
+            "Parâmetro de Rede"
+          ],
+          "symbols": [
+            {
+              "symbol": "APF_{BCC}",
+              "description": "Fator de Empacotamento Atômico para a estrutura cúbica de corpo centrado"
+            },
+            {
+              "symbol": "\\sqrt{3}",
+              "description": "Raiz quadrada de 3, originada da relação geométrica entre o raio atômico e o parâmetro de rede na estrutura BCC: a diagonal do cubo é 4r = √3·a"
+            },
+            {
+              "symbol": "\\pi",
+              "description": "Número pi (≈ 3,14159), utilizado no cálculo do volume da esfera (V = 4πr³/3)"
+            },
+            {
+              "symbol": "r",
+              "description": "Raio atômico, relacionado ao parâmetro de rede por r = (√3/4)a na estrutura BCC"
+            },
+            {
+              "symbol": "a",
+              "description": "Parâmetro de rede (lado da célula unitária cúbica)"
+            },
+            {
+              "symbol": "8",
+              "description": "Denominador proveniente da combinação do volume total da célula unitária (a³) com a relação geométrica BCC"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "crystal-structure",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "atomic-packing-factor",
+            "BCC",
+            "body-centered-cubic",
+            "crystal-structure",
+            "unit-cell",
+            "lattice",
+            "packing-efficiency",
+            "crystallography",
+            "bravais-lattice",
+            "atomic-radius",
+            "lattice-parameter",
+            "solid-state"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "crystal-structure-3d",
+            "graphParameters": [
+              "lattice-parameter",
+              "atomic-radius",
+              "packing-fraction",
+              "crystal-structure-type"
+            ]
+          },
+          "relatedFormulas": [
+            "APF_FCC = pi/(3*sqrt(2)) ≈ 74%",
+            "APF_SC = pi/6 ≈ 52%",
+            "APF_HCP ≈ 74%",
+            "r_BCC = (sqrt(3)/4)*a",
+            "lattice-parameter-BCC"
+          ]
+        },
+        {
+          "originalFormula": "\\frac{\\sqrt{2}\\,\\pi}{6} \\approx 74\\% \\text{ (face centered cubic)}",
+          "genericFormula": "\\eta_{FCC} = \\frac{\\sqrt{2}\\,\\pi}{6}",
+          "description": "Esta fórmula representa o fator de empacotamento atômico (APF - Atomic Packing Factor) para a estrutura cúbica de face centrada (FCC - Face Centered Cubic). O APF mede a fração do volume total da célula unitária que é ocupada pelos átomos, considerando-os como esferas rígidas. Na estrutura FCC, os átomos estão localizados nos 8 vértices e no centro de cada uma das 6 faces do cubo, resultando em 4 átomos por célula unitária. O contato entre os átomos ocorre ao longo da diagonal da face, o que permite determinar a relação entre o raio atômico r e o parâmetro de rede a como a = 2√2 r. O valor de aproximadamente 74% é o máximo teórico de empacotamento para esferas de igual tamanho, sendo também atingido pela estrutura hexagonal compacta (HCP). Materiais como Al, Cu, Ni, Au e Ag cristalizam nesta estrutura. O APF é fundamental para compreender propriedades como densidade, resistência mecânica e difusão em sólidos cristalinos.",
+          "concepts": [
+            "Atomic Packing Factor (APF)",
+            "Estrutura Cristalina FCC",
+            "Célula Unitária",
+            "Esferas Rígidas",
+            "Empacotamento Máximo",
+            "Parâmetro de Rede",
+            "Cristalografia",
+            "Estrutura de Sólidos"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\eta_{FCC}",
+              "description": "Fator de empacotamento atômico da estrutura FCC (adimensional)"
+            },
+            {
+              "symbol": "\\sqrt{2}",
+              "description": "Fator geométrico proveniente da relação entre o raio atômico e o parâmetro de rede na FCC: a = 2√2 r"
+            },
+            {
+              "symbol": "\\pi",
+              "description": "Número pi, surge do volume da esfera (4πr³/3) no cálculo do volume total dos átomos por célula unitária"
+            },
+            {
+              "symbol": "6",
+              "description": "Denominador geométrico resultante da combinação do volume da célula unitária (a³) com o volume das esferas"
+            },
+            {
+              "symbol": "r",
+              "description": "Raio atômico, considerando os átomos como esferas rígidas de raio uniforme"
+            },
+            {
+              "symbol": "a",
+              "description": "Parâmetro de rede da célula unitária cúbica, relacionado ao raio por a = 2√2 r na FCC"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "crystal-structure",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "atomic-packing-factor",
+            "FCC",
+            "face-centered-cubic",
+            "crystal-structure",
+            "unit-cell",
+            "packing-efficiency",
+            "lattice",
+            "solid-state",
+            "crystallography",
+            "band",
+            "semiconductor-materials"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "crystal-structure",
+            "graphParameters": [
+              "lattice-parameter",
+              "atomic-radius",
+              "packing-fraction",
+              "number-of-atoms-per-unit-cell"
+            ]
+          },
+          "relatedFormulas": [
+            "APF-BCC",
+            "APF-SC",
+            "APF-HCP",
+            "Diamond-Cubic-APF",
+            "Density-Crystal",
+            "Lattice-Parameter"
+          ]
+        },
+        {
+          "originalFormula": "\\frac{\\sqrt{3}\\,\\pi}{16} \\approx 34\\% \\text{ (diamond lattice)}",
+          "genericFormula": "APF = \\frac{N_{atoms} \\cdot V_{atom}}{V_{cell}}",
+          "description": "O Fator de Empacotamento Atômico (APF - Atomic Packing Factor) da estrutura cristalina do diamante representa a fração do volume total da célula unitária que é efetivamente ocupada pelos átomos. O valor de aproximadamente 34% é notavelmente baixo comparado a outras estruturas cristalinas como FCC (~74%) ou BCC (~68%), refletindo a natureza aberta e tetraédrica da rede diamante. Esta estrutura é adotada pelo silício (Si), germânio (Ge) e carbono (C) na forma de diamante, sendo fundamental para semicondutores. A baixa densidade de empacotamento é consequência direta das ligações covalentes direcionadas sp³ que formam ângulos tetraédricos de ~109,5° entre os átomos. A célula unitária do diamante contém 8 átomos efetivos e pode ser descrita como duas redes FCC interpenetradas deslocadas de (a/4, a/4, a/4). O APF é calculado como a razão entre o volume total dos átomos (tratados como esferas rígidas) e o volume da célula unitária cúbica de parâmetro de rede a.",
+          "concepts": [
+            "atomic packing factor",
+            "diamond cubic structure",
+            "crystal lattice",
+            "covalent bonding",
+            "sp3 hybridization",
+            "unit cell",
+            "hard sphere model",
+            "tetrahedral coordination",
+            "FCC sublattice",
+            "semiconductor crystal structure"
+          ],
+          "symbols": [
+            {
+              "symbol": "APF",
+              "description": "Fator de Empacotamento Atômico (Atomic Packing Factor) - fração do volume da célula unitária ocupada pelos átomos"
+            },
+            {
+              "symbol": "\\frac{\\sqrt{3}\\,\\pi}{16}",
+              "description": "Valor analítico exato do APF para a estrutura diamante, derivado da relação geométrica entre o raio atômico r = (\\sqrt{3}/8)a e o volume da célula cúbica"
+            },
+            {
+              "symbol": "N_{atoms}",
+              "description": "Número efetivo de átomos por célula unitária (igual a 8 para a estrutura diamante)"
+            },
+            {
+              "symbol": "V_{atom}",
+              "description": "Volume de cada átomo tratado como esfera rígida: V_{atom} = \\frac{4}{3}\\pi r^3"
+            },
+            {
+              "symbol": "V_{cell}",
+              "description": "Volume da célula unitária cúbica: V_{cell} = a^3, onde a é o parâmetro de rede"
+            },
+            {
+              "symbol": "r",
+              "description": "Raio atômico na estrutura diamante, relacionado ao parâmetro de rede por r = \\frac{\\sqrt{3}}{8}a"
+            },
+            {
+              "symbol": "a",
+              "description": "Parâmetro de rede da célula unitária cúbica (ex: a = 5,43 Å para o silício)"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "crystal-structure",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "atomic packing factor",
+            "diamond lattice",
+            "crystal structure",
+            "silicon",
+            "germanium",
+            "unit cell",
+            "covalent bond",
+            "sp3",
+            "tetrahedral",
+            "semiconductor",
+            "FCC",
+            "packing density",
+            "hard sphere",
+            "lattice constant"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "crystal-structure",
+            "graphParameters": [
+              "lattice constant a",
+              "atomic radius r",
+              "packing fraction",
+              "coordination number",
+              "bond angle"
+            ]
+          },
+          "relatedFormulas": [
+            "FCC-packing-factor",
+            "BCC-packing-factor",
+            "diamond-lattice-constant",
+            "atomic-radius-diamond",
+            "number-of-atoms-per-unit-cell",
+            "nearest-neighbor-distance"
+          ]
+        }
+      ]
+    }
+  ],
+  "answers": [],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "a = 5.43 \\ \\text{Å} = 5.43 \\times 10^{-8} \\ \\text{cm}",
+      "genericFormula": "a = a_0 \\ \\text{Å} = a_0 \\times 10^{-8} \\ \\text{cm}",
+      "description": "Esta fórmula representa o parâmetro de rede cristalina do Silício (Si), que é a distância característica da célula unitária cúbica de face centrada com base (estrutura diamante). O valor a = 5.43 Å define a aresta do cubo da célula unitária convencional do silício. O parâmetro de rede é fundamental para determinar a densidade atômica, as propriedades eletrônicas, a estrutura de bandas e os modos de vibração (fônons) do material. É também essencial para cálculos de difração de raios-X e para a compreensão de tensões e deformações em heteroestruturas e filmes epitaxiais.",
+      "concepts": [
+        "parâmetro de rede",
+        "célula unitária",
+        "estrutura cristalina diamante",
+        "silício",
+        "cristalografia",
+        "difração de raios-X",
+        "heteroestruturas",
+        "epitaxia",
+        "densidade atômica"
+      ],
+      "symbols": [
+        {
+          "symbol": "a",
+          "description": "Parâmetro de rede cristalina: comprimento da aresta da célula unitária cúbica convencional do silício"
+        },
+        {
+          "symbol": "\\text{Å}",
+          "description": "Ångström: unidade de comprimento equivalente a 10⁻¹⁰ m, amplamente usada em cristalografia e física atômica"
+        },
+        {
+          "symbol": "10^{-8} \\ \\text{cm}",
+          "description": "Equivalência em centímetros do parâmetro de rede, útil em cálculos de densidade e processos de fabricação de semicondutores"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "crystal-structure",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "lattice-parameter",
+        "crystal",
+        "silicon",
+        "unit-cell",
+        "diamond-structure",
+        "semiconductor",
+        "band-structure",
+        "crystallography",
+        "atomic-density",
+        "epitaxy"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "crystal-structure",
+        "graphParameters": [
+          "lattice-parameter",
+          "atomic-positions",
+          "unit-cell-geometry"
+        ]
+      },
+      "relatedFormulas": [
+        "density-of-atoms",
+        "Bragg-diffraction",
+        "miller-indices",
+        "atomic-packing-factor",
+        "effective-mass",
+        "band-structure-silicon"
+      ]
+    },
+    {
+      "originalFormula": "\\frac{8}{a^3} \\approx 5 \\times 10^{22} \\ \\text{atoms/cm}^3",
+      "genericFormula": "n_{\\text{atoms}} = \\frac{N_{\\text{cell}}}{a^3}",
+      "description": "Esta fórmula calcula a densidade atômica volumétrica em um cristal com estrutura cúbica de face centrada (FCC) ou similar, como o silício com estrutura diamante. O numerador '8' representa o número efetivo de átomos por célula unitária (no silício, a estrutura diamante possui 8 átomos por célula unitária: 8 cantos × 1/8 + 6 faces × 1/2 + 4 internos = 8). O denominador 'a³' é o volume da célula unitária cúbica, onde 'a' é o parâmetro de rede (para o silício, a ≈ 5,43 Å = 5,43 × 10⁻⁸ cm). O resultado aproximado de 5 × 10²² átomos/cm³ é um valor de referência fundamental para o silício, amplamente utilizado em física de semicondutores para estimar concentrações de dopantes, defeitos e portadores em relação à densidade total de sítios atômicos.",
+      "concepts": [
+        "densidade atômica",
+        "célula unitária",
+        "estrutura cristalina",
+        "estrutura diamante",
+        "parâmetro de rede",
+        "silício cristalino",
+        "rede cúbica de face centrada",
+        "empacotamento atômico"
+      ],
+      "symbols": [
+        {
+          "symbol": "N_{\\text{cell}}",
+          "description": "Número efetivo de átomos por célula unitária (igual a 8 para a estrutura diamante do silício)"
+        },
+        {
+          "symbol": "a",
+          "description": "Parâmetro de rede da célula unitária cúbica (para Si, a ≈ 5,43 × 10⁻⁸ cm)"
+        },
+        {
+          "symbol": "a^3",
+          "description": "Volume da célula unitária cúbica em cm³"
+        },
+        {
+          "symbol": "n_{\\text{atoms}}",
+          "description": "Densidade volumétrica de átomos em átomos/cm³"
+        },
+        {
+          "symbol": "5 \\times 10^{22}",
+          "description": "Valor numérico aproximado da densidade atômica do silício em átomos/cm³"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "crystal-structure",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "atomic-density",
+        "unit-cell",
+        "crystal-structure",
+        "diamond-lattice",
+        "lattice-parameter",
+        "silicon",
+        "atoms-per-cm3",
+        "cubic-cell",
+        "packing",
+        "semiconductor-material"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "crystal-structure",
+        "graphParameters": [
+          "lattice-parameter",
+          "atomic-positions",
+          "unit-cell-volume",
+          "atomic-density"
+        ]
+      },
+      "relatedFormulas": [
+        "carrier-concentration",
+        "dopant-concentration",
+        "intrinsic-carrier-density",
+        "Avogadro-density",
+        "FCC-lattice",
+        "diamond-cubic-structure"
+      ]
+    },
+    {
+      "originalFormula": "\\text{SiCl}_4 + 2\\text{H}_2 \\rightarrow 4\\text{HCl} + \\text{Si}",
+      "genericFormula": "\\text{SiCl}_4 + 2\\text{H}_2 \\rightarrow 4\\text{HCl} + \\text{Si}",
+      "description": "Esta equação química representa a redução do tetracloreto de silício (SiCl₄) pelo hidrogênio gasoso (H₂) para produzir silício puro e ácido clorídrico (HCl). É um dos processos mais importantes na fabricação de silício de grau semicondutor (grau eletrônico), utilizado na indústria de microeletrônica. O processo ocorre em reatores de deposição química a vapor (CVD - Chemical Vapor Deposition) a temperaturas entre 1100°C e 1200°C. O SiCl₄ é um precursor gasoso obtido pela cloração do silício metalúrgico, e sua redução pelo H₂ permite a deposição de silício cristalino de alta pureza sobre substratos, sendo fundamental para a fabricação de wafers e filmes epitaxiais de silício. A reação é heterogênea e reversível em determinadas condições, sendo o controle preciso da temperatura e da razão H₂/SiCl₄ essencial para a qualidade do silício depositado.",
+      "concepts": [
+        "deposição química a vapor (CVD)",
+        "crescimento epitaxial",
+        "redução química",
+        "silício policristalino",
+        "silício monocristalino",
+        "purificação de silício",
+        "precursores halogenados",
+        "processo de fabricação de semicondutores",
+        "reação de redução-oxidação (redox)",
+        "silício de grau eletrônico"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\text{SiCl}_4",
+          "description": "Tetracloreto de silício - precursor gasoso halogenado do silício, reagente principal da reação"
+        },
+        {
+          "symbol": "\\text{H}_2",
+          "description": "Gás hidrogênio molecular - agente redutor que fornece elétrons ao silício, reduzindo Si⁴⁺ a Si⁰"
+        },
+        {
+          "symbol": "\\text{HCl}",
+          "description": "Ácido clorídrico gasoso - subproduto da reação, formado pela combinação dos átomos de cloro com o hidrogênio"
+        },
+        {
+          "symbol": "\\text{Si}",
+          "description": "Silício elementar puro (Si⁰) - produto desejado, depositado como filme sólido cristalino no substrato"
+        },
+        {
+          "symbol": "\\rightarrow",
+          "description": "Seta de reação indicando transformação química dos reagentes em produtos (reação direta)"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "material-growth",
+        "domain": "device-fabrication"
+      },
+      "keywords": [
+        "silicon",
+        "CVD",
+        "epitaxy",
+        "deposition",
+        "wafer",
+        "fabrication",
+        "chemical-vapor-deposition",
+        "silane",
+        "precursor",
+        "purification",
+        "semiconductor-material",
+        "crystal-growth",
+        "SiCl4",
+        "reduction",
+        "polysilicon"
+      ],
+      "graphVisualization": {
+        "hasGraph": false,
+        "graphType": null,
+        "graphParameters": []
+      },
+      "relatedFormulas": [
+        "SiH4 -> Si + 2H2 (decomposição do silano)",
+        "Si + 2Cl2 -> SiCl4 (cloração do silício)",
+        "SiH2Cl2 + H2 -> Si + 2HCl (CVD por diclorossilano)",
+        "Arrhenius-growth-rate",
+        "epitaxial-layer-thickness"
+      ]
+    }
+  ],
+  "bookTitle": "Modular Series On Solid State Devices",
+  "author": "Unknown",
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "lastUpdated": "2026-05-09T14:22:20.053Z"
+}

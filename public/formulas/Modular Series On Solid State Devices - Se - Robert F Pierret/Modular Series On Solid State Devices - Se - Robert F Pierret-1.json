@@ -1,0 +1,218 @@
+{
+  "chapter": "1",
+  "section": "1.2 Crystal Structure - 1.2.2 Simple 3-D Unit Cells",
+  "questions": [
+    {
+      "number": "1.4b",
+      "text": "Determine the number of atoms per cm² at the surface of the wafer.",
+      "formulas": []
+    },
+    {
+      "number": "1.4c-d",
+      "text": "Repeat (a) and (b) taking the surface of the Si wafer to be a (110) plane.",
+      "formulas": []
+    },
+    {
+      "number": "1.5",
+      "text": "Record all intermediate steps in answering the following questions.\\n(a) As shown in Fig. P1.5(a), a crystalline plane has intercepts of 1a, 3a, and 1a on the x, y, and z axes, respectively. a is the cubic cell side length.\\n(i) What is the Miller index notation for the plane?\\n(ii) What is the Miller index notation for the direction normal to the plane?\\n(b) Assuming the crystal structure to be cubic, determine the Miller indices for (i) the plane and (ii) the vector pictured in Fig. P1.5(b).",
+      "formulas": []
+    },
+    {
+      "number": "1.6",
+      "text": "Assuming a cubic crystal system, make a sketch of the following planes:\\n(a) (001), (b) (111), (c) (123), (d) (\\overline{1}10),\\n(e) (010), (f) (\\overline{1}\\overline{1}\\overline{1}), (g) (221), (h) (0\\overline{1}0).",
+      "formulas": []
+    },
+    {
+      "number": "1.7",
+      "text": "Assuming a cubic crystal system, use an appropriately directed arrow to identify each of the following directions:\\n(a) [010], (b) [101], (c) [00\\overline{1}], (d) [111],\\n(e) [001], (f) [110], (g) [0\\overline{1}0], (h) [123].",
+      "formulas": []
+    },
+    {
+      "number": "1.8",
+      "text": "Identify two crystalline directions in a cubic crystal which are perpendicular to:\\n(a) the [100] direction,\\n(b) the [111] direction.\\n\nNOTE: The cosine of the angle θ between two arbitrary directions, [h₁k₁l₁] and [h₂k₂l₂], in a cubic crystal is given by the formula below.",
+      "formulas": [
+        {
+          "originalFormula": "\\cos(\\theta) = \\frac{h_1 h_2 + k_1 k_2 + l_1 l_2}{\\left[(h_1^2 + k_1^2 + l_1^2)(h_2^2 + k_2^2 + l_2^2)\\right]^{1/2}}",
+          "genericFormula": "\\cos(\\theta) = \\frac{h_1 h_2 + k_1 k_2 + l_1 l_2}{\\left[(h_1^2 + k_1^2 + l_1^2)(h_2^2 + k_2^2 + l_2^2)\\right]^{1/2}}",
+          "description": "Esta fórmula calcula o ângulo entre dois planos cristalográficos (ou direções cristalográficas) em um cristal cúbico, identificados pelos índices de Miller (h₁, k₁, l₁) e (h₂, k₂, l₂). A expressão é derivada do produto escalar entre os vetores normais aos planos, que em um sistema cúbico são paralelos aos vetores [hkl] correspondentes. O ângulo θ é obtido dividindo o produto interno dos vetores normais pelo produto de seus módulos. Essa relação é essencial para análise de difração de raios-X, determinação de estruturas cristalinas e cálculo de ângulos entre faces em cristais cúbicos como silício (Si) e arseneto de gálio (GaAs).",
+          "concepts": [
+            "índices de Miller",
+            "planos cristalográficos",
+            "direções cristalográficas",
+            "produto escalar",
+            "sistema cristalino cúbico",
+            "difração de raios-X",
+            "cristalografia",
+            "geometria vetorial em redes cristalinas"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\theta",
+              "description": "Ângulo entre os dois planos (ou direções) cristalográficos"
+            },
+            {
+              "symbol": "h_1, k_1, l_1",
+              "description": "Índices de Miller do primeiro plano (ou direção) cristalográfico"
+            },
+            {
+              "symbol": "h_2, k_2, l_2",
+              "description": "Índices de Miller do segundo plano (ou direção) cristalográfico"
+            },
+            {
+              "symbol": "h_1 h_2 + k_1 k_2 + l_1 l_2",
+              "description": "Produto interno entre os vetores normais aos dois planos cristalográficos"
+            },
+            {
+              "symbol": "(h_i^2 + k_i^2 + l_i^2)^{1/2}",
+              "description": "Módulo do vetor normal ao plano i, proporcional à distância interplanar no sistema cúbico"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "crystal-structure",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "Miller indices",
+            "crystal planes",
+            "crystallographic directions",
+            "angle between planes",
+            "cubic crystal",
+            "crystal structure",
+            "X-ray diffraction",
+            "silicon",
+            "GaAs",
+            "lattice",
+            "geometry"
+          ],
+          "graphVisualization": {
+            "hasGraph": false,
+            "graphType": null,
+            "graphParameters": []
+          },
+          "relatedFormulas": [
+            "Bragg-Law",
+            "Miller-Indices-Interplanar-Spacing",
+            "Lattice-Constant-Cubic"
+          ]
+        }
+      ]
+    }
+  ],
+  "answers": [],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "\\cos(\\theta) = \\frac{h_1 h_2 + k_1 k_2 + l_1 l_2}{\\left[(h_1^2 + k_1^2 + l_1^2)(h_2^2 + k_2^2 + l_2^2)\\right]^{1/2}}",
+      "genericFormula": "\\cos(\\theta) = \\frac{h_1 h_2 + k_1 k_2 + l_1 l_2}{\\left[(h_1^2 + k_1^2 + l_1^2)(h_2^2 + k_2^2 + l_2^2)\\right]^{1/2}}",
+      "description": "Esta fórmula calcula o ângulo θ entre dois planos cristalográficos em um cristal cúbico, identificados pelos índices de Miller (h₁, k₁, l₁) e (h₂, k₂, l₂). Em cristais cúbicos, os vetores normais aos planos (hkl) são paralelos aos vetores [hkl] no espaço real, o que simplifica enormemente o cálculo angular. A expressão é matematicamente equivalente ao produto escalar entre os vetores normais unitários de cada plano, onde o numerador representa o produto escalar entre os vetores normais e o denominador representa o produto dos módulos desses vetores. Esta relação é fundamental em cristalografia de raios-X, difração de elétrons e análise de texturas cristalográficas, sendo usada para identificar relações de orientação entre grãos, planos de clivagem, interfaces e direções de crescimento em materiais cristalinos cúbicos como Si, Ge, GaAs e outros semicondutores de estrutura cúbica.",
+      "concepts": [
+        "índices de Miller",
+        "planos cristalográficos",
+        "simetria cúbica",
+        "cristalografia",
+        "produto escalar",
+        "vetores normais a planos",
+        "difração de raios-X",
+        "estrutura cristalina",
+        "orientação cristalográfica",
+        "ângulo interplanar"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\theta",
+          "description": "Ângulo entre os dois planos cristalográficos (ou equivalentemente, entre suas normais)"
+        },
+        {
+          "symbol": "h_1, k_1, l_1",
+          "description": "Índices de Miller do primeiro plano cristalográfico, inteiros que definem a orientação do plano na rede cristalina"
+        },
+        {
+          "symbol": "h_2, k_2, l_2",
+          "description": "Índices de Miller do segundo plano cristalográfico, inteiros que definem a orientação do plano na rede cristalina"
+        },
+        {
+          "symbol": "h_1 h_2 + k_1 k_2 + l_1 l_2",
+          "description": "Produto escalar entre os vetores de índices de Miller dos dois planos, equivalente ao produto dos módulos pelo cosseno do ângulo entre eles"
+        },
+        {
+          "symbol": "\\left[(h_1^2 + k_1^2 + l_1^2)(h_2^2 + k_2^2 + l_2^2)\\right]^{1/2}",
+          "description": "Produto dos módulos dos vetores normais aos planos, calculado como raiz quadrada do produto das somas dos quadrados dos índices de Miller de cada plano"
+        },
+        {
+          "symbol": "\\cos(\\theta)",
+          "description": "Cosseno do ângulo entre os planos, cujo valor varia entre -1 e 1, determinando se os planos são paralelos (θ=0°), perpendiculares (θ=90°) ou oblíquos"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "crystal-structure",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "Miller indices",
+        "crystal planes",
+        "interplanar angle",
+        "cubic crystal",
+        "crystallography",
+        "diffraction",
+        "orientation",
+        "lattice",
+        "band-structure",
+        "semiconductor",
+        "silicon",
+        "GaAs",
+        "crystal symmetry",
+        "X-ray diffraction",
+        "electron diffraction"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "crystal-plane-orientation",
+        "graphParameters": [
+          "Miller indices h, k, l",
+          "interplanar angle theta",
+          "crystal plane orientation",
+          "3D lattice visualization"
+        ]
+      },
+      "relatedFormulas": [
+        "Bragg's Law",
+        "d-spacing cubic",
+        "structure factor",
+        "reciprocal lattice vector",
+        "Laue conditions"
+      ]
+    }
+  ],
+  "bookTitle": "Modular Series On Solid State Devices",
+  "author": "Unknown",
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "lastUpdated": "2026-05-09T14:21:07.194Z"
+}

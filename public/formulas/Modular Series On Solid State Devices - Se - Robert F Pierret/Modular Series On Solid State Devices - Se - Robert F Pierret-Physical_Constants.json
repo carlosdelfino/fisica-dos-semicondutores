@@ -1,0 +1,442 @@
+{
+  "chapter": "Physical Constants",
+  "section": "Physical Constants Table",
+  "questions": [],
+  "answers": [],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "q = 1.60 \\times 10^{-19} \\text{ coul}",
+      "genericFormula": "q = e",
+      "description": "A carga elementar q (ou e) é a menor unidade de carga elétrica livre observada na natureza, correspondendo à carga de um único próton (ou, com sinal negativo, à carga de um elétron). É uma constante física fundamental que aparece em praticamente todas as equações da física de semicondutores e da física quântica, desde a energia de ionização de átomos até a corrente em dispositivos eletrônicos. Em semicondutores, a carga elementar é essencial para converter grandezas como potencial elétrico (em Volts) em energia (em Joules ou eV), e aparece em expressões de corrente de deriva, corrente de difusão, campo elétrico em junções p-n, e na relação entre tensão e barreira de potencial.",
+      "concepts": [
+        "carga elétrica elementar",
+        "constante física fundamental",
+        "carga do elétron",
+        "carga do próton",
+        "quantização da carga",
+        "unidade de carga",
+        "eletrostática",
+        "física de semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "q",
+          "description": "Carga elementar, também denotada por e, representando a magnitude da carga de um próton ou elétron"
+        },
+        {
+          "symbol": "1.60 \\times 10^{-19}",
+          "description": "Valor numérico da carga elementar em Coulombs (valor exato CODATA: 1.602176634 × 10⁻¹⁹ C)"
+        },
+        {
+          "symbol": "\\text{C (Coulomb)}",
+          "description": "Unidade SI de carga elétrica, definida como a carga transportada por uma corrente de 1 Ampere durante 1 segundo"
+        }
+      ],
+      "taxonomy": {
+        "category": "quantum-physics",
+        "subcategory": "fundamental-constants",
+        "domain": "atomic-physics"
+      },
+      "keywords": [
+        "charge",
+        "elementary-charge",
+        "electron",
+        "proton",
+        "coulomb",
+        "constant",
+        "quantization",
+        "energy",
+        "carrier",
+        "current",
+        "band",
+        "junction",
+        "barrier",
+        "potential"
+      ],
+      "graphVisualization": {
+        "hasGraph": false,
+        "graphType": null,
+        "graphParameters": []
+      },
+      "relatedFormulas": [
+        "Energia-em-eV",
+        "Corrente-de-Deriva",
+        "Corrente-de-Difusao",
+        "Potencial-de-Juncao-pn",
+        "Equacao-de-Poisson",
+        "Forca-de-Coulomb",
+        "Constante-de-Rydberg",
+        "Relacao-de-Einstein-mobilidade-difusao"
+      ]
+    },
+    {
+      "originalFormula": "\\varepsilon_0 = 8.85 \\times 10^{-14} \\text{ farad/cm}",
+      "genericFormula": "\\varepsilon_0",
+      "description": "A permissividade elétrica do vácuo (ou constante dielétrica do vácuo) é uma constante física fundamental que quantifica a capacidade do vácuo de permitir a formação de campos elétricos. Ela aparece na Lei de Coulomb, nas equações de Maxwell e em diversas fórmulas de eletrostática aplicadas a semicondutores. Em física de semicondutores, é frequentemente combinada com a constante dielétrica relativa do material (ε_r) para obter a permissividade absoluta do meio: ε = ε_r · ε₀. É essencial no cálculo de capacitâncias de junções, largura de depleção, campo elétrico em dispositivos como MOSFETs e diodos.",
+      "concepts": [
+        "permissividade elétrica",
+        "constante dielétrica",
+        "eletrostática",
+        "campo elétrico",
+        "capacitância",
+        "equações de Maxwell",
+        "constante física fundamental"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\varepsilon_0",
+          "description": "Permissividade elétrica do vácuo, constante física fundamental com valor 8.85 × 10⁻¹⁴ F/cm (ou 8.85 × 10⁻¹² F/m no SI)"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "material-constants",
+        "domain": "electrostatics"
+      },
+      "keywords": [
+        "permissividade",
+        "dielectric",
+        "vacuum",
+        "constant",
+        "electric-field",
+        "capacitance",
+        "Maxwell",
+        "junction",
+        "depletion",
+        "Coulomb"
+      ],
+      "graphVisualization": {
+        "hasGraph": false,
+        "graphType": null,
+        "graphParameters": []
+      },
+      "relatedFormulas": [
+        "Gauss-Law",
+        "Poisson-Equation",
+        "Depletion-Width",
+        "Junction-Capacitance",
+        "Coulomb-Law",
+        "Electric-Field-pn-junction"
+      ]
+    },
+    {
+      "originalFormula": "k = 8.62 \\times 10^{-5} \\text{ eV/K}",
+      "genericFormula": "k_B = \\frac{R}{N_A}",
+      "description": "A Constante de Boltzmann (k_B) é uma das constantes físicas fundamentais que relaciona a energia térmica de uma partícula com a temperatura absoluta do sistema. Ela estabelece a ponte entre o mundo macroscópico (temperatura) e o mundo microscópico (energia cinética média das partículas). Em física de semicondutores, aparece em praticamente todas as expressões relacionadas a distribuições estatísticas de portadores, sendo especialmente útil na forma do produto kT (energia térmica), que a temperatura ambiente (300 K) vale aproximadamente 25,9 meV. Essa constante é essencial para calcular concentrações de portadores intrínsecos, correntes de saturação em junções p-n, mobilidade de portadores e qualquer fenômeno termoativado.",
+      "concepts": [
+        "energia térmica",
+        "temperatura absoluta",
+        "estatística de Boltzmann",
+        "termodinâmica estatística",
+        "equilíbrio térmico",
+        "distribuição de Maxwell-Boltzmann",
+        "fator de Boltzmann",
+        "constantes físicas fundamentais"
+      ],
+      "symbols": [
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann — relaciona energia térmica com temperatura absoluta; vale 8,62 × 10⁻⁵ eV/K ou 1,381 × 10⁻²³ J/K"
+        },
+        {
+          "symbol": "R",
+          "description": "Constante universal dos gases ideais — vale 8,314 J/(mol·K)"
+        },
+        {
+          "symbol": "N_A",
+          "description": "Número de Avogadro — número de partículas por mol, vale 6,022 × 10²³ mol⁻¹"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta em Kelvin (K)"
+        },
+        {
+          "symbol": "k_B T",
+          "description": "Energia térmica — produto que representa a escala de energia associada à temperatura; a 300 K vale ≈ 25,9 meV"
+        }
+      ],
+      "taxonomy": {
+        "category": "quantum-physics",
+        "subcategory": "thermal-statistics",
+        "domain": "statistical-mechanics"
+      },
+      "keywords": [
+        "Boltzmann",
+        "thermal energy",
+        "temperature",
+        "kT",
+        "statistical distribution",
+        "carrier concentration",
+        "Fermi-Dirac",
+        "Maxwell-Boltzmann",
+        "energy",
+        "constant",
+        "semiconductor",
+        "band",
+        "intrinsic",
+        "activation energy",
+        "thermionic"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-temperature",
+        "graphParameters": [
+          "thermal energy kT",
+          "temperature",
+          "Boltzmann factor",
+          "carrier concentration"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac distribution",
+        "intrinsic carrier concentration",
+        "Maxwell-Boltzmann distribution",
+        "p-n junction saturation current",
+        "Einstein relation",
+        "Shockley equation",
+        "Arrhenius equation",
+        "density of states"
+      ]
+    },
+    {
+      "originalFormula": "h = 6.63 \\times 10^{-34} \\text{ joule·sec}",
+      "genericFormula": "h = 6.626 \\times 10^{-34} \\text{ J·s}",
+      "description": "A constante de Planck (h) é uma das constantes fundamentais da natureza e representa o quantum de ação. Ela estabelece a escala de grandeza dos fenômenos quânticos, relacionando a energia de um fóton com sua frequência através da relação E = hf. Introduzida por Max Planck em 1900 para explicar o espectro de radiação do corpo negro, esta constante marcou o nascimento da física quântica. Seu valor extremamente pequeno explica por que os efeitos quânticos são imperceptíveis em escalas macroscópicas, sendo relevantes apenas no mundo subatômico e atômico.",
+      "concepts": [
+        "quantum de ação",
+        "constante fundamental",
+        "dualidade onda-partícula",
+        "quantização da energia",
+        "radiação do corpo negro",
+        "fóton",
+        "mecânica quântica"
+      ],
+      "symbols": [
+        {
+          "symbol": "h",
+          "description": "Constante de Planck, quantum mínimo de ação, com valor aproximado de 6.626 × 10⁻³⁴ J·s"
+        },
+        {
+          "symbol": "\\text{J·s}",
+          "description": "Joule-segundo, unidade de ação (equivalente a kg·m²/s no SI)"
+        }
+      ],
+      "taxonomy": {
+        "category": "quantum-physics",
+        "subcategory": "fundamental-constants",
+        "domain": "atomic-physics"
+      },
+      "keywords": [
+        "Planck",
+        "constant",
+        "action",
+        "quantum",
+        "energy",
+        "photon",
+        "frequency",
+        "fundamental",
+        "radiation",
+        "blackbody"
+      ],
+      "graphVisualization": {
+        "hasGraph": false,
+        "graphType": null,
+        "graphParameters": []
+      },
+      "relatedFormulas": [
+        "E = hf",
+        "E = hbar * omega",
+        "de-Broglie wavelength",
+        "Heisenberg uncertainty principle",
+        "Planck blackbody radiation",
+        "photoelectric effect"
+      ]
+    },
+    {
+      "originalFormula": "m_0 = 9.11 \\times 10^{-31} \\text{ kg}",
+      "genericFormula": "m_0",
+      "description": "A massa de repouso do elétron é uma constante física fundamental que representa a massa inercial de um elétron em repouso, sem qualquer influência relativística. Seu valor é aproximadamente 9,109 × 10⁻³¹ kg. Esta constante é amplamente utilizada em física quântica e física de semicondutores como referência para a chamada 'massa efetiva' dos portadores de carga em materiais cristalinos. Em semicondutores, a massa efetiva dos elétrons e buracos é frequentemente expressa como fração de m₀, refletindo como a periodicidade da rede cristalina altera o comportamento dinâmico dos portadores em comparação ao elétron livre.",
+      "concepts": [
+        "massa de repouso do elétron",
+        "constante física fundamental",
+        "massa efetiva",
+        "elétron livre",
+        "relatividade especial",
+        "dinâmica de portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "m_0",
+          "description": "Massa de repouso do elétron, aproximadamente 9,109 × 10⁻³¹ kg. Usada como referência para massas efetivas em semicondutores."
+        }
+      ],
+      "taxonomy": {
+        "category": "quantum-physics",
+        "subcategory": "fundamental-constants",
+        "domain": "atomic-physics"
+      },
+      "keywords": [
+        "electron",
+        "rest-mass",
+        "effective-mass",
+        "fundamental-constant",
+        "carrier",
+        "mass",
+        "m0"
+      ],
+      "graphVisualization": {
+        "hasGraph": false,
+        "graphType": null,
+        "graphParameters": []
+      },
+      "relatedFormulas": [
+        "effective-mass",
+        "de-Broglie-wavelength",
+        "electron-kinetic-energy",
+        "Schrodinger-equation",
+        "cyclotron-frequency"
+      ]
+    },
+    {
+      "originalFormula": "\\text{Å} = 10^{-8} \\text{ cm}",
+      "genericFormula": "1 \\text{ Å} = 10^{-8} \\text{ cm} = 10^{-10} \\text{ m}",
+      "description": "O Angström (Å) é uma unidade de comprimento amplamente utilizada em física atômica, física do estado sólido e física de semicondutores para expressar distâncias em escala atômica. Um Angström equivale a 10⁻⁸ cm ou 10⁻¹⁰ m. Esta unidade é especialmente conveniente porque os raios atômicos típicos variam entre 0,5 Å e 2,5 Å, os comprimentos de ligação químicos ficam em torno de 1 a 3 Å, e os parâmetros de rede cristalina de semicondutores como Si (5,43 Å) e GaAs (5,65 Å) são facilmente expressos nessa escala. Embora não seja uma unidade SI oficial, o Angström é amplamente adotado na literatura científica de física quântica e de semicondutores.",
+      "concepts": [
+        "unidade de comprimento",
+        "escala atômica",
+        "conversão de unidades",
+        "parâmetro de rede",
+        "raio atômico",
+        "comprimento de ligação",
+        "física do estado sólido"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\text{Å}",
+          "description": "Angström: unidade de comprimento equivalente a 10⁻¹⁰ m, usada para expressar distâncias em escala atômica e molecular"
+        },
+        {
+          "symbol": "10^{-8}",
+          "description": "Fator de conversão numérico indicando a ordem de grandeza do Angström em centímetros"
+        },
+        {
+          "symbol": "\\text{cm}",
+          "description": "Centímetro: unidade de comprimento no sistema CGS, equivalente a 10⁻² m"
+        },
+        {
+          "symbol": "\\text{m}",
+          "description": "Metro: unidade de comprimento base do Sistema Internacional (SI)"
+        }
+      ],
+      "taxonomy": {
+        "category": "quantum-physics",
+        "subcategory": "units-and-constants",
+        "domain": "atomic-physics"
+      },
+      "keywords": [
+        "angstrom",
+        "unit",
+        "length",
+        "atomic-scale",
+        "conversion",
+        "lattice-parameter",
+        "atomic-radius",
+        "bond-length",
+        "nanoscale",
+        "CGS",
+        "SI"
+      ],
+      "graphVisualization": {
+        "hasGraph": false,
+        "graphType": null,
+        "graphParameters": []
+      },
+      "relatedFormulas": [
+        "lattice-parameter-Si",
+        "lattice-parameter-GaAs",
+        "Bohr-radius",
+        "de-Broglie-wavelength",
+        "crystal-structure"
+      ]
+    },
+    {
+      "originalFormula": "\\text{eV} = 1.60 \\times 10^{-19} \\text{ joule}",
+      "genericFormula": "1 \\text{ eV} = q_e \\cdot 1 \\text{ V} = 1.60 \\times 10^{-19} \\text{ J}",
+      "description": "O elétron-volt (eV) é uma unidade de energia amplamente utilizada em física quântica e física de semicondutores. Representa a energia cinética adquirida por um elétron ao ser acelerado através de uma diferença de potencial de 1 volt no vácuo. É definido como o produto da carga elementar do elétron (q = 1,60 × 10⁻¹⁹ C) pela tensão de 1 volt. Por ser uma unidade de energia muito conveniente para descrever fenômenos em escala atômica e subatômica, é utilizada para expressar energias de gap de semicondutores, níveis de energia de átomos, energias de fótons e energias de portadores de carga. Em semicondutores típicos, o gap de energia varia de frações de eV (como InAs, ~0,36 eV) até vários eV (como GaN, ~3,4 eV ou diamante, ~5,5 eV).",
+      "concepts": [
+        "elétron-volt",
+        "unidade de energia",
+        "carga elementar",
+        "diferença de potencial elétrico",
+        "energia cinética",
+        "escala atômica",
+        "gap de energia",
+        "fóton",
+        "conversão de unidades"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\text{eV}",
+          "description": "Elétron-volt: unidade de energia equivalente à energia adquirida por um elétron ao ser acelerado por uma diferença de potencial de 1 volt"
+        },
+        {
+          "symbol": "1.60 \\times 10^{-19}",
+          "description": "Valor numérico da carga elementar do elétron em coulombs (C), que define a equivalência entre eV e joule"
+        },
+        {
+          "symbol": "\\text{J}",
+          "description": "Joule: unidade SI de energia, trabalho e calor"
+        },
+        {
+          "symbol": "q_e",
+          "description": "Carga elementar do elétron: q_e = 1,60 × 10⁻¹⁹ C"
+        },
+        {
+          "symbol": "\\text{V}",
+          "description": "Volt: unidade SI de diferença de potencial elétrico (tensão)"
+        }
+      ],
+      "taxonomy": {
+        "category": "quantum-physics",
+        "subcategory": "units-and-constants",
+        "domain": "atomic-physics"
+      },
+      "keywords": [
+        "energy",
+        "electron-volt",
+        "eV",
+        "joule",
+        "unit",
+        "conversion",
+        "charge",
+        "elementary-charge",
+        "bandgap",
+        "level",
+        "transition",
+        "photon",
+        "semiconductor",
+        "gap"
+      ],
+      "graphVisualization": {
+        "hasGraph": false,
+        "graphType": null,
+        "graphParameters": []
+      },
+      "relatedFormulas": [
+        "Planck-photon-energy",
+        "bandgap-energy",
+        "Fermi-Dirac-distribution",
+        "energy-levels-hydrogen",
+        "thermal-voltage",
+        "de-Broglie-wavelength"
+      ]
+    }
+  ],
+  "bookTitle": "Modular Series On Solid State Devices",
+  "author": "Unknown",
+  "processedPages": [
+    1,
+    2
+  ],
+  "lastUpdated": "2026-05-09T14:16:34.683Z"
+}

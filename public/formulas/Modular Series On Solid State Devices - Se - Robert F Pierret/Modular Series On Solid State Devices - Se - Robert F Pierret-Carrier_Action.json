@@ -1,0 +1,3507 @@
+{
+  "chapter": "Carrier Action",
+  "section": "Electrostatic Variables and Band Diagrams",
+  "questions": [
+    {
+      "number": "d",
+      "text": "Two bars of the same material, one n-type and one p-type, are uniformly doped such that N_D(bar 1) = N_A(bar 2) ≫ n_i. Which bar will exhibit the larger resistivity? Explain.",
+      "formulas": [
+        {
+          "originalFormula": "N_D(\\text{bar 1}) = N_A(\\text{bar 2}) \\gg n_i",
+          "genericFormula": "N_D = N_A \\gg n_i",
+          "description": "Esta condição expressa o caso de uma junção p-n abrupta simétrica fortemente dopada, onde a concentração de doadores no lado n (barra 1) é igual à concentração de aceitadores no lado p (barra 2), e ambas são muito maiores que a concentração intrínseca de portadores n_i. Essa condição é tipicamente usada para simplificar a análise de junções p-n, pois garante que os portadores majoritários dominam completamente a estatística de portadores em cada região, tornando os portadores minoritários desprezíveis fora da região de depleção. É fundamental na análise de diodos, transistores bipolares e heterojunções.",
+          "concepts": [
+            "junção p-n",
+            "dopagem simétrica",
+            "concentração de portadores intrínsecos",
+            "portadores majoritários",
+            "portadores minoritários",
+            "semicondutor extrínsecos",
+            "região de depleção",
+            "neutralidade elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_D",
+              "description": "Concentração de átomos doadores (ionizados) na região n do semicondutor (bar 1), em cm⁻³"
+            },
+            {
+              "symbol": "N_A",
+              "description": "Concentração de átomos aceitadores (ionizados) na região p do semicondutor (bar 2), em cm⁻³"
+            },
+            {
+              "symbol": "n_i",
+              "description": "Concentração intrínseca de portadores de carga no semicondutor, em cm⁻³, dependente da temperatura e do gap de energia"
+            },
+            {
+              "symbol": "\\gg",
+              "description": "Operador 'muito maior que', indicando que as dopagens dominam sobre a geração intrínseca de portadores"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "doping-conditions",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "doping",
+            "donor",
+            "acceptor",
+            "intrinsic",
+            "carrier",
+            "concentration",
+            "p-n junction",
+            "extrinsic",
+            "majority carrier",
+            "minority carrier",
+            "symmetric junction",
+            "depletion",
+            "band"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "doping-profile",
+            "graphParameters": [
+              "position",
+              "doping concentration",
+              "N_D",
+              "N_A",
+              "n_i"
+            ]
+          },
+          "relatedFormulas": [
+            "Lei de ação das massas: n * p = n_i^2",
+            "Concentração de elétrons em semicondutor n: n = N_D",
+            "Concentração de lacunas em semicondutor p: p = N_A",
+            "Potencial de contato (built-in potential): V_0 = (kT/q) * ln(N_A * N_D / n_i^2)",
+            "Fermi-Dirac distribution",
+            "Largura da região de depleção"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "e",
+      "text": "The electron mobility in a silicon sample is determined to be 1300 cm²/V-sec at room temperature. What is the electron diffusion coefficient?",
+      "formulas": [
+        {
+          "originalFormula": "\\mu_n = 1300 \\text{ cm}^2/\\text{V·sec}",
+          "genericFormula": "\\mu_n = \\frac{q \\tau_c}{m_n^*}",
+          "description": "A mobilidade de elétrons (μ_n) é uma grandeza fundamental que descreve a facilidade com que os elétrons se movem através de um material semicondutor sob a influência de um campo elétrico. Para o silício (Si) puro à temperatura ambiente (300 K), a mobilidade de elétrons é tipicamente 1300 cm²/V·s. Fisicamente, representa a velocidade de deriva por unidade de campo elétrico aplicado: quanto maior a mobilidade, mais rapidamente os elétrons respondem ao campo. A mobilidade é limitada por mecanismos de espalhamento, como espalhamento por fônons (vibrações da rede cristalina) e espalhamento por impurezas ionizadas. Em semicondutores dopados, a mobilidade diminui com o aumento da concentração de dopantes devido ao espalhamento por impurezas. A mobilidade dos elétrons é geralmente maior que a dos buracos no mesmo material, pois a massa efetiva dos elétrons na banda de condução é menor.",
+          "concepts": [
+            "mobilidade de portadores",
+            "velocidade de deriva",
+            "campo elétrico",
+            "espalhamento por fônons",
+            "espalhamento por impurezas",
+            "massa efetiva",
+            "tempo de relaxação",
+            "transporte de cargas",
+            "semicondutores intrínsecos",
+            "silício"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\mu_n",
+              "description": "Mobilidade dos elétrons [cm²/V·s] — razão entre a velocidade de deriva dos elétrons e o campo elétrico aplicado"
+            },
+            {
+              "symbol": "q",
+              "description": "Carga elementar do elétron: q = 1,602 × 10⁻¹⁹ C"
+            },
+            {
+              "symbol": "\\tau_c",
+              "description": "Tempo médio de relaxação (ou tempo entre colisões) [s] — tempo médio entre eventos de espalhamento do elétron"
+            },
+            {
+              "symbol": "m_n^*",
+              "description": "Massa efetiva do elétron no semicondutor [kg] — representa a inércia do elétron dentro da estrutura de banda do cristal"
+            },
+            {
+              "symbol": "v_d",
+              "description": "Velocidade de deriva dos elétrons [cm/s]: v_d = μ_n · E"
+            },
+            {
+              "symbol": "E",
+              "description": "Campo elétrico aplicado [V/cm]"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "mobility",
+            "electron",
+            "carrier",
+            "drift",
+            "transport",
+            "scattering",
+            "conductivity",
+            "silicon",
+            "effective-mass",
+            "electric-field",
+            "relaxation-time",
+            "intrinsic"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "mobility-vs-doping",
+            "graphParameters": [
+              "mobility",
+              "doping-concentration",
+              "temperature",
+              "carrier-type"
+            ]
+          },
+          "relatedFormulas": [
+            "conductivity-sigma",
+            "drift-velocity",
+            "Einstein-relation",
+            "Ohm-law-microscopic",
+            "Hall-effect",
+            "Matthiessen-rule",
+            "carrier-concentration-intrinsic"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "f",
+      "text": "What is the algebraic statement of low level injection?",
+      "formulas": []
+    },
+    {
+      "number": "g",
+      "text": "Light is used to create excess carriers in silicon. These excess carriers will predominantly recombine via (choose one: direct thermal, R–G center, or photo) recombination.",
+      "formulas": []
+    },
+    {
+      "number": "h",
+      "text": "Prior to processing, a semiconductor contains N_D = 10^14/cm³ donors and N_T = 10^11/cm³ R–G centers. After processing (say in the fabrication of a device), the semiconductor sample contains N_D = 10^17/cm³ donors and N_T = 10^10/cm³ R–G centers. Did processing increase or decrease the minority carrier lifetime? Explain.",
+      "formulas": [
+        {
+          "originalFormula": "N_D = 10^{14}/\\text{cm}^3,\\quad N_T = 10^{11}/\\text{cm}^3",
+          "genericFormula": "N_D,\\quad N_T",
+          "description": "Define as concentrações de dopantes e armadilhas (traps) em um semicondutor. N_D representa a concentração de dopantes doadores (tipo n), responsáveis por fornecer elétrons à banda de condução. N_T representa a concentração de estados de armadilha (traps) dentro do gap de energia, que podem capturar e liberar portadores, influenciando a recombinação, o tempo de vida dos portadores e a corrente de fuga. Neste contexto, N_D >> N_T, o que significa que a densidade de armadilhas é muito menor que a de dopantes, um regime relevante para análise de dispositivos reais com defeitos ou impurezas não intencionais.",
+          "concepts": [
+            "dopagem tipo n",
+            "concentração de dopantes doadores",
+            "estados de armadilha (traps)",
+            "recombinação assistida por armadilha (Shockley-Read-Hall)",
+            "tempo de vida de portadores minoritários",
+            "impurezas em semicondutores",
+            "defeitos no gap de energia"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_D",
+              "description": "Concentração de dopantes doadores (doadores ionizados), em cm⁻³, responsáveis pela condução tipo n"
+            },
+            {
+              "symbol": "N_T",
+              "description": "Concentração de estados de armadilha (trap density) no gap de energia, em cm⁻³, associados a defeitos ou impurezas profundas"
+            },
+            {
+              "symbol": "\\text{cm}^{-3}",
+              "description": "Unidade de concentração volumétrica (por centímetro cúbico)"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-recombination",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "doping",
+            "donor",
+            "trap",
+            "concentration",
+            "Shockley-Read-Hall",
+            "carrier-lifetime",
+            "defect",
+            "impurity",
+            "recombination",
+            "band-gap",
+            "type-n",
+            "semiconductor"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "energy-band",
+            "graphParameters": [
+              "energy",
+              "donor-level",
+              "trap-level",
+              "conduction-band",
+              "valence-band",
+              "concentration"
+            ]
+          },
+          "relatedFormulas": [
+            "Shockley-Read-Hall recombination rate",
+            "carrier lifetime (tau = 1/(sigma * v_th * N_T))",
+            "charge neutrality condition",
+            "Fermi-Dirac distribution",
+            "electron concentration in n-type semiconductor (n = N_D)"
+          ]
+        },
+        {
+          "originalFormula": "N_D = 10^{17}/\\text{cm}^3,\\quad N_T = 10^{10}/\\text{cm}^3",
+          "genericFormula": "N_D = N_D^{(0)},\\quad N_T = N_T^{(0)}",
+          "description": "Esta expressão define as concentrações de impurezas em um semicondutor dopado tipo-n. N_D representa a concentração de doadores (átomos doadores ionizados que contribuem com elétrons livres para a banda de condução), com valor de 10^17 cm^-3, caracterizando uma dopagem moderada a elevada. N_T representa a concentração de armadilhas (traps) ou impurezas profundas no gap, com valor de 10^10 cm^-3, tipicamente da ordem da concentração intrínseca do silício à temperatura ambiente. Esses parâmetros são fundamentais para a análise de transporte, recombinação Shockley-Read-Hall (SRH) e tempo de vida de portadores minoritários em dispositivos semicondutores.",
+          "concepts": [
+            "dopagem tipo-n",
+            "concentração de doadores",
+            "impurezas profundas (traps)",
+            "recombinação Shockley-Read-Hall",
+            "tempo de vida de portadores minoritários",
+            "níveis de armadilha no gap",
+            "semicondutor extrínsecos",
+            "ionização de impurezas"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_D",
+              "description": "Concentração de átomos doadores (impurezas rasas tipo-n), em cm^-3"
+            },
+            {
+              "symbol": "N_T",
+              "description": "Concentração de armadilhas (traps) ou centros de recombinação profundos no gap, em cm^-3"
+            },
+            {
+              "symbol": "10^{17}\\,\\text{cm}^{-3}",
+              "description": "Valor numérico da concentração de doadores, representando dopagem moderada a elevada"
+            },
+            {
+              "symbol": "10^{10}\\,\\text{cm}^{-3}",
+              "description": "Valor numérico da concentração de traps, da ordem da concentração intrínseca do silício à 300 K"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "impurity-concentration",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "donor",
+            "trap",
+            "concentration",
+            "doping",
+            "recombination",
+            "Shockley-Read-Hall",
+            "carrier",
+            "minority",
+            "lifetime",
+            "n-type",
+            "impurity",
+            "deep-level",
+            "band",
+            "gap",
+            "intrinsic"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "energy-band",
+            "graphParameters": [
+              "energy",
+              "donor-level",
+              "trap-level",
+              "conduction-band",
+              "valence-band",
+              "Fermi-level"
+            ]
+          },
+          "relatedFormulas": [
+            "Shockley-Read-Hall recombination rate",
+            "minority carrier lifetime",
+            "Fermi-Dirac distribution",
+            "charge neutrality condition",
+            "electron concentration in n-type semiconductor",
+            "intrinsic carrier concentration"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "3.4(a)",
+      "text": "A silicon sample maintained at room temperature is uniformly doped with N_D = 10^16/cm³ donors. Calculate the resistivity of the sample using Eq. (3.8a). Compare your calculated result with the ρ deduced from Fig. 3.7.",
+      "formulas": [
+        {
+          "originalFormula": "N_D = 10^{16}/\\text{cm}^3",
+          "genericFormula": "N_D",
+          "description": "Concentração de dopantes doadores (N_D) em um semicondutor tipo-n. Neste caso, N_D = 10^{16} cm⁻³ representa a densidade volumétrica de átomos doadores introduzidos na rede cristalina do semicondutor (tipicamente silício ou germânio). Átomos doadores, como fósforo ou arsênio no silício, possuem um elétron a mais que o átomo hospedeiro e, à temperatura ambiente, ionizam-se quase completamente, liberando elétrons livres para a banda de condução. Esta concentração é considerada uma dopagem moderada, pois está entre a concentração intrínseca (≈10^{10} cm⁻³ para Si) e a dopagem degenerada (≈10^{19} cm⁻³).",
+          "concepts": [
+            "dopagem tipo-n",
+            "concentração de dopantes doadores",
+            "ionização de impurezas",
+            "semicondutor extrínseco",
+            "elétrons majoritários",
+            "neutralidade de carga",
+            "aproximação de ionização completa"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_D",
+              "description": "Concentração de dopantes doadores (átomos doadores por unidade de volume), em cm⁻³"
+            },
+            {
+              "symbol": "10^{16}",
+              "description": "Valor numérico da concentração: 10 milhões de bilhões de átomos doadores por centímetro cúbico"
+            },
+            {
+              "symbol": "\\text{cm}^{-3}",
+              "description": "Unidade de concentração volumétrica: por centímetro cúbico"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "doping-concentration",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "donor",
+            "doping",
+            "concentration",
+            "n-type",
+            "impurity",
+            "carrier",
+            "extrinsic",
+            "semiconductor",
+            "ionization",
+            "electron"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "energy-band",
+            "graphParameters": [
+              "donor energy level",
+              "conduction band edge",
+              "valence band edge",
+              "Fermi level position",
+              "ionization energy"
+            ]
+          },
+          "relatedFormulas": [
+            "charge-neutrality",
+            "electron-concentration-n-type",
+            "Fermi-level-n-type",
+            "mass-action-law",
+            "ionization-fraction",
+            "Fermi-Dirac"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "3.4(b)",
+      "text": "The silicon sample of part (a) is 'compensated' by adding N_A = 10^16/cm³ acceptors. Calculate the resistivity of the compensated sample. (Exercise caution in choosing the mobility values to be employed in this part of the problem.)",
+      "formulas": [
+        {
+          "originalFormula": "N_A = 10^{16}/\\text{cm}^3",
+          "genericFormula": "N_A",
+          "description": "Concentração de impurezas aceitadoras (dopantes do tipo p) em um semicondutor. O valor N_A = 10^{16} cm⁻³ representa a densidade volumétrica de átomos aceitadores introduzidos intencionalmente na rede cristalina do semicondutor (tipicamente silício ou germânio). Átomos aceitadores, como Boro (B) no silício, possuem um elétron de valência a menos que o átomo hospedeiro, criando estados de energia próximos à banda de valência e capturando elétrons da banda de valência, gerando lacunas (holes) como portadores majoritários. Esta concentração é considerada moderada para semicondutores extrínsecos do tipo p, ficando entre a concentração intrínseca (n_i ≈ 10^{10} cm⁻³ para Si a 300K) e a concentração máxima de dopagem prática (~10^{20} cm⁻³).",
+          "concepts": [
+            "dopagem tipo p",
+            "impurezas aceitadoras",
+            "semicondutor extrínseco",
+            "concentração de portadores",
+            "lacunas (holes)",
+            "níveis de energia aceitadores",
+            "ionização de impurezas",
+            "eletroneutralidade"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_A",
+              "description": "Concentração de dopantes aceitadores (acceptor concentration), em unidades de cm⁻³, representa o número de átomos aceitadores por unidade de volume introduzidos no semicondutor"
+            },
+            {
+              "symbol": "10^{16}",
+              "description": "Valor numérico da concentração: 10 milhões de bilhões de átomos aceitadores por centímetro cúbico"
+            },
+            {
+              "symbol": "\\text{cm}^{-3}",
+              "description": "Unidade de concentração volumétrica: número de portadores ou impurezas por centímetro cúbico"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "doping-concentration",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "acceptor",
+            "dopant",
+            "concentration",
+            "p-type",
+            "impurity",
+            "hole",
+            "carrier",
+            "doping",
+            "extrinsic",
+            "semiconductor",
+            "ionization",
+            "charge-neutrality",
+            "boron",
+            "valence-band"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "energy-band",
+            "graphParameters": [
+              "acceptor energy level",
+              "valence band edge",
+              "conduction band edge",
+              "Fermi level position",
+              "ionization energy"
+            ]
+          },
+          "relatedFormulas": [
+            "charge-neutrality",
+            "hole-concentration",
+            "electron-concentration",
+            "Fermi-level-p-type",
+            "mass-action-law",
+            "N_D",
+            "intrinsic-concentration"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "3.4(c)",
+      "text": "Compute the resistivity of intrinsic (N_A = 0, N_D = 0) silicon at room temperature. How does your result here compare with that for part (b)?",
+      "formulas": [
+        {
+          "originalFormula": "N_A = 0,\\quad N_D = 0",
+          "genericFormula": "N_A = 0, \\quad N_D = 0",
+          "description": "Condição de semicondutor intrínseco puro, onde a concentração de dopantes aceitadores (N_A) e doadores (N_D) são ambas nulas. Nesta condição, o material semicondutor não possui impurezas substitucionais intencionais que alterem a concentração de portadores de carga. O equilíbrio entre elétrons e lacunas é determinado exclusivamente pela geração térmica intrínseca, ou seja, n = p = n_i, onde n_i é a concentração intrínseca de portadores. Esta condição é o ponto de referência fundamental para o estudo de semicondutores, servindo de base para comparação com materiais dopados tipo-n (N_D > 0) e tipo-p (N_A > 0). Em dispositivos reais, atingir a condição completamente intrínseca é extremamente difícil devido às impurezas residuais de fabricação.",
+          "concepts": [
+            "semicondutor intrínseco",
+            "dopagem zero",
+            "concentração intrínseca de portadores",
+            "equilíbrio térmico",
+            "geração térmica de portadores",
+            "par elétron-lacuna",
+            "neutralidade de carga",
+            "nível de Fermi intrínseco"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_A",
+              "description": "Concentração de dopantes aceitadores (impurezas do tipo-p), em cm⁻³. Aceitadores capturam elétrons da banda de valência, gerando lacunas livres."
+            },
+            {
+              "symbol": "N_D",
+              "description": "Concentração de dopantes doadores (impurezas do tipo-n), em cm⁻³. Doadores fornecem elétrons extras para a banda de condução."
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-concentration",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "intrinsic",
+            "semiconductor",
+            "dopant",
+            "acceptor",
+            "donor",
+            "carrier",
+            "concentration",
+            "undoped",
+            "pure",
+            "thermal-equilibrium",
+            "intrinsic-carrier",
+            "neutrality"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "energy-band",
+            "graphParameters": [
+              "energy",
+              "conduction-band",
+              "valence-band",
+              "Fermi-level",
+              "intrinsic-level",
+              "bandgap"
+            ]
+          },
+          "relatedFormulas": [
+            "intrinsic-carrier-concentration",
+            "charge-neutrality",
+            "Fermi-Dirac-distribution",
+            "mass-action-law",
+            "n_i = sqrt(N_C * N_V) * exp(-Eg / 2kT)",
+            "n = p = n_i"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "3.4(d)",
+      "text": "A 500-ohm resistor is to be made from a bar-shaped piece of n-type Si. The bar has a cross-sectional area of 10^{-2} cm² and a current-carrying length of 1 cm. Determine the doping required.",
+      "formulas": [
+        {
+          "originalFormula": "R = 500 \\text{ ohm}",
+          "genericFormula": "R = \\frac{V}{I}",
+          "description": "Esta fórmula representa a resistência elétrica de um componente ou material semicondutor, com valor específico de 500 ohms. A resistência é uma grandeza fundamental que quantifica a oposição ao fluxo de corrente elétrica em um material. No contexto de semicondutores, a resistência é determinada pela concentração de portadores de carga (elétrons e lacunas), sua mobilidade e a geometria do material. A Lei de Ohm (V = IR) relaciona a tensão aplicada, a corrente e a resistência. Em dispositivos semicondutores, a resistência pode variar com temperatura, dopagem e campo elétrico aplicado.",
+          "concepts": [
+            "resistência elétrica",
+            "Lei de Ohm",
+            "transporte de portadores",
+            "condutividade elétrica",
+            "resistividade",
+            "mobilidade de portadores",
+            "dopagem de semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "R",
+              "description": "Resistência elétrica, medida em ohms (Ω), representa a oposição ao fluxo de corrente elétrica"
+            },
+            {
+              "symbol": "V",
+              "description": "Tensão elétrica (diferença de potencial), medida em volts (V)"
+            },
+            {
+              "symbol": "I",
+              "description": "Corrente elétrica, medida em ampères (A)"
+            },
+            {
+              "symbol": "\\Omega",
+              "description": "Ohm, unidade SI de resistência elétrica"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "resistance",
+            "ohm",
+            "carrier",
+            "transport",
+            "conductivity",
+            "current",
+            "voltage",
+            "mobility",
+            "semiconductor",
+            "Ohm-law"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "I-V characteristic",
+            "graphParameters": [
+              "voltage",
+              "current",
+              "resistance",
+              "slope"
+            ]
+          },
+          "relatedFormulas": [
+            "Ohm-Law",
+            "Resistivity",
+            "Carrier-Mobility",
+            "Conductivity",
+            "Drift-Current"
+          ]
+        },
+        {
+          "originalFormula": "A = 10^{-2} \\text{ cm}^2,\\quad L = 1 \\text{ cm}",
+          "genericFormula": "A = A_0,\\quad L = L_0",
+          "description": "Parâmetros geométricos de uma amostra semicondutora: área da seção transversal A e comprimento L. Estes valores são tipicamente usados no cálculo de resistência elétrica, condutância, corrente elétrica e transporte de portadores em semicondutores. A área transversal A = 10⁻² cm² e o comprimento L = 1 cm definem as dimensões físicas do material, sendo fundamentais para relacionar propriedades intrínsecas (como resistividade e mobilidade) com grandezas mensuráveis (como resistência e corrente). São parâmetros essenciais em problemas de transporte de portadores em barras semicondutoras.",
+          "concepts": [
+            "geometria de amostras semicondutoras",
+            "área da seção transversal",
+            "comprimento da amostra",
+            "transporte de portadores",
+            "resistência elétrica",
+            "condutividade elétrica",
+            "lei de Ohm em semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "A",
+              "description": "Área da seção transversal da amostra semicondutora, em cm². Determina a superfície perpendicular ao fluxo de corrente elétrica."
+            },
+            {
+              "symbol": "L",
+              "description": "Comprimento da amostra semicondutora, em cm. Dimensão paralela ao fluxo de corrente elétrica e ao campo elétrico aplicado."
+            },
+            {
+              "symbol": "A_0",
+              "description": "Valor numérico específico da área transversal (aqui, 10⁻² cm²)."
+            },
+            {
+              "symbol": "L_0",
+              "description": "Valor numérico específico do comprimento (aqui, 1 cm)."
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "geometry",
+            "cross-section",
+            "length",
+            "area",
+            "sample",
+            "transport",
+            "resistance",
+            "conductivity",
+            "current",
+            "carrier",
+            "semiconductor-bar",
+            "ohm"
+          ],
+          "graphVisualization": {
+            "hasGraph": false,
+            "graphType": null,
+            "graphParameters": []
+          },
+          "relatedFormulas": [
+            "resistivity",
+            "Ohm-law",
+            "carrier-mobility",
+            "drift-current",
+            "conductance",
+            "electric-field"
+          ]
+        },
+        {
+          "originalFormula": "R = \\frac{\\rho L}{A}",
+          "genericFormula": "R = \\frac{\\rho L}{A}",
+          "description": "Esta fórmula expressa a resistência elétrica de um material condutor ou semicondutor em termos de suas propriedades geométricas e elétricas intrínsecas. A resistência R é diretamente proporcional à resistividade elétrica ρ do material e ao comprimento L do condutor, e inversamente proporcional à área da seção transversal A. É uma das relações mais fundamentais em eletromagnetismo e física de semicondutores, sendo amplamente utilizada para calcular a resistência de dispositivos como resistores, fios, e regiões ativas de transistores e diodos. Em semicondutores, a resistividade ρ depende fortemente da concentração de portadores de carga e de suas mobilidades, tornando esta equação essencial para o projeto e análise de dispositivos eletrônicos.",
+          "concepts": [
+            "resistência elétrica",
+            "resistividade elétrica",
+            "condutividade elétrica",
+            "lei de Ohm",
+            "transporte de portadores",
+            "geometria de dispositivos",
+            "propriedades intrínsecas de materiais",
+            "semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "R",
+              "description": "Resistência elétrica do material, medida em Ohms (Ω). Representa a oposição ao fluxo de corrente elétrica."
+            },
+            {
+              "symbol": "\\rho",
+              "description": "Resistividade elétrica do material, medida em Ω·m. É uma propriedade intrínseca do material, relacionada à sua capacidade de conduzir eletricidade. Em semicondutores, depende da concentração e mobilidade dos portadores de carga."
+            },
+            {
+              "symbol": "L",
+              "description": "Comprimento do condutor ou da região semicondutora ao longo da direção do fluxo de corrente, medido em metros (m)."
+            },
+            {
+              "symbol": "A",
+              "description": "Área da seção transversal do condutor perpendicular ao fluxo de corrente, medida em metros quadrados (m²)."
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "resistance",
+            "resistivity",
+            "conductivity",
+            "carrier",
+            "transport",
+            "mobility",
+            "current",
+            "Ohm",
+            "geometry",
+            "semiconductor",
+            "conductor",
+            "device"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "linear",
+            "graphParameters": [
+              "resistance R vs. length L (linear relationship)",
+              "resistance R vs. area A (hyperbolic relationship)",
+              "resistance R vs. resistivity ρ (linear relationship)"
+            ]
+          },
+          "relatedFormulas": [
+            "Ohm's Law: V = IR",
+            "Conductivity: sigma = 1/rho",
+            "Carrier Resistivity: rho = 1/(q * n * mu)",
+            "Mobility: mu = q * tau / m_eff",
+            "Drift Current Density: J = sigma * E"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "3.5",
+      "text": "Fill in the following table by deducing the required information from the energy band diagram of Fig. P3.5. The table contains Carrier, K.E. (eV), and P.E. (eV) for Electron 1, Electron 2, Electron 3, Hole 1, Hole 2, and Hole 3.",
+      "formulas": []
+    },
+    {
+      "number": "3.8",
+      "text": "A semiconductor device is characterized by the idealized energy band diagram in Fig. P3.8. It is also known that E_G = 1.12 eV, n_i = 10^{10}/cm^3, and kT = 0.0259 eV; μ_n = 1345 cm²/V-sec and μ_p = 458 cm²/V-sec at both x = x_a and x = x_b.",
+      "formulas": [
+        {
+          "originalFormula": "E_G = 1.12 \\text{ eV}",
+          "genericFormula": "E_G",
+          "description": "O gap de energia (ou bandgap) do silício (Si) a temperatura ambiente (T ≈ 300 K) é de 1,12 eV. O bandgap representa a diferença de energia entre o topo da banda de valência e o fundo da banda de condução. Nenhum estado eletrônico permitido existe nessa faixa de energia para o material intrínseco. Este valor é fundamental para determinar as propriedades elétricas, ópticas e térmicas do silício, sendo a base para o cálculo de concentração intrínseca de portadores, correntes de saturação em dispositivos e limites de operação em temperatura.",
+          "concepts": [
+            "bandgap",
+            "banda de valência",
+            "banda de condução",
+            "energia proibida",
+            "semicondutor intrínseco",
+            "estrutura de bandas",
+            "silício",
+            "temperatura ambiente"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_G",
+              "description": "Energia do gap (bandgap): diferença de energia entre o topo da banda de valência e o fundo da banda de condução, medida em elétron-volts (eV)"
+            },
+            {
+              "symbol": "\\text{eV}",
+              "description": "Elétron-volt: unidade de energia equivalente a 1,602 × 10⁻¹⁹ J, amplamente usada em física de semicondutores"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "band-structure",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "bandgap",
+            "energy",
+            "gap",
+            "band",
+            "silicon",
+            "Si",
+            "conduction",
+            "valence",
+            "intrinsic",
+            "forbidden",
+            "eV",
+            "room-temperature"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "energy-band",
+            "graphParameters": [
+              "energy",
+              "position",
+              "conduction-band-edge",
+              "valence-band-edge",
+              "bandgap"
+            ]
+          },
+          "relatedFormulas": [
+            "intrinsic-carrier-concentration",
+            "Fermi-Dirac-distribution",
+            "effective-density-of-states",
+            "Fermi-level-intrinsic",
+            "carrier-concentration-np-product"
+          ]
+        },
+        {
+          "originalFormula": "n_i = 10^{10} \\text{ cm}^{-3}",
+          "genericFormula": "n_i = \\sqrt{N_c N_v} \\exp\\left(-\\frac{E_g}{2k_BT}\\right)",
+          "description": "A concentração intrínseca de portadores n_i representa o número de elétrons (ou lacunas) por unidade de volume presentes em um semicondutor puro (intrínseco) em equilíbrio térmico, sem dopagem. Para o silício (Si) à temperatura ambiente (T ≈ 300 K), esse valor é aproximadamente 10^{10} cm⁻³, sendo um dos parâmetros mais fundamentais da física de semicondutores. Esse valor é determinado pela largura do gap de energia (E_g), pelas densidades de estados efetivas da banda de condução (N_c) e da banda de valência (N_v), e pela temperatura. A concentração intrínseca é extremamente sensível à temperatura e ao material. Em dispositivos eletrônicos baseados em Si, esse valor serve como referência para determinar o nível de dopagem necessário e o comportamento elétrico do material.",
+          "concepts": [
+            "concentração intrínseca de portadores",
+            "semicondutor intrínseco",
+            "equilíbrio térmico",
+            "geração térmica de pares elétron-lacuna",
+            "massa efetiva",
+            "densidade de estados efetiva",
+            "gap de energia",
+            "lei de ação das massas"
+          ],
+          "symbols": [
+            {
+              "symbol": "n_i",
+              "description": "Concentração intrínseca de portadores (elétrons ou lacunas) em equilíbrio térmico no semicondutor puro, em cm⁻³"
+            },
+            {
+              "symbol": "N_c",
+              "description": "Densidade efetiva de estados na banda de condução (cm⁻³)"
+            },
+            {
+              "symbol": "N_v",
+              "description": "Densidade efetiva de estados na banda de valência (cm⁻³)"
+            },
+            {
+              "symbol": "E_g",
+              "description": "Energia do gap (band gap) do semicondutor, em elétron-volts (eV)"
+            },
+            {
+              "symbol": "k_B",
+              "description": "Constante de Boltzmann (k_B ≈ 8,617 × 10⁻⁵ eV/K)"
+            },
+            {
+              "symbol": "T",
+              "description": "Temperatura absoluta do sistema, em Kelvin (K)"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-concentration",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "intrinsic",
+            "carrier",
+            "concentration",
+            "silicon",
+            "equilibrium",
+            "thermal",
+            "band",
+            "gap",
+            "energy",
+            "ni",
+            "distribution",
+            "Fermi-Dirac",
+            "density-of-states"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-concentration-vs-temperature",
+            "graphParameters": [
+              "temperature",
+              "intrinsic-carrier-concentration",
+              "bandgap"
+            ]
+          },
+          "relatedFormulas": [
+            "Fermi-Dirac-distribution",
+            "density-of-states",
+            "effective-density-of-states-Nc",
+            "effective-density-of-states-Nv",
+            "mass-action-law",
+            "electron-concentration",
+            "hole-concentration",
+            "Fermi-level-intrinsic"
+          ]
+        },
+        {
+          "originalFormula": "kT = 0.0259 \\text{ eV}",
+          "genericFormula": "k_B T",
+          "description": "A energia térmica kT representa o produto da constante de Boltzmann pela temperatura absoluta. Ao valor numérico kT = 0.0259 eV corresponde à temperatura ambiente de aproximadamente 300 K (T ≈ 300 K). Esta quantidade é fundamental em física de semicondutores pois estabelece a escala de energia térmica que governa a distribuição de portadores de carga, a estatística de Fermi-Dirac, a ionização de impurezas e os processos de transporte. Quando a energia de um estado ou transição é comparável a kT, os efeitos térmicos são significativos. Por exemplo, a largura de banda proibida de semicondutores típicos (~ 1 eV) é muito maior que kT ≈ 0.026 eV, o que explica por que semicondutores são isolantes a baixas temperaturas e condutores parciais em temperatura ambiente.",
+          "concepts": [
+            "energia térmica",
+            "temperatura ambiente",
+            "constante de Boltzmann",
+            "distribuição de Boltzmann",
+            "estatística de Fermi-Dirac",
+            "ionização de impurezas",
+            "transporte de portadores",
+            "equilíbrio térmico"
+          ],
+          "symbols": [
+            {
+              "symbol": "k_B",
+              "description": "Constante de Boltzmann, k_B = 1.381 × 10⁻²³ J/K = 8.617 × 10⁻⁵ eV/K, relaciona energia térmica à temperatura"
+            },
+            {
+              "symbol": "T",
+              "description": "Temperatura absoluta em Kelvin; a T = 300 K representa a temperatura ambiente padrão"
+            },
+            {
+              "symbol": "kT",
+              "description": "Energia térmica do sistema; a T = 300 K vale aproximadamente 0.0259 eV ≈ 26 meV"
+            },
+            {
+              "symbol": "\\text{eV}",
+              "description": "Elétron-volt, unidade de energia conveniente para física de semicondutores; 1 eV = 1.602 × 10⁻¹⁹ J"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "thermal-energy",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "thermal energy",
+            "Boltzmann constant",
+            "temperature",
+            "room temperature",
+            "kT",
+            "energy",
+            "carrier statistics",
+            "Fermi-Dirac",
+            "equilibrium",
+            "eV",
+            "distribution"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "energy-temperature",
+            "graphParameters": [
+              "thermal energy kT",
+              "temperature T",
+              "energy scale comparison"
+            ]
+          },
+          "relatedFormulas": [
+            "Fermi-Dirac distribution",
+            "Boltzmann approximation",
+            "carrier concentration",
+            "intrinsic carrier density",
+            "ionization energy",
+            "Einstein relation",
+            "Shockley diode equation"
+          ]
+        },
+        {
+          "originalFormula": "\\mu_n = 1345 \\text{ cm}^2/\\text{V-sec}",
+          "genericFormula": "\\mu_n = \\frac{q \\tau_c}{m_n^*}",
+          "description": "A mobilidade dos elétrons (μₙ) é uma grandeza fundamental no transporte de portadores em semicondutores. Ela quantifica a facilidade com que os elétrons se movem através do material sob a ação de um campo elétrico aplicado. O valor de 1345 cm²/V·s é característico do Silício (Si) com baixo nível de dopagem a temperatura ambiente (300K). A mobilidade é determinada pelos mecanismos de espalhamento (fônons, impurezas ionizadas, defeitos) e pela massa efetiva do elétron no cristal. Quanto maior a mobilidade, mais eficiente é o transporte de carga, o que é crucial para o desempenho de dispositivos eletrônicos como transistores e diodos.",
+          "concepts": [
+            "mobilidade de portadores",
+            "transporte de elétrons",
+            "espalhamento por fônons",
+            "espalhamento por impurezas ionizadas",
+            "massa efetiva",
+            "campo elétrico",
+            "velocidade de deriva",
+            "condutividade elétrica",
+            "semicondutor intrínseco",
+            "semicondutor extrínseco"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\mu_n",
+              "description": "Mobilidade dos elétrons (cm²/V·s) — razão entre a velocidade de deriva dos elétrons e o campo elétrico aplicado"
+            },
+            {
+              "symbol": "q",
+              "description": "Carga elementar do elétron: q = 1,602 × 10⁻¹⁹ C"
+            },
+            {
+              "symbol": "\\tau_c",
+              "description": "Tempo médio entre colisões (tempo de relaxação) dos elétrons na rede cristalina (s)"
+            },
+            {
+              "symbol": "m_n^*",
+              "description": "Massa efetiva dos elétrons no semicondutor (kg), que reflete a curvatura da banda de condução"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "mobility",
+            "electron",
+            "carrier",
+            "transport",
+            "drift",
+            "conductivity",
+            "scattering",
+            "effective-mass",
+            "silicon",
+            "field",
+            "current",
+            "diffusion",
+            "band"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "mobility-vs-temperature",
+            "graphParameters": [
+              "mobility",
+              "temperature",
+              "doping-concentration",
+              "scattering-mechanisms"
+            ]
+          },
+          "relatedFormulas": [
+            "drift-velocity",
+            "conductivity",
+            "Einstein-relation",
+            "Ohm-law-microscopic",
+            "Hall-effect",
+            "Matthiessen-rule",
+            "carrier-concentration",
+            "Fermi-Dirac"
+          ]
+        },
+        {
+          "originalFormula": "\\mu_p = 458 \\text{ cm}^2/\\text{V-sec}",
+          "genericFormula": "\\mu_p = \\frac{q \\tau_p}{m_p^*}",
+          "description": "A mobilidade de lacunas (holes) em semicondutores representa a facilidade com que as lacunas se movem sob a influência de um campo elétrico externo. O valor específico de 458 cm²/V·s é característico do silício (Si) a temperatura ambiente (T = 300 K), sendo um parâmetro experimental fundamental. A mobilidade é definida como a velocidade de deriva por unidade de campo elétrico aplicado. Para o silício, a mobilidade de lacunas é menor que a mobilidade de elétrons (~1350 cm²/V·s) devido à maior massa efetiva das lacunas. Este parâmetro é essencial no cálculo da condutividade elétrica, corrente de deriva e desempenho de dispositivos semicondutores como transistores bipolares e MOSFETs do tipo P.",
+          "concepts": [
+            "mobilidade de portadores",
+            "mobilidade de lacunas",
+            "velocidade de deriva",
+            "campo elétrico",
+            "massa efetiva",
+            "tempo de relaxação",
+            "espalhamento de portadores",
+            "condutividade elétrica",
+            "transporte de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\mu_p",
+              "description": "Mobilidade de lacunas (holes), em cm²/V·s, que relaciona a velocidade de deriva das lacunas ao campo elétrico aplicado"
+            },
+            {
+              "symbol": "q",
+              "description": "Carga elementar do elétron, q = 1,602 × 10⁻¹⁹ C"
+            },
+            {
+              "symbol": "\\tau_p",
+              "description": "Tempo médio de relaxação (ou tempo de colisão) das lacunas, em segundos"
+            },
+            {
+              "symbol": "m_p^*",
+              "description": "Massa efetiva das lacunas no semicondutor, em kg"
+            },
+            {
+              "symbol": "v_{d,p}",
+              "description": "Velocidade de deriva das lacunas, em cm/s, onde v_{d,p} = \\mu_p \\cdot E"
+            },
+            {
+              "symbol": "E",
+              "description": "Campo elétrico aplicado, em V/cm"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "mobility",
+            "hole",
+            "carrier",
+            "drift",
+            "transport",
+            "conductivity",
+            "silicon",
+            "effective-mass",
+            "scattering",
+            "relaxation-time",
+            "p-type",
+            "current"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "mobility-vs-temperature",
+            "graphParameters": [
+              "temperature",
+              "hole-mobility",
+              "doping-concentration",
+              "electric-field"
+            ]
+          },
+          "relatedFormulas": [
+            "drift-velocity",
+            "conductivity",
+            "drift-current-density",
+            "Einstein-relation",
+            "electron-mobility",
+            "resistivity",
+            "Hall-effect"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "3.8a",
+      "text": "Sketch the electrostatic potential (V) inside the semiconductor as a function of x. Set V = 0 at x = x_a.",
+      "formulas": []
+    },
+    {
+      "number": "3.8b",
+      "text": "Sketch the electric field (ℰ) inside the semiconductor as a function of x.",
+      "formulas": []
+    },
+    {
+      "number": "3.8c",
+      "text": "What is the magnitude of the electron drift current density (J_{N|drift}) at x = x_a? Explain.",
+      "formulas": [
+        {
+          "originalFormula": "J_{N|\\text{drift}}",
+          "genericFormula": "J_{N|\\text{drift}} = q \\mu_N n \\mathcal{E}",
+          "description": "A densidade de corrente de deriva dos elétrons (J_{N|drift}) descreve o fluxo de carga elétrica gerado pelo movimento de elétrons livres sob a ação de um campo elétrico aplicado. Na presença de um campo elétrico ε, os elétrons adquirem uma velocidade de deriva proporcional à sua mobilidade μ_N e à concentração local n. Este mecanismo de transporte é fundamental em semicondutores e dispositivos eletrônicos, sendo distinto do transporte por difusão, que é causado por gradientes de concentração. A corrente de deriva domina em regiões com campo elétrico intenso, como na zona de depleção de uma junção p-n.",
+          "concepts": [
+            "corrente de deriva",
+            "transporte de portadores",
+            "mobilidade de elétrons",
+            "campo elétrico",
+            "semicondutores",
+            "lei de Ohm microscópica",
+            "velocidade de deriva"
+          ],
+          "symbols": [
+            {
+              "symbol": "J_{N|\\text{drift}}",
+              "description": "Densidade de corrente de deriva dos elétrons (A/cm²)"
+            },
+            {
+              "symbol": "q",
+              "description": "Carga elementar do elétron (1,602 × 10⁻¹⁹ C)"
+            },
+            {
+              "symbol": "\\mu_N",
+              "description": "Mobilidade dos elétrons no semicondutor (cm²/V·s), que representa a facilidade com que os elétrons se movem sob um campo elétrico"
+            },
+            {
+              "symbol": "n",
+              "description": "Concentração de elétrons livres no semicondutor (cm⁻³)"
+            },
+            {
+              "symbol": "\\mathcal{E}",
+              "description": "Campo elétrico aplicado (V/cm), força motriz responsável pelo movimento direcional dos elétrons"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "drift",
+            "current",
+            "carrier",
+            "electron",
+            "mobility",
+            "electric-field",
+            "transport",
+            "conductivity",
+            "current-density"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "transport",
+            "graphParameters": [
+              "electric-field",
+              "current-density",
+              "carrier-concentration",
+              "mobility"
+            ]
+          },
+          "relatedFormulas": [
+            "J_{P|drift}",
+            "J_{N|diffusion}",
+            "J_{P|diffusion}",
+            "J_{total}",
+            "Einstein-relation",
+            "Ohm-law",
+            "continuity-equation"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "3.8d",
+      "text": "Is there an electron drift current at x = x_b? If there is a drift current, what is the direction of the current flow?",
+      "formulas": []
+    },
+    {
+      "number": "3.8e",
+      "text": "Is there an electron diffusion current at x = x_b? If there is a diffusion current, what is the direction of the current flow?",
+      "formulas": []
+    },
+    {
+      "number": "3.8f",
+      "text": "What is the magnitude of the total current density (J) at x = x_b? Explain.",
+      "formulas": []
+    },
+    {
+      "number": "3.9",
+      "text": "A semiconductor is characterized by the energy band diagram in Fig. P3.9. It is also known that E_G = 1.12 eV, kT = 0.0259 eV, n_i = 10^{10}/cm^3, μ_n = 1350 cm²/V-sec, and τ_n = 10^{-4} sec.",
+      "formulas": [
+        {
+          "originalFormula": "E_G = 1.12 \\text{ eV}",
+          "genericFormula": "E_G",
+          "description": "Esta fórmula representa o valor do bandgap (gap de energia) do silício (Si) à temperatura ambiente (aproximadamente 300 K). O bandgap é a diferença de energia entre o topo da banda de valência e o fundo da banda de condução. Para o silício, esse valor é de 1,12 eV, sendo um parâmetro fundamental que determina as propriedades elétricas e ópticas do material. Um elétron precisa absorver ao menos essa quantidade de energia para ser excitado da banda de valência para a banda de condução, tornando-se um portador livre de carga. O silício é classificado como semicondutor justamente porque seu bandgap está na faixa intermediária (entre 0 e ~3 eV), permitindo controle da condutividade elétrica via dopagem, temperatura ou luz.",
+          "concepts": [
+            "bandgap",
+            "banda de valência",
+            "banda de condução",
+            "semicondutor",
+            "energia de gap",
+            "silício",
+            "estrutura de bandas",
+            "excitação eletrônica",
+            "temperatura ambiente"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_G",
+              "description": "Energia do bandgap: diferença de energia entre o topo da banda de valência e o fundo da banda de condução"
+            },
+            {
+              "symbol": "\\text{eV}",
+              "description": "Elétron-volt: unidade de energia equivalente a 1,602 × 10⁻¹⁹ J, amplamente usada em física de semicondutores"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "band-structure",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "bandgap",
+            "energy",
+            "band",
+            "gap",
+            "silicon",
+            "conduction",
+            "valence",
+            "semiconductor",
+            "energy-gap",
+            "eV",
+            "300K",
+            "material-parameter"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "energy-band",
+            "graphParameters": [
+              "energy",
+              "band-gap",
+              "conduction-band",
+              "valence-band",
+              "momentum"
+            ]
+          },
+          "relatedFormulas": [
+            "Fermi-Dirac distribution",
+            "intrinsic carrier concentration",
+            "effective density of states",
+            "carrier concentration np product",
+            "Planck photon energy E=hf"
+          ]
+        },
+        {
+          "originalFormula": "kT = 0.0259 \\text{ eV}",
+          "genericFormula": "k_B T",
+          "description": "A energia térmica kT representa a energia cinética média disponível para partículas em equilíbrio térmico à temperatura T. O valor numérico kT = 0,0259 eV corresponde à temperatura ambiente padrão de T = 300 K (aproximadamente 27°C). Esta grandeza é fundamental em física de semicondutores pois determina a escala de energia relevante para processos de ionização térmica, distribuição de portadores de carga, e o comportamento de dispositivos eletrônicos. Quando a energia de interesse (como o gap de energia) é muito maior que kT, o material se comporta como isolante; quando comparável a kT, os efeitos térmicos são significativos. A constante de Boltzmann k_B faz a ponte entre a escala macroscópica (temperatura) e a escala microscópica (energia por partícula).",
+          "concepts": [
+            "energia térmica",
+            "temperatura ambiente",
+            "constante de Boltzmann",
+            "equilíbrio térmico",
+            "distribuição de energia",
+            "física estatística",
+            "ionização térmica"
+          ],
+          "symbols": [
+            {
+              "symbol": "k_B",
+              "description": "Constante de Boltzmann: k_B = 1,381 × 10⁻²³ J/K, relaciona temperatura com energia microscópica"
+            },
+            {
+              "symbol": "T",
+              "description": "Temperatura absoluta em Kelvin; no contexto de temperatura ambiente, T = 300 K"
+            },
+            {
+              "symbol": "k_B T",
+              "description": "Energia térmica por partícula, equivalente a 0,0259 eV a T = 300 K, ou aproximadamente 1/40 eV"
+            },
+            {
+              "symbol": "\\text{eV}",
+              "description": "Elétron-volt: unidade de energia conveniente em física de semicondutores; 1 eV = 1,602 × 10⁻¹⁹ J"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "thermal-energy",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "energy",
+            "thermal",
+            "temperature",
+            "Boltzmann",
+            "carrier",
+            "distribution",
+            "Fermi-Dirac",
+            "band",
+            "gap",
+            "equilibrium",
+            "concentration",
+            "ionization"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "energy-temperature",
+            "graphParameters": [
+              "energy",
+              "temperature",
+              "kT"
+            ]
+          },
+          "relatedFormulas": [
+            "Fermi-Dirac-distribution",
+            "carrier-concentration-intrinsic",
+            "Boltzmann-approximation",
+            "thermal-voltage",
+            "ionization-energy"
+          ]
+        },
+        {
+          "originalFormula": "n_i = 10^{10} \\text{ cm}^{-3}",
+          "genericFormula": "n_i = \\sqrt{N_c N_v} \\exp\\left(-\\frac{E_g}{2k_BT}\\right)",
+          "description": "Esta expressão representa a concentração intrínseca de portadores no silício à temperatura ambiente (T = 300 K), com valor aproximado de 10^{10} cm^{-3}. A concentração intrínseca n_i é um parâmetro fundamental em semicondutores intrínsecos (sem dopagem), onde o número de elétrons na banda de condução é igual ao número de buracos na banda de valência. Esse valor é resultado do equilíbrio termodinâmico: a energia térmica disponível a 300 K é suficiente para excitar uma fração dos elétrons da banda de valência para a banda de condução, gerando pares elétron-buraco. O valor de 10^{10} cm^{-3} é amplamente utilizado como referência padrão para o silício em cálculos de dispositivos semicondutores, concentrações de portadores em materiais dopados, e posição do nível de Fermi intrínseco. É importante notar que n_i é extremamente sensível à temperatura e ao gap de energia do material: para o germânio, n_i ≈ 2×10^{13} cm^{-3}, e para o GaAs, n_i ≈ 2×10^{6} cm^{-3}, à mesma temperatura.",
+          "concepts": [
+            "concentração intrínseca de portadores",
+            "equilíbrio termodinâmico",
+            "geração de pares elétron-buraco",
+            "banda de condução",
+            "banda de valência",
+            "energia de gap",
+            "semicondutor intrínseco",
+            "estatística de Fermi-Dirac",
+            "densidade de estados efetiva"
+          ],
+          "symbols": [
+            {
+              "symbol": "n_i",
+              "description": "Concentração intrínseca de portadores (elétrons = buracos em equilíbrio), em cm^{-3}"
+            },
+            {
+              "symbol": "N_c",
+              "description": "Densidade efetiva de estados na banda de condução, em cm^{-3}"
+            },
+            {
+              "symbol": "N_v",
+              "description": "Densidade efetiva de estados na banda de valência, em cm^{-3}"
+            },
+            {
+              "symbol": "E_g",
+              "description": "Energia de gap do semicondutor (largura da banda proibida), em eV"
+            },
+            {
+              "symbol": "k_B",
+              "description": "Constante de Boltzmann, k_B = 8.617 \\times 10^{-5} \\text{ eV/K}"
+            },
+            {
+              "symbol": "T",
+              "description": "Temperatura absoluta em Kelvin; valor de referência T = 300 K"
+            },
+            {
+              "symbol": "10^{10} \\text{ cm}^{-3}",
+              "description": "Valor numérico da concentração intrínseca do silício a 300 K"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-concentration",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "intrinsic",
+            "concentration",
+            "carrier",
+            "silicon",
+            "equilibrium",
+            "band",
+            "gap",
+            "thermal",
+            "Fermi-Dirac",
+            "electron",
+            "hole",
+            "300K",
+            "ni",
+            "semiconductor"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "concentration-vs-temperature",
+            "graphParameters": [
+              "intrinsic carrier concentration",
+              "temperature",
+              "bandgap energy"
+            ]
+          },
+          "relatedFormulas": [
+            "Fermi-Dirac distribution",
+            "density-of-states",
+            "effective-density-of-states Nc",
+            "effective-density-of-states Nv",
+            "np product (mass-action law)",
+            "Fermi level intrinsic",
+            "carrier concentration with doping"
+          ]
+        },
+        {
+          "originalFormula": "\\mu_n = 1350 \\text{ cm}^2/\\text{V-sec}",
+          "genericFormula": "\\mu_n",
+          "description": "A mobilidade de elétrons (μₙ) é uma propriedade fundamental dos semicondutores que descreve a facilidade com que os elétrons se movem através do material sob a influência de um campo elétrico. Para o silício (Si) puro à temperatura ambiente (300 K), a mobilidade de elétrons é aproximadamente 1350 cm²/V·s. Esse valor é uma constante tabelada amplamente usada em problemas de física de semicondutores para calcular condutividade, corrente de deriva e parâmetros de dispositivos. A mobilidade depende da concentração de impurezas, temperatura e tipo de material, diminuindo com o aumento do dopante.",
+          "concepts": [
+            "mobilidade de portadores",
+            "deriva de elétrons",
+            "condutividade elétrica",
+            "espalhamento por fônons",
+            "espalhamento por impurezas",
+            "silício intrínseco",
+            "transporte de cargas"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\mu_n",
+              "description": "Mobilidade dos elétrons no semicondutor, expressa em cm²/V·s. Relaciona a velocidade de deriva dos elétrons com o campo elétrico aplicado."
+            },
+            {
+              "symbol": "\\text{cm}^2/\\text{V·s}",
+              "description": "Unidade da mobilidade: centímetros quadrados por volt-segundo. Indica o quanto os portadores se deslocam por unidade de campo elétrico."
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "mobility",
+            "electron",
+            "carrier",
+            "drift",
+            "conductivity",
+            "silicon",
+            "transport",
+            "scattering",
+            "impurity",
+            "intrinsic"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "mobility-vs-impurity-concentration",
+            "graphParameters": [
+              "impurity concentration",
+              "electron mobility",
+              "temperature"
+            ]
+          },
+          "relatedFormulas": [
+            "drift-velocity",
+            "conductivity",
+            "Ohm-law",
+            "Einstein-relation",
+            "Hall-effect",
+            "resistivity"
+          ]
+        },
+        {
+          "originalFormula": "\\tau_n = 10^{-4} \\text{ sec}",
+          "genericFormula": "\\tau_n",
+          "description": "Tempo de vida dos portadores minoritários (elétrons) em um semicondutor do tipo p. O tempo de vida τₙ representa o tempo médio que um elétron minoritário sobrevive antes de se recombinar com um buraco. Este parâmetro é fundamental para a análise de dispositivos semicondutores, especialmente diodos e transistores bipolares. Um valor de 10⁻⁴ segundos (100 microssegundos) é típico para o silício com baixos níveis de impurezas. O tempo de vida influencia diretamente o comprimento de difusão dos portadores minoritários e, consequentemente, a corrente de saturação em junções p-n.",
+          "concepts": [
+            "tempo de vida de portadores minoritários",
+            "recombinação elétron-buraco",
+            "portadores minoritários",
+            "semicondutor tipo p",
+            "comprimento de difusão",
+            "geração e recombinação",
+            "junção p-n"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\tau_n",
+              "description": "Tempo de vida dos elétrons minoritários (portadores minoritários do tipo n em região p), medido em segundos"
+            },
+            {
+              "symbol": "10^{-4} \\text{ s}",
+              "description": "Valor numérico do tempo de vida: 100 microssegundos (100 µs), valor típico para silício com baixa concentração de impurezas"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-lifetime",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "carrier",
+            "lifetime",
+            "minority",
+            "recombination",
+            "electron",
+            "diffusion",
+            "junction",
+            "p-type",
+            "transport",
+            "generation"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-decay",
+            "graphParameters": [
+              "carrier concentration",
+              "time",
+              "recombination rate",
+              "excess minority carriers"
+            ]
+          },
+          "relatedFormulas": [
+            "diffusion-length-Ln",
+            "minority-carrier-diffusion-equation",
+            "recombination-rate",
+            "continuity-equation",
+            "diode-saturation-current"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "3.9a",
+      "text": "Sketch the electrostatic potential (V) inside the semiconductor as a function of x.",
+      "formulas": []
+    },
+    {
+      "number": "3.9b",
+      "text": "Sketch the electric field (ℰ) inside the semiconductor as a function of x.",
+      "formulas": []
+    },
+    {
+      "number": "3.9c",
+      "text": "For what values of x does charge neutrality exist inside the semiconductor? (HINT: from Poisson's equation dℰ/dx = ρ/K_s ε_0, where ρ = charge/cm³.)",
+      "formulas": [
+        {
+          "originalFormula": "\\frac{d\\mathcal{E}}{dx} = \\frac{\\rho}{K_s \\epsilon_0}",
+          "genericFormula": "\\frac{d\\mathcal{E}}{dx} = \\frac{\\rho}{K_s \\epsilon_0}",
+          "description": "Esta é a equação de Poisson unidimensional para semicondutores, que relaciona a variação espacial do campo elétrico com a densidade de carga volumétrica local. Ela é derivada diretamente da lei de Gauss no contexto de meios dielétricos, onde o meio semicondutor é caracterizado por uma constante dielétrica relativa K_s. A equação estabelece que o campo elétrico varia espacialmente apenas onde há cargas líquidas (íons ionizados, portadores de carga). Em regiões de depleção, como em junções p-n, essa equação é fundamental para calcular o perfil do campo elétrico e o potencial elétrico. A densidade de carga ρ inclui contribuições de doadores ionizados (N_D⁺), aceitadores ionizados (N_A⁻), elétrons livres (n) e lacunas (p): ρ = q(N_D⁺ - N_A⁻ + p - n). Em regiões onde a aproximação de depleção abrupta é aplicada, ρ assume valores constantes definidos pelas concentrações de dopantes.",
+          "concepts": [
+            "Equação de Poisson",
+            "Lei de Gauss",
+            "Campo elétrico",
+            "Densidade de carga volumétrica",
+            "Constante dielétrica relativa",
+            "Permissividade elétrica",
+            "Aproximação de depleção",
+            "Junção p-n",
+            "Região de depleção",
+            "Semicondutores dopados"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\mathcal{E}",
+              "description": "Campo elétrico local no semicondutor (V/m ou V/cm)"
+            },
+            {
+              "symbol": "x",
+              "description": "Coordenada espacial unidimensional (m ou cm)"
+            },
+            {
+              "symbol": "\\frac{d\\mathcal{E}}{dx}",
+              "description": "Gradiente espacial do campo elétrico, que mede a taxa de variação do campo ao longo de x"
+            },
+            {
+              "symbol": "\\rho",
+              "description": "Densidade de carga volumétrica líquida no semicondutor (C/m³ ou C/cm³), incluindo portadores livres e íons ionizados"
+            },
+            {
+              "symbol": "K_s",
+              "description": "Constante dielétrica relativa (permissividade relativa) do semicondutor, adimensional (ex: K_s ≈ 11,7 para Si)"
+            },
+            {
+              "symbol": "\\epsilon_0",
+              "description": "Permissividade elétrica do vácuo (8,854 × 10⁻¹² F/m)"
+            },
+            {
+              "symbol": "K_s \\epsilon_0",
+              "description": "Permissividade elétrica absoluta do semicondutor, também escrita como ε_s = K_s ε_0 (F/m)"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "electrostatics-junction",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "Poisson",
+            "electric-field",
+            "charge-density",
+            "depletion",
+            "junction",
+            "dielectric",
+            "permittivity",
+            "Gauss",
+            "potential",
+            "dopant",
+            "space-charge",
+            "p-n junction",
+            "band-bending"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "electric-field-profile",
+            "graphParameters": [
+              "electric-field (ε)",
+              "position (x)",
+              "charge-density (ρ)",
+              "depletion-width",
+              "doping-concentration"
+            ]
+          },
+          "relatedFormulas": [
+            "Gauss-Law",
+            "Poisson-Equation-2D",
+            "Depletion-Approximation",
+            "Built-in-Potential",
+            "Junction-Potential",
+            "Charge-Neutrality",
+            "Fermi-Dirac-Distribution",
+            "Carrier-Concentration"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "3.9d",
+      "text": "Sketch the electron concentration as a function of position. Specifically indicate on your plot the values of n at x = x_a and x = x_c.",
+      "formulas": []
+    },
+    {
+      "number": "3.9e",
+      "text": "(i) Is there an electron drift current at x = x_a? (ii) Is there an electron diffusion current at x = x_a? (iii) What is the total electron current density (J_N) at x = x_a? Explain your answers.",
+      "formulas": [
+        {
+          "originalFormula": "J_N",
+          "genericFormula": "J_N = q \\mu_n n \\mathcal{E} + q D_n \\frac{dn}{dx}",
+          "description": "A densidade de corrente de elétrons J_N representa o fluxo total de carga transportada por elétrons em um semicondutor. É composta por duas contribuições físicas distintas: (1) a corrente de deriva, causada pelo movimento dos elétrons em resposta a um campo elétrico externo, proporcional à mobilidade μ_n, à concentração de elétrons n e ao campo elétrico ε; e (2) a corrente de difusão, causada pelo gradiente de concentração de elétrons, proporcional ao coeficiente de difusão D_n e à derivada espacial dn/dx. Esta equação é fundamental para análise de dispositivos semicondutores como diodos e transistores, descrevendo como os elétrons se movem sob influência simultânea de campos elétricos e gradientes de concentração.",
+          "concepts": [
+            "densidade de corrente de elétrons",
+            "corrente de deriva",
+            "corrente de difusão",
+            "mobilidade de portadores",
+            "coeficiente de difusão",
+            "campo elétrico",
+            "gradiente de concentração",
+            "transporte de portadores",
+            "equação de transporte"
+          ],
+          "symbols": [
+            {
+              "symbol": "J_N",
+              "description": "Densidade de corrente de elétrons (A/cm²)"
+            },
+            {
+              "symbol": "q",
+              "description": "Carga elementar do elétron (1,602 × 10⁻¹⁹ C)"
+            },
+            {
+              "symbol": "\\mu_n",
+              "description": "Mobilidade dos elétrons (cm²/V·s), mede a facilidade com que elétrons se movem sob ação de campo elétrico"
+            },
+            {
+              "symbol": "n",
+              "description": "Concentração de elétrons livres (cm⁻³)"
+            },
+            {
+              "symbol": "\\mathcal{E}",
+              "description": "Campo elétrico aplicado (V/cm)"
+            },
+            {
+              "symbol": "D_n",
+              "description": "Coeficiente de difusão dos elétrons (cm²/s), relacionado à mobilidade pela relação de Einstein: D_n = (kT/q)·μ_n"
+            },
+            {
+              "symbol": "\\frac{dn}{dx}",
+              "description": "Gradiente espacial da concentração de elétrons (cm⁻⁴), responsável pela corrente de difusão"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "carrier",
+            "current",
+            "electron",
+            "drift",
+            "diffusion",
+            "mobility",
+            "conductivity",
+            "transport",
+            "concentration",
+            "electric-field",
+            "density",
+            "semiconductor"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-transport",
+            "graphParameters": [
+              "current density",
+              "position",
+              "electric field",
+              "carrier concentration",
+              "drift component",
+              "diffusion component"
+            ]
+          },
+          "relatedFormulas": [
+            "J_P",
+            "Einstein-Relation",
+            "Drift-Current",
+            "Diffusion-Current",
+            "Continuity-Equation",
+            "Poisson-Equation",
+            "Ohm-Law-Semiconductor",
+            "Fick-First-Law"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "3.9f",
+      "text": "An electron at x = x_b with a total energy E ≈ E_c moves from x = x_b to x = 0 without changing its total energy. What is the kinetic energy (K.E.) of the electron upon arriving at x = 0?",
+      "formulas": [
+        {
+          "originalFormula": "E \\approx E_c",
+          "genericFormula": "E \\approx E_c",
+          "description": "Esta aproximação indica que a energia do sistema (ou de um portador de carga) é aproximadamente igual à energia da borda da banda de condução (E_c). É utilizada em situações onde elétrons estão localizados próximos ao mínimo da banda de condução, como em semicondutores não degenerados com baixa temperatura ou em análises simplificadas de transporte eletrônico. Essa condição é frequentemente empregada para simplificar cálculos de densidade de estados, distribuição de Fermi-Dirac e concentração de portadores, assumindo que a maior parte dos elétrons livres ocupa estados energéticos muito próximos de E_c.",
+          "concepts": [
+            "banda de condução",
+            "energia de borda de banda",
+            "aproximação de baixa energia",
+            "semicondutor não degenerado",
+            "portadores de carga",
+            "estrutura de bandas",
+            "distribuição de Fermi-Dirac",
+            "densidade de estados"
+          ],
+          "symbols": [
+            {
+              "symbol": "E",
+              "description": "Energia do elétron ou do portador de carga no sistema"
+            },
+            {
+              "symbol": "E_c",
+              "description": "Energia da borda inferior da banda de condução (conduction band edge), representa o mínimo de energia disponível para elétrons livres no semicondutor"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "band-structure",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "energy",
+            "band",
+            "conduction",
+            "conduction-band",
+            "band-edge",
+            "approximation",
+            "electron",
+            "carrier",
+            "state",
+            "level",
+            "semiconductor",
+            "non-degenerate"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "energy-band",
+            "graphParameters": [
+              "energy",
+              "position",
+              "conduction-band-edge",
+              "band-gap"
+            ]
+          },
+          "relatedFormulas": [
+            "Fermi-Dirac distribution",
+            "density-of-states conduction band",
+            "electron concentration n0",
+            "effective density of states Nc",
+            "carrier energy approximation E - Ec"
+          ]
+        }
+      ]
+    }
+  ],
+  "answers": [],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "\\text{P.E.} = E_c - E_{\\text{ref}}",
+      "genericFormula": "\\text{P.E.} = E_c - E_{\\text{ref}}",
+      "description": "Esta fórmula define a Energia Potencial (P.E. - Potential Energy) de um elétron em um semicondutor como a diferença entre a energia da banda de condução (E_c) e uma energia de referência arbitrária (E_ref). Em física de semicondutores, é comum adotar um nível de referência de energia para facilitar análises comparativas entre diferentes regiões de um dispositivo. Quando E_ref é definido como zero, P.E. = E_c representa diretamente o perfil de energia potencial ao longo do dispositivo. Esta expressão é especialmente útil para visualizar diagramas de bandas de energia em heteroestruturas, junções p-n e dispositivos de estado sólido, onde variações espaciais de E_c indicam campos elétricos internos e barreiras de potencial que governam o transporte de portadores.",
+      "concepts": [
+        "energia potencial eletrônica",
+        "banda de condução",
+        "nível de referência de energia",
+        "diagrama de bandas de energia",
+        "perfil de potencial",
+        "transporte de portadores",
+        "semicondutores",
+        "heteroestruturas",
+        "junção p-n"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\text{P.E.}",
+          "description": "Energia Potencial (Potential Energy) do elétron no semicondutor, expressa em elétron-volts (eV)"
+        },
+        {
+          "symbol": "E_c",
+          "description": "Energia da borda inferior da banda de condução, representa o mínimo de energia que um elétron livre precisa ter para se mover pelo material, expressa em eV"
+        },
+        {
+          "symbol": "E_{\\text{ref}}",
+          "description": "Energia de referência arbitrária adotada como ponto zero ou baseline para comparação energética no diagrama de bandas, expressa em eV"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "band-structure",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "potential-energy",
+        "band",
+        "conduction",
+        "energy",
+        "level",
+        "reference",
+        "band-diagram",
+        "barrier",
+        "gap",
+        "state",
+        "junction",
+        "carrier"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "position",
+          "energy",
+          "conduction-band-edge",
+          "reference-level",
+          "potential-energy-profile"
+        ]
+      },
+      "relatedFormulas": [
+        "Electron-Affinity",
+        "Work-Function",
+        "Band-Bending",
+        "Poisson-Equation",
+        "Fermi-Dirac",
+        "Built-in-Potential",
+        "Schrodinger-Equation"
+      ]
+    },
+    {
+      "originalFormula": "V = -\\frac{1}{q}(E_c - E_{\\text{ref}})",
+      "genericFormula": "V = -\\frac{1}{q}(E_c - E_{\\text{ref}})",
+      "description": "Esta fórmula relaciona o potencial elétrico V com a energia da banda de condução E_c em relação a um nível de energia de referência E_ref. O fator -1/q (onde q é a carga elementar positiva do elétron) converte diferenças de energia (em elétron-volts ou Joules) para potencial elétrico (em Volts). O sinal negativo surge porque elétrons possuem carga negativa: quando o potencial elétrico aumenta, a energia potencial do elétron diminui, e portanto a banda de condução se move para baixo no diagrama de bandas. Esta relação é fundamental para construir diagramas de banda de energia em dispositivos semicondutores com campos elétricos, junções p-n, heteroestruturas e transistores, permitindo visualizar como o potencial elétrico externo influencia a estrutura de bandas do material.",
+      "concepts": [
+        "potencial elétrico",
+        "banda de condução",
+        "diagrama de bandas de energia",
+        "energia de referência",
+        "carga elementar",
+        "relação energia-potencial",
+        "campo elétrico em semicondutores",
+        "curvatura de bandas"
+      ],
+      "symbols": [
+        {
+          "symbol": "V",
+          "description": "Potencial elétrico local (em Volts), que varia com a posição no dispositivo semicondutor"
+        },
+        {
+          "symbol": "q",
+          "description": "Carga elementar do elétron em módulo (q = 1,602 × 10⁻¹⁹ C), sempre positiva nesta convenção"
+        },
+        {
+          "symbol": "E_c",
+          "description": "Energia da borda inferior da banda de condução no ponto de interesse (em Joules ou eV)"
+        },
+        {
+          "symbol": "E_{\\text{ref}}",
+          "description": "Nível de energia de referência adotado (pode ser o nível de vácuo, o nível de Fermi intrínseco ou outro nível conveniente para o problema)"
+        },
+        {
+          "symbol": "-\\frac{1}{q}",
+          "description": "Fator de conversão com sinal negativo que transforma diferença de energia em potencial elétrico, refletindo a carga negativa do elétron"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "band-structure",
+        "domain": "device-physics"
+      },
+      "keywords": [
+        "potential",
+        "electric-potential",
+        "band",
+        "conduction-band",
+        "energy",
+        "band-bending",
+        "reference-level",
+        "energy-to-potential",
+        "junction",
+        "semiconductor",
+        "diagram",
+        "carrier",
+        "gap",
+        "level",
+        "state"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "position",
+          "energy",
+          "electric-potential",
+          "conduction-band",
+          "reference-level"
+        ]
+      },
+      "relatedFormulas": [
+        "Poisson-equation",
+        "built-in-potential",
+        "Fermi-Dirac",
+        "electron-concentration",
+        "p-n-junction-band-diagram",
+        "electric-field-band-relation"
+      ]
+    },
+    {
+      "originalFormula": "\\mathcal{E} = -\\nabla V",
+      "genericFormula": "\\mathcal{E} = -\\nabla V",
+      "description": "Esta fórmula expressa o campo elétrico como o negativo do gradiente do potencial elétrico escalar V. O sinal negativo indica que o campo elétrico aponta na direção de maior decréscimo do potencial, ou seja, de regiões de alto potencial para regiões de baixo potencial. Em semicondutores, esta relação é fundamental para determinar a força sobre portadores de carga (elétrons e lacunas) em regiões com variação de potencial, como em junções p-n, heteroestruturas e dispositivos MOSFET. O gradiente ∇V captura a taxa de variação espacial do potencial em todas as direções, tornando a fórmula válida para distribuições tridimensionais de carga e potencial.",
+      "concepts": [
+        "campo elétrico",
+        "potencial elétrico",
+        "gradiente escalar",
+        "eletrostática",
+        "força sobre portadores de carga",
+        "equação de Poisson",
+        "região de depleção",
+        "heteroestruturas"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\mathcal{E}",
+          "description": "Campo elétrico (vetor), dado em V/m ou N/C"
+        },
+        {
+          "symbol": "\\nabla",
+          "description": "Operador gradiente, que calcula a variação espacial de um campo escalar nas direções x, y e z"
+        },
+        {
+          "symbol": "V",
+          "description": "Potencial elétrico escalar, dado em Volts (V)"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "electrostatics",
+        "domain": "device-physics"
+      },
+      "keywords": [
+        "electric-field",
+        "potential",
+        "gradient",
+        "electrostatics",
+        "carrier",
+        "drift",
+        "junction",
+        "depletion",
+        "Poisson",
+        "band-bending",
+        "transport"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "electric-field-potential",
+        "graphParameters": [
+          "position",
+          "electric-field",
+          "electric-potential",
+          "band-bending"
+        ]
+      },
+      "relatedFormulas": [
+        "Poisson-equation",
+        "Drift-current-density",
+        "Continuity-equation",
+        "Gauss-law",
+        "Band-bending-pn-junction",
+        "Built-in-potential"
+      ]
+    },
+    {
+      "originalFormula": "\\mathcal{E} = -\\frac{dV}{dx}",
+      "genericFormula": "\\mathcal{E} = -\\frac{dV}{dx}",
+      "description": "Esta fórmula define o campo elétrico como o negativo do gradiente do potencial elétrico em uma dimensão. O sinal negativo indica que o campo elétrico aponta na direção de decrescimento do potencial, ou seja, de regiões de maior para menor potencial. Em semicondutores, esta relação é fundamental para analisar a distribuição do campo elétrico em regiões de depleção, junções p-n e heteroestruturas, onde gradientes de potencial surgem devido a cargas espaciais fixas (íons dopantes) e portadores livres. A equação é a forma unidimensional da relação vetorial geral E = -∇V, amplamente usada em conjunto com a equação de Poisson para modelar dispositivos semicondutores.",
+      "concepts": [
+        "campo elétrico",
+        "potencial elétrico",
+        "gradiente de potencial",
+        "equação de Poisson",
+        "região de depleção",
+        "eletrostática de semicondutores",
+        "junção p-n",
+        "carga espacial"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\mathcal{E}",
+          "description": "Campo elétrico local (V/m ou V/cm), positivo na direção x positiva"
+        },
+        {
+          "symbol": "V",
+          "description": "Potencial elétrico (Volts), função da posição x"
+        },
+        {
+          "symbol": "x",
+          "description": "Coordenada espacial unidimensional (m ou cm)"
+        },
+        {
+          "symbol": "\\frac{dV}{dx}",
+          "description": "Derivada do potencial elétrico em relação à posição, representando a taxa de variação espacial do potencial"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "electrostatics",
+        "domain": "device-physics"
+      },
+      "keywords": [
+        "electric-field",
+        "potential",
+        "gradient",
+        "Poisson",
+        "depletion",
+        "junction",
+        "carrier",
+        "band-bending",
+        "drift",
+        "space-charge"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "electric-field-potential",
+        "graphParameters": [
+          "position x",
+          "electric field E(x)",
+          "electric potential V(x)",
+          "depletion width",
+          "built-in potential"
+        ]
+      },
+      "relatedFormulas": [
+        "Poisson-equation",
+        "Gauss-law",
+        "drift-current-density",
+        "built-in-potential",
+        "depletion-approximation",
+        "continuity-equation"
+      ]
+    },
+    {
+      "originalFormula": "\\mathcal{E} = \\frac{1}{q}\\frac{dE_c}{dx} = \\frac{1}{q}\\frac{dE_v}{dx} = \\frac{1}{q}\\frac{dE_i}{dx}",
+      "genericFormula": "\\mathcal{E} = \\frac{1}{q}\\frac{dE_c}{dx} = \\frac{1}{q}\\frac{dE_v}{dx} = \\frac{1}{q}\\frac{dE_i}{dx}",
+      "description": "Esta fórmula estabelece a relação fundamental entre o campo elétrico local e o gradiente espacial dos níveis de energia em um semicondutor não-homogêneo. O campo elétrico interno é proporcional à inclinação das bandas de energia no diagrama de bandas: a banda de condução (E_c), a banda de valência (E_v) e o nível intrínseco de Fermi (E_i) todas se curvam igualmente na presença de um campo elétrico, pois o gap de energia permanece constante ao longo do material. Isso significa que medir o gradiente de qualquer uma dessas energias é equivalente para determinar o campo elétrico local. Esta relação é amplamente utilizada na análise de dispositivos semicondutores como junções p-n, transistores bipolares e MOSFETs, onde campos elétricos internos surgem devido a dopagem não uniforme ou tensão aplicada.",
+      "concepts": [
+        "campo elétrico interno",
+        "diagrama de bandas de energia",
+        "gradiente de energia",
+        "banda de condução",
+        "banda de valência",
+        "nível intrínseco de Fermi",
+        "semicondutor não-homogêneo",
+        "curvatura de bandas",
+        "eletrostática em semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\mathcal{E}",
+          "description": "Campo elétrico local no semicondutor (V/m ou V/cm)"
+        },
+        {
+          "symbol": "q",
+          "description": "Carga elementar do elétron (q = 1,602 × 10⁻¹⁹ C), positiva por convenção"
+        },
+        {
+          "symbol": "E_c",
+          "description": "Energia da borda inferior da banda de condução (eV ou J)"
+        },
+        {
+          "symbol": "E_v",
+          "description": "Energia da borda superior da banda de valência (eV ou J)"
+        },
+        {
+          "symbol": "E_i",
+          "description": "Nível de energia intrínseco de Fermi, localizado aproximadamente no meio do gap (eV ou J)"
+        },
+        {
+          "symbol": "\\frac{d}{dx}",
+          "description": "Derivada espacial na direção x, representando o gradiente unidimensional"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "band-structure",
+        "domain": "device-physics"
+      },
+      "keywords": [
+        "electric-field",
+        "band-bending",
+        "energy-gradient",
+        "conduction-band",
+        "valence-band",
+        "intrinsic-level",
+        "band",
+        "gap",
+        "junction",
+        "potential",
+        "carrier",
+        "depletion"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "position x",
+          "energy E_c(x)",
+          "energy E_v(x)",
+          "energy E_i(x)",
+          "electric field magnitude"
+        ]
+      },
+      "relatedFormulas": [
+        "Poisson-equation",
+        "drift-current-density",
+        "built-in-potential",
+        "depletion-approximation",
+        "quasi-Fermi-level",
+        "continuity-equation"
+      ]
+    },
+    {
+      "originalFormula": "D_p \\frac{d^2 \\Delta p_n}{dx^2} - \\frac{\\Delta p_n}{\\tau_p} = 0 \\quad \\text{for } x > 0",
+      "genericFormula": "D_p \\frac{d^2 \\Delta p}{dx^2} - \\frac{\\Delta p}{\\tau_p} = 0",
+      "description": "Esta é a equação de difusão de portadores minoritários em regime estacionário, aplicada a lacunas (holes) em uma região do tipo n (x > 0). Ela descreve como o excesso de portadores minoritários — neste caso lacunas — se distribui espacialmente em um semicondutor quando perturbado do equilíbrio térmico, sem considerar variação temporal (regime estacionário). A equação surge do balanço entre o fluxo de difusão (termo com D_p) e a recombinação das lacunas com os elétrons majoritários (termo com τ_p). A solução geral é uma combinação de exponenciais da forma exp(±x/L_p), onde L_p = sqrt(D_p · τ_p) é o comprimento de difusão das lacunas. Fisicamente, isso significa que o excesso de lacunas decai exponencialmente à medida que se afasta da interface (em x = 0), com uma escala característica dada por L_p. Esta equação é fundamental para a análise de dispositivos como diodos p-n, transistores bipolares e fotodetectores.",
+      "concepts": [
+        "difusão de portadores minoritários",
+        "equação de continuidade estacionária",
+        "recombinação de portadores",
+        "comprimento de difusão",
+        "excesso de portadores",
+        "semicondutor tipo n",
+        "lacunas (holes)",
+        "regime estacionário",
+        "equação diferencial ordinária de segunda ordem"
+      ],
+      "symbols": [
+        {
+          "symbol": "D_p",
+          "description": "Coeficiente de difusão das lacunas (holes), em cm²/s. Relaciona o fluxo de difusão ao gradiente de concentração via Lei de Fick."
+        },
+        {
+          "symbol": "\\Delta p_n",
+          "description": "Excesso de concentração de lacunas na região tipo n, definido como Δp_n = p_n - p_{n0}, onde p_n é a concentração instantânea e p_{n0} é a concentração de equilíbrio. Unidade: cm⁻³."
+        },
+        {
+          "symbol": "\\frac{d^2 \\Delta p_n}{dx^2}",
+          "description": "Segunda derivada espacial do excesso de lacunas em relação à posição x, representando a curvatura do perfil de concentração."
+        },
+        {
+          "symbol": "\\tau_p",
+          "description": "Tempo de vida (lifetime) das lacunas minoritárias, ou seja, o tempo médio que uma lacuna existe antes de se recombinar com um elétron. Unidade: s."
+        },
+        {
+          "symbol": "x",
+          "description": "Coordenada espacial, medida a partir da interface (x = 0). A condição x > 0 delimita a região tipo n analisada. Unidade: cm."
+        },
+        {
+          "symbol": "L_p",
+          "description": "Comprimento de difusão das lacunas (implícito na solução), dado por L_p = \\sqrt{D_p \\tau_p}. Representa a distância média que uma lacuna percorre por difusão antes de se recombinar. Unidade: cm."
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "minority-carrier-diffusion",
+        "domain": "device-physics"
+      },
+      "keywords": [
+        "diffusion",
+        "minority carrier",
+        "holes",
+        "recombination",
+        "continuity equation",
+        "steady-state",
+        "diffusion length",
+        "carrier lifetime",
+        "p-n junction",
+        "excess carrier",
+        "semiconductor",
+        "type-n region",
+        "transport"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "carrier-concentration-profile",
+        "graphParameters": [
+          "excess hole concentration (Δp_n)",
+          "position (x)",
+          "diffusion length (L_p)",
+          "exponential decay",
+          "boundary condition at x=0"
+        ]
+      },
+      "relatedFormulas": [
+        "continuity-equation-holes",
+        "Fick-first-law",
+        "diffusion-length-Lp",
+        "minority-carrier-lifetime",
+        "diode-ideal-equation",
+        "Einstein-relation",
+        "excess-carrier-recombination",
+        "bipolar-transistor-base-transport"
+      ]
+    },
+    {
+      "originalFormula": "\\Delta p_{n|x=0^+} = \\Delta p_{n|x=0} = \\Delta p_{n0}",
+      "genericFormula": "\\Delta p_{n|x=0^+} = \\Delta p_{n|x=0} = \\Delta p_{n0}",
+      "description": "Esta equação expressa a condição de contorno para a concentração de portadores minoritários (lacunas) em uma junção p-n na interface da região n, imediatamente à direita da junção (x = 0⁺). Ela afirma que o excesso de lacunas no lado n, avaliado logo após a borda da região de depleção, é igual ao excesso de lacunas injetado na fronteira, denotado por Δp_{n0}. Este valor representa o excesso de portadores minoritários imposto pela tensão de polarização aplicada, conforme a lei da junção (law of the junction). É uma condição essencial para resolver a equação de continuidade na região quase-neutra do lado n, garantindo continuidade do excesso de portadores na interface. O termo x = 0⁺ indica que estamos analisando o lado imediatamente positivo da junção, onde a região de depleção termina e começa a região neutra do semicondutor tipo n.",
+      "concepts": [
+        "portadores minoritários",
+        "condição de contorno",
+        "junção p-n",
+        "excesso de portadores",
+        "lei da junção",
+        "região de depleção",
+        "polarização de junção",
+        "equação de continuidade",
+        "região quase-neutra",
+        "injeção de portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\Delta p_{n|x=0^+}",
+          "description": "Excesso de concentração de lacunas no lado n da junção, avaliado imediatamente à direita da borda da região de depleção (x = 0⁺)"
+        },
+        {
+          "symbol": "\\Delta p_{n|x=0}",
+          "description": "Excesso de concentração de lacunas no lado n avaliado na posição x = 0 (borda da junção no lado n)"
+        },
+        {
+          "symbol": "\\Delta p_{n0}",
+          "description": "Excesso de lacunas imposto pela polarização na fronteira da região neutra do lado n; valor determinado pela lei da junção em função da tensão aplicada"
+        },
+        {
+          "symbol": "x",
+          "description": "Coordenada espacial ao longo da direção perpendicular à junção p-n"
+        },
+        {
+          "symbol": "0^+",
+          "description": "Limite da posição x tendendo a zero pelo lado positivo, indicando o início da região quase-neutra do tipo n"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-transport",
+        "domain": "device-physics"
+      },
+      "keywords": [
+        "minority carrier",
+        "boundary condition",
+        "junction",
+        "excess carrier",
+        "hole concentration",
+        "depletion edge",
+        "law of junction",
+        "p-n junction",
+        "continuity equation",
+        "injection",
+        "carrier",
+        "diffusion",
+        "diode"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "carrier-distribution",
+        "graphParameters": [
+          "excess hole concentration",
+          "position x",
+          "depletion edge",
+          "boundary value"
+        ]
+      },
+      "relatedFormulas": [
+        "law-of-junction",
+        "minority-carrier-diffusion-equation",
+        "continuity-equation",
+        "excess-carrier-concentration-pn-junction",
+        "Shockley-diode-equation",
+        "carrier-lifetime"
+      ]
+    },
+    {
+      "originalFormula": "\\Delta p_{n|x \\rightarrow \\infty} = 0",
+      "genericFormula": "\\Delta p_{n|x \\rightarrow \\infty} = 0",
+      "description": "Esta condição de contorno estabelece que o excesso de portadores minoritários (lacunas) na região neutra do tipo N de uma junção p-n tende a zero quando a posição x se afasta infinitamente da junção. Fisicamente, isso significa que longe da junção, o semicondutor retorna ao equilíbrio térmico, e não há perturbação na concentração de portadores minoritários. Esta condição é essencial para resolver a equação de difusão de minoria na região neutra N, garantindo que a solução seja fisicamente realista (sem crescimento exponencial no infinito). É uma das condições de contorno fundamentais para derivar a equação de corrente de diodo de Shockley.",
+      "concepts": [
+        "condição de contorno",
+        "portadores minoritários",
+        "excesso de portadores",
+        "junção p-n",
+        "equilíbrio térmico",
+        "difusão de portadores",
+        "equação de continuidade",
+        "região neutra",
+        "comprimento de difusão"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\Delta p_n",
+          "description": "Excesso de concentração de lacunas (portadores minoritários) na região do tipo N, definido como Δpₙ = pₙ - pₙ₀, onde pₙ₀ é a concentração de equilíbrio"
+        },
+        {
+          "symbol": "x",
+          "description": "Posição espacial medida a partir da junção p-n na direção da região neutra N"
+        },
+        {
+          "symbol": "x \\rightarrow \\infty",
+          "description": "Limite em que a posição x tende ao infinito, representando uma região muito afastada da junção"
+        },
+        {
+          "symbol": "0",
+          "description": "Valor nulo, indicando ausência de excesso de portadores e retorno ao equilíbrio térmico"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-transport",
+        "domain": "device-physics"
+      },
+      "keywords": [
+        "boundary-condition",
+        "minority-carrier",
+        "excess-carrier",
+        "p-n-junction",
+        "diffusion",
+        "equilibrium",
+        "hole",
+        "neutral-region",
+        "Shockley",
+        "diode",
+        "continuity-equation",
+        "carrier"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "carrier-distribution",
+        "graphParameters": [
+          "excess minority carrier concentration",
+          "position x",
+          "diffusion length",
+          "applied bias"
+        ]
+      },
+      "relatedFormulas": [
+        "Shockley-diode-equation",
+        "minority-carrier-diffusion-equation",
+        "excess-carrier-boundary-condition-junction",
+        "diffusion-length",
+        "continuity-equation"
+      ]
+    },
+    {
+      "originalFormula": "\\mathbf{J}_p = q\\mu_p p\\mathscr{E} - qD_p\\nabla p",
+      "genericFormula": "\\mathbf{J}_p = q\\mu_p p\\mathscr{E} - qD_p\\nabla p",
+      "description": "Esta é a equação de densidade de corrente de lacunas (holes), que combina dois mecanismos fundamentais de transporte em semicondutores. O primeiro termo, q\\mu_p p\\mathscr{E}, representa a corrente de deriva (drift): as lacunas se movem na direção do campo elétrico \\mathscr{E}, com velocidade proporcional à mobilidade \\mu_p e à concentração local p. O segundo termo, -qD_p\\nabla p, representa a corrente de difusão: as lacunas se movem de regiões de maior concentração para regiões de menor concentração, seguindo o gradiente negativo de concentração. A relação entre D_p e \\mu_p é dada pela Relação de Einstein: D_p = \\frac{k_B T}{q}\\mu_p. Esta equação é fundamental para modelar o comportamento de dispositivos semicondutores como diodos e transistores, especialmente em regiões com campos elétricos e gradientes de concentração simultaneamente presentes.",
+      "concepts": [
+        "corrente de deriva (drift current)",
+        "corrente de difusão (diffusion current)",
+        "mobilidade de portadores",
+        "coeficiente de difusão",
+        "campo elétrico",
+        "gradiente de concentração",
+        "transporte de portadores minoritários",
+        "Relação de Einstein",
+        "equação de continuidade",
+        "lacunas (holes)"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\mathbf{J}_p",
+          "description": "Densidade de corrente de lacunas (holes), em A/cm²"
+        },
+        {
+          "symbol": "q",
+          "description": "Carga elementar do elétron, q = 1,602 × 10⁻¹⁹ C (positiva para lacunas)"
+        },
+        {
+          "symbol": "\\mu_p",
+          "description": "Mobilidade das lacunas, em cm²/(V·s), mede a facilidade com que as lacunas se movem sob ação de campo elétrico"
+        },
+        {
+          "symbol": "p",
+          "description": "Concentração local de lacunas, em cm⁻³"
+        },
+        {
+          "symbol": "\\mathscr{E}",
+          "description": "Campo elétrico aplicado ou interno, em V/cm"
+        },
+        {
+          "symbol": "D_p",
+          "description": "Coeficiente de difusão das lacunas, em cm²/s, relacionado à mobilidade pela Relação de Einstein: D_p = (k_B T / q) \\mu_p"
+        },
+        {
+          "symbol": "\\nabla p",
+          "description": "Gradiente espacial da concentração de lacunas, em cm⁻⁴, indica a direção e taxa de variação da concentração"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-transport",
+        "domain": "device-physics"
+      },
+      "keywords": [
+        "current",
+        "carrier",
+        "hole",
+        "drift",
+        "diffusion",
+        "mobility",
+        "diffusion-coefficient",
+        "electric-field",
+        "concentration-gradient",
+        "transport",
+        "continuity",
+        "Einstein-relation",
+        "minority-carrier",
+        "junction"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "carrier-transport",
+        "graphParameters": [
+          "position (x)",
+          "hole concentration (p)",
+          "electric field (E)",
+          "drift current density",
+          "diffusion current density",
+          "total current density"
+        ]
+      },
+      "relatedFormulas": [
+        "electron-current-density (J_n)",
+        "drift-current",
+        "diffusion-current",
+        "Einstein-relation",
+        "continuity-equation-holes",
+        "Poisson-equation",
+        "Ohm-law-semiconductor",
+        "Fick-law"
+      ]
+    },
+    {
+      "originalFormula": "\\nabla p = \\left(\\frac{n_i}{kT}\\right)e^{(E_i - F_p)/kT}(\\nabla E_i - \\nabla F_p)",
+      "genericFormula": "\\nabla p = \\left(\\frac{n_i}{kT}\\right)e^{(E_i - F_p)/kT}(\\nabla E_i - \\nabla F_p)",
+      "description": "Esta fórmula expressa o gradiente espacial da concentração de lacunas (buracos) em um semicondutor em termos das variações espaciais do nível de energia intrínseco e do quasi-nível de Fermi para lacunas. Ela é derivada da expressão de equilíbrio estatístico para a concentração de lacunas p = n_i * exp((E_i - F_p)/kT), aplicando a regra da cadeia para o gradiente espacial. O resultado mostra que a variação espacial de p é sensível tanto à curvatura da banda (representada por ∇E_i, que reflete campos elétricos internos e gradientes de dopagem) quanto ao gradiente do quasi-nível de Fermi das lacunas (∇F_p, que representa afastamento do equilíbrio e correntes de difusão/drift). Esta expressão é fundamental na derivação das equações de corrente de lacunas em semicondutores não homogêneos e fora do equilíbrio, sendo utilizada na formulação das equações de continuidade e transporte em dispositivos como diodos, transistores bipolares e células solares.",
+      "concepts": [
+        "gradiente de concentração de portadores",
+        "quasi-nível de Fermi",
+        "nível de Fermi intrínseco",
+        "estatística de Boltzmann",
+        "transporte de lacunas",
+        "equações de continuidade",
+        "semicondutor fora do equilíbrio",
+        "curvatura de banda",
+        "campo elétrico interno",
+        "difusão e drift"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\nabla p",
+          "description": "Gradiente espacial da concentração de lacunas (buracos) [m⁻⁴]"
+        },
+        {
+          "symbol": "n_i",
+          "description": "Concentração intrínseca de portadores no semicondutor [m⁻³]"
+        },
+        {
+          "symbol": "k",
+          "description": "Constante de Boltzmann, k ≈ 1,381 × 10⁻²³ J/K"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta do sistema [K]"
+        },
+        {
+          "symbol": "E_i",
+          "description": "Nível de energia intrínseco de Fermi (midgap), depende da posição espacial em semicondutores não homogêneos [eV ou J]"
+        },
+        {
+          "symbol": "F_p",
+          "description": "Quasi-nível de Fermi para lacunas (holes), indica o afastamento do equilíbrio na população de lacunas [eV ou J]"
+        },
+        {
+          "symbol": "e^{(E_i - F_p)/kT}",
+          "description": "Fator exponencial de Boltzmann que pondera a diferença entre o nível intrínseco e o quasi-nível de Fermi das lacunas"
+        },
+        {
+          "symbol": "\\nabla E_i",
+          "description": "Gradiente espacial do nível de energia intrínseco, proporcional ao campo elétrico local e a gradientes de dopagem [eV/m ou J/m]"
+        },
+        {
+          "symbol": "\\nabla F_p",
+          "description": "Gradiente espacial do quasi-nível de Fermi das lacunas, relacionado à força motriz para a corrente de lacunas [eV/m ou J/m]"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-transport",
+        "domain": "device-physics"
+      },
+      "keywords": [
+        "carrier",
+        "holes",
+        "gradient",
+        "concentration",
+        "quasi-Fermi",
+        "Fermi-level",
+        "intrinsic",
+        "transport",
+        "diffusion",
+        "drift",
+        "band",
+        "energy",
+        "non-equilibrium",
+        "continuity",
+        "Boltzmann"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "posição espacial x",
+          "nível de energia intrínseco E_i(x)",
+          "quasi-nível de Fermi F_p(x)",
+          "concentração de lacunas p(x)",
+          "gradiente de concentração ∇p(x)"
+        ]
+      },
+      "relatedFormulas": [
+        "concentração de lacunas p = n_i * exp((E_i - F_p)/kT)",
+        "equação de corrente de lacunas J_p",
+        "equação de continuidade para lacunas",
+        "gradiente de concentração de elétrons ∇n",
+        "Fermi-Dirac distribution",
+        "Einstein relation D_p/mu_p = kT/q",
+        "Poisson equation"
+      ]
+    },
+    {
+      "originalFormula": "\\nabla p = \\left(\\frac{qp}{kT}\\right)\\mathscr{E} - \\left(\\frac{p}{kT}\\right)\\nabla F_p",
+      "genericFormula": "\\nabla p = \\left(\\frac{qp}{kT}\\right)\\mathscr{E} - \\left(\\frac{p}{kT}\\right)\\nabla F_p",
+      "description": "Esta equação descreve o gradiente espacial da concentração de lacunas (buracos) em um semicondutor sob a influência simultânea de um campo elétrico e de um gradiente do quasi-nível de Fermi para lacunas. O primeiro termo representa a contribuição do campo elétrico externo (deriva), que impulsiona as cargas positivas na direção do campo. O segundo termo representa a contribuição termodinâmica associada ao gradiente do quasi-nível de Fermi para lacunas, que captura efeitos de difusão e desequilíbrio. A fórmula é fundamental na análise de dispositivos semicondutores em condições de não equilíbrio, como diodos, transistores bipolares e células solares, onde tanto deriva quanto difusão são relevantes. O fator qp/kT é relacionado à mobilidade e à resposta eletrostática das lacunas, enquanto p/kT pondera a resposta termodinâmica do sistema.",
+      "concepts": [
+        "gradiente de concentração de portadores",
+        "deriva de lacunas",
+        "quasi-nível de Fermi para lacunas",
+        "equilíbrio termodinâmico de portadores",
+        "transporte de lacunas",
+        "campo elétrico em semicondutores",
+        "não equilíbrio de portadores minoritários",
+        "energia térmica",
+        "estatística de Fermi-Dirac",
+        "equação de transporte de Boltzmann"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\nabla p",
+          "description": "Gradiente espacial da concentração de lacunas (buracos) [m⁻⁴]"
+        },
+        {
+          "symbol": "q",
+          "description": "Carga elementar do elétron (1,602 × 10⁻¹⁹ C)"
+        },
+        {
+          "symbol": "p",
+          "description": "Concentração de lacunas (buracos) no semicondutor [m⁻³]"
+        },
+        {
+          "symbol": "k",
+          "description": "Constante de Boltzmann (1,381 × 10⁻²³ J/K)"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta do sistema [K]"
+        },
+        {
+          "symbol": "kT",
+          "description": "Energia térmica dos portadores [J], também escrita como kBT"
+        },
+        {
+          "symbol": "\\mathscr{E}",
+          "description": "Campo elétrico aplicado ao semicondutor [V/m]"
+        },
+        {
+          "symbol": "\\nabla F_p",
+          "description": "Gradiente espacial do quasi-nível de Fermi para lacunas [J/m ou eV/m]"
+        },
+        {
+          "symbol": "F_p",
+          "description": "Quasi-nível de Fermi (quasi-Fermi level) para lacunas, que quantifica o desequilíbrio da população de buracos [eV]"
+        },
+        {
+          "symbol": "\\frac{qp}{kT}",
+          "description": "Fator de resposta eletrostática das lacunas ao campo elétrico, proporcional à mobilidade [C·m⁻³/J]"
+        },
+        {
+          "symbol": "\\frac{p}{kT}",
+          "description": "Fator de resposta termodinâmica das lacunas ao gradiente do quasi-nível de Fermi [m⁻³/J]"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-transport",
+        "domain": "device-physics"
+      },
+      "keywords": [
+        "carrier",
+        "hole",
+        "gradient",
+        "concentration",
+        "quasi-Fermi",
+        "electric-field",
+        "drift",
+        "diffusion",
+        "transport",
+        "non-equilibrium",
+        "Boltzmann",
+        "Fermi-Dirac",
+        "mobility",
+        "thermal-energy",
+        "band",
+        "current",
+        "semiconductor"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "posição espacial x",
+          "concentração de lacunas p(x)",
+          "quasi-nível de Fermi para lacunas F_p(x)",
+          "campo elétrico E(x)",
+          "diagrama de bandas de energia"
+        ]
+      },
+      "relatedFormulas": [
+        "Equação de continuidade para lacunas",
+        "Corrente de deriva e difusão de lacunas (equação de Drift-Diffusion)",
+        "Relação de Einstein para lacunas (D_p = mu_p * kT/q)",
+        "Quasi-nível de Fermi para elétrons",
+        "Equação de Poisson para semicondutores",
+        "Fermi-Dirac distribution",
+        "Equação de transporte de Boltzmann",
+        "Corrente total de lacunas J_p"
+      ]
+    },
+    {
+      "originalFormula": "\\mathbf{J}_p = q\\left(\\mu_p - \\frac{qD_p}{kT}\\right)p\\mathscr{E} + \\left(\\frac{qD_p}{kT}\\right)p\\nabla F_p",
+      "genericFormula": "\\mathbf{J}_p = q\\left(\\mu_p - \\frac{qD_p}{kT}\\right)p\\mathscr{E} + \\left(\\frac{qD_p}{kT}\\right)p\\nabla F_p",
+      "description": "Esta fórmula descreve a densidade de corrente de lacunas (buracos) em um semicondutor na presença de campos elétricos e gradientes de energia livre, levando em conta a relação de Einstein generalizada e efeitos de quasi-Fermi. O primeiro termo representa a contribuição de deriva (drift), modificada pela relação entre mobilidade e difusão incluindo efeitos de energia livre, enquanto o segundo termo representa a contribuição difusiva associada ao gradiente do potencial quasi-Fermi das lacunas. Esta formulação é útil em dispositivos onde as bandas de energia são não-uniformes ou sob condições de não-equilíbrio, como em junções p-n, heteroestruturas e dispositivos com campos de deformação (strain). A relação reduz-se à equação padrão de deriva-difusão quando se aplica a relação de Einstein clássica (qD_p = μ_p kT).",
+      "concepts": [
+        "corrente de lacunas",
+        "deriva e difusão",
+        "relação de Einstein generalizada",
+        "nível quasi-Fermi",
+        "campo elétrico",
+        "energia livre de Fermi",
+        "transporte de portadores",
+        "semicondutores não-homogêneos",
+        "equação de transporte",
+        "heteroestruturas"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\mathbf{J}_p",
+          "description": "Densidade de corrente de lacunas (vetor), em A/m²"
+        },
+        {
+          "symbol": "q",
+          "description": "Carga elementar do elétron (1,602 × 10⁻¹⁹ C)"
+        },
+        {
+          "symbol": "\\mu_p",
+          "description": "Mobilidade das lacunas no semicondutor, em m²/(V·s)"
+        },
+        {
+          "symbol": "D_p",
+          "description": "Coeficiente de difusão das lacunas, em m²/s"
+        },
+        {
+          "symbol": "k",
+          "description": "Constante de Boltzmann (1,381 × 10⁻²³ J/K)"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta do sistema, em Kelvin (K)"
+        },
+        {
+          "symbol": "p",
+          "description": "Concentração de lacunas no semicondutor, em m⁻³"
+        },
+        {
+          "symbol": "\\mathscr{E}",
+          "description": "Campo elétrico local aplicado ou interno, em V/m"
+        },
+        {
+          "symbol": "\\nabla F_p",
+          "description": "Gradiente do potencial quasi-Fermi das lacunas, representando a força motriz difusiva associada à energia livre, em eV/m ou J/m"
+        },
+        {
+          "symbol": "F_p",
+          "description": "Potencial quasi-Fermi (nível de Fermi das lacunas), em eV ou J, que descreve o estado de não-equilíbrio das lacunas"
+        },
+        {
+          "symbol": "\\frac{qD_p}{kT}",
+          "description": "Fator de escala que relaciona difusão e energia térmica, análogo à relação de Einstein inversa; é adimensional quando multiplicado por energia"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-transport",
+        "domain": "device-physics"
+      },
+      "keywords": [
+        "hole current",
+        "drift",
+        "diffusion",
+        "carrier transport",
+        "quasi-Fermi level",
+        "Einstein relation",
+        "mobility",
+        "diffusion coefficient",
+        "electric field",
+        "free energy gradient",
+        "heterojunction",
+        "non-equilibrium",
+        "semiconductor",
+        "current density",
+        "lacunas",
+        "corrente"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "posição espacial",
+          "nível de Fermi quasi-estático das lacunas (F_p)",
+          "campo elétrico",
+          "densidade de corrente de lacunas",
+          "concentração de lacunas"
+        ]
+      },
+      "relatedFormulas": [
+        "drift-diffusion-electron-current",
+        "Einstein-relation",
+        "Fermi-Dirac-distribution",
+        "continuity-equation-holes",
+        "drift-current-holes",
+        "diffusion-current-holes",
+        "quasi-Fermi-level",
+        "Boltzmann-transport-equation"
+      ]
+    },
+    {
+      "originalFormula": "\\mathbf{J}_p = \\mu_p p \\nabla F_p",
+      "genericFormula": "\\mathbf{J}_p = \\mu_p p \\nabla F_p",
+      "description": "Esta fórmula descreve a densidade de corrente de lacunas (portadores de carga positiva) em um semicondutor em termos do quasi-nível de Fermi para lacunas. A corrente de lacunas é proporcional à mobilidade das lacunas (μ_p), à concentração de lacunas (p) e ao gradiente espacial do quasi-nível de Fermi das lacunas (∇F_p). O quasi-nível de Fermi (ou pseudo-nível de Fermi) é um conceito fundamental em semicondutores fora do equilíbrio térmico: quando portadores são injetados ou gerados, o sistema não pode mais ser descrito por um único nível de Fermi, e são introduzidos níveis de Fermi separados para elétrons e lacunas. O gradiente do quasi-nível de Fermi é a força motriz unificada que combina os efeitos do campo elétrico (deriva) e do gradiente de concentração (difusão) em uma única expressão elegante. Esta formulação é especialmente útil na análise de dispositivos semicondutores como diodos, transistores bipolares e células solares, pois simplifica a equação de transporte ao unificar os dois mecanismos de transporte.",
+      "concepts": [
+        "densidade de corrente de lacunas",
+        "quasi-nível de Fermi",
+        "mobilidade de portadores",
+        "transporte de portadores",
+        "deriva e difusão",
+        "desequilíbrio térmico",
+        "semicondutores",
+        "equações de transporte",
+        "força motriz eletroquímica"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\mathbf{J}_p",
+          "description": "Densidade de corrente de lacunas (vetor), em A/m² ou A/cm²"
+        },
+        {
+          "symbol": "\\mu_p",
+          "description": "Mobilidade das lacunas, que quantifica a facilidade com que lacunas se movem sob a ação de um campo elétrico, em cm²/(V·s)"
+        },
+        {
+          "symbol": "p",
+          "description": "Concentração de lacunas (portadores positivos), em cm⁻³"
+        },
+        {
+          "symbol": "\\nabla F_p",
+          "description": "Gradiente espacial do quasi-nível de Fermi das lacunas, em eV/cm ou V/m; representa a força motriz total para o transporte de lacunas"
+        },
+        {
+          "symbol": "F_p",
+          "description": "Quasi-nível de Fermi das lacunas (também chamado de imref ou pseudo-nível de Fermi para lacunas), em eV"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-transport",
+        "domain": "device-physics"
+      },
+      "keywords": [
+        "carrier",
+        "current",
+        "hole",
+        "mobility",
+        "quasi-Fermi",
+        "transport",
+        "drift",
+        "diffusion",
+        "gradient",
+        "Fermi-level",
+        "concentration",
+        "non-equilibrium",
+        "junction",
+        "diode"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "quasi-Fermi level for holes",
+          "position",
+          "hole concentration",
+          "current density"
+        ]
+      },
+      "relatedFormulas": [
+        "J_n = mu_n n grad F_n",
+        "J_p = q mu_p p E + q D_p grad p",
+        "Einstein relation D_p / mu_p = kT/q",
+        "Fermi-Dirac distribution",
+        "continuity equation for holes",
+        "Poisson equation"
+      ]
+    },
+    {
+      "originalFormula": "\\mathbf{J}_N = \\mu_n n \\nabla F_N",
+      "genericFormula": "\\mathbf{J}_N = \\mu_n n \\nabla F_N",
+      "description": "Esta fórmula descreve a densidade de corrente de elétrons em um semicondutor em termos do gradiente do quasi-nível de Fermi dos elétrons. O quasi-nível de Fermi (ou quasi-Fermi level) F_N é uma grandeza termodinâmica generalizada que descreve a distribuição de elétrons fora do equilíbrio térmico. Em condições de não-equilíbrio — como sob iluminação ou aplicação de tensão — os elétrons e os buracos passam a ter distribuições estatísticas independentes, cada qual descrita pelo seu respectivo quasi-nível de Fermi. A corrente de elétrons é proporcional à mobilidade dos elétrons (μ_n), à concentração de elétrons (n) e ao gradiente espacial do quasi-nível de Fermi F_N. Esta formulação unifica de forma elegante as correntes de deriva e difusão em uma única expressão compacta: a corrente de deriva surge do campo elétrico embutido no potencial eletrostático, enquanto a corrente de difusão surge do gradiente de concentração, ambos absorvidos pelo gradiente de F_N. É amplamente utilizada na análise de dispositivos semicondutores como diodos, transistores bipolares e células solares.",
+      "concepts": [
+        "quasi-nível de Fermi",
+        "corrente de elétrons",
+        "mobilidade de portadores",
+        "não-equilíbrio termodinâmico",
+        "corrente de deriva",
+        "corrente de difusão",
+        "transporte de portadores",
+        "equações de transporte em semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\mathbf{J}_N",
+          "description": "Densidade de corrente de elétrons (vetor), em A/m² ou A/cm²"
+        },
+        {
+          "symbol": "\\mu_n",
+          "description": "Mobilidade dos elétrons, em cm²/(V·s) ou m²/(V·s); relaciona a velocidade de deriva dos elétrons ao campo elétrico aplicado"
+        },
+        {
+          "symbol": "n",
+          "description": "Concentração de elétrons livres (densidade volumétrica), em cm⁻³ ou m⁻³"
+        },
+        {
+          "symbol": "\\nabla F_N",
+          "description": "Gradiente espacial do quasi-nível de Fermi dos elétrons F_N, em eV/m ou eV/cm; representa a força motriz para o fluxo de elétrons"
+        },
+        {
+          "symbol": "F_N",
+          "description": "Quasi-nível de Fermi dos elétrons (também chamado de potencial eletroquímico dos elétrons), em eV; descreve a distribuição estatística dos elétrons fora do equilíbrio térmico"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-transport",
+        "domain": "device-physics"
+      },
+      "keywords": [
+        "current",
+        "carrier",
+        "electron",
+        "mobility",
+        "quasi-Fermi",
+        "Fermi-level",
+        "transport",
+        "drift",
+        "diffusion",
+        "non-equilibrium",
+        "gradient",
+        "conductivity",
+        "concentration",
+        "semiconductor"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "quasi-Fermi level F_N",
+          "electron concentration n",
+          "position x",
+          "current density J_N"
+        ]
+      },
+      "relatedFormulas": [
+        "drift-diffusion-electron",
+        "Einstein-relation",
+        "Fermi-Dirac-distribution",
+        "continuity-equation-electrons",
+        "J_N-drift-diffusion",
+        "quasi-Fermi-hole-current",
+        "Poisson-equation"
+      ]
+    },
+    {
+      "originalFormula": "\\rho = \\frac{1}{q(n\\mu_n + p\\mu_p)}",
+      "genericFormula": "\\rho = \\frac{1}{q(n\\mu_n + p\\mu_p)}",
+      "description": "Esta fórmula expressa a resistividade elétrica de um semicondutor em função das concentrações e mobilidades dos portadores de carga. A resistividade é o inverso da condutividade elétrica (σ = q(nμₙ + pμₚ)), onde tanto elétrons (portadores negativos na banda de condução) quanto lacunas (portadores positivos na banda de valência) contribuem para o transporte de carga. Em semicondutores intrínsecos, ambas as contribuições são relevantes; em semicondutores extrínsecos tipo-n, a contribuição dos elétrons domina, enquanto em tipo-p predominam as lacunas. A fórmula é fundamental para o projeto de dispositivos semicondutores e para a compreensão do transporte elétrico em materiais.",
+      "concepts": [
+        "resistividade elétrica",
+        "condutividade elétrica",
+        "mobilidade de portadores",
+        "concentração de portadores",
+        "transporte de carga",
+        "semicondutor intrínseco",
+        "semicondutor extrínseco",
+        "elétrons livres",
+        "lacunas",
+        "modelo de Drude"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\rho",
+          "description": "Resistividade elétrica do semicondutor (Ω·m)"
+        },
+        {
+          "symbol": "q",
+          "description": "Carga elementar do elétron (1,602 × 10⁻¹⁹ C)"
+        },
+        {
+          "symbol": "n",
+          "description": "Concentração de elétrons livres na banda de condução (m⁻³)"
+        },
+        {
+          "symbol": "\\mu_n",
+          "description": "Mobilidade dos elétrons, que expressa a facilidade com que os elétrons se movem sob ação de um campo elétrico (m²/V·s)"
+        },
+        {
+          "symbol": "p",
+          "description": "Concentração de lacunas na banda de valência (m⁻³)"
+        },
+        {
+          "symbol": "\\mu_p",
+          "description": "Mobilidade das lacunas, que expressa a facilidade com que as lacunas se movem sob ação de um campo elétrico (m²/V·s)"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-transport",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "resistivity",
+        "conductivity",
+        "carrier",
+        "mobility",
+        "electron",
+        "hole",
+        "transport",
+        "concentration",
+        "current",
+        "semiconductor",
+        "intrinsic",
+        "extrinsic",
+        "Drude"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "resistivity-vs-temperature",
+        "graphParameters": [
+          "resistivity",
+          "temperature",
+          "carrier concentration",
+          "mobility"
+        ]
+      },
+      "relatedFormulas": [
+        "Ohm's Law",
+        "Drude Conductivity",
+        "Fermi-Dirac Distribution",
+        "Carrier Concentration Intrinsic",
+        "Einstein Relation",
+        "Drift Current Density"
+      ]
+    },
+    {
+      "originalFormula": "D_n = \\frac{kT}{q}\\mu_n",
+      "genericFormula": "D_n = \\frac{kT}{q}\\mu_n",
+      "description": "A Relação de Einstein para elétrons relaciona o coeficiente de difusão D_n com a mobilidade de deriva μ_n dos elétrons em um semicondutor. Esta relação fundamental mostra que difusão e deriva são dois aspectos do mesmo mecanismo microscópico de transporte: o espalhamento dos portadores de carga. O fator kT/q, chamado de tensão térmica (V_T), representa a energia térmica dos portadores normalizada pela carga, e tem valor aproximado de 26 mV à temperatura ambiente (300 K). Sempre que há um gradiente de concentração de elétrons em um semicondutor, a corrente de difusão resultante é proporcional ao coeficiente D_n. A Relação de Einstein é válida para semicondutores não degenerados, onde a estatística de Maxwell-Boltzmann é uma boa aproximação para a distribuição de portadores.",
+      "concepts": [
+        "Relação de Einstein",
+        "coeficiente de difusão",
+        "mobilidade de portadores",
+        "tensão térmica",
+        "transporte de portadores",
+        "corrente de difusão",
+        "equilíbrio termodinâmico",
+        "semicondutores não degenerados",
+        "espalhamento de portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "D_n",
+          "description": "Coeficiente de difusão dos elétrons (cm²/s): quantifica a facilidade com que elétrons se difundem sob um gradiente de concentração"
+        },
+        {
+          "symbol": "k",
+          "description": "Constante de Boltzmann (k = 1,381 × 10⁻²³ J/K): relaciona energia térmica com temperatura absoluta"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta em Kelvin (K): a 300 K (temperatura ambiente), kT ≈ 25,9 meV"
+        },
+        {
+          "symbol": "q",
+          "description": "Carga elementar do elétron (q = 1,602 × 10⁻¹⁹ C): carga positiva usada para converter energia em volts"
+        },
+        {
+          "symbol": "\\frac{kT}{q}",
+          "description": "Tensão térmica V_T (≈ 26 mV a 300 K): parâmetro fundamental que aparece em diversas equações de semicondutores"
+        },
+        {
+          "symbol": "\\mu_n",
+          "description": "Mobilidade de deriva dos elétrons (cm²/V·s): mede a velocidade de deriva dos elétrons por unidade de campo elétrico aplicado"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-transport",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "diffusion",
+        "mobility",
+        "carrier",
+        "Einstein relation",
+        "thermal voltage",
+        "electron",
+        "transport",
+        "drift",
+        "conductivity",
+        "current"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "linear-relation",
+        "graphParameters": [
+          "diffusion-coefficient",
+          "mobility",
+          "temperature"
+        ]
+      },
+      "relatedFormulas": [
+        "Einstein-relation-holes",
+        "Drift-current-electrons",
+        "Diffusion-current-electrons",
+        "Fermi-Dirac-distribution",
+        "Continuity-equation",
+        "Total-current-density"
+      ]
+    },
+    {
+      "originalFormula": "\\rac{d\\mathcal{E}}{dx} = \\rac{\\rho}{K_s \\epsilon_0}",
+      "genericFormula": "\\frac{d\\mathcal{E}}{dx} = \\frac{\\rho}{K_s \\epsilon_0}",
+      "description": "Esta é a equação de Poisson unidimensional para semicondutores, que relaciona a variação espacial do campo elétrico com a densidade de carga local no material. Ela é derivada diretamente das equações de Maxwell (especificamente da Lei de Gauss) e é fundamental para a análise de dispositivos semicondutores como junções p-n, transistores MOSFET e diodos Schottky. A equação afirma que o gradiente do campo elétrico em um ponto é igual à densidade de carga volumétrica naquele ponto dividida pela permissividade elétrica efetiva do meio (produto da constante dielétrica relativa do semicondutor pela permissividade do vácuo). Em regiões sem carga (como o bulk neutro), o campo elétrico é constante. Nas regiões de depleção, onde existem cargas de ionização de dopantes, o campo elétrico varia linearmente com a posição. Esta equação, combinada com as equações de continuidade e de transporte, forma o conjunto completo de equações para simulação de dispositivos semicondutores.",
+      "concepts": [
+        "Equação de Poisson",
+        "Lei de Gauss",
+        "Campo elétrico",
+        "Densidade de carga volumétrica",
+        "Permissividade dielétrica",
+        "Região de depleção",
+        "Junção p-n",
+        "Eletrostática em semicondutores",
+        "Equações de Maxwell"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\mathcal{E}",
+          "description": "Campo elétrico (V/m), também denotado como E, representa a força por unidade de carga positiva em cada ponto do espaço"
+        },
+        {
+          "symbol": "x",
+          "description": "Coordenada espacial unidimensional (m), direção ao longo da qual o campo elétrico varia"
+        },
+        {
+          "symbol": "\\frac{d\\mathcal{E}}{dx}",
+          "description": "Gradiente espacial (derivada) do campo elétrico em relação à posição (V/m²)"
+        },
+        {
+          "symbol": "\\rho",
+          "description": "Densidade de carga volumétrica (C/m³), inclui contribuições de portadores livres (elétrons e buracos) e íons de dopantes ionizados: ρ = q(p - n + N_D⁺ - N_A⁻)"
+        },
+        {
+          "symbol": "K_s",
+          "description": "Constante dielétrica relativa (permissividade relativa) do semicondutor, adimensional. Para silício K_s ≈ 11,7; para GaAs K_s ≈ 12,9"
+        },
+        {
+          "symbol": "\\epsilon_0",
+          "description": "Permissividade elétrica do vácuo, ε₀ ≈ 8,854 × 10⁻¹² F/m (farads por metro)"
+        },
+        {
+          "symbol": "K_s \\epsilon_0",
+          "description": "Permissividade elétrica absoluta do semicondutor (F/m), produto da permissividade relativa pela permissividade do vácuo, representa a capacidade do material de polarizar-se em resposta a um campo elétrico"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "electrostatics",
+        "domain": "device-physics"
+      },
+      "keywords": [
+        "Poisson",
+        "electric-field",
+        "charge-density",
+        "permittivity",
+        "dielectric",
+        "depletion",
+        "junction",
+        "Gauss",
+        "electrostatics",
+        "doping",
+        "space-charge",
+        "carrier",
+        "potential",
+        "band-bending"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "electric-field-distribution",
+        "graphParameters": [
+          "electric-field",
+          "position",
+          "charge-density",
+          "depletion-width",
+          "doping-concentration"
+        ]
+      },
+      "relatedFormulas": [
+        "Poisson-2D",
+        "Gauss-Law",
+        "Continuity-Equation",
+        "Drift-Diffusion",
+        "Depletion-Approximation",
+        "Built-in-Potential",
+        "pn-Junction-Electrostatics",
+        "Schottky-Barrier"
+      ]
+    },
+    {
+      "originalFormula": "J_{N|\\text{drift}} = q n \\mu_n \\mathcal{E}",
+      "genericFormula": "J_{N|\\text{drift}} = q n \\mu_n \\mathcal{E}",
+      "description": "A corrente de deriva de elétrons (drift current) descreve o fluxo de carga elétrica gerado pelo movimento ordenado dos elétrons em resposta a um campo elétrico aplicado. Quando um campo elétrico externo é aplicado a um semicondutor, os elétrons livres na banda de condução são acelerados na direção oposta ao campo (devido à carga negativa), mas sofrem espalhamento por imperfeições da rede cristalina, impurezas e fônons, resultando em uma velocidade média de deriva proporcional ao campo elétrico. A constante de proporcionalidade é a mobilidade dos elétrons. Esta fórmula é fundamental para análise de transporte em semicondutores, cálculo de resistividade, modelagem de dispositivos como diodos e transistores, e determinação da corrente total em junções p-n.",
+      "concepts": [
+        "corrente de deriva",
+        "transporte de portadores",
+        "mobilidade de elétrons",
+        "campo elétrico",
+        "velocidade de deriva",
+        "espalhamento de portadores",
+        "condução elétrica em semicondutores",
+        "lei de Ohm microscópica",
+        "densidade de corrente"
+      ],
+      "symbols": [
+        {
+          "symbol": "J_{N|\\text{drift}}",
+          "description": "Densidade de corrente de deriva dos elétrons, medida em A/cm² ou A/m². Representa o fluxo de corrente por unidade de área originado pelo movimento dos elétrons sob ação do campo elétrico."
+        },
+        {
+          "symbol": "q",
+          "description": "Carga elementar do elétron, q = 1,602 × 10⁻¹⁹ C. Valor positivo por convenção; o sinal negativo da carga do elétron é absorvido na direção do movimento em relação ao campo."
+        },
+        {
+          "symbol": "n",
+          "description": "Concentração de elétrons livres na banda de condução, medida em cm⁻³ ou m⁻³. Representa o número de portadores de carga negativa disponíveis para condução por unidade de volume."
+        },
+        {
+          "symbol": "\\mu_n",
+          "description": "Mobilidade dos elétrons, medida em cm²/(V·s) ou m²/(V·s). Quantifica a facilidade com que os elétrons se movem através do material sob a ação de um campo elétrico unitário. Depende da temperatura e do nível de dopagem do semicondutor."
+        },
+        {
+          "symbol": "\\mathcal{E}",
+          "description": "Campo elétrico aplicado ao semicondutor, medido em V/cm ou V/m. É o agente responsável por impor força sobre os portadores de carga e gerar o movimento de deriva."
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-transport",
+        "domain": "device-physics"
+      },
+      "keywords": [
+        "drift",
+        "current",
+        "electron",
+        "carrier",
+        "mobility",
+        "electric-field",
+        "transport",
+        "conductivity",
+        "semiconductor",
+        "density",
+        "ohm",
+        "conduction",
+        "diffusion"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "drift-velocity vs electric-field",
+        "graphParameters": [
+          "drift current density",
+          "electric field",
+          "electron concentration",
+          "electron mobility",
+          "temperature"
+        ]
+      },
+      "relatedFormulas": [
+        "J_{P|drift} = q p \\mu_p \\mathcal{E}",
+        "J_{N|diffusion} = q D_n \\frac{dn}{dx}",
+        "J_{total} = J_{N|drift} + J_{P|drift} + J_{N|diffusion} + J_{P|diffusion}",
+        "v_{d,n} = -\\mu_n \\mathcal{E}",
+        "Einstein-Relation",
+        "Continuity-Equation",
+        "Ohm-Law"
+      ]
+    },
+    {
+      "originalFormula": "J_{N|\\text{diff}} = q D_n \\frac{dn}{dx}",
+      "genericFormula": "J_{N|\\text{diff}} = q D_n \\frac{dn}{dx}",
+      "description": "A densidade de corrente de difusão de elétrons descreve o fluxo de carga elétrica gerado pelo movimento de elétrons de regiões de alta concentração para regiões de baixa concentração, seguindo o gradiente de concentração. Este fenômeno é análogo à difusão de partículas descrita pela Lei de Fick. Em semicondutores, a difusão ocorre quando existe uma distribuição não uniforme de portadores de carga (elétrons ou lacunas), criando um gradiente que impulsiona o movimento mesmo na ausência de campo elétrico externo. O coeficiente de difusão D_n depende da temperatura e da mobilidade dos elétrons, sendo relacionado à mobilidade por meio da relação de Einstein. Esta equação é fundamental para a análise de dispositivos como diodos p-n, transistores bipolares e fotodetectores, onde gradientes de concentração de portadores são essenciais para o funcionamento.",
+      "concepts": [
+        "difusão de portadores",
+        "gradiente de concentração",
+        "lei de Fick",
+        "transporte de carga",
+        "corrente de difusão",
+        "coeficiente de difusão",
+        "relação de Einstein",
+        "semicondutores",
+        "elétrons minoritários e majoritários"
+      ],
+      "symbols": [
+        {
+          "symbol": "J_{N|\\text{diff}}",
+          "description": "Densidade de corrente de difusão de elétrons (A/cm²), componente da corrente total devida ao gradiente de concentração de elétrons"
+        },
+        {
+          "symbol": "q",
+          "description": "Carga elementar do elétron, q = 1,602 × 10⁻¹⁹ C (Coulombs)"
+        },
+        {
+          "symbol": "D_n",
+          "description": "Coeficiente de difusão de elétrons (cm²/s), relacionado à mobilidade pela relação de Einstein: D_n = (k_B T / q) \\mu_n"
+        },
+        {
+          "symbol": "\\frac{dn}{dx}",
+          "description": "Gradiente espacial da concentração de elétrons ao longo da direção x (cm⁻⁴), indica a taxa de variação da densidade de elétrons por unidade de comprimento"
+        },
+        {
+          "symbol": "n",
+          "description": "Concentração de elétrons livres no semicondutor (cm⁻³)"
+        },
+        {
+          "symbol": "x",
+          "description": "Coordenada espacial na direção do transporte (cm)"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-transport",
+        "domain": "device-physics"
+      },
+      "keywords": [
+        "diffusion",
+        "carrier",
+        "current",
+        "electron",
+        "concentration",
+        "gradient",
+        "transport",
+        "Fick",
+        "Einstein",
+        "mobility",
+        "junction",
+        "drift-diffusion"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "carrier-concentration-profile",
+        "graphParameters": [
+          "electron concentration n(x)",
+          "position x",
+          "diffusion current density",
+          "concentration gradient"
+        ]
+      },
+      "relatedFormulas": [
+        "Einstein-Relation",
+        "Drift-Current-Electrons",
+        "Total-Current-Density",
+        "Continuity-Equation-Electrons",
+        "Fick-First-Law",
+        "Drift-Diffusion-Model",
+        "Hole-Diffusion-Current"
+      ]
+    }
+  ],
+  "bookTitle": "Modular Series On Solid State Devices",
+  "author": "Unknown",
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116
+  ],
+  "lastUpdated": "2026-05-09T16:07:00.512Z"
+}
