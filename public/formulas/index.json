@@ -11,25 +11,473 @@
     "lastUpdated": "2026-05-09T19:16:29.384Z"
   },
   "Semiconductor physics and devices - Basic - Donald A. Neamen": {
-    "title": "Semiconductor physics and devices",
-    "author": "Unknown",
-    "publisher": "Basic",
-    "edition": "Unknown",
-    "year": "Unknown",
-    "chapters": [],
+    "title": "Fundamentals of the Metal–Oxide–Semiconductor Field-Effect Transistor",
+    "author": "Donald A. Neamen",
+    "publisher": "McGraw-Hill",
+    "edition": "Fourth Edition",
+    "year": "2012",
+    "chapters": [
+      {
+        "number": "1",
+        "title": "The Crystal Structure of Solids"
+      },
+      {
+        "number": "2",
+        "title": "Introduction to Quantum Mechanics"
+      },
+      {
+        "number": "3",
+        "title": "Introduction to the Quantum Theory of Solids"
+      },
+      {
+        "number": "3.4",
+        "title": "Density of States Function"
+      },
+      {
+        "number": "3.5",
+        "title": "Statistical Mechanics"
+      },
+      {
+        "number": "3.6",
+        "title": "Summary"
+      },
+      {
+        "number": "4",
+        "title": "The Semiconductor in Equilibrium"
+      },
+      {
+        "number": "4.1",
+        "title": "Charge Carriers in Semiconductors"
+      },
+      {
+        "number": "4.2",
+        "title": "Dopant Atoms and Energy Levels"
+      },
+      {
+        "number": "4.3",
+        "title": "The Extrinsic Semiconductor"
+      },
+      {
+        "number": "4.4",
+        "title": "Statistics of Donors and Acceptors"
+      },
+      {
+        "number": "4.5",
+        "title": "Charge Neutrality"
+      },
+      {
+        "number": "4.6",
+        "title": "Position of Fermi Energy Level"
+      },
+      {
+        "number": "5",
+        "title": "Carrier Transport Phenomena"
+      },
+      {
+        "number": "5.1",
+        "title": "Carrier Drift"
+      },
+      {
+        "number": "5.2",
+        "title": "Carrier Diffusion"
+      },
+      {
+        "number": "5.3",
+        "title": "Graded Impurity Distribution"
+      },
+      {
+        "number": "5.4",
+        "title": "The Hall Effect"
+      },
+      {
+        "number": "5.5",
+        "title": "Summary"
+      },
+      {
+        "number": "6",
+        "title": "Nonequilibrium Excess Carriers in Semiconductors"
+      },
+      {
+        "number": "6.1",
+        "title": "Carrier Generation and Recombination"
+      },
+      {
+        "number": "6.2",
+        "title": "Characteristics of Excess Carriers"
+      },
+      {
+        "number": "6.3",
+        "title": "Ambipolar Transport"
+      },
+      {
+        "number": "7",
+        "title": "The pn Junction"
+      },
+      {
+        "number": "8",
+        "title": "The pn Junction Diode"
+      },
+      {
+        "number": "9",
+        "title": "Metal–Semiconductor and Semiconductor Heterojunctions"
+      },
+      {
+        "number": "10",
+        "title": "Fundamentals of the Metal–Oxide–Semiconductor Field-Effect Transistor"
+      },
+      {
+        "number": "11",
+        "title": "Metal–Oxide–Semiconductor Field-Effect Transistor: Additional Concepts"
+      },
+      {
+        "number": "12",
+        "title": "The Bipolar Transistor"
+      },
+      {
+        "number": "12.1",
+        "title": "Base Width Modulation"
+      },
+      {
+        "number": "12.2",
+        "title": "High Injection"
+      },
+      {
+        "number": "12.3",
+        "title": "Emitter Bandgap Narrowing"
+      },
+      {
+        "number": "12.4",
+        "title": "Current Crowding"
+      },
+      {
+        "number": "12.5",
+        "title": "Nonuniform Base Doping"
+      },
+      {
+        "number": "12.6",
+        "title": "Breakdown Voltage"
+      },
+      {
+        "number": "12.7",
+        "title": "Equivalent Circuit Models"
+      },
+      {
+        "number": "12.8",
+        "title": "Frequency Limitations"
+      },
+      {
+        "number": "12.9",
+        "title": "Large-Signal Switching"
+      },
+      {
+        "number": "13",
+        "title": "The Junction Field-Effect Transistor"
+      },
+      {
+        "number": "13.0",
+        "title": "Preview"
+      },
+      {
+        "number": "13.1",
+        "title": "JFET Concepts"
+      },
+      {
+        "number": "13.2",
+        "title": "The Device Characteristics"
+      },
+      {
+        "number": "14",
+        "title": "Optical Devices"
+      },
+      {
+        "number": "14.0",
+        "title": "Preview"
+      },
+      {
+        "number": "14.1",
+        "title": "Optical Absorption"
+      },
+      {
+        "number": "14.2",
+        "title": "Solar Cells"
+      },
+      {
+        "number": "14.3",
+        "title": "Photodetectors"
+      },
+      {
+        "number": "14.4",
+        "title": "Photoluminescence and Electroluminescence"
+      },
+      {
+        "number": "14.5",
+        "title": "Light Emitting Diodes"
+      },
+      {
+        "number": "14.6",
+        "title": "Laser Diodes"
+      },
+      {
+        "number": "14.7",
+        "title": "Summary"
+      },
+      {
+        "number": "15",
+        "title": "Semiconductor Microwave and Power Devices"
+      },
+      {
+        "number": "15.0",
+        "title": "Preview"
+      },
+      {
+        "number": "15.1",
+        "title": "Tunnel Diode"
+      },
+      {
+        "number": "15.2",
+        "title": "Gunn Diode"
+      },
+      {
+        "number": "15.3",
+        "title": "Impat Diode"
+      },
+      {
+        "number": "15.4",
+        "title": "Power Bipolar Transistors"
+      },
+      {
+        "number": "15.5",
+        "title": "Power MOSFETs"
+      },
+      {
+        "number": "15.6",
+        "title": "The Thyristor"
+      },
+      {
+        "number": "15.7",
+        "title": "Summary"
+      },
+      {
+        "number": "A",
+        "title": "Selected List of Symbols"
+      },
+      {
+        "number": "B",
+        "title": "System of Units, Conversion Factors, and General Constants"
+      },
+      {
+        "number": "C",
+        "title": "The Periodic Table"
+      },
+      {
+        "number": "D",
+        "title": "Unit of Energy—The Electron Volt"
+      },
+      {
+        "number": "E",
+        "title": "„Derivation“ of Schrodinger’s Wave Equation"
+      },
+      {
+        "number": "F",
+        "title": "Effective Mass Concepts"
+      },
+      {
+        "number": "G",
+        "title": "The Error Function"
+      },
+      {
+        "number": "H",
+        "title": "Answers to Selected Problems"
+      },
+      {
+        "number": "Index",
+        "title": "Index"
+      }
+    ],
+    "citation": "Donald A. Neamen. Fundamentals of the Metal–Oxide–Semiconductor Field-Effect Transistor. McGraw-Hill, 2012.",
     "totalProcessedPages": 784,
     "directory": "Semiconductor physics and devices - Basic - Donald A. Neamen",
-    "lastUpdated": "2026-05-09T19:16:56.045Z"
+    "lastUpdated": "2026-05-09T20:11:52.728Z"
   },
   "Modular Series On Solid State Devices - Se - Robert F Pierret": {
-    "title": "Modular Series On Solid State Devices",
-    "author": "Unknown",
-    "publisher": "Se",
-    "edition": "Unknown",
-    "year": "Unknown",
-    "chapters": [],
+    "title": "Semiconductor fundamentals",
+    "author": "Prof. Gerold W. Neudeck, Prof. Robert F. Pierret",
+    "publisher": "Addison-Wesley Publishing Company, Inc.",
+    "edition": "2nd ed.",
+    "year": "1988",
+    "chapters": [
+      {
+        "number": "1",
+        "title": "Semiconductors — General Information"
+      },
+      {
+        "number": "1.1",
+        "title": "General Material Properties"
+      },
+      {
+        "number": "1.1.1",
+        "title": "Composition"
+      },
+      {
+        "number": "1.1.2",
+        "title": "Purity"
+      },
+      {
+        "number": "1.1.3",
+        "title": "Structure"
+      },
+      {
+        "number": "1.2",
+        "title": "Crystal Structure"
+      },
+      {
+        "number": "1.2.1",
+        "title": "The Unit Cell Concept"
+      },
+      {
+        "number": "1.2.2",
+        "title": "Simple 3-D Unit Cells"
+      },
+      {
+        "number": "1.2.3",
+        "title": "Semiconductor Lattices"
+      },
+      {
+        "number": "1.2.4",
+        "title": "Miller Indices"
+      },
+      {
+        "number": "1.3",
+        "title": "Crystal Growth"
+      },
+      {
+        "number": "1.3.1",
+        "title": "Obtaining Ultrapure Si"
+      },
+      {
+        "number": "1.3.2",
+        "title": "Single Crystal Formation"
+      },
+      {
+        "number": "1.4",
+        "title": "Summary"
+      },
+      {
+        "number": "2",
+        "title": "Carrier Modeling"
+      },
+      {
+        "number": "2.1",
+        "title": "The Quantization Concept"
+      },
+      {
+        "number": "2.2",
+        "title": "Semiconductor Models"
+      },
+      {
+        "number": "2.2.1",
+        "title": "Bonding Model"
+      },
+      {
+        "number": "2.2.2",
+        "title": "Energy Band Model"
+      },
+      {
+        "number": "2.2.3",
+        "title": "Carriers"
+      },
+      {
+        "number": "2.2.4",
+        "title": "Material Classification"
+      },
+      {
+        "number": "2.3",
+        "title": "Carrier Properties"
+      },
+      {
+        "number": "2.3.1",
+        "title": "Charge"
+      },
+      {
+        "number": "2.3.2",
+        "title": "Effective Mass"
+      },
+      {
+        "number": "2.4",
+        "title": "State and Carrier Distributions"
+      },
+      {
+        "number": "2.5",
+        "title": "Equilibrium Carrier Concentrations"
+      },
+      {
+        "number": "2.6",
+        "title": "Summary and Concluding Comments"
+      },
+      {
+        "number": "3",
+        "title": "Carrier Action"
+      },
+      {
+        "number": "3.1",
+        "title": "Drift"
+      },
+      {
+        "number": "3.2",
+        "title": "Diffusion"
+      },
+      {
+        "number": "3.3",
+        "title": "Recombination–Generation"
+      },
+      {
+        "number": "3.4",
+        "title": "Equations of State"
+      },
+      {
+        "number": "3.5",
+        "title": "Problem Solving and Supplemental Concepts"
+      },
+      {
+        "number": "3.6",
+        "title": "Review and Concluding Comments"
+      },
+      {
+        "number": "A",
+        "title": "Exercises"
+      },
+      {
+        "number": "B",
+        "title": "Volume Review Problem Sets and Answers"
+      },
+      {
+        "number": "B.1",
+        "title": "Problem Set A"
+      },
+      {
+        "number": "B.2",
+        "title": "Problem Set B"
+      },
+      {
+        "number": "B.3",
+        "title": "Answers — Set A"
+      },
+      {
+        "number": "B.4",
+        "title": "Answers — Set B"
+      },
+      {
+        "number": "C",
+        "title": "List of Symbols"
+      },
+      {
+        "number": "Index",
+        "title": "Index"
+      }
+    ],
+    "citation": "Prof. Gerold W. Neudeck, Prof. Robert F. Pierret. Semiconductor fundamentals. Addison-Wesley Publishing Company, Inc., 1988.",
     "totalProcessedPages": 155,
     "directory": "Modular Series On Solid State Devices - Se - Robert F Pierret",
-    "lastUpdated": "2026-05-09T19:17:31.978Z"
+    "lastUpdated": "2026-05-09T20:16:13.975Z"
   }
 }
