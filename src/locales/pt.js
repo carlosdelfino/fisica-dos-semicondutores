@@ -60,6 +60,7 @@ export default {
       exercises: '📝 Exercícios e Fórmulas',
       periodic: '⚛️ Tabela Periódica',
       about: '👤 Sobre',
+      'support-us': '💖 Apoie o Projeto',
       community: '🤝 Colabore no GitHub',
       community_title: 'Participe das discussões no GitHub — requer conta para colaborar'
     }
@@ -283,6 +284,60 @@ export default {
       materials: 'Materiais',
       devices: 'Dispositivos',
       technology: 'Tecnologia'
+    }
+  },
+  support: {
+    title: '💖 Apoie o Projeto',
+    tabs: {
+      about: '👤 Sobre',
+      donation: '💰 Doações'
+    },
+    about: {
+      title: 'Sobre o Projeto',
+      p1: 'Este projeto é uma iniciativa educacional sem fins lucrativos que visa disseminar conhecimento sobre física dos semicondutores de forma acessível e gratuita.',
+      p2: 'O desenvolvimento e manutenção desta plataforma requer tempo, recursos e dedicação. Sua contribuição ajuda a manter o projeto ativo e a expandir seu conteúdo.',
+      p3: 'Todas as doações são utilizadas para cobrir custos de hospedagem, desenvolvimento de novos recursos e melhoria contínua do sistema.',
+      highlight: 'Juntos, podemos tornar a educação em física e engenharia mais acessível para todos!',
+      howToHelp: 'Como você pode ajudar:',
+      codeContribution: 'Contribua com código através de Pull Requests no GitHub',
+      documentation: 'Melhore a documentação e traduções',
+      translation: 'Traduza o conteúdo para outros idiomas',
+      reporting: 'Reporte bugs e sugira melhorias',
+      financial: 'Faça uma doação financeira para apoiar o projeto'
+    },
+    donation: {
+      title: 'Faça uma Doação',
+      intro: 'Escolha o método de contribuição que preferir. Qualquer valor é bem-vindo e faz a diferença!',
+      pixScan: 'Escaneie o QR Code',
+      pixKey: 'Chave PIX',
+      pixNote: 'Use a chave acima ou escaneie o QR Code com seu app bancário',
+      crypto: 'Criptomoedas',
+      copy: 'Copiar',
+      viewExplorer: 'Ver no explorador',
+      disclaimer: 'Aviso Importante',
+      disclaimerText: 'As doações são voluntárias e não reembolsáveis. Ao fazer uma doação, você está apoiando um projeto educacional sem fins lucrativos. Entre em contato se tiver dúvidas.'
+    },
+    wallet: {
+      title: 'Doar via Wallet',
+      connectDescription: 'Conecte sua carteira cripto (MetaMask, WalletConnect, etc.) para fazer uma doação direta.',
+      connecting: 'Conectando...',
+      connectButton: '🦊 Conectar MetaMask',
+      wallet: 'Carteira',
+      network: 'Rede',
+      ethereumMainnet: 'Ethereum Mainnet',
+      sepoliaTestnet: 'Sepolia Testnet',
+      chainId: 'Chain ID',
+      switchNetwork: 'Mudar para Ethereum Mainnet',
+      crypto: 'Criptomoeda',
+      addressOnly: 'Apenas endereço',
+      amount: 'Valor',
+      suggestedAmounts: 'Valores sugeridos',
+      donateButton: '💖 Doar Agora',
+      processing: 'Processando...',
+      transactionSent: 'Transação enviada',
+      addressDescription: 'Para doações de {{crypto}}, use o endereço abaixo:',
+      disconnect: 'Desconectar',
+      copy: 'Copiar'
     }
   }
 };

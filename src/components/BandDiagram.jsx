@@ -71,7 +71,7 @@ export default function BandDiagram({ state }) {
 
   return (
     <div className="diagram-card">
-      <h3>Diagrama de Bandas — {mat.name} {type === 'n' ? '(tipo-n com P)' : type === 'p' ? '(tipo-p com B)' : '(intrínseco)'}</h3>
+      <h3>Diagrama de Bandas — {mat.name} {type === 'n' ? `(tipo-n com ${mat.dopants.donor.symbol})` : type === 'p' ? `(tipo-p com ${mat.dopants.acceptor.symbol})` : '(intrínseco)'}</h3>
       <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Diagrama de bandas de energia" className="band-svg">
         <defs>
           <linearGradient id="cb-grad" x1="0" x2="0" y1="0" y2="1">
@@ -142,7 +142,7 @@ export default function BandDiagram({ state }) {
             <line x1={M.l + 30} y1={yEd} x2={M.l + innerW - 30} y2={yEd}
                   stroke="#22c55e" strokeWidth="1.5" strokeDasharray="3 3" />
             <text x={M.l + innerW + 8} y={yEd + 4} fill="#22c55e" fontSize="11">
-              E_d (P): Ec − {(mat.dopants.donor.dE * 1000).toFixed(0)} meV
+              E_d ({mat.dopants.donor.symbol}): Ec − {(mat.dopants.donor.dE * 1000).toFixed(0)} meV
             </text>
             {ionizedDonors.map((px, i) => (
               <g key={`d-${i}`}>
@@ -159,7 +159,7 @@ export default function BandDiagram({ state }) {
             <line x1={M.l + 30} y1={yEa} x2={M.l + innerW - 30} y2={yEa}
                   stroke="#a855f7" strokeWidth="1.5" strokeDasharray="3 3" />
             <text x={M.l + innerW + 8} y={yEa + 4} fill="#a855f7" fontSize="11">
-              E_a (B): Ev + {(mat.dopants.acceptor.dE * 1000).toFixed(0)} meV
+              E_a ({mat.dopants.acceptor.symbol}): Ev + {(mat.dopants.acceptor.dE * 1000).toFixed(0)} meV
             </text>
             {ionizedAcceptors.map((px, i) => (
               <g key={`a-${i}`}>
@@ -220,8 +220,8 @@ export default function BandDiagram({ state }) {
       </svg>
       <p className="diagram-caption">
         Elétrons (azul) na banda de condução e lacunas (vermelho) na banda de valência. Setas amarelas indicam
-        excitação térmica através do gap. {type === 'n' && 'Cada D⁺ representa um doador (P) ionizado, contribuindo um elétron extra para a BC.'}
-        {type === 'p' && 'Cada A⁻ representa um aceitador (B) ionizado, capturando um elétron e gerando lacuna na BV.'}
+        excitação térmica através do gap. {type === 'n' && `Cada D⁺ representa um doador (${mat.dopants.donor.symbol}) ionizado, contribuindo um elétron extra para a BC.`}
+        {type === 'p' && `Cada A⁻ representa um aceitador (${mat.dopants.acceptor.symbol}) ionizado, capturando um elétron e gerando lacuna na BV.`}
       </p>
     </div>
   );

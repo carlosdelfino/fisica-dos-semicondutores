@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import FormulaGraphPanel from '../FormulaGraphPanel';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useTranslation } from '../../contexts/LanguageContext';
 
 /**
  * Gráfico de Estrutura de Bandas
@@ -8,7 +8,7 @@ import { useLanguage } from '../contexts/LanguageContext';
  * Mostra diferença entre semicondutores diretos e indiretos
  */
 const BandStructureGraph = ({ formula, onClose }) => {
-  const { t } = useLanguage();
+  const { t } = useTranslation();
   const canvasRef = useRef(null);
   const [material, setMaterial] = useState('Si'); // Si, GaAs, Ge
   const [temperature, setTemperature] = useState(300); // K

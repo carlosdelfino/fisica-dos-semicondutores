@@ -2,6 +2,11 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { TeX } from './Math.jsx';
 import { buildTaxonomy, getGraphPanelsForFormula, hasGraphVisualization, TAXONOMY_CATEGORIES } from '../physics/formulaTaxonomy';
+import { getAvailableBooks, getBookMetadata, formatFormulaSource as formatFormulaSourceDynamic } from '../utils/booksIndexLoader.js';
+import PhotonEnergyGraph from './graphs/PhotonEnergyGraph.jsx';
+import HeisenbergUncertaintyGraph from './graphs/HeisenbergUncertaintyGraph.jsx';
+import DensityOfStatesGraph from './graphs/DensityOfStatesGraph.jsx';
+import BandStructureGraph from './graphs/BandStructureGraph.jsx';
 
 /**
  * Algoritmo cognitivo para filtrar conteúdo relevante
@@ -155,53 +160,34 @@ export default function ExercisesPanel() {
   const [taxonomy, setTaxonomy] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState('quantum-physics');
   const [allFormulas, setAllFormulas] = useState([]);
+  const [sourceTexts, setSourceTexts] = useState({});
 
-  // Lista de livros conhecidos (subpastas em public/formulas) com metadados
-  const KNOWN_BOOKS = [
-    'Semiconductor physics and devices - Basic - Donald A. Neamen',
-    'Semiconductor Devices - Kanaan Kano'
-  ];
-
-  // Mapeamento de livros para autores e títulos completos
-  const BOOK_METADATA = {
-    'Semiconductor physics and devices - Basic - Donald A. Neamen': {
-      title: 'Semiconductor Physics and Devices - Basic',
-      author: 'Donald A. Neamen'
-    },
-    'Semiconductor Devices - Kanaan Kano': {
-      title: 'Semiconductor Devices',
-      author: 'Kanaan Kano'
-    }
-  };
-
-  // Função para formatar a fonte completa da fórmula
+  // Função para formatar a fonte completa da fórmula (wrapper para uso no componente)
   function formatFormulaSource(formula, bookName) {
-    const metadata = BOOK_METADATA[bookName];
-    const parts = [];
-    
-    if (metadata) {
-      parts.push(`${metadata.title} - ${metadata.author}`);
+    const cacheKey = `${bookName}-${formula.chapter || ''}-${formula.section || ''}-${formula.questionNumber || ''}`;
+    if (sourceTexts[cacheKey]) {
+      return sourceTexts[cacheKey];
     }
     
-    if (formula.chapter) {
-      parts.push(`Cap. ${formula.chapter}`);
-    }
+    // Inicia carregamento assíncrono
+    formatFormulaSourceDynamic(formula, bookName).then(text => {
+      setSourceTexts(prev => ({ ...prev, [cacheKey]: text }));
+    }).catch(() => {
+      // Fallback para formatação estática em caso de erro
+      const parts = [];
+      if (formula.bookTitle) parts.push(formula.bookTitle);
+      if (formula.author) parts.push(formula.author);
+      if (formula.chapter) parts.push(`Cap. ${formula.chapter}`);
+      if (formula.section) parts.push(`Seção: ${formula.section}`);
+      if (formula.page) parts.push(`p. ${formula.page}`);
+      if (formula.source === 'question' && formula.questionNumber) parts.push(`Q${formula.questionNumber}`);
+      else if (formula.source === 'answer' && formula.questionNumber) parts.push(`A${formula.questionNumber}`);
+      
+      setSourceTexts(prev => ({ ...prev, [cacheKey]: parts.length > 0 ? parts.join(' • ') : 'Fonte não disponível' }));
+    });
     
-    if (formula.section) {
-      parts.push(`Seção: ${formula.section}`);
-    }
-    
-    if (formula.page) {
-      parts.push(`p. ${formula.page}`);
-    }
-    
-    if (formula.source === 'question' && formula.questionNumber) {
-      parts.push(`Q${formula.questionNumber}`);
-    } else if (formula.source === 'answer' && formula.questionNumber) {
-      parts.push(`A${formula.questionNumber}`);
-    }
-    
-    return parts.length > 0 ? parts.join(' • ') : 'Fonte não disponível';
+    // Retornar valor temporário ou fallback
+    return 'Carregando...';
   }
 
   // Carregar lista de livros disponíveis e verificar conteúdo
@@ -209,9 +195,11 @@ export default function ExercisesPanel() {
     const loadBooks = async () => {
       setLoadingBooks(true);
       try {
+        // Carregar livros do index.json global
+        const books = await getAvailableBooks();
         const validBooks = [];
         
-        for (const book of KNOWN_BOOKS) {
+        for (const book of books) {
           try {
             // Verificar se o livro tem arquivos JSON válidos
             const possiblePatterns = [
@@ -670,12 +658,11 @@ function TaxonomyContent({ taxonomy, selectedCategory, setSelectedCategory, form
 
 function FormulaGraphPanelRenderer({ graphId, formula, onClose }) {
   // Componente para renderizar o gráfico específico
-  // Por enquanto, renderiza um placeholder
   const graphComponents = {
-    'PhotonEnergyGraph': null,
-    'HeisenbergUncertaintyGraph': null,
-    'DensityOfStatesGraph': null,
-    'BandStructureGraph': null
+    'PhotonEnergyGraph': PhotonEnergyGraph,
+    'HeisenbergUncertaintyGraph': HeisenbergUncertaintyGraph,
+    'DensityOfStatesGraph': DensityOfStatesGraph,
+    'BandStructureGraph': BandStructureGraph
   };
 
   const GraphComponent = graphComponents[graphId];
@@ -684,7 +671,7 @@ function FormulaGraphPanelRenderer({ graphId, formula, onClose }) {
     return <GraphComponent formula={formula} onClose={onClose} />;
   }
 
-  // Placeholder até que os componentes de gráficos sejam importados
+  // Placeholder para gráficos não implementados
   return (
     <div className="graph-placeholder">
       <h3>📊 {graphId}</h3>
@@ -693,8 +680,7 @@ function FormulaGraphPanelRenderer({ graphId, formula, onClose }) {
         <TeX math={formula.genericFormula} />
       </div>
       <p className="graph-note">
-        O componente de gráfico completo será implementado em uma próxima etapa.
-        Este é um placeholder demonstrativo.
+        Este gráfico ainda não foi implementado.
       </p>
       <button className="back-to-formula-button" onClick={onClose}>
         ← Voltar para Fórmula

@@ -60,6 +60,7 @@ export default {
       exercises: '📝 Exercises & Formulas',
       periodic: '⚛️ Periodic Table',
       about: '👤 About',
+      'support-us': '💖 Support Us',
       community: '🤝 Collaborate on GitHub',
       community_title: 'Join the GitHub Discussions forum — a GitHub account is required to collaborate'
     }
@@ -283,6 +284,60 @@ export default {
       materials: 'Materials',
       devices: 'Devices',
       technology: 'Technology'
+    }
+  },
+  support: {
+    title: '💖 Support Us',
+    tabs: {
+      about: '👤 About',
+      donation: '💰 Donations'
+    },
+    about: {
+      title: 'About the Project',
+      p1: 'This project is a non-profit educational initiative aimed at disseminating knowledge about semiconductor physics in an accessible and free way.',
+      p2: 'Developing and maintaining this platform requires time, resources, and dedication. Your contribution helps keep the project active and expand its content.',
+      p3: 'All donations are used to cover hosting costs, development of new features, and continuous improvement of the system.',
+      highlight: 'Together, we can make education in physics and engineering more accessible for everyone!',
+      howToHelp: 'How you can help:',
+      codeContribution: 'Contribute code through Pull Requests on GitHub',
+      documentation: 'Improve documentation and translations',
+      translation: 'Translate content to other languages',
+      reporting: 'Report bugs and suggest improvements',
+      financial: 'Make a financial donation to support the project'
+    },
+    donation: {
+      title: 'Make a Donation',
+      intro: 'Choose the contribution method you prefer. Any amount is welcome and makes a difference!',
+      pixScan: 'Scan the QR Code',
+      pixKey: 'PIX Key',
+      pixNote: 'Use the key above or scan the QR Code with your banking app',
+      crypto: 'Cryptocurrencies',
+      copy: 'Copy',
+      viewExplorer: 'View on explorer',
+      disclaimer: 'Important Notice',
+      disclaimerText: 'Donations are voluntary and non-refundable. By making a donation, you are supporting a non-profit educational project. Contact us if you have questions.'
+    },
+    wallet: {
+      title: 'Donate via Wallet',
+      connectDescription: 'Connect your crypto wallet (MetaMask, WalletConnect, etc.) to make a direct donation.',
+      connecting: 'Connecting...',
+      connectButton: '🦊 Connect MetaMask',
+      wallet: 'Wallet',
+      network: 'Network',
+      ethereumMainnet: 'Ethereum Mainnet',
+      sepoliaTestnet: 'Sepolia Testnet',
+      chainId: 'Chain ID',
+      switchNetwork: 'Switch to Ethereum Mainnet',
+      crypto: 'Cryptocurrency',
+      addressOnly: 'Address only',
+      amount: 'Amount',
+      suggestedAmounts: 'Suggested amounts',
+      donateButton: '💖 Donate Now',
+      processing: 'Processing...',
+      transactionSent: 'Transaction sent',
+      addressDescription: 'For {{crypto}} donations, use the address below:',
+      disconnect: 'Disconnect',
+      copy: 'Copy'
     }
   }
 };

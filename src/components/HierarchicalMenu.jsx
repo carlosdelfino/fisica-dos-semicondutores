@@ -28,6 +28,7 @@ const MENU_STRUCTURE = [
       'exercises',
       'periodic',
       'about',
+      'support-us',
       {
         id: 'community',
         href: 'https://github.com/carlosdelfino/fisica-dos-semicondutores/discussions',

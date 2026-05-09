@@ -60,6 +60,7 @@ export default {
       exercises: '📝 التمارين والصيغ',
       periodic: '⚛️ الجدول الدوري',
       about: '👤 حول',
+      'support-us': '💖 ادعمنا',
       community: '🤝 ساهم على GitHub',
       community_title: 'انضم إلى منتدى المناقشات على GitHub — يتطلب حساب GitHub للمساهمة'
     }
@@ -283,6 +284,60 @@ export default {
       materials: 'المواد',
       devices: 'الأجهزة',
       technology: 'التكنولوجيا'
+    }
+  },
+  support: {
+    title: '💖 ادعمنا',
+    tabs: {
+      about: '👤 حول',
+      donation: '💰 التبرعات'
+    },
+    about: {
+      title: 'عن المشروع',
+      p1: 'هذا مشروع تعليمي غير ربحي يهدف إلى نشر المعرفة حول فيزياء أشباه الموصلات بطريقة ميسرة ومجانية.',
+      p2: 'تطوير هذه المنصة وصيانتها يتطلب وقتًا وموارد وتفانيًا. مساهمتك تساعد في الحفاظ على المشروع نشطًا وتوسيع محتواه.',
+      p3: 'جميع التبرعات تُستخدم لتغطية تكاليف الاستضافة وتطوير ميزات جديدة وتحسين النظام باستمرار.',
+      highlight: 'معًا، يمكننا جعل التعليم في الفيزياء والهندسة أكثر إتاحة للجميع!',
+      howToHelp: 'كيف يمكنك المساعدة:',
+      codeContribution: 'ساهم بالكود عبر Pull Requests على GitHub',
+      documentation: 'حسّن التوثيق والترجمات',
+      translation: 'ترجم المحتوى إلى لغات أخرى',
+      reporting: 'أبلغ عن الأخطاء واقترح تحسينات',
+      financial: 'قدّم تبرعًا ماليًا لدعم المشروع'
+    },
+    donation: {
+      title: 'قدّم تبرعًا',
+      intro: 'اختر طريقة المساهمة التي تفضلها. أي مبلغ مرحب به ويحدث فرقًا!',
+      pixScan: 'امسح رمز QR',
+      pixKey: 'مفتاح PIX',
+      pixNote: 'استخدم المفتاح أعلاه أو امسح رمز QR مع تطبيق البنك',
+      crypto: 'العملات المشفرة',
+      copy: 'نسخ',
+      viewExplorer: 'عرض في المستكشف',
+      disclaimer: 'تنبيه مهم',
+      disclaimerText: 'التبرعات طوعية وغير قابلة للاسترداد. عند تقديم تبرع، أنت تدعم مشروعًا تعليميًا غير ربحي. اتصل بنا إذا كان لديك أي أسئلة.'
+    },
+    wallet: {
+      title: 'تبرع عبر المحفظة',
+      connectDescription: 'قم بتوصيل محفظة العملات المشفرة (MetaMask، WalletConnect، إلخ) للتبرع مباشرة.',
+      connecting: 'جاري الاتصال...',
+      connectButton: '🦊 توصيل MetaMask',
+      wallet: 'المحفظة',
+      network: 'الشبكة',
+      ethereumMainnet: 'شبكة Ethereum الرئيسية',
+      sepoliaTestnet: 'شبكة Sepolia التجريبية',
+      chainId: 'معرف السلسلة',
+      switchNetwork: 'التبديل إلى شبكة Ethereum الرئيسية',
+      crypto: 'العملة المشفرة',
+      addressOnly: 'العنوان فقط',
+      amount: 'المبلغ',
+      suggestedAmounts: 'المبالغ المقترحة',
+      donateButton: '💖 تبرع الآن',
+      processing: 'جاري المعالجة...',
+      transactionSent: 'تم إرسال المعاملة',
+      addressDescription: 'للتبرعات بـ {{crypto}}، استخدم العنوان أدناه:',
+      disconnect: 'قطع الاتصال',
+      copy: 'نسخ'
     }
   }
 };

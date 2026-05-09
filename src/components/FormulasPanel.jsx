@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import FormulaCard from './FormulaCard.jsx';
+import FormulaCardWithNavigation from './FormulaCardWithNavigation.jsx';
 import { loadAllChapters, extractFormulas, groupFormulasByConcept, searchFormulas, mapFormulaToVisualization } from '../utils/formulasLoader.js';
 import { useNavigate } from 'react-router-dom';
 import { log_event } from '../physics/formulas.js';

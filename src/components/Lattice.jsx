@@ -1,14 +1,17 @@
 import { useMemo } from 'react';
+import { MATERIALS } from '../physics/materials.js';
 
 /**
- * Rede 2D simplificada de Si (4 ligações covalentes por átomo).
- * Renderiza dopantes em posições escolhidas (P para tipo-n, B para tipo-p).
+ * Rede 2D simplificada de semicondutores (4 ligações covalentes por átomo).
+ * Renderiza dopantes em posições escolhidas conforme o material e tipo.
  *
  * Props:
+ *  - material: 'Si' | 'Ge' | 'GaAs' | 'SiC'
  *  - type: 'intrinsic' | 'n' | 'p'
  *  - rows, cols
  */
-export default function Lattice({ type, rows = 5, cols = 7 }) {
+export default function Lattice({ material = 'Si', type, rows = 5, cols = 7 }) {
+  const mat = MATERIALS[material] || MATERIALS.Si;
   const W = 760, H = 380;
   const cellW = (W - 80) / (cols - 1);
   const cellH = (H - 80) / (rows - 1);
@@ -29,14 +32,15 @@ export default function Lattice({ type, rows = 5, cols = 7 }) {
 
   const isDopant = (r, c) => dopants.some((d) => d.r === r && d.c === c);
 
-  const symbol = type === 'n' ? 'P' : type === 'p' ? 'B' : 'Si';
+  const baseSymbol = material === 'Si' ? 'Si' : material === 'Ge' ? 'Ge' : material === 'GaAs' ? 'Ga' : material === 'SiC' ? 'Si' : 'Si';
+  const dopantSymbol = type === 'n' ? mat.dopants?.donor?.symbol || 'P' : type === 'p' ? mat.dopants?.acceptor?.symbol || 'B' : baseSymbol;
   const dopantColor = type === 'n' ? '#22c55e' : '#a855f7';
 
   return (
     <div className="diagram-card">
-      <h3>Rede Cristalina do Silício {type !== 'intrinsic' && `+ ${type === 'n' ? 'Fósforo (5 elétrons de valência)' : 'Boro (3 elétrons de valência)'}`}</h3>
+      <h3>Rede Cristalina do {mat.name} {type !== 'intrinsic' && `+ ${type === 'n' ? mat.dopants.donor.name : mat.dopants.acceptor.name}`}</h3>
       <svg viewBox={`0 0 ${W} ${H}`} className="lattice-svg" role="img"
-           aria-label="Rede cristalina 2D do silício">
+           aria-label={`Rede cristalina 2D do ${mat.name}`}>
         <defs>
           <radialGradient id="si-grad">
             <stop offset="0%" stopColor="#fef3c7" />
@@ -87,7 +91,7 @@ export default function Lattice({ type, rows = 5, cols = 7 }) {
                         stroke={dop ? dopantColor : '#92400e'} strokeWidth="2" />
                 <text x={x} y={y + 4} fontSize="13" fontWeight="700"
                       fill="#1e1b4b" textAnchor="middle">
-                  {dop ? symbol : 'Si'}
+                  {dop ? dopantSymbol : baseSymbol}
                 </text>
               </g>
             );
@@ -129,14 +133,14 @@ export default function Lattice({ type, rows = 5, cols = 7 }) {
         {/* Legenda */}
         <g transform="translate(20, 10)">
           <text fill="#cbd5e1" fontSize="11">
-            {type === 'intrinsic' && 'Cristal puro: 4 ligações covalentes por átomo de Si, sem portadores livres a 0 K.'}
-            {type === 'n' && 'P possui 5 elétrons de valência: 4 formam ligações, 1 fica fracamente ligado e ioniza-se à temperatura ambiente.'}
-            {type === 'p' && 'B possui 3 elétrons de valência: faltam ligações ⇒ surge um estado vazio (lacuna) que aceita elétrons da BV.'}
+            {type === 'intrinsic' && `Cristal puro de ${mat.name}: 4 ligações covalentes por átomo, sem portadores livres a 0 K.`}
+            {type === 'n' && `${dopantSymbol} é dopante doador: fornece elétron extra que ioniza-se à temperatura ambiente.`}
+            {type === 'p' && `${dopantSymbol} é dopante aceitador: cria lacuna que aceita elétrons da banda de valência.`}
           </text>
         </g>
       </svg>
       <p className="diagram-caption">
-        Visualização esquemática 2D da estrutura tetraédrica do Si. Linhas duplas representam ligações covalentes
+        Visualização esquemática 2D da estrutura cristalina do {mat.name}. Linhas duplas representam ligações covalentes
         compartilhando dois elétrons.
       </p>
     </div>

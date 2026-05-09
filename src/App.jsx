@@ -11,6 +11,7 @@ import CarrierVsTemp from './components/CarrierVsTemp.jsx';
 import FermiDiracEducational from './components/FermiDiracEducational.jsx';
 import DensityOfStatesEducational from './components/DensityOfStatesEducational.jsx';
 import ExercisesPanel from './components/ExercisesPanel.jsx';
+import FormulasPanel from './components/FormulasPanel.jsx';
 import KSpaceDiagram from './components/KSpaceDiagram.jsx';
 import EffectiveMassDemo from './components/EffectiveMassDemo.jsx';
 import KronigPenneyDiagram from './components/KronigPenneyDiagram.jsx';
@@ -33,6 +34,7 @@ import SemiconductorCrystalStructures from './components/SemiconductorCrystalStr
 import Glossary from './components/Glossary.jsx';
 import HierarchicalMenu from './components/HierarchicalMenu.jsx';
 import ControlPanel from './components/ControlPanel.jsx';
+import SupportPanel from './components/SupportPanel.jsx';
 import { carrierConcentrations, log_event } from './physics/formulas.js';
 import { MATERIALS, bandgap } from './physics/materials.js';
 
@@ -148,7 +150,7 @@ function AppContent() {
               <FermiDiracPlot T={T} EF={calc.EF} Ec={calc.Ec} Ev={calc.Ev} Eg={calc.Eg} />
             </>
           } />
-          <Route path="/lattice" element={<Lattice type={type} />} />
+          <Route path="/lattice" element={<Lattice material={material} type={type} />} />
           <Route path="/atomband" element={<AtomToBand />} />
           <Route path="/allowed" element={<AllowedForbidden />} />
           <Route path="/kp" element={<KronigPenneyDiagram />} />
@@ -187,6 +189,8 @@ function AppContent() {
           <Route path="/glossary" element={<Glossary />} />
           <Route path="/periodic" element={<PeriodicTable />} />
           <Route path="/exercises" element={<ExercisesPanel />} />
+          <Route path="/formulas" element={<FormulasPanel />} />
+          <Route path="/support-us" element={<SupportPanel />} />
         </Routes>
       </main>
 

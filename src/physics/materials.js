@@ -62,6 +62,27 @@ export const MATERIALS = {
       acceptor: { symbol: 'Zn', name: 'Zinco',                  dE: 0.031 },
     },
   },
+  SiC: {
+    name: 'Carbeto de Silício (SiC - 4H)',
+    color: '#86efac',
+    Eg_300: 3.23,
+    Eg_0:   3.26,
+    alpha:  3.3e-4,
+    beta:   680,
+    mn_eff: 0.35,
+    mp_eff: 1.0,
+    ni_300: 1.0e-9,
+    epsilon_r: 9.7,
+    a_lattice: 3.073e-10, // parâmetro de rede basal (a)
+    c_lattice: 10.053e-10, // parâmetro de rede c (para estrutura hexagonal)
+    gap_type: 'indirect',
+    kCB_min: 0.0,         // Γ point (mas gap indireto em M-L)
+    kVB_max: 0.0,
+    dopants: {
+      donor:    { symbol: 'N',  name: 'Nitrogênio',  dE: 0.05 },
+      acceptor: { symbol: 'Al', name: 'Alumínio',     dE: 0.20 },
+    },
+  },
 };
 
 // Equação de Varshni: Eg(T) = Eg(0) - alpha*T^2/(T+beta)

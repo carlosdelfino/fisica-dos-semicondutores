@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import FormulaGraphPanel from '../FormulaGraphPanel';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useTranslation } from '../../contexts/LanguageContext';
 
 /**
  * Gráfico do Princípio da Incerteza de Heisenberg
@@ -8,7 +8,7 @@ import { useLanguage } from '../contexts/LanguageContext';
  * Mostra a relação de compromisso entre precisão de posição e momento
  */
 const HeisenbergUncertaintyGraph = ({ formula, onClose }) => {
-  const { t } = useLanguage();
+  const { t } = useTranslation();
   const canvasRef = useRef(null);
   const [positionUncertainty, setPositionUncertainty] = useState(1); // Å
   const [momentumUncertainty, setMomentumUncertainty] = useState(5.27); // ×10^-25 kg·m/s

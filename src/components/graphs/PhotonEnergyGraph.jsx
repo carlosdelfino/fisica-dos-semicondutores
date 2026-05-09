@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import FormulaGraphPanel from '../FormulaGraphPanel';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useTranslation } from '../../contexts/LanguageContext';
 
 /**
  * Gráfico de Energia do Fóton
@@ -8,7 +8,7 @@ import { useLanguage } from '../contexts/LanguageContext';
  * Mostra como a energia do fóton varia com a frequência e comprimento de onda
  */
 const PhotonEnergyGraph = ({ formula, onClose }) => {
-  const { t } = useLanguage();
+  const { t } = useTranslation();
   const canvasRef = useRef(null);
   const [frequency, setFrequency] = useState(5e14); // Hz
   const [wavelength, setWavelength] = useState(600); // nm

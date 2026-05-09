@@ -60,6 +60,7 @@ export default {
       exercises: '📝 练习与公式',
       periodic: '⚛️ 元素周期表',
       about: '👤 关于',
+      'support-us': '💖 支持我们',
       community: '🤝 在 GitHub 上协作',
       community_title: '加入 GitHub 讨论论坛 — 需要 GitHub 账号才能参与协作'
     }
@@ -267,6 +268,60 @@ export default {
       materials: '材料',
       devices: '器件',
       technology: '技术'
+    }
+  },
+  support: {
+    title: '💖 支持我们',
+    tabs: {
+      about: '👤 关于',
+      donation: '💰 捐赠'
+    },
+    about: {
+      title: '关于本项目',
+      p1: '这是一个非营利教育倡议,旨在以易于获取和免费的方式传播半导体物理知识。',
+      p2: '开发和维护此平台需要时间、资源和奉献。您的贡献有助于保持项目的活跃并扩展其内容。',
+      p3: '所有捐赠用于支付托管费用、开发新功能和持续改进系统。',
+      highlight: '让我们共同努力,使物理和工程教育对每个人都更容易获得!',
+      howToHelp: '您可以通过以下方式提供帮助:',
+      codeContribution: '通过 GitHub Pull Requests 贡献代码',
+      documentation: '改进文档和翻译',
+      translation: '将内容翻译成其他语言',
+      reporting: '报告错误并提出改进建议',
+      financial: '提供财务捐赠以支持项目'
+    },
+    donation: {
+      title: '进行捐赠',
+      intro: '选择您偏好的贡献方式。任何金额都受欢迎并能产生差异!',
+      pixScan: '扫描二维码',
+      pixKey: 'PIX 密钥',
+      pixNote: '使用上面的密钥或使用银行应用程序扫描二维码',
+      crypto: '加密货币',
+      copy: '复制',
+      viewExplorer: '在浏览器中查看',
+      disclaimer: '重要提示',
+      disclaimerText: '捐赠是自愿且不可退还的。通过捐赠,您正在支持一个非营利教育项目。如有疑问,请联系我们。'
+    },
+    wallet: {
+      title: '通过钱包捐赠',
+      connectDescription: '连接您的加密钱包(MetaMask、WalletConnect 等)以直接捐赠。',
+      connecting: '连接中...',
+      connectButton: '🦊 连接 MetaMask',
+      wallet: '钱包',
+      network: '网络',
+      ethereumMainnet: '以太坊主网',
+      sepoliaTestnet: 'Sepolia 测试网',
+      chainId: '链 ID',
+      switchNetwork: '切换到以太坊主网',
+      crypto: '加密货币',
+      addressOnly: '仅地址',
+      amount: '金额',
+      suggestedAmounts: '建议金额',
+      donateButton: '💖 立即捐赠',
+      processing: '处理中...',
+      transactionSent: '交易已发送',
+      addressDescription: '对于 {{crypto}} 捐赠,请使用以下地址:',
+      disconnect: '断开连接',
+      copy: '复制'
     }
   }
 };

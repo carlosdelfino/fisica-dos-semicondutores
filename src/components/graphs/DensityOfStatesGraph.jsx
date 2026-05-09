@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import FormulaGraphPanel from '../FormulaGraphPanel';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useTranslation } from '../../contexts/LanguageContext';
 
 /**
  * Gráfico de Densidade de Estados
@@ -8,7 +8,7 @@ import { useLanguage } from '../contexts/LanguageContext';
  * Mostra como a densidade de estados varia com a energia
  */
 const DensityOfStatesGraph = ({ formula, onClose }) => {
-  const { t } = useLanguage();
+  const { t } = useTranslation();
   const canvasRef = useRef(null);
   const [energy, setEnergy] = useState(1); // eV
   const [densityOfStates, setDensityOfStates] = useState(0);
