@@ -11,7 +11,9 @@
     "generate-sitemap": "node scripts/generate-sitemap.js"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.95.1",
     "dotenv": "^16.4.7",
+    "ethers": "^6.16.0",
     "katex": "^0.16.11",
     "openai": "^4.73.1",
     "react": "^18.3.1",

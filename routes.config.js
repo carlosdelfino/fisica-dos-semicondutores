@@ -162,6 +162,18 @@ const routes = [
     priority: '0.8',
     lastmod: new Date().toISOString(),
   },
+  {
+    path: '#formulas',
+    changefreq: 'monthly',
+    priority: '0.8',
+    lastmod: new Date().toISOString(),
+  },
+  {
+    path: '/support-us',
+    changefreq: 'monthly',
+    priority: '0.7',
+    lastmod: new Date().toISOString(),
+  },
 ];
 
 export { routes, SITE_URL, LANGUAGES };

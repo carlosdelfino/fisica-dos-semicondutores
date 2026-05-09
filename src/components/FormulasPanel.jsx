@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import FormulaCard from './FormulaCard.jsx';
 import FormulaCardWithNavigation from './FormulaCardWithNavigation.jsx';
-import { loadAllChapters, extractFormulas, groupFormulasByConcept, searchFormulas, mapFormulaToVisualization } from '../utils/formulasLoader.js';
+import { loadAllChapters, extractFormulas, groupFormulasByConcept, searchFormulas, mapFormulaToVisualization, loadBookMetadata, loadAllBooksMetadata } from '../utils/formulasLoader.js';
 import { useNavigate } from 'react-router-dom';
 import { log_event } from '../physics/formulas.js';
 
@@ -19,15 +19,29 @@ export default function FormulasPanel() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [activeFormula, setActiveFormula] = useState(null);
+  const [bookMetadata, setBookMetadata] = useState(null);
+  const [selectedBook, setSelectedBook] = useState('Semiconductor Devices - Kanaan Kano');
+  const [allBooks, setAllBooks] = useState({});
 
   useEffect(() => {
-    loadFormulas();
+    loadBooks();
   }, []);
 
-  const loadFormulas = async () => {
+  const loadBooks = async () => {
     setLoading(true);
-    const loadedChapters = await loadAllChapters();
+    const books = await loadAllBooksMetadata();
+    setAllBooks(books);
+    await loadFormulas(selectedBook);
+  };
+
+  const loadFormulas = async (bookName) => {
+    setLoading(true);
+    const metadata = await loadBookMetadata(bookName);
+    setBookMetadata(metadata);
+    
+    const loadedChapters = await loadAllChapters(bookName);
     setChapters(loadedChapters);
+    
     // Expandir primeiros capítulos por padrão
     const initialExpanded = {};
     loadedChapters.slice(0, 3).forEach(ch => {
@@ -35,7 +49,15 @@ export default function FormulasPanel() {
     });
     setExpandedChapters(initialExpanded);
     setLoading(false);
-    log_event('SUCCESS', 'Fórmulas carregadas no painel', { chapters: loadedChapters.length });
+    log_event('SUCCESS', 'Fórmulas carregadas no painel', { 
+      book: bookName,
+      chapters: loadedChapters.length 
+    });
+  };
+
+  const handleBookChange = (bookName) => {
+    setSelectedBook(bookName);
+    loadFormulas(bookName);
   };
 
   const toggleChapter = (chapterNum) => {
@@ -61,6 +83,49 @@ export default function FormulasPanel() {
   return (
     <div className="formulas-panel">
       <h2>📐 Fórmulas & Símbolos</h2>
+
+      {/* Seletor de livro */}
+      <div className="book-selector">
+        <label htmlFor="book-select">📚 Livro:</label>
+        <select 
+          id="book-select" 
+          value={selectedBook} 
+          onChange={(e) => handleBookChange(e.target.value)}
+          className="book-select-dropdown"
+        >
+          {Object.entries(allBooks).map(([bookName, metadata]) => (
+            <option key={bookName} value={bookName}>
+              {metadata.title || bookName}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      {/* Metadados do livro */}
+      {bookMetadata && (
+        <div className="book-metadata">
+          <div className="metadata-info">
+            <span className="metadata-label">📖 Título:</span>
+            <span className="metadata-value">{bookMetadata.title}</span>
+          </div>
+          <div className="metadata-info">
+            <span className="metadata-label">✍️ Autor:</span>
+            <span className="metadata-value">{bookMetadata.author}</span>
+          </div>
+          <div className="metadata-info">
+            <span className="metadata-label">🏢 Editora:</span>
+            <span className="metadata-value">{bookMetadata.publisher}</span>
+          </div>
+          <div className="metadata-info">
+            <span className="metadata-label">📅 Ano:</span>
+            <span className="metadata-value">{bookMetadata.year}</span>
+          </div>
+          <div className="metadata-info">
+            <span className="metadata-label">📚 Capítulos:</span>
+            <span className="metadata-value">{bookMetadata.chapters?.length || 0}</span>
+          </div>
+        </div>
+      )}
 
       <div className="sub-tabs">
         <button className={`sub-tab ${subTab === 'formulas' ? 'active' : ''}`} onClick={() => setSubTab('formulas')}>
@@ -100,7 +165,7 @@ export default function FormulasPanel() {
                   formula={formula}
                   onNavigate={navigateToVisualization}
                   onSelect={setActiveFormula}
-                  bookName="Semiconductor Devices - Kanaan Kano"
+                  bookName={selectedBook}
                 />
               ))}
             </div>
@@ -132,7 +197,7 @@ export default function FormulasPanel() {
                             formula={formula}
                             onNavigate={navigateToVisualization}
                             onSelect={setActiveFormula}
-                            bookName="Semiconductor Devices - Kanaan Kano"
+                            bookName={selectedBook}
                           />
                         ))}
                       </div>
@@ -159,7 +224,7 @@ export default function FormulasPanel() {
                     onNavigate={navigateToVisualization}
                     onSelect={setActiveFormula}
                     compact
-                    bookName="Semiconductor Devices - Kanaan Kano"
+                    bookName={selectedBook}
                   />
                 ))}
                 {formulas.length > 5 && (

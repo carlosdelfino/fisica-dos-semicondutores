@@ -11,7 +11,6 @@ import CarrierVsTemp from './components/CarrierVsTemp.jsx';
 import FermiDiracEducational from './components/FermiDiracEducational.jsx';
 import DensityOfStatesEducational from './components/DensityOfStatesEducational.jsx';
 import ExercisesPanel from './components/ExercisesPanel.jsx';
-import FormulasPanel from './components/FormulasPanel.jsx';
 import KSpaceDiagram from './components/KSpaceDiagram.jsx';
 import EffectiveMassDemo from './components/EffectiveMassDemo.jsx';
 import KronigPenneyDiagram from './components/KronigPenneyDiagram.jsx';
@@ -189,7 +188,6 @@ function AppContent() {
           <Route path="/glossary" element={<Glossary />} />
           <Route path="/periodic" element={<PeriodicTable />} />
           <Route path="/exercises" element={<ExercisesPanel />} />
-          <Route path="/formulas" element={<FormulasPanel />} />
           <Route path="/support-us" element={<SupportPanel />} />
         </Routes>
       </main>

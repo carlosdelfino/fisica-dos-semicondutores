@@ -3,10 +3,13 @@ import { useNavigate } from 'react-router-dom';
 import { TeX } from './Math.jsx';
 import { buildTaxonomy, getGraphPanelsForFormula, hasGraphVisualization, TAXONOMY_CATEGORIES } from '../physics/formulaTaxonomy';
 import { getAvailableBooks, getBookMetadata, formatFormulaSource as formatFormulaSourceDynamic } from '../utils/booksIndexLoader.js';
+import { loadAllChapters, extractFormulas, groupFormulasByConcept, searchFormulas, mapFormulaToVisualization } from '../utils/formulasLoader.js';
 import PhotonEnergyGraph from './graphs/PhotonEnergyGraph.jsx';
 import HeisenbergUncertaintyGraph from './graphs/HeisenbergUncertaintyGraph.jsx';
 import DensityOfStatesGraph from './graphs/DensityOfStatesGraph.jsx';
 import BandStructureGraph from './graphs/BandStructureGraph.jsx';
+import FormulaCard from './FormulaCard.jsx';
+import FormulaCardWithNavigation from './FormulaCardWithNavigation.jsx';
 
 /**
  * Algoritmo cognitivo para filtrar conteúdo relevante
@@ -161,6 +164,14 @@ export default function ExercisesPanel() {
   const [selectedCategory, setSelectedCategory] = useState('quantum-physics');
   const [allFormulas, setAllFormulas] = useState([]);
   const [sourceTexts, setSourceTexts] = useState({});
+  const [bookMetadata, setBookMetadata] = useState(null);
+  
+  // States para o panel de fórmulas
+  const [formulaChapters, setFormulaChapters] = useState([]);
+  const [formulaLoading, setFormulaLoading] = useState(true);
+  const [formulaExpandedChapters, setFormulaExpandedChapters] = useState({});
+  const [formulaSearchTerm, setFormulaSearchTerm] = useState('');
+  const [formulaActiveFormula, setFormulaActiveFormula] = useState(null);
 
   // Função para formatar a fonte completa da fórmula (wrapper para uso no componente)
   function formatFormulaSource(formula, bookName) {
@@ -249,6 +260,73 @@ export default function ExercisesPanel() {
     loadBooks();
   }, []);
 
+  // Carregar metadados do livro selecionado
+  useEffect(() => {
+    const loadMetadata = async () => {
+      if (!selectedBook) return;
+      
+      try {
+        const metadata = await getBookMetadata(selectedBook);
+        console.log('Metadados carregados:', metadata);
+        setBookMetadata(metadata);
+        
+        // Preencher títulos dos capítulos a partir do index.json
+        if (metadata.chapters) {
+          const titlesFromMetadata = {};
+          metadata.chapters.forEach(chapter => {
+            titlesFromMetadata[chapter.number] = chapter.title;
+          });
+          console.log('Títulos preenchidos do index.json:', titlesFromMetadata);
+          setChapterTitles(titlesFromMetadata);
+        }
+      } catch (error) {
+        console.error('Erro ao carregar metadados do livro:', error);
+      }
+    };
+
+    loadMetadata();
+  }, [selectedBook]);
+
+  // Carregar fórmulas do livro selecionado para o panel de fórmulas
+  useEffect(() => {
+    const loadFormulas = async () => {
+      if (!selectedBook) return;
+      
+      setFormulaLoading(true);
+      try {
+        const loadedChapters = await loadAllChapters(selectedBook);
+        setFormulaChapters(loadedChapters);
+        
+        // Expandir primeiros capítulos por padrão
+        const initialExpanded = {};
+        loadedChapters.slice(0, 3).forEach(ch => {
+          initialExpanded[ch.number] = true;
+        });
+        setFormulaExpandedChapters(initialExpanded);
+      } catch (error) {
+        console.error('Erro ao carregar fórmulas:', error);
+      } finally {
+        setFormulaLoading(false);
+      }
+    };
+
+    loadFormulas();
+  }, [selectedBook]);
+
+  const toggleFormulaChapter = (chapterNum) => {
+    setFormulaExpandedChapters(prev => ({
+      ...prev,
+      [chapterNum]: !prev[chapterNum]
+    }));
+  };
+
+  const navigateToVisualization = (formula) => {
+    const vizRoute = mapFormulaToVisualization(formula);
+    if (vizRoute) {
+      navigate(vizRoute);
+    }
+  };
+
   // Carregar todos os arquivos JSON do livro selecionado
   useEffect(() => {
     const loadFiles = async () => {
@@ -263,7 +341,6 @@ export default function ExercisesPanel() {
 
         const filesByChapter = {};
         const chaptersSet = new Set();
-        const titlesByChapter = {};
 
         for (const fileName of possiblePatterns) {
           try {
@@ -281,11 +358,6 @@ export default function ExercisesPanel() {
                   filesByChapter[chapterNum] = [];
                 }
                 filesByChapter[chapterNum].push({ fileName, data });
-                
-                // Extrair título do capítulo se disponível
-                if (data.chapter && !titlesByChapter[chapterNum]) {
-                  titlesByChapter[chapterNum] = data.chapter;
-                }
               }
             }
           } catch (e) {
@@ -294,7 +366,6 @@ export default function ExercisesPanel() {
         }
 
         setChapterFiles(filesByChapter);
-        setChapterTitles(titlesByChapter);
         setAvailableChapters(Array.from(chaptersSet).sort((a, b) => parseInt(a) - parseInt(b)));
       } catch (error) {
         console.error('Erro ao carregar arquivos:', error);
@@ -409,6 +480,12 @@ export default function ExercisesPanel() {
         <button className={`sub-tab ${subTab === 'exercises' ? 'active' : ''}`} onClick={() => setSubTab('exercises')}>
           📝 Exercícios
         </button>
+        <button className={`sub-tab ${subTab === 'formulas' ? 'active' : ''}`} onClick={() => setSubTab('formulas')}>
+          📐 Fórmulas por Capítulo
+        </button>
+        <button className={`sub-tab ${subTab === 'concepts' ? 'active' : ''}`} onClick={() => setSubTab('concepts')}>
+          🎯 Por Conceitos
+        </button>
         <button className={`sub-tab ${subTab === 'taxonomy' ? 'active' : ''}`} onClick={() => setSubTab('taxonomy')}>
           🔬 Taxonomia
         </button>
@@ -447,6 +524,32 @@ export default function ExercisesPanel() {
                 </select>
               </div>
 
+              {/* Metadados do livro */}
+              {bookMetadata && (
+                <div className="book-metadata">
+                  <div className="metadata-info">
+                    <span className="metadata-label">📖 Título:</span>
+                    <span className="metadata-value">{bookMetadata.title}</span>
+                  </div>
+                  <div className="metadata-info">
+                    <span className="metadata-label">✍️ Autor:</span>
+                    <span className="metadata-value">{bookMetadata.author}</span>
+                  </div>
+                  <div className="metadata-info">
+                    <span className="metadata-label">🏢 Editora:</span>
+                    <span className="metadata-value">{bookMetadata.publisher}</span>
+                  </div>
+                  <div className="metadata-info">
+                    <span className="metadata-label">📅 Ano:</span>
+                    <span className="metadata-value">{bookMetadata.year}</span>
+                  </div>
+                  <div className="metadata-info">
+                    <span className="metadata-label">📚 Capítulos:</span>
+                    <span className="metadata-value">{bookMetadata.chapters?.length || 0}</span>
+                  </div>
+                </div>
+              )}
+
               {loadingChapter ? (
                 <div className="loading-container">
                   <div className="spinner"></div>
@@ -466,6 +569,7 @@ export default function ExercisesPanel() {
                       {availableChapters.map(chapter => {
                         const fileCount = chapterFiles[chapter]?.length || 0;
                         const chapterTitle = chapterTitles[chapter] || `Capítulo ${chapter}`;
+                        console.log(`Capítulo ${chapter}: título="${chapterTitle}", chapterTitles[${chapter}]=${chapterTitles[chapter]}`);
                         return (
                           <option key={chapter} value={chapter}>
                             {chapterTitle} ({fileCount} arquivo{fileCount !== 1 ? 's' : ''})
@@ -497,6 +601,103 @@ export default function ExercisesPanel() {
       )}
 
       {subTab === 'taxonomy' && <TaxonomyContent taxonomy={taxonomy} selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} formatFormulaSource={formatFormulaSource} selectedBook={selectedBook} />}
+      
+      {subTab === 'formulas' && (
+        <div className="formulas-content">
+          <div className="search-bar">
+            <input
+              type="text"
+              placeholder="🔍 Buscar fórmulas..."
+              value={formulaSearchTerm}
+              onChange={(e) => setFormulaSearchTerm(e.target.value)}
+              className="search-input"
+            />
+          </div>
+          
+          {formulaLoading ? (
+            <div className="loading-state">⏳ Carregando fórmulas...</div>
+          ) : formulaSearchTerm ? (
+            <div className="search-results">
+              <h3>🔍 Resultados da busca</h3>
+              {searchFormulas(formulaChapters.flatMap(ch => extractFormulas(ch.data)), formulaSearchTerm).map(formula => (
+                <FormulaCardWithNavigation
+                  key={formula.id}
+                  formula={formula}
+                  onNavigate={navigateToVisualization}
+                  onSelect={setFormulaActiveFormula}
+                  bookName={selectedBook}
+                />
+              ))}
+            </div>
+          ) : (
+            <div className="chapters-accordion">
+              {formulaChapters.map(chapter => {
+                const chapterFormulas = extractFormulas(chapter.data);
+                if (chapterFormulas.length === 0) return null;
+                
+                return (
+                  <div key={chapter.number} className="chapter-item">
+                    <button
+                      className={`chapter-header ${formulaExpandedChapters[chapter.number] ? 'expanded' : ''}`}
+                      onClick={() => toggleFormulaChapter(chapter.number)}
+                    >
+                      <span className="chapter-toggle">
+                        {formulaExpandedChapters[chapter.number] ? '▼' : '▶'}
+                      </span>
+                      <span className="chapter-title">
+                        Capítulo {chapter.number}: {chapter.title || 'Sem título'}
+                      </span>
+                      <span className="formula-count">
+                        ({chapterFormulas.length} fórmula{chapterFormulas.length !== 1 ? 's' : ''})
+                      </span>
+                    </button>
+                    
+                    {formulaExpandedChapters[chapter.number] && (
+                      <div className="chapter-content">
+                        {chapterFormulas.map(formula => (
+                          <FormulaCardWithNavigation
+                            key={formula.id}
+                            formula={formula}
+                            onNavigate={navigateToVisualization}
+                            onSelect={setFormulaActiveFormula}
+                            bookName={selectedBook}
+                          />
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          )}
+        </div>
+      )}
+      
+      {subTab === 'concepts' && (
+        <div className="concepts-content">
+          {Object.entries(groupFormulasByConcept(formulaChapters.flatMap(ch => extractFormulas(ch.data)))).map(([concept, formulas]) => (
+            <div key={concept} className="concept-group">
+              <h4 className="concept-title">📌 {concept}</h4>
+              {formulas.slice(0, 5).map(formula => (
+                <FormulaCardWithNavigation
+                  key={formula.id}
+                  formula={formula}
+                  onNavigate={navigateToVisualization}
+                  onSelect={setFormulaActiveFormula}
+                  compact
+                  bookName={selectedBook}
+                />
+              ))}
+              {formulas.length > 5 && (
+                <button className="show-more-btn">
+                  +{formulas.length - 5} mais fórmulas
+                </button>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
+      
       {subTab === 'symbols' && <SymbolsContent />}
     </div>
   );

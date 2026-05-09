@@ -57,7 +57,7 @@ export default {
       fetTypes: '🧪 FET Transistor Types',
       czochralski: '🔬 Growth Methods',
       perovskites: '☀️ 2D Perovskites',
-      exercises: '📝 Exercises & Formulas',
+      exercises: '📝 Exercises',
       periodic: '⚛️ Periodic Table',
       about: '👤 About',
       'support-us': '💖 Support Us',

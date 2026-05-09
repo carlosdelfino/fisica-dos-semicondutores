@@ -57,7 +57,7 @@ export default {
       fetTypes: '🧪 FET ट्रांजिस्टर प्रकार',
       czochralski: '🔬 वृद्धि विधियाँ',
       perovskites: '☀️ 2D पेरोवस्काइट',
-      exercises: '📝 अभ्यास और सूत्र',
+      exercises: '📝 अभ्यास',
       periodic: '⚛️ आवर्त सारणी',
       about: '👤 परिचय',
       'support-us': '💖 हमारा समर्थन करें',

@@ -4,7 +4,7 @@ import { useTranslation } from '../contexts/LanguageContext.jsx';
 const MENU_STRUCTURE = [
   {
     key: 'learning',
-    items: ['objectives', 'conceptsQ', 'questions', 'glossary']
+    items: ['objectives', 'conceptsQ', 'questions', 'exercises', 'glossary']
   },
   {
     key: 'fundamentals',
@@ -25,7 +25,6 @@ const MENU_STRUCTURE = [
   {
     key: 'reference',
     items: [
-      'exercises',
       'periodic',
       'about',
       'support-us',

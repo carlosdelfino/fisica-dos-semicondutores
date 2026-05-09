@@ -57,7 +57,7 @@ export default {
       fetTypes: '🧪 أنواع ترانزستور FET',
       czochralski: '🔬 طرق النمو',
       perovskites: '☀️ بيروفسكيت ثنائي الأبعاد',
-      exercises: '📝 التمارين والصيغ',
+      exercises: '📝 التمارين',
       periodic: '⚛️ الجدول الدوري',
       about: '👤 حول',
       'support-us': '💖 ادعمنا',

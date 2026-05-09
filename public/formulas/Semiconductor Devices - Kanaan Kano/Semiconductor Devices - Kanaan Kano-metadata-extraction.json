@@ -1,0 +1,852 @@
+{
+  "title": "Semiconductor devices",
+  "author": "Kanaan Kano",
+  "publisher": "Prentice-Hall, Inc.",
+  "edition": "Unknown",
+  "year": "1998",
+  "chapters": [
+    {
+      "number": "1",
+      "title": "ATOMIC STRUCTURE AND QUANTUM MECHANICS"
+    },
+    {
+      "number": "1.0",
+      "title": "Introduction"
+    },
+    {
+      "number": "1.1",
+      "title": "Crystals and the Unit Cell"
+    },
+    {
+      "number": "1.2",
+      "title": "What Are We Looking for Now?"
+    },
+    {
+      "number": "1.3",
+      "title": "Failure of Classical Mechanics at Atomic Levels"
+    },
+    {
+      "number": "1.4",
+      "title": "Planck's Hypothesis"
+    },
+    {
+      "number": "1.5",
+      "title": "Bohr's Classical Model of the Atom"
+    },
+    {
+      "number": "1.6",
+      "title": "Bohr's Quantized Model"
+    },
+    {
+      "number": "1.7",
+      "title": "Wave Mechanics"
+    },
+    {
+      "number": "1.8",
+      "title": "Heisenberg's Uncertainty Principle"
+    },
+    {
+      "number": "1.9",
+      "title": "Schrodinger's Equation"
+    },
+    {
+      "number": "2",
+      "title": "ENERGY BANDS AND CURRENT CARRIERS IN SEMICONDUCTORS"
+    },
+    {
+      "number": "2.0",
+      "title": "Introduction"
+    },
+    {
+      "number": "2.1",
+      "title": "Application of Schrodinger's Equation to the Hydrogen Atom"
+    },
+    {
+      "number": "2.2",
+      "title": "Energy Level Splitting"
+    },
+    {
+      "number": "2.3",
+      "title": "Energy Band Formation"
+    },
+    {
+      "number": "2.4",
+      "title": "Mathematical Model of Band Formation"
+    },
+    {
+      "number": "2.5",
+      "title": "Covalent Bond Model"
+    },
+    {
+      "number": "2.6",
+      "title": "Current Carriers—Electrons and Holes"
+    },
+    {
+      "number": "2.7",
+      "title": "Effective Mass"
+    },
+    {
+      "number": "2.8",
+      "title": "Conductors, Semiconductors, and Insulators"
+    },
+    {
+      "number": "3",
+      "title": "INTRINSIC AND EXTRINSIC SEMICONDUCTORS"
+    },
+    {
+      "number": "3.0",
+      "title": "Introduction"
+    },
+    {
+      "number": "3.1",
+      "title": "Density of States"
+    },
+    {
+      "number": "3.2",
+      "title": "Fermi-Dirac Distribution Function"
+    },
+    {
+      "number": "3.3",
+      "title": "Carrier Densities"
+    },
+    {
+      "number": "3.4",
+      "title": "Extrinsic Semiconductors"
+    },
+    {
+      "number": "3.4.1",
+      "title": "N-type Semiconductor"
+    },
+    {
+      "number": "3.4.2",
+      "title": "P-type Semiconductor"
+    },
+    {
+      "number": "3.5",
+      "title": "Thermal Equilibrium"
+    },
+    {
+      "number": "3.6",
+      "title": "Densities of Carriers in Extrinsic Semiconductors"
+    },
+    {
+      "number": "3.7",
+      "title": "Fermi Level in Extrinsic Semiconductors"
+    },
+    {
+      "number": "3.8",
+      "title": "Which Semiconductor?"
+    },
+    {
+      "number": "4",
+      "title": "CARRIER PROCESSES: DRIFT, DIFFUSION AND GENERATION-RECOMBINATION"
+    },
+    {
+      "number": "4.0",
+      "title": "Introduction"
+    },
+    {
+      "number": "4.1",
+      "title": "Velocity Limitations"
+    },
+    {
+      "number": "4.2",
+      "title": "Thermal Velocity"
+    },
+    {
+      "number": "4.3",
+      "title": "Collisions and Scattering"
+    },
+    {
+      "number": "4.4",
+      "title": "Collisions Effects"
+    },
+    {
+      "number": "4.4.1",
+      "title": "Drift Velocity"
+    },
+    {
+      "number": "4.4.2",
+      "title": "Collisions and Energy Exchanges"
+    },
+    {
+      "number": "4.5",
+      "title": "Mobility"
+    },
+    {
+      "number": "4.5.1",
+      "title": "Effects of Impurity Concentration and Temperature on Mobility"
+    },
+    {
+      "number": "4.6",
+      "title": "Drift Current and Conductivity"
+    },
+    {
+      "number": "4.7",
+      "title": "Resistivity and Resistance"
+    },
+    {
+      "number": "4.8",
+      "title": "Particle Diffusion and Diffusion Current"
+    },
+    {
+      "number": "4.8.1",
+      "title": "Diffusion"
+    },
+    {
+      "number": "4.8.2",
+      "title": "Diffusion Current"
+    },
+    {
+      "number": "4.9",
+      "title": "Carrier Currents"
+    },
+    {
+      "number": "4.10",
+      "title": "Recombination and Generation"
+    },
+    {
+      "number": "4.10.1",
+      "title": "Rates of R-G"
+    },
+    {
+      "number": "4.10.2",
+      "title": "Direct Generation-Recombination"
+    },
+    {
+      "number": "4.10.3",
+      "title": "Indirect Generation-Recombination"
+    },
+    {
+      "number": "4.10.4",
+      "title": "Low-Level Injection and Recombination"
+    },
+    {
+      "number": "4.10.5",
+      "title": "Analytical Relations"
+    },
+    {
+      "number": "4.10.6",
+      "title": "Minority Carrier Lifetime"
+    },
+    {
+      "number": "4.11",
+      "title": "The Continuity Equation"
+    },
+    {
+      "number": "4.12",
+      "title": "Haynes-Shockley Experiment"
+    },
+    {
+      "number": "5",
+      "title": "THE PN JUNCTION DIODE"
+    },
+    {
+      "number": "5.0",
+      "title": "Introduction"
+    },
+    {
+      "number": "5.1",
+      "title": "Space-Charge Region"
+    },
+    {
+      "number": "5.1",
+      "title": "Formation of Region"
+    },
+    {
+      "number": "5.1",
+      "title": "Barrier Voltage and Energy Bands"
+    },
+    {
+      "number": "5.1",
+      "title": "Drift and Diffusion Currents"
+    },
+    {
+      "number": "5.2",
+      "title": "Analytical Relations at Equilibrium"
+    },
+    {
+      "number": "5.2",
+      "title": "Electrostatics of the Space Charge Region"
+    },
+    {
+      "number": "5.2",
+      "title": "Constancy of the Fermi Level"
+    },
+    {
+      "number": "5.2",
+      "title": "Built-In Voltage in Terms of Fermi Potential"
+    },
+    {
+      "number": "5.2",
+      "title": "Built-In Voltage in Terms of Doping Densities"
+    },
+    {
+      "number": "5.2",
+      "title": "Electric Field and Potential in the Space Charge Region"
+    },
+    {
+      "number": "5.2",
+      "title": "Width of the Space Charge Region"
+    },
+    {
+      "number": "5.3",
+      "title": "Conditions in the Diode with Voltage Applied"
+    },
+    {
+      "number": "5.4",
+      "title": "Currents in Diode"
+    },
+    {
+      "number": "5.4",
+      "title": "Motion of Carriers with Bias Applied"
+    },
+    {
+      "number": "5.4",
+      "title": "Conditions with Forward Bias"
+    },
+    {
+      "number": "5.4",
+      "title": "Conditions With Reverse Bias"
+    },
+    {
+      "number": "5.4",
+      "title": "Assumptions for Ideal Diode Equation"
+    },
+    {
+      "number": "5.4",
+      "title": "Solution of Continuity Equation"
+    },
+    {
+      "number": "5.4",
+      "title": "Currents Crossing Junction"
+    },
+    {
+      "number": "5.4",
+      "title": "The Current Loop"
+    },
+    {
+      "number": "5.4",
+      "title": "Saturation Current"
+    },
+    {
+      "number": "5.4",
+      "title": "Boundary Condition at Junction"
+    },
+    {
+      "number": "5.4",
+      "title": "General Equation for Hole Distribution in the N-Region of P-N Junction Diode"
+    },
+    {
+      "number": "6",
+      "title": "FABRICATION TECHNOLOGY"
+    },
+    {
+      "number": "6.0",
+      "title": "Introduction"
+    },
+    {
+      "number": "6.1",
+      "title": "Why Silicon?"
+    },
+    {
+      "number": "6.2",
+      "title": "The Purity of Silicon"
+    },
+    {
+      "number": "6.2",
+      "title": "Silicon From Sand"
+    },
+    {
+      "number": "6.3",
+      "title": "The Czochralski Growing Process"
+    },
+    {
+      "number": "6.3",
+      "title": "The Melt and the Dopant"
+    },
+    {
+      "number": "6.3",
+      "title": "Seed Crystal"
+    },
+    {
+      "number": "6.3",
+      "title": "Igot Slicing and Wafer Preparation"
+    },
+    {
+      "number": "6.4",
+      "title": "Fabrication Processes"
+    },
+    {
+      "number": "6.4",
+      "title": "Thermal Oxidation"
+    },
+    {
+      "number": "6.4",
+      "title": "Etching Techniques"
+    },
+    {
+      "number": "6.4",
+      "title": "Diffusion"
+    },
+    {
+      "number": "6.4",
+      "title": "Expressions for the Diffusion of Dopant Concentration"
+    },
+    {
+      "number": "6.4",
+      "title": "Ion Implantation"
+    },
+    {
+      "number": "6.4",
+      "title": "Photonaks Generation"
+    },
+    {
+      "number": "6.4",
+      "title": "Photolithography"
+    },
+    {
+      "number": "6.4",
+      "title": "Epitaxial Growth"
+    },
+    {
+      "number": "6.4",
+      "title": "Metallization and Interconnections"
+    },
+    {
+      "number": "6.4",
+      "title": "Ohmic Contacts"
+    },
+    {
+      "number": "7",
+      "title": "LIMITATIONS TO IDEAL DIODE THEORY"
+    },
+    {
+      "number": "7.0",
+      "title": "Introduction"
+    },
+    {
+      "number": "7.1",
+      "title": "Deviations in the Forward Region of the Characteristic"
+    },
+    {
+      "number": "7.1.1",
+      "title": "Review of Assumptions"
+    },
+    {
+      "number": "7.1.2",
+      "title": "Recombination Currents"
+    },
+    {
+      "number": "7.1.3",
+      "title": "Comparison of Real and Ideal Diode Characteristics"
+    },
+    {
+      "number": "7.1.3.1",
+      "title": "Low-Injection"
+    },
+    {
+      "number": "7.1.3.2",
+      "title": "High Injection"
+    },
+    {
+      "number": "7.1.4",
+      "title": "Electric Field in N and P Regions"
+    },
+    {
+      "number": "7.2",
+      "title": "Real Diode Characteristics in the Reverse Direction"
+    },
+    {
+      "number": "7.2.1",
+      "title": "Junction Breakdown"
+    },
+    {
+      "number": "7.2.2",
+      "title": "Avalanche Breakdown"
+    },
+    {
+      "number": "7.2.3",
+      "title": "Expression for the Breakdown Voltage"
+    },
+    {
+      "number": "7.2.4",
+      "title": "Zener Breakdown"
+    },
+    {
+      "number": "7.3",
+      "title": "Capacitances of the Diode"
+    },
+    {
+      "number": "7.3.1",
+      "title": "The Transition (Junction) Capacitance"
+    },
+    {
+      "number": "7.3.2",
+      "title": "Storage Capacitance"
+    },
+    {
+      "number": "7.4",
+      "title": "Small-Signal Equivalent Circuit"
+    },
+    {
+      "number": "7.4.1",
+      "title": "Equivalent Circuit of the Diode"
+    },
+    {
+      "number": "7.5",
+      "title": "Properties of the Short-Base Diode"
+    },
+    {
+      "number": "7.6",
+      "title": "Diode Switching Characteristics"
+    },
+    {
+      "number": "7.6.1",
+      "title": "Turn-ON Time"
+    },
+    {
+      "number": "7.6.2",
+      "title": "Turn-OFF Time"
+    },
+    {
+      "number": "8",
+      "title": "BIPOLAR TRANSISTORS I: CHARACTERISTICS AND FIRST ORDER MODEL"
+    },
+    {
+      "number": "8.0",
+      "title": "Introduction"
+    },
+    {
+      "number": "8.1",
+      "title": "Structure and Basic Operation"
+    },
+    {
+      "number": "8.2",
+      "title": "Fabrication of the Bipolar Integrated Circuit Transistor"
+    },
+    {
+      "number": "8.3",
+      "title": "Terminology, Symbols and Regions of Operation"
+    },
+    {
+      "number": "8.3.1",
+      "title": "Terminology and Symbols"
+    },
+    {
+      "number": "8.3.2",
+      "title": "Modes of Operation"
+    },
+    {
+      "number": "8.4",
+      "title": "Circuit Arrangements"
+    },
+    {
+      "number": "8.5",
+      "title": "Transistor Currents in the Active Region"
+    },
+    {
+      "number": "8.5.1",
+      "title": "Emitter Current"
+    },
+    {
+      "number": "8.5.2",
+      "title": "Collector Current"
+    },
+    {
+      "number": "8.5.3",
+      "title": "Base Current"
+    },
+    {
+      "number": "8.6",
+      "title": "The BJT as a Current Amplifier"
+    },
+    {
+      "number": "8.6.1",
+      "title": "Approximations to Base Current"
+    },
+    {
+      "number": "8.6.2",
+      "title": "Base Current as the Control Current"
+    },
+    {
+      "number": "8.6.3",
+      "title": "Fixing I_B or V_BE^2"
+    },
+    {
+      "number": "8.7",
+      "title": "Transistor Parameters"
+    },
+    {
+      "number": "8.8",
+      "title": "Graphical Characteristics and Modes of Operation"
+    },
+    {
+      "number": "9.0",
+      "title": "Introduction"
+    },
+    {
+      "number": "9.1",
+      "title": "Effects of Limitations on Static Characteristics"
+    },
+    {
+      "number": "9.2",
+      "title": "Effects at Very Low and High Injection"
+    },
+    {
+      "number": "9.3",
+      "title": "Transistor Switching"
+    },
+    {
+      "number": "9.4",
+      "title": "Small-Signal Equivalent Circuit"
+    },
+    {
+      "number": "9.5",
+      "title": "Figure of Merit"
+    },
+    {
+      "number": "9.6",
+      "title": "NPN Transistors"
+    },
+    {
+      "number": "9.7",
+      "title": "The Gummel-Poon Model"
+    },
+    {
+      "number": "10",
+      "title": "JUNCTION FIELD-EFFECT TRANSISTORS"
+    },
+    {
+      "number": "10.0",
+      "title": "Introduction"
+    },
+    {
+      "number": "10.1",
+      "title": "Construction and Operation"
+    },
+    {
+      "number": "10.2",
+      "title": "Derivation of Current-Voltage Relationship"
+    },
+    {
+      "number": "10.3",
+      "title": "Additional remarks"
+    },
+    {
+      "number": "10.4",
+      "title": "Channel Conductance and JFET Transconductance"
+    },
+    {
+      "number": "10.5",
+      "title": "Secondary Effects"
+    },
+    {
+      "number": "10.6",
+      "title": "Small-Signal Equivalent Circuit"
+    },
+    {
+      "number": "10.7",
+      "title": "Figure of Merit of the JFET"
+    },
+    {
+      "number": "10.8",
+      "title": "High-Frequency Limitations"
+    },
+    {
+      "number": "11",
+      "title": "METAL-SEMICONDUCTOR JUNCTIONS AND DEVICES"
+    },
+    {
+      "number": "11.0",
+      "title": "Introduction"
+    },
+    {
+      "number": "11.1",
+      "title": "Energy-Band Diagrams of Metal and N-Semiconductor"
+    },
+    {
+      "number": "11.2",
+      "title": "Schottky Barrier Diode"
+    },
+    {
+      "number": "11.3",
+      "title": "Current-Voltage Characteristics of Metal N-Semiconductor Schottky Diode"
+    },
+    {
+      "number": "11.4",
+      "title": "Comparison of Schottky Diode with P+N Diode"
+    },
+    {
+      "number": "11.5",
+      "title": "Non-Rectifying Ohmic Contacts"
+    },
+    {
+      "number": "11.6",
+      "title": "The MESFET"
+    },
+    {
+      "number": "11.7",
+      "title": "Models for Short-Channel MESFETs"
+    },
+    {
+      "number": "12",
+      "title": "METAL-OXIDE-SILICON SYSTEMS"
+    },
+    {
+      "number": "12.0",
+      "title": "Introduction"
+    },
+    {
+      "number": "12.1",
+      "title": "Energy Band Diagrams"
+    },
+    {
+      "number": "12.2",
+      "title": "Band Bending and the Effect of Bias Voltages"
+    },
+    {
+      "number": "12.3",
+      "title": "Analytical Relations for the Charge Densities"
+    },
+    {
+      "number": "12.4",
+      "title": "Threshold Voltage"
+    },
+    {
+      "number": "12.5",
+      "title": "Capacitance-Voltage Measurements"
+    },
+    {
+      "number": "12.6",
+      "title": "Oxide Charges in MOS Capacitor"
+    },
+    {
+      "number": "12.7",
+      "title": "Effects of Work Functions and Oxide Charges"
+    },
+    {
+      "number": "13.0",
+      "title": "Introduction"
+    },
+    {
+      "number": "13.1",
+      "title": "Construction and Basic Operation"
+    },
+    {
+      "number": "13.2",
+      "title": "Fabrication of N-Type MOSFET (NMOS) on an Integrated Circuit Chip"
+    },
+    {
+      "number": "13.3",
+      "title": "Regions of Operation"
+    },
+    {
+      "number": "13.4",
+      "title": "Current-Voltage Analytical Relations"
+    },
+    {
+      "number": "13.5",
+      "title": "Important Secondary Effects"
+    },
+    {
+      "number": "13.6",
+      "title": "Types of MOSFETs"
+    },
+    {
+      "number": "13.7",
+      "title": "Control of the Threshold Voltage"
+    },
+    {
+      "number": "13.8",
+      "title": "Measurement of MOS Transistor Parameters"
+    },
+    {
+      "number": "13.9",
+      "title": "MOSFET Small-Signal Equivalent Circuits"
+    },
+    {
+      "number": "13.10",
+      "title": "High-Frequency Performance"
+    },
+    {
+      "number": "13.11",
+      "title": "Comparing the MOSFET and the BJT"
+    },
+    {
+      "number": "13.12",
+      "title": "The MOSFET Switch and the CMOS Inverter"
+    },
+    {
+      "number": "14.0",
+      "title": "Introduction"
+    },
+    {
+      "number": "14.1",
+      "title": "Light-Emission and Light-Emitting Devices"
+    },
+    {
+      "number": "14.2",
+      "title": "Semiconductor Lasers"
+    },
+    {
+      "number": "14.3",
+      "title": "Photodetectors"
+    },
+    {
+      "number": "14.4",
+      "title": "The Photovoltaic Effect and Solar Cells"
+    },
+    {
+      "number": "14.5",
+      "title": "Fiber Optic Communications"
+    },
+    {
+      "number": "APPENDICES A",
+      "title": "Units"
+    },
+    {
+      "number": "APPENDICES B",
+      "title": "Physical Constants and Factors"
+    },
+    {
+      "number": "APPENDICES C",
+      "title": "The Density of States N(E)"
+    },
+    {
+      "number": "APPENDICES D",
+      "title": "Einstein Relation"
+    },
+    {
+      "number": "APPENDICES E",
+      "title": "Frequently Used Symbols"
+    },
+    {
+      "number": "9",
+      "title": "Unknown"
+    },
+    {
+      "number": "13",
+      "title": "Unknown"
+    },
+    {
+      "number": "14",
+      "title": "Unknown"
+    }
+  ],
+  "citation": "Kanaan Kano. Semiconductor devices. Prentice-Hall, Inc., 1998.",
+  "totalProcessedPages": 498,
+  "metadataProcessedPages": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "indexEndPage": 15,
+  "lastUpdated": "2026-05-09T20:19:21.800Z"
+}
