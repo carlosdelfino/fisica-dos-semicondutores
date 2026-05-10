@@ -238,6 +238,7 @@ export default {
     },
     authorInfo: {
       name: 'Name:',
+      website: 'Website:',
       email: 'E-mail:',
       whatsapp: 'WhatsApp:',
       community: 'WhatsApp Community — Semiconductor Physics:',

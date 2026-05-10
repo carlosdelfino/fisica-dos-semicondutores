@@ -267,16 +267,14 @@ export default function ExercisesPanel() {
       
       try {
         const metadata = await getBookMetadata(selectedBook);
-        console.log('Metadados carregados:', metadata);
         setBookMetadata(metadata);
         
         // Preencher títulos dos capítulos a partir do index.json
-        if (metadata.chapters) {
+        if (metadata && metadata.chapters) {
           const titlesFromMetadata = {};
           metadata.chapters.forEach(chapter => {
             titlesFromMetadata[chapter.number] = chapter.title;
           });
-          console.log('Títulos preenchidos do index.json:', titlesFromMetadata);
           setChapterTitles(titlesFromMetadata);
         }
       } catch (error) {
@@ -286,6 +284,14 @@ export default function ExercisesPanel() {
 
     loadMetadata();
   }, [selectedBook]);
+
+  // Debug: log quando chapterTitles muda
+  useEffect(() => {
+    if (selectedBook) {
+      console.log('chapterTitles atualizado para', selectedBook, ':', chapterTitles);
+      console.log('availableChapters:', availableChapters);
+    }
+  }, [chapterTitles, availableChapters, selectedBook]);
 
   // Carregar fórmulas do livro selecionado para o panel de fórmulas
   useEffect(() => {
@@ -569,7 +575,6 @@ export default function ExercisesPanel() {
                       {availableChapters.map(chapter => {
                         const fileCount = chapterFiles[chapter]?.length || 0;
                         const chapterTitle = chapterTitles[chapter] || `Capítulo ${chapter}`;
-                        console.log(`Capítulo ${chapter}: título="${chapterTitle}", chapterTitles[${chapter}]=${chapterTitles[chapter]}`);
                         return (
                           <option key={chapter} value={chapter}>
                             {chapterTitle} ({fileCount} arquivo{fileCount !== 1 ? 's' : ''})

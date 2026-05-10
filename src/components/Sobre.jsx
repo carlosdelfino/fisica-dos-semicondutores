@@ -123,8 +123,9 @@ function AutorTab() {
       <h4>{t('about.section.author')}</h4>
       <ul className="sobre-list">
         <li><b>{t('about.authorInfo.name')}</b> Carlos Delfino Carvalho Pinheiro</li>
+        <li><b>{t('about.authorInfo.website')}</b> <a href="https://carlosdelfino.eti.br" target="_blank" rel="noopener noreferrer">carlosdelfino.eti.br</a></li>
         <li><b>{t('about.authorInfo.email')}</b> <a href="mailto:consultoria@carlosdelfino.eti.br">consultoria@carlosdelfino.eti.br</a></li>
-        <li><b>{t('about.authorInfo.whatsapp')}</b> <a href="https://wa.me/5585985205490" target="_blank" rel="noopener noreferrer">+55 (85) 98520-5490</a></li>
+        <li><b>{t('about.authorInfo.whatsapp')}</b> <a href="https://wa.me/5585205490" target="_blank" rel="noopener noreferrer">📱 +55 85 205490</a></li>
         <li>
           <b>{t('about.authorInfo.community')}</b>{' '}
           <a href="https://chat.whatsapp.com/C3vtPfTwaSlIPmcl8aHS1X" target="_blank" rel="noopener noreferrer">
@@ -152,10 +153,13 @@ function AutorTab() {
       </ul>
 
       <div className="contact-badges">
+        <a href="https://carlosdelfino.eti.br" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.shields.io/badge/Website-0f172a?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website" />
+        </a>
         <a href="mailto:consultoria@carlosdelfino.eti.br">
           <img src="https://img.shields.io/badge/E--mail-d97706?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail" />
         </a>
-        <a href="https://wa.me/5585985205490" target="_blank" rel="noopener noreferrer">
+        <a href="https://wa.me/5585205490" target="_blank" rel="noopener noreferrer">
           <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" />
         </a>
         <a href="https://chat.whatsapp.com/C3vtPfTwaSlIPmcl8aHS1X" target="_blank" rel="noopener noreferrer">
@@ -215,6 +219,11 @@ git commit -m "docs: ajusta seção X"`}</pre>
            target="_blank" rel="noopener noreferrer">
           github.com/carlosdelfino/fisica-dos-semicondutores
         </a>
+      </p>
+
+      <h4>{t('about.section.network')}</h4>
+      <p>
+        Este site faz parte da rede de sites do <b>Basicão da Eletrônica</b> e da <b>Árvore dos Saberes</b>.
       </p>
     </div>
   );

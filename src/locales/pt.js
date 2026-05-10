@@ -230,7 +230,8 @@ export default {
       about: 'Sobre o projeto',
       author: 'Autor',
       contribute: 'Contribua — críticas e sugestões via Pull Request',
-      repository: 'Repositório'
+      repository: 'Repositório',
+      network: 'Rede de Sites'
     },
     project: {
       p1body: 'Este projeto visa facilitar o aprendizado da Física dos Semicondutores e será continuamente ampliado conforme meu próprio avanço nos estudos. Foi construído usando Claude Opus 4.7 como par de programação, com SWE-1.6 para ajustes de menor complexidade, com base nas leituras que tenho feito do livro Semiconductor Physics and Devices de Donald A. Neamen, complementadas pela coleção Modular Series on Solid State Devices (Robert F. Pierret et al.).',
@@ -238,6 +239,7 @@ export default {
     },
     authorInfo: {
       name: 'Nome:',
+      website: 'Website:',
       email: 'E-mail:',
       whatsapp: 'WhatsApp:',
       community: 'Comunidade WhatsApp — Física dos Semicondutores:',
