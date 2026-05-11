@@ -319,26 +319,22 @@ export default {
       disclaimerText: 'Donations are voluntary and non-refundable. By making a donation, you are supporting a non-profit educational project. Contact us if you have questions.'
     },
     wallet: {
-      title: 'Donate via Wallet',
-      connectDescription: 'Connect your crypto wallet (MetaMask, WalletConnect, etc.) to make a direct donation.',
-      connecting: 'Connecting...',
-      connectButton: '🦊 Connect MetaMask',
-      wallet: 'Wallet',
-      network: 'Network',
-      ethereumMainnet: 'Ethereum Mainnet',
-      sepoliaTestnet: 'Sepolia Testnet',
-      chainId: 'Chain ID',
-      switchNetwork: 'Switch to Ethereum Mainnet',
-      crypto: 'Cryptocurrency',
-      addressOnly: 'Address only',
-      amount: 'Amount',
-      suggestedAmounts: 'Suggested amounts',
-      donateButton: '💖 Donate Now',
+      title: 'Donate via Wallet (Ethereum)',
+      intro: 'Pick an amount in USD and donate directly through your Web3 wallet. The transaction is signed by you in your wallet — no personal data is displayed here.',
+      privacy: 'Your privacy is preserved: we do not store or display your wallet address, balance or network.',
+      chooseAmount: 'Choose an amount',
+      customAmount: 'Custom amount',
+      customPlaceholder: 'Enter a USD amount',
+      fetchingRate: 'Fetching ETH price...',
+      donateButton: '💖 Donate now',
       processing: 'Processing...',
       transactionSent: 'Transaction sent',
-      addressDescription: 'For {{crypto}} donations, use the address below:',
-      disconnect: 'Disconnect',
-      copy: 'Copy'
+      errors: {
+        invalidAmount: 'Please enter a valid USD amount.',
+        noWallet: 'No Web3 wallet found. Please install MetaMask or another compatible wallet.',
+        rate: 'Could not fetch ETH price. Please try again shortly.',
+        txFailed: 'Failed to send transaction'
+      }
     }
   }
 };

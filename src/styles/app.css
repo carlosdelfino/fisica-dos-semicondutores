@@ -5568,6 +5568,19 @@ code {
   margin-top: 20px;
 }
 
+.crypto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+@media (max-width: 540px) {
+  .crypto-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .crypto-card {
   background: rgba(0, 0, 0, 0.3);
   border: 1px solid var(--bg-3);
@@ -5926,4 +5939,139 @@ code {
   padding: 12px;
   margin: 12px 0;
   font-size: 13px;
+}
+
+/* USD-based wallet donation form */
+.wallet-intro {
+  color: var(--fg-1);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.wallet-privacy {
+  background: rgba(34, 197, 94, 0.08);
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  color: var(--fg-1);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+
+.usd-amount-block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--bg-3);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.usd-label {
+  color: var(--fg-2);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.usd-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
+  gap: 8px;
+}
+
+.usd-button {
+  padding: 12px 8px;
+  background: rgba(34, 211, 238, 0.12);
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.usd-button:hover:not(:disabled) {
+  background: var(--accent);
+  color: var(--bg-0);
+  transform: translateY(-1px);
+}
+
+.usd-button.active {
+  background: var(--accent);
+  color: var(--bg-0);
+  box-shadow: 0 4px 12px rgba(34, 211, 238, 0.3);
+}
+
+.usd-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.usd-custom {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.usd-custom label {
+  color: var(--fg-2);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.usd-custom-input {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--bg-3);
+  border-radius: 6px;
+  padding: 0 12px;
+  transition: border-color 0.2s ease;
+}
+
+.usd-custom-input:focus-within {
+  border-color: var(--accent);
+}
+
+.usd-prefix {
+  color: var(--fg-2);
+  font-weight: 700;
+  margin-right: 6px;
+}
+
+.usd-custom-input input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--fg-0);
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.conversion-info {
+  font-size: 13px;
+  color: var(--fg-2);
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  padding: 10px 12px;
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+}
+
+.conversion-info strong {
+  color: var(--accent);
+}
+
+.rate-error {
+  color: #fbbf24;
+}
+
+.rate-quote {
+  color: var(--fg-3, var(--fg-2));
+  font-size: 12px;
 }

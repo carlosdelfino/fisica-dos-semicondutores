@@ -3,10 +3,38 @@ import { useTranslation } from '../contexts/LanguageContext.jsx';
 import WalletConnector from './WalletConnector.jsx';
 
 const CRYPTO_ADDRESSES = {
-  ethereum: '0xcEF96AEee7322F10e3024cbCb7b3b9388d965392',
-  bitcoin: 'bc1q34ak5nt0wtsdaqgutw308j9lzq4cx8luh3f4r7',
-  solana: 'DZPyD4WyhQdAqAvx2eAmXzX4n53VZwVWXjofEb12RWxe',
+  ethereum: '0x841B788FFcbAdFabc5E8A2CfcBbeC93179B9ABef',
+  bitcoin: 'bc1q2gth8nf5aqux0lmxlqyzhwkefxm2cwpr354edu',
+  solana: 'DMpnSvYmUfjrEkc5ZaFFEJTqKhyoATcAHBGgWZzucf9j',
+  tron: 'TGpwRLA3eBh9P8nq3ccmFwRbWbcaynbYfj',
 };
+
+const CRYPTO_META = [
+  {
+    id: 'ethereum',
+    name: 'Ethereum (ETH)',
+    icon: 'Ξ',
+    explorer: (a) => `https://etherscan.io/address/${a}`,
+  },
+  {
+    id: 'bitcoin',
+    name: 'Bitcoin (BTC)',
+    icon: '₿',
+    explorer: (a) => `https://blockstream.info/address/${a}`,
+  },
+  {
+    id: 'solana',
+    name: 'Solana (SOL)',
+    icon: '◎',
+    explorer: (a) => `https://explorer.solana.com/address/${a}`,
+  },
+  {
+    id: 'tron',
+    name: 'Tron (TRX)',
+    icon: '◈',
+    explorer: (a) => `https://tronscan.org/#/address/${a}`,
+  },
+];
 
 const PIX_KEY = 'nubank@carlosdelfino.eti.br';
 
@@ -94,88 +122,42 @@ function DonationTab() {
       {/* Cryptocurrency Section */}
       <div className="donation-section crypto-section">
         <h5>₿ {t('support.donation.crypto')}</h5>
-        
-        {/* Ethereum */}
-        <div className="crypto-card">
-          <div className="crypto-header">
-            <span className="crypto-icon">Ξ</span>
-            <span className="crypto-name">Ethereum (ETH)</span>
-          </div>
-          <div className="crypto-address-wrapper">
-            <code className="crypto-address">{CRYPTO_ADDRESSES.ethereum}</code>
-            <button
-              className="copy-button"
-              onClick={() => copyToClipboard(CRYPTO_ADDRESSES.ethereum, 'ethereum')}
-              title={t('support.donation.copy')}
-            >
-              {copiedAddress === 'ethereum' ? '✓' : '📋'}
-            </button>
-          </div>
-          <a
-            href={`https://etherscan.io/address/${CRYPTO_ADDRESSES.ethereum}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="crypto-explorer"
-          >
-            {t('support.donation.viewExplorer')} →
-          </a>
-        </div>
 
-        {/* Bitcoin */}
-        <div className="crypto-card">
-          <div className="crypto-header">
-            <span className="crypto-icon">₿</span>
-            <span className="crypto-name">Bitcoin (BTC)</span>
-          </div>
-          <div className="crypto-address-wrapper">
-            <code className="crypto-address">{CRYPTO_ADDRESSES.bitcoin}</code>
-            <button
-              className="copy-button"
-              onClick={() => copyToClipboard(CRYPTO_ADDRESSES.bitcoin, 'bitcoin')}
-              title={t('support.donation.copy')}
-            >
-              {copiedAddress === 'bitcoin' ? '✓' : '📋'}
-            </button>
-          </div>
-          <a
-            href={`https://blockstream.info/address/${CRYPTO_ADDRESSES.bitcoin}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="crypto-explorer"
-          >
-            {t('support.donation.viewExplorer')} →
-          </a>
-        </div>
-
-        {/* Solana */}
-        <div className="crypto-card">
-          <div className="crypto-header">
-            <span className="crypto-icon">◎</span>
-            <span className="crypto-name">Solana (SOL)</span>
-          </div>
-          <div className="crypto-address-wrapper">
-            <code className="crypto-address">{CRYPTO_ADDRESSES.solana}</code>
-            <button
-              className="copy-button"
-              onClick={() => copyToClipboard(CRYPTO_ADDRESSES.solana, 'solana')}
-              title={t('support.donation.copy')}
-            >
-              {copiedAddress === 'solana' ? '✓' : '📋'}
-            </button>
-          </div>
-          <a
-            href={`https://explorer.solana.com/address/${CRYPTO_ADDRESSES.solana}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="crypto-explorer"
-          >
-            {t('support.donation.viewExplorer')} →
-          </a>
+        <div className="crypto-grid">
+          {CRYPTO_META.map(({ id, name, icon, explorer }) => {
+            const address = CRYPTO_ADDRESSES[id];
+            return (
+              <div key={id} className="crypto-card">
+                <div className="crypto-header">
+                  <span className="crypto-icon">{icon}</span>
+                  <span className="crypto-name">{name}</span>
+                </div>
+                <div className="crypto-address-wrapper">
+                  <code className="crypto-address">{address}</code>
+                  <button
+                    className="copy-button"
+                    onClick={() => copyToClipboard(address, id)}
+                    title={t('support.donation.copy')}
+                  >
+                    {copiedAddress === id ? '✓' : '📋'}
+                  </button>
+                </div>
+                <a
+                  href={explorer(address)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="crypto-explorer"
+                >
+                  {t('support.donation.viewExplorer')} →
+                </a>
+              </div>
+            );
+          })}
         </div>
       </div>
 
       {/* Web3 Wallet Donation */}
-      <WalletConnector />
+      <WalletConnector ethereumAddress={CRYPTO_ADDRESSES.ethereum} />
 
       <div className="donation-note">
         <p>

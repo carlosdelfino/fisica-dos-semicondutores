@@ -320,26 +320,22 @@ export default {
       disclaimerText: 'As doações são voluntárias e não reembolsáveis. Ao fazer uma doação, você está apoiando um projeto educacional sem fins lucrativos. Entre em contato se tiver dúvidas.'
     },
     wallet: {
-      title: 'Doar via Wallet',
-      connectDescription: 'Conecte sua carteira cripto (MetaMask, WalletConnect, etc.) para fazer uma doação direta.',
-      connecting: 'Conectando...',
-      connectButton: '🦊 Conectar MetaMask',
-      wallet: 'Carteira',
-      network: 'Rede',
-      ethereumMainnet: 'Ethereum Mainnet',
-      sepoliaTestnet: 'Sepolia Testnet',
-      chainId: 'Chain ID',
-      switchNetwork: 'Mudar para Ethereum Mainnet',
-      crypto: 'Criptomoeda',
-      addressOnly: 'Apenas endereço',
-      amount: 'Valor',
-      suggestedAmounts: 'Valores sugeridos',
-      donateButton: '💖 Doar Agora',
+      title: 'Doar via Wallet (Ethereum)',
+      intro: 'Escolha um valor em dólares e doe diretamente pela sua carteira Web3. A transação é assinada por você na sua carteira — nenhum dado pessoal é exibido aqui.',
+      privacy: 'Sua privacidade é preservada: não armazenamos nem mostramos endereço, saldo ou rede da sua carteira.',
+      chooseAmount: 'Escolha um valor',
+      customAmount: 'Outro valor',
+      customPlaceholder: 'Digite um valor em USD',
+      fetchingRate: 'Obtendo cotação do ETH...',
+      donateButton: '💖 Doar agora',
       processing: 'Processando...',
       transactionSent: 'Transação enviada',
-      addressDescription: 'Para doações de {{crypto}}, use o endereço abaixo:',
-      disconnect: 'Desconectar',
-      copy: 'Copiar'
+      errors: {
+        invalidAmount: 'Informe um valor válido em dólares.',
+        noWallet: 'Nenhuma carteira Web3 encontrada. Instale o MetaMask ou outra carteira compatível.',
+        rate: 'Não foi possível obter a cotação do ETH. Tente novamente em instantes.',
+        txFailed: 'Falha ao enviar a transação'
+      }
     }
   }
 };

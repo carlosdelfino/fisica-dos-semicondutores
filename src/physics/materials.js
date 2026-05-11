@@ -62,6 +62,27 @@ export const MATERIALS = {
       acceptor: { symbol: 'Zn', name: 'Zinco',                  dE: 0.031 },
     },
   },
+  GaN: {
+    name: 'Nitreto de Gálio (GaN)',
+    color: '#fde68a',
+    Eg_300: 3.39,
+    Eg_0:   3.51,
+    alpha:  7.7e-4,   // eV/K Varshni
+    beta:   600,      // K    Varshni
+    mn_eff: 0.20,
+    mp_eff: 1.4,
+    ni_300: 1.0e-10,
+    epsilon_r: 8.9,
+    a_lattice: 3.189e-10, // m (wurtzita, parâmetro a basal)
+    c_lattice: 5.185e-10, // m (parâmetro c)
+    gap_type: 'direct',
+    kCB_min: 0.0,         // Γ point
+    kVB_max: 0.0,
+    dopants: {
+      donor:    { symbol: 'Si', name: 'Silício (em sítio Ga)', dE: 0.017 },
+      acceptor: { symbol: 'Mg', name: 'Magnésio',              dE: 0.170 },
+    },
+  },
   SiC: {
     name: 'Carbeto de Silício (SiC - 4H)',
     color: '#86efac',

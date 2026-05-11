@@ -1,302 +1,187 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { ethers } from 'ethers';
 import { useTranslation } from '../contexts/LanguageContext.jsx';
 
-const DONATION_ADDRESSES = {
-  ethereum: '0xcEF96AEee7322F10e3024cbCb7b3b9388d965392',
-  bitcoin: 'bc1q34ak5nt0wtsdaqgutw308j9lzq4cx8luh3f4r7',
-  solana: 'DZPyD4WyhQdAqAvx2eAmXzX4n53VZwVWXjofEb12RWxe',
-};
+const DEFAULT_ETH_ADDRESS = '0x841B788FFcbAdFabc5E8A2CfcBbeC93179B9ABef';
+const SUGGESTED_USD = [1, 5, 10, 15, 20];
+const COINGECKO_URL =
+  'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd';
 
-const SUGGESTED_AMOUNTS = {
-  ethereum: ['0.01', '0.05', '0.1', '0.5', '1.0'],
-  bitcoin: ['0.0001', '0.0005', '0.001', '0.005', '0.01'],
-};
-
-export default function WalletConnector() {
+export default function WalletConnector({ ethereumAddress = DEFAULT_ETH_ADDRESS }) {
   const { t } = useTranslation();
-  const [account, setAccount] = useState(null);
-  const [provider, setProvider] = useState(null);
-  const [chainId, setChainId] = useState(null);
-  const [isConnecting, setIsConnecting] = useState(false);
-  const [selectedCrypto, setSelectedCrypto] = useState('ethereum');
-  const [donationAmount, setDonationAmount] = useState('');
+  const [ethUsd, setEthUsd] = useState(null);
+  const [rateError, setRateError] = useState(false);
+  const [usdAmount, setUsdAmount] = useState(5);
+  const [customUsd, setCustomUsd] = useState('');
   const [isDonating, setIsDonating] = useState(false);
   const [txHash, setTxHash] = useState(null);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    checkIfWalletConnected();
-    if (window.ethereum) {
-      window.ethereum.on('accountsChanged', handleAccountsChanged);
-      window.ethereum.on('chainChanged', handleChainChanged);
-    }
+    let aborted = false;
+    fetch(COINGECKO_URL)
+      .then((r) => r.json())
+      .then((data) => {
+        if (aborted) return;
+        const price = data?.ethereum?.usd;
+        if (typeof price === 'number' && price > 0) {
+          setEthUsd(price);
+        } else {
+          setRateError(true);
+        }
+      })
+      .catch(() => {
+        if (!aborted) setRateError(true);
+      });
     return () => {
-      if (window.ethereum) {
-        window.ethereum.removeListener('accountsChanged', handleAccountsChanged);
-        window.ethereum.removeListener('chainChanged', handleChainChanged);
-      }
+      aborted = true;
     };
   }, []);
 
-  const checkIfWalletConnected = async () => {
-    try {
-      if (window.ethereum) {
-        const accounts = await window.ethereum.request({ method: 'eth_accounts' });
-        if (accounts.length > 0) {
-          setAccount(accounts[0]);
-          const provider = new ethers.BrowserProvider(window.ethereum);
-          setProvider(provider);
-          const network = await provider.getNetwork();
-          setChainId(Number(network.chainId));
-        }
-      }
-    } catch (error) {
-      console.error('Error checking wallet connection:', error);
-    }
-  };
+  const effectiveUsd = useMemo(() => {
+    const custom = parseFloat(customUsd);
+    if (!Number.isNaN(custom) && custom > 0) return custom;
+    return usdAmount;
+  }, [usdAmount, customUsd]);
 
-  const handleAccountsChanged = (accounts) => {
-    if (accounts.length === 0) {
-      setAccount(null);
-      setProvider(null);
-      setChainId(null);
-    } else {
-      setAccount(accounts[0]);
-    }
-  };
+  const ethAmount = useMemo(() => {
+    if (!ethUsd || !effectiveUsd) return null;
+    return effectiveUsd / ethUsd;
+  }, [ethUsd, effectiveUsd]);
 
-  const handleChainChanged = () => {
-    window.location.reload();
-  };
-
-  const connectWallet = async () => {
-    setIsConnecting(true);
-    setError(null);
-    try {
-      if (!window.ethereum) {
-        setError('MetaMask não encontrado. Por favor, instale o MetaMask.');
-        setIsConnecting(false);
-        return;
-      }
-
-      const provider = new ethers.BrowserProvider(window.ethereum);
-      await provider.send('eth_requestAccounts', []);
-      const signer = await provider.getSigner();
-      const address = await signer.getAddress();
-      const network = await provider.getNetwork();
-
-      setAccount(address);
-      setProvider(provider);
-      setChainId(Number(network.chainId));
-    } catch (error) {
-      setError('Erro ao conectar carteira: ' + error.message);
-      console.error('Error connecting wallet:', error);
-    } finally {
-      setIsConnecting(false);
-    }
-  };
-
-  const disconnectWallet = () => {
-    setAccount(null);
-    setProvider(null);
-    setChainId(null);
-    setTxHash(null);
-    setError(null);
-  };
-
-  const switchToEthereum = async () => {
-    try {
-      await window.ethereum.request({
-        method: 'wallet_switchEthereumChain',
-        params: [{ chainId: '0x1' }], // Ethereum Mainnet
-      });
-    } catch (switchError) {
-      if (switchError.code === 4902) {
-        try {
-          await window.ethereum.request({
-            method: 'wallet_addEthereumChain',
-            params: [
-              {
-                chainId: '0x1',
-                chainName: 'Ethereum Mainnet',
-                nativeCurrency: {
-                  name: 'ETH',
-                  symbol: 'ETH',
-                  decimals: 18,
-                },
-                rpcUrls: ['https://eth.llamarpc.com'],
-                blockExplorerUrls: ['https://etherscan.io'],
-              },
-            ],
-          });
-        } catch (addError) {
-          setError('Erro ao adicionar rede Ethereum: ' + addError.message);
-        }
-      }
-      setError('Erro ao mudar para rede Ethereum: ' + switchError.message);
-    }
+  const handleSelectAmount = (value) => {
+    setUsdAmount(value);
+    setCustomUsd('');
   };
 
   const donate = async () => {
-    if (!provider || !account) {
-      setError('Por favor, conecte sua carteira primeiro.');
+    setError(null);
+    setTxHash(null);
+
+    if (!ethAmount || ethAmount <= 0) {
+      setError(t('support.wallet.errors.invalidAmount'));
       return;
     }
-
-    if (!donationAmount || parseFloat(donationAmount) <= 0) {
-      setError('Por favor, insira um valor válido para doação.');
+    if (typeof window === 'undefined' || !window.ethereum) {
+      setError(t('support.wallet.errors.noWallet'));
       return;
     }
 
     setIsDonating(true);
-    setError(null);
-    setTxHash(null);
-
     try {
+      const provider = new ethers.BrowserProvider(window.ethereum);
+      // Solicita conexão somente no momento da doação; nenhum dado é exibido.
+      await provider.send('eth_requestAccounts', []);
       const signer = await provider.getSigner();
-      const amountInWei = ethers.parseEther(donationAmount);
 
+      // Arredonda para 6 casas (gwei-like) para evitar precisão excessiva.
+      const ethValue = ethAmount.toFixed(6);
       const tx = await signer.sendTransaction({
-        to: DONATION_ADDRESSES.ethereum,
-        value: amountInWei,
+        to: ethereumAddress,
+        value: ethers.parseEther(ethValue),
       });
-
       setTxHash(tx.hash);
-
       await tx.wait();
-      alert(`Doação realizada com sucesso! Hash: ${tx.hash}`);
-      setDonationAmount('');
-    } catch (error) {
-      setError('Erro ao realizar doação: ' + error.message);
-      console.error('Error donating:', error);
+    } catch (err) {
+      const msg = err?.shortMessage || err?.message || String(err);
+      setError(`${t('support.wallet.errors.txFailed')}: ${msg}`);
     } finally {
       setIsDonating(false);
     }
   };
 
-  const formatAddress = (address) => {
-    if (!address) return '';
-    return `${address.slice(0, 6)}...${address.slice(-4)}`;
-  };
-
-  if (!account) {
-    return (
-      <div className="wallet-connector">
-        <h4>💰 {t('support.wallet.title')}</h4>
-        <p>{t('support.wallet.connectDescription')}</p>
-        <button 
-          className="connect-wallet-button"
-          onClick={connectWallet}
-          disabled={isConnecting}
-        >
-          {isConnecting ? t('support.wallet.connecting') : t('support.wallet.connectButton')}
-        </button>
-        {error && <p className="wallet-error">{error}</p>}
-      </div>
-    );
-  }
+  const formatHash = (h) => (h ? `${h.slice(0, 8)}…${h.slice(-6)}` : '');
 
   return (
     <div className="wallet-connector">
       <h4>💰 {t('support.wallet.title')}</h4>
-      
-      <div className="wallet-info">
-        <p><strong>{t('support.wallet.wallet')}:</strong> {formatAddress(account)}</p>
-        <p><strong>{t('support.wallet.network')}:</strong> {chainId === 1 ? t('support.wallet.ethereumMainnet') : chainId === 11155111 ? t('support.wallet.sepoliaTestnet') : `${t('support.wallet.chainId')}: ${chainId}`}</p>
-        {chainId !== 1 && (
-          <button className="switch-network-button" onClick={switchToEthereum}>
-            {t('support.wallet.switchNetwork')}
-          </button>
-        )}
-      </div>
+      <p className="wallet-intro">{t('support.wallet.intro')}</p>
+      <p className="wallet-privacy">🛡️ {t('support.wallet.privacy')}</p>
 
       <div className="donation-form">
-        <div className="crypto-selector">
-          <label htmlFor="crypto-select">{t('support.wallet.crypto')}:</label>
-          <select
-            id="crypto-select"
-            value={selectedCrypto}
-            onChange={(e) => setSelectedCrypto(e.target.value)}
-            disabled={isDonating}
-          >
-            <option value="ethereum">Ethereum (ETH)</option>
-            <option value="bitcoin">Bitcoin (BTC) - {t('support.wallet.addressOnly')}</option>
-            <option value="solana">Solana (SOL) - {t('support.wallet.addressOnly')}</option>
-          </select>
-        </div>
+        <div className="usd-amount-block">
+          <label className="usd-label">
+            {t('support.wallet.chooseAmount')} (USD)
+          </label>
+          <div className="usd-buttons">
+            {SUGGESTED_USD.map((v) => {
+              const active = !customUsd && usdAmount === v;
+              return (
+                <button
+                  key={v}
+                  type="button"
+                  className={`usd-button${active ? ' active' : ''}`}
+                  onClick={() => handleSelectAmount(v)}
+                  disabled={isDonating}
+                >
+                  ${v}
+                </button>
+              );
+            })}
+          </div>
 
-        {selectedCrypto === 'ethereum' ? (
-          <>
-            <div className="amount-selector">
-              <label htmlFor="amount-input">{t('support.wallet.amount')} (ETH):</label>
+          <div className="usd-custom">
+            <label htmlFor="custom-usd">{t('support.wallet.customAmount')}:</label>
+            <div className="usd-custom-input">
+              <span className="usd-prefix">$</span>
               <input
-                id="amount-input"
+                id="custom-usd"
                 type="number"
-                step="0.01"
                 min="0"
-                value={donationAmount}
-                onChange={(e) => setDonationAmount(e.target.value)}
-                placeholder="0.01"
+                step="0.5"
+                inputMode="decimal"
+                value={customUsd}
+                onChange={(e) => setCustomUsd(e.target.value)}
+                placeholder={t('support.wallet.customPlaceholder')}
                 disabled={isDonating}
               />
             </div>
-
-            <div className="suggested-amounts">
-              <label>{t('support.wallet.suggestedAmounts')}:</label>
-              <div className="amount-buttons">
-                {SUGGESTED_AMOUNTS.ethereum.map((amount) => (
-                  <button
-                    key={amount}
-                    className="amount-button"
-                    onClick={() => setDonationAmount(amount)}
-                    disabled={isDonating}
-                  >
-                    {amount} ETH
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <button
-              className="donate-button"
-              onClick={donate}
-              disabled={isDonating || !donationAmount}
-            >
-              {isDonating ? t('support.wallet.processing') : t('support.wallet.donateButton')}
-            </button>
-
-            {txHash && (
-              <p className="tx-info">
-                {t('support.wallet.transactionSent')}:{' '}
-                <a
-                  href={`https://etherscan.io/tx/${txHash}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {formatAddress(txHash)}
-                </a>
-              </p>
-            )}
-          </>
-        ) : (
-          <div className="crypto-address-only">
-            <p>{t('support.wallet.addressDescription', { crypto: selectedCrypto.toUpperCase() })}</p>
-            <code className="crypto-address-display">{DONATION_ADDRESSES[selectedCrypto]}</code>
-            <button
-              className="copy-button"
-              onClick={() => navigator.clipboard.writeText(DONATION_ADDRESSES[selectedCrypto])}
-            >
-              📋 {t('support.wallet.copy')}
-            </button>
           </div>
-        )}
+        </div>
 
-        <button className="disconnect-button" onClick={disconnectWallet}>
-          {t('support.wallet.disconnect')}
+        <div className="conversion-info" aria-live="polite">
+          {rateError && (
+            <span className="rate-error">
+              ⚠️ {t('support.wallet.errors.rate')}
+            </span>
+          )}
+          {!rateError && !ethUsd && (
+            <span className="rate-loading">⏳ {t('support.wallet.fetchingRate')}</span>
+          )}
+          {!rateError && ethUsd && (
+            <span className="rate-summary">
+              ≈ <strong>{ethAmount ? ethAmount.toFixed(6) : '—'} ETH</strong>
+              <span className="rate-quote">
+                {' '}(1 ETH = ${ethUsd.toLocaleString('en-US', { maximumFractionDigits: 2 })})
+              </span>
+            </span>
+          )}
+        </div>
+
+        <button
+          className="donate-button"
+          onClick={donate}
+          disabled={isDonating || !ethAmount}
+        >
+          {isDonating
+            ? t('support.wallet.processing')
+            : `${t('support.wallet.donateButton')} · $${effectiveUsd}`}
         </button>
 
-        {error && <p className="wallet-error">{error}</p>}
+        {txHash && (
+          <p className="tx-info">
+            ✅ {t('support.wallet.transactionSent')}:{' '}
+            <a
+              href={`https://etherscan.io/tx/${txHash}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {formatHash(txHash)}
+            </a>
+          </p>
+        )}
+
+        {error && <p className="wallet-error">❌ {error}</p>}
       </div>
     </div>
   );

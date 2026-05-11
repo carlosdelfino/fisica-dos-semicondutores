@@ -6,7 +6,7 @@ import { MATERIALS } from '../physics/materials.js';
  * Renderiza dopantes em posições escolhidas conforme o material e tipo.
  *
  * Props:
- *  - material: 'Si' | 'Ge' | 'GaAs' | 'SiC'
+ *  - material: 'Si' | 'Ge' | 'GaAs' | 'GaN' | 'SiC'
  *  - type: 'intrinsic' | 'n' | 'p'
  *  - rows, cols
  */
@@ -17,6 +17,8 @@ const LATTICE_SITES = {
   Ge:   { A: { symbol: 'Ge', grad: 'ge-grad',   stroke: '#4338ca' }, B: null },
   GaAs: { A: { symbol: 'Ga', grad: 'ga-grad',   stroke: '#9f1239' },
           B: { symbol: 'As', grad: 'as-grad',   stroke: '#365314' } },
+  GaN:  { A: { symbol: 'Ga', grad: 'ga-grad',   stroke: '#9f1239' },
+          B: { symbol: 'N',  grad: 'n-grad',    stroke: '#1e3a8a' } },
   SiC:  { A: { symbol: 'Si', grad: 'si-grad',   stroke: '#92400e' },
           B: { symbol: 'C',  grad: 'c-grad',    stroke: '#1f2937' } },
 };
@@ -27,6 +29,7 @@ const DOPANT_SITE = {
   Si:   { n: 0, p: 0 },
   Ge:   { n: 0, p: 0 },
   GaAs: { n: 0, p: 0 }, // Si (em sítio Ga) e Zn (em sítio Ga)
+  GaN:  { n: 0, p: 0 }, // Si (em sítio Ga) e Mg (em sítio Ga)
   SiC:  { n: 1, p: 0 }, // N em sítio do C; Al em sítio do Si
 };
 
@@ -55,6 +58,28 @@ export default function Lattice({ material = 'Si', type, rows = 5, cols = 7 }) {
   }, [type, rows, cols, material]);
 
   const isDopant = (r, c) => dopants.some((d) => d.r === r && d.c === c);
+
+  // Ligações com elétron faltante (uma por dopante aceitador).
+  // Cada ligação é identificada pelo átomo (r,c) proprietário e a direção
+  // 'right' (com vizinho à direita) ou 'down' (com vizinho abaixo).
+  const deficientBonds = useMemo(() => {
+    if (type !== 'p') return [];
+    return dopants.map((d) => {
+      if (d.c < cols - 1) return { r: d.r, c: d.c, dir: 'right' };
+      if (d.r < rows - 1) return { r: d.r, c: d.c, dir: 'down' };
+      if (d.c > 0)        return { r: d.r, c: d.c - 1, dir: 'right' };
+      return { r: d.r - 1, c: d.c, dir: 'down' };
+    });
+  }, [type, dopants, rows, cols]);
+  const isDeficient = (r, c, dir) => deficientBonds.some((b) => b.r === r && b.c === c && b.dir === dir);
+  // No lado da ligação em que falta o elétron (mais próximo do dopante aceitador)
+  const deficientNearDopant = (r, c, dir) => {
+    const b = deficientBonds.find((b) => b.r === r && b.c === c && b.dir === dir);
+    if (!b) return false;
+    // Se o dopante é o próprio (r,c), falta elétron no lado próximo dele (1/3);
+    // senão (dopante é o vizinho do outro lado), falta elétron a 2/3.
+    return dopants.some((d) => d.r === r && d.c === c);
+  };
 
   // Símbolo/aparência do átomo da rede na posição (r,c)
   const siteAt = (r, c) => (isCompound && (r + c) % 2 === 1 ? sites.B : sites.A);
@@ -88,6 +113,10 @@ export default function Lattice({ material = 'Si', type, rows = 5, cols = 7 }) {
             <stop offset="0%" stopColor="#e5e7eb" />
             <stop offset="100%" stopColor="#111827" />
           </radialGradient>
+          <radialGradient id="n-grad">
+            <stop offset="0%" stopColor="#dbeafe" />
+            <stop offset="100%" stopColor="#1e3a8a" />
+          </radialGradient>
           <radialGradient id="dopant-grad-n">
             <stop offset="0%" stopColor="#bbf7d0" />
             <stop offset="100%" stopColor="#15803d" />
@@ -98,25 +127,63 @@ export default function Lattice({ material = 'Si', type, rows = 5, cols = 7 }) {
           </radialGradient>
         </defs>
 
-        {/* Ligações */}
+        {/* Ligações covalentes: linha + par de elétrons compartilhados (2 pontos). */}
+        {/* Em uma ligação adjacente a um dopante aceitador, falta 1 elétron (lacuna). */}
         {Array.from({ length: rows }).flatMap((_, r) =>
           Array.from({ length: cols }).flatMap((_, c) => {
             const x = offX + c * cellW;
             const y = offY + r * cellH;
-            const lines = [];
+            const items = [];
+            // Ligação horizontal (vizinho à direita)
             if (c < cols - 1) {
-              lines.push(<line key={`h-${r}-${c}`} x1={x} y1={y}
+              const def = isDeficient(r, c, 'right');
+              const nearOwner = deficientNearDopant(r, c, 'right');
+              const e1x = x + cellW / 3;
+              const e2x = x + (2 * cellW) / 3;
+              items.push(<line key={`h-${r}-${c}`} x1={x} y1={y}
                                x2={x + cellW} y2={y} stroke="#64748b" strokeWidth="1.5" />);
-              lines.push(<line key={`h2-${r}-${c}`} x1={x} y1={y + 4}
-                               x2={x + cellW} y2={y + 4} stroke="#64748b" strokeWidth="1" opacity="0.6" />);
+              // Elétron 1 (lado do átomo (r,c))
+              if (!(def && nearOwner)) {
+                items.push(<circle key={`eh1-${r}-${c}`} cx={e1x} cy={y} r="2.6"
+                                   fill="#0ea5e9" stroke="#0c4a6e" strokeWidth="0.5" />);
+              }
+              // Elétron 2 (lado do vizinho)
+              if (!(def && !nearOwner)) {
+                items.push(<circle key={`eh2-${r}-${c}`} cx={e2x} cy={y} r="2.6"
+                                   fill="#0ea5e9" stroke="#0c4a6e" strokeWidth="0.5" />);
+              }
+              // Marca da lacuna onde falta elétron
+              if (def) {
+                const hx = nearOwner ? e1x : e2x;
+                items.push(<circle key={`hh-${r}-${c}`} cx={hx} cy={y} r="3.2"
+                                   fill="none" stroke="#ef4444" strokeWidth="1.2"
+                                   strokeDasharray="2 1.5" />);
+              }
             }
+            // Ligação vertical (vizinho abaixo)
             if (r < rows - 1) {
-              lines.push(<line key={`v-${r}-${c}`} x1={x} y1={y}
+              const def = isDeficient(r, c, 'down');
+              const nearOwner = deficientNearDopant(r, c, 'down');
+              const e1y = y + cellH / 3;
+              const e2y = y + (2 * cellH) / 3;
+              items.push(<line key={`v-${r}-${c}`} x1={x} y1={y}
                                x2={x} y2={y + cellH} stroke="#64748b" strokeWidth="1.5" />);
-              lines.push(<line key={`v2-${r}-${c}`} x1={x + 4} y1={y}
-                               x2={x + 4} y2={y + cellH} stroke="#64748b" strokeWidth="1" opacity="0.6" />);
+              if (!(def && nearOwner)) {
+                items.push(<circle key={`ev1-${r}-${c}`} cx={x} cy={e1y} r="2.6"
+                                   fill="#0ea5e9" stroke="#0c4a6e" strokeWidth="0.5" />);
+              }
+              if (!(def && !nearOwner)) {
+                items.push(<circle key={`ev2-${r}-${c}`} cx={x} cy={e2y} r="2.6"
+                                   fill="#0ea5e9" stroke="#0c4a6e" strokeWidth="0.5" />);
+              }
+              if (def) {
+                const hy = nearOwner ? e1y : e2y;
+                items.push(<circle key={`hv-${r}-${c}`} cx={x} cy={hy} r="3.2"
+                                   fill="none" stroke="#ef4444" strokeWidth="1.2"
+                                   strokeDasharray="2 1.5" />);
+              }
             }
-            return lines;
+            return items;
           })
         )}
 
@@ -183,8 +250,8 @@ export default function Lattice({ material = 'Si', type, rows = 5, cols = 7 }) {
         </g>
       </svg>
       <p className="diagram-caption">
-        Visualização esquemática 2D da estrutura cristalina do {mat.name}. Linhas duplas representam ligações covalentes
-        compartilhando dois elétrons.
+        Cada ligação covalente do {mat.name} é mostrada como linha com <b style={{color:'#0ea5e9'}}>dois pontos azuis</b> (par de elétrons compartilhados).
+        Em um dopante <b style={{color:'#22c55e'}}>doador</b> (tipo-n) sobra um elétron livre; em um <b style={{color:'#a855f7'}}>aceitador</b> (tipo-p) uma ligação fica com apenas um elétron, evidenciando a <b style={{color:'#ef4444'}}>lacuna</b> (círculo tracejado vermelho).
       </p>
     </div>
   );
