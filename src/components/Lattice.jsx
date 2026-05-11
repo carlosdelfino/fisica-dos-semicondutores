@@ -10,31 +10,57 @@ import { MATERIALS } from '../physics/materials.js';
  *  - type: 'intrinsic' | 'n' | 'p'
  *  - rows, cols
  */
+// Estruturas atômicas/moleculares por material.
+// Para compostos (GaAs, SiC), os dois átomos alternam em padrão de tabuleiro.
+const LATTICE_SITES = {
+  Si:   { A: { symbol: 'Si', grad: 'si-grad',   stroke: '#92400e' }, B: null },
+  Ge:   { A: { symbol: 'Ge', grad: 'ge-grad',   stroke: '#4338ca' }, B: null },
+  GaAs: { A: { symbol: 'Ga', grad: 'ga-grad',   stroke: '#9f1239' },
+          B: { symbol: 'As', grad: 'as-grad',   stroke: '#365314' } },
+  SiC:  { A: { symbol: 'Si', grad: 'si-grad',   stroke: '#92400e' },
+          B: { symbol: 'C',  grad: 'c-grad',    stroke: '#1f2937' } },
+};
+
+// Em qual sítio (paridade r+c) o dopante substitui o átomo da rede.
+// 0 = sítio A (par); 1 = sítio B (ímpar).
+const DOPANT_SITE = {
+  Si:   { n: 0, p: 0 },
+  Ge:   { n: 0, p: 0 },
+  GaAs: { n: 0, p: 0 }, // Si (em sítio Ga) e Zn (em sítio Ga)
+  SiC:  { n: 1, p: 0 }, // N em sítio do C; Al em sítio do Si
+};
+
 export default function Lattice({ material = 'Si', type, rows = 5, cols = 7 }) {
   const mat = MATERIALS[material] || MATERIALS.Si;
+  const sites = LATTICE_SITES[material] || LATTICE_SITES.Si;
+  const isCompound = !!sites.B;
   const W = 760, H = 380;
   const cellW = (W - 80) / (cols - 1);
   const cellH = (H - 80) / (rows - 1);
   const offX = 40, offY = 40;
 
-  // Posições de dopantes
+  // Posições de dopantes (no sítio correto de acordo com o material)
   const dopants = useMemo(() => {
     if (type === 'intrinsic') return [];
-    const list = [];
-    // distribuir 2 dopantes
-    const positions = [
+    const targetParity = DOPANT_SITE[material]?.[type] ?? 0;
+    const candidates = [
       [Math.floor(rows / 2), Math.floor(cols / 2)],
       [Math.floor(rows / 2) - 1, Math.floor(cols / 2) + 2],
     ];
-    positions.forEach(([r, c]) => list.push({ r, c }));
-    return list;
-  }, [type, rows, cols]);
+    return candidates.map(([r, c]) => {
+      // Ajusta coluna para garantir paridade correta (sítio do dopante)
+      if (((r + c) % 2) !== targetParity) c += 1;
+      return { r, c };
+    });
+  }, [type, rows, cols, material]);
 
   const isDopant = (r, c) => dopants.some((d) => d.r === r && d.c === c);
 
-  const baseSymbol = material === 'Si' ? 'Si' : material === 'Ge' ? 'Ge' : material === 'GaAs' ? 'Ga' : material === 'SiC' ? 'Si' : 'Si';
-  const dopantSymbol = type === 'n' ? mat.dopants?.donor?.symbol || 'P' : type === 'p' ? mat.dopants?.acceptor?.symbol || 'B' : baseSymbol;
+  // Símbolo/aparência do átomo da rede na posição (r,c)
+  const siteAt = (r, c) => (isCompound && (r + c) % 2 === 1 ? sites.B : sites.A);
+  const dopantSymbol = type === 'n' ? mat.dopants?.donor?.symbol || 'P' : type === 'p' ? mat.dopants?.acceptor?.symbol || 'B' : '';
   const dopantColor = type === 'n' ? '#22c55e' : '#a855f7';
+  const ATOM_R = 16; // raio reduzido em ~10% (de 18 para 16)
 
   return (
     <div className="diagram-card">
@@ -45,6 +71,22 @@ export default function Lattice({ material = 'Si', type, rows = 5, cols = 7 }) {
           <radialGradient id="si-grad">
             <stop offset="0%" stopColor="#fef3c7" />
             <stop offset="100%" stopColor="#d97706" />
+          </radialGradient>
+          <radialGradient id="ge-grad">
+            <stop offset="0%" stopColor="#e0e7ff" />
+            <stop offset="100%" stopColor="#4338ca" />
+          </radialGradient>
+          <radialGradient id="ga-grad">
+            <stop offset="0%" stopColor="#ffe4e6" />
+            <stop offset="100%" stopColor="#be123c" />
+          </radialGradient>
+          <radialGradient id="as-grad">
+            <stop offset="0%" stopColor="#ecfccb" />
+            <stop offset="100%" stopColor="#4d7c0f" />
+          </radialGradient>
+          <radialGradient id="c-grad">
+            <stop offset="0%" stopColor="#e5e7eb" />
+            <stop offset="100%" stopColor="#111827" />
           </radialGradient>
           <radialGradient id="dopant-grad-n">
             <stop offset="0%" stopColor="#bbf7d0" />
@@ -84,14 +126,15 @@ export default function Lattice({ material = 'Si', type, rows = 5, cols = 7 }) {
             const x = offX + c * cellW;
             const y = offY + r * cellH;
             const dop = isDopant(r, c);
+            const site = siteAt(r, c);
             return (
               <g key={`a-${r}-${c}`}>
-                <circle cx={x} cy={y} r="18"
-                        fill={dop ? `url(#dopant-grad-${type})` : 'url(#si-grad)'}
-                        stroke={dop ? dopantColor : '#92400e'} strokeWidth="2" />
+                <circle cx={x} cy={y} r={ATOM_R}
+                        fill={dop ? `url(#dopant-grad-${type})` : `url(#${site.grad})`}
+                        stroke={dop ? dopantColor : site.stroke} strokeWidth="2" />
                 <text x={x} y={y + 4} fontSize="13" fontWeight="700"
                       fill="#1e1b4b" textAnchor="middle">
-                  {dop ? dopantSymbol : baseSymbol}
+                  {dop ? dopantSymbol : site.symbol}
                 </text>
               </g>
             );
