@@ -41,6 +41,7 @@ export default {
       lattice: 'क्रिस्टल जाली',
       'crystal-structures': '💎 क्रिस्टल संरचनाएँ',
       atomband: 'परमाणु → बैंड',
+      quantumAtom: '⚛️ क्वांटम परमाणु मॉडल',
       allowed: 'अनुमत/निषिद्ध बैंड',
       kp: 'क्रोनिग-पेनी',
       mis: 'धातु × कुचालक × अर्धचालक',

@@ -192,7 +192,7 @@ export default function QuantumAtomModel() {
             </g>
 
             {/* Aviso "não há órbitas" */}
-            <g transform="translate(180, 660)">
+            <g transform="translate(650, 660)">
               <rect x="0" y="0" width="400" height="40" fill="#7f1d1d" stroke="#ef4444" strokeWidth="2" rx="20"/>
               <circle cx="22" cy="20" r="11" fill="none" stroke="#fca5a5" strokeWidth="2"/>
               <line x1="14" y1="12" x2="30" y2="28" stroke="#fca5a5" strokeWidth="2"/>

@@ -41,6 +41,7 @@ export default {
       lattice: '晶格',
       'crystal-structures': '💎 晶体结构',
       atomband: '原子 → 能带',
+      quantumAtom: '⚛️ 量子原子模型',
       allowed: '允许/禁带',
       kp: '克勒尼希-彭尼',
       mis: '金属 × 绝缘体 × 半导体',

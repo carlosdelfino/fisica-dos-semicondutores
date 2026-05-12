@@ -41,6 +41,7 @@ export default {
       lattice: 'Rede Cristalina',
       'crystal-structures': '💎 Estruturas Cristalinas',
       atomband: 'Átomos → Bandas',
+      quantumAtom: '⚛️ Modelo Atômico Quântico',
       allowed: 'Bandas Permitidas/Proibidas',
       kp: 'Kronig-Penney',
       mis: 'Metal × Isolante × Semicondutor',

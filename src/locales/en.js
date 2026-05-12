@@ -41,6 +41,7 @@ export default {
       lattice: 'Crystal Lattice',
       'crystal-structures': '💎 Crystal Structures',
       atomband: 'Atoms → Bands',
+      quantumAtom: '⚛️ Quantum Atomic Model',
       allowed: 'Allowed/Forbidden Bands',
       kp: 'Kronig-Penney',
       mis: 'Metal × Insulator × Semiconductor',
