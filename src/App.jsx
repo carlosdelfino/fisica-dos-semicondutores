@@ -17,6 +17,7 @@ import KronigPenneyDiagram from './components/KronigPenneyDiagram.jsx';
 import AllowedForbidden from './components/AllowedForbidden.jsx';
 import AtomToBand from './components/AtomToBand.jsx';
 import QuantumWell3D from './components/QuantumWell3D.jsx';
+import QuantumAtomModel from './components/QuantumAtomModel.jsx';
 import ElectronHoleCard from './components/ElectronHoleCard.jsx';
 import MetalInsulatorSemi from './components/MetalInsulatorSemi.jsx';
 import LearningObjectives from './components/LearningObjectives.jsx';
@@ -150,6 +151,7 @@ function AppContent() {
             </>
           } />
           <Route path="/lattice" element={<Lattice material={material} type={type} />} />
+          <Route path="/quantumAtom" element={<QuantumAtomModel />} />
           <Route path="/atomband" element={<AtomToBand />} />
           <Route path="/allowed" element={<AllowedForbidden />} />
           <Route path="/kp" element={<KronigPenneyDiagram />} />

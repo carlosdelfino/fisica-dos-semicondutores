@@ -79,6 +79,12 @@ const routes = [
     lastmod: new Date().toISOString(),
   },
   {
+    path: '#quantumAtom',
+    changefreq: 'monthly',
+    priority: '0.8',
+    lastmod: new Date().toISOString(),
+  },
+  {
     path: '#allowed',
     changefreq: 'monthly',
     priority: '0.8',

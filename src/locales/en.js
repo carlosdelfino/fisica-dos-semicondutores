@@ -63,6 +63,67 @@ export default {
       'support-us': '💖 Support Us',
       community: '🤝 Collaborate on GitHub',
       community_title: 'Join the GitHub Discussions forum — a GitHub account is required to collaborate'
+    },
+    quantumAtom: '⚛️ Quantum Atomic Model'
+  },
+  quantumAtom: {
+    title: 'Quantum Atomic Model',
+    subtitle: 'The modern view of the atom according to Quantum Mechanics',
+    alt: 'Quantum atomic model showing nucleus, electron cloud and orbitals',
+    sections: {
+      nucleus: {
+        title: 'Atomic Nucleus',
+        content: 'The nucleus contains protons (positive charge) and neutrons (no charge), representing most of the atom\'s mass. The particles in the nucleus are held together by the strong nuclear force.'
+      },
+      electronCloud: {
+        title: 'Electron Cloud',
+        content: 'Unlike the Bohr model, electrons do not follow fixed orbits. They are described by a probability cloud - regions where there is a higher chance of finding the electron. This cloud is represented by the wave function ψ(r).'
+      },
+      orbitals: {
+        title: 'Atomic Orbitals',
+        content: 'Orbitals are regions of space where there is a high probability of finding an electron. Each orbital has a characteristic shape: s orbitals are spherical, p orbitals have a dumbbell shape, d orbitals are more complex, etc. The shape is determined by quantum numbers.'
+      },
+      waveFunction: {
+        title: 'Wave Function',
+        content: 'Electrons are mathematically described by wave functions ψ(x,y,z,t). The square of the wave function |ψ|² represents the probability density of finding the electron at a given position. This is the basis of Born\'s interpretation of quantum mechanics.'
+      },
+      uncertainty: {
+        title: 'Uncertainty Principle',
+        content: 'Formulated by Werner Heisenberg, this principle states that it is impossible to simultaneously know with arbitrary precision the position and momentum of a particle. Δx·Δp ≥ ℏ/2. This means that the more precisely we know the position, the less we know about the momentum, and vice versa.'
+      }
+    },
+    comparison: {
+      title: 'Evolution of Atomic Models',
+      rutherford: {
+        title: 'Rutherford Model (1911)',
+        items: [
+          'Atom as solar system: dense nucleus with orbiting electrons',
+          'Discovery of atomic nucleus through alpha particle experiment',
+          'Electrons in arbitrary orbits (no quantization)',
+          'Did not explain atomic stability (electrons should fall into nucleus)',
+          'Incompatible with observed atomic spectra'
+        ]
+      },
+      bohr: {
+        title: 'Bohr Model (1913)',
+        items: [
+          'Electrons in fixed, quantized circular orbits',
+          'Postulated stable orbits without radiation',
+          'Energy quantization in discrete levels',
+          'Explained hydrogen spectrum, but not atoms with more than one electron',
+          'Mix of classical and quantum physics (semi-classical)'
+        ]
+      },
+      quantum: {
+        title: 'Quantum Model (1926-present)',
+        items: [
+          'Electrons in probability cloud',
+          'Position described by probability distribution',
+          'Quantization through quantum numbers (n, l, m, s)',
+          'Explains all atoms and molecules',
+          'Consistent with the uncertainty principle'
+        ]
+      }
     }
   },
   controlPanel: {

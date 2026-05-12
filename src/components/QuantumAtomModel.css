@@ -1,0 +1,127 @@
+.quantum-atom-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.quantum-atom-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.quantum-atom-header h2 {
+  color: #ffffff;
+  font-size: 28px;
+  margin: 0 0 10px 0;
+}
+
+.quantum-atom-header .subtitle {
+  color: #a0a0a0;
+  font-size: 14px;
+  margin: 0;
+}
+
+.quantum-atom-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1a1a2e;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.quantum-atom-svg {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.quantum-atom-text-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.explanations-column {
+  background: #2d2d44;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.explanations-column h3 {
+  color: #7ed321;
+  font-size: 18px;
+  margin: 0 0 10px 0;
+  border-bottom: 2px solid #7ed321;
+  padding-bottom: 5px;
+}
+
+.explanations-column p {
+  color: #e0e0e0;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 25px 0;
+}
+
+.explanations-column p:last-of-type {
+  margin-bottom: 0;
+}
+
+.models-column {
+  background: #2d2d44;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.models-column h3 {
+  color: #4a90d9;
+  font-size: 18px;
+  margin: 0 0 15px 0;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.comparison-item h4 {
+  color: #f5a623;
+  font-size: 16px;
+  margin: 0 0 10px 0;
+}
+
+.comparison-item ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.comparison-item li {
+  color: #e0e0e0;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.comparison-item li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 968px) {
+  .quantum-atom-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+}

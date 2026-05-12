@@ -63,6 +63,67 @@ export default {
       'support-us': '💖 Apoie o Projeto',
       community: '🤝 Colabore no GitHub',
       community_title: 'Participe das discussões no GitHub — requer conta para colaborar'
+    },
+    quantumAtom: '⚛️ Modelo Atômico Quântico'
+  },
+  quantumAtom: {
+    title: 'Modelo Atômico Quântico',
+    subtitle: 'A visão moderna do átomo segundo a Mecânica Quântica',
+    alt: 'Modelo atômico quântico mostrando núcleo, nuvem eletrônica e orbitais',
+    sections: {
+      nucleus: {
+        title: 'Núcleo Atômico',
+        content: 'O núcleo contém prótons (carga positiva) e nêutrons (sem carga), representando a maior parte da massa do átomo. As partículas no núcleo são mantidas juntas pela força nuclear forte.'
+      },
+      electronCloud: {
+        title: 'Nuvem Eletrônica',
+        content: 'Diferente do modelo de Bohr, os elétrons não seguem órbitas fixas. Eles são descritos por uma nuvem de probabilidade - regiões onde há maior chance de encontrar o elétron. Esta nuvem é representada pela função de onda ψ(r).'
+      },
+      orbitals: {
+        title: 'Orbitais Atômicos',
+        content: 'Orbitais são regiões do espaço onde há alta probabilidade de encontrar um elétron. Cada orbital tem uma forma característica: orbitais s são esféricos, orbitais p têm forma de halter, orbitais d são mais complexos, etc. A forma é determinada pelos números quânticos.'
+      },
+      waveFunction: {
+        title: 'Função de Onda',
+        content: 'Elétrons são descritos matematicamente por funções de onda ψ(x,y,z,t). O quadrado da função de onda |ψ|² representa a densidade de probabilidade de encontrar o elétron em uma determinada posição. Esta é a base da interpretação de Born da mecânica quântica.'
+      },
+      uncertainty: {
+        title: 'Princípio da Incerteza',
+        content: 'Formulado por Werner Heisenberg, este princípio estabelece que não é possível conhecer simultaneamente com precisão arbitrária a posição e o momento de uma partícula. Δx·Δp ≥ ℏ/2. Isso significa que quanto mais precisamente conhecemos a posição, menos sabemos sobre o momento, e vice-versa.'
+      }
+    },
+    comparison: {
+      title: 'Evolução dos Modelos Atômicos',
+      rutherford: {
+        title: 'Modelo de Rutherford (1911)',
+        items: [
+          'Átomo como sistema solar: núcleo denso e elétrons orbitando',
+          'Descoberta do núcleo atômico através do experimento com partículas alfa',
+          'Elétrons em órbitas arbitrárias (sem quantização)',
+          'Não explicava estabilidade do átomo (elétrons deveriam cair no núcleo)',
+          'Incompatível com espectros atômicos observados'
+        ]
+      },
+      bohr: {
+        title: 'Modelo de Bohr (1913)',
+        items: [
+          'Elétrons em órbitas circulares fixas e quantizadas',
+          'Postulou órbitas estáveis sem radiação',
+          'Quantização de energia em níveis discretos',
+          'Explicava espectro do hidrogênio, mas não átomos com mais de um elétron',
+          'Mistura de física clássica e quântica (semi-clássico)'
+        ]
+      },
+      quantum: {
+        title: 'Modelo Quântico (1926-presente)',
+        items: [
+          'Elétrons em nuvem de probabilidade',
+          'Posição descrita por distribuição de probabilidade',
+          'Quantização através de números quânticos (n, l, m, s)',
+          'Explica todos os átomos e moléculas',
+          'Consistente com o princípio da incerteza'
+        ]
+      }
     }
   },
   controlPanel: {
