@@ -31,6 +31,7 @@ import FetTypesPanel from './components/FetTypesPanel.jsx';
 import CrystalGrowthMethods from './components/CrystalGrowthMethods.jsx';
 import PerovskitesContent from './components/PerovskitesContent.jsx';
 import SemiconductorCrystalStructures from './components/SemiconductorCrystalStructures.jsx';
+import DiamondLatticeUnitCell from './components/DiamondLatticeUnitCell.jsx';
 import Glossary from './components/Glossary.jsx';
 import HierarchicalMenu from './components/HierarchicalMenu.jsx';
 import ControlPanel from './components/ControlPanel.jsx';
@@ -150,6 +151,7 @@ function AppContent() {
               <FermiDiracPlot T={T} EF={calc.EF} Ec={calc.Ec} Ev={calc.Ev} Eg={calc.Eg} />
             </>
           } />
+          <Route path="/diamond-unit-cell" element={<DiamondLatticeUnitCell />} />
           <Route path="/lattice" element={<Lattice material={material} type={type} />} />
           <Route path="/quantumAtom" element={<QuantumAtomModel />} />
           <Route path="/atomband" element={<AtomToBand />} />

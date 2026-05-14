@@ -39,6 +39,7 @@ export default {
       glossary: '📚 المسرد',
       overview: 'نظرة عامة',
       lattice: 'الشبكة البلورية',
+      'diamond-unit-cell': '💎 خلية الماس الواحدة',
       'crystal-structures': '💎 البنى البلورية',
       atomband: 'الذرات ← النطاقات',
       quantumAtom: '⚛️ النموذج الكمي للذرة',

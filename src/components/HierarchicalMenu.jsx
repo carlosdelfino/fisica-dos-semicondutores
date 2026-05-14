@@ -8,7 +8,7 @@ const MENU_STRUCTURE = [
   },
   {
     key: 'fundamentals',
-    items: ['overview', 'lattice', 'crystal-structures', 'atomband', 'quantumAtom', 'allowed', 'kp', 'mis']
+    items: ['overview', 'lattice', 'diamond-unit-cell', 'crystal-structures', 'atomband', 'quantumAtom', 'allowed', 'kp', 'mis']
   },
   {
     key: 'bandStructure',

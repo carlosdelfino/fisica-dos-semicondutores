@@ -39,6 +39,7 @@ export default {
       glossary: '📚 术语表',
       overview: '概览',
       lattice: '晶格',
+      'diamond-unit-cell': '💎 金刚石晶胞',
       'crystal-structures': '💎 晶体结构',
       atomband: '原子 → 能带',
       quantumAtom: '⚛️ 量子原子模型',

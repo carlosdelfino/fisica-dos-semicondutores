@@ -39,6 +39,7 @@ export default {
       glossary: '📚 Glossary',
       overview: 'Overview',
       lattice: 'Crystal Lattice',
+      'diamond-unit-cell': '💎 Diamond Unit Cell',
       'crystal-structures': '💎 Crystal Structures',
       atomband: 'Atoms → Bands',
       quantumAtom: '⚛️ Quantum Atomic Model',

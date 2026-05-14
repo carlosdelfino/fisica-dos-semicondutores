@@ -39,6 +39,7 @@ export default {
       glossary: '📚 शब्दावली',
       overview: 'अवलोकन',
       lattice: 'क्रिस्टल जाली',
+      'diamond-unit-cell': '💎 हीरा यूनिट सेल',
       'crystal-structures': '💎 क्रिस्टल संरचनाएँ',
       atomband: 'परमाणु → बैंड',
       quantumAtom: '⚛️ क्वांटम परमाणु मॉडल',
