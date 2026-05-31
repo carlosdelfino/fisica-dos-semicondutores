@@ -1,0 +1,1372 @@
+{
+  "chapter": "7 Limitations to Ideal Diode Theory",
+  "questions": [
+    {
+      "number": "a",
+      "text": "Calculate the junction capacitances at: a) zero bias, b) reverse bias of 6V, and c) forward bias of 0.7V.",
+      "formulas": [
+        {
+          "originalFormula": "C_j = A \\left( \\frac{q \\epsilon N_D}{2(N_A + N_D)} \\right)^{0.5} \\times \\frac{1}{V_i^{0.5}}",
+          "genericFormula": "C_j = A \\left( \\frac{q \\epsilon N_D}{2(N_A + N_D)} \\right)^{0.5} \\times \\frac{1}{V^{0.5}}",
+          "description": "Esta fórmula representa a capacitância de junção em um dispositivo semicondutor, como um diodo, onde a capacitância é influenciada pela área da junção, a carga elétrica, a permissividade do material, as concentrações de dopantes e a tensão aplicada.",
+          "concepts": [
+            "Capacitância",
+            "Semicondutores",
+            "Dopagem",
+            "Permissividade",
+            "Tensão elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "C_j",
+              "description": "Representa a capacitância da junção, que é a capacidade do dispositivo de armazenar carga elétrica."
+            },
+            {
+              "symbol": "A",
+              "description": "Representa a área da junção do semicondutor, que influencia a quantidade de carga que pode ser armazenada."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elementar, que é a carga de um único elétron, fundamental para o cálculo da capacitância."
+            },
+            {
+              "symbol": "ε",
+              "description": "Representa a permissividade do material semicondutor, que indica a capacidade do material de permitir a passagem de campo elétrico."
+            },
+            {
+              "symbol": "N_D",
+              "description": "Representa a concentração de dopantes do tipo n, que são átomos adicionados ao semicondutor para aumentar a quantidade de elétrons livres."
+            },
+            {
+              "symbol": "N_A",
+              "description": "Representa a concentração de dopantes do tipo p, que são átomos que criam lacunas para a condução de corrente elétrica."
+            },
+            {
+              "symbol": "V_i",
+              "description": "Representa a tensão aplicada na junção, que afeta a capacitância e a distribuição de cargas no semicondutor."
+            }
+          ],
+          "chapter": "7 Limitations to Ideal Diode Theory",
+          "source": "question",
+          "questionNumber": "a",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "number": "b",
+      "text": "At Va = 0.65V, Cs becomes",
+      "formulas": [
+        {
+          "originalFormula": "C_s = 1234.3 \\text{ pF}",
+          "genericFormula": "C_s = C",
+          "description": "Esta fórmula representa a capacitância de um capacitor, que é uma medida de sua capacidade de armazenar carga elétrica. A capacitância é expressa em farads, e neste caso específico, está sendo dada em picofarads, que é uma unidade menor.",
+          "concepts": [
+            "Capacitância",
+            "Carga elétrica",
+            "Capacitores"
+          ],
+          "symbols": [
+            {
+              "symbol": "C_s",
+              "description": "Representa a capacitância do capacitor, que indica a quantidade de carga que ele pode armazenar por unidade de tensão aplicada."
+            },
+            {
+              "symbol": "C",
+              "description": "Representa a capacitância em uma forma genérica, sem valores numéricos específicos."
+            }
+          ],
+          "chapter": "7 Limitations to Ideal Diode Theory",
+          "source": "question",
+          "questionNumber": "b",
+          "page": 24
+        }
+      ]
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "a",
+      "text": "C_{j0} = 0.56pF",
+      "formulas": [
+        {
+          "originalFormula": "C_{j0} = \\frac{C_{p0} V_{bi} \\left( V_{bi} - V_a \\right)^{0.5}}{(0.77)^{0.5}}",
+          "genericFormula": "C_{j0} = \\frac{C_{p0} V_{bi} \\left( V_{bi} - V_a \\right)^{0.5}}{(k)^{0.5}}",
+          "description": "Esta fórmula representa a capacitância de junção em um dispositivo semicondutor, que depende da capacitância de polarização, da tensão de polarização interna e da tensão aplicada. A capacitância de junção é uma característica importante que influencia o comportamento elétrico do dispositivo sob diferentes condições de operação.",
+          "concepts": [
+            "Capacitância de junção",
+            "Tensão de polarização interna",
+            "Tensão aplicada",
+            "Semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "C_{j0}",
+              "description": "Capacitância de junção em condições específicas, representando a capacidade do dispositivo de armazenar carga elétrica."
+            },
+            {
+              "symbol": "C_{p0}",
+              "description": "Capacitância de polarização, que é a capacitância do dispositivo quando não há tensão aplicada."
+            },
+            {
+              "symbol": "V_{bi}",
+              "description": "Tensão de polarização interna, que é a tensão que existe na junção do semicondutor em equilíbrio, sem a aplicação de tensão externa."
+            },
+            {
+              "symbol": "V_a",
+              "description": "Tensão aplicada ao dispositivo, que pode alterar a capacitância de junção ao afetar a distribuição de cargas na junção."
+            },
+            {
+              "symbol": "k",
+              "description": "Um valor constante que pode representar um fator de ajuste ou uma propriedade específica do material ou dispositivo em questão."
+            }
+          ],
+          "chapter": "7 Limitations to Ideal Diode Theory",
+          "source": "answer",
+          "questionNumber": "a",
+          "page": 48
+        }
+      ]
+    },
+    {
+      "questionNumber": "b",
+      "text": "C_j = 0.188pF",
+      "formulas": [
+        {
+          "originalFormula": "C_j = C_{p0} \\left( V_{bi} \\right)^{0.5} \\left( \\frac{(0.77)^{0.5}}{(6.77)} \\right) pF",
+          "genericFormula": "C_j = C_{p0} \\left( V_{bi} \\right)^{0.5} \\left( \\frac{(a)^{0.5}}{(b)} \\right)",
+          "description": "Esta fórmula representa a capacitância de junção de um dispositivo semicondutor, que é uma medida de como a carga elétrica pode ser armazenada na junção do dispositivo em resposta a uma tensão aplicada. A capacitância de junção é importante para entender o comportamento de dispositivos como diodos e transistores em circuitos eletrônicos.",
+          "concepts": [
+            "Capacitância",
+            "Tensão de polarização inversa",
+            "Semicondutores",
+            "Diodos",
+            "Transistores"
+          ],
+          "symbols": [
+            {
+              "symbol": "C_j",
+              "description": "Representa a capacitância de junção, que é a capacidade da junção de armazenar carga elétrica."
+            },
+            {
+              "symbol": "C_{p0}",
+              "description": "É uma constante que representa a capacitância de junção em condições específicas, geralmente em uma tensão de polarização inversa padrão."
+            },
+            {
+              "symbol": "V_{bi}",
+              "description": "É a tensão de polarização inversa, que é a tensão aplicada na junção do semicondutor que influencia a capacitância."
+            },
+            {
+              "symbol": "a",
+              "description": "Um valor constante que pode representar um fator de ajuste relacionado à estrutura do semicondutor."
+            },
+            {
+              "symbol": "b",
+              "description": "Outro valor constante que pode representar um fator de escala ou normalização na fórmula."
+            }
+          ],
+          "chapter": "7 Limitations to Ideal Diode Theory",
+          "source": "answer",
+          "questionNumber": "b",
+          "page": 72
+        }
+      ]
+    },
+    {
+      "questionNumber": "c",
+      "text": "C_j = 0.07pF",
+      "formulas": [
+        {
+          "originalFormula": "C_j = C_{p0} \\left( V_{bi} \\right)^{0.5} \\left( \\frac{(0.77)^{0.5}}{(0.07)} \\right) pF",
+          "genericFormula": "C_j = C_{p0} \\left( V_{bi} \\right)^{0.5} \\left( \\frac{(x)^{0.5}}{(y)} \\right)",
+          "description": "Esta fórmula representa a capacitância de junção de um dispositivo semicondutor, que depende da capacitância inicial, da tensão de polarização e de constantes específicas do material. A capacitância de junção é uma característica importante que influencia o comportamento elétrico do dispositivo.",
+          "concepts": [
+            "Capacitância",
+            "Tensão de polarização",
+            "Semicondutores",
+            "Propriedades elétricas de materiais"
+          ],
+          "symbols": [
+            {
+              "symbol": "C_j",
+              "description": "Representa a capacitância de junção do dispositivo semicondutor."
+            },
+            {
+              "symbol": "C_{p0}",
+              "description": "Representa a capacitância inicial do dispositivo, que é uma constante específica do material."
+            },
+            {
+              "symbol": "V_{bi}",
+              "description": "Representa a tensão de polarização interna do dispositivo, que influencia a capacitância."
+            },
+            {
+              "symbol": "0.77",
+              "description": "É uma constante adimensional que pode representar propriedades específicas do material ou do dispositivo."
+            },
+            {
+              "symbol": "0.07",
+              "description": "É outra constante adimensional que pode representar uma característica específica do material ou do dispositivo."
+            }
+          ],
+          "chapter": "7 Limitations to Ideal Diode Theory",
+          "source": "answer",
+          "questionNumber": "c",
+          "page": 95
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "V_{bi} = 0.77V",
+      "genericFormula": "V_{bi} = V_{0}",
+      "description": "Esta fórmula representa a tensão de built-in (tensão de junção) em um diodo semicondutor, que é a tensão que se estabelece na junção p-n em equilíbrio térmico, sem a aplicação de tensão externa. Essa tensão é crucial para entender o funcionamento de dispositivos semicondutores, como diodos e transistores.",
+      "concepts": [
+        "Tensão de built-in",
+        "Juncão p-n",
+        "Equilíbrio térmico",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_{bi}",
+          "description": "Representa a tensão de built-in, que é a tensão que se forma na junção p-n quando não há corrente fluindo através do dispositivo."
+        },
+        {
+          "symbol": "V_{0}",
+          "description": "Representa uma tensão genérica que pode ser utilizada para descrever a tensão de built-in em diferentes contextos ou dispositivos."
+        }
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 119
+    },
+    {
+      "originalFormula": "C_{p0} = 2 \\times 10^{-5} \\text{F}",
+      "genericFormula": "C_{p0} = k \\text{F}",
+      "description": "Essa fórmula representa a capacitância de um capacitor em um circuito elétrico, onde a capacitância é uma medida da capacidade do capacitor de armazenar carga elétrica. O valor específico dado é uma constante que pode variar dependendo do tipo de capacitor e das condições do circuito.",
+      "concepts": [
+        "Capacitância",
+        "Armazenamento de carga elétrica",
+        "Circuitos elétricos"
+      ],
+      "symbols": [
+        {
+          "symbol": "C_{p0}",
+          "description": "Representa a capacitância do capacitor, que é a quantidade de carga elétrica que ele pode armazenar por unidade de tensão aplicada."
+        },
+        {
+          "symbol": "k",
+          "description": "Um valor genérico que representa a capacitância em farads, que é a unidade de medida da capacitância."
+        }
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 143
+    },
+    {
+      "originalFormula": "C_s = \\frac{Aq^2L_p p_{on}}{kT} \\exp \\left( \\frac{qV_a}{kT} \\right)",
+      "genericFormula": "C_s = \\frac{A q^2 L_p p_{on}}{k T} \\exp \\left( \\frac{q V_a}{k T} \\right)",
+      "description": "Esta fórmula representa a capacitância de um semicondutor, levando em consideração a área, a carga dos portadores, a largura da região de depleção, a concentração de portadores e a temperatura. Ela mostra como a capacitância é afetada pela tensão aplicada e pela temperatura do sistema.",
+      "concepts": [
+        "Capacitância",
+        "Semicondutores",
+        "Temperatura",
+        "Tensão elétrica",
+        "Carga elétrica"
+      ],
+      "symbols": [
+        {
+          "symbol": "C_s",
+          "description": "Representa a capacitância do semicondutor, que é a capacidade de armazenar carga elétrica."
+        },
+        {
+          "symbol": "A",
+          "description": "Representa a área da junção do semicondutor, que influencia a quantidade de carga que pode ser armazenada."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elementar, que é a carga de um único elétron ou a carga de um único próton."
+        },
+        {
+          "symbol": "L_p",
+          "description": "Representa a largura da região de depleção, que é a área onde não existem portadores de carga devido à recombinação."
+        },
+        {
+          "symbol": "p_{on}",
+          "description": "Representa a concentração de portadores de carga (buracos) na região ativa do semicondutor quando está em estado de condução."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia térmica dos portadores."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura em Kelvin, que afeta a energia térmica dos portadores de carga."
+        },
+        {
+          "symbol": "V_a",
+          "description": "Representa a tensão aplicada ao semicondutor, que influencia a capacitância e a distribuição de cargas."
+        }
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 167
+    },
+    {
+      "originalFormula": "p_{on} = \\frac{n_i^2}{N_D} = \\frac{10^{20}}{10^{15}} = 10^5 \\, \\text{cm}^{-3}",
+      "genericFormula": "p_{on} = \\frac{n_i^2}{N_D}",
+      "description": "Esta fórmula representa a densidade de portadores de carga positiva (buracos) em um semicondutor dopado, onde a densidade de buracos é calculada a partir da densidade intrínseca de portadores e da concentração de dopantes do tipo doador.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Semicondutores",
+        "Dopagem de semicondutores",
+        "Equilíbrio de carga"
+      ],
+      "symbols": [
+        {
+          "symbol": "p_{on}",
+          "description": "Representa a densidade de buracos em um semicondutor, que são portadores de carga positiva."
+        },
+        {
+          "symbol": "n_i",
+          "description": "Representa a densidade intrínseca de portadores de carga em um semicondutor, que é a quantidade de elétrons e buracos presentes em um material não dopado."
+        },
+        {
+          "symbol": "N_D",
+          "description": "Representa a concentração de dopantes do tipo doador em um semicondutor, que são átomos adicionados ao material para aumentar a quantidade de elétrons disponíveis."
+        }
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 190
+    },
+    {
+      "originalFormula": "L_p = \\left( D \\tau_p \\right)^{0.5} = \\left( 16 \\times 0.1 \\times 10^{-6} \\right)^{0.5} = 1.26 \\times 10^{-3} \\, \\text{cm}",
+      "genericFormula": "L_p = \\left( D \\tau_p \\right)^{0.5}",
+      "description": "Esta fórmula representa o comprimento de difusão de portadores de carga em um semicondutor, que é uma medida de quão longe os portadores podem se mover em um material antes de recombinarem. O comprimento de difusão é importante para entender como os semicondutores funcionam em dispositivos eletrônicos.",
+      "concepts": [
+        "Comprimento de difusão",
+        "Portadores de carga",
+        "Recombinação",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "L_p",
+          "description": "Representa o comprimento de difusão dos portadores de carga, que indica a distância média que os portadores podem percorrer antes de se recombinarem."
+        },
+        {
+          "symbol": "D",
+          "description": "Representa o coeficiente de difusão, que é uma medida da rapidez com que os portadores de carga se movem através do material semicondutor."
+        },
+        {
+          "symbol": "τ_p",
+          "description": "Representa o tempo médio de vida dos portadores de carga, que é o tempo médio que um portador de carga permanece livre antes de se recombinar com uma carga oposta."
+        }
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 214
+    },
+    {
+      "originalFormula": "r_d = \\frac{dV_a}{dI} (7.24)",
+      "genericFormula": "r_d = \\frac{dV}{dI}",
+      "description": "Esta fórmula representa a resistência dinâmica de um dispositivo, que é a razão entre a variação da tensão aplicada e a variação da corrente que flui através dele. Ela é utilizada para entender como o dispositivo responde a pequenas mudanças em tensão e corrente.",
+      "concepts": [
+        "Resistência elétrica",
+        "Variação de tensão",
+        "Variação de corrente",
+        "Dispositivos semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "r_d",
+          "description": "Representa a resistência dinâmica do dispositivo, que indica como a corrente varia em resposta a mudanças na tensão."
+        },
+        {
+          "symbol": "dV_a",
+          "description": "Representa a variação na tensão aplicada ao dispositivo, que é a diferença de potencial elétrico medida em volts."
+        },
+        {
+          "symbol": "dI",
+          "description": "Representa a variação na corrente que flui através do dispositivo, medida em amperes."
+        }
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 238
+    },
+    {
+      "originalFormula": "I = \\left( q A D_p \\frac{p_{on}}{l_p} \\right) \\exp \\left( \\frac{q V_a}{k T} \\right)",
+      "genericFormula": "I = \\left( q A D_p \\frac{p_{on}}{l_p} \\right) \\exp \\left( \\frac{q V_a}{k T} \\right)",
+      "description": "Esta fórmula representa a corrente elétrica (I) que flui através de um semicondutor sob a influência de uma tensão (V_a). Ela mostra como a corrente depende de várias propriedades do material e das condições externas, como a temperatura.",
+      "concepts": [
+        "Corrente elétrica",
+        "Semicondutores",
+        "Tensão elétrica",
+        "Temperatura",
+        "Densidade de portadores de carga"
+      ],
+      "symbols": [
+        {
+          "symbol": "I",
+          "description": "Representa a corrente elétrica, que é o fluxo de carga elétrica por unidade de tempo."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elementar, que é a quantidade de carga elétrica transportada por um único elétron."
+        },
+        {
+          "symbol": "A",
+          "description": "Representa a área da seção transversal do semicondutor através da qual a corrente está fluindo."
+        },
+        {
+          "symbol": "D_p",
+          "description": "Representa o coeficiente de difusão dos portadores de carga, que indica a facilidade com que os portadores se movem através do material."
+        },
+        {
+          "symbol": "p_{on}",
+          "description": "Representa a densidade de portadores de carga do tipo 'p' (buracos) no semicondutor quando ele está em estado 'on' ou ativo."
+        },
+        {
+          "symbol": "l_p",
+          "description": "Representa o comprimento de difusão dos portadores de carga, que é a distância média que os portadores podem se mover antes de recombinar."
+        },
+        {
+          "symbol": "V_a",
+          "description": "Representa a tensão aplicada ao semicondutor, que influencia a quantidade de corrente que flui."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia térmica dos portadores de carga."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta do semicondutor, medida em Kelvin."
+        }
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 261
+    },
+    {
+      "originalFormula": "r_d = \\left( \\frac{dI}{dV_a} \\right)^{-1} = \\frac{I_p}{(q/kT)A D_p p_{on} \\exp \\left( \\frac{qV_a}{kT} \\right)} = \\frac{kT}{q} I",
+      "genericFormula": "r_d = \\left( \\frac{dI}{dV_a} \\right)^{-1} = \\frac{I_p}{(q/kT)A D_p p_{on} \\exp \\left( \\frac{qV_a}{kT} \\right)} = \\frac{kT}{q} I",
+      "description": "Esta fórmula representa a resistência dinâmica de um dispositivo semicondutor, que é uma medida de como a corrente elétrica muda em resposta a uma variação na tensão aplicada. A resistência dinâmica é inversamente proporcional à taxa de variação da corrente em relação à tensão.",
+      "concepts": [
+        "Resistência dinâmica",
+        "Corrente elétrica",
+        "Tensão elétrica",
+        "Semicondutores",
+        "Termodinâmica"
+      ],
+      "symbols": [
+        {
+          "symbol": "r_d",
+          "description": "Representa a resistência dinâmica do dispositivo, que indica a relação entre a variação da corrente e a variação da tensão."
+        },
+        {
+          "symbol": "dI",
+          "description": "Representa a variação da corrente elétrica que flui através do dispositivo."
+        },
+        {
+          "symbol": "dV_a",
+          "description": "Representa a variação da tensão aplicada ao dispositivo."
+        },
+        {
+          "symbol": "I_p",
+          "description": "Representa a corrente de polarização, que é a corrente que flui através do dispositivo em uma condição específica."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elementar, que é a carga de um único elétron."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura à energia térmica."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta em Kelvin, que é uma medida da energia térmica do sistema."
+        },
+        {
+          "symbol": "A",
+          "description": "Representa a área da seção transversal do dispositivo semicondutor, que influencia a corrente que pode fluir."
+        },
+        {
+          "symbol": "D_p",
+          "description": "Representa o coeficiente de difusão dos portadores de carga, que indica como os portadores se movem através do material."
+        },
+        {
+          "symbol": "p_{on}",
+          "description": "Representa a densidade de portadores de carga no estado ligado do dispositivo."
+        },
+        {
+          "symbol": "V_a",
+          "description": "Representa a tensão aplicada ao dispositivo semicondutor."
+        },
+        {
+          "symbol": "I",
+          "description": "Representa a corrente elétrica total que flui através do dispositivo."
+        }
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 285
+    },
+    {
+      "originalFormula": "r_d C_s = \\frac{L^2}{D_p} = \\tau_p (7.27)",
+      "genericFormula": "r_d C_s = \\frac{L^2}{D_p} = \\tau_p",
+      "description": "Esta fórmula relaciona a resistência de difusão, a capacitância de superfície, o comprimento de um caminho, a difusividade de partículas e o tempo de relaxação em um sistema físico. Ela mostra como essas grandezas estão interconectadas em processos de transporte e armazenamento de carga em semicondutores.",
+      "concepts": [
+        "Resistência de difusão",
+        "Capacitância de superfície",
+        "Comprimento característico",
+        "Difusividade",
+        "Tempo de relaxação"
+      ],
+      "symbols": [
+        {
+          "symbol": "r_d",
+          "description": "Representa a resistência de difusão, que é uma medida de quão difícil é para as partículas se moverem através de um meio."
+        },
+        {
+          "symbol": "C_s",
+          "description": "Representa a capacitância de superfície, que é a capacidade de uma superfície de armazenar carga elétrica."
+        },
+        {
+          "symbol": "L",
+          "description": "Representa um comprimento característico, que pode ser o comprimento de um caminho que as partículas percorrem durante a difusão."
+        },
+        {
+          "symbol": "D_p",
+          "description": "Representa a difusividade das partículas, que é uma medida de quão rapidamente as partículas se espalham em um meio."
+        },
+        {
+          "symbol": "τ_p",
+          "description": "Representa o tempo de relaxação, que é o tempo necessário para que um sistema retorne ao seu estado de equilíbrio após uma perturbação."
+        }
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 309
+    },
+    {
+      "originalFormula": "r_d = \\frac{kT}{q I_S \\exp \\left( \\frac{qV_a}{kT} \\right)}",
+      "genericFormula": "r_d = \\frac{kT}{q I_S \\exp \\left( \\frac{qV_a}{kT} \\right)}",
+      "description": "Esta fórmula representa a resistência dinâmica de um diodo em função da temperatura, da corrente de saturação e da tensão aplicada. Ela mostra como a resistência do diodo varia com a temperatura e a tensão, sendo fundamental para entender o comportamento dos diodos em circuitos eletrônicos.",
+      "concepts": [
+        "Resistência dinâmica",
+        "Temperatura",
+        "Corrente de saturação",
+        "Tensão aplicada",
+        "Efeito da temperatura na condutividade"
+      ],
+      "symbols": [
+        {
+          "symbol": "r_d",
+          "description": "Representa a resistência dinâmica do diodo, que é a variação da tensão em relação à variação da corrente em um ponto específico da curva característica do diodo."
+        },
+        {
+          "symbol": "k",
+          "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia térmica em sistemas físicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta em Kelvin, que é uma medida da energia térmica média das partículas em um sistema."
+        },
+        {
+          "symbol": "q",
+          "description": "É a carga elementar, que representa a carga de um único elétron ou próton, sendo uma constante fundamental na física."
+        },
+        {
+          "symbol": "I_S",
+          "description": "É a corrente de saturação do diodo, que é a corrente que flui através do diodo quando ele está polarizado reversamente e é uma característica intrínseca do material do diodo."
+        },
+        {
+          "symbol": "V_a",
+          "description": "Representa a tensão aplicada ao diodo, que é a diferença de potencial elétrico que pode influenciar a corrente que flui através do diodo."
+        },
+        {
+          "symbol": "exp",
+          "description": "É a função exponencial, que descreve como uma quantidade cresce em relação a uma base constante, sendo fundamental em muitos fenômenos físicos, incluindo a condução em semicondutores."
+        }
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 333
+    },
+    {
+      "originalFormula": "p'(x) = p_{on} \\left[ \\exp \\left( \\frac{qV_a}{kT} \\right) \\left( 1 - \\frac{x'}{W_n} \\right) \\right]",
+      "genericFormula": "p'(x) = p_{on} \\left[ \\exp \\left( \\frac{qV_a}{kT} \\right) \\left( 1 - \\frac{x'}{W_n} \\right) \\right]",
+      "description": "Esta fórmula representa a densidade de portadores de carga em um semicondutor em função da posição, levando em consideração a influência de uma tensão aplicada. Ela descreve como a densidade de portadores varia com a posição em um material semicondutor sob a ação de um campo elétrico.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Tensão aplicada",
+        "Efeito da temperatura",
+        "Efeito da posição no material semicondutor"
+      ],
+      "symbols": [
+        {
+          "symbol": "p'(x)",
+          "description": "Representa a densidade de portadores de carga em uma posição específica x no semicondutor."
+        },
+        {
+          "symbol": "p_{on}",
+          "description": "Representa a densidade de portadores de carga em condições normais ou de equilíbrio, sem a influência de uma tensão externa."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elementar, que é a carga de um único elétron."
+        },
+        {
+          "symbol": "V_a",
+          "description": "Representa a tensão aplicada ao semicondutor, que influencia a movimentação dos portadores de carga."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia térmica dos portadores."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta do sistema, medida em Kelvin."
+        },
+        {
+          "symbol": "x'",
+          "description": "Representa a posição ao longo do material semicondutor onde a densidade de portadores está sendo avaliada."
+        },
+        {
+          "symbol": "W_n",
+          "description": "Representa a largura da região de depleção ou a largura da zona onde a densidade de portadores é afetada pela tensão aplicada."
+        }
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 356
+    },
+    {
+      "originalFormula": "I = -qD_p \\frac{dp'}{dx'} = \\frac{qAD_p}{W_n} p_{on} \\left[ \\exp \\left( \\frac{qV_a}{kT} \\right) - 1 \\right]",
+      "genericFormula": "I = -qD_p \\frac{dp'}{dx'} = \\frac{qAD_p}{W_n} p_{on} \\left[ \\exp \\left( \\frac{qV_a}{kT} \\right) - 1 \\right]",
+      "description": "Esta fórmula representa a corrente elétrica em um semicondutor, levando em consideração a difusão de portadores de carga e a relação entre a corrente e a tensão aplicada. A equação mostra como a corrente depende da densidade de portadores, da mobilidade e da temperatura.",
+      "concepts": [
+        "Corrente elétrica",
+        "Difusão de portadores de carga",
+        "Densidade de portadores",
+        "Mobilidade dos portadores",
+        "Efeito da temperatura na corrente",
+        "Efeito da tensão aplicada"
+      ],
+      "symbols": [
+        {
+          "symbol": "I",
+          "description": "Representa a corrente elétrica que flui através do semicondutor."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica de um portador, como um elétron ou um buraco."
+        },
+        {
+          "symbol": "D_p",
+          "description": "Representa o coeficiente de difusão dos portadores de carga, que indica a facilidade com que eles se movem através do material."
+        },
+        {
+          "symbol": "dp'/dx'",
+          "description": "Representa a variação da densidade de portadores de carga em relação à posição, indicando como a densidade muda ao longo do semicondutor."
+        },
+        {
+          "symbol": "A",
+          "description": "Representa a área da seção transversal do semicondutor pela qual a corrente está fluindo."
+        },
+        {
+          "symbol": "W_n",
+          "description": "Representa a largura da região onde a corrente está sendo medida ou onde a densidade de portadores é relevante."
+        },
+        {
+          "symbol": "p_{on}",
+          "description": "Representa a densidade de portadores de carga em estado de equilíbrio, ou seja, a quantidade de portadores presentes no semicondutor sem a influência de uma tensão externa."
+        },
+        {
+          "symbol": "V_a",
+          "description": "Representa a tensão aplicada ao semicondutor, que influencia a corrente que flui através dele."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia térmica dos portadores."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta do semicondutor, que afeta a mobilidade e a densidade de portadores."
+        }
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 380
+    },
+    {
+      "originalFormula": "Q_B = q A L_p p_{on} \\left[ \\exp \\left( \\frac{q V_a}{kT} \\right) - 1 \\right]",
+      "genericFormula": "Q_B = q A L_p p_{on} \\left[ \\exp \\left( \\frac{q V_a}{kT} \\right) - 1 \\right]",
+      "description": "Esta fórmula representa a quantidade de carga acumulada em um dispositivo semicondutor, levando em consideração a corrente de injeção de portadores de carga em função da tensão aplicada e da temperatura. Ela é essencial para entender como os semicondutores se comportam sob diferentes condições elétricas.",
+      "concepts": [
+        "Carga elétrica",
+        "Corrente elétrica",
+        "Semicondutores",
+        "Temperatura",
+        "Tensão elétrica",
+        "Efeito de injeção de portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "Q_B",
+          "description": "Representa a quantidade de carga acumulada no semicondutor."
+        },
+        {
+          "symbol": "q",
+          "description": "É a carga elementar, que é a carga de um único elétron."
+        },
+        {
+          "symbol": "A",
+          "description": "Representa a área da seção transversal do semicondutor onde a corrente está fluindo."
+        },
+        {
+          "symbol": "L_p",
+          "description": "É o comprimento de difusão dos portadores de carga, que indica quão longe os portadores podem se mover antes de recombinar."
+        },
+        {
+          "symbol": "p_{on}",
+          "description": "É a densidade de portadores de carga em estado ligado, que representa a quantidade de portadores disponíveis para conduzir a corrente."
+        },
+        {
+          "symbol": "V_a",
+          "description": "É a tensão aplicada ao dispositivo semicondutor, que influencia a quantidade de corrente que flui."
+        },
+        {
+          "symbol": "k",
+          "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia térmica dos portadores de carga."
+        },
+        {
+          "symbol": "T",
+          "description": "É a temperatura absoluta em Kelvin, que afeta a mobilidade e a densidade de portadores no semicondutor."
+        }
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 404
+    },
+    {
+      "originalFormula": "Q_B = \\frac{L_p^2}{D_p} I_F = \\tau_p I_F",
+      "genericFormula": "Q_B = \\frac{L_p^2}{D_p} I_F = \\tau_p I_F",
+      "description": "Esta fórmula representa a relação entre a carga acumulada em um semicondutor, a corrente elétrica e as propriedades físicas do material. A carga Q_B é diretamente proporcional à corrente I_F e depende das dimensões e características do semicondutor, como o comprimento L_p e a difusividade D_p.",
+      "concepts": [
+        "Carga elétrica",
+        "Corrente elétrica",
+        "Propriedades de semicondutores",
+        "Difusão de portadores de carga"
+      ],
+      "symbols": [
+        {
+          "symbol": "Q_B",
+          "description": "Representa a carga elétrica acumulada em um semicondutor."
+        },
+        {
+          "symbol": "L_p",
+          "description": "Representa o comprimento de difusão dos portadores de carga, que é a distância média que os portadores podem se mover antes de recombinar."
+        },
+        {
+          "symbol": "D_p",
+          "description": "Representa a difusividade dos portadores de carga, que é uma medida de quão rapidamente os portadores se espalham através do material."
+        },
+        {
+          "symbol": "I_F",
+          "description": "Representa a corrente elétrica que flui através do semicondutor."
+        },
+        {
+          "symbol": "\\tau_p",
+          "description": "Representa o tempo de vida dos portadores de carga, que é o tempo médio que um portador de carga permanece livre antes de recombinar."
+        }
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 427
+    },
+    {
+      "originalFormula": "Q_B = I_F \\frac{W_n^2}{2D_p}",
+      "genericFormula": "Q_B = I_F \\frac{W_n^2}{2D_p}",
+      "description": "Esta fórmula representa a carga acumulada em um determinado volume de um semicondutor, onde a carga é influenciada pela corrente elétrica, a largura do semicondutor e a difusividade do portador de carga.",
+      "concepts": [
+        "Carga elétrica",
+        "Corrente elétrica",
+        "Largura do semicondutor",
+        "Difusividade de portadores de carga"
+      ],
+      "symbols": [
+        {
+          "symbol": "Q_B",
+          "description": "Representa a carga acumulada em um volume específico do semicondutor."
+        },
+        {
+          "symbol": "I_F",
+          "description": "Representa a corrente elétrica que flui através do semicondutor."
+        },
+        {
+          "symbol": "W_n",
+          "description": "Representa a largura do semicondutor, que é a medida da extensão do material na direção perpendicular ao fluxo de corrente."
+        },
+        {
+          "symbol": "D_p",
+          "description": "Representa a difusividade do portador de carga, que é uma medida de quão rapidamente os portadores de carga se espalham através do material."
+        }
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 451
+    },
+    {
+      "originalFormula": "I_R = \\frac{V_R + V_a}{R_R} \\approx \\frac{V_R}{R_R}",
+      "genericFormula": "I = \\frac{V + V_a}{R} \\approx \\frac{V}{R}",
+      "description": "Esta fórmula representa a corrente elétrica que passa por um resistor em um circuito, considerando a tensão total aplicada e a resistência do resistor. A aproximação indica que, em determinadas condições, a contribuição de uma tensão adicional pode ser desconsiderada.",
+      "concepts": [
+        "Corrente elétrica",
+        "Tensão elétrica",
+        "Resistência elétrica",
+        "Lei de Ohm"
+      ],
+      "symbols": [
+        {
+          "symbol": "I_R",
+          "description": "Representa a corrente elétrica que flui através do resistor."
+        },
+        {
+          "symbol": "V_R",
+          "description": "Representa a tensão elétrica que está sendo aplicada ao resistor."
+        },
+        {
+          "symbol": "V_a",
+          "description": "Representa uma tensão adicional que pode estar presente no circuito."
+        },
+        {
+          "symbol": "R_R",
+          "description": "Representa a resistência do resistor através do qual a corrente está fluindo."
+        },
+        {
+          "symbol": "I",
+          "description": "Representa a corrente elétrica em geral, que pode ser calculada a partir da tensão total e da resistência."
+        },
+        {
+          "symbol": "V",
+          "description": "Representa a tensão elétrica total aplicada no circuito."
+        },
+        {
+          "symbol": "R",
+          "description": "Representa a resistência em geral, que é uma medida da oposição ao fluxo de corrente elétrica."
+        }
+      ],
+      "chapter": "7 Limitations to Ideal Diode Theory",
+      "source": "standalone",
+      "page": 475
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498
+  ],
+  "lastUpdated": "2026-05-08T18:19:13.189118",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
+}

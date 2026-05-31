@@ -1,0 +1,499 @@
+{
+  "chapter": "2",
+  "section": "Introduction to Quantum Mechanics",
+  "questions": [
+    {
+      "number": "Ex 2.6",
+      "text": "Calculate the first three energy levels of an electron for the one-electron atom.",
+      "formulas": [
+        {
+          "originalFormula": "E_n = -\\frac{m e^4}{(4\\pi \\epsilon_0)^2 \\hbar^2 n^2}",
+          "genericFormula": "E_n = -\\frac{m e^4}{(4\\pi \\epsilon_0)^2 \\hbar^2 n^2}",
+          "description": "Esta fórmula representa a energia de um nível quântico específico em um átomo de hidrogênio, onde 'n' é o número quântico principal que indica o nível de energia. A energia é negativa, indicando que o elétron está ligado ao núcleo do átomo.",
+          "concepts": [
+            "Níveis de energia em átomos",
+            "Modelo de Bohr para o átomo de hidrogênio",
+            "Interação eletrostática entre elétrons e núcleos",
+            "Quantização de energia"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_n",
+              "description": "Representa a energia do nível quântico n do átomo."
+            },
+            {
+              "symbol": "m",
+              "description": "Representa a massa do elétron."
+            },
+            {
+              "symbol": "e",
+              "description": "Representa a carga elementar, que é a carga do elétron."
+            },
+            {
+              "symbol": "ε_0",
+              "description": "Representa a permissividade do vácuo, que é uma constante que mede a capacidade de um meio de permitir a formação de um campo elétrico."
+            },
+            {
+              "symbol": "ℏ",
+              "description": "Representa a constante de Planck reduzida, que relaciona a energia de um fóton à sua frequência."
+            },
+            {
+              "symbol": "n",
+              "description": "Representa o número quântico principal, que indica o nível de energia em que o elétron se encontra."
+            }
+          ],
+          "chapter": "2",
+          "section": "Introduction to Quantum Mechanics",
+          "source": "question",
+          "questionNumber": "Ex 2.6",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "text": "State the wave–particle duality principle and state the relationship between momentum and wavelength.",
+      "formulas": []
+    },
+    {
+      "number": "2",
+      "text": "What is the physical meaning of Schrödinger’s wave function?",
+      "formulas": []
+    },
+    {
+      "number": "3",
+      "text": "What is meant by a probability density function?",
+      "formulas": []
+    },
+    {
+      "number": "4",
+      "text": "List the boundary conditions for solutions to Schrödinger’s wave equation.",
+      "formulas": []
+    },
+    {
+      "number": "5",
+      "text": "What is meant by quantized energy levels? Can an electron contained in a potential well have an arbitrary energy?",
+      "formulas": []
+    },
+    {
+      "number": "6",
+      "text": "Describe the concept of tunneling.",
+      "formulas": []
+    },
+    {
+      "number": "7",
+      "text": "List the quantum numbers of the one-electron atom and discuss how they were developed.",
+      "formulas": []
+    },
+    {
+      "number": "8",
+      "text": "State the interrelationship between the quantum numbers of the one-electron atom and how this result leads to, for example, the development of inert elements.",
+      "formulas": []
+    },
+    {
+      "number": "2.37",
+      "text": "(a) A proton with a kinetic energy of 1 MeV is incident on a potential barrier of height 12 MeV and width 10^{-14} m. What is the tunneling probability? (b) The width of the potential barrier in part (a) is to be decreased so that the tunneling probability is increased by a factor of 10. What is the width of the potential barrier?",
+      "formulas": []
+    },
+    {
+      "number": "*2.38",
+      "text": "An electron with energy E is incident on a rectangular potential barrier as shown in Figure 2.9. The potential barrier is of width a and height V_0 > E. (a) Write the form of the wave function in each of the three regions. (b) For this geometry, determine what coefficient in the wave function solutions is zero. (c) Derive the expression for the transmission coefficient for the electron (tunneling probability). (d) Sketch the wave function for the electron in each region.",
+      "formulas": [
+        {
+          "originalFormula": "k_i = \\sqrt{\\frac{2mE}{\\hbar^2}}",
+          "genericFormula": "k_i = \\sqrt{\\frac{2mE}{\\hbar^2}}",
+          "description": "Esta fórmula representa a relação entre a constante de onda e a energia de uma partícula em um sistema quântico. A constante de onda, denotada por k_i, é uma medida de quão 'espalhada' está a onda associada à partícula, e está diretamente relacionada à sua energia.",
+          "concepts": [
+            "Constante de onda",
+            "Energia de uma partícula",
+            "Mecânica quântica",
+            "Relação de De Broglie"
+          ],
+          "symbols": [
+            {
+              "symbol": "k_i",
+              "description": "Representa a constante de onda da partícula, que está relacionada ao comprimento de onda da onda associada à partícula."
+            },
+            {
+              "symbol": "m",
+              "description": "Representa a massa da partícula em questão, que influencia sua energia e comportamento em um sistema quântico."
+            },
+            {
+              "symbol": "E",
+              "description": "Representa a energia total da partícula, que é um fator crucial na determinação da sua constante de onda."
+            },
+            {
+              "symbol": "\\hbar",
+              "description": "Representa a constante de Planck reduzida, que é uma constante fundamental na mecânica quântica e relaciona a energia de uma partícula à sua frequência."
+            }
+          ],
+          "chapter": "2",
+          "section": "Introduction to Quantum Mechanics",
+          "source": "question",
+          "questionNumber": "*2.38",
+          "page": 9
+        },
+        {
+          "originalFormula": "k_v = \\sqrt{\\frac{2m}{\\hbar^2}(E - V_0)}",
+          "genericFormula": "k_v = \\sqrt{\\frac{2m}{\\hbar^2}(E - V_0)}",
+          "description": "Esta fórmula representa a constante de onda em um potencial, que é utilizada na mecânica quântica para descrever o comportamento de partículas em uma região onde a energia total é maior que a energia potencial.",
+          "concepts": [
+            "Mecânica quântica",
+            "Constante de onda",
+            "Potencial quântico",
+            "Energia de partículas"
+          ],
+          "symbols": [
+            {
+              "symbol": "k_v",
+              "description": "Representa a constante de onda, que está relacionada ao comprimento de onda da partícula em um potencial específico."
+            },
+            {
+              "symbol": "m",
+              "description": "Representa a massa da partícula que está sendo considerada na equação."
+            },
+            {
+              "symbol": "\\hbar",
+              "description": "Representa a constante de Planck reduzida, que é uma constante fundamental na mecânica quântica e relaciona a energia de uma partícula à sua frequência."
+            },
+            {
+              "symbol": "E",
+              "description": "Representa a energia total da partícula, que inclui tanto a energia cinética quanto a energia potencial."
+            },
+            {
+              "symbol": "V_0",
+              "description": "Representa a energia potencial em uma determinada região do espaço onde a partícula está se movendo."
+            }
+          ],
+          "chapter": "2",
+          "section": "Introduction to Quantum Mechanics",
+          "source": "question",
+          "questionNumber": "*2.38",
+          "page": 17
+        },
+        {
+          "originalFormula": "k_s = \\sqrt{\\frac{2m}{\\hbar^2}(E - V_s)}",
+          "genericFormula": "k_s = \\sqrt{\\frac{2m}{\\hbar^2}(E - V)}",
+          "description": "Esta fórmula representa a constante de onda em uma região onde a energia de uma partícula é maior que a energia potencial. Ela é utilizada na mecânica quântica para descrever o comportamento de partículas em um potencial, especialmente em situações de tunelamento e em estados ligados.",
+          "concepts": [
+            "Constante de onda",
+            "Energia cinética",
+            "Energia potencial",
+            "Mecânica quântica",
+            "Túnel quântico"
+          ],
+          "symbols": [
+            {
+              "symbol": "k_s",
+              "description": "Representa a constante de onda da partícula em uma região onde a energia é maior que a energia potencial."
+            },
+            {
+              "symbol": "m",
+              "description": "Representa a massa da partícula que está sendo analisada."
+            },
+            {
+              "symbol": "\\hbar",
+              "description": "Representa a constante de Planck reduzida, que é uma constante fundamental na mecânica quântica."
+            },
+            {
+              "symbol": "E",
+              "description": "Representa a energia total da partícula."
+            },
+            {
+              "symbol": "V",
+              "description": "Representa a energia potencial na região onde a partícula se encontra."
+            }
+          ],
+          "chapter": "2",
+          "section": "Introduction to Quantum Mechanics",
+          "source": "question",
+          "questionNumber": "*2.38",
+          "page": 25
+        }
+      ]
+    },
+    {
+      "number": "2.39",
+      "text": "A potential function is shown in Figure P2.39 with incident particles coming from -\\infty with a total energy E > V_0. The constants k are defined as k_i = \\sqrt{\\frac{2mE}{\\hbar^2}} k_v = \\sqrt{\\frac{2m}{\\hbar^2}(E - V_0)} k_s = \\sqrt{\\frac{2m}{\\hbar^2}(E - V_s)}. Assume a special case for which k_s = 2\\pi n, n = 1, 2, 3, \\ldots. Derive the expression, in terms of the constants, k_i, k_v, k_s, and k_s, for the transmission coefficient. The transmission coefficient is defined as the ratio of the flux of particles in region III to the incident flux in region I.",
+      "formulas": []
+    },
+    {
+      "number": "*2.40",
+      "text": "Consider the one-dimensional potential function shown in Figure P2.40. Assume the total energy of an electron is E < V_0. (a) Write the wave solutions that apply in each region. (b) Write the set of equations that result from applying the boundary conditions. (c) Show explicitly why, or why not, the energy levels of the electron are quantized.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "Ex 2.6",
+      "text": "For n = 1: E_1 = -13.58 eV, n = 2: E_2 = -3.39 eV, n = 3: E_3 = -1.51 eV",
+      "formulas": [
+        {
+          "originalFormula": "E_1 = -\\frac{m e^4}{(4\\pi \\epsilon_0)^2 \\hbar^2 n^2}",
+          "genericFormula": "E = -\\frac{m e^4}{(4\\pi \\epsilon_0)^2 \\hbar^2 n^2}",
+          "description": "Esta fórmula representa a energia do nível fundamental de um elétron em um átomo de hidrogênio, de acordo com a teoria quântica. Ela mostra como a energia do elétron depende de várias constantes físicas e do número quântico principal, que indica o nível de energia do elétron.",
+          "concepts": [
+            "Energia do elétron em um átomo",
+            "Teoria quântica",
+            "Níveis de energia",
+            "Constantes físicas"
+          ],
+          "symbols": [
+            {
+              "symbol": "E",
+              "description": "Representa a energia do nível quântico do elétron."
+            },
+            {
+              "symbol": "m",
+              "description": "Representa a massa do elétron."
+            },
+            {
+              "symbol": "e",
+              "description": "Representa a carga elementar, que é a carga elétrica do elétron."
+            },
+            {
+              "symbol": "ε_0",
+              "description": "Representa a permissividade do vácuo, uma constante que mede a capacidade de um meio para permitir a formação de um campo elétrico."
+            },
+            {
+              "symbol": "ℏ",
+              "description": "Representa a constante de Planck reduzida, que relaciona a energia de um fóton à sua frequência."
+            },
+            {
+              "symbol": "n",
+              "description": "Representa o número quântico principal, que indica o nível de energia do elétron no átomo."
+            }
+          ],
+          "chapter": "2",
+          "section": "Introduction to Quantum Mechanics",
+          "source": "answer",
+          "questionNumber": "Ex 2.6",
+          "page": 33
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "p = \\frac{h}{\\lambda}",
+      "genericFormula": "p = \\frac{h}{\\lambda}",
+      "description": "Esta fórmula relaciona a quantidade de movimento de uma partícula com sua comprimento de onda. Ela é fundamental na mecânica quântica, onde a dualidade onda-partícula é um conceito central.",
+      "concepts": [
+        "Quantidade de movimento",
+        "Comprimento de onda",
+        "Dualidade onda-partícula",
+        "Mecânica quântica"
+      ],
+      "symbols": [
+        {
+          "symbol": "p",
+          "description": "Representa a quantidade de movimento de uma partícula, que é uma medida de sua inércia em movimento."
+        },
+        {
+          "symbol": "h",
+          "description": "Representa a constante de Planck, que é uma constante fundamental na mecânica quântica, relacionada à quantização de energia."
+        },
+        {
+          "symbol": "λ",
+          "description": "Representa o comprimento de onda, que é a distância entre dois pontos consecutivos em uma onda, como cristas ou vales."
+        }
+      ],
+      "chapter": "2",
+      "section": "Introduction to Quantum Mechanics",
+      "source": "standalone",
+      "page": 41
+    },
+    {
+      "originalFormula": "\\lambda = \\frac{h}{p}",
+      "genericFormula": "\\lambda = \\frac{h}{p}",
+      "description": "Esta fórmula relaciona o comprimento de onda de uma partícula com sua quantidade de movimento. Ela mostra que o comprimento de onda é inversamente proporcional à quantidade de movimento, o que é um conceito fundamental na mecânica quântica.",
+      "concepts": [
+        "Comprimento de onda",
+        "Quantidade de movimento",
+        "Dualidade onda-partícula",
+        "Mecânica quântica"
+      ],
+      "symbols": [
+        {
+          "symbol": "λ",
+          "description": "Representa o comprimento de onda, que é a distância entre dois pontos consecutivos em uma onda, como cristas ou vales."
+        },
+        {
+          "symbol": "h",
+          "description": "Representa a constante de Planck, que é uma constante fundamental na mecânica quântica e relaciona a energia de um fóton com a frequência da luz."
+        },
+        {
+          "symbol": "p",
+          "description": "Representa a quantidade de movimento de uma partícula, que é o produto da massa da partícula pela sua velocidade."
+        }
+      ],
+      "chapter": "2",
+      "section": "Introduction to Quantum Mechanics",
+      "source": "standalone",
+      "page": 49
+    },
+    {
+      "originalFormula": "E_n = -\\frac{m e^4}{(4\\pi \\epsilon_0)^2 \\hbar^2 n^2}",
+      "genericFormula": "E_n = -\\frac{m e^4}{(4\\pi \\epsilon_0)^2 \\hbar^2 n^2}",
+      "description": "Esta fórmula representa a energia de um nível quântico específico em um átomo de hidrogênio, onde a energia é quantizada e depende do número quântico principal. A energia é negativa, indicando que o elétron está ligado ao núcleo do átomo.",
+      "concepts": [
+        "Energia quantizada",
+        "Níveis de energia em átomos",
+        "Interação eletrostática",
+        "Modelo de Bohr do átomo"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_n",
+          "description": "Representa a energia do nível quântico n do elétron em um átomo."
+        },
+        {
+          "symbol": "m",
+          "description": "Representa a massa do elétron."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a carga do elétron."
+        },
+        {
+          "symbol": "\\epsilon_0",
+          "description": "Representa a permissividade do vácuo, uma constante que descreve como os campos elétricos se comportam no espaço vazio."
+        },
+        {
+          "symbol": "\\hbar",
+          "description": "Representa a constante de Planck reduzida, que é uma constante fundamental na mecânica quântica."
+        },
+        {
+          "symbol": "n",
+          "description": "Representa o número quântico principal, que indica o nível de energia do elétron em um átomo."
+        },
+        {
+          "symbol": "4\\pi",
+          "description": "É uma constante que aparece na fórmula devido à geometria da interação eletrostática em três dimensões."
+        }
+      ],
+      "chapter": "2",
+      "section": "Introduction to Quantum Mechanics",
+      "source": "standalone",
+      "page": 57
+    },
+    {
+      "originalFormula": "s = \\frac{1}{2} \\text{ or } -\\frac{1}{2}",
+      "genericFormula": "s = \\frac{1}{2} \\text{ or } -\\frac{1}{2}",
+      "description": "Esta fórmula representa um valor que pode ser positivo ou negativo, sendo ambos os valores iguais a um meio. Isso pode ser interpretado em contextos onde se considera uma quantidade que pode ter duas direções ou estados, como deslocamento ou variação de uma grandeza.",
+      "concepts": [
+        "Valores positivos e negativos",
+        "Simetria em fenômenos físicos",
+        "Interpretação de grandezas em diferentes direções"
+      ],
+      "symbols": [
+        {
+          "symbol": "s",
+          "description": "Representa uma grandeza que pode ser um deslocamento ou uma medida que pode assumir valores positivos ou negativos."
+        }
+      ],
+      "chapter": "2",
+      "section": "Introduction to Quantum Mechanics",
+      "source": "standalone",
+      "page": 65
+    },
+    {
+      "originalFormula": "m = 0, \\, -1, \\, +1",
+      "genericFormula": "m = 0, \\, -1, \\, +1",
+      "description": "Não foi possível gerar descrição automática",
+      "concepts": [],
+      "symbols": [],
+      "rawText": "{\n  \"originalFormula\": \"m = 0, \\, -1, \\, +1\",\n  \"genericFormula\": \"m = 0, \\, -1, \\, +1\",\n  \"description\": \"Esta fórmula representa os possíveis valores do número quântico magnético, que descreve a orientação de um orbital atômico em um campo magnético. Os valores indicam diferentes orientações que um orbital pode ter em relação a um campo magnético aplicado.\",\n  \"concepts\": [\n    \"Número quântico magnético\",\n    \"Orientação de orbitais atômicos\",\n    \"Interação com campos magnéticos\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"m\",\n      \"description\": \"Representa o número quântico magnético, que determina a orientação de um orbital em um campo magnético.\"\n    }\n  ]\n}",
+      "chapter": "2",
+      "section": "Introduction to Quantum Mechanics",
+      "source": "standalone",
+      "page": 73
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81
+  ],
+  "lastUpdated": "2026-05-08T18:19:12.938114",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
+}

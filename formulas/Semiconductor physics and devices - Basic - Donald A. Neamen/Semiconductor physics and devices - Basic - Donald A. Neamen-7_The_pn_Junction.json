@@ -1,0 +1,1013 @@
+{
+  "chapter": "7 The pn Junction",
+  "section": "7.1 BASIC STRUCTURE OF THE pn JUNCTION",
+  "questions": [
+    {
+      "number": "1",
+      "text": "Calculate the width of the space charge region in a pn junction when a reverse-biased voltage is applied.",
+      "formulas": [
+        {
+          "originalFormula": "W = \\frac{2 \\epsilon (V_h + V_r)}{e} \\left[ \\frac{N_a + N_d}{N_a N_d} \\right]^{1/2}",
+          "genericFormula": "W = \\frac{2 \\epsilon (V_h + V_r)}{e} \\left[ \\frac{N_a + N_d}{N_a N_d} \\right]^{1/2}",
+          "description": "Esta fórmula representa a largura de uma região de depleção em um semicondutor, que é a área onde não há portadores de carga devido à recombinação de elétrons e buracos. A largura da região de depleção é influenciada pela diferença de potencial aplicada, a permitividade do material e as concentrações de dopantes do semicondutor.",
+          "concepts": [
+            "Região de depleção",
+            "Diferença de potencial",
+            "Permitividade elétrica",
+            "Dopagem de semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "W",
+              "description": "Representa a largura da região de depleção em um semicondutor."
+            },
+            {
+              "symbol": "ε",
+              "description": "Representa a permitividade elétrica do material semicondutor, que indica a capacidade do material de armazenar carga elétrica."
+            },
+            {
+              "symbol": "V_h",
+              "description": "Representa a tensão de polarização que é aplicada ao semicondutor, influenciando a largura da região de depleção."
+            },
+            {
+              "symbol": "V_r",
+              "description": "Representa a tensão de reversão que também afeta a largura da região de depleção."
+            },
+            {
+              "symbol": "e",
+              "description": "Representa a carga elementar, que é a menor unidade de carga elétrica, correspondente à carga de um elétron."
+            },
+            {
+              "symbol": "N_a",
+              "description": "Representa a concentração de dopantes do tipo aceito (p) no semicondutor."
+            },
+            {
+              "symbol": "N_d",
+              "description": "Representa a concentração de dopantes do tipo doador (n) no semicondutor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "Ex. 7.4",
+      "text": "Determine the maximum reverse-biased voltage that can be applied.",
+      "formulas": [
+        {
+          "originalFormula": "N_{a} = 8.43 \\times 10^{15} \\text{ cm}^{-3}",
+          "genericFormula": "N_{a} = C \\times 10^{D} \\text{ cm}^{-3}",
+          "description": "Esta fórmula representa a concentração de átomos dopantes do tipo aceito em um material semicondutor, expressa em número de átomos por centímetro cúbico.",
+          "concepts": [
+            "Dopagem em semicondutores",
+            "Concentração de portadores de carga",
+            "Semicondutores do tipo p"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_{a}",
+              "description": "Representa a concentração de átomos dopantes do tipo aceito em um semicondutor, medido em número de átomos por centímetro cúbico."
+            },
+            {
+              "symbol": "C",
+              "description": "Um coeficiente que representa uma constante numérica que, quando multiplicada por uma potência de dez, fornece a concentração em unidades apropriadas."
+            },
+            {
+              "symbol": "D",
+              "description": "Um expoente que indica a ordem de grandeza da concentração, mostrando quantas vezes a base dez deve ser multiplicada."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "Ex 7.5 (a)",
+      "text": "Consider a GaAs pn junction at T = 300 K doped to N_a = 5 \\times 10^{15} \\text{ cm}^{-3} and N_d = 2 \\times 10^{16} \\text{ cm}^{-3}. Calculate V_{bi}.",
+      "formulas": []
+    },
+    {
+      "number": "Ex 7.5 (b)",
+      "text": "Determine the junction capacitance C' for V_{R} = 4 \\text{ V}.",
+      "formulas": [
+        {
+          "originalFormula": "C' = \\frac{\\epsilon_{s}}{W}",
+          "genericFormula": "C' = \\frac{\\epsilon}{W}",
+          "description": "Esta fórmula representa a capacitância de uma camada de material dielétrico, onde a capacitância é a capacidade do material de armazenar carga elétrica. A fórmula mostra que a capacitância é diretamente proporcional à permissividade do material e inversamente proporcional à largura da camada.",
+          "concepts": [
+            "Capacitância",
+            "Permissividade",
+            "Dielétrico",
+            "Largura da camada"
+          ],
+          "symbols": [
+            {
+              "symbol": "C'",
+              "description": "Representa a capacitância da camada, que é uma medida de quanta carga elétrica pode ser armazenada por unidade de tensão."
+            },
+            {
+              "symbol": "ε",
+              "description": "Representa a permissividade do material dielétrico, que indica a capacidade do material de permitir a passagem de um campo elétrico."
+            },
+            {
+              "symbol": "W",
+              "description": "Representa a largura da camada de material dielétrico, que é a distância entre as placas do capacitor ou a espessura do material."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "Ex 7.5 (c)",
+      "text": "Repeat part (b) for V_{R} = 8 \\text{ V}.",
+      "formulas": []
+    },
+    {
+      "number": "Ex 7.6",
+      "text": "The experimentally measured junction capacitance of a one-sided silicon n-p junction biased at Vx = 3 V and at T = 300 K is C = 0.105 pF. The built-in potential barrier is found to be Vbi = 0.765 V. The cross-sectional area is A = 10^{-6} cm^{2}. Find the doping concentrations.",
+      "formulas": [
+        {
+          "originalFormula": "C = \\epsilon_0 \\frac{A}{V_{bi}}",
+          "genericFormula": "C = \\epsilon_0 \\frac{A}{V_{bi}}",
+          "description": "Esta fórmula representa a capacitância de um capacitor, onde a capacitância é uma medida de quão bem um capacitor pode armazenar carga elétrica. A capacitância é diretamente proporcional à área das placas do capacitor e inversamente proporcional à tensão de ruptura do material isolante entre as placas.",
+          "concepts": [
+            "Capacitância",
+            "Área das placas do capacitor",
+            "Tensão de ruptura",
+            "Permissividade do vácuo"
+          ],
+          "symbols": [
+            {
+              "symbol": "C",
+              "description": "Representa a capacitância, que é a capacidade de um capacitor de armazenar carga elétrica."
+            },
+            {
+              "symbol": "\\epsilon_0",
+              "description": "Representa a permissividade do vácuo, que é uma constante que mede a capacidade do vácuo de permitir a formação de campos elétricos."
+            },
+            {
+              "symbol": "A",
+              "description": "Representa a área das placas do capacitor, que influencia a quantidade de carga que pode ser armazenada."
+            },
+            {
+              "symbol": "V_{bi}",
+              "description": "Representa a tensão de ruptura do material isolante entre as placas do capacitor, que é a tensão máxima que pode ser aplicada antes que ocorra uma falha no isolamento."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "TYU 7.3 (a)",
+      "text": "A silicon pn junction at T = 300 K is reverse biased at Vr = 8 V. The doping concentrations are N_a = 5 \\times 10^{16} cm^{-3} and N_d = 5 \\times 10^{18} cm^{-3}. Determine x_n, x_p, W, and [E_{b}].",
+      "formulas": [
+        {
+          "originalFormula": "W = \\sqrt{\\frac{2 \\epsilon_0 (V_{r} + V_{bi})}{q} \\left( \\frac{1}{N_a} + \\frac{1}{N_d} \\right)}",
+          "genericFormula": "W = \\sqrt{\\frac{2 \\epsilon_0 (V_{r} + V_{bi})}{q} \\left( \\frac{1}{N_a} + \\frac{1}{N_d} \\right)}",
+          "description": "Esta fórmula representa a largura de uma região de depleção em um diodo, que é a área onde não existem portadores de carga devido à recombinação de elétrons e lacunas. A largura da região de depleção é importante para entender como os semicondutores funcionam em dispositivos eletrônicos.",
+          "concepts": [
+            "Região de depleção",
+            "Diodos semicondutores",
+            "Potencial elétrico",
+            "Densidade de portadores de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "W",
+              "description": "Representa a largura da região de depleção."
+            },
+            {
+              "symbol": "ε_0",
+              "description": "É a permissividade do vácuo, que mede a capacidade de um material de permitir a passagem de um campo elétrico."
+            },
+            {
+              "symbol": "V_{r}",
+              "description": "É a tensão aplicada externamente ao diodo, que influencia a largura da região de depleção."
+            },
+            {
+              "symbol": "V_{bi}",
+              "description": "É a tensão de potencial de junção, que é a diferença de potencial que se forma na junção p-n do diodo devido à difusão de portadores de carga."
+            },
+            {
+              "symbol": "q",
+              "description": "É a carga elementar, que representa a carga de um único elétron."
+            },
+            {
+              "symbol": "N_a",
+              "description": "É a densidade de dopagem do material tipo p, que se refere à concentração de lacunas (portadores positivos)."
+            },
+            {
+              "symbol": "N_d",
+              "description": "É a densidade de dopagem do material tipo n, que se refere à concentração de elétrons (portadores negativos)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "TYU 7.3 (b)",
+      "text": "Repeat part (a) for a reverse-biased voltage of Vr = 12 V.",
+      "formulas": [
+        {
+          "originalFormula": "W = \\sqrt{\\frac{2 \\epsilon_0 (V_{r} + V_{bi})}{q} \\left( \\frac{1}{N_a} + \\frac{1}{N_d} \\right)}",
+          "genericFormula": "W = \\sqrt{\\frac{2 \\epsilon_0 (V_{r} + V_{bi})}{q} \\left( \\frac{1}{N_a} + \\frac{1}{N_d} \\right)}",
+          "description": "Esta fórmula calcula a largura da região de depleção em um diodo, que é a área onde não há portadores de carga devido à recombinação de elétrons e lacunas. A largura da região de depleção é importante para entender como os semicondutores funcionam em dispositivos eletrônicos.",
+          "concepts": [
+            "Região de depleção",
+            "Diodos semicondutores",
+            "Potencial elétrico",
+            "Densidade de dopagem"
+          ],
+          "symbols": [
+            {
+              "symbol": "W",
+              "description": "Representa a largura da região de depleção em um diodo."
+            },
+            {
+              "symbol": "ε_0",
+              "description": "É a permissividade do vácuo, que mede a capacidade de um material de permitir a passagem de um campo elétrico."
+            },
+            {
+              "symbol": "V_{r}",
+              "description": "Representa a tensão aplicada externamente ao diodo."
+            },
+            {
+              "symbol": "V_{bi}",
+              "description": "É a tensão de potencial interno do diodo, que é a tensão necessária para que a corrente comece a fluir."
+            },
+            {
+              "symbol": "q",
+              "description": "É a carga elementar, que representa a carga de um único elétron."
+            },
+            {
+              "symbol": "N_a",
+              "description": "É a densidade de dopagem de acceptores, que são impurezas que criam lacunas em um semicondutor."
+            },
+            {
+              "symbol": "N_d",
+              "description": "É a densidade de dopagem de doadores, que são impurezas que fornecem elétrons a um semicondutor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "TYU 7.4",
+      "text": "A silicon pn junction at T = 300 K has doping concentrations of N_a = 3 \\times 10^{16} cm^{-3} and N_d = 8 \\times 10^{15} cm^{-3}, and has a cross-sectional area of A = 5 \\times 10^{-6} cm^{2}. Determine the junction capacitance at (a) V_r = 2 V and (b) V_r = 5 V.",
+      "formulas": [
+        {
+          "originalFormula": "C = \\epsilon_0 \\frac{A}{V_{bi}}",
+          "genericFormula": "C = \\epsilon_0 \\frac{A}{V_{bi}}",
+          "description": "Esta fórmula representa a capacitância de um capacitor, que é uma medida da capacidade de armazenar carga elétrica. A capacitância é diretamente proporcional à área das placas do capacitor e inversamente proporcional à tensão de ruptura, que é a tensão máxima que pode ser aplicada antes que ocorra uma falha elétrica.",
+          "concepts": [
+            "Capacitância",
+            "Campo elétrico",
+            "Tensão elétrica",
+            "Área da superfície"
+          ],
+          "symbols": [
+            {
+              "symbol": "C",
+              "description": "Representa a capacitância do capacitor, que indica a quantidade de carga que pode ser armazenada por unidade de tensão."
+            },
+            {
+              "symbol": "\\epsilon_0",
+              "description": "Representa a permissividade do vácuo, que é uma constante que indica como um campo elétrico se comporta no vácuo."
+            },
+            {
+              "symbol": "A",
+              "description": "Representa a área da superfície das placas do capacitor, que influencia diretamente na quantidade de carga que pode ser armazenada."
+            },
+            {
+              "symbol": "V_{bi}",
+              "description": "Representa a tensão de ruptura, que é a tensão máxima que pode ser aplicada entre as placas do capacitor antes que ocorra uma falha elétrica."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "Ex 7.7",
+      "text": "A one-sided, planar, uniformly doped silicon pn junction diode is required to have a reverse-biased breakdown voltage of V_b = 60 V. What is the maximum doping concentration in the low-doped region such that this specification is met?",
+      "formulas": [
+        {
+          "originalFormula": "V_b = \\frac{e E_{c}}{E_{n}}",
+          "genericFormula": "V_b = \\frac{e E}{E_n}",
+          "description": "Esta fórmula representa a relação entre a tensão de um campo elétrico em um semicondutor e as energias associadas a cargas elétricas. A tensão é calculada a partir da carga elétrica, a intensidade do campo elétrico e uma energia característica do sistema.",
+          "concepts": [
+            "Tensão elétrica",
+            "Campo elétrico",
+            "Carga elétrica",
+            "Energia em semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_b",
+              "description": "Representa a tensão elétrica, que é a diferença de potencial elétrico entre dois pontos em um circuito."
+            },
+            {
+              "symbol": "e",
+              "description": "Representa a carga elementar, que é a carga elétrica de um único elétron, uma constante fundamental na física."
+            },
+            {
+              "symbol": "E",
+              "description": "Representa a intensidade do campo elétrico, que é a força por unidade de carga que atua sobre uma carga elétrica em um ponto específico."
+            },
+            {
+              "symbol": "E_n",
+              "description": "Representa uma energia característica do sistema, que pode estar relacionada à energia de ativação ou a outra forma de energia relevante no contexto do semicondutor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Draw the energy-band diagram of a zero-biased and reverse-biased pn junction.",
+      "formulas": []
+    },
+    {
+      "number": "3",
+      "text": "Define and derive the expression of the built-in potential barrier voltage.",
+      "formulas": []
+    },
+    {
+      "number": "4",
+      "text": "Derive the expression for the electric field in space charge region of the pn junction.",
+      "formulas": []
+    },
+    {
+      "number": "5",
+      "text": "Describe what happens to the parameters of the space charge region when a reverse-biased voltage is applied.",
+      "formulas": []
+    },
+    {
+      "number": "6",
+      "text": "Define and explain the junction capacitance.",
+      "formulas": []
+    },
+    {
+      "number": "7",
+      "text": "Describe the characteristics and properties of a one-sided pn junction.",
+      "formulas": []
+    },
+    {
+      "number": "8",
+      "text": "Describe the avalanche breakdown mechanism in a reverse-biased pn junction.",
+      "formulas": []
+    },
+    {
+      "number": "9",
+      "text": "Describe how a linearly graded junction is formed.",
+      "formulas": []
+    },
+    {
+      "number": "10",
+      "text": "Define a hyperabrupt junction.",
+      "formulas": []
+    },
+    {
+      "number": "7.23",
+      "text": "A GaAs pn junction at T = 300 K has impurity doping concentrations of N_{a} = 2 \\times 10^{16} cm^{-3} and N_{d} = 5 \\times 10^{15} cm^{-3}. It is determined that the ratio of junction capacitance at two reverse-biased voltages is C_{(V_{a})}/C_{(V_{b})} = 1.5. What is V_{b}?",
+      "formulas": []
+    },
+    {
+      "number": "7.24",
+      "text": "The impurity doping concentrations in a silicon pn junction at T = 300 K are N_{a} = 2 \\times 10^{15} cm^{-3} and N_{d} = 4 \\times 10^{16} cm^{-3}. The cross-sectional area of the pn junction is 5 \\times 10^{-4} cm^{2}. Determine the junction capacitance at (i) V_{a} = 0 V and (ii) V_{b} = 5 V. (b) Repeat part (a) for a GaAs pn junction.",
+      "formulas": []
+    },
+    {
+      "number": "7.25",
+      "text": "An abrupt silicon pn junction at T = 300 K is uniformly doped with N_{a} = 2 \\times 10^{17} cm^{-3} and N_{d} = 5 \\times 10^{15} cm^{-3}. The cross-sectional area of the pn junction is 8 \\times 10^{-4} cm^{2}. An inductance is placed in parallel with the pn junction. (a) With a reverse-biased voltage of V_{R} = 10 V applied to the junction, the resonant frequency of the circuit is f_{r} = 1.25 MHz. What is the value of the inductance (L)? Using the results from part (a), what is the resonant frequency if the reverse-biased voltage is (i) V_{R} = 1 V and (ii) V_{R} = 5 V?",
+      "formulas": []
+    },
+    {
+      "number": "7.26",
+      "text": "A uniformly doped silicon p^{+}n junction at T = 300 K is to be designed such that, at a reverse-biased voltage of V_{R} = 10 V, the maximum electric field is limited to |E_{max}| = 2.5 \\times 10^{6} V/m. Determine the maximum doping concentration in the n region. (Use an approximate value for |E_{max}| = 10^{6} V/cm.)",
+      "formulas": []
+    },
+    {
+      "number": "7.27",
+      "text": "(a) A GaAs pn junction at T = 300 K, with a cross-sectional area of 10^{-4} cm^{2}, is to be designed that meets the following specifications. At a reverse-biased voltage of V_{R} = 2 V, 20 percent of the total space charge width it is to be in the p region and the total junction capacitance is to be 0.6 pF. Determine N_{a}, N_{d}, and W_{b}. (b) Repeat part (a) if V_{R} = 5 V.",
+      "formulas": []
+    },
+    {
+      "number": "7.28",
+      "text": "A silicon pn junction at T = 300 K has the doping profile shown in Figure P7.28. Calculate (a) V_{bi}, (b) x_{n}, and x_{p} at zero bias, and (c) the applied bias required so that x_{p} = 30 \\mu m.",
+      "formulas": []
+    },
+    {
+      "number": "7.29",
+      "text": "Consider a silicon pn junction with the doping profile shown in Figure P7.29. T = 300 K. (a) Calculate the applied reverse-biased voltage required so that the space charge region extends entirely through the p region. (b) Determine the space charge width into the n^{+} region with the reverse-biased voltage calculated in part (a). (c) Calculate the peak electric field for this applied voltage.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "1",
+      "text": "The built-in potential barrier was calculated in Example 7.1 for this case and is V_bi = 0.635 V. The space charge width is determined from Equation (7.34).",
+      "formulas": [
+        {
+          "originalFormula": "W = \\frac{(211.7)(8.85 \\times 10^{-14})(0.635 + 5)}{1.6 \\times 10^{-19}} \\left[ \\frac{10^{16} + 10^{15}}{(10^{16})(10^{15})} \\right]^{1/2}",
+          "genericFormula": "W = \\frac{(A)(B)(C + D)}{E} \\left[ \\frac{F + G}{(F)(G)} \\right]^{1/2}",
+          "description": "Esta fórmula calcula a energia W em um sistema que envolve constantes físicas e variáveis que representam propriedades elétricas e geométricas. A energia é uma medida da capacidade de realizar trabalho ou causar mudanças em um sistema.",
+          "concepts": [
+            "Energia",
+            "Constantes elétricas",
+            "Propriedades geométricas",
+            "Interações elétricas"
+          ],
+          "symbols": [
+            {
+              "symbol": "W",
+              "description": "Representa a energia total do sistema, medida em joules."
+            },
+            {
+              "symbol": "A",
+              "description": "Um coeficiente que pode representar uma constante física ou um fator de escala relacionado ao sistema."
+            },
+            {
+              "symbol": "B",
+              "description": "A constante de permissividade elétrica do vácuo, que mede a capacidade de um material de permitir o fluxo de campo elétrico."
+            },
+            {
+              "symbol": "C",
+              "description": "Um valor que pode representar uma propriedade física ou uma dimensão do sistema em questão."
+            },
+            {
+              "symbol": "D",
+              "description": "Outro valor que pode representar uma propriedade física ou uma dimensão do sistema em questão."
+            },
+            {
+              "symbol": "E",
+              "description": "Uma constante que pode representar a carga elementar ou uma outra constante física relevante para o cálculo."
+            },
+            {
+              "symbol": "F",
+              "description": "Um valor que pode representar uma grandeza física, como uma densidade de carga ou uma concentração."
+            },
+            {
+              "symbol": "G",
+              "description": "Outro valor que pode representar uma grandeza física, como uma densidade de carga ou uma concentração."
+            }
+          ]
+        },
+        {
+          "originalFormula": "W = 2.83 \\times 10^{-4} \\text{ cm} = 2.83 \\mu m",
+          "genericFormula": "W = x \\text{ cm} = y \\mu m",
+          "description": "Esta fórmula representa a conversão de uma medida de comprimento em centímetros para micrômetros, onde W é a medida em centímetros e também expressa o mesmo valor em micrômetros.",
+          "concepts": [
+            "Conversão de unidades de medida",
+            "Comprimento",
+            "Sistema métrico"
+          ],
+          "symbols": [
+            {
+              "symbol": "W",
+              "description": "Representa a largura ou comprimento em centímetros."
+            },
+            {
+              "symbol": "x",
+              "description": "Representa um valor numérico que indica a medida em centímetros."
+            },
+            {
+              "symbol": "y",
+              "description": "Representa um valor numérico que indica a medida equivalente em micrômetros."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Ex. 7.4",
+      "text": "The maximum reverse-biased voltage is limited by the electric field.",
+      "formulas": [
+        {
+          "originalFormula": "E_{max} = 7.2 \\times 10^{4} \\text{ V/cm}",
+          "genericFormula": "E_{max} = k \\text{ V/cm}",
+          "description": "Esta fórmula representa o valor máximo do campo elétrico, que é uma medida de quão forte é o campo elétrico em um determinado ponto. O campo elétrico é uma força que atua sobre cargas elétricas e é fundamental para entender como os semicondutores se comportam sob a influência de tensões elétricas.",
+          "concepts": [
+            "Campo elétrico",
+            "Força elétrica",
+            "Semicondutores",
+            "Tensão elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{max}",
+              "description": "Representa o valor máximo do campo elétrico, que indica a intensidade do campo em volts por centímetro."
+            },
+            {
+              "symbol": "k",
+              "description": "Um valor genérico que representa a intensidade do campo elétrico em volts por centímetro, que pode variar dependendo das condições do experimento ou do material em questão."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Ex 7.7",
+      "text": "Using Equation (7.61), we find the breakdown voltage as V_b = \\frac{(11.7)(8.85 \\times 10^{-14})(3.7 \\times 10^{6})}{(21.6 \\times 10^{-9})(4 \\times 10^{15})} = 110 V",
+      "formulas": [
+        {
+          "originalFormula": "V_b = \\frac{(11.7)(8.85 \\times 10^{-14})(3.7 \\times 10^{6})}{(21.6 \\times 10^{-9})(4 \\times 10^{15})}",
+          "genericFormula": "V_b = \\frac{(a)(b)(c)}{(d)(e)}",
+          "description": "Esta fórmula calcula a tensão de polarização em um sistema semicondutor, onde diferentes constantes e parâmetros são multiplicados e divididos para obter o valor final da tensão.",
+          "concepts": [
+            "Tensão elétrica",
+            "Polarização em semicondutores",
+            "Constantes físicas",
+            "Relação entre carga e campo elétrico"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_b",
+              "description": "Representa a tensão de polarização, que é a diferença de potencial elétrico em um sistema semicondutor."
+            },
+            {
+              "symbol": "a",
+              "description": "Um coeficiente que pode representar uma constante física ou uma propriedade do material, como a permissividade do material."
+            },
+            {
+              "symbol": "b",
+              "description": "Uma constante que representa a permissividade do vácuo, que é uma medida da capacidade de um material de permitir a passagem de um campo elétrico."
+            },
+            {
+              "symbol": "c",
+              "description": "Um parâmetro que pode representar a densidade de carga ou outra propriedade relevante do sistema em análise."
+            },
+            {
+              "symbol": "d",
+              "description": "Um valor que pode representar a espessura ou uma dimensão do sistema semicondutor que influencia a polarização."
+            },
+            {
+              "symbol": "e",
+              "description": "Uma constante que pode representar a concentração de portadores de carga no semicondutor, como elétrons ou lacunas."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "N_{a} = \\frac{2.5 \\times 10^{6}}{ \\left( \\frac{(2.1 \\times 10^{-19})(25)}{(11.7)(8.85 \\times 10^{-14})} \\right)^{1/2}}",
+      "genericFormula": "N_{a} = \\frac{A}{ \\left( \\frac{B \\times C}{D \\times E} \\right)^{1/2}}",
+      "description": "Esta fórmula calcula a concentração de dopantes aceitores em um material semicondutor, representada pela letra N sub a. A fórmula envolve a relação entre constantes físicas e parâmetros do material, permitindo determinar quantos átomos de dopante estão presentes em uma unidade de volume do semicondutor.",
+      "concepts": [
+        "Concentração de dopantes",
+        "Semicondutores",
+        "Propriedades elétricas dos materiais",
+        "Constantes físicas"
+      ],
+      "symbols": [
+        {
+          "symbol": "N_{a}",
+          "description": "Representa a concentração de dopantes aceitores no semicondutor, ou seja, a quantidade de átomos de dopante por unidade de volume."
+        },
+        {
+          "symbol": "A",
+          "description": "Uma constante que pode representar um fator de proporcionalidade ou uma quantidade específica relacionada ao sistema em análise."
+        },
+        {
+          "symbol": "B",
+          "description": "Uma constante que representa a carga elétrica em coulombs, que é uma medida da quantidade de eletricidade."
+        },
+        {
+          "symbol": "C",
+          "description": "Um valor que representa a temperatura em Kelvin, que é uma medida da energia térmica do sistema."
+        },
+        {
+          "symbol": "D",
+          "description": "Uma constante dielétrica do material, que mede a capacidade do material de armazenar energia elétrica."
+        },
+        {
+          "symbol": "E",
+          "description": "Uma constante que representa a permissividade do vácuo, que é uma medida da capacidade de um campo elétrico de se propagar através do espaço."
+        }
+      ]
+    },
+    {
+      "originalFormula": "W \\approx \\frac{2\\epsilon_{s}(V_{bi} + V_{R})^{1/2}}{eN_{d}}",
+      "genericFormula": "W \\approx \\frac{2\\epsilon_{s}(V_{bi} + V_{R})^{1/2}}{eN_{d}}",
+      "description": "Esta fórmula representa a largura de uma região de depleção em um semicondutor sob a influência de uma tensão, considerando a capacitância e a densidade de dopagem do material. A largura de depleção é uma característica importante em dispositivos semicondutores, pois afeta o comportamento elétrico e a eficiência dos dispositivos.",
+      "concepts": [
+        "Região de depleção",
+        "Tensão de built-in",
+        "Densidade de dopagem",
+        "Capacitância",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "W",
+          "description": "Representa a largura da região de depleção no semicondutor."
+        },
+        {
+          "symbol": "ε_{s}",
+          "description": "Representa a permissividade elétrica do semicondutor, que é uma medida de como o material responde a um campo elétrico."
+        },
+        {
+          "symbol": "V_{bi}",
+          "description": "Representa a tensão de built-in, que é a tensão interna que se forma em um junção p-n devido à diferença de concentração de portadores de carga."
+        },
+        {
+          "symbol": "V_{R}",
+          "description": "Representa a tensão aplicada externamente ao dispositivo, que pode alterar a largura da região de depleção."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a carga de um único elétron."
+        },
+        {
+          "symbol": "N_{d}",
+          "description": "Representa a densidade de dopagem do semicondutor, que indica a quantidade de átomos dopantes presentes no material."
+        }
+      ]
+    },
+    {
+      "originalFormula": "C' \\approx \\frac{eN_{d}}{2(V_{bi} + V_{R})^{1/2}}",
+      "genericFormula": "C' \\approx \\frac{eN}{2(V_{b} + V_{R})^{1/2}}",
+      "description": "Esta fórmula representa a capacitância de uma junção p-n sob a influência de uma tensão aplicada. Ela mostra como a capacitância varia em função da densidade de dopagem, da tensão de polarização e da tensão de built-in.",
+      "concepts": [
+        "Capacitância",
+        "Dopagem de semicondutores",
+        "Tensão de polarização",
+        "Tensão de built-in"
+      ],
+      "symbols": [
+        {
+          "symbol": "C'",
+          "description": "Representa a capacitância da junção p-n sob a tensão aplicada."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a menor unidade de carga elétrica."
+        },
+        {
+          "symbol": "N_{d}",
+          "description": "Representa a densidade de dopagem do semicondutor tipo n, que indica a concentração de portadores de carga negativa."
+        },
+        {
+          "symbol": "V_{bi}",
+          "description": "Representa a tensão de built-in, que é a tensão que se forma na junção p-n quando não há tensão externa aplicada."
+        },
+        {
+          "symbol": "V_{R}",
+          "description": "Representa a tensão aplicada externamente à junção p-n."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\left( \\frac{1}{C'} \\right)^{2} = \\frac{2(V_{bi} + V_{R})}{eN_{d}}",
+      "genericFormula": "\\left( \\frac{1}{C} \\right)^{2} = \\frac{2(V_{b} + V_{R})}{eN}",
+      "description": "Esta fórmula relaciona a capacitância de um dispositivo semicondutor com a tensão de polarização e a densidade de dopagem. Ela mostra como a capacitância é afetada pela tensão interna e pela tensão aplicada, além de considerar a carga elementar e a densidade de dopagem do material.",
+      "concepts": [
+        "Capacitância",
+        "Tensão de polarização",
+        "Densidade de dopagem",
+        "Carga elementar"
+      ],
+      "symbols": [
+        {
+          "symbol": "C'",
+          "description": "Representa a capacitância do dispositivo, que é uma medida da capacidade de armazenar carga elétrica."
+        },
+        {
+          "symbol": "V_{bi}",
+          "description": "Representa a tensão de polarização interna do dispositivo, que é a tensão que existe na junção quando não há corrente fluindo."
+        },
+        {
+          "symbol": "V_{R}",
+          "description": "Representa a tensão aplicada externamente ao dispositivo, que pode influenciar o comportamento elétrico do semicondutor."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a menor unidade de carga elétrica que existe, equivalente à carga de um elétron."
+        },
+        {
+          "symbol": "N_{d}",
+          "description": "Representa a densidade de dopagem do material semicondutor, que é a quantidade de átomos dopantes por unidade de volume, influenciando as propriedades elétricas do semicondutor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E_{n} = 3.7 \\times 10^{6} \\text{ V/cm}",
+      "genericFormula": "E_{n} = k \\text{ V/cm}",
+      "description": "Esta fórmula representa a intensidade do campo elétrico em volts por centímetro, que é uma medida de quão forte é o campo elétrico em uma determinada região. O campo elétrico é uma força que atua sobre cargas elétricas, e sua intensidade indica a força que uma carga de um coulomb experimentaria em um centímetro.",
+      "concepts": [
+        "Campo elétrico",
+        "Intensidade do campo elétrico",
+        "Força elétrica"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{n}",
+          "description": "Representa a intensidade do campo elétrico, que é a força por unidade de carga que uma carga elétrica experimentaria em um determinado ponto."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa um valor genérico que indica a intensidade do campo elétrico em volts por centímetro."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297
+  ],
+  "lastUpdated": "2026-05-08T21:43:06.994Z"
+}

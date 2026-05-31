@@ -1,0 +1,1618 @@
+{
+  "chapter": "5",
+  "questions": [
+    {
+      "number": "a",
+      "text": "Calculate the built-in voltage, V_{bi}.",
+      "formulas": [
+        {
+          "originalFormula": "V_{bi} = 0.0259 \\ln \\left( \\frac{N_{D}}{N_{A}} \\right)",
+          "genericFormula": "V_{bi} = 0.0259 \\ln \\left( \\frac{N_{D}}{N_{A}} \\right)",
+          "description": "Não foi possível gerar descrição automática",
+          "concepts": [],
+          "symbols": [],
+          "rawText": "{\n  \"originalFormula\": \"V_{bi} = 0.0259 \\ln \\\\left( \\\\frac{N_{D}}{N_{A}} \\\\right)\",\n  \"genericFormula\": \"V_{bi} = k \\ln \\\\left( \\\\frac{N_{D}}{N_{A}} \\\\right)\",\n  \"description\": \"Esta fórmula representa a tensão de built-in (ou tensão de junção) em um diodo semicondutor, que é a tensão que se estabelece na junção entre dois tipos de dopagem de semicondutores, um tipo n (dopado com átomos que têm elétrons extras) e um tipo p (dopado com átomos que têm lacunas ou falta de elétrons). Essa tensão é crucial para entender o funcionamento de dispositivos semicondutores como diodos e transistores.\",\n  \"concepts\": [\n    \"Tensão de built-in\",\n    \"Dopagem de semicondutores\",\n    \"Juncão p-n\",\n    \"Equilíbrio de cargas\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"V_{bi}\",\n      \"description\": \"Representa a tensão de built-in, que é a diferença de potencial elétrico na junção de um diodo semicondutor.\"\n    },\n    {\n      \"symbol\": \"N_{D}\",\n      \"description\": \"Representa a concentração de dopantes do tipo n, que são átomos que fornecem elétrons extras ao semicondutor.\"\n    },\n    {\n      \"symbol\": \"N_{A}\",\n      \"description\": \"Representa a concentração de dopantes do tipo p, que são átomos que criam lacunas ou faltas de elétrons no semicondutor.\"\n    },\n    {\n      \"symbol\": \"k\",\n      \"description\": \"Representa uma constante que está relacionada à temperatura e à natureza do material semicondutor, que neste caso é aproximadamente 0.0259 volts a temperatura ambiente.\"\n    },\n    {\n      \"symbol\": \"ln\",\n      \"description\": \"Representa a função logarítmica natural, que é usada para calcular o logaritmo de um número em base e, onde e é a base dos logaritmos naturais.\"\n    }\n  ]\n}",
+          "chapter": "5",
+          "source": "question",
+          "questionNumber": "a",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "number": "b",
+      "text": "Calculate the depletion widths x_{n0} and x_{p0}.",
+      "formulas": [
+        {
+          "originalFormula": "x_{p0} = \\left( \\frac{2 e V_{bi} N_{D}}{q N_{A} (N_{A} + N_{D})} \\right)^{\\frac{1}{2}}",
+          "genericFormula": "x_{p0} = \\left( \\frac{2 e V_{bi} N_{D}}{q N_{A} (N_{A} + N_{D})} \\right)^{\\frac{1}{2}}",
+          "description": "Esta fórmula calcula a posição do ponto de junção em um dispositivo semicondutor, como um diodo, onde a dopagem dos materiais é considerada. O resultado representa a distância do ponto de junção até a superfície do semicondutor.",
+          "concepts": [
+            "Dopagem de semicondutores",
+            "Potencial de junção",
+            "Equilíbrio de carga em semicondutores",
+            "Distribuição de portadores de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "x_{p0}",
+              "description": "Representa a posição do ponto de junção no semicondutor."
+            },
+            {
+              "symbol": "e",
+              "description": "É a carga elementar, que é a carga de um único elétron."
+            },
+            {
+              "symbol": "V_{bi}",
+              "description": "É o potencial de junção interno, que representa a diferença de potencial elétrico na junção de dois materiais semicondutores dopados."
+            },
+            {
+              "symbol": "N_{D}",
+              "description": "É a concentração de dopantes do tipo doador no semicondutor, que fornece elétrons como portadores de carga."
+            },
+            {
+              "symbol": "q",
+              "description": "É a carga elétrica elementar, que tem o mesmo valor que a carga de um elétron, mas é usada em contextos onde a carga é considerada positiva."
+            },
+            {
+              "symbol": "N_{A}",
+              "description": "É a concentração de dopantes do tipo aceitador no semicondutor, que aceita elétrons e cria lacunas como portadores de carga."
+            }
+          ],
+          "chapter": "5",
+          "source": "question",
+          "questionNumber": "b",
+          "page": 17
+        },
+        {
+          "originalFormula": "x_{n0} = x_{p0} \\frac{N_{A}}{N_{D}}",
+          "genericFormula": "x_{n0} = x_{p0} \\frac{N_{A}}{N_{D}}",
+          "description": "Esta fórmula representa a relação entre as concentrações de portadores de carga em um semicondutor dopado, especificamente a relação entre a densidade de portadores de elétrons e a densidade de portadores de lacunas em um material semicondutor dopado com acceptores e doadores.",
+          "concepts": [
+            "Semicondutores",
+            "Dopagem de semicondutores",
+            "Portadores de carga",
+            "Equilíbrio de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "x_{n0}",
+              "description": "Representa a densidade de portadores de elétrons em equilíbrio no semicondutor."
+            },
+            {
+              "symbol": "x_{p0}",
+              "description": "Representa a densidade de portadores de lacunas em equilíbrio no semicondutor."
+            },
+            {
+              "symbol": "N_{A}",
+              "description": "Representa a concentração de átomos dopantes do tipo aceitador no semicondutor."
+            },
+            {
+              "symbol": "N_{D}",
+              "description": "Representa a concentração de átomos dopantes do tipo doador no semicondutor."
+            }
+          ],
+          "chapter": "5",
+          "source": "question",
+          "questionNumber": "b",
+          "page": 34
+        }
+      ]
+    },
+    {
+      "number": "c",
+      "text": "Calculate the maximum value of the electric field intensity.",
+      "formulas": [
+        {
+          "originalFormula": "E_{max} = -\\frac{q N_{D} x_{n0}}{\\epsilon}",
+          "genericFormula": "E_{max} = -\\frac{q N_{D} x_{n0}}{\\epsilon}",
+          "description": "Esta fórmula representa o valor máximo do campo elétrico em uma região de um semicondutor dopado, onde a densidade de dopantes e a largura da região influenciam a intensidade do campo elétrico.",
+          "concepts": [
+            "Campo elétrico",
+            "Dopagem de semicondutores",
+            "Densidade de portadores de carga",
+            "Permissividade do material"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{max}",
+              "description": "Representa o valor máximo do campo elétrico na região considerada."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elétrica de um portador, que pode ser um elétron ou um buraco, dependendo do tipo de semicondutor."
+            },
+            {
+              "symbol": "N_{D}",
+              "description": "Representa a densidade de dopantes do tipo doador no semicondutor, que são átomos adicionados para aumentar a quantidade de portadores de carga positiva."
+            },
+            {
+              "symbol": "x_{n0}",
+              "description": "Representa a largura da região onde os portadores de carga estão presentes, especificamente a região de depleção em um semicondutor dopado."
+            },
+            {
+              "symbol": "\\epsilon",
+              "description": "Representa a permissividade do material, que é uma medida da capacidade do material de permitir a formação de um campo elétrico dentro dele."
+            }
+          ],
+          "chapter": "5",
+          "source": "question",
+          "questionNumber": "c",
+          "page": 50
+        },
+        {
+          "originalFormula": "E_{max} = -\\frac{1.6 \\times 10^{-19} \\times 10^{5} \\times 96.1 \\times 10^{-6}}{11.8 \\times 8.854 \\times 10^{-14}}",
+          "genericFormula": "E_{max} = -\\frac{q \\times E \\times A}{\\epsilon_r \\times \\epsilon_0}",
+          "description": "Esta fórmula calcula o valor máximo da energia elétrica, que é a energia potencial associada a uma carga elétrica em um campo elétrico. O resultado é negativo, indicando que a energia é liberada quando a carga se move em direção ao potencial mais baixo.",
+          "concepts": [
+            "Energia elétrica",
+            "Carga elétrica",
+            "Campo elétrico",
+            "Permissividade do vácuo",
+            "Área da superfície"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{max}",
+              "description": "Representa a energia elétrica máxima que pode ser calculada a partir da interação de uma carga em um campo elétrico."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elétrica, que é uma propriedade física que causa a interação eletromagnética entre partículas."
+            },
+            {
+              "symbol": "E",
+              "description": "Representa a intensidade do campo elétrico, que é uma medida da força que uma carga elétrica experimentaria em um determinado ponto no espaço."
+            },
+            {
+              "symbol": "A",
+              "description": "Representa a área da superfície através da qual a carga está interagindo com o campo elétrico."
+            },
+            {
+              "symbol": "\\epsilon_r",
+              "description": "Representa a permissividade relativa do material, que é uma medida de como o material afeta o campo elétrico em comparação com o vácuo."
+            },
+            {
+              "symbol": "\\epsilon_0",
+              "description": "Representa a permissividade do vácuo, que é uma constante física que descreve a capacidade do vácuo de permitir a formação de campos elétricos."
+            }
+          ],
+          "chapter": "5",
+          "source": "question",
+          "questionNumber": "c",
+          "page": 67
+        }
+      ]
+    },
+    {
+      "number": "d",
+      "text": "Calculate the charge stored in each of the depletion regions.",
+      "formulas": [
+        {
+          "originalFormula": "Q = q N_{D} x_{p0} A",
+          "genericFormula": "Q = q N_{D} x_{p} A",
+          "description": "Esta fórmula representa a quantidade total de carga elétrica acumulada em uma região de um semicondutor dopado, onde a carga é influenciada pela densidade de portadores de carga, a profundidade da região e a área da seção transversal.",
+          "concepts": [
+            "Carga elétrica",
+            "Dopagem de semicondutores",
+            "Densidade de portadores de carga",
+            "Área da seção transversal"
+          ],
+          "symbols": [
+            {
+              "symbol": "Q",
+              "description": "Representa a quantidade total de carga elétrica acumulada em uma região do semicondutor."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elementar, que é a carga de um único elétron ou a carga positiva de um próton."
+            },
+            {
+              "symbol": "N_{D}",
+              "description": "Representa a densidade de dopagem do semicondutor, ou seja, a quantidade de átomos dopantes por unidade de volume."
+            },
+            {
+              "symbol": "x_{p}",
+              "description": "Representa a profundidade da região onde a carga está acumulada, geralmente medida a partir da superfície do semicondutor."
+            },
+            {
+              "symbol": "A",
+              "description": "Representa a área da seção transversal da região onde a carga está sendo considerada."
+            }
+          ],
+          "chapter": "5",
+          "source": "question",
+          "questionNumber": "d",
+          "page": 84
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "text": "For V_a = 0.66, volt calculate: J_n(-x_p), J_p(x_n) and the total diode current. Operation is at 300K.",
+      "formulas": [
+        {
+          "originalFormula": "p_{on} = \\frac{n_{i}^{2}}{n_{on}} = \\frac{1 \\times 10^{20}}{2 \\times 10^{16}} = 5 \\times 10^{3} \\, \\text{cm}^{-3}",
+          "genericFormula": "p_{on} = \\frac{n_{i}^{2}}{n_{on}}",
+          "description": "Esta fórmula representa a densidade de portadores de carga positiva (buracos) em um semicondutor do tipo p, onde a densidade de buracos é calculada a partir da densidade intrínseca de portadores e da densidade de portadores do tipo n.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Semicondutores",
+            "Densidade intrínseca",
+            "Equilíbrio de carga em semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "p_{on}",
+              "description": "Representa a densidade de buracos no semicondutor do tipo p, que é a quantidade de portadores de carga positiva por unidade de volume."
+            },
+            {
+              "symbol": "n_{i}",
+              "description": "Representa a densidade intrínseca de portadores de carga no semicondutor, que é a quantidade de elétrons e buracos gerados espontaneamente em um semicondutor puro."
+            },
+            {
+              "symbol": "n_{on}",
+              "description": "Representa a densidade de portadores do tipo n, que é a quantidade de elétrons no semicondutor do tipo n, que é dopado para aumentar a quantidade de portadores negativos."
+            }
+          ],
+          "chapter": "5",
+          "source": "question",
+          "questionNumber": "1",
+          "page": 100
+        },
+        {
+          "originalFormula": "n_{op} = \\frac{n_{i}^{2}}{p_{op}} = 5 \\times 10^{2} \\, \\text{cm}^{-3}",
+          "genericFormula": "n_{op} = \\frac{n_{i}^{2}}{p_{op}}",
+          "description": "Esta fórmula representa a densidade de portadores de carga do tipo n em um semicondutor, que é calculada a partir da densidade intrínseca de portadores de carga e da densidade de portadores do tipo p. Ela é fundamental para entender a condução elétrica em materiais semicondutores.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Semicondutores",
+            "Equilíbrio de cargas",
+            "Densidade intrínseca"
+          ],
+          "symbols": [
+            {
+              "symbol": "n_{op}",
+              "description": "Representa a densidade de portadores de carga do tipo n em um semicondutor, medida em número de portadores por centímetro cúbico."
+            },
+            {
+              "symbol": "n_{i}",
+              "description": "Denota a densidade intrínseca de portadores de carga em um semicondutor, que é a quantidade de portadores gerados naturalmente no material sem dopagem."
+            },
+            {
+              "symbol": "p_{op}",
+              "description": "Representa a densidade de portadores de carga do tipo p em um semicondutor, que é a quantidade de lacunas disponíveis para a condução elétrica."
+            }
+          ],
+          "chapter": "5",
+          "source": "question",
+          "questionNumber": "1",
+          "page": 117
+        },
+        {
+          "originalFormula": "L_{p} = (D_{p} \\tau_{p})^{1/2} = (10 \\times 10^{-6} \\times 13)^{1/2} = 11.4 \\times 10^{-3} \\, \\text{cm}",
+          "genericFormula": "L_{p} = (D_{p} \\tau_{p})^{1/2}",
+          "description": "Esta fórmula representa o comprimento de difusão de portadores em um semicondutor, que é uma medida de quão longe os portadores de carga (como elétrons ou lacunas) podem se mover em um material antes de recombinarem.",
+          "concepts": [
+            "Comprimento de difusão",
+            "Portadores de carga",
+            "Semicondutores",
+            "Recombinação de portadores"
+          ],
+          "symbols": [
+            {
+              "symbol": "L_{p}",
+              "description": "Representa o comprimento de difusão dos portadores de carga em um semicondutor."
+            },
+            {
+              "symbol": "D_{p}",
+              "description": "Representa o coeficiente de difusão dos portadores de carga, que indica a taxa de movimento dos portadores em resposta a um gradiente de concentração."
+            },
+            {
+              "symbol": "\\tau_{p}",
+              "description": "Representa o tempo médio de vida dos portadores de carga, que é o tempo que um portador pode existir antes de recombinar com um portador de carga oposta."
+            }
+          ],
+          "chapter": "5",
+          "source": "question",
+          "questionNumber": "1",
+          "page": 133
+        },
+        {
+          "originalFormula": "L_{n} = (D_{n} \\tau_{n})^{1/2} = 4.1 \\times 10^{-2} \\, \\text{cm}",
+          "genericFormula": "L_{n} = (D_{n} \\tau_{n})^{1/2}",
+          "description": "Esta fórmula representa o comprimento de difusão de portadores de carga em um semicondutor, onde o comprimento é calculado a partir do produto da difusividade dos portadores e do tempo de vida dos portadores.",
+          "concepts": [
+            "Comprimento de difusão",
+            "Difusividade",
+            "Tempo de vida dos portadores de carga",
+            "Semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "L_{n}",
+              "description": "Representa o comprimento de difusão dos portadores de carga, que indica a distância média que os portadores podem se mover antes de recombinar."
+            },
+            {
+              "symbol": "D_{n}",
+              "description": "Representa a difusividade dos portadores de carga, que é uma medida de quão rapidamente os portadores se espalham em um material semicondutor."
+            },
+            {
+              "symbol": "\\tau_{n}",
+              "description": "Representa o tempo de vida dos portadores de carga, que é o tempo médio que um portador permanece livre antes de recombinar com um portador de carga oposta."
+            }
+          ],
+          "chapter": "5",
+          "source": "question",
+          "questionNumber": "1",
+          "page": 150
+        },
+        {
+          "originalFormula": "J_{p}(x_n) = 1.6 \\times 10^{-19} \\times 13 \\times 5 \\times 10^{3} \\left[ \\exp\\left( \\frac{0.66}{0.0259} \\right) - 1 \\right]",
+          "genericFormula": "J_{p}(x_n) = q \\times A \\times B \\left[ \\exp\\left( \\frac{E_g}{kT} \\right) - 1 \\right]",
+          "description": "Esta fórmula representa a densidade de corrente de portadores de carga em um material semicondutor, especificamente para portadores do tipo p. A densidade de corrente é uma medida de quão rápido a carga elétrica está se movendo através de uma área unitária do material. A fórmula leva em consideração fatores como a carga elementar, a área efetiva, e a relação entre a energia de ativação e a temperatura.",
+          "concepts": [
+            "Densidade de corrente",
+            "Portadores de carga",
+            "Semicondutores",
+            "Efeito da temperatura na condutividade",
+            "Exponencial de Boltzmann"
+          ],
+          "symbols": [
+            {
+              "symbol": "J_{p}(x_n)",
+              "description": "Representa a densidade de corrente dos portadores do tipo p em uma posição específica no material semicondutor."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elementar, que é a menor unidade de carga elétrica, equivalente à carga de um próton."
+            },
+            {
+              "symbol": "A",
+              "description": "Representa a área efetiva através da qual a corrente está fluindo, geralmente em metros quadrados."
+            },
+            {
+              "symbol": "B",
+              "description": "Um fator que pode incluir constantes específicas do material e condições experimentais, que afetam a densidade de corrente."
+            },
+            {
+              "symbol": "E_g",
+              "description": "Representa a energia de bandgap do material semicondutor, que é a energia necessária para excitar um elétron da banda de valência para a banda de condução."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta do sistema, medida em Kelvin."
+            }
+          ],
+          "chapter": "5",
+          "source": "question",
+          "questionNumber": "1",
+          "page": 167
+        },
+        {
+          "originalFormula": "J_{p}(x_n) = 0.1064 \\, \\text{A/cm}^{2}",
+          "genericFormula": "J_{p}(x_n) = 0.1064 \\, \\text{A/cm}^{2}",
+          "description": "Não foi possível gerar descrição automática",
+          "concepts": [],
+          "symbols": [],
+          "rawText": "{\n  \"originalFormula\": \"J_{p}(x_n) = 0.1064 \\, \\\\text{A/cm}^{2}\",\n  \"genericFormula\": \"J_{p}(x_n) = J_{p}\",\n  \"description\": \"Esta fórmula representa a densidade de corrente de portadores de carga positiva (buracos) em um semicondutor em uma determinada posição, que é indicada por x_n. A densidade de corrente é uma medida de quanta corrente elétrica flui através de uma unidade de área.\",\n  \"concepts\": [\n    \"Densidade de corrente\",\n    \"Portadores de carga\",\n    \"Semicondutores\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"J_{p}\",\n      \"description\": \"Representa a densidade de corrente dos portadores de carga positiva, que são os buracos em um semicondutor.\"\n    },\n    {\n      \"symbol\": \"x_n\",\n      \"description\": \"Indica a posição no material semicondutor onde a densidade de corrente está sendo avaliada.\"\n    }\n  ]\n}",
+          "chapter": "5",
+          "source": "question",
+          "questionNumber": "1",
+          "page": 183
+        },
+        {
+          "originalFormula": "J_{n}(-x_p) = 0.00774 \\, \\text{A/cm}^{2}",
+          "genericFormula": "J_{n}(-x_p) = 0.00774 \\, \\text{A/cm}^{2}",
+          "description": "Não foi possível gerar descrição automática",
+          "concepts": [],
+          "symbols": [],
+          "rawText": "{\n  \"originalFormula\": \"J_{n}(-x_p) = 0.00774 \\, \\\\text{A/cm}^{2}\",\n  \"genericFormula\": \"J_{n}(-x_p) = I \\, \\\\text{A/cm}^{2}\",\n  \"description\": \"Esta fórmula representa a densidade de corrente de portadores de carga negativa (elétrons) em um ponto específico de um material semicondutor, onde a densidade de corrente é medida em amperes por centímetro quadrado. O valor numérico específico indica a quantidade de corrente que flui por unidade de área.\",\n  \"concepts\": [\n    \"Densidade de corrente\",\n    \"Semicondutores\",\n    \"Portadores de carga\",\n    \"Elétrons\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"J_{n}(-x_p)\",\n      \"description\": \"Representa a densidade de corrente de portadores de carga negativa (elétrons) em uma posição específica, indicada por -x_p, dentro do material semicondutor.\"\n    },\n    {\n      \"symbol\": \"I\",\n      \"description\": \"Representa a densidade de corrente em amperes por centímetro quadrado, que é uma medida da quantidade de corrente elétrica que flui através de uma área específica.\"\n    },\n    {\n      \"symbol\": \"-x_p\",\n      \"description\": \"Indica a posição no material semicondutor onde a densidade de corrente está sendo medida, sendo que o sinal negativo pode denotar uma direção específica no contexto do problema.\"\n    }\n  ]\n}",
+          "chapter": "5",
+          "source": "question",
+          "questionNumber": "1",
+          "page": 200
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "What is the mechanism of conduction by which the currents occur?",
+      "formulas": []
+    },
+    {
+      "number": "5.10",
+      "text": "Determine the applied voltage for currents of 1mA and 10mA.",
+      "formulas": []
+    },
+    {
+      "number": "5.11",
+      "text": "Include the IR drops in the P and N regions and find the forward voltage, V_a for I = 1mA and I = 10mA.",
+      "formulas": []
+    },
+    {
+      "number": "5.12a",
+      "text": "Calculate the density of minority carriers at the edge of the depletion region in N when the applied forward voltage is 0.6V.",
+      "formulas": []
+    },
+    {
+      "number": "5.12b",
+      "text": "Plot the values of the majority and minority carrier currents as functions of the distance from the junction, on both sides of the depletion layer, for V_a = 0.6V.",
+      "formulas": []
+    },
+    {
+      "number": "5.12c",
+      "text": "Locate the plane in N at which the majority-carrier current equals the minority-carrier current for V_a = 0.6V.",
+      "formulas": []
+    },
+    {
+      "number": "5.13a",
+      "text": "Determine at T = 300K the diode current for V_a = -10V, V_a = -0.1V and V_a = 0.4V.",
+      "formulas": []
+    },
+    {
+      "number": "5.13b",
+      "text": "Repeat part (a) for T = 400K.",
+      "formulas": []
+    },
+    {
+      "number": "5.14a",
+      "text": "An expression for the excess minority charge Q_p stored in the N region assuming W_n >> L_p.",
+      "formulas": []
+    },
+    {
+      "number": "5.14b",
+      "text": "An expression for the hole current at the edge of the depletion layer in N, at x = x_{n0}, in terms of Q_p.",
+      "formulas": []
+    },
+    {
+      "number": "5.15",
+      "text": "Determine the value of the applied voltage at which the limit of low-level injection is reached.",
+      "formulas": []
+    },
+    {
+      "number": "5.16a",
+      "text": "Determine the excess hole concentration at the edge of the depletion layer in N, at x = x_{n0} for V_a = 80mV.",
+      "formulas": []
+    },
+    {
+      "number": "5.16b",
+      "text": "At what value of V_a is the limit of low injection reached?",
+      "formulas": []
+    },
+    {
+      "number": "5.17",
+      "text": "Assume symmetrical doping so that x_n = W/2 and x_p = -W/2.",
+      "formulas": []
+    },
+    {
+      "number": "5.22 a",
+      "text": "Show that the fractional change in the forward current of a diode, operated at a given voltage V_a, is given approximately by \\( \\\frac{1}{I} \\\frac{dI}{dT} = \\\frac{E_g - qV_a}{kT^2} \\).",
+      "formulas": [
+        {
+          "originalFormula": "\\frac{1}{I} \\frac{dI}{dT} = \\frac{E_g - qV_a}{kT^2}",
+          "genericFormula": "\\frac{1}{I} \\frac{dI}{dT} = \\frac{E_g - qV_a}{kT^2}",
+          "description": "Esta fórmula relaciona a taxa de variação da corrente elétrica em função da temperatura com a energia de bandgap de um material semicondutor, a carga elétrica e a tensão aplicada. Ela mostra como a corrente muda com a temperatura e como isso está ligado à energia necessária para mover portadores de carga no material.",
+          "concepts": [
+            "Corrente elétrica",
+            "Variação da corrente com a temperatura",
+            "Energia de bandgap",
+            "Carga elétrica",
+            "Tensão aplicada",
+            "Constante de Boltzmann"
+          ],
+          "symbols": [
+            {
+              "symbol": "I",
+              "description": "Representa a corrente elétrica que flui através do semicondutor."
+            },
+            {
+              "symbol": "dI",
+              "description": "Representa a variação infinitesimal da corrente elétrica."
+            },
+            {
+              "symbol": "dT",
+              "description": "Representa a variação infinitesimal da temperatura."
+            },
+            {
+              "symbol": "E_g",
+              "description": "Representa a energia de bandgap do material semicondutor, que é a energia mínima necessária para mover um elétron da banda de valência para a banda de condução."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elétrica elementar, que é a carga de um único elétron."
+            },
+            {
+              "symbol": "V_a",
+              "description": "Representa a tensão aplicada ao semicondutor."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura do sistema em Kelvin."
+            }
+          ],
+          "chapter": "5",
+          "source": "question",
+          "questionNumber": "5.22 a",
+          "page": 216
+        }
+      ]
+    },
+    {
+      "number": "5.22 b",
+      "text": "Calculate the fractional change in the forward current of a diode operated at a bias of 0.2V at T = 300K for a germanium diode and a silicon diode.",
+      "formulas": []
+    },
+    {
+      "number": "5.23 a",
+      "text": "Show that the expression for the electric field in the P region of a silicon PN junction diode at equilibrium is given by \\( \\mathcal{E}_x = \\\frac{kT}{q} \\\frac{1}{p} \\\frac{dp}{dx} \\).",
+      "formulas": [
+        {
+          "originalFormula": "\\mathcal{E}_x = \\frac{kT}{q} \\frac{1}{p} \\frac{dp}{dx}",
+          "genericFormula": "\\mathcal{E}_x = \\frac{kT}{q} \\frac{1}{p} \\frac{dp}{dx}",
+          "description": "Esta fórmula representa o campo elétrico em uma região onde a densidade de portadores de carga varia ao longo de uma direção específica. O campo elétrico é influenciado pela temperatura, pela carga dos portadores e pela variação da densidade de portadores ao longo do espaço.",
+          "concepts": [
+            "Campo elétrico",
+            "Densidade de portadores de carga",
+            "Temperatura",
+            "Carga elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_x",
+              "description": "Representa o campo elétrico na direção x."
+            },
+            {
+              "symbol": "k",
+              "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura em Kelvin, que é uma medida da energia térmica média das partículas em um sistema."
+            },
+            {
+              "symbol": "q",
+              "description": "É a carga elétrica de um portador, como um elétron ou um buraco, que influencia o comportamento do campo elétrico."
+            },
+            {
+              "symbol": "p",
+              "description": "Representa a densidade de portadores de carga, ou seja, a quantidade de portadores por unidade de volume."
+            },
+            {
+              "symbol": "dp/dx",
+              "description": "É a derivada da densidade de portadores em relação à posição, indicando como a densidade de portadores muda ao longo da direção x."
+            }
+          ],
+          "chapter": "5",
+          "source": "question",
+          "questionNumber": "5.23 a",
+          "page": 233
+        }
+      ]
+    },
+    {
+      "number": "5.23 b",
+      "text": "If the impurity distribution in P is given by p = 10^{18} \\exp(-x'/0.4), where x' is in microns, calculate the magnitude of \\( \\mathcal{E}_x \\) at x' = 0 in the P region.",
+      "formulas": []
+    },
+    {
+      "number": "5.23 c",
+      "text": "Compare the electric field in the P region to that in the depletion layer by calculating the maximum value of the electric field in the depletion region of an abrupt junction diode at equilibrium if N_A = 10^{18} \\\text{cm}^{-3} and N_D = 10^{15} \\\text{cm}^{-3}.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "a",
+      "text": "V_{bi} = 0.715 V",
+      "formulas": [
+        {
+          "originalFormula": "V_{bi} = 0.0259 \\ln \\left( \\frac{10^{15} \\times 10^{17}}{1 \\times 10^{20}} \\right)",
+          "genericFormula": "V_{bi} = k \\ln \\left( \\frac{N_a \\times N_d}{n_i^2} \\right)",
+          "description": "Esta fórmula calcula a tensão de built-in (ou tensão de equilíbrio) em uma junção PN de um semicondutor, que é a tensão que se estabelece na junção quando não há corrente fluindo através dela. Essa tensão é importante para entender como os semicondutores funcionam em dispositivos eletrônicos.",
+          "concepts": [
+            "Tensão de built-in",
+            "Junção PN",
+            "Equilíbrio de cargas",
+            "Semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{bi}",
+              "description": "Representa a tensão de built-in, que é a diferença de potencial elétrico que se forma na junção de um semicondutor quando não há corrente fluindo."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa uma constante que está relacionada à temperatura do semicondutor e à carga elétrica, geralmente expressa em volts."
+            },
+            {
+              "symbol": "N_a",
+              "description": "Representa a concentração de átomos do tipo dopante aceito (p) no semicondutor."
+            },
+            {
+              "symbol": "N_d",
+              "description": "Representa a concentração de átomos do tipo dopante doador (n) no semicondutor."
+            },
+            {
+              "symbol": "n_i",
+              "description": "Representa a concentração intrínseca de portadores de carga no semicondutor, que é a quantidade de elétrons e lacunas presentes em um material semicondutor puro."
+            }
+          ],
+          "chapter": "5",
+          "source": "answer",
+          "questionNumber": "a",
+          "page": 250
+        }
+      ]
+    },
+    {
+      "questionNumber": "b",
+      "text": "x_{p0} = 0.0961 \\text{ microns}, x_{n0} = 0.961 \\text{ microns}, W = 0.970 \\text{ microns}",
+      "formulas": [
+        {
+          "originalFormula": "x_{p0} = \\left( \\frac{2 \\times 11.8 \\times 8.854 \\times 10^{-14} \\times 0.715 \\times 10^{15}}{1.6 \\times 10^{-19} \\times 10^{17} (1.01 \\times 10^{17})} \\right)^{\\frac{1}{2}}",
+          "genericFormula": "x_{p0} = \\left( \\frac{2 \\times A \\times B \\times C \\times D}{E \\times F \\times G} \\right)^{\\frac{1}{2}}",
+          "description": "Esta fórmula calcula uma quantidade que pode estar relacionada a uma propriedade física em um sistema de semicondutores, onde a variável x_{p0} representa uma medida específica que é influenciada por diversas constantes e variáveis do sistema.",
+          "concepts": [
+            "Propriedades elétricas de materiais",
+            "Constantes físicas",
+            "Interações em semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "x_{p0}",
+              "description": "Representa uma quantidade física específica que está sendo calculada, possivelmente relacionada à densidade de portadores de carga ou outra propriedade elétrica."
+            },
+            {
+              "symbol": "A",
+              "description": "Uma constante que pode representar a permissividade do vácuo ou outra constante elétrica relevante no contexto da fórmula."
+            },
+            {
+              "symbol": "B",
+              "description": "Uma constante que pode estar relacionada a propriedades elétricas de um material específico, como a permissividade relativa."
+            },
+            {
+              "symbol": "C",
+              "description": "Uma variável que pode representar uma medida de densidade ou concentração de portadores de carga no sistema."
+            },
+            {
+              "symbol": "D",
+              "description": "Uma constante que pode estar relacionada a uma propriedade física, como a temperatura ou outra variável que afeta o sistema."
+            },
+            {
+              "symbol": "E",
+              "description": "Uma constante que representa a carga elementar, uma propriedade fundamental da eletricidade."
+            },
+            {
+              "symbol": "F",
+              "description": "Uma variável que pode representar uma densidade de portadores de carga ou outra quantidade relevante para o sistema em estudo."
+            },
+            {
+              "symbol": "G",
+              "description": "Uma variável que pode estar relacionada a uma densidade ou concentração de portadores de carga em um determinado estado do sistema."
+            }
+          ],
+          "chapter": "5",
+          "source": "answer",
+          "questionNumber": "b",
+          "page": 266
+        }
+      ]
+    },
+    {
+      "questionNumber": "c",
+      "text": "E_{max} = -1.48 \\times 10^{4} \\text{ V/cm}",
+      "formulas": [
+        {
+          "originalFormula": "E_{max} = -\\frac{1.6 \\times 10^{-19} \\times 10^{5} \\times 96.1 \\times 10^{-6}}{11.8 \\times 8.854 \\times 10^{-14}}",
+          "genericFormula": "E_{max} = -\\frac{q \\times V \\times A}{\\epsilon_r \\times \\epsilon_0}",
+          "description": "Esta fórmula representa a máxima energia elétrica por unidade de carga que pode ser obtida em um sistema, levando em consideração a carga elétrica, a tensão, a área e as permissividades do material.",
+          "concepts": [
+            "Energia elétrica",
+            "Carga elétrica",
+            "Tensão elétrica",
+            "Área",
+            "Permissividade do material"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{max}",
+              "description": "Representa a máxima energia elétrica por unidade de carga no sistema."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elétrica, que é uma propriedade física que causa a interação eletromagnética."
+            },
+            {
+              "symbol": "V",
+              "description": "Representa a tensão elétrica, que é a diferença de potencial elétrico entre dois pontos."
+            },
+            {
+              "symbol": "A",
+              "description": "Representa a área através da qual a carga elétrica está sendo considerada."
+            },
+            {
+              "symbol": "\\epsilon_r",
+              "description": "Representa a permissividade relativa do material, que indica como o material responde a um campo elétrico."
+            },
+            {
+              "symbol": "\\epsilon_0",
+              "description": "Representa a permissividade do vácuo, que é uma constante que mede a capacidade do vácuo de permitir a formação de campos elétricos."
+            }
+          ],
+          "chapter": "5",
+          "source": "answer",
+          "questionNumber": "c",
+          "page": 283
+        }
+      ]
+    },
+    {
+      "questionNumber": "d",
+      "text": "Q = 1.6 \\times 10^{-19} \\times 10^{15} \\times 96.1 \\times 10^{-6} \\times 10^{-5}",
+      "formulas": [
+        {
+          "originalFormula": "Q = q N_{D} x_{p0} A",
+          "genericFormula": "Q = q N_{D} x_{p0} A",
+          "description": "Esta fórmula representa a quantidade total de carga elétrica acumulada em uma região de um semicondutor, onde a carga é influenciada pela densidade de portadores de carga, a profundidade da região e a área da seção transversal.",
+          "concepts": [
+            "Carga elétrica",
+            "Densidade de portadores de carga",
+            "Área da seção transversal",
+            "Profundidade da região de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "Q",
+              "description": "Representa a quantidade total de carga elétrica acumulada na região considerada."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elementar, que é a carga de um único elétron ou próton."
+            },
+            {
+              "symbol": "N_{D}",
+              "description": "Representa a densidade de portadores de carga do tipo doador, que indica quantos portadores de carga estão presentes por unidade de volume."
+            },
+            {
+              "symbol": "x_{p0}",
+              "description": "Representa a profundidade da região onde a carga é acumulada, ou seja, a distância a partir da superfície até onde os portadores de carga estão presentes."
+            },
+            {
+              "symbol": "A",
+              "description": "Representa a área da seção transversal da região onde a carga está sendo considerada, influenciando a quantidade total de carga acumulada."
+            }
+          ],
+          "chapter": "5",
+          "source": "answer",
+          "questionNumber": "d",
+          "page": 299
+        }
+      ]
+    },
+    {
+      "questionNumber": "1",
+      "text": "J_n(-x_p) = 0.00774 A/cm², J_p(x_n) = 0.1064 A/cm²",
+      "formulas": []
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "p_{0p} \\equiv N_A",
+      "genericFormula": "p_{0p} \\equiv N_A",
+      "description": "Esta fórmula representa a densidade de portadores de carga positiva em um semicondutor dopado com um dopante do tipo aceito, que é indicado pela letra 'A'. O símbolo 'p_{0p}' denota a concentração de lacunas, que são os portadores de carga positiva, enquanto 'N_A' representa a concentração de dopantes do tipo aceito.",
+      "concepts": [
+        "Dopagem de semicondutores",
+        "Portadores de carga",
+        "Lacunas",
+        "Semicondutores do tipo p"
+      ],
+      "symbols": [
+        {
+          "symbol": "p_{0p}",
+          "description": "Representa a densidade de lacunas em um semicondutor dopado do tipo p, que são os portadores de carga positiva."
+        },
+        {
+          "symbol": "N_A",
+          "description": "Representa a concentração de dopantes do tipo aceito em um semicondutor, que introduz lacunas e aumenta a densidade de portadores de carga positiva."
+        }
+      ],
+      "chapter": "5",
+      "source": "standalone",
+      "page": 316
+    },
+    {
+      "originalFormula": "p_{0n} \\equiv \\frac{n_i^2}{N_D}",
+      "genericFormula": "p_{0n} \\equiv \\frac{n_i^2}{N_D}",
+      "description": "Esta fórmula representa a densidade de portadores de carga do tipo buraco em um semicondutor dopado com doadores, onde a densidade de buracos é calculada a partir da densidade intrínseca de portadores e da concentração de dopantes do tipo doador.",
+      "concepts": [
+        "Semicondutores",
+        "Dopagem",
+        "Densidade de portadores",
+        "Equilíbrio de cargas"
+      ],
+      "symbols": [
+        {
+          "symbol": "p_{0n}",
+          "description": "Representa a densidade de portadores de carga do tipo buraco em um semicondutor dopado com doadores."
+        },
+        {
+          "symbol": "n_i",
+          "description": "Representa a densidade intrínseca de portadores de carga em um semicondutor, ou seja, a quantidade de elétrons e buracos presentes em um material não dopado a uma temperatura específica."
+        },
+        {
+          "symbol": "N_D",
+          "description": "Representa a concentração de dopantes do tipo doador no semicondutor, que são átomos adicionados ao material para aumentar a quantidade de elétrons disponíveis."
+        }
+      ],
+      "chapter": "5",
+      "source": "standalone",
+      "page": 333
+    },
+    {
+      "originalFormula": "n_{0p} \\equiv \\frac{n_i^2}{N_A}",
+      "genericFormula": "n_{0p} \\equiv \\frac{n_i^2}{N_A}",
+      "description": "Esta fórmula representa a densidade de portadores de carga do tipo buraco em um semicondutor dopado do tipo p. Ela relaciona a densidade intrínseca de portadores de carga com a concentração de dopantes do tipo aceito.",
+      "concepts": [
+        "Semicondutores",
+        "Dopagem",
+        "Portadores de carga",
+        "Densidade de portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_{0p}",
+          "description": "Representa a densidade de portadores de carga do tipo buraco em um semicondutor dopado do tipo p."
+        },
+        {
+          "symbol": "n_i",
+          "description": "Representa a densidade intrínseca de portadores de carga em um semicondutor não dopado, que é a quantidade de portadores gerados termicamente."
+        },
+        {
+          "symbol": "N_A",
+          "description": "Representa a concentração de dopantes do tipo aceito em um semicondutor, que são átomos que criam buracos ao serem adicionados ao material."
+        }
+      ],
+      "chapter": "5",
+      "source": "standalone",
+      "page": 349
+    },
+    {
+      "originalFormula": "n_{0n} \\equiv N_D",
+      "genericFormula": "n_{0n} \\equiv N_D",
+      "description": "Esta fórmula representa a densidade de portadores de carga negativos em um semicondutor dopado com átomos doadores. O termo 'n_{0n}' refere-se à concentração de elétrons livres, enquanto 'N_D' representa a concentração de átomos doadores que introduzem esses elétrons no material.",
+      "concepts": [
+        "Dopagem de semicondutores",
+        "Portadores de carga",
+        "Elétrons livres",
+        "Semicondutores do tipo n"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_{0n}",
+          "description": "Representa a densidade de portadores de carga negativos, ou seja, a concentração de elétrons livres em um semicondutor dopado."
+        },
+        {
+          "symbol": "N_D",
+          "description": "Representa a concentração de átomos doadores no semicondutor, que são os átomos que fornecem elétrons adicionais para a condução elétrica."
+        }
+      ],
+      "chapter": "5",
+      "source": "standalone",
+      "page": 366
+    },
+    {
+      "originalFormula": "qV_{bi}",
+      "genericFormula": "qV_{bi}",
+      "description": "Esta fórmula representa a energia potencial elétrica que uma carga elétrica experimenta em um campo elétrico gerado por uma diferença de potencial. No contexto de semicondutores, essa energia é crucial para entender como as cargas se movem em dispositivos como diodos e transistores.",
+      "concepts": [
+        "Energia potencial elétrica",
+        "Carga elétrica",
+        "Diferença de potencial",
+        "Campo elétrico"
+      ],
+      "symbols": [
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica, que é uma propriedade física que causa a interação eletromagnética entre partículas. É medida em coulombs."
+        },
+        {
+          "symbol": "V_{bi}",
+          "description": "Representa a diferença de potencial elétrico, especificamente a tensão de built-in, que é a tensão que se forma em uma junção de semicondutores devido à separação de cargas."
+        }
+      ],
+      "chapter": "5",
+      "source": "standalone",
+      "page": 382
+    },
+    {
+      "originalFormula": "n_{i}^{2}",
+      "genericFormula": "n_{i}^{2}",
+      "description": "Esta fórmula representa o quadrado da densidade de portadores intrínsecos em um semicondutor. Ela é fundamental para entender a quantidade de elétrons e lacunas presentes em um material semicondutor puro em equilíbrio térmico.",
+      "concepts": [
+        "Densidade de portadores intrínsecos",
+        "Semicondutores",
+        "Equilíbrio térmico"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_{i}",
+          "description": "Representa a densidade de portadores intrínsecos, que é a quantidade de elétrons (ou lacunas) que existem em um semicondutor puro a uma temperatura específica."
+        }
+      ],
+      "chapter": "5",
+      "source": "standalone",
+      "page": 399
+    },
+    {
+      "originalFormula": "W = x_{p0} + x_{n0} = x_{p0} \\left( 1 + \\frac{N_{A}}{N_{D}} \\right)",
+      "genericFormula": "W = x_{p0} + x_{n0} = x_{p0} \\left( 1 + \\frac{N_{A}}{N_{D}} \\right)",
+      "description": "Esta fórmula representa a relação entre a largura de uma junção p-n em um semicondutor, onde W é a largura total da junção, x_{p0} é a largura da região p, e x_{n0} é a largura da região n. A fórmula também mostra como a dopagem dos semicondutores, representada por N_{A} e N_{D}, influencia a largura da junção.",
+      "concepts": [
+        "junção p-n",
+        "dopagem de semicondutores",
+        "equilíbrio elétrico",
+        "largura da junção"
+      ],
+      "symbols": [
+        {
+          "symbol": "W",
+          "description": "representa a largura total da junção p-n"
+        },
+        {
+          "symbol": "x_{p0}",
+          "description": "representa a largura da região dopada como tipo p"
+        },
+        {
+          "symbol": "x_{n0}",
+          "description": "representa a largura da região dopada como tipo n"
+        },
+        {
+          "symbol": "N_{A}",
+          "description": "representa a concentração de dopantes do tipo aceitador na região p"
+        },
+        {
+          "symbol": "N_{D}",
+          "description": "representa a concentração de dopantes do tipo doador na região n"
+        }
+      ],
+      "chapter": "5",
+      "source": "standalone",
+      "page": 416
+    },
+    {
+      "originalFormula": "qV_a",
+      "genericFormula": "qV_a",
+      "description": "Esta fórmula representa a energia potencial elétrica que uma carga elétrica adquire ao se mover através de uma diferença de potencial elétrico. A energia potencial é diretamente proporcional à carga e à tensão pela qual ela passa.",
+      "concepts": [
+        "Energia potencial elétrica",
+        "Carga elétrica",
+        "Diferença de potencial elétrico"
+      ],
+      "symbols": [
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica, que é uma propriedade física dos materiais que determina a interação eletromagnética entre eles."
+        },
+        {
+          "symbol": "V_a",
+          "description": "Representa a diferença de potencial elétrico, que é a quantidade de energia por unidade de carga que é necessária para mover uma carga elétrica entre dois pontos em um campo elétrico."
+        }
+      ],
+      "chapter": "5",
+      "source": "standalone",
+      "page": 432
+    },
+    {
+      "originalFormula": "q(V_{bi} - V_a)",
+      "genericFormula": "q(V_{bi} - V_a)",
+      "description": "Esta fórmula representa a energia elétrica que uma carga elétrica experimenta ao se mover através de uma diferença de potencial em um dispositivo semicondutor, como um diodo. A diferença de potencial é a diferença entre o potencial interno do dispositivo e o potencial aplicado externamente.",
+      "concepts": [
+        "Energia elétrica",
+        "Carga elétrica",
+        "Diferença de potencial",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica, que é uma propriedade física que causa a interação eletromagnética entre partículas."
+        },
+        {
+          "symbol": "V_{bi}",
+          "description": "Representa o potencial interno do dispositivo semicondutor, conhecido como potencial de built-in, que é a diferença de potencial que existe na ausência de qualquer tensão externa."
+        },
+        {
+          "symbol": "V_a",
+          "description": "Representa o potencial aplicado externamente ao dispositivo, que pode alterar a condição de operação do semicondutor."
+        }
+      ],
+      "chapter": "5",
+      "source": "standalone",
+      "page": 449
+    },
+    {
+      "originalFormula": "D_p, p_{on} \\text{ and } L_p \\text{ refer to holes in the N region and } W_n \\text{ is the length of the neutral N region.}",
+      "genericFormula": "D_p, p_{on}, L_p \\text{ and } W_n",
+      "description": "Esta fórmula descreve propriedades dos buracos (ou lacunas) em uma região N de um semicondutor, onde D_p representa a difusividade dos buracos, p_{on} é a concentração de buracos em uma condição específica e L_p é o comprimento de difusão dos buracos. W_n refere-se ao comprimento da região neutra N, que é uma parte do semicondutor onde não há carga elétrica líquida.",
+      "concepts": [
+        "Difusividade dos buracos",
+        "Concentração de buracos",
+        "Comprimento de difusão",
+        "Região neutra em semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "D_p",
+          "description": "Representa a difusividade dos buracos, que é uma medida de quão rapidamente os buracos se movem através do material semicondutor."
+        },
+        {
+          "symbol": "p_{on}",
+          "description": "Indica a concentração de buracos em uma condição específica, que é a quantidade de buracos presentes em uma unidade de volume do semicondutor."
+        },
+        {
+          "symbol": "L_p",
+          "description": "Refere-se ao comprimento de difusão dos buracos, que é a distância média que os buracos podem se mover antes de recombinar com elétrons."
+        },
+        {
+          "symbol": "W_n",
+          "description": "É o comprimento da região neutra N, que é a parte do semicondutor onde não há excesso de cargas positivas ou negativas, resultando em uma carga elétrica líquida igual a zero."
+        }
+      ],
+      "chapter": "5",
+      "source": "standalone",
+      "page": 465
+    },
+    {
+      "originalFormula": "I = A \\left[ J_{p}(x_{n}) + J_{n}(x_{p}) \\right] = 0.228mA",
+      "genericFormula": "I = A \\left[ J_{p}(x_{n}) + J_{n}(x_{p}) \\right]",
+      "description": "Esta fórmula representa a corrente elétrica total em um semicondutor, que é a soma das correntes de portadores de carga positivos e negativos, multiplicada pela área através da qual esses portadores estão se movendo.",
+      "concepts": [
+        "Corrente elétrica",
+        "Densidade de corrente",
+        "Semicondutores",
+        "Portadores de carga"
+      ],
+      "symbols": [
+        {
+          "symbol": "I",
+          "description": "Representa a corrente elétrica total que flui através do semicondutor."
+        },
+        {
+          "symbol": "A",
+          "description": "Representa a área da seção transversal através da qual a corrente está fluindo."
+        },
+        {
+          "symbol": "J_{p}(x_{n})",
+          "description": "Representa a densidade de corrente dos portadores de carga positivos em uma determinada posição no semicondutor."
+        },
+        {
+          "symbol": "J_{n}(x_{p})",
+          "description": "Representa a densidade de corrente dos portadores de carga negativos em uma determinada posição no semicondutor."
+        },
+        {
+          "symbol": "x_{n}",
+          "description": "Representa a posição no semicondutor onde a densidade de corrente dos portadores positivos é medida."
+        },
+        {
+          "symbol": "x_{p}",
+          "description": "Representa a posição no semicondutor onde a densidade de corrente dos portadores negativos é medida."
+        }
+      ],
+      "chapter": "5",
+      "source": "standalone",
+      "page": 482
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498
+  ],
+  "lastUpdated": "2026-05-08T18:19:13.949937",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
+}

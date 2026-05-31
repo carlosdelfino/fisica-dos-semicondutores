@@ -1,0 +1,707 @@
+{
+  "chapter": "Carrier Modeling",
+  "section": "Carrier Distributions",
+  "questions": [],
+  "answers": [],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "g_v(E)[1 - f(E)]",
+      "genericFormula": "g_v(E)[1 - f(E)]",
+      "description": "Esta expressão representa a densidade de estados vazios (buracos) na banda de valência de um semicondutor. O termo g_v(E) é a densidade de estados na banda de valência, que quantifica o número de estados quânticos disponíveis por unidade de energia e volume. O fator [1 - f(E)] representa a probabilidade de um estado de energia E estar vazio, ou seja, a probabilidade de ausência de elétron (presença de buraco), onde f(E) é a distribuição de Fermi-Dirac. O produto desses dois fatores fornece a densidade de buracos por unidade de energia em função da energia E. Integrando essa expressão sobre toda a banda de valência, obtém-se a concentração total de buracos p, que é um parâmetro fundamental para caracterizar o comportamento elétrico de semicondutores tipo-p e para calcular correntes, mobilidade e outros fenômenos de transporte.",
+      "concepts": [
+        "densidade de estados",
+        "banda de valência",
+        "distribuição de Fermi-Dirac",
+        "buracos",
+        "estatística de portadores",
+        "semicondutores",
+        "concentração de portadores",
+        "probabilidade de ocupação",
+        "transporte de cargas"
+      ],
+      "symbols": [
+        {
+          "symbol": "g_v(E)",
+          "description": "Densidade de estados na banda de valência: número de estados quânticos disponíveis por unidade de energia e por unidade de volume em função da energia E"
+        },
+        {
+          "symbol": "f(E)",
+          "description": "Função de distribuição de Fermi-Dirac: probabilidade de um estado de energia E estar ocupado por um elétron, dada por f(E) = 1 / (1 + exp((E - E_F) / k_B T))"
+        },
+        {
+          "symbol": "1 - f(E)",
+          "description": "Probabilidade de um estado de energia E estar vazio (desocupado por elétron), equivalente à probabilidade de existência de um buraco naquele estado"
+        },
+        {
+          "symbol": "E",
+          "description": "Energia do estado eletrônico considerado, variável contínua ao longo da banda de valência"
+        },
+        {
+          "symbol": "E_F",
+          "description": "Nível de Fermi: energia de referência da distribuição de Fermi-Dirac, que determina o equilíbrio estatístico dos portadores"
+        },
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann: k_B ≈ 1,381 × 10⁻²³ J/K, relaciona energia térmica com temperatura"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta do sistema em Kelvin"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "density-of-states",
+        "valence-band",
+        "Fermi-Dirac",
+        "hole",
+        "carrier",
+        "concentration",
+        "occupation-probability",
+        "band",
+        "distribution",
+        "semiconductor",
+        "p-type",
+        "state",
+        "energy"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "density-of-states",
+        "graphParameters": [
+          "energy",
+          "density-of-states",
+          "occupation-probability",
+          "hole-density"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac distribution",
+        "density-of-states valence band g_v(E)",
+        "hole concentration p = integral g_v(E)[1-f(E)]dE",
+        "electron concentration n = integral g_c(E)f(E)dE",
+        "g_c(E)f(E)",
+        "effective density of states N_v",
+        "mass action law n*p = n_i^2"
+      ]
+    },
+    {
+      "originalFormula": "g_c(E)f(E)",
+      "genericFormula": "g_c(E) \\cdot f(E)",
+      "description": "Esta expressão representa a densidade de elétrons por unidade de energia na banda de condução. É o produto entre a densidade de estados na banda de condução g_c(E), que quantifica quantos estados quânticos estão disponíveis em cada nível de energia, e a função de distribuição de Fermi-Dirac f(E), que fornece a probabilidade de ocupação de cada estado por um elétron. A integração deste produto sobre todos os estados da banda de condução fornece a concentração total de elétrons livres n. Este conceito é fundamental para determinar as propriedades elétricas de semicondutores, pois conecta a estrutura de bandas com a estatística quântica dos portadores.",
+      "concepts": [
+        "densidade de estados",
+        "função de distribuição de Fermi-Dirac",
+        "ocupação de estados eletrônicos",
+        "concentração de portadores",
+        "banda de condução",
+        "estatística quântica",
+        "elétrons livres",
+        "semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "g_c(E)",
+          "description": "Densidade de estados na banda de condução: número de estados quânticos disponíveis por unidade de energia e por unidade de volume em torno da energia E na banda de condução"
+        },
+        {
+          "symbol": "f(E)",
+          "description": "Função de distribuição de Fermi-Dirac: probabilidade de um estado de energia E estar ocupado por um elétron em equilíbrio térmico, dada por f(E) = 1 / (1 + exp((E - E_F) / k_B T))"
+        },
+        {
+          "symbol": "E",
+          "description": "Energia do estado eletrônico, medida a partir de uma referência conveniente (geralmente a borda da banda de valência ou o nível de vácuo)"
+        },
+        {
+          "symbol": "E_F",
+          "description": "Nível de Fermi: energia de referência da distribuição de Fermi-Dirac, onde a probabilidade de ocupação é exatamente 1/2"
+        },
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann: k_B ≈ 1.381 × 10⁻²³ J/K, relaciona energia térmica com temperatura"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta do sistema em Kelvin"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "density-of-states",
+        "Fermi-Dirac",
+        "carrier",
+        "concentration",
+        "conduction-band",
+        "energy",
+        "occupation",
+        "distribution",
+        "electron",
+        "band",
+        "state",
+        "semiconductor"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "density-of-states",
+        "graphParameters": [
+          "energy",
+          "density-of-states",
+          "Fermi-Dirac-distribution",
+          "electron-concentration",
+          "temperature",
+          "Fermi-level"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac-distribution",
+        "density-of-states-conduction-band",
+        "electron-concentration-n",
+        "hole-concentration-p",
+        "Boltzmann-approximation",
+        "effective-density-of-states-Nc"
+      ]
+    },
+    {
+      "originalFormula": "g_v(E)[1 - f(E)]",
+      "genericFormula": "g_v(E)[1 - f(E)]",
+      "description": "Esta expressão representa a densidade de estados desocupados (buracos) na banda de valência de um semicondutor. O termo g_v(E) é a densidade de estados da banda de valência, que quantifica o número de estados quânticos disponíveis por unidade de energia e por unidade de volume. O fator [1 - f(E)] é a probabilidade de que um estado de energia E esteja vazio, ou seja, ocupado por um buraco, sendo f(E) a função de distribuição de Fermi-Dirac. A multiplicação dos dois termos fornece a concentração de buracos por unidade de energia na banda de valência. Integrando esta expressão sobre todos os estados permitidos da banda de valência, obtém-se a concentração total de buracos p, que é fundamental para determinar as propriedades elétricas do semicondutor. Esta expressão é análoga à g_c(E)f(E) para elétrons na banda de condução, e ambas são essenciais para o cálculo de concentrações de portadores em equilíbrio térmico.",
+      "concepts": [
+        "densidade de estados",
+        "função de distribuição de Fermi-Dirac",
+        "buracos",
+        "banda de valência",
+        "portadores de carga",
+        "probabilidade de ocupação",
+        "equilíbrio térmico",
+        "concentração de portadores",
+        "estatística quântica"
+      ],
+      "symbols": [
+        {
+          "symbol": "g_v(E)",
+          "description": "Densidade de estados da banda de valência: número de estados quânticos disponíveis por unidade de energia por unidade de volume na banda de valência"
+        },
+        {
+          "symbol": "E",
+          "description": "Energia do estado eletrônico considerado"
+        },
+        {
+          "symbol": "f(E)",
+          "description": "Função de distribuição de Fermi-Dirac: probabilidade de um estado de energia E estar ocupado por um elétron em equilíbrio térmico"
+        },
+        {
+          "symbol": "[1 - f(E)]",
+          "description": "Probabilidade de que um estado de energia E esteja desocupado por elétron, ou seja, ocupado por um buraco"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "density-of-states",
+        "valence-band",
+        "hole",
+        "Fermi-Dirac",
+        "distribution",
+        "carrier",
+        "concentration",
+        "band",
+        "occupation",
+        "probability",
+        "semiconductor",
+        "energy",
+        "state"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "density-of-states",
+        "graphParameters": [
+          "energy",
+          "density-of-states",
+          "Fermi-Dirac distribution",
+          "hole concentration per unit energy",
+          "temperature"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac distribution",
+        "density-of-states valence band",
+        "hole concentration integral",
+        "g_c(E)f(E)",
+        "electron concentration",
+        "effective density of states",
+        "Fermi level",
+        "carrier concentration product np"
+      ]
+    },
+    {
+      "originalFormula": "p = \\frac{n_i^2}{n}",
+      "genericFormula": "p = \\frac{n_i^2}{n}",
+      "description": "Esta fórmula expressa a concentração de buracos (portadores minoritários ou majoritários) em um semicondutor em equilíbrio térmico, a partir da lei de ação de massas. Ela é derivada diretamente do produto de equilíbrio np = n_i², que é uma consequência fundamental da estatística de Fermi-Dirac aplicada a semicondutores. Quando a concentração de elétrons n é conhecida (por exemplo, em um semicondutor tipo-n com dopagem conhecida), a concentração de buracos p pode ser imediatamente calculada. Quanto maior a dopagem com doadores (maior n), menor será p, refletindo o fenômeno de supressão dos portadores minoritários. Essa relação é válida apenas em equilíbrio térmico e não se aplica em condições de injeção de portadores ou iluminação intensa.",
+      "concepts": [
+        "lei de ação de massas",
+        "equilíbrio térmico",
+        "concentração intrínseca",
+        "portadores minoritários",
+        "portadores majoritários",
+        "semicondutor tipo-n",
+        "semicondutor tipo-p",
+        "estatística de Fermi-Dirac",
+        "dopagem"
+      ],
+      "symbols": [
+        {
+          "symbol": "p",
+          "description": "Concentração de buracos (portadores positivos) no semicondutor em equilíbrio térmico, medida em cm⁻³"
+        },
+        {
+          "symbol": "n_i",
+          "description": "Concentração intrínseca de portadores, ou seja, a concentração de elétrons (ou buracos) em um semicondutor puro sem dopagem, em equilíbrio térmico, medida em cm⁻³"
+        },
+        {
+          "symbol": "n",
+          "description": "Concentração de elétrons livres no semicondutor em equilíbrio térmico, medida em cm⁻³"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "carrier",
+        "concentration",
+        "hole",
+        "electron",
+        "intrinsic",
+        "equilibrium",
+        "mass-action",
+        "doping",
+        "minority-carrier",
+        "majority-carrier",
+        "band",
+        "Fermi-Dirac",
+        "np-product"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "carrier-concentration",
+        "graphParameters": [
+          "hole-concentration",
+          "electron-concentration",
+          "intrinsic-concentration",
+          "doping-level"
+        ]
+      },
+      "relatedFormulas": [
+        "np = n_i^2",
+        "n = N_D - N_A",
+        "n_i = \\sqrt{N_c N_v} \\exp\\left(-\\frac{E_g}{2k_BT}\\right)",
+        "Fermi-Dirac distribution",
+        "charge-neutrality"
+      ]
+    },
+    {
+      "originalFormula": "\\frac{n_i^2}{n} - n + N_D - N_A = 0",
+      "genericFormula": "\\frac{n_i^2}{n} - n + N_D - N_A = 0",
+      "description": "Esta equação representa a condição de neutralidade elétrica em um semicondutor dopado, combinada com a lei de ação de massas. A neutralidade elétrica exige que a densidade total de cargas positivas seja igual à densidade total de cargas negativas: p + N_D = n + N_A, onde N_D são os doadores ionizados (carga positiva) e N_A são os aceitadores ionizados (carga negativa). Substituindo a lei de ação de massas p = n_i²/n na equação de neutralidade, obtém-se esta forma quadrática em n. A solução desta equação fornece a concentração de elétrons n no equilíbrio térmico para um semicondutor com dopagem arbitrária, seja tipo-n (N_D > N_A), tipo-p (N_A > N_D) ou compensado. É a equação fundamental para determinar as concentrações de portadores em semicondutores dopados.",
+      "concepts": [
+        "neutralidade elétrica",
+        "lei de ação de massas",
+        "dopagem de semicondutores",
+        "equilíbrio térmico",
+        "portadores majoritários e minoritários",
+        "semicondutor tipo-n",
+        "semicondutor tipo-p",
+        "compensação de dopagem",
+        "concentração intrínseca"
+      ],
+      "symbols": [
+        {
+          "symbol": "n",
+          "description": "Concentração de elétrons livres no equilíbrio térmico (cm⁻³)"
+        },
+        {
+          "symbol": "n_i",
+          "description": "Concentração intrínseca de portadores, igual à concentração de elétrons (ou buracos) em um semicondutor puro no equilíbrio térmico (cm⁻³)"
+        },
+        {
+          "symbol": "\\frac{n_i^2}{n}",
+          "description": "Concentração de buracos p, obtida pela lei de ação de massas: p = n_i²/n (cm⁻³)"
+        },
+        {
+          "symbol": "N_D",
+          "description": "Concentração de doadores ionizados (átomos com elétrons extras que contribuem com elétrons livres), carga positiva fixa (cm⁻³)"
+        },
+        {
+          "symbol": "N_A",
+          "description": "Concentração de aceitadores ionizados (átomos com lacunas de elétrons que capturam elétrons livres), carga negativa fixa (cm⁻³)"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "carrier",
+        "concentration",
+        "neutrality",
+        "doping",
+        "intrinsic",
+        "equilibrium",
+        "electrons",
+        "holes",
+        "donor",
+        "acceptor",
+        "mass-action",
+        "compensation",
+        "n-type",
+        "p-type",
+        "Fermi-Dirac",
+        "band",
+        "semiconductor"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "carrier-concentration",
+        "graphParameters": [
+          "carrier concentration n",
+          "doping concentration N_D - N_A",
+          "intrinsic concentration n_i",
+          "temperature"
+        ]
+      },
+      "relatedFormulas": [
+        "mass-action-law",
+        "charge-neutrality",
+        "Fermi-Dirac-distribution",
+        "intrinsic-carrier-concentration",
+        "electron-concentration-n-type",
+        "hole-concentration-p-type",
+        "Fermi-level-position"
+      ]
+    },
+    {
+      "originalFormula": "n^2 - n(N_D - N_A) - n_i^2 = 0",
+      "genericFormula": "n^2 - n(N_D - N_A) - n_i^2 = 0",
+      "description": "Esta é a equação quadrática para a concentração de elétrons n em um semicondutor com dopagem compensada, derivada da combinação de duas condições fundamentais: a lei de ação de massas (n·p = n_i²) e a condição de neutralidade elétrica (n + N_A⁻ = p + N_D⁺). Assumindo ionização completa dos dopantes, a neutralidade se torna n + N_A = p + N_D, e substituindo p = n_i²/n obtém-se esta equação quadrática. A solução positiva fornece a concentração de elétrons no equilíbrio térmico para qualquer nível de dopagem, seja o material tipo-n (N_D > N_A), tipo-p (N_A > N_D) ou intrínseco (N_D = N_A). É especialmente útil em situações de compensação parcial de dopantes, onde ambas as espécies estão presentes simultaneamente.",
+      "concepts": [
+        "neutralidade elétrica",
+        "lei de ação de massas",
+        "ionização completa",
+        "dopagem compensada",
+        "concentração de portadores no equilíbrio",
+        "semicondutor extrínseco",
+        "concentração intrínseca",
+        "equilíbrio térmico"
+      ],
+      "symbols": [
+        {
+          "symbol": "n",
+          "description": "Concentração de elétrons livres no equilíbrio térmico (cm⁻³)"
+        },
+        {
+          "symbol": "N_D",
+          "description": "Concentração de átomos doadores (dopantes tipo-n), assumidos completamente ionizados (cm⁻³)"
+        },
+        {
+          "symbol": "N_A",
+          "description": "Concentração de átomos aceitadores (dopantes tipo-p), assumidos completamente ionizados (cm⁻³)"
+        },
+        {
+          "symbol": "N_D - N_A",
+          "description": "Dopagem líquida efetiva; positiva para tipo-n, negativa para tipo-p e zero para material intrinsecamente compensado"
+        },
+        {
+          "symbol": "n_i",
+          "description": "Concentração intrínseca de portadores, dependente da temperatura e do gap do material (cm⁻³)"
+        },
+        {
+          "symbol": "n_i^2",
+          "description": "Produto de portadores no equilíbrio, dado pela lei de ação de massas: n·p = n_i²"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "carrier",
+        "concentration",
+        "equilibrium",
+        "doping",
+        "compensation",
+        "neutrality",
+        "intrinsic",
+        "electrons",
+        "holes",
+        "mass-action",
+        "extrinsic",
+        "donors",
+        "acceptors",
+        "ionization"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "carrier-concentration",
+        "graphParameters": [
+          "electron concentration n vs net doping (N_D - N_A)",
+          "electron concentration n vs temperature",
+          "hole concentration p vs net doping",
+          "transition between intrinsic and extrinsic regimes"
+        ]
+      },
+      "relatedFormulas": [
+        "mass-action-law: n·p = n_i²",
+        "charge-neutrality: n + N_A = p + N_D",
+        "electron-concentration-solution: n = (N_D - N_A)/2 + sqrt(((N_D - N_A)/2)² + n_i²)",
+        "hole-concentration-quadratic: p² + p(N_D - N_A) - n_i² = 0",
+        "intrinsic-carrier-concentration: n_i = sqrt(N_C · N_V) · exp(-E_g / 2kT)",
+        "Fermi-Dirac-distribution"
+      ]
+    },
+    {
+      "originalFormula": "n = \\frac{N_D - N_A}{2} + \\left[ \\left( \\frac{N_D - N_A}{2} \\right)^2 + n_i^2 \\right]^{1/2}",
+      "genericFormula": "n = \\frac{N_D - N_A}{2} + \\left[ \\left( \\frac{N_D - N_A}{2} \\right)^2 + n_i^2 \\right]^{1/2}",
+      "description": "Esta fórmula determina a concentração de elétrons livres em equilíbrio térmico em um semicondutor com dopagem compensada, ou seja, contendo simultaneamente doadores (tipo N) e aceitadores (tipo P). Ela é derivada da combinação de duas equações fundamentais: a lei de ação de massas (np = n_i²) e a condição de neutralidade elétrica (n + N_A = p + N_D). Ao resolver esse sistema quadrático, obtém-se a expressão exata para n, válida para qualquer regime de dopagem — seja o material intrínseco, fracamente dopado ou fortemente dopado. O termo (N_D - N_A)/2 representa a dopagem líquida efetiva e o radical garante que n seja sempre positivo e real. Quando N_D >> N_A e N_D >> n_i, a expressão se reduz aproximadamente a n ≈ N_D - N_A (regime extrínseco). Quando as dopagens se cancelam ou são nulas, tende-se ao regime intrínseco n ≈ n_i.",
+      "concepts": [
+        "neutralidade elétrica",
+        "lei de ação de massas",
+        "semicondutor compensado",
+        "concentração de portadores em equilíbrio",
+        "dopagem tipo N e tipo P",
+        "regime intrínseco e extrínseco",
+        "equilíbrio termodinâmico",
+        "estatística de portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "n",
+          "description": "Concentração de elétrons livres em equilíbrio térmico (cm⁻³)"
+        },
+        {
+          "symbol": "N_D",
+          "description": "Concentração de dopantes doadores ionizados (tipo N) (cm⁻³)"
+        },
+        {
+          "symbol": "N_A",
+          "description": "Concentração de dopantes aceitadores ionizados (tipo P) (cm⁻³)"
+        },
+        {
+          "symbol": "N_D - N_A",
+          "description": "Dopagem líquida efetiva: diferença entre concentração de doadores e aceitadores (cm⁻³)"
+        },
+        {
+          "symbol": "n_i",
+          "description": "Concentração intrínseca de portadores, dependente da temperatura e do material (cm⁻³)"
+        },
+        {
+          "symbol": "\\left[ \\cdot \\right]^{1/2}",
+          "description": "Raiz quadrada que garante a positividade da solução da equação quadrática"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "carrier",
+        "concentration",
+        "electron",
+        "doping",
+        "donor",
+        "acceptor",
+        "compensation",
+        "intrinsic",
+        "extrinsic",
+        "equilibrium",
+        "neutrality",
+        "mass-action",
+        "n-type",
+        "p-type",
+        "semiconductor"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "carrier-concentration",
+        "graphParameters": [
+          "electron concentration (n)",
+          "net doping (N_D - N_A)",
+          "intrinsic concentration (n_i)",
+          "temperature"
+        ]
+      },
+      "relatedFormulas": [
+        "law-of-mass-action (np = n_i²)",
+        "charge-neutrality (n + N_A = p + N_D)",
+        "hole-concentration (p = n_i² / n)",
+        "intrinsic-carrier-concentration (n_i)",
+        "Fermi-Dirac-distribution",
+        "hole-concentration-compensated"
+      ]
+    },
+    {
+      "originalFormula": "p = \\frac{n_i^2}{n} = \\frac{N_A - N_D}{2} + \\left[ \\left( \\frac{N_A - N_D}{2} \\right)^2 + n_i^2 \\right]^{1/2}",
+      "genericFormula": "p = \\frac{n_i^2}{n} = \\frac{N_A - N_D}{2} + \\left[ \\left( \\frac{N_A - N_D}{2} \\right)^2 + n_i^2 \\right]^{1/2}",
+      "description": "Esta fórmula fornece a concentração de buracos (portadores positivos) em um semicondutor com dopagem compensada, onde ambos os tipos de dopantes (aceitadores e doadores) estão presentes simultaneamente. A expressão é derivada da combinação de duas condições fundamentais: a lei de ação de massas (np = n_i²), que é válida em equilíbrio térmico, e a condição de neutralidade elétrica (p + N_D = n + N_A). Ao resolver esse sistema de equações, obtém-se a expressão quadrática para p. Quando N_A > N_D, o material é do tipo p e predominam os buracos; quando N_D > N_A, o material é do tipo n. O termo (N_A - N_D)/2 representa a contribuição líquida dos dopantes, enquanto o termo com raiz quadrada inclui a contribuição intrínseca n_i. Esta equação é essencial para determinar as propriedades elétricas de semicondutores parcialmente compensados e é amplamente usada no projeto e análise de dispositivos eletrônicos.",
+      "concepts": [
+        "concentração de buracos",
+        "semicondutor compensado",
+        "neutralidade elétrica",
+        "lei de ação de massas",
+        "equilíbrio térmico",
+        "dopagem tipo p",
+        "dopagem tipo n",
+        "concentração intrínseca",
+        "portadores minoritários e majoritários",
+        "compensação de dopantes"
+      ],
+      "symbols": [
+        {
+          "symbol": "p",
+          "description": "Concentração de buracos (portadores de carga positiva) em equilíbrio térmico, em cm⁻³"
+        },
+        {
+          "symbol": "n",
+          "description": "Concentração de elétrons livres (portadores de carga negativa) em equilíbrio térmico, em cm⁻³"
+        },
+        {
+          "symbol": "n_i",
+          "description": "Concentração intrínseca de portadores, característica do material semicondutor em uma dada temperatura, em cm⁻³"
+        },
+        {
+          "symbol": "N_A",
+          "description": "Concentração de dopantes aceitadores ionizados (átomos que introduzem buracos na banda de valência), em cm⁻³"
+        },
+        {
+          "symbol": "N_D",
+          "description": "Concentração de dopantes doadores ionizados (átomos que introduzem elétrons na banda de condução), em cm⁻³"
+        },
+        {
+          "symbol": "N_A - N_D",
+          "description": "Carga líquida de dopagem: diferença entre a concentração de aceitadores e doadores, determinando o tipo de condutividade predominante"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "hole concentration",
+        "carrier",
+        "compensation",
+        "doping",
+        "acceptor",
+        "donor",
+        "intrinsic concentration",
+        "charge neutrality",
+        "mass action law",
+        "equilibrium",
+        "p-type",
+        "n-type",
+        "semiconductor",
+        "band",
+        "distribution",
+        "concentration"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "carrier-concentration",
+        "graphParameters": [
+          "hole concentration p",
+          "net doping N_A - N_D",
+          "intrinsic concentration n_i",
+          "temperature",
+          "compensation ratio"
+        ]
+      },
+      "relatedFormulas": [
+        "lei-de-acao-de-massas",
+        "concentracao-de-eletrons",
+        "neutralidade-eletrica",
+        "Fermi-Dirac",
+        "nivel-de-Fermi",
+        "concentracao-intrinseca",
+        "condutividade-eletrica"
+      ]
+    }
+  ],
+  "bookTitle": "Modular Series On Solid State Devices",
+  "author": "Unknown",
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59
+  ],
+  "lastUpdated": "2026-05-09T14:50:09.950Z"
+}

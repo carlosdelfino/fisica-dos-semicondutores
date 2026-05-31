@@ -1,0 +1,1680 @@
+{
+  "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+  "questions": [
+    {
+      "number": "1",
+      "text": "What is the distribution of the electrons with respect to energy as the temperature is raised above zero, subject to the assumption that the density of states is independent of temperature?",
+      "formulas": []
+    },
+    {
+      "number": "(a) i)",
+      "text": "Determine the probability of occupancy of a state that is located at 0.259eV above E_{F} at T = 0K.",
+      "formulas": [
+        {
+          "originalFormula": "f(E) = \\frac{1}{1 + \\exp\\left(\\frac{0.259}{0}\\right)} = 0",
+          "genericFormula": "f(E) = \\frac{1}{1 + \\exp\\left(\\frac{a}{b}\\right)}",
+          "description": "Esta fórmula representa a função de distribuição de Fermi-Dirac, que descreve a probabilidade de ocupação de estados eletrônicos em um sistema de partículas, como elétrons em um semicondutor, em função da energia e da temperatura.",
+          "concepts": [
+            "Distribuição de Fermi-Dirac",
+            "Probabilidade de ocupação de estados",
+            "Energia dos elétrons",
+            "Temperatura em sistemas quânticos"
+          ],
+          "symbols": [
+            {
+              "symbol": "f(E)",
+              "description": "Representa a função que dá a probabilidade de um estado de energia E estar ocupado por um elétron."
+            },
+            {
+              "symbol": "exp",
+              "description": "Representa a função exponencial, que é uma função matemática que cresce rapidamente e é usada para modelar muitos fenômenos naturais."
+            },
+            {
+              "symbol": "a",
+              "description": "Representa um valor relacionado à energia, que pode estar associado à diferença de energia entre o nível de Fermi e o nível de energia considerado."
+            },
+            {
+              "symbol": "b",
+              "description": "Representa a temperatura em unidades apropriadas, que influencia a ocupação dos estados eletrônicos."
+            }
+          ],
+          "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+          "source": "question",
+          "questionNumber": "(a) i)",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "number": "(a) ii)",
+      "text": "Determine the probability of occupancy of a state that is located at 0.259eV above E_{F} at T = 300K.",
+      "formulas": [
+        {
+          "originalFormula": "f(E) = \\frac{1}{1 + \\exp\\left(\\frac{0.259}{0.0259}\\right)} = 4.54 \\times 10^{-5}",
+          "genericFormula": "f(E) = \\frac{1}{1 + \\exp\\left(\\frac{E}{kT}\\right)}",
+          "description": "Esta fórmula representa a distribuição de ocupação de estados em um sistema de partículas, como elétrons em um semicondutor, em função da energia. A função f(E) fornece a probabilidade de um estado de energia E estar ocupado por um elétron, considerando a temperatura do sistema.",
+          "concepts": [
+            "Distribuição de Fermi-Dirac",
+            "Ocupação de estados quânticos",
+            "Energia térmica",
+            "Temperatura"
+          ],
+          "symbols": [
+            {
+              "symbol": "f(E)",
+              "description": "Representa a probabilidade de um estado de energia E estar ocupado por um elétron."
+            },
+            {
+              "symbol": "exp",
+              "description": "Representa a função exponencial, que é uma função matemática que cresce rapidamente e é frequentemente usada em contextos de decaimento e ocupação em física."
+            },
+            {
+              "symbol": "E",
+              "description": "Representa a energia do estado quântico considerado, que pode ser a energia de um elétron em um semicondutor."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura do sistema, medida em Kelvin, que influencia a ocupação dos estados de energia."
+            }
+          ],
+          "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+          "source": "question",
+          "questionNumber": "(a) ii)",
+          "page": 16
+        }
+      ]
+    },
+    {
+      "number": "(a) iii)",
+      "text": "Determine the probability of occupancy of a state that is located at 0.259eV above E_{F} at T = 600K.",
+      "formulas": [
+        {
+          "originalFormula": "f(E) = \\frac{1}{1 + \\exp\\left(\\frac{0.259}{0.0518}\\right)} = 6.69 \\times 10^{-3}",
+          "genericFormula": "f(E) = \\frac{1}{1 + \\exp\\left(\\frac{E}{kT}\\right)}",
+          "description": "Esta fórmula representa a função de distribuição de Fermi-Dirac, que descreve a probabilidade de ocupação de um estado quântico por um elétron em um sistema de partículas, como em um semicondutor, em função da energia do estado e da temperatura do sistema.",
+          "concepts": [
+            "Distribuição de Fermi-Dirac",
+            "Probabilidade de ocupação de estados quânticos",
+            "Energia dos elétrons",
+            "Temperatura do sistema"
+          ],
+          "symbols": [
+            {
+              "symbol": "f(E)",
+              "description": "Representa a probabilidade de ocupação de um estado quântico de energia E por um elétron."
+            },
+            {
+              "symbol": "exp",
+              "description": "Função exponencial, que é uma função matemática que cresce rapidamente e é usada para modelar processos de crescimento e decaimento."
+            },
+            {
+              "symbol": "E",
+              "description": "Representa a energia do estado quântico que está sendo considerado na fórmula."
+            },
+            {
+              "symbol": "k",
+              "description": "Constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Temperatura do sistema, medida em Kelvin, que influencia a ocupação dos estados quânticos."
+            }
+          ],
+          "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+          "source": "question",
+          "questionNumber": "(a) iii)",
+          "page": 31
+        }
+      ]
+    },
+    {
+      "number": "(b)",
+      "text": "Determine the probability of vacancy of a state that is located at 0.4eV below E_{F} at T = 300K.",
+      "formulas": [
+        {
+          "originalFormula": "1 - f(E) = 1 - \\frac{1}{1 + \\exp\\left(\\frac{0.4}{0.0259}\\right)} \\approx 0",
+          "genericFormula": "1 - f(E) = 1 - \\frac{1}{1 + \\exp\\left(\\frac{E}{kT}\\right)}",
+          "description": "Esta fórmula representa a probabilidade de ocupação de um estado de energia em um sistema de partículas, onde f(E) é a função de distribuição de Fermi-Dirac. A expressão mostra como a probabilidade de um estado estar desocupado (1 - f(E)) se relaciona com a energia do estado e a temperatura do sistema.",
+          "concepts": [
+            "Distribuição de Fermi-Dirac",
+            "Probabilidade de ocupação de estados quânticos",
+            "Efeito da temperatura na ocupação de estados"
+          ],
+          "symbols": [
+            {
+              "symbol": "f(E)",
+              "description": "A função de distribuição que representa a probabilidade de um estado de energia E estar ocupado por uma partícula."
+            },
+            {
+              "symbol": "E",
+              "description": "A energia do estado que está sendo considerado na análise."
+            },
+            {
+              "symbol": "k",
+              "description": "A constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "A temperatura do sistema, medida em Kelvin, que influencia a distribuição de partículas entre os estados de energia."
+            },
+            {
+              "symbol": "exp",
+              "description": "A função exponencial, que é uma função matemática que descreve o crescimento contínuo e é fundamental em várias áreas da física."
+            }
+          ],
+          "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+          "source": "question",
+          "questionNumber": "(b)",
+          "page": 46
+        }
+      ]
+    },
+    {
+      "number": "(c)",
+      "text": "Repeat part (b) if the state is at 0.01eV above E_{F} at T = 300K.",
+      "formulas": [
+        {
+          "originalFormula": "1 - f(E) = 1 - \\frac{1}{1 + \\exp\\left(\\frac{0.01}{0.0259}\\right)} \\approx 0.595",
+          "genericFormula": "1 - f(E) = 1 - \\frac{1}{1 + \\exp\\left(\\frac{E}{kT}\\right)}",
+          "description": "Esta fórmula representa a probabilidade de ocupação de um nível de energia em um sistema de partículas, onde f(E) é a função de distribuição de Fermi-Dirac. O lado esquerdo da equação indica a fração de estados que não estão ocupados em uma temperatura específica.",
+          "concepts": [
+            "Distribuição de Fermi-Dirac",
+            "Probabilidade de ocupação de estados quânticos",
+            "Efeito da temperatura na ocupação de níveis de energia"
+          ],
+          "symbols": [
+            {
+              "symbol": "f(E)",
+              "description": "Representa a função de distribuição de Fermi-Dirac, que descreve a probabilidade de ocupação de um nível de energia E por uma partícula em um sistema quântico."
+            },
+            {
+              "symbol": "E",
+              "description": "Representa a energia do nível de energia que está sendo considerado na fórmula."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura do sistema em Kelvin, que influencia a ocupação dos níveis de energia."
+            },
+            {
+              "symbol": "exp",
+              "description": "Representa a função exponencial, que é uma função matemática que cresce rapidamente e é usada para modelar fenômenos em física, como a ocupação de estados em sistemas quânticos."
+            }
+          ],
+          "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+          "source": "question",
+          "questionNumber": "(c)",
+          "page": 61
+        }
+      ]
+    },
+    {
+      "number": "a",
+      "text": "Calculate the intrinsic carrier density of silicon at T = 300K.",
+      "formulas": []
+    },
+    {
+      "number": "b",
+      "text": "Calculate the intrinsic carrier density of silicon at T = 600K.",
+      "formulas": []
+    },
+    {
+      "number": "E3-1",
+      "text": "Determine the number of electronic states in the conduction band of silicon located between energies of 1.0 and 1.1 eV. Assume a volume of 10^{-16} m^{3}.",
+      "formulas": []
+    },
+    {
+      "number": "E3-2",
+      "text": "Calculate the intrinsic carrier density of Ge.",
+      "formulas": [
+        {
+          "originalFormula": "n_i = 2.17 \\times 10^{13} \\text{ cm}^{-3}",
+          "genericFormula": "n_i = C \\times 10^{D} \\text{ cm}^{-3}",
+          "description": "Esta fórmula representa a densidade intrínseca de portadores de carga em um semicondutor, que é a quantidade de portadores de carga (elétrons ou lacunas) presentes em um material semicondutor puro em equilíbrio térmico.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Semicondutores",
+            "Equilíbrio térmico"
+          ],
+          "symbols": [
+            {
+              "symbol": "n_i",
+              "description": "Representa a densidade intrínseca de portadores de carga em um semicondutor, que indica quantos portadores estão presentes por centímetro cúbico."
+            },
+            {
+              "symbol": "C",
+              "description": "Um coeficiente que representa uma constante de proporcionalidade, que pode variar dependendo do material semicondutor e das condições de temperatura."
+            },
+            {
+              "symbol": "D",
+              "description": "Um expoente que indica a ordem de grandeza da densidade de portadores de carga, refletindo como a densidade varia com a temperatura."
+            }
+          ],
+          "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+          "source": "question",
+          "questionNumber": "E3-2",
+          "page": 76
+        }
+      ]
+    },
+    {
+      "number": "E3-3",
+      "text": "a) Determine the location of the Fermi level in intrinsic Ge, with respect to the bottom of the conduction band. b) Determine the location of E_{F} when measured from the top of the valence band.",
+      "formulas": []
+    },
+    {
+      "number": "Q3-8",
+      "text": "In an intrinsic semiconductor, explain why E_f is not located exactly midway between the valence and conduction bands.",
+      "formulas": []
+    },
+    {
+      "number": "Q3-9",
+      "text": "As the temperature of a sample of semiconductor that is doped with donor impurities is increased, in what direction does E_f move?",
+      "formulas": []
+    },
+    {
+      "number": "Q3-10",
+      "text": "Briefly define the phrase 'thermal equilibrium'?",
+      "formulas": []
+    },
+    {
+      "number": "Q3-11",
+      "text": "What is a degenerate semiconductor?",
+      "formulas": []
+    },
+    {
+      "number": "Q3-12",
+      "text": "The configuration of electrons in a certain element is 4s^24p^3. Is it a donor or an acceptor element?",
+      "formulas": []
+    },
+    {
+      "number": "Q3-13",
+      "text": "By referring to the periodic table, determine which element is represented by configuration 4s^24p^3.",
+      "formulas": []
+    },
+    {
+      "number": "Q3-14",
+      "text": "The density of atoms in silicon is 5 \\times 10^{22} cm^{-3}. Since each atom has four valence electrons, the density of states becomes 2 \\times 10^{23}. Why are N_v and N_c so much smaller than this number?",
+      "formulas": [
+        {
+          "originalFormula": "N_v = 2 \\times 10^{23}",
+          "genericFormula": "N_v = C",
+          "description": "A fórmula representa a densidade de estados na banda de valência de um semicondutor, que é uma medida de quantos estados eletrônicos estão disponíveis para os elétrons ocuparem nessa banda.",
+          "concepts": [
+            "Densidade de estados",
+            "Banda de valência",
+            "Semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_v",
+              "description": "Representa a densidade de estados na banda de valência, ou seja, o número de estados eletrônicos disponíveis por unidade de volume."
+            },
+            {
+              "symbol": "C",
+              "description": "Uma constante que representa a densidade de estados na banda de valência em uma forma genérica, sem valores numéricos específicos."
+            }
+          ],
+          "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+          "source": "question",
+          "questionNumber": "Q3-14",
+          "page": 91
+        },
+        {
+          "originalFormula": "N_c = 2 \\times 10^{23}",
+          "genericFormula": "N_c = C \\times 10^{n}",
+          "description": "Esta fórmula representa a densidade de estados de carga em um semicondutor, onde a quantidade de estados disponíveis para os portadores de carga é expressa em termos de um número específico multiplicado por uma potência de dez.",
+          "concepts": [
+            "Densidade de estados",
+            "Semicondutores",
+            "Portadores de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_c",
+              "description": "Representa a densidade de estados de carga em um semicondutor, que indica quantos estados eletrônicos estão disponíveis para os portadores de carga em uma unidade de volume."
+            },
+            {
+              "symbol": "C",
+              "description": "Um coeficiente que representa a quantidade de estados de carga disponíveis, que pode variar dependendo do material semicondutor em questão."
+            },
+            {
+              "symbol": "n",
+              "description": "Um expoente que indica a potência de dez, refletindo a ordem de grandeza da densidade de estados."
+            }
+          ],
+          "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+          "source": "question",
+          "questionNumber": "Q3-14",
+          "page": 106
+        }
+      ]
+    },
+    {
+      "number": "3.11",
+      "text": "Determine the electron and hole thermal equilibrium densities and the location of the Fermi level, with respect to E_{C} for a silicon sample at 300K that is doped with:",
+      "formulas": []
+    },
+    {
+      "number": "3.12",
+      "text": "Determine the approximate donor binding energy for silicon given \\epsilon_{r} = 11.8 and m^{*}_{n}/m_{0} = 0.26.",
+      "formulas": []
+    },
+    {
+      "number": "3.13",
+      "text": "An N-type silicon sample has an arsenic dopant density of 10^{17}cm^{-3}. Determine:",
+      "formulas": []
+    },
+    {
+      "number": "3.14",
+      "text": "A silicon sample has the energy band diagram shown in the figure below. Given E_{g} = 1.12eV, and n_{i} = 10^{10}cm^{-3}.",
+      "formulas": []
+    },
+    {
+      "number": "3.15",
+      "text": "A silicon sample is doped with 10^{16} donor atoms/cm^{3}. Draw an energy level diagram showing the location of the Fermi level with respect to the middle of the band gap for:",
+      "formulas": []
+    },
+    {
+      "number": "3.16",
+      "text": "At T = 300K, what percentage of the electrons in a cm^{3} of silicon are located in the conduction band?",
+      "formulas": []
+    },
+    {
+      "number": "3.17",
+      "text": "On the energy band diagram, electron energy is measured upwards. Explain why hole energy is measured downwards.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "1",
+      "text": "The Fermi-Dirac distribution predicts that as the temperature increases, an energy state corresponding to energy E will have a higher probability of being occupied than at a lower temperature.",
+      "formulas": [
+        {
+          "originalFormula": "f(E) = \\frac{1}{\\exp\\left(\\frac{E - E_{F}}{kT}\\right) + 1}",
+          "genericFormula": "f(E) = \\frac{1}{\\exp\\left(\\frac{E - E_{F}}{kT}\\right) + 1}",
+          "description": "Esta fórmula representa a função de distribuição de Fermi-Dirac, que descreve a probabilidade de ocupação de um estado quântico em um sistema de partículas, como elétrons, em função da energia desse estado. Ela é especialmente relevante em física de semicondutores e na teoria quântica de gases.",
+          "concepts": [
+            "Distribuição de Fermi-Dirac",
+            "Probabilidade de ocupação de estados quânticos",
+            "Energia de Fermi",
+            "Temperatura e seu efeito na ocupação de estados"
+          ],
+          "symbols": [
+            {
+              "symbol": "f(E)",
+              "description": "Representa a probabilidade de ocupação de um estado quântico com energia E."
+            },
+            {
+              "symbol": "E",
+              "description": "Representa a energia do estado quântico que está sendo considerado."
+            },
+            {
+              "symbol": "E_{F}",
+              "description": "Representa a energia de Fermi, que é a energia máxima ocupada por elétrons a temperatura zero absoluto."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas estatísticos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura do sistema em Kelvin, que afeta a distribuição de ocupação dos estados."
+            }
+          ],
+          "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+          "source": "answer",
+          "questionNumber": "1",
+          "page": 121
+        }
+      ]
+    },
+    {
+      "questionNumber": "E3-2",
+      "text": "n_i = 2.17 \\times 10^{13} cm^{-3}",
+      "formulas": [
+        {
+          "originalFormula": "n_i = 2.17 \\times 10^{13} \\text{ cm}^{-3}",
+          "genericFormula": "n_i = C \\times 10^{D} \\text{ cm}^{-3}",
+          "description": "Esta fórmula representa a densidade intrínseca de portadores de carga em um semicondutor, que é o número de portadores de carga (elétrons ou lacunas) por centímetro cúbico em um material semicondutor puro, sem dopagem.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Semicondutores",
+            "Dopagem",
+            "Equilíbrio térmico"
+          ],
+          "symbols": [
+            {
+              "symbol": "n_i",
+              "description": "Representa a densidade intrínseca de portadores de carga em um semicondutor, ou seja, o número de portadores de carga por unidade de volume."
+            },
+            {
+              "symbol": "C",
+              "description": "Um coeficiente que representa uma constante multiplicativa, que varia dependendo do material semicondutor em questão."
+            },
+            {
+              "symbol": "D",
+              "description": "Um expoente que indica a ordem de grandeza da densidade de portadores de carga, refletindo a variação da densidade com a temperatura e outros fatores."
+            }
+          ],
+          "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+          "source": "answer",
+          "questionNumber": "E3-2",
+          "page": 136
+        }
+      ]
+    },
+    {
+      "questionNumber": "E3-3",
+      "text": "a) E_{C} - E_{F} = 0.338 eV",
+      "formulas": [
+        {
+          "originalFormula": "E_{C} - E_{F} = 0.338 \\text{ eV}",
+          "genericFormula": "E_{C} - E_{F} = \\Delta E",
+          "description": "Esta fórmula representa a diferença de energia entre a banda de condução e o nível de Fermi em um semicondutor. A diferença de energia é um parâmetro importante que indica a quantidade de energia necessária para que um elétron possa ser excitado da banda de valência para a banda de condução, permitindo a condução elétrica.",
+          "concepts": [
+            "Banda de condução",
+            "Nível de Fermi",
+            "Semicondutores",
+            "Excitação de elétrons"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{C}",
+              "description": "Representa a energia do nível mais alto da banda de condução em um semicondutor, onde os elétrons podem se mover livremente e contribuir para a condução elétrica."
+            },
+            {
+              "symbol": "E_{F}",
+              "description": "Representa o nível de Fermi, que é o nível de energia mais alto ocupado por elétrons a temperatura zero absoluto. Ele indica a probabilidade de ocupação dos estados eletrônicos em um material."
+            },
+            {
+              "symbol": "\\Delta E",
+              "description": "Representa a diferença de energia entre dois níveis de energia, neste caso, entre a banda de condução e o nível de Fermi. Essa diferença é crucial para entender a condutividade elétrica do material."
+            }
+          ],
+          "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+          "source": "answer",
+          "questionNumber": "E3-3",
+          "page": 151
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "f(E) = \\frac{1}{\\exp\\left(\\frac{E - E_{F}}{kT}\\right) + 1}",
+      "genericFormula": "f(E) = \\frac{1}{\\exp\\left(\\frac{E - E_{F}}{kT}\\right) + 1}",
+      "description": "Esta fórmula representa a distribuição de ocupação de estados eletrônicos em função da energia em um sistema de fermions, como os elétrons em um metal. Ela descreve a probabilidade de que um estado de energia E esteja ocupado por um elétron a uma temperatura T.",
+      "concepts": [
+        "Distribuição de Fermi-Dirac",
+        "Ocupação de estados eletrônicos",
+        "Energia de Fermi",
+        "Termodinâmica estatística"
+      ],
+      "symbols": [
+        {
+          "symbol": "f(E)",
+          "description": "Representa a função de distribuição que indica a probabilidade de um estado de energia E estar ocupado por um elétron."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa a energia do estado eletrônico considerado."
+        },
+        {
+          "symbol": "E_{F}",
+          "description": "Representa a energia de Fermi, que é o nível de energia mais alto ocupado por elétrons a temperatura zero absoluto."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas estatísticos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura do sistema em Kelvin, que influencia a ocupação dos estados eletrônicos."
+        }
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 167
+    },
+    {
+      "originalFormula": "np = n_i^2 = N_c N_v \\exp\\left(-\\frac{E_c - E_v}{kT}\\right)",
+      "genericFormula": "np = n_i^2 = N_c N_v \\exp\\left(-\\frac{E_c - E_v}{kT}\\right)",
+      "description": "Esta fórmula relaciona a densidade de portadores de carga em um semicondutor intrínseco com a densidade de estados na banda de condução e na banda de valência, além da energia de bandgap e da temperatura. Ela mostra como a concentração de elétrons e buracos é influenciada pela temperatura e pela estrutura do material.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Semicondutores",
+        "Banda de condução",
+        "Banda de valência",
+        "Energia de bandgap",
+        "Temperatura",
+        "Densidade de estados"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_p",
+          "description": "Representa a densidade de buracos, que são as lacunas deixadas por elétrons na banda de valência."
+        },
+        {
+          "symbol": "n_i",
+          "description": "Representa a densidade intrínseca de portadores de carga em um semicondutor, que é a quantidade de elétrons ou buracos presentes em condições de equilíbrio térmico."
+        },
+        {
+          "symbol": "N_c",
+          "description": "Representa a densidade de estados na banda de condução, que é o número de estados disponíveis para os elétrons na banda de condução por unidade de volume."
+        },
+        {
+          "symbol": "N_v",
+          "description": "Representa a densidade de estados na banda de valência, que é o número de estados disponíveis para os buracos na banda de valência por unidade de volume."
+        },
+        {
+          "symbol": "E_c",
+          "description": "Representa a energia do nível mais alto da banda de condução, que é a energia mínima necessária para que um elétron possa ser excitado para a banda de condução."
+        },
+        {
+          "symbol": "E_v",
+          "description": "Representa a energia do nível mais alto da banda de valência, que é a energia máxima que os elétrons podem ter na banda de valência."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia térmica em sistemas físicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta do sistema, medida em Kelvin, que afeta a movimentação e a energia dos portadores de carga."
+        }
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 182
+    },
+    {
+      "originalFormula": "n_i = K_1 T^{3/2} \\exp\\left(-\\frac{E_g}{2kT}\\right)",
+      "genericFormula": "n_i = K_1 T^{3/2} \\exp\\left(-\\frac{E_g}{2kT}\\right)",
+      "description": "Esta fórmula representa a concentração de portadores intrínsecos em um semicondutor em função da temperatura. Ela mostra como a quantidade de elétrons e lacunas presentes em um material semicondutor varia com a temperatura, levando em consideração a energia de bandgap do material.",
+      "concepts": [
+        "Concentração de portadores intrínsecos",
+        "Temperatura",
+        "Energia de bandgap",
+        "Constante de Boltzmann",
+        "Exponencial",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_i",
+          "description": "Representa a concentração de portadores intrínsecos, que são os elétrons e lacunas gerados termicamente em um semicondutor puro."
+        },
+        {
+          "symbol": "K_1",
+          "description": "É uma constante que depende das propriedades do material semicondutor e da estrutura cristalina."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta em Kelvin, que influencia a movimentação de elétrons e lacunas no semicondutor."
+        },
+        {
+          "symbol": "E_g",
+          "description": "É a energia de bandgap do semicondutor, que é a energia necessária para excitar um elétron da banda de valência para a banda de condução."
+        },
+        {
+          "symbol": "k",
+          "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+        },
+        {
+          "symbol": "exp",
+          "description": "Representa a função exponencial, que descreve o comportamento de decaimento ou crescimento em muitos fenômenos físicos."
+        }
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 197
+    },
+    {
+      "originalFormula": "n_i = 2 \\left(\\frac{2\\pi k T}{h^2}\\right)^{3/2} \\left(m_{n}^* m_{p}^*\\right)^{3/4} \\exp\\left(-\\frac{E_g}{2kT}\\right)",
+      "genericFormula": "n_i = 2 \\left(\\frac{2\\pi k T}{h^2}\\right)^{3/2} \\left(m_{n}^* m_{p}^*\\right)^{3/4} \\exp\\left(-\\frac{E_g}{2kT}\\right)",
+      "description": "Esta fórmula representa a concentração de portadores intrínsecos em um semicondutor, que é a quantidade de elétrons e buracos presentes em um material semicondutor em equilíbrio térmico. A fórmula leva em conta fatores como a temperatura, a energia da banda proibida e as massas efetivas dos portadores.",
+      "concepts": [
+        "Concentração de portadores intrínsecos",
+        "Semicondutores",
+        "Equilíbrio térmico",
+        "Temperatura",
+        "Energia da banda proibida",
+        "Massas efetivas"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_i",
+          "description": "Representa a concentração de portadores intrínsecos em um semicondutor, que é a quantidade de elétrons ou buracos gerados térmicamente."
+        },
+        {
+          "symbol": "k",
+          "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta do sistema em Kelvin."
+        },
+        {
+          "symbol": "h",
+          "description": "É a constante de Planck, que é uma constante fundamental na mecânica quântica que relaciona energia e frequência."
+        },
+        {
+          "symbol": "m_{n}^*",
+          "description": "É a massa efetiva dos elétrons no semicondutor, que descreve como os elétrons se comportam sob a influência de um campo elétrico."
+        },
+        {
+          "symbol": "m_{p}^*",
+          "description": "É a massa efetiva dos buracos no semicondutor, que representa o comportamento dos buracos como se fossem partículas com massa."
+        },
+        {
+          "symbol": "E_g",
+          "description": "É a energia da banda proibida do semicondutor, que é a energia necessária para excitar um elétron da banda de valência para a banda de condução."
+        },
+        {
+          "symbol": "exp",
+          "description": "Representa a função exponencial, que é uma função matemática que descreve crescimento ou decaimento em muitos fenômenos físicos."
+        }
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 212
+    },
+    {
+      "originalFormula": "n_i = N_v \\exp\\left(\\frac{E_y - E_i}{kT}\\right)",
+      "genericFormula": "n_i = N_v \\exp\\left(\\frac{E_y - E_i}{kT}\\right)",
+      "description": "Esta fórmula representa a concentração de portadores intrínsecos em um semicondutor, que é a quantidade de elétrons que podem ser gerados na banda de condução a partir da banda de valência em condições de equilíbrio térmico.",
+      "concepts": [
+        "Semicondutores",
+        "Concentração de portadores",
+        "Equilíbrio térmico",
+        "Banda de condução",
+        "Banda de valência",
+        "Energia térmica"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_i",
+          "description": "Representa a concentração de portadores intrínsecos, ou seja, o número de elétrons gerados na banda de condução em um semicondutor puro."
+        },
+        {
+          "symbol": "N_v",
+          "description": "Representa a densidade de estados na banda de valência, que é a quantidade de estados disponíveis para os elétrons na banda de valência do semicondutor."
+        },
+        {
+          "symbol": "E_y",
+          "description": "Representa a energia do nível de Fermi ou a energia da banda de condução, que é o nível de energia mais alto ocupado por elétrons em um semicondutor em equilíbrio térmico."
+        },
+        {
+          "symbol": "E_i",
+          "description": "Representa a energia da banda de valência, que é o nível de energia mais alto ocupado por elétrons na banda de valência do semicondutor."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas térmicos e é uma medida da energia térmica por grau de liberdade."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta em Kelvin, que é uma medida da energia térmica do sistema e influencia a movimentação dos portadores de carga."
+        }
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 227
+    },
+    {
+      "originalFormula": "N_c \\exp\\left(-\\frac{E_C}{kT}\\right) = n_i \\exp\\left(-\\frac{E_i}{kT}\\right)",
+      "genericFormula": "N_c \\exp\\left(-\\frac{E_C}{kT}\\right) = n_i \\exp\\left(-\\frac{E_i}{kT}\\right)",
+      "description": "Esta fórmula representa a relação entre a densidade de estados na banda de condução de um semicondutor e a densidade intrínseca de portadores de carga, levando em consideração a energia de ativação e a temperatura. Ela mostra como a temperatura e as energias de nível afetam a quantidade de portadores de carga que podem ser gerados em um semicondutor.",
+      "concepts": [
+        "Densidade de estados",
+        "Banda de condução",
+        "Densidade intrínseca de portadores",
+        "Energia de ativação",
+        "Temperatura"
+      ],
+      "symbols": [
+        {
+          "symbol": "N_c",
+          "description": "Representa a densidade de estados na banda de condução do semicondutor, ou seja, o número de estados disponíveis para os elétrons na banda de condução por unidade de volume."
+        },
+        {
+          "symbol": "E_C",
+          "description": "É a energia da borda da banda de condução, que é o nível de energia mais baixo que um elétron pode ocupar na banda de condução."
+        },
+        {
+          "symbol": "k",
+          "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas térmicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta do sistema em Kelvin, que influencia a energia térmica dos portadores de carga."
+        },
+        {
+          "symbol": "n_i",
+          "description": "É a densidade intrínseca de portadores de carga, ou seja, o número de elétrons e lacunas gerados espontaneamente em um semicondutor em equilíbrio térmico por unidade de volume."
+        },
+        {
+          "symbol": "E_i",
+          "description": "É a energia do nível intrínseco, que é a energia média entre a banda de condução e a banda de valência em um semicondutor não dopado."
+        }
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 242
+    },
+    {
+      "originalFormula": "N_v \\exp\\left(\\frac{E_y}{kT}\\right) = n_i \\exp\\left(\\frac{E_i}{kT}\\right)",
+      "genericFormula": "N_v \\exp\\left(\\frac{E_y}{kT}\\right) = n_i \\exp\\left(\\frac{E_i}{kT}\\right)",
+      "description": "Esta fórmula relaciona a densidade de estados em uma banda de valência com a densidade intrínseca de portadores em um semicondutor, levando em consideração a energia de Fermi e a temperatura do sistema. Ela mostra como a concentração de portadores pode ser afetada pela temperatura e pela energia das bandas.",
+      "concepts": [
+        "Densidade de estados",
+        "Semicondutores",
+        "Energia de Fermi",
+        "Temperatura",
+        "Concentração de portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "N_v",
+          "description": "Representa a densidade de estados na banda de valência do semicondutor, ou seja, o número de estados disponíveis para os elétrons na banda de valência por unidade de volume."
+        },
+        {
+          "symbol": "E_y",
+          "description": "Representa a energia do nível de Fermi na banda de valência, que é a energia máxima que os elétrons podem ter a temperaturas próximas do zero absoluto."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos, sendo fundamental na descrição do comportamento térmico das partículas."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta do sistema, medida em Kelvin, que influencia a energia térmica dos portadores de carga."
+        },
+        {
+          "symbol": "n_i",
+          "description": "Representa a densidade intrínseca de portadores em um semicondutor, que é o número de portadores (elétrons e lacunas) por unidade de volume em um material não dopado."
+        },
+        {
+          "symbol": "E_i",
+          "description": "Representa a energia do nível de Fermi na banda proibida, que é a energia em que a probabilidade de encontrar um portador é significativa."
+        }
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 257
+    },
+    {
+      "originalFormula": "n = n_i \\exp\\left(\\frac{E_F - E_i}{kT}\\right) = n_0",
+      "genericFormula": "n = n_i \\exp\\left(\\frac{E_F - E_i}{kT}\\right)",
+      "description": "Esta fórmula representa a concentração de portadores de carga em um semicondutor em equilíbrio térmico, onde a concentração de portadores é determinada pela diferença de energia entre o nível de Fermi e os níveis de energia dos portadores intrínsecos.",
+      "concepts": [
+        "Equilíbrio térmico",
+        "Concentração de portadores de carga",
+        "Nível de Fermi",
+        "Energia intrínseca",
+        "Temperatura"
+      ],
+      "symbols": [
+        {
+          "symbol": "n",
+          "description": "Representa a concentração de portadores de carga no semicondutor."
+        },
+        {
+          "symbol": "n_i",
+          "description": "Representa a concentração de portadores de carga intrínsecos no semicondutor, ou seja, a concentração de portadores em um semicondutor puro."
+        },
+        {
+          "symbol": "E_F",
+          "description": "Representa o nível de Fermi, que é o nível de energia no qual a probabilidade de encontrar um elétron é de 50% a temperatura absoluta."
+        },
+        {
+          "symbol": "E_i",
+          "description": "Representa a energia do nível de energia dos portadores, que pode ser um nível de energia específico no semicondutor."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas térmicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta do sistema em Kelvin."
+        },
+        {
+          "symbol": "n_0",
+          "description": "Representa uma concentração de portadores de carga em um estado específico, que pode ser considerado como uma referência ou condição inicial."
+        }
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 272
+    },
+    {
+      "originalFormula": "p = n_i \\exp\\left(\\frac{E_i - E_F}{kT}\\right) = p_0",
+      "genericFormula": "p = n_i \\exp\\left(\\frac{E_i - E_F}{kT}\\right)",
+      "description": "Esta fórmula representa a relação entre a densidade de portadores de carga em um semicondutor intrínseco e a energia de Fermi, considerando a temperatura do sistema. Ela mostra como a concentração de portadores de carga (neste caso, buracos) depende da diferença entre a energia de um nível de energia específico e a energia de Fermi, além da temperatura.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Energia de Fermi",
+        "Temperatura",
+        "Semicondutores",
+        "Distribuição de Boltzmann"
+      ],
+      "symbols": [
+        {
+          "symbol": "p",
+          "description": "Representa a densidade de buracos, que são portadores de carga positiva em um semicondutor."
+        },
+        {
+          "symbol": "n_i",
+          "description": "Representa a densidade intrínseca de portadores de carga, que é a quantidade de portadores gerados em um semicondutor puro em equilíbrio térmico."
+        },
+        {
+          "symbol": "E_i",
+          "description": "Representa a energia de um nível de energia específico no semicondutor, que pode ser a energia de um estado de buraco."
+        },
+        {
+          "symbol": "E_F",
+          "description": "Representa a energia de Fermi, que é o nível de energia mais alto ocupado por elétrons em um material a temperatura zero absoluto."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia térmica em sistemas físicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura do sistema, medida em Kelvin, que afeta a distribuição de portadores de carga."
+        },
+        {
+          "symbol": "p_0",
+          "description": "Representa a densidade de buracos em condições de equilíbrio térmico, que é igual à densidade calculada pela fórmula."
+        }
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 287
+    },
+    {
+      "originalFormula": "E_F - E_i = kT \\ln\\left(\\frac{n_0}{n_i}\\right) \\equiv kT \\ln\\left(\\frac{N_D}{n_i}\\right)",
+      "genericFormula": "E_F - E_i = kT \\ln\\left(\\frac{n}{n_i}\\right) \\equiv kT \\ln\\left(\\frac{N_D}{n_i}\\right)",
+      "description": "Esta fórmula relaciona a diferença de energia entre o nível de Fermi e o nível de energia intrínseco em um semicondutor com a concentração de portadores de carga. Ela mostra como a temperatura e a concentração de portadores influenciam essa diferença de energia. A fórmula é fundamental para entender o comportamento elétrico dos semicondutores dopados.",
+      "concepts": [
+        "Nível de Fermi",
+        "Energia intrínseca",
+        "Temperatura",
+        "Concentração de portadores",
+        "Dopagem em semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_F",
+          "description": "Representa o nível de energia do nível de Fermi, que é o nível de energia mais alto ocupado por elétrons em um material a temperatura zero."
+        },
+        {
+          "symbol": "E_i",
+          "description": "Representa o nível de energia intrínseco, que é o nível de energia onde a densidade de portadores é igual em um semicondutor não dopado."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta do sistema em Kelvin, que afeta a energia térmica dos portadores de carga."
+        },
+        {
+          "symbol": "n_0",
+          "description": "Representa a concentração de portadores de carga livres em um semicondutor dopado."
+        },
+        {
+          "symbol": "n_i",
+          "description": "Representa a concentração de portadores intrínsecos em um semicondutor não dopado, que é uma característica do material."
+        },
+        {
+          "symbol": "N_D",
+          "description": "Representa a concentração de átomos dopantes do tipo doador em um semicondutor, que aumenta a quantidade de portadores de carga."
+        }
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 302
+    },
+    {
+      "originalFormula": "E_i - E_F = kT \\ln\\left(\\frac{p_0}{n_i}\\right) \\equiv kT \\ln\\left(\\frac{N_A}{n_i}\\right)",
+      "genericFormula": "E_i - E_F = kT \\ln\\left(\\frac{p}{n}\\right) \\equiv kT \\ln\\left(\\frac{N_A}{n}\\right)",
+      "description": "Esta fórmula relaciona a diferença de energia entre o nível de Fermi e o nível de energia de um portador de carga em um semicondutor. Ela mostra como a concentração de portadores de carga (como buracos ou elétrons) influencia a energia do sistema em equilíbrio térmico.",
+      "concepts": [
+        "Nível de Fermi",
+        "Energia de nível de portador",
+        "Equilíbrio térmico",
+        "Concentração de portadores de carga",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_i",
+          "description": "Representa a energia do nível de portador, que pode ser um buraco ou um elétron em um semicondutor."
+        },
+        {
+          "symbol": "E_F",
+          "description": "Representa o nível de Fermi, que é o nível de energia mais alto ocupado por elétrons em um material a temperatura zero absoluto."
+        },
+        {
+          "symbol": "k",
+          "description": "Constante de Boltzmann, que relaciona a temperatura com a energia em sistemas térmicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura do sistema em Kelvin, que influencia a energia térmica dos portadores de carga."
+        },
+        {
+          "symbol": "p_0",
+          "description": "Concentração de buracos em um semicondutor, que representa a quantidade de estados vazios disponíveis para elétrons."
+        },
+        {
+          "symbol": "n_i",
+          "description": "Concentração intrínseca de portadores de carga em um semicondutor, que é a quantidade de elétrons e buracos em equilíbrio em um material puro."
+        },
+        {
+          "symbol": "N_A",
+          "description": "Concentração de dopantes aceitadores em um semicondutor, que são átomos que criam buracos adicionais quando introduzidos no material."
+        },
+        {
+          "symbol": "ln",
+          "description": "Função logarítmica natural, que é usada para descrever a relação exponencial entre as concentrações de portadores de carga."
+        }
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 317
+    },
+    {
+      "originalFormula": "5 \\times 10^{22}",
+      "genericFormula": "N \\times 10^{x}",
+      "description": "Esta fórmula representa um número que é multiplicado por uma potência de dez, o que é uma forma comum de expressar números muito grandes ou muito pequenos de maneira compacta. Neste caso, o número é cinco multiplicado por dez elevado a uma potência, que indica quantas casas decimais devemos mover para a direita para obter o valor completo.",
+      "concepts": [
+        "Notação científica",
+        "Potência de dez",
+        "Representação de números grandes"
+      ],
+      "symbols": [
+        {
+          "symbol": "N",
+          "description": "Representa um número que pode ser qualquer valor real, neste caso específico, é o coeficiente que multiplica a potência de dez."
+        },
+        {
+          "symbol": "x",
+          "description": "Representa o expoente da potência de dez, indicando quantas casas decimais o número deve ser multiplicado para se obter o valor real."
+        }
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 333
+    },
+    {
+      "originalFormula": "1.12",
+      "genericFormula": "1.12",
+      "description": "A fórmula representa um valor numérico específico, que pode ser uma constante ou um resultado de um cálculo em um contexto físico. Neste caso, a fórmula não possui variáveis ou símbolos que a tornem dependente de outros fatores, sendo um valor fixo.",
+      "concepts": [],
+      "symbols": [],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 348
+    },
+    {
+      "originalFormula": "1.182",
+      "genericFormula": "1.182",
+      "description": "A fórmula apresentada é um valor numérico específico, que não representa uma relação ou equação física, mas pode ser um resultado de um cálculo ou uma constante em um determinado contexto.",
+      "concepts": [],
+      "symbols": [],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 363
+    },
+    {
+      "originalFormula": "0.81",
+      "genericFormula": "x",
+      "description": "A fórmula representa um valor numérico específico, que pode ser interpretado como uma constante ou um resultado de um cálculo em um contexto físico ou matemático.",
+      "concepts": [
+        "número constante",
+        "valor numérico",
+        "resultados de medições"
+      ],
+      "symbols": [
+        {
+          "symbol": "x",
+          "description": "Uma variável que representa um valor numérico que pode ser utilizado em cálculos ou medições."
+        }
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 378
+    },
+    {
+      "originalFormula": "3.22 \\times 10^{19}",
+      "genericFormula": "N",
+      "description": "Esta fórmula representa um número que pode ser usado para descrever a quantidade de entidades em um sistema, como átomos, moléculas ou portadores de carga em um semicondutor. O valor específico indica uma quantidade muito grande, sugerindo que estamos lidando com um sistema em escala atômica ou molecular.",
+      "concepts": [
+        "quantidade de entidades",
+        "escala atômica",
+        "semicondutores",
+        "números grandes"
+      ],
+      "symbols": [
+        {
+          "symbol": "N",
+          "description": "representa o número total de entidades, como átomos ou moléculas, em um sistema."
+        }
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 393
+    },
+    {
+      "originalFormula": "1.83 \\times 10^{19}",
+      "genericFormula": "N",
+      "description": "Esta fórmula representa um valor numérico que pode ser interpretado como a quantidade de partículas, como átomos ou moléculas, em um determinado sistema. O número é expressado em notação científica, o que é comum em física e química para lidar com quantidades muito grandes ou muito pequenas.",
+      "concepts": [
+        "Notação científica",
+        "Quantidade de partículas",
+        "Escala de grandeza"
+      ],
+      "symbols": [
+        {
+          "symbol": "N",
+          "description": "Representa a quantidade total de partículas em um sistema, que pode incluir átomos, moléculas ou outras entidades discretas."
+        }
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 408
+    },
+    {
+      "originalFormula": "1 \\times 10^{10}",
+      "genericFormula": "a \\times 10^{b}",
+      "description": "Esta fórmula representa um número em notação científica, onde um número é expresso como o produto de um coeficiente e uma potência de dez. A notação científica é uma maneira conveniente de representar números muito grandes ou muito pequenos.",
+      "concepts": [
+        "Notação científica",
+        "Potências de dez",
+        "Representação numérica"
+      ],
+      "symbols": [
+        {
+          "symbol": "a",
+          "description": "O coeficiente que representa um número real, que pode variar de 1 até 10 na notação científica."
+        },
+        {
+          "symbol": "b",
+          "description": "O expoente que indica quantas casas decimais o coeficiente deve ser multiplicado por dez, definindo a magnitude do número."
+        }
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 423
+    },
+    {
+      "originalFormula": "1350",
+      "genericFormula": "1350",
+      "description": "Esta fórmula representa um valor numérico específico, que pode ser uma constante ou um resultado de um cálculo em um contexto particular. Sem mais informações, não é possível determinar o que esse número representa fisicamente.",
+      "concepts": [],
+      "symbols": [],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 438
+    },
+    {
+      "originalFormula": "3 \\times 10^{5}",
+      "genericFormula": "k \\times 10^{n}",
+      "description": "Esta fórmula representa um número em notação científica, onde um coeficiente é multiplicado por uma potência de dez. Essa forma é útil para expressar números muito grandes ou muito pequenos de maneira compacta e compreensível.",
+      "concepts": [
+        "Notação científica",
+        "Potências de dez",
+        "Escala numérica"
+      ],
+      "symbols": [
+        {
+          "symbol": "k",
+          "description": "Representa o coeficiente, que é um número que multiplica a potência de dez. Ele pode variar, mas geralmente é um número entre 1 e 10."
+        },
+        {
+          "symbol": "n",
+          "description": "Representa o expoente da potência de dez. Este número indica quantas casas decimais o coeficiente deve ser deslocado, podendo ser positivo (para números grandes) ou negativo (para números pequenos)."
+        }
+      ],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 453
+    },
+    {
+      "originalFormula": "11.8",
+      "genericFormula": "x",
+      "description": "A fórmula apresentada é um número isolado e não representa uma relação física ou matemática específica. Portanto, não podemos extrair uma interpretação física ou matemática dela sem um contexto adicional.",
+      "concepts": [],
+      "symbols": [],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 468
+    },
+    {
+      "originalFormula": "1410",
+      "genericFormula": "1410",
+      "description": "A fórmula apresentada é um valor numérico específico e não representa uma relação física ou matemática que possa ser analisada em termos de variáveis ou símbolos. Portanto, não há uma descrição didática a ser feita em relação a uma fórmula independente como esta.",
+      "concepts": [],
+      "symbols": [],
+      "chapter": "3 Intrinsic and Extrinsic Semiconductors",
+      "source": "standalone",
+      "page": 483
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498
+  ],
+  "lastUpdated": "2026-05-08T18:19:13.536103",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
+}

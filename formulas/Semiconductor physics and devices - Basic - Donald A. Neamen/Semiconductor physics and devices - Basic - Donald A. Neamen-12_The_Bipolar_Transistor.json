@@ -1,0 +1,3703 @@
+{
+  "chapter": "12 The Bipolar Transistor",
+  "section": "12.1 THE BIPOLAR TRANSISTOR ACTION",
+  "questions": [
+    {
+      "number": "1",
+      "text": "Develop the small-signal equivalent circuit of the bipolar transistor. This circuit is used to relate small-signal currents and voltages in analog circuits.",
+      "formulas": []
+    },
+    {
+      "number": "2",
+      "text": "Define and derive expressions for the frequency limiting factors.",
+      "formulas": []
+    },
+    {
+      "number": "3",
+      "text": "Present the geometries and characteristics of a few specialized bipolar transistor designs.",
+      "formulas": []
+    },
+    {
+      "number": "12.31a",
+      "text": "Consider, initially, the emitter injection efficiency factor. We have from Equation (12.31a): γ = \\frac{J_{JE}}{J_{JE} + J_{JE}} = \\frac{1}{1 + \\frac{J_{JE}}{J_{JE}}}",
+      "formulas": [
+        {
+          "originalFormula": "\\gamma = \\frac{J_{JE}}{J_{JE} + J_{JE}} = \\frac{1}{1 + \\frac{J_{JE}}{J_{JE}}}",
+          "genericFormula": "\\gamma = \\frac{J_{JE}}{J_{JE} + J_{JE}} = \\frac{1}{1 + \\frac{J_{JE}}{J_{JE}}}",
+          "description": "Esta fórmula representa a fração de corrente que flui através de um determinado caminho em um circuito, onde a corrente é dividida entre diferentes componentes. A fração é calculada em relação à soma das correntes em dois caminhos específicos, mostrando como a corrente total se distribui.",
+          "concepts": [
+            "Divisão de corrente em circuitos elétricos",
+            "Análise de circuitos em paralelo",
+            "Conservação de carga elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "γ",
+              "description": "Representa a fração da corrente que passa por um determinado caminho em comparação com a corrente total."
+            },
+            {
+              "symbol": "J_{JE}",
+              "description": "Representa a densidade de corrente em um dos caminhos do circuito, que é a quantidade de corrente que passa por uma unidade de área."
+            }
+          ]
+        },
+        {
+          "originalFormula": "J_{JE} = -eD_{E} \\frac{d\\delta p_{E}(x')}{dx} \\bigg|_{x=0}",
+          "genericFormula": "J = -eD \\frac{d\\delta p(x')}{dx} \\bigg|_{x=0}",
+          "description": "Esta fórmula representa a densidade de corrente de elétrons em um semicondutor, considerando a variação da densidade de portadores de carga em relação à posição. A densidade de corrente é influenciada pela difusão dos elétrons, que é afetada pela concentração de portadores e pela mobilidade dos elétrons.",
+          "concepts": [
+            "Densidade de corrente",
+            "Difusão de portadores de carga",
+            "Gradiente de concentração",
+            "Semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "J",
+              "description": "Representa a densidade de corrente elétrica, que é a quantidade de carga elétrica que passa por uma unidade de área em um determinado intervalo de tempo."
+            },
+            {
+              "symbol": "e",
+              "description": "Representa a carga elementar, que é a menor unidade de carga elétrica que existe, correspondente à carga de um único elétron."
+            },
+            {
+              "symbol": "D",
+              "description": "Representa o coeficiente de difusão, que indica a eficiência com que os portadores de carga se espalham em um material devido a um gradiente de concentração."
+            },
+            {
+              "symbol": "δp",
+              "description": "Representa a variação na densidade de portadores de carga, que é a quantidade de portadores por unidade de volume em um semicondutor."
+            },
+            {
+              "symbol": "x'",
+              "description": "Representa a posição ao longo do material semicondutor onde a variação da densidade de portadores está sendo considerada."
+            },
+            {
+              "symbol": "x",
+              "description": "Representa a coordenada espacial onde a densidade de corrente está sendo avaliada, neste caso, em um ponto específico que é x igual a zero."
+            }
+          ]
+        },
+        {
+          "originalFormula": "J_{JE} = (-)D_{E} \\frac{d\\delta n(x)}{dx} \\bigg|_{x=0}",
+          "genericFormula": "J = (-)D \\frac{d\\delta n(x)}{dx} \\bigg|_{x=0}",
+          "description": "Esta fórmula representa a densidade de corrente de elétrons em um semicondutor, especificamente a corrente de difusão gerada pela variação na densidade de portadores de carga em relação à posição. A corrente é influenciada pela difusão dos elétrons, que se movem de regiões de alta concentração para regiões de baixa concentração.",
+          "concepts": [
+            "Densidade de corrente",
+            "Difusão de portadores de carga",
+            "Gradiente de densidade de portadores",
+            "Semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "J",
+              "description": "Representa a densidade de corrente elétrica, que é a quantidade de carga que passa por uma área unitária em um determinado tempo."
+            },
+            {
+              "symbol": "D",
+              "description": "Representa o coeficiente de difusão, que mede a capacidade dos portadores de carga (elétrons ou lacunas) de se moverem através do material devido a um gradiente de concentração."
+            },
+            {
+              "symbol": "\\delta n(x)",
+              "description": "Representa a variação na densidade de portadores de carga em função da posição, indicando como a concentração de elétrons muda ao longo do material."
+            },
+            {
+              "symbol": "x",
+              "description": "Representa a posição ao longo do material semicondutor, onde a densidade de portadores de carga está sendo avaliada."
+            }
+          ]
+        },
+        {
+          "originalFormula": "J_{JE} = \\frac{eD_{E}}{L_{E}} \\left[ \\exp\\left( \\frac{V_{E}}{kT} \\right) - 1 \\right] \\cdot \\frac{1}{\\tanh\\left( \\frac{V_{E}}{L_{E}} \\right)}",
+          "genericFormula": "J_{JE} = \\frac{eD_{E}}{L_{E}} \\left[ \\exp\\left( \\frac{V_{E}}{kT} \\right) - 1 \\right] \\cdot \\frac{1}{\\tanh\\left( \\frac{V_{E}}{L_{E}} \\right)}",
+          "description": "Esta fórmula representa a densidade de corrente em uma junção de semicondutores, levando em consideração os efeitos da temperatura e da tensão aplicada. Ela descreve como a corrente elétrica flui através de uma junção p-n em função da diferença de potencial e das propriedades do material.",
+          "concepts": [
+            "Densidade de corrente",
+            "Junção de semicondutores",
+            "Efeito da temperatura na corrente",
+            "Efeito da tensão na corrente",
+            "Transporte de carga em materiais semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "J_{JE}",
+              "description": "Representa a densidade de corrente na junção de semicondutores, que é a quantidade de carga que passa por uma área unitária por unidade de tempo."
+            },
+            {
+              "symbol": "e",
+              "description": "Representa a carga elementar, que é a carga de um único elétron."
+            },
+            {
+              "symbol": "D_{E}",
+              "description": "Representa o coeficiente de difusão do portador de carga no semicondutor, que indica a facilidade com que os portadores se movem através do material."
+            },
+            {
+              "symbol": "L_{E}",
+              "description": "Representa a largura da região de depleção ou a distância característica que os portadores de carga podem se mover antes de recombinar."
+            },
+            {
+              "symbol": "V_{E}",
+              "description": "Representa a tensão aplicada na junção, que influencia a movimentação dos portadores de carga."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura ao comportamento estatístico das partículas."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta do sistema, que afeta a energia térmica dos portadores de carga."
+            },
+            {
+              "symbol": "\\exp",
+              "description": "Representa a função exponencial, que é uma função matemática que descreve o crescimento contínuo e é fundamental em muitos processos físicos."
+            },
+            {
+              "symbol": "\\tanh",
+              "description": "Representa a função tangente hiperbólica, que é uma função matemática usada para descrever a relação entre a tensão e a corrente em dispositivos semicondutores."
+            }
+          ]
+        },
+        {
+          "originalFormula": "J_{JE} = \\frac{eD_{B}}{L_{B}} \\cdot \\frac{1}{\\sinh\\left( \\frac{V_{E}}{L_{B}} \\right)} \\left[ \\exp\\left( \\frac{V_{E}}{kT} \\right) - 1 \\right]",
+          "genericFormula": "J_{JE} = \\frac{eD}{L} \\cdot \\frac{1}{\\sinh\\left( \\frac{V}{L} \\right)} \\left[ \\exp\\left( \\frac{V}{kT} \\right) - 1 \\right]",
+          "description": "Esta fórmula representa a densidade de corrente em uma junção de semicondutores, levando em consideração o efeito da tensão aplicada e as propriedades do material semicondutor. A densidade de corrente é uma medida de quão intensa é a corrente elétrica que flui por unidade de área.",
+          "concepts": [
+            "Densidade de corrente",
+            "Junção de semicondutores",
+            "Efeito da tensão",
+            "Propriedades do semicondutor",
+            "Efeito térmico"
+          ],
+          "symbols": [
+            {
+              "symbol": "J_{JE}",
+              "description": "Representa a densidade de corrente na junção de elétrons."
+            },
+            {
+              "symbol": "e",
+              "description": "Representa a carga elementar, que é a carga de um único elétron."
+            },
+            {
+              "symbol": "D_{B}",
+              "description": "Representa o coeficiente de difusão dos portadores de carga no material semicondutor."
+            },
+            {
+              "symbol": "L_{B}",
+              "description": "Representa a largura da barreira potencial na junção do semicondutor."
+            },
+            {
+              "symbol": "V_{E}",
+              "description": "Representa a tensão aplicada na junção do semicondutor."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia térmica dos portadores de carga."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta em Kelvin, que influencia o comportamento dos portadores de carga."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "Example 12.2",
+      "text": "Calculate the base transport factor. Assume transistor parameters of x_b = 0.80 \\mu m and L_b = 1.0 \\mu m.",
+      "formulas": []
+    },
+    {
+      "number": "12.4",
+      "text": "Design the ratio of emitter doping to base doping in order to achieve an emitter injection efficiency factor of γ = 0.9967.",
+      "formulas": [
+        {
+          "originalFormula": "γ = \\frac{1}{1 + \\frac{N_b}{N_e} \\eta_{p}} \\cdot \\frac{1}{1 + \\frac{D_e}{D_b} \\cdot \\frac{x_e}{x_b} + \\frac{1}{2} \\left( \\frac{x_e}{L_b} \\right) + \\frac{J_{0}}{J_{0}} \\exp\\left(-\\frac{eV_{be}}{2kT}\\right)}",
+          "genericFormula": "γ = \\frac{1}{1 + \\frac{N_b}{N_e} \\eta_{p}} \\cdot \\frac{1}{1 + \\frac{D_e}{D_b} \\cdot \\frac{x_e}{x_b} + \\frac{1}{2} \\left( \\frac{x_e}{L_b} \\right) + \\frac{J_{0}}{J_{0}} \\exp\\left(-\\frac{eV_{be}}{2kT}\\right)}",
+          "description": "Esta fórmula representa um fator de ganho (γ) em um dispositivo semicondutor, levando em consideração a relação entre as concentrações de portadores de carga, a difusão e a recombinação de portadores, além de efeitos térmicos e de polarização.",
+          "concepts": [
+            "Fator de ganho em semicondutores",
+            "Concentração de portadores de carga",
+            "Difusão de portadores",
+            "Recombinação de portadores",
+            "Efeito térmico em semicondutores",
+            "Polarização de junções"
+          ],
+          "symbols": [
+            {
+              "symbol": "γ",
+              "description": "Representa o fator de ganho do dispositivo semicondutor."
+            },
+            {
+              "symbol": "N_b",
+              "description": "Representa a concentração de portadores de carga do tipo 'b' (por exemplo, buracos)."
+            },
+            {
+              "symbol": "N_e",
+              "description": "Representa a concentração de portadores de carga do tipo 'e' (por exemplo, elétrons)."
+            },
+            {
+              "symbol": "η_{p}",
+              "description": "Representa a eficiência de recombinação dos portadores do tipo 'p'."
+            },
+            {
+              "symbol": "D_e",
+              "description": "Representa o coeficiente de difusão dos portadores do tipo 'e'."
+            },
+            {
+              "symbol": "D_b",
+              "description": "Representa o coeficiente de difusão dos portadores do tipo 'b'."
+            },
+            {
+              "symbol": "x_e",
+              "description": "Representa a largura da região onde os portadores do tipo 'e' estão presentes."
+            },
+            {
+              "symbol": "x_b",
+              "description": "Representa a largura da região onde os portadores do tipo 'b' estão presentes."
+            },
+            {
+              "symbol": "L_b",
+              "description": "Representa o comprimento de difusão dos portadores do tipo 'b'."
+            },
+            {
+              "symbol": "J_{0}",
+              "description": "Representa a densidade de corrente de saturação."
+            },
+            {
+              "symbol": "eV_{be}",
+              "description": "Representa a tensão de polarização da junção do tipo 'be'."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona temperatura e energia."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura em Kelvin."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "Ex 12.6",
+      "text": "If J_{0} = 10^{-6} A/cm^{2} and J_{a} = 10^{-11} A/cm^{2}, determine the value of V_{be} such that \\delta = 0.9950.",
+      "formulas": []
+    },
+    {
+      "number": "Ex 12.8",
+      "text": "Consider a silicon npn bipolar transistor with parameters described in Example 12.8. Determine the neutral base width for a C–B voltage (a) V_{A} = 2 V and (b) V_{CE} = 10 V. Neglect the B–E space charge width.",
+      "formulas": []
+    },
+    {
+      "number": "Ex 12.9",
+      "text": "Determine the thermal-equilibrium minority carrier concentration for an emitter doping concentration of N_e = 10^{20} \\, \\text{cm}^{-3} taking into account bandgap narrowing.",
+      "formulas": [
+        {
+          "originalFormula": "p_{n0} = \\frac{n_{i}^{2}}{N_{E}} \\exp \\left( \\frac{\\Delta E}{kT} \\right)",
+          "genericFormula": "p_{n0} = \\frac{n_{i}^{2}}{N_{E}} \\exp \\left( \\frac{\\Delta E}{kT} \\right)",
+          "description": "Esta fórmula representa a densidade de portadores de carga do tipo n em um semicondutor intrínseco, levando em consideração a concentração de portadores intrínsecos e a energia de ativação necessária para gerar portadores adicionais a partir de níveis de energia no bandgap.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Semicondutores",
+            "Concentração intrínseca",
+            "Energia de ativação",
+            "Temperatura"
+          ],
+          "symbols": [
+            {
+              "symbol": "p_{n0}",
+              "description": "Representa a densidade de portadores de carga do tipo n em um semicondutor."
+            },
+            {
+              "symbol": "n_{i}",
+              "description": "Representa a concentração de portadores intrínsecos em um semicondutor, ou seja, a quantidade de elétrons e lacunas presentes em condições de equilíbrio térmico."
+            },
+            {
+              "symbol": "N_{E}",
+              "description": "Representa a densidade de estados disponíveis no nível de energia que está sendo considerado, geralmente associado a impurezas ou defeitos no semicondutor."
+            },
+            {
+              "symbol": "\\Delta E",
+              "description": "Representa a energia necessária para excitar um portador de carga a partir de um nível de energia inferior para um nível superior, dentro do bandgap do semicondutor."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta do sistema, medida em Kelvin."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "12.7",
+      "text": "Consider the geometry shown in Figure 12.30. The base doping concentration is N_{s} = 10^{16} \\, \\text{cm}^{-3}, the neutral base width is x_{g} = 0.80 \\, \\mu m, the emitter width is S = 10 \\, \\mu m, and the emitter length is L = 10 \\, \\mu m. (a) Determine the resistance of the base between x = 0 and x = S/2. Assume a hole mobility of \\mu_{p} = 400 \\, \\text{cm}^{2}/\\text{V}\\cdot\\text{s}. (b) If the base current in this region is uniform and given by I_{b}/2 = 5 \\, \\mu A, determine the potential difference between x = 0 and x = S/2. (c) Using the results of part (b), what is the ratio of emitter current density at x = 0 to that at x = S/2?",
+      "formulas": [
+        {
+          "originalFormula": "I_{b} = \\frac{V}{R}",
+          "genericFormula": "I_{b} = \\frac{V}{R}",
+          "description": "Esta fórmula representa a relação entre a corrente elétrica que flui através de um resistor e a tensão aplicada sobre ele. A corrente é diretamente proporcional à tensão e inversamente proporcional à resistência do resistor.",
+          "concepts": [
+            "Corrente elétrica",
+            "Tensão elétrica",
+            "Resistência elétrica",
+            "Lei de Ohm"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_{b}",
+              "description": "Representa a corrente elétrica que flui através do resistor, medida em amperes."
+            },
+            {
+              "symbol": "V",
+              "description": "Representa a tensão elétrica aplicada ao resistor, medida em volts."
+            },
+            {
+              "symbol": "R",
+              "description": "Representa a resistência elétrica do resistor, medida em ohms."
+            }
+          ]
+        },
+        {
+          "originalFormula": "R = \\frac{x_{g}}{\\mu_{p} N_{s} q}",
+          "genericFormula": "R = \\frac{x}{\\mu N q}",
+          "description": "Esta fórmula representa a resistência elétrica em um semicondutor, onde a resistência é determinada pela mobilidade dos portadores de carga, a densidade de portadores e a carga elétrica.",
+          "concepts": [
+            "Resistência elétrica",
+            "Mobilidade de portadores de carga",
+            "Densidade de portadores de carga",
+            "Carga elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "R",
+              "description": "Representa a resistência elétrica do semicondutor."
+            },
+            {
+              "symbol": "x",
+              "description": "Representa a largura ou a distância que a corrente elétrica percorre no semicondutor."
+            },
+            {
+              "symbol": "μ",
+              "description": "Representa a mobilidade dos portadores de carga, que é uma medida de quão rapidamente os portadores podem se mover através do material quando um campo elétrico é aplicado."
+            },
+            {
+              "symbol": "N",
+              "description": "Representa a densidade de portadores de carga, que é o número de portadores de carga por unidade de volume no semicondutor."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elétrica de um único portador de carga, que é uma constante fundamental na física."
+            }
+          ]
+        },
+        {
+          "originalFormula": "E = -\\frac{kT}{e} \\frac{1}{N_{a}} \\frac{dN_{a}}{dx}",
+          "genericFormula": "E = -\\frac{kT}{e} \\frac{1}{N} \\frac{dN}{dx}",
+          "description": "Esta fórmula representa o campo elétrico gerado pela variação da concentração de portadores de carga em um material semicondutor. O campo elétrico é uma medida da força que uma carga elétrica experimentaria em um ponto específico devido à presença de outras cargas.",
+          "concepts": [
+            "Campo elétrico",
+            "Concentração de portadores de carga",
+            "Gradiente de concentração",
+            "Termodinâmica em semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "E",
+              "description": "Representa o campo elétrico, que é uma medida da força elétrica por unidade de carga."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura em Kelvin, que é uma medida da energia térmica de um sistema."
+            },
+            {
+              "symbol": "e",
+              "description": "Representa a carga elementar, que é a menor unidade de carga elétrica que existe."
+            },
+            {
+              "symbol": "N_{a}",
+              "description": "Representa a concentração de portadores de carga do tipo aceitor em um semicondutor, que é a quantidade de portadores por unidade de volume."
+            },
+            {
+              "symbol": "dN_{a}",
+              "description": "Representa a variação na concentração de portadores de carga do tipo aceitor em relação à posição."
+            },
+            {
+              "symbol": "dx",
+              "description": "Representa um pequeno deslocamento ou variação na posição ao longo do material semicondutor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "Ex 12.11",
+      "text": "A uniformly doped silicon bipolar transistor has base and collector doping concentrations of N_{b} = 7 \\times 10^{16} \\text{ cm}^{-3} and N_{c} = 3 \\times 10^{15} \\text{ cm}^{-3}, respectively. The common-emitter current gain is \\beta = 125. Assuming an empirical constant of n = 3, determine (a) B_{V_{cbo}} and (b) B_{V_{ce}}.",
+      "formulas": [
+        {
+          "originalFormula": "B_{V_{cbo}} = \\sqrt{B B_{V_{ce}}}",
+          "genericFormula": "B_{V_{cbo}} = \\sqrt{B B_{V_{ce}}}",
+          "description": "Esta fórmula representa a relação entre dois parâmetros de ganho de um transistor bipolar, onde o ganho em uma configuração específica é calculado a partir do ganho em outra configuração. O ganho do transistor é uma medida de quão bem ele pode amplificar um sinal, e essa fórmula ajuda a entender como diferentes configurações afetam esse ganho.",
+          "concepts": [
+            "Ganho de transistor",
+            "Transistor bipolar",
+            "Amplificação de sinal"
+          ],
+          "symbols": [
+            {
+              "symbol": "B_{V_{cbo}}",
+              "description": "Representa o ganho do transistor em uma configuração específica, onde a base é conectada ao coletor e a emissor está em circuito aberto."
+            },
+            {
+              "symbol": "B",
+              "description": "Representa o ganho do transistor em uma configuração padrão, onde a base é alimentada normalmente."
+            },
+            {
+              "symbol": "B_{V_{ce}}",
+              "description": "Representa o ganho do transistor em uma configuração onde a tensão entre o coletor e o emissor é aplicada."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "TVU 12.8",
+      "text": "A particular transistor has an output resistance of 200 k\\Omega and an Early voltage of V_{A} = 125 V. Determine the change in collector current when V_{CE} increases from 2 V to 8 V.",
+      "formulas": []
+    },
+    {
+      "number": "TVU 12.9",
+      "text": "(a) If, because of fabrication tolerances, the neutral base width for a set of transistors varies over the range of 0.800 \\text{ } \\mu m \\leq x_{B} \\leq 1.00 \\text{ } \\mu m, determine the variation in the base transport factor \\alpha. Assume \\alpha = 1.414 \\times 10^{-2} \\text{ cm}. (b) Using the results of part (a) and assuming \\beta = 0.9967, what is the variation in common-emitter current gain?",
+      "formulas": []
+    },
+    {
+      "number": "TVU 12.10",
+      "text": "The base impurity doping concentration is N_{b} = 3 \\times 10^{16} \\text{ cm}^{-3} and the metallurgical base width is x_{B} = 0.70 \\text{ } \\mu m. The minimum required punch-through breakdown voltage is specified to be V_{B_{R}} = 70 V. What is the maximum allowed collector doping concentration?",
+      "formulas": []
+    },
+    {
+      "number": "Ex 12.13",
+      "text": "Using the results of Example 12.13, determine the maximum value of C_{e} such that the frequency at which |A_{v}| = \\frac{h_{fe}}{\\sqrt{2}} is f = 35 MHz.",
+      "formulas": [
+        {
+          "originalFormula": "|A_{v}| = \\frac{|I_{c}|}{|I_{b}|} = \\frac{h_{fe}}{\\sqrt{1 + (j\\omega r_{e} C_{e})}}",
+          "genericFormula": "|A_{v}| = \\frac{|I_{c}|}{|I_{b}|} = \\frac{h_{fe}}{\\sqrt{1 + (j\\omega r_{e} C_{e})}}",
+          "description": "Esta fórmula representa o ganho de tensão em um amplificador bipolar, onde o ganho é a razão entre a corrente de coletor e a corrente de base, e também é expressa em termos do parâmetro hfe e uma função que depende da frequência, resistência e capacitância do circuito.",
+          "concepts": [
+            "Ganho de tensão",
+            "Amplificadores bipolares",
+            "Corrente de coletor",
+            "Corrente de base",
+            "Parâmetro hfe",
+            "Resistência",
+            "Capacitância",
+            "Frequência"
+          ],
+          "symbols": [
+            {
+              "symbol": "|A_{v}|",
+              "description": "Representa o ganho de tensão absoluto do amplificador, que é a razão entre a tensão de saída e a tensão de entrada."
+            },
+            {
+              "symbol": "|I_{c}|",
+              "description": "Representa o valor absoluto da corrente que flui pelo coletor do transistor."
+            },
+            {
+              "symbol": "|I_{b}|",
+              "description": "Representa o valor absoluto da corrente que flui pela base do transistor."
+            },
+            {
+              "symbol": "h_{fe}",
+              "description": "É o ganho de corrente do transistor, que indica a relação entre a corrente de coletor e a corrente de base em condições de operação estáveis."
+            },
+            {
+              "symbol": "j",
+              "description": "Representa a unidade imaginária, utilizada em circuitos elétricos para descrever a fase de sinais alternados."
+            },
+            {
+              "symbol": "\\omega",
+              "description": "Representa a frequência angular do sinal, que está relacionada à frequência do sinal em hertz."
+            },
+            {
+              "symbol": "r_{e}",
+              "description": "Representa a resistência de emissor do transistor, que afeta o ganho e a resposta do amplificador."
+            },
+            {
+              "symbol": "C_{e}",
+              "description": "Representa a capacitância de emissor, que influencia o comportamento em alta frequência do amplificador."
+            }
+          ]
+        },
+        {
+          "originalFormula": "f = \\frac{1}{2\\pi r_{e} C_{e}}",
+          "genericFormula": "f = \\frac{1}{2\\pi r C}",
+          "description": "Esta fórmula representa a frequência de ressonância de um circuito ressonante, que é um sistema que pode oscilar em uma frequência específica. A frequência é inversamente proporcional ao produto do raio e da capacitância do circuito. Isso significa que, à medida que o raio ou a capacitância aumenta, a frequência de ressonância diminui.",
+          "concepts": [
+            "Frequência de ressonância",
+            "Circuito ressonante",
+            "Capacitância",
+            "Raio efetivo"
+          ],
+          "symbols": [
+            {
+              "symbol": "f",
+              "description": "Representa a frequência de oscilação do circuito, medida em hertz."
+            },
+            {
+              "symbol": "r_{e}",
+              "description": "Representa o raio efetivo do circuito, que é uma medida da distância em relação ao ponto de referência onde a capacitância é considerada."
+            },
+            {
+              "symbol": "C_{e}",
+              "description": "Representa a capacitância efetiva do circuito, que é a capacidade do circuito de armazenar carga elétrica."
+            },
+            {
+              "symbol": "π",
+              "description": "É uma constante matemática que representa a razão entre a circunferência de um círculo e seu diâmetro, aproximadamente igual a 3,14159."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "12.14",
+      "text": "Calculate the emitter-to-collector transit time and the cutoff frequency of a bipolar transistor, with the following parameters: Consider a silicon npn transistor at T = 300 K. Assume the following parameters: I_e = 1 mA, x_b = 0.5 m, D_b = 25 cm²/s, x_e = 2.4 μm, r_e = 20 Ω, C_b = 1 pF, C_e = 0.1 pF.",
+      "formulas": [
+        {
+          "originalFormula": "r'_{e} = \\frac{kT}{e} \\cdot \\frac{1}{I_{e}}",
+          "genericFormula": "r'_{e} = \\frac{kT}{e} \\cdot \\frac{1}{I_{e}}",
+          "description": "Esta fórmula representa a resistência dinâmica de um diodo em equilíbrio térmico, onde a resistência é influenciada pela temperatura e pela corrente que passa pelo diodo.",
+          "concepts": [
+            "Resistência elétrica",
+            "Temperatura",
+            "Corrente elétrica",
+            "Diodo"
+          ],
+          "symbols": [
+            {
+              "symbol": "r'_{e}",
+              "description": "Representa a resistência dinâmica do diodo, que é uma medida de como a corrente muda em resposta a uma pequena variação na tensão."
+            },
+            {
+              "symbol": "k",
+              "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos e é uma constante fundamental na física estatística."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta do sistema, medida em Kelvin, que influencia o comportamento dos portadores de carga no diodo."
+            },
+            {
+              "symbol": "e",
+              "description": "É a carga elementar, que é a menor unidade de carga elétrica, representando a carga de um único elétron."
+            },
+            {
+              "symbol": "I_{e}",
+              "description": "Representa a corrente elétrica que flui através do diodo, que é a quantidade de carga que passa por um ponto em um circuito em um determinado intervalo de tempo."
+            }
+          ]
+        },
+        {
+          "originalFormula": "\\tau_{e} = r'_{e} C_{e}",
+          "genericFormula": "\\tau = r' C",
+          "description": "Esta fórmula representa o tempo de relaxação elétrico em um circuito, que é o tempo necessário para que a carga elétrica em um capacitor decaia a uma fração específica de seu valor inicial após a desconexão de uma fonte de tensão. O tempo de relaxação é influenciado pela resistência e pela capacitância do circuito.",
+          "concepts": [
+            "Tempo de relaxação",
+            "Capacitância",
+            "Resistência elétrica",
+            "Circuitos elétricos"
+          ],
+          "symbols": [
+            {
+              "symbol": "τ",
+              "description": "Representa o tempo de relaxação elétrico, que indica quanto tempo leva para a carga em um capacitor diminuir a uma fração de seu valor inicial."
+            },
+            {
+              "symbol": "r'",
+              "description": "Representa a resistência efetiva do circuito, que pode incluir resistências internas e externas que afetam o fluxo de corrente."
+            },
+            {
+              "symbol": "C",
+              "description": "Representa a capacitância do capacitor, que é a capacidade do capacitor de armazenar carga elétrica por unidade de tensão."
+            }
+          ]
+        },
+        {
+          "originalFormula": "\\tau_{b} = \\frac{x_{b}^{2}}{2D_{b}}",
+          "genericFormula": "\\tau = \\frac{x^{2}}{2D}",
+          "description": "Esta fórmula representa o tempo característico necessário para que uma partícula se difunda uma certa distância em um meio, onde a distância é dada pelo quadrado da posição da partícula e a difusividade do meio é um fator que influencia essa propagação.",
+          "concepts": [
+            "difusão",
+            "tempo de difusão",
+            "movimento browniano",
+            "propriedades de materiais"
+          ],
+          "symbols": [
+            {
+              "symbol": "τ",
+              "description": "Representa o tempo característico de difusão da partícula no meio."
+            },
+            {
+              "symbol": "x",
+              "description": "Representa a distância que a partícula se move ou se difunde no meio."
+            },
+            {
+              "symbol": "D",
+              "description": "Representa a constante de difusão do meio, que indica a facilidade com que as partículas se movem através dele."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Sketch the minority carrier concentrations in a pnp bipolar transistor biased in the forward-active mode.",
+      "formulas": []
+    },
+    {
+      "number": "5",
+      "text": "Define and describe the three limiting factors in the common-base current gain. Why does the base doping concentration affect the emitter injection efficiency?",
+      "formulas": []
+    },
+    {
+      "number": "6",
+      "text": "Describe base width modulation. Sketch an I–V curve that shows the base width modulation effect.",
+      "formulas": []
+    },
+    {
+      "number": "7",
+      "text": "What is meant by high injection?",
+      "formulas": []
+    },
+    {
+      "number": "8",
+      "text": "Explain emitter current crowding.",
+      "formulas": []
+    },
+    {
+      "number": "9",
+      "text": "Define I_{C0} and I_{C}0, and explain why I_{C0} > I_{C}.",
+      "formulas": []
+    },
+    {
+      "number": "10",
+      "text": "Sketch a simplified hybrid-pi model for an npn bipolar transistor and explain when this equivalent circuit is used.",
+      "formulas": []
+    },
+    {
+      "number": "11",
+      "text": "Describe the time-delay factors in the frequency limitation of the bipolar transistor.",
+      "formulas": []
+    },
+    {
+      "number": "12",
+      "text": "What is the cutoff frequency of a bipolar transistor?",
+      "formulas": []
+    },
+    {
+      "number": "13",
+      "text": "Describe the response of a bipolar transistor when it is switching between saturation and cutoff.",
+      "formulas": []
+    },
+    {
+      "number": "12.11",
+      "text": "Consider a uniformly doped silicon npn bipolar transistor at T = 300 K. The device is biased in the forward-active mode with V_{CE} = 2.5 V. The metallurgical base width is x_{a} = 1.0 \\mu m. The doping concentrations are N_{E} = 8 \\times 10^{16} cm^{-3}, N_{C} = 10^{15} cm^{-3}. (a) Determine the B-E voltage such that the minority carrier electron concentration, n_{a}, at x = 0 is 10 percent of the majority carrier hole concentration. (b) At this bias, determine the minority carrier hole concentration x_{a}.'",
+      "formulas": []
+    },
+    {
+      "number": "12.12",
+      "text": "Consider the minority carrier electron concentration in the base of an npn bipolar transistor as given by Equation (12.15a). In this problem, we want to compare the gradient of the electron concentration evaluated at the B-E junction to that evaluated at x = x_{B}. In particular, calculate the ratio \\frac{d\\delta n_{B}}{dx} at x = x_{B} for (a) x_{a}/L_{B} = 0.1, (b) x_{a}/L_{B} = 1.0, and (c) x_{a}/L_{B} = 10.",
+      "formulas": []
+    },
+    {
+      "number": "12.13",
+      "text": "Derive the expressions for the coefficients given by Equations (12.14a) and (12.14b).",
+      "formulas": []
+    },
+    {
+      "number": "12.15",
+      "text": "The excess electron concentration in the base of an npn bipolar transistor is given by Equation (12.15a). The linear approximation is given by Equation (12.15b). If \\delta n_{B}(x) is the linear approximation given by Equation (12.15b) and \\delta n_{B}(0) is the actual distribution given by Equation (12.15a), determine \\frac{\\delta n_{B}(x)}{\\delta n_{B}(0)} at x = x_{B}/2 for (a) x_{a}/L_{B} = 0.1 and (b) x_{a}/L_{B} = 1.0. Assume V_{BE} >> kT/e.",
+      "formulas": []
+    },
+    {
+      "number": "12.17",
+      "text": "(a) A uniformly doped npn bipolar transistor at T = 300 K is biased in saturation. Starting with the continuity equation for minority carriers, show that the excess electron concentration in the base region can be expressed as \\delta n_{B}(x) = n_{i} \\left[ \\exp \\left( \\frac{eV_{BE}}{kT} \\right) - 1 \\right] + \\left( \\frac{x}{x_{B}} \\right) \\left[ \\exp \\left( \\frac{eV_{BE}}{kT} \\right) - 1 \\right] (x/x_{B}). (b) Show that the minority carrier diffusion current in the base is given by J_{n} = -D_{n} \\frac{d\\delta n_{B}}{dx} \\bigg|_{x=x_{B}}. (c) Show that the total excess minority carrier charge (C/cm^{3}) in the base region is given by \\delta Q_{B} = -\\frac{e n_{i} x_{B}}{2} \\left[ \\exp \\left( \\frac{eV_{BE}}{kT} \\right) - 1 \\right] + \\left[ \\exp \\left( \\frac{eV_{BE}}{kT} \\right) - 1 \\right].",
+      "formulas": [
+        {
+          "originalFormula": "\\delta n_{B}(x) = n_{i} \\left[ \\exp \\left( \\frac{eV_{BE}}{kT} \\right) - 1 \\right] + \\left( \\frac{x}{x_{B}} \\right) \\left[ \\exp \\left( \\frac{eV_{BE}}{kT} \\right) - 1 \\right]",
+          "genericFormula": "\\delta n_{B}(x) = n_{i} \\left[ \\exp \\left( \\frac{eV_{BE}}{kT} \\right) - 1 \\right] + \\left( \\frac{x}{x_{B}} \\right) \\left[ \\exp \\left( \\frac{eV_{BE}}{kT} \\right) - 1 \\right]",
+          "description": "Esta fórmula representa a variação da densidade de portadores de carga em uma região de um semicondutor, levando em consideração a injeção de portadores devido a uma diferença de potencial aplicada. A fórmula é usada para calcular a densidade de portadores em função da posição dentro do material.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Diferença de potencial",
+            "Temperatura absoluta",
+            "Constante de Boltzmann",
+            "Efeito da posição na densidade de portadores"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\delta n_{B}(x)",
+              "description": "Representa a variação da densidade de portadores de carga na região B em função da posição x."
+            },
+            {
+              "symbol": "n_{i}",
+              "description": "Representa a densidade intrínseca de portadores de carga no semicondutor, que é a quantidade de portadores presentes sem a aplicação de um campo elétrico ou diferença de potencial."
+            },
+            {
+              "symbol": "eV_{BE}",
+              "description": "Representa a energia da diferença de potencial aplicada entre a base e o emissor em um transistor, onde e é a carga elementar."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia térmica dos portadores de carga."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta do sistema, medida em Kelvin."
+            },
+            {
+              "symbol": "x",
+              "description": "Representa a posição dentro do semicondutor onde a densidade de portadores está sendo calculada."
+            },
+            {
+              "symbol": "x_{B}",
+              "description": "Representa uma distância característica da região B, que pode estar relacionada à largura da base em um transistor."
+            }
+          ]
+        },
+        {
+          "originalFormula": "J_{n} = -D_{n} \\frac{d\\delta n_{B}}{dx} \\bigg|_{x=x_{B}}",
+          "genericFormula": "J_{n} = -D_{n} \\frac{d\\delta n_{B}}{dx} \\bigg|_{x=x_{B}}",
+          "description": "Esta fórmula representa a densidade de corrente de portadores de carga negativa (elétrons) em um semicondutor, que é influenciada pela difusão desses portadores em resposta a um gradiente de concentração. A corrente é proporcional à taxa de variação da concentração de portadores em relação à posição.",
+          "concepts": [
+            "Densidade de corrente",
+            "Difusão de portadores de carga",
+            "Gradiente de concentração",
+            "Semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "J_{n}",
+              "description": "Representa a densidade de corrente dos portadores de carga negativa, que indica a quantidade de carga que passa por uma unidade de área em um determinado tempo."
+            },
+            {
+              "symbol": "D_{n}",
+              "description": "É o coeficiente de difusão dos portadores de carga negativa, que quantifica a facilidade com que os elétrons se movem através do material semicondutor devido à difusão."
+            },
+            {
+              "symbol": "d\\delta n_{B}/dx",
+              "description": "Representa a taxa de variação da concentração de portadores de carga negativa em relação à posição, ou seja, como a concentração de elétrons muda ao longo do espaço."
+            },
+            {
+              "symbol": "x_{B}",
+              "description": "É a posição específica no semicondutor onde a concentração de portadores de carga está sendo avaliada."
+            }
+          ]
+        },
+        {
+          "originalFormula": "\\delta Q_{B} = -\\frac{e n_{i} x_{B}}{2} \\left[ \\exp \\left( \\frac{eV_{BE}}{kT} \\right) - 1 \\right] + \\left[ \\exp \\left( \\frac{eV_{BE}}{kT} \\right) - 1 \\right]",
+          "genericFormula": "\\delta Q_{B} = -\\frac{e n_{i} x_{B}}{2} \\left[ \\exp \\left( \\frac{eV}{kT} \\right) - 1 \\right] + \\left[ \\exp \\left( \\frac{eV}{kT} \\right) - 1 \\right]",
+          "description": "Esta fórmula representa a variação da carga elétrica em uma região específica de um semicondutor, levando em consideração a densidade de portadores de carga, a distância da região e a influência de um potencial aplicado. A fórmula é utilizada para entender como a carga se distribui em resposta a um campo elétrico em dispositivos semicondutores.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Potencial elétrico",
+            "Temperatura térmica",
+            "Efeito da temperatura na condutividade",
+            "Exponencial de Boltzmann"
+          ],
+          "symbols": [
+            {
+              "symbol": "δQ_{B}",
+              "description": "Representa a variação da carga elétrica na região B do semicondutor."
+            },
+            {
+              "symbol": "e",
+              "description": "Representa a carga elementar, que é a carga de um único elétron."
+            },
+            {
+              "symbol": "n_{i}",
+              "description": "Representa a densidade intrínseca de portadores de carga no semicondutor, ou seja, a quantidade de portadores de carga por unidade de volume."
+            },
+            {
+              "symbol": "x_{B}",
+              "description": "Representa a distância da região B em relação a um ponto de referência no semicondutor."
+            },
+            {
+              "symbol": "V_{BE}",
+              "description": "Representa a tensão entre a base e o emissor em um transistor, que influencia a corrente que flui através do dispositivo."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia térmica dos portadores de carga."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta em Kelvin, que afeta a movimentação dos portadores de carga no semicondutor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "12.24(a)",
+      "text": "Determine the ratio of the emitter injection efficiency of (i) device B to device A and (ii) device C to device A.",
+      "formulas": []
+    },
+    {
+      "number": "12.24(b)",
+      "text": "Repeat part (a) for the base transport factor.",
+      "formulas": []
+    },
+    {
+      "number": "12.24(c)",
+      "text": "Repeat part (a) for the recombination factor.",
+      "formulas": []
+    },
+    {
+      "number": "12.24(d)",
+      "text": "Which device has the largest common-emitter current gain β?",
+      "formulas": []
+    },
+    {
+      "number": "12.25",
+      "text": "Repeat Problem 12.24 for three devices in which the emitter parameters vary.",
+      "formulas": []
+    },
+    {
+      "number": "12.26(a)",
+      "text": "Calculate and plot the minority carrier distribution in the device.",
+      "formulas": []
+    },
+    {
+      "number": "12.27(a)",
+      "text": "Calculate the base transport factor, α, for xB/LB = 0.01, 0.10, 1.0, and 10.",
+      "formulas": []
+    },
+    {
+      "number": "12.27(b)",
+      "text": "Calculate the emitter injection efficiency, γ, for Nα/Nβ = 0.01, 0.10, 1.0, and 10.",
+      "formulas": []
+    },
+    {
+      "number": "12.28(a)",
+      "text": "Calculate the recombination factor for VBE = 0.2, 0.4, and 0.6.",
+      "formulas": []
+    },
+    {
+      "number": "12.28(b)",
+      "text": "Assuming the base transport and emitter injection efficiency factors are unity, calculate the common-emitter current gain for the conditions in part (a).",
+      "formulas": []
+    },
+    {
+      "number": "12.35",
+      "text": "An npn bipolar transistor is biased in the forward-active mode. (a) The collector current is I_c = 1.2 mA when biased at V_{CE} = 2 V. The early voltage is V_A = 120 V. Determine (i) the output resistance r_{o}, (ii) the output conductance g_{m}, and (iii) the collector current when biased at V_{CE} = 4 V.",
+      "formulas": [
+        {
+          "originalFormula": "r_{o} = \\frac{V_A}{I_C}",
+          "genericFormula": "r_{o} = \\frac{V_A}{I_C}",
+          "description": "Esta fórmula representa a resistência de saída de um transistor bipolar em modo ativo, onde a resistência de saída é calculada pela razão entre a tensão de saída e a corrente de coletor. Isso é importante para entender como o transistor se comporta em circuitos amplificadores.",
+          "concepts": [
+            "Resistência de saída",
+            "Transistor bipolar",
+            "Tensão",
+            "Corrente"
+          ],
+          "symbols": [
+            {
+              "symbol": "r_{o}",
+              "description": "Representa a resistência de saída do transistor, que indica como a tensão se relaciona com a corrente em sua saída."
+            },
+            {
+              "symbol": "V_A",
+              "description": "Representa a tensão de saída do transistor, que é a diferença de potencial elétrico medida entre os terminais de saída."
+            },
+            {
+              "symbol": "I_C",
+              "description": "Representa a corrente de coletor do transistor, que é a corrente que flui através do terminal do coletor do transistor."
+            }
+          ]
+        },
+        {
+          "originalFormula": "g_{m} = \\frac{I_C}{V_T}",
+          "genericFormula": "g_{m} = \\frac{I}{V}",
+          "description": "Esta fórmula representa a transcondutância de um transistor, que é uma medida de quão eficientemente o dispositivo pode controlar a corrente de saída em resposta a uma tensão de entrada. Em termos simples, ela indica quanto a corrente de saída do transistor muda quando a tensão de entrada é alterada.",
+          "concepts": [
+            "Transcondutância",
+            "Transistor",
+            "Corrente elétrica",
+            "Tensão elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "g_{m}",
+              "description": "Representa a transcondutância do transistor, que é a razão entre a corrente de saída e a variação da tensão de entrada."
+            },
+            {
+              "symbol": "I_C",
+              "description": "Representa a corrente de coletor do transistor, que é a corrente que flui através do terminal de coletor do transistor."
+            },
+            {
+              "symbol": "V_T",
+              "description": "Representa a tensão térmica, que é uma constante que depende da temperatura e é usada para caracterizar o comportamento do transistor em relação à corrente e tensão."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "12.36",
+      "text": "The output resistance of a pnp bipolar transistor is r_{o} = 180 kΩ. The Early voltage is V_A = 80 V. Determine the change in collector current if V_{CE} increases from 2 to 5 V.",
+      "formulas": [
+        {
+          "originalFormula": "I_C = \\frac{V_{CE}}{r_{o}}",
+          "genericFormula": "I_C = \\frac{V_{CE}}{r_{o}}",
+          "description": "Esta fórmula representa a corrente de coletor em um transistor bipolar, onde a corrente é calculada a partir da tensão entre o coletor e o emissor dividida pela resistência de saída do transistor.",
+          "concepts": [
+            "Transistor bipolar",
+            "Corrente elétrica",
+            "Tensão elétrica",
+            "Resistência elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_C",
+              "description": "Representa a corrente que flui do coletor do transistor. É uma medida da quantidade de carga elétrica que passa por um ponto em um circuito por unidade de tempo."
+            },
+            {
+              "symbol": "V_{CE}",
+              "description": "Representa a tensão entre o coletor e o emissor do transistor. É a diferença de potencial elétrico que influencia o funcionamento do transistor."
+            },
+            {
+              "symbol": "r_{o}",
+              "description": "Representa a resistência de saída do transistor. É uma medida da resistência que o transistor oferece à corrente que flui através dele, afetando a relação entre a tensão e a corrente."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "12.37",
+      "text": "A uniformly doped silicon npn bipolar transistor at T = 300 K has parameters N_{E} = 2 \\times 10^{16} cm^{-3}, N_{G} = 2 \\times 10^{16} cm^{-3}, N_{C} = 2 \\times 10^{15} cm^{-3}, x_{B} = 0.85 μm, and D_{B} = 25 cm²/s. Assume x_{C} << L_{E} and let V_{E} = 0.65 V. Determine the electron diffusion current density in the base for (i) V_{E} = 4 V, (ii) V_{E} = 8 V, and (iii) V_{E} = 12 V.",
+      "formulas": [
+        {
+          "originalFormula": "J_{E} = q N_{E} D_{B} \\frac{\\Delta n}{L_{E}}",
+          "genericFormula": "J_{E} = q N_{E} D_{B} \\frac{\\Delta n}{L_{E}}",
+          "description": "Esta fórmula representa a densidade de corrente elétrica em um semicondutor, considerando a contribuição de portadores de carga que se movem devido a um gradiente de concentração. A densidade de corrente é influenciada pela quantidade de portadores, a carga elétrica, a difusividade dos portadores e a variação de concentração ao longo de uma distância.",
+          "concepts": [
+            "Densidade de corrente elétrica",
+            "Portadores de carga",
+            "Difusão",
+            "Gradiente de concentração",
+            "Semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "J_{E}",
+              "description": "Representa a densidade de corrente elétrica, que é a quantidade de carga que passa por uma unidade de área em um determinado tempo."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elétrica de um único portador de carga, como um elétron ou um buraco."
+            },
+            {
+              "symbol": "N_{E}",
+              "description": "Representa a densidade de portadores de carga no semicondutor, ou seja, a quantidade de portadores por unidade de volume."
+            },
+            {
+              "symbol": "D_{B}",
+              "description": "Representa o coeficiente de difusão dos portadores de carga, que indica a facilidade com que os portadores se movem através do material."
+            },
+            {
+              "symbol": "\\Delta n",
+              "description": "Representa a variação na concentração de portadores de carga, ou seja, a diferença na quantidade de portadores entre duas regiões do semicondutor."
+            },
+            {
+              "symbol": "L_{E}",
+              "description": "Representa a distância ao longo da qual a variação de concentração ocorre, ou seja, a extensão sobre a qual a diferença de concentração é medida."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "12.38",
+      "text": "The base width of a bipolar transistor is normally small to provide a large current gain and increased speed. The base width also affects the Early voltage. In a silicon npn bipolar transistor at T = 300 K, the doping concentrations are N_{E} = 10^{18} cm^{-3}, N_{B} = 3 \\times 10^{16} cm^{-3}, and N_{C} = 5 \\times 10^{15} cm^{-3}. Assume D_{E} = 20 cm²/s and τ_{B} = 5 \\times 10^{-7} s, and let V_{CE} = 0.70 V. Using voltages V_{E} = 5 V and V_{CE} = 10 V to two data points, estimate the Early voltage for metallurgical base widths of (a) 1.0 μm, (b) 0.800 μm, and (c) 0.60 μm.",
+      "formulas": [
+        {
+          "originalFormula": "V_{A} = \\frac{V_{CE}}{g_{m}}",
+          "genericFormula": "V_{A} = \\frac{V_{CE}}{g_{m}}",
+          "description": "Esta fórmula representa a relação entre a tensão de saída em um amplificador e a tensão coletor-emissor, dividida pela transcondutância do dispositivo. Ela é usada para determinar a tensão de saída em função da tensão coletor-emissor e da transcondutância, que é uma medida da eficiência do amplificador em converter variações de tensão em variações de corrente.",
+          "concepts": [
+            "Amplificadores eletrônicos",
+            "Transcondutância",
+            "Tensão coletor-emissor"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{A}",
+              "description": "Representa a tensão de saída do amplificador."
+            },
+            {
+              "symbol": "V_{CE}",
+              "description": "Representa a tensão entre o coletor e o emissor do transistor."
+            },
+            {
+              "symbol": "g_{m}",
+              "description": "Representa a transcondutância, que é a razão entre a variação da corrente de saída e a variação da tensão de entrada em um amplificador."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "12.39",
+      "text": "A uniformly doped pnp silicon bipolar transistor has a base doping of N_{B} = 10^{16} cm^{-3}, a collector doping of N_{C} = 10^{15} cm^{-3}, a metallurgical base width of x_{B0} = 0.0 μm, a base minority carrier diffusion coefficient D_{B} = 10 cm²/s, and a B-E cross-sectional area of A_{BE} = 10^{-4} cm². The transistor is biased in the forward-active mode with V_{BE} = 0.625 V. Neglecting the B-E space charge width and assuming x_{C} << L_{B}, determine the change in neutral base width as V_{CE} changes from 1 to 5 V, (b) estimate the Early voltage, and (c) find the output resistance.",
+      "formulas": [
+        {
+          "originalFormula": "r_{o} = \\frac{V_{A}}{I_C}",
+          "genericFormula": "r_{o} = \\frac{V_{A}}{I_C}",
+          "description": "Esta fórmula representa a resistência de saída de um transistor bipolar em configuração de emissor comum, onde a resistência de saída é calculada pela razão entre a tensão de saída e a corrente de coletor. Essa relação é fundamental para entender como o transistor se comporta em circuitos amplificadores.",
+          "concepts": [
+            "Resistência de saída",
+            "Transistor bipolar",
+            "Tensão de saída",
+            "Corrente de coletor",
+            "Configuração de emissor comum"
+          ],
+          "symbols": [
+            {
+              "symbol": "r_{o}",
+              "description": "Representa a resistência de saída do transistor, que indica como a tensão se relaciona com a corrente em sua saída."
+            },
+            {
+              "symbol": "V_{A}",
+              "description": "Representa a tensão de saída do transistor, que é a diferença de potencial elétrico medida entre o coletor e o emissor."
+            },
+            {
+              "symbol": "I_C",
+              "description": "Representa a corrente que flui pelo coletor do transistor, que é a corrente principal que controla a operação do dispositivo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "12.40",
+      "text": "Consider a uniformly doped silicon npn bipolar transistor in which x_{E} = L_{E} = L_{B} = D_{E} = D_{B}. Assume that x_{E} = 0.995 and N_{E} = 10^{17} cm^{-3}. Calculate and plot the common-emitter current gain β for N_{E} = 10^{17}, 10^{18}, and 10^{19} cm^{-3}, and for the case (a) when the bandgap narrowing effect is neglected, and (b) when the bandgap narrowing effect is taken into account.",
+      "formulas": [
+        {
+          "originalFormula": "\\beta = \\frac{I_C}{I_B}",
+          "genericFormula": "\\beta = \\frac{I_C}{I_B}",
+          "description": "Esta fórmula representa o ganho de corrente de um transistor bipolar, que é a razão entre a corrente coletora e a corrente base. O ganho de corrente é uma medida de quão eficaz um transistor é em amplificar a corrente elétrica.",
+          "concepts": [
+            "Transistor bipolar",
+            "Ganho de corrente",
+            "Corrente coletora",
+            "Corrente base"
+          ],
+          "symbols": [
+            {
+              "symbol": "β",
+              "description": "Representa o ganho de corrente do transistor, que indica quantas vezes a corrente na coletora é maior que a corrente na base."
+            },
+            {
+              "symbol": "I_C",
+              "description": "Representa a corrente que flui do coletor do transistor, que é a corrente de saída do dispositivo."
+            },
+            {
+              "symbol": "I_B",
+              "description": "Representa a corrente que flui para a base do transistor, que é a corrente de entrada necessária para controlar o funcionamento do transistor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "12.41",
+      "text": "A silicon pnp bipolar transistor at T = 300 K is to be designed so that the emitter injection efficiency is η = 0.996. Assume that x_{E} = x_{C} = L_{E} = D_{E} = D_{B}, and let N_{E} = 10^{17} cm^{-3}. (a) Determine the maximum base doping, taking into account bandgap narrowing. (b) If bandgap narrowing were neglected, what would be the maximum base doping required?",
+      "formulas": [
+        {
+          "originalFormula": "N_{B} = \\frac{N_{E}}{\\eta}",
+          "genericFormula": "N_{B} = \\frac{N_{E}}{\\eta}",
+          "description": "Esta fórmula representa a relação entre a densidade de portadores de carga em um semicondutor do tipo p, denotada como N_B, e a densidade de portadores de carga em um semicondutor do tipo n, denotada como N_E, levando em consideração a eficiência do processo de recombinação, representada por η.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Semicondutores do tipo p e n",
+            "Eficiência de recombinação"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_{B}",
+              "description": "Representa a densidade de portadores de carga do tipo buraco em um semicondutor do tipo p."
+            },
+            {
+              "symbol": "N_{E}",
+              "description": "Representa a densidade de portadores de carga do tipo elétron em um semicondutor do tipo n."
+            },
+            {
+              "symbol": "η",
+              "description": "Representa a eficiência do processo de recombinação de portadores de carga, que indica a fração de portadores que se recombinam em relação ao total."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "12.42",
+      "text": "The current crowding effect, to a first approximation, can be determined by using the geometry shown in Figure P12.42. Assume that one-half of the base current enters from each side of the emitter strip and flows uniformly to the center of the emitter. The base is type with the following parameters: N_{E} = 2 \\times 10^{16} cm^{-3}, x = 0.65 μm, μ_{n} = 250 cm²/V·s, and L_{E} = 25 μm. Assume S = 10 μm. (i) Calculate the resistance between x = 0 and x = S/2. (ii) For V_{E} = 0.60 V at x = S/2, determine the voltage drop between x = 0 and x = S/2. (iii) For V_{E} = 0.60 V at x = S/2, determine the ratio of electrons being injected into the base at x = S/2 compared to x = 0. (b) Repeat part (a) for S = 3 μm.",
+      "formulas": [
+        {
+          "originalFormula": "R = \\frac{V}{I}",
+          "genericFormula": "R = \\frac{V}{I}",
+          "description": "Esta fórmula representa a relação entre a resistência elétrica, a tensão e a corrente em um circuito elétrico. Ela nos diz que a resistência é igual à tensão dividida pela corrente que passa pelo circuito.",
+          "concepts": [
+            "Resistência elétrica",
+            "Tensão elétrica",
+            "Corrente elétrica",
+            "Lei de Ohm"
+          ],
+          "symbols": [
+            {
+              "symbol": "R",
+              "description": "Representa a resistência elétrica, que é a oposição que um material oferece ao fluxo de corrente elétrica."
+            },
+            {
+              "symbol": "V",
+              "description": "Representa a tensão elétrica, que é a diferença de potencial elétrico entre dois pontos em um circuito."
+            },
+            {
+              "symbol": "I",
+              "description": "Representa a corrente elétrica, que é o fluxo de carga elétrica que passa por um condutor em um determinado tempo."
+            }
+          ]
+        },
+        {
+          "originalFormula": "J = q n D \\frac{dP}{dx}",
+          "genericFormula": "J = q n D \\frac{dP}{dx}",
+          "description": "Esta fórmula representa a densidade de corrente elétrica em um semicondutor, onde a corrente é influenciada pela quantidade de portadores de carga, sua mobilidade e a variação do potencial elétrico ao longo de uma distância.",
+          "concepts": [
+            "Densidade de corrente elétrica",
+            "Portadores de carga",
+            "Mobilidade dos portadores",
+            "Gradiente de potencial elétrico"
+          ],
+          "symbols": [
+            {
+              "symbol": "J",
+              "description": "Representa a densidade de corrente elétrica, que é a quantidade de carga que passa por uma unidade de área em um determinado tempo."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elétrica de um único portador, que pode ser um elétron ou um buraco em um semicondutor."
+            },
+            {
+              "symbol": "n",
+              "description": "Representa a densidade de portadores de carga, ou seja, o número de portadores de carga por unidade de volume no material."
+            },
+            {
+              "symbol": "D",
+              "description": "Representa a mobilidade dos portadores de carga, que é uma medida de quão rapidamente os portadores podem se mover através do semicondutor quando um campo elétrico é aplicado."
+            },
+            {
+              "symbol": "dP",
+              "description": "Representa uma pequena variação no potencial elétrico ao longo de uma distância."
+            },
+            {
+              "symbol": "dx",
+              "description": "Representa uma pequena variação na distância ao longo da qual a variação de potencial elétrico está sendo medida."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "Example 12.2",
+      "text": "From Equation (12.39a), we find \\alpha_{T} = \\frac{1}{\\cosh \\left( \\frac{x_b}{L_b} \\right)} = \\frac{1}{\\cosh \\left( \\frac{0.80}{1.0} \\right)} \\approx 0.9968",
+      "formulas": [
+        {
+          "originalFormula": "\\alpha_{T} = \\frac{1}{\\cosh \\left( \\frac{x_b}{L_b} \\right)}",
+          "genericFormula": "\\alpha_{T} = \\frac{1}{\\cosh \\left( \\frac{x}{L} \\right)}",
+          "description": "Esta fórmula representa a relação entre a constante de atenuação térmica e a posição em um material, onde a atenuação térmica é uma medida de como a temperatura diminui ao longo de um material em função da distância.",
+          "concepts": [
+            "Atenuação térmica",
+            "Distribuição de temperatura em materiais",
+            "Função hiperbólica cosseno"
+          ],
+          "symbols": [
+            {
+              "symbol": "α_{T}",
+              "description": "Representa a constante de atenuação térmica, que indica a taxa de diminuição da temperatura ao longo de um material."
+            },
+            {
+              "symbol": "x_b",
+              "description": "Representa a posição ao longo do material onde a temperatura está sendo medida ou avaliada."
+            },
+            {
+              "symbol": "L_b",
+              "description": "Representa a largura característica do material, que é uma medida da extensão ao longo da qual a temperatura se distribui."
+            },
+            {
+              "symbol": "cosh",
+              "description": "É a função hiperbólica cosseno, que descreve como as variáveis se comportam em relação a uma distribuição exponencial, sendo utilizada para modelar fenômenos que envolvem crescimento e atenuação."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "12.4",
+      "text": "γ = \\frac{1}{1 + \\frac{N_b}{N_e}} = 0.9967",
+      "formulas": [
+        {
+          "originalFormula": "N_i = 0.00331 \\quad \\text{or} \\quad \\frac{N_e}{N_b} = 302",
+          "genericFormula": "N_i = C \\quad \\text{or} \\quad \\frac{N_e}{N_b} = R",
+          "description": "Esta fórmula representa a concentração intrínseca de portadores de carga em um semicondutor e a relação entre a concentração de elétrons livres e a concentração de buracos. A primeira parte indica um valor específico de concentração intrínseca, enquanto a segunda parte mostra uma razão entre a quantidade de elétrons e buracos no material.",
+          "concepts": [
+            "Concentração intrínseca de portadores de carga",
+            "Semicondutores",
+            "Elétrons livres",
+            "Buracos",
+            "Relação entre portadores de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_i",
+              "description": "Representa a concentração intrínseca de portadores de carga em um semicondutor, que é o número de portadores por unidade de volume."
+            },
+            {
+              "symbol": "C",
+              "description": "Um valor genérico que representa a concentração intrínseca de portadores de carga em um semicondutor."
+            },
+            {
+              "symbol": "N_e",
+              "description": "Representa a concentração de elétrons livres em um semicondutor, que são os portadores de carga negativa."
+            },
+            {
+              "symbol": "N_b",
+              "description": "Representa a concentração de buracos em um semicondutor, que são os portadores de carga positiva resultantes da ausência de elétrons."
+            },
+            {
+              "symbol": "R",
+              "description": "Um valor genérico que representa a razão entre a concentração de elétrons livres e a concentração de buracos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Ex 12.6",
+      "text": "V_{be} = 0.654 V",
+      "formulas": [
+        {
+          "originalFormula": "V_{be} = 2(0.0259) \\ln(3.02 \\times 10^{5})",
+          "genericFormula": "V_{be} = 2k \\ln(N)",
+          "description": "Essa fórmula calcula a tensão base-emissor de um transistor bipolar de junção (BJT) em um determinado ponto de operação. A tensão base-emissor é crucial para o funcionamento do transistor, pois determina se ele está em modo de condução ou corte.",
+          "concepts": [
+            "Tensão base-emissor",
+            "Transistor bipolar de junção (BJT)",
+            "Termodinâmica e temperatura",
+            "Logaritmos naturais"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{be}",
+              "description": "Representa a tensão entre a base e o emissor do transistor, que é essencial para controlar a condução do dispositivo."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia térmica em sistemas físicos."
+            },
+            {
+              "symbol": "\\ln",
+              "description": "Representa o logaritmo natural, que é uma função matemática que ajuda a descrever relações exponenciais em sistemas físicos."
+            },
+            {
+              "symbol": "N",
+              "description": "Representa um número adimensional que pode estar relacionado à razão de concentrações de portadores de carga ou outras quantidades relevantes em um contexto de semicondutores."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Ex 12.8",
+      "text": "For V_{CE} = 10 V, we find x_{B} = 0.70 - 0.103 = 0.597 \\, \\mu m.",
+      "formulas": [
+        {
+          "originalFormula": "x_{B} = 0.70 - 0.103",
+          "genericFormula": "x_{B} = a - b",
+          "description": "Esta fórmula representa a determinação de uma variável, que pode ser uma fração ou proporção, a partir de um valor inicial subtraindo um segundo valor. Neste caso, 'x_B' é o resultado da operação de subtração entre dois números, onde 'a' é um valor fixo e 'b' é um valor que pode ser considerado como uma correção ou ajuste.",
+          "concepts": [
+            "Subtração",
+            "Frações",
+            "Proporções"
+          ],
+          "symbols": [
+            {
+              "symbol": "x_{B}",
+              "description": "Representa a variável que está sendo calculada, que pode ser uma fração ou proporção em um determinado contexto."
+            },
+            {
+              "symbol": "a",
+              "description": "Representa um valor inicial ou base a partir do qual a subtração é realizada."
+            },
+            {
+              "symbol": "b",
+              "description": "Representa um valor que é subtraído do valor inicial, podendo ser visto como uma correção ou ajuste."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Ex 12.11",
+      "text": "Assuming the empirical constant n is 3, we find B_{V_{cbo}} = \\sqrt{100(15)} = 69.6 V.",
+      "formulas": [
+        {
+          "originalFormula": "B_{V_{cbo}} = \\sqrt{100(15)}",
+          "genericFormula": "B_{V_{cbo}} = \\sqrt{X(Y)}",
+          "description": "Esta fórmula representa a determinação de um parâmetro de ganho de um transistor em um determinado modo de operação, onde a relação entre a tensão e a corrente é avaliada para entender o comportamento do dispositivo em circuitos eletrônicos.",
+          "concepts": [
+            "Transistores",
+            "Ganho de corrente",
+            "Circuitos eletrônicos",
+            "Análise de semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "B_{V_{cbo}}",
+              "description": "Representa o ganho de corrente em um transistor em configuração de coletor aberto, onde a tensão entre o coletor e a base é considerada."
+            },
+            {
+              "symbol": "X",
+              "description": "Representa um valor numérico que pode ser uma constante ou uma variável relacionada a um parâmetro específico do circuito, como uma tensão ou corrente."
+            },
+            {
+              "symbol": "Y",
+              "description": "Representa outro valor numérico que pode ser uma constante ou uma variável, geralmente relacionada a um parâmetro que influencia o ganho do transistor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "12.14",
+      "text": "The calculations yield τ_e = 25.9 ps and τ_b = 50 ps.",
+      "formulas": [
+        {
+          "originalFormula": "r'_{e} = 0.0259 \\, \\Omega",
+          "genericFormula": "r'_{e} = 0.0259 \\, \\Omega",
+          "description": "Não foi possível gerar descrição automática",
+          "concepts": [],
+          "symbols": [],
+          "rawText": "```json\n{\n  \"originalFormula\": \"r'_{e} = 0.0259 \\, \\\\Omega\",\n  \"genericFormula\": \"r'_{e} = R\",\n  \"description\": \"Esta fórmula representa a resistência elétrica de um componente ou material, onde a resistência é uma medida de quão difícil é para a corrente elétrica passar através dele.\",\n  \"concepts\": [\n    \"Resistência elétrica\",\n    \"Corrente elétrica\",\n    \"Circuitos elétricos\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"r'_{e}\",\n      \"description\": \"Este símbolo representa a resistência elétrica de um elemento específico em um circuito, que pode variar dependendo das condições e do material.\"\n    },\n    {\n      \"symbol\": \"R\",\n      \"description\": \"Este símbolo representa a resistência elétrica genérica, que é uma propriedade de todos os materiais que determina a oposição ao fluxo de corrente elétrica.\"\n    }\n  ]\n}\n```"
+        },
+        {
+          "originalFormula": "\\tau_{e} = (25.9)(10^{-12}) = 25.9 \\, ps",
+          "genericFormula": "\\tau_{e} = A \\times 10^{-12}",
+          "description": "Esta fórmula representa o tempo de relaxamento elétrico, que é um parâmetro importante em física de semicondutores. O tempo de relaxamento elétrico indica quanto tempo leva para os portadores de carga (elétrons ou lacunas) atingirem um estado de equilíbrio após uma perturbação, como a aplicação de um campo elétrico.",
+          "concepts": [
+            "tempo de relaxamento elétrico",
+            "equilíbrio de portadores de carga",
+            "perturbações em semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\tau_{e}",
+              "description": "representa o tempo de relaxamento elétrico, que é o tempo necessário para que os portadores de carga retornem ao equilíbrio após uma perturbação."
+            },
+            {
+              "symbol": "A",
+              "description": "representa um coeficiente que indica a magnitude do tempo de relaxamento, expresso em picosegundos."
+            }
+          ]
+        },
+        {
+          "originalFormula": "\\tau_{b} = \\frac{(0.5)(10^{-6})^{2}}{2(25 \\times 10^{-4})} = 50 \\, ps",
+          "genericFormula": "\\tau_{b} = \\frac{(a)(b)^{2}}{c(d)}",
+          "description": "Esta fórmula representa o tempo de relaxação de um portador de carga em um semicondutor, que é uma medida de quanto tempo leva para a carga se dispersar após ser excitada. O resultado é expresso em picosegundos, que é uma unidade de tempo muito pequena.",
+          "concepts": [
+            "tempo de relaxação",
+            "portadores de carga",
+            "semicondutores",
+            "dispersão de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "τ_{b}",
+              "description": "representa o tempo de relaxação dos portadores de carga em um semicondutor."
+            },
+            {
+              "symbol": "a",
+              "description": "um fator que pode representar uma constante de proporcionalidade ou um coeficiente relacionado ao sistema em análise."
+            },
+            {
+              "symbol": "b",
+              "description": "representa uma quantidade que está sendo elevada ao quadrado, geralmente relacionada a uma dimensão ou uma propriedade do material."
+            },
+            {
+              "symbol": "c",
+              "description": "um fator que representa uma constante ou um coeficiente que influencia a dispersão dos portadores de carga."
+            },
+            {
+              "symbol": "d",
+              "description": "uma quantidade que está multiplicando o fator c, podendo representar uma dimensão ou uma propriedade do sistema."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "E_{c} = E_{f} + e^{-E_{f}/kT}",
+      "genericFormula": "E_{c} = E_{f} + e^{-E_{f}/kT}",
+      "description": "Esta fórmula relaciona a energia de condução de um semicondutor com a energia de Fermi e a temperatura do sistema. Ela mostra como a energia de condução é afetada pela energia de Fermi e pela temperatura, representando um aspecto fundamental do comportamento elétrico dos semicondutores.",
+      "concepts": [
+        "Energia de condução",
+        "Energia de Fermi",
+        "Temperatura",
+        "Termodinâmica dos semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{c}",
+          "description": "Representa a energia de condução, que é a energia mínima necessária para que um elétron possa se mover livremente no material semicondutor."
+        },
+        {
+          "symbol": "E_{f}",
+          "description": "Representa a energia de Fermi, que é o nível de energia mais alto ocupado por elétrons em um sistema a temperatura zero absoluto."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a base do logaritmo natural, uma constante matemática que é aproximadamente igual a 2,71828, utilizada em cálculos envolvendo crescimento exponencial."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura de um sistema à energia térmica média dos seus constituintes."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura do sistema em Kelvin, que é uma medida da energia térmica média das partículas em um material."
+        }
+      ]
+    },
+    {
+      "originalFormula": "n_{p} = p_{n} e^{(E_{f} - E_{c})/kT}",
+      "genericFormula": "n_{p} = p_{n} e^{(E_{f} - E_{c})/kT}",
+      "description": "Esta fórmula representa a densidade de portadores de carga em um semicondutor dopado, onde n sub p é a densidade de portadores de carga do tipo positivo (buracos), p sub n é a densidade de portadores de carga do tipo negativo (elétrons), E sub f é o nível de Fermi, E sub c é a energia da banda de condução, k é a constante de Boltzmann e T é a temperatura em Kelvin.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Níveis de energia em semicondutores",
+        "Efeito da temperatura na condutividade",
+        "Dopagem de semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_{p}",
+          "description": "Representa a densidade de portadores de carga do tipo positivo, que são os buracos em um semicondutor."
+        },
+        {
+          "symbol": "p_{n}",
+          "description": "Representa a densidade de portadores de carga do tipo negativo, que são os elétrons em um semicondutor."
+        },
+        {
+          "symbol": "E_{f}",
+          "description": "Representa o nível de Fermi, que é o nível de energia mais alto que os elétrons ocupam a temperatura zero absoluto."
+        },
+        {
+          "symbol": "E_{c}",
+          "description": "Representa a energia da banda de condução, que é o nível de energia onde os elétrons podem se mover livremente e contribuir para a condução elétrica."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura em Kelvin, que é uma medida da energia térmica média das partículas em um sistema."
+        }
+      ]
+    },
+    {
+      "originalFormula": "i_C = \\beta i_{b}",
+      "genericFormula": "i_C = \\beta i_{b}",
+      "description": "Esta fórmula representa a relação entre a corrente de coletor e a corrente de base em um transistor bipolar. A corrente de coletor é proporcional à corrente de base, sendo a constante de proporcionalidade o ganho de corrente do transistor, denotado por beta.",
+      "concepts": [
+        "Transistor bipolar",
+        "Corrente elétrica",
+        "Ganho de corrente"
+      ],
+      "symbols": [
+        {
+          "symbol": "i_C",
+          "description": "Representa a corrente que flui do coletor do transistor."
+        },
+        {
+          "symbol": "β",
+          "description": "Representa o ganho de corrente do transistor, que é a razão entre a corrente de coletor e a corrente de base."
+        },
+        {
+          "symbol": "i_b",
+          "description": "Representa a corrente que flui para a base do transistor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "V_{CE} = V_{CC} - i_C R_C",
+      "genericFormula": "V_{CE} = V_{CC} - I_C R_C",
+      "description": "Esta fórmula representa a relação entre a tensão no coletor-emissor de um transistor bipolar e as tensões e correntes em um circuito que inclui uma fonte de tensão e uma resistência. Ela mostra como a tensão no coletor-emissor é afetada pela corrente que passa pelo resistor conectado ao coletor.",
+      "concepts": [
+        "Transistor bipolar",
+        "Circuitos elétricos",
+        "Lei de Ohm",
+        "Tensão e corrente elétrica"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_{CE}",
+          "description": "Representa a tensão entre o coletor e o emissor do transistor."
+        },
+        {
+          "symbol": "V_{CC}",
+          "description": "Representa a tensão da fonte de alimentação conectada ao coletor do transistor."
+        },
+        {
+          "symbol": "i_C",
+          "description": "Representa a corrente que flui através do coletor do transistor."
+        },
+        {
+          "symbol": "R_C",
+          "description": "Representa a resistência conectada ao coletor do transistor, que limita a corrente que passa por ele."
+        }
+      ]
+    },
+    {
+      "originalFormula": "J_{E} = \\text{Due to the diffusion of minority carrier electrons in the base at } x = 0.",
+      "genericFormula": "J_{E} = \\text{Due to the diffusion of minority carrier electrons in the base at } x = 0.",
+      "description": "Esta fórmula representa a densidade de corrente de elétrons minoritários que se difundem na base de um dispositivo semicondutor, especificamente no ponto onde a coordenada x é igual a zero. Isso é importante para entender como os portadores de carga se movem dentro do material e como isso afeta o funcionamento de dispositivos como transistores.",
+      "concepts": [
+        "Difusão de portadores de carga",
+        "Elétrons minoritários",
+        "Semicondutores",
+        "Densidade de corrente"
+      ],
+      "symbols": [
+        {
+          "symbol": "J_{E}",
+          "description": "Representa a densidade de corrente de elétrons minoritários, que é a quantidade de carga elétrica que passa por uma unidade de área em um determinado tempo."
+        }
+      ]
+    },
+    {
+      "originalFormula": "J_{C} = \\text{Due to the diffusion of minority carrier electrons in the base at } x = x_{B}.",
+      "genericFormula": "J_{C} = \\text{Due to the diffusion of minority carrier electrons in the base at } x = x_{B}.",
+      "description": "Esta fórmula representa a densidade de corrente de portadores minoritários, especificamente elétrons, que se difundem na região da base de um dispositivo semicondutor, como um transistor. A corrente é gerada devido ao movimento desses elétrons em resposta a um gradiente de concentração.",
+      "concepts": [
+        "Difusão de portadores de carga",
+        "Portadores minoritários",
+        "Densidade de corrente",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "J_{C}",
+          "description": "Representa a densidade de corrente dos portadores minoritários, que é a quantidade de carga que passa por uma unidade de área em um determinado tempo."
+        },
+        {
+          "symbol": "x_{B}",
+          "description": "Indica a posição na base do semicondutor onde a densidade de corrente está sendo considerada."
+        }
+      ]
+    },
+    {
+      "originalFormula": "J_{B} = J_{E} - J_{C}",
+      "genericFormula": "J_{B} = J_{E} - J_{C}",
+      "description": "Esta fórmula representa a densidade de corrente na base de um transistor, que é a diferença entre a densidade de corrente de elétrons que entram na base e a densidade de corrente de elétrons que saem devido à recombinação com lacunas. Essa recombinação é um fenômeno importante que afeta o funcionamento do dispositivo.",
+      "concepts": [
+        "Densidade de corrente",
+        "Recombinação de portadores de carga",
+        "Transistores",
+        "Portadores minoritários e majoritários"
+      ],
+      "symbols": [
+        {
+          "symbol": "J_{B}",
+          "description": "Representa a densidade de corrente na base do transistor, que é a quantidade de carga que passa por uma unidade de área na base por unidade de tempo."
+        },
+        {
+          "symbol": "J_{E}",
+          "description": "Representa a densidade de corrente de elétrons que entram na base, contribuindo para a corrente total que flui através do dispositivo."
+        },
+        {
+          "symbol": "J_{C}",
+          "description": "Representa a densidade de corrente de elétrons que saem da base devido à recombinação com lacunas, que são os portadores de carga majoritários na base."
+        }
+      ]
+    },
+    {
+      "originalFormula": "J_{E} = \\text{Due to the diffusion of minority carrier holes in the emitter at } x' = 0.",
+      "genericFormula": "J_{E} = \\text{Due to the diffusion of minority carrier holes in the emitter at } x' = 0.",
+      "description": "Esta fórmula representa a densidade de corrente elétrica gerada pela difusão de portadores minoritários, especificamente buracos, na região do emissor de um dispositivo semicondutor, quando a posição é considerada como zero.",
+      "concepts": [
+        "Difusão de portadores de carga",
+        "Portadores minoritários",
+        "Densidade de corrente elétrica",
+        "Emissor em dispositivos semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "J_{E}",
+          "description": "Representa a densidade de corrente elétrica no emissor do dispositivo semicondutor."
+        },
+        {
+          "symbol": "x'",
+          "description": "Representa a posição ao longo do eixo do dispositivo semicondutor, onde neste caso é considerado como zero."
+        }
+      ]
+    },
+    {
+      "originalFormula": "J_{K} = \\text{Due to the recombination of carriers in the forward-biased B–E junction.}",
+      "genericFormula": "J_{K} = \\text{Recombination current density in a forward-biased junction}",
+      "description": "Esta fórmula representa a densidade de corrente associada à recombinação de portadores de carga em uma junção base-emissor de um transistor bipolar quando está polarizada diretamente. A recombinação ocorre quando os portadores de carga, como elétrons e lacunas, se encontram e se aniquilam, resultando em uma corrente que flui através da junção.",
+      "concepts": [
+        "Recombinação de portadores de carga",
+        "Polarização direta de junções semicondutoras",
+        "Densidade de corrente em semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "J_{K}",
+          "description": "Representa a densidade de corrente devido à recombinação de portadores em uma junção semicondutora."
+        }
+      ]
+    },
+    {
+      "originalFormula": "J_{C} = \\text{Due to the diffusion of minority carrier holes in the collector at } x' = 0.",
+      "genericFormula": "J_{C} = \\text{Due to the diffusion of minority carrier holes in the collector at } x' = 0.",
+      "description": "Esta fórmula representa a densidade de corrente no coletor de um transistor, que é causada pela difusão de portadores minoritários, especificamente buracos, em uma região do coletor onde a coordenada é zero.",
+      "concepts": [
+        "Difusão de portadores de carga",
+        "Transistores",
+        "Portadores minoritários",
+        "Densidade de corrente"
+      ],
+      "symbols": [
+        {
+          "symbol": "J_{C}",
+          "description": "Representa a densidade de corrente no coletor de um transistor."
+        },
+        {
+          "symbol": "x'",
+          "description": "Representa a posição na região do coletor onde a análise está sendo feita, com x' igual a zero indicando um ponto específico nessa região."
+        }
+      ]
+    },
+    {
+      "originalFormula": "J_{G} = \\text{Due to the generation of carriers in the reverse-biased B–C junction.}",
+      "genericFormula": "J_{G} = \\text{Geração de portadores na junção B–C em polarização reversa.}",
+      "description": "Esta fórmula representa a densidade de corrente gerada devido à criação de portadores de carga em uma junção de semicondutor quando está polarizada reversamente. Isso é importante em dispositivos como diodos, onde a polarização reversa pode levar à geração de portadores que afetam o comportamento do dispositivo.",
+      "concepts": [
+        "Densidade de corrente",
+        "Geração de portadores",
+        "Polarização reversa",
+        "Junção de semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "J_{G}",
+          "description": "Representa a densidade de corrente gerada na junção B–C devido à geração de portadores."
+        }
+      ]
+    },
+    {
+      "originalFormula": "J_{JE} = -eD_{E} \\frac{d\\delta p_{E}(x')}{dx} \\bigg|_{x=0}",
+      "genericFormula": "J_{JE} = -eD_{E} \\frac{d\\delta p_{E}(x)}{dx} \\bigg|_{x=0}",
+      "description": "Esta fórmula representa a densidade de corrente de elétrons em um semicondutor, onde a corrente é influenciada pela variação da densidade de portadores de carga em relação à posição. A fórmula mostra como a densidade de corrente é proporcional à taxa de variação da densidade de portadores de carga, multiplicada por fatores que dependem da carga do elétron e da difusividade do material.",
+      "concepts": [
+        "Densidade de corrente",
+        "Difusão de portadores de carga",
+        "Gradiente de densidade de portadores",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "J_{JE}",
+          "description": "Representa a densidade de corrente de elétrons, que é a quantidade de carga que passa por uma unidade de área em um determinado tempo."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a carga de um único elétron."
+        },
+        {
+          "symbol": "D_{E}",
+          "description": "Representa o coeficiente de difusão dos elétrons, que indica a capacidade dos elétrons de se moverem através do material devido a um gradiente de concentração."
+        },
+        {
+          "symbol": "\\delta p_{E}(x')",
+          "description": "Representa a variação da densidade de portadores de carga (elétrons) em uma posição específica ao longo do material."
+        },
+        {
+          "symbol": "x",
+          "description": "Representa a posição ao longo do material semicondutor onde a densidade de portadores de carga está sendo avaliada."
+        }
+      ]
+    },
+    {
+      "originalFormula": "J_{JE} = (-)D_{E} \\frac{d\\delta n(x)}{dx} \\bigg|_{x=0}",
+      "genericFormula": "J_{JE} = (-)D_{E} \\frac{d\\delta n(x)}{dx} \\bigg|_{x=0}",
+      "description": "Esta fórmula representa a densidade de corrente de elétrons em um semicondutor em um ponto específico, levando em consideração a variação da densidade de portadores de carga em relação à posição. O sinal negativo indica que a corrente flui na direção oposta ao gradiente de concentração de portadores.",
+      "concepts": [
+        "Densidade de corrente",
+        "Difusão de portadores de carga",
+        "Gradiente de concentração",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "J_{JE}",
+          "description": "Representa a densidade de corrente de elétrons, que é a quantidade de carga elétrica que passa por uma unidade de área em um determinado tempo."
+        },
+        {
+          "symbol": "D_{E}",
+          "description": "É o coeficiente de difusão dos elétrons, que quantifica a facilidade com que os elétrons se movem através do material devido a um gradiente de concentração."
+        },
+        {
+          "symbol": "d\\delta n(x)",
+          "description": "Representa a variação da densidade de portadores de carga (elétrons) em relação à posição ao longo do material, indicando como a concentração de elétrons muda ao longo de um eixo."
+        },
+        {
+          "symbol": "dx",
+          "description": "É um pequeno deslocamento na posição ao longo do eixo em que a densidade de portadores está sendo medida, essencial para calcular a taxa de variação da densidade de portadores."
+        },
+        {
+          "symbol": "x",
+          "description": "Representa a posição ao longo do material semicondutor onde a densidade de portadores está sendo avaliada."
+        }
+      ]
+    },
+    {
+      "originalFormula": "J_{JE} = \\frac{eD_{E}}{L_{E}} \\left[ \\exp\\left( \\frac{V_{E}}{kT} \\right) - 1 \\right] \\cdot \\frac{1}{\\tanh\\left( \\frac{V_{E}}{L_{E}} \\right)}",
+      "genericFormula": "J_{JE} = \\frac{eD_{E}}{L_{E}} \\left[ \\exp\\left( \\frac{V_{E}}{kT} \\right) - 1 \\right] \\cdot \\frac{1}{\\tanh\\left( \\frac{V_{E}}{L_{E}} \\right)}",
+      "description": "Esta fórmula representa a densidade de corrente em uma junção de semicondutores, levando em consideração o efeito da tensão aplicada e as propriedades do material. Ela descreve como a corrente elétrica flui através de uma junção, dependendo da tensão e das características do semicondutor.",
+      "concepts": [
+        "Densidade de corrente",
+        "Junção de semicondutores",
+        "Efeito da tensão",
+        "Propriedades do material",
+        "Termodinâmica"
+      ],
+      "symbols": [
+        {
+          "symbol": "J_{JE}",
+          "description": "Representa a densidade de corrente na junção de semicondutores, que é a quantidade de corrente elétrica que passa por uma unidade de área da junção."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a quantidade de carga elétrica transportada por um único elétron."
+        },
+        {
+          "symbol": "D_{E}",
+          "description": "Representa a difusividade do portador de carga no semicondutor, que indica a facilidade com que os portadores de carga se movem através do material."
+        },
+        {
+          "symbol": "L_{E}",
+          "description": "Representa o comprimento de difusão, que é a distância média que um portador de carga pode se mover antes de sofrer uma recombinação."
+        },
+        {
+          "symbol": "V_{E}",
+          "description": "Representa a tensão aplicada na junção, que influencia a movimentação dos portadores de carga e, consequentemente, a densidade de corrente."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura ao comportamento estatístico das partículas em um sistema."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta do sistema, que afeta a energia térmica dos portadores de carga."
+        },
+        {
+          "symbol": "\\exp",
+          "description": "Representa a função exponencial, que é uma função matemática que descreve crescimento ou decaimento exponencial, muito utilizada em processos físicos."
+        },
+        {
+          "symbol": "\\tanh",
+          "description": "Representa a função tangente hiperbólica, que é uma função matemática que aparece em várias áreas da física, especialmente em problemas relacionados a ondas e difusão."
+        }
+      ]
+    },
+    {
+      "originalFormula": "J_{JE} = \\frac{eD_{B}}{L_{B}} \\cdot \\frac{1}{\\sinh\\left( \\frac{V_{E}}{L_{B}} \\right)} \\left[ \\exp\\left( \\frac{V_{E}}{kT} \\right) - 1 \\right]",
+      "genericFormula": "J_{JE} = \\frac{eD_{B}}{L_{B}} \\cdot \\frac{1}{\\sinh\\left( \\frac{V_{E}}{L_{B}} \\right)} \\left[ \\exp\\left( \\frac{V_{E}}{kT} \\right) - 1 \\right]",
+      "description": "Esta fórmula representa a densidade de corrente em uma junção de semicondutores, levando em consideração a difusão de portadores de carga e a influência de uma tensão aplicada. Ela descreve como a corrente elétrica flui através de uma junção p-n sob a ação de uma tensão externa.",
+      "concepts": [
+        "Densidade de corrente",
+        "Difusão de portadores de carga",
+        "Tensão elétrica",
+        "Efeito da temperatura",
+        "Função hiperbólica seno"
+      ],
+      "symbols": [
+        {
+          "symbol": "J_{JE}",
+          "description": "Representa a densidade de corrente na junção de semicondutores."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a carga de um único elétron."
+        },
+        {
+          "symbol": "D_{B}",
+          "description": "Representa o coeficiente de difusão dos portadores de carga no material semicondutor."
+        },
+        {
+          "symbol": "L_{B}",
+          "description": "Representa a largura da região de depleção na junção p-n."
+        },
+        {
+          "symbol": "V_{E}",
+          "description": "Representa a tensão aplicada na junção, que influencia a corrente que flui através dela."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia térmica dos portadores de carga."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta em Kelvin, que afeta o comportamento dos portadores de carga."
+        },
+        {
+          "symbol": "\\sinh",
+          "description": "Representa a função hiperbólica seno, que é usada para descrever o comportamento de sistemas em equilíbrio térmico."
+        },
+        {
+          "symbol": "\\exp",
+          "description": "Representa a função exponencial, que descreve o crescimento ou decaimento exponencial, comum em fenômenos físicos."
+        }
+      ]
+    },
+    {
+      "originalFormula": "J_{E} = (-e)D_{b} \\frac{d\\theta_{b}(x)}{dx} \\bigg|_{x=0}",
+      "genericFormula": "J_{E} = (-e)D_{b} \\frac{d\\theta_{b}(x)}{dx} \\bigg|_{x=0}",
+      "description": "Esta fórmula representa a densidade de corrente elétrica em um semicondutor, onde a corrente é influenciada pela variação do potencial elétrico em relação à posição. A fórmula mostra como a densidade de corrente é afetada pela difusividade do portador de carga e pela taxa de variação do potencial elétrico.",
+      "concepts": [
+        "Densidade de corrente elétrica",
+        "Difusão de portadores de carga",
+        "Gradiente de potencial elétrico",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "J_{E}",
+          "description": "Representa a densidade de corrente elétrica, que é a quantidade de carga que passa por uma unidade de área em um determinado tempo."
+        },
+        {
+          "symbol": "-e",
+          "description": "Representa a carga do elétron, que é uma quantidade fundamental de carga elétrica negativa."
+        },
+        {
+          "symbol": "D_{b}",
+          "description": "Representa o coeficiente de difusão do portador de carga, que indica a facilidade com que os portadores se movem através do material."
+        },
+        {
+          "symbol": "\\frac{d\\theta_{b}(x)}{dx}",
+          "description": "Representa a derivada do potencial elétrico em relação à posição, que indica como o potencial elétrico muda ao longo do espaço."
+        },
+        {
+          "symbol": "x",
+          "description": "Representa a posição ao longo do material semicondutor, onde a variação do potencial elétrico está sendo medida."
+        }
+      ]
+    },
+    {
+      "originalFormula": "J_{C} = \\frac{eD_{b}}{L_{b}} \\left[ \\frac{\\exp\\left(\\frac{eV_{BE}}{kT}\\right) - 1}{\\sinh\\left(\\frac{x_b}{L_b}\\right)} \\right] \\frac{1}{\\tanh\\left(\\frac{x_b}{L_b}\\right)}",
+      "genericFormula": "J_{C} = \\frac{eD_{b}}{L_{b}} \\left[ \\frac{\\exp\\left(\\frac{eV_{BE}}{kT}\\right) - 1}{\\sinh\\left(\\frac{x_b}{L_b}\\right)} \\right] \\frac{1}{\\tanh\\left(\\frac{x_b}{L_b}\\right)}",
+      "description": "Esta fórmula representa a densidade de corrente de recombinação no contexto de um semicondutor, especificamente em uma junção p-n. Ela descreve como a corrente elétrica flui devido à movimentação de portadores de carga (elétrons e lacunas) sob a influência de um campo elétrico e de uma diferença de potencial.",
+      "concepts": [
+        "Densidade de corrente",
+        "Recombinação de portadores de carga",
+        "Diferença de potencial",
+        "Temperatura",
+        "Propriedades dos semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "J_{C}",
+          "description": "Representa a densidade de corrente de recombinação, que é a quantidade de corrente elétrica que flui por unidade de área."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a menor unidade de carga elétrica que existe, associada a um único elétron."
+        },
+        {
+          "symbol": "D_{b}",
+          "description": "Representa o coeficiente de difusão dos portadores de carga no material semicondutor, que indica a facilidade com que os portadores se movem através do material."
+        },
+        {
+          "symbol": "L_{b}",
+          "description": "Representa o comprimento de difusão, que é a distância média que os portadores de carga podem se mover antes de recombinar."
+        },
+        {
+          "symbol": "V_{BE}",
+          "description": "Representa a tensão base-emissor em um transistor, que é a diferença de potencial aplicada entre a base e o emissor do dispositivo."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia térmica dos portadores de carga."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta em Kelvin, que afeta a energia térmica dos portadores de carga e, consequentemente, a corrente elétrica."
+        },
+        {
+          "symbol": "x_b",
+          "description": "Representa a largura da região de depleção em um semicondutor, que é a área onde não há portadores de carga livres devido à recombinação."
+        },
+        {
+          "symbol": "sinh",
+          "description": "Representa a função hiperbólica seno, que é usada para descrever o comportamento de funções exponenciais em relação a distâncias em semicondutores."
+        },
+        {
+          "symbol": "tanh",
+          "description": "Representa a função hiperbólica tangente, que é utilizada para modelar a relação entre a largura da região de depleção e a densidade de corrente."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\alpha_{T} = \\frac{J_{C}}{J_{E}} = \\frac{\\exp\\left(\\frac{eV_{BE}}{kT}\\right) \\cosh\\left(\\frac{x_b}{L_b}\\right)}{1 + \\exp\\left(\\frac{eV_{BE}}{kT}\\right) \\cosh\\left(\\frac{x_b}{L_b}\\right)}",
+      "genericFormula": "\\alpha_{T} = \\frac{J_{C}}{J_{E}} = \\frac{\\exp\\left(\\frac{eV_{BE}}{kT}\\right) \\cosh\\left(\\frac{x_b}{L_b}\\right)}{1 + \\exp\\left(\\frac{eV_{BE}}{kT}\\right) \\cosh\\left(\\frac{x_b}{L_b}\\right)}",
+      "description": "Esta fórmula representa a relação entre a corrente de carga e a corrente de emissão em um dispositivo semicondutor, especificamente em um transistor bipolar. A razão entre essas correntes é conhecida como fator de transferência de corrente, que é influenciado pela tensão aplicada e pelas propriedades do material semicondutor.",
+      "concepts": [
+        "Transistores bipolares",
+        "Corrente de carga",
+        "Corrente de emissão",
+        "Efeito da temperatura em semicondutores",
+        "Fatores de transferência de corrente"
+      ],
+      "symbols": [
+        {
+          "symbol": "α_{T}",
+          "description": "Representa o fator de transferência de corrente, que indica a eficiência com que a corrente de carga é transferida em relação à corrente de emissão."
+        },
+        {
+          "symbol": "J_{C}",
+          "description": "Representa a corrente de carga, que é a corrente que flui através do dispositivo devido à injeção de portadores de carga."
+        },
+        {
+          "symbol": "J_{E}",
+          "description": "Representa a corrente de emissão, que é a corrente que flui devido à emissão de portadores de carga a partir da junção do dispositivo."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a base do logaritmo natural, uma constante matemática que é aproximadamente igual a 2.71828."
+        },
+        {
+          "symbol": "V_{BE}",
+          "description": "Representa a tensão entre a base e o emissor do transistor, que é um fator crucial para determinar a operação do dispositivo."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia térmica dos portadores de carga em um material."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta em Kelvin, que afeta o comportamento dos semicondutores e a mobilidade dos portadores de carga."
+        },
+        {
+          "symbol": "x_b",
+          "description": "Representa a largura da base do transistor, que é a distância pela qual os portadores de carga devem se mover para atravessar o dispositivo."
+        },
+        {
+          "symbol": "L_b",
+          "description": "Representa o comprimento de difusão dos portadores de carga na base, que é uma medida de quão longe os portadores podem se mover antes de recombinar."
+        },
+        {
+          "symbol": "cosh",
+          "description": "Representa a função hiperbólica cosseno, que é usada para descrever o comportamento de portadores de carga em uma região de campo elétrico."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\alpha_{T} \\approx \\frac{1}{\\cosh\\left(\\frac{x_b}{L_b}\\right)}",
+      "genericFormula": "\\alpha_{T} \\approx \\frac{1}{\\cosh\\left(\\frac{x}{L}\\right)}",
+      "description": "Esta fórmula representa a relação entre a variável alpha T e a função hiperbólica cosseno, que é utilizada para descrever como uma determinada grandeza varia em relação a uma distância em um meio. A fórmula sugere que a variável alpha T é inversamente proporcional ao cosseno hiperbólico da razão entre a posição x e uma característica de comprimento L.",
+      "concepts": [
+        "Funções hiperbólicas",
+        "Propriedades de materiais semicondutores",
+        "Distribuição de cargas em meios",
+        "Comportamento de grandezas físicas em função da distância"
+      ],
+      "symbols": [
+        {
+          "symbol": "α_{T}",
+          "description": "Representa uma grandeza física que pode estar relacionada a propriedades térmicas ou elétricas de um material, dependendo do contexto."
+        },
+        {
+          "symbol": "x_{b}",
+          "description": "Representa uma posição ou distância em um meio, que pode ser a posição de uma carga ou uma variação de temperatura."
+        },
+        {
+          "symbol": "L_{b}",
+          "description": "Representa uma característica de comprimento do sistema, que pode estar relacionada à largura de uma região ou à escala de variação da grandeza em questão."
+        },
+        {
+          "symbol": "cosh",
+          "description": "É a função cosseno hiperbólico, que é uma função matemática que descreve o comportamento de certas grandezas em sistemas físicos, especialmente em contextos que envolvem simetria e variação contínua."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\alpha_{T} \\approx \\frac{1}{\\cosh\\left(\\frac{x_b}{L_b}\\right)} \\approx \\frac{1}{1 + \\frac{1}{2}\\left(\\frac{x_b}{L_b}\\right)^{2}}",
+      "genericFormula": "\\alpha_{T} \\approx \\frac{1}{\\cosh\\left(\\frac{x_b}{L_b}\\right)} \\approx \\frac{1}{1 + \\frac{1}{2}\\left(\\frac{x_b}{L_b}\\right)^{2}}",
+      "description": "Esta fórmula representa uma aproximação da função de resposta térmica em relação a uma variável espacial, onde a função hiperbólica cosseno é utilizada para modelar a distribuição de temperatura em um material ou sistema em equilíbrio térmico.",
+      "concepts": [
+        "Função hiperbólica",
+        "Distribuição de temperatura",
+        "Equilíbrio térmico",
+        "Aproximações em física"
+      ],
+      "symbols": [
+        {
+          "symbol": "α_{T}",
+          "description": "Representa a resposta térmica ou a função de transferência térmica do sistema."
+        },
+        {
+          "symbol": "x_b",
+          "description": "Representa a variável espacial, que pode ser a distância a partir de um ponto de referência no material."
+        },
+        {
+          "symbol": "L_b",
+          "description": "Representa a escala de comprimento característica do sistema, que indica a extensão da influência térmica."
+        },
+        {
+          "symbol": "cosh",
+          "description": "É a função hiperbólica cosseno, que descreve como a temperatura se distribui ao longo da variável espacial em um sistema em equilíbrio."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\gamma \\approx \\frac{1}{1 + \\frac{N_b}{N_e} \\cdot \\eta_{p}}",
+      "genericFormula": "\\gamma \\approx \\frac{1}{1 + \\frac{N_b}{N_e} \\cdot \\eta_{p}}",
+      "description": "Esta fórmula representa a relação entre a taxa de ganho de um dispositivo semicondutor e a razão entre a densidade de portadores de carga e a eficiência de recombinação. Ela é fundamental para entender como os semicondutores operam em dispositivos como diodos e transistores.",
+      "concepts": [
+        "Taxa de ganho em dispositivos semicondutores",
+        "Densidade de portadores de carga",
+        "Eficiência de recombinação"
+      ],
+      "symbols": [
+        {
+          "symbol": "γ",
+          "description": "Representa a taxa de ganho do dispositivo semicondutor, que indica quão eficientemente ele pode amplificar sinais elétricos."
+        },
+        {
+          "symbol": "N_b",
+          "description": "Representa a densidade de portadores de carga de tipo 'b', que pode ser, por exemplo, a densidade de buracos em um semicondutor do tipo p."
+        },
+        {
+          "symbol": "N_e",
+          "description": "Representa a densidade de portadores de carga de tipo 'e', que pode ser, por exemplo, a densidade de elétrons em um semicondutor do tipo n."
+        },
+        {
+          "symbol": "η_{p}",
+          "description": "Representa a eficiência de recombinação, que é uma medida de quão efetivamente os portadores de carga recombinam e, portanto, afetam a corrente elétrica no dispositivo."
+        }
+      ]
+    },
+    {
+      "originalFormula": "α_T \\approx \\frac{1}{1 + \\frac{1}{2} \\left( \\frac{x_e}{L_b} \\right)}",
+      "genericFormula": "α_T \\approx \\frac{1}{1 + \\frac{1}{2} \\left( \\frac{x_e}{L_b} \\right)}",
+      "description": "Esta fórmula representa a relação entre a absorção de um material semicondutor e a razão entre a energia de excitação e a largura de uma barreira potencial. Ela é utilizada para entender como a temperatura afeta as propriedades elétricas de um semicondutor.",
+      "concepts": [
+        "Absorção em semicondutores",
+        "Energia de excitação",
+        "Largura da barreira potencial",
+        "Efeito da temperatura em materiais semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "α_T",
+          "description": "Representa a absorção do material semicondutor em função da temperatura."
+        },
+        {
+          "symbol": "x_e",
+          "description": "Representa a energia de excitação, que é a energia necessária para mover um elétron de uma posição de baixa energia para uma posição de alta energia."
+        },
+        {
+          "symbol": "L_b",
+          "description": "Representa a largura da barreira potencial, que é a distância que um elétron deve percorrer para superar uma barreira de energia."
+        }
+      ]
+    },
+    {
+      "originalFormula": "δ = \\frac{1 + \\frac{J_{0}}{J_{0}} \\exp\\left(-\\frac{eV_{be}}{2kT}\\right)}{1 + \\frac{J_{0}}{J_{0}} \\exp\\left(-\\frac{eV_{be}}{2kT}\\right)}",
+      "genericFormula": "δ = \\frac{1 + \\frac{J_{0}}{J_{0}} \\exp\\left(-\\frac{eV_{be}}{2kT}\\right)}{1 + \\frac{J_{0}}{J_{0}} \\exp\\left(-\\frac{eV_{be}}{2kT}\\right)}",
+      "description": "Esta fórmula representa uma relação que descreve a eficiência ou a resposta de um dispositivo semicondutor em função da tensão aplicada e das características térmicas do sistema. Ela é usada para entender como a corrente se comporta em um diodo sob diferentes condições de polarização.",
+      "concepts": [
+        "Diodos semicondutores",
+        "Polarização de junção",
+        "Efeito térmico em semicondutores",
+        "Corrente elétrica em dispositivos semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "δ",
+          "description": "Representa a eficiência ou a resposta do dispositivo semicondutor sob a tensão aplicada."
+        },
+        {
+          "symbol": "J_{0}",
+          "description": "Denota a densidade de corrente de saturação do diodo, que é uma característica intrínseca do material semicondutor."
+        },
+        {
+          "symbol": "e",
+          "description": "É a base do logaritmo natural, utilizada em funções exponenciais que descrevem processos de crescimento ou decaimento."
+        },
+        {
+          "symbol": "V_{be}",
+          "description": "Representa a tensão entre a base e o emissor em um transistor ou diodo, que influencia a corrente que flui através do dispositivo."
+        },
+        {
+          "symbol": "k",
+          "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia térmica em sistemas físicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta do sistema, geralmente medida em Kelvin, que afeta o comportamento dos portadores de carga em semicondutores."
+        }
+      ]
+    },
+    {
+      "originalFormula": "α = γ \\cdot α_T \\cdot δ",
+      "genericFormula": "α = γ \\cdot α_T \\cdot δ",
+      "description": "Esta fórmula representa a relação entre a absorção de um material e suas propriedades físicas, onde a absorção é influenciada por um fator de correção e outras características do material.",
+      "concepts": [
+        "Absorção de luz ou radiação",
+        "Propriedades ópticas dos materiais",
+        "Fatores de correção em medições físicas"
+      ],
+      "symbols": [
+        {
+          "symbol": "α",
+          "description": "Representa a absorção do material, que indica a fração da radiação que é absorvida pelo material."
+        },
+        {
+          "symbol": "γ",
+          "description": "É um fator de correção que pode levar em conta variáveis como a geometria do sistema ou a eficiência de absorção."
+        },
+        {
+          "symbol": "α_T",
+          "description": "Representa a absorção teórica do material, que é uma medida idealizada da capacidade do material de absorver radiação sob condições específicas."
+        },
+        {
+          "symbol": "δ",
+          "description": "É um parâmetro que pode representar uma variável adicional que influencia a absorção, como a densidade do material ou a espessura."
+        }
+      ]
+    },
+    {
+      "originalFormula": "β = \\frac{α}{1 - α}",
+      "genericFormula": "β = \\frac{α}{1 - α}",
+      "description": "Esta fórmula relaciona duas variáveis, beta e alfa, onde beta é uma função da variável alfa. A fórmula é frequentemente utilizada em contextos onde se analisa a relação entre duas quantidades, como em sistemas de feedback ou em modelos de crescimento.",
+      "concepts": [
+        "Relação entre variáveis",
+        "Sistemas de feedback",
+        "Modelos de crescimento"
+      ],
+      "symbols": [
+        {
+          "symbol": "β",
+          "description": "Representa uma variável dependente que é calculada a partir da variável alfa."
+        },
+        {
+          "symbol": "α",
+          "description": "Representa uma variável independente que influencia o valor de beta."
+        }
+      ]
+    },
+    {
+      "originalFormula": "0.9967 = \\frac{1}{1 + \\frac{10^{-8}}{10^{-11}} \\exp\\left(-\\frac{eV_{be}}{2kT}\\right)}",
+      "genericFormula": "y = \\frac{1}{1 + \\frac{A}{B} \\exp\\left(-\\frac{C}{D}\\right)}",
+      "description": "Esta fórmula representa a relação entre a corrente em um diodo e a tensão aplicada, considerando a temperatura e a energia térmica. Ela é usada para descrever como a corrente varia em função da tensão e da temperatura em dispositivos semicondutores.",
+      "concepts": [
+        "Diodo",
+        "Corrente elétrica",
+        "Tensão elétrica",
+        "Temperatura",
+        "Energia térmica",
+        "Efeito da temperatura na condutividade"
+      ],
+      "symbols": [
+        {
+          "symbol": "y",
+          "description": "Representa a saída da função, que pode ser interpretada como a corrente normalizada em relação a um valor máximo."
+        },
+        {
+          "symbol": "A",
+          "description": "Representa uma constante que está relacionada à proporção entre duas quantidades, neste caso, a relação entre duas correntes ou concentrações."
+        },
+        {
+          "symbol": "B",
+          "description": "Representa uma constante de referência que pode ser uma concentração ou corrente em um estado de equilíbrio."
+        },
+        {
+          "symbol": "C",
+          "description": "Representa a energia potencial associada à tensão aplicada no diodo, que é proporcional à carga elétrica e à tensão."
+        },
+        {
+          "symbol": "D",
+          "description": "Representa a temperatura multiplicada pela constante de Boltzmann, que relaciona energia térmica a temperatura em sistemas físicos."
+        }
+      ]
+    },
+    {
+      "originalFormula": "y = \\frac{1}{1 + \\frac{(2.25 \\times 10^{10})(3.54 \\times 10^{-10})}{(2.25 \\times 10^{10})(25 \\times 10^{-6})} \\tanh(0.050)}",
+      "genericFormula": "y = \\frac{1}{1 + \\frac{A \\cdot B}{A \\cdot C} \\tanh(D)}",
+      "description": "Esta fórmula representa uma relação que descreve um fenômeno físico onde a variável y é calculada em função de outros parâmetros. A fórmula envolve a função hiperbólica tangente, que é comum em contextos que lidam com fenômenos que apresentam comportamento não linear, como em semicondutores ou sistemas de controle.",
+      "concepts": [
+        "Função tangente hiperbólica",
+        "Relações de proporcionalidade",
+        "Fenômenos não lineares"
+      ],
+      "symbols": [
+        {
+          "symbol": "y",
+          "description": "Representa a variável dependente que está sendo calculada na fórmula."
+        },
+        {
+          "symbol": "A",
+          "description": "Representa um coeficiente que pode estar relacionado a uma propriedade física, como a densidade ou a concentração de portadores em um semicondutor."
+        },
+        {
+          "symbol": "B",
+          "description": "Representa outro coeficiente que pode estar relacionado a uma propriedade física, como a mobilidade dos portadores de carga."
+        },
+        {
+          "symbol": "C",
+          "description": "Representa um coeficiente que pode estar relacionado a uma característica do sistema, como a resistência ou a capacitância."
+        },
+        {
+          "symbol": "D",
+          "description": "Representa um parâmetro que pode estar relacionado a uma condição específica do sistema, como a temperatura ou a tensão aplicada."
+        }
+      ]
+    },
+    {
+      "originalFormula": "I_{C} = \\frac{(1.6 \\times 10^{-19})(25)(4.5 \\times 10^{9})}{0.6482 \\times 10^{-4}} \\exp \\left( \\frac{0.60}{0.0259} \\right) = 3.195 \\, A/cm^{2}",
+      "genericFormula": "I_{C} = \\frac{(q)(T)(N)}{R} \\exp \\left( \\frac{V}{kT} \\right)",
+      "description": "Esta fórmula representa a corrente de um semicondutor em função de várias variáveis, incluindo a carga elétrica, temperatura, densidade de portadores, resistência e a tensão aplicada. Ela é usada para calcular a corrente em dispositivos semicondutores, como diodos e transistores.",
+      "concepts": [
+        "Corrente elétrica",
+        "Carga elétrica",
+        "Temperatura",
+        "Densidade de portadores",
+        "Resistência",
+        "Efeito da tensão",
+        "Exponencial em semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "I_{C}",
+          "description": "Representa a corrente elétrica que flui através do semicondutor, medida em ampères por centímetro quadrado."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica elementar, que é a quantidade de carga transportada por um único elétron, aproximadamente 1.6 x 10^-19 coulombs."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura em Kelvin, que influencia a energia térmica dos portadores de carga no semicondutor."
+        },
+        {
+          "symbol": "N",
+          "description": "Representa a densidade de portadores de carga, que é a quantidade de portadores (elétrons ou lacunas) por unidade de volume no semicondutor."
+        },
+        {
+          "symbol": "R",
+          "description": "Representa a resistência do material, que é a oposição ao fluxo de corrente elétrica."
+        },
+        {
+          "symbol": "V",
+          "description": "Representa a tensão aplicada ao semicondutor, que é a diferença de potencial elétrico que impulsiona a corrente."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia térmica em sistemas físicos."
+        }
+      ]
+    },
+    {
+      "originalFormula": "I_{C} = \\frac{(1.6 \\times 10^{-19})(25)(4.5 \\times 10^{9})}{0.597 \\times 10^{-4}} \\exp \\left( \\frac{0.60}{0.0259} \\right)",
+      "genericFormula": "I_{C} = \\frac{(q)(T)(N)}{R} \\exp \\left( \\frac{E_{a}}{k_{B} T} \\right)",
+      "description": "Esta fórmula representa a corrente de condução em um semicondutor, onde a corrente é influenciada por fatores como a carga elétrica, a temperatura, a densidade de portadores e a resistência.",
+      "concepts": [
+        "Corrente elétrica",
+        "Semicondutores",
+        "Temperatura",
+        "Carga elétrica",
+        "Densidade de portadores",
+        "Resistência",
+        "Efeito da temperatura na condutividade"
+      ],
+      "symbols": [
+        {
+          "symbol": "I_{C}",
+          "description": "Representa a corrente de condução em amperes por centímetro quadrado."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica elementar, que é a quantidade de carga transportada por um único elétron."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura em Kelvin, que influencia a movimentação de portadores de carga no semicondutor."
+        },
+        {
+          "symbol": "N",
+          "description": "Representa a densidade de portadores de carga, ou seja, a quantidade de portadores disponíveis por unidade de volume."
+        },
+        {
+          "symbol": "R",
+          "description": "Representa a resistência do material, que afeta a quantidade de corrente que pode fluir através do semicondutor."
+        },
+        {
+          "symbol": "E_{a}",
+          "description": "Representa a energia de ativação, que é a energia necessária para que os portadores de carga sejam excitados e contribuam para a condução."
+        },
+        {
+          "symbol": "k_{B}",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+        }
+      ]
+    },
+    {
+      "originalFormula": "V_{A} = 90.7 \\, V",
+      "genericFormula": "V_{A} = 90.7 \\, V",
+      "description": "Não foi possível gerar descrição automática",
+      "concepts": [],
+      "symbols": [],
+      "rawText": "{\n  \"originalFormula\": \"V_{A} = 90.7 \\, V\",\n  \"genericFormula\": \"V_{A} = V\",\n  \"description\": \"Esta fórmula representa a tensão elétrica em um ponto específico de um circuito, denotado como A. A tensão é uma medida da energia elétrica por unidade de carga que está disponível para mover cargas elétricas através de um circuito.\",\n  \"concepts\": [\n    \"Tensão elétrica\",\n    \"Circuitos elétricos\",\n    \"Energia elétrica\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"V_{A}\",\n      \"description\": \"Representa a tensão elétrica no ponto A do circuito.\"\n    },\n    {\n      \"symbol\": \"V\",\n      \"description\": \"Representa a tensão elétrica de forma genérica, sem valores numéricos específicos.\"\n    }\n  ]\n}"
+    },
+    {
+      "originalFormula": "\\frac{dI_{C}}{dV_{CE}} = \\frac{I_{C}}{V_{CE} + V_{A}} = \\frac{I_{C}}{V_{BE} + V_{CE} + V_{A}}",
+      "genericFormula": "\\frac{dI_{C}}{dV_{CE}} = \\frac{I_{C}}{V_{CE} + V_{A}} = \\frac{I_{C}}{V_{BE} + V_{CE} + V_{A}}",
+      "description": "Esta fórmula representa a relação entre a corrente de coletor e a tensão entre o coletor e o emissor em um transistor, mostrando como a corrente de coletor muda em resposta a variações na tensão de coletor-emissor. Ela também considera a tensão de base-emissor e a tensão de saturação do transistor.",
+      "concepts": [
+        "Transistores",
+        "Corrente elétrica",
+        "Tensão elétrica",
+        "Análise de circuitos",
+        "Características de dispositivos semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "dI_{C}",
+          "description": "Representa a variação infinitesimal da corrente de coletor em um transistor."
+        },
+        {
+          "symbol": "dV_{CE}",
+          "description": "Representa a variação infinitesimal da tensão entre o coletor e o emissor do transistor."
+        },
+        {
+          "symbol": "I_{C}",
+          "description": "Representa a corrente que flui através do coletor do transistor."
+        },
+        {
+          "symbol": "V_{CE}",
+          "description": "Representa a tensão entre o coletor e o emissor do transistor."
+        },
+        {
+          "symbol": "V_{A}",
+          "description": "Representa a tensão de saturação do transistor, que é a tensão mínima necessária para que o transistor opere na região ativa."
+        },
+        {
+          "symbol": "V_{BE}",
+          "description": "Representa a tensão entre a base e o emissor do transistor, que é crucial para o seu funcionamento."
+        }
+      ]
+    },
+    {
+      "originalFormula": "p_{n0} = \\frac{(1.5 \\times 10^{10})^{2}}{10^{18}} \\exp \\left( \\frac{0.020}{0.0259} \\right) = 4.87 \\times 10^{10} \\, \\text{cm}^{-3}",
+      "genericFormula": "p_{n0} = \\frac{(A)^{2}}{B} \\exp \\left( \\frac{C}{D} \\right)",
+      "description": "Esta fórmula calcula a densidade de portadores de carga negativa, especificamente elétrons, em um semicondutor sob certas condições. O resultado é expresso em número de portadores por centímetro cúbico.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Semicondutores",
+        "Efeito da temperatura na densidade de portadores",
+        "Fatores de concentração de portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "p_{n0}",
+          "description": "Representa a densidade de portadores de carga negativa, ou seja, a quantidade de elétrons disponíveis em um volume específico do semicondutor."
+        },
+        {
+          "symbol": "A",
+          "description": "Um fator que representa uma constante relacionada à concentração de portadores, que pode ser influenciada por características do material semicondutor."
+        },
+        {
+          "symbol": "B",
+          "description": "Um valor que representa a densidade total de portadores em um semicondutor, que serve como um denominador na equação."
+        },
+        {
+          "symbol": "C",
+          "description": "Um valor que representa a energia de ativação ou um parâmetro relacionado à temperatura que influencia a geração de portadores no semicondutor."
+        },
+        {
+          "symbol": "D",
+          "description": "Um valor que representa a temperatura ou um parâmetro físico que afeta a mobilidade e a geração de portadores no material semicondutor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "p_{n0} = \\frac{(1.5 \\times 10^{10})^{2}}{10^{19}} \\exp \\left( \\frac{0.080}{0.0259} \\right) = 4.94 \\times 10^{10} \\, \\text{cm}^{-3}",
+      "genericFormula": "p_{n0} = \\frac{(A)^{2}}{B} \\exp \\left( \\frac{C}{D} \\right)",
+      "description": "Esta fórmula calcula a densidade de portadores de carga do tipo n em um semicondutor em equilíbrio térmico. A densidade de portadores é uma medida de quantas partículas carregadas estão disponíveis para conduzir eletricidade no material.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Semicondutores",
+        "Equilíbrio térmico",
+        "Exponencial",
+        "Relação entre temperatura e energia"
+      ],
+      "symbols": [
+        {
+          "symbol": "p_{n0}",
+          "description": "Representa a densidade de portadores de carga do tipo n em um semicondutor, medida em partículas por centímetro cúbico."
+        },
+        {
+          "symbol": "A",
+          "description": "Um valor que representa uma constante relacionada à concentração de dopantes ou impurezas no semicondutor."
+        },
+        {
+          "symbol": "B",
+          "description": "Um valor que representa a densidade de portadores de carga total no material, que pode ser afetada por fatores como temperatura e dopagem."
+        },
+        {
+          "symbol": "C",
+          "description": "Um valor que representa a energia de ativação, que é a energia necessária para que os portadores de carga sejam gerados a partir de átomos de dopagem."
+        },
+        {
+          "symbol": "D",
+          "description": "Um valor que representa a temperatura em termos de energia térmica, geralmente expresso em elétron-volts por Kelvin."
+        }
+      ]
+    },
+    {
+      "originalFormula": "p_{n0}/p_{n0} = \\exp \\left( \\frac{\\Delta E}{kT} \\right) = \\exp \\left( \\frac{0.020}{0.0259} \\right) = 2.16",
+      "genericFormula": "\\frac{p_{n0}}{p_{n0}} = \\exp \\left( \\frac{\\Delta E}{kT} \\right)",
+      "description": "Esta fórmula representa a relação entre a densidade de portadores de carga em um semicondutor em equilíbrio térmico, onde a razão entre as concentrações de portadores é expressa em termos da energia de ativação e da temperatura. A expressão mostra como a variação de energia afeta a distribuição de portadores de carga.",
+      "concepts": [
+        "Equilíbrio térmico",
+        "Densidade de portadores de carga",
+        "Energia de ativação",
+        "Temperatura"
+      ],
+      "symbols": [
+        {
+          "symbol": "p_{n0}",
+          "description": "Representa a densidade de portadores de carga do tipo n em equilíbrio térmico."
+        },
+        {
+          "symbol": "\\Delta E",
+          "description": "Representa a variação de energia necessária para a geração de portadores de carga."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura do sistema em Kelvin, que é uma medida da energia térmica média das partículas."
+        }
+      ]
+    },
+    {
+      "originalFormula": "p_{n0}/p_{n0} = \\exp \\left( \\frac{0.080}{0.0259} \\right) = 21.95",
+      "genericFormula": "\\frac{p_{n0}}{p_{n0}} = \\exp \\left( \\frac{A}{B} \\right)",
+      "description": "Esta fórmula representa a relação entre a densidade de portadores de carga em um semicondutor, onde a razão entre duas quantidades de portadores é igual à exponencial de uma fração que envolve constantes físicas. A fórmula mostra como a densidade de portadores pode ser expressa em termos de uma relação exponencial, que é comum em fenômenos de transporte em semicondutores.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Semicondutores",
+        "Relação exponencial",
+        "Efeito da temperatura e energia"
+      ],
+      "symbols": [
+        {
+          "symbol": "p_{n0}",
+          "description": "Representa a densidade de portadores de carga do tipo n em um semicondutor em equilíbrio."
+        },
+        {
+          "symbol": "A",
+          "description": "Uma constante que pode representar uma energia ou uma quantidade relacionada à temperatura ou ao potencial no contexto do semicondutor."
+        },
+        {
+          "symbol": "B",
+          "description": "Uma constante que representa uma energia térmica, geralmente relacionada à temperatura do sistema."
+        },
+        {
+          "symbol": "\\exp",
+          "description": "Representa a função exponencial, que é uma função matemática que cresce rapidamente e é fundamental em muitos processos físicos, especialmente em contextos de crescimento e decaimento."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E = -\\frac{kT}{e} \\frac{1}{N_{a}} \\frac{dN_{a}}{dx}",
+      "genericFormula": "E = -\\frac{kT}{e} \\frac{1}{N} \\frac{dN}{dx}",
+      "description": "Esta fórmula representa a relação entre o campo elétrico e a variação da concentração de portadores de carga em um material semicondutor. O campo elétrico é gerado pela mudança na densidade de dopantes, que são átomos adicionados ao semicondutor para modificar suas propriedades elétricas.",
+      "concepts": [
+        "Campo elétrico",
+        "Dopagem de semicondutores",
+        "Gradiente de concentração",
+        "Termodinâmica"
+      ],
+      "symbols": [
+        {
+          "symbol": "E",
+          "description": "Representa o campo elétrico, que é uma medida da força que uma carga elétrica experimenta em um ponto no espaço."
+        },
+        {
+          "symbol": "k",
+          "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta do sistema, medida em Kelvin, que influencia a energia térmica das partículas."
+        },
+        {
+          "symbol": "e",
+          "description": "É a carga elementar, que é a menor unidade de carga elétrica que pode existir isoladamente."
+        },
+        {
+          "symbol": "N_{a}",
+          "description": "Representa a concentração de dopantes aceitores em um semicondutor, que são átomos que criam buracos como portadores de carga positiva."
+        },
+        {
+          "symbol": "dN_{a}/dx",
+          "description": "É a derivada da concentração de dopantes em relação à posição, que indica como a concentração de dopantes varia ao longo de uma determinada distância."
+        }
+      ]
+    },
+    {
+      "originalFormula": "C_{j} = C_{j0} \\left( \\frac{V_{bi} - V_{j}}{V_{bi}} \\right)^{m}",
+      "genericFormula": "C_{j} = C_{j0} \\left( \\frac{V_{bi} - V_{j}}{V_{bi}} \\right)^{m}",
+      "description": "Esta fórmula representa a capacitância de junção de um dispositivo semicondutor em função da tensão aplicada na junção. A capacitância de junção varia com a tensão, mostrando como a capacidade do dispositivo de armazenar carga elétrica muda conforme a tensão aplicada se altera.",
+      "concepts": [
+        "Capacitância de junção",
+        "Tensão de polarização",
+        "Efeito da tensão na capacitância",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "C_{j}",
+          "description": "Representa a capacitância de junção, que é a capacidade de um dispositivo semicondutor de armazenar carga elétrica na junção."
+        },
+        {
+          "symbol": "C_{j0}",
+          "description": "Representa a capacitância de junção em condições de polarização reversa, ou seja, quando não há tensão aplicada."
+        },
+        {
+          "symbol": "V_{bi}",
+          "description": "Representa a tensão de built-in, que é a tensão interna da junção em equilíbrio, sem a aplicação de tensões externas."
+        },
+        {
+          "symbol": "V_{j}",
+          "description": "Representa a tensão aplicada na junção, que pode ser positiva ou negativa, dependendo da polarização do dispositivo."
+        },
+        {
+          "symbol": "m",
+          "description": "Representa um expoente que indica como a capacitância varia em relação à tensão aplicada. Este valor é geralmente determinado experimentalmente e pode variar dependendo do tipo de dispositivo."
+        }
+      ]
+    },
+    {
+      "originalFormula": "r_{d} = \\frac{V_{j}}{I_{j}}",
+      "genericFormula": "r_{d} = \\frac{V}{I}",
+      "description": "Esta fórmula representa a resistência dinâmica de um componente eletrônico, que é a razão entre a tensão aplicada e a corrente que passa por ele. Essa relação é fundamental para entender como os dispositivos semicondutores, como diodos, se comportam sob diferentes condições de operação.",
+      "concepts": [
+        "Resistência elétrica",
+        "Tensão elétrica",
+        "Corrente elétrica",
+        "Comportamento de semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "r_{d}",
+          "description": "Representa a resistência dinâmica, que indica como a tensão e a corrente estão relacionadas em um dispositivo eletrônico sob pequenas variações."
+        },
+        {
+          "symbol": "V_{j}",
+          "description": "Representa a tensão aplicada no dispositivo, que é a diferença de potencial elétrico entre dois pontos."
+        },
+        {
+          "symbol": "I_{j}",
+          "description": "Representa a corrente que flui através do dispositivo, que é o fluxo de carga elétrica que passa por um ponto em um circuito por unidade de tempo."
+        }
+      ]
+    },
+    {
+      "originalFormula": "h_{fe} = \\frac{I_{c}}{I_{b}} g_{m} r_{e}",
+      "genericFormula": "h_{fe} = \\frac{I_{c}}{I_{b}} g_{m} r_{e}",
+      "description": "Esta fórmula representa a relação entre a corrente de coletor e a corrente de base em um transistor, multiplicada pela transcondutância e pela resistência do emissor. Ela é utilizada para descrever o ganho de corrente em um transistor bipolar.",
+      "concepts": [
+        "Transistor bipolar",
+        "Ganho de corrente",
+        "Transcondutância",
+        "Resistência do emissor"
+      ],
+      "symbols": [
+        {
+          "symbol": "h_{fe}",
+          "description": "O ganho de corrente em um transistor bipolar, que indica a relação entre a corrente de coletor e a corrente de base."
+        },
+        {
+          "symbol": "I_{c}",
+          "description": "A corrente que flui do coletor do transistor, representando a saída do dispositivo."
+        },
+        {
+          "symbol": "I_{b}",
+          "description": "A corrente que flui para a base do transistor, que controla a corrente de coletor."
+        },
+        {
+          "symbol": "g_{m}",
+          "description": "A transcondutância do transistor, que mede a variação da corrente de coletor em relação à variação da tensão de entrada na base."
+        },
+        {
+          "symbol": "r_{e}",
+          "description": "A resistência do emissor, que influencia o ganho de corrente e a estabilidade do transistor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "V_{bc} = I_{b} r_{e} \\left( 1 + j\\omega C_{e} r_{e} \\right)",
+      "genericFormula": "V_{bc} = I_{b} r_{e} \\left( 1 + j\\omega C_{e} r_{e} \\right)",
+      "description": "Esta fórmula representa a tensão entre os terminais b e c de um transistor bipolar em um circuito, levando em consideração a corrente de base, a resistência do emissor e a capacitância de desacoplamento. A fórmula mostra como a tensão varia em função da corrente e das características do circuito.",
+      "concepts": [
+        "Transistores bipolares",
+        "Circuitos elétricos",
+        "Impedância",
+        "Capacitância",
+        "Resistência"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_{bc}",
+          "description": "Representa a tensão entre os terminais b e c do transistor."
+        },
+        {
+          "symbol": "I_{b}",
+          "description": "Representa a corrente que flui pela base do transistor."
+        },
+        {
+          "symbol": "r_{e}",
+          "description": "Representa a resistência do emissor do transistor."
+        },
+        {
+          "symbol": "j",
+          "description": "Representa a unidade imaginária, que é usada para descrever componentes reativos em circuitos elétricos."
+        },
+        {
+          "symbol": "\\omega",
+          "description": "Representa a frequência angular, que está relacionada à frequência de um sinal em um circuito."
+        },
+        {
+          "symbol": "C_{e}",
+          "description": "Representa a capacitância de desacoplamento no circuito, que influencia o comportamento dinâmico do transistor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "A_{v} = \\frac{I_{c}}{I_{b}} \\left( \\frac{h_{fe}}{1 + j\\omega C_{e} r_{e}} \\right)",
+      "genericFormula": "A_{v} = \\frac{I_{c}}{I_{b}} \\left( \\frac{h_{fe}}{1 + j\\omega C_{e} r_{e}} \\right)",
+      "description": "Esta fórmula representa o ganho de tensão de um amplificador, que é a razão entre a corrente de coletor e a corrente de base, ajustada por um fator que considera a frequência e a capacitância do emissor.",
+      "concepts": [
+        "Ganho de tensão",
+        "Amplificadores",
+        "Corrente de coletor",
+        "Corrente de base",
+        "Frequência",
+        "Capacitância",
+        "Resistência"
+      ],
+      "symbols": [
+        {
+          "symbol": "A_{v}",
+          "description": "Representa o ganho de tensão do amplificador, que indica o quanto a tensão de saída é amplificada em relação à tensão de entrada."
+        },
+        {
+          "symbol": "I_{c}",
+          "description": "Representa a corrente que flui através do coletor do transistor, que é a corrente de saída do amplificador."
+        },
+        {
+          "symbol": "I_{b}",
+          "description": "Representa a corrente que flui através da base do transistor, que é a corrente de entrada do amplificador."
+        },
+        {
+          "symbol": "h_{fe}",
+          "description": "É o ganho de corrente do transistor, que indica a relação entre a corrente de coletor e a corrente de base em condições de operação linear."
+        },
+        {
+          "symbol": "j",
+          "description": "Representa a unidade imaginária, utilizada em circuitos elétricos para representar a fase de sinais alternados."
+        },
+        {
+          "symbol": "\\omega",
+          "description": "Representa a frequência angular do sinal, que está relacionada à frequência do sinal alternado em radianos por segundo."
+        },
+        {
+          "symbol": "C_{e}",
+          "description": "Representa a capacitância do capacitor de emissor, que influencia o comportamento do amplificador em diferentes frequências."
+        },
+        {
+          "symbol": "r_{e}",
+          "description": "Representa a resistência do emissor, que também afeta o ganho do amplificador e a resposta em frequência."
+        }
+      ]
+    },
+    {
+      "originalFormula": "|A_{v}| = \\frac{|I_{c}|}{|I_{b}|} = \\frac{h_{fe}}{\\sqrt{1 + (j\\omega r_{e} C_{e})}}",
+      "genericFormula": "|A_{v}| = \\frac{|I_{c}|}{|I_{b}|} = \\frac{h_{fe}}{\\sqrt{1 + (j\\omega r_{e} C_{e})}}",
+      "description": "Esta fórmula representa o ganho de tensão em um amplificador bipolar, que é a razão entre a corrente de coletor e a corrente de base, e também relaciona esse ganho com a frequência do sinal e as características do circuito.",
+      "concepts": [
+        "Ganho de tensão",
+        "Amplificadores bipolares",
+        "Relação entre corrente de coletor e corrente de base",
+        "Efeito da frequência no ganho",
+        "Componentes reativos em circuitos"
+      ],
+      "symbols": [
+        {
+          "symbol": "|A_{v}|",
+          "description": "Representa o ganho de tensão absoluto do amplificador."
+        },
+        {
+          "symbol": "|I_{c}|",
+          "description": "Representa a corrente que flui pelo coletor do transistor."
+        },
+        {
+          "symbol": "|I_{b}|",
+          "description": "Representa a corrente que flui pela base do transistor."
+        },
+        {
+          "symbol": "h_{fe}",
+          "description": "É o ganho de corrente contínua do transistor, que indica a relação entre a corrente de coletor e a corrente de base em condições de polarização contínua."
+        },
+        {
+          "symbol": "j",
+          "description": "Representa a unidade imaginária, utilizada em circuitos para descrever componentes reativos como capacitâncias e indutâncias."
+        },
+        {
+          "symbol": "\\omega",
+          "description": "Representa a frequência angular do sinal, que é relacionada à frequência do sinal em hertz."
+        },
+        {
+          "symbol": "r_{e}",
+          "description": "Representa a resistência de emissor do transistor, que influencia o ganho e a estabilidade do amplificador."
+        },
+        {
+          "symbol": "C_{e}",
+          "description": "Representa a capacitância de emissor, que afeta a resposta em frequência do amplificador."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\tau_b = \\int_{0}^{\\tau} \\frac{dx}{v(x)} = \\int_{0}^{\\tau} \\frac{n_e(x) dx}{(-J_b)}",
+      "genericFormula": "\\tau_b = \\int_{0}^{\\tau} \\frac{dx}{v(x)} = \\int_{0}^{\\tau} \\frac{n_e(x) dx}{(-J_b)}",
+      "description": "Esta fórmula representa o tempo de transporte de portadores de carga em um material semicondutor, onde a integral calcula o tempo necessário para que os portadores se movam através de uma distância específica, levando em consideração a velocidade de movimento dos portadores e a densidade de portadores de carga.",
+      "concepts": [
+        "Transporte de carga em semicondutores",
+        "Densidade de portadores de carga",
+        "Fluxo de corrente",
+        "Velocidade de portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "τ_b",
+          "description": "Representa o tempo de transporte dos portadores de carga."
+        },
+        {
+          "symbol": "τ",
+          "description": "Representa o limite superior da integral, que pode ser uma distância ou um tempo específico."
+        },
+        {
+          "symbol": "dx",
+          "description": "Representa um elemento infinitesimal de distância ao longo do qual os portadores se movem."
+        },
+        {
+          "symbol": "v(x)",
+          "description": "Representa a velocidade dos portadores de carga em função da posição x."
+        },
+        {
+          "symbol": "n_e(x)",
+          "description": "Representa a densidade de portadores de carga eletrônica em função da posição x."
+        },
+        {
+          "symbol": "J_b",
+          "description": "Representa a densidade de corrente associada ao fluxo de portadores de carga."
+        }
+      ]
+    },
+    {
+      "originalFormula": "n_{b}(x) \\equiv n_{b0} \\left( \\exp \\left( \\frac{eV_{be}}{kT} \\right) \\right) \\left( 1 - \\frac{x}{x_{b}} \\right)",
+      "genericFormula": "n_{b}(x) \\equiv n_{b0} \\left( \\exp \\left( \\frac{eV_{be}}{kT} \\right) \\right) \\left( 1 - \\frac{x}{x_{b}} \\right)",
+      "description": "Esta fórmula representa a densidade de portadores de carga em uma região específica de um semicondutor, levando em consideração a influência da tensão aplicada e a temperatura do sistema. A densidade de portadores varia com a posição dentro do material e é afetada pela energia térmica e pela tensão aplicada entre as junções do semicondutor.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Efeito da temperatura em semicondutores",
+        "Efeito da tensão em semicondutores",
+        "Exponencial de Boltzmann"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_{b}(x)",
+          "description": "Representa a densidade de portadores de carga na posição x dentro do semicondutor."
+        },
+        {
+          "symbol": "n_{b0}",
+          "description": "Representa a densidade de portadores de carga em uma condição de referência, geralmente em um ponto específico ou sob condições ideais."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a base do logaritmo natural, que é uma constante matemática utilizada em cálculos exponenciais."
+        },
+        {
+          "symbol": "V_{be}",
+          "description": "Representa a tensão entre a junção base-emissor de um transistor, que influencia a corrente de portadores."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia térmica em sistemas físicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta em Kelvin, que afeta a movimentação e a energia dos portadores de carga."
+        },
+        {
+          "symbol": "x",
+          "description": "Representa a posição dentro do semicondutor, onde a densidade de portadores está sendo avaliada."
+        },
+        {
+          "symbol": "x_{b}",
+          "description": "Representa uma distância de referência dentro do semicondutor, que pode estar relacionada a uma largura de região ou a um limite físico."
+        }
+      ]
+    },
+    {
+      "originalFormula": "J_{b} = e D_{n} \\frac{dn_{b}(x)}{dx}",
+      "genericFormula": "J = e D \\frac{dn(x)}{dx}",
+      "description": "Esta fórmula representa a densidade de corrente de portadores de carga em um semicondutor, onde a corrente é gerada pela difusão de portadores de carga (elétrons, neste caso) ao longo de uma região do material.",
+      "concepts": [
+        "Densidade de corrente",
+        "Difusão de portadores de carga",
+        "Semicondutores",
+        "Gradiente de concentração"
+      ],
+      "symbols": [
+        {
+          "symbol": "J_{b}",
+          "description": "Representa a densidade de corrente de portadores de carga, que indica a quantidade de carga que passa por uma unidade de área em um determinado intervalo de tempo."
+        },
+        {
+          "symbol": "e",
+          "description": "É a carga elementar, que representa a quantidade de carga elétrica de um único elétron."
+        },
+        {
+          "symbol": "D_{n}",
+          "description": "É o coeficiente de difusão dos elétrons, que mede a facilidade com que os elétrons se movem através do material devido a um gradiente de concentração."
+        },
+        {
+          "symbol": "dn_{b}(x)",
+          "description": "Representa a variação da densidade de portadores de carga (elétrons) em relação à posição x, indicando como a concentração de elétrons muda ao longo de uma determinada distância."
+        },
+        {
+          "symbol": "dx",
+          "description": "É um pequeno intervalo de distância ao longo do qual a variação da densidade de portadores de carga está sendo medida."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\tau_b = \\frac{x_{b}^{2}}{2D_{n}}",
+      "genericFormula": "\\tau = \\frac{x^{2}}{2D}",
+      "description": "Esta fórmula representa o tempo de difusão de um portador de carga em um semicondutor, onde o tempo é calculado a partir da distância que o portador percorre ao quadrado, dividida pelo dobro do coeficiente de difusão do material.",
+      "concepts": [
+        "Difusão de portadores de carga",
+        "Semicondutores",
+        "Coeficiente de difusão",
+        "Movimento browniano"
+      ],
+      "symbols": [
+        {
+          "symbol": "τ",
+          "description": "Representa o tempo de difusão, que é o tempo necessário para que um portador de carga se mova através de um material semicondutor."
+        },
+        {
+          "symbol": "x",
+          "description": "Representa a distância que o portador de carga percorre durante o processo de difusão."
+        },
+        {
+          "symbol": "D",
+          "description": "Representa o coeficiente de difusão, que é uma medida da facilidade com que os portadores de carga se movem através do material."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\tau_d = \\frac{x_{c}}{v_{e}}",
+      "genericFormula": "\\tau_d = \\frac{x_{c}}{v_{e}}",
+      "description": "Esta fórmula representa o tempo de atraso, que é o tempo que leva para uma partícula ou sinal se mover uma certa distância em um meio, dado a velocidade com que ele se move. É uma relação direta entre a distância percorrida e a velocidade.",
+      "concepts": [
+        "Tempo de atraso",
+        "Distância",
+        "Velocidade"
+      ],
+      "symbols": [
+        {
+          "symbol": "τ_d",
+          "description": "Representa o tempo de atraso, que é o intervalo de tempo necessário para que um evento ocorra ou um sinal se propague."
+        },
+        {
+          "symbol": "x_c",
+          "description": "Representa a distância que a partícula ou sinal precisa percorrer."
+        },
+        {
+          "symbol": "v_e",
+          "description": "Representa a velocidade com que a partícula ou sinal se move através do meio."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\tau_e = r_{e}(C_{j} + C)",
+      "genericFormula": "\\tau_e = r_{e}(C_{j} + C)",
+      "description": "Esta fórmula representa o tempo de relaxação elétrico em um circuito, que é a quantidade de tempo que um capacitor leva para carregar ou descarregar até aproximadamente 63% de sua carga máxima. O tempo de relaxação é influenciado pela resistência e pela capacitância do circuito.",
+      "concepts": [
+        "Tempo de relaxação",
+        "Capacitância",
+        "Resistência"
+      ],
+      "symbols": [
+        {
+          "symbol": "τ_e",
+          "description": "Representa o tempo de relaxação elétrico, que indica a velocidade com que um capacitor pode carregar ou descarregar sua carga."
+        },
+        {
+          "symbol": "r_e",
+          "description": "Representa a resistência elétrica do circuito, que é a oposição que um componente oferece ao fluxo de corrente elétrica."
+        },
+        {
+          "symbol": "C_j",
+          "description": "Representa a capacitância de um capacitor específico no circuito, que é a capacidade de armazenar carga elétrica."
+        },
+        {
+          "symbol": "C",
+          "description": "Representa a capacitância total do circuito, que é a soma das capacitâncias de todos os capacitores conectados."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\alpha = \\frac{\\alpha_{0}}{1 + \\frac{jf}{J_a}}",
+      "genericFormula": "\\alpha = \\frac{\\alpha_{0}}{1 + \\frac{j f}{J_a}}",
+      "description": "Esta fórmula representa a relação entre a absorção de um material e a frequência de uma onda eletromagnética que passa por ele. A fórmula mostra como a absorção varia com a frequência, levando em conta um parâmetro de absorção inicial e um fator que depende da frequência e de uma constante associada ao material.",
+      "concepts": [
+        "Absorção de ondas eletromagnéticas",
+        "Frequência",
+        "Impedância complexa",
+        "Material dielétrico"
+      ],
+      "symbols": [
+        {
+          "symbol": "α",
+          "description": "Representa a absorção do material, que indica quão eficientemente ele absorve a energia da onda eletromagnética."
+        },
+        {
+          "symbol": "α₀",
+          "description": "É a absorção inicial do material, que representa a capacidade de absorção do material em condições específicas, sem a influência de outros fatores."
+        },
+        {
+          "symbol": "j",
+          "description": "É a unidade imaginária, que é usada em matemática e engenharia para representar a fase de uma onda em relação a outra. Em contextos físicos, ajuda a lidar com quantidades que têm componentes reais e imaginários."
+        },
+        {
+          "symbol": "f",
+          "description": "Representa a frequência da onda eletromagnética que está interagindo com o material. A frequência é uma medida de quantas vezes a onda oscila por segundo."
+        },
+        {
+          "symbol": "J_a",
+          "description": "É uma constante associada ao material que influencia a absorção. Pode ser interpretada como uma medida da capacidade do material de responder a variações na frequência da onda."
+        }
+      ]
+    },
+    {
+      "originalFormula": "f_{\\beta} = \\frac{f_{T}}{\\beta_{0}}",
+      "genericFormula": "f_{\\beta} = \\frac{f_{T}}{\\beta}",
+      "description": "Esta fórmula representa a relação entre a frequência de um determinado fenômeno, denotada como f beta, e a frequência total, denotada como f T, ajustada por um fator beta. O fator beta é uma constante que pode representar uma proporção ou um ajuste específico no contexto do fenômeno em questão.",
+      "concepts": [
+        "Frequência",
+        "Relação proporcional",
+        "Ajuste de parâmetros"
+      ],
+      "symbols": [
+        {
+          "symbol": "f_{\\beta}",
+          "description": "Representa a frequência ajustada ou específica de um fenômeno em análise."
+        },
+        {
+          "symbol": "f_{T}",
+          "description": "Representa a frequência total ou a frequência de referência do fenômeno considerado."
+        },
+        {
+          "symbol": "\\beta_{0}",
+          "description": "Representa um fator de ajuste ou uma constante que modifica a frequência total para obter a frequência específica."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E_g^{Ge} \\approx 0.67 \\text{ eV}",
+      "genericFormula": "E_g^{X} \\approx C",
+      "description": "Esta fórmula representa a energia de bandgap de um material semicondutor, especificamente o germânio, que é aproximadamente 0,67 eV. O bandgap é a energia mínima necessária para que um elétron possa ser excitado de sua banda de valência para a banda de condução, permitindo a condução elétrica.",
+      "concepts": [
+        "Energia de bandgap",
+        "Semicondutores",
+        "Condução elétrica"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_g",
+          "description": "Representa a energia de bandgap, que é a diferença de energia entre a banda de valência e a banda de condução em um material semicondutor."
+        },
+        {
+          "symbol": "Ge",
+          "description": "Representa o elemento químico germânio, que é um semicondutor utilizado em diversas aplicações eletrônicas."
+        },
+        {
+          "symbol": "C",
+          "description": "Representa uma constante que pode ser substituída por um valor específico de energia em elétron-volts (eV) para diferentes materiais."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E_g^{Si} \\approx 1.12 \\text{ eV}",
+      "genericFormula": "E_g^{Si} \\approx E_g",
+      "description": "Esta fórmula representa a energia de bandgap do silício, que é a energia mínima necessária para que um elétron seja excitado da banda de valência para a banda de condução em um semicondutor. O valor específico de 1.12 eV indica que essa é a energia necessária para que o silício conduza eletricidade.",
+      "concepts": [
+        "Energia de bandgap",
+        "Semicondutores",
+        "Condução elétrica",
+        "Banda de valência",
+        "Banda de condução"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_g^{Si}",
+          "description": "Representa a energia de bandgap do silício, que é a diferença de energia entre a banda de valência e a banda de condução."
+        },
+        {
+          "symbol": "eV",
+          "description": "É uma unidade de medida de energia chamada elétron-volt, que é a quantidade de energia adquirida por um elétron quando é acelerado por uma diferença de potencial de um volt."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498,
+    499,
+    500,
+    501,
+    502,
+    503,
+    504,
+    505,
+    506,
+    507,
+    508,
+    509,
+    510,
+    511,
+    512,
+    513,
+    514,
+    515,
+    516,
+    517,
+    518,
+    519,
+    520,
+    521,
+    522,
+    523,
+    524,
+    525,
+    526,
+    527,
+    528,
+    529,
+    530,
+    531,
+    532,
+    533,
+    534,
+    535,
+    536,
+    537,
+    538,
+    539,
+    540,
+    541,
+    542,
+    543,
+    544,
+    545,
+    546,
+    547,
+    548,
+    549,
+    550,
+    551,
+    552,
+    553,
+    554,
+    555,
+    556,
+    557,
+    558,
+    559,
+    560,
+    561,
+    562,
+    563,
+    564,
+    565,
+    566,
+    567,
+    568,
+    569,
+    570,
+    571,
+    572,
+    573,
+    574,
+    575,
+    576,
+    577,
+    578,
+    579,
+    580,
+    581,
+    582,
+    583,
+    584,
+    585,
+    586,
+    587,
+    588,
+    589,
+    590,
+    591,
+    592,
+    593
+  ],
+  "lastUpdated": "2026-05-08T23:15:45.799Z"
+}

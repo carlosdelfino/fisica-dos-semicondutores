@@ -1,0 +1,774 @@
+{
+  "chapter": "5.1 Carrier Drift",
+  "section": "5.1.2 Mobility Effects",
+  "questions": [
+    {
+      "number": "Ex 5.1",
+      "text": "A drift current density of J_{dy} = 75 \\, A/cm^{2} is required in a device using p-type silicon when an electric field of E = 120 \\, V/cm is applied. Determine the required impurity doping concentration to achieve this specification. Assume that electron and hole mobilities given in Table 5.1 apply.",
+      "formulas": [
+        {
+          "originalFormula": "J_{dy} = q (n \\mu_{n} + p \\mu_{p}) E",
+          "genericFormula": "J_{dy} = q (n \\mu_{n} + p \\mu_{p}) E",
+          "description": "Esta fórmula representa a densidade de corrente elétrica em um semicondutor, considerando a contribuição de portadores de carga negativos (elétrons) e positivos (lacunas). A densidade de corrente é influenciada pela quantidade de portadores de carga, suas mobilidades e o campo elétrico aplicado.",
+          "concepts": [
+            "Densidade de corrente elétrica",
+            "Portadores de carga em semicondutores",
+            "Mobilidade de portadores de carga",
+            "Campo elétrico"
+          ],
+          "symbols": [
+            {
+              "symbol": "J_{dy}",
+              "description": "Representa a densidade de corrente elétrica no material, que é a quantidade de carga que passa por uma unidade de área em um determinado tempo."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elétrica elementar, que é a quantidade de carga transportada por um único elétron."
+            },
+            {
+              "symbol": "n",
+              "description": "Representa a densidade de portadores de carga negativos, ou seja, a quantidade de elétrons disponíveis para conduzir a corrente no semicondutor."
+            },
+            {
+              "symbol": "μ_{n}",
+              "description": "Representa a mobilidade dos portadores de carga negativos, que indica quão rapidamente os elétrons podem se mover através do material quando um campo elétrico é aplicado."
+            },
+            {
+              "symbol": "p",
+              "description": "Representa a densidade de portadores de carga positivos, ou seja, a quantidade de lacunas disponíveis para conduzir a corrente no semicondutor."
+            },
+            {
+              "symbol": "μ_{p}",
+              "description": "Representa a mobilidade dos portadores de carga positivos, que indica quão rapidamente as lacunas podem se mover através do material quando um campo elétrico é aplicado."
+            },
+            {
+              "symbol": "E",
+              "description": "Representa a intensidade do campo elétrico aplicado ao semicondutor, que influencia o movimento dos portadores de carga."
+            }
+          ],
+          "chapter": "5.1 Carrier Drift",
+          "section": "5.1.2 Mobility Effects",
+          "source": "question",
+          "questionNumber": "Ex 5.1",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "number": "5.3",
+      "text": "Determine the doping concentration and majority carrier mobility given the type and conductivity of a compensated semiconductor.",
+      "formulas": [
+        {
+          "originalFormula": "\\sigma \\approx e \\mu_{n} (N_{n} - N_{a})",
+          "genericFormula": "\\sigma \\approx e \\mu_{n} (N_{n} - N_{a})",
+          "description": "Esta fórmula representa a condutividade elétrica de um semicondutor, que depende da carga elétrica, da mobilidade dos portadores de carga e da diferença entre a concentração de portadores de carga do tipo n e do tipo a.",
+          "concepts": [
+            "Condutividade elétrica",
+            "Semicondutores",
+            "Mobilidade dos portadores de carga",
+            "Concentração de portadores de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "σ",
+              "description": "Representa a condutividade elétrica do material, que indica a capacidade do material de conduzir eletricidade."
+            },
+            {
+              "symbol": "e",
+              "description": "Representa a carga elementar, que é a quantidade de carga elétrica transportada por um único elétron."
+            },
+            {
+              "symbol": "μ_{n}",
+              "description": "Representa a mobilidade dos portadores de carga do tipo n, que é a medida de quão rapidamente os elétrons podem se mover através do semicondutor quando um campo elétrico é aplicado."
+            },
+            {
+              "symbol": "N_{n}",
+              "description": "Representa a concentração de portadores de carga do tipo n, que são os elétrons disponíveis para conduzir eletricidade no semicondutor."
+            },
+            {
+              "symbol": "N_{a}",
+              "description": "Representa a concentração de portadores de carga do tipo a, que são os lacunas (ou buracos) que podem também contribuir para a condução elétrica, mas de forma oposta aos elétrons."
+            }
+          ],
+          "chapter": "5.1 Carrier Drift",
+          "section": "5.1.2 Mobility Effects",
+          "source": "question",
+          "questionNumber": "5.3",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "number": "Ex 5.4",
+      "text": "A bar of p-type silicon, as shown in Figure 5.5, has a cross-sectional area A = 10^{-6} cm^{2} and a length L = 1.2 \\times 10^{-3} cm. For an applied voltage of 5 V, a current of 2 mA is required. What is the required (a) resistance, (b) resistivity, and (c) impurity doping concentration? (d) What is the resulting hole mobility?",
+      "formulas": [
+        {
+          "originalFormula": "R = \\frac{V}{I}",
+          "genericFormula": "R = \\frac{V}{I}",
+          "description": "Esta fórmula representa a relação entre a tensão elétrica, a corrente elétrica e a resistência em um circuito. Ela nos diz que a resistência é igual à tensão dividida pela corrente, o que é fundamental para entender como os componentes elétricos funcionam em um circuito.",
+          "concepts": [
+            "Resistência elétrica",
+            "Tensão elétrica",
+            "Corrente elétrica",
+            "Lei de Ohm"
+          ],
+          "symbols": [
+            {
+              "symbol": "R",
+              "description": "Representa a resistência elétrica, que é a oposição que um material oferece ao fluxo de corrente elétrica."
+            },
+            {
+              "symbol": "V",
+              "description": "Representa a tensão elétrica, que é a diferença de potencial elétrico entre dois pontos em um circuito."
+            },
+            {
+              "symbol": "I",
+              "description": "Representa a corrente elétrica, que é o fluxo de carga elétrica que passa por um condutor em um determinado intervalo de tempo."
+            }
+          ],
+          "chapter": "5.1 Carrier Drift",
+          "section": "5.1.2 Mobility Effects",
+          "source": "question",
+          "questionNumber": "Ex 5.4",
+          "page": 26
+        },
+        {
+          "originalFormula": "\\rho = R \\frac{A}{L}",
+          "genericFormula": "\\rho = R \\frac{A}{L}",
+          "description": "Esta fórmula representa a relação entre a resistividade de um material, a resistência elétrica, a área da seção transversal do condutor e o comprimento do condutor. Ela nos ajuda a entender como as propriedades físicas do material e suas dimensões influenciam a resistência ao fluxo de corrente elétrica.",
+          "concepts": [
+            "Resistividade",
+            "Resistência elétrica",
+            "Área da seção transversal",
+            "Comprimento do condutor"
+          ],
+          "symbols": [
+            {
+              "symbol": "ρ",
+              "description": "Representa a resistividade do material, que é uma medida da capacidade do material de resistir ao fluxo de corrente elétrica."
+            },
+            {
+              "symbol": "R",
+              "description": "Representa a resistência elétrica do condutor, que é a oposição que o material oferece ao fluxo de corrente elétrica."
+            },
+            {
+              "symbol": "A",
+              "description": "Representa a área da seção transversal do condutor, que é a área através da qual a corrente elétrica flui."
+            },
+            {
+              "symbol": "L",
+              "description": "Representa o comprimento do condutor, que é a distância que a corrente elétrica deve percorrer através do material."
+            }
+          ],
+          "chapter": "5.1 Carrier Drift",
+          "section": "5.1.2 Mobility Effects",
+          "source": "question",
+          "questionNumber": "Ex 5.4",
+          "page": 39
+        },
+        {
+          "originalFormula": "N_d = \\frac{I}{q \\mu_p E}",
+          "genericFormula": "N_d = \\frac{I}{q \\mu_p E}",
+          "description": "Esta fórmula representa a densidade de portadores de carga do tipo doador em um semicondutor, calculada a partir da corrente elétrica, da carga elementar, da mobilidade dos portadores de carga e do campo elétrico aplicado.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Corrente elétrica",
+            "Carga elementar",
+            "Mobilidade dos portadores de carga",
+            "Campo elétrico"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_d",
+              "description": "Representa a densidade de portadores de carga do tipo doador em um semicondutor, que indica quantos portadores de carga estão presentes por unidade de volume."
+            },
+            {
+              "symbol": "I",
+              "description": "Representa a corrente elétrica que flui através do semicondutor, medida em amperes, que indica a quantidade de carga que passa por um ponto em um segundo."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elementar, que é a menor unidade de carga elétrica, equivalente à carga de um único elétron, aproximadamente igual a 1.6 x 10^-19 coulombs."
+            },
+            {
+              "symbol": "μ_p",
+              "description": "Representa a mobilidade dos portadores de carga do tipo 'p', que indica a facilidade com que os portadores de carga se movem através do semicondutor sob a influência de um campo elétrico."
+            },
+            {
+              "symbol": "E",
+              "description": "Representa o campo elétrico aplicado ao semicondutor, que é uma medida da força elétrica por unidade de carga, influenciando o movimento dos portadores de carga."
+            }
+          ],
+          "chapter": "5.1 Carrier Drift",
+          "section": "5.1.2 Mobility Effects",
+          "source": "question",
+          "questionNumber": "Ex 5.4",
+          "page": 52
+        },
+        {
+          "originalFormula": "E = \\frac{V}{L}",
+          "genericFormula": "E = \\frac{V}{L}",
+          "description": "Esta fórmula representa a relação entre a intensidade do campo elétrico, a diferença de potencial elétrico e a distância entre duas placas condutoras. Em termos simples, ela nos diz como a força elétrica por unidade de carga varia com a diferença de tensão aplicada e a distância entre as placas.",
+          "concepts": [
+            "Campo elétrico",
+            "Diferença de potencial elétrico",
+            "Distância entre placas condutoras"
+          ],
+          "symbols": [
+            {
+              "symbol": "E",
+              "description": "Representa a intensidade do campo elétrico, que é a força elétrica por unidade de carga."
+            },
+            {
+              "symbol": "V",
+              "description": "Representa a diferença de potencial elétrico entre duas placas, que é a quantidade de energia por unidade de carga que é convertida em trabalho."
+            },
+            {
+              "symbol": "L",
+              "description": "Representa a distância entre as duas placas condutoras, que é a separação física que influencia a intensidade do campo elétrico."
+            }
+          ],
+          "chapter": "5.1 Carrier Drift",
+          "section": "5.1.2 Mobility Effects",
+          "source": "question",
+          "questionNumber": "Ex 5.4",
+          "page": 65
+        }
+      ]
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "5.3",
+      "text": "For n-type silicon at T = 300 K, we can assume complete ionization; therefore the conductivity, assuming N_{a} \\gg n_{i}, is given by",
+      "formulas": [
+        {
+          "originalFormula": "16 = (1.6 \\times 10^{-19}) \\mu_{n} (N_{n} - 10^{17})",
+          "genericFormula": "X = (A) \\mu_{n} (N_{n} - B)",
+          "description": "Esta fórmula relaciona a corrente elétrica em um semicondutor com a mobilidade dos portadores de carga e a densidade de portadores. O lado esquerdo representa uma quantidade que pode ser uma corrente ou uma força, enquanto o lado direito expressa a interação entre a mobilidade dos elétrons e a diferença na densidade de portadores.",
+          "concepts": [
+            "Mobilidade dos portadores de carga",
+            "Densidade de portadores em um semicondutor",
+            "Corrente elétrica em materiais semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "X",
+              "description": "Representa uma quantidade que pode ser uma corrente elétrica ou uma força, dependendo do contexto do problema."
+            },
+            {
+              "symbol": "A",
+              "description": "Uma constante que representa a carga elementar, que é a carga de um único elétron, em coulombs."
+            },
+            {
+              "symbol": "μ_{n}",
+              "description": "Representa a mobilidade dos elétrons, que é uma medida de quão rapidamente os elétrons podem se mover através do semicondutor quando um campo elétrico é aplicado."
+            },
+            {
+              "symbol": "N_{n}",
+              "description": "Representa a densidade de portadores de carga negativa (elétrons) no semicondutor, geralmente expressa em número de portadores por unidade de volume."
+            },
+            {
+              "symbol": "B",
+              "description": "Um valor constante que representa uma densidade de portadores de referência, que neste caso é 10 elevado a 17, indicando uma densidade específica de portadores."
+            }
+          ],
+          "chapter": "5.1 Carrier Drift",
+          "section": "5.1.2 Mobility Effects",
+          "source": "answer",
+          "questionNumber": "5.3",
+          "page": 78
+        }
+      ]
+    },
+    {
+      "questionNumber": "Ex 5.4",
+      "text": "The conductivity is then \\sigma = e \\mu_p (N_a - N_d) = (1.6 \\\times 10^{-19})(410)(1.25 \\\times 10^{16} - 5 \\\times 10^{15}) = 0.492",
+      "formulas": [
+        {
+          "originalFormula": "\\sigma = e \\mu_p (N_a - N_d)",
+          "genericFormula": "\\sigma = e \\mu_p (N_a - N_d)",
+          "description": "Esta fórmula representa a condutividade elétrica de um semicondutor dopado, onde a condutividade é influenciada pela carga elétrica, mobilidade dos portadores de carga e a diferença entre a concentração de portadores de carga positiva e negativa.",
+          "concepts": [
+            "Condutividade elétrica",
+            "Dopagem de semicondutores",
+            "Mobilidade de portadores de carga",
+            "Concentração de portadores de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "σ",
+              "description": "Representa a condutividade elétrica do material, que indica a capacidade do semicondutor de conduzir eletricidade."
+            },
+            {
+              "symbol": "e",
+              "description": "Representa a carga elementar, que é a quantidade de carga elétrica transportada por um único elétron."
+            },
+            {
+              "symbol": "μ_p",
+              "description": "Representa a mobilidade dos portadores de carga positiva, que é uma medida de quão rapidamente os buracos (portadores de carga positiva) podem se mover através do semicondutor quando um campo elétrico é aplicado."
+            },
+            {
+              "symbol": "N_a",
+              "description": "Representa a concentração de átomos dopantes do tipo aceito, que introduzem buracos no semicondutor, aumentando a quantidade de portadores de carga positiva."
+            },
+            {
+              "symbol": "N_d",
+              "description": "Representa a concentração de átomos dopantes do tipo doador, que introduzem elétrons no semicondutor, aumentando a quantidade de portadores de carga negativa."
+            }
+          ],
+          "chapter": "5.1 Carrier Drift",
+          "section": "5.1.2 Mobility Effects",
+          "source": "answer",
+          "questionNumber": "Ex 5.4",
+          "page": 91
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "n = \\frac{N_{c} - N_{v}}{2} + \\sqrt{\\left( \\frac{N_{c} - N_{v}}{2} \\right)^{2} + n_{i}^{2}}",
+      "genericFormula": "n = \\frac{N_{c} - N_{v}}{2} + \\sqrt{\\left( \\frac{N_{c} - N_{v}}{2} \\right)^{2} + n_{i}^{2}}",
+      "description": "Esta fórmula calcula a densidade de portadores de carga em um semicondutor intrínseco, levando em consideração a diferença entre as densidades de estados de condução e valência, além da densidade intrínseca de portadores.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Semicondutores",
+        "Densidade de estados",
+        "Densidade intrínseca"
+      ],
+      "symbols": [
+        {
+          "symbol": "n",
+          "description": "Representa a densidade de portadores de carga no semicondutor."
+        },
+        {
+          "symbol": "N_{c}",
+          "description": "Representa a densidade de estados na banda de condução do semicondutor."
+        },
+        {
+          "symbol": "N_{v}",
+          "description": "Representa a densidade de estados na banda de valência do semicondutor."
+        },
+        {
+          "symbol": "n_{i}",
+          "description": "Representa a densidade intrínseca de portadores de carga no semicondutor."
+        }
+      ],
+      "chapter": "5.1 Carrier Drift",
+      "section": "5.1.2 Mobility Effects",
+      "source": "standalone",
+      "page": 104
+    },
+    {
+      "originalFormula": "p = \\frac{n_{i}^{2}}{n}",
+      "genericFormula": "p = \\frac{n_{i}^{2}}{n}",
+      "description": "Esta fórmula representa a relação entre a concentração de portadores de carga em um semicondutor intrínseco e a concentração de portadores de carga em um semicondutor dopado. Ela é utilizada para calcular a densidade de portadores de carga em um material semicondutor, considerando a densidade intrínseca e a densidade total de portadores.",
+      "concepts": [
+        "Semicondutores",
+        "Densidade de portadores de carga",
+        "Dopagem de semicondutores",
+        "Equilíbrio de cargas"
+      ],
+      "symbols": [
+        {
+          "symbol": "p",
+          "description": "Representa a densidade de portadores de carga em um semicondutor, que pode ser elétrons ou lacunas."
+        },
+        {
+          "symbol": "n_{i}",
+          "description": "Representa a densidade intrínseca de portadores de carga em um semicondutor puro, sem dopagem."
+        },
+        {
+          "symbol": "n",
+          "description": "Representa a densidade total de portadores de carga no semicondutor, que inclui tanto os portadores intrínsecos quanto os portadores introduzidos pela dopagem."
+        }
+      ],
+      "chapter": "5.1 Carrier Drift",
+      "section": "5.1.2 Mobility Effects",
+      "source": "standalone",
+      "page": 117
+    },
+    {
+      "originalFormula": "J_{dy} = \\epsilon_{0} N_{e} E",
+      "genericFormula": "J_{dy} = \\epsilon_{0} N_{e} E",
+      "description": "Esta fórmula representa a densidade de corrente elétrica em um material semicondutor, onde a corrente é gerada pela movimentação de portadores de carga sob a influência de um campo elétrico. A densidade de corrente é uma medida de quão rapidamente a carga elétrica está se movendo através de uma unidade de área.",
+      "concepts": [
+        "Densidade de corrente elétrica",
+        "Campo elétrico",
+        "Portadores de carga",
+        "Permissividade do vácuo"
+      ],
+      "symbols": [
+        {
+          "symbol": "J_{dy}",
+          "description": "Representa a densidade de corrente elétrica, que é a quantidade de carga que passa por uma unidade de área em um determinado tempo."
+        },
+        {
+          "symbol": "\\epsilon_{0}",
+          "description": "É a permissividade do vácuo, uma constante que mede a capacidade do vácuo de permitir a formação de um campo elétrico."
+        },
+        {
+          "symbol": "N_{e}",
+          "description": "Representa a densidade de portadores de carga, ou seja, o número de portadores de carga elétrica (como elétrons) por unidade de volume no material."
+        },
+        {
+          "symbol": "E",
+          "description": "É o campo elétrico aplicado, que é uma força por unidade de carga que atua sobre os portadores de carga no material."
+        }
+      ],
+      "chapter": "5.1 Carrier Drift",
+      "section": "5.1.2 Mobility Effects",
+      "source": "standalone",
+      "page": 130
+    },
+    {
+      "originalFormula": "F = m_{h} \\frac{d v}{d t} = e E",
+      "genericFormula": "F = m \\frac{d v}{d t} = e E",
+      "description": "Esta fórmula representa a relação entre a força, a massa de uma partícula, a sua aceleração e a força elétrica que atua sobre ela. Ela mostra que a força é igual à massa multiplicada pela taxa de variação da velocidade, que é a aceleração, e também igual à carga elétrica multiplicada pelo campo elétrico.",
+      "concepts": [
+        "Força",
+        "Massa",
+        "Aceleração",
+        "Carga elétrica",
+        "Campo elétrico"
+      ],
+      "symbols": [
+        {
+          "symbol": "F",
+          "description": "Representa a força que atua sobre a partícula."
+        },
+        {
+          "symbol": "m",
+          "description": "Representa a massa da partícula, que é uma medida da quantidade de matéria que ela possui."
+        },
+        {
+          "symbol": "v",
+          "description": "Representa a velocidade da partícula, que é a taxa de variação da posição em relação ao tempo."
+        },
+        {
+          "symbol": "t",
+          "description": "Representa o tempo, que é a duração em que a partícula está se movendo."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elétrica da partícula, que é uma propriedade fundamental que determina como a partícula interage com campos elétricos."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa o campo elétrico, que é uma região ao redor de uma carga elétrica onde outras cargas elétricas experimentam uma força."
+        }
+      ],
+      "chapter": "5.1 Carrier Drift",
+      "section": "5.1.2 Mobility Effects",
+      "source": "standalone",
+      "page": 143
+    },
+    {
+      "originalFormula": "v = \\frac{e E t}{m_{h}}",
+      "genericFormula": "v = \\frac{e E t}{m}",
+      "description": "Esta fórmula representa a velocidade de uma partícula carregada, como um buraco em um semicondutor, que se move sob a influência de um campo elétrico. A velocidade é diretamente proporcional à carga da partícula, à intensidade do campo elétrico e ao tempo de aplicação do campo, enquanto é inversamente proporcional à massa da partícula.",
+      "concepts": [
+        "Movimento de partículas carregadas",
+        "Campo elétrico",
+        "Força eletromagnética",
+        "Massa de partículas em semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "v",
+          "description": "Representa a velocidade da partícula carregada."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elétrica da partícula, que é uma medida da quantidade de eletricidade que a partícula possui."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa a intensidade do campo elétrico, que é a força por unidade de carga que atua sobre a partícula."
+        },
+        {
+          "symbol": "t",
+          "description": "Representa o tempo durante o qual a partícula está sujeita ao campo elétrico."
+        },
+        {
+          "symbol": "m",
+          "description": "Representa a massa da partícula, que é uma medida de quanta matéria a partícula contém e influencia sua aceleração sob a força."
+        }
+      ],
+      "chapter": "5.1 Carrier Drift",
+      "section": "5.1.2 Mobility Effects",
+      "source": "standalone",
+      "page": 156
+    },
+    {
+      "originalFormula": "\\sigma_i = e(\\mu_n + \\mu_p)n",
+      "genericFormula": "\\sigma = e(\\mu_n + \\mu_p)n",
+      "description": "Esta fórmula representa a condutividade elétrica de um semicondutor intrínseco, onde a condutividade é influenciada pela mobilidade dos portadores de carga e pela densidade de portadores.",
+      "concepts": [
+        "Condutividade elétrica",
+        "Mobilidade dos portadores de carga",
+        "Densidade de portadores",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "σ",
+          "description": "Representa a condutividade elétrica, que é uma medida de quão bem um material conduz eletricidade."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a quantidade de carga elétrica de um único elétron."
+        },
+        {
+          "symbol": "μ_n",
+          "description": "Representa a mobilidade dos elétrons, que é uma medida de quão rapidamente os elétrons podem se mover através do semicondutor quando um campo elétrico é aplicado."
+        },
+        {
+          "symbol": "μ_p",
+          "description": "Representa a mobilidade dos buracos, que é uma medida de quão rapidamente os buracos (defeitos que representam a ausência de um elétron) podem se mover através do semicondutor."
+        },
+        {
+          "symbol": "n",
+          "description": "Representa a densidade de portadores de carga, que é o número de portadores de carga (elétrons e buracos) por unidade de volume no semicondutor."
+        }
+      ],
+      "chapter": "5.1 Carrier Drift",
+      "section": "5.1.2 Mobility Effects",
+      "source": "standalone",
+      "page": 169
+    },
+    {
+      "originalFormula": "\\frac{1}{2} m_e v^2 = \\frac{3}{2} kT = \\frac{3}{2}(0.0259) = 0.03885 \\text{ eV}",
+      "genericFormula": "\\frac{1}{2} m v^2 = \\frac{3}{2} k T",
+      "description": "Esta fórmula representa a relação entre a energia cinética média de uma partícula e a temperatura de um sistema. A primeira parte da equação mostra que a energia cinética média de uma partícula é proporcional ao quadrado da sua velocidade, enquanto a segunda parte relaciona essa energia à temperatura do sistema através da constante de Boltzmann.",
+      "concepts": [
+        "Energia cinética",
+        "Temperatura",
+        "Constante de Boltzmann",
+        "Partículas em movimento"
+      ],
+      "symbols": [
+        {
+          "symbol": "m",
+          "description": "massa da partícula em questão, que determina a quantidade de matéria que ela contém."
+        },
+        {
+          "symbol": "v",
+          "description": "velocidade da partícula, que é a taxa de variação da sua posição em relação ao tempo."
+        },
+        {
+          "symbol": "k",
+          "description": "constante de Boltzmann, que relaciona a temperatura de um sistema à energia térmica média das partículas que o compõem."
+        },
+        {
+          "symbol": "T",
+          "description": "temperatura do sistema, que é uma medida da energia cinética média das partículas em movimento."
+        }
+      ],
+      "chapter": "5.1 Carrier Drift",
+      "section": "5.1.2 Mobility Effects",
+      "source": "standalone",
+      "page": 182
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194
+  ],
+  "lastUpdated": "2026-05-08T18:19:12.932722",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
+}

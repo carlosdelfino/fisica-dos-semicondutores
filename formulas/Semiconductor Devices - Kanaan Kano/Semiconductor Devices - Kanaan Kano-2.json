@@ -1,0 +1,980 @@
+{
+  "chapter": "2",
+  "questions": [
+    {
+      "number": "2.1",
+      "text": "What are the steps involved in solving the Schrödinger equation for the hydrogen atom?",
+      "formulas": []
+    },
+    {
+      "number": "2.6",
+      "text": "Obtain expressions for E and r_0 using the simplest solution of Ψ.",
+      "formulas": [
+        {
+          "originalFormula": "E",
+          "genericFormula": "E",
+          "description": "A fórmula representa a energia, que é uma quantidade fundamental na física que mede a capacidade de realizar trabalho ou provocar mudanças em um sistema.",
+          "concepts": [
+            "energia",
+            "trabalho",
+            "sistemas físicos"
+          ],
+          "symbols": [
+            {
+              "symbol": "E",
+              "description": "Representa a energia de um sistema, que pode se manifestar de várias formas, como energia cinética, potencial, térmica, entre outras."
+            }
+          ],
+          "chapter": "2",
+          "source": "question",
+          "questionNumber": "2.6",
+          "page": 1
+        },
+        {
+          "originalFormula": "r_0",
+          "genericFormula": "r_0",
+          "description": "A fórmula representa o raio de um círculo ou esfera em um contexto físico, podendo ser utilizado em diversas aplicações, como na descrição de estruturas atômicas ou na geometria de semicondutores.",
+          "concepts": [
+            "Geometria",
+            "Estruturas atômicas",
+            "Semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "r_0",
+              "description": "Representa o raio inicial ou de referência de uma esfera ou círculo, que pode ser utilizado para descrever dimensões em contextos físicos."
+            }
+          ],
+          "chapter": "2",
+          "source": "question",
+          "questionNumber": "2.6",
+          "page": 36
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "text": "What are the maximum number of electrons that can be accommodated in different shells?",
+      "formulas": [
+        {
+          "originalFormula": "2n^2",
+          "genericFormula": "2n^2",
+          "description": "Esta fórmula representa o número total de estados quânticos disponíveis em um sistema de partículas, onde 'n' é um parâmetro que pode se referir ao nível de energia ou à quantidade de partículas em um sistema específico.",
+          "concepts": [
+            "Estados quânticos",
+            "Níveis de energia",
+            "Teoria quântica"
+          ],
+          "symbols": [
+            {
+              "symbol": "n",
+              "description": "Representa um número inteiro que pode indicar o nível de energia ou a quantidade de partículas em um sistema."
+            }
+          ],
+          "chapter": "2",
+          "source": "question",
+          "questionNumber": "1",
+          "page": 72
+        }
+      ]
+    },
+    {
+      "number": "2.5 a",
+      "text": "dE/dk versus k.",
+      "formulas": []
+    },
+    {
+      "number": "2.5 b",
+      "text": "d^2E/dk^2 versus k.",
+      "formulas": []
+    },
+    {
+      "number": "2.6 a",
+      "text": "Reduce the equation to one in r only, independent of θ and φ.",
+      "formulas": []
+    },
+    {
+      "number": "2.6 b",
+      "text": "For the equation determined in (a), first, assume a solution of the form Ψ₁ = C exp(-r/r₀) and, second, use Postulate 2 in Chapter 1 for the volume of a spherical shell of radius r and thickness dr in order to determine an expression for C.",
+      "formulas": []
+    },
+    {
+      "number": "2.6 c",
+      "text": "Determine the expression for r₀ by substituting the solution for Ψ₁ in the differential equation found in (a).",
+      "formulas": []
+    },
+    {
+      "number": "2.6 d",
+      "text": "Determine the expression for the total energy of the electron in the lowest energy state. Given: \\int_{0}^{\\infty} x^{n} e^{-ax} dx = \\frac{n!}{a^{n+1}}.",
+      "formulas": [
+        {
+          "originalFormula": "\\int_{0}^{\\infty} x^{n} e^{-ax} dx = \\frac{n!}{a^{n+1}}",
+          "genericFormula": "\\int_{0}^{\\infty} x^{n} e^{-a x} dx = \\frac{n!}{a^{n+1}}",
+          "description": "Esta fórmula representa a integral definida de uma função exponencial multiplicada por uma potência de x, que é uma forma comum de calcular áreas sob a curva em problemas de física e matemática, especialmente em contextos que envolvem distribuições e probabilidades.",
+          "concepts": [
+            "Integração",
+            "Funções exponenciais",
+            "Fatoriais",
+            "Cálculo de áreas sob curvas"
+          ],
+          "symbols": [
+            {
+              "symbol": "x",
+              "description": "Uma variável que representa um valor contínuo, geralmente associado a uma quantidade que está sendo medida ou analisada."
+            },
+            {
+              "symbol": "n",
+              "description": "Um número inteiro não negativo que indica o grau da potência de x na função."
+            },
+            {
+              "symbol": "a",
+              "description": "Uma constante positiva que afeta a taxa de decaimento da função exponencial."
+            },
+            {
+              "symbol": "e",
+              "description": "A base do logaritmo natural, uma constante irracional que é aproximadamente igual a 2.71828, utilizada em funções exponenciais."
+            },
+            {
+              "symbol": "dx",
+              "description": "Um diferencial que indica uma pequena variação na variável x, essencial para o cálculo da integral."
+            },
+            {
+              "symbol": "n!",
+              "description": "O fatorial de n, que é o produto de todos os números inteiros positivos até n, representando o número de maneiras de organizar n itens."
+            }
+          ],
+          "chapter": "2",
+          "source": "question",
+          "questionNumber": "2.6 d",
+          "page": 107
+        }
+      ]
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "2.1",
+      "text": "The steps involved include substituting the potential energy expression into Schrödinger's equation, transforming the equation into a new coordinate system, and using the method of separation of variables.",
+      "formulas": []
+    },
+    {
+      "questionNumber": "2.6",
+      "text": "By substituting the simplest solution of Ψ into Schrödinger's radial equation, we can derive expressions for E and r_0.",
+      "formulas": [
+        {
+          "originalFormula": "E",
+          "genericFormula": "E",
+          "description": "A fórmula representa a energia, que é uma quantidade física fundamental que mede a capacidade de realizar trabalho ou provocar mudanças em um sistema.",
+          "concepts": [
+            "Energia",
+            "Trabalho",
+            "Sistema físico"
+          ],
+          "symbols": [
+            {
+              "symbol": "E",
+              "description": "Representa a energia, que pode ser encontrada em várias formas, como energia cinética, potencial, térmica, entre outras."
+            }
+          ],
+          "chapter": "2",
+          "source": "answer",
+          "questionNumber": "2.6",
+          "page": 143
+        },
+        {
+          "originalFormula": "r_0",
+          "genericFormula": "r_0",
+          "description": "A fórmula representa uma variável que pode ser utilizada para denotar um raio ou uma distância em um contexto específico, como o raio de uma esfera ou a distância entre dois pontos em um sistema físico.",
+          "concepts": [
+            "raio",
+            "distância",
+            "geometria",
+            "semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "r_0",
+              "description": "Representa um raio ou uma distância inicial em um contexto físico ou geométrico."
+            }
+          ],
+          "chapter": "2",
+          "source": "answer",
+          "questionNumber": "2.6",
+          "page": 178
+        }
+      ]
+    },
+    {
+      "questionNumber": "1",
+      "text": "The maximum number of electrons in a shell is given by 2n^2, where n is the principal quantum number.",
+      "formulas": [
+        {
+          "originalFormula": "2n^2",
+          "genericFormula": "2n^2",
+          "description": "Esta fórmula representa um valor que é o dobro do quadrado de uma variável n. Em muitos contextos, essa expressão pode ser utilizada para calcular quantidades que crescem com o quadrado de uma variável, como áreas ou outras propriedades que dependem do quadrado de uma dimensão.",
+          "concepts": [
+            "Crescimento quadrático",
+            "Propriedades geométricas",
+            "Relações matemáticas"
+          ],
+          "symbols": [
+            {
+              "symbol": "n",
+              "description": "Uma variável que representa uma quantidade que pode variar. Dependendo do contexto, pode ser um número inteiro, uma medida de comprimento, ou qualquer outra grandeza que se deseja analisar."
+            }
+          ],
+          "chapter": "2",
+          "source": "answer",
+          "questionNumber": "1",
+          "page": 214
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "\\Psi(r, \\theta, \\phi) = R(r) H(\\theta) I(\\phi)",
+      "genericFormula": "\\Psi(r, \\theta, \\phi) = R(r) H(\\theta) I(\\phi)",
+      "description": "Esta fórmula representa uma função de onda em coordenadas esféricas, onde a função de onda total é expressa como o produto de três funções que dependem de diferentes variáveis: a distância radial, o ângulo polar e o ângulo azimutal. Essa abordagem é comum na mecânica quântica, onde a função de onda descreve o estado quântico de uma partícula ou sistema.",
+      "concepts": [
+        "Função de onda",
+        "Coordenadas esféricas",
+        "Mecânica quântica",
+        "Separação de variáveis"
+      ],
+      "symbols": [
+        {
+          "symbol": "Ψ",
+          "description": "Representa a função de onda, que contém informações sobre o estado quântico de uma partícula ou sistema."
+        },
+        {
+          "symbol": "r",
+          "description": "Representa a coordenada radial, que indica a distância do ponto de interesse até a origem em um sistema de coordenadas esféricas."
+        },
+        {
+          "symbol": "θ",
+          "description": "Representa o ângulo polar, que mede a inclinação do ponto em relação ao eixo vertical em um sistema de coordenadas esféricas."
+        },
+        {
+          "symbol": "φ",
+          "description": "Representa o ângulo azimutal, que mede a rotação em torno do eixo vertical em um sistema de coordenadas esféricas."
+        },
+        {
+          "symbol": "R(r)",
+          "description": "É uma função que depende apenas da coordenada radial, representando a parte radial da função de onda."
+        },
+        {
+          "symbol": "H(θ)",
+          "description": "É uma função que depende apenas do ângulo polar, representando a parte angular da função de onda em relação ao ângulo polar."
+        },
+        {
+          "symbol": "I(φ)",
+          "description": "É uma função que depende apenas do ângulo azimutal, representando a parte angular da função de onda em relação ao ângulo azimutal."
+        }
+      ],
+      "chapter": "2",
+      "source": "standalone",
+      "page": 250
+    },
+    {
+      "originalFormula": "E = \\frac{h^2 n^2}{8 m L^2}",
+      "genericFormula": "E = \\frac{h^2 n^2}{8 m L^2}",
+      "description": "Esta fórmula representa a energia de um nível quântico em uma partícula confinada em uma caixa unidimensional, onde a energia é quantizada em função de um número quântico, a massa da partícula e o comprimento da caixa.",
+      "concepts": [
+        "quantização de energia",
+        "partícula em uma caixa",
+        "números quânticos",
+        "mecânica quântica"
+      ],
+      "symbols": [
+        {
+          "symbol": "E",
+          "description": "representa a energia do nível quântico da partícula."
+        },
+        {
+          "symbol": "h",
+          "description": "é a constante de Planck, que relaciona a energia de um fóton à sua frequência."
+        },
+        {
+          "symbol": "n",
+          "description": "é o número quântico que indica o nível de energia da partícula, assumindo valores inteiros positivos."
+        },
+        {
+          "symbol": "m",
+          "description": "representa a massa da partícula que está sendo considerada na fórmula."
+        },
+        {
+          "symbol": "L",
+          "description": "é o comprimento da caixa unidimensional onde a partícula está confinada."
+        }
+      ],
+      "chapter": "2",
+      "source": "standalone",
+      "page": 285
+    },
+    {
+      "originalFormula": "J_{ub} = \\sum q v_d",
+      "genericFormula": "J = \\sum q v_d",
+      "description": "Esta fórmula representa a densidade de corrente elétrica em um material semicondutor, onde a densidade de corrente é a soma das contribuições de todas as cargas elétricas em movimento, multiplicadas pela velocidade média dessas cargas.",
+      "concepts": [
+        "Densidade de corrente elétrica",
+        "Carga elétrica",
+        "Velocidade de deriva"
+      ],
+      "symbols": [
+        {
+          "symbol": "J",
+          "description": "Representa a densidade de corrente elétrica, que é a quantidade de carga que passa por uma seção transversal de um material por unidade de tempo."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica de uma partícula, que pode ser positiva ou negativa, dependendo do tipo de portador de carga (como elétrons ou lacunas)."
+        },
+        {
+          "symbol": "v_d",
+          "description": "Representa a velocidade de deriva, que é a velocidade média com que as cargas elétricas se movem através do material quando um campo elétrico é aplicado."
+        }
+      ],
+      "chapter": "2",
+      "source": "standalone",
+      "page": 321
+    },
+    {
+      "originalFormula": "p = \\frac{hk}{2\\pi}",
+      "genericFormula": "p = \\frac{h k}{2 \\pi}",
+      "description": "Esta fórmula relaciona a quantidade de movimento, representada pela letra p, com a constante de Planck, h, e o número de onda, k. Ela é utilizada em contextos da mecânica quântica para descrever a relação entre a energia e a quantidade de movimento de partículas em movimento.",
+      "concepts": [
+        "Quantidade de movimento",
+        "Constante de Planck",
+        "Número de onda",
+        "Mecânica quântica"
+      ],
+      "symbols": [
+        {
+          "symbol": "p",
+          "description": "Representa a quantidade de movimento de uma partícula, que é uma medida de seu movimento e depende de sua massa e velocidade."
+        },
+        {
+          "symbol": "h",
+          "description": "É a constante de Planck, uma constante fundamental na mecânica quântica que relaciona a energia de um fóton à frequência da radiação eletromagnética."
+        },
+        {
+          "symbol": "k",
+          "description": "É o número de onda, que representa o número de ciclos de uma onda que ocorrem em uma unidade de distância, e está relacionado à energia e à frequência da onda."
+        },
+        {
+          "symbol": "π",
+          "description": "É a constante matemática pi, que é a razão entre a circunferência de um círculo e seu diâmetro, aproximadamente igual a 3,14159."
+        }
+      ],
+      "chapter": "2",
+      "source": "standalone",
+      "page": 356
+    },
+    {
+      "originalFormula": "E = \\frac{h^2 k^2}{8 \\pi m^{*}_n}",
+      "genericFormula": "E = \\frac{h^2 k^2}{8 \\pi m^{*}}",
+      "description": "Esta fórmula representa a energia de um portador de carga (como um elétron) em um semicondutor em função do vetor de onda, que está relacionado ao momento do portador. A energia é calculada considerando a constante de Planck, a massa efetiva do portador e a constante pi.",
+      "concepts": [
+        "Energia de portadores de carga",
+        "Vetor de onda",
+        "Momento de partículas em semicondutores",
+        "Constante de Planck",
+        "Massa efetiva"
+      ],
+      "symbols": [
+        {
+          "symbol": "E",
+          "description": "Representa a energia do portador de carga no semicondutor."
+        },
+        {
+          "symbol": "h",
+          "description": "É a constante de Planck, que relaciona a energia de um fóton à frequência da radiação eletromagnética."
+        },
+        {
+          "symbol": "k",
+          "description": "É o vetor de onda, que está relacionado ao momento da partícula e à sua energia cinética."
+        },
+        {
+          "symbol": "m^{*}",
+          "description": "É a massa efetiva do portador de carga, que considera os efeitos do meio semicondutor sobre o movimento da partícula."
+        },
+        {
+          "symbol": "\\pi",
+          "description": "É uma constante matemática que representa a razão entre a circunferência de um círculo e seu diâmetro, aproximadamente igual a 3,14159."
+        }
+      ],
+      "chapter": "2",
+      "source": "standalone",
+      "page": 392
+    },
+    {
+      "originalFormula": "m^{*}_n \\propto \\left( \\frac{d^2 E}{dk^2} \\right)^{-1}",
+      "genericFormula": "m^{*}_n \\propto \\left( \\frac{d^2 E}{dk^2} \\right)^{-1}",
+      "description": "Esta fórmula relaciona a massa efetiva de um portador de carga em um semicondutor com a curvatura da relação energia-momento. A massa efetiva é uma medida de como um portador de carga, como um elétron, se comporta sob a influência de um campo elétrico, considerando as interações com a rede cristalina do material.",
+      "concepts": [
+        "Massa efetiva",
+        "Relação energia-momento",
+        "Curvatura da relação energia-momento",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "m^{*}_n",
+          "description": "Representa a massa efetiva do portador de carga, que é uma medida de como o portador se comporta em um campo elétrico, levando em conta as interações com o material."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa a energia do portador de carga, que pode ser influenciada por fatores como a estrutura do cristal e a presença de campos externos."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa o vetor de onda, que está relacionado ao momento do portador de carga e é uma variável importante na descrição do comportamento quântico dos elétrons em um sólido."
+        },
+        {
+          "symbol": "d^2 E/dk^2",
+          "description": "Representa a segunda derivada da energia em relação ao vetor de onda, que indica a curvatura da relação energia-momento. Essa curvatura é fundamental para determinar a massa efetiva do portador."
+        }
+      ],
+      "chapter": "2",
+      "source": "standalone",
+      "page": 427
+    },
+    {
+      "originalFormula": "a = \\frac{q \\mathcal{E}}{m}",
+      "genericFormula": "a = \\frac{q \\mathcal{E}}{m}",
+      "description": "Esta fórmula representa a aceleração de uma partícula carregada em um campo elétrico. Ela mostra como a força elétrica, que atua sobre a partícula devido ao campo, resulta em uma aceleração proporcional à carga da partícula e inversamente proporcional à sua massa.",
+      "concepts": [
+        "Aceleração",
+        "Força elétrica",
+        "Campo elétrico",
+        "Carga elétrica",
+        "Massa"
+      ],
+      "symbols": [
+        {
+          "symbol": "a",
+          "description": "Representa a aceleração da partícula, que é a taxa de variação da velocidade em relação ao tempo."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica da partícula, que é uma propriedade física que determina a força elétrica que a partícula experimenta em um campo elétrico."
+        },
+        {
+          "symbol": "\\mathcal{E}",
+          "description": "Representa a intensidade do campo elétrico, que é uma medida da força elétrica que atua sobre uma unidade de carga em um ponto específico do espaço."
+        },
+        {
+          "symbol": "m",
+          "description": "Representa a massa da partícula, que é uma medida da quantidade de matéria que a partícula possui e influencia sua resistência à mudança de movimento."
+        }
+      ],
+      "chapter": "2",
+      "source": "standalone",
+      "page": 463
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498
+  ],
+  "lastUpdated": "2026-05-08T18:19:13.904028",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
+}

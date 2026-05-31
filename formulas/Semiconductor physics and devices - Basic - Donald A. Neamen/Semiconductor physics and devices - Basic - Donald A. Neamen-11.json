@@ -1,0 +1,1055 @@
+{
+  "chapter": "11",
+  "section": "Preview",
+  "questions": [
+    {
+      "number": "1",
+      "text": "Describe and analyze subthreshold conduction, which is the phenomenon whereby current is induced in the channel before the defined threshold voltage is reached.",
+      "formulas": []
+    },
+    {
+      "number": "2",
+      "text": "Analyze channel length modulation, which is a characteristic of short-channel lengths and leads to a finite output resistance.",
+      "formulas": []
+    },
+    {
+      "number": "3",
+      "text": "Consider the effects of a decrease in carrier mobility due to increasing gate voltage.",
+      "formulas": []
+    },
+    {
+      "number": "4",
+      "text": "Analyze the effects of carrier saturation velocity. Carriers can easily reach their saturation velocity in short-channel devices.",
+      "formulas": []
+    },
+    {
+      "number": "5",
+      "text": "Discuss MOSFET scaling, which describes how various parameters must be changed as device size is decreased.",
+      "formulas": []
+    },
+    {
+      "number": "6",
+      "text": "Consider the deviations in threshold voltage due to small geometry devices, including short channel length devices and small channel width devices.",
+      "formulas": []
+    },
+    {
+      "number": "11.3",
+      "text": "Repeat Example 11.3 if the device parameters are N_e = 10^{16} \\, cm^{-3}, \\, L = 0.75 \\, \\mu m, \\, r_j = 0.25 \\, \\mu m, \\, and \\, r_x = 12 \\, nm = 120 \\, \\text{Å}.",
+      "formulas": []
+    },
+    {
+      "number": "EXAMPLE 11.4",
+      "text": "Design the channel width that will limit the threshold voltage shift because of narrow channel effects to a specified value.",
+      "formulas": []
+    },
+    {
+      "number": "Ex 11.6",
+      "text": "A silicon MOSFET has the following parameters: N_{a} = 10^{15} \\, \\text{cm}^{-3}, p^{+} poly-silicon gate with an initial flat-band voltage of V_{fb} = +0.95 \\, V, and an oxide thickness of t_{ox} = 12 \\, nm = 120 \\, \\text{Å}. A final threshold voltage of V_{t} = +0.40 \\, V is required. Assume the idealized delta function for the ion implant profile shown in Figure 11.29a. (a) What type of ion (acceptor or donor) should be implanted? (b) Determine the required ion dose D_{p}.",
+      "formulas": []
+    },
+    {
+      "number": "TYU 11.4",
+      "text": "Repeat Exercise Problem Ex 11.6 for a final threshold voltage of (a) V_{t} = +0.25 \\, V and (b) V_{t} = -0.25 \\, V.",
+      "formulas": []
+    },
+    {
+      "number": "7",
+      "text": "Sketch the space charge region along the width of an NMOS device. Why does the threshold voltage increase as the channel width of the NMOS device decreases?",
+      "formulas": []
+    },
+    {
+      "number": "8",
+      "text": "Sketch I_d versus V_d for an NMOS device, showing the snapback breakdown effect.",
+      "formulas": []
+    },
+    {
+      "number": "9",
+      "text": "Sketch the energy bands of an NMOS device between source and drain, showing the near punch-through effect.",
+      "formulas": []
+    },
+    {
+      "number": "11.32",
+      "text": "The snapback breakdown condition is defined to be when αM = 1, where α is the common base current gain and M is the multiplication constant given by Equation (11.40). Let n = 3 and let V_{bo} = 15 V. The common base current gain is a very strong function of junction current I_{D}. Assume α is described by the relation α = (0.18) \\log_{10} \\left( \\frac{I_{D}}{3 \\times 10^{-9}} \\right)",
+      "formulas": [
+        {
+          "originalFormula": "\\alpha = (0.18) \\log_{10} \\left( \\frac{I_{D}}{3 \\times 10^{-9}} \\right)",
+          "genericFormula": "\\alpha = k \\log_{10} \\left( \\frac{I_{D}}{I_{0}} \\right)",
+          "description": "Esta fórmula representa a relação entre a constante de absorção, denotada por alfa, e a corrente de drenagem em um dispositivo semicondutor. A fórmula indica como a absorção de corrente varia em relação a um valor de referência.",
+          "concepts": [
+            "Constante de absorção",
+            "Logaritmo",
+            "Corrente elétrica",
+            "Dispositivos semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "α",
+              "description": "Representa a constante de absorção, que indica a quantidade de corrente que é absorvida pelo material."
+            },
+            {
+              "symbol": "I_{D}",
+              "description": "Representa a corrente de drenagem, que é a corrente que flui através do dispositivo semicondutor."
+            },
+            {
+              "symbol": "3 \\times 10^{-9}",
+              "description": "Este é um valor de referência para a corrente de drenagem, que serve como base para comparação na fórmula."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa uma constante que ajusta a relação logarítmica, neste caso, o valor específico é 0.18."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "11.33",
+      "text": "Near punch-through occurs when the two depletion regions are within approximately six Debye lengths of each other. The extrinsic Debye length L_{D} is defined as L_{D} = \\sqrt{ \\frac{kT}{e} } \\frac{1}{n_{e}}.",
+      "formulas": [
+        {
+          "originalFormula": "L_{D} = \\sqrt{ \\frac{kT}{e} } \\frac{1}{n_{e}}",
+          "genericFormula": "L_{D} = \\sqrt{ \\frac{kT}{e} } \\frac{1}{n_{e}}",
+          "description": "Não foi possível gerar descrição automática",
+          "concepts": [],
+          "symbols": [],
+          "rawText": "{\n  \"originalFormula\": \"L_{D} = \\sqrt{ \\frac{kT}{e} } \\frac{1}{n_{e}}\",\n  \"genericFormula\": \"L_{D} = \\sqrt{ \\frac{kT}{e} } \\frac{1}{n_{e}}\",\n  \"description\": \"Esta fórmula representa o comprimento de Debye, que é uma medida da distância sobre a qual as cargas elétricas se influenciam em um material semicondutor. O comprimento de Debye é importante para entender como as cargas se distribuem em um semicondutor e como elas afetam as propriedades elétricas do material.\",\n  \"concepts\": [\n    \"Comprimento de Debye\",\n    \"Temperatura\",\n    \"Constante de Boltzmann\",\n    \"Carga elementar\",\n    \"Densidade de portadores de carga\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"L_{D}\",\n      \"description\": \"Representa o comprimento de Debye, que indica a distância em que as interações eletrostáticas são significativas em um material.\"\n    },\n    {\n      \"symbol\": \"k\",\n      \"description\": \"É a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos.\"\n    },\n    {\n      \"symbol\": \"T\",\n      \"description\": \"Representa a temperatura absoluta do sistema, medida em Kelvin, que influencia a energia térmica das partículas.\"\n    },\n    {\n      \"symbol\": \"e\",\n      \"description\": \"É a carga elementar, que é a menor unidade de carga elétrica, representando a carga de um único elétron.\"\n    },\n    {\n      \"symbol\": \"n_{e}\",\n      \"description\": \"Representa a densidade de portadores de carga, especificamente a densidade de elétrons em um semicondutor.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    {
+      "number": "11.34",
+      "text": "Consider the n-channel MOSFET in Example 11.5. Calculate the near punch-through voltage. How does this voltage compare to the ideal punch-through voltage determined in the example?",
+      "formulas": []
+    },
+    {
+      "number": "11.35",
+      "text": "Repeat Problem 11.34 if a source–substrate voltage V_{as} = 2 V is applied.",
+      "formulas": []
+    },
+    {
+      "number": "11.36",
+      "text": "The threshold voltage of an n-channel MOSFET, with an oxide thickness of t_{ox} = 12 nm = 120 Å, needs to be shifted in the positive direction by 0.80 V. Determine the type of implant and the implant dose required.",
+      "formulas": []
+    },
+    {
+      "number": "11.37",
+      "text": "The threshold voltage of a p-channel MOSFET, with an oxide thickness of t_{ox} = 18 nm = 180 Å, needs to be shifted in the negative direction by 0.60 V. Determine the type of implant and the implant dose required.",
+      "formulas": []
+    },
+    {
+      "number": "11.38",
+      "text": "An n-channel MOSFET has an n^{+} polysilicon gate, a substrate doping of N_{d} = 6 \\times 10^{15} cm^{-3}, an oxide thickness of t_{ox} = 15 nm = 150 Å, and an oxide trapped charge density of Q_{ox} = 5 \\times 10^{10} cm^{-2}. (a) Determine the threshold voltage. (b) The required threshold voltage is V_{t} = +0.50 V. Determine the type and implant density necessary to achieve this specification. Assume the implant is directly adjacent to the oxide-semiconductor interface.",
+      "formulas": []
+    },
+    {
+      "number": "11.39",
+      "text": "A p-channel MOSFET has a p^{+} polysilicon gate, a substrate doping of N_{a} = 2 \\times 10^{16} cm^{-3}, an oxide thickness of t_{ox} = 180 Å, and an oxide trapped charge density of Q_{ox} = 1 cm^{-2}. (a) Calculate the threshold voltage. (b) The required threshold voltage is V_{t} = -0.40 V. Determine the type and ion implant density necessary to achieve this specification. Assume the implant is directly adjacent to the oxide-semiconductor interface.",
+      "formulas": []
+    },
+    {
+      "number": "11.40",
+      "text": "Consider an n-channel MOSFET with a substrate doping of N_{d} = 4 \\times 10^{15} cm^{-3}, an oxide thickness of t_{ox} = 8 nm = 80 Å, and an initial flat-band voltage of V_{fb} = -2.5 V. (a) Determine the threshold voltage. (b) For an enhancement-mode device, the required threshold voltage is V_{t} = +40.0 V. Determine the type and ion implant density that is necessary to achieve this specification. (c) Repeat part (b) for a depletion-mode device with a required threshold voltage of V_{t} = -0.40 V.",
+      "formulas": []
+    },
+    {
+      "number": "11.41",
+      "text": "The channel of a device with I_{D} = 500 \\mu A and a p-type substrate with N_{a} = 10^{17} cm^{-3} is implanted with acceptors using an effective dose of D_{i} = 10^{12} cm^{-2}.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "11.3",
+      "text": "The shift in threshold voltage is found as ΔV_t = -0.0726 \\, V.",
+      "formulas": [
+        {
+          "originalFormula": "C_{ox} = \\frac{\\epsilon_{ox}}{t_{ox}} = \\frac{(3.9)(8.85 \\times 10^{-14})}{200 \\times 10^{-3}} = 1.726 \\times 10^{-7} \\, F/cm^{2}",
+          "genericFormula": "C_{ox} = \\frac{\\epsilon_{ox}}{t_{ox}}",
+          "description": "Esta fórmula representa a capacitância por unidade de área de uma camada de óxido em um dispositivo semicondutor. A capacitância é uma medida de quão bem um componente pode armazenar carga elétrica. Neste caso, estamos considerando a capacitância de uma camada de óxido que é fundamental em transistores e outros dispositivos eletrônicos.",
+          "concepts": [
+            "Capacitância",
+            "Camada de óxido",
+            "Dispositivos semicondutores",
+            "Armazenamento de carga elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "C_{ox}",
+              "description": "Representa a capacitância por unidade de área da camada de óxido."
+            },
+            {
+              "symbol": "\\epsilon_{ox}",
+              "description": "Representa a permissividade elétrica do material do óxido, que indica a capacidade do material de permitir a passagem de campo elétrico."
+            },
+            {
+              "symbol": "t_{ox}",
+              "description": "Representa a espessura da camada de óxido, que é a distância entre as placas do capacitor formado pelo óxido."
+            }
+          ]
+        },
+        {
+          "originalFormula": "V_{th} = V_{in} \\ln \\left( \\frac{N_a}{n_i} \\right) = (0.0259) \\ln \\left( \\frac{3 \\times 10^{16}}{1.5 \\times 10^{10}} \\right) = 0.3758 \\, V",
+          "genericFormula": "V_{th} = V_{in} \\ln \\left( \\frac{N_a}{n_i} \\right)",
+          "description": "Esta fórmula calcula a tensão de limiar, que é a tensão necessária para que um semicondutor comece a conduzir corrente elétrica. Ela relaciona a tensão de entrada com a razão entre a concentração de dopantes acceptores e a concentração intrínseca de portadores de carga no material semicondutor.",
+          "concepts": [
+            "Tensão de limiar",
+            "Dopagem em semicondutores",
+            "Concentração de portadores de carga",
+            "Propriedades elétricas dos materiais semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{th}",
+              "description": "Representa a tensão de limiar, que é a tensão necessária para iniciar a condução elétrica em um semicondutor."
+            },
+            {
+              "symbol": "V_{in}",
+              "description": "Representa a tensão de entrada aplicada ao semicondutor."
+            },
+            {
+              "symbol": "N_a",
+              "description": "Representa a concentração de dopantes acceptores no semicondutor, que são átomos que criam lacunas que podem conduzir corrente."
+            },
+            {
+              "symbol": "n_i",
+              "description": "Representa a concentração intrínseca de portadores de carga no semicondutor, que é a quantidade de portadores gerados naturalmente no material."
+            },
+            {
+              "symbol": "ln",
+              "description": "Representa a função logarítmica natural, que é usada para calcular a relação entre as concentrações de dopantes e a concentração intrínseca."
+            }
+          ]
+        },
+        {
+          "originalFormula": "x_{tr} = \\left[ \\frac{4 e_{ox} \\phi_{th}^{1/2}}{e_n N_e} \\right]^{1/2}",
+          "genericFormula": "x_{tr} = \\left[ \\frac{4 e_{ox} \\phi_{th}^{1/2}}{e_n N_e} \\right]^{1/2}",
+          "description": "Esta fórmula calcula a largura de uma região de transição em um semicondutor, que é importante para entender como os portadores de carga se movem em materiais semicondutores. A largura de transição é uma medida que ajuda a determinar a eficiência de dispositivos semicondutores, como transistores e diodos.",
+          "concepts": [
+            "Largura de transição em semicondutores",
+            "Movimento de portadores de carga",
+            "Efeito de campo elétrico em materiais semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "x_{tr}",
+              "description": "Representa a largura da região de transição em um semicondutor, que é a distância em que os portadores de carga se distribuem devido a um campo elétrico."
+            },
+            {
+              "symbol": "e_{ox}",
+              "description": "Representa a permissividade elétrica do óxido, que é uma medida de como um material pode armazenar carga elétrica em um campo elétrico."
+            },
+            {
+              "symbol": "\\phi_{th}",
+              "description": "Representa o potencial térmico, que é a energia necessária para mover um portador de carga em um semicondutor a partir de uma posição de equilíbrio."
+            },
+            {
+              "symbol": "e_n",
+              "description": "Representa a carga elementar, que é a quantidade de carga elétrica transportada por um único elétron."
+            },
+            {
+              "symbol": "N_e",
+              "description": "Representa a densidade de portadores de carga, que é a quantidade de portadores de carga por unidade de volume em um semicondutor."
+            }
+          ]
+        },
+        {
+          "originalFormula": "ΔV_t = -\\frac{e_n x_{tr}}{C_{ox}} \\left[ \\frac{1}{2} \\left( \\sqrt{1 + \\frac{2 x_{tr}}{L}} - 1 \\right) \\right]",
+          "genericFormula": "ΔV_t = -\\frac{e_n x_{tr}}{C_{ox}} \\left[ \\frac{1}{2} \\left( \\sqrt{1 + \\frac{2 x_{tr}}{L}} - 1 \\right) \\right]",
+          "description": "Esta fórmula representa a variação da tensão de limiar (ΔV_t) em um transistor de efeito de campo, que é influenciada pela densidade de portadores, a espessura do canal e a capacitância do óxido.",
+          "concepts": [
+            "Transistor de efeito de campo",
+            "Tensão de limiar",
+            "Capacitância",
+            "Densidade de portadores",
+            "Espessura do canal"
+          ],
+          "symbols": [
+            {
+              "symbol": "ΔV_t",
+              "description": "Representa a variação da tensão de limiar do transistor, que é a tensão necessária para que o transistor comece a conduzir."
+            },
+            {
+              "symbol": "e_n",
+              "description": "Refere-se à densidade de portadores de carga no canal do transistor, que afeta a condução elétrica."
+            },
+            {
+              "symbol": "x_{tr}",
+              "description": "É a espessura do canal do transistor, que influencia a quantidade de carga que pode ser transportada."
+            },
+            {
+              "symbol": "C_{ox}",
+              "description": "Representa a capacitância do óxido, que é uma medida da capacidade do material isolante entre o gate e o canal de armazenar carga elétrica."
+            },
+            {
+              "symbol": "L",
+              "description": "É o comprimento do canal do transistor, que afeta a resistência e a mobilidade dos portadores de carga."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "EXAMPLE 11.4",
+      "text": "We find C_{ox} = 1.726 \\times 10^{-7} F/cm^{2} and x_{tr} = 0.18 \\, \\mu m.",
+      "formulas": [
+        {
+          "originalFormula": "W = \\frac{e_{n}(\\xi_{xtr})}{C_{ox}(\\Delta V_{T})}",
+          "genericFormula": "W = \\frac{e_{n}(\\xi_{xtr})}{C_{ox}(\\Delta V_{T})}",
+          "description": "Esta fórmula representa a largura da região de depleção em um dispositivo semicondutor, que é influenciada pela densidade de carga, a capacitância da camada de óxido e a variação de tensão de limiar. A largura da região de depleção é crucial para entender o comportamento elétrico de dispositivos como transistores.",
+          "concepts": [
+            "Densidade de carga",
+            "Capacitância",
+            "Tensão de limiar",
+            "Região de depleção",
+            "Dispositivos semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "W",
+              "description": "Representa a largura da região de depleção em um semicondutor."
+            },
+            {
+              "symbol": "e_{n}(\\xi_{xtr})",
+              "description": "Representa a densidade de carga elétrica no semicondutor, que depende da concentração de portadores de carga e da posição no material."
+            },
+            {
+              "symbol": "C_{ox}",
+              "description": "Representa a capacitância da camada de óxido, que é uma medida de quão bem a camada de óxido pode armazenar carga elétrica."
+            },
+            {
+              "symbol": "\\Delta V_{T}",
+              "description": "Representa a variação da tensão de limiar, que é a tensão necessária para que um dispositivo semicondutor comece a conduzir corrente."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "Q_{g} = Q_{b} + \\Delta Q_{b}",
+      "genericFormula": "Q_{g} = Q_{b} + \\Delta Q_{b}",
+      "description": "Esta fórmula representa a relação entre a carga total em um sistema, a carga básica e a variação dessa carga. Em termos simples, a carga total é igual à carga inicial mais qualquer mudança que tenha ocorrido nessa carga.",
+      "concepts": [
+        "Carga elétrica",
+        "Variação de carga",
+        "Sistema elétrico"
+      ],
+      "symbols": [
+        {
+          "symbol": "Q_{g}",
+          "description": "Representa a carga total do sistema."
+        },
+        {
+          "symbol": "Q_{b}",
+          "description": "Representa a carga básica ou inicial do sistema."
+        },
+        {
+          "symbol": "\\Delta Q_{b}",
+          "description": "Representa a variação na carga básica, ou seja, a quantidade de carga que foi adicionada ou removida do sistema."
+        }
+      ]
+    },
+    {
+      "originalFormula": "|Q_{s}| = |Q_{b}| + |\\Delta Q_{b}| = e_{n}WLx_{tr} \\left(1 + \\frac{\\xi_{xtr}}{W}\\right)",
+      "genericFormula": "|Q_{s}| = |Q_{b}| + |\\Delta Q_{b}| = e_{n}WLx_{tr} \\left(1 + \\frac{\\xi_{xtr}}{W}\\right)",
+      "description": "Não foi possível gerar descrição automática",
+      "concepts": [],
+      "symbols": [],
+      "rawText": "{\n  \"originalFormula\": \"|Q_{s}| = |Q_{b}| + |\\Delta Q_{b}| = e_{n}WLx_{tr} \\\\left(1 + \\\\frac{\\\\xi_{xtr}}{W}\\\\right)\",\n  \"genericFormula\": \"|Q_{s}| = |Q_{b}| + |\\\\Delta Q_{b}| = e_{n}WLx_{tr} \\\\left(1 + \\\\frac{\\\\xi_{xtr}}{W}\\\\right)\",\n  \"description\": \"Esta fórmula representa a relação entre a carga superficial, a carga de fundo e a variação da carga de fundo em um sistema semicondutor. Ela mostra como a carga superficial é influenciada pela carga de fundo e por uma variação adicional relacionada a parâmetros físicos do material.\",\n  \"concepts\": [\n    \"Carga elétrica\",\n    \"Semicondutores\",\n    \"Propriedades elétricas dos materiais\",\n    \"Geometria do dispositivo semicondutor\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"Q_{s}\",\n      \"description\": \"Representa a carga superficial, que é a carga elétrica acumulada na superfície de um material semicondutor.\"\n    },\n    {\n      \"symbol\": \"Q_{b}\",\n      \"description\": \"Representa a carga de fundo, que é a carga elétrica presente no interior do material semicondutor.\"\n    },\n    {\n      \"symbol\": \"ΔQ_{b}\",\n      \"description\": \"Representa a variação da carga de fundo, que é a mudança na quantidade de carga elétrica no interior do material semicondutor.\"\n    },\n    {\n      \"symbol\": \"e_{n}\",\n      \"description\": \"Representa a permissividade elétrica do material, que é uma medida de como o material responde a um campo elétrico.\"\n    },\n    {\n      \"symbol\": \"W\",\n      \"description\": \"Representa a largura do dispositivo semicondutor, que é uma dimensão física importante que afeta as propriedades elétricas.\"\n    },\n    {\n      \"symbol\": \"L\",\n      \"description\": \"Representa o comprimento do dispositivo semicondutor, que também influencia as características elétricas do sistema.\"\n    },\n    {\n      \"symbol\": \"x_{tr}\",\n      \"description\": \"Representa a posição de transição ou a distância a partir de um ponto de referência no dispositivo semicondutor onde ocorrem mudanças nas propriedades elétricas.\"\n    },\n    {\n      \"symbol\": \"ξ_{xtr}\",\n      \"description\": \"Representa um parâmetro que pode ser relacionado a variações ou perturbações no sistema, influenciando a carga elétrica.\"\n    }\n  ]\n}"
+    },
+    {
+      "originalFormula": "\\Delta V_{T} = \\frac{e_{n}x_{tr}}{C_{ox}} \\left(\\frac{\\xi_{xtr}}{W}\\right)",
+      "genericFormula": "\\Delta V_{T} = \\frac{e_{n}x_{tr}}{C_{ox}} \\left(\\frac{\\xi_{xtr}}{W}\\right)",
+      "description": "Esta fórmula representa a variação do potencial de limiar (ou tensão de limiar) em um transistor de efeito de campo, que é uma medida importante para determinar quando o transistor começa a conduzir. A variação do potencial de limiar depende de diversos fatores, como a densidade de portadores de carga, a espessura da camada de óxido e a largura do canal do transistor.",
+      "concepts": [
+        "Potencial de limiar",
+        "Transistor de efeito de campo",
+        "Densidade de portadores de carga",
+        "Espessura da camada de óxido",
+        "Largura do canal"
+      ],
+      "symbols": [
+        {
+          "symbol": "ΔV_{T}",
+          "description": "Representa a variação do potencial de limiar do transistor, que é a tensão necessária para que o transistor comece a conduzir."
+        },
+        {
+          "symbol": "e_{n}",
+          "description": "Representa a densidade de portadores de carga no canal do transistor, que influencia a corrente que pode passar através do dispositivo."
+        },
+        {
+          "symbol": "x_{tr}",
+          "description": "Representa a espessura da camada de transporte, que é a distância que os portadores de carga precisam percorrer para contribuir com a condução elétrica."
+        },
+        {
+          "symbol": "C_{ox}",
+          "description": "Representa a capacitância da camada de óxido, que é uma medida de quão bem a camada de óxido pode armazenar carga elétrica."
+        },
+        {
+          "symbol": "ξ_{xtr}",
+          "description": "Representa a constante que relaciona a espessura da camada de transporte com a capacitância, influenciando a eficiência da condução."
+        },
+        {
+          "symbol": "W",
+          "description": "Representa a largura do canal do transistor, que afeta a quantidade de corrente que pode fluir através do dispositivo."
+        }
+      ]
+    },
+    {
+      "originalFormula": "V_{t} = V_{t0} + \\frac{q D_{i}}{C_{ox}}",
+      "genericFormula": "V_{t} = V_{t0} + \\frac{q D}{C_{ox}}",
+      "description": "Esta fórmula representa a tensão de limiar (V_t) de um transistor de efeito de campo (FET), que é a tensão mínima necessária para que o transistor comece a conduzir corrente. A fórmula mostra como essa tensão depende de uma tensão inicial (V_{t0}), da carga elétrica (q) e da difusividade (D) do portador de carga, além da capacitância da camada de óxido (C_{ox}).",
+      "concepts": [
+        "Tensão de limiar",
+        "Transistor de efeito de campo (FET)",
+        "Carga elétrica",
+        "Difusividade de portadores de carga",
+        "Capacitância"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_{t}",
+          "description": "Representa a tensão de limiar do transistor, que é a tensão necessária para iniciar a condução."
+        },
+        {
+          "symbol": "V_{t0}",
+          "description": "É a tensão de limiar inicial, que pode ser considerada como um valor de referência para a tensão de limiar."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica de um portador de carga, que pode ser um elétron ou um buraco, dependendo do tipo de semicondutor."
+        },
+        {
+          "symbol": "D",
+          "description": "Refere-se à difusividade, que é uma medida de como os portadores de carga se movem através do material semicondutor."
+        },
+        {
+          "symbol": "C_{ox}",
+          "description": "É a capacitância da camada de óxido, que influencia a capacidade do transistor de armazenar carga elétrica."
+        }
+      ]
+    },
+    {
+      "originalFormula": "D_{i} = 9.815 \\times 10^{11} \\, \\text{cm}^{-2}",
+      "genericFormula": "D_{i} = k \\times 10^{n} \\, \\text{cm}^{-2}",
+      "description": "Essa fórmula representa a densidade de portadores intrínsecos em um semicondutor, que é uma medida da quantidade de portadores de carga (elétrons e lacunas) presentes por centímetro quadrado em um material semicondutor puro.",
+      "concepts": [
+        "Densidade de portadores",
+        "Semicondutores",
+        "Portadores de carga",
+        "Elétrons e lacunas"
+      ],
+      "symbols": [
+        {
+          "symbol": "D_{i}",
+          "description": "Representa a densidade de portadores intrínsecos em um semicondutor, medida em número de portadores por centímetro quadrado."
+        },
+        {
+          "symbol": "k",
+          "description": "Um valor numérico que representa a constante de proporcionalidade, que pode variar dependendo das condições do material e da temperatura."
+        },
+        {
+          "symbol": "n",
+          "description": "Um expoente que indica a ordem de grandeza da densidade de portadores, refletindo a magnitude do valor de k."
+        }
+      ]
+    },
+    {
+      "originalFormula": "N_{a} - N_{d} = \\frac{D_{i}}{x_{i}}",
+      "genericFormula": "N_{a} - N_{d} = \\frac{D_{i}}{x_{i}}",
+      "description": "Esta fórmula representa a relação entre a diferença de concentrações de dopantes aceitores e doadores em um semicondutor e a densidade de portadores intrínsecos, considerando uma determinada largura de região.",
+      "concepts": [
+        "Dopagem de semicondutores",
+        "Concentração de portadores",
+        "Equilíbrio de carga em semicondutores",
+        "Propriedades elétricas dos materiais"
+      ],
+      "symbols": [
+        {
+          "symbol": "N_{a}",
+          "description": "Representa a concentração de átomos dopantes do tipo aceitador em um semicondutor."
+        },
+        {
+          "symbol": "N_{d}",
+          "description": "Representa a concentração de átomos dopantes do tipo doador em um semicondutor."
+        },
+        {
+          "symbol": "D_{i}",
+          "description": "Representa a densidade de portadores intrínsecos, que são os portadores de carga gerados naturalmente no material semicondutor."
+        },
+        {
+          "symbol": "x_{i}",
+          "description": "Representa a largura da região considerada no semicondutor onde a diferença de concentrações é avaliada."
+        }
+      ]
+    },
+    {
+      "originalFormula": "N_{d} = 5 \\times 10^{15} \\times \\frac{9.815 \\times 10^{11}}{0.15 \\times 10^{-4}}",
+      "genericFormula": "N_{d} = A \\times \\frac{B}{C}",
+      "description": "Esta fórmula representa a densidade de dopagem de um semicondutor, que indica quantos átomos dopantes estão presentes por unidade de volume. A densidade de dopagem é crucial para determinar as propriedades elétricas do material semicondutor.",
+      "concepts": [
+        "Densidade de dopagem",
+        "Semicondutores",
+        "Propriedades elétricas dos materiais"
+      ],
+      "symbols": [
+        {
+          "symbol": "N_{d}",
+          "description": "Representa a densidade de dopagem, que é a quantidade de átomos dopantes por unidade de volume em um semicondutor."
+        },
+        {
+          "symbol": "A",
+          "description": "Um fator constante que pode incluir unidades e valores específicos relacionados ao contexto da dopagem."
+        },
+        {
+          "symbol": "B",
+          "description": "Um valor que representa uma quantidade relacionada ao número de portadores de carga ou à eficiência do dopante no material."
+        },
+        {
+          "symbol": "C",
+          "description": "Um valor que representa uma quantidade que pode estar relacionada à concentração ou ao volume do material considerado."
+        }
+      ]
+    },
+    {
+      "originalFormula": "N_{d} = 7.04 \\times 10^{16} \\, \\text{cm}^{-3}",
+      "genericFormula": "N_{d} = C \\times 10^{D} \\, \\text{cm}^{-3}",
+      "description": "Esta fórmula representa a densidade de dopantes do tipo doador em um material semicondutor, expressa em número de átomos por centímetro cúbico.",
+      "concepts": [
+        "Dopagem de semicondutores",
+        "Densidade de portadores de carga",
+        "Semicondutores do tipo n"
+      ],
+      "symbols": [
+        {
+          "symbol": "N_{d}",
+          "description": "Representa a densidade de dopantes do tipo doador, que são átomos adicionados a um semicondutor para aumentar a quantidade de portadores de carga negativa."
+        },
+        {
+          "symbol": "C",
+          "description": "Um coeficiente que representa uma constante numérica que pode variar dependendo do contexto específico da dopagem."
+        },
+        {
+          "symbol": "D",
+          "description": "Um expoente que indica a potência de dez que multiplica a constante, refletindo a ordem de grandeza da densidade de dopantes."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498,
+    499,
+    500,
+    501,
+    502,
+    503,
+    504,
+    505,
+    506,
+    507,
+    508,
+    509,
+    510,
+    511,
+    512
+  ],
+  "lastUpdated": "2026-05-08T22:47:12.342Z"
+}

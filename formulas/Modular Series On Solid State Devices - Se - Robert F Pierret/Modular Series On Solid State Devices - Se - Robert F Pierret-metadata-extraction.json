@@ -1,0 +1,186 @@
+{
+  "title": "Semiconductor fundamentals",
+  "author": "Prof. Gerold W. Neudeck, Prof. Robert F. Pierret",
+  "publisher": "Addison-Wesley Publishing Company, Inc.",
+  "edition": "2nd ed.",
+  "year": "1988",
+  "chapters": [
+    {
+      "number": "1",
+      "title": "Semiconductors — General Information"
+    },
+    {
+      "number": "1.1",
+      "title": "General Material Properties"
+    },
+    {
+      "number": "1.1.1",
+      "title": "Composition"
+    },
+    {
+      "number": "1.1.2",
+      "title": "Purity"
+    },
+    {
+      "number": "1.1.3",
+      "title": "Structure"
+    },
+    {
+      "number": "1.2",
+      "title": "Crystal Structure"
+    },
+    {
+      "number": "1.2.1",
+      "title": "The Unit Cell Concept"
+    },
+    {
+      "number": "1.2.2",
+      "title": "Simple 3-D Unit Cells"
+    },
+    {
+      "number": "1.2.3",
+      "title": "Semiconductor Lattices"
+    },
+    {
+      "number": "1.2.4",
+      "title": "Miller Indices"
+    },
+    {
+      "number": "1.3",
+      "title": "Crystal Growth"
+    },
+    {
+      "number": "1.3.1",
+      "title": "Obtaining Ultrapure Si"
+    },
+    {
+      "number": "1.3.2",
+      "title": "Single Crystal Formation"
+    },
+    {
+      "number": "1.4",
+      "title": "Summary"
+    },
+    {
+      "number": "2",
+      "title": "Carrier Modeling"
+    },
+    {
+      "number": "2.1",
+      "title": "The Quantization Concept"
+    },
+    {
+      "number": "2.2",
+      "title": "Semiconductor Models"
+    },
+    {
+      "number": "2.2.1",
+      "title": "Bonding Model"
+    },
+    {
+      "number": "2.2.2",
+      "title": "Energy Band Model"
+    },
+    {
+      "number": "2.2.3",
+      "title": "Carriers"
+    },
+    {
+      "number": "2.2.4",
+      "title": "Material Classification"
+    },
+    {
+      "number": "2.3",
+      "title": "Carrier Properties"
+    },
+    {
+      "number": "2.3.1",
+      "title": "Charge"
+    },
+    {
+      "number": "2.3.2",
+      "title": "Effective Mass"
+    },
+    {
+      "number": "2.4",
+      "title": "State and Carrier Distributions"
+    },
+    {
+      "number": "2.5",
+      "title": "Equilibrium Carrier Concentrations"
+    },
+    {
+      "number": "2.6",
+      "title": "Summary and Concluding Comments"
+    },
+    {
+      "number": "3",
+      "title": "Carrier Action"
+    },
+    {
+      "number": "3.1",
+      "title": "Drift"
+    },
+    {
+      "number": "3.2",
+      "title": "Diffusion"
+    },
+    {
+      "number": "3.3",
+      "title": "Recombination–Generation"
+    },
+    {
+      "number": "3.4",
+      "title": "Equations of State"
+    },
+    {
+      "number": "3.5",
+      "title": "Problem Solving and Supplemental Concepts"
+    },
+    {
+      "number": "3.6",
+      "title": "Review and Concluding Comments"
+    },
+    {
+      "number": "A",
+      "title": "Exercises"
+    },
+    {
+      "number": "B",
+      "title": "Volume Review Problem Sets and Answers"
+    },
+    {
+      "number": "B.1",
+      "title": "Problem Set A"
+    },
+    {
+      "number": "B.2",
+      "title": "Problem Set B"
+    },
+    {
+      "number": "B.3",
+      "title": "Answers — Set A"
+    },
+    {
+      "number": "B.4",
+      "title": "Answers — Set B"
+    },
+    {
+      "number": "C",
+      "title": "List of Symbols"
+    },
+    {
+      "number": "Index",
+      "title": "Index"
+    }
+  ],
+  "citation": "Prof. Gerold W. Neudeck, Prof. Robert F. Pierret. Semiconductor fundamentals. Addison-Wesley Publishing Company, Inc., 1988.",
+  "totalProcessedPages": 155,
+  "metadataProcessedPages": [
+    8,
+    9,
+    10
+  ],
+  "indexEndPage": 10,
+  "lastUpdated": "2026-05-09T20:16:13.949Z"
+}

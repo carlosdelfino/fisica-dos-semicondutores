@@ -1,0 +1,1471 @@
+{
+  "chapter": "13 The Junction Field-Effect Transistor",
+  "section": "13.0 PREVIEW",
+  "questions": [
+    {
+      "number": "1",
+      "text": "Consider the transistor gain, or transconductance, of the JFET.",
+      "formulas": []
+    },
+    {
+      "number": "2",
+      "text": "Discuss a few nonideal effects in JFETs, including channel-length modulation and velocity saturation effects.",
+      "formulas": []
+    },
+    {
+      "number": "3",
+      "text": "Develop a small-signal equivalent circuit of the JFET that is used to relate small-signal currents and voltages in the device.",
+      "formulas": []
+    },
+    {
+      "number": "4",
+      "text": "Examine various physical factors affecting the frequency response and limitations of JFETs, and derive an expression for the cutoff frequency.",
+      "formulas": []
+    },
+    {
+      "number": "5",
+      "text": "Present the geometry and characteristics of a specialized JFET called HEMT.",
+      "formulas": []
+    },
+    {
+      "number": "Ex 13.1",
+      "text": "A silicon n-channel JFET at T = 300 K has a gate doping concentration of N_{d} = 10^{18} \\, \\text{cm}^{-3} and a channel doping concentration of N_{s} = 2 \\times 10^{16} \\, \\text{cm}^{-3}. Determine the metallurgical channel thickness, a, such that the pinchoff voltage is V_{p} = -2.50 \\, \\text{V}.",
+      "formulas": [
+        {
+          "originalFormula": "V_{g} = V_{a} - V_{p} = 0.814 - 4.35 = -3.54 \\, \\text{V}",
+          "genericFormula": "V_{g} = V_{a} - V_{p} = 0.814 - 4.35 = -3.54 \\, \\text{V}",
+          "description": "Não foi possível gerar descrição automática",
+          "concepts": [],
+          "symbols": [],
+          "rawText": "{\n  \"originalFormula\": \"V_{g} = V_{a} - V_{p} = 0.814 - 4.35 = -3.54 \\, \\\\text{V}\",\n  \"genericFormula\": \"V_{g} = V_{a} - V_{p}\",\n  \"description\": \"Esta fórmula representa a diferença de potencial entre dois pontos em um circuito, onde Vg é a tensão resultante, Va é a tensão em um ponto específico e Vp é a tensão em outro ponto. A diferença de potencial é uma medida da energia por unidade de carga elétrica que é convertida em trabalho ou calor.\",\n  \"concepts\": [\n    \"Diferença de potencial elétrico\",\n    \"Tensão elétrica\",\n    \"Circuitos elétricos\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"V_{g}\",\n      \"description\": \"Representa a diferença de potencial resultante entre dois pontos no circuito.\"\n    },\n    {\n      \"symbol\": \"V_{a}\",\n      \"description\": \"Representa a tensão em um ponto específico do circuito.\"\n    },\n    {\n      \"symbol\": \"V_{p}\",\n      \"description\": \"Representa a tensão em outro ponto do circuito, que é subtraído da tensão em Va.\"\n    }\n  ]\n}"
+        },
+        {
+          "originalFormula": "V_{p0} = \\frac{e a^{2} N_{g}}{2 \\epsilon_{e}}",
+          "genericFormula": "V_{p0} = \\frac{e a^{2} N_{g}}{2 \\epsilon_{e}}",
+          "description": "Esta fórmula representa a tensão de polarização em um semicondutor, que é influenciada pela carga elétrica, a área e a densidade de portadores de carga no material.",
+          "concepts": [
+            "Tensão de polarização",
+            "Carga elétrica",
+            "Área",
+            "Densidade de portadores de carga",
+            "Permissividade do material"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{p0}",
+              "description": "Representa a tensão de polarização no semicondutor, que é uma medida da diferença de potencial elétrico."
+            },
+            {
+              "symbol": "e",
+              "description": "Representa a carga elementar, que é a menor unidade de carga elétrica, geralmente associada a um elétron."
+            },
+            {
+              "symbol": "a",
+              "description": "Representa a área em que a carga está distribuída, que pode influenciar a intensidade da tensão gerada."
+            },
+            {
+              "symbol": "N_{g}",
+              "description": "Representa a densidade de portadores de carga, que é a quantidade de portadores de carga por unidade de volume no semicondutor."
+            },
+            {
+              "symbol": "\\epsilon_{e}",
+              "description": "Representa a permissividade elétrica do material, que é uma medida de como um material responde a um campo elétrico."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "Ex 13.3",
+      "text": "Consider an n-channel silicon p JFET with parameters: N_{i} = 10^{16} cm^{-3}, N_{a} = 10^{16} cm^{-3}, \\alpha = 0.40 \\mu m, L = 5 \\mu m, and W = 50 \\mu m. Calculate the pinch-off current I_{p} and the maximum drain current I_{D}(sat) for V_{GS} = 0.",
+      "formulas": [
+        {
+          "originalFormula": "I_{D} = I_{DSS} \\left( 1 - \\frac{V_{GS}}{V_{p}} \\right)^{2}",
+          "genericFormula": "I_{D} = I_{DSS} \\left( 1 - \\frac{V_{GS}}{V_{p}} \\right)^{2}",
+          "description": "Esta fórmula representa a corrente de dreno em um transistor de efeito de campo (FET) em função da tensão entre a porta e a fonte e da tensão de polarização do transistor. A corrente de dreno é influenciada pela tensão aplicada entre a porta e a fonte, e a fórmula mostra como essa corrente diminui à medida que a tensão de porta se aproxima do valor de polarização.",
+          "concepts": [
+            "Transistor de efeito de campo (FET)",
+            "Corrente de dreno",
+            "Tensão de porta",
+            "Tensão de polarização"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_{D}",
+              "description": "Representa a corrente que flui do dreno para a fonte no transistor."
+            },
+            {
+              "symbol": "I_{DSS}",
+              "description": "É a corrente máxima que pode fluir do dreno para a fonte quando a tensão entre a porta e a fonte é zero."
+            },
+            {
+              "symbol": "V_{GS}",
+              "description": "É a tensão entre a porta e a fonte do transistor, que controla a corrente de dreno."
+            },
+            {
+              "symbol": "V_{p}",
+              "description": "É a tensão de polarização do transistor, que é o valor crítico onde a corrente de dreno começa a diminuir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "Ex 13.4",
+      "text": "Determine the maximum transconductance of the n-channel JFET described in Exercise Problem Ex 13.3.",
+      "formulas": []
+    },
+    {
+      "number": "Ex 13.5",
+      "text": "Consider an n-channel GaAs MESFET with a gate barrier height of \\phi_{b} = 0.85 \\, V. The channel doping concentration is N_{d} = 5 \\times 10^{15} \\, cm^{-3} and the channel thickness is a = 0.40 \\, \\mu m. Calculate the internal pinchoff voltage and the threshold voltage.",
+      "formulas": [
+        {
+          "originalFormula": "\\Lambda = 0.81 \\; \\text{V} \\; \\text{and} \\; V_{th} = 0.81 \\; \\text{V}",
+          "genericFormula": "\\Lambda = V_{th}",
+          "description": "Esta fórmula relaciona duas quantidades elétricas, onde \\Lambda representa um parâmetro que pode estar associado a uma tensão de limiar ou de referência, e V_{th} é a tensão de limiar de um dispositivo semicondutor. Ambas as quantidades têm o mesmo valor, indicando que a tensão de referência é igual à tensão de limiar.",
+          "concepts": [
+            "Tensão elétrica",
+            "Dispositivos semicondutores",
+            "Tensão de limiar"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\Lambda",
+              "description": "Representa um parâmetro elétrico, possivelmente uma tensão de referência ou limiar em um circuito."
+            },
+            {
+              "symbol": "V_{th}",
+              "description": "Representa a tensão de limiar, que é a tensão mínima necessária para que um dispositivo semicondutor comece a conduzir corrente."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "TVU 13.3",
+      "text": "Consider a p-channel silicon JFET that has parameters a = 0.50 μm, μ_p = 400 cm²/V·s, N_i = 2 × 10^{16} cm^{-3}, and L = 4 μm. Calculate the cutoff frequency.",
+      "formulas": [
+        {
+          "originalFormula": "f_{cutoff} = \\frac{1}{2 \\pi R_{out} C_{in}}",
+          "genericFormula": "f_{cutoff} = \\frac{1}{2 \\pi R C}",
+          "description": "Esta fórmula representa a frequência de corte de um circuito RC, que é o ponto onde a resposta em frequência do circuito começa a cair. Em outras palavras, é a frequência na qual a saída do circuito é reduzida a um determinado nível em relação à entrada, geralmente a metade da potência máxima.",
+          "concepts": [
+            "Circuito RC",
+            "Frequência de corte",
+            "Resposta em frequência",
+            "Impedância"
+          ],
+          "symbols": [
+            {
+              "symbol": "f_{cutoff}",
+              "description": "Representa a frequência de corte do circuito, que é a frequência na qual a saída do circuito começa a diminuir em relação à entrada."
+            },
+            {
+              "symbol": "R_{out}",
+              "description": "Representa a resistência de saída do circuito, que é a resistência vista pela carga conectada à saída do circuito."
+            },
+            {
+              "symbol": "C_{in}",
+              "description": "Representa a capacitância de entrada do circuito, que é a capacidade do capacitor de armazenar carga elétrica."
+            },
+            {
+              "symbol": "\\pi",
+              "description": "É uma constante matemática que representa a razão entre a circunferência de um círculo e seu diâmetro, aproximadamente igual a 3,14159."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "TVU 13.4",
+      "text": "An n-channel GaAs pJFET has parameters a = 0.50 μm, L = 1 μm, N_i = 3 × 10^{18} cm^{-3}, and μ_n = 6500 cm²/V·s. Determine the cutoff frequency.",
+      "formulas": [
+        {
+          "originalFormula": "f_{cutoff} = \\frac{1}{2 \\pi R_{out} C_{in}}",
+          "genericFormula": "f_{cutoff} = \\frac{1}{2 \\pi R C}",
+          "description": "Esta fórmula representa a frequência de corte de um circuito RC, que é a frequência na qual a resposta do circuito começa a diminuir. Em circuitos eletrônicos, a frequência de corte é um ponto crítico que determina como o circuito responde a diferentes frequências de sinal.",
+          "concepts": [
+            "Circuito RC",
+            "Frequência de corte",
+            "Resistência",
+            "Capacitância"
+          ],
+          "symbols": [
+            {
+              "symbol": "f_{cutoff}",
+              "description": "Representa a frequência de corte do circuito, que é a frequência na qual a saída do circuito é reduzida em 3 dB em relação ao nível máximo."
+            },
+            {
+              "symbol": "R_{out}",
+              "description": "Representa a resistência de saída do circuito, que é a resistência que o sinal de saída vê ao ser transmitido."
+            },
+            {
+              "symbol": "C_{in}",
+              "description": "Representa a capacitância de entrada do circuito, que é a capacidade do circuito de armazenar carga elétrica."
+            },
+            {
+              "symbol": "\\pi",
+              "description": "Representa a constante matemática pi, que é aproximadamente igual a 3,14159 e é usada em várias fórmulas relacionadas a círculos e ondas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Define internal pinchoff voltage and pinchoff for a pn JFET.",
+      "formulas": []
+    },
+    {
+      "number": "13.28",
+      "text": "(a) Determine the minimum value of L. (b) Repeat part (a) for V_{GS} = -3 V.",
+      "formulas": []
+    },
+    {
+      "number": "13.29",
+      "text": "(a) Determine V_{DS} at which velocity saturation occurs. Let V_{GS} = 0. (b) For V_{GS} = 0, determine h_{ac}. (c) Calculate I_{D}(sat) if velocity saturation occurs. (d) If the electron mobility is a constant and equal to \\mu = 1000 cm^{2}/V\\cdot s, calculate I_{D}(sat) if velocity saturation did not occur.",
+      "formulas": []
+    },
+    {
+      "number": "13.30",
+      "text": "(a) Repeat Problem 13.29 if L = 1 \\mu m and all other parameters remain the same. (b) If velocity saturation occurs, does the relation I_{D}(sat) \\propto L^{-1} still apply? Explain.",
+      "formulas": []
+    },
+    {
+      "number": "13.31",
+      "text": "(a) Calculate the transit time of an electron through the channel assuming (a) a constant mobility of \\mu = 1000 cm^{2}/V\\cdot s applies and (b) velocity saturation applies.",
+      "formulas": []
+    },
+    {
+      "number": "13.32",
+      "text": "(a) Calculate the transit time of an electron through the channel assuming (a) a constant mobility of \\mu = 1000 cm^{2}/V\\cdot s applies and (b) velocity saturation applies.",
+      "formulas": []
+    },
+    {
+      "number": "13.33",
+      "text": "Consider a one-sided silicon n-channel JFET at T = 300 K, depicted as shown. The source-to-gate and drain-to-gate reverse-biased currents are split.",
+      "formulas": []
+    },
+    {
+      "number": "13.42",
+      "text": "Design a one-sided silicon p-channel pin JFET such that V_{g} = 3.2 V, I_{D} (sat) = 1.2 mA at V_{DS} = 0, and r_{f} = 10 GHz. Determine the required values of L, W, and N_{e}.",
+      "formulas": []
+    },
+    {
+      "number": "13.43",
+      "text": "Design a one-sided GaAs n-channel MESFET with a barrier height of d_{bo} = 0.89 V such that V_{g} = +0.12 V, I_{D} = 2.0 \\mu A at V_{GS} = 0.45 V and f_{d} = 50 GHz. Assume \\mu = 7500 \\, cm^{2}/V \\cdot s.",
+      "formulas": []
+    },
+    {
+      "number": "13.44",
+      "text": "Design a pair of complementary n-channel and p-channel silicon JFETs so that I_{D} = 1 mA and |V_{g}| = 3.2 V for each device at T = 300 K. If the devices are to operate for 0 \\leq V_{GS} \\leq 5 V, comment on velocity saturation and channel length modulation effects in your design.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "Ex 13.1",
+      "text": "To find the metallurgical channel thickness, a, we can rearrange the equation for V_{p0}.",
+      "formulas": [
+        {
+          "originalFormula": "V_{p} + V_{g} = V_{p0} \\quad \\text{or} \\quad V_{p} = V_{p0} - V_{g}",
+          "genericFormula": "V_{p} + V_{g} = V_{p0} \\quad \\text{ou} \\quad V_{p} = V_{p0} - V_{g}",
+          "description": "Esta fórmula representa a relação entre a tensão de polarização de um dispositivo semicondutor e a tensão de gate aplicada. Ela mostra como a tensão de polarização é afetada pela tensão de gate, permitindo entender como as variações na tensão de gate influenciam o funcionamento do dispositivo.",
+          "concepts": [
+            "Tensão de polarização",
+            "Tensão de gate",
+            "Dispositivos semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{p}",
+              "description": "Representa a tensão de polarização do dispositivo, que é a tensão necessária para que o dispositivo opere em sua região ativa."
+            },
+            {
+              "symbol": "V_{g}",
+              "description": "Representa a tensão de gate aplicada ao dispositivo, que controla a corrente que flui através dele."
+            },
+            {
+              "symbol": "V_{p0}",
+              "description": "Representa a tensão de polarização inicial ou de referência do dispositivo, que é a tensão sem a influência da tensão de gate."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Ex 13.3",
+      "text": "The maximum current through the JFET is less than the pinch-off current I_{p}. The maximum drain current I_{D}(max) is calculated as I_{D}(max) = (0.522) \\left( 1 - 3 \\cdot \\frac{0.814}{4.35} \\right) \\left( 1 - \\frac{2}{3} \\cdot \\frac{0.814}{4.35} \\right) = 0.313 mA.",
+      "formulas": [
+        {
+          "originalFormula": "I_{D}(max) = (0.522) \\left( 1 - 3 \\cdot \\frac{0.814}{4.35} \\right) \\left( 1 - \\frac{2}{3} \\cdot \\frac{0.814}{4.35} \\right)",
+          "genericFormula": "I_{D}(max) = k \\left( 1 - a \\cdot \\frac{b}{c} \\right) \\left( 1 - d \\cdot \\frac{b}{c} \\right)",
+          "description": "Esta fórmula representa a corrente máxima de drenagem em um dispositivo semicondutor, levando em consideração fatores de correção que afetam o desempenho do dispositivo. Os termos dentro dos parênteses ajustam a corrente máxima de acordo com certas proporções e fatores que influenciam a eficiência do dispositivo.",
+          "concepts": [
+            "corrente elétrica",
+            "semicondutores",
+            "fatores de correção",
+            "eficiência do dispositivo"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_{D}(max)",
+              "description": "representa a corrente máxima de drenagem que pode fluir através do dispositivo semicondutor."
+            },
+            {
+              "symbol": "k",
+              "description": "um fator de proporcionalidade que ajusta a corrente máxima de acordo com as características do dispositivo."
+            },
+            {
+              "symbol": "a",
+              "description": "um coeficiente que representa um fator de correção relacionado à eficiência do dispositivo."
+            },
+            {
+              "symbol": "b",
+              "description": "um valor que representa uma constante ou parâmetro específico do sistema em análise."
+            },
+            {
+              "symbol": "c",
+              "description": "um valor que representa uma constante ou parâmetro de referência que é usado para normalizar a relação entre b e a."
+            },
+            {
+              "symbol": "d",
+              "description": "um coeficiente que representa um segundo fator de correção que afeta a corrente máxima de drenagem."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Ex 13.4",
+      "text": "The maximum transconductance occurs when V_{GS} = 0. Then Equation (13.41a) can be written as g_{m(max)} = \\frac{3I_{D}}{V_{p}} \\left( 1 - \\sqrt{\\frac{V_{GS}}{V_{p}}} \\right) = \\frac{3(0.522)}{4.35} \\left( 1 - \\sqrt{\\frac{0.814}{4.35}} \\right) = 0.204 \\, \\text{mA/V}",
+      "formulas": [
+        {
+          "originalFormula": "g_{m(max)} = \\frac{3I_{D}}{V_{p}} \\left( 1 - \\sqrt{\\frac{V_{GS}}{V_{p}}} \\right)",
+          "genericFormula": "g_{m(max)} = \\frac{3I_{D}}{V_{p}} \\left( 1 - \\sqrt{\\frac{V_{GS}}{V_{p}}} \\right)",
+          "description": "Esta fórmula representa a transcondutância máxima de um transistor de efeito de campo (FET), que é uma medida de quão eficientemente o dispositivo pode controlar a corrente de saída em resposta a uma tensão de entrada. A transcondutância é uma característica crucial para entender o desempenho de amplificadores e circuitos eletrônicos que utilizam FETs.",
+          "concepts": [
+            "Transcondutância",
+            "Transistor de Efeito de Campo (FET)",
+            "Corrente de Dreno",
+            "Tensão de Porta-Sourça",
+            "Tensão de Polarização"
+          ],
+          "symbols": [
+            {
+              "symbol": "g_{m(max)}",
+              "description": "Representa a transcondutância máxima do transistor, que indica a variação da corrente de dreno em relação à variação da tensão de porta-sourça."
+            },
+            {
+              "symbol": "I_{D}",
+              "description": "Representa a corrente que flui através do dreno do transistor, que é a corrente de saída controlada pela tensão de entrada."
+            },
+            {
+              "symbol": "V_{p}",
+              "description": "Representa a tensão de polarização do transistor, que é a tensão necessária para que o transistor opere na região ativa."
+            },
+            {
+              "symbol": "V_{GS}",
+              "description": "Representa a tensão entre a porta e a fonte do transistor, que controla a condutividade do canal do transistor."
+            }
+          ]
+        },
+        {
+          "originalFormula": "g_{m(max)} = \\frac{3(0.522)}{4.35} \\left( 1 - \\sqrt{\\frac{0.814}{4.35}} \\right)",
+          "genericFormula": "g_{m(max)} = \\frac{3k}{C} \\left( 1 - \\sqrt{\\frac{A}{C}} \\right)",
+          "description": "Esta fórmula representa o ganho máximo de transcondutância em um dispositivo semicondutor, que é uma medida da eficiência com que um sinal de corrente pode ser convertido em um sinal de tensão. O ganho máximo é influenciado por constantes específicas do material e condições operacionais.",
+          "concepts": [
+            "Transcondutância",
+            "Ganho em dispositivos semicondutores",
+            "Relação entre corrente e tensão"
+          ],
+          "symbols": [
+            {
+              "symbol": "g_{m(max)}",
+              "description": "Representa o ganho máximo de transcondutância do dispositivo, que indica a capacidade de amplificação do sinal."
+            },
+            {
+              "symbol": "k",
+              "description": "Uma constante que representa um fator específico do material ou do dispositivo em questão, influenciando o ganho."
+            },
+            {
+              "symbol": "C",
+              "description": "Uma constante que representa uma característica do sistema, como capacitância ou outra propriedade relevante."
+            },
+            {
+              "symbol": "A",
+              "description": "Um valor que representa uma medida específica relacionada ao dispositivo, como uma área ou um parâmetro de desempenho."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Ex 13.5",
+      "text": "The built-in potential barrier is V_{a} = V_{i} + \\frac{N_{d}}{n_{i}} = (0.0259) \\left[ \\ln \\left( \\frac{(10^{10} \\times 10^{15})}{(1.8 \\times 10^{10})} \\right) \\right] = 1.25 \\, V.",
+      "formulas": [
+        {
+          "originalFormula": "V_{a} = V_{i} + \\frac{N_{d}}{n_{i}} = (0.0259) \\left[ \\ln \\left( \\frac{(10^{10} \\times 10^{15})}{(1.8 \\times 10^{10})} \\right) \\right] = 1.25 \\, V.",
+          "genericFormula": "V_{a} = V_{i} + \\frac{N_{d}}{n_{i}} = k \\left[ \\ln \\left( \\frac{A \\times B}{C} \\right) \\right]",
+          "description": "Esta fórmula calcula a tensão de um semicondutor dopado, levando em consideração a concentração de dopantes e a densidade de portadores intrínsecos. A tensão resultante é uma medida da energia necessária para mover os portadores de carga dentro do material.",
+          "concepts": [
+            "Tensão elétrica",
+            "Dopagem de semicondutores",
+            "Concentração de portadores de carga",
+            "Equilíbrio térmico",
+            "Logaritmo natural"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{a}",
+              "description": "Representa a tensão do semicondutor dopado, que é a tensão resultante após considerar a dopagem e a densidade de portadores."
+            },
+            {
+              "symbol": "V_{i}",
+              "description": "É a tensão inicial ou de referência antes da dopagem ser considerada."
+            },
+            {
+              "symbol": "N_{d}",
+              "description": "Refere-se à concentração de dopantes no semicondutor, ou seja, a quantidade de átomos dopantes por unidade de volume."
+            },
+            {
+              "symbol": "n_{i}",
+              "description": "Representa a densidade de portadores intrínsecos no semicondutor, que é a quantidade de portadores de carga gerados termicamente em um material não dopado."
+            },
+            {
+              "symbol": "k",
+              "description": "É uma constante que representa a relação entre a temperatura e a energia térmica, frequentemente utilizada em cálculos envolvendo semicondutores."
+            },
+            {
+              "symbol": "A",
+              "description": "É um valor que representa uma quantidade específica em um contexto dado, como a concentração de um tipo de portador de carga."
+            },
+            {
+              "symbol": "B",
+              "description": "Outro valor que representa uma quantidade específica, que pode ser a concentração de outro tipo de portador ou dopante."
+            },
+            {
+              "symbol": "C",
+              "description": "Um valor que representa uma quantidade de referência, como a concentração de portadores em um material específico."
+            }
+          ]
+        },
+        {
+          "originalFormula": "V_{po} = \\frac{e \\alpha}{2 \\epsilon_{s}} N_{d}",
+          "genericFormula": "V_{po} = \\frac{e \\alpha}{2 \\epsilon_{s}} N_{d}",
+          "description": "Esta fórmula representa a tensão de polarização de um semicondutor, que é uma medida da diferença de potencial elétrico gerada devido à presença de dopantes no material. Essa tensão é crucial para entender o comportamento elétrico de dispositivos semicondutores.",
+          "concepts": [
+            "Tensão de polarização",
+            "Dopagem de semicondutores",
+            "Diferença de potencial elétrico",
+            "Propriedades elétricas de materiais"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{po}",
+              "description": "Representa a tensão de polarização do semicondutor, que é a diferença de potencial elétrico gerada pela dopagem."
+            },
+            {
+              "symbol": "e",
+              "description": "Representa a carga elementar, que é a menor unidade de carga elétrica, equivalente a aproximadamente 1.6 x 10^{-19} coulombs."
+            },
+            {
+              "symbol": "\\alpha",
+              "description": "Representa um fator que relaciona a densidade de dopantes e a resposta elétrica do material semicondutor."
+            },
+            {
+              "symbol": "\\epsilon_{s}",
+              "description": "Representa a permissividade elétrica do material semicondutor, que é uma medida de como o material responde a um campo elétrico."
+            },
+            {
+              "symbol": "N_{d}",
+              "description": "Representa a densidade de dopantes no semicondutor, que indica quantos átomos dopantes estão presentes por unidade de volume."
+            }
+          ]
+        },
+        {
+          "originalFormula": "V_{r} = V_{a} - V_{po} = 1.25 - 1.01 = 0.24 \\, V",
+          "genericFormula": "V_{r} = V_{a} - V_{po} = 1.25 - 1.01 = 0.24 \\, V",
+          "description": "Não foi possível gerar descrição automática",
+          "concepts": [],
+          "symbols": [],
+          "rawText": "{\n  \"originalFormula\": \"V_{r} = V_{a} - V_{po} = 1.25 - 1.01 = 0.24 \\, V\",\n  \"genericFormula\": \"V_{r} = V_{a} - V_{po}\",\n  \"description\": \"Esta fórmula representa a diferença de potencial elétrico, onde V_{r} é a tensão resultante, V_{a} é a tensão aplicada e V_{po} é a tensão de offset ou tensão de polarização. A diferença entre a tensão aplicada e a tensão de polarização resulta na tensão efetiva que está sendo considerada no circuito.\",\n  \"concepts\": [\n    \"Diferença de potencial elétrico\",\n    \"Tensão aplicada\",\n    \"Tensão de polarização\",\n    \"Circuitos elétricos\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"V_{r}\",\n      \"description\": \"Representa a tensão resultante ou a tensão efetiva no circuito.\"\n    },\n    {\n      \"symbol\": \"V_{a}\",\n      \"description\": \"Representa a tensão aplicada ao circuito.\"\n    },\n    {\n      \"symbol\": \"V_{po}\",\n      \"description\": \"Representa a tensão de offset ou tensão de polarização que é subtraída da tensão aplicada.\"\n    }\n  ]\n}"
+        },
+        {
+          "originalFormula": "V_{gs} = V_{a} - \\frac{e h}{2 \\epsilon_{s}} N_{d} = 1.25 - \\frac{(1.6 \\times 10^{-19})(0.6 \\times 10^{-6})(3 \\times 10^{15})}{2(13.1)(1.85 \\times 10^{-14})} = 1.25 - 0.745 = 0.50 \\, V",
+          "genericFormula": "V_{gs} = V_{a} - \\frac{e h}{2 \\epsilon_{s}} N_{d}",
+          "description": "Esta fórmula calcula a tensão de porta fonte (Vgs) em um transistor de efeito de campo (FET), levando em consideração a tensão de polarização (Va) e a contribuição de cargas do dopante (Nd) no semicondutor.",
+          "concepts": [
+            "Tensão de porta fonte",
+            "Transistor de efeito de campo",
+            "Dopagem de semicondutores",
+            "Capacitância do semicondutor",
+            "Eletrostática"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{gs}",
+              "description": "Tensão entre a porta e a fonte do transistor, que controla a corrente que flui através do dispositivo."
+            },
+            {
+              "symbol": "V_{a}",
+              "description": "Tensão de polarização aplicada ao transistor, que influencia o funcionamento do dispositivo."
+            },
+            {
+              "symbol": "e",
+              "description": "Carga elementar, que representa a carga de um único elétron, um dos componentes fundamentais da eletricidade."
+            },
+            {
+              "symbol": "h",
+              "description": "Espessura da camada de semicondutor, que afeta a capacitância e a distribuição de cargas no material."
+            },
+            {
+              "symbol": "\\epsilon_{s}",
+              "description": "Constante dielétrica do semicondutor, que mede a capacidade do material de armazenar carga elétrica."
+            },
+            {
+              "symbol": "N_{d}",
+              "description": "Concentração de dopantes do tipo n no semicondutor, que determina a quantidade de portadores de carga disponíveis."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "1",
+      "text": "In the saturation region, the current is given by \\( I_{D} = k_{n}(V_{GS} - V_{T})^{2} \\) or \\( 75 \\\times 10^{-6} = k_{n}(0.5 - 0.24)^{2} \\). The conduction parameter is then \\( k_{n} = 1.109 \\\text{ mA/V}^{2} \\). The conduction parameter, from Equation (13.48), is given by \\( k_{n} = \\\frac{\\mu_{e} W}{2aL} \\).",
+      "formulas": [
+        {
+          "originalFormula": "I_{D} = k_{n}(V_{GS} - V_{T})^{2}",
+          "genericFormula": "I_{D} = k_{n}(V_{GS} - V_{T})^{2}",
+          "description": "Esta fórmula representa a corrente de dreno em um transistor de efeito de campo do tipo n (MOSFET) em regime de saturação. A corrente de dreno é uma medida de quanta corrente elétrica flui do dreno para a fonte do transistor, dependendo da tensão entre o gate e a fonte, e da tensão de limiar do transistor.",
+          "concepts": [
+            "Transistor de efeito de campo (MOSFET)",
+            "Corrente elétrica",
+            "Tensão de gate-source",
+            "Tensão de limiar"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_{D}",
+              "description": "Representa a corrente que flui do dreno para a fonte do transistor."
+            },
+            {
+              "symbol": "k_{n}",
+              "description": "É uma constante que representa a transcondutância do transistor, relacionada à sua capacidade de amplificar a corrente."
+            },
+            {
+              "symbol": "V_{GS}",
+              "description": "É a tensão entre o terminal do gate e o terminal da fonte do transistor, que controla a condução do dispositivo."
+            },
+            {
+              "symbol": "V_{T}",
+              "description": "É a tensão de limiar, que é a tensão mínima necessária para que o transistor comece a conduzir."
+            }
+          ]
+        },
+        {
+          "originalFormula": "75 \\times 10^{-6} = k_{n}(0.5 - 0.24)^{2}",
+          "genericFormula": "A = k_{n}(x - y)^{2}",
+          "description": "Esta fórmula representa a relação entre uma constante de proporcionalidade, chamada de k sub n, e a diferença entre dois valores, x e y, elevada ao quadrado, que resulta em um valor A. Essa relação é frequentemente utilizada em contextos que envolvem propriedades elétricas ou térmicas de materiais semicondutores.",
+          "concepts": [
+            "Constante de proporcionalidade",
+            "Diferença entre valores",
+            "Elevação ao quadrado",
+            "Propriedades elétricas de semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "A",
+              "description": "Representa um valor resultante, que pode ser uma corrente, uma tensão ou outra grandeza física dependendo do contexto."
+            },
+            {
+              "symbol": "k_{n}",
+              "description": "É uma constante de proporcionalidade que pode estar relacionada a características específicas do material ou do sistema em estudo."
+            },
+            {
+              "symbol": "x",
+              "description": "Representa um valor inicial ou uma condição de referência em um determinado contexto físico."
+            },
+            {
+              "symbol": "y",
+              "description": "Representa um segundo valor que é subtraído do valor x, podendo ser uma condição de ajuste ou uma medida de comparação."
+            }
+          ]
+        },
+        {
+          "originalFormula": "k_{n} = 1.109 \\\text{ mA/V}^{2}",
+          "genericFormula": "k_{n} = 1.109 \\\text{ mA/V}^{2}",
+          "description": "Não foi possível gerar descrição automática",
+          "concepts": [],
+          "symbols": [],
+          "rawText": "{\n  \"originalFormula\": \"k_{n} = 1.109 \\\text{ mA/V}^{2}\",\n  \"genericFormula\": \"k_{n} = C \\\text{ mA/V}^{2}\",\n  \"description\": \"Esta fórmula representa a mobilidade de elétrons em um semicondutor, onde a constante k_{n} é uma medida da eficiência com que os elétrons podem se mover através do material quando uma tensão é aplicada.\",\n  \"concepts\": [\n    \"Mobilidade de elétrons\",\n    \"Semicondutores\",\n    \"Eletromobilidade\",\n    \"Transporte de carga elétrica\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"k_{n}\",\n      \"description\": \"Representa a mobilidade dos elétrons em um semicondutor, que indica a capacidade dos elétrons de se moverem sob a influência de um campo elétrico.\"\n    },\n    {\n      \"symbol\": \"C\",\n      \"description\": \"Uma constante que representa um valor específico da mobilidade, que pode variar dependendo do material semicondutor e das condições experimentais.\"\n    }\n  ]\n}"
+        },
+        {
+          "originalFormula": "k_{n} = \\frac{\\mu_{e} W}{2aL}",
+          "genericFormula": "k_{n} = \\frac{\\mu_{e} W}{2aL}",
+          "description": "Esta fórmula representa a mobilidade efetiva de elétrons em um semicondutor, onde a mobilidade é uma medida de quão rapidamente os elétrons podem se mover através do material quando um campo elétrico é aplicado.",
+          "concepts": [
+            "Mobilidade de elétrons",
+            "Semicondutores",
+            "Campo elétrico",
+            "Transporte de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "k_{n}",
+              "description": "Representa a mobilidade efetiva dos elétrons no semicondutor."
+            },
+            {
+              "symbol": "\\mu_{e}",
+              "description": "Representa a mobilidade dos elétrons, que é a capacidade dos elétrons de se moverem através do material sob a influência de um campo elétrico."
+            },
+            {
+              "symbol": "W",
+              "description": "Representa a largura da região onde os elétrons estão se movendo, que pode influenciar a mobilidade."
+            },
+            {
+              "symbol": "a",
+              "description": "Representa um fator que pode estar relacionado a propriedades do material ou condições experimentais que afetam a mobilidade."
+            },
+            {
+              "symbol": "L",
+              "description": "Representa o comprimento da amostra ou a distância que os elétrons têm que percorrer, que também pode afetar a mobilidade."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "V_{GS} = 0",
+      "genericFormula": "V_{GS} = 0",
+      "description": "Esta fórmula representa a tensão entre o terminal de gate (porta) e o terminal de source (fonte) de um transistor de efeito de campo (FET). Quando essa tensão é igual a zero, significa que não há diferença de potencial elétrico entre esses dois terminais, o que pode indicar que o transistor está em um estado específico, como desligado ou em modo de corte.",
+      "concepts": [
+        "Transistor de efeito de campo (FET)",
+        "Tensão elétrica",
+        "Circuitos eletrônicos"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_{GS}",
+          "description": "Representa a tensão entre o terminal de gate e o terminal de source de um transistor de efeito de campo."
+        }
+      ]
+    },
+    {
+      "originalFormula": "V_{GS} = -V_{1}",
+      "genericFormula": "V_{GS} = -V_{1}",
+      "description": "Esta fórmula representa a relação entre a tensão de porta-fonte (VGS) e uma tensão de referência (V1) em um transistor de efeito de campo (FET). A tensão de porta-fonte é a diferença de potencial entre a porta e a fonte do transistor, e a fórmula indica que essa tensão é igual à tensão de referência, mas com sinal invertido.",
+      "concepts": [
+        "Transistor de efeito de campo (FET)",
+        "Tensão de porta-fonte",
+        "Relação de tensões"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_{GS}",
+          "description": "Representa a tensão entre a porta e a fonte do transistor, que é crucial para controlar a condução do dispositivo."
+        },
+        {
+          "symbol": "V_{1}",
+          "description": "Representa uma tensão de referência que pode ser aplicada em um circuito, influenciando o comportamento do transistor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "V_{GS} = -V_{2}",
+      "genericFormula": "V_{GS} = -V_{2}",
+      "description": "Essa fórmula representa a relação entre a tensão de gate-source e uma tensão negativa aplicada em um circuito, onde a tensão de gate-source é a diferença de potencial entre o terminal de gate e o terminal de source de um transistor.",
+      "concepts": [
+        "Tensão de gate-source",
+        "Transistores",
+        "Circuitos elétricos"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_{GS}",
+          "description": "Representa a tensão entre o terminal de gate e o terminal de source de um transistor, que é crucial para controlar o funcionamento do dispositivo."
+        },
+        {
+          "symbol": "V_{2}",
+          "description": "Representa uma tensão aplicada em um ponto do circuito, que, ao ser negativa, influencia a tensão de gate-source do transistor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "V_{v} = V_{g} \\ln \\left( \\frac{N_{s}}{n_{i}^{2}} \\right)",
+      "genericFormula": "V_{v} = V_{g} \\ln \\left( \\frac{N_{s}}{n_{i}^{2}} \\right)",
+      "description": "Esta fórmula representa a tensão de polarização em um semicondutor, onde a tensão é calculada a partir de uma tensão de referência e a razão entre a densidade de portadores de carga e a densidade intrínseca de portadores de carga.",
+      "concepts": [
+        "Tensão de polarização",
+        "Densidade de portadores de carga",
+        "Densidade intrínseca de portadores de carga",
+        "Logaritmo natural"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_{v}",
+          "description": "Representa a tensão de polarização no semicondutor."
+        },
+        {
+          "symbol": "V_{g}",
+          "description": "Representa a tensão de referência ou tensão de energia do sistema."
+        },
+        {
+          "symbol": "N_{s}",
+          "description": "Representa a densidade de portadores de carga no semicondutor dopado."
+        },
+        {
+          "symbol": "n_{i}",
+          "description": "Representa a densidade intrínseca de portadores de carga no material semicondutor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "h = \\frac{2 \\epsilon_{e} (V_{h} + V_{g})^{1/2}}{N_{a}}",
+      "genericFormula": "h = \\frac{2 \\epsilon (V_{h} + V_{g})^{1/2}}{N_{a}}",
+      "description": "Esta fórmula representa a relação entre a altura de uma barreira potencial e as variáveis elétricas de um sistema semicondutor, levando em consideração a permissividade elétrica e a concentração de dopantes.",
+      "concepts": [
+        "Barreira potencial",
+        "Permissividade elétrica",
+        "Dopagem em semicondutores",
+        "Tensão elétrica"
+      ],
+      "symbols": [
+        {
+          "symbol": "h",
+          "description": "Representa a altura da barreira potencial em um semicondutor."
+        },
+        {
+          "symbol": "ε",
+          "description": "Representa a permissividade elétrica do material, que indica a capacidade do material de armazenar carga elétrica."
+        },
+        {
+          "symbol": "V_{h}",
+          "description": "Representa a tensão elétrica associada ao potencial do buraco em um semicondutor."
+        },
+        {
+          "symbol": "V_{g}",
+          "description": "Representa a tensão elétrica associada ao potencial do portador de carga, como elétrons, em um semicondutor."
+        },
+        {
+          "symbol": "N_{a}",
+          "description": "Representa a concentração de dopantes do tipo aceitor em um semicondutor, que influencia a densidade de portadores de carga."
+        }
+      ]
+    },
+    {
+      "originalFormula": "a = \\left[ \\frac{2 e V_{0} N_{g}}{\\epsilon_{e}} \\right]^{1/2}",
+      "genericFormula": "a = \\left[ \\frac{2 e V N_{g}}{\\epsilon} \\right]^{1/2}",
+      "description": "Esta fórmula representa a aceleração de portadores de carga em um semicondutor sob a influência de um potencial elétrico. A aceleração é calculada considerando a carga dos portadores, o potencial aplicado, a densidade de portadores e a permissividade do material.",
+      "concepts": [
+        "Aceleração de partículas carregadas",
+        "Potencial elétrico",
+        "Densidade de portadores em semicondutores",
+        "Permissividade elétrica"
+      ],
+      "symbols": [
+        {
+          "symbol": "a",
+          "description": "Representa a aceleração dos portadores de carga no semicondutor."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a carga de um único elétron."
+        },
+        {
+          "symbol": "V_{0}",
+          "description": "Representa o potencial elétrico aplicado ao semicondutor."
+        },
+        {
+          "symbol": "N_{g}",
+          "description": "Representa a densidade de portadores de carga no semicondutor, ou seja, o número de portadores por unidade de volume."
+        },
+        {
+          "symbol": "\\epsilon_{e}",
+          "description": "Representa a permissividade elétrica do material, que indica como o material responde a um campo elétrico."
+        }
+      ]
+    },
+    {
+      "originalFormula": "g_{m} = \\frac{\\partial I_{D}(sat)}{\\partial V_{GS}} = \\frac{I_{D}}{V_{p}} \\left( 1 - \\sqrt{\\frac{V_{GS}}{V_{p}}} \\right) = G_{0} \\left( 1 - \\sqrt{\\frac{V_{GS}}{V_{p}}} \\right)",
+      "genericFormula": "g_{m} = \\frac{\\partial I_{D}}{\\partial V_{GS}} = \\frac{I_{D}}{V_{p}} \\left( 1 - \\sqrt{\\frac{V_{GS}}{V_{p}}} \\right) = G_{0} \\left( 1 - \\sqrt{\\frac{V_{GS}}{V_{p}}} \\right)",
+      "description": "Esta fórmula representa a transcondutância de um transistor, que é uma medida de quão eficientemente o transistor pode controlar a corrente de saída em resposta a uma variação na tensão de entrada. Em outras palavras, ela indica a sensibilidade da corrente de dreno em relação à tensão de porta, especialmente em condições de saturação.",
+      "concepts": [
+        "Transcondutância",
+        "Transistor",
+        "Corrente de dreno",
+        "Tensão de porta",
+        "Saturação"
+      ],
+      "symbols": [
+        {
+          "symbol": "g_{m}",
+          "description": "Representa a transcondutância, que é a taxa de variação da corrente de dreno em relação à variação da tensão de porta."
+        },
+        {
+          "symbol": "I_{D}(sat)",
+          "description": "Refere-se à corrente de dreno em estado de saturação, que é a corrente máxima que o transistor pode fornecer sob uma determinada tensão de porta."
+        },
+        {
+          "symbol": "V_{GS}",
+          "description": "É a tensão entre a porta e a fonte do transistor, que controla a quantidade de corrente que flui através do dispositivo."
+        },
+        {
+          "symbol": "V_{p}",
+          "description": "Denomina a tensão de limiar ou tensão de pinch-off, que é a tensão mínima necessária para que o transistor comece a conduzir."
+        },
+        {
+          "symbol": "G_{0}",
+          "description": "Representa um ganho inicial ou constante de transcondutância, que é um parâmetro que caracteriza o desempenho do transistor em condições específicas."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498,
+    499,
+    500,
+    501,
+    502,
+    503,
+    504,
+    505,
+    506,
+    507,
+    508,
+    509,
+    510,
+    511,
+    512,
+    513,
+    514,
+    515,
+    516,
+    517,
+    518,
+    519,
+    520,
+    521,
+    522,
+    523,
+    524,
+    525,
+    526,
+    527,
+    528,
+    529,
+    530,
+    531,
+    532,
+    533,
+    534,
+    535,
+    536,
+    537,
+    538,
+    539,
+    540,
+    541,
+    542,
+    543,
+    544,
+    545,
+    546,
+    547,
+    548,
+    549,
+    550,
+    551,
+    552,
+    553,
+    554,
+    555,
+    556,
+    557,
+    558,
+    559,
+    560,
+    561,
+    562,
+    563,
+    564,
+    565,
+    566,
+    567,
+    568,
+    569,
+    570,
+    571,
+    572,
+    573,
+    574,
+    575,
+    576,
+    577,
+    578,
+    579,
+    580,
+    581,
+    582,
+    583,
+    584,
+    585,
+    586,
+    587,
+    588,
+    589,
+    590,
+    591,
+    592,
+    593,
+    594,
+    595,
+    596,
+    597,
+    598,
+    599,
+    600,
+    601,
+    602,
+    603,
+    604,
+    605,
+    606,
+    607,
+    608,
+    609,
+    610,
+    611,
+    612,
+    613,
+    614,
+    615,
+    616,
+    617,
+    618,
+    619,
+    620,
+    621,
+    622,
+    623,
+    624,
+    625,
+    626,
+    627,
+    628,
+    629,
+    630,
+    631,
+    632,
+    633,
+    634,
+    635,
+    636,
+    637,
+    638,
+    639,
+    640,
+    641
+  ],
+  "lastUpdated": "2026-05-08T23:33:58.122Z"
+}

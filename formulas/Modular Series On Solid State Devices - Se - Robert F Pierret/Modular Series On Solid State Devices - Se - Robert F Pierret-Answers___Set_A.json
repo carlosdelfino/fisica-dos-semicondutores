@@ -1,0 +1,1596 @@
+{
+  "chapter": "Answers — Set A",
+  "questions": [],
+  "answers": [
+    {
+      "questionNumber": "19",
+      "text": "b... Drift current density for holes and electric field at x = x1 where p = n_i (E_i = E_F).",
+      "formulas": [
+        {
+          "originalFormula": "J_{P|\\text{drift}} = q\\mu_p p \\mathcal{E}",
+          "genericFormula": "J_{P|\\text{drift}} = q \\mu_p p \\mathcal{E}",
+          "description": "Esta fórmula descreve a densidade de corrente de deriva (drift) dos portadores minoritários positivos — os buracos (holes) — em um semicondutor sob a ação de um campo elétrico externo. O mecanismo de deriva ocorre quando um campo elétrico acelera os portadores de carga livres: os buracos (cargas positivas) se movem na direção do campo elétrico, enquanto os elétrons se movem em sentido contrário. A magnitude da corrente depende da concentração de buracos disponíveis, da mobilidade desses portadores (capacidade de resposta ao campo) e da intensidade do campo elétrico aplicado. Este é um dos dois mecanismos fundamentais de transporte de cargas em semicondutores, sendo o outro a difusão. A corrente total de buracos é a soma da corrente de deriva com a corrente de difusão.",
+          "concepts": [
+            "densidade de corrente de deriva",
+            "transporte de portadores",
+            "mobilidade de buracos",
+            "campo elétrico",
+            "corrente de buracos",
+            "mecanismo de drift",
+            "semicondutores",
+            "portadores majoritários e minoritários"
+          ],
+          "symbols": [
+            {
+              "symbol": "J_{P|\\text{drift}}",
+              "description": "Densidade de corrente de deriva dos buracos (A/cm²)"
+            },
+            {
+              "symbol": "q",
+              "description": "Carga elementar do elétron, q = 1,602 × 10⁻¹⁹ C"
+            },
+            {
+              "symbol": "\\mu_p",
+              "description": "Mobilidade dos buracos (cm²/V·s), representa a facilidade com que os buracos se movem sob influência de um campo elétrico"
+            },
+            {
+              "symbol": "p",
+              "description": "Concentração de buracos (cm⁻³), número de portadores positivos por unidade de volume"
+            },
+            {
+              "symbol": "\\mathcal{E}",
+              "description": "Campo elétrico aplicado (V/cm), força motriz responsável pelo movimento de deriva dos portadores"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "drift",
+            "current",
+            "carrier",
+            "mobility",
+            "holes",
+            "electric-field",
+            "transport",
+            "conductivity",
+            "current-density",
+            "holes-current"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "current-density vs electric-field",
+            "graphParameters": [
+              "current density J_P",
+              "electric field E",
+              "hole concentration p",
+              "hole mobility mu_p"
+            ]
+          },
+          "relatedFormulas": [
+            "J_{N|drift} = q\\mu_n n \\mathcal{E}",
+            "J_{P|diffusion} = -qD_p \\frac{dp}{dx}",
+            "J_{total} = J_{P|drift} + J_{N|drift} + J_{P|diff} + J_{N|diff}",
+            "Einstein-Relation",
+            "Ohm-Law-Semiconductor"
+          ]
+        },
+        {
+          "originalFormula": "p = n_i \\quad (E_i = E_F)",
+          "genericFormula": "p = n_i \\quad \\text{quando} \\quad E_i = E_F",
+          "description": "Esta fórmula expressa a condição de semicondutor intrínseco puro: quando o nível de Fermi (E_F) coincide com o nível intrínseco (E_i), a concentração de buracos (p) é exatamente igual à concentração intrínseca de portadores (n_i). Isso ocorre em semicondutores perfeitamente intrínsecos sem dopagem, onde a concentração de elétrons na banda de condução é igual à concentração de buracos na banda de valência, e ambas são iguais a n_i. A posição do nível de Fermi no meio do gap (aproximadamente) indica equilíbrio térmico sem excesso de nenhum tipo de portador. Essa condição é o ponto de referência fundamental para entender o efeito da dopagem: ao introduzir impurezas, E_F se afasta de E_i, rompendo essa igualdade.",
+          "concepts": [
+            "concentração intrínseca de portadores",
+            "nível de Fermi",
+            "nível intrínseco",
+            "semicondutor intrínseco",
+            "equilíbrio térmico",
+            "concentração de buracos",
+            "simetria elétron-buraco",
+            "estatística de Fermi-Dirac"
+          ],
+          "symbols": [
+            {
+              "symbol": "p",
+              "description": "Concentração de buracos na banda de valência (portadores positivos), em cm⁻³"
+            },
+            {
+              "symbol": "n_i",
+              "description": "Concentração intrínseca de portadores de carga, valor característico do material em uma dada temperatura (ex: ~1.5×10¹⁰ cm⁻³ para Si a 300K)"
+            },
+            {
+              "symbol": "E_i",
+              "description": "Nível de energia intrínseco, posição do nível de Fermi para um semicondutor intrínseco puro, localizado aproximadamente no meio do gap"
+            },
+            {
+              "symbol": "E_F",
+              "description": "Nível de energia de Fermi, parâmetro termodinâmico que determina a distribuição de portadores entre os estados de energia disponíveis"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-concentration",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "intrinsic",
+            "carrier",
+            "concentration",
+            "Fermi",
+            "level",
+            "hole",
+            "band",
+            "equilibrium",
+            "semiconductor",
+            "fermi-level",
+            "intrinsic-level",
+            "distribution",
+            "Fermi-Dirac"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "energy-band",
+            "graphParameters": [
+              "energy",
+              "Fermi-level",
+              "intrinsic-level",
+              "conduction-band",
+              "valence-band",
+              "bandgap"
+            ]
+          },
+          "relatedFormulas": [
+            "Fermi-Dirac-distribution",
+            "intrinsic-carrier-concentration",
+            "np-product-ni-squared",
+            "electron-concentration-fermi",
+            "hole-concentration-fermi",
+            "mass-action-law"
+          ]
+        },
+        {
+          "originalFormula": "\\mathcal{E} = \\frac{1}{q}\\frac{dE_i}{dx} = \\frac{1}{q}\\frac{\\Delta E_i}{\\Delta x} = \\frac{1}{q}\\frac{(E_G/3)}{(L/3)} = \\frac{E_G}{qL}",
+          "genericFormula": "\\mathcal{E} = \\frac{1}{q}\\frac{dE_i}{dx} = \\frac{E_G}{qL}",
+          "description": "Esta fórmula descreve o campo elétrico interno em um semicondutor com gradiente de gap de energia (bandgap grading). Quando o gap de energia varia linearmente ao longo do dispositivo — como em heterojunções ou semicondutores compostos com variação contínua de composição — surge um campo elétrico intrínseco mesmo sem dopagem ou tensão aplicada. O campo é obtido pelo gradiente do nível intrínseco de Fermi E_i em relação à posição x, dividido pela carga elementar q. No caso específico desta expressão, considera-se que a variação total do gap E_G ocorre ao longo de um terço do comprimento total L (numa região de grading L/3), e que a variação do nível intrínseco corresponde a E_G/3, resultando num campo líquido de E_G/(qL). Este campo elétrico built-in é fundamental para o transporte de portadores em dispositivos com bandgap graduado, como transistores de heterojunção (HBT) e células solares de alta eficiência.",
+          "concepts": [
+            "campo elétrico intrínseco",
+            "gradiente de bandgap",
+            "nível intrínseco de Fermi",
+            "heterojunção",
+            "bandgap grading",
+            "campo elétrico built-in",
+            "transporte de portadores",
+            "semicondutor de composição variável"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\mathcal{E}",
+              "description": "Campo elétrico intrínseco (built-in) resultante do gradiente de bandgap, em V/m ou V/cm"
+            },
+            {
+              "symbol": "q",
+              "description": "Carga elementar do elétron, q = 1,602 × 10⁻¹⁹ C"
+            },
+            {
+              "symbol": "E_i",
+              "description": "Nível intrínseco de Fermi (intrinsic Fermi level), posicionado aproximadamente no meio do gap"
+            },
+            {
+              "symbol": "x",
+              "description": "Posição espacial ao longo do dispositivo, em metros ou centímetros"
+            },
+            {
+              "symbol": "\\frac{dE_i}{dx}",
+              "description": "Gradiente espacial do nível intrínseco de Fermi, relacionado diretamente ao campo elétrico local"
+            },
+            {
+              "symbol": "\\Delta E_i",
+              "description": "Variação do nível intrínseco de Fermi na região de grading, igual a E_G/3 no caso específico"
+            },
+            {
+              "symbol": "\\Delta x",
+              "description": "Extensão espacial da região de variação do bandgap, igual a L/3 no caso específico"
+            },
+            {
+              "symbol": "E_G",
+              "description": "Energia do gap (bandgap) do semicondutor, em elétron-volts (eV)"
+            },
+            {
+              "symbol": "L",
+              "description": "Comprimento total do dispositivo ou da região de interesse, em metros ou centímetros"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "band-structure",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "electric-field",
+            "bandgap",
+            "grading",
+            "intrinsic-level",
+            "heterojunction",
+            "built-in-field",
+            "band",
+            "gap",
+            "energy",
+            "carrier",
+            "transport",
+            "gradient",
+            "conduction",
+            "valence",
+            "effective-mass"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "energy-band",
+            "graphParameters": [
+              "position x",
+              "conduction band edge E_c",
+              "valence band edge E_v",
+              "intrinsic level E_i",
+              "bandgap E_G",
+              "electric field profile"
+            ]
+          },
+          "relatedFormulas": [
+            "Poisson-equation",
+            "drift-diffusion",
+            "Einstein-relation",
+            "quasi-Fermi-level",
+            "heterojunction-band-alignment",
+            "built-in-potential",
+            "carrier-drift-velocity"
+          ]
+        },
+        {
+          "originalFormula": "J_{P|\\text{drift}} = \\mu_p n_i E_G / L",
+          "genericFormula": "J_{P|\\text{drift}} = \\frac{\\mu_p n_i E_G}{L}",
+          "description": "Esta fórmula descreve a densidade de corrente de deriva (drift) de lacunas em um semicondutor, aproximada para uma configuração onde o campo elétrico é expresso em termos da energia de gap dividida pelo comprimento característico do dispositivo. A corrente de deriva ocorre quando portadores de carga se movem sob a influência de um campo elétrico externo. Neste caso, o campo elétrico efetivo é estimado como E_G/L, onde E_G é a energia de gap do semicondutor e L é o comprimento da região ativa. A concentração de portadores utilizada é a concentração intrínseca n_i, indicando que a fórmula é aplicada em condições próximas ao equilíbrio térmico ou em semicondutores intrínsecos. Esta aproximação é usada para estimar correntes de saturação ou correntes de geração em dispositivos como diodos e transistores, onde a energia do gap define a escala de energia relevante para a geração de portadores.",
+          "concepts": [
+            "corrente de deriva",
+            "mobilidade de lacunas",
+            "concentração intrínseca",
+            "campo elétrico efetivo",
+            "energia de gap",
+            "transporte de portadores",
+            "semicondutor intrínseco",
+            "corrente de saturação"
+          ],
+          "symbols": [
+            {
+              "symbol": "J_{P|\\text{drift}}",
+              "description": "Densidade de corrente de deriva de lacunas (A/cm²)"
+            },
+            {
+              "symbol": "\\mu_p",
+              "description": "Mobilidade das lacunas (cm²/V·s), mede a facilidade com que as lacunas se movem sob campo elétrico"
+            },
+            {
+              "symbol": "n_i",
+              "description": "Concentração intrínseca de portadores (cm⁻³), número de elétrons ou lacunas gerados termicamente por unidade de volume no semicondutor puro"
+            },
+            {
+              "symbol": "E_G",
+              "description": "Energia de gap (bandgap) do semicondutor (eV ou J), diferença de energia entre a banda de condução e a banda de valência"
+            },
+            {
+              "symbol": "L",
+              "description": "Comprimento característico da região ativa do dispositivo (cm ou m), usado para estimar o campo elétrico efetivo"
+            },
+            {
+              "symbol": "E_G / L",
+              "description": "Campo elétrico efetivo aproximado (V/cm), estimativa do campo elétrico interno baseado no bandgap e no comprimento do dispositivo"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "drift",
+            "current",
+            "carrier",
+            "mobility",
+            "holes",
+            "intrinsic",
+            "concentration",
+            "bandgap",
+            "electric-field",
+            "transport",
+            "saturation",
+            "junction",
+            "semiconductor"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-transport",
+            "graphParameters": [
+              "current-density",
+              "electric-field",
+              "mobility",
+              "temperature",
+              "bandgap"
+            ]
+          },
+          "relatedFormulas": [
+            "drift-current-general",
+            "Fermi-Dirac",
+            "intrinsic-concentration",
+            "mobility-temperature",
+            "Ohm-law-semiconductor",
+            "Einstein-relation",
+            "diode-saturation-current"
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "20",
+      "text": "c... Kinetic energy equals E_v(L) minus E_hole equals E_G/3.",
+      "formulas": [
+        {
+          "originalFormula": "\\text{K.E.} = E_v(L) - E_{\\text{hole}} = E_G/3",
+          "genericFormula": "\\text{K.E.} = E_v(L) - E_{\\text{hole}} = \\frac{E_G}{3}",
+          "description": "Esta fórmula descreve a energia cinética adquirida por um buraco (lacuna) após uma transição interbanda no ponto L da zona de Brillouin em semicondutores de gap indireto, como o germânio (Ge). Quando um elétron é promovido da banda de valência para a banda de condução, o buraco resultante possui energia cinética igual à diferença entre o topo da banda de valência no ponto L e o nível de energia do buraco. O resultado notável é que essa energia cinética é exatamente um terço do gap de energia total E_G, o que reflete a estrutura específica da banda de valência no ponto L para materiais como o Ge. Este resultado é importante para entender processos de transporte de portadores quentes e relaxação de energia em semicondutores indiretos.",
+          "concepts": [
+            "energia cinética de portadores quentes",
+            "banda de valência",
+            "ponto L da zona de Brillouin",
+            "gap de energia indireto",
+            "buracos (lacunas)",
+            "transição interbanda",
+            "semicondutores de gap indireto",
+            "portadores quentes",
+            "estrutura de bandas"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\text{K.E.}",
+              "description": "Energia cinética do buraco após a transição interbanda"
+            },
+            {
+              "symbol": "E_v(L)",
+              "description": "Energia do topo da banda de valência no ponto L da zona de Brillouin"
+            },
+            {
+              "symbol": "E_{\\text{hole}}",
+              "description": "Energia do estado do buraco (lacuna) após a transição"
+            },
+            {
+              "symbol": "E_G",
+              "description": "Energia do gap (largura de banda proibida) do semicondutor"
+            },
+            {
+              "symbol": "L",
+              "description": "Ponto de alta simetria L na zona de Brillouin, localizado na borda da zona na direção [111]"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "band-structure",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "kinetic-energy",
+            "hot-carrier",
+            "valence-band",
+            "L-point",
+            "Brillouin-zone",
+            "indirect-gap",
+            "bandgap",
+            "hole",
+            "band",
+            "energy",
+            "transition",
+            "germanium",
+            "indirect-semiconductor"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "energy-band",
+            "graphParameters": [
+              "energy",
+              "momentum",
+              "k-vector",
+              "L-point",
+              "valence-band",
+              "conduction-band",
+              "bandgap"
+            ]
+          },
+          "relatedFormulas": [
+            "E_G = E_c - E_v",
+            "E_kinetic = p^2 / 2m*",
+            "hot-carrier-relaxation",
+            "indirect-bandgap-transition",
+            "Brillouin-zone-L-point"
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "21",
+      "text": "b... n_0 approximately equals N_D equals 10^14 /cm^3.",
+      "formulas": [
+        {
+          "originalFormula": "n_0 \\approx N_D = 10^{14}/\\text{cm}^3",
+          "genericFormula": "n_0 \\approx N_D",
+          "description": "Em um semicondutor do tipo n com dopagem de doadores completa (ionização completa), a concentração de elétrons no equilíbrio térmico é aproximadamente igual à concentração de átomos doadores ionizados. Esta aproximação é válida quando a temperatura é suficientemente alta para ionizar completamente os doadores e quando a dopagem é muito maior que a concentração intrínseca (N_D >> n_i). Neste caso específico, N_D = 10^{14}/cm^3, o que representa uma dopagem moderada de semicondutor do tipo n. Esta é uma das aproximações mais fundamentais na física de semicondutores para determinar a concentração de portadores majoritários.",
+          "concepts": [
+            "semicondutor tipo n",
+            "dopagem com doadores",
+            "ionização completa",
+            "portadores majoritários",
+            "equilíbrio térmico",
+            "neutralidade de carga",
+            "concentração de elétrons",
+            "aproximação de dopagem dominante"
+          ],
+          "symbols": [
+            {
+              "symbol": "n_0",
+              "description": "Concentração de elétrons livres no equilíbrio térmico (portadores majoritários no tipo n), em cm⁻³"
+            },
+            {
+              "symbol": "N_D",
+              "description": "Concentração de átomos doadores ionizados (impurezas doadoras), em cm⁻³"
+            },
+            {
+              "symbol": "10^{14}/\\text{cm}^3",
+              "description": "Valor numérico da concentração de doadores, equivalente a 10¹⁴ átomos doadores por centímetro cúbico"
+            },
+            {
+              "symbol": "\\approx",
+              "description": "Símbolo de aproximação, válido quando N_D >> n_i (concentração intrínseca)"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-concentration",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "carrier",
+            "concentration",
+            "donor",
+            "n-type",
+            "doping",
+            "majority-carrier",
+            "thermal-equilibrium",
+            "ionization",
+            "electron",
+            "semiconductor"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-concentration",
+            "graphParameters": [
+              "donor concentration N_D",
+              "electron concentration n_0",
+              "temperature",
+              "intrinsic concentration n_i"
+            ]
+          },
+          "relatedFormulas": [
+            "mass-action-law",
+            "charge-neutrality",
+            "Fermi-Dirac",
+            "intrinsic-concentration",
+            "hole-concentration-p0"
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "22",
+      "text": "b... For low level injection conditions to prevail one requires Δp_n0 ≪ n_0. Here Δp_n0 = n_0.",
+      "formulas": [
+        {
+          "originalFormula": "\\Delta p_{n0} \\ll n_0",
+          "genericFormula": "\\Delta p \\ll n_0",
+          "description": "Esta condição expressa o regime de baixa injeção em semicondutores tipo-n. Quando a concentração de portadores minoritários injetados (lacunas excedentes Δp_{n0}) é muito menor que a concentração de portadores majoritários em equilíbrio (elétrons n_0), o material permanece em regime de baixa injeção. Neste regime, a concentração de portadores majoritários é praticamente não perturbada pela injeção, o que simplifica enormemente as equações de transporte e difusão. Esta aproximação é fundamental para a análise de diodos, transistores bipolares e outros dispositivos semicondutores sob condições normais de operação.",
+          "concepts": [
+            "baixa injeção",
+            "portadores minoritários",
+            "portadores majoritários",
+            "injeção de portadores",
+            "semicondutor tipo-n",
+            "equilíbrio termodinâmico",
+            "perturbação de equilíbrio",
+            "aproximação de baixa injeção"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\Delta p_{n0}",
+              "description": "Concentração excedente (injetada) de lacunas em semicondutor tipo-n além do equilíbrio (portadores minoritários injetados)"
+            },
+            {
+              "symbol": "n_0",
+              "description": "Concentração de elétrons em equilíbrio térmico no semicondutor tipo-n (portadores majoritários)"
+            },
+            {
+              "symbol": "\\ll",
+              "description": "Símbolo de 'muito menor que', indicando que a quantidade da esquerda é desprezível em comparação com a da direita"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-injection",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "low-injection",
+            "minority-carrier",
+            "majority-carrier",
+            "carrier-injection",
+            "excess-carrier",
+            "equilibrium",
+            "n-type",
+            "holes",
+            "electrons",
+            "approximation",
+            "concentration",
+            "carrier"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-concentration",
+            "graphParameters": [
+              "excess carrier concentration",
+              "equilibrium carrier concentration",
+              "injection level",
+              "position"
+            ]
+          },
+          "relatedFormulas": [
+            "continuity-equation",
+            "minority-carrier-diffusion",
+            "Shockley-diode-equation",
+            "excess-carrier-recombination",
+            "charge-neutrality",
+            "high-injection-condition"
+          ]
+        },
+        {
+          "originalFormula": "\\Delta p_{n0} = n_0",
+          "genericFormula": "\\Delta p_{n0} = n_0",
+          "description": "Esta equação estabelece a condição de injeção de portadores minoritários em um semicondutor tipo-n sob alta injeção. Quando a concentração de portadores minoritários injetados (lacunas em excesso, Δp_{n0}) se iguala à concentração de elétrons de equilíbrio (n_0), ocorre a transição do regime de baixa injeção para o regime de alta injeção. No regime de alta injeção, as hipóteses de quase-equilíbrio e neutralidade de carga exigem uma análise mais cuidadosa, pois a perturbação da população de portadores passa a ser comparável à densidade de portadores majoritários. Este critério é fundamental no estudo de diodos e transistores bipolares operando em correntes elevadas, onde os modelos simples de transporte deixam de ser válidos.",
+          "concepts": [
+            "portadores minoritários",
+            "portadores majoritários",
+            "injeção de portadores",
+            "alta injeção",
+            "baixa injeção",
+            "neutralidade de carga",
+            "semicondutor tipo-n",
+            "equilíbrio termodinâmico",
+            "excesso de portadores"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\Delta p_{n0}",
+              "description": "Concentração de lacunas em excesso injetadas no semicondutor tipo-n (portadores minoritários em excesso em relação ao equilíbrio)"
+            },
+            {
+              "symbol": "n_0",
+              "description": "Concentração de elétrons em equilíbrio térmico no semicondutor tipo-n (portadores majoritários de equilíbrio)"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-injection",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "minority-carrier",
+            "majority-carrier",
+            "injection",
+            "high-injection",
+            "low-injection",
+            "excess-carrier",
+            "carrier",
+            "concentration",
+            "equilibrium",
+            "n-type",
+            "threshold"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-concentration",
+            "graphParameters": [
+              "excess carrier concentration",
+              "equilibrium carrier concentration",
+              "injection level",
+              "position"
+            ]
+          },
+          "relatedFormulas": [
+            "lei de ação das massas: n_0 p_0 = n_i^2",
+            "condição de baixa injeção: Δp_{n0} << n_0",
+            "equação de continuidade de portadores",
+            "equação de difusão de minority carriers",
+            "modelo de Shockley para diodo"
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "23 to 25",
+      "text": "Solution for minority carrier distribution in two regions. For 0 ≤ x ≤ L, the diffusion equation gives a linear solution. For x ≥ L, the full minority carrier diffusion equation is solved with exponential decay. Continuity requirements at x = L (or x' = 0) are applied to find constants B and A'.",
+      "formulas": [
+        {
+          "originalFormula": "\\text{For } 0 \\leq x \\leq L: \\quad 0 = D_p \\frac{d^2 \\Delta p_n}{dx^2} \\quad \\text{and} \\quad \\Delta p_n(x) = A + Bx",
+          "genericFormula": "0 = D_p \\frac{d^2 \\Delta p_n}{dx^2} \\implies \\Delta p_n(x) = A + Bx, \\quad 0 \\leq x \\leq L",
+          "description": "Esta fórmula descreve a distribuição de portadores minoritários (lacunas) em excesso em uma região de comprimento finito L, onde não há geração nem recombinação (por exemplo, em uma região neutra de base curta ou região de contato ôhmico). A equação diferencial de segunda ordem com segundo membro nulo implica que não há recombinação líquida no interior da região, tornando a difusão estacionária puramente linear. A solução geral Δp_n(x) = A + Bx representa um perfil linear de portadores em excesso, onde A e B são constantes determinadas pelas condições de contorno (concentração de lacunas em x=0 e x=L). Esse comportamento linear é característico de dispositivos com base curta (short-base diode ou transistor de base estreita), onde o comprimento L é muito menor que o comprimento de difusão L_p, de modo que a recombinação é desprezível e o fluxo de corrente de difusão é constante ao longo da região.",
+          "concepts": [
+            "difusão de portadores minoritários",
+            "equação de continuidade estacionária",
+            "distribuição linear de portadores",
+            "região de base curta",
+            "corrente de difusão constante",
+            "condições de contorno",
+            "diodo de base curta",
+            "recombinação desprezível"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\Delta p_n(x)",
+              "description": "Concentração de lacunas em excesso na região tipo-n em função da posição x"
+            },
+            {
+              "symbol": "D_p",
+              "description": "Coeficiente de difusão das lacunas (cm²/s)"
+            },
+            {
+              "symbol": "\\frac{d^2 \\Delta p_n}{dx^2}",
+              "description": "Segunda derivada espacial da concentração de lacunas em excesso, indicando curvatura do perfil de portadores"
+            },
+            {
+              "symbol": "x",
+              "description": "Coordenada espacial ao longo da região neutra (cm)"
+            },
+            {
+              "symbol": "L",
+              "description": "Comprimento da região neutra considerada (base curta) (cm)"
+            },
+            {
+              "symbol": "A",
+              "description": "Constante de integração determinada pela condição de contorno em x = 0"
+            },
+            {
+              "symbol": "B",
+              "description": "Constante de integração determinada pela condição de contorno em x = L; representa o gradiente linear de portadores"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "minority carrier",
+            "diffusion",
+            "short base",
+            "linear profile",
+            "continuity equation",
+            "holes",
+            "excess carrier",
+            "steady state",
+            "boundary condition",
+            "recombination",
+            "diode",
+            "transistor",
+            "base region",
+            "carrier"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-distribution",
+            "graphParameters": [
+              "excess hole concentration",
+              "position x",
+              "boundary values",
+              "linear slope"
+            ]
+          },
+          "relatedFormulas": [
+            "minority-carrier-diffusion-equation",
+            "short-base-diode-current",
+            "Fick-diffusion-law",
+            "continuity-equation-holes",
+            "long-base-diode-exponential-solution",
+            "diffusion-length",
+            "minority-carrier-lifetime"
+          ]
+        },
+        {
+          "originalFormula": "\\Delta p_n(0) = \\Delta p_{n0}, \\quad \\Delta p_n(x) = \\Delta p_{n0} + Bx",
+          "genericFormula": "\\Delta p_n(0) = \\Delta p_{n0}, \\quad \\Delta p_n(x) = \\Delta p_{n0} + Bx",
+          "description": "Esta fórmula descreve o perfil espacial de portadores minoritários (lacunas) em excesso em uma região de tipo n de um dispositivo semicondutor, sob condições de curto comprimento de difusão ou em situações onde não há recombinação dominante (perfil linear). A condição de contorno em x=0 impõe que a concentração de excesso de lacunas na borda da região de depleção é igual a Δp_{n0}, que é determinada pela tensão aplicada (condição de Shockley: Δp_{n0} = p_{n0}(e^{qV/kT}-1)). O perfil linear Δp_n(x) = Δp_{n0} + Bx é característico de dispositivos curtos (comprimento W muito menor que o comprimento de difusão L_p), onde a recombinação no volume é desprezível e o fluxo de portadores é aproximadamente constante. O coeficiente B é determinado pela segunda condição de contorno, tipicamente em x = W (superfície ohmica ou contato). Este perfil linear contrasta com o perfil exponencial de dispositivos longos, e é fundamental na análise de diodos de junção pn curtos e transistores bipolares de junção.",
+          "concepts": [
+            "portadores minoritários em excesso",
+            "condição de contorno de injeção",
+            "difusão de portadores",
+            "perfil linear de portadores",
+            "diodo pn de base curta",
+            "equação de continuidade",
+            "transporte de lacunas",
+            "dispositivo curto vs longo",
+            "contato ôhmico",
+            "injeção de minoria"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\Delta p_n(x)",
+              "description": "Concentração de lacunas em excesso na região n em função da posição x: Δp_n(x) = p_n(x) - p_{n0}"
+            },
+            {
+              "symbol": "\\Delta p_n(0)",
+              "description": "Concentração de lacunas em excesso na borda da região de depleção (x = 0)"
+            },
+            {
+              "symbol": "\\Delta p_{n0}",
+              "description": "Valor da concentração de lacunas em excesso imposta na condição de contorno em x = 0, determinada pela tensão aplicada via relação de Shockley"
+            },
+            {
+              "symbol": "x",
+              "description": "Posição espacial na região neutra de tipo n, medida a partir da borda da região de depleção"
+            },
+            {
+              "symbol": "B",
+              "description": "Coeficiente angular do perfil linear de excesso de portadores, determinado pela segunda condição de contorno (em x = W); indica o gradiente de concentração"
+            },
+            {
+              "symbol": "p_{n0}",
+              "description": "Concentração de lacunas em equilíbrio na região n (portadores minoritários em equilíbrio)"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "minority carrier",
+            "excess holes",
+            "boundary condition",
+            "linear profile",
+            "short diode",
+            "diffusion",
+            "carrier concentration",
+            "pn junction",
+            "injection",
+            "continuity equation",
+            "carrier transport",
+            "ohmic contact"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-profile",
+            "graphParameters": [
+              "excess hole concentration Δp_n",
+              "position x",
+              "boundary value Δp_{n0}",
+              "linear slope B",
+              "device length W"
+            ]
+          },
+          "relatedFormulas": [
+            "Shockley boundary condition: Δp_{n0} = p_{n0}(e^{qV/kT} - 1)",
+            "Minority carrier diffusion equation",
+            "Continuity equation for holes",
+            "Excess carrier profile (long device): Δp_n(x) = Δp_{n0} e^{-x/L_p}",
+            "Diffusion current density: J_p = -qD_p dΔp_n/dx",
+            "Fermi-Dirac distribution"
+          ]
+        },
+        {
+          "originalFormula": "\\text{For } x \\geq L: \\quad 0 = D_p \\frac{d^2 \\Delta p_n}{dx^2} - \\frac{\\Delta p_n}{\\tau_p}",
+          "genericFormula": "0 = D_p \\frac{d^2 \\Delta p_n}{dx^2} - \\frac{\\Delta p_n}{\\tau_p}",
+          "description": "Esta é a equação de continuidade em regime estacionário para portadores minoritários (lacunas) em uma região do semicondutor tipo-n onde x ≥ L, ou seja, além de uma fronteira ou interface (como a borda de uma região de depleção ou de uma camada fina). Em regime permanente (steady-state), a derivada temporal é zero, resultando em um balanço entre a difusão espacial das lacunas em excesso (Δpₙ) e a recombinação dessas lacunas com o tempo de vida τₚ. A solução geral desta equação diferencial ordinária de segunda ordem é uma combinação de exponenciais do tipo exp(±x/Lₚ), onde Lₚ = √(Dₚτₚ) é o comprimento de difusão das lacunas. Em dispositivos reais, a condição de contorno física exige que Δpₙ → 0 quando x → ∞, portanto apenas a solução decrescente (exp(−x/Lₚ)) é fisicamente aceitável. Esta equação é fundamental para analisar o transporte de portadores minoritários em diodos p-n, transistores bipolares e fotodíodos.",
+          "concepts": [
+            "equação de continuidade",
+            "difusão de portadores minoritários",
+            "recombinação de portadores",
+            "regime estacionário",
+            "comprimento de difusão",
+            "transporte de lacunas",
+            "portadores em excesso",
+            "equação diferencial de segunda ordem",
+            "semicondutor tipo-n"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\Delta p_n",
+              "description": "Concentração de lacunas em excesso (minoritárias) no semicondutor tipo-n, definida como Δpₙ = pₙ − pₙ₀, onde pₙ₀ é a concentração de equilíbrio"
+            },
+            {
+              "symbol": "D_p",
+              "description": "Coeficiente de difusão das lacunas (cm²/s), relacionado à mobilidade pela relação de Einstein: Dₚ = (kT/q)μₚ"
+            },
+            {
+              "symbol": "\\frac{d^2 \\Delta p_n}{dx^2}",
+              "description": "Segunda derivada espacial da concentração de lacunas em excesso, representando a curvatura do perfil de concentração associada à difusão"
+            },
+            {
+              "symbol": "\\tau_p",
+              "description": "Tempo de vida das lacunas minoritárias (s), caracterizando a taxa média de recombinação no material tipo-n"
+            },
+            {
+              "symbol": "x",
+              "description": "Coordenada espacial (cm), com x ≥ L indicando a região além da fronteira ou interface considerada"
+            },
+            {
+              "symbol": "L",
+              "description": "Posição da fronteira ou interface (ex: borda de uma camada fina ou região de depleção) que delimita a validade desta equação"
+            },
+            {
+              "symbol": "L_p",
+              "description": "Comprimento de difusão das lacunas (implícito na solução): Lₚ = √(Dₚτₚ), escala característica de decaimento dos portadores em excesso"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "continuity-equation",
+            "minority-carrier",
+            "diffusion",
+            "recombination",
+            "steady-state",
+            "holes",
+            "excess-carrier",
+            "diffusion-length",
+            "n-type",
+            "p-n-junction",
+            "bipolar-transistor",
+            "carrier-transport",
+            "boundary-condition",
+            "second-order-ode"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-concentration-profile",
+            "graphParameters": [
+              "position x",
+              "excess hole concentration delta_p_n",
+              "diffusion length L_p",
+              "boundary position L",
+              "exponential decay"
+            ]
+          },
+          "relatedFormulas": [
+            "continuity-equation-holes",
+            "continuity-equation-electrons",
+            "diffusion-length-Lp",
+            "Einstein-relation",
+            "minority-carrier-diffusion-equation",
+            "Fick-second-law",
+            "p-n-junction-current",
+            "excess-carrier-recombination"
+          ]
+        },
+        {
+          "originalFormula": "\\Delta p_n(x') = A' e^{-x'/L_p} + B' e^{x'/L_p} \\quad [x' = 0 \\text{ at } x = L]",
+          "genericFormula": "\\Delta p_n(x') = A' e^{-x'/L_p} + B' e^{x'/L_p}",
+          "description": "Esta fórmula representa a solução geral da equação de difusão para o excesso de portadores minoritários (lacunas) na região n de um diodo p-n de comprimento finito. A variável x' é uma coordenada local definida com origem em x = L (extremidade da região n), o que é uma mudança de referencial conveniente para aplicar condições de contorno em dispositivos de base estreita (short diode) ou diodos com contato ôhmico na extremidade. Os coeficientes A' e B' são determinados pelas condições de contorno: (1) a concentração de portadores minoritários na junção (x' relacionado a x = 0) determinada pela tensão aplicada via relação de Boltzmann, e (2) a condição na superfície ohmica em x' = 0 (x = L), onde tipicamente Δp_n = 0. A presença de ambos os termos exponenciais (crescente e decrescente) reflete o fato de que, em regiões finitas, a solução não pode ser simplificada para uma única exponencial decrescente como no caso do diodo longo. Esta formulação é essencial para o cálculo da corrente de difusão em diodos curtos e transistores bipolares.",
+          "concepts": [
+            "difusão de portadores minoritários",
+            "excesso de portadores",
+            "equação de difusão",
+            "comprimento de difusão",
+            "condições de contorno",
+            "diodo p-n de base curta",
+            "mudança de referencial",
+            "solução geral de equação diferencial",
+            "recombinação de portadores",
+            "portadores minoritários em região n"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\Delta p_n(x')",
+              "description": "Excesso de concentração de lacunas (portadores minoritários) na região n em função da posição x'"
+            },
+            {
+              "symbol": "x'",
+              "description": "Coordenada local com origem em x = L (extremidade da região n), definida como x' = L - x"
+            },
+            {
+              "symbol": "A'",
+              "description": "Constante de integração determinada pelas condições de contorno (associada ao termo exponencial decrescente)"
+            },
+            {
+              "symbol": "B'",
+              "description": "Constante de integração determinada pelas condições de contorno (associada ao termo exponencial crescente)"
+            },
+            {
+              "symbol": "L_p",
+              "description": "Comprimento de difusão das lacunas, definido como L_p = \\sqrt{D_p \\tau_p}, onde D_p é o coeficiente de difusão e \\tau_p é o tempo de vida das lacunas"
+            },
+            {
+              "symbol": "e^{-x'/L_p}",
+              "description": "Componente exponencial decrescente da solução, dominante em diodos longos quando B' = 0"
+            },
+            {
+              "symbol": "e^{x'/L_p}",
+              "description": "Componente exponencial crescente da solução, necessária em regiões finitas com condição de contorno na extremidade"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "minority-carrier-diffusion",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "minority-carrier",
+            "diffusion",
+            "excess-carriers",
+            "diffusion-length",
+            "p-n junction",
+            "short-diode",
+            "boundary-condition",
+            "holes",
+            "n-region",
+            "carrier-transport",
+            "recombination",
+            "bipolar",
+            "general-solution",
+            "coordinate-transform"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "minority-carrier-distribution",
+            "graphParameters": [
+              "excess hole concentration Δp_n",
+              "position x'",
+              "diffusion length L_p",
+              "applied voltage (via boundary condition)",
+              "device length L"
+            ]
+          },
+          "relatedFormulas": [
+            "minority-carrier-diffusion-equation",
+            "excess-carrier-long-diode",
+            "Shockley-boundary-condition",
+            "diffusion-length-Lp",
+            "minority-carrier-current-density",
+            "continuity-equation",
+            "Fermi-Dirac-distribution",
+            "Einstein-relation"
+          ]
+        },
+        {
+          "originalFormula": "\\Delta p_n(\\infty) = 0 \\Rightarrow B' = 0",
+          "genericFormula": "\\Delta p_n(\\infty) = 0 \\Rightarrow B' = 0",
+          "description": "Esta equação estabelece uma condição de contorno essencial para a solução da equação de difusão de portadores minoritários em uma região neutra de semicondutor do tipo n. A condição física impõe que o excesso de portadores minoritários (lacunas) deve se anular quando a posição tende ao infinito, ou seja, longe da junção. Matematicamente, a solução geral da equação de difusão apresenta termos exponenciais crescentes e decrescentes (e^{+x/L_p} e e^{-x/L_p}). Para que a solução seja fisicamente aceitável — ou seja, que o excesso de portadores não divirja para o infinito — o coeficiente B' associado ao termo exponencialmente crescente deve ser nulo. Essa condição de contorno é fundamental na análise de junções p-n longas, garantindo que a solução matemática seja consistente com a realidade física do dispositivo.",
+          "concepts": [
+            "condição de contorno",
+            "portadores minoritários",
+            "excesso de portadores",
+            "equação de difusão",
+            "solução geral da EDO",
+            "decaimento exponencial",
+            "região neutra",
+            "comprimento de difusão",
+            "junção p-n longa"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\Delta p_n",
+              "description": "Excesso de concentração de lacunas (portadores minoritários) na região do tipo n em relação ao equilíbrio térmico"
+            },
+            {
+              "symbol": "\\infty",
+              "description": "Posição tendendo ao infinito, representando um ponto muito distante da junção p-n"
+            },
+            {
+              "symbol": "B'",
+              "description": "Coeficiente da solução geral da equação de difusão associado ao termo exponencialmente crescente, que deve ser nulo para garantir solução fisicamente aceitável"
+            },
+            {
+              "symbol": "\\Delta p_n(\\infty)",
+              "description": "Valor do excesso de lacunas avaliado no limite x → ∞, que deve ser zero por razões físicas"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "boundary-condition",
+            "minority-carrier",
+            "excess-carrier",
+            "diffusion",
+            "p-n junction",
+            "exponential-solution",
+            "neutral-region",
+            "diffusion-length",
+            "holes",
+            "carrier",
+            "long-diode"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-distribution",
+            "graphParameters": [
+              "excess minority carrier concentration",
+              "position x",
+              "diffusion length L_p"
+            ]
+          },
+          "relatedFormulas": [
+            "minority-carrier-diffusion-equation",
+            "excess-carrier-general-solution",
+            "boundary-condition-at-junction",
+            "diffusion-length-Lp",
+            "minority-carrier-lifetime",
+            "p-n-junction-current"
+          ]
+        },
+        {
+          "originalFormula": "\\Delta p_n(x') = A' e^{-x'/L_p}",
+          "genericFormula": "\\Delta p_n(x') = A' e^{-x'/L_p}",
+          "description": "Esta fórmula descreve a distribuição espacial do excesso de portadores minoritários (lacunas) na região neutra do tipo n de uma junção p-n polarizada. A variável x' representa a distância medida a partir da borda da região de depleção em direção ao bulk do semicondutor tipo n. A constante A' é determinada pelas condições de contorno da junção e representa a amplitude do excesso de portadores na borda da região de depleção (x'=0). O decaimento exponencial com comprimento característico L_p (comprimento de difusão das lacunas) reflete o fato de que os portadores minoritários injetados se recombinam gradualmente à medida que se afastam da junção. Este perfil exponencial é solução da equação de continuidade em regime estacionário com recombinação linear (modelo de Shockley). É fundamental para o cálculo da corrente de difusão e da característica I-V do diodo ideal.",
+          "concepts": [
+            "excesso de portadores minoritários",
+            "difusão de portadores",
+            "comprimento de difusão",
+            "recombinação",
+            "junção p-n",
+            "equação de continuidade",
+            "região neutra",
+            "modelo de Shockley",
+            "condição de contorno",
+            "portadores injetados"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\Delta p_n(x')",
+              "description": "Excesso de concentração de lacunas na região neutra tipo n, definido como p_n(x') - p_{n0}, onde p_{n0} é a concentração de equilíbrio das lacunas"
+            },
+            {
+              "symbol": "x'",
+              "description": "Coordenada espacial medida a partir da borda da região de depleção (interface depleção/região neutra n), em direção ao bulk do semicondutor tipo n"
+            },
+            {
+              "symbol": "A'",
+              "description": "Constante de amplitude determinada pelas condições de contorno; fisicamente representa o excesso de lacunas na borda da região de depleção (x'=0), dado por p_{n0}(e^{qV/k_BT}-1)"
+            },
+            {
+              "symbol": "L_p",
+              "description": "Comprimento de difusão das lacunas na região tipo n, definido como L_p = \\sqrt{D_p \\tau_p}, onde D_p é o coeficiente de difusão e \\tau_p é o tempo de vida das lacunas"
+            },
+            {
+              "symbol": "e",
+              "description": "Base do logaritmo natural (número de Euler, ≈ 2,718)"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "minority-carrier-transport",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "minority-carrier",
+            "hole",
+            "diffusion",
+            "diffusion-length",
+            "recombination",
+            "p-n junction",
+            "injection",
+            "excess-carrier",
+            "continuity-equation",
+            "Shockley",
+            "exponential-decay",
+            "carrier",
+            "current",
+            "junction",
+            "diode"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "minority-carrier-distribution",
+            "graphParameters": [
+              "excess-hole-concentration",
+              "position-x-prime",
+              "diffusion-length",
+              "amplitude"
+            ]
+          },
+          "relatedFormulas": [
+            "continuity-equation-holes",
+            "diffusion-length-Lp",
+            "Shockley-ideal-diode",
+            "minority-carrier-electrons-delta-n",
+            "diffusion-current-holes",
+            "boundary-condition-pn-junction",
+            "Fermi-Dirac",
+            "carrier-lifetime"
+          ]
+        },
+        {
+          "originalFormula": "\\Delta p_{n0} + BL = A' \\quad (\\Delta p_n \\text{ continuous})",
+          "genericFormula": "\\Delta p_{n0} + B L = A'",
+          "description": "Esta equação representa a condição de continuidade da concentração de portadores minoritários em excesso (lacunas) na região neutra tipo-n de uma junção p-n, avaliada na interface da região de depleção (x = 0). A condição de continuidade exige que a concentração de portadores seja contínua através da interface, ou seja, que a solução geral da equação de difusão-recombinação na região n se iguale à concentração de portadores injetados. Os coeficientes A' e B são constantes de integração determinadas pelas condições de contorno: A' está associada à solução do lado p da junção e B é a amplitude da componente exponencial crescente na região n. O comprimento L é o comprimento de difusão dos portadores minoritários, e \\Delta p_{n0} é o excesso de portadores na borda da região de depleção determinado pela condição de polarização (equação de Shockley). Esta condição é essencial para resolver o perfil de distribuição de portadores em dispositivos de junção p-n, como diodos e transistores bipolares.",
+          "concepts": [
+            "condição de continuidade",
+            "portadores minoritários em excesso",
+            "equação de difusão",
+            "comprimento de difusão",
+            "condições de contorno",
+            "junção p-n",
+            "recombinação de portadores",
+            "constantes de integração",
+            "equação de transporte",
+            "injeção de portadores"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\Delta p_{n0}",
+              "description": "Excesso de concentração de lacunas na borda da região de depleção do lado n, determinado pela condição de polarização aplicada (condição de Shockley: \\Delta p_{n0} = p_{n0}(e^{qV/kT} - 1))"
+            },
+            {
+              "symbol": "B",
+              "description": "Constante de integração associada à componente exponencial crescente da solução geral da equação de difusão na região n; determinada pelas condições de contorno do dispositivo"
+            },
+            {
+              "symbol": "L",
+              "description": "Comprimento de difusão dos portadores minoritários (lacunas) na região n, definido como L = \\sqrt{D_p \\tau_p}, onde D_p é o coeficiente de difusão e \\tau_p é o tempo de vida dos portadores"
+            },
+            {
+              "symbol": "A'",
+              "description": "Constante de integração proveniente da solução do lado p da junção; representa a amplitude da concentração de portadores no lado p avaliada na interface"
+            },
+            {
+              "symbol": "\\Delta p_n",
+              "description": "Concentração de lacunas em excesso na região neutra tipo-n em função da posição; representa a variação em relação ao equilíbrio termodinâmico"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "continuity",
+            "minority carrier",
+            "excess carrier",
+            "boundary condition",
+            "diffusion",
+            "diffusion length",
+            "p-n junction",
+            "recombination",
+            "integration constant",
+            "carrier injection",
+            "Shockley",
+            "diode",
+            "transport equation"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-distribution",
+            "graphParameters": [
+              "excess hole concentration",
+              "position",
+              "diffusion length",
+              "boundary value"
+            ]
+          },
+          "relatedFormulas": [
+            "Shockley-boundary-condition",
+            "minority-carrier-diffusion-equation",
+            "diffusion-length",
+            "continuity-equation",
+            "excess-carrier-distribution",
+            "p-n-junction-current"
+          ]
+        },
+        {
+          "originalFormula": "B = -A'/L_p \\quad (d\\Delta p_n/dx \\text{ continuous})",
+          "genericFormula": "B = -\\frac{A'}{L_p}",
+          "description": "Esta relação estabelece o coeficiente B em função do coeficiente A' e do comprimento de difusão de lacunas L_p, derivada da condição de continuidade da derivada do excesso de portadores minoritários (lacunas) em uma interface ou ponto de simetria. Em problemas de transporte de minoritários em semicondutores, a solução geral da equação de difusão para o excesso de portadores Δp_n(x) é uma combinação de exponenciais (ou funções hiperbólicas). A condição de continuidade de dΔp_n/dx em um ponto específico — como o centro de uma região ou uma interface — impõe uma relação direta entre os coeficientes das soluções. Aqui, B representa o coeficiente associado ao termo crescente (e^{+x/L_p}) e A' ao coeficiente do termo decrescente (e^{-x/L_p}), ou alternativamente em representações com senh/cosh. A relação B = -A'/L_p garante a derivada consistente com as condições de contorno físicas do problema, sendo tipicamente aplicada em estruturas finitas como regiões de base de transistores bipolares, diodos de comprimento finito ou heterojunções.",
+          "concepts": [
+            "excesso de portadores minoritários",
+            "equação de difusão de portadores",
+            "comprimento de difusão de lacunas",
+            "condições de contorno",
+            "continuidade da derivada",
+            "coeficientes de solução geral",
+            "transporte de lacunas",
+            "semicondutores tipo n"
+          ],
+          "symbols": [
+            {
+              "symbol": "B",
+              "description": "Coeficiente do termo exponencial crescente na solução geral de Δp_n(x), associado ao comportamento e^{+x/L_p}"
+            },
+            {
+              "symbol": "A'",
+              "description": "Coeficiente do termo exponencial decrescente na solução geral de Δp_n(x), associado ao comportamento e^{-x/L_p}"
+            },
+            {
+              "symbol": "L_p",
+              "description": "Comprimento de difusão de lacunas (minority carrier diffusion length), definido como L_p = \\sqrt{D_p \\tau_p}, onde D_p é o coeficiente de difusão e \\tau_p é o tempo de vida das lacunas"
+            },
+            {
+              "symbol": "\\Delta p_n",
+              "description": "Excesso de concentração de lacunas em região tipo n: Δp_n = p_n - p_{n0}, diferença entre a concentração instantânea e o valor de equilíbrio"
+            },
+            {
+              "symbol": "x",
+              "description": "Coordenada espacial ao longo da direção de transporte dos portadores minoritários"
+            },
+            {
+              "symbol": "\\frac{d\\Delta p_n}{dx}",
+              "description": "Derivada espacial do excesso de lacunas, cuja continuidade impõe a relação entre os coeficientes A' e B"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "minority carrier",
+            "diffusion length",
+            "boundary condition",
+            "continuity",
+            "excess carriers",
+            "holes",
+            "diffusion equation",
+            "coefficient",
+            "n-type semiconductor",
+            "bipolar transistor",
+            "finite region",
+            "solution",
+            "carrier"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-distribution",
+            "graphParameters": [
+              "excess hole concentration",
+              "position x",
+              "diffusion length L_p",
+              "coefficients A' and B"
+            ]
+          },
+          "relatedFormulas": [
+            "minority-carrier-diffusion-equation",
+            "excess-carrier-general-solution",
+            "diffusion-length-Lp",
+            "continuity-equation",
+            "Shockley-boundary-condition",
+            "bipolar-transistor-base-transport"
+          ]
+        },
+        {
+          "originalFormula": "B = -\\Delta p_{n0}/(L + L_p)",
+          "genericFormula": "B = -\\frac{\\Delta p_{n0}}{L + L_p}",
+          "description": "Esta fórmula determina o coeficiente B da solução geral da equação de difusão para portadores minoritários (lacunas) em uma região de semicondutor do tipo n de comprimento finito. O coeficiente B é obtido aplicando a condição de contorno no contato ôhmico (ou superfície) da região neutra, localizado a uma distância L do limite da região de depleção. Neste contexto, a solução geral envolve funções exponenciais crescentes e decrescentes, e a condição de contorno impõe que o excesso de portadores minoritários seja zero (ou definido) em x = L. O coeficiente B complementa o coeficiente A para descrever completamente o perfil de portadores minoritários na região quase-neutra de um diodo p-n com base de comprimento finito.",
+          "concepts": [
+            "portadores minoritários",
+            "equação de difusão",
+            "condições de contorno",
+            "comprimento de difusão",
+            "diodo p-n de base curta",
+            "excesso de portadores",
+            "solução geral da equação diferencial",
+            "recombinação de portadores",
+            "transporte de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "B",
+              "description": "Coeficiente da solução geral da equação de difusão de portadores minoritários, associado ao termo exponencial crescente"
+            },
+            {
+              "symbol": "\\Delta p_{n0}",
+              "description": "Excesso de concentração de lacunas na borda da região de depleção (x = 0) na região n, dado por p_n(0) - p_{n0}, onde p_{n0} é a concentração de equilíbrio de lacunas"
+            },
+            {
+              "symbol": "L",
+              "description": "Comprimento da região neutra do tipo n (distância da borda da depleção até o contato ôhmico ou superfície)"
+            },
+            {
+              "symbol": "L_p",
+              "description": "Comprimento de difusão das lacunas na região n, dado por L_p = \\sqrt{D_p \\tau_p}, onde D_p é o coeficiente de difusão e \\tau_p é o tempo de vida das lacunas"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "minority carrier",
+            "diffusion",
+            "boundary condition",
+            "diffusion length",
+            "p-n junction",
+            "short base diode",
+            "hole concentration",
+            "excess carrier",
+            "coefficient",
+            "neutral region",
+            "ohmic contact",
+            "carrier profile"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-concentration",
+            "graphParameters": [
+              "excess hole concentration",
+              "position x",
+              "diffusion length",
+              "region length"
+            ]
+          },
+          "relatedFormulas": [
+            "minority-carrier-diffusion-equation",
+            "A-coefficient-minority-carrier",
+            "excess-carrier-profile-finite-base",
+            "Fermi-Dirac",
+            "diode-current-density",
+            "diffusion-length-Lp",
+            "boundary-condition-ohmic-contact"
+          ]
+        },
+        {
+          "originalFormula": "\\Delta p_n(L) = \\Delta p_{n0} - \\Delta p_{n0}\\frac{L}{L + L_p} = \\Delta p_{n0}\\frac{L_p}{L + L_p}",
+          "genericFormula": "\\Delta p_n(x) = \\Delta p_{n0}\\frac{L_p}{x + L_p}",
+          "description": "Esta fórmula descreve a distribuição do excesso de portadores minoritários (lacunas) em um semicondutor do tipo n de comprimento finito L, considerando condições de contorno específicas. O excesso de lacunas Δp_n(x) decresce à medida que nos afastamos da junção, sendo governado pelo comprimento de difusão L_p. Em x = 0 (junto à junção), temos o valor máximo Δp_n0, e em x = L (contato ôhmico ao fundo), o excesso tende a zero. A expressão resulta de uma solução simplificada da equação de continuidade para semicondutores com geometria finita, onde o comprimento L da região neutra é comparável ao comprimento de difusão L_p. Quando L >> L_p, o comportamento se aproxima do caso de região longa (exponencial decrescente); quando L << L_p, a variação é aproximadamente linear.",
+          "concepts": [
+            "excesso de portadores minoritários",
+            "difusão de lacunas",
+            "comprimento de difusão",
+            "equação de continuidade",
+            "condições de contorno",
+            "região neutra de comprimento finito",
+            "junção p-n",
+            "recombinação de portadores",
+            "semicondutor tipo n"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\Delta p_n(x)",
+              "description": "Excesso de concentração de lacunas no semicondutor tipo n em função da posição x"
+            },
+            {
+              "symbol": "\\Delta p_{n0}",
+              "description": "Excesso de concentração de lacunas na borda da região de depleção (x = 0), determinado pela tensão aplicada à junção"
+            },
+            {
+              "symbol": "L",
+              "description": "Comprimento da região neutra do semicondutor tipo n (posição do contato ôhmico)"
+            },
+            {
+              "symbol": "L_p",
+              "description": "Comprimento de difusão das lacunas no semicondutor tipo n, definido como L_p = \\sqrt{D_p \\tau_p}"
+            },
+            {
+              "symbol": "D_p",
+              "description": "Coeficiente de difusão das lacunas"
+            },
+            {
+              "symbol": "\\tau_p",
+              "description": "Tempo de vida das lacunas minoritárias no semicondutor tipo n"
+            },
+            {
+              "symbol": "x",
+              "description": "Posição espacial na região neutra, medida a partir da borda da região de depleção"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "minority-carrier-distribution",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "minority carrier",
+            "excess holes",
+            "diffusion length",
+            "p-n junction",
+            "carrier distribution",
+            "short diode",
+            "boundary condition",
+            "continuity equation",
+            "recombination",
+            "carrier transport",
+            "finite region",
+            "ohmic contact",
+            "concentration profile"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-concentration-profile",
+            "graphParameters": [
+              "position x",
+              "excess hole concentration",
+              "diffusion length L_p",
+              "region length L"
+            ]
+          },
+          "relatedFormulas": [
+            "minority-carrier-long-diode",
+            "diffusion-length",
+            "continuity-equation",
+            "minority-carrier-injection",
+            "Shockley-ideal-diode",
+            "excess-carrier-exponential",
+            "short-diode-current"
+          ]
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [],
+  "processedPages": [
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124
+  ],
+  "lastUpdated": "2026-05-09T17:49:30.723Z",
+  "bookTitle": "Modular Series On Solid State Devices",
+  "author": "Unknown"
+}

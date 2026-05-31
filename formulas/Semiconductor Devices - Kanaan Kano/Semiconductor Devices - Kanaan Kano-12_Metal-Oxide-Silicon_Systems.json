@@ -1,0 +1,1044 @@
+{
+  "chapter": "12 Metal-Oxide-Silicon Systems",
+  "questions": [
+    {
+      "number": "Q12-4",
+      "text": "What happens to the holes at the oxide surface of a P substrate when the capacitor is driven into strong inversion?",
+      "formulas": []
+    },
+    {
+      "number": "Q12-5",
+      "text": "What are the signs of \\phi_{F} and Q_{dm} in an N substrate capacitor?",
+      "formulas": []
+    },
+    {
+      "number": "Q12-6",
+      "text": "Distinguish between n_{s} and Q_{n} in a P substrate capacitor.",
+      "formulas": []
+    },
+    {
+      "number": "Q12-7",
+      "text": "What is the basis of the assumption that W and Q_{d} have reached their maximum values at strong inversion?",
+      "formulas": []
+    },
+    {
+      "number": "Q12-8",
+      "text": "Briefly define the flatband voltage.",
+      "formulas": []
+    },
+    {
+      "number": "Q12-9",
+      "text": "Define the threshold voltage.",
+      "formulas": []
+    },
+    {
+      "number": "Q12-10",
+      "text": "Qualitatively explain how the work function affects the threshold voltage.",
+      "formulas": []
+    },
+    {
+      "number": "Q12-11",
+      "text": "For an N-substrate capacitor, identify the signs of the various terms in the equation for the threshold voltage.",
+      "formulas": []
+    },
+    {
+      "number": "Q12-12",
+      "text": "In achieving a positive V_T for a P-substrate capacitor, is it more favorable to have a larger or smaller work function difference between the metal and the semiconductor? Explain your answer.",
+      "formulas": []
+    },
+    {
+      "number": "Q12-13",
+      "text": "Qualitatively explain how the oxide charges affect the threshold voltage. In aiming for a positive V_T for a P substrate and a negative V_T for an N substrate, is the larger or the smaller oxide charge more favorable?",
+      "formulas": []
+    },
+    {
+      "number": "12.6",
+      "text": "Determine the flatband voltage and the threshold voltage for an NMOS silicon device that has N_A = 4 \\times 10^{16} cm^{-3} and uses SiO_2 and an N^+ polysilicon gate, given Q_i = 5 \\times 10^{10} C/cm^2, t_{ox} = 200 Angstroms.",
+      "formulas": []
+    },
+    {
+      "number": "12.10",
+      "text": "Repeat Problem 12.9 for a P-channel MOS having doping of 5 \\times 10^{16}cm^{-3} and oxide thickness of (a) 80 and (b) 300 Angstroms.",
+      "formulas": []
+    },
+    {
+      "number": "12.11",
+      "text": "An Al-SiO_{2}-Si capacitor has substrate doping N_{D} = 5 \\times 10^{15}cm^{-3} and an oxide thickness of 200 Angstroms. The charge density at the silicon-silicon dioxide interface is 5 \\times 10^{10}q/cm^{2}. Calculate: (a) the flatband voltage. (b) the threshold voltage.",
+      "formulas": []
+    },
+    {
+      "number": "12.12",
+      "text": "Derive Eq. (12.24).",
+      "formulas": []
+    },
+    {
+      "number": "12.13",
+      "text": "Calculate the capacitance per unit area of a silicon MOS capacitor having N_{A} = 4 \\times 10^{15}cm^{-3}, t_{ox} = 100\\text{Å}, and \\phi_{m} = \\phi_{s}, at an applied gate voltage of: (a) -1V (b) 0.5V (c) 1V. Where relevant, calculate the capacitance at (i) low frequency and (ii) high frequency.",
+      "formulas": []
+    },
+    {
+      "number": "12.14",
+      "text": "For an ideal MOS diode having doping N_{A} = 5 \\times 10^{16}cm^{-3} and an oxide thickness of 120 Angstroms, calculate the value of the minimum capacitance on the C-V curve.",
+      "formulas": []
+    },
+    {
+      "number": "12.15",
+      "text": "For an Al-SiO_{2}-Si capacitor, the doping of the substrate is N_{A} = 10^{14}cm^{-3} and the oxide thickness is 80 Angstroms. Given that the flatband voltage, V_{FB}, is -0.4V, calculate at strong inversion: (a) the surface potential. (b) the maximum depletion layer width. (c) the gate voltage.",
+      "formulas": []
+    },
+    {
+      "number": "12.16",
+      "text": "A polysilicon-SiO_{2} diode has substrate doping of N_{A} = 5 \\times 10^{14}cm^{-3}, an oxide thickness of 100 Angstroms, and an oxide charge of 5 \\times 10^{11}C/cm^{2}. Calculate: (a) the flatband voltage. (b) the threshold voltage.",
+      "formulas": []
+    },
+    {
+      "number": "12.17",
+      "text": "A silicon substrate is doped with N_{A} = 4 \\times 10^{16}cm^{-3}. The thickness of the silicon dioxide is 120 Angstroms. To form an MOS capacitor, a polysilicon gate is deposited. Calculate the threshold voltage, V_{r} for (a) zero oxide charge. (b) oxide charge of 10^{11}q/Cm^{2}. The work function of polysilicon is \\phi_{m} = 3.95eV.",
+      "formulas": []
+    },
+    {
+      "number": "12.18",
+      "text": "An MOS capacitor using Al-SiO_{2} has substrate doping N_{D} = 10^{17}cm^{-3}, gate oxide thickness of 100 Angstroms, and oxide charge of 5 \\times 10^{11}q/Cm^{2}. Calculate: (a) the flatband voltage. (b) the threshold voltage.",
+      "formulas": []
+    },
+    {
+      "number": "12.19",
+      "text": "Show that the number of electrons on a MOS gate that can cause an oxide to break down depends on the gate area and the oxide permittivity. (Assume the breakdown electric field intensity is known).",
+      "formulas": []
+    },
+    {
+      "number": "12.20",
+      "text": "(a) For an MOS that has length of 6\\mu m and depth of 20\\mu m, which is charged by static electricity, how many electrons could be transferred to the gate before it breaks down? E_{br} = 8 \\times 10^{6}V/cm. (b) How long would it take to deliver these electrons to the gate if an average current of 1pA flowed because of the transfer of static electricity. (c) For a one volt drop across the oxide, determine the minimum thickness of the oxide to avoid breakdown.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "E12-1",
+      "text": "A silicon P substrate is doped with N_{A} = 10^{17} cm^{-3}. Determine the surface potential that causes strong inversion.",
+      "formulas": [
+        {
+          "originalFormula": "\\phi_{s} = 0.834V",
+          "genericFormula": "\\phi_{s} = V_{s}",
+          "description": "Esta fórmula representa a energia de potencial elétrico em um semicondutor, especificamente a energia de fermi em um material semicondutor, que é crucial para entender o comportamento elétrico e as propriedades de condução do material.",
+          "concepts": [
+            "Energia de Fermi",
+            "Potencial elétrico",
+            "Semicondutores",
+            "Condução elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\phi_{s}",
+              "description": "Representa a energia de potencial elétrico em um semicondutor, que indica a energia necessária para mover uma carga elétrica dentro do material."
+            },
+            {
+              "symbol": "V",
+              "description": "Representa a unidade de medida de tensão elétrica, que é a diferença de potencial elétrico entre dois pontos."
+            }
+          ],
+          "chapter": "12 Metal-Oxide-Silicon Systems",
+          "source": "answer",
+          "questionNumber": "E12-1",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "questionNumber": "E12-2",
+      "text": "A silicon N substrate is doped with N_{D} = 5 \\times 10^{15} cm^{-3}. Determine the surface potential needed to make the surface a) intrinsic and b) strong inversion.",
+      "formulas": []
+    },
+    {
+      "questionNumber": "12.6",
+      "text": "The flatband voltage is given by \\Phi_f = \\frac{kT}{q} \\ln N_A n_i = 0.393 V.",
+      "formulas": [
+        {
+          "originalFormula": "\\Phi_f = \\frac{kT}{q} \\ln N_A n_i",
+          "genericFormula": "\\Phi_f = \\frac{kT}{q} \\ln N_A n_i",
+          "description": "Esta fórmula representa o potencial de Fermi em um semicondutor dopado, que é uma medida da energia necessária para adicionar um elétron ao sistema. O potencial de Fermi é importante para entender como os elétrons se comportam em materiais semicondutores e como eles afetam as propriedades elétricas do material.",
+          "concepts": [
+            "Potencial de Fermi",
+            "Dopagem em semicondutores",
+            "Equilíbrio térmico",
+            "Concentração de portadores de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "Φ_f",
+              "description": "Representa o potencial de Fermi, que é a energia necessária para adicionar um elétron a um semicondutor em equilíbrio térmico."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas térmicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta do sistema em Kelvin, que influencia a energia térmica dos portadores de carga."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elementar, que é a carga de um único elétron, usada para relacionar energia e carga em semicondutores."
+            },
+            {
+              "symbol": "N_A",
+              "description": "Representa a concentração de átomos dopantes do tipo aceitador em um semicondutor, que influencia a quantidade de portadores de carga negativa."
+            },
+            {
+              "symbol": "n_i",
+              "description": "Representa a concentração intrínseca de portadores de carga em um semicondutor puro, que é a quantidade de elétrons e lacunas presentes sem dopagem."
+            }
+          ],
+          "chapter": "12 Metal-Oxide-Silicon Systems",
+          "source": "answer",
+          "questionNumber": "12.6",
+          "page": 42
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "q\\Phi_{ms} = q(\\Phi_{m} - \\Phi_{s}) = q[\\Phi_{m} - (x_{s} + \\frac{E_{g}}{2q} + \\Phi_{p})]",
+      "genericFormula": "q\\Phi_{ms} = q(\\Phi_{m} - \\Phi_{s}) = q[\\Phi_{m} - (x_{s} + \\frac{E_{g}}{2q} + \\Phi_{p})]",
+      "description": "Esta fórmula representa a diferença de potencial elétrico entre dois materiais, levando em consideração a energia de afinidade e a energia de bandgap, além de outros fatores como a posição de um nível de energia específico. É uma expressão importante na física de semicondutores, especialmente ao estudar a interface entre diferentes materiais.",
+      "concepts": [
+        "Diferença de potencial elétrico",
+        "Energia de afinidade",
+        "Energia de bandgap",
+        "Interface de materiais semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica, que é uma propriedade fundamental das partículas subatômicas, como elétrons e prótons."
+        },
+        {
+          "symbol": "\\Phi_{ms}",
+          "description": "Representa a diferença de potencial entre o metal e o semicondutor na interface."
+        },
+        {
+          "symbol": "\\Phi_{m}",
+          "description": "Representa a função trabalho do metal, que é a energia necessária para remover um elétron da superfície do metal."
+        },
+        {
+          "symbol": "\\Phi_{s}",
+          "description": "Representa a função trabalho do semicondutor, que é a energia necessária para remover um elétron da superfície do semicondutor."
+        },
+        {
+          "symbol": "x_{s}",
+          "description": "Representa a profundidade ou a posição do nível de energia dentro do semicondutor."
+        },
+        {
+          "symbol": "E_{g}",
+          "description": "Representa a energia de bandgap do semicondutor, que é a energia necessária para excitar um elétron da banda de valência para a banda de condução."
+        },
+        {
+          "symbol": "\\Phi_{p}",
+          "description": "Representa a energia de afinidade do semicondutor, que é a energia liberada quando um elétron é adicionado a um átomo do semicondutor."
+        }
+      ],
+      "chapter": "12 Metal-Oxide-Silicon Systems",
+      "source": "standalone",
+      "page": 84
+    },
+    {
+      "originalFormula": "E_{i} = E_{f} + E_{s}",
+      "genericFormula": "E_{i} = E_{f} + E_{s}",
+      "description": "Esta fórmula representa a relação entre a energia inicial, a energia final e a energia dissipada em um sistema. Ela é usada para entender como a energia se conserva em processos físicos, mostrando que a energia total em um sistema é a soma da energia final e da energia que foi dissipada ou transformada.",
+      "concepts": [
+        "Conservação da energia",
+        "Energia inicial",
+        "Energia final",
+        "Energia dissipada"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{i}",
+          "description": "Representa a energia inicial do sistema antes de qualquer transformação ou interação."
+        },
+        {
+          "symbol": "E_{f}",
+          "description": "Representa a energia final do sistema após as transformações ou interações terem ocorrido."
+        },
+        {
+          "symbol": "E_{s}",
+          "description": "Representa a energia que foi dissipada ou transformada durante o processo, que não está mais disponível como energia útil no sistema."
+        }
+      ],
+      "chapter": "12 Metal-Oxide-Silicon Systems",
+      "source": "standalone",
+      "page": 125
+    },
+    {
+      "originalFormula": "N_{d} = 4 \\times 10^{15} \\text{ cm}^{-3}",
+      "genericFormula": "N_{d} = C \\times 10^{n} \\text{ cm}^{-3}",
+      "description": "Esta fórmula representa a densidade de dopantes do tipo doador em um semicondutor, expressa em número de átomos por centímetro cúbico. A densidade de dopantes é uma medida de quantos átomos de dopante foram adicionados ao material semicondutor para modificar suas propriedades elétricas.",
+      "concepts": [
+        "Dopagem de semicondutores",
+        "Densidade de portadores de carga",
+        "Semicondutores do tipo n"
+      ],
+      "symbols": [
+        {
+          "symbol": "N_{d}",
+          "description": "Representa a densidade de dopantes do tipo doador, que são átomos adicionados ao semicondutor para aumentar a quantidade de portadores de carga negativa."
+        },
+        {
+          "symbol": "C",
+          "description": "Um coeficiente que representa a parte numérica da densidade de dopantes, que pode variar dependendo do material e do processo de dopagem."
+        },
+        {
+          "symbol": "n",
+          "description": "Um expoente que indica a potência de 10 que multiplica o coeficiente, refletindo a ordem de grandeza da densidade de dopantes."
+        }
+      ],
+      "chapter": "12 Metal-Oxide-Silicon Systems",
+      "source": "standalone",
+      "page": 167
+    },
+    {
+      "originalFormula": "\\Phi_{m}^{Al} = 4.1V, E_{g} = 1.12eV, x_{s} = 4.15V",
+      "genericFormula": "\\Phi_{m}^{Al} = V_{m}, E_{g} = eV_{g}, x_{s} = V_{s}",
+      "description": "Esta fórmula representa as propriedades elétricas e energéticas de um material semicondutor, onde a função trabalho do metal, a energia da banda proibida e a tensão de superfície são apresentados. Esses valores são fundamentais para entender como o material se comporta em dispositivos eletrônicos.",
+      "concepts": [
+        "Função trabalho do metal",
+        "Energia da banda proibida",
+        "Tensão de superfície"
+      ],
+      "symbols": [
+        {
+          "symbol": "Φ_{m}^{Al}",
+          "description": "Representa a função trabalho do metal alumínio, que é a energia necessária para remover um elétron da superfície do metal."
+        },
+        {
+          "symbol": "E_{g}",
+          "description": "Representa a energia da banda proibida de um semicondutor, que é a energia necessária para mover um elétron da banda de valência para a banda de condução."
+        },
+        {
+          "symbol": "x_{s}",
+          "description": "Representa a tensão de superfície, que é a diferença de potencial elétrico na interface entre o semicondutor e o metal."
+        }
+      ],
+      "chapter": "12 Metal-Oxide-Silicon Systems",
+      "source": "standalone",
+      "page": 208
+    },
+    {
+      "originalFormula": "C_{ox} = 1.725 \\times 10^{-7} \\text{F/cm}^2, Q_{f}/C_{ox} = -0.046V",
+      "genericFormula": "C_{ox} = C_{ox} \\text{ (em F/cm}^2\\text{)}, Q_{f}/C_{ox} = V_{f}",
+      "description": "Esta fórmula representa a capacitância da camada de óxido em um dispositivo semicondutor e a relação entre a carga na superfície do óxido e a capacitância. A capacitância é uma medida de quão bem um capacitor pode armazenar carga elétrica por unidade de tensão. A segunda parte da fórmula relaciona a carga na superfície do óxido com a capacitância, resultando em uma tensão.",
+      "concepts": [
+        "Capacitância",
+        "Carga elétrica",
+        "Tensão elétrica",
+        "Dispositivos semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "C_{ox}",
+          "description": "Representa a capacitância da camada de óxido, que é a capacidade de armazenar carga elétrica por unidade de área."
+        },
+        {
+          "symbol": "Q_{f}",
+          "description": "Representa a carga elétrica na superfície do óxido, que influencia a tensão no dispositivo."
+        },
+        {
+          "symbol": "V_{f}",
+          "description": "Representa a tensão resultante da relação entre a carga na superfície do óxido e a capacitância."
+        }
+      ],
+      "chapter": "12 Metal-Oxide-Silicon Systems",
+      "source": "standalone",
+      "page": 250
+    },
+    {
+      "originalFormula": "Q_{dm} = (4 \\epsilon_{0} \\phi_{F} q N_{d})^{0.5}",
+      "genericFormula": "Q_{dm} = (4 \\epsilon_{0} \\phi_{F} q N_{d})^{0.5}",
+      "description": "Esta fórmula representa a densidade de carga de depleção em um semicondutor, que é uma medida da quantidade de carga elétrica que é acumulada em uma região de depleção ao redor de uma junção p-n. Essa carga é crucial para entender o comportamento elétrico de dispositivos semicondutores.",
+      "concepts": [
+        "Densidade de carga",
+        "Região de depleção",
+        "Semicondutores",
+        "Junção p-n"
+      ],
+      "symbols": [
+        {
+          "symbol": "Q_{dm}",
+          "description": "Representa a densidade de carga de depleção, que é a quantidade de carga elétrica por unidade de área na região de depleção."
+        },
+        {
+          "symbol": "\\epsilon_{0}",
+          "description": "É a permissividade do vácuo, uma constante física que mede a capacidade do vácuo de permitir a formação de campos elétricos."
+        },
+        {
+          "symbol": "\\phi_{F}",
+          "description": "É o potencial de Fermi, que indica a energia de nível mais alto ocupado por elétrons em um material em equilíbrio térmico."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elementar, que é a carga elétrica de um único elétron ou próton."
+        },
+        {
+          "symbol": "N_{d}",
+          "description": "É a densidade de dopagem, que indica a quantidade de átomos dopantes adicionados a um semicondutor para modificar suas propriedades elétricas."
+        }
+      ],
+      "chapter": "12 Metal-Oxide-Silicon Systems",
+      "source": "standalone",
+      "page": 291
+    },
+    {
+      "originalFormula": "V_{FB} = \\phi_{ms} - \\frac{Q_{f}}{C_{ox}} = -0.312 - 0.046 = -0.358V",
+      "genericFormula": "V_{FB} = \\phi_{ms} - \\frac{Q_{f}}{C_{ox}}",
+      "description": "Esta fórmula representa a tensão de flat-band em um dispositivo semicondutor, que é a tensão necessária para que a banda de energia do semicondutor se alinhe com a banda de energia do metal na interface, sem a presença de cargas elétricas que possam afetar esse alinhamento.",
+      "concepts": [
+        "Tensão de flat-band",
+        "Interface metal-semiconductor",
+        "Cargas elétricas",
+        "Capacitância"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_{FB}",
+          "description": "Representa a tensão de flat-band, que é a tensão na qual não há acúmulo ou depleção de portadores de carga na região de interface entre o metal e o semicondutor."
+        },
+        {
+          "symbol": "\\phi_{ms}",
+          "description": "Representa a diferença de trabalho entre o metal e o semicondutor, que é a energia necessária para mover um elétron do nível de Fermi do metal para o nível de Fermi do semicondutor."
+        },
+        {
+          "symbol": "Q_{f}",
+          "description": "Representa a carga fixa na interface, que pode ser causada por impurezas ou defeitos na estrutura do semicondutor e afeta a distribuição de cargas na região de interface."
+        },
+        {
+          "symbol": "C_{ox}",
+          "description": "Representa a capacitância da camada de óxido, que é a capacidade do material de armazenar carga elétrica por unidade de tensão aplicada."
+        }
+      ],
+      "chapter": "12 Metal-Oxide-Silicon Systems",
+      "source": "standalone",
+      "page": 333
+    },
+    {
+      "originalFormula": "V_{T} = \\phi_{ms} - \\frac{Q_{f}}{C_{ox}} + \\frac{Q_{dm}}{C_{ox}} + 2\\phi_{F}",
+      "genericFormula": "V_{T} = \\phi_{ms} - \\frac{Q_{f}}{C_{ox}} + \\frac{Q_{dm}}{C_{ox}} + 2\\phi_{F}",
+      "description": "Esta fórmula representa a tensão de limiar em um transistor de efeito de campo (MOSFET), que é a tensão mínima necessária para que o dispositivo comece a conduzir. Ela é influenciada por vários fatores, incluindo a diferença de trabalho entre os materiais, a carga acumulada na interface e a polarização do material semicondutor.",
+      "concepts": [
+        "Tensão de limiar",
+        "Transistor de efeito de campo (MOSFET)",
+        "Carga acumulada",
+        "Diferença de trabalho",
+        "Polarização do semicondutor"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_{T}",
+          "description": "Representa a tensão de limiar do transistor, que é a tensão mínima necessária para que o transistor comece a conduzir."
+        },
+        {
+          "symbol": "\\phi_{ms}",
+          "description": "Representa a diferença de trabalho entre o metal e o semicondutor, que influencia a formação da barreira de potencial na interface."
+        },
+        {
+          "symbol": "Q_{f}",
+          "description": "Representa a carga fixa na interface entre o semicondutor e o óxido, que pode afetar a tensão de limiar."
+        },
+        {
+          "symbol": "C_{ox}",
+          "description": "Representa a capacitância do óxido, que é a capacidade do material de armazenar carga elétrica."
+        },
+        {
+          "symbol": "Q_{dm}",
+          "description": "Representa a carga de depleção no semicondutor, que ocorre quando o semicondutor é polarizado de forma a criar uma região sem portadores de carga."
+        },
+        {
+          "symbol": "\\phi_{F}",
+          "description": "Representa a potencial de Fermi no semicondutor, que é uma medida da energia dos portadores de carga no material."
+        }
+      ],
+      "chapter": "12 Metal-Oxide-Silicon Systems",
+      "source": "standalone",
+      "page": 374
+    },
+    {
+      "originalFormula": "V_{T} = -0.312 - 0.046 - 0.0817 - 0.596",
+      "genericFormula": "V_{T} = a + b + c + d",
+      "description": "Esta fórmula representa a tensão de limiar, que é um valor crucial em dispositivos semicondutores, indicando o ponto em que um dispositivo começa a conduzir corrente elétrica. A tensão de limiar é a soma de várias contribuições que podem ser de diferentes fatores, como temperatura, dopagem e características do material.",
+      "concepts": [
+        "Tensão de limiar",
+        "Semicondutores",
+        "Condução elétrica",
+        "Dopagem"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_{T}",
+          "description": "Representa a tensão de limiar, que é a tensão na qual um dispositivo semicondutor começa a conduzir corrente elétrica."
+        },
+        {
+          "symbol": "a",
+          "description": "Um termo que representa uma contribuição específica para a tensão de limiar, que pode ser influenciada por fatores como temperatura ou características do material."
+        },
+        {
+          "symbol": "b",
+          "description": "Outro termo que representa uma contribuição adicional para a tensão de limiar, podendo estar relacionado a características de dopagem do semicondutor."
+        },
+        {
+          "symbol": "c",
+          "description": "Mais uma contribuição para a tensão de limiar, que pode ser afetada por diferentes fatores físicos ou químicos do material."
+        },
+        {
+          "symbol": "d",
+          "description": "Um termo que representa outra contribuição para a tensão de limiar, que pode incluir efeitos de ambiente ou estrutura do dispositivo."
+        }
+      ],
+      "chapter": "12 Metal-Oxide-Silicon Systems",
+      "source": "standalone",
+      "page": 416
+    },
+    {
+      "originalFormula": "\\Phi_{ms} = \\frac{1}{q} \\left[ (E_C - E_F)_{poly-si} - (E_C - E_F)_{substrate} \\right]",
+      "genericFormula": "\\Phi_{ms} = \\frac{1}{q} \\left[ (E_C - E_F)_{material1} - (E_C - E_F)_{material2} \\right]",
+      "description": "Esta fórmula representa a diferença de potencial de trabalho entre um metal e um semicondutor, levando em consideração as energias de nível de condução e de Fermi de dois materiais diferentes. Ela é crucial para entender como os semicondutores interagem com metais em dispositivos eletrônicos.",
+      "concepts": [
+        "Potencial de trabalho",
+        "Níveis de energia em semicondutores",
+        "Energia de Fermi",
+        "Interação entre materiais"
+      ],
+      "symbols": [
+        {
+          "symbol": "Φ_{ms}",
+          "description": "Representa a diferença de potencial de trabalho entre o metal e o semicondutor."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elementar, que é a carga de um único elétron."
+        },
+        {
+          "symbol": "E_C",
+          "description": "Representa a energia do nível de condução do semicondutor, que é a energia mínima necessária para que um elétron possa conduzir eletricidade."
+        },
+        {
+          "symbol": "E_F",
+          "description": "Representa a energia do nível de Fermi, que é o nível de energia mais alto ocupado por elétrons em um material a temperatura zero."
+        },
+        {
+          "symbol": "(E_C - E_F)_{poly-si}",
+          "description": "Representa a diferença de energia entre o nível de condução e o nível de Fermi do material semicondutor de silício policristalino."
+        },
+        {
+          "symbol": "(E_C - E_F)_{substrate}",
+          "description": "Representa a diferença de energia entre o nível de condução e o nível de Fermi do substrato, que pode ser um outro material semicondutor ou isolante."
+        }
+      ],
+      "chapter": "12 Metal-Oxide-Silicon Systems",
+      "source": "standalone",
+      "page": 457
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498
+  ],
+  "lastUpdated": "2026-05-08T18:19:13.708937",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
+}

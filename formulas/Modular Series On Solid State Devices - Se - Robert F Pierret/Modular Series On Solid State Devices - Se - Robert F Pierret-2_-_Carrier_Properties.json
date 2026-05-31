@@ -1,0 +1,134 @@
+{
+  "chapter": "2 - Carrier Properties",
+  "section": "2.3 - Carrier Motion",
+  "questions": [],
+  "answers": [],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "\\mathbf{F} = -q\\mathbf{\\mathscr{E}} = m_n^* \\frac{d\\mathbf{v}}{dt}",
+      "genericFormula": "\\mathbf{F} = -q\\mathbf{\\mathscr{E}} = m^* \\frac{d\\mathbf{v}}{dt}",
+      "description": "Esta fórmula expressa a Segunda Lei de Newton aplicada a um elétron em um semicondutor sob a ação de um campo elétrico externo. A força eletrostática exercida sobre o elétron (carga -q, onde q é a carga elementar positiva) pelo campo elétrico \\mathscr{E} resulta em uma aceleração proporcional à massa efetiva m_n^* do elétron. O conceito de massa efetiva é fundamental na física de semicondutores: ela substitui a massa de repouso do elétron livre e incorpora os efeitos da estrutura periódica do cristal sobre o movimento do portador. Assim, o elétron se comporta como uma partícula 'quase-livre' com massa m_n^*, permitindo tratar seu transporte usando mecânica clássica newtoniana. Esta abordagem é válida em regime semiclássico, onde o comprimento de onda de de Broglie do elétron é muito menor que as dimensões do dispositivo.",
+      "concepts": [
+        "massa efetiva",
+        "força eletrostática",
+        "Segunda Lei de Newton",
+        "transporte de portadores",
+        "elétron em semicondutor",
+        "aproximação semiclássica",
+        "campo elétrico",
+        "dinâmica de rede cristalina"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\mathbf{F}",
+          "description": "Força resultante sobre o elétron (vetor), em Newtons [N]"
+        },
+        {
+          "symbol": "q",
+          "description": "Carga elementar positiva do elétron: q = 1,602 × 10⁻¹⁹ C"
+        },
+        {
+          "symbol": "-q",
+          "description": "Carga do elétron (negativa), indicando que a força é oposta à direção do campo elétrico"
+        },
+        {
+          "symbol": "\\mathbf{\\mathscr{E}}",
+          "description": "Campo elétrico externo aplicado (vetor), em Volts por metro [V/m]"
+        },
+        {
+          "symbol": "m_n^*",
+          "description": "Massa efetiva do elétron no semicondutor, que incorpora os efeitos do potencial periódico da rede cristalina. Para o silício, m_n^* ≈ 0,26 m_0, onde m_0 é a massa do elétron livre [kg]"
+        },
+        {
+          "symbol": "\\mathbf{v}",
+          "description": "Velocidade do elétron (vetor), em metros por segundo [m/s]"
+        },
+        {
+          "symbol": "\\frac{d\\mathbf{v}}{dt}",
+          "description": "Aceleração do elétron (derivada temporal da velocidade), em metros por segundo ao quadrado [m/s²]"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-transport",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "effective-mass",
+        "carrier",
+        "transport",
+        "electric-field",
+        "force",
+        "electron",
+        "mobility",
+        "Newton",
+        "semiclassical",
+        "momentum",
+        "acceleration",
+        "conduction"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "dispersion",
+        "graphParameters": [
+          "energy",
+          "wave-vector",
+          "effective-mass",
+          "curvature"
+        ]
+      },
+      "relatedFormulas": [
+        "effective-mass-definition",
+        "drift-velocity",
+        "electron-mobility",
+        "Newton-second-law",
+        "carrier-drift-current",
+        "band-structure-dispersion",
+        "Drude-model"
+      ]
+    }
+  ],
+  "bookTitle": "Modular Series On Solid State Devices",
+  "author": "Unknown",
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+  ],
+  "lastUpdated": "2026-05-09T14:26:54.097Z"
+}

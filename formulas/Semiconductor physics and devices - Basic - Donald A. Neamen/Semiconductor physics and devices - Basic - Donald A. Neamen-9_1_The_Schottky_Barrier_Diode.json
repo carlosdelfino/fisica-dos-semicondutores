@@ -1,0 +1,1125 @@
+{
+  "chapter": "9.1 The Schottky Barrier Diode",
+  "section": "EXAMPLE 9.1",
+  "questions": [
+    {
+      "number": "Objective",
+      "text": "Determine the theoretical barrier height, built-in potential barrier, and maximum electric field in a metal–semiconductor diode for zero applied bias.",
+      "formulas": []
+    },
+    {
+      "number": "Ex 9.2",
+      "text": "Repeat Example 9.2 for the GaAs diode capacitance data shown in Figure 9.3.",
+      "formulas": []
+    },
+    {
+      "number": "TYU 9.1",
+      "text": "Consider an ideal chromium-to-n-type silicon Schottky diode at T = 300 K. Assume the semiconductor is doped at a concentration of N_{d} = 3 \\times 10^{15} \\, \\text{cm}^{-3}. Determine the (a) ideal Schottky barrier height, (b) built-in potential barrier, (c) peak electric field with an applied reverse-biased voltage of V_{x} = 5 \\, \\text{V}, and (d) junction capacitance per unit area for V_{x} = 5 \\, \\text{V}.",
+      "formulas": [
+        {
+          "originalFormula": "V_{bi} = \\frac{kT}{q} \\ln \\left( \\frac{N_{d}}{n_{i}} \\right)",
+          "genericFormula": "V_{bi} = \\frac{kT}{q} \\ln \\left( \\frac{N_{d}}{n_{i}} \\right)",
+          "description": "Esta fórmula representa a tensão de built-in (ou tensão de equilíbrio) em uma junção de semicondutor, que é a diferença de potencial elétrico que se estabelece em uma junção p-n quando não há corrente fluindo através dela. Essa tensão é fundamental para entender o comportamento de dispositivos semicondutores, como diodos e transistores.",
+          "concepts": [
+            "Tensão de built-in",
+            "Junção p-n",
+            "Equilíbrio elétrico",
+            "Semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{bi}",
+              "description": "Representa a tensão de built-in, que é a diferença de potencial elétrico na junção p-n em equilíbrio."
+            },
+            {
+              "symbol": "k",
+              "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia térmica em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta em Kelvin, que é uma medida da energia térmica das partículas em um material."
+            },
+            {
+              "symbol": "q",
+              "description": "É a carga elementar, que representa a carga elétrica de um único elétron."
+            },
+            {
+              "symbol": "N_{d}",
+              "description": "Representa a concentração de dopantes do tipo n no semicondutor, que são átomos adicionados para aumentar a quantidade de elétrons livres."
+            },
+            {
+              "symbol": "n_{i}",
+              "description": "Representa a concentração intrínseca de portadores de carga (elétrons e lacunas) em um semicondutor puro, sem dopagem."
+            }
+          ]
+        },
+        {
+          "originalFormula": "E_{max} = \\frac{V_{x}}{d}",
+          "genericFormula": "E_{max} = \\frac{V}{d}",
+          "description": "Esta fórmula representa a relação entre o campo elétrico máximo em uma região e a diferença de potencial elétrico aplicada, dividida pela distância entre as placas condutoras. O campo elétrico é uma medida da força que uma carga elétrica experimenta por unidade de carga.",
+          "concepts": [
+            "Campo elétrico",
+            "Diferença de potencial elétrico",
+            "Distância entre placas condutoras"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{max}",
+              "description": "Representa o valor máximo do campo elétrico na região entre as placas condutoras."
+            },
+            {
+              "symbol": "V_{x}",
+              "description": "Representa a diferença de potencial elétrico aplicada entre as placas condutoras."
+            },
+            {
+              "symbol": "d",
+              "description": "Representa a distância entre as placas condutoras onde o campo elétrico é medido."
+            }
+          ]
+        },
+        {
+          "originalFormula": "C = \\frac{dQ}{dV}",
+          "genericFormula": "C = \\frac{dQ}{dV}",
+          "description": "Esta fórmula representa a capacitância de um capacitor, que é a capacidade de armazenar carga elétrica por unidade de tensão aplicada. Em outras palavras, ela nos diz quanto de carga elétrica pode ser armazenada em um capacitor para uma determinada diferença de potencial elétrico.",
+          "concepts": [
+            "Capacitância",
+            "Carga elétrica",
+            "Diferença de potencial elétrico",
+            "Capacitores"
+          ],
+          "symbols": [
+            {
+              "symbol": "C",
+              "description": "Representa a capacitância, que é uma medida da capacidade de um capacitor de armazenar carga elétrica."
+            },
+            {
+              "symbol": "dQ",
+              "description": "Representa uma pequena quantidade de carga elétrica que é armazenada no capacitor."
+            },
+            {
+              "symbol": "dV",
+              "description": "Representa uma pequena variação na diferença de potencial elétrico aplicada ao capacitor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "Case 1",
+      "text": "Let D_{i} \\to \\infty. In this case, the right side of Equation (9.16) goes to zero. What is the expression for \\phi_{b}? ",
+      "formulas": [
+        {
+          "originalFormula": "\\phi_{b} = \\frac{1}{2} (E_{e} - \\phi_{b})",
+          "genericFormula": "\\phi_{b} = \\frac{1}{2} (E_{e} - \\phi_{b})",
+          "description": "Esta fórmula representa a relação entre a energia de um elétron e a energia de barreira em um semicondutor. Ela é utilizada para calcular a energia de barreira, que é crucial para entender como os elétrons se comportam em dispositivos semicondutores, como diodos e transistores.",
+          "concepts": [
+            "Energia de barreira",
+            "Energia do elétron",
+            "Semicondutores",
+            "Transições eletrônicas"
+          ],
+          "symbols": [
+            {
+              "symbol": "φ_{b}",
+              "description": "Representa a energia de barreira, que é a quantidade de energia necessária para que um elétron ultrapasse a barreira potencial em um semicondutor."
+            },
+            {
+              "symbol": "E_{e}",
+              "description": "Representa a energia do elétron, que é a energia cinética que um elétron possui em um determinado estado dentro do material semicondutor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "Case 2",
+      "text": "Let D_{i} \\to 0. What is the expression for \\phi_{b}? ",
+      "formulas": [
+        {
+          "originalFormula": "\\phi_{b} = (\\phi_{e} - \\chi)",
+          "genericFormula": "\\phi_{b} = (\\phi_{e} - \\chi)",
+          "description": "Esta fórmula representa a relação entre a energia de nível de Fermi de um material semicondutor e a energia de afinidade do semicondutor. A diferença entre a energia de nível de Fermi e a energia de afinidade resulta na energia de barreira, que é fundamental para entender o comportamento dos semicondutores em dispositivos eletrônicos.",
+          "concepts": [
+            "Energia de nível de Fermi",
+            "Energia de afinidade",
+            "Semicondutores",
+            "Barreira de potencial"
+          ],
+          "symbols": [
+            {
+              "symbol": "φ_{b}",
+              "description": "Representa a energia de barreira, que é a energia necessária para mover um elétron de um nível de energia para outro em um semicondutor."
+            },
+            {
+              "symbol": "φ_{e}",
+              "description": "Representa a energia de nível de Fermi, que é o nível de energia mais alto que os elétrons ocupam a temperaturas absolutas zero em um material."
+            },
+            {
+              "symbol": "χ",
+              "description": "Representa a energia de afinidade do semicondutor, que é a energia liberada quando um elétron é adicionado a um átomo ou molécula do material."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "Ex 9.4",
+      "text": "Calculate the ideal Richardson constant for a free electron.",
+      "formulas": [
+        {
+          "originalFormula": "J = A^* T^2 e^{-\\frac{\\phi}{kT}}",
+          "genericFormula": "J = A^* T^2 e^{-\\frac{\\phi}{kT}}",
+          "description": "Esta fórmula representa a densidade de corrente de um material semicondutor em função da temperatura e da energia de ativação. Ela mostra como a corrente elétrica que flui através do material depende da temperatura e da barreira de potencial que os portadores de carga precisam superar para se mover.",
+          "concepts": [
+            "Densidade de corrente",
+            "Temperatura",
+            "Energia de ativação",
+            "Efeito da temperatura na condutividade elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "J",
+              "description": "Representa a densidade de corrente elétrica, que é a quantidade de carga que passa por uma unidade de área em um determinado tempo."
+            },
+            {
+              "symbol": "A^*",
+              "description": "É uma constante que depende das propriedades do material e do tipo de portadores de carga, representando a eficiência do processo de geração de corrente."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura do sistema, geralmente medida em Kelvin, que influencia a energia cinética dos portadores de carga."
+            },
+            {
+              "symbol": "e",
+              "description": "É a base do logaritmo natural, uma constante matemática que aparece em muitos fenômenos de crescimento e decaimento exponencial."
+            },
+            {
+              "symbol": "φ",
+              "description": "Representa a energia de ativação ou a barreira de potencial que os portadores de carga precisam superar para se mover através do material."
+            },
+            {
+              "symbol": "k",
+              "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos, especialmente em contextos de estatística térmica."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "Example 9.6",
+      "text": "Calculate the forward-bias voltage required to induce a forward-bias current density of 10 A/cm² in a Schottky barrier diode and a pn junction diode.",
+      "formulas": [
+        {
+          "originalFormula": "J = J_{S} \\left( \\exp \\left( \\frac{eV}{kT} \\right) - 1 \\right)",
+          "genericFormula": "J = J_{S} \\left( \\exp \\left( \\frac{eV}{kT} \\right) - 1 \\right)",
+          "description": "Esta fórmula representa a densidade de corrente elétrica em um diodo em função da tensão aplicada, onde a corrente é influenciada pela temperatura e pela carga elétrica dos portadores de carga.",
+          "concepts": [
+            "Densidade de corrente elétrica",
+            "Efeito da temperatura na condutividade",
+            "Comportamento exponencial de portadores de carga em semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "J",
+              "description": "Representa a densidade de corrente elétrica, que é a quantidade de corrente que passa por uma unidade de área."
+            },
+            {
+              "symbol": "J_{S}",
+              "description": "É a densidade de corrente de saturação, que é a corrente máxima que pode fluir através do diodo em condições de polarização direta."
+            },
+            {
+              "symbol": "eV",
+              "description": "Representa a energia elétrica, onde 'e' é a carga elementar e 'V' é a tensão aplicada ao diodo."
+            },
+            {
+              "symbol": "k",
+              "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia térmica em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta em Kelvin, que afeta a movimentação dos portadores de carga em um semicondutor."
+            },
+            {
+              "symbol": "exp",
+              "description": "É a função exponencial, que descreve como a densidade de corrente aumenta rapidamente com o aumento da tensão aplicada."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "Objective",
+      "text": "The metal work function for tungsten (W) from Table 9.1 is \\phi_{w} = 4.55 \\, V and the electron affinity for silicon from Table 9.2 is \\chi = 4.01 \\, V. The barrier height is then \\phi_{b} = \\phi_{w} - \\chi = 4.55 - 4.01 = 0.54 \\, V.",
+      "formulas": [
+        {
+          "originalFormula": "\\phi_{b} = \\phi_{w} - \\chi = 4.55 - 4.01 = 0.54",
+          "genericFormula": "\\phi_{b} = \\phi_{w} - \\chi",
+          "description": "Esta fórmula representa a diferença entre o potencial elétrico de um material semicondutor e o potencial de trabalho, resultando no potencial de barreira. O potencial de barreira é crucial para entender como os semicondutores se comportam em dispositivos eletrônicos, como diodos e transistores.",
+          "concepts": [
+            "Potencial elétrico",
+            "Potencial de trabalho",
+            "Potencial de barreira",
+            "Semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "φ_{b}",
+              "description": "Representa o potencial de barreira, que é a energia necessária para mover uma carga elétrica através da junção de um semicondutor."
+            },
+            {
+              "symbol": "φ_{w}",
+              "description": "Representa o potencial de trabalho, que é a energia necessária para remover um elétron de um material e levá-lo ao infinito."
+            },
+            {
+              "symbol": "χ",
+              "description": "Representa a eletronegatividade do material, que é uma medida de sua capacidade de atrair elétrons."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Objective",
+      "text": "We can calculate \\phi_{s} as \\phi_{s} = \\frac{kT}{e} \\ln \\left( \\frac{N_{d}}{n_{i}} \\right) = 0.029 \\ln \\left( \\frac{2.8 \\times 10^{10}}{10^{6}} \\right) = 0.206 \\, V.",
+      "formulas": [
+        {
+          "originalFormula": "\\phi_{s} = \\frac{kT}{e} \\ln \\left( \\frac{N_{d}}{n_{i}} \\right) = 0.029 \\ln \\left( \\frac{2.8 \\times 10^{10}}{10^{6}} \\right) = 0.206",
+          "genericFormula": "\\phi_{s} = \\frac{kT}{e} \\ln \\left( \\frac{N_{d}}{n_{i}} \\right)",
+          "description": "Esta fórmula representa o potencial de superfície de um semicondutor dopado, que é uma medida da energia necessária para mover um portador de carga (como um elétron) para fora da região dopada. O potencial de superfície é importante para entender como os semicondutores se comportam em dispositivos eletrônicos.",
+          "concepts": [
+            "Potencial de superfície",
+            "Dopagem de semicondutores",
+            "Equilíbrio térmico",
+            "Concentração de portadores de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "φ_{s}",
+              "description": "Representa o potencial de superfície do semicondutor, que indica a energia necessária para mover um portador de carga."
+            },
+            {
+              "symbol": "k",
+              "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia térmica em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura do sistema em Kelvin, que é uma medida da energia térmica média das partículas."
+            },
+            {
+              "symbol": "e",
+              "description": "É a carga elementar, que representa a carga de um único elétron, fundamental para a eletricidade."
+            },
+            {
+              "symbol": "ln",
+              "description": "É a função logarítmica natural, que é usada para descrever relações exponenciais em muitos fenômenos físicos."
+            },
+            {
+              "symbol": "N_{d}",
+              "description": "Representa a concentração de dopantes do tipo doador no semicondutor, que são átomos adicionados para aumentar a quantidade de portadores de carga positiva."
+            },
+            {
+              "symbol": "n_{i}",
+              "description": "Representa a concentração intrínseca de portadores de carga no semicondutor puro, que é a quantidade de elétrons e lacunas presentes sem dopagem."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Objective",
+      "text": "Then \\phi_{w} = \\phi_{b} - \\phi_{s} = 0.54 - 0.206 = 0.334 \\, V.",
+      "formulas": [
+        {
+          "originalFormula": "\\phi_{w} = \\phi_{b} - \\phi_{s} = 0.54 - 0.206 = 0.334",
+          "genericFormula": "\\phi_{w} = \\phi_{b} - \\phi_{s}",
+          "description": "Esta fórmula representa a diferença de potencial elétrico, onde \\phi_{w} é a diferença de potencial que se deseja calcular, \\phi_{b} é o potencial de referência e \\phi_{s} é o potencial de superfície. A diferença entre esses dois potenciais resulta em \\phi_{w}, que é importante para entender o comportamento elétrico de materiais semicondutores.",
+          "concepts": [
+            "Diferença de potencial elétrico",
+            "Potencial de referência",
+            "Potencial de superfície",
+            "Comportamento elétrico de semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\phi_{w}",
+              "description": "Representa a diferença de potencial que se deseja calcular entre dois pontos em um sistema."
+            },
+            {
+              "symbol": "\\phi_{b}",
+              "description": "Representa o potencial de referência, que é um valor fixo usado como base para comparação."
+            },
+            {
+              "symbol": "\\phi_{s}",
+              "description": "Representa o potencial de superfície, que é o potencial medido em uma superfície específica do material."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Objective",
+      "text": "The space charge width at zero bias is \\x_{s} = \\sqrt{ \\frac{2 e V_{b}}{e N_{d}} } = \\sqrt{ \\frac{2 \\cdot 211.7 \\cdot 8.85 \\times 10^{-14} \\cdot 0.334}{(1.6 \\times 10^{-19}) \\cdot (10^{6})} } = 0.208 \\times 10^{-4} \\, cm.",
+      "formulas": [
+        {
+          "originalFormula": "x_{s} = \\sqrt{ \\frac{2 e V_{b}}{e N_{d}} } = \\sqrt{ \\frac{2 \\cdot 211.7 \\cdot 8.85 \\times 10^{-14} \\cdot 0.334}{(1.6 \\times 10^{-19}) \\cdot (10^{6})} }",
+          "genericFormula": "x_{s} = \\sqrt{ \\frac{2 e V_{b}}{e N_{d}} }",
+          "description": "Esta fórmula calcula a largura da região de depleção em um semicondutor, que é a distância ao longo da qual a carga elétrica é reduzida devido à presença de uma junção p-n. Essa largura é importante para entender como os semicondutores funcionam em dispositivos eletrônicos.",
+          "concepts": [
+            "Região de depleção",
+            "Junção p-n",
+            "Carga elétrica",
+            "Semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "x_{s}",
+              "description": "Representa a largura da região de depleção em um semicondutor."
+            },
+            {
+              "symbol": "e",
+              "description": "Representa a constante elétrica ou a carga elementar, que é a quantidade de carga elétrica de um único elétron."
+            },
+            {
+              "symbol": "V_{b}",
+              "description": "Representa a tensão de built-in, que é a diferença de potencial elétrico que se estabelece na junção p-n devido à diferença de concentração de portadores de carga."
+            },
+            {
+              "symbol": "N_{d}",
+              "description": "Representa a densidade de dopagem do semicondutor tipo n, que é a quantidade de átomos dopantes que introduzem elétrons adicionais no material."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Objective",
+      "text": "Then the maximum electric field is |E_{max}| = \\frac{e N_{d} x_{s}}{\\epsilon_{s}} = \\frac{(1.6 \\times 10^{-19}) \\cdot (10^{6}) \\cdot (0.208 \\times 10^{-4})}{(11.7)(8.85 \\times 10^{-14})} = 3.21 \\times 10^{4} \\, V/cm.",
+      "formulas": [
+        {
+          "originalFormula": "|E_{max}| = \\frac{e N_{d} x_{s}}{\\epsilon_{s}} = \\frac{(1.6 \\times 10^{-19}) \\cdot (10^{6}) \\cdot (0.208 \\times 10^{-4})}{(11.7)(8.85 \\times 10^{-14})}",
+          "genericFormula": "|E_{max}| = \\frac{e N_{d} x_{s}}{\\epsilon_{s}}",
+          "description": "Esta fórmula representa a intensidade máxima do campo elétrico em um material semicondutor, que é influenciada pela densidade de dopagem, a carga elementar e a permissividade do material. O campo elétrico é uma medida da força que uma carga elétrica experimenta por unidade de carga.",
+          "concepts": [
+            "Campo elétrico",
+            "Dopagem de semicondutores",
+            "Permissividade do material",
+            "Cargas elétricas"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{max}",
+              "description": "Representa a intensidade máxima do campo elétrico."
+            },
+            {
+              "symbol": "e",
+              "description": "Representa a carga elementar, que é a menor unidade de carga elétrica, equivalente a aproximadamente 1.6 x 10^-19 coulombs."
+            },
+            {
+              "symbol": "N_{d}",
+              "description": "Representa a densidade de dopagem, que é a quantidade de átomos dopantes por unidade de volume no semicondutor."
+            },
+            {
+              "symbol": "x_{s}",
+              "description": "Representa a largura da região de depleção, que é a distância ao longo da qual o campo elétrico é significativo dentro do semicondutor."
+            },
+            {
+              "symbol": "\\epsilon_{s}",
+              "description": "Representa a permissividade do material, que é uma medida de como um material responde a um campo elétrico, influenciando a capacidade de armazenar carga elétrica."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Case 1",
+      "text": "The barrier height is \\phi_{b} = \\frac{1}{2} (E_{e} - \\phi_{b})",
+      "formulas": [
+        {
+          "originalFormula": "\\phi_{b} = \\frac{1}{2} (E_{e} - \\phi_{b})",
+          "genericFormula": "\\phi_{b} = \\frac{1}{2} (E_{e} - \\phi_{b})",
+          "description": "Esta fórmula representa a relação entre a energia de um elétron e a energia de barreira em um semicondutor. Ela indica como a energia do elétron se relaciona com a energia de barreira, que é um fator crucial para entender o comportamento dos portadores de carga em dispositivos semicondutores.",
+          "concepts": [
+            "Energia de barreira",
+            "Energia do elétron",
+            "Semicondutores",
+            "Portadores de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "φ_{b}",
+              "description": "Representa a energia de barreira, que é a energia mínima necessária para que um portador de carga (como um elétron) consiga superar a barreira potencial em um semicondutor."
+            },
+            {
+              "symbol": "E_{e}",
+              "description": "Representa a energia do elétron, que é a energia que um elétron possui em um determinado estado ou condição dentro do material semicondutor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Case 2",
+      "text": "The barrier height is \\phi_{b} = (\\phi_{e} - \\chi)",
+      "formulas": [
+        {
+          "originalFormula": "\\phi_{b} = (\\phi_{e} - \\chi)",
+          "genericFormula": "\\phi_{b} = (\\phi_{e} - \\chi)",
+          "description": "Esta fórmula representa a relação entre a energia de potencial elétrico de um material semicondutor e a energia de afinidade do material, além do nível de Fermi. A diferença entre a energia de Fermi e a energia de afinidade resulta na energia de barreira que um portador de carga deve superar para se mover através do material.",
+          "concepts": [
+            "Energia de potencial elétrico",
+            "Energia de afinidade",
+            "Nível de Fermi",
+            "Semicondutores",
+            "Barreira de potencial"
+          ],
+          "symbols": [
+            {
+              "symbol": "φ_{b}",
+              "description": "Representa a energia de barreira, que é a energia necessária para que um portador de carga (como um elétron) possa atravessar a barreira de potencial de um material semicondutor."
+            },
+            {
+              "symbol": "φ_{e}",
+              "description": "Representa a energia de Fermi, que é o nível de energia mais alto que os elétrons ocupam a temperaturas absolutas próximas ao zero, indicando o nível de energia disponível para os portadores de carga."
+            },
+            {
+              "symbol": "χ",
+              "description": "Representa a energia de afinidade do material, que é a energia liberada quando um elétron é adicionado a um átomo ou molécula, refletindo a tendência do material em atrair elétrons."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Example 9.6",
+      "text": "For the Schottky barrier diode, we have V_{s} = \\frac{kT}{e} \\ln \\left( \\frac{J}{J_{S}} \\right) = (0.0259) \\ln \\left( \\frac{10}{5.98 \\times 10^{-3}} \\right) = 0.312 \\, V.",
+      "formulas": [
+        {
+          "originalFormula": "V_{s} = \\frac{kT}{e} \\ln \\left( \\frac{J}{J_{S}} \\right)",
+          "genericFormula": "V_{s} = \\frac{kT}{e} \\ln \\left( \\frac{J}{J_{S}} \\right)",
+          "description": "Esta fórmula representa a tensão de saturação em um diodo, que é a tensão necessária para que a corrente através do diodo atinja um determinado valor em relação à corrente de saturação.",
+          "concepts": [
+            "Tensão de saturação",
+            "Corrente elétrica",
+            "Temperatura",
+            "Constante de Boltzmann",
+            "Carga do elétron"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{s}",
+              "description": "Representa a tensão de saturação do diodo, que é a tensão necessária para que a corrente atinja um valor específico."
+            },
+            {
+              "symbol": "k",
+              "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura em Kelvin, que é uma medida da energia térmica do sistema."
+            },
+            {
+              "symbol": "e",
+              "description": "É a carga do elétron, que é uma constante fundamental na física e representa a quantidade de carga elétrica de um único elétron."
+            },
+            {
+              "symbol": "J",
+              "description": "Representa a corrente elétrica através do diodo, que é a quantidade de carga que passa por um ponto em um circuito por unidade de tempo."
+            },
+            {
+              "symbol": "J_{S}",
+              "description": "É a corrente de saturação do diodo, que é a corrente mínima que flui através do diodo quando ele está em polarização reversa."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Example 9.6",
+      "text": "For the pn junction diode, we have V_{s} = \\frac{kT}{e} \\ln \\left( \\frac{J_{S}}{J_{S}} \\right) = (0.0259) \\ln \\left( \\frac{10}{3.66 \\times 10^{-11}} \\right) = 0.682 \\, V.",
+      "formulas": [
+        {
+          "originalFormula": "V_{s} = \\frac{kT}{e} \\ln \\left( \\frac{J_{S}}{J_{S}} \\right)",
+          "genericFormula": "V_{s} = \\frac{kT}{e} \\ln \\left( \\frac{J_{S}}{J_{S}} \\right)",
+          "description": "Esta fórmula representa a tensão de saturação em um diodo, que é a tensão necessária para que a corrente de saturação seja equilibrada com a corrente reversa em um dispositivo semicondutor. Ela é fundamental para entender o comportamento elétrico de diodos e transistores em circuitos.",
+          "concepts": [
+            "Tensão de saturação",
+            "Corrente de saturação",
+            "Termodinâmica em semicondutores",
+            "Efeito da temperatura em dispositivos semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{s}",
+              "description": "Representa a tensão de saturação, que é a tensão em que a corrente de saturação se estabiliza."
+            },
+            {
+              "symbol": "k",
+              "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta em Kelvin, que é uma medida da energia térmica de um sistema."
+            },
+            {
+              "symbol": "e",
+              "description": "É a carga elementar, que é a menor unidade de carga elétrica que pode existir isoladamente."
+            },
+            {
+              "symbol": "J_{S}",
+              "description": "Representa a corrente de saturação, que é a corrente que flui através do diodo quando ele está em polarização reversa."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "V_{bi} = \\frac{kT}{q} \\ln \\left( \\frac{N_{d}}{n_{i}} \\right)",
+      "genericFormula": "V_{bi} = \\frac{kT}{q} \\ln \\left( \\frac{N_{d}}{n_{i}} \\right)",
+      "description": "Esta fórmula representa a tensão de built-in (ou tensão interna) em uma junção p-n, que é a diferença de potencial que se estabelece na junção devido à diferença de concentrações de portadores de carga. Essa tensão é crucial para entender o funcionamento de dispositivos semicondutores, como diodos e transistores.",
+      "concepts": [
+        "Tensão de built-in",
+        "Junção p-n",
+        "Concentração de portadores de carga",
+        "Equilíbrio térmico"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_{bi}",
+          "description": "Representa a tensão de built-in na junção p-n, que é a diferença de potencial elétrico que se forma devido à separação de cargas."
+        },
+        {
+          "symbol": "k",
+          "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia térmica dos portadores de carga em um material."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta em Kelvin, que afeta a energia térmica e a movimentação dos portadores de carga."
+        },
+        {
+          "symbol": "q",
+          "description": "É a carga elementar, que representa a carga de um único elétron e é fundamental para calcular a relação entre energia e tensão."
+        },
+        {
+          "symbol": "N_{d}",
+          "description": "Representa a concentração de dopantes do tipo n, que são átomos adicionados ao semicondutor para aumentar a quantidade de elétrons livres."
+        },
+        {
+          "symbol": "n_{i}",
+          "description": "É a concentração intrínseca de portadores de carga em um semicondutor puro, que é a quantidade de elétrons e lacunas presentes sem dopagem."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E_{max} = \\frac{V_{x}}{d}",
+      "genericFormula": "E_{max} = \\frac{V_{x}}{d}",
+      "description": "Esta fórmula representa a relação entre a intensidade do campo elétrico máximo e a diferença de potencial elétrico aplicada em um determinado espaço. Especificamente, ela mostra como o campo elétrico é gerado pela variação de tensão ao longo de uma distância.",
+      "concepts": [
+        "Campo elétrico",
+        "Diferença de potencial",
+        "Distância",
+        "Intensidade do campo elétrico"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{max}",
+          "description": "Representa a intensidade máxima do campo elétrico, que é uma medida da força que uma carga elétrica experimenta por unidade de carga."
+        },
+        {
+          "symbol": "V_{x}",
+          "description": "Representa a diferença de potencial elétrico, que é a quantidade de energia elétrica por unidade de carga entre dois pontos em um campo elétrico."
+        },
+        {
+          "symbol": "d",
+          "description": "Representa a distância entre os dois pontos onde a diferença de potencial é medida, que influencia a intensidade do campo elétrico."
+        }
+      ]
+    },
+    {
+      "originalFormula": "C = \\frac{dQ}{dV}",
+      "genericFormula": "C = \\frac{dQ}{dV}",
+      "description": "Esta fórmula representa a capacitância de um capacitor, que é a capacidade de armazenar carga elétrica por unidade de diferença de potencial elétrico. Em outras palavras, ela mostra como a quantidade de carga elétrica armazenada em um capacitor varia em relação à tensão aplicada entre suas placas.",
+      "concepts": [
+        "Capacitância",
+        "Carga elétrica",
+        "Diferença de potencial elétrico",
+        "Capacitores"
+      ],
+      "symbols": [
+        {
+          "symbol": "C",
+          "description": "Representa a capacitância, que é uma medida da capacidade de um capacitor de armazenar carga elétrica."
+        },
+        {
+          "symbol": "dQ",
+          "description": "Representa a variação da carga elétrica armazenada no capacitor."
+        },
+        {
+          "symbol": "dV",
+          "description": "Representa a variação da diferença de potencial elétrico entre as placas do capacitor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E_{b} = \\frac{1}{D_{i}} \\sqrt{2 e \\epsilon N_{d} (\\phi_{b} - \\phi_{s}) - \\frac{\\epsilon}{e D_{i}} \\left[ \\phi_{s} - (x + \\phi_{b}) \\right]}",
+      "genericFormula": "E_{b} = \\frac{1}{D_{i}} \\sqrt{2 e \\epsilon N_{d} (\\phi_{b} - \\phi_{s}) - \\frac{\\epsilon}{e D_{i}} \\left[ \\phi_{s} - (x + \\phi_{b}) \\right]}",
+      "description": "Esta fórmula calcula a energia de barreira em um semicondutor, levando em consideração a densidade de dopagem e as diferenças de potencial elétrico entre as regiões do material. A energia de barreira é crucial para entender como os portadores de carga se movem dentro do semicondutor e como isso afeta o funcionamento de dispositivos eletrônicos.",
+      "concepts": [
+        "Energia de barreira",
+        "Dopagem de semicondutores",
+        "Diferença de potencial elétrico",
+        "Movimento de portadores de carga"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{b}",
+          "description": "Representa a energia de barreira, que é a energia necessária para que um portador de carga supere a barreira potencial em um semicondutor."
+        },
+        {
+          "symbol": "D_{i}",
+          "description": "Representa a largura da região de depleção, que é a área em um semicondutor onde não há portadores de carga livres devido à dopagem."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a menor unidade de carga elétrica, correspondente à carga de um único elétron."
+        },
+        {
+          "symbol": "\\epsilon",
+          "description": "Representa a permissividade elétrica do material, que indica a capacidade do material de armazenar carga elétrica em um campo elétrico."
+        },
+        {
+          "symbol": "N_{d}",
+          "description": "Representa a densidade de dopagem do semicondutor, que é a quantidade de átomos dopantes por unidade de volume no material."
+        },
+        {
+          "symbol": "\\phi_{b}",
+          "description": "Representa o potencial elétrico na barreira, que é a energia potencial associada à posição de um portador de carga na barreira."
+        },
+        {
+          "symbol": "\\phi_{s}",
+          "description": "Representa o potencial elétrico na superfície, que é a energia potencial na superfície do semicondutor onde ocorre a interface com outro material."
+        },
+        {
+          "symbol": "x",
+          "description": "Representa a posição ao longo do eixo da largura da região de depleção, que é usada para calcular a variação do potencial elétrico ao longo dessa região."
+        }
+      ]
+    },
+    {
+      "originalFormula": "J = A^* T^2 e^{-\\frac{\\phi}{kT}}",
+      "genericFormula": "J = A^* T^2 e^{-\\frac{\\phi}{kT}}",
+      "description": "Esta fórmula representa a densidade de corrente de um material semicondutor em função da temperatura e da energia de ativação. Ela descreve como a corrente elétrica flui através do material em resposta a uma diferença de potencial, levando em consideração a temperatura do sistema e a energia necessária para que os portadores de carga superem uma barreira de potencial.",
+      "concepts": [
+        "Densidade de corrente",
+        "Temperatura",
+        "Energia de ativação",
+        "Efeito da temperatura na condutividade",
+        "Barreira de potencial"
+      ],
+      "symbols": [
+        {
+          "symbol": "J",
+          "description": "Representa a densidade de corrente elétrica, que é a quantidade de carga que passa por uma unidade de área em um determinado tempo."
+        },
+        {
+          "symbol": "A^*",
+          "description": "É uma constante que depende do material e representa a eficiência com que os portadores de carga podem ser gerados em resposta a uma diferença de potencial."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta do sistema, medida em Kelvin, que influencia a movimentação dos portadores de carga."
+        },
+        {
+          "symbol": "e",
+          "description": "É a base do logaritmo natural, uma constante matemática que aparece frequentemente em processos de crescimento exponencial e decaimento."
+        },
+        {
+          "symbol": "\\phi",
+          "description": "Representa a energia de ativação, que é a quantidade de energia necessária para que os portadores de carga superem uma barreira de potencial."
+        },
+        {
+          "symbol": "k",
+          "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos, especialmente em contextos de termodinâmica e estatística."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372
+  ],
+  "lastUpdated": "2026-05-08T22:09:53.851Z"
+}

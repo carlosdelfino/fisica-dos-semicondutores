@@ -1,0 +1,246 @@
+{
+  "chapter": "2 Introduction to Quantum Mechanics",
+  "section": "2.1 PRINCIPLES OF QUANTUM MECHANICS",
+  "questions": [
+    {
+      "number": "TVU 2.3 (a)",
+      "text": "Estimate the probability of an electron with energy E = 0.10 eV tunneling through a rectangular potential barrier with a barrier height of V_0 = 0.8 eV and width a = 12 Å.",
+      "formulas": []
+    },
+    {
+      "number": "TVU 2.3 (b)",
+      "text": "Repeat part (a) for a barrier height of V_0 = 1.5 eV.",
+      "formulas": []
+    },
+    {
+      "number": "TVU 2.4",
+      "text": "A certain semiconductor device requires a tunneling probability of T = 5 \\times 10^{-6} for an electron tunneling through a rectangular barrier with a barrier height of V_0 = 0.8 eV. The electron energy is \bar{E} = 0.08 eV. Determine the maximum barrier width.",
+      "formulas": []
+    },
+    {
+      "number": "2.17",
+      "text": "Consider the wave function \\( \\Psi(x, t) = A \\left( \\cos \\left( \\frac{\\pi}{2} x \\right) \\right) e^{-i \\omega t} \\) for \\(-1 < x < 3\\). Determine A so that \\( \\int_{-1}^{3} \\Psi(x, t) dx = 1 \\).",
+      "formulas": []
+    },
+    {
+      "number": "2.18",
+      "text": "Consider the wave function \\( \\Psi(x, t) = A \\left( \\cos \\left( \\frac{\\pi}{2} x \\right) \\right) e^{-i \\omega t} \\) for \\(-1/2 < x < 1/2\\), where n is an integer. Determine A so that \\( \\int_{-1/2}^{1/2} \\Psi(x, t) dx = 1 \\).",
+      "formulas": []
+    },
+    {
+      "number": "2.19",
+      "text": "The solution to Schrödinger's wave equation for a particular situation is given by \\( \\psi(x) = \\frac{1}{\\sqrt{2a}} e^{i k x} \\). Determine the probability of finding the particle between the following limits: (a) \\(0 < x \\leq \\frac{a}{4}\\), (b) \\(\\frac{a}{4} < x \\leq \\frac{a}{2}\\), and (c) \\(0 < x \\leq a\\).",
+      "formulas": []
+    },
+    {
+      "number": "2.20",
+      "text": "An electron is described by a wave function given by \\( \\psi(x) = \\sqrt{\\frac{2}{a}} \\cos \\left( \\frac{\\pi x}{a} \\right) \\) for \\(-\\frac{a}{2} < x < \\frac{a}{2}\\). The wave function is zero elsewhere. Calculate the probability of finding the electron between (a) \\(0 < x < \\frac{a}{4}\\), (b) \\(\\frac{a}{4} < x < \\frac{a}{2}\\), and (c) \\(0 < x < \\frac{a}{2}\\).",
+      "formulas": []
+    },
+    {
+      "number": "2.21",
+      "text": "Repeat Problem 2.20 if the wave function is given by \\( \\psi(x) = \\sqrt{\\frac{2}{a}} \\sin \\left( \\frac{2 \\pi x}{a} \\right) \\).",
+      "formulas": []
+    },
+    {
+      "number": "2.22",
+      "text": "(a) An electron in free space is described by a plane wave given by \\( \\Psi(x, t) = A e^{-i k x} \\). If k = 8 \\times 10^{-1} m^{-1} and \\(\\omega = 8 \\times 10^{7} rad/s\\), determine the (b) phase velocity and length of the plane wave, and (c) the momentum and kinetic energy (in eV) of the electron. (b) Repeat part (a) for k = -1.5 \\times 10^{-1} m^{-1} and k = 1.5 \\times 10^{1} rad/s.",
+      "formulas": []
+    },
+    {
+      "number": "2.23",
+      "text": "An electron is traveling in the negative x direction with a kinetic energy of 0.025 eV. (a) Write the equation of a plane wave that describes this particle. (b) What is the wave number, wavelength, and angular frequency of the wave that describes this electron?",
+      "formulas": []
+    },
+    {
+      "number": "2.24",
+      "text": "Determine the wave number, wavelength, angular frequency, and period of a wave function that describes electron traveling in free space at a velocity of (a) v = 5 \\times 10^{5} cm/s and (b) v = 10^{8} cm/s.",
+      "formulas": []
+    },
+    {
+      "number": "2.25",
+      "text": "An electron is bound in a one-dimensional infinite potential well with a width of 75 \\AA. Determine the electron energy levels (in eV) for n = 1, 2, 3.",
+      "formulas": []
+    },
+    {
+      "number": "2.26",
+      "text": "An electron is bound in a one-dimensional infinite potential well with a width of 10 \\AA. (a) Calculate the first three energy levels that the electron may occupy. (b) If the electron drops from the third to the second energy level, what is the wavelength of a photon that might be emitted?",
+      "formulas": []
+    },
+    {
+      "number": "2.27",
+      "text": "A particle with a mass of 15 mg is bound in a one-dimensional infinite potential well that is 1.2 cm wide. (a) If the energy of the particle is 15 m, determine the value of n for that state. (b) What is the energy of the (n+1) state? (c) Would quantum effects be observable for this particle?",
+      "formulas": []
+    },
+    {
+      "number": "2.28",
+      "text": "Calculate the lowest energy level for a neutron in a nucleus, by treating it as if it were in an infinite potential well of width equal to 10^{-14} m. Compare this with the lowest energy level for an electron in the same infinite potential well.",
+      "formulas": []
+    },
+    {
+      "number": "2.29",
+      "text": "Consider the particle in the infinite potential well as shown in Figure P2.29. Derive and sketch the wave functions corresponding to the four lowest energy levels. (Do not normalize the wave functions.)",
+      "formulas": []
+    },
+    {
+      "number": "2.30",
+      "text": "Consider a three-dimensional infinite potential well. The potential function is given by \\( V(x) = 0 \\) for \\(0 < x < a, 0 < y < a, 0 < z < a\\), and \\( V(x) = \\infty \\) elsewhere. Start with",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "TVU 2.3 (a)",
+      "text": "The probability can be estimated using quantum tunneling equations.",
+      "formulas": []
+    },
+    {
+      "questionNumber": "TVU 2.3 (b)",
+      "text": "The probability can be estimated similarly to part (a) with the new barrier height.",
+      "formulas": []
+    },
+    {
+      "questionNumber": "TVU 2.4",
+      "text": "The maximum barrier width can be determined using the tunneling probability formula.",
+      "formulas": []
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "E = h u",
+      "genericFormula": "E = h \nu",
+      "description": "Esta fórmula representa a relação entre a energia de um fóton e sua frequência. Ela nos diz que a energia de um fóton é diretamente proporcional à sua frequência, onde a constante de proporcionalidade é a constante de Planck.",
+      "concepts": [
+        "Energia de fótons",
+        "Frequência de ondas eletromagnéticas",
+        "Constante de Planck"
+      ],
+      "symbols": [
+        {
+          "symbol": "E",
+          "description": "Representa a energia do fóton, que é a quantidade de trabalho que ele pode realizar ou a quantidade de calor que pode transferir."
+        },
+        {
+          "symbol": "h",
+          "description": "É a constante de Planck, uma constante fundamental na física que relaciona a energia de um fóton à sua frequência. Seu valor é aproximadamente 6,626 x 10^-34 Joule segundo."
+        },
+        {
+          "symbol": "ν",
+          "description": "Representa a frequência da onda eletromagnética, que é o número de ciclos que ocorrem em um segundo. É medida em hertz (Hz)."
+        }
+      ],
+      "chapter": "2 Introduction to Quantum Mechanics",
+      "section": "2.1 PRINCIPLES OF QUANTUM MECHANICS",
+      "source": "standalone",
+      "page": 1
+    },
+    {
+      "originalFormula": "T = 3.17 \\times 10^{-6}",
+      "genericFormula": "T = k",
+      "description": "Esta fórmula representa um valor constante, onde T é uma quantidade que pode ser interpretada como uma temperatura, tempo ou qualquer outra medida que se ajuste ao contexto. O valor específico dado, 3.17 vezes 10 elevado a menos 6, indica que T é um número muito pequeno, próximo de zero.",
+      "concepts": [
+        "constante",
+        "medida",
+        "quantidade física"
+      ],
+      "symbols": [
+        {
+          "symbol": "T",
+          "description": "representa uma quantidade física que pode ser temperatura, tempo ou outra medida, dependendo do contexto."
+        },
+        {
+          "symbol": "3.17 \\times 10^{-6}",
+          "description": "um valor numérico que indica a magnitude da quantidade representada por T, sendo um número muito pequeno."
+        }
+      ],
+      "chapter": "2 Introduction to Quantum Mechanics",
+      "section": "2.1 PRINCIPLES OF QUANTUM MECHANICS",
+      "source": "standalone",
+      "page": 40
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79
+  ],
+  "lastUpdated": "2026-05-08T18:19:13.065768",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
+}

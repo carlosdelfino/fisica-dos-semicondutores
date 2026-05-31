@@ -1,0 +1,631 @@
+{
+  "chapter": "6",
+  "section": "Nonequilibrium Excess Carriers in Semiconductors",
+  "questions": [
+    {
+      "number": "Example 6.2",
+      "text": "Determine the time behavior of excess carriers as a semiconductor returns to thermal equilibrium.",
+      "formulas": [
+        {
+          "originalFormula": "D_{n} \\frac{\\partial^2 \\delta n}{\\partial x^2} = 0, \\quad D_{p} \\frac{\\partial^2 \\delta p}{\\partial x^2} = 0",
+          "genericFormula": "D_{n} \\frac{\\partial^2 \\delta n}{\\partial x^2} = 0, \\quad D_{p} \\frac{\\partial^2 \\delta p}{\\partial x^2} = 0",
+          "description": "Não foi possível gerar descrição automática",
+          "concepts": [],
+          "symbols": [],
+          "rawText": "{\n  \"originalFormula\": \"D_{n} \\frac{\\partial^2 \\delta n}{\\partial x^2} = 0, \\\\quad D_{p} \\frac{\\partial^2 \\delta p}{\\partial x^2} = 0\",\n  \"genericFormula\": \"D_{n} \\\\frac{\\\\partial^2 \\\\delta n}{\\\\partial x^2} = 0, \\\\quad D_{p} \\\\frac{\\\\partial^2 \\\\delta p}{\\\\partial x^2} = 0\",\n  \"description\": \"Esta fórmula representa a condição de equilíbrio de perturbações na densidade de portadores de carga em um semicondutor, onde a variação da densidade de elétrons e lacunas em relação à posição é analisada. A equação indica que, em um estado estacionário, não há variação espacial da densidade de portadores, ou seja, a densidade é uniforme ao longo da direção x.\",\n  \"concepts\": [\n    \"Densidade de portadores de carga\",\n    \"Equilíbrio em semicondutores\",\n    \"Derivadas parciais\",\n    \"Condições de contorno em sistemas físicos\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"D_{n}\",\n      \"description\": \"Coeficiente de difusão dos elétrons, que indica a taxa de movimento dos elétrons em resposta a um gradiente de concentração.\"\n    },\n    {\n      \"symbol\": \"D_{p}\",\n      \"description\": \"Coeficiente de difusão das lacunas, que representa a taxa de movimento das lacunas em resposta a um gradiente de concentração.\"\n    },\n    {\n      \"symbol\": \"\\\\delta n\",\n      \"description\": \"Variação na densidade de elétrons, que representa a diferença na quantidade de elétrons em uma região específica em relação a um estado de equilíbrio.\"\n    },\n    {\n      \"symbol\": \"\\\\delta p\",\n      \"description\": \"Variação na densidade de lacunas, que indica a diferença na quantidade de lacunas em uma região específica em relação a um estado de equilíbrio.\"\n    },\n    {\n      \"symbol\": \"x\",\n      \"description\": \"A coordenada espacial ao longo da qual a densidade de portadores está sendo analisada.\"\n    },\n    {\n      \"symbol\": \"\\\\frac{\\\\partial^2}{\\\\partial x^2}\",\n      \"description\": \"A derivada parcial de segunda ordem em relação à coordenada x, que mede como a variação da densidade de portadores muda em relação à posição.\"\n    }\n  ]\n}",
+          "chapter": "6",
+          "section": "Nonequilibrium Excess Carriers in Semiconductors",
+          "source": "question",
+          "questionNumber": "Example 6.2",
+          "page": 1
+        },
+        {
+          "originalFormula": "E \\frac{\\partial \\delta n}{\\partial x} = 0, \\quad E \\frac{\\partial \\delta p}{\\partial x} = 0",
+          "genericFormula": "E \\frac{\\partial n}{\\partial x} = 0, \\quad E \\frac{\\partial p}{\\partial x} = 0",
+          "description": "Esta fórmula representa a condição de equilíbrio em um sistema de semicondutores, onde a variação da densidade de portadores de carga (n) e a variação da densidade de corrente (p) em relação à posição (x) são iguais a zero quando multiplicadas pela intensidade do campo elétrico (E). Isso indica que, em um estado de equilíbrio, não há variação na densidade de portadores ou na corrente ao longo da direção x sob a influência do campo elétrico.",
+          "concepts": [
+            "Equilíbrio em semicondutores",
+            "Densidade de portadores de carga",
+            "Campo elétrico",
+            "Derivadas parciais",
+            "Condições de estabilidade"
+          ],
+          "symbols": [
+            {
+              "symbol": "E",
+              "description": "Intensidade do campo elétrico, que representa a força por unidade de carga que atua sobre as partículas carregadas."
+            },
+            {
+              "symbol": "n",
+              "description": "Densidade de portadores de carga, que indica a quantidade de portadores (como elétrons ou lacunas) por unidade de volume em um material semicondutor."
+            },
+            {
+              "symbol": "p",
+              "description": "Densidade de corrente, que representa a quantidade de carga que passa por uma seção transversal do material por unidade de tempo."
+            },
+            {
+              "symbol": "x",
+              "description": "A coordenada espacial que representa a posição ao longo da qual a densidade de portadores e a corrente estão sendo analisadas."
+            }
+          ],
+          "chapter": "6",
+          "section": "Nonequilibrium Excess Carriers in Semiconductors",
+          "source": "question",
+          "questionNumber": "Example 6.2",
+          "page": 50
+        },
+        {
+          "originalFormula": "g' = 0 \\text{ for } t > 0, \\quad g' = 0 \\text{ for } t = 0",
+          "genericFormula": "g' = 0 \\text{ for } t > 0, \\quad g' = 0 \\text{ for } t = 0",
+          "description": "Esta fórmula indica que a função g' é igual a zero tanto para o tempo t igual a zero quanto para qualquer tempo t maior que zero. Isso sugere que, em um determinado contexto, não há variação ou mudança na quantidade representada por g' ao longo do tempo, a partir do momento inicial.",
+          "concepts": [
+            "Função de tempo",
+            "Condições iniciais",
+            "Estabilidade de um sistema"
+          ],
+          "symbols": [
+            {
+              "symbol": "g'",
+              "description": "Representa a taxa de variação de uma quantidade g em relação ao tempo. Neste caso, g' é igual a zero, indicando que não há variação."
+            },
+            {
+              "symbol": "t",
+              "description": "Representa o tempo, que é uma variável independente usada para descrever a evolução de um sistema ao longo do tempo."
+            }
+          ],
+          "chapter": "6",
+          "section": "Nonequilibrium Excess Carriers in Semiconductors",
+          "source": "question",
+          "questionNumber": "Example 6.2",
+          "page": 99
+        }
+      ]
+    },
+    {
+      "number": "Example 6.10",
+      "text": "Determine the value of surface recombination velocity corresponding to the parameters given in Example 6.9.",
+      "formulas": [
+        {
+          "originalFormula": "\\delta p(0) = g' \\tau_0",
+          "genericFormula": "\\delta p(0) = g' \\tau",
+          "description": "Esta fórmula representa a variação da pressão em um ponto específico, que é influenciada pela aceleração gravitacional e um tempo característico. A variação de pressão é diretamente proporcional à aceleração gravitacional e ao tempo considerado.",
+          "concepts": [
+            "Variação de pressão",
+            "Aceleração gravitacional",
+            "Tempo característico"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\delta p(0)",
+              "description": "Representa a variação da pressão em um ponto específico, geralmente em relação a uma condição inicial."
+            },
+            {
+              "symbol": "g'",
+              "description": "Representa a aceleração gravitacional, que é a força por unidade de massa que um corpo experimenta devido à gravidade."
+            },
+            {
+              "symbol": "\\tau",
+              "description": "Representa um tempo característico, que pode ser o intervalo de tempo durante o qual a variação de pressão é medida ou considerada."
+            }
+          ]
+        },
+        {
+          "originalFormula": "s = \\frac{D_p}{L_p} \\left( \\frac{g' \\tau_0}{\\delta p(0)} - 1 \\right)",
+          "genericFormula": "s = \\frac{D_p}{L_p} \\left( \\frac{g' \\tau_0}{\\delta p} - 1 \\right)",
+          "description": "Esta fórmula representa a relação entre a distância percorrida por um portador de carga em um semicondutor e diversas propriedades físicas do material, como a difusividade, a largura da região de interesse e a relação entre a taxa de geração de portadores e a variação de pressão.",
+          "concepts": [
+            "Difusão de portadores de carga",
+            "Propriedades de semicondutores",
+            "Geração e recombinação de portadores",
+            "Efeito da pressão em semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "s",
+              "description": "Representa a distância percorrida pelos portadores de carga."
+            },
+            {
+              "symbol": "D_p",
+              "description": "Representa a difusividade dos portadores de carga, que indica a capacidade de um portador se mover através do material."
+            },
+            {
+              "symbol": "L_p",
+              "description": "Representa a largura da região onde os portadores estão se movendo ou onde a difusão é considerada."
+            },
+            {
+              "symbol": "g'",
+              "description": "Representa a taxa de geração de portadores de carga por unidade de volume, que pode ser influenciada por fatores externos como a pressão."
+            },
+            {
+              "symbol": "\\tau_0",
+              "description": "Representa o tempo de vida médio dos portadores de carga, que é o tempo que eles permanecem livres antes de recombinar."
+            },
+            {
+              "symbol": "\\delta p(0)",
+              "description": "Representa a variação de pressão no ponto inicial, que pode afetar a geração de portadores no material."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "text": "Describe the concept of excess carrier generation and recombination.",
+      "formulas": []
+    },
+    {
+      "number": "2",
+      "text": "Describe the concept of an excess carrier lifetime.",
+      "formulas": []
+    },
+    {
+      "number": "3",
+      "text": "Describe how the time-dependent diffusion equations for holes and electrons are derived.",
+      "formulas": []
+    },
+    {
+      "number": "4",
+      "text": "Describe how the ambipolar transport equation is derived.",
+      "formulas": []
+    },
+    {
+      "number": "5",
+      "text": "Understand the consequence of the coefficients in the ambipolar transport equation reducing to the minority carrier values under low injection and extrinsic semiconductors.",
+      "formulas": []
+    },
+    {
+      "number": "6",
+      "text": "Apply the ambipolar transport equation to various problems.",
+      "formulas": []
+    },
+    {
+      "number": "7",
+      "text": "Understand the concept of the dielectric relaxation time constant and what it means.",
+      "formulas": []
+    },
+    {
+      "number": "8",
+      "text": "Calculate the quasi-Fermi levels for electrons and holes.",
+      "formulas": []
+    },
+    {
+      "number": "9",
+      "text": "Calculate the excess carrier recombination rate for a given concentration of excess carriers.",
+      "formulas": []
+    },
+    {
+      "number": "10",
+      "text": "Understand the effect of a surface on the excess carrier concentrations.",
+      "formulas": []
+    },
+    {
+      "number": "6.42",
+      "text": "(a) Consider the p-type semiconductor shown in Figure P6.42 with the following parameters: N_a = 5 \\times 10^{16} \\text{cm}^{-3}, D_p = 25 \\text{cm}^2/\\text{s}, and \tau_p = 5 \\times 10^{-7} \\text{s}. The surface recombination velocities at the two surfaces are shown. The electric field is zero. The semiconductor is illuminated at x = 0 with an excess carrier generation rate equal to g' = 2 \\times 10^{18} \\text{cm}^{-3} \\text{s}^{-1}. Determine the excess minority carrier electron concentration versus x in steady state. (b) Repeat part (a) for \tau_p = \\infty.",
+      "formulas": []
+    },
+    {
+      "number": "6.43",
+      "text": "Consider the n-type semiconductor shown in Figure P6.43. Assume that D_n = 10 \\text{cm}^2/\\text{s} and \tau_n = \\infty. The electric field is zero. Assume that flux of excess electrons and holes is injected at x = 0. Let the flux of each carrier type be 10^9 \\text{carriers/cm}^2/\\text{s}. Determine the minority carrier hole current versus x if the surface recombination velocity is (a) s(W) = 0 and (b) s(W) = 2000 \\text{cm/s}.",
+      "formulas": []
+    },
+    {
+      "number": "6.44",
+      "text": "A p-type semiconductor is shown in Figure P6.44. The surface recombination velocities are shown. The semiconductor is uniformly illuminated for -W < x < 0 producing a constant excess carrier generation rate G_i. Determine the steady-state excess carrier concentration versus x if the minority carrier lifetime is infinite and if the electric field is zero.",
+      "formulas": []
+    },
+    {
+      "number": "6.46",
+      "text": "Consider an n-type semiconductor as shown in Figure P6.41. The material is doped at N_d = 3 \\times 10^{16} \\text{cm}^{-3} and N_a = 0. Assume that D_n = 12 \\text{cm}^2/\\text{s} and \tau_n = 2 \\times 10^{-7} \\text{s}. The electric field is zero. \"Design\" the surface recombination velocity so that the minority carrier diffusion current density at the surface is no greater than J_n = -0.18 \\text{A/cm}^2 with a uniform excess carrier generation rate equal to g' = 3 \\times 10^{12} \\text{cm}^{-3}\\text{s}^{-1}.",
+      "formulas": []
+    },
+    {
+      "number": "6.47",
+      "text": "Consider a semiconductor with excess carriers present. From the definition of carrier lifetimes and recombination rates, determine the average time that an electron",
+      "formulas": []
+    },
+    {
+      "number": "6.48",
+      "text": "Design a GaAs photodetector that is 4 μm thick. Assume that the material is doped at N_i = 10^{6} \\, \\text{cm}^{-3} and has lifetime values for τ_{a} = 10^{-7} \\, \\text{s} and τ_{p} = 5 \\times 10^{-8} \\, \\text{s}. With an excitation of g' = 10^{10} \\, \\text{cm}^{-3} \\, \\text{s}^{-1}, a photocurrent of at least 2 μA is required with an applied voltage of 2 V. (b) Repeat the design for a silicon photoconductor that has the same parameters as given in part (a).",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "Example 6.10",
+      "text": "s = 2.85 \\times 10^{4} \\text{ cm/s}",
+      "formulas": [
+        {
+          "originalFormula": "s = \\frac{10}{31.6 \\times 10^{-10} \\left[ 10^{14} \\text{ cm}^{-3} \\right]} - 1",
+          "genericFormula": "s = \\frac{A}{B \\times C} - D",
+          "description": "Esta fórmula calcula um valor s que representa uma quantidade relacionada à densidade de portadores de carga em um material semicondutor, onde A, B e C são parâmetros que dependem das propriedades do material e D é uma constante que ajusta o resultado.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Semicondutores",
+            "Relação entre densidade e propriedades elétricas"
+          ],
+          "symbols": [
+            {
+              "symbol": "s",
+              "description": "Representa um valor calculado que pode estar relacionado à resposta elétrica ou à mobilidade dos portadores em um semicondutor."
+            },
+            {
+              "symbol": "A",
+              "description": "Um valor constante que pode representar uma quantidade fixa ou uma propriedade específica do sistema em análise."
+            },
+            {
+              "symbol": "B",
+              "description": "Um fator que está associado a uma constante física ou a uma propriedade do material, como a constante dielétrica ou a mobilidade dos portadores."
+            },
+            {
+              "symbol": "C",
+              "description": "Representa a densidade de portadores de carga, que é uma medida de quantos portadores estão presentes em um volume específico do material."
+            },
+            {
+              "symbol": "D",
+              "description": "Uma constante que ajusta o resultado final da fórmula, podendo ser um valor fixo que representa uma condição inicial ou um desvio esperado."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "E_{c}",
+      "genericFormula": "E_{c}",
+      "description": "A fórmula representa a energia de um portador de carga em um semicondutor, especificamente a energia do nível de condução, que é crucial para entender como os elétrons se comportam em materiais semicondutores.",
+      "concepts": [
+        "Energia de condução",
+        "Semicondutores",
+        "Portadores de carga",
+        "Níveis de energia"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{c}",
+          "description": "Representa a energia do nível de condução em um semicondutor, que é o nível de energia onde os elétrons podem se mover livremente e contribuir para a condução elétrica."
+        }
+      ],
+      "chapter": "6",
+      "section": "Nonequilibrium Excess Carriers in Semiconductors",
+      "source": "standalone",
+      "page": 149
+    },
+    {
+      "originalFormula": "E_{v}",
+      "genericFormula": "E_{v}",
+      "description": "A fórmula representa a energia do nível de valência em um material semicondutor. Este nível é crucial para entender como os elétrons se comportam em um semicondutor e como eles podem ser excitados para conduzir eletricidade.",
+      "concepts": [
+        "Níveis de energia em semicondutores",
+        "Condução elétrica em materiais",
+        "Excitação de elétrons"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{v}",
+          "description": "Representa a energia do nível de valência, que é o nível de energia mais alto ocupado por elétrons em um material semicondutor à temperatura zero."
+        }
+      ],
+      "chapter": "6",
+      "section": "Nonequilibrium Excess Carriers in Semiconductors",
+      "source": "standalone",
+      "page": 198
+    },
+    {
+      "originalFormula": "\\delta p(x) = g' \\tau_0 \\left( 1 - \\frac{s L_e e^{-x/L_p}}{D_p + s L_e} \\right)",
+      "genericFormula": "\\delta p(x) = g' \\tau_0 \\left( 1 - \\frac{s L_e e^{-x/L_p}}{D_p + s L_e} \\right)",
+      "description": "Esta fórmula representa a variação da pressão em um ponto x em um meio, levando em consideração fatores como a taxa de geração, a constante de tempo e a influência de parâmetros físicos do meio.",
+      "concepts": [
+        "Variação de pressão",
+        "Taxa de geração",
+        "Constante de tempo",
+        "Efeito da difusão",
+        "Comportamento exponencial"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\delta p(x)",
+          "description": "Representa a variação da pressão em um ponto específico x no meio."
+        },
+        {
+          "symbol": "g'",
+          "description": "Representa a taxa de geração de portadores no semicondutor, que indica quão rapidamente novos portadores são criados."
+        },
+        {
+          "symbol": "\\tau_0",
+          "description": "Representa a constante de tempo característica do sistema, que indica a rapidez com que as mudanças ocorrem."
+        },
+        {
+          "symbol": "s",
+          "description": "Representa um fator que pode estar relacionado à densidade ou concentração de portadores no meio."
+        },
+        {
+          "symbol": "L_e",
+          "description": "Representa o comprimento de difusão dos portadores, que indica a distância média que os portadores podem se mover antes de serem recombinados."
+        },
+        {
+          "symbol": "e^{-x/L_p}",
+          "description": "Representa a função exponencial que descreve como a influência da pressão diminui com a distância x, onde L_p é um parâmetro relacionado ao meio."
+        },
+        {
+          "symbol": "D_p",
+          "description": "Representa a difusividade dos portadores no meio, que indica quão facilmente os portadores se movem através do material."
+        },
+        {
+          "symbol": "L_p",
+          "description": "Representa um comprimento característico que influencia a taxa de decaimento da pressão ao longo da distância x."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265
+  ],
+  "lastUpdated": "2026-05-08T21:25:19.736Z",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
+}

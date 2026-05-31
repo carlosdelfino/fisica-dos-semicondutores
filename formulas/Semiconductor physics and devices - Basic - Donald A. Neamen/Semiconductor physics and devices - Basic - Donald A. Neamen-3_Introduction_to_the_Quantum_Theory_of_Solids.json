@@ -1,0 +1,349 @@
+{
+  "chapter": "3 Introduction to the Quantum Theory of Solids",
+  "section": "TEST YOUR UNDERSTANDING",
+  "questions": [
+    {
+      "number": "TYU 3.1",
+      "text": "Using the parameters given in Example 3.2, determine the width (in eV) of the second forbidden energy band existing at k = 2\\pi (see Figure 3.8(c)).",
+      "formulas": []
+    },
+    {
+      "number": "TYU 3.2",
+      "text": "Using the parameters given in Example 3.2, determine the width (in eV) of the allowed energy band in the range 0 < k < \\pi (see Figure 3.8(c)).",
+      "formulas": []
+    },
+    {
+      "number": "Ex3.4",
+      "text": "Determine the number (#/cm²) of quantum states in silicon between (E_{c} - kT) and E_{v} at T = 300 K.",
+      "formulas": []
+    },
+    {
+      "number": "3.20",
+      "text": "Determine the effective mass of the particle at k = k0 in terms of the equation parameters.",
+      "formulas": [
+        {
+          "originalFormula": "E = E_{c} - E_{v} \\cos \\alpha (k - k_{0})",
+          "genericFormula": "E = E_{c} - E_{v} \\cos \\alpha (k - k_{0})",
+          "description": "Esta fórmula representa a energia total de um sistema em função da diferença de energia entre dois níveis, levando em consideração a variação de um parâmetro relacionado ao vetor de onda e a direção do movimento.",
+          "concepts": [
+            "Energia elétrica",
+            "Níveis de energia em semicondutores",
+            "Vetor de onda",
+            "Ângulo de incidência"
+          ],
+          "symbols": [
+            {
+              "symbol": "E",
+              "description": "Representa a energia total do sistema."
+            },
+            {
+              "symbol": "E_{c}",
+              "description": "Representa a energia do nível de condução, que é o nível de energia onde os elétrons podem se mover livremente."
+            },
+            {
+              "symbol": "E_{v}",
+              "description": "Representa a energia do nível de valência, que é o nível de energia onde os elétrons estão ligados aos átomos."
+            },
+            {
+              "symbol": "\\alpha",
+              "description": "Representa o ângulo de incidência, que é o ângulo entre a direção do vetor de onda e uma referência, como a normal à superfície."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa o vetor de onda, que está relacionado à quantidade de movimento dos elétrons no material."
+            },
+            {
+              "symbol": "k_{0}",
+              "description": "Representa um valor de referência do vetor de onda, que pode ser considerado como o vetor de onda em um estado de equilíbrio ou em condições específicas."
+            }
+          ],
+          "chapter": "3 Introduction to the Quantum Theory of Solids",
+          "section": "TEST YOUR UNDERSTANDING",
+          "source": "question",
+          "questionNumber": "3.20",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "number": "3.21",
+      "text": "Determine the (a) density of states effective mass and (b) conductivity effective mass.",
+      "formulas": []
+    },
+    {
+      "number": "3.22",
+      "text": "Determine the (a) density of states effective mass and (b) conductivity effective mass.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "Ex3.4",
+      "text": "N = 2.12 \\times 10^{10} \\, \\text{cm}^{-3}",
+      "formulas": [
+        {
+          "originalFormula": "N = \\int_{E_{c} - kT}^{E_{v}} g(E) \\sqrt{E - E_{c}} \\, dE",
+          "genericFormula": "N = \\int_{E_{c} - kT}^{E_{v}} g(E) \\sqrt{E - E_{c}} \\, dE",
+          "description": "Esta fórmula representa o número de portadores de carga (elétrons ou lacunas) em um semicondutor em uma faixa de energia específica. A integral calcula a contribuição de todos os estados eletrônicos disponíveis entre a energia do nível de condução menos uma quantidade relacionada à temperatura e o nível de valência.",
+          "concepts": [
+            "Densidade de estados eletrônicos",
+            "Energia de condução",
+            "Energia de valência",
+            "Temperatura",
+            "Distribuição de portadores em semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "N",
+              "description": "Representa o número total de portadores de carga em uma faixa de energia específica."
+            },
+            {
+              "symbol": "E_{c}",
+              "description": "É a energia do nível de condução, que é o nível de energia mais baixo que pode ser ocupado por um elétron livre no semicondutor."
+            },
+            {
+              "symbol": "E_{v}",
+              "description": "É a energia do nível de valência, que é o nível de energia mais alto que pode ser ocupado por elétrons ligados em um semicondutor."
+            },
+            {
+              "symbol": "k",
+              "description": "É a constante de Boltzmann, que relaciona a temperatura à energia em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "É a temperatura absoluta em Kelvin, que afeta a distribuição de portadores de carga no semicondutor."
+            },
+            {
+              "symbol": "g(E)",
+              "description": "É a função de densidade de estados, que descreve quantos estados eletrônicos estão disponíveis em uma determinada energia."
+            },
+            {
+              "symbol": "E",
+              "description": "Representa a energia em consideração na integral, que varia entre os limites definidos."
+            }
+          ],
+          "chapter": "3 Introduction to the Quantum Theory of Solids",
+          "section": "TEST YOUR UNDERSTANDING",
+          "source": "answer",
+          "questionNumber": "Ex3.4",
+          "page": 32
+        },
+        {
+          "originalFormula": "g(E) = \\frac{4\\pi}{(2\\pi)^{3}} \\left( \\frac{2m_{n}^{*}}{\\hbar^{2}} \\right)^{\\frac{3}{2}} \\sqrt{E - E_{c}}",
+          "genericFormula": "g(E) = \\frac{4\\pi}{(2\\pi)^{3}} \\left( \\frac{2m^{*}}{\\hbar^{2}} \\right)^{\\frac{3}{2}} \\sqrt{E - E_{c}}",
+          "description": "Esta fórmula representa a densidade de estados em uma banda de energia de um semicondutor, que indica quantos estados eletrônicos estão disponíveis para ocupação em uma determinada energia E acima do nível de energia de condução E_c.",
+          "concepts": [
+            "densidade de estados",
+            "banda de energia",
+            "semicondutores",
+            "energia de condução",
+            "massa efetiva"
+          ],
+          "symbols": [
+            {
+              "symbol": "g(E)",
+              "description": "representa a densidade de estados na energia E, ou seja, o número de estados disponíveis por unidade de volume e por unidade de energia."
+            },
+            {
+              "symbol": "E",
+              "description": "representa a energia do sistema, que pode ser a energia de um elétron em um semicondutor."
+            },
+            {
+              "symbol": "E_c",
+              "description": "representa a energia de condução, que é o nível de energia mínimo necessário para que os elétrons possam conduzir eletricidade no material."
+            },
+            {
+              "symbol": "m_{n}^{*}",
+              "description": "representa a massa efetiva do elétron no semicondutor, que é uma medida de como a massa do elétron se comporta sob a influência de um campo elétrico dentro do material."
+            },
+            {
+              "symbol": "\\hbar",
+              "description": "representa a constante de Planck reduzida, que é uma constante fundamental na mecânica quântica, relacionada à quantização de energia."
+            }
+          ],
+          "chapter": "3 Introduction to the Quantum Theory of Solids",
+          "section": "TEST YOUR UNDERSTANDING",
+          "source": "answer",
+          "questionNumber": "Ex3.4",
+          "page": 64
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "N = \\frac{4\\pi}{(2\\pi)^{3}} \\left( \\frac{2m_{n}^{*}}{\\hbar^{2}} \\right)^{\\frac{3}{2}} \\int_{E_{c}}^{E_{v}} \\sqrt{E - E_{c}} \\, dE",
+      "genericFormula": "N = \\frac{4\\pi}{(2\\pi)^{3}} \\left( \\frac{2m^{*}}{\\hbar^{2}} \\right)^{\\frac{3}{2}} \\int_{E_{c}}^{E_{v}} \\sqrt{E - E_{c}} \\, dE",
+      "description": "Esta fórmula representa a densidade de estados efetiva em um material semicondutor, que é uma medida de quantos estados eletrônicos estão disponíveis para ocupação em uma determinada faixa de energia. A integral calcula a contribuição dos estados eletrônicos entre as energias de condução e valência.",
+      "concepts": [
+        "Densidade de estados",
+        "Energia de condução",
+        "Energia de valência",
+        "Massa efetiva",
+        "Constante de Planck reduzida"
+      ],
+      "symbols": [
+        {
+          "symbol": "N",
+          "description": "Representa a densidade de estados efetiva, que indica quantos estados eletrônicos estão disponíveis por unidade de volume em uma faixa de energia específica."
+        },
+        {
+          "symbol": "m_{n}^{*}",
+          "description": "Representa a massa efetiva do elétron no semicondutor, que é uma medida de como a partícula se comporta sob a influência de um campo elétrico em comparação com um elétron livre."
+        },
+        {
+          "symbol": "\\hbar",
+          "description": "Representa a constante de Planck reduzida, que é uma constante fundamental na mecânica quântica e está relacionada à quantização da energia."
+        },
+        {
+          "symbol": "E_{c}",
+          "description": "Representa a energia de condução, que é o nível de energia mais baixo que um elétron pode ocupar na banda de condução do semicondutor."
+        },
+        {
+          "symbol": "E_{v}",
+          "description": "Representa a energia de valência, que é o nível de energia mais alto que um elétron pode ocupar na banda de valência do semicondutor."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa a energia variável dentro da faixa de integração, que é usada para calcular a densidade de estados entre as energias de condução e valência."
+        }
+      ],
+      "chapter": "3 Introduction to the Quantum Theory of Solids",
+      "section": "TEST YOUR UNDERSTANDING",
+      "source": "standalone",
+      "page": 96
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127
+  ],
+  "lastUpdated": "2026-05-08T18:19:12.969497",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
+}

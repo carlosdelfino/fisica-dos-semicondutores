@@ -1,0 +1,4097 @@
+{
+  "chapter": "2 - Carrier Modeling",
+  "section": "2.1 - The Hydrogen Atom / Bohr Model",
+  "questions": [
+    {
+      "number": "2.4",
+      "text": "(a) Under equilibrium conditions and T > 0 K, what is the probability of an electron state being occupied if it is located at the Fermi level?\\n(b) If E_F is positioned at E_c, determine (numerical answer required) the probability of finding electrons in states at E_c + kT.",
+      "formulas": []
+    },
+    {
+      "number": "2.5",
+      "text": "The carrier distributions or numbers of carriers as a function of energy in the conduction and valence bands were noted to peak at an energy very close to the band edges. (See the carrier distribution sketches in Fig. 2.16.) Taking the semiconductor to be nondegenerate, determine the energy relative to the band edges at which the carrier distributions peak.",
+      "formulas": []
+    },
+    {
+      "number": "2.6",
+      "text": "Starting with Eq. (2.8b) and following a procedure analogous to that outlined in the text, present the intermediate steps and arguments leading to Eqs. (2.14b) and (2.16b).",
+      "formulas": []
+    },
+    {
+      "number": "2.7",
+      "text": "The density of states functions for a hypothetical semiconductor are:\\n\ng_c(E) = constant = N_C/kT  ... E ≥ E_c\\ng_v(E) = constant = N_V/kT  ... E ≤ E_v\\n\nFollowing the procedure outlined in the text, establish carrier concentration relationships for the hypothetical semiconductor analogous to Eqs. (2.14) and (2.16).",
+      "formulas": [
+        {
+          "originalFormula": "g_c(E) = \\text{constant} = \\frac{N_C}{kT} \\quad \\ldots E \\geq E_c",
+          "genericFormula": "g_c(E) = \\text{constante} = \\frac{N_C}{kT}, \\quad E \\geq E_c",
+          "description": "Esta fórmula representa a densidade de estados na banda de condução para um sistema bidimensional (2D) ou como uma aproximação simplificada em determinados contextos de semicondutores. Diferentemente do caso tridimensional, onde a densidade de estados varia com a raiz quadrada da energia, neste caso a densidade de estados é constante para energias acima da borda da banda de condução (E ≥ Ec). O valor constante é dado pela razão entre a densidade efetiva de estados na banda de condução (N_C) e o produto da constante de Boltzmann pela temperatura absoluta (kT). Essa relação é particularmente útil em heteroestruturas, poços quânticos e sistemas onde o confinamento reduz a dimensionalidade efetiva do transporte de portadores. A constante N_C/kT garante a consistência termodinâmica na contagem total de estados disponíveis para os elétrons.",
+          "concepts": [
+            "densidade de estados",
+            "banda de condução",
+            "semicondutores 2D",
+            "densidade efetiva de estados",
+            "estatística de portadores",
+            "aproximação de massa efetiva",
+            "poços quânticos",
+            "termodinâmica de portadores"
+          ],
+          "symbols": [
+            {
+              "symbol": "g_c(E)",
+              "description": "Densidade de estados na banda de condução como função da energia E (unidades: estados por unidade de energia por unidade de volume ou área)"
+            },
+            {
+              "symbol": "N_C",
+              "description": "Densidade efetiva de estados na banda de condução (cm⁻³), representa o número equivalente de estados disponíveis próximos à borda da banda de condução"
+            },
+            {
+              "symbol": "k",
+              "description": "Constante de Boltzmann (k_B ≈ 1,381 × 10⁻²³ J/K ou 8,617 × 10⁻⁵ eV/K)"
+            },
+            {
+              "symbol": "T",
+              "description": "Temperatura absoluta em Kelvin (K)"
+            },
+            {
+              "symbol": "kT",
+              "description": "Energia térmica, produto da constante de Boltzmann pela temperatura absoluta; representa a escala de energia térmica do sistema (~0,026 eV a 300 K)"
+            },
+            {
+              "symbol": "E",
+              "description": "Energia do elétron, variável independente da densidade de estados"
+            },
+            {
+              "symbol": "E_c",
+              "description": "Energia da borda inferior da banda de condução; a densidade de estados é definida apenas para E ≥ E_c"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "density-of-states",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "density-of-states",
+            "conduction-band",
+            "band",
+            "energy",
+            "state",
+            "effective-density",
+            "carrier",
+            "concentration",
+            "2D",
+            "quantum-well",
+            "Boltzmann",
+            "thermal-energy",
+            "band-edge",
+            "semiconductor"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "density-of-states",
+            "graphParameters": [
+              "energy",
+              "density-of-states",
+              "band-edge Ec",
+              "constant value NC/kT"
+            ]
+          },
+          "relatedFormulas": [
+            "densidade-de-estados-3D",
+            "N_C-effective-density-of-states",
+            "Fermi-Dirac-distribution",
+            "concentracao-de-eletrons-banda-conducao",
+            "densidade-de-estados-2D",
+            "Boltzmann-approximation"
+          ]
+        },
+        {
+          "originalFormula": "g_v(E) = \\text{constant} = \\frac{N_V}{kT} \\quad \\ldots E \\leq E_v",
+          "genericFormula": "g_v(E) = \\text{constante} = \\frac{N_V}{kT}, \\quad E \\leq E_v",
+          "description": "Esta fórmula representa a densidade de estados efetiva na banda de valência tratada como uma constante, válida para energias abaixo do topo da banda de valência (E ≤ Ev). É uma aproximação simplificada utilizada em contextos didáticos e em modelos analíticos de semicondutores, onde a densidade de estados na banda de valência é assumida uniforme e igual a N_V dividido por kT. A densidade efetiva de estados N_V é uma grandeza que resume a concentração equivalente de estados disponíveis para buracos na banda de valência, e ao dividir por kT obtemos a densidade de estados por unidade de energia. Esta aproximação é útil para calcular concentrações de portadores e derivar expressões analíticas simples sem recorrer à forma exata proporcional à raiz quadrada da energia.",
+          "concepts": [
+            "densidade de estados",
+            "banda de valência",
+            "densidade efetiva de estados",
+            "aproximação de densidade constante",
+            "semicondutores",
+            "estatística de portadores",
+            "buracos",
+            "energia de Fermi",
+            "distribuição de estados em energia"
+          ],
+          "symbols": [
+            {
+              "symbol": "g_v(E)",
+              "description": "Densidade de estados na banda de valência em função da energia E, dada em unidades de estados por unidade de energia por unidade de volume"
+            },
+            {
+              "symbol": "N_V",
+              "description": "Densidade efetiva de estados na banda de valência (m⁻³ ou cm⁻³), parâmetro tabelado para cada semicondutor, dependente da temperatura"
+            },
+            {
+              "symbol": "k",
+              "description": "Constante de Boltzmann (k ≈ 8,617 × 10⁻⁵ eV/K ou 1,381 × 10⁻²³ J/K)"
+            },
+            {
+              "symbol": "T",
+              "description": "Temperatura absoluta em Kelvin (K)"
+            },
+            {
+              "symbol": "kT",
+              "description": "Energia térmica, produto da constante de Boltzmann pela temperatura absoluta, usada como escala de energia térmica (~0,026 eV a 300 K)"
+            },
+            {
+              "symbol": "E",
+              "description": "Energia do estado eletrônico em análise"
+            },
+            {
+              "symbol": "E_v",
+              "description": "Energia do topo da banda de valência, limite superior de validade desta expressão"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "density-of-states",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "density-of-states",
+            "valence-band",
+            "effective-density",
+            "carrier",
+            "band",
+            "energy",
+            "holes",
+            "concentration",
+            "state",
+            "Boltzmann",
+            "approximation",
+            "semiconductor",
+            "NV"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "density-of-states",
+            "graphParameters": [
+              "energy",
+              "density-of-states",
+              "valence-band-edge",
+              "constant-approximation"
+            ]
+          },
+          "relatedFormulas": [
+            "densidade-de-estados-banda-de-conducao",
+            "concentracao-de-buracos-p",
+            "concentracao-intrinseca-ni",
+            "Fermi-Dirac-distribution",
+            "N_V-effective-density",
+            "g_c(E)-conduction-band",
+            "hole-concentration-integral"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "2.8",
+      "text": "(a) Verify the text statement that, at 300 K,\\n\nN_{C,V} = (2.509 × 10^{19}/cm³)(m*/m_0)^{3/2}\\n\nwhere one sets m* = m_n* in computing N_C and m* = m_p* in computing N_V. m_0 = 9.11 × 10^{-31} kg; h = 6.624 × 10^{-34} joule-sec; and q = 1.602 × 10^{-19} coul.\\n\n(b) Using the effective mass values recorded in Table 2.1, construct a table which lists the numerical values of N_C and N_V for Si, Ge, and GaAs at 300 K.",
+      "formulas": [
+        {
+          "originalFormula": "N_{C,V} = (2.509 \\times 10^{19}/\\text{cm}^3)\\left(\\frac{m^*}{m_0}\\right)^{3/2}",
+          "genericFormula": "N_{C,V} = 2\\left(\\frac{2\\pi m^* k_B T}{h^2}\\right)^{3/2}",
+          "description": "Esta fórmula fornece a densidade efetiva de estados na banda de condução (N_C) ou na banda de valência (N_V) de um semicondutor à temperatura ambiente (T = 300 K). O fator numérico 2.509 × 10^19 cm^-3 é obtido avaliando a expressão geral da densidade efetiva de estados com a massa do elétron livre m_0 a 300 K. A densidade efetiva de estados representa o número de estados quânticos disponíveis por unidade de volume nas bordas das bandas de condução e valência, sendo fundamental para o cálculo das concentrações de portadores em equilíbrio. Quanto maior a massa efetiva m*, maior é a densidade de estados disponíveis, pois bandas mais 'pesadas' possuem maior curvatura invertida e acomodam mais estados por intervalo de energia. Esta fórmula é amplamente usada para calcular as concentrações de elétrons (n) e buracos (p) via distribuição de Fermi-Dirac na aproximação de Boltzmann.",
+          "concepts": [
+            "densidade efetiva de estados",
+            "banda de condução",
+            "banda de valência",
+            "massa efetiva",
+            "aproximação parabólica de banda",
+            "estatística de Fermi-Dirac",
+            "aproximação de Boltzmann",
+            "concentração de portadores",
+            "temperatura ambiente"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_{C,V}",
+              "description": "Densidade efetiva de estados na banda de condução (N_C) ou na banda de valência (N_V), em cm^-3"
+            },
+            {
+              "symbol": "2.509 \\times 10^{19}\\,\\text{cm}^{-3}",
+              "description": "Fator numérico calculado com a massa do elétron livre m_0 a T = 300 K"
+            },
+            {
+              "symbol": "m^*",
+              "description": "Massa efetiva do portador (elétron na banda de condução ou buraco na banda de valência)"
+            },
+            {
+              "symbol": "m_0",
+              "description": "Massa do elétron livre, m_0 = 9.109 × 10^-31 kg"
+            },
+            {
+              "symbol": "k_B",
+              "description": "Constante de Boltzmann, k_B = 1.381 × 10^-23 J/K"
+            },
+            {
+              "symbol": "T",
+              "description": "Temperatura absoluta em Kelvin (T = 300 K para o fator numérico dado)"
+            },
+            {
+              "symbol": "h",
+              "description": "Constante de Planck, h = 6.626 × 10^-34 J·s"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "density-of-states",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "density-of-states",
+            "effective-density",
+            "conduction-band",
+            "valence-band",
+            "effective-mass",
+            "carrier-concentration",
+            "band",
+            "state",
+            "energy",
+            "Boltzmann",
+            "Fermi-Dirac",
+            "semiconductor",
+            "equilibrium"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "density-of-states",
+            "graphParameters": [
+              "energy",
+              "density-of-states",
+              "effective-mass",
+              "temperature"
+            ]
+          },
+          "relatedFormulas": [
+            "Fermi-Dirac-distribution",
+            "carrier-concentration-n",
+            "carrier-concentration-p",
+            "intrinsic-carrier-concentration",
+            "Boltzmann-approximation",
+            "effective-mass-tensor",
+            "band-structure-parabolic"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "2.9",
+      "text": "Suppose m_n* in Si was somehow made smaller than m_p*. What effect would this reduction in m_n* have on the density of states in the conduction band, N_C, n_i, and the position of E_i at room temperature?",
+      "formulas": []
+    },
+    {
+      "number": "2.10",
+      "text": "Concentration questions with a reverse twist.\\n(a) A silicon wafer is uniformly doped p-type with N_A = 10^{15}/cm³. At T ≈ 0 K, what are the equilibrium hole and electron concentrations?\\n(b) A semiconductor is doped with an impurity concentration N such that N >> n_i and all the impurities are ionized. Also, n = N and p = n_i²/N. Is the impurity a donor or an acceptor? Explain.\\n(c) The electron concentration in a piece of Si maintained at 300 K under equilibrium conditions is 10^5/cm³. What is the hole concentration?\\n(d) For a silicon sample maintained at T = 300 K the Fermi level is located 0.26 eV above the intrinsic Fermi level. What are the hole and electron concentrations?",
+      "formulas": [
+        {
+          "originalFormula": "p = \\frac{n_i^2}{N}",
+          "genericFormula": "p = \\frac{n_i^2}{N_D}",
+          "description": "Esta fórmula representa a concentração de portadores minoritários (buracos) em um semicondutor tipo N, derivada da lei de ação de massas. A lei de ação de massas estabelece que o produto das concentrações de elétrons e buracos é constante em equilíbrio térmico: n·p = n_i². Em um semicondutor tipo N fortemente dopado, onde a concentração de elétrons é aproximada pela concentração de doadores (n ≈ N_D), a concentração de buracos (portadores minoritários) é obtida dividindo n_i² pela concentração de doadores. Esta relação é fundamental para o cálculo de correntes de difusão de minoritários em dispositivos como diodos p-n e transistores bipolares.",
+          "concepts": [
+            "lei de ação de massas",
+            "portadores minoritários",
+            "equilíbrio térmico",
+            "semicondutor tipo N",
+            "concentração intrínseca",
+            "dopagem por doadores",
+            "neutralidade de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "p",
+              "description": "Concentração de buracos (portadores minoritários) no semicondutor tipo N, em cm⁻³"
+            },
+            {
+              "symbol": "n_i",
+              "description": "Concentração intrínseca de portadores, que depende da temperatura e do material (ex: ~1,5×10¹⁰ cm⁻³ para Si a 300 K)"
+            },
+            {
+              "symbol": "N_D",
+              "description": "Concentração de átomos doadores (dopantes tipo N) ionizados, em cm⁻³, que determina a concentração de elétrons majoritários"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-concentration",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "carrier",
+            "minority",
+            "concentration",
+            "holes",
+            "intrinsic",
+            "doping",
+            "mass-action-law",
+            "thermal-equilibrium",
+            "n-type",
+            "semiconductor"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-concentration",
+            "graphParameters": [
+              "temperature",
+              "doping-concentration",
+              "minority-carrier-concentration"
+            ]
+          },
+          "relatedFormulas": [
+            "mass-action-law: n·p = n_i²",
+            "electron-concentration: n = N_D",
+            "intrinsic-concentration: n_i",
+            "Fermi-Dirac distribution",
+            "charge-neutrality: n + N_A = p + N_D"
+          ]
+        }
+      ]
+    }
+  ],
+  "answers": [],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "E_{H} = -\\frac{m_0 q^4}{2(4\\pi\\epsilon_0 \\hbar \\mathbf{n})^2} = -\\frac{13.6}{\\mathbf{n}^2} \\text{ eV}, \\quad \\mathbf{n} = 1, 2, 3, \\ldots",
+      "genericFormula": "E_{n} = -\\frac{m_e q^4}{2(4\\pi\\epsilon_0 \\hbar)^2} \\cdot \\frac{1}{n^2} = -\\frac{E_1}{n^2}",
+      "description": "Esta fórmula descreve os níveis de energia quantizados do átomo de hidrogênio, conhecidos como níveis de Bohr. Ela representa a energia total (cinética + potencial) do elétron em uma órbita estacionária de número quântico principal n. O valor negativo indica que o elétron está em um estado ligado ao próton. Para n=1, o elétron ocupa o estado fundamental com energia de -13,6 eV (estado mais estável). Para n→∞, a energia se aproxima de zero, correspondendo à ionização completa do átomo. As transições entre níveis geram ou absorvem fótons com energia igual à diferença entre os níveis, dando origem às séries espectrais do hidrogênio (Lyman, Balmer, Paschen, etc.). Esta expressão é derivada tanto do modelo semi-clássico de Bohr quanto da solução exata da equação de Schrödinger para o potencial coulombiano.",
+      "concepts": [
+        "Quantização de energia",
+        "Modelo de Bohr",
+        "Átomo de hidrogênio",
+        "Número quântico principal",
+        "Estado fundamental",
+        "Energia de ionização",
+        "Potencial coulombiano",
+        "Espectro atômico",
+        "Equação de Schrödinger",
+        "Constante de Rydberg",
+        "Séries espectrais",
+        "Estado ligado"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{n}",
+          "description": "Energia do nível quântico n do átomo de hidrogênio, em elétron-volts (eV) ou Joules"
+        },
+        {
+          "symbol": "m_0",
+          "description": "Massa de repouso do elétron: m_0 ≈ 9,109 × 10⁻³¹ kg"
+        },
+        {
+          "symbol": "q",
+          "description": "Carga elementar do elétron: q ≈ 1,602 × 10⁻¹⁹ C"
+        },
+        {
+          "symbol": "\\epsilon_0",
+          "description": "Permissividade elétrica do vácuo: ε₀ ≈ 8,854 × 10⁻¹² F/m"
+        },
+        {
+          "symbol": "\\hbar",
+          "description": "Constante de Planck reduzida (h-barra): ħ = h/(2π) ≈ 1,055 × 10⁻³⁴ J·s"
+        },
+        {
+          "symbol": "n",
+          "description": "Número quântico principal: n = 1, 2, 3, ... — define o nível de energia e o tamanho da órbita"
+        },
+        {
+          "symbol": "E_1",
+          "description": "Energia do estado fundamental (n=1): E₁ = -13,6 eV, correspondente à menor energia possível do elétron no átomo de hidrogênio"
+        },
+        {
+          "symbol": "-13.6 \\text{ eV}",
+          "description": "Energia de Rydberg em elétron-volts; representa a energia de ionização do estado fundamental do hidrogênio"
+        },
+        {
+          "symbol": "4\\pi\\epsilon_0",
+          "description": "Fator de normalização da permissividade no sistema SI, presente na forma do potencial coulombiano"
+        }
+      ],
+      "taxonomy": {
+        "category": "quantum-physics",
+        "subcategory": "energy-levels",
+        "domain": "atomic-physics"
+      },
+      "keywords": [
+        "energy",
+        "level",
+        "hydrogen",
+        "bohr",
+        "quantization",
+        "quantum-number",
+        "state",
+        "ground-state",
+        "ionization",
+        "coulomb",
+        "rydberg",
+        "transition",
+        "spectral",
+        "atomic",
+        "bound-state",
+        "wave-function",
+        "electron"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-levels",
+        "graphParameters": [
+          "quantum-number n",
+          "energy (eV)",
+          "ionization threshold",
+          "ground state energy",
+          "spectral transitions"
+        ]
+      },
+      "relatedFormulas": [
+        "Schrodinger-equation",
+        "Bohr-radius",
+        "Rydberg-constant",
+        "Photon-energy-transition",
+        "Balmer-series",
+        "Hydrogen-wavefunction",
+        "Coulomb-potential",
+        "Fermi-Dirac-distribution"
+      ]
+    },
+    {
+      "originalFormula": "E_G = E_c - E_v",
+      "genericFormula": "E_G = E_c - E_v",
+      "description": "O gap de energia (ou bandgap) E_G representa a diferença de energia entre o mínimo da banda de condução (E_c) e o máximo da banda de valência (E_v). É uma das propriedades mais fundamentais dos semicondutores e isolantes, determinando se o material é condutor, semicondutor ou isolante. Em semicondutores, o bandgap é finito e relativamente pequeno (tipicamente 0,1 a 3 eV), permitindo excitação térmica ou óptica de elétrons da banda de valência para a banda de condução. O bandgap pode ser direto (mínimo de E_c e máximo de E_v no mesmo ponto k do espaço recíproco) ou indireto (em pontos k diferentes), o que afeta diretamente as propriedades ópticas e eletrônicas do material.",
+      "concepts": [
+        "bandgap",
+        "banda de condução",
+        "banda de valência",
+        "estrutura de bandas",
+        "semicondutores",
+        "isolantes",
+        "excitação eletrônica",
+        "energia proibida",
+        "transição óptica",
+        "espaço recíproco"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_G",
+          "description": "Gap de energia (bandgap): diferença de energia entre a banda de condução e a banda de valência, geralmente expressa em elétron-volts (eV)"
+        },
+        {
+          "symbol": "E_c",
+          "description": "Energia do mínimo da banda de condução: nível de energia mais baixo disponível para elétrons livres na banda de condução"
+        },
+        {
+          "symbol": "E_v",
+          "description": "Energia do máximo da banda de valência: nível de energia mais alto ocupado por elétrons na banda de valência a 0 K"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "band-structure",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "bandgap",
+        "energy",
+        "band",
+        "conduction",
+        "valence",
+        "gap",
+        "semiconductor",
+        "insulator",
+        "forbidden",
+        "transition",
+        "optical",
+        "electronic",
+        "level",
+        "state"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "energy",
+          "momentum",
+          "wave-vector k",
+          "conduction band edge",
+          "valence band edge",
+          "bandgap width"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac distribution",
+        "effective-mass approximation",
+        "carrier concentration intrinsic",
+        "density-of-states",
+        "optical absorption coefficient",
+        "Kronig-Penney model",
+        "Bloch theorem"
+      ]
+    },
+    {
+      "originalFormula": "T = 0 \\text{ K}",
+      "genericFormula": "T = 0 \\text{ K}",
+      "description": "O zero absoluto de temperatura (T = 0 K) é o limite inferior teórico da escala de temperatura, equivalente a -273,15 °C. Nesta condição, um sistema quântico ocupa seu estado de menor energia possível (estado fundamental). Em semicondutores, a T = 0 K todos os elétrons estão na banda de valência e nenhum portador livre existe na banda de condução. Em sistemas quânticos, o Princípio da Incerteza de Heisenberg garante que mesmo a T = 0 K existe energia de ponto zero, impedindo que as partículas fiquem completamente em repouso. Na distribuição de Fermi-Dirac, T = 0 K representa o caso ideal onde a função de distribuição se torna uma função degrau: todos os estados abaixo do nível de Fermi estão completamente preenchidos e todos acima estão completamente vazios.",
+      "concepts": [
+        "zero absoluto",
+        "temperatura termodinâmica",
+        "estado fundamental",
+        "energia de ponto zero",
+        "terceira lei da termodinâmica",
+        "distribuição de Fermi-Dirac",
+        "princípio da incerteza de Heisenberg",
+        "semicondutores intrínsecos",
+        "escala Kelvin"
+      ],
+      "symbols": [
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta, medida em Kelvin (K)"
+        },
+        {
+          "symbol": "0 \\text{ K}",
+          "description": "Zero absoluto de temperatura, equivalente a -273,15 °C ou 0 °C - 273,15"
+        }
+      ],
+      "taxonomy": {
+        "category": "quantum-physics",
+        "subcategory": "thermodynamic-conditions",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "temperature",
+        "absolute-zero",
+        "ground-state",
+        "Fermi-Dirac",
+        "zero-point-energy",
+        "Kelvin",
+        "thermal-equilibrium",
+        "band",
+        "carrier",
+        "distribution",
+        "energy",
+        "state"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "distribution",
+        "graphParameters": [
+          "energy",
+          "temperature",
+          "Fermi-Dirac distribution",
+          "occupation probability"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac distribution",
+        "Heisenberg uncertainty principle",
+        "zero-point energy",
+        "Boltzmann distribution",
+        "carrier concentration",
+        "band structure"
+      ]
+    },
+    {
+      "originalFormula": "\\mathbf{F} = -q\\mathscr{E} = m_0 \\frac{dv}{dt}",
+      "genericFormula": "\\mathbf{F} = -q\\mathscr{E} = m_0 \\frac{dv}{dt}",
+      "description": "Esta fórmula expressa a Segunda Lei de Newton aplicada a uma partícula carregada sob ação de um campo elétrico. A força elétrica sobre uma carga q num campo elétrico \\mathscr{E} é dada por F = -q\\mathscr{E}, onde o sinal negativo indica que elétrons (carga negativa) se movem em sentido oposto ao campo. Essa força resulta numa aceleração da partícula de massa de repouso m_0, expressa pela taxa de variação temporal da velocidade dv/dt. No contexto de semicondutores, esta relação é o ponto de partida para descrever o transporte clássico de portadores de carga (elétrons e lacunas) sob ação de campos elétricos aplicados, sendo a base para derivar grandezas como mobilidade e corrente de deriva.",
+      "concepts": [
+        "Segunda Lei de Newton",
+        "Força elétrica",
+        "Campo elétrico",
+        "Transporte de portadores",
+        "Dinâmica de partículas carregadas",
+        "Aceleração de portadores",
+        "Corrente de deriva",
+        "Mobilidade de portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\mathbf{F}",
+          "description": "Força resultante sobre a partícula carregada (vetor), em Newtons (N)"
+        },
+        {
+          "symbol": "q",
+          "description": "Carga elétrica da partícula, em Coulombs (C). Para elétrons, q = -e, onde e = 1.6 × 10⁻¹⁹ C"
+        },
+        {
+          "symbol": "\\mathscr{E}",
+          "description": "Campo elétrico aplicado (vetor), em Volts por metro (V/m)"
+        },
+        {
+          "symbol": "m_0",
+          "description": "Massa de repouso da partícula (no vácuo, massa do elétron m_0 = 9.11 × 10⁻³¹ kg; em semicondutores, substituída pela massa efetiva m*)"
+        },
+        {
+          "symbol": "\\frac{dv}{dt}",
+          "description": "Aceleração da partícula, taxa de variação temporal da velocidade v, em metros por segundo ao quadrado (m/s²)"
+        },
+        {
+          "symbol": "v",
+          "description": "Velocidade da partícula carregada, em metros por segundo (m/s)"
+        },
+        {
+          "symbol": "t",
+          "description": "Tempo, em segundos (s)"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-transport",
+        "domain": "device-physics"
+      },
+      "keywords": [
+        "carrier",
+        "transport",
+        "electric-field",
+        "force",
+        "acceleration",
+        "drift",
+        "mobility",
+        "momentum",
+        "Newton",
+        "charge",
+        "electron",
+        "hole",
+        "current",
+        "conductivity"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "velocity-field",
+        "graphParameters": [
+          "velocity",
+          "electric-field",
+          "time",
+          "force"
+        ]
+      },
+      "relatedFormulas": [
+        "drift-velocity",
+        "carrier-mobility",
+        "Ohm-law",
+        "drift-current-density",
+        "effective-mass",
+        "Newton-second-law-effective-mass",
+        "Lorentz-force"
+      ]
+    },
+    {
+      "originalFormula": "E_G = 1.42 \\text{ eV (GaAs)}",
+      "genericFormula": "E_G",
+      "description": "O gap de energia (ou bandgap) do arseneto de gálio (GaAs) é de 1,42 eV à temperatura ambiente (300 K). O bandgap representa a diferença de energia entre o topo da banda de valência e o fundo da banda de condução. No GaAs, trata-se de um gap direto, ou seja, o mínimo da banda de condução e o máximo da banda de valência ocorrem no mesmo ponto do espaço k (ponto Γ), o que torna o GaAs altamente eficiente para emissão e absorção de luz. Esse valor de bandgap corresponde a comprimentos de onda na faixa do infravermelho próximo (~873 nm), sendo fundamental para aplicações em LEDs, lasers semicondutores e células solares de alta eficiência.",
+      "concepts": [
+        "bandgap",
+        "gap de energia direto",
+        "banda de valência",
+        "banda de condução",
+        "arseneto de gálio",
+        "semicondutor III-V",
+        "ponto Γ",
+        "emissão óptica",
+        "absorção óptica",
+        "estrutura de bandas"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_G",
+          "description": "Energia do gap (bandgap): diferença de energia entre o topo da banda de valência e o fundo da banda de condução, medida em elétron-volts (eV)"
+        },
+        {
+          "symbol": "\\text{eV}",
+          "description": "Elétron-volt: unidade de energia equivalente a 1,602 × 10⁻¹⁹ J, amplamente utilizada em física de semicondutores e física quântica"
+        },
+        {
+          "symbol": "\\text{GaAs}",
+          "description": "Arseneto de Gálio: semicondutor composto da família III-V, com bandgap direto de 1,42 eV a 300 K, amplamente usado em dispositivos optoeletrônicos"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "band-structure",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "bandgap",
+        "energy",
+        "gap",
+        "band",
+        "GaAs",
+        "direct-gap",
+        "III-V",
+        "optoelectronics",
+        "conduction",
+        "valence",
+        "semiconductor",
+        "photon",
+        "laser",
+        "LED"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "energy",
+          "momentum",
+          "wave-vector k",
+          "conduction band",
+          "valence band",
+          "bandgap"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac distribution",
+        "carrier concentration intrinsic",
+        "photon energy E = hf",
+        "effective density of states",
+        "Varshni equation E_G(T)",
+        "absorption coefficient",
+        "Kronig-Penney model"
+      ]
+    },
+    {
+      "originalFormula": "E_G = 1.12 \\text{ eV (Si)}",
+      "genericFormula": "E_G",
+      "description": "O gap de energia (ou bandgap) E_G representa a diferença de energia entre o topo da banda de valência e o fundo da banda de condução em um semicondutor. Para o Silício (Si), esse valor é de 1,12 eV a temperatura ambiente (300 K). O bandgap é uma das propriedades mais fundamentais de um semicondutor, pois determina a energia mínima necessária para que um elétron seja promovido da banda de valência para a banda de condução, tornando-se um portador de carga livre. Um valor de 1,12 eV coloca o Si como um semicondutor de gap indireto, o que significa que a transição entre bandas também envolve uma mudança no vetor de onda k (momento cristalino), exigindo a participação de fônons. O bandgap influencia diretamente a concentração intrínseca de portadores, a condutividade elétrica, a absorção óptica e o desempenho de dispositivos como diodos, transistores e células solares.",
+      "concepts": [
+        "gap de energia",
+        "bandgap",
+        "banda de valência",
+        "banda de condução",
+        "semicondutor de gap indireto",
+        "transição eletrônica",
+        "fônons",
+        "concentração intrínseca de portadores",
+        "estrutura de bandas",
+        "silício"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_G",
+          "description": "Gap de energia (bandgap): diferença de energia entre o topo da banda de valência e o fundo da banda de condução, medida em elétron-volts (eV)"
+        },
+        {
+          "symbol": "\\text{eV}",
+          "description": "Elétron-volt: unidade de energia equivalente a aproximadamente 1,602 × 10⁻¹⁹ joules, usada convencionalmente em física de semicondutores e física atômica"
+        },
+        {
+          "symbol": "\\text{Si}",
+          "description": "Silício: elemento semicondutor de número atômico 14, material base da microeletrônica moderna, com bandgap indireto de 1,12 eV a 300 K"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "band-structure",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "bandgap",
+        "energy",
+        "gap",
+        "band",
+        "silicon",
+        "Si",
+        "conduction",
+        "valence",
+        "indirect-gap",
+        "semiconductor",
+        "intrinsic",
+        "carrier",
+        "eV",
+        "transition",
+        "phonon"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "energy",
+          "momentum",
+          "wave-vector k",
+          "conduction band edge",
+          "valence band edge",
+          "bandgap"
+        ]
+      },
+      "relatedFormulas": [
+        "concentracao-intrinseca-ni",
+        "Fermi-Dirac-distribution",
+        "effective-density-of-states",
+        "carrier-concentration-np",
+        "absorption-coefficient",
+        "Varshni-equation-Eg-T"
+      ]
+    },
+    {
+      "originalFormula": "E_G = 0.66 \\text{ eV (Ge)}",
+      "genericFormula": "E_G",
+      "description": "O gap de energia (ou largura da banda proibida) do Germânio (Ge) à temperatura ambiente (~300 K) é de aproximadamente 0,66 eV. Esta grandeza representa a diferença de energia entre o topo da banda de valência e o fundo da banda de condução. O gap de energia é um parâmetro fundamental que determina as propriedades elétricas e ópticas de um semicondutor. Materiais com E_G menor, como o Ge, possuem maior geração térmica de portadores, tornando-os úteis em aplicações de baixa frequência e detectores infravermelhos. O Ge foi o primeiro material semicondutor amplamente utilizado na fabricação de transistores.",
+      "concepts": [
+        "gap de energia",
+        "banda proibida",
+        "banda de valência",
+        "banda de condução",
+        "semicondutor elementar",
+        "temperatura ambiente",
+        "estrutura de bandas",
+        "geração térmica de portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_G",
+          "description": "Gap de energia (energia da banda proibida): diferença de energia entre o topo da banda de valência e o fundo da banda de condução, medida em elétron-volts (eV)"
+        },
+        {
+          "symbol": "\\text{eV}",
+          "description": "Elétron-volt: unidade de energia equivalente a 1,602 × 10⁻¹⁹ J, amplamente utilizada em física de semicondutores"
+        },
+        {
+          "symbol": "\\text{Ge}",
+          "description": "Germânio: elemento semicondutor do grupo IV da tabela periódica, número atômico 32, com estrutura cristalina do tipo diamante"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "band-structure",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "bandgap",
+        "energy",
+        "gap",
+        "band",
+        "germanium",
+        "Ge",
+        "semiconductor",
+        "valence",
+        "conduction",
+        "forbidden",
+        "intrinsic",
+        "material-parameter"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "energy",
+          "band-gap",
+          "valence-band",
+          "conduction-band",
+          "temperature"
+        ]
+      },
+      "relatedFormulas": [
+        "E_G-Si",
+        "E_G-GaAs",
+        "E_G-temperature-dependence",
+        "intrinsic-carrier-concentration",
+        "Fermi-Dirac-distribution",
+        "ni-Germanium",
+        "effective-mass-Ge"
+      ]
+    },
+    {
+      "originalFormula": "q = 1.6 \\times 10^{-19} \\text{ coul}",
+      "genericFormula": "q = e",
+      "description": "A carga elementar q (ou e) é uma das constantes fundamentais da natureza. Representa a menor quantidade de carga elétrica livre observada isoladamente na natureza, sendo a carga de um único próton (positiva) ou a magnitude da carga de um único elétron (negativa). Em física de semicondutores, esta constante é ubíqua: aparece no cálculo de correntes de portadores, na equação de drift, na energia de ligação de dopantes, na tensão de built-in de junções p-n, e em praticamente todas as relações que envolvem transporte de carga. Em mecânica quântica, define a interação entre partículas carregadas e campos eletromagnéticos, aparecendo no Hamiltoniano de interação e nas condições de quantização.",
+      "concepts": [
+        "carga elétrica elementar",
+        "constante fundamental",
+        "quantização da carga",
+        "portadores de carga",
+        "elétron",
+        "próton",
+        "transporte de carga em semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "q",
+          "description": "Carga elementar (magnitude da carga do elétron ou do próton): q = 1.6 × 10⁻¹⁹ coulombs"
+        },
+        {
+          "symbol": "e",
+          "description": "Notação alternativa para a carga elementar, frequentemente usada em física atômica e quântica"
+        },
+        {
+          "symbol": "\\text{coul}",
+          "description": "Coulomb (C): unidade SI de carga elétrica"
+        }
+      ],
+      "taxonomy": {
+        "category": "quantum-physics",
+        "subcategory": "fundamental-constants",
+        "domain": "atomic-physics"
+      },
+      "keywords": [
+        "charge",
+        "elementary-charge",
+        "electron",
+        "proton",
+        "coulomb",
+        "fundamental-constant",
+        "carrier",
+        "quantization",
+        "transport",
+        "current",
+        "energy"
+      ],
+      "graphVisualization": {
+        "hasGraph": false,
+        "graphType": null,
+        "graphParameters": []
+      },
+      "relatedFormulas": [
+        "Ohm's Law (J = sigma * E)",
+        "Drift Current (J = q * n * mu * E)",
+        "Built-in Voltage (V_bi)",
+        "Bohr Model Energy Levels",
+        "Coulomb's Law",
+        "Fermi-Dirac Distribution",
+        "Einstein Relation (D = mu * kT/q)"
+      ]
+    },
+    {
+      "originalFormula": "n = \\text{number of electrons/cm}^3",
+      "genericFormula": "n = \\frac{N_e}{V}",
+      "description": "A concentração de elétrons 'n' representa o número de elétrons livres por unidade de volume (cm³) em um material semicondutor ou condutor. É uma das grandezas fundamentais na física de semicondutores, pois determina as propriedades elétricas do material. Em semicondutores intrínsecos, 'n' é igual à concentração de lacunas 'p'. Em semicondutores do tipo-N, 'n' é muito maior que 'p'. Essa grandeza é essencial para calcular correntes, condutividade e comportamento de dispositivos eletrônicos.",
+      "concepts": [
+        "concentração de portadores",
+        "elétrons livres",
+        "densidade de portadores",
+        "semicondutor intrínseco",
+        "semicondutor tipo-N",
+        "portadores majoritários",
+        "portadores minoritários",
+        "equilíbrio térmico"
+      ],
+      "symbols": [
+        {
+          "symbol": "n",
+          "description": "Concentração de elétrons livres no material (número de elétrons por cm³)"
+        },
+        {
+          "symbol": "N_e",
+          "description": "Número total de elétrons livres em um volume V"
+        },
+        {
+          "symbol": "V",
+          "description": "Volume do material considerado (em cm³)"
+        },
+        {
+          "symbol": "\\text{cm}^{-3}",
+          "description": "Unidade de concentração volumétrica (por centímetro cúbico)"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "carrier",
+        "concentration",
+        "electron",
+        "density",
+        "n-type",
+        "intrinsic",
+        "majority",
+        "minority",
+        "equilibrium",
+        "semiconductor"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "carrier-concentration",
+        "graphParameters": [
+          "temperature",
+          "doping",
+          "energy",
+          "Fermi-level"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac",
+        "intrinsic-carrier-concentration",
+        "mass-action-law",
+        "charge-neutrality",
+        "drift-current",
+        "conductivity"
+      ]
+    },
+    {
+      "originalFormula": "p = \\text{number of holes/cm}^3",
+      "genericFormula": "p = \\frac{N_h}{V}",
+      "description": "A variável 'p' representa a concentração de buracos (holes) em um semicondutor, medida em número de buracos por centímetro cúbico (cm⁻³). Buracos são quasipartículas que representam a ausência de elétrons na banda de valência, comportando-se como portadores de carga positiva. Esta grandeza é fundamental para caracterizar semicondutores do tipo-p, onde os buracos são os portadores majoritários. A concentração de buracos determina as propriedades elétricas, ópticas e de transporte do material semicondutor.",
+      "concepts": [
+        "concentração de buracos",
+        "portadores de carga",
+        "semicondutor tipo-p",
+        "banda de valência",
+        "quasipartículas",
+        "densidade de portadores",
+        "equilíbrio termodinâmico"
+      ],
+      "symbols": [
+        {
+          "symbol": "p",
+          "description": "Concentração de buracos (holes) no semicondutor, expressa em número de buracos por cm³ (cm⁻³)"
+        },
+        {
+          "symbol": "N_h",
+          "description": "Número total de buracos em um volume V do semicondutor"
+        },
+        {
+          "symbol": "V",
+          "description": "Volume do semicondutor em cm³"
+        },
+        {
+          "symbol": "\\text{cm}^{-3}",
+          "description": "Unidade de concentração volumétrica (por centímetro cúbico)"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "holes",
+        "carrier",
+        "concentration",
+        "p-type",
+        "valence-band",
+        "density",
+        "hole-concentration",
+        "majority-carrier",
+        "semiconductor",
+        "charge-carrier"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "carrier-concentration",
+        "graphParameters": [
+          "temperature",
+          "doping-concentration",
+          "Fermi-level",
+          "hole-concentration"
+        ]
+      },
+      "relatedFormulas": [
+        "electron-concentration-n",
+        "mass-action-law",
+        "Fermi-Dirac-distribution",
+        "intrinsic-concentration",
+        "charge-neutrality",
+        "hole-density-of-states",
+        "p-type-doping"
+      ]
+    },
+    {
+      "originalFormula": "n = p = n_i \\quad (2.4)",
+      "genericFormula": "n = p = n_i",
+      "description": "Esta fórmula expressa a condição de neutralidade elétrica em um semicondutor intrínseco puro, onde a concentração de elétrons livres (n) é igual à concentração de buracos (p), e ambas são iguais à concentração intrínseca de portadores (n_i). Em um semicondutor intrínseco, como o silício puro, os portadores de carga são gerados exclusivamente pela excitação térmica de elétrons da banda de valência para a banda de condução, criando pares elétron-buraco em quantidades iguais. A concentração intrínseca n_i depende fortemente da temperatura e do gap de energia do material, e serve como referência fundamental para caracterizar o comportamento elétrico do semicondutor. Esta relação é válida apenas na ausência de dopantes e impurezas significativas.",
+      "concepts": [
+        "semicondutor intrínseco",
+        "concentração intrínseca de portadores",
+        "neutralidade elétrica",
+        "geração térmica de pares elétron-buraco",
+        "portadores de carga",
+        "banda de valência",
+        "banda de condução",
+        "equilíbrio termodinâmico"
+      ],
+      "symbols": [
+        {
+          "symbol": "n",
+          "description": "Concentração de elétrons livres na banda de condução (portadores majoritários negativos), medida em cm⁻³"
+        },
+        {
+          "symbol": "p",
+          "description": "Concentração de buracos na banda de valência (portadores majoritários positivos), medida em cm⁻³"
+        },
+        {
+          "symbol": "n_i",
+          "description": "Concentração intrínseca de portadores de carga, característica do material semicondutor a uma dada temperatura, medida em cm⁻³"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "intrinsic",
+        "carrier",
+        "concentration",
+        "electron",
+        "hole",
+        "neutrality",
+        "equilibrium",
+        "semiconductor",
+        "band",
+        "thermal",
+        "generation",
+        "n_i"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "carrier-concentration-vs-temperature",
+        "graphParameters": [
+          "carrier concentration",
+          "temperature",
+          "bandgap energy"
+        ]
+      },
+      "relatedFormulas": [
+        "mass-action-law",
+        "intrinsic-carrier-concentration",
+        "Fermi-Dirac",
+        "charge-neutrality",
+        "electron-hole-pair-generation",
+        "n_i-temperature-dependence"
+      ]
+    },
+    {
+      "originalFormula": "\\frac{dv}{dt}",
+      "genericFormula": "\\frac{dv}{dt} = a",
+      "description": "Representa a taxa de variação da velocidade em relação ao tempo, ou seja, a aceleração instantânea de uma partícula ou portador de carga. Em física de semicondutores, essa expressão é fundamental para descrever a dinâmica de elétrons e lacunas sob a ação de campos elétricos e magnéticos. Pela Segunda Lei de Newton, F = ma, temos que a = dv/dt, o que permite relacionar forças externas ao movimento dos portadores. Em transporte semicondutor, a equação de movimento do elétron sob campo elétrico E é m* dv/dt = -eE - mv/τ, onde τ é o tempo de relaxação do momento.",
+      "concepts": [
+        "aceleração instantânea",
+        "derivada temporal",
+        "dinâmica de portadores",
+        "equação de movimento",
+        "segunda lei de Newton",
+        "transporte de cargas",
+        "tempo de relaxação",
+        "campo elétrico aplicado"
+      ],
+      "symbols": [
+        {
+          "symbol": "v",
+          "description": "velocidade da partícula ou portador de carga (m/s)"
+        },
+        {
+          "symbol": "t",
+          "description": "tempo (s)"
+        },
+        {
+          "symbol": "\\frac{dv}{dt}",
+          "description": "derivada da velocidade em relação ao tempo, representando a aceleração instantânea a (m/s²)"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-transport",
+        "domain": "device-physics"
+      },
+      "keywords": [
+        "velocity",
+        "acceleration",
+        "carrier",
+        "transport",
+        "dynamics",
+        "momentum",
+        "drift",
+        "electric-field",
+        "Newton",
+        "relaxation"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "velocity-time",
+        "graphParameters": [
+          "velocity",
+          "time",
+          "acceleration",
+          "electric-field",
+          "relaxation-time"
+        ]
+      },
+      "relatedFormulas": [
+        "Newton-Second-Law",
+        "Drude-Model",
+        "carrier-drift-velocity",
+        "equation-of-motion-electron",
+        "momentum-relaxation",
+        "Boltzmann-transport-equation"
+      ]
+    },
+    {
+      "originalFormula": "\\rac{m_n^*}{m_0}, \\quad \\rac{m_p^*}{m_0}",
+      "genericFormula": "\\frac{m_n^*}{m_0}, \\quad \\frac{m_p^*}{m_0}",
+      "description": "As massas efetivas relativas dos elétrons (m_n*) e dos buracos (m_p*) são grandezas adimensionais que expressam a razão entre a massa efetiva do portador de carga no semicondutor e a massa de repouso do elétron livre (m_0 ≈ 9,109 × 10⁻³¹ kg). A massa efetiva é um conceito fundamental da física de semicondutores: ela captura o efeito da rede cristalina periódica sobre o movimento dos portadores, permitindo tratar elétrons e buracos como partículas 'quase-livres', mas com inércia diferente da partícula livre. Matematicamente, a massa efetiva é definida pela curvatura da banda de energia E(k) em relação ao vetor de onda k: m* = ℏ² / (d²E/dk²). Uma banda com grande curvatura (parabólica acentuada) corresponde a uma massa efetiva pequena (portadores leves e altamente móveis), enquanto uma curvatura pequena indica massa efetiva grande (portadores pesados e menos móveis). Esses parâmetros são essenciais para calcular concentração intrínseca de portadores, mobilidade, coeficiente de difusão, densidade de estados e frequências de ciclotron.",
+      "concepts": [
+        "massa efetiva",
+        "estrutura de bandas",
+        "aproximação de banda parabólica",
+        "portadores de carga",
+        "elétrons de condução",
+        "buracos de valência",
+        "densidade de estados",
+        "mobilidade de portadores",
+        "relação de dispersão E(k)",
+        "curvatura de banda",
+        "massa de repouso do elétron"
+      ],
+      "symbols": [
+        {
+          "symbol": "m_n^*",
+          "description": "Massa efetiva do elétron no semicondutor, determinada pela curvatura da banda de condução em k = 0"
+        },
+        {
+          "symbol": "m_p^*",
+          "description": "Massa efetiva do buraco no semicondutor, determinada pela curvatura da banda de valência em k = 0"
+        },
+        {
+          "symbol": "m_0",
+          "description": "Massa de repouso do elétron livre: m_0 ≈ 9,109 × 10⁻³¹ kg"
+        },
+        {
+          "symbol": "\\frac{m_n^*}{m_0}",
+          "description": "Razão adimensional da massa efetiva do elétron em relação à massa do elétron livre; tipicamente entre 0,01 e 1 para semicondutores comuns"
+        },
+        {
+          "symbol": "\\frac{m_p^*}{m_0}",
+          "description": "Razão adimensional da massa efetiva do buraco em relação à massa do elétron livre; em geral maior que a do elétron no mesmo material"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "band-structure",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "effective-mass",
+        "electron",
+        "hole",
+        "band",
+        "conduction",
+        "valence",
+        "band-structure",
+        "dispersion",
+        "density-of-states",
+        "mobility",
+        "carrier",
+        "semiconductor",
+        "parabolic-band",
+        "curvature",
+        "k-space"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "dispersion",
+        "graphParameters": [
+          "energy",
+          "wave-vector k",
+          "conduction band curvature",
+          "valence band curvature",
+          "effective mass"
+        ]
+      },
+      "relatedFormulas": [
+        "E(k) = E_c + \\frac{\\hbar^2 k^2}{2 m_n^*}",
+        "m^* = \\frac{\\hbar^2}{d^2E/dk^2}",
+        "n_i = \\sqrt{N_c N_v} \\exp\\left(-\\frac{E_g}{2k_BT}\\right)",
+        "N_c = 2\\left(\\frac{2\\pi m_n^* k_B T}{h^2}\\right)^{3/2}",
+        "N_v = 2\\left(\\frac{2\\pi m_p^* k_B T}{h^2}\\right)^{3/2}",
+        "\\mu_n = \\frac{q \\tau}{m_n^*}",
+        "\\omega_c = \\frac{qB}{m^*}"
+      ]
+    },
+    {
+      "originalFormula": "g_c(E) = \\frac{m_n^* \\sqrt{2m_n^*(E - E_c)}}{\\pi^2 \\hbar^3}, \\quad E \\geq E_c",
+      "genericFormula": "g_c(E) = \\frac{m_n^* \\sqrt{2m_n^*(E - E_c)}}{\\pi^2 \\hbar^3}",
+      "description": "A densidade de estados na banda de condução g_c(E) expressa o número de estados quânticos disponíveis por unidade de volume e por unidade de energia para elétrons com energia E acima da borda da banda de condução E_c. Derivada a partir do modelo de massa efetiva parabólica em 3D, essa expressão surge da contagem de estados em um volume esférico no espaço-k, convertida para o espaço de energia via relação de dispersão E(k) = ℏ²k²/2m_n*. A densidade cresce como raiz quadrada da energia medida a partir de E_c, o que é uma característica fundamental de sistemas tridimensionais. Essa função é essencial para calcular a concentração de elétrons na banda de condução quando combinada com a função de distribuição de Fermi-Dirac, e é a base para determinar propriedades elétricas, ópticas e de transporte em semicondutores.",
+      "concepts": [
+        "densidade de estados",
+        "banda de condução",
+        "massa efetiva",
+        "aproximação parabólica",
+        "relação de dispersão",
+        "espaço-k",
+        "estatística quântica",
+        "semicondutores",
+        "função de onda de Bloch",
+        "modelo de elétron livre modificado"
+      ],
+      "symbols": [
+        {
+          "symbol": "g_c(E)",
+          "description": "Densidade de estados na banda de condução, número de estados por unidade de volume por unidade de energia [J⁻¹ m⁻³]"
+        },
+        {
+          "symbol": "m_n^*",
+          "description": "Massa efetiva do elétron na banda de condução, reflete a curvatura da banda de energia"
+        },
+        {
+          "symbol": "E",
+          "description": "Energia do elétron [J ou eV]"
+        },
+        {
+          "symbol": "E_c",
+          "description": "Energia da borda inferior da banda de condução [J ou eV]"
+        },
+        {
+          "symbol": "\\hbar",
+          "description": "Constante de Planck reduzida, ℏ = h/2π ≈ 1,055 × 10⁻³⁴ J·s"
+        },
+        {
+          "symbol": "\\pi",
+          "description": "Constante matemática pi, aproximadamente 3,14159"
+        },
+        {
+          "symbol": "(E - E_c)",
+          "description": "Energia cinética do elétron medida a partir da borda da banda de condução"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "density-of-states",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "density-of-states",
+        "conduction-band",
+        "effective-mass",
+        "energy",
+        "band",
+        "carrier",
+        "state",
+        "parabolic-band",
+        "3D",
+        "electron-concentration",
+        "Fermi-Dirac",
+        "band-structure",
+        "energy-level"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "density-of-states",
+        "graphParameters": [
+          "energy",
+          "density-of-states",
+          "conduction-band-edge",
+          "effective-mass"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac-distribution",
+        "electron-concentration",
+        "density-of-states-valence-band",
+        "effective-density-of-states-Nc",
+        "dispersion-relation-parabolic",
+        "Schrodinger-equation",
+        "hole-density-of-states"
+      ]
+    },
+    {
+      "originalFormula": "g_v(E) = \\frac{m_p^* \\sqrt{2m_p^*(E_v - E)}}{\\pi^2 \\hbar^3}, \\quad E \\leq E_v",
+      "genericFormula": "g_v(E) = \\frac{m_p^* \\sqrt{2m_p^*(E_v - E)}}{\\pi^2 \\hbar^3}",
+      "description": "Esta fórmula descreve a densidade de estados (DOS) na banda de valência de um semicondutor com aproximação de massa efetiva parabólica. A densidade de estados g_v(E) representa o número de estados quânticos disponíveis por unidade de volume e por unidade de energia para buracos na banda de valência. A expressão é válida apenas para energias abaixo da borda da banda de valência (E ≤ E_v), onde os buracos existem. O fator raiz quadrada (E_v - E) reflete a relação de dispersão parabólica E(k) ∝ k², característica de portadores com massa efetiva constante. A massa efetiva dos buracos m_p* captura a curvatura da banda de valência e incorpora os efeitos da estrutura periódica do cristal sobre o movimento dos portadores. Esta fórmula é fundamental para calcular a concentração de buracos na banda de valência integrando-a ponderada pela função de distribuição de Fermi-Dirac, sendo essencial na análise de semicondutores tipo-p e no cálculo do nível de Fermi intrínseco.",
+      "concepts": [
+        "densidade de estados",
+        "banda de valência",
+        "massa efetiva de buracos",
+        "aproximação parabólica",
+        "relação de dispersão",
+        "estatística de portadores",
+        "física de semicondutores",
+        "buracos",
+        "estrutura de bandas",
+        "mecânica quântica em sólidos"
+      ],
+      "symbols": [
+        {
+          "symbol": "g_v(E)",
+          "description": "Densidade de estados na banda de valência em função da energia [J⁻¹·m⁻³ ou eV⁻¹·cm⁻³]"
+        },
+        {
+          "symbol": "m_p^*",
+          "description": "Massa efetiva dos buracos (portadores positivos) na banda de valência [kg]"
+        },
+        {
+          "symbol": "E",
+          "description": "Energia do estado quântico considerado [J ou eV]"
+        },
+        {
+          "symbol": "E_v",
+          "description": "Energia da borda superior da banda de valência [J ou eV]"
+        },
+        {
+          "symbol": "E_v - E",
+          "description": "Profundidade energética abaixo da borda da banda de valência, representando a energia do buraco medida a partir de E_v [J ou eV]"
+        },
+        {
+          "symbol": "\\hbar",
+          "description": "Constante de Planck reduzida (ħ = h/2π ≈ 1,055 × 10⁻³⁴ J·s)"
+        },
+        {
+          "symbol": "\\pi",
+          "description": "Constante matemática pi (≈ 3,14159)"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "density-of-states",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "density-of-states",
+        "valence-band",
+        "hole",
+        "effective-mass",
+        "band",
+        "carrier",
+        "energy",
+        "state",
+        "parabolic",
+        "concentration",
+        "semiconductor",
+        "Fermi-Dirac",
+        "band-structure",
+        "p-type"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "density-of-states",
+        "graphParameters": [
+          "energy",
+          "density-of-states",
+          "valence-band-edge",
+          "effective-mass"
+        ]
+      },
+      "relatedFormulas": [
+        "density-of-states-conduction-band",
+        "Fermi-Dirac-distribution",
+        "hole-concentration",
+        "effective-density-of-states-valence",
+        "intrinsic-carrier-concentration",
+        "Fermi-level-intrinsic",
+        "parabolic-dispersion-relation"
+      ]
+    },
+    {
+      "originalFormula": "f(E) = \\frac{1}{1 + e^{(E - E_F)/kT}}",
+      "genericFormula": "f(E) = \\frac{1}{1 + e^{(E - E_F)/k_BT}}",
+      "description": "A distribuição de Fermi-Dirac descreve a probabilidade de um estado quântico de energia E estar ocupado por um férmion (elétron) em equilíbrio termodinâmico. É uma das distribuições estatísticas fundamentais da física quântica e governa o comportamento elétrico de metais e semicondutores. Quando E = E_F, a probabilidade de ocupação é exatamente 1/2, independentemente da temperatura. Para temperaturas muito baixas (T → 0), a distribuição se aproxima de uma função degrau: todos os estados abaixo de E_F estão completamente ocupados e todos acima estão vazios. À temperatura ambiente, a distribuição é suavizada pelo fator térmico kT ≈ 0,026 eV. Esta fórmula é essencial para calcular a concentração de portadores em semicondutores, determinar a posição do nível de Fermi e analisar o transporte eletrônico em dispositivos.",
+      "concepts": [
+        "distribuição de Fermi-Dirac",
+        "estatística quântica",
+        "férmions",
+        "princípio de exclusão de Pauli",
+        "nível de Fermi",
+        "equilíbrio termodinâmico",
+        "probabilidade de ocupação",
+        "energia térmica",
+        "degenerescência",
+        "potencial químico"
+      ],
+      "symbols": [
+        {
+          "symbol": "f(E)",
+          "description": "Função de distribuição de Fermi-Dirac: probabilidade de ocupação de um estado de energia E por um elétron, assumindo valores entre 0 e 1"
+        },
+        {
+          "symbol": "E",
+          "description": "Energia do estado quântico considerado, em elétron-volts (eV) ou joules (J)"
+        },
+        {
+          "symbol": "E_F",
+          "description": "Nível de Fermi (ou energia de Fermi): energia para a qual a probabilidade de ocupação é exatamente 1/2; equivale ao potencial químico dos elétrons em equilíbrio"
+        },
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann: k_B = 1,381 × 10⁻²³ J/K = 8,617 × 10⁻⁵ eV/K; relaciona energia térmica à temperatura absoluta"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta do sistema em kelvin (K); à temperatura ambiente T ≈ 300 K, resultando em k_BT ≈ 0,026 eV"
+        },
+        {
+          "symbol": "e",
+          "description": "Base do logaritmo natural (número de Euler): e ≈ 2,71828"
+        },
+        {
+          "symbol": "k_BT",
+          "description": "Energia térmica do sistema: representa a escala de energia das flutuações térmicas; determina a 'largura' da transição na distribuição de Fermi-Dirac"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-statistics",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "Fermi-Dirac",
+        "distribution",
+        "occupation",
+        "probability",
+        "Fermi-level",
+        "energy",
+        "temperature",
+        "carrier",
+        "concentration",
+        "equilibrium",
+        "statistics",
+        "fermion",
+        "electron",
+        "band",
+        "semiconductor",
+        "thermal",
+        "chemical-potential"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "occupation-probability",
+        "graphParameters": [
+          "energy",
+          "temperature",
+          "Fermi-level",
+          "occupation-probability"
+        ]
+      },
+      "relatedFormulas": [
+        "Bose-Einstein-distribution",
+        "Maxwell-Boltzmann-distribution",
+        "carrier-concentration-electrons",
+        "carrier-concentration-holes",
+        "density-of-states",
+        "intrinsic-carrier-concentration",
+        "charge-neutrality",
+        "Fermi-level-semiconductor"
+      ]
+    },
+    {
+      "originalFormula": "E_F = \\text{Fermi energy or Fermi level}",
+      "genericFormula": "E_F",
+      "description": "O nível de Fermi (E_F) é um dos conceitos mais fundamentais na física do estado sólido e dos semicondutores. Ele representa o potencial químico dos elétrons a temperatura zero absoluto (T = 0 K), ou seja, é a energia máxima que os elétrons podem ocupar em um sistema de férmions em equilíbrio termodinâmico a T = 0 K. A temperatura ambiente (T > 0 K), o nível de Fermi corresponde à energia na qual a probabilidade de ocupação de um estado eletrônico é exatamente 1/2, conforme a distribuição de Fermi-Dirac. Em metais, E_F está dentro da banda de condução. Em semicondutores intrínsecos, E_F localiza-se aproximadamente no meio do gap de energia entre a banda de valência e a banda de condução. Em semicondutores dopados tipo-n, E_F se desloca em direção à banda de condução; em semicondutores tipo-p, move-se em direção à banda de valência. O nível de Fermi é essencial para determinar as propriedades elétricas, ópticas e térmicas de materiais sólidos.",
+      "concepts": [
+        "Nível de Fermi",
+        "Energia de Fermi",
+        "Potencial químico eletrônico",
+        "Distribuição de Fermi-Dirac",
+        "Estatística de Fermi-Dirac",
+        "Férmions",
+        "Princípio de exclusão de Pauli",
+        "Equilíbrio termodinâmico",
+        "Estrutura de bandas",
+        "Semicondutores intrínsecos e extrínsecos"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_F",
+          "description": "Nível de Fermi ou Energia de Fermi: a energia do estado eletrônico com probabilidade de ocupação igual a 1/2 em equilíbrio termodinâmico; equivale ao potencial químico dos elétrons a T = 0 K"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "energy-levels",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "Fermi",
+        "energy",
+        "level",
+        "Fermi-level",
+        "Fermi-energy",
+        "chemical-potential",
+        "band",
+        "gap",
+        "state",
+        "occupation",
+        "equilibrium",
+        "semiconductor",
+        "carrier",
+        "distribution",
+        "Fermi-Dirac"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "energy",
+          "band-gap",
+          "conduction-band",
+          "valence-band",
+          "Fermi-level-position",
+          "doping-type"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac distribution",
+        "Carrier concentration (n, p)",
+        "Intrinsic Fermi level (E_i)",
+        "Density of states",
+        "np product (mass action law)",
+        "Boltzmann approximation",
+        "Built-in potential (V_bi)"
+      ]
+    },
+    {
+      "originalFormula": "k = 8.62 \\times 10^{-5} \\text{ eV/K}",
+      "genericFormula": "k_B = \\frac{R}{N_A}",
+      "description": "A constante de Boltzmann (k_B) é uma constante física fundamental que estabelece a relação entre a energia térmica e a temperatura absoluta de um sistema. Ela aparece em praticamente todas as equações que relacionam fenômenos macroscópicos (temperatura) com fenômenos microscópicos (energia de partículas individuais). Em física de semicondutores, é especialmente importante para calcular distribuições de portadores, concentrações de equilíbrio, tensões de junção e correntes em dispositivos. O valor 8.62 × 10⁻⁵ eV/K é a forma mais conveniente para uso em semicondutores, pois as energias de bandas são tipicamente expressas em elétron-volts. À temperatura ambiente (T = 300 K), o produto k_B·T ≈ 0.02585 eV ≈ 26 meV, conhecido como 'tensão térmica' ou energia térmica, é uma referência fundamental para determinar se portadores possuem energia suficiente para superar barreiras de potencial.",
+      "concepts": [
+        "constante de Boltzmann",
+        "energia térmica",
+        "temperatura absoluta",
+        "distribuição de Maxwell-Boltzmann",
+        "distribuição de Fermi-Dirac",
+        "equilíbrio termodinâmico",
+        "estatística quântica",
+        "tensão térmica",
+        "física clássica e quântica"
+      ],
+      "symbols": [
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann, valor: 8.62 × 10⁻⁵ eV/K ou 1.381 × 10⁻²³ J/K"
+        },
+        {
+          "symbol": "R",
+          "description": "Constante universal dos gases ideais, R = 8.314 J/(mol·K)"
+        },
+        {
+          "symbol": "N_A",
+          "description": "Número de Avogadro, N_A = 6.022 × 10²³ mol⁻¹"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta em Kelvin (K)"
+        },
+        {
+          "symbol": "k_B T",
+          "description": "Energia térmica do sistema; a 300 K vale aproximadamente 26 meV"
+        },
+        {
+          "symbol": "\\text{eV}",
+          "description": "Elétron-volt, unidade de energia conveniente para semicondutores: 1 eV = 1.602 × 10⁻¹⁹ J"
+        }
+      ],
+      "taxonomy": {
+        "category": "quantum-physics",
+        "subcategory": "fundamental-constants",
+        "domain": "statistical-mechanics"
+      },
+      "keywords": [
+        "Boltzmann",
+        "thermal energy",
+        "temperature",
+        "constant",
+        "kT",
+        "equilibrium",
+        "statistics",
+        "Fermi-Dirac",
+        "Maxwell-Boltzmann",
+        "carrier",
+        "distribution",
+        "energy",
+        "semiconductor",
+        "junction",
+        "barrier"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "thermal-energy",
+        "graphParameters": [
+          "temperature",
+          "thermal-energy",
+          "kT"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac distribution",
+        "Maxwell-Boltzmann distribution",
+        "thermal voltage",
+        "intrinsic carrier concentration",
+        "Boltzmann approximation",
+        "carrier concentration",
+        "Einstein relation",
+        "Planck distribution"
+      ]
+    },
+    {
+      "originalFormula": "T \\rightarrow 0 \\text{ K}: \\frac{E - E_F}{kT} \\rightarrow -\\infty \\text{ for all energies } E < E_F",
+      "genericFormula": "\\lim_{T \\to 0} \\frac{E - E_F}{kT} = -\\infty \\quad \\forall \\, E < E_F",
+      "description": "Este limite descreve o comportamento do argumento da função de distribuição de Fermi-Dirac quando a temperatura se aproxima do zero absoluto (0 K) para energias abaixo do nível de Fermi. Quando T → 0 K, o fator térmico kT tende a zero, tornando o quociente (E - E_F)/kT negativamente infinito para qualquer energia E menor que E_F. Inserido na função de Fermi-Dirac f(E) = 1/[exp((E-E_F)/kT) + 1], esse limite resulta em f(E) → 1, indicando que todos os estados de energia abaixo do nível de Fermi estão completamente ocupados. Isso é fundamental para entender que, no zero absoluto, os elétrons preenchem todos os estados disponíveis até o nível de Fermi, sem nenhuma excitação térmica, caracterizando o estado fundamental do sistema fermiônico.",
+      "concepts": [
+        "distribuição de Fermi-Dirac",
+        "nível de Fermi",
+        "limite de temperatura zero",
+        "estatística de Fermi-Dirac",
+        "princípio de exclusão de Pauli",
+        "ocupação de estados eletrônicos",
+        "férmions",
+        "zero absoluto"
+      ],
+      "symbols": [
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta do sistema, medida em Kelvin (K)"
+        },
+        {
+          "symbol": "E",
+          "description": "Energia de um estado eletrônico qualquer considerado"
+        },
+        {
+          "symbol": "E_F",
+          "description": "Nível de Fermi: energia que separa estados ocupados dos desocupados no zero absoluto"
+        },
+        {
+          "symbol": "k",
+          "description": "Constante de Boltzmann: k ≈ 1,381 × 10⁻²³ J/K = 8,617 × 10⁻⁵ eV/K"
+        },
+        {
+          "symbol": "kT",
+          "description": "Energia térmica do sistema, representa a escala de flutuações térmicas"
+        },
+        {
+          "symbol": "\\frac{E - E_F}{kT}",
+          "description": "Argumento reduzido da função de Fermi-Dirac, energia medida em unidades de kT em relação ao nível de Fermi"
+        },
+        {
+          "symbol": "-\\infty",
+          "description": "Limite negativo infinito, indica que o argumento diverge negativamente quando T → 0 para E < E_F"
+        }
+      ],
+      "taxonomy": {
+        "category": "quantum-physics",
+        "subcategory": "quantum-statistics",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "Fermi-Dirac",
+        "Fermi level",
+        "zero temperature limit",
+        "occupation probability",
+        "electron distribution",
+        "ground state",
+        "fermion",
+        "Boltzmann",
+        "energy",
+        "state",
+        "distribution",
+        "thermal energy",
+        "carrier"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "distribution-function",
+        "graphParameters": [
+          "energy",
+          "occupation-probability",
+          "temperature",
+          "Fermi-level"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac distribution",
+        "T→0 limit E > E_F",
+        "Fermi energy definition",
+        "density of states",
+        "electron concentration",
+        "Boltzmann approximation"
+      ]
+    },
+    {
+      "originalFormula": "f(E < E_F) \\rightarrow \\frac{1}{1 + \\exp(-\\infty)} = 1",
+      "genericFormula": "f(E \\ll E_F) = \\frac{1}{1 + e^{(E - E_F)/k_BT}} \\rightarrow 1",
+      "description": "Este é o caso limite da distribuição de Fermi-Dirac quando a energia E é muito menor que o nível de Fermi E_F. Nesta situação, o expoente (E - E_F)/k_BT tende a menos infinito, tornando o termo exponencial e^(-∞) igual a zero. Consequentemente, a função de distribuição f(E) se aproxima de 1, indicando que o estado quântico de energia E está completamente ocupado. Fisicamente, isso significa que a probabilidade de um elétron ocupar um estado de energia bem abaixo do nível de Fermi é praticamente 100%, o que é consistente com o princípio de exclusão de Pauli e o comportamento de férmions em temperatura finita. Este limite é fundamental para entender a ocupação de estados na banda de valência de semicondutores e metais.",
+      "concepts": [
+        "Distribuição de Fermi-Dirac",
+        "Nível de Fermi",
+        "Probabilidade de ocupação",
+        "Estatística de Fermi-Dirac",
+        "Princípio de exclusão de Pauli",
+        "Limite assintótico",
+        "Férmions",
+        "Estados eletrônicos"
+      ],
+      "symbols": [
+        {
+          "symbol": "f(E)",
+          "description": "Função de distribuição de Fermi-Dirac: probabilidade de um estado de energia E estar ocupado por um elétron"
+        },
+        {
+          "symbol": "E",
+          "description": "Energia do estado quântico considerado"
+        },
+        {
+          "symbol": "E_F",
+          "description": "Nível de Fermi: energia na qual a probabilidade de ocupação é exatamente 50% a qualquer temperatura finita"
+        },
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann: k_B ≈ 1,381 × 10⁻²³ J/K, relaciona energia térmica com temperatura"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta em Kelvin"
+        },
+        {
+          "symbol": "\\exp(-\\infty)",
+          "description": "Limite exponencial quando o argumento tende a menos infinito, resultando em zero"
+        },
+        {
+          "symbol": "\\rightarrow",
+          "description": "Símbolo de tendência: indica o comportamento assintótico da função no limite considerado"
+        }
+      ],
+      "taxonomy": {
+        "category": "quantum-physics",
+        "subcategory": "carrier-statistics",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "Fermi-Dirac",
+        "distribution",
+        "occupation",
+        "probability",
+        "Fermi level",
+        "energy",
+        "state",
+        "limit",
+        "electron",
+        "carrier",
+        "statistics",
+        "fermion",
+        "fully occupied",
+        "valence band"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "distribution",
+        "graphParameters": [
+          "energy",
+          "occupation probability",
+          "Fermi level",
+          "temperature"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac distribution",
+        "f(E = E_F) = 1/2",
+        "f(E > E_F) → 0",
+        "Boltzmann approximation",
+        "Bose-Einstein distribution",
+        "carrier concentration",
+        "density of states"
+      ]
+    },
+    {
+      "originalFormula": "f(E > E_F) \\rightarrow \\frac{1}{1 + \\exp(+\\infty)} = 0",
+      "genericFormula": "f(E) = \\frac{1}{1 + \\exp\\left(\\frac{E - E_F}{k_B T}\\right)} \\xrightarrow{E \\gg E_F} 0",
+      "description": "Este é o limite assintótico da distribuição de Fermi-Dirac para energias muito maiores que a energia de Fermi. Quando E >> E_F, o argumento da exponencial torna-se muito grande e positivo (tendendo ao infinito), fazendo com que exp(+∞) → ∞ e, portanto, f(E) → 1/(1+∞) = 0. Fisicamente, isso significa que estados de energia muito acima do nível de Fermi têm probabilidade nula de serem ocupados por elétrons. Este resultado é fundamental para compreender por que a banda de condução está essencialmente vazia em semicondutores intrínsecos a baixas temperaturas, e justifica o uso da aproximação de Boltzmann (estatística clássica) para portadores na cauda da distribuição.",
+      "concepts": [
+        "Distribuição de Fermi-Dirac",
+        "Nível de Fermi",
+        "Probabilidade de ocupação",
+        "Limite assintótico",
+        "Estatística de Fermi-Dirac",
+        "Aproximação de Boltzmann",
+        "Princípio de exclusão de Pauli",
+        "Elétrons na banda de condução"
+      ],
+      "symbols": [
+        {
+          "symbol": "f(E)",
+          "description": "Função de distribuição de Fermi-Dirac: probabilidade de um estado de energia E estar ocupado por um elétron"
+        },
+        {
+          "symbol": "E",
+          "description": "Energia do estado eletrônico analisado"
+        },
+        {
+          "symbol": "E_F",
+          "description": "Energia de Fermi: nível de energia com probabilidade de ocupação igual a 1/2 a qualquer temperatura acima do zero absoluto"
+        },
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann: k_B ≈ 8,617 × 10⁻⁵ eV/K, relaciona energia térmica à temperatura"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta do sistema em Kelvin"
+        },
+        {
+          "symbol": "\\exp(+\\infty)",
+          "description": "Limite da exponencial quando o argumento tende a infinito positivo, representando E >> E_F"
+        },
+        {
+          "symbol": "\\rightarrow",
+          "description": "Operador de limite/tendência, indica o comportamento assintótico da função"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-statistics",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "Fermi-Dirac",
+        "distribution",
+        "occupation probability",
+        "Fermi level",
+        "energy",
+        "limit",
+        "asymptotic",
+        "conduction band",
+        "carrier",
+        "statistics",
+        "Boltzmann approximation",
+        "state",
+        "electron"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "fermi-dirac-distribution",
+        "graphParameters": [
+          "energy",
+          "occupation probability",
+          "Fermi energy",
+          "temperature",
+          "asymptotic limit"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac distribution",
+        "f(E_F) = 1/2",
+        "f(E < E_F) = 1",
+        "Boltzmann approximation",
+        "Maxwell-Boltzmann distribution",
+        "carrier concentration",
+        "Bose-Einstein distribution"
+      ]
+    },
+    {
+      "originalFormula": "f(E_F) = \\frac{1}{2}",
+      "genericFormula": "f(E_F) = \\frac{1}{1 + e^{(E_F - E_F)/k_BT}} = \\frac{1}{2}",
+      "description": "Esta equação expressa uma propriedade fundamental da distribuição de Fermi-Dirac: a probabilidade de ocupação exatamente no nível de Fermi (E = E_F) é sempre igual a 1/2, independentemente da temperatura. Isso ocorre porque, quando E = E_F, o expoente da função exponencial se anula (e^0 = 1), resultando em f(E_F) = 1/(1+1) = 1/2. Esta propriedade é usada como definição operacional do nível de Fermi em semicondutores e metais, sendo essencial para determinar a posição da energia de Fermi a partir de condições de equilíbrio eletrônico.",
+      "concepts": [
+        "Distribuição de Fermi-Dirac",
+        "Nível de Fermi",
+        "Probabilidade de ocupação",
+        "Equilíbrio termodinâmico",
+        "Estatística quântica",
+        "Férmions",
+        "Potencial químico"
+      ],
+      "symbols": [
+        {
+          "symbol": "f(E_F)",
+          "description": "Probabilidade de ocupação de um estado quântico com energia igual à energia de Fermi E_F, conforme a distribuição de Fermi-Dirac"
+        },
+        {
+          "symbol": "E_F",
+          "description": "Energia de Fermi: nível de energia para o qual a probabilidade de ocupação é exatamente 1/2; corresponde ao potencial químico dos elétrons a temperatura finita"
+        },
+        {
+          "symbol": "\\frac{1}{2}",
+          "description": "Valor constante da probabilidade de ocupação no nível de Fermi, válido para qualquer temperatura T > 0"
+        }
+      ],
+      "taxonomy": {
+        "category": "quantum-physics",
+        "subcategory": "fermi-dirac-statistics",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "Fermi-Dirac",
+        "Fermi level",
+        "occupation probability",
+        "energy",
+        "distribution",
+        "equilibrium",
+        "fermion",
+        "chemical potential",
+        "state",
+        "band",
+        "carrier",
+        "concentration"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "fermi-dirac-distribution",
+        "graphParameters": [
+          "energy",
+          "occupation probability",
+          "temperature",
+          "Fermi energy"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac distribution",
+        "electron concentration",
+        "hole concentration",
+        "intrinsic Fermi level",
+        "Boltzmann approximation",
+        "density of states"
+      ]
+    },
+    {
+      "originalFormula": "E \\geq E_F + 3kT: \\exp\\left[\\frac{E - E_F}{kT}\\right] \\gg 1 \\Rightarrow f(E) \\approx \\exp\\left[-\\frac{E - E_F}{kT}\\right]",
+      "genericFormula": "E \\geq E_F + 3k_BT \\Rightarrow f(E) \\approx \\exp\\left[-\\frac{E - E_F}{k_BT}\\right]",
+      "description": "Esta expressão descreve a aproximação de Boltzmann (ou aproximação clássica) para a função de distribuição de Fermi-Dirac. Quando a energia E está pelo menos 3kT acima do nível de Fermi E_F, o termo exponencial no denominador da distribuição de Fermi-Dirac torna-se muito maior que 1, ou seja, exp[(E - E_F)/kT] >> 1. Neste regime, a função de Fermi-Dirac f(E) = 1/{1 + exp[(E - E_F)/kT]} pode ser aproximada pela distribuição de Boltzmann: f(E) ≈ exp[-(E - E_F)/kT]. Esta aproximação é amplamente utilizada em semicondutores não degenerados, onde o nível de Fermi está dentro do gap de energia e longe das bandas de condução e valência. A distribuição de Boltzmann é muito mais simples de se trabalhar matematicamente e fornece resultados precisos quando a condição E ≥ E_F + 3kT é satisfeita, o que ocorre tipicamente em semicondutores com baixos níveis de dopagem à temperatura ambiente.",
+      "concepts": [
+        "Distribuição de Fermi-Dirac",
+        "Aproximação de Boltzmann",
+        "Estatística quântica",
+        "Semicondutor não degenerado",
+        "Nível de Fermi",
+        "Energia térmica",
+        "Estatística clássica",
+        "Limite não degenerado",
+        "Distribuição de portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "E",
+          "description": "Energia do estado eletrônico considerado (em eV ou Joules)"
+        },
+        {
+          "symbol": "E_F",
+          "description": "Nível de Fermi: energia na qual a probabilidade de ocupação é exatamente 50% a qualquer temperatura"
+        },
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann: k_B ≈ 1,381 × 10⁻²³ J/K ≈ 8,617 × 10⁻⁵ eV/K"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta do sistema em Kelvin (K)"
+        },
+        {
+          "symbol": "kT",
+          "description": "Energia térmica do sistema; à temperatura ambiente (300 K), kT ≈ 25,85 meV"
+        },
+        {
+          "symbol": "3kT",
+          "description": "Limiar mínimo de distância energética acima do nível de Fermi para que a aproximação de Boltzmann seja válida"
+        },
+        {
+          "symbol": "f(E)",
+          "description": "Função de distribuição de Fermi-Dirac: probabilidade de um estado de energia E estar ocupado por um elétron"
+        },
+        {
+          "symbol": "\\exp\\left[-\\frac{E - E_F}{kT}\\right]",
+          "description": "Fator de Boltzmann: forma aproximada de f(E) no limite não degenerado, decai exponencialmente com a energia"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-statistics",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "Fermi-Dirac",
+        "Boltzmann",
+        "distribution",
+        "approximation",
+        "energy",
+        "Fermi-level",
+        "carrier",
+        "concentration",
+        "non-degenerate",
+        "semiconductor",
+        "thermal-energy",
+        "occupation-probability",
+        "classical-limit",
+        "statistics",
+        "band",
+        "state"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "distribution-function",
+        "graphParameters": [
+          "energy",
+          "occupation-probability",
+          "temperature",
+          "Fermi-level",
+          "Boltzmann-approximation",
+          "Fermi-Dirac-exact"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac-distribution",
+        "Bose-Einstein-distribution",
+        "Maxwell-Boltzmann-distribution",
+        "electron-concentration",
+        "hole-concentration",
+        "intrinsic-carrier-concentration",
+        "density-of-states",
+        "effective-density-of-states",
+        "quasi-Fermi-level"
+      ]
+    },
+    {
+      "originalFormula": "E \\leq E_F - 3kT: \\exp\\left[\\frac{E - E_F}{kT}\\right] \\ll 1 \\Rightarrow f(E) \\approx 1 - \\exp\\left[\\frac{E - E_F}{kT}\\right]",
+      "genericFormula": "E \\leq E_F - nkT \\Rightarrow f(E) \\approx 1 - \\exp\\left[\\frac{E - E_F}{kT}\\right]",
+      "description": "Esta fórmula representa a aproximação da distribuição de Fermi-Dirac para energias bem abaixo do nível de Fermi (E ≤ E_F - 3kT). Nesta condição, o fator de Boltzmann exp[(E - E_F)/kT] torna-se muito menor que 1, pois o argumento do exponencial é um número negativo de grande módulo. Isso permite expandir a função de Fermi-Dirac f(E) = 1/(1 + exp[(E - E_F)/kT]) em série de Taylor de primeira ordem, resultando em f(E) ≈ 1 - exp[(E - E_F)/kT]. Fisicamente, isso significa que estados com energia muito abaixo do nível de Fermi têm probabilidade de ocupação próxima de 1 (quase certamente ocupados por elétrons). O pequeno desvio de 1 é dado pelo termo exponencial, que representa a probabilidade de uma vacância (buraco) existir naquele estado. Esta aproximação é fundamental no estudo de semicondutores degenerados e metais, onde descreve a ocupação da banda de valência ou estados profundos na banda de condução.",
+      "concepts": [
+        "Distribuição de Fermi-Dirac",
+        "Nível de Fermi",
+        "Aproximação de Boltzmann",
+        "Estatística de Fermi-Dirac",
+        "Probabilidade de ocupação",
+        "Expansão em série de Taylor",
+        "Energia térmica",
+        "Degenerescência eletrônica",
+        "Buraco (vacância eletrônica)"
+      ],
+      "symbols": [
+        {
+          "symbol": "E",
+          "description": "Energia do estado eletrônico considerado"
+        },
+        {
+          "symbol": "E_F",
+          "description": "Nível de Fermi: energia para a qual a probabilidade de ocupação é exatamente 1/2 a T = 0 K"
+        },
+        {
+          "symbol": "k",
+          "description": "Constante de Boltzmann (k_B ≈ 8,617 × 10⁻⁵ eV/K)"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta do sistema em Kelvin"
+        },
+        {
+          "symbol": "kT",
+          "description": "Energia térmica do sistema (≈ 25,85 meV a 300 K)"
+        },
+        {
+          "symbol": "f(E)",
+          "description": "Função de distribuição de Fermi-Dirac: probabilidade de um estado de energia E estar ocupado por um elétron"
+        },
+        {
+          "symbol": "\\exp\\left[\\frac{E - E_F}{kT}\\right]",
+          "description": "Fator de Boltzmann: termo exponencial que quantifica o desvio em relação ao nível de Fermi em unidades de energia térmica"
+        },
+        {
+          "symbol": "3kT",
+          "description": "Critério de separação energética mínima abaixo do nível de Fermi para validade da aproximação (n = 3 garante exp ≤ e⁻³ ≈ 0,05)"
+        },
+        {
+          "symbol": "\\ll",
+          "description": "Símbolo de muito menor que, indicando a condição de validade da aproximação"
+        },
+        {
+          "symbol": "\\Rightarrow",
+          "description": "Símbolo de implicação lógica: indica que a condição anterior leva à aproximação seguinte"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-statistics",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "Fermi-Dirac",
+        "distribution",
+        "Fermi level",
+        "occupation probability",
+        "Boltzmann approximation",
+        "energy",
+        "carrier",
+        "degenerate",
+        "valence band",
+        "hole",
+        "thermal energy",
+        "statistics",
+        "approximation",
+        "low energy"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "distribution-function",
+        "graphParameters": [
+          "energy",
+          "occupation probability",
+          "Fermi level",
+          "temperature",
+          "approximation region"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac distribution",
+        "Boltzmann approximation (high energy)",
+        "Carrier concentration in valence band",
+        "Maxwell-Boltzmann distribution",
+        "Hole concentration",
+        "Fermi-Dirac full expression"
+      ]
+    },
+    {
+      "originalFormula": "n = \\int_{E_c}^{\\infty} g_c(E) f(E) \\, dE",
+      "genericFormula": "n = \\int_{E_c}^{\\infty} g_c(E) f(E) \\, dE",
+      "description": "Esta fórmula calcula a concentração de elétrons livres na banda de condução de um semicondutor. A integral é realizada desde a borda inferior da banda de condução (Ec) até o infinito, multiplicando a densidade de estados gc(E) pela função de distribuição de Fermi-Dirac f(E). A densidade de estados gc(E) representa o número de estados quânticos disponíveis por unidade de volume e energia na banda de condução, enquanto f(E) fornece a probabilidade de ocupação de cada estado por um elétron a uma dada temperatura. O produto gc(E)·f(E) representa a distribuição de elétrons em energia, e a integral sobre toda a banda de condução fornece o número total de elétrons por unidade de volume (concentração de portadores majoritários em semicondutores tipo-n). Esta expressão é fundamental para determinar as propriedades elétricas dos semicondutores e é usada em conjunto com a concentração de buracos para calcular o produto n·p e verificar a lei de ação de massas.",
+      "concepts": [
+        "concentração de elétrons",
+        "densidade de estados",
+        "função de distribuição de Fermi-Dirac",
+        "banda de condução",
+        "portadores de carga",
+        "estatística de Fermi",
+        "equilíbrio termodinâmico",
+        "lei de ação de massas",
+        "semicondutores intrínsecos e extrínsecos"
+      ],
+      "symbols": [
+        {
+          "symbol": "n",
+          "description": "Concentração de elétrons livres na banda de condução (número de elétrons por unidade de volume, em cm⁻³ ou m⁻³)"
+        },
+        {
+          "symbol": "E_c",
+          "description": "Energia da borda inferior da banda de condução; limite inferior da integração, abaixo do qual não existem estados disponíveis na banda de condução"
+        },
+        {
+          "symbol": "g_c(E)",
+          "description": "Densidade de estados na banda de condução; número de estados quânticos disponíveis por unidade de volume e por unidade de energia no nível E, tipicamente proporcional a \\sqrt{E - E_c}"
+        },
+        {
+          "symbol": "f(E)",
+          "description": "Função de distribuição de Fermi-Dirac; probabilidade de um estado de energia E estar ocupado por um elétron, dada por f(E) = 1 / (1 + \\exp((E - E_F) / k_B T))"
+        },
+        {
+          "symbol": "E",
+          "description": "Variável de integração representando a energia do elétron na banda de condução"
+        },
+        {
+          "symbol": "E_F",
+          "description": "Nível de Fermi (energia de Fermi); parâmetro termodinâmico que determina a distribuição dos elétrons nos estados de energia disponíveis"
+        },
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann (k_B ≈ 1,381 × 10⁻²³ J/K); relaciona energia térmica com temperatura absoluta"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta do sistema (em Kelvin); controla a suavização da distribuição de Fermi-Dirac"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "electron",
+        "carrier",
+        "concentration",
+        "density-of-states",
+        "Fermi-Dirac",
+        "distribution",
+        "conduction",
+        "band",
+        "energy",
+        "state",
+        "occupation",
+        "integral",
+        "equilibrium",
+        "intrinsic",
+        "extrinsic",
+        "n-type",
+        "semiconductor"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "density-of-states",
+        "graphParameters": [
+          "energy",
+          "density-of-states gc(E)",
+          "Fermi-Dirac distribution f(E)",
+          "carrier distribution gc(E)·f(E)",
+          "conduction band edge Ec",
+          "Fermi level EF",
+          "temperature T"
+        ]
+      },
+      "relatedFormulas": [
+        "density-of-states-conduction-band",
+        "Fermi-Dirac-distribution",
+        "hole-concentration-integral",
+        "mass-action-law",
+        "intrinsic-carrier-concentration",
+        "effective-density-of-states-Nc",
+        "Fermi-integral",
+        "Boltzmann-approximation-electron-concentration"
+      ]
+    },
+    {
+      "originalFormula": "g_c(E) f(E) \\, dE",
+      "genericFormula": "g_c(E) \\, f(E) \\, dE",
+      "description": "Esta expressão representa o número de elétrons por unidade de volume com energias entre E e E+dE na banda de condução. É o produto de três fatores fundamentais: a densidade de estados g_c(E), que conta quantos estados quânticos estão disponíveis na banda de condução por unidade de volume e de energia; a função de distribuição de Fermi-Dirac f(E), que fornece a probabilidade de ocupação de cada estado por um elétron; e o elemento diferencial de energia dE. A integração desta expressão sobre todas as energias da banda de condução fornece a concentração total de elétrons livres n, parâmetro central para o comportamento elétrico de semicondutores. Esta formulação é válida tanto para semicondutores intrínsecos quanto extrínsecos, em equilíbrio termodinâmico, e constitui a base para o cálculo da densidade de portadores de carga.",
+      "concepts": [
+        "densidade de estados",
+        "função de distribuição de Fermi-Dirac",
+        "concentração de portadores",
+        "banda de condução",
+        "elétrons livres",
+        "equilíbrio termodinâmico",
+        "estatística quântica",
+        "ocupação de estados eletrônicos"
+      ],
+      "symbols": [
+        {
+          "symbol": "g_c(E)",
+          "description": "Densidade de estados na banda de condução: número de estados quânticos disponíveis por unidade de volume e por unidade de energia em função da energia E"
+        },
+        {
+          "symbol": "f(E)",
+          "description": "Função de distribuição de Fermi-Dirac: probabilidade de um estado de energia E estar ocupado por um elétron em equilíbrio termodinâmico"
+        },
+        {
+          "symbol": "E",
+          "description": "Energia do elétron, variável de integração contínua na banda de condução"
+        },
+        {
+          "symbol": "dE",
+          "description": "Elemento diferencial de energia, define o intervalo infinitesimal em torno de E"
+        },
+        {
+          "symbol": "g_c(E) f(E) \\, dE",
+          "description": "Número de elétrons por unidade de volume com energias no intervalo [E, E+dE] na banda de condução"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "density-of-states",
+        "Fermi-Dirac",
+        "carrier",
+        "concentration",
+        "conduction-band",
+        "electron",
+        "energy",
+        "distribution",
+        "occupation",
+        "band",
+        "state",
+        "semiconductor"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "density-of-states",
+        "graphParameters": [
+          "energy",
+          "density-of-states",
+          "Fermi-Dirac distribution",
+          "carrier concentration",
+          "temperature"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac distribution",
+        "density-of-states conduction band",
+        "electron concentration n",
+        "hole concentration p",
+        "Fermi level",
+        "effective density of states N_c",
+        "intrinsic carrier concentration"
+      ]
+    },
+    {
+      "originalFormula": "n_i = N_V e^{(E_v - E_i)/kT}",
+      "genericFormula": "n_i = N_V e^{(E_V - E_i)/kT}",
+      "description": "Esta fórmula expressa a concentração intrínseca de portadores n_i em função da densidade de estados efetiva na banda de valência N_V e da diferença entre o nível de energia da banda de valência E_V e o nível intrínseco de Fermi E_i. É uma das formas alternativas de representar a concentração intrínseca, derivada da estatística de Fermi-Dirac aplicada a semicondutores não degenerados. O nível intrínseco de Fermi E_i situa-se aproximadamente no meio do gap (com pequena correção logarítmica dependente das massas efetivas), e a diferença (E_V - E_i) é tipicamente negativa, indicando que E_i está acima de E_V dentro do gap. Esta relação é consistente com a lei de ação de massas para semicondutores e é frequentemente usada para localizar o nível de Fermi intrínseco em relação às bandas energéticas.",
+      "concepts": [
+        "concentração intrínseca de portadores",
+        "densidade de estados efetiva na banda de valência",
+        "nível intrínseco de Fermi",
+        "estatística de Fermi-Dirac",
+        "aproximação de Boltzmann",
+        "banda de valência",
+        "gap de energia",
+        "semicondutores intrínsecos",
+        "lei de ação de massas"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_i",
+          "description": "Concentração intrínseca de portadores (elétrons ou buracos em equilíbrio no semicondutor intrínseco), em cm⁻³"
+        },
+        {
+          "symbol": "N_V",
+          "description": "Densidade efetiva de estados na banda de valência, em cm⁻³. Depende da massa efetiva dos buracos e da temperatura: N_V = 2(2π m_p* kT / h²)^{3/2}"
+        },
+        {
+          "symbol": "E_V",
+          "description": "Nível de energia do topo da banda de valência, em eV"
+        },
+        {
+          "symbol": "E_i",
+          "description": "Nível intrínseco de Fermi, posicionado aproximadamente no meio do gap de energia, em eV"
+        },
+        {
+          "symbol": "k",
+          "description": "Constante de Boltzmann, k = 8.617 × 10⁻⁵ eV/K"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta do sistema, em Kelvin (K)"
+        },
+        {
+          "symbol": "kT",
+          "description": "Energia térmica, aproximadamente 0.02585 eV à temperatura ambiente (T = 300 K)"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "intrinsic",
+        "carrier",
+        "concentration",
+        "valence",
+        "band",
+        "Fermi",
+        "level",
+        "density-of-states",
+        "energy",
+        "gap",
+        "Boltzmann",
+        "effective-mass",
+        "equilibrium",
+        "semiconductor"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "energy",
+          "band-gap",
+          "E_V",
+          "E_i",
+          "E_C",
+          "temperature",
+          "carrier-concentration"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac distribution",
+        "n_i = N_C e^{(E_i - E_C)/kT}",
+        "n_i^2 = N_C N_V e^{-E_g/kT}",
+        "n = N_C e^{(E_F - E_C)/kT}",
+        "p = N_V e^{(E_V - E_F)/kT}",
+        "law-of-mass-action",
+        "E_i = (E_C + E_V)/2 + (kT/2) ln(N_V/N_C)"
+      ]
+    },
+    {
+      "originalFormula": "N_C = n_i e^{(E_c - E_i)/kT}",
+      "genericFormula": "N_C = n_i \\, e^{(E_c - E_i)/k_BT}",
+      "description": "Esta fórmula expressa a densidade efetiva de estados na banda de condução (N_C) em termos da concentração intrínseca de portadores (n_i) e das energias características do semicondutor. Ela é derivada da estatística de Fermi-Dirac aplicada à banda de condução, onde E_c é a energia da borda da banda de condução e E_i é o nível de Fermi intrínseco (aproximadamente no meio do gap). O fator exponencial de Boltzmann captura como a probabilidade de ocupação de estados eletrônicos decai exponencialmente à medida que a energia se afasta do nível de Fermi. É amplamente usada em semicondutores para relacionar quantidades intrínsecas com parâmetros de banda, especialmente ao calcular concentrações de portadores em materiais dopados e intrínsecos.",
+      "concepts": [
+        "densidade efetiva de estados",
+        "concentração intrínseca de portadores",
+        "nível de Fermi intrínseco",
+        "banda de condução",
+        "estatística de Fermi-Dirac",
+        "distribuição de Boltzmann",
+        "semicondutor intrínseco",
+        "gap de energia"
+      ],
+      "symbols": [
+        {
+          "symbol": "N_C",
+          "description": "Densidade efetiva de estados na banda de condução (cm⁻³)"
+        },
+        {
+          "symbol": "n_i",
+          "description": "Concentração intrínseca de portadores de carga (elétrons ou lacunas em equilíbrio térmico no semicondutor puro) (cm⁻³)"
+        },
+        {
+          "symbol": "E_c",
+          "description": "Energia da borda inferior da banda de condução (eV)"
+        },
+        {
+          "symbol": "E_i",
+          "description": "Nível de Fermi intrínseco, localizado aproximadamente no meio do gap de energia (eV)"
+        },
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann, k_B ≈ 8.617 × 10⁻⁵ eV/K"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta do semicondutor (K)"
+        },
+        {
+          "symbol": "k_BT",
+          "description": "Energia térmica, representa a escala de energia das flutuações térmicas dos portadores"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "density-of-states",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "energy",
+        "band",
+        "conduction",
+        "density-of-states",
+        "effective",
+        "concentration",
+        "intrinsic",
+        "Fermi",
+        "gap",
+        "carrier",
+        "Boltzmann",
+        "level",
+        "state",
+        "distribution"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "energy",
+          "temperature",
+          "band-gap",
+          "Fermi-level",
+          "intrinsic-concentration"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac",
+        "intrinsic-carrier-concentration",
+        "electron-concentration",
+        "hole-concentration",
+        "effective-density-of-states-valence",
+        "np-product",
+        "Boltzmann-approximation"
+      ]
+    },
+    {
+      "originalFormula": "N_V = n_i e^{(E_i - E_v)/kT}",
+      "genericFormula": "N_V = n_i \\, e^{(E_i - E_V)/k_BT}",
+      "description": "Esta fórmula expressa a densidade efetiva de estados na banda de valência (N_V) em termos da concentração intrínseca de portadores (n_i) e das energias de Fermi intrínseca (E_i) e do topo da banda de valência (E_V). Ela surge da estatística de Fermi-Dirac aplicada a semicondutores em equilíbrio térmico. Como E_i > E_V (o nível de Fermi intrínseco está acima do topo da valência), o expoente é positivo, resultando em N_V > n_i. Essa relação é útil para determinar N_V experimentalmente a partir de parâmetros mensuráveis, ou para verificar a consistência dos parâmetros de banda de um semicondutor. É amplamente utilizada na análise de dispositivos semicondutores de silício e germânio à temperatura ambiente.",
+      "concepts": [
+        "densidade efetiva de estados",
+        "banda de valência",
+        "concentração intrínseca de portadores",
+        "nível de Fermi intrínseco",
+        "estatística de Fermi-Dirac",
+        "equilíbrio térmico",
+        "semicondutor intrínseco",
+        "distribuição de Boltzmann"
+      ],
+      "symbols": [
+        {
+          "symbol": "N_V",
+          "description": "Densidade efetiva de estados na banda de valência (m⁻³ ou cm⁻³)"
+        },
+        {
+          "symbol": "n_i",
+          "description": "Concentração intrínseca de portadores de carga (m⁻³ ou cm⁻³)"
+        },
+        {
+          "symbol": "E_i",
+          "description": "Nível de Fermi intrínseco, posicionado aproximadamente no meio do gap de energia (eV)"
+        },
+        {
+          "symbol": "E_V",
+          "description": "Energia do topo da banda de valência (eV)"
+        },
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann (k_B ≈ 8.617 × 10⁻⁵ eV/K)"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta do sistema em equilíbrio térmico (K)"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "density-of-states",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "density-of-states",
+        "valence-band",
+        "intrinsic-carrier",
+        "Fermi-level",
+        "band",
+        "energy",
+        "concentration",
+        "Boltzmann",
+        "equilibrium",
+        "semiconductor",
+        "effective-mass",
+        "gap",
+        "state",
+        "distribution"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "energy",
+          "E_i",
+          "E_V",
+          "N_V",
+          "temperature",
+          "concentration"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac-distribution",
+        "intrinsic-carrier-concentration",
+        "N_C-effective-density-of-states",
+        "mass-action-law",
+        "hole-concentration",
+        "electron-concentration",
+        "Boltzmann-approximation"
+      ]
+    },
+    {
+      "originalFormula": "n = n_i e^{(E_F - E_i)/kT}",
+      "genericFormula": "n = n_i \\exp\\left(\\frac{E_F - E_i}{k_B T}\\right)",
+      "description": "Esta fórmula expressa a concentração de elétrons livres (portadores majoritários do tipo n) em um semicondutor em função da posição do nível de Fermi em relação ao nível intrínseco de Fermi. Quando o nível de Fermi E_F está acima do nível intrínseco E_i (como ocorre em semicondutores do tipo n), o expoente é positivo e n > n_i, indicando excesso de elétrons em relação ao caso intrínseco. Esta expressão é derivada diretamente da estatística de Fermi-Dirac aplicada à distribuição de elétrons na banda de condução, válida na aproximação de Boltzmann (quando E_F está a mais de alguns kT abaixo da banda de condução). É amplamente usada na análise de dispositivos semicondutores para determinar o grau de dopagem e o posicionamento do nível de Fermi.",
+      "concepts": [
+        "concentração de portadores",
+        "nível de Fermi",
+        "nível intrínseco",
+        "estatística de Boltzmann",
+        "semicondutor dopado tipo n",
+        "portadores majoritários",
+        "distribuição de Fermi-Dirac",
+        "equilíbrio termodinâmico",
+        "concentração intrínseca de portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "n",
+          "description": "Concentração de elétrons livres na banda de condução (cm⁻³)"
+        },
+        {
+          "symbol": "n_i",
+          "description": "Concentração intrínseca de portadores: concentração de elétrons (ou buracos) no semicondutor puro sem dopagem (cm⁻³)"
+        },
+        {
+          "symbol": "E_F",
+          "description": "Energia do nível de Fermi: nível de energia onde a probabilidade de ocupação é 1/2, determinado pela dopagem do material (eV)"
+        },
+        {
+          "symbol": "E_i",
+          "description": "Energia do nível intrínseco de Fermi: posição do nível de Fermi no semicondutor puro, próximo ao meio do gap (eV)"
+        },
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann: k_B ≈ 8,617 × 10⁻⁵ eV/K, relaciona energia térmica à temperatura absoluta"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta do semicondutor em equilíbrio termodinâmico (K)"
+        },
+        {
+          "symbol": "k_B T",
+          "description": "Energia térmica característica: a 300 K vale aproximadamente 25,9 meV, escala de energia da agitação térmica"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "carrier",
+        "concentration",
+        "electron",
+        "Fermi",
+        "intrinsic",
+        "level",
+        "energy",
+        "Boltzmann",
+        "distribution",
+        "doping",
+        "band",
+        "conduction",
+        "equilibrium",
+        "n-type",
+        "semiconductor",
+        "temperature",
+        "Fermi-Dirac",
+        "state"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "E_F - E_i (posição relativa do nível de Fermi)",
+          "concentração de elétrons n",
+          "temperatura T",
+          "concentração intrínseca n_i"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac distribution",
+        "p = n_i exp((E_i - E_F)/kT)",
+        "n * p = n_i^2 (lei de ação de massas)",
+        "n_i = sqrt(N_c * N_v) exp(-Eg/2kT)",
+        "E_F = E_i + kT ln(N_D/n_i)",
+        "Boltzmann approximation",
+        "effective density of states N_c"
+      ]
+    },
+    {
+      "originalFormula": "p = n_i e^{(E_i - E_F)/kT}",
+      "genericFormula": "p = n_i \\, e^{(E_i - E_F)/kT}",
+      "description": "Esta fórmula fornece a concentração de portadores de carga positivos (buracos) em um semicondutor em equilíbrio térmico, expressa em função do nível de Fermi intrínseco E_i e do nível de Fermi real E_F. Quando E_F está abaixo de E_i (semicondutor tipo-p), o expoente é positivo e p > n_i, indicando maior concentração de buracos do que o valor intrínseco. Esta expressão é derivada diretamente da estatística de Fermi-Dirac aplicada à banda de valência, sendo uma das equações fundamentais para a análise de semicondutores dopados. Ela é frequentemente usada em conjunto com a expressão equivalente para elétrons n = n_i * exp((E_F - E_i)/kT), e o produto n*p = n_i² (lei de ação de massas) é sempre satisfeito em equilíbrio.",
+      "concepts": [
+        "concentração de buracos",
+        "nível de Fermi",
+        "nível de Fermi intrínseco",
+        "estatística de Fermi-Dirac",
+        "equilíbrio térmico",
+        "semicondutor tipo-p",
+        "portadores minoritários e majoritários",
+        "lei de ação de massas"
+      ],
+      "symbols": [
+        {
+          "symbol": "p",
+          "description": "Concentração de buracos (portadores positivos) em equilíbrio térmico, em cm⁻³ ou m⁻³"
+        },
+        {
+          "symbol": "n_i",
+          "description": "Concentração intrínseca de portadores, valor de referência para o semicondutor puro a uma dada temperatura, em cm⁻³ ou m⁻³"
+        },
+        {
+          "symbol": "E_i",
+          "description": "Nível de Fermi intrínseco, posicionado aproximadamente no meio do gap de energia do semicondutor puro, em eV ou J"
+        },
+        {
+          "symbol": "E_F",
+          "description": "Nível de Fermi real do semicondutor, determinado pela dopagem e temperatura. Em tipo-p, E_F < E_i; em tipo-n, E_F > E_i, em eV ou J"
+        },
+        {
+          "symbol": "k",
+          "description": "Constante de Boltzmann, k ≈ 8,617 × 10⁻⁵ eV/K ou 1,381 × 10⁻²³ J/K"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta do semicondutor, em Kelvin (K)"
+        },
+        {
+          "symbol": "kT",
+          "description": "Energia térmica, representa a escala de energia das flutuações térmicas. À temperatura ambiente (300 K), kT ≈ 0,02585 eV"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "hole",
+        "carrier",
+        "concentration",
+        "Fermi",
+        "intrinsic",
+        "level",
+        "energy",
+        "distribution",
+        "Fermi-Dirac",
+        "p-type",
+        "equilibrium",
+        "band",
+        "valence",
+        "temperature",
+        "doping"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "energy",
+          "E_F",
+          "E_i",
+          "carrier-concentration",
+          "temperature"
+        ]
+      },
+      "relatedFormulas": [
+        "electron-concentration-n = n_i * exp((E_F - E_i)/kT)",
+        "mass-action-law: n*p = n_i^2",
+        "Fermi-Dirac-distribution",
+        "intrinsic-carrier-concentration",
+        "charge-neutrality",
+        "hole-concentration-from-dopants"
+      ]
+    },
+    {
+      "originalFormula": "n_i^2 = N_C N_V e^{-(E_c - E_v)/kT} = N_C N_V e^{-E_G/kT}",
+      "genericFormula": "n_i^2 = N_C N_V e^{-(E_c - E_v)/k_B T} = N_C N_V e^{-E_G/k_B T}",
+      "description": "Esta fórmula descreve o quadrado da concentração intrínseca de portadores em um semicondutor em equilíbrio térmico. A concentração intrínseca n_i representa o número de elétrons (ou buracos) gerados termicamente por unidade de volume em um semicondutor puro, sem dopagem. O produto n_i² é derivado da lei de ação de massas np = n_i², onde n é a concentração de elétrons e p a de buracos. N_C e N_V são as densidades efetivas de estados nas bandas de condução e valência, respectivamente, e dependem da temperatura e das massas efetivas dos portadores. O fator exponencial de Boltzmann reflete a probabilidade estatística de um elétron ser termicamente excitado através do gap de energia E_G = E_c - E_v. Esta fórmula é fundamental para calcular as concentrações de portadores em semicondutores intrínsecos e extrínsecos, sendo base para o entendimento de dispositivos como diodos, transistores e células solares.",
+      "concepts": [
+        "concentração intrínseca de portadores",
+        "lei de ação de massas",
+        "densidade efetiva de estados",
+        "gap de energia",
+        "estatística de Fermi-Dirac",
+        "equilíbrio térmico",
+        "geração térmica de portadores",
+        "semicondutor intrínseco",
+        "distribuição de Boltzmann"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_i",
+          "description": "Concentração intrínseca de portadores (elétrons ou buracos) em equilíbrio térmico no semicondutor puro (cm⁻³)"
+        },
+        {
+          "symbol": "N_C",
+          "description": "Densidade efetiva de estados na banda de condução, dada por N_C = 2(2π m_e^* k_B T / h²)^{3/2} (cm⁻³)"
+        },
+        {
+          "symbol": "N_V",
+          "description": "Densidade efetiva de estados na banda de valência, dada por N_V = 2(2π m_h^* k_B T / h²)^{3/2} (cm⁻³)"
+        },
+        {
+          "symbol": "E_c",
+          "description": "Energia da borda inferior da banda de condução (eV)"
+        },
+        {
+          "symbol": "E_v",
+          "description": "Energia da borda superior da banda de valência (eV)"
+        },
+        {
+          "symbol": "E_G",
+          "description": "Energia de gap do semicondutor, E_G = E_c - E_v (eV)"
+        },
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann, k_B ≈ 8.617 × 10⁻⁵ eV/K"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta do semicondutor (K)"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "intrinsic",
+        "carrier",
+        "concentration",
+        "band",
+        "gap",
+        "energy",
+        "thermal",
+        "equilibrium",
+        "density-of-states",
+        "conduction",
+        "valence",
+        "Boltzmann",
+        "effective-mass",
+        "semiconductor",
+        "ni"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "temperature",
+          "energy-gap",
+          "carrier-concentration",
+          "density-of-states"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac-distribution",
+        "density-of-states",
+        "effective-density-of-states-NC",
+        "effective-density-of-states-NV",
+        "law-of-mass-action",
+        "electron-concentration",
+        "hole-concentration",
+        "Fermi-level-intrinsic",
+        "carrier-concentration-extrinsic"
+      ]
+    },
+    {
+      "originalFormula": "n_i = \\sqrt{N_C N_V} e^{-E_G/2kT}",
+      "genericFormula": "n_i = \\sqrt{N_C N_V} \\, e^{-E_G / 2k_BT}",
+      "description": "Esta fórmula descreve a concentração intrínseca de portadores em um semicondutor puro (não dopado) em equilíbrio térmico. A concentração intrínseca n_i representa o número de elétrons na banda de condução (ou de lacunas na banda de valência) gerados exclusivamente pela excitação térmica, sem a presença de dopantes. O fator pré-exponencial √(N_C N_V) é a média geométrica das densidades de estados efetivas das bandas de condução e valência, refletindo o peso estatístico dos estados disponíveis para os portadores. O fator exponencial e^(-E_G/2kT) representa a probabilidade de Boltzmann de que a excitação térmica supere metade do gap de energia (E_G/2), que corresponde à energia necessária para promover um elétron da banda de valência para a banda de condução em um semicondutor intrínseco. Esta grandeza é extremamente sensível à temperatura e ao gap do material, sendo fundamental para o projeto de dispositivos eletrônicos e para a compreensão do comportamento elétrico de semicondutores.",
+      "concepts": [
+        "concentração intrínseca de portadores",
+        "densidade de estados efetiva",
+        "estatística de Boltzmann",
+        "gap de energia",
+        "equilíbrio térmico",
+        "geração térmica de portadores",
+        "semicondutor intrínseco",
+        "massa efetiva de elétrons e lacunas",
+        "lei de ação das massas"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_i",
+          "description": "Concentração intrínseca de portadores (elétrons ou lacunas) em equilíbrio térmico em um semicondutor puro, em unidades de cm⁻³ ou m⁻³"
+        },
+        {
+          "symbol": "N_C",
+          "description": "Densidade efetiva de estados na banda de condução, proporcional a (m_e^*)^{3/2} T^{3/2}, em unidades de cm⁻³"
+        },
+        {
+          "symbol": "N_V",
+          "description": "Densidade efetiva de estados na banda de valência, proporcional a (m_h^*)^{3/2} T^{3/2}, em unidades de cm⁻³"
+        },
+        {
+          "symbol": "E_G",
+          "description": "Largura do gap de energia do semicondutor (energia proibida entre a banda de valência e a banda de condução), em elétron-volts (eV) ou joules (J)"
+        },
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann, k_B ≈ 8,617 × 10⁻⁵ eV/K = 1,381 × 10⁻²³ J/K"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta do semicondutor, em Kelvin (K)"
+        },
+        {
+          "symbol": "e",
+          "description": "Base do logaritmo natural (número de Euler), e ≈ 2,718..."
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "intrinsic",
+        "carrier",
+        "concentration",
+        "bandgap",
+        "band",
+        "conduction",
+        "valence",
+        "density-of-states",
+        "effective-mass",
+        "thermal",
+        "Boltzmann",
+        "energy",
+        "gap",
+        "semiconductor",
+        "equilibrium",
+        "temperature"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "carrier-concentration-vs-temperature",
+        "graphParameters": [
+          "intrinsic carrier concentration (n_i)",
+          "temperature (T)",
+          "bandgap energy (E_G)",
+          "effective density of states (N_C, N_V)"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac distribution",
+        "effective density of states N_C",
+        "effective density of states N_V",
+        "law of mass action (n_0 p_0 = n_i^2)",
+        "Fermi level in intrinsic semiconductor",
+        "electron concentration n_0",
+        "hole concentration p_0",
+        "Einstein relation",
+        "carrier mobility"
+      ]
+    },
+    {
+      "originalFormula": "n_i \\text{ (cm}^{-3}\\text{) for Si at 300 K} = 1.18 \\times 10^{10}",
+      "genericFormula": "n_i = \\sqrt{N_c N_v} \\exp\\left(-\\frac{E_g}{2k_BT}\\right)",
+      "description": "A concentração intrínseca de portadores n_i representa o número de elétrons (ou buracos) por unidade de volume gerados termicamente em um semicondutor puro (intrínseco) em equilíbrio térmico. Para o silício a 300 K, esse valor é aproximadamente 1,18 × 10^10 cm⁻³, o que significa que em cada centímetro cúbico de silício puro há cerca de 11,8 bilhões de portadores livres gerados pela agitação térmica. Esse parâmetro é fundamental para determinar as propriedades elétricas do semicondutor, a posição do nível de Fermi intrínseco e o comportamento de dispositivos como diodos e transistores. n_i é fortemente dependente da temperatura e do bandgap do material: semicondutores com bandgap maior (como GaAs ou SiC) apresentam n_i muito menor que o Si à mesma temperatura.",
+      "concepts": [
+        "concentração intrínseca de portadores",
+        "geração térmica de portadores",
+        "equilíbrio térmico",
+        "semicondutor intrínseco",
+        "bandgap",
+        "densidade de estados efetiva",
+        "lei de ação de massas",
+        "estatística de Fermi-Dirac",
+        "nível de Fermi intrínseco"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_i",
+          "description": "Concentração intrínseca de portadores (elétrons ou buracos) em semicondutor puro, em cm⁻³"
+        },
+        {
+          "symbol": "N_c",
+          "description": "Densidade efetiva de estados na banda de condução (cm⁻³)"
+        },
+        {
+          "symbol": "N_v",
+          "description": "Densidade efetiva de estados na banda de valência (cm⁻³)"
+        },
+        {
+          "symbol": "E_g",
+          "description": "Energia do bandgap do semicondutor (eV ou J), para Si ≈ 1,12 eV a 300 K"
+        },
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann, k_B ≈ 8,617 × 10⁻⁵ eV/K"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta em Kelvin (K); aqui T = 300 K"
+        },
+        {
+          "symbol": "1.18 \\times 10^{10}",
+          "description": "Valor numérico da concentração intrínseca do silício a 300 K, em cm⁻³"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "intrinsic",
+        "carrier",
+        "concentration",
+        "silicon",
+        "thermal",
+        "equilibrium",
+        "bandgap",
+        "Fermi",
+        "energy",
+        "band",
+        "density-of-states",
+        "temperature",
+        "generation",
+        "np-product"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "carrier-concentration-vs-temperature",
+        "graphParameters": [
+          "temperature",
+          "intrinsic-carrier-concentration",
+          "bandgap",
+          "material"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac-distribution",
+        "effective-density-of-states-Nc",
+        "effective-density-of-states-Nv",
+        "np-product-law-of-mass-action",
+        "intrinsic-Fermi-level",
+        "carrier-concentration-n0",
+        "carrier-concentration-p0",
+        "Boltzmann-approximation"
+      ]
+    },
+    {
+      "originalFormula": "n_i \\text{ (cm}^{-3}\\text{) for GaAs at 300 K} = 2.25 \\times 10^{6}",
+      "genericFormula": "n_i = \\sqrt{N_c N_v} \\exp\\left(-\\frac{E_g}{2k_BT}\\right)",
+      "description": "A concentração intrínseca de portadores n_i representa o número de elétrons (ou buracos) por centímetro cúbico gerados termicamente em um semicondutor puro (intrínseco) em equilíbrio térmico. Para o arseneto de gálio (GaAs) à temperatura ambiente (300 K), esse valor é aproximadamente 2,25 × 10⁶ cm⁻³, que é significativamente menor do que o silício (~1,5 × 10¹⁰ cm⁻³), devido ao maior bandgap do GaAs (≈ 1,42 eV contra 1,12 eV do Si). Esse valor é fundamental para o cálculo de correntes de fuga, resistividade intrínseca e comportamento de dispositivos em alta temperatura. O GaAs é amplamente utilizado em dispositivos de alta frequência, LEDs e lasers semicondutores.",
+      "concepts": [
+        "concentração intrínseca de portadores",
+        "geração térmica de portadores",
+        "bandgap direto",
+        "equilíbrio termodinâmico",
+        "semicondutor intrínseco",
+        "lei da ação de massas",
+        "densidade de estados efetiva",
+        "arseneto de gálio (GaAs)"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_i",
+          "description": "Concentração intrínseca de portadores (cm⁻³): número de elétrons livres (ou buracos) gerados termicamente por unidade de volume em um semicondutor puro"
+        },
+        {
+          "symbol": "N_c",
+          "description": "Densidade efetiva de estados na banda de condução (cm⁻³): número efetivo de estados disponíveis para elétrons próximos à borda da banda de condução"
+        },
+        {
+          "symbol": "N_v",
+          "description": "Densidade efetiva de estados na banda de valência (cm⁻³): número efetivo de estados disponíveis para buracos próximos à borda da banda de valência"
+        },
+        {
+          "symbol": "E_g",
+          "description": "Energia do bandgap (eV): diferença de energia entre o topo da banda de valência e o fundo da banda de condução; para GaAs ≈ 1,42 eV a 300 K"
+        },
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann: k_B ≈ 8,617 × 10⁻⁵ eV/K, relaciona energia térmica à temperatura absoluta"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta em Kelvin; aqui T = 300 K (temperatura ambiente)"
+        },
+        {
+          "symbol": "2.25 \\times 10^{6}",
+          "description": "Valor numérico da concentração intrínseca do GaAs a 300 K em cm⁻³"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "intrinsic",
+        "carrier",
+        "concentration",
+        "GaAs",
+        "gallium arsenide",
+        "bandgap",
+        "thermal generation",
+        "equilibrium",
+        "band",
+        "energy",
+        "density-of-states",
+        "temperature",
+        "Fermi-Dirac",
+        "semiconductor"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "carrier-concentration-vs-temperature",
+        "graphParameters": [
+          "intrinsic carrier concentration (cm⁻³)",
+          "temperature (K)",
+          "bandgap energy (eV)",
+          "material comparison (GaAs vs Si vs Ge)"
+        ]
+      },
+      "relatedFormulas": [
+        "mass-action-law: n_0 p_0 = n_i^2",
+        "effective-density-of-states: N_c = 2(2\\pi m_e^* k_B T / h^2)^{3/2}",
+        "Fermi-Dirac distribution",
+        "intrinsic Fermi level: E_i = (E_c + E_v)/2 + (k_BT/2)\\ln(N_v/N_c)",
+        "intrinsic resistivity: \\rho_i = 1/(q n_i (\\mu_e + \\mu_h))",
+        "carrier concentration for Si at 300K: n_i \\approx 1.5 \\times 10^{10} \\text{ cm}^{-3}"
+      ]
+    },
+    {
+      "originalFormula": "kT = 0.0259 \\text{ eV}",
+      "genericFormula": "k_B T",
+      "description": "A energia térmica kT representa a energia média associada ao movimento térmico das partículas em um sistema em equilíbrio termodinâmico à temperatura T. Para T = 300 K (temperatura ambiente), kT ≈ 0,0259 eV ≈ 26 meV. Esta quantidade é fundamental em física de semicondutores e física estatística, pois define a escala de energia relevante para processos de excitação térmica. Quando a energia de uma partícula é muito maior que kT, os efeitos quânticos e de ordenamento dominam; quando é comparável a kT, a agitação térmica é significativa. Em semicondutores, kT é usada para determinar a distribuição de portadores, a tensão térmica em junções p-n (V_T = kT/q ≈ 25,9 mV) e para avaliar se um gap de energia permite excitação térmica significativa.",
+      "concepts": [
+        "energia térmica",
+        "temperatura",
+        "equilíbrio termodinâmico",
+        "agitação térmica",
+        "distribuição de Boltzmann",
+        "tensão térmica",
+        "escala de energia",
+        "física estatística"
+      ],
+      "symbols": [
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann: k_B = 1,380649 × 10⁻²³ J/K = 8,617 × 10⁻⁵ eV/K, relaciona temperatura com energia"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta em Kelvin (K); para temperatura ambiente, T = 300 K"
+        },
+        {
+          "symbol": "k_B T",
+          "description": "Energia térmica: produto da constante de Boltzmann pela temperatura absoluta, representa a escala de energia da agitação térmica"
+        },
+        {
+          "symbol": "0{,}0259 \\text{ eV}",
+          "description": "Valor numérico de kT a T = 300 K (temperatura ambiente padrão), equivalente a aproximadamente 26 meV"
+        },
+        {
+          "symbol": "\\text{eV}",
+          "description": "Elétron-volt: unidade de energia conveniente em física de semicondutores e física atômica; 1 eV = 1,602 × 10⁻¹⁹ J"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "thermal-energy",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "energy",
+        "thermal",
+        "temperature",
+        "Boltzmann",
+        "carrier",
+        "distribution",
+        "Fermi-Dirac",
+        "equilibrium",
+        "eV",
+        "excitation",
+        "junction",
+        "band"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "linear",
+        "graphParameters": [
+          "temperature",
+          "thermal-energy",
+          "kT versus T"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac-distribution",
+        "Boltzmann-distribution",
+        "intrinsic-carrier-concentration",
+        "thermal-voltage",
+        "np-product",
+        "Schottky-barrier",
+        "diode-equation"
+      ]
+    },
+    {
+      "originalFormula": "n_i = 10^{10}/\\text{cm}^3",
+      "genericFormula": "n_i = \\sqrt{N_c N_v} \\exp\\left(-\\frac{E_g}{2k_BT}\\right)",
+      "description": "A concentração intrínseca de portadores n_i representa o número de elétrons (ou buracos) por unidade de volume em um semicondutor puro (intrínseco) em equilíbrio térmico. Para o silício à temperatura ambiente (T = 300 K), esse valor é aproximadamente 10^10 portadores/cm³. Esse parâmetro é fundamental para determinar o comportamento elétrico do material: quanto maior n_i, mais condutor é o material intrinsecamente. n_i depende fortemente da temperatura e do gap de energia do material. Em semicondutores extrínsecos (dopados), a concentração de portadores majoritários supera n_i, mas o produto n·p = n_i² permanece constante em equilíbrio (lei de ação de massas).",
+      "concepts": [
+        "concentração intrínseca de portadores",
+        "semicondutor intrínseco",
+        "equilíbrio térmico",
+        "geração e recombinação",
+        "lei de ação de massas",
+        "gap de energia",
+        "densidade de estados efetiva",
+        "estatística de Fermi-Dirac"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_i",
+          "description": "Concentração intrínseca de portadores (elétrons ou buracos) em equilíbrio térmico em um semicondutor puro [cm⁻³]"
+        },
+        {
+          "symbol": "N_c",
+          "description": "Densidade efetiva de estados na banda de condução [cm⁻³]"
+        },
+        {
+          "symbol": "N_v",
+          "description": "Densidade efetiva de estados na banda de valência [cm⁻³]"
+        },
+        {
+          "symbol": "E_g",
+          "description": "Energia do gap (banda proibida) do semicondutor [eV ou J]"
+        },
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann: 8,617 × 10⁻⁵ eV/K"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta do material [K]"
+        },
+        {
+          "symbol": "10^{10}",
+          "description": "Valor numérico aproximado de n_i para o silício a T = 300 K"
+        },
+        {
+          "symbol": "\\text{cm}^{-3}",
+          "description": "Unidade de concentração volumétrica (portadores por centímetro cúbico)"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "intrinsic",
+        "carrier",
+        "concentration",
+        "silicon",
+        "equilibrium",
+        "thermal",
+        "band",
+        "gap",
+        "energy",
+        "Fermi-Dirac",
+        "distribution",
+        "density-of-states",
+        "semiconductor",
+        "generation",
+        "recombination",
+        "n_i",
+        "mass-action"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "concentration-vs-temperature",
+        "graphParameters": [
+          "temperature",
+          "intrinsic carrier concentration",
+          "bandgap energy",
+          "effective density of states"
+        ]
+      },
+      "relatedFormulas": [
+        "mass-action-law (n·p = n_i²)",
+        "Fermi-Dirac distribution",
+        "effective-density-of-states Nc",
+        "effective-density-of-states Nv",
+        "electron-concentration (n = N_c · exp(-(E_c - E_F)/k_BT))",
+        "hole-concentration (p = N_v · exp(-(E_F - E_v)/k_BT))",
+        "intrinsic-Fermi-level E_i",
+        "bandgap-energy E_g"
+      ]
+    },
+    {
+      "originalFormula": "n \\rightarrow n_i, \\quad p \\rightarrow n_i",
+      "genericFormula": "n \\rightarrow n_i, \\quad p \\rightarrow n_i",
+      "description": "Esta expressão representa a condição de semicondutor intrínseco, onde as concentrações de elétrons (n) e lacunas (p) se igualam à concentração intrínseca de portadores (n_i). Em um semicondutor puro, sem dopagem, o número de elétrons excitados termicamente para a banda de condução é exatamente igual ao número de lacunas deixadas na banda de valência. Esse limite é fundamental para compreender o ponto de equilíbrio intrínseco do material, e é o ponto de referência a partir do qual dopagens tipo-n e tipo-p são analisadas. A concentração intrínseca n_i depende fortemente da temperatura e do gap de energia do material.",
+      "concepts": [
+        "semicondutor intrínseco",
+        "concentração de portadores",
+        "equilíbrio térmico",
+        "geração e recombinação",
+        "lei de ação de massas",
+        "banda de condução",
+        "banda de valência",
+        "par elétron-lacuna"
+      ],
+      "symbols": [
+        {
+          "symbol": "n",
+          "description": "Concentração de elétrons livres na banda de condução (m⁻³ ou cm⁻³)"
+        },
+        {
+          "symbol": "p",
+          "description": "Concentração de lacunas (buracos) na banda de valência (m⁻³ ou cm⁻³)"
+        },
+        {
+          "symbol": "n_i",
+          "description": "Concentração intrínseca de portadores: valor comum de n e p em um semicondutor puro em equilíbrio térmico (m⁻³ ou cm⁻³)"
+        },
+        {
+          "symbol": "\\rightarrow",
+          "description": "Símbolo de tendência/igualdade no limite intrínseco, indicando que n e p assumem o valor n_i"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "intrinsic",
+        "carrier",
+        "concentration",
+        "electron",
+        "hole",
+        "equilibrium",
+        "ni",
+        "band",
+        "generation",
+        "recombination",
+        "thermal",
+        "pure semiconductor"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "energy",
+          "carrier concentration",
+          "temperature",
+          "Fermi level"
+        ]
+      },
+      "relatedFormulas": [
+        "law-of-mass-action (n·p = n_i²)",
+        "intrinsic-carrier-concentration (n_i = √(N_c · N_v) · exp(-E_g / 2kT))",
+        "Fermi-Dirac-distribution",
+        "charge-neutrality-condition",
+        "Einstein-relation"
+      ]
+    },
+    {
+      "originalFormula": "n \\approx N_D",
+      "genericFormula": "n \\approx N_D",
+      "description": "Em um semicondutor do tipo N com dopagem dominante de doadores, a concentração de elétrons livres na banda de condução é aproximadamente igual à concentração de átomos doadores ionizados. Esta aproximação é válida quando a temperatura é suficiente para ionizar completamente os doadores (ionização completa) e quando a concentração de doadores é muito maior que a concentração intrínseca de portadores (N_D >> n_i). Neste regime, chamado de regime extrínseco, os elétrons são os portadores majoritários e sua densidade é essencialmente determinada pela dopagem. Esta relação simplifica enormemente os cálculos de dispositivos semicondutores, pois elimina a necessidade de resolver a equação de neutralidade de carga completa.",
+      "concepts": [
+        "semicondutor tipo N",
+        "ionização completa de doadores",
+        "portadores majoritários",
+        "regime extrínseco",
+        "neutralidade de carga",
+        "dopagem de semicondutores",
+        "concentração de portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "n",
+          "description": "Concentração de elétrons livres na banda de condução (portadores majoritários em semicondutor tipo N), em unidades de cm⁻³"
+        },
+        {
+          "symbol": "N_D",
+          "description": "Concentração de átomos doadores ionizados (impurezas doadoras, como fósforo ou arsênio no silício), em unidades de cm⁻³"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "carrier",
+        "concentration",
+        "donor",
+        "n-type",
+        "doping",
+        "majority-carrier",
+        "extrinsic",
+        "ionization",
+        "electrons",
+        "band",
+        "conduction"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "carrier-concentration",
+        "graphParameters": [
+          "carrier-concentration",
+          "temperature",
+          "doping-level"
+        ]
+      },
+      "relatedFormulas": [
+        "mass-action-law",
+        "charge-neutrality",
+        "Fermi-Dirac",
+        "intrinsic-carrier-concentration",
+        "p-type-approximation"
+      ]
+    },
+    {
+      "originalFormula": "N_D = 10^{15}/\\text{cm}^3",
+      "genericFormula": "N_D",
+      "description": "Concentração de dopantes doadores (N_D) em um semicondutor tipo-n. Doadores são impurezas introduzidas intencionalmente no cristal semicondutor que possuem um elétron extra em sua camada de valência em relação ao átomo hospedeiro (ex: fósforo ou arsênio no silício). Cada átomo doador ionizado contribui com um elétron livre para a banda de condução, aumentando a condutividade do material. O valor 10^15 cm^-3 é uma concentração típica de dopagem leve a moderada em silício, muito abaixo da concentração intrínseca de átomos (~5×10^22 cm^-3), mas muito acima da concentração intrínseca de portadores (~10^10 cm^-3 a 300K). Esta dopagem é fundamental para controlar as propriedades elétricas do semicondutor e é amplamente utilizada em dispositivos como diodos, transistores e células solares.",
+      "concepts": [
+        "dopagem tipo-n",
+        "concentração de dopantes",
+        "impurezas doadoras",
+        "semicondutores extrínsecos",
+        "portadores majoritários",
+        "ionização de dopantes",
+        "nível de Fermi",
+        "neutralidade de carga"
+      ],
+      "symbols": [
+        {
+          "symbol": "N_D",
+          "description": "Concentração de dopantes doadores (átomos doadores por cm³), representando a densidade volumétrica de impurezas que fornecem elétrons livres ao semicondutor"
+        },
+        {
+          "symbol": "\\text{cm}^{-3}",
+          "description": "Unidade de concentração volumétrica no sistema CGS, centímetros cúbicos elevados a -1, padrão em física de semicondutores"
+        },
+        {
+          "symbol": "10^{15}",
+          "description": "Valor numérico da concentração, equivalente a 1 quadrilhão de átomos doadores por centímetro cúbico, caracterizando uma dopagem leve a moderada"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "doping-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "donor",
+        "doping",
+        "concentration",
+        "n-type",
+        "impurity",
+        "carrier",
+        "extrinsic",
+        "semiconductor",
+        "electron",
+        "majority-carrier",
+        "Fermi-level",
+        "charge-neutrality"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "donor energy level",
+          "conduction band",
+          "valence band",
+          "Fermi level position",
+          "ionization energy"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac distribution",
+        "charge-neutrality equation",
+        "electron concentration n = N_D",
+        "Fermi level in n-type semiconductor",
+        "mass-action law n*p = n_i^2",
+        "Debye length",
+        "ionization fraction"
+      ]
+    },
+    {
+      "originalFormula": "n = N_D^+",
+      "genericFormula": "n = N_D^+",
+      "description": "Esta equação expressa a condição de neutralidade elétrica em um semicondutor do tipo N com dopagem por doadores. Ela afirma que a concentração de elétrons livres na banda de condução (n) é igual à concentração de doadores ionizados (N_D^+). Essa condição é válida quando: (1) a temperatura é suficientemente alta para ionizar completamente os doadores, mas baixa o suficiente para que a geração intrínseca seja desprezível; (2) a concentração de buracos (p) é muito menor que a de elétrons. É uma aproximação amplamente utilizada para calcular a posição do nível de Fermi e a concentração de portadores majoritários em semicondutores extrínsecos tipo N na região de saturação (ou exaustão dos doadores). Em condições de ionização completa, N_D^+ ≈ N_D, simplificando ainda mais a análise.",
+      "concepts": [
+        "neutralidade elétrica",
+        "semicondutor extrínseco tipo N",
+        "ionização de doadores",
+        "portadores majoritários",
+        "concentração de elétrons",
+        "dopagem",
+        "região de exaustão",
+        "ionização completa",
+        "nível de Fermi",
+        "equilíbrio termodinâmico"
+      ],
+      "symbols": [
+        {
+          "symbol": "n",
+          "description": "Concentração de elétrons livres na banda de condução (m⁻³ ou cm⁻³)"
+        },
+        {
+          "symbol": "N_D^+",
+          "description": "Concentração de átomos doadores ionizados positivamente (m⁻³ ou cm⁻³), ou seja, doadores que cederam seus elétrons para a banda de condução"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "carrier",
+        "concentration",
+        "donor",
+        "ionization",
+        "n-type",
+        "doping",
+        "neutrality",
+        "majority-carrier",
+        "equilibrium",
+        "extrinsic"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "carrier-concentration",
+        "graphParameters": [
+          "temperature",
+          "donor-concentration",
+          "electron-concentration"
+        ]
+      },
+      "relatedFormulas": [
+        "charge-neutrality",
+        "Fermi-Dirac",
+        "ionization-fraction",
+        "mass-action-law",
+        "carrier-concentration-intrinsic",
+        "Fermi-level-n-type"
+      ]
+    },
+    {
+      "originalFormula": "m_n^*",
+      "genericFormula": "m_n^*",
+      "description": "A massa efetiva do elétron (m_n^*) é um parâmetro fundamental na física de semicondutores que descreve como um elétron se comporta dentro de um cristal semicondutor em resposta a forças externas. Diferentemente da massa de repouso do elétron no vácuo (m_0), a massa efetiva incorpora os efeitos da estrutura periódica do cristal e das interações com a rede cristalina. Matematicamente, ela é definida pela curvatura da banda de energia em relação ao vetor de onda k: m^* = ℏ² / (d²E/dk²). Uma massa efetiva pequena indica uma banda de energia muito curva, resultando em alta mobilidade dos portadores. Em semicondutores como o GaAs, m_n^* ≈ 0,067 m_0, enquanto no Si, m_n^* ≈ 0,26 m_0 (massa de condutividade). A massa efetiva pode ser anisotrópica (longitudinal e transversal) em materiais com vales elipsoidais na banda de condução, como o Si e Ge.",
+      "concepts": [
+        "massa efetiva",
+        "banda de condução",
+        "estrutura de bandas",
+        "vetor de onda",
+        "curvatura de banda",
+        "aproximação de massa efetiva",
+        "elétron em sólido",
+        "mobilidade de portadores",
+        "rede cristalina periódica",
+        "teoria de bandas"
+      ],
+      "symbols": [
+        {
+          "symbol": "m_n^*",
+          "description": "Massa efetiva do elétron na banda de condução do semicondutor"
+        },
+        {
+          "symbol": "m_0",
+          "description": "Massa de repouso do elétron no vácuo (9,109 × 10⁻³¹ kg)"
+        },
+        {
+          "symbol": "\\hbar",
+          "description": "Constante de Planck reduzida (h/2π ≈ 1,055 × 10⁻³⁴ J·s)"
+        },
+        {
+          "symbol": "E",
+          "description": "Energia do elétron na banda de condução"
+        },
+        {
+          "symbol": "k",
+          "description": "Vetor de onda do elétron (número de onda)"
+        },
+        {
+          "symbol": "\\frac{d^2E}{dk^2}",
+          "description": "Segunda derivada da energia em relação ao vetor de onda, que define a curvatura da banda"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "band-structure",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "effective-mass",
+        "electron",
+        "conduction-band",
+        "band-structure",
+        "band-curvature",
+        "mobility",
+        "k-space",
+        "wave-vector",
+        "semiconductor",
+        "crystal",
+        "carrier",
+        "energy"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "dispersion",
+        "graphParameters": [
+          "energy",
+          "wave-vector",
+          "band-curvature",
+          "effective-mass"
+        ]
+      },
+      "relatedFormulas": [
+        "E-k dispersion relation",
+        "electron mobility",
+        "density-of-states effective mass",
+        "conductivity effective mass",
+        "Schrodinger equation in crystal",
+        "Bloch theorem",
+        "carrier concentration",
+        "Fermi-Dirac distribution"
+      ]
+    },
+    {
+      "originalFormula": "m_p^*",
+      "genericFormula": "m_p^*",
+      "description": "A massa efetiva do buraco (hole effective mass) é um parâmetro fundamental em física de semicondutores que descreve como um buraco — a ausência de um elétron na banda de valência — responde a forças externas como campos elétricos e magnéticos. Em vez de tratar o movimento coletivo de todos os elétrons da banda de valência, introduz-se o conceito de buraco com massa efetiva m_p^*, que captura a curvatura da banda de valência em torno do máximo. Matematicamente, está relacionada à curvatura da relação de dispersão E(k): quanto maior a curvatura (banda mais parabólica e larga), menor a massa efetiva, e vice-versa. Em semicondutores como o GaAs, m_p^* é relativamente pequena, resultando em alta mobilidade de buracos. A massa efetiva do buraco é essencial para calcular a densidade de estados da banda de valência, a concentração de portadores em equilíbrio, a mobilidade e o coeficiente de difusão dos buracos, além de ser um parâmetro crítico no projeto de dispositivos como transistores bipolares, LEDs e lasers semicondutores.",
+      "concepts": [
+        "massa efetiva",
+        "buraco",
+        "banda de valência",
+        "relação de dispersão",
+        "curvatura de banda",
+        "portadores de carga",
+        "semicondutores",
+        "densidade de estados",
+        "mobilidade de buracos",
+        "aproximação de massa efetiva"
+      ],
+      "symbols": [
+        {
+          "symbol": "m_p^*",
+          "description": "Massa efetiva do buraco (hole effective mass), expressa em unidades de massa do elétron livre m_0 ou em kg"
+        },
+        {
+          "symbol": "m_0",
+          "description": "Massa do elétron livre, m_0 = 9{,}109 \\times 10^{-31} \\text{ kg}, usada como referência para expressar massas efetivas"
+        },
+        {
+          "symbol": "E(k)",
+          "description": "Relação de dispersão de energia em função do vetor de onda k, cuja curvatura determina a massa efetiva"
+        },
+        {
+          "symbol": "k",
+          "description": "Vetor de onda do portador no espaço recíproco (espaço-k)"
+        },
+        {
+          "symbol": "\\hbar",
+          "description": "Constante de Planck reduzida, \\hbar = h / 2\\pi \\approx 1{,}055 \\times 10^{-34} \\text{ J·s}"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "band-structure",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "effective-mass",
+        "hole",
+        "valence-band",
+        "band-structure",
+        "carrier",
+        "mobility",
+        "dispersion",
+        "density-of-states",
+        "semiconductor",
+        "curvature"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "dispersion",
+        "graphParameters": [
+          "energy",
+          "wave-vector",
+          "valence-band",
+          "effective-mass"
+        ]
+      },
+      "relatedFormulas": [
+        "m_n^*",
+        "E(k) = \\frac{\\hbar^2 k^2}{2 m_p^*}",
+        "N_v",
+        "p_0",
+        "\\mu_p",
+        "D_p",
+        "Fermi-Dirac"
+      ]
+    },
+    {
+      "originalFormula": "g_c(E) = \\text{constant} = \\frac{N_C}{kT} \\quad \\ldots E \\geq E_c",
+      "genericFormula": "g_c(E) = \\frac{N_C}{kT}, \\quad E \\geq E_c",
+      "description": "Esta fórmula descreve a densidade de estados efetiva na banda de condução para um sistema bidimensional (2D) ou para uma aproximação simplificada em que a densidade de estados é considerada constante em energia. Em sistemas 2D, como poços quânticos e heteroestrunturas, ao contrário dos sistemas tridimensionais onde g(E) ∝ √E, a densidade de estados é independente da energia e assume um valor constante igual a N_C dividido por kT. Aqui, N_C é a densidade efetiva de estados integrada (concentração efetiva de estados na banda de condução), k é a constante de Boltzmann e T é a temperatura absoluta. Esta relação é extremamente útil para calcular concentrações de portadores em semicondutores de baixa dimensionalidade e simplifica significativamente a integração da distribuição de Fermi-Dirac sobre a banda de condução. A condição E ≥ E_c indica que a fórmula é válida apenas para energias acima da borda da banda de condução.",
+      "concepts": [
+        "densidade de estados",
+        "banda de condução",
+        "sistemas bidimensionais",
+        "poços quânticos",
+        "concentração efetiva de estados",
+        "distribuição de Fermi-Dirac",
+        "semicondutores de baixa dimensionalidade",
+        "borda da banda de condução",
+        "aproximação de massa efetiva"
+      ],
+      "symbols": [
+        {
+          "symbol": "g_c(E)",
+          "description": "Densidade de estados na banda de condução em função da energia E (unidades: estados por unidade de energia por unidade de volume ou área)"
+        },
+        {
+          "symbol": "N_C",
+          "description": "Densidade efetiva de estados na banda de condução (concentração efetiva integrada, em cm⁻³ para 3D ou cm⁻² para 2D)"
+        },
+        {
+          "symbol": "k",
+          "description": "Constante de Boltzmann (k = 8,617 × 10⁻⁵ eV/K)"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta em Kelvin"
+        },
+        {
+          "symbol": "kT",
+          "description": "Energia térmica característica do sistema (≈ 0,026 eV a 300 K)"
+        },
+        {
+          "symbol": "E",
+          "description": "Energia do estado eletrônico considerado"
+        },
+        {
+          "symbol": "E_c",
+          "description": "Energia da borda inferior da banda de condução (mínimo da banda de condução)"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "density-of-states",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "density-of-states",
+        "conduction-band",
+        "2D-systems",
+        "quantum-well",
+        "effective-density",
+        "band",
+        "energy",
+        "carrier",
+        "concentration",
+        "state",
+        "Fermi-Dirac",
+        "low-dimensional",
+        "effective-mass",
+        "semiconductor"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "density-of-states",
+        "graphParameters": [
+          "energy",
+          "density-of-states",
+          "conduction-band-edge",
+          "temperature"
+        ]
+      },
+      "relatedFormulas": [
+        "density-of-states-3D",
+        "Fermi-Dirac-distribution",
+        "carrier-concentration",
+        "effective-density-of-states-NC",
+        "density-of-states-2D",
+        "electron-concentration-integral"
+      ]
+    },
+    {
+      "originalFormula": "g_v(E) = \\text{constant} = \\frac{N_V}{kT} \\quad \\ldots E \\leq E_v",
+      "genericFormula": "g_v(E) = \\frac{N_V}{kT}, \\quad E \\leq E_v",
+      "description": "Esta fórmula representa a densidade de estados efetiva na banda de valência, tratada como uma constante dentro de uma aproximação simplificada. Nesta abordagem, em vez de usar a dependência usual em raiz quadrada da energia, a densidade de estados é aproximada por um valor constante igual à concentração efetiva de estados na banda de valência (N_V) dividida pela energia térmica (kT). Esta aproximação é utilizada quando se assume que os estados da banda de valência estão distribuídos de forma uniforme em energia, sendo válida especialmente em modelos simplificados de cálculo de portadores em semicondutores. A condição E ≤ E_v indica que esta expressão é aplicada apenas para energias abaixo da borda superior da banda de valência. O produto kT serve como escala de energia normalizadora, garantindo que a integral da densidade de estados sobre a banda reproduza a concentração total de estados disponíveis N_V.",
+      "concepts": [
+        "densidade de estados",
+        "banda de valência",
+        "aproximação de densidade constante",
+        "concentração efetiva de estados",
+        "energia térmica",
+        "semicondutores",
+        "estatística de portadores",
+        "borda da banda de valência"
+      ],
+      "symbols": [
+        {
+          "symbol": "g_v(E)",
+          "description": "Densidade de estados na banda de valência em função da energia E (unidades: estados por unidade de energia por unidade de volume)"
+        },
+        {
+          "symbol": "N_V",
+          "description": "Concentração efetiva de estados na banda de valência (densidade efetiva de estados, em cm⁻³)"
+        },
+        {
+          "symbol": "k",
+          "description": "Constante de Boltzmann (k ≈ 8,617 × 10⁻⁵ eV/K)"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta do sistema em Kelvin (K)"
+        },
+        {
+          "symbol": "kT",
+          "description": "Energia térmica do sistema, produto da constante de Boltzmann pela temperatura, usada como escala de energia"
+        },
+        {
+          "symbol": "E_v",
+          "description": "Energia da borda superior da banda de valência (topo da banda de valência)"
+        },
+        {
+          "symbol": "E",
+          "description": "Energia do estado eletrônico considerado"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "density-of-states",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "density-of-states",
+        "valence-band",
+        "band",
+        "valence",
+        "concentration",
+        "effective-density",
+        "energy",
+        "level",
+        "state",
+        "thermal-energy",
+        "carrier",
+        "approximation",
+        "Boltzmann",
+        "semiconductor"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "density-of-states",
+        "graphParameters": [
+          "energy",
+          "density-of-states",
+          "valence-band-edge",
+          "temperature"
+        ]
+      },
+      "relatedFormulas": [
+        "density-of-states-valence-band-parabolic",
+        "effective-density-of-states-valence-NV",
+        "hole-concentration-p0",
+        "Fermi-Dirac-distribution",
+        "density-of-states-conduction-band-constant",
+        "carrier-concentration-intrinsic"
+      ]
+    },
+    {
+      "originalFormula": "N_{C,V} = (2.509 \\times 10^{19}/\\text{cm}^3)\\left(\\frac{m^*}{m_0}\\right)^{3/2}",
+      "genericFormula": "N_{C,V} = 2\\left(\\frac{2\\pi m^* k_B T}{h^2}\\right)^{3/2}",
+      "description": "Esta fórmula calcula a densidade efetiva de estados nas bandas de condução (N_C) e de valência (N_V) de um semicondutor à temperatura ambiente (T = 300 K). A densidade efetiva de estados representa o número de estados quânticos por unidade de volume disponíveis para elétrons na borda da banda de condução ou para buracos na borda da banda de valência. O valor numérico 2.509 × 10¹⁹ cm⁻³ corresponde à avaliação da expressão geral para um elétron livre (m* = m₀) a 300 K. O fator (m*/m₀)^{3/2} corrige esse valor pela massa efetiva do portador no semicondutor, que reflete a curvatura das bandas de energia. Esta grandeza é fundamental para o cálculo das concentrações de elétrons e buracos em equilíbrio térmico, usando as integrais de Fermi-Dirac.",
+      "concepts": [
+        "densidade efetiva de estados",
+        "banda de condução",
+        "banda de valência",
+        "massa efetiva",
+        "equilíbrio térmico",
+        "estatística de Fermi-Dirac",
+        "concentração de portadores",
+        "aproximação da massa efetiva",
+        "temperatura ambiente"
+      ],
+      "symbols": [
+        {
+          "symbol": "N_{C,V}",
+          "description": "Densidade efetiva de estados na banda de condução (C) ou de valência (V), em cm⁻³"
+        },
+        {
+          "symbol": "2.509 \\times 10^{19}\\,\\text{cm}^{-3}",
+          "description": "Valor numérico da densidade efetiva de estados para elétron livre (m* = m₀) a T = 300 K"
+        },
+        {
+          "symbol": "m^*",
+          "description": "Massa efetiva do portador (elétron na banda de condução ou buraco na banda de valência)"
+        },
+        {
+          "symbol": "m_0",
+          "description": "Massa de repouso do elétron livre, m₀ = 9.109 × 10⁻³¹ kg"
+        },
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann, k_B = 1.381 × 10⁻²³ J/K"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta em Kelvin (valor de referência: T = 300 K)"
+        },
+        {
+          "symbol": "h",
+          "description": "Constante de Planck, h = 6.626 × 10⁻³⁴ J·s"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "density-of-states",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "density-of-states",
+        "effective-density",
+        "conduction-band",
+        "valence-band",
+        "effective-mass",
+        "carrier-concentration",
+        "Fermi-Dirac",
+        "band",
+        "state",
+        "energy",
+        "semiconductor",
+        "equilibrium"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "density-of-states",
+        "graphParameters": [
+          "energy",
+          "density-of-states",
+          "effective-mass",
+          "temperature"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac-distribution",
+        "electron-concentration",
+        "hole-concentration",
+        "intrinsic-carrier-concentration",
+        "effective-mass-tensor",
+        "Fermi-energy"
+      ]
+    }
+  ],
+  "bookTitle": "Modular Series On Solid State Devices",
+  "author": "Unknown",
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67
+  ],
+  "lastUpdated": "2026-05-09T15:01:43.776Z"
+}

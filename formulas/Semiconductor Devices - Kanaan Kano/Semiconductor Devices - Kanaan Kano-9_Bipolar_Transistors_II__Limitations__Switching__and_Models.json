@@ -1,0 +1,1798 @@
+{
+  "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+  "questions": [
+    {
+      "number": "a",
+      "text": "Determine BV_{CBO} and BV_{CEO}.",
+      "formulas": [
+        {
+          "originalFormula": "BV_{CBO} = V_{br} = \\frac{e_{cr}^{2} e}{2 q N_{A}}",
+          "genericFormula": "BV_{CBO} = V_{br} = \\frac{e_{cr}^{2} e}{2 q N_{A}}",
+          "description": "Esta fórmula representa a tensão de ruptura em um diodo, que é a tensão máxima que pode ser aplicada antes que o diodo comece a conduzir em reverso. Essa tensão é crucial para entender o comportamento de dispositivos semicondutores sob condições de polarização reversa.",
+          "concepts": [
+            "Tensão de ruptura",
+            "Diodo",
+            "Polarização reversa",
+            "Semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "BV_{CBO}",
+              "description": "Representa a tensão de ruptura do diodo em condição de polarização reversa, ou seja, o valor máximo da tensão reversa que o diodo pode suportar sem conduzir."
+            },
+            {
+              "symbol": "V_{br}",
+              "description": "É uma notação alternativa para a tensão de ruptura, indicando o mesmo conceito de tensão máxima em polarização reversa."
+            },
+            {
+              "symbol": "e_{cr}",
+              "description": "Representa a carga elétrica do portador de carga em um semicondutor, que é uma medida da quantidade de carga que um portador pode transportar."
+            },
+            {
+              "symbol": "e",
+              "description": "É a constante que representa a carga elementar, ou seja, a carga de um único elétron."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elétrica elementar, que é a mesma que a carga de um elétron, utilizada em cálculos envolvendo cargas em semicondutores."
+            },
+            {
+              "symbol": "N_{A}",
+              "description": "É a densidade de dopagem do semicondutor, que indica a quantidade de átomos dopantes por unidade de volume no material semicondutor."
+            }
+          ],
+          "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+          "source": "question",
+          "questionNumber": "a",
+          "page": 1
+        },
+        {
+          "originalFormula": "BV_{CEO} = BV_{CBO} \\left( \\frac{100}{(100)}^{0.25} \\right) = 31.22V",
+          "genericFormula": "BV_{CEO} = BV_{CBO} \\left( \\frac{100}{(100)}^{x} \\right)",
+          "description": "Esta fórmula representa a relação entre a tensão de coletor-emissor de um transistor bipolar (BV_{CEO}) e a tensão de coletor-base (BV_{CBO}), ajustada por um fator que depende de uma potência. O resultado é uma tensão que indica a capacidade do transistor de suportar tensões sem falhar.",
+          "concepts": [
+            "Transistores bipolares",
+            "Tensão de coletor-emissor",
+            "Tensão de coletor-base",
+            "Fatores de ajuste em circuitos eletrônicos"
+          ],
+          "symbols": [
+            {
+              "symbol": "BV_{CEO}",
+              "description": "Representa a tensão máxima que um transistor pode suportar entre o coletor e o emissor sem entrar em modo de falha."
+            },
+            {
+              "symbol": "BV_{CBO}",
+              "description": "Representa a tensão máxima que um transistor pode suportar entre o coletor e a base, também sem entrar em modo de falha."
+            },
+            {
+              "symbol": "100",
+              "description": "Um valor numérico que é usado como base para o cálculo do fator de ajuste na fórmula."
+            },
+            {
+              "symbol": "x",
+              "description": "Um expoente que representa a fração da tensão que está sendo ajustada, neste caso, 0.25."
+            }
+          ],
+          "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+          "source": "question",
+          "questionNumber": "a",
+          "page": 18
+        }
+      ]
+    },
+    {
+      "number": "Q9-1",
+      "text": "Briefly define the significance of the multiplication factor M.",
+      "formulas": []
+    },
+    {
+      "number": "Q9-2",
+      "text": "Why is punchthrough of concern in modern BJTs?",
+      "formulas": []
+    },
+    {
+      "number": "Q9-3",
+      "text": "To increase the punchthrough voltage, the base doping can be increased. What is the negative effect of an increase in the base doping?",
+      "formulas": []
+    },
+    {
+      "number": "Q9-4",
+      "text": "Explain the negative effect of reducing the base doping on the base resistance.",
+      "formulas": []
+    },
+    {
+      "number": "Q9-5",
+      "text": "What is the effect on the emitter of high base resistance at high current?",
+      "formulas": []
+    },
+    {
+      "number": "Q9-6",
+      "text": "Explain why BVCBO is larger than BVCeo.",
+      "formulas": []
+    },
+    {
+      "number": "Q9-7",
+      "text": "Briefly explain the shape of the curve βF versus IC in Fig. 9.8.",
+      "formulas": []
+    },
+    {
+      "number": "9.30",
+      "text": "What is the expression for the transit time?",
+      "formulas": [
+        {
+          "originalFormula": "t_{tr} = \\int_{0}^{W_B} \\frac{W_B(1 - \\frac{x}{W_B})}{D_p} dx = \\frac{W_B^2}{2D_p}",
+          "genericFormula": "t_{tr} = \\int_{0}^{W_B} \\frac{W_B(1 - \\frac{x}{W_B})}{D_p} dx = \\frac{W_B^2}{2D_p}",
+          "description": "Esta fórmula representa o tempo de transporte de portadores de carga em um semicondutor, onde a integral calcula o tempo total considerando a variação da densidade de portadores ao longo de uma largura específica, enquanto a segunda parte da fórmula fornece uma forma simplificada que relaciona a largura e a difusividade dos portadores.",
+          "concepts": [
+            "Transporte de carga em semicondutores",
+            "Difusão de portadores",
+            "Integração em cálculo",
+            "Relação entre largura e tempo de transporte"
+          ],
+          "symbols": [
+            {
+              "symbol": "t_{tr}",
+              "description": "Representa o tempo de transporte dos portadores de carga em um semicondutor."
+            },
+            {
+              "symbol": "W_B",
+              "description": "Representa a largura da região onde os portadores de carga estão se movendo."
+            },
+            {
+              "symbol": "D_p",
+              "description": "Representa o coeficiente de difusão dos portadores de carga, que indica a facilidade com que os portadores se movem através do material."
+            },
+            {
+              "symbol": "x",
+              "description": "Representa a variável de integração, que indica a posição ao longo da largura da região considerada."
+            }
+          ],
+          "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+          "source": "question",
+          "questionNumber": "9.30",
+          "page": 35
+        }
+      ]
+    },
+    {
+      "number": "9.34",
+      "text": "What is the first charge control equation?",
+      "formulas": [
+        {
+          "originalFormula": "i_B(t) = \\frac{Q_B(t)}{\\tau_p} + \\frac{dQ_B(t)}{dt}",
+          "genericFormula": "i_B(t) = \\frac{Q_B(t)}{\\tau} + \\frac{dQ_B(t)}{dt}",
+          "description": "Esta fórmula representa a corrente de base em um transistor bipolar em função da carga acumulada na base e da taxa de variação dessa carga ao longo do tempo. A corrente de base é crucial para o funcionamento do transistor, pois controla a corrente que flui entre o coletor e o emissor.",
+          "concepts": [
+            "Corrente elétrica",
+            "Carga elétrica",
+            "Taxa de variação",
+            "Transistor bipolar",
+            "Tempo de vida da carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "i_B(t)",
+              "description": "Representa a corrente de base em um transistor bipolar em um instante de tempo específico."
+            },
+            {
+              "symbol": "Q_B(t)",
+              "description": "Representa a carga elétrica acumulada na base do transistor em um instante de tempo específico."
+            },
+            {
+              "symbol": "\\tau_p",
+              "description": "Representa o tempo de vida da carga na base do transistor, que indica quanto tempo a carga permanece antes de ser recombinada."
+            },
+            {
+              "symbol": "dQ_B(t)/dt",
+              "description": "Representa a taxa de variação da carga na base em relação ao tempo, indicando como a carga está mudando ao longo do tempo."
+            }
+          ],
+          "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+          "source": "question",
+          "questionNumber": "9.34",
+          "page": 52
+        }
+      ]
+    },
+    {
+      "number": "9.2",
+      "text": "Given that for Fig. 9.10, V_{CC} = 5V, R_{L} = 1k\\Omega, \\tau_{p} = 0.25\\mu s, W_{B} = 2\\mu m, and D_{p} = 5cm^{2}/s, sketch the waveforms of the collector current and of the charge Q_{B} and identify the values at the critical points.",
+      "formulas": []
+    },
+    {
+      "number": "9.51",
+      "text": "Qual é a relação linear para a mudança em Δp(0)?",
+      "formulas": [
+        {
+          "originalFormula": "\\Delta p(0) = p_{1}(0) \\left( \\frac{q}{kT} \\right) \\Delta V_{EB}",
+          "genericFormula": "\\Delta p(0) = p_{1}(0) \\left( \\frac{q}{kT} \\right) \\Delta V_{EB}",
+          "description": "Esta fórmula descreve a variação da densidade de portadores de carga em um semicondutor em resposta a uma variação de potencial elétrico. Ela relaciona a mudança na densidade de portadores com a densidade inicial de portadores, a carga elétrica, a constante de Boltzmann, a temperatura e a variação de potencial elétrico.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Efeito da temperatura em semicondutores",
+            "Relação entre potencial elétrico e densidade de portadores"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\Delta p(0)",
+              "description": "Representa a variação da densidade de portadores de carga em um semicondutor em um determinado ponto."
+            },
+            {
+              "symbol": "p_{1}(0)",
+              "description": "Representa a densidade inicial de portadores de carga em um semicondutor em um determinado ponto."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elétrica elementar, que é a carga de um único elétron."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta em Kelvin, que é uma medida da energia térmica em um sistema."
+            },
+            {
+              "symbol": "\\Delta V_{EB}",
+              "description": "Representa a variação do potencial elétrico entre dois pontos em um semicondutor."
+            }
+          ],
+          "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+          "source": "question",
+          "questionNumber": "9.51",
+          "page": 69
+        }
+      ]
+    },
+    {
+      "number": "9.56",
+      "text": "Qual é a expressão para a corrente de recombinação na base?",
+      "formulas": [
+        {
+          "originalFormula": "I_{rec} = \\frac{Q_{B}}{\\tau_{p}} = qA \\int_{0}^{W_{B}} \\left[ \\frac{(p' - p_{0})}{\\tau_{p}} \\right] dx",
+          "genericFormula": "I_{rec} = \\frac{Q}{\\tau} = qA \\int_{0}^{W} \\left[ \\frac{(p' - p_{0})}{\\tau} \\right] dx",
+          "description": "Esta fórmula representa a corrente de recombinação em um semicondutor, que é a quantidade de carga elétrica que se recombina em um determinado volume ao longo do tempo. A corrente de recombinação é influenciada pela densidade de portadores de carga e pelo tempo de vida dos portadores.",
+          "concepts": [
+            "Corrente elétrica",
+            "Recombinação de portadores de carga",
+            "Densidade de portadores",
+            "Tempo de vida dos portadores",
+            "Integração em um intervalo"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_{rec}",
+              "description": "Representa a corrente de recombinação, que é a quantidade de carga que se recombina por unidade de tempo."
+            },
+            {
+              "symbol": "Q_{B}",
+              "description": "Representa a carga total que se recombina em um determinado volume."
+            },
+            {
+              "symbol": "\\tau_{p}",
+              "description": "Representa o tempo de vida dos portadores de carga, que é o tempo médio que um portador de carga permanece livre antes de se recombinar."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elementar, que é a carga de um único elétron."
+            },
+            {
+              "symbol": "A",
+              "description": "Representa a área da seção transversal através da qual a corrente está fluindo."
+            },
+            {
+              "symbol": "W_{B}",
+              "description": "Representa a largura do volume em que a recombinação está sendo considerada."
+            },
+            {
+              "symbol": "p'",
+              "description": "Representa a densidade de portadores de carga em um ponto específico dentro do volume considerado."
+            },
+            {
+              "symbol": "p_{0}",
+              "description": "Representa a densidade de portadores de carga em um estado de equilíbrio ou condição inicial."
+            },
+            {
+              "symbol": "dx",
+              "description": "Representa um elemento infinitesimal de comprimento ao longo do qual a integração está sendo realizada."
+            }
+          ],
+          "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+          "source": "question",
+          "questionNumber": "9.56",
+          "page": 86
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "text": "What are the consequences of the change in the distribution of hole density due to base-width modulation?",
+      "formulas": []
+    },
+    {
+      "number": "Q9-11",
+      "text": "Why is the BJT small-signal circuit labeled linear?",
+      "formulas": []
+    },
+    {
+      "number": "Q9-12",
+      "text": "Briefly define the significance of the frequency f_{T}.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "a",
+      "text": "BV_{CBO} = 98.73V, BV_{CEO} = 31.22V",
+      "formulas": [
+        {
+          "originalFormula": "BV_{CBO} = V_{br} = \\frac{9 \\times 10^{10} \\times 11.8 \\times 8.85 \\times 10^{-14}}{2 \\times 1.6 \\times 10^{-19} \\times 3 \\times 10^{15}}",
+          "genericFormula": "BV_{CBO} = V_{br} = \\frac{A \\times B \\times C}{D \\times E \\times F}",
+          "description": "Esta fórmula representa a tensão de ruptura de um transistor bipolar, que é a tensão máxima que pode ser aplicada entre a base e o coletor sem que ocorra a ruptura do dispositivo. Essa tensão é crucial para o funcionamento seguro e eficiente do transistor em circuitos eletrônicos.",
+          "concepts": [
+            "tensão de ruptura",
+            "transistor bipolar",
+            "circuitos eletrônicos",
+            "eletrônica de potência"
+          ],
+          "symbols": [
+            {
+              "symbol": "BV_{CBO}",
+              "description": "representa a tensão de ruptura entre a base e o coletor de um transistor bipolar."
+            },
+            {
+              "symbol": "V_{br}",
+              "description": "indica a tensão de ruptura, que é a mesma que BV_{CBO} neste contexto."
+            },
+            {
+              "symbol": "A",
+              "description": "um coeficiente que pode representar uma constante física ou um parâmetro específico do material do transistor."
+            },
+            {
+              "symbol": "B",
+              "description": "um valor que pode representar a permissividade elétrica do material do transistor."
+            },
+            {
+              "symbol": "C",
+              "description": "um valor que pode representar a constante dielétrica do vácuo."
+            },
+            {
+              "symbol": "D",
+              "description": "um fator que pode representar a carga elementar, que é a carga de um único elétron."
+            },
+            {
+              "symbol": "E",
+              "description": "um valor que pode representar um fator relacionado à densidade de portadores de carga no material."
+            },
+            {
+              "symbol": "F",
+              "description": "um valor que pode representar uma constante relacionada ao campo elétrico aplicado."
+            }
+          ],
+          "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+          "source": "answer",
+          "questionNumber": "a",
+          "page": 104
+        }
+      ]
+    },
+    {
+      "questionNumber": "9.2",
+      "text": "I_{CSAT} = \\frac{V_{CC}}{R_{L}} = 5mA",
+      "formulas": [
+        {
+          "originalFormula": "I_{CSAT} = \\frac{V_{CC}}{R_{L}}",
+          "genericFormula": "I_{CSAT} = \\frac{V}{R}",
+          "description": "Esta fórmula representa a corrente elétrica que flui através de uma carga resistiva em um circuito, onde a corrente é calculada a partir da tensão aplicada e da resistência da carga.",
+          "concepts": [
+            "corrente elétrica",
+            "tensão elétrica",
+            "resistência elétrica",
+            "Lei de Ohm"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_{CSAT}",
+              "description": "Representa a corrente que flui através da carga, medida em amperes."
+            },
+            {
+              "symbol": "V_{CC}",
+              "description": "Representa a tensão da fonte de alimentação, medida em volts."
+            },
+            {
+              "symbol": "R_{L}",
+              "description": "Representa a resistência da carga, medida em ohms."
+            },
+            {
+              "symbol": "V",
+              "description": "Representa a tensão elétrica aplicada em um circuito, medida em volts."
+            },
+            {
+              "symbol": "R",
+              "description": "Representa a resistência elétrica de um componente ou circuito, medida em ohms."
+            }
+          ],
+          "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+          "source": "answer",
+          "questionNumber": "9.2",
+          "page": 121
+        }
+      ]
+    },
+    {
+      "questionNumber": "9.2",
+      "text": "For Q_{B} = Q_{SAT}, we use Eq. (9.24) to determine \\tau_{B}.",
+      "formulas": [
+        {
+          "originalFormula": "\\tau_{B} = \\frac{W_{B}^{2}}{2D_{p}} = 4ns",
+          "genericFormula": "\\tau_{B} = \\frac{W_{B}^{2}}{2D_{p}}",
+          "description": "Esta fórmula representa o tempo de relaxação de um portador de carga em um semicondutor, que é a quantidade de tempo que leva para um portador de carga (como um elétron) se recombinar ou se dispersar em um material semicondutor após ser criado ou excitado.",
+          "concepts": [
+            "tempo de relaxação",
+            "portadores de carga",
+            "semicondutores",
+            "recombinação",
+            "dispersão"
+          ],
+          "symbols": [
+            {
+              "symbol": "τ_{B}",
+              "description": "representa o tempo de relaxação dos portadores de carga, que é o tempo necessário para que a densidade de portadores de carga retorne ao seu estado de equilíbrio após uma perturbação."
+            },
+            {
+              "symbol": "W_{B}",
+              "description": "representa a largura da região onde ocorre a geração de portadores de carga, que pode ser influenciada por fatores como a intensidade da luz ou a energia térmica."
+            },
+            {
+              "symbol": "D_{p}",
+              "description": "representa o coeficiente de difusão dos portadores de carga, que é uma medida de quão rapidamente os portadores se espalham através do material semicondutor."
+            }
+          ],
+          "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+          "source": "answer",
+          "questionNumber": "9.2",
+          "page": 138
+        }
+      ]
+    },
+    {
+      "questionNumber": "9.51",
+      "text": "A relação linear é dada pela equação mencionada.",
+      "formulas": []
+    },
+    {
+      "questionNumber": "9.56",
+      "text": "A corrente de recombinação na base é dada por I_{rec} = \\frac{qA P_{0} W_{B}}{2 \\tau_{p}} \\left[ \\exp \\left( \\frac{q V_{EB}}{kT} \\right) - 1 \\right]",
+      "formulas": [
+        {
+          "originalFormula": "I_{rec} = \\frac{qA P_{0} W_{B}}{2 \\tau_{p}} \\left[ \\exp \\left( \\frac{q V_{EB}}{kT} \\right) - 1 \\right]",
+          "genericFormula": "I_{rec} = \\frac{qA P_{0} W_{B}}{2 \\tau_{p}} \\left[ \\exp \\left( \\frac{q V_{EB}}{kT} \\right) - 1 \\right]",
+          "description": "Esta fórmula representa a corrente de recombinação em um semicondutor, que ocorre quando portadores de carga (elétrons e lacunas) se recombinam, resultando em uma corrente elétrica. A corrente de recombinação é influenciada por fatores como a densidade de portadores, a largura da barreira potencial e a temperatura do sistema.",
+          "concepts": [
+            "Corrente elétrica",
+            "Recombinação de portadores de carga",
+            "Semicondutores",
+            "Temperatura",
+            "Barreira potencial"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_{rec}",
+              "description": "Representa a corrente de recombinação, que é a quantidade de carga que flui devido à recombinação de portadores de carga em um semicondutor."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elementar, que é a quantidade de carga elétrica transportada por um único elétron."
+            },
+            {
+              "symbol": "A",
+              "description": "Representa a área da junção ou do dispositivo semicondutor onde a recombinação ocorre."
+            },
+            {
+              "symbol": "P_{0}",
+              "description": "Representa a densidade de portadores de carga, que é a quantidade de portadores (elétrons ou lacunas) por unidade de volume."
+            },
+            {
+              "symbol": "W_{B}",
+              "description": "Representa a largura da barreira potencial, que é a distância que os portadores de carga devem atravessar para se recombinarem."
+            },
+            {
+              "symbol": "\\tau_{p}",
+              "description": "Representa o tempo de vida dos portadores de carga, que é o tempo médio que um portador de carga permanece livre antes de se recombinar."
+            },
+            {
+              "symbol": "V_{EB}",
+              "description": "Representa a tensão aplicada na junção, que pode influenciar a taxa de recombinação dos portadores de carga."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia térmica dos portadores de carga."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura do sistema, que afeta a energia térmica e a movimentação dos portadores de carga."
+            }
+          ],
+          "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+          "source": "answer",
+          "questionNumber": "9.56",
+          "page": 155
+        }
+      ]
+    },
+    {
+      "questionNumber": "1",
+      "text": "The consequences are: 1) Increase in collector current due to the increase in the gradient of the hole density in the base. 2) Decrease of total stored base charge, which requires a transient component of base current. 3) Decrease of recombination rate, and hence a decrease in the base current, which supplies electrons to recombine in the base. 4) The transient base and collector currents increase the density of ionized atoms in the collector-base depletion layer.",
+      "formulas": []
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "I_{C} = I_{CBO} + \\beta I_{B}",
+      "genericFormula": "I_{C} = I_{CBO} + \\beta I_{B}",
+      "description": "Esta fórmula representa a corrente de coletor em um transistor bipolar, que é a soma da corrente de coletor devido à corrente de base e a corrente de coletor de polarização reversa.",
+      "concepts": [
+        "Transistor bipolar",
+        "Corrente de coletor",
+        "Corrente de base",
+        "Ganho de corrente"
+      ],
+      "symbols": [
+        {
+          "symbol": "I_{C}",
+          "description": "Representa a corrente que flui do coletor do transistor."
+        },
+        {
+          "symbol": "I_{CBO}",
+          "description": "Representa a corrente de coletor de polarização reversa, que ocorre devido a vazamentos no transistor quando não há corrente de base."
+        },
+        {
+          "symbol": "\\beta",
+          "description": "É o ganho de corrente do transistor, que indica quantas vezes a corrente de base é amplificada na corrente de coletor."
+        },
+        {
+          "symbol": "I_{B}",
+          "description": "Representa a corrente que flui para a base do transistor, que controla a quantidade de corrente que flui do coletor."
+        }
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 172
+    },
+    {
+      "originalFormula": "I_{C} = I_{CEO} + \\beta I_{B}",
+      "genericFormula": "I_{C} = I_{CEO} + \\beta I_{B}",
+      "description": "Esta fórmula representa a relação entre a corrente de coletor, a corrente de emissor e a corrente de base em um transistor bipolar. Ela mostra como a corrente de coletor é composta pela corrente de emissor e uma fração da corrente de base, multiplicada pelo ganho de corrente do transistor.",
+      "concepts": [
+        "Transistor bipolar",
+        "Corrente elétrica",
+        "Ganho de corrente",
+        "Relação entre correntes"
+      ],
+      "symbols": [
+        {
+          "symbol": "I_{C}",
+          "description": "Representa a corrente que flui do coletor do transistor."
+        },
+        {
+          "symbol": "I_{CEO}",
+          "description": "Representa a corrente de coletor em condição de emissor aberto, ou seja, a corrente que flui do coletor quando não há corrente na base."
+        },
+        {
+          "symbol": "\\beta",
+          "description": "Representa o ganho de corrente do transistor, que é a razão entre a corrente de coletor e a corrente de base."
+        },
+        {
+          "symbol": "I_{B}",
+          "description": "Representa a corrente que flui para a base do transistor."
+        }
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 189
+    },
+    {
+      "originalFormula": "g_{max} = \\left[ 2 V_{A} q N_{A} N_{D} / e (N_{A} + N_{D}) \\right]^{0.5}",
+      "genericFormula": "g_{max} = \\left[ 2 V_{A} q N_{A} N_{D} / e (N_{A} + N_{D}) \\right]^{0.5}",
+      "description": "Esta fórmula representa a condutividade máxima de um semicondutor dopado, levando em consideração a concentração de portadores de carga e a mobilidade dos mesmos. A condutividade é uma medida de como bem um material pode conduzir eletricidade.",
+      "concepts": [
+        "Condutividade elétrica",
+        "Dopagem de semicondutores",
+        "Portadores de carga",
+        "Mobilidade de portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "g_{max}",
+          "description": "Representa a condutividade máxima do semicondutor."
+        },
+        {
+          "symbol": "V_{A}",
+          "description": "Representa a tensão aplicada no semicondutor."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elementar, que é a quantidade de carga elétrica de um único próton."
+        },
+        {
+          "symbol": "N_{A}",
+          "description": "Representa a concentração de átomos dopantes do tipo aceitador no semicondutor."
+        },
+        {
+          "symbol": "N_{D}",
+          "description": "Representa a concentração de átomos dopantes do tipo doador no semicondutor."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a constante de permissividade do meio, que influencia a interação entre as cargas."
+        }
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 207
+    },
+    {
+      "originalFormula": "v(x) = \\frac{D_p}{W_B(1 - \\frac{x}{W_B})} = \\tau_B",
+      "genericFormula": "v(x) = \\frac{D_p}{W_B(1 - \\frac{x}{W_B})} = \\tau_B",
+      "description": "Esta fórmula descreve a relação entre a velocidade de um portador de carga em um semicondutor e a largura da barreira de potencial, além de relacionar essa velocidade ao tempo de recombinação dos portadores. Ela é fundamental para entender como os portadores se movem em um dispositivo semicondutor.",
+      "concepts": [
+        "Movimento de portadores de carga",
+        "Barreira de potencial",
+        "Tempo de recombinação",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "v(x)",
+          "description": "Representa a velocidade do portador de carga em uma posição x dentro do material semicondutor."
+        },
+        {
+          "symbol": "D_p",
+          "description": "Representa a difusividade do portador de carga, que é uma medida de quão rapidamente os portadores se espalham através do material."
+        },
+        {
+          "symbol": "W_B",
+          "description": "Representa a largura da barreira de potencial, que é a distância que os portadores de carga precisam atravessar para se moverem de uma região a outra."
+        },
+        {
+          "symbol": "x",
+          "description": "Representa a posição ao longo do material semicondutor onde a velocidade está sendo avaliada."
+        },
+        {
+          "symbol": "\\tau_B",
+          "description": "Representa o tempo de recombinação dos portadores de carga, que é o tempo médio que um portador leva para recombinar após ter sido gerado."
+        }
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 224
+    },
+    {
+      "originalFormula": "Q_B = qA \\int_{0}^{W_B} p'(x)dx",
+      "genericFormula": "Q_B = qA \\int_{0}^{W_B} p'(x)dx",
+      "description": "Esta fórmula representa a carga elétrica total Q_B acumulada em uma região específica, onde a carga é influenciada pela densidade de carga em função da posição ao longo de um intervalo de largura W_B. A integral calcula a soma das contribuições da densidade de carga ao longo desse intervalo.",
+      "concepts": [
+        "Carga elétrica",
+        "Densidade de carga",
+        "Integração em cálculo",
+        "Intervalo de largura"
+      ],
+      "symbols": [
+        {
+          "symbol": "Q_B",
+          "description": "Representa a carga elétrica total acumulada na região B."
+        },
+        {
+          "symbol": "qA",
+          "description": "Representa um fator que pode incluir uma constante de proporcionalidade e a área A, que pode estar relacionada à distribuição da carga."
+        },
+        {
+          "symbol": "W_B",
+          "description": "Representa a largura do intervalo ao longo do qual a densidade de carga é considerada."
+        },
+        {
+          "symbol": "p'(x)",
+          "description": "Representa a densidade de carga em função da posição x, indicando como a carga está distribuída ao longo do intervalo."
+        },
+        {
+          "symbol": "dx",
+          "description": "Representa um elemento infinitesimal de comprimento ao longo do eixo x, usado na integração para somar as contribuições da densidade de carga."
+        }
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 241
+    },
+    {
+      "originalFormula": "\\frac{\\partial}{\\partial t}(p'(x)qA) = -\\frac{qA p'}{\\tau_p} - \\frac{qA \\frac{dJ_p}{dx}}",
+      "genericFormula": "\\frac{\\partial}{\\partial t}(f'(x)qA) = -\\frac{qA f'}{\\tau} - \\frac{qA \\frac{dJ}{dx}}",
+      "description": "Esta fórmula descreve como a quantidade de movimento de partículas carregadas em um meio varia ao longo do tempo, levando em consideração a densidade de corrente e a taxa de relaxação das partículas. Ela mostra a relação entre a variação temporal da quantidade de movimento e os efeitos de dissipação e transporte de carga no material.",
+      "concepts": [
+        "Variação temporal da quantidade de movimento",
+        "Densidade de corrente",
+        "Taxa de relaxação das partículas",
+        "Transporte de carga em semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "∂/∂t",
+          "description": "Representa a derivada parcial em relação ao tempo, indicando como uma quantidade muda ao longo do tempo."
+        },
+        {
+          "symbol": "p'(x)",
+          "description": "Representa uma função que depende da posição, relacionada à quantidade de movimento ou densidade de partículas em um ponto específico."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica das partículas, que pode ser positiva ou negativa, dependendo do tipo de partícula."
+        },
+        {
+          "symbol": "A",
+          "description": "Representa uma área, que pode estar relacionada à seção transversal através da qual a corrente flui."
+        },
+        {
+          "symbol": "τ_p",
+          "description": "Representa a constante de relaxação, que indica o tempo médio que uma partícula leva para perder sua energia ou quantidade de movimento devido a interações com o meio."
+        },
+        {
+          "symbol": "dJ_p/dx",
+          "description": "Representa a derivada da densidade de corrente em relação à posição, indicando como a corrente varia ao longo do espaço."
+        }
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 258
+    },
+    {
+      "originalFormula": "\\frac{\\partial}{\\partial t} \\int_{0}^{W_B} p'(x)qA dx = -\\int_{0}^{W_B} \\frac{qA p'}{\\tau_p} dx - \\int_{0}^{W_B} qA \\frac{dJ_p}{dx}",
+      "genericFormula": "\\frac{\\partial}{\\partial t} \\int_{0}^{W_B} p'(x)qA \\: dx = -\\int_{0}^{W_B} \\frac{qA p'}{\\tau_p} \\: dx - \\int_{0}^{W_B} qA \\frac{dJ_p}{dx}",
+      "description": "Esta fórmula descreve a variação temporal da integral de um produto de uma função p' com a carga q e a área A ao longo de um intervalo de x, que é limitado de 0 até W_B. O lado direito da equação representa a soma de dois termos que envolvem a dissipação da carga e a variação da densidade de corrente, mostrando como a carga se comporta em um sistema ao longo do tempo.",
+      "concepts": [
+        "Variação temporal",
+        "Integrais",
+        "Densidade de corrente",
+        "Dissipação de carga",
+        "Tempo de relaxação"
+      ],
+      "symbols": [
+        {
+          "symbol": "∂/∂t",
+          "description": "Representa a derivada parcial em relação ao tempo, indicando como uma quantidade muda ao longo do tempo."
+        },
+        {
+          "symbol": "∫",
+          "description": "Representa a operação de integração, que soma valores de uma função ao longo de um intervalo."
+        },
+        {
+          "symbol": "p'(x)",
+          "description": "Representa uma função que depende da posição x, que pode ser interpretada como a densidade de portadores de carga ou uma quantidade relacionada ao sistema."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica, que é uma propriedade fundamental das partículas subatômicas, como elétrons e prótons."
+        },
+        {
+          "symbol": "A",
+          "description": "Representa a área através da qual a carga está sendo considerada, essencial para calcular a densidade de corrente."
+        },
+        {
+          "symbol": "W_B",
+          "description": "Representa o limite superior da integral, que define o intervalo de integração ao longo do qual a função é avaliada."
+        },
+        {
+          "symbol": "τ_p",
+          "description": "Representa o tempo de relaxação, que é um parâmetro que descreve o tempo que leva para a carga se dissipar ou se equilibrar no sistema."
+        },
+        {
+          "symbol": "J_p",
+          "description": "Representa a densidade de corrente, que é a quantidade de carga que passa por uma unidade de área em um determinado intervalo de tempo."
+        },
+        {
+          "symbol": "dx",
+          "description": "Representa um pequeno incremento na variável x, usado na integração para somar as contribuições ao longo do intervalo."
+        }
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 275
+    },
+    {
+      "originalFormula": "i_{cp} \\simeq i_c - i_n",
+      "genericFormula": "i_{cp} \\simeq i_c - i_n",
+      "description": "Esta fórmula representa a corrente de polarização de um dispositivo semicondutor, onde a corrente total é ajustada subtraindo a corrente de ruído. Ela é utilizada para entender como a corrente de polarização se comporta em relação à corrente de condução e à corrente de ruído.",
+      "concepts": [
+        "Corrente elétrica",
+        "Polarização de semicondutores",
+        "Corrente de condução",
+        "Corrente de ruído"
+      ],
+      "symbols": [
+        {
+          "symbol": "i_{cp}",
+          "description": "Representa a corrente de polarização, que é a corrente que flui através do dispositivo semicondutor em um estado de operação específico."
+        },
+        {
+          "symbol": "i_c",
+          "description": "Representa a corrente de condução, que é a corrente principal que flui através do dispositivo quando ele está em operação normal."
+        },
+        {
+          "symbol": "i_n",
+          "description": "Representa a corrente de ruído, que é a corrente indesejada que pode interferir no funcionamento do dispositivo, geralmente causada por flutuações aleatórias."
+        }
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 292
+    },
+    {
+      "originalFormula": "i_E \\simeq i_c",
+      "genericFormula": "i_E \\simeq i_c",
+      "description": "Esta fórmula representa a relação entre a corrente de emissor e a corrente de coletor em um transistor bipolar, indicando que, sob certas condições, a corrente que sai do emissor é aproximadamente igual à corrente que entra no coletor.",
+      "concepts": [
+        "Transistor bipolar",
+        "Corrente elétrica",
+        "Emissão de portadores de carga",
+        "Conservação de carga"
+      ],
+      "symbols": [
+        {
+          "symbol": "i_E",
+          "description": "Representa a corrente que flui do emissor do transistor."
+        },
+        {
+          "symbol": "i_c",
+          "description": "Representa a corrente que flui para o coletor do transistor."
+        }
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 310
+    },
+    {
+      "originalFormula": "t_{s} = \\tau_{p} \\ln\\left(\\frac{Q_{B}(0)}{Q_{SAT}}\\right)",
+      "genericFormula": "t_{s} = \\tau_{p} \\ln\\left(\\frac{Q_{B}(0)}{Q_{SAT}}\\right)",
+      "description": "Esta fórmula calcula o tempo de saturação de um semicondutor, que é o tempo necessário para que a carga acumulada em um dispositivo atinja um determinado nível de saturação. A fórmula relaciona esse tempo com a constante de tempo do portador e a razão entre a carga inicial e a carga de saturação.",
+      "concepts": [
+        "Tempo de saturação",
+        "Carga de portadores em semicondutores",
+        "Constante de tempo de portadores",
+        "Logaritmo natural"
+      ],
+      "symbols": [
+        {
+          "symbol": "t_{s}",
+          "description": "Representa o tempo de saturação, que é o tempo necessário para que a carga acumulada atinja um nível específico."
+        },
+        {
+          "symbol": "\\tau_{p}",
+          "description": "É a constante de tempo do portador, que indica o tempo médio que um portador de carga leva para recombinar ou se mover em um semicondutor."
+        },
+        {
+          "symbol": "Q_{B}(0)",
+          "description": "Representa a carga acumulada no semicondutor em um instante inicial, antes de atingir a saturação."
+        },
+        {
+          "symbol": "Q_{SAT}",
+          "description": "É a carga de saturação, que é o nível máximo de carga que o semicondutor pode acumular antes de atingir a saturação."
+        }
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 327
+    },
+    {
+      "originalFormula": "t_{p} = 2.3\\tau_{p}",
+      "genericFormula": "t_{p} = k \\tau_{p}",
+      "description": "Esta fórmula relaciona o tempo de resposta de um sistema, representado por t sub p, com um parâmetro de tempo característico, representado por tau sub p. O fator 2.3 é uma constante que pode ser interpretada como um multiplicador que ajusta a relação entre esses dois tempos.",
+      "concepts": [
+        "Tempo de resposta",
+        "Parâmetro de tempo característico",
+        "Relação linear entre variáveis"
+      ],
+      "symbols": [
+        {
+          "symbol": "t_{p}",
+          "description": "Representa o tempo de resposta do sistema, que é o tempo necessário para que o sistema atinja uma determinada condição ou estado após uma perturbação."
+        },
+        {
+          "symbol": "\\tau_{p}",
+          "description": "Representa o parâmetro de tempo característico do sistema, que é uma medida do tempo que o sistema leva para responder a uma mudança ou perturbação, refletindo suas propriedades dinâmicas."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa uma constante de proporcionalidade, que neste caso é 2.3, e ajusta a relação entre o tempo de resposta e o parâmetro de tempo característico."
+        }
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 344
+    },
+    {
+      "originalFormula": "I_{E_{n}} = \\frac{qADn_{e}n_{0E}}{L_{nE}} \\left[ \\exp \\left( \\frac{q V_{EB}}{kT} \\right) - 1 \\right]",
+      "genericFormula": "I_{E_{n}} = \\frac{qADn_{e}n_{0E}}{L_{nE}} \\left[ \\exp \\left( \\frac{q V_{EB}}{kT} \\right) - 1 \\right]",
+      "description": "Esta fórmula representa a corrente de elétrons em um semicondutor, considerando a contribuição da injeção de portadores de carga em uma junção. Ela mostra como a corrente depende de vários fatores, incluindo a densidade de portadores, a área da junção e a tensão aplicada.",
+      "concepts": [
+        "corrente elétrica",
+        "semicondutores",
+        "injeção de portadores",
+        "tensão elétrica",
+        "temperatura",
+        "constante de Boltzmann"
+      ],
+      "symbols": [
+        {
+          "symbol": "I_{E_{n}}",
+          "description": "representa a corrente de elétrons que flui através da junção do semicondutor."
+        },
+        {
+          "symbol": "q",
+          "description": "é a carga elementar, que representa a carga de um único elétron."
+        },
+        {
+          "symbol": "A",
+          "description": "é a área da junção onde a corrente está sendo medida."
+        },
+        {
+          "symbol": "D_{n}",
+          "description": "é a difusividade dos elétrons, que indica a facilidade com que os elétrons se movem através do material."
+        },
+        {
+          "symbol": "n_{e}",
+          "description": "é a densidade de portadores de carga, especificamente a densidade de elétrons no semicondutor."
+        },
+        {
+          "symbol": "n_{0E}",
+          "description": "é a densidade de portadores de carga em equilíbrio, representando a quantidade de elétrons presentes no semicondutor em condições de equilíbrio térmico."
+        },
+        {
+          "symbol": "L_{nE}",
+          "description": "é o comprimento de difusão dos elétrons, que é a distância média que os elétrons podem se mover antes de serem recombinados."
+        },
+        {
+          "symbol": "V_{EB}",
+          "description": "é a tensão aplicada na junção, que influencia a injeção de portadores de carga."
+        },
+        {
+          "symbol": "k",
+          "description": "é a constante de Boltzmann, que relaciona a temperatura com a energia térmica dos portadores."
+        },
+        {
+          "symbol": "T",
+          "description": "é a temperatura absoluta do sistema, medida em Kelvin."
+        }
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 361
+    },
+    {
+      "originalFormula": "I_{E_{n}} = \\frac{qADn_{e}n_{0E} p_{1}(0)}{L_{nE} p_{0}}",
+      "genericFormula": "I_{E} = \\frac{qADn_{e}n_{0} p_{1}(0)}{L_{n} p_{0}}",
+      "description": "Esta fórmula representa a corrente elétrica em um semicondutor, considerando a contribuição de portadores de carga em um determinado estado. Ela relaciona a corrente com várias propriedades do material, como a densidade de portadores e a mobilidade.",
+      "concepts": [
+        "Corrente elétrica",
+        "Semicondutores",
+        "Densidade de portadores",
+        "Mobilidade de portadores",
+        "Propriedades do material"
+      ],
+      "symbols": [
+        {
+          "symbol": "I_{E}",
+          "description": "Representa a corrente elétrica em um semicondutor em um estado específico."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica elementar, que é a carga de um único elétron."
+        },
+        {
+          "symbol": "A",
+          "description": "Representa a área da seção transversal do material semicondutor através da qual a corrente flui."
+        },
+        {
+          "symbol": "D",
+          "description": "Representa o coeficiente de difusão dos portadores de carga no semicondutor."
+        },
+        {
+          "symbol": "n_{e}",
+          "description": "Representa a densidade de portadores de carga do tipo elétron no semicondutor."
+        },
+        {
+          "symbol": "n_{0}",
+          "description": "Representa a densidade de portadores de carga do tipo elétron em um estado de equilíbrio."
+        },
+        {
+          "symbol": "p_{1}(0)",
+          "description": "Representa a densidade de portadores do tipo buraco em um estado específico, geralmente em uma posição inicial."
+        },
+        {
+          "symbol": "L_{n}",
+          "description": "Representa o comprimento de difusão dos portadores de carga do tipo elétron."
+        },
+        {
+          "symbol": "p_{0}",
+          "description": "Representa a densidade de portadores de carga do tipo buraco em um estado de equilíbrio."
+        }
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 378
+    },
+    {
+      "originalFormula": "\\Delta I_{E_{n}} = \\frac{qADn_{e}n_{0E}}{L_{nE} p_{0}} \\Delta p(0)",
+      "genericFormula": "\\Delta I_{E_{n}} = \\frac{qADn_{e}n_{0E}}{L_{nE} p_{0}} \\Delta p(0)",
+      "description": "Esta fórmula representa a variação da corrente elétrica em um semicondutor quando há uma mudança na pressão ou em outro parâmetro que afeta a densidade de portadores de carga. A fórmula relaciona a mudança na corrente com diversos fatores, como a carga elétrica, a área, a densidade de elétrons, a concentração de portadores e a mudança na pressão.",
+      "concepts": [
+        "Corrente elétrica",
+        "Semicondutores",
+        "Densidade de portadores de carga",
+        "Efeito da pressão na condutividade",
+        "Carga elétrica"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\Delta I_{E_{n}}",
+          "description": "Representa a variação da corrente elétrica no semicondutor."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica elementar, que é a carga de um único elétron."
+        },
+        {
+          "symbol": "A",
+          "description": "Representa a área da seção transversal do semicondutor pela qual a corrente está fluindo."
+        },
+        {
+          "symbol": "D_{n}",
+          "description": "Representa a difusividade dos elétrons no semicondutor, que indica como os elétrons se espalham através do material."
+        },
+        {
+          "symbol": "n_{e}",
+          "description": "Representa a densidade de elétrons livres no semicondutor, ou seja, a quantidade de elétrons disponíveis para conduzir eletricidade."
+        },
+        {
+          "symbol": "n_{0E}",
+          "description": "Representa a concentração inicial de portadores de carga no semicondutor antes da variação."
+        },
+        {
+          "symbol": "L_{nE}",
+          "description": "Representa o comprimento de difusão dos elétrons, que é a distância média que os elétrons podem percorrer antes de serem recombinados."
+        },
+        {
+          "symbol": "p_{0}",
+          "description": "Representa a concentração de lacunas (ou buracos) no semicondutor, que são os portadores de carga positiva."
+        },
+        {
+          "symbol": "\\Delta p(0)",
+          "description": "Representa a variação na pressão ou em outro parâmetro que afeta a densidade de portadores de carga no semicondutor."
+        }
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 395
+    },
+    {
+      "originalFormula": "\\Delta I_{rec} = \\left( \\frac{qAW_{B}}{2\\tau_{p}} \\right) \\Delta p(0)",
+      "genericFormula": "\\Delta I_{rec} = \\left( \\frac{qAW_{B}}{2\\tau_{p}} \\right) \\Delta p(0)",
+      "description": "Esta fórmula representa a variação da corrente de recombinação em um semicondutor, que é influenciada por diversos fatores, como a carga elétrica, a área do dispositivo, a largura da barreira, o tempo de vida dos portadores de carga e a variação da densidade de portadores de carga em um ponto específico.",
+      "concepts": [
+        "Recombinação de portadores de carga",
+        "Semicondutores",
+        "Densidade de portadores",
+        "Tempo de vida dos portadores",
+        "Carga elétrica"
+      ],
+      "symbols": [
+        {
+          "symbol": "ΔI_{rec}",
+          "description": "Representa a variação da corrente de recombinação no semicondutor."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica elementar, que é a carga de um único elétron."
+        },
+        {
+          "symbol": "A",
+          "description": "Representa a área da seção transversal do dispositivo semicondutor."
+        },
+        {
+          "symbol": "W_{B}",
+          "description": "Representa a largura da barreira potencial no semicondutor."
+        },
+        {
+          "symbol": "τ_{p}",
+          "description": "Representa o tempo de vida dos portadores de carga, que é o tempo médio que um portador de carga permanece livre antes de recombinar."
+        },
+        {
+          "symbol": "Δp(0)",
+          "description": "Representa a variação da densidade de portadores de carga em um ponto específico, geralmente no ponto de equilíbrio."
+        }
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 413
+    },
+    {
+      "originalFormula": "\\Delta I_{B} = p_{1}(0) \\left( \\frac{q}{kT} \\right) \\Delta V_{EB} + \\frac{qAW_{B}}{2\\tau_{p}}",
+      "genericFormula": "\\Delta I_{B} = p_{1}(0) \\left( \\frac{q}{kT} \\right) \\Delta V_{EB} + \\frac{qAW_{B}}{2\\tau_{p}}",
+      "description": "Esta fórmula representa a variação da corrente de base em um transistor bipolar em função de diferentes parâmetros, incluindo a tensão aplicada, a temperatura e características do material semicondutor. Ela é essencial para entender como a corrente de base se comporta em resposta a mudanças na tensão e nas propriedades do dispositivo.",
+      "concepts": [
+        "Transistor bipolar",
+        "Corrente de base",
+        "Efeito da temperatura na condutividade",
+        "Variação de tensão",
+        "Propriedades do semicondutor"
+      ],
+      "symbols": [
+        {
+          "symbol": "ΔI_{B}",
+          "description": "Representa a variação da corrente de base em um transistor bipolar."
+        },
+        {
+          "symbol": "p_{1}(0)",
+          "description": "Indica a densidade de portadores de carga em um ponto específico, geralmente no equilíbrio térmico."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elementar, que é a carga de um único elétron."
+        },
+        {
+          "symbol": "k",
+          "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia térmica em sistemas físicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta em Kelvin, que afeta a mobilidade dos portadores de carga."
+        },
+        {
+          "symbol": "ΔV_{EB}",
+          "description": "É a variação da tensão entre o emissor e a base do transistor, que influencia a corrente de base."
+        },
+        {
+          "symbol": "A",
+          "description": "Representa a área da junção do transistor, que afeta a quantidade de corrente que pode fluir."
+        },
+        {
+          "symbol": "W_{B}",
+          "description": "É a largura da base do transistor, que influencia o tempo que os portadores de carga levam para atravessar a base."
+        },
+        {
+          "symbol": "τ_{p}",
+          "description": "Representa o tempo de vida dos portadores de carga na base, que afeta a eficiência do transistor."
+        }
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 430
+    },
+    {
+      "originalFormula": "\\Delta I_C = \\frac{\\partial I_C}{\\partial W_B} \\Delta W_B = -\\frac{q A p_{1}^{'}(0)}{W_B^2} \\frac{\\Delta W_B}{\\Delta V_{BC}} D_p \\quad (9.72)",
+      "genericFormula": "\\Delta I_C = \\frac{\\partial I_C}{\\partial W_B} \\Delta W_B = -\\frac{q A p_{1}^{'}(0)}{W_B^2} \\frac{\\Delta W_B}{\\Delta V_{BC}} D_p",
+      "description": "Esta fórmula descreve a variação da corrente coletora em um dispositivo semicondutor em função da variação da largura da base. Ela relaciona como pequenas mudanças na largura da base afetam a corrente coletora, levando em consideração a mobilidade dos portadores de carga e outros parâmetros do material.",
+      "concepts": [
+        "Variação da corrente elétrica",
+        "Largura da base em dispositivos semicondutores",
+        "Mobilidade dos portadores de carga",
+        "Efeito de variação de tensão na corrente"
+      ],
+      "symbols": [
+        {
+          "symbol": "ΔI_C",
+          "description": "Representa a variação da corrente coletora em um dispositivo semicondutor."
+        },
+        {
+          "symbol": "∂I_C/∂W_B",
+          "description": "É a derivada da corrente coletora em relação à largura da base, indicando como a corrente muda com pequenas variações na largura."
+        },
+        {
+          "symbol": "ΔW_B",
+          "description": "Representa a variação na largura da base do dispositivo semicondutor."
+        },
+        {
+          "symbol": "q",
+          "description": "É a carga elementar, representando a carga de um único elétron."
+        },
+        {
+          "symbol": "A",
+          "description": "Representa a área da seção transversal do dispositivo semicondutor."
+        },
+        {
+          "symbol": "p_{1}^{'}(0)",
+          "description": "É a densidade de portadores de carga em um ponto específico na base, que influencia a corrente coletora."
+        },
+        {
+          "symbol": "W_B",
+          "description": "É a largura da base do dispositivo semicondutor, uma dimensão crítica que afeta o desempenho do dispositivo."
+        },
+        {
+          "symbol": "ΔV_{BC}",
+          "description": "É a variação da tensão entre a base e o coletor, que afeta a corrente coletora."
+        },
+        {
+          "symbol": "D_p",
+          "description": "É a difusividade dos portadores de carga, que indica como os portadores se movem através do material."
+        }
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 447
+    },
+    {
+      "originalFormula": "\\Delta I_C = -\\frac{I_C \\Delta W_B}{W_B \\Delta V_{BC}} \\quad (9.73)",
+      "genericFormula": "\\Delta I_C = -\\frac{I_C \\Delta W_B}{W_B \\Delta V_{BC}}",
+      "description": "Esta fórmula representa a variação da corrente de coletor em um transistor bipolar em relação a mudanças na largura da base e na tensão entre a base e o coletor. Ela mostra como pequenas alterações na largura da base e na tensão aplicada afetam a corrente que flui através do transistor.",
+      "concepts": [
+        "Transistor bipolar",
+        "Corrente elétrica",
+        "Variação de largura da base",
+        "Tensão entre a base e o coletor"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\Delta I_C",
+          "description": "Representa a variação da corrente de coletor, que é a diferença na corrente que flui através do coletor do transistor."
+        },
+        {
+          "symbol": "I_C",
+          "description": "Representa a corrente de coletor, que é a corrente principal que flui através do coletor em um transistor bipolar."
+        },
+        {
+          "symbol": "\\Delta W_B",
+          "description": "Representa a variação na largura da base do transistor, que é a distância entre o emissor e o coletor onde ocorre a recombinação de portadores de carga."
+        },
+        {
+          "symbol": "W_B",
+          "description": "Representa a largura da base do transistor, que é uma medida fixa da distância entre o emissor e o coletor."
+        },
+        {
+          "symbol": "\\Delta V_{BC}",
+          "description": "Representa a variação na tensão entre a base e o coletor, que é a diferença de potencial elétrico que influencia o funcionamento do transistor."
+        }
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 464
+    },
+    {
+      "originalFormula": "V_A = -W_B \\frac{dV_{BC}}{dW_B}",
+      "genericFormula": "V_A = -W_B \\frac{dV_{BC}}{dW_B}",
+      "description": "Esta fórmula relaciona a tensão em um ponto A com o trabalho realizado em um ponto B e a variação da tensão entre os pontos B e C em relação ao trabalho realizado em B. Ela é útil para entender como a energia elétrica se comporta em circuitos e sistemas de semicondutores.",
+      "concepts": [
+        "Tensão elétrica",
+        "Trabalho elétrico",
+        "Variação de tensão",
+        "Derivadas e suas aplicações em física"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_A",
+          "description": "Representa a tensão elétrica no ponto A."
+        },
+        {
+          "symbol": "W_B",
+          "description": "Representa o trabalho realizado no ponto B."
+        },
+        {
+          "symbol": "V_{BC}",
+          "description": "Representa a tensão entre os pontos B e C."
+        },
+        {
+          "symbol": "dV_{BC}",
+          "description": "Representa a variação da tensão entre os pontos B e C."
+        },
+        {
+          "symbol": "dW_B",
+          "description": "Representa a variação do trabalho realizado em B."
+        }
+      ],
+      "chapter": "9 Bipolar Transistors II: Limitations, Switching, and Models",
+      "source": "standalone",
+      "page": 481
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498
+  ],
+  "lastUpdated": "2026-05-08T18:19:13.806603",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
+}

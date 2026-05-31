@@ -1,0 +1,1618 @@
+{
+  "chapter": "Appendix H",
+  "questions": [
+    {
+      "number": "2.35",
+      "text": "(a) T = 0.0295, (b) T = 1.24 × 10^{-5}, (c) N = 1.357 × 10^{17} cm^{-3}",
+      "formulas": []
+    },
+    {
+      "number": "2.37",
+      "text": "(a) E_{i} = 5.875 × 10^{-7}, (b) E_{i} = 0.842 × 10^{-14}",
+      "formulas": [
+        {
+          "originalFormula": "E_{i} = \\frac{4k_{B}}{(k_{B}T)^{2}}",
+          "genericFormula": "E_{i} = \\frac{4k_{B}}{(k_{B}T)^{2}}",
+          "description": "Esta fórmula representa a energia de ativação para a geração de portadores em um semicondutor intrínseco, onde \\(E_{i}\\) é a energia associada a um nível de impureza ou estado dentro da banda proibida. A fórmula é utilizada em contextos de física de semicondutores para calcular a energia necessária para excitar um elétron de um nível de impureza para a banda de condução, considerando a temperatura do sistema. A dependência da temperatura é crucial, pois a geração de portadores aumenta com o aumento da temperatura, refletindo a relação entre a energia térmica e a energia de ativação.",
+          "concepts": [
+            "energia de ativação",
+            "semicondutores",
+            "temperatura",
+            "portadores",
+            "nível de impureza"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{i}",
+              "description": "energia de ativação para a geração de portadores"
+            },
+            {
+              "symbol": "k_{B}",
+              "description": "constante de Boltzmann"
+            },
+            {
+              "symbol": "T",
+              "description": "temperatura em Kelvin"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "energia",
+            "portadores",
+            "temperatura",
+            "semicondutores",
+            "nível de impureza"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "energy-band",
+            "graphParameters": [
+              "energia",
+              "temperatura"
+            ]
+          },
+          "relatedFormulas": [
+            "Arrhenius",
+            "Fermi-Dirac"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "2.39",
+      "text": "E_{i} = -13.58 eV, E_{1} = -3.395 eV, E_{1} = -1.51 eV, E_{1} = -0.849 eV",
+      "formulas": []
+    },
+    {
+      "number": "3.5",
+      "text": "(i) aa = \\pi a, a = 1.729; (ii) aa = 2\\pi a, a = 2.617",
+      "formulas": []
+    },
+    {
+      "number": "3.11",
+      "text": "(a) \\Delta E = 0.559 eV, (b) \\Delta E = 2.15 eV",
+      "formulas": []
+    },
+    {
+      "number": "3.15",
+      "text": "A: B- velocity = x direction; C: D- velocity = y direction; B.C: positive mass, A.D: negative mass",
+      "formulas": []
+    },
+    {
+      "number": "3.25",
+      "text": "(a) E_{F} = \\frac{1}{2} \\sqrt{\\frac{2m}{\\hbar^2}} 1.055 × 10^{18} m^{-1} J^{-1}",
+      "formulas": []
+    },
+    {
+      "number": "4.1",
+      "text": "(a) n_{i} = 7.68 × 10^{10} cm^{-3}; 2.38 × 10^{12} cm^{-3}; 9.74 × 10^{14} cm^{-3}",
+      "formulas": []
+    },
+    {
+      "number": "4.3",
+      "text": "T = 367.5 K, (b) E_{F} = 417.5 K",
+      "formulas": []
+    },
+    {
+      "number": "4.5",
+      "text": "n_{i} = 9.325 × 10^{14}, (b) 4.43 × 10^{-14}, (c) 2.05 × 10^{-13}",
+      "formulas": []
+    },
+    {
+      "number": "4.11",
+      "text": "For T = 200 K, E_{F} - E_{i} = -0.0086 eV; For T = 400 K, E_{F} - E_{i} = -0.0111 eV; For T = 600 K, E_{F} - E_{i} = -0.0257 eV",
+      "formulas": []
+    },
+    {
+      "number": "4.29",
+      "text": "E_{F} = E_{i} + k_{B}T, E_{F} = E_{i} - \\frac{1}{2}",
+      "formulas": []
+    },
+    {
+      "number": "4.51 (a)",
+      "text": "E_{i} - E_{f} = 0.1459 \\, eV",
+      "formulas": []
+    },
+    {
+      "number": "4.51 (b)",
+      "text": "E_{i} - E_{f} = 0.4212 \\, eV",
+      "formulas": []
+    },
+    {
+      "number": "4.51 (c)",
+      "text": "E_{i} - E_{f} = 0.2465 \\, eV",
+      "formulas": []
+    },
+    {
+      "number": "4.51 (d)",
+      "text": "E_{i} - E_{f} = 0.0630 \\, eV",
+      "formulas": []
+    },
+    {
+      "number": "4.53 (a)",
+      "text": "E_{c} - E_{i} = +0.0447 \\, eV",
+      "formulas": []
+    },
+    {
+      "number": "4.55 (i)",
+      "text": "E_{i} - E_{f} = 0.2188 \\, eV",
+      "formulas": []
+    },
+    {
+      "number": "4.55 (ii)",
+      "text": "E_{i} - E_{f} = 1.031 \\times 10^{3} \\, cm^{-3}",
+      "formulas": []
+    },
+    {
+      "number": "4.57",
+      "text": "Accept donors, N_{a} = 4 \\times 10^{15} \\, cm^{-3}",
+      "formulas": []
+    },
+    {
+      "number": "5.1 (a)",
+      "text": "p = 4.808 \\, \\Omega \\cdot cm, \\, b = 0.208 \\, \\Omega \\cdot cm^{-1}",
+      "formulas": []
+    },
+    {
+      "number": "5.3 (a)",
+      "text": "N_{a} = 6 \\times 10^{16} \\, cm^{-3}, \\, L = 1500 \\, cm/V \\cdot s",
+      "formulas": []
+    },
+    {
+      "number": "5.5 (a)",
+      "text": "E = 1116 \\, cm/V \\cdot s",
+      "formulas": []
+    },
+    {
+      "number": "5.7 (a)",
+      "text": "R = 100 \\, \\Omega, \\, b = 0.01 \\, \\Omega \\cdot cm^{-1}",
+      "formulas": []
+    },
+    {
+      "number": "5.11 (a)",
+      "text": "Si: \\, \\sigma = 8.33 \\times 10^{-11} \\, s; \\, GaAs: \\, E_{g} = 1.33 \\times 10^{-11} \\, s",
+      "formulas": []
+    },
+    {
+      "number": "5.17",
+      "text": "\\sigma_{rf} = 3.97 \\times 10^{-2} \\, cm^{-1}",
+      "formulas": []
+    },
+    {
+      "number": "5.21 (a)",
+      "text": "d = 1.60 \\, A/cm^{2}, \\, (b) \\, T = 456 \\, K",
+      "formulas": []
+    },
+    {
+      "number": "6.1 (a)",
+      "text": "n_{i} = 5 \\times 10^{15} \\, cm^{-3}, \\, p = 4.5 \\times 10^{-2} \\, cm^{-2}",
+      "formulas": []
+    },
+    {
+      "number": "6.3 (a)",
+      "text": "t_{0} = 8.89 \\times 10^{-6}",
+      "formulas": []
+    },
+    {
+      "number": "6.7",
+      "text": "\\frac{\\partial \\sigma}{\\partial t} = -2 \\times 10^{9} \\, cm^{-3} \\, s^{-1}",
+      "formulas": []
+    },
+    {
+      "number": "6.9 (a)",
+      "text": "\\mu' = \\mu_{i} = 1300 \\, cm^{2}/V \\cdot s",
+      "formulas": []
+    },
+    {
+      "number": "6.13 (a)",
+      "text": "d \\delta n = \\delta n_{0} \\left( 1 - \\exp\\left(-\\frac{t}{\\tau_{0}}\\right) \\right) \\, cm^{-3}",
+      "formulas": []
+    },
+    {
+      "number": "7.23",
+      "text": "V_{E} = 2.58 V"
+    },
+    {
+      "number": "7.25",
+      "text": "(b) (i) f = 1.069 MHz"
+    },
+    {
+      "number": "7.27",
+      "text": "(a) n_{i} = 6.106 \\times 10^{10} cm^{-3}, n_{p} = 1.504 \\times 10^{15} cm^{-3}; (b) n_{p} = 1.19 \\times 10^{16} cm^{-3}, n_{n} = 2.976 \\times 10^{15} cm^{-3}"
+    },
+    {
+      "number": "7.29",
+      "text": "V_{A} = V_{n} [N_{A} N_{D}]"
+    },
+    {
+      "number": "7.31",
+      "text": "E_{F} = 7.65 \\times 10^{-V/cm}"
+    },
+    {
+      "number": "7.33",
+      "text": "(c) p region: E_{n} = -\\frac{N_{A} (x + x_{j})}{2 \\epsilon} \\text{ for } 0 < x < x_{j}, E = \\frac{N_{A} x}{\\epsilon} \\text{ for } x_{j} < x < x_{n}"
+    },
+    {
+      "number": "8.1",
+      "text": "(a) V = 60 mV, (b) 120 mV"
+    },
+    {
+      "number": "8.9",
+      "text": "(c) n_{p} = 2.93 \\times 10^{21} cm^{-3}"
+    },
+    {
+      "number": "8.15",
+      "text": "E_{n} - E_{v} = 0.329 eV, \\text{ in side: } E_{F} - E_{n} = 0.407 eV"
+    },
+    {
+      "number": "8.17",
+      "text": "J_{p} = (0.381 \\times 10^{4}) \\frac{-x}{L} cm^{-3}, \\text{ where } L = 0.741"
+    },
+    {
+      "number": "9.1",
+      "text": "(c) \\phi_{b} = 0.206 V, \\phi_{m} = 0.27 V"
+    },
+    {
+      "number": "9.5",
+      "text": "(a) V_{D} = 0.90 V, (b) I = 1.05 \\times 10^{-6} cm"
+    },
+    {
+      "number": "9.21",
+      "text": "(a) 0.678 V, (b) 0.718 V, (c) 0.732 V"
+    },
+    {
+      "number": "9.27",
+      "text": "(a) \\phi_{b} = 0.258 V, (b) \\phi_{m} = 0.198 V"
+    },
+    {
+      "number": "10.1",
+      "text": "(a) N_a = 3.88 \\times 10^{17} \\, cm^{-3}; (b) \\phi_b = 0.566 \\, V",
+      "formulas": []
+    },
+    {
+      "number": "10.3",
+      "text": "(a) N_a = 8.38 \\times 10^{17} \\, cm^{-3}; (b) \\phi_b = -0.932 \\, V",
+      "formulas": []
+    },
+    {
+      "number": "10.9",
+      "text": "Q_{e} = 1.2 \\times 10^{-12} \\, cm^{-2}",
+      "formulas": []
+    },
+    {
+      "number": "10.35",
+      "text": "(a) W = 9.26 \\, \\mu m; (b) I_L = 0.271 \\, mA",
+      "formulas": []
+    },
+    {
+      "number": "11.1",
+      "text": "I_D = 10^{-15} \\exp\\left( \\frac{V_{GS}}{0.2 \\, V} \\right); I_{r} = (10^{0})I_{D}",
+      "formulas": [
+        {
+          "originalFormula": "I_D = 10^{-15} \\exp\\left( \\frac{V_{GS}}{0.2} \\right)",
+          "genericFormula": "I_D = 10^{-15} \\exp\\left( \\frac{V_{GS}}{0.2} \\right)",
+          "description": "Não foi possível gerar descrição automática",
+          "concepts": [],
+          "symbols": [],
+          "rawText": "{\n  \"originalFormula\": \"I_D = 10^{-15} \\exp\\\\left( \\\\frac{V_{GS}}{0.2} \\\\right)\",\n  \"genericFormula\": \"I_D = I_0 \\\\exp\\\\left( \\\\frac{V_{GS}}{V_T} \\\\right)\",\n  \"description\": \"Esta fórmula representa a corrente de dreno (I_D) em um transistor de efeito de campo (FET) em função da tensão de porta fonte (V_{GS}). A corrente é proporcional a uma constante de corrente de saturação (I_0) multiplicada por um fator exponencial que depende da tensão de porta, dividido por uma tensão de referência (V_T). É utilizada para modelar o comportamento de transistores em circuitos eletrônicos, especialmente em regiões de operação ativa.\",\n  \"concepts\": [\"corrente\", \"tensão\", \"transistor\", \"efeito de campo\", \"exponencial\"],\n  \"symbols\": [\n    {\n      \"symbol\": \"I_D\",\n      \"description\": \"corrente de dreno do transistor\"\n    },\n    {\n      \"symbol\": \"V_{GS}\",\n      \"description\": \"tensão entre a porta e a fonte do transistor\"\n    },\n    {\n      \"symbol\": \"I_0\",\n      \"description\": \"constante de corrente de saturação\"\n    },\n    {\n      \"symbol\": \"V_T\",\n      \"description\": \"tensão de referência, que determina a sensibilidade da corrente à tensão de porta\"\n    }\n  ],\n  \"taxonomy\": {\n    \"category\": \"semiconductor-physics\",\n    \"subcategory\": \"device-physics\",\n    \"domain\": \"solid-state\"\n  },\n  \"keywords\": [\"current\", \"transistor\", \"FET\", \"gate-source voltage\", \"exponential\"],\n  \"graphVisualization\": {\n    \"hasGraph\": true,\n    \"graphType\": \"current-voltage\",\n    \"graphParameters\": [\"V_{GS}\", \"I_D\"]\n  },\n  \"relatedFormulas\": [\"Shockley diode equation\", \"MOSFET characteristics\"]\n}"
+        }
+      ]
+    },
+    {
+      "number": "11.9",
+      "text": "Assume V_{GS}(sat) = 1 \\, V; L = 3 \\, cm",
+      "formulas": []
+    },
+    {
+      "number": "12.27",
+      "text": "(a) x_{D} = 0.01; (b) N_{s}/N_{e} = 0.01",
+      "formulas": []
+    },
+    {
+      "number": "12.29",
+      "text": "Let x = 0.80 \\mu m, then N_{e} = 4.61 \\times 10^{18} cm^{-3};",
+      "formulas": [
+        {
+          "originalFormula": "\\alpha_{r} = 0.99930, \\gamma = 0.99656",
+          "genericFormula": "\\alpha_{r} = x, \\gamma = y",
+          "description": "Nesta fórmula, \\alpha_{r} representa a razão de absorção de um material em relação a um padrão de referência, enquanto \\gamma é um fator que pode estar relacionado à eficiência ou à resposta do material em determinadas condições. Essas variáveis são frequentemente utilizadas em contextos de física de semicondutores, especialmente ao analisar a interação da luz com materiais semicondutores e suas propriedades ópticas.",
+          "concepts": [
+            "absorção",
+            "eficiência",
+            "interação luz-matéria"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\alpha_{r}",
+              "description": "razão de absorção relativa do material"
+            },
+            {
+              "symbol": "\\gamma",
+              "description": "fator de eficiência ou resposta do material"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "optical-properties",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "absorção",
+            "eficiência",
+            "semicondutores",
+            "interação luz-matéria"
+          ],
+          "graphVisualization": {
+            "hasGraph": false,
+            "graphType": "",
+            "graphParameters": []
+          },
+          "relatedFormulas": []
+        }
+      ]
+    },
+    {
+      "number": "12.39",
+      "text": "(a) \\Delta x = 0.118 mA, (b) \\Delta I_{C} = 0.519 mA",
+      "formulas": []
+    },
+    {
+      "number": "12.41",
+      "text": "N_{e} = 1.83 \\times 10^{18} cm^{-3}",
+      "formulas": []
+    },
+    {
+      "number": "12.45",
+      "text": "V_{BE} = 18 V, (b) V_{CE} = 34.5 V",
+      "formulas": []
+    },
+    {
+      "number": "12.55",
+      "text": "(a) \\tau_{e} = 26.26 ps, (b) \\tau_{r} = 84.5 ps",
+      "formulas": []
+    },
+    {
+      "number": "13.3",
+      "text": "(i) V_{PO} = 3.312 V, (ii) V_{E} = -1.984 V",
+      "formulas": []
+    },
+    {
+      "number": "13.5",
+      "text": "(a) N_{e} = 9.433 \\times 10^{15} cm^{-3}, (b) V_{F} = 1.47 V",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "2.35",
+      "text": "T = 0.0295, N = 1.357 × 10^{17} cm^{-3}",
+      "formulas": []
+    },
+    {
+      "questionNumber": "2.37",
+      "text": "E_{i} = 5.875 × 10^{-7}, E_{i} = 0.842 × 10^{-14}",
+      "formulas": [
+        {
+          "originalFormula": "E_{i} = \\frac{4k_{B}}{(k_{B}T)^{2}}",
+          "genericFormula": "E_{i} = \\frac{4k_{B}}{(k_{B}T)^{2}}",
+          "description": "Esta fórmula representa a energia de ativação para a geração de portadores em um semicondutor em função da temperatura. Aqui, \\(E_{i}\\) é a energia de ativação, \\(k_{B}\\) é a constante de Boltzmann e \\(T\\) é a temperatura em Kelvin. A fórmula é usada para calcular a energia necessária para que um portador seja gerado a partir de um estado de energia inferior, considerando a influência da temperatura sobre a mobilidade dos portadores e a geração de pares elétron-lacuna.",
+          "concepts": [
+            "energia de ativação",
+            "constante de Boltzmann",
+            "temperatura",
+            "geração de portadores"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{i}",
+              "description": "energia de ativação para a geração de portadores"
+            },
+            {
+              "symbol": "k_{B}",
+              "description": "constante de Boltzmann, que relaciona temperatura e energia"
+            },
+            {
+              "symbol": "T",
+              "description": "temperatura em Kelvin"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "energia",
+            "ativação",
+            "temperatura",
+            "portadores",
+            "semicondutores"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "energy-band",
+            "graphParameters": [
+              "energy",
+              "temperature"
+            ]
+          },
+          "relatedFormulas": [
+            "Arrhenius",
+            "Fermi-Dirac"
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "2.39",
+      "text": "E_{i} = -13.58 eV, E_{1} = -3.395 eV, E_{1} = -1.51 eV, E_{1} = -0.849 eV",
+      "formulas": []
+    },
+    {
+      "questionNumber": "3.5",
+      "text": "aa = \\pi a, a = 1.729; aa = 2\\pi a, a = 2.617",
+      "formulas": []
+    },
+    {
+      "questionNumber": "3.11",
+      "text": "\\Delta E = 0.559 eV, \\Delta E = 2.15 eV",
+      "formulas": []
+    },
+    {
+      "questionNumber": "3.15",
+      "text": "A: B- velocity = x direction; C: D- velocity = y direction; B.C: positive mass, A.D: negative mass",
+      "formulas": []
+    },
+    {
+      "questionNumber": "3.25",
+      "text": "E_{F} = \\frac{1}{2} \\sqrt{\\frac{2m}{\\hbar^2}} 1.055 × 10^{18} m^{-1} J^{-1}",
+      "formulas": []
+    },
+    {
+      "questionNumber": "4.1",
+      "text": "n_{i} = 7.68 × 10^{10} cm^{-3}; 2.38 × 10^{12} cm^{-3}; 9.74 × 10^{14} cm^{-3}",
+      "formulas": []
+    },
+    {
+      "questionNumber": "4.3",
+      "text": "T = 367.5 K, E_{F} = 417.5 K",
+      "formulas": []
+    },
+    {
+      "questionNumber": "4.5",
+      "text": "n_{i} = 9.325 × 10^{14}, 4.43 × 10^{-14}, 2.05 × 10^{-13}",
+      "formulas": []
+    },
+    {
+      "questionNumber": "4.11",
+      "text": "For T = 200 K, E_{F} - E_{i} = -0.0086 eV; For T = 400 K, E_{F} - E_{i} = -0.0111 eV; For T = 600 K, E_{F} - E_{i} = -0.0257 eV",
+      "formulas": []
+    },
+    {
+      "questionNumber": "4.29",
+      "text": "E_{F} = E_{i} + k_{B}T, E_{F} = E_{i} - \\frac{1}{2}",
+      "formulas": []
+    },
+    {
+      "questionNumber": "4.51 (a)",
+      "text": "E_{i} - E_{f} = 0.1459 \\, eV",
+      "formulas": []
+    },
+    {
+      "questionNumber": "4.51 (b)",
+      "text": "E_{i} - E_{f} = 0.4212 \\, eV",
+      "formulas": []
+    },
+    {
+      "questionNumber": "4.51 (c)",
+      "text": "E_{i} - E_{f} = 0.2465 \\, eV",
+      "formulas": []
+    },
+    {
+      "questionNumber": "4.51 (d)",
+      "text": "E_{i} - E_{f} = 0.0630 \\, eV",
+      "formulas": []
+    },
+    {
+      "questionNumber": "4.53 (a)",
+      "text": "E_{c} - E_{i} = +0.0447 \\, eV",
+      "formulas": []
+    },
+    {
+      "questionNumber": "4.55 (i)",
+      "text": "E_{i} - E_{f} = 0.2188 \\, eV",
+      "formulas": []
+    },
+    {
+      "questionNumber": "4.55 (ii)",
+      "text": "E_{i} - E_{f} = 1.031 \\times 10^{3} \\, cm^{-3}",
+      "formulas": []
+    },
+    {
+      "questionNumber": "4.57",
+      "text": "Accept donors, N_{a} = 4 \\times 10^{15} \\, cm^{-3}",
+      "formulas": []
+    },
+    {
+      "questionNumber": "5.1 (a)",
+      "text": "p = 4.808 \\, \\Omega \\cdot cm, \\, b = 0.208 \\, \\Omega \\cdot cm^{-1}",
+      "formulas": []
+    },
+    {
+      "questionNumber": "5.3 (a)",
+      "text": "N_{a} = 6 \\times 10^{16} \\, cm^{-3}, \\, L = 1500 \\, cm/V \\cdot s",
+      "formulas": []
+    },
+    {
+      "questionNumber": "5.5 (a)",
+      "text": "E = 1116 \\, cm/V \\cdot s",
+      "formulas": []
+    },
+    {
+      "questionNumber": "5.7 (a)",
+      "text": "R = 100 \\, \\Omega, \\, b = 0.01 \\, \\Omega \\cdot cm^{-1}",
+      "formulas": []
+    },
+    {
+      "questionNumber": "5.11 (a)",
+      "text": "Si: \\, \\sigma = 8.33 \\times 10^{-11} \\, s; \\, GaAs: \\, E_{g} = 1.33 \\times 10^{-11} \\, s",
+      "formulas": []
+    },
+    {
+      "questionNumber": "5.17",
+      "text": "\\sigma_{rf} = 3.97 \\times 10^{-2} \\, cm^{-1}",
+      "formulas": []
+    },
+    {
+      "questionNumber": "5.21 (a)",
+      "text": "d = 1.60 \\, A/cm^{2}, \\, (b) \\, T = 456 \\, K",
+      "formulas": []
+    },
+    {
+      "questionNumber": "6.1 (a)",
+      "text": "n_{i} = 5 \\times 10^{15} \\, cm^{-3}, \\, p = 4.5 \\times 10^{-2} \\, cm^{-2}",
+      "formulas": []
+    },
+    {
+      "questionNumber": "6.3 (a)",
+      "text": "t_{0} = 8.89 \\times 10^{-6}",
+      "formulas": []
+    },
+    {
+      "questionNumber": "6.7",
+      "text": "\\frac{\\partial \\sigma}{\\partial t} = -2 \\times 10^{9} \\, cm^{-3} \\, s^{-1}",
+      "formulas": []
+    },
+    {
+      "questionNumber": "6.9 (a)",
+      "text": "\\mu' = \\mu_{i} = 1300 \\, cm^{2}/V \\cdot s",
+      "formulas": []
+    },
+    {
+      "questionNumber": "6.13 (a)",
+      "text": "d \\delta n = \\delta n_{0} \\left( 1 - \\exp\\left(-\\frac{t}{\\tau_{0}}\\right) \\right) \\, cm^{-3}",
+      "formulas": []
+    },
+    {
+      "questionNumber": "10.1",
+      "text": "(a) k_i = 86.29 \\, pA/V^2; (ii) W = 7.24",
+      "formulas": [
+        {
+          "originalFormula": "k_i = 86.29 \\, pA/V^2",
+          "genericFormula": "k_i = 86.29 \\, pA/V^2",
+          "description": "Não foi possível gerar descrição automática",
+          "concepts": [],
+          "symbols": [],
+          "rawText": "{\n  \"originalFormula\": \"k_i = 86.29 \\, pA/V^2\",\n  \"genericFormula\": \"k_i = k \\cdot \\text{pA/V}^2\",\n  \"description\": \"A fórmula representa a constante de transcondutância de um dispositivo semicondutor, que é uma medida da eficiência com que a corrente de saída (em picoamperes) responde a uma variação na tensão de entrada (em volts). Essa constante é crucial para entender o comportamento de transistores e amplificadores, onde a relação entre a corrente e a tensão é fundamental para o desempenho do dispositivo.\",\n  \"concepts\": [\"transcondutância\", \"semicondutores\", \"corrente\", \"tensão\"],\n  \"symbols\": [\n    {\n      \"symbol\": \"k_i\",\n      \"description\": \"constante de transcondutância do dispositivo\"\n    },\n    {\n      \"symbol\": \"pA\",\n      \"description\": \"picoamperes, unidade de medida da corrente\"\n    },\n    {\n      \"symbol\": \"V\",\n      \"description\": \"volts, unidade de medida da tensão\"\n    }\n  ],\n  \"taxonomy\": {\n    \"category\": \"semiconductor-physics\",\n    \"subcategory\": \"carrier-transport\",\n    \"domain\": \"device-physics\"\n  },\n  \"keywords\": [\"transconductance\", \"current\", \"voltage\", \"semiconductor\", \"device\"],\n  \"graphVisualization\": {\n    \"hasGraph\": false,\n    \"graphType\": \"\",\n    \"graphParameters\": []\n  },\n  \"relatedFormulas\": []\n}"
+        }
+      ]
+    },
+    {
+      "questionNumber": "10.47",
+      "text": "(a) k_i = 86.29 \\, pA/V^2; (ii) W = 7.24",
+      "formulas": [
+        {
+          "originalFormula": "k_i = 86.29 \\, pA/V^2",
+          "genericFormula": "k_i = 86.29 \\, pA/V^2",
+          "description": "Não foi possível gerar descrição automática",
+          "concepts": [],
+          "symbols": [],
+          "rawText": "{\n  \"originalFormula\": \"k_i = 86.29 \\, pA/V^2\",\n  \"genericFormula\": \"k_i = C \\, \\frac{A}{V^2}\",\n  \"description\": \"A fórmula representa a constante de transcondutância de um dispositivo semicondutor, que é uma medida da eficiência com que um dispositivo pode converter uma variação de tensão em uma corrente. É utilizada em análises de circuitos eletrônicos e em dispositivos como transistores, onde a relação entre a corrente de saída e a tensão de entrada é fundamental para o funcionamento do dispositivo.\",\n  \"concepts\": [\"transcondutância\", \"corrente\", \"tensão\", \"dispositivos semicondutores\"],\n  \"symbols\": [\n    {\n      \"symbol\": \"k_i\",\n      \"description\": \"constante de transcondutância do dispositivo\"\n    },\n    {\n      \"symbol\": \"C\",\n      \"description\": \"constante de proporcionalidade genérica\"\n    },\n    {\n      \"symbol\": \"A\",\n      \"description\": \"corrente em picoamperes (pA)\"\n    },\n    {\n      \"symbol\": \"V\",\n      \"description\": \"tensão em volts (V)\"\n    }\n  ],\n  \"taxonomy\": {\n    \"category\": \"semiconductor-physics\",\n    \"subcategory\": \"carrier-transport\",\n    \"domain\": \"device-physics\"\n  },\n  \"keywords\": [\"transconductance\", \"current\", \"voltage\", \"semiconductor\", \"transistor\"],\n  \"graphVisualization\": {\n    \"hasGraph\": false,\n    \"graphType\": \"\",\n    \"graphParameters\": []\n  },\n  \"relatedFormulas\": []\n}"
+        }
+      ]
+    },
+    {
+      "questionNumber": "11.1",
+      "text": "P = I_{r} \\cdot V_{GS}; I_{p} = 9.83 \\, pA; I_{r} = 9.83 \\, pA",
+      "formulas": [
+        {
+          "originalFormula": "P = I_{r} \\cdot V_{GS}",
+          "genericFormula": "P = I_{r} \\cdot V_{GS}",
+          "description": "Não foi possível gerar descrição automática",
+          "concepts": [],
+          "symbols": [],
+          "rawText": "{\n  \"originalFormula\": \"P = I_{r} \\cdot V_{GS}\",\n  \"genericFormula\": \"P = I_{r} \\cdot V_{GS}\",\n  \"description\": \"Esta fórmula representa a potência elétrica (P) dissipada em um dispositivo semicondutor, onde \\\\( I_{r} \\\\) é a corrente que flui através do dispositivo e \\\\( V_{GS} \\\\) é a tensão entre o terminal de gate e o terminal de source. A potência é uma medida da taxa de transferência de energia e é crucial para entender o desempenho e a eficiência de dispositivos como transistores. A fórmula é utilizada em circuitos eletrônicos para calcular a potência consumida ou gerada por um componente.\",\n  \"concepts\": [\"potência elétrica\", \"corrente\", \"tensão\", \"dispositivos semicondutores\"],\n  \"symbols\": [\n    {\n      \"symbol\": \"P\",\n      \"description\": \"potência elétrica, medida em watts (W)\"\n    },\n    {\n      \"symbol\": \"I_{r}\",\n      \"description\": \"corrente elétrica que flui através do dispositivo, medida em amperes (A)\"\n    },\n    {\n      \"symbol\": \"V_{GS}\",\n      \"description\": \"tensão entre o gate e o source do transistor, medida em volts (V)\"\n    }\n  ],\n  \"taxonomy\": {\n    \"category\": \"semiconductor-physics\",\n    \"subcategory\": \"device-physics\",\n    \"domain\": \"solid-state\"\n  },\n  \"keywords\": [\"potência\", \"corrente\", \"tensão\", \"transistor\", \"dispositivo\"],\n  \"graphVisualization\": {\n    \"hasGraph\": false,\n    \"graphType\": \"\",\n    \"graphParameters\": []\n  },\n  \"relatedFormulas\": [\"Ohm's Law\", \"P = V \\cdot I\"]\n}"
+        }
+      ]
+    },
+    {
+      "questionNumber": "12.27",
+      "text": "(a) \\beta = 19,999; (b) \\beta = 1.84",
+      "formulas": []
+    },
+    {
+      "questionNumber": "12.29",
+      "text": "(a) (i) \\alpha_{r} = 0.99930, (ii) \\gamma = 0.99656",
+      "formulas": []
+    },
+    {
+      "questionNumber": "12.39",
+      "text": "(a) V_{A} = 13.3 V, (b) V_{B} = 34.5 V",
+      "formulas": []
+    },
+    {
+      "questionNumber": "12.41",
+      "text": "(a) N_{e} = 1.83 \\times 10^{18} cm^{-3}",
+      "formulas": []
+    },
+    {
+      "questionNumber": "12.55",
+      "text": "(a) \\tau_{e} = 26.26 ps, (b) \\tau_{r} = 84.5 ps",
+      "formulas": []
+    },
+    {
+      "questionNumber": "13.3",
+      "text": "(b) (i) a = h = 0.103 \\mu m, (ii) a - h = 0.065 \\mu m",
+      "formulas": []
+    },
+    {
+      "questionNumber": "13.5",
+      "text": "(a) V_{O} = 3.312 V, V_{sat} = 0.984 V",
+      "formulas": []
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "V_{A} = V_{n} [N_{A} N_{D}]",
+      "genericFormula": "V_{A} = V_{n} [N_{A} N_{D}]",
+      "description": "Não foi possível gerar descrição automática",
+      "concepts": [],
+      "symbols": [],
+      "rawText": "{\n  \"originalFormula\": \"V_{A} = V_{n} [N_{A} N_{D}]\",\n  \"genericFormula\": \"V_{A} = V_{n} \\cdot [N_{A} N_{D}]\",\n  \"description\": \"Esta fórmula representa a relação entre a tensão de polarização (V_A) em um semicondutor dopado e a concentração de dopantes do tipo A (N_A) e do tipo D (N_D). A tensão de polarização é importante em dispositivos semicondutores, pois afeta a operação de junções e a formação de regiões de depleção. A fórmula é utilizada em análises de dispositivos semicondutores, como diodos e transistores, onde a interação entre diferentes tipos de dopantes é crucial para o funcionamento.\",\n  \"concepts\": [\"tensão de polarização\", \"dopagem\", \"semicondutores\", \"junções\", \"depleção\"],\n  \"symbols\": [\n    {\n      \"symbol\": \"V_{A}\",\n      \"description\": \"Tensão de polarização no semicondutor\"\n    },\n    {\n      \"symbol\": \"V_{n}\",\n      \"description\": \"Tensão normalizada ou referência\"\n    },\n    {\n      \"symbol\": \"N_{A}\",\n      \"description\": \"Concentração de dopantes do tipo A (aceptores)\"\n    },\n    {\n      \"symbol\": \"N_{D}\",\n      \"description\": \"Concentração de dopantes do tipo D (doadores)\"\n    }\n  ],\n  \"taxonomy\": {\n    \"category\": \"semiconductor-physics\",\n    \"subcategory\": \"carrier-transport\",\n    \"domain\": \"device-physics\"\n  },\n  \"keywords\": [\"tensão\", \"dopagem\", \"semicondutores\", \"junções\", \"depleção\"],\n  \"graphVisualization\": {\n    \"hasGraph\": false,\n    \"graphType\": \"\",\n    \"graphParameters\": []\n  },\n  \"relatedFormulas\": []\n}"
+    },
+    {
+      "originalFormula": "E_{F} = 7.65 \\times 10^{-V/cm}",
+      "genericFormula": "E_{F} = k \\times 10^{-x}",
+      "description": "Esta fórmula representa o nível de energia de Fermi, que é a energia máxima ocupada por elétrons em um material a temperatura zero. O nível de Fermi é crucial para entender a condutividade elétrica e as propriedades eletrônicas de semicondutores e metais. A fórmula indica que o nível de Fermi é uma função exponencial de uma variável, que pode estar relacionada a fatores como a concentração de portadores ou a temperatura. É frequentemente utilizada em estudos de semicondutores e na análise de dispositivos eletrônicos.",
+      "concepts": [
+        "nível de Fermi",
+        "energia",
+        "semicondutores",
+        "condutividade"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{F}",
+          "description": "Nível de energia de Fermi"
+        },
+        {
+          "symbol": "k",
+          "description": "Constante que representa a magnitude da relação com a variável"
+        },
+        {
+          "symbol": "x",
+          "description": "Variável que influencia o nível de energia de Fermi"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "energy-levels",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "energy",
+        "Fermi level",
+        "semiconductor",
+        "conductivity"
+      ],
+      "graphVisualization": {
+        "hasGraph": false,
+        "graphType": "",
+        "graphParameters": []
+      },
+      "relatedFormulas": []
+    },
+    {
+      "originalFormula": "J_{p} = (0.381 \\times 10^{4}) \\frac{-x}{L} cm^{-3}",
+      "genericFormula": "J_{p} = k \\frac{-x}{L}",
+      "description": "Esta fórmula representa a densidade de corrente de portadores de carga positiva (buracos) em um material semicondutor. A densidade de corrente é proporcional à variação da posição 'x' em relação a um comprimento característico 'L'. O fator 'k' é uma constante que depende das propriedades do material e da temperatura. Esta fórmula é utilizada em análises de transporte de carga em dispositivos semicondutores, como diodos e transistores.",
+      "concepts": [
+        "densidade de corrente",
+        "transporte de carga",
+        "semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "J_{p}",
+          "description": "densidade de corrente de portadores positivos (buracos)"
+        },
+        {
+          "symbol": "k",
+          "description": "constante que depende das propriedades do material"
+        },
+        {
+          "symbol": "x",
+          "description": "posição ao longo do material"
+        },
+        {
+          "symbol": "L",
+          "description": "comprimento característico do material"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-transport",
+        "domain": "device-physics"
+      },
+      "keywords": [
+        "current",
+        "carrier",
+        "density",
+        "transport",
+        "semiconductor"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "density-of-states",
+        "graphParameters": [
+          "position",
+          "current density"
+        ]
+      },
+      "relatedFormulas": [
+        "Ohm's Law",
+        "Drude Model"
+      ]
+    },
+    {
+      "originalFormula": "n_{p} = 2.93 \\times 10^{21} cm^{-3}",
+      "genericFormula": "n_{p} = N_{0}",
+      "description": "A fórmula representa a concentração de portadores de carga em um semicondutor do tipo p, onde \\( n_{p} \\) é a densidade de portadores de lacunas (ou buracos) por centímetro cúbico. Este valor é fundamental para entender as propriedades elétricas do material, uma vez que a densidade de portadores afeta diretamente a condutividade e o comportamento do semicondutor em dispositivos eletrônicos. É utilizada em análises de semicondutores para determinar a eficiência de dispositivos como diodos e transistores.",
+      "concepts": [
+        "semicondutores",
+        "portadores de carga",
+        "densidade de portadores",
+        "condutividade"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_{p}",
+          "description": "densidade de portadores de lacunas (buracos) em cm^{-3}"
+        },
+        {
+          "symbol": "N_{0}",
+          "description": "concentração de portadores de lacunas em cm^{-3}"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-transport",
+        "domain": "device-physics"
+      },
+      "keywords": [
+        "carrier",
+        "hole",
+        "density",
+        "semiconductor",
+        "conductivity"
+      ],
+      "graphVisualization": {
+        "hasGraph": false,
+        "graphType": "",
+        "graphParameters": []
+      },
+      "relatedFormulas": []
+    },
+    {
+      "originalFormula": "I_D = 10^{-15} \\exp\\left( \\frac{V_{GS}}{0.2} \\right)",
+      "genericFormula": "I_D = 10^{-15} \\exp\\left( \\frac{V_{GS}}{0.2} \\right)",
+      "description": "Não foi possível gerar descrição automática",
+      "concepts": [],
+      "symbols": [],
+      "rawText": "{\n  \"originalFormula\": \"I_D = 10^{-15} \\exp\\left( \\frac{V_{GS}}{0.2} \\right)\",\n  \"genericFormula\": \"I_D = I_0 \\exp\\left( \\frac{V_{GS}}{V_T} \\right)\",\n  \"description\": \"Esta fórmula representa a corrente de dreno (I_D) em um transistor de efeito de campo (FET) em função da tensão de porta (V_{GS}). A corrente é proporcional a uma constante de corrente de saturação (I_0) multiplicada por um fator exponencial que depende da tensão de porta e de uma tensão térmica (V_T). É utilizada para modelar o comportamento de transistores em circuitos eletrônicos, especialmente em regiões de operação ativa.\",\n  \"concepts\": [\"transistor\", \"corrente\", \"tensão\", \"exponencial\"],\n  \"symbols\": [\n    {\n      \"symbol\": \"I_D\",\n      \"description\": \"Corrente de dreno do transistor\"\n    },\n    {\n      \"symbol\": \"I_0\",\n      \"description\": \"Constante de corrente de saturação\"\n    },\n    {\n      \"symbol\": \"V_{GS}\",\n      \"description\": \"Tensão entre a porta e a fonte do transistor\"\n    },\n    {\n      \"symbol\": \"V_T\",\n      \"description\": \"Tensão térmica, que é uma constante relacionada à temperatura do sistema\"\n    }\n  ],\n  \"taxonomy\": {\n    \"category\": \"semiconductor-physics\",\n    \"subcategory\": \"device-physics\",\n    \"domain\": \"solid-state\"\n  },\n  \"keywords\": [\"current\", \"transistor\", \"gate-voltage\", \"exponential\", \"saturation\"],\n  \"graphVisualization\": {\n    \"hasGraph\": true,\n    \"graphType\": \"current-voltage\",\n    \"graphParameters\": [\"V_{GS}\", \"I_D\"]\n  },\n  \"relatedFormulas\": [\"Shockley\", \"FET\"]\n}"
+    }
+  ],
+  "processedPages": [
+    752,
+    753,
+    754,
+    755,
+    756,
+    757,
+    758,
+    759,
+    760,
+    761,
+    762,
+    763,
+    764,
+    765,
+    766,
+    767,
+    768,
+    769,
+    770,
+    771,
+    772,
+    773,
+    774,
+    775,
+    776,
+    777,
+    778,
+    779,
+    780,
+    781,
+    782,
+    783,
+    784,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498,
+    499,
+    500,
+    501,
+    502,
+    503,
+    504,
+    505,
+    506,
+    507,
+    508,
+    509,
+    510,
+    511,
+    512,
+    513,
+    514,
+    515,
+    516,
+    517,
+    518,
+    519,
+    520,
+    521,
+    522,
+    523,
+    524,
+    525,
+    526,
+    527,
+    528,
+    529,
+    530,
+    531,
+    532,
+    533,
+    534,
+    535,
+    536,
+    537,
+    538,
+    539,
+    540,
+    541,
+    542,
+    543,
+    544,
+    545,
+    546,
+    547,
+    548,
+    549,
+    550,
+    551,
+    552,
+    553,
+    554,
+    555,
+    556,
+    557,
+    558,
+    559,
+    560,
+    561,
+    562,
+    563,
+    564,
+    565,
+    566,
+    567,
+    568,
+    569,
+    570,
+    571,
+    572,
+    573,
+    574,
+    575,
+    576,
+    577,
+    578,
+    579,
+    580,
+    581,
+    582,
+    583,
+    584,
+    585,
+    586,
+    587,
+    588,
+    589,
+    590,
+    591,
+    592,
+    593,
+    594,
+    595,
+    596,
+    597,
+    598,
+    599,
+    600,
+    601,
+    602,
+    603,
+    604,
+    605,
+    606,
+    607,
+    608,
+    609,
+    610,
+    611,
+    612,
+    613,
+    614,
+    615,
+    616,
+    617,
+    618,
+    619,
+    620,
+    621,
+    622,
+    623,
+    624,
+    625,
+    626,
+    627,
+    628,
+    629,
+    630,
+    631,
+    632,
+    633,
+    634,
+    635,
+    636,
+    637,
+    638,
+    639,
+    640,
+    641,
+    642,
+    643,
+    644,
+    645,
+    646,
+    647,
+    648,
+    649,
+    650,
+    651,
+    652,
+    653,
+    654,
+    655,
+    656,
+    657,
+    658,
+    659,
+    660,
+    661,
+    662,
+    663,
+    664,
+    665,
+    666,
+    667,
+    668,
+    669,
+    670,
+    671,
+    672,
+    673,
+    674,
+    675,
+    676,
+    677,
+    678,
+    679,
+    680,
+    681,
+    682,
+    683,
+    684,
+    685,
+    686,
+    687,
+    688,
+    689,
+    690,
+    691,
+    692,
+    693,
+    694,
+    695,
+    696,
+    697,
+    698,
+    699,
+    700,
+    701,
+    702,
+    703,
+    704,
+    705,
+    706,
+    707,
+    708,
+    709,
+    710,
+    711,
+    712,
+    713,
+    714,
+    715,
+    716,
+    717,
+    718,
+    719,
+    720,
+    721,
+    722,
+    723,
+    724,
+    725,
+    726,
+    727,
+    728,
+    729,
+    730,
+    731,
+    732,
+    733,
+    734,
+    735,
+    736,
+    737,
+    738,
+    739,
+    740,
+    741,
+    742,
+    743,
+    744,
+    745,
+    746,
+    747,
+    748,
+    749,
+    750,
+    751
+  ],
+  "lastUpdated": "2026-05-09T00:26:53.008Z",
+  "bookTitle": "Semiconductor physics and devices",
+  "author": "Unknown"
+}

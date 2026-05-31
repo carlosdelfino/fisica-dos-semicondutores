@@ -1,0 +1,362 @@
+{
+  "chapter": "4.5 Charge Neutrality",
+  "section": "Thermal-Equilibrium Electron Concentration",
+  "questions": [
+    {
+      "number": "Example 4.9 (a)",
+      "text": "Determine the thermal-equilibrium electron and hole concentrations in silicon at T = 300 K for given doping concentrations. (a) Let N_d = 10^{16} \\, \\text{cm}^{-3} and N_a = 5 \\times 10^{15} \\, \\text{cm}^{-3}.",
+      "formulas": [
+        {
+          "originalFormula": "n_0 = \\frac{10^{16}}{2} + \\sqrt{\\frac{10^{16}}{2}} + (1.5 \\times 10^{10}) = 10^{16} \\, \\text{cm}^{-3}",
+          "genericFormula": "n_0 = \\frac{N}{2} + \\sqrt{\\frac{N}{2}} + C",
+          "description": "Esta fórmula representa a concentração de portadores de carga em um semicondutor, onde n_0 é a densidade total de portadores de carga em centímetros cúbicos. A fórmula combina diferentes contribuições para a densidade de portadores, incluindo uma parte constante e uma parte que depende da raiz quadrada de uma quantidade relacionada.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Semicondutores",
+            "Contribuições de diferentes fontes de portadores",
+            "Raiz quadrada em contextos físicos"
+          ],
+          "symbols": [
+            {
+              "symbol": "n_0",
+              "description": "Representa a densidade total de portadores de carga no semicondutor, medida em centímetros cúbicos."
+            },
+            {
+              "symbol": "N",
+              "description": "Representa uma quantidade inicial ou referência que é usada para calcular a contribuição de portadores de carga."
+            },
+            {
+              "symbol": "C",
+              "description": "Representa uma constante que contribui para a densidade total de portadores de carga, podendo ser uma densidade de portadores de uma fonte específica."
+            }
+          ],
+          "chapter": "4.5 Charge Neutrality",
+          "section": "Thermal-Equilibrium Electron Concentration",
+          "source": "question",
+          "questionNumber": "Example 4.9 (a)",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "number": "Example 4.9 (b)",
+      "text": "Again, from Equation (4.60), the majority carrier electron concentration is n_0 = 5 \\times 10^{15} - 2 \\times 10^{15} + \\sqrt{\\frac{5 \\times 10^{15} - 2 \\times 10^{15}}{2}} + (1.5 \\times 10^{10}) = 3 \\times 10^{15} \\, \\text{cm}^{-3}.",
+      "formulas": [
+        {
+          "originalFormula": "n_0 = 5 \\times 10^{15} - 2 \\times 10^{15} + \\sqrt{\\frac{5 \\times 10^{15} - 2 \\times 10^{15}}{2}} + (1.5 \\times 10^{10}) = 3 \\times 10^{15} \\, \\text{cm}^{-3}",
+          "genericFormula": "n_0 = A - B + \\sqrt{\\frac{A - B}{C}} + D",
+          "description": "Esta fórmula calcula a densidade de portadores de carga em um semicondutor, levando em consideração diferentes contribuições de portadores de carga e suas interações.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Semicondutores",
+            "Contribuições de portadores",
+            "Raiz quadrada em cálculos de média"
+          ],
+          "symbols": [
+            {
+              "symbol": "n_0",
+              "description": "Representa a densidade total de portadores de carga no semicondutor, geralmente medida em número de portadores por centímetro cúbico."
+            },
+            {
+              "symbol": "A",
+              "description": "Um valor que representa uma densidade inicial de portadores de carga em um semicondutor, neste caso, 5 vezes 10 elevado a 15."
+            },
+            {
+              "symbol": "B",
+              "description": "Um valor que representa uma densidade de portadores de carga que está sendo subtraída, neste caso, 2 vezes 10 elevado a 15."
+            },
+            {
+              "symbol": "C",
+              "description": "Um valor que representa um divisor na operação de raiz quadrada, que neste caso é 2, usado para calcular uma média."
+            },
+            {
+              "symbol": "D",
+              "description": "Um valor adicional que representa uma contribuição extra para a densidade de portadores de carga, neste caso, 1.5 vezes 10 elevado a 10."
+            }
+          ],
+          "chapter": "4.5 Charge Neutrality",
+          "section": "Thermal-Equilibrium Electron Concentration",
+          "source": "question",
+          "questionNumber": "Example 4.9 (b)",
+          "page": 33
+        }
+      ]
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "Example 4.9 (a)",
+      "text": "The minority carrier hole concentration is found to be p_0 = \\frac{n_i^2}{n_0} = \\frac{(1.5 \\times 10^{10})^2}{10^{16}} = 2.25 \\times 10^{10} \\, \\text{cm}^{-3}.",
+      "formulas": [
+        {
+          "originalFormula": "p_0 = \\frac{n_i^2}{n_0} = \\frac{(1.5 \\times 10^{10})^2}{10^{16}} = 2.25 \\times 10^{10} \\, \\text{cm}^{-3}",
+          "genericFormula": "p_0 = \\frac{n_i^2}{n_0}",
+          "description": "Esta fórmula representa a concentração de portadores de carga positiva em um semicondutor intrínseco, onde a concentração de buracos é calculada em relação à concentração de elétrons e à concentração intrínseca de portadores.",
+          "concepts": [
+            "Semicondutores",
+            "Concentração de portadores de carga",
+            "Equilíbrio de cargas em semicondutores",
+            "Propriedades eletrônicas de materiais"
+          ],
+          "symbols": [
+            {
+              "symbol": "p_0",
+              "description": "Representa a concentração de buracos, que são portadores de carga positiva em um semicondutor."
+            },
+            {
+              "symbol": "n_i",
+              "description": "Representa a concentração intrínseca de portadores de carga, que é a quantidade de elétrons e buracos gerados termicamente em um semicondutor puro."
+            },
+            {
+              "symbol": "n_0",
+              "description": "Representa a concentração de elétrons em um semicondutor dopado ou em equilíbrio, que é a quantidade de portadores de carga negativa presentes."
+            }
+          ],
+          "chapter": "4.5 Charge Neutrality",
+          "section": "Thermal-Equilibrium Electron Concentration",
+          "source": "answer",
+          "questionNumber": "Example 4.9 (a)",
+          "page": 65
+        }
+      ]
+    },
+    {
+      "questionNumber": "Example 4.9 (b)",
+      "text": "The minority carrier hole concentration is p_0 = \\frac{n_i^2}{n_0} = \\frac{(1.5 \\times 10^{10})^2}{3 \\times 10^{15}} = 7.5 \\times 10^{10} \\, \\text{cm}^{-3}.",
+      "formulas": [
+        {
+          "originalFormula": "p_0 = \\frac{n_i^2}{n_0} = \\frac{(1.5 \\times 10^{10})^2}{3 \\times 10^{15}} = 7.5 \\times 10^{10} \\, \\text{cm}^{-3}",
+          "genericFormula": "p_0 = \\frac{n_i^2}{n_0}",
+          "description": "Esta fórmula representa a densidade de portadores de carga positiva em um semicondutor intrínseco, que é calculada a partir da densidade de portadores de carga negativa e a densidade de portadores intrínsecos. Ela mostra como a densidade de portadores positivos é influenciada pela densidade intrínseca e pela densidade de portadores negativos.",
+          "concepts": [
+            "Semicondutores",
+            "Densidade de portadores de carga",
+            "Equilíbrio de carga em semicondutores",
+            "Densidade intrínseca"
+          ],
+          "symbols": [
+            {
+              "symbol": "p_0",
+              "description": "Representa a densidade de portadores de carga positiva em um semicondutor, geralmente referindo-se a lacunas."
+            },
+            {
+              "symbol": "n_i",
+              "description": "Representa a densidade de portadores intrínsecos, que é a quantidade de elétrons e lacunas em um semicondutor puro em equilíbrio térmico."
+            },
+            {
+              "symbol": "n_0",
+              "description": "Representa a densidade de portadores de carga negativa, que é a quantidade de elétrons presentes em um semicondutor dopado ou em equilíbrio."
+            }
+          ],
+          "chapter": "4.5 Charge Neutrality",
+          "section": "Thermal-Equilibrium Electron Concentration",
+          "source": "answer",
+          "questionNumber": "Example 4.9 (b)",
+          "page": 98
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "n_0 = \\frac{(N_a - N_d)}{2} + \\sqrt{\\frac{(N_a - N_d)}{2}} + n_i",
+      "genericFormula": "n_0 = \\frac{(N_a - N_d)}{2} + \\sqrt{\\frac{(N_a - N_d)}{2}} + n_i",
+      "description": "Esta fórmula calcula a densidade de portadores de carga em um semicondutor intrinsecamente dopado, levando em consideração a diferença entre as concentrações de dopantes do tipo aceito e do tipo doador, além da densidade intrínseca de portadores.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Dopagem de semicondutores",
+        "Semicondutores intrínsecos e extrínsecos",
+        "Equilíbrio de carga em semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_0",
+          "description": "Representa a densidade de portadores de carga no semicondutor em equilíbrio."
+        },
+        {
+          "symbol": "N_a",
+          "description": "Representa a concentração de dopantes do tipo aceito (aceptores) no semicondutor."
+        },
+        {
+          "symbol": "N_d",
+          "description": "Representa a concentração de dopantes do tipo doador no semicondutor."
+        },
+        {
+          "symbol": "n_i",
+          "description": "Representa a densidade intrínseca de portadores de carga no semicondutor, que é a quantidade de portadores presentes em um material não dopado a uma temperatura específica."
+        }
+      ],
+      "chapter": "4.5 Charge Neutrality",
+      "section": "Thermal-Equilibrium Electron Concentration",
+      "source": "standalone",
+      "page": 130
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162
+  ],
+  "lastUpdated": "2026-05-08T18:19:13.055366",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
+}

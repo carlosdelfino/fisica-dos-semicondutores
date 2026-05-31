@@ -1,0 +1,305 @@
+{
+  "chapter": "2.2 Schrödinger's Wave Equation",
+  "section": "Test Your Understanding",
+  "questions": [
+    {
+      "number": "TYU 2.1 (a)",
+      "text": "The uncertainty in position of an electron is Δx = 8 Å. Determine the minimum uncertainty in momentum.",
+      "formulas": [
+        {
+          "originalFormula": "\\Delta p = \\frac{h}{\\Delta x}",
+          "genericFormula": "\\Delta p = \\frac{h}{\\Delta x}",
+          "description": "Esta fórmula relaciona a variação do momento linear de uma partícula com a constante de Planck e a variação da posição da partícula. Ela é uma expressão do princípio da incerteza de Heisenberg, que nos diz que quanto mais precisamente conhecemos a posição de uma partícula, menos precisamente podemos conhecer seu momento.",
+          "concepts": [
+            "Princípio da Incerteza de Heisenberg",
+            "Momento linear",
+            "Constante de Planck",
+            "Variação de posição"
+          ],
+          "symbols": [
+            {
+              "symbol": "Δp",
+              "description": "Representa a variação do momento linear de uma partícula, que é uma medida da quantidade de movimento que a partícula possui."
+            },
+            {
+              "symbol": "h",
+              "description": "É a constante de Planck, uma constante fundamental na física que relaciona a energia de um fóton à frequência da radiação eletromagnética."
+            },
+            {
+              "symbol": "Δx",
+              "description": "Representa a variação na posição da partícula, ou seja, a distância que a partícula se desloca em um determinado intervalo de tempo."
+            }
+          ],
+          "chapter": "2.2 Schrödinger's Wave Equation",
+          "section": "Test Your Understanding",
+          "source": "question",
+          "questionNumber": "TYU 2.1 (a)",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "number": "TYU 2.1 (b)",
+      "text": "If the nominal value of momentum is p = 1.2 \\times 10^{-2} kg \\cdot m/s, determine the corresponding uncertainty in kinetic energy.",
+      "formulas": [
+        {
+          "originalFormula": "ΔE = \\frac{Δp^2}{2m}",
+          "genericFormula": "ΔE = \\frac{Δp^2}{2m}",
+          "description": "Esta fórmula representa a relação entre a variação da energia de um sistema e a variação do momento linear desse sistema. Ela mostra que a energia é proporcional ao quadrado da variação do momento e inversamente proporcional à massa do objeto.",
+          "concepts": [
+            "Energia",
+            "Momento linear",
+            "Massa",
+            "Princípio da incerteza"
+          ],
+          "symbols": [
+            {
+              "symbol": "ΔE",
+              "description": "Representa a variação da energia do sistema, que é a diferença entre a energia final e a energia inicial."
+            },
+            {
+              "symbol": "Δp",
+              "description": "Representa a variação do momento linear, que é a diferença entre o momento linear final e o momento linear inicial do objeto."
+            },
+            {
+              "symbol": "m",
+              "description": "Representa a massa do objeto, que é a quantidade de matéria que ele contém e influencia sua resistência a mudanças em seu estado de movimento."
+            }
+          ],
+          "chapter": "2.2 Schrödinger's Wave Equation",
+          "section": "Test Your Understanding",
+          "source": "question",
+          "questionNumber": "TYU 2.1 (b)",
+          "page": 10
+        }
+      ]
+    },
+    {
+      "number": "TYU 2.2 (a)",
+      "text": "A proton's energy is measured with an uncertainty of 0.8 eV. Determine the minimum uncertainty in time over which this energy is measured.",
+      "formulas": [
+        {
+          "originalFormula": "\\Delta E \\cdot \\Delta t \\geq \\frac{h}{4\\pi}",
+          "genericFormula": "\\Delta E \\cdot \\Delta t \\geq \\frac{h}{4\\pi}",
+          "description": "Esta fórmula representa o princípio da incerteza de Heisenberg, que estabelece uma relação fundamental entre a incerteza na energia de uma partícula e a incerteza no tempo durante o qual essa energia é medida. Em outras palavras, quanto mais precisamente tentamos medir a energia de uma partícula, menos precisamente podemos determinar o tempo associado a essa medição, e vice-versa.",
+          "concepts": [
+            "Princípio da incerteza de Heisenberg",
+            "Energia",
+            "Tempo",
+            "Mecânica quântica"
+          ],
+          "symbols": [
+            {
+              "symbol": "ΔE",
+              "description": "Representa a incerteza na energia de uma partícula."
+            },
+            {
+              "symbol": "Δt",
+              "description": "Representa a incerteza no tempo durante o qual a energia é medida."
+            },
+            {
+              "symbol": "h",
+              "description": "Representa a constante de Planck, que é uma constante fundamental na mecânica quântica, relacionada à quantização da energia."
+            },
+            {
+              "symbol": "π",
+              "description": "Representa o número pi, uma constante matemática que relaciona a circunferência de um círculo ao seu diâmetro."
+            }
+          ],
+          "chapter": "2.2 Schrödinger's Wave Equation",
+          "section": "Test Your Understanding",
+          "source": "question",
+          "questionNumber": "TYU 2.2 (a)",
+          "page": 19
+        }
+      ]
+    },
+    {
+      "number": "TYU 2.2 (b)",
+      "text": "Repeat part (a) for an electron.",
+      "formulas": [
+        {
+          "originalFormula": "\\Delta E \\cdot \\Delta t \\geq \\frac{h}{4\\pi}",
+          "genericFormula": "\\Delta E \\cdot \\Delta t \\geq \\frac{h}{4\\pi}",
+          "description": "Esta fórmula representa o princípio da incerteza de Heisenberg, que estabelece uma relação fundamental entre a incerteza na energia de um sistema e a incerteza no tempo em que essa energia é medida. Em termos simples, quanto mais precisamente tentamos medir a energia de uma partícula, menos precisamente podemos conhecer o tempo em que essa energia é definida, e vice-versa.",
+          "concepts": [
+            "Princípio da incerteza de Heisenberg",
+            "Incerteza na energia",
+            "Incerteza no tempo",
+            "Constante de Planck"
+          ],
+          "symbols": [
+            {
+              "symbol": "ΔE",
+              "description": "Representa a incerteza na energia de uma partícula ou sistema."
+            },
+            {
+              "symbol": "Δt",
+              "description": "Representa a incerteza no tempo durante o qual a energia é medida."
+            },
+            {
+              "symbol": "h",
+              "description": "É a constante de Planck, uma constante fundamental na mecânica quântica que relaciona a energia de um fóton à frequência da radiação eletromagnética."
+            },
+            {
+              "symbol": "π",
+              "description": "É o número pi, uma constante matemática que representa a razão entre a circunferência de um círculo e seu diâmetro, aproximadamente igual a 3,14159."
+            }
+          ],
+          "chapter": "2.2 Schrödinger's Wave Equation",
+          "section": "Test Your Understanding",
+          "source": "question",
+          "questionNumber": "TYU 2.2 (b)",
+          "page": 29
+        }
+      ]
+    }
+  ],
+  "answers": [],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "\\Psi(x, t) = \\psi(x)\\phi(t)",
+      "genericFormula": "\\Psi(x, t) = \\psi(x)\\phi(t)",
+      "description": "Esta fórmula representa a função de onda de um sistema quântico, onde a função de onda total é expressa como o produto de uma função espacial e uma função temporal. Isso é comum em sistemas que podem ser separados em suas variáveis espaciais e temporais, permitindo uma análise mais simples do comportamento quântico.",
+      "concepts": [
+        "Função de onda",
+        "Mecânica quântica",
+        "Separação de variáveis",
+        "Comportamento quântico"
+      ],
+      "symbols": [
+        {
+          "symbol": "Ψ",
+          "description": "Representa a função de onda total do sistema, que contém informações sobre a probabilidade de encontrar uma partícula em uma determinada posição e tempo."
+        },
+        {
+          "symbol": "x",
+          "description": "Representa a coordenada espacial, indicando a posição onde a função de onda está sendo avaliada."
+        },
+        {
+          "symbol": "t",
+          "description": "Representa o tempo, indicando o instante em que a função de onda está sendo considerada."
+        },
+        {
+          "symbol": "ψ",
+          "description": "Representa a parte espacial da função de onda, que descreve como a probabilidade de encontrar a partícula varia com a posição."
+        },
+        {
+          "symbol": "φ",
+          "description": "Representa a parte temporal da função de onda, que descreve como a probabilidade de encontrar a partícula varia com o tempo."
+        }
+      ],
+      "chapter": "2.2 Schrödinger's Wave Equation",
+      "section": "Test Your Understanding",
+      "source": "standalone",
+      "page": 38
+    },
+    {
+      "originalFormula": "-\\frac{h^2}{2m} \\frac{\\partial^2Ψ(x, t)}{\\partial x^2} + V(x)Ψ(x, t) = i\\hbar \\frac{\\partial Ψ(x, t)}{\\partial t}",
+      "genericFormula": "-\\frac{h^2}{2m} \\frac{\\partial^2Ψ(x, t)}{\\partial x^2} + V(x)Ψ(x, t) = i\\hbar \\frac{\\partial Ψ(x, t)}{\\partial t}",
+      "description": "Esta fórmula é a equação de Schrödinger independente do tempo, que descreve como a função de onda de uma partícula quântica evolui em um potencial. Ela relaciona a energia cinética e potencial da partícula com a variação da função de onda ao longo do espaço e do tempo.",
+      "concepts": [
+        "Mecânica quântica",
+        "Função de onda",
+        "Energia cinética",
+        "Energia potencial",
+        "Princípio da incerteza"
+      ],
+      "symbols": [
+        {
+          "symbol": "h",
+          "description": "Representa a constante de Planck, que é uma constante fundamental na mecânica quântica, relacionada à quantização de energia."
+        },
+        {
+          "symbol": "m",
+          "description": "Representa a massa da partícula que está sendo analisada na equação."
+        },
+        {
+          "symbol": "Ψ(x, t)",
+          "description": "Representa a função de onda da partícula, que contém todas as informações sobre o estado quântico da partícula em função da posição e do tempo."
+        },
+        {
+          "symbol": "V(x)",
+          "description": "Representa a energia potencial que a partícula experimenta em função da posição."
+        },
+        {
+          "symbol": "i",
+          "description": "Representa a unidade imaginária, que é um conceito fundamental na matemática e na física quântica, permitindo a descrição de fenômenos oscilatórios."
+        },
+        {
+          "symbol": "ℏ",
+          "description": "Representa a constante de Planck reduzida, que é a constante de Planck dividida por 2π, usada frequentemente em mecânica quântica."
+        },
+        {
+          "symbol": "t",
+          "description": "Representa o tempo, que é uma variável fundamental na evolução dos sistemas físicos."
+        }
+      ],
+      "chapter": "2.2 Schrödinger's Wave Equation",
+      "section": "Test Your Understanding",
+      "source": "standalone",
+      "page": 47
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56
+  ],
+  "lastUpdated": "2026-05-08T18:19:12.925347",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
+}

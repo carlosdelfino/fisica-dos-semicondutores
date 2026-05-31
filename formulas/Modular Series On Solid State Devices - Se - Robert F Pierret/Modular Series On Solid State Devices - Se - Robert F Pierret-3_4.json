@@ -1,0 +1,784 @@
+{
+  "chapter": "3.4",
+  "section": "3.4.4 Equations Summary",
+  "questions": [],
+  "answers": [
+    {
+      "questionNumber": "Solution no. 1",
+      "text": "GIVEN: Steady state, no light. Simplified differential equation and solution for minority carrier concentration.",
+      "formulas": [
+        {
+          "originalFormula": "0 = D_{N} \\frac{d^2 \\Delta n_p}{dx^2} - \\frac{\\Delta n_p}{\\tau_n}",
+          "genericFormula": "0 = D_{N} \\frac{d^2 \\Delta n_p}{dx^2} - \\frac{\\Delta n_p}{\\tau_n}",
+          "description": "Esta é a equação de difusão em regime estacionário para portadores minoritários (elétrons) em uma região do tipo p. Ela descreve como o excesso de portadores minoritários Δn_p se distribui espacialmente quando não há geração local e o sistema está em equilíbrio dinâmico. A equação resulta do balanço entre a difusão (termo com D_N) e a recombinação (termo com τ_n). A solução geral é uma combinação de exponenciais do tipo exp(±x/L_n), onde L_n = √(D_N τ_n) é o comprimento de difusão dos elétrons. Esta equação é fundamental para analisar regiões quase neutras em diodos p-n, transistores bipolares e fotodetectores, determinando como os portadores injetados ou gerados por luz decaem com a distância.",
+          "concepts": [
+            "difusão de portadores minoritários",
+            "recombinação de portadores",
+            "equilíbrio estacionário",
+            "comprimento de difusão",
+            "transporte em semicondutores",
+            "excesso de portadores",
+            "região quase neutra",
+            "equação diferencial ordinária de segunda ordem"
+          ],
+          "symbols": [
+            {
+              "symbol": "D_{N}",
+              "description": "Coeficiente de difusão dos elétrons (portadores minoritários) em cm²/s, relacionado à mobilidade pela relação de Einstein: D_N = (kT/q) μ_n"
+            },
+            {
+              "symbol": "\\Delta n_p",
+              "description": "Excesso de concentração de elétrons (portadores minoritários) na região tipo p em relação ao equilíbrio: Δn_p = n_p - n_{p0}, em cm⁻³"
+            },
+            {
+              "symbol": "\\frac{d^2 \\Delta n_p}{dx^2}",
+              "description": "Segunda derivada espacial do excesso de portadores minoritários, representando a curvatura do perfil de concentração ao longo da posição x"
+            },
+            {
+              "symbol": "\\tau_n",
+              "description": "Tempo de vida dos elétrons minoritários na região tipo p, em segundos; representa o tempo médio antes da recombinação"
+            },
+            {
+              "symbol": "x",
+              "description": "Coordenada espacial ao longo da direção de transporte/difusão, em cm"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "diffusion",
+            "minority-carrier",
+            "recombination",
+            "steady-state",
+            "diffusion-length",
+            "carrier-transport",
+            "quasi-neutral",
+            "p-type",
+            "electrons",
+            "continuity-equation",
+            "diode",
+            "bipolar-transistor"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-profile",
+            "graphParameters": [
+              "excess-carrier-concentration",
+              "position",
+              "diffusion-length",
+              "boundary-conditions"
+            ]
+          },
+          "relatedFormulas": [
+            "continuity-equation-electrons",
+            "diffusion-length-Ln",
+            "Einstein-relation",
+            "minority-carrier-diffusion-holes",
+            "diode-current-minority-carrier",
+            "recombination-rate"
+          ]
+        },
+        {
+          "originalFormula": "\\Delta n_p(x) = A e^{-x/L_N} + B e^{x/L_N}",
+          "genericFormula": "\\Delta n_p(x) = A e^{-x/L_N} + B e^{x/L_N}",
+          "description": "Esta é a solução geral da equação de continuidade para portadores minoritários (elétrons) em excesso na região p de uma junção p-n em condições de estado estacionário e campo elétrico nulo. A fórmula descreve como o excesso de concentração de elétrons Δn_p varia com a posição x na região p. Os coeficientes A e B são determinados pelas condições de contorno do problema específico: em uma região semi-infinita, B = 0 para evitar crescimento exponencial ao infinito; em regiões de largura finita, ambos os coeficientes são necessários. O comprimento de difusão L_N representa a distância média que um elétron minoritário percorre antes de recombinar com um buraco, sendo uma medida característica do decaimento espacial do excesso de portadores. Esta solução é fundamental para a análise de diodos p-n, células solares e transistores bipolares.",
+          "concepts": [
+            "portadores minoritários",
+            "excesso de portadores",
+            "equação de continuidade",
+            "comprimento de difusão",
+            "recombinação",
+            "solução geral de EDO",
+            "condições de contorno",
+            "estado estacionário",
+            "difusão de portadores",
+            "junção p-n"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\Delta n_p(x)",
+              "description": "Excesso de concentração de elétrons minoritários na região p em função da posição x [cm⁻³]"
+            },
+            {
+              "symbol": "A",
+              "description": "Coeficiente da componente decrescente, determinado pelas condições de contorno do problema [cm⁻³]"
+            },
+            {
+              "symbol": "B",
+              "description": "Coeficiente da componente crescente, determinado pelas condições de contorno; B = 0 em regiões semi-infinitas [cm⁻³]"
+            },
+            {
+              "symbol": "x",
+              "description": "Posição espacial na região p da junção, medida a partir da borda da região de depleção [cm]"
+            },
+            {
+              "symbol": "L_N",
+              "description": "Comprimento de difusão dos elétrons minoritários, definido como L_N = \\sqrt{D_N \\tau_N}, onde D_N é a difusividade e τ_N é o tempo de vida dos elétrons [cm]"
+            },
+            {
+              "symbol": "e",
+              "description": "Base do logaritmo natural (número de Euler ≈ 2,718)"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "minority-carrier",
+            "excess-carrier",
+            "diffusion-length",
+            "continuity-equation",
+            "recombination",
+            "p-n-junction",
+            "carrier",
+            "diffusion",
+            "boundary-condition",
+            "steady-state",
+            "exponential-decay",
+            "electron",
+            "concentration"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-distribution",
+            "graphParameters": [
+              "position",
+              "excess-carrier-concentration",
+              "diffusion-length"
+            ]
+          },
+          "relatedFormulas": [
+            "minority-carrier-continuity-equation",
+            "diffusion-length-electrons",
+            "excess-carrier-semi-infinite",
+            "diode-ideal-equation",
+            "carrier-lifetime",
+            "diffusion-current-density"
+          ]
+        },
+        {
+          "originalFormula": "L_N \\equiv \\sqrt{D_N \\tau_n}",
+          "genericFormula": "L_N \\equiv \\sqrt{D_N \\tau_n}",
+          "description": "Define o comprimento de difusão de minoritários de elétrons em um semicondutor tipo p. Esta quantidade representa a distância média que um elétron minoritário percorre por difusão antes de se recombinar com um buraco. Fisicamente, L_N é a escala de comprimento característica sobre a qual a concentração de portadores minoritários decai exponencialmente após uma injeção ou perturbação. Quanto maior o coeficiente de difusão D_N (elétrons se movem mais rapidamente) ou o tempo de vida τ_n (elétrons sobrevivem por mais tempo antes de recombinar), maior será o comprimento de difusão. Este parâmetro é fundamental na análise de diodos p-n, transistores bipolares e fotodetetores, onde determina a eficiência de coleta de portadores e a largura efetiva de coletor ou emissor.",
+          "concepts": [
+            "comprimento de difusão",
+            "portadores minoritários",
+            "recombinação",
+            "difusão de portadores",
+            "tempo de vida de portadores",
+            "equação de continuidade",
+            "transporte de portadores",
+            "semicondutor tipo p"
+          ],
+          "symbols": [
+            {
+              "symbol": "L_N",
+              "description": "Comprimento de difusão de elétrons minoritários (cm ou m); distância média percorrida por difusão antes da recombinação"
+            },
+            {
+              "symbol": "D_N",
+              "description": "Coeficiente de difusão de elétrons (cm²/s); relacionado à mobilidade pela relação de Einstein: D_N = (kT/q) \\mu_n"
+            },
+            {
+              "symbol": "\\tau_n",
+              "description": "Tempo de vida de elétrons minoritários (s); tempo médio antes de um elétron se recombinar com um buraco"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "diffusion",
+            "minority-carrier",
+            "recombination",
+            "diffusion-length",
+            "lifetime",
+            "electron",
+            "carrier",
+            "transport",
+            "continuity-equation",
+            "p-n junction",
+            "bipolar"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-concentration-profile",
+            "graphParameters": [
+              "minority carrier concentration",
+              "position x",
+              "diffusion length L_N",
+              "exponential decay"
+            ]
+          },
+          "relatedFormulas": [
+            "Einstein relation D_N = (kT/q) mu_n",
+            "minority carrier diffusion equation",
+            "continuity equation for electrons",
+            "Shockley diode equation",
+            "excess carrier decay: delta_n(x) = delta_n(0) exp(-x/L_N)",
+            "L_P = sqrt(D_P tau_p)"
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Solution no. 2",
+      "text": "GIVEN: No concentration gradient, no light. Simplified differential equation and solution.",
+      "formulas": [
+        {
+          "originalFormula": "\\frac{d \\Delta n_p}{dt} = -\\frac{\\Delta n_p}{\\tau_n}",
+          "genericFormula": "\\frac{d \\Delta n}{dt} = -\\frac{\\Delta n}{\\tau}",
+          "description": "Esta equação diferencial descreve a recombinação de portadores minoritários em excesso em um semicondutor tipo p. Quando portadores em excesso são gerados (por exemplo, por iluminação ou injeção elétrica) e a fonte de geração é removida, a concentração de elétrons em excesso Δn_p decai exponencialmente no tempo com constante de tempo τ_n, o tempo de vida dos portadores minoritários. A solução desta equação é Δn_p(t) = Δn_p(0)·exp(-t/τ_n), que representa o decaimento exponencial da concentração de portadores em excesso até o equilíbrio. Este é um resultado fundamental para entender a dinâmica de recombinação em dispositivos semicondutores como diodos e fototransistores.",
+          "concepts": [
+            "recombinação de portadores",
+            "portadores minoritários",
+            "tempo de vida de portadores",
+            "decaimento exponencial",
+            "equilíbrio termodinâmico",
+            "excesso de portadores",
+            "semicondutor tipo p",
+            "dinâmica de portadores",
+            "equação diferencial de primeira ordem"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\Delta n_p",
+              "description": "Concentração de elétrons em excesso em um semicondutor tipo p, definida como Δn_p = n_p - n_{p0}, onde n_p é a concentração instantânea e n_{p0} é a concentração de equilíbrio (m⁻³ ou cm⁻³)"
+            },
+            {
+              "symbol": "t",
+              "description": "Tempo (s)"
+            },
+            {
+              "symbol": "\\tau_n",
+              "description": "Tempo de vida dos portadores minoritários (elétrons) em um semicondutor tipo p; representa o tempo médio que um elétron em excesso leva para se recombinar com um buraco (s)"
+            },
+            {
+              "symbol": "\\frac{d}{dt}",
+              "description": "Operador derivada temporal, indica a taxa de variação da concentração de portadores em excesso no tempo"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-recombination",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "minority carrier",
+            "recombination",
+            "carrier lifetime",
+            "excess carrier",
+            "exponential decay",
+            "type-p semiconductor",
+            "carrier dynamics",
+            "transient response",
+            "electron concentration",
+            "recombination rate"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "time-decay",
+            "graphParameters": [
+              "excess carrier concentration",
+              "time",
+              "carrier lifetime",
+              "initial excess concentration"
+            ]
+          },
+          "relatedFormulas": [
+            "minority-carrier-diffusion-equation",
+            "continuity-equation",
+            "shockley-read-hall-recombination",
+            "excess-carrier-solution-exponential",
+            "minority-carrier-lifetime",
+            "ambipolar-transport-equation"
+          ]
+        },
+        {
+          "originalFormula": "\\Delta n_p(t) = \\Delta n_p(0) e^{-t/\\tau_n}",
+          "genericFormula": "\\Delta n(t) = \\Delta n(0) \\, e^{-t/\\tau}",
+          "description": "Esta fórmula descreve o decaimento temporal do excesso de portadores minoritários (elétrons) em uma região tipo p após uma perturbação externa, como uma excitação óptica ou injeção elétrica. Quando a fonte de geração é removida, o excesso de elétrons minoritários Δnₚ(t) decai exponencialmente com o tempo, retornando ao equilíbrio térmico. O tempo de vida τₙ representa o tempo médio que um elétron em excesso sobrevive antes de se recombinar com um buraco. Este comportamento é governado pela equação de continuidade na ausência de campos elétricos e gradientes de concentração, sendo fundamental para entender processos de recombinação em dispositivos como diodos, células solares e transistores bipolares.",
+          "concepts": [
+            "recombinação de portadores",
+            "portadores minoritários",
+            "tempo de vida de portadores",
+            "decaimento exponencial",
+            "equilíbrio termodinâmico",
+            "excesso de portadores",
+            "geração e recombinação",
+            "semicondutor tipo p",
+            "equação de continuidade"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\Delta n_p(t)",
+              "description": "Excesso de elétrons minoritários na região tipo p no instante t, definido como Δnₚ(t) = nₚ(t) − nₚ₀, onde nₚ₀ é a concentração de equilíbrio"
+            },
+            {
+              "symbol": "\\Delta n_p(0)",
+              "description": "Excesso inicial de elétrons minoritários no instante t = 0, imediatamente após a remoção da perturbação externa"
+            },
+            {
+              "symbol": "t",
+              "description": "Tempo decorrido após a remoção da fonte de excitação (em segundos)"
+            },
+            {
+              "symbol": "\\tau_n",
+              "description": "Tempo de vida dos elétrons minoritários: tempo médio entre a geração de um elétron e sua recombinação com um buraco. Depende do material, temperatura e concentração de defeitos/impurezas"
+            },
+            {
+              "symbol": "e",
+              "description": "Base do logaritmo natural (número de Euler, ≈ 2,71828)"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-recombination",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "minority carrier",
+            "carrier lifetime",
+            "recombination",
+            "excess carriers",
+            "exponential decay",
+            "continuity equation",
+            "p-type semiconductor",
+            "carrier dynamics",
+            "generation",
+            "transient response",
+            "minority electrons",
+            "tau"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "transient-decay",
+            "graphParameters": [
+              "time",
+              "excess carrier concentration",
+              "carrier lifetime",
+              "initial excess concentration"
+            ]
+          },
+          "relatedFormulas": [
+            "continuity-equation-electrons",
+            "continuity-equation-holes",
+            "minority-hole-decay",
+            "carrier-lifetime-SRH",
+            "excess-carrier-generation",
+            "diffusion-equation-minority-carriers",
+            "Shockley-diode-equation"
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Solution no. 3",
+      "text": "GIVEN: Steady state, no concentration gradient. Simplified differential equation and solution.",
+      "formulas": [
+        {
+          "originalFormula": "0 = -\\frac{\\Delta n_p}{\\tau_n} + G_L",
+          "genericFormula": "0 = -\\frac{\\Delta n}{\\tau_n} + G_L",
+          "description": "Esta equação representa a condição de equilíbrio dinâmico (estado estacionário) para portadores minoritários em excesso em um semicondutor tipo-p sob iluminação. Em regime estacionário, a taxa de variação temporal dos portadores em excesso é nula, o que significa que a taxa de geração óptica (G_L) é exatamente compensada pela taxa de recombinação (Δn_p/τ_n). A solução desta equação fornece diretamente a concentração de elétrons minoritários em excesso: Δn_p = G_L · τ_n. Esta é uma equação fundamental na análise de fotodetectores, células solares e outros dispositivos optoeletrônicos que operam sob iluminação contínua.",
+          "concepts": [
+            "equação de continuidade",
+            "estado estacionário",
+            "portadores minoritários",
+            "recombinação",
+            "geração óptica",
+            "tempo de vida de portadores",
+            "excesso de portadores",
+            "semicondutor tipo-p",
+            "balanço de geração-recombinação"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\Delta n_p",
+              "description": "concentração de elétrons em excesso (portadores minoritários) no semicondutor tipo-p, definida como Δn_p = n_p - n_{p0}, onde n_{p0} é a concentração de equilíbrio"
+            },
+            {
+              "symbol": "\\tau_n",
+              "description": "tempo de vida dos portadores minoritários (elétrons) no material tipo-p; representa o tempo médio antes que um elétron em excesso se recombine com um buraco"
+            },
+            {
+              "symbol": "G_L",
+              "description": "taxa de geração óptica de portadores por unidade de volume (pares elétron-buraco gerados por fótons por unidade de tempo e volume), em unidades de cm⁻³·s⁻¹"
+            },
+            {
+              "symbol": "-\\frac{\\Delta n_p}{\\tau_n}",
+              "description": "taxa de recombinação líquida dos portadores minoritários em excesso; o sinal negativo indica que é um processo de perda de portadores"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-generation-recombination",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "steady-state",
+            "minority-carrier",
+            "recombination",
+            "generation",
+            "optical-generation",
+            "lifetime",
+            "continuity-equation",
+            "excess-carrier",
+            "p-type",
+            "photodetector",
+            "solar-cell",
+            "carrier"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-concentration",
+            "graphParameters": [
+              "excess carrier concentration Δn_p",
+              "optical generation rate G_L",
+              "minority carrier lifetime τ_n",
+              "recombination rate"
+            ]
+          },
+          "relatedFormulas": [
+            "continuity-equation-electrons",
+            "minority-carrier-diffusion-equation",
+            "shockley-read-hall-recombination",
+            "excess-carrier-concentration-steady-state",
+            "photoconductivity",
+            "carrier-lifetime"
+          ]
+        },
+        {
+          "originalFormula": "\\Delta n_p = G_L \\tau_n",
+          "genericFormula": "\\Delta n = G_L \\tau_n",
+          "description": "Esta fórmula descreve o excesso de portadores minoritários (elétrons) em estado estacionário em um material tipo-p sob iluminação. Quando luz é incidida sobre um semicondutor tipo-p, ela gera pares elétron-lacuna a uma taxa de geração óptica G_L. No regime estacionário, a taxa de geração é igual à taxa de recombinação, levando ao estabelecimento de um excesso de elétrons Δn_p. O tempo de vida dos portadores minoritários τ_n representa quanto tempo em média um elétron fotogerado sobrevive antes de se recombinar com uma lacuna. Este resultado é fundamental para o entendimento do funcionamento de fotodetectores e células solares, pois determina a concentração adicional de portadores minoritários disponíveis para condução ou coleta.",
+          "concepts": [
+            "excesso de portadores minoritários",
+            "geração óptica de portadores",
+            "recombinação de portadores",
+            "tempo de vida de portadores minoritários",
+            "estado estacionário",
+            "semicondutor tipo-p",
+            "fotogeração",
+            "equilíbrio dinâmico"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\Delta n_p",
+              "description": "Excesso de concentração de elétrons (portadores minoritários) em um semicondutor tipo-p em relação ao equilíbrio térmico [cm⁻³]"
+            },
+            {
+              "symbol": "G_L",
+              "description": "Taxa de geração óptica de pares elétron-lacuna por unidade de volume devido à iluminação [cm⁻³ s⁻¹]"
+            },
+            {
+              "symbol": "\\tau_n",
+              "description": "Tempo de vida dos elétrons minoritários no material tipo-p, isto é, o tempo médio antes da recombinação [s]"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-generation-recombination",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "minority carrier",
+            "excess carrier",
+            "optical generation",
+            "carrier lifetime",
+            "recombination",
+            "steady-state",
+            "p-type semiconductor",
+            "photogeneration",
+            "carrier concentration",
+            "photodetector",
+            "solar cell"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-concentration",
+            "graphParameters": [
+              "excess carrier concentration",
+              "generation rate",
+              "minority carrier lifetime",
+              "illumination intensity"
+            ]
+          },
+          "relatedFormulas": [
+            "continuity-equation-minority-carriers",
+            "minority-carrier-diffusion-equation",
+            "SRH-recombination",
+            "radiative-recombination",
+            "photoconductivity"
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Solution no. 4",
+      "text": "GIVEN: Steady state, no R-G, no light. Simplified differential equation and solution.",
+      "formulas": [
+        {
+          "originalFormula": "0 = D_N \\frac{d^2 \\Delta n_p}{dx^2} \\quad \\text{or} \\quad 0 = \\frac{d^2 \\Delta n_p}{dx^2}",
+          "genericFormula": "0 = D_N \\frac{d^2 \\Delta n}{dx^2} \\quad \\Leftrightarrow \\quad \\frac{d^2 \\Delta n}{dx^2} = 0",
+          "description": "Esta equação representa a condição de equilíbrio estacionário para o excesso de portadores minoritários (elétrons) em uma região de material tipo-p, sem geração nem recombinação líquida e sem campo elétrico aplicado. É derivada da equação de continuidade de difusão pura: quando a variação temporal é nula (regime estacionário) e não há geração/recombinação, o termo de difusão deve ser zero. A solução geral desta equação diferencial ordinária de segunda ordem é uma função linear: Δn_p(x) = Ax + B, onde A e B são determinadas pelas condições de contorno do problema (por exemplo, concentração de excesso na interface de uma junção e condição de contorno no contato ôhmico). Esta forma simplificada é característica de dispositivos com comprimento muito menor que o comprimento de difusão, onde o perfil de portadores é essencialmente linear em vez de exponencial.",
+          "concepts": [
+            "difusão de portadores minoritários",
+            "excesso de portadores",
+            "equação de continuidade",
+            "regime estacionário",
+            "portadores minoritários",
+            "equação diferencial ordinária",
+            "perfil linear de portadores",
+            "comprimento de difusão",
+            "transporte de carga",
+            "semicondutor tipo-p"
+          ],
+          "symbols": [
+            {
+              "symbol": "D_N",
+              "description": "Coeficiente de difusão de elétrons (portadores minoritários em região tipo-p), em cm²/s ou m²/s"
+            },
+            {
+              "symbol": "\\Delta n_p",
+              "description": "Excesso de concentração de elétrons (portadores minoritários) na região tipo-p, definido como Δn_p = n_p - n_{p0}, onde n_{p0} é a concentração de equilíbrio"
+            },
+            {
+              "symbol": "\\frac{d^2 \\Delta n_p}{dx^2}",
+              "description": "Segunda derivada espacial do excesso de portadores minoritários, representa a curvatura do perfil de concentração"
+            },
+            {
+              "symbol": "x",
+              "description": "Coordenada espacial ao longo da direção de difusão dos portadores"
+            },
+            {
+              "symbol": "0",
+              "description": "Lado esquerdo da equação, indicando regime estacionário sem geração/recombinação líquida"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "diffusion",
+            "minority-carrier",
+            "continuity-equation",
+            "steady-state",
+            "excess-carrier",
+            "linear-profile",
+            "p-type",
+            "electron",
+            "carrier",
+            "transport",
+            "junction",
+            "diode",
+            "diffusion-coefficient"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-concentration-profile",
+            "graphParameters": [
+              "excess carrier concentration Δn_p",
+              "position x",
+              "boundary conditions",
+              "linear spatial profile"
+            ]
+          },
+          "relatedFormulas": [
+            "continuity-equation-electrons",
+            "diffusion-equation-minority-carriers",
+            "minority-carrier-diffusion-length",
+            "Fick-second-law",
+            "excess-carrier-recombination",
+            "Einstein-relation",
+            "diode-minority-carrier-distribution"
+          ]
+        },
+        {
+          "originalFormula": "\\Delta n_p(x) = A + Bx",
+          "genericFormula": "\\Delta n_p(x) = A + Bx",
+          "description": "Esta fórmula representa a solução geral da distribuição espacial do excesso de portadores minoritários (elétrons) em uma região de material tipo-p, quando a equação de difusão-recombinação é resolvida em regime estacionário sem geração interna e com comprimento de difusão muito grande (ou infinito). A forma linear A + Bx surge como solução da equação diferencial de segunda ordem para o excesso de portadores quando o termo de recombinação é desprezível ou quando se trabalha em regiões curtas comparadas ao comprimento de difusão. Os coeficientes A e B são determinados pelas condições de contorno do problema específico, como as concentrações nas interfaces do dispositivo. Esta solução é particularmente útil na análise de diodos de junção curtos (short diode), onde o comprimento da região neutra é muito menor que o comprimento de difusão dos minoritários, e a distribuição de excesso de portadores se torna aproximadamente linear em vez de exponencial.",
+          "concepts": [
+            "excesso de portadores minoritários",
+            "difusão de portadores",
+            "equação de continuidade",
+            "recombinação",
+            "solução geral de equação diferencial",
+            "condições de contorno",
+            "diodo curto",
+            "região neutra tipo-p",
+            "comprimento de difusão"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\Delta n_p(x)",
+              "description": "Excesso de portadores minoritários (elétrons) em função da posição x na região tipo-p, definido como Δnₚ(x) = nₚ(x) - nₚ₀, onde nₚ₀ é a concentração de equilíbrio"
+            },
+            {
+              "symbol": "x",
+              "description": "Coordenada espacial ao longo da região tipo-p, medida a partir de uma referência (geralmente a interface da junção)"
+            },
+            {
+              "symbol": "A",
+              "description": "Constante de integração (coeficiente independente de x), determinada pelas condições de contorno do problema; representa o valor do excesso de portadores na origem"
+            },
+            {
+              "symbol": "B",
+              "description": "Constante de integração (coeficiente linear), determinada pelas condições de contorno; representa o gradiente (inclinação) do perfil de excesso de portadores"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "minority carrier",
+            "excess carrier",
+            "diffusion",
+            "continuity equation",
+            "short diode",
+            "linear distribution",
+            "boundary condition",
+            "p-type",
+            "recombination",
+            "carrier concentration",
+            "general solution"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-distribution",
+            "graphParameters": [
+              "position x",
+              "excess carrier concentration Δnₚ",
+              "coefficients A and B"
+            ]
+          },
+          "relatedFormulas": [
+            "minority-carrier-diffusion-equation",
+            "continuity-equation",
+            "diffusion-length",
+            "Fick-second-law",
+            "short-diode-boundary-conditions",
+            "excess-carrier-exponential-solution"
+          ]
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [],
+  "bookTitle": "Modular Series On Solid State Devices",
+  "author": "Unknown",
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101
+  ],
+  "lastUpdated": "2026-05-09T15:35:52.966Z"
+}

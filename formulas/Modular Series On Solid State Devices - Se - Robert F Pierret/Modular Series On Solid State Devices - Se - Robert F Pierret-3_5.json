@@ -1,0 +1,927 @@
+{
+  "chapter": "3.5",
+  "section": "3.5.1 Sample Problem No. 1",
+  "questions": [
+    {
+      "number": "3.5.1",
+      "text": "A uniformly donor-doped silicon wafer maintained at room temperature is suddenly illuminated with light at time t = 0. Assuming N_D = 10^15/cm^3, τ_p = 10^-6 sec, and a light-induced creation of 10^17 electrons and holes per cm^3-sec throughout the semiconductor, determine Δp_n(t) for t > 0.",
+      "formulas": [
+        {
+          "originalFormula": "N_D = 10^{15}/\\text{cm}^3",
+          "genericFormula": "N_D",
+          "description": "Concentração de dopantes doadores (N_D) em um semicondutor tipo-n. O valor N_D = 10^{15} cm^{-3} representa uma dopagem moderada em silício, onde átomos doadores (como fósforo ou arsênio) são introduzidos na rede cristalina para fornecer elétrons livres à banda de condução. Cada átomo doador ionizado contribui com um elétron extra, aumentando a condutividade do material. Este nível de dopagem é típico em dispositivos semicondutores como transistores e diodos.",
+          "concepts": [
+            "dopagem tipo-n",
+            "concentração de dopantes doadores",
+            "semicondutor extrinseco",
+            "ionização de dopantes",
+            "elétrons majoritários",
+            "neutralidade de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_D",
+              "description": "Concentração de átomos doadores ionizados no semicondutor (em cm^{-3})"
+            },
+            {
+              "symbol": "10^{15}",
+              "description": "Valor numérico da concentração, em unidades por centímetro cúbico"
+            },
+            {
+              "symbol": "\\text{cm}^{-3}",
+              "description": "Unidade de concentração volumétrica: número de átomos por centímetro cúbico"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "doping-concentration",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "donor",
+            "doping",
+            "concentration",
+            "n-type",
+            "carrier",
+            "extrinsic",
+            "semiconductor",
+            "ionization",
+            "electron",
+            "majority-carrier"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "energy-band",
+            "graphParameters": [
+              "donor energy level",
+              "conduction band",
+              "valence band",
+              "Fermi level position",
+              "ionization energy"
+            ]
+          },
+          "relatedFormulas": [
+            "charge-neutrality",
+            "electron-concentration-n-type",
+            "Fermi-level-n-type",
+            "mass-action-law",
+            "ionization-fraction",
+            "conductivity-n-type"
+          ]
+        },
+        {
+          "originalFormula": "\\tau_p = 10^{-6} \\text{ sec}",
+          "genericFormula": "\\tau_p",
+          "description": "Tempo de vida dos portadores minoritários (lacunas/buracos) em um semicondutor. O tempo de vida de portadores minoritários é um parâmetro fundamental que descreve o tempo médio que um portador de carga (neste caso, uma lacuna) sobrevive antes de se recombinar com um elétron. Este valor de 10⁻⁶ segundos (1 microssegundo) é um valor típico para silício com dopagem moderada. O tempo de vida afeta diretamente o comprimento de difusão dos portadores minoritários, a eficiência de dispositivos fotovoltaicos e a resposta de frequência de diodos e transistores. Valores menores indicam recombinação mais rápida (materiais com mais defeitos), enquanto valores maiores indicam menor taxa de recombinação (materiais de alta pureza).",
+          "concepts": [
+            "tempo de vida de portadores minoritários",
+            "recombinação elétron-lacuna",
+            "lacunas (buracos)",
+            "portadores minoritários",
+            "recombinação radiativa",
+            "recombinação não-radiativa",
+            "centros de recombinação",
+            "mecanismo de Shockley-Read-Hall"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\tau_p",
+              "description": "Tempo de vida das lacunas (portadores minoritários do tipo p), em segundos. Representa o tempo médio antes da recombinação."
+            },
+            {
+              "symbol": "10^{-6} \\text{ sec}",
+              "description": "Valor numérico de 1 microssegundo (1 μs), unidade de tempo no Sistema Internacional (SI)."
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-lifetime",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "carrier",
+            "lifetime",
+            "minority",
+            "recombination",
+            "hole",
+            "diffusion",
+            "minority-carrier",
+            "tau",
+            "transport",
+            "silicon"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "exponential-decay",
+            "graphParameters": [
+              "carrier concentration vs time",
+              "excess carrier density",
+              "recombination rate"
+            ]
+          },
+          "relatedFormulas": [
+            "diffusion-length-Lp",
+            "minority-carrier-diffusion-equation",
+            "Shockley-Read-Hall-recombination",
+            "excess-carrier-concentration",
+            "continuity-equation",
+            "Einstein-relation"
+          ]
+        },
+        {
+          "originalFormula": "G_L = 10^{17}/\\text{cm}^3\\text{-sec}",
+          "genericFormula": "G_L = \\frac{\\Delta n}{\\tau}",
+          "description": "Taxa de geração óptica de portadores minoritários por luz (fotogeração). G_L representa a quantidade de pares elétron-buraco gerados por unidade de volume por unidade de tempo devido à incidência de luz sobre o semicondutor. Esse valor de 10^{17} pares/cm³·s é uma taxa de geração típica usada em problemas de regime de baixa injeção. Quando a luz incide sobre o semicondutor com energia maior que o bandgap, os fótons são absorvidos e criam pares elétron-buraco em excesso. Em regime estacionário, a taxa de geração se iguala à taxa de recombinação, permitindo calcular o excesso de portadores minoritários.",
+          "concepts": [
+            "geração óptica de portadores",
+            "fotogeração",
+            "pares elétron-buraco",
+            "portadores minoritários em excesso",
+            "regime estacionário",
+            "baixa injeção",
+            "absorção de luz",
+            "recombinação",
+            "tempo de vida de portadores"
+          ],
+          "symbols": [
+            {
+              "symbol": "G_L",
+              "description": "Taxa de geração óptica (fotogeração) de pares elétron-buraco por unidade de volume por unidade de tempo, em cm⁻³·s⁻¹"
+            },
+            {
+              "symbol": "10^{17}",
+              "description": "Valor numérico da taxa de geração: 100 quatrilhões de pares elétron-buraco gerados por cm³ por segundo"
+            },
+            {
+              "symbol": "\\text{cm}^3",
+              "description": "Unidade de volume: centímetro cúbico"
+            },
+            {
+              "symbol": "\\text{sec}",
+              "description": "Unidade de tempo: segundo"
+            },
+            {
+              "symbol": "\\Delta n",
+              "description": "Excesso de portadores minoritários (elétrons ou buracos em excesso) gerado pela iluminação"
+            },
+            {
+              "symbol": "\\tau",
+              "description": "Tempo de vida dos portadores minoritários em excesso, em segundos"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-generation-recombination",
+            "domain": "optoelectronics"
+          },
+          "keywords": [
+            "generation",
+            "optical",
+            "carrier",
+            "photogeneration",
+            "minority",
+            "electron-hole",
+            "pair",
+            "recombination",
+            "steady-state",
+            "low-injection",
+            "lifetime",
+            "excess-carrier",
+            "illumination",
+            "absorption"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-concentration-vs-time",
+            "graphParameters": [
+              "excess carrier concentration",
+              "time",
+              "generation rate",
+              "recombination rate",
+              "minority carrier lifetime"
+            ]
+          },
+          "relatedFormulas": [
+            "minority-carrier-diffusion-equation",
+            "excess-carrier-concentration",
+            "shockley-read-hall-recombination",
+            "carrier-lifetime",
+            "low-level-injection",
+            "continuity-equation"
+          ]
+        },
+        {
+          "originalFormula": "\\Delta p_n(t) = \\text{?} \\quad t > 0",
+          "genericFormula": "\\Delta p_n(t) = \\Delta p_n(0) \\cdot e^{-t/\\tau_p}",
+          "description": "Esta fórmula descreve o decaimento temporal do excesso de portadores minoritários (lacunas) em uma região de semicondutor tipo-n após uma perturbação inicial. Para t > 0, quando a fonte de injeção é removida, o excesso de concentração de lacunas Δp_n decai exponencialmente com o tempo. O processo físico subjacente é a recombinação dos portadores minoritários injetados com os portadores majoritários do material. A constante de tempo τ_p é o tempo de vida dos portadores minoritários (lacunas), que representa o tempo médio que uma lacuna sobrevive antes de se recombinar com um elétron. Este comportamento exponencial é uma consequência direta da equação de continuidade para portadores minoritários no regime de baixa injeção, onde a taxa de recombinação é proporcional ao excesso de portadores.",
+          "concepts": [
+            "recombinação de portadores",
+            "portadores minoritários",
+            "tempo de vida de portadores",
+            "decaimento exponencial",
+            "excesso de portadores",
+            "equação de continuidade",
+            "regime de baixa injeção",
+            "semicondutor tipo-n"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\Delta p_n(t)",
+              "description": "Excesso de concentração de lacunas (portadores minoritários) em semicondutor tipo-n no instante t, definido como Δp_n(t) = p_n(t) - p_{n0}, onde p_{n0} é a concentração de equilíbrio"
+            },
+            {
+              "symbol": "\\Delta p_n(0)",
+              "description": "Excesso inicial de concentração de lacunas no instante t = 0, imediatamente após a remoção da perturbação ou fonte de injeção"
+            },
+            {
+              "symbol": "t",
+              "description": "Tempo, variável independente. Para t > 0, representa o período após a remoção da excitação externa"
+            },
+            {
+              "symbol": "\\tau_p",
+              "description": "Tempo de vida dos portadores minoritários (lacunas), constante de tempo característica do decaimento exponencial. Representa o tempo médio de sobrevivência de uma lacuna antes da recombinação"
+            },
+            {
+              "symbol": "e",
+              "description": "Base do logaritmo natural (número de Euler, ≈ 2,718), base da função de decaimento exponencial"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-recombination",
+            "domain": "minority-carrier-dynamics"
+          },
+          "keywords": [
+            "minority-carrier",
+            "recombination",
+            "lifetime",
+            "excess-carriers",
+            "exponential-decay",
+            "holes",
+            "n-type",
+            "continuity-equation",
+            "carrier",
+            "concentration",
+            "transient",
+            "injection"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "transient-decay",
+            "graphParameters": [
+              "time",
+              "excess-carrier-concentration",
+              "minority-carrier-lifetime",
+              "initial-excess-concentration"
+            ]
+          },
+          "relatedFormulas": [
+            "continuity-equation-holes",
+            "minority-carrier-diffusion-equation",
+            "recombination-rate",
+            "excess-electron-decay",
+            "carrier-lifetime-SRH",
+            "Delta-n_p(t)-decay"
+          ]
+        }
+      ]
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "3.5.1",
+      "text": "Step 1: The semiconductor is silicon, T = room temperature, the donor doping is the same everywhere with N_D = 10^15/cm^3, and G_L = 10^17/cm^3-sec at all points inside the semiconductor. The problem implies equilibrium conditions exist for t < 0.\\n\nStep 2: For Si at room temperature n_i ≅ 10^10/cm^3. Since N_D >> n_i, n_0 = N_D = 10^15/cm^3 and p_0 = n_i^2/N_D = 10^5/cm^3. The equilibrium n_0 and p_0 values are the same everywhere.\\n\nStep 3: Prior to t = 0, Δp_n = 0. Starting at t = 0 the light creates added electrons and holes and Δp_n will increase. The thermal recombination rate ∂p/∂t|thermal R-G = -Δp_n/τ_p. As Δp_n increases, more excess holes are eliminated per second by thermal recombination. Eventually a steady state is attained.\\n\nΔp_n(t) starts from zero at t = 0, builds up at a decreasing rate, and ultimately becomes constant. Since ∂p/∂t|light + ∂p/∂t|thermal R-G = 0, or G_L - Δp_n/τ_p = 0 under steady state conditions, Δp_n(t → ∞) = G_L τ_p.\\n\nStep 4: The minority carrier diffusion equation is the starting point. The photogeneration is uniform throughout the semiconductor, so the perturbed carrier concentrations are also position-independent.",
+      "formulas": [
+        {
+          "originalFormula": "n_i \\cong 10^{10}/\\text{cm}^3",
+          "genericFormula": "n_i = \\sqrt{N_c N_v} \\exp\\left(-\\frac{E_g}{2k_BT}\\right)",
+          "description": "Esta fórmula fornece o valor numérico da concentração intrínseca de portadores no silício (Si) à temperatura ambiente (T ≈ 300 K). O valor n_i ≅ 10^10 cm⁻³ é um resultado experimental e teórico amplamente utilizado como referência em projetos de dispositivos semicondutores. A concentração intrínseca representa o número de elétrons (ou lacunas) gerados termicamente por unidade de volume em um semicondutor puro, sem dopagem. Este valor é extremamente sensível à temperatura e à largura do gap de energia do material. Para o silício, E_g ≅ 1,12 eV, o que resulta nesta concentração relativamente baixa em comparação com a densidade total de átomos (~5×10²² cm⁻³). Em dispositivos reais, a dopagem introduz concentrações muito maiores de portadores, tornando n_i um patamar de referência abaixo do qual o material se comporta como intrinsecamente semicondutor.",
+          "concepts": [
+            "concentração intrínseca de portadores",
+            "geração térmica de portadores",
+            "semicondutor intrínseco",
+            "equilíbrio termodinâmico",
+            "gap de energia",
+            "densidade de estados efetiva",
+            "estatística de Fermi-Dirac",
+            "silício cristalino"
+          ],
+          "symbols": [
+            {
+              "symbol": "n_i",
+              "description": "Concentração intrínseca de portadores (elétrons ou lacunas) em equilíbrio térmico em um semicondutor puro, em cm⁻³"
+            },
+            {
+              "symbol": "10^{10}",
+              "description": "Valor numérico aproximado de n_i para o silício a T = 300 K, igual a aproximadamente 9,65 × 10⁹ cm⁻³, frequentemente arredondado para 10¹⁰ cm⁻³"
+            },
+            {
+              "symbol": "\\text{cm}^{-3}",
+              "description": "Unidade de concentração volumétrica, número de portadores por centímetro cúbico"
+            },
+            {
+              "symbol": "N_c",
+              "description": "Densidade efetiva de estados na banda de condução, dependente da massa efetiva dos elétrons e da temperatura"
+            },
+            {
+              "symbol": "N_v",
+              "description": "Densidade efetiva de estados na banda de valência, dependente da massa efetiva das lacunas e da temperatura"
+            },
+            {
+              "symbol": "E_g",
+              "description": "Largura do gap de energia do semicondutor (para Si: E_g ≅ 1,12 eV a 300 K)"
+            },
+            {
+              "symbol": "k_B",
+              "description": "Constante de Boltzmann, k_B ≅ 8,617 × 10⁻⁵ eV/K"
+            },
+            {
+              "symbol": "T",
+              "description": "Temperatura absoluta em Kelvin (valor de referência: T = 300 K)"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-concentration",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "intrinsic",
+            "carrier",
+            "concentration",
+            "silicon",
+            "thermal",
+            "equilibrium",
+            "energy",
+            "gap",
+            "band",
+            "Fermi-Dirac",
+            "density-of-states",
+            "temperature",
+            "dopagem",
+            "semiconductor"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-concentration-vs-temperature",
+            "graphParameters": [
+              "intrinsic carrier concentration (n_i)",
+              "temperature (T)",
+              "bandgap energy (E_g)",
+              "effective density of states (N_c, N_v)"
+            ]
+          },
+          "relatedFormulas": [
+            "Fermi-Dirac distribution",
+            "effective density of states N_c",
+            "effective density of states N_v",
+            "mass action law (n*p = n_i^2)",
+            "electron concentration in conduction band",
+            "hole concentration in valence band",
+            "intrinsic Fermi level E_i"
+          ]
+        },
+        {
+          "originalFormula": "n_0 = N_D = 10^{15}/\\text{cm}^3",
+          "genericFormula": "n_0 = N_D",
+          "description": "Em um semicondutor tipo-n completamente ionizado e em equilíbrio térmico, a concentração de elétrons no estado fundamental (n₀) é aproximadamente igual à concentração de doadores ionizados (N_D). Esta é a chamada aproximação de neutralidade elétrica para dopagem dominante: quando N_D >> n_i (concentração intrínseca), praticamente todos os elétrons livres provêm da ionização dos átomos doadores. Neste caso específico, N_D = 10¹⁵ cm⁻³ é uma dopagem típica de semicondutor levemente dopado tipo-n (por exemplo, silício com fósforo ou arsênio), muito acima da concentração intrínseca do Si em temperatura ambiente (~1,5×10¹⁰ cm⁻³), o que justifica a aproximação n₀ ≈ N_D.",
+          "concepts": [
+            "semicondutor tipo-n",
+            "dopagem por impurezas doadoras",
+            "neutralidade elétrica",
+            "ionização completa",
+            "concentração de portadores majoritários",
+            "equilíbrio térmico",
+            "aproximação de semicondutor extrinseco"
+          ],
+          "symbols": [
+            {
+              "symbol": "n_0",
+              "description": "Concentração de elétrons livres em equilíbrio térmico (portadores majoritários no tipo-n), em cm⁻³"
+            },
+            {
+              "symbol": "N_D",
+              "description": "Concentração de átomos doadores ionizados (impurezas pentavalentes que doam elétrons à banda de condução), em cm⁻³"
+            },
+            {
+              "symbol": "10^{15}/\\text{cm}^3",
+              "description": "Valor numérico específico da concentração de dopagem, representando 10¹⁵ átomos doadores por centímetro cúbico, tipico de dopagem leve em silício"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-concentration",
+            "domain": "doping-and-impurities"
+          },
+          "keywords": [
+            "carrier",
+            "concentration",
+            "donor",
+            "doping",
+            "n-type",
+            "equilibrium",
+            "majority-carrier",
+            "extrinsic",
+            "ionization",
+            "neutrality",
+            "electron",
+            "band"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "energy-band",
+            "graphParameters": [
+              "donor energy level",
+              "conduction band",
+              "valence band",
+              "Fermi level position",
+              "temperature"
+            ]
+          },
+          "relatedFormulas": [
+            "mass-action-law (n_0 * p_0 = n_i^2)",
+            "Fermi-Dirac distribution",
+            "charge-neutrality equation",
+            "intrinsic-carrier-concentration",
+            "Fermi-level-n-type",
+            "p_0 = n_i^2 / N_D"
+          ]
+        },
+        {
+          "originalFormula": "p_0 = \\frac{n_i^2}{N_D} = 10^5/\\text{cm}^3",
+          "genericFormula": "p_0 = \\frac{n_i^2}{N_D}",
+          "description": "Esta fórmula calcula a concentração de portadores minoritários (buracos) em equilíbrio térmico em um semicondutor tipo-n. A relação de massa-ação (n_0 * p_0 = n_i^2) é aplicada quando o semicondutor está dopado com doadores (N_D), de modo que a concentração de elétrons majoritários aproxima-se de N_D. Assim, a concentração de buracos é inversamente proporcional à concentração de doadores e proporcional ao quadrado da concentração intrínseca. Quanto maior a dopagem com doadores, menor será a concentração de buracos minoritários. O valor numérico 10^5 cm^-3 é típico para semicondutores como o silício a temperatura ambiente com dopagem moderada.",
+          "concepts": [
+            "lei de ação das massas",
+            "portadores minoritários",
+            "portadores majoritários",
+            "semicondutor tipo-n",
+            "concentração intrínseca",
+            "equilíbrio térmico",
+            "dopagem por doadores",
+            "neutralidade de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "p_0",
+              "description": "Concentração de buracos em equilíbrio térmico (portadores minoritários em semicondutor tipo-n), em cm^-3"
+            },
+            {
+              "symbol": "n_i",
+              "description": "Concentração intrínseca de portadores, ou seja, a concentração de elétrons (ou buracos) no semicondutor puro em equilíbrio térmico, em cm^-3"
+            },
+            {
+              "symbol": "n_i^2",
+              "description": "Quadrado da concentração intrínseca, constante do produto n_0 * p_0 para um dado semicondutor a uma dada temperatura"
+            },
+            {
+              "symbol": "N_D",
+              "description": "Concentração de impurezas doadoras ionizadas (dopantes tipo-n), em cm^-3. Determina a concentração de elétrons majoritários quando N_D >> n_i"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-concentration",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "minority carrier",
+            "holes",
+            "n-type",
+            "intrinsic concentration",
+            "mass action law",
+            "donor",
+            "doping",
+            "equilibrium",
+            "carrier",
+            "concentration",
+            "band",
+            "Fermi-Dirac",
+            "distribution"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-concentration",
+            "graphParameters": [
+              "donor concentration N_D",
+              "minority carrier concentration p_0",
+              "intrinsic concentration n_i",
+              "temperature"
+            ]
+          },
+          "relatedFormulas": [
+            "mass-action-law: n_0 * p_0 = n_i^2",
+            "n_0 = N_D (aproximação de semicondutor tipo-n fortemente dopado)",
+            "Fermi-Dirac distribution",
+            "intrinsic carrier concentration n_i",
+            "charge-neutrality-equation"
+          ]
+        },
+        {
+          "originalFormula": "\\left.\\frac{\\partial p}{\\partial t}\\right|_{\\text{thermal R-G}} = -\\frac{\\Delta p_n}{\\tau_p}",
+          "genericFormula": "\\left.\\frac{\\partial p}{\\partial t}\\right|_{\\text{thermal R-G}} = -\\frac{\\Delta p_n}{\\tau_p}",
+          "description": "Esta fórmula descreve a taxa de variação temporal da concentração de lacunas (portadores minoritários) devido ao processo térmico de Recombinação-Geração (R-G) em uma região de semicondutor tipo-n. O termo Δp_n representa o excesso de lacunas em relação ao equilíbrio térmico (Δp_n = p_n - p_{n0}), enquanto τ_p é o tempo de vida dos portadores minoritários (lacunas). O sinal negativo indica que, na ausência de excitação externa, o excesso de portadores decai exponencialmente em direção ao equilíbrio. Esta é a chamada aproximação de relaxação linear, válida para injeção de baixo nível (Δp_n << n_{n0}). A equação é fundamental para descrever a dinâmica de portadores minoritários em dispositivos como diodos p-n, transistores bipolares e fotodetectores, sendo parte central das equações de continuidade de portadores em semicondutores.",
+          "concepts": [
+            "recombinação e geração térmica",
+            "portadores minoritários",
+            "tempo de vida de portadores",
+            "excesso de portadores",
+            "injeção de baixo nível",
+            "equilíbrio térmico",
+            "equação de continuidade",
+            "relaxação exponencial",
+            "semicondutor tipo-n",
+            "recombinação direta e indireta (Shockley-Read-Hall)"
+          ],
+          "symbols": [
+            {
+              "symbol": "p",
+              "description": "Concentração de lacunas (portadores positivos) em cm⁻³"
+            },
+            {
+              "symbol": "t",
+              "description": "Tempo em segundos"
+            },
+            {
+              "symbol": "\\left.\\frac{\\partial p}{\\partial t}\\right|_{\\text{thermal R-G}}",
+              "description": "Taxa de variação temporal da concentração de lacunas especificamente devida ao processo térmico de Recombinação-Geração"
+            },
+            {
+              "symbol": "\\Delta p_n",
+              "description": "Excesso de concentração de lacunas em relação ao equilíbrio térmico em região tipo-n: Δp_n = p_n - p_{n0}, em cm⁻³"
+            },
+            {
+              "symbol": "p_n",
+              "description": "Concentração instantânea de lacunas em região tipo-n em cm⁻³"
+            },
+            {
+              "symbol": "p_{n0}",
+              "description": "Concentração de lacunas no equilíbrio térmico em região tipo-n em cm⁻³"
+            },
+            {
+              "symbol": "\\tau_p",
+              "description": "Tempo de vida (lifetime) das lacunas minoritárias em segundos; representa o tempo característico de decaimento do excesso de portadores"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-recombination-generation",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "recombination",
+            "generation",
+            "minority carrier",
+            "lifetime",
+            "excess carrier",
+            "hole",
+            "thermal equilibrium",
+            "continuity equation",
+            "low-level injection",
+            "carrier dynamics",
+            "relaxation",
+            "Shockley-Read-Hall",
+            "p-n junction",
+            "semiconductor"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "transient-decay",
+            "graphParameters": [
+              "excess hole concentration Δp_n",
+              "time t",
+              "minority carrier lifetime τ_p",
+              "exponential decay"
+            ]
+          },
+          "relatedFormulas": [
+            "continuity-equation-holes",
+            "continuity-equation-electrons",
+            "minority-carrier-diffusion-equation",
+            "excess-carrier-decay",
+            "Shockley-Read-Hall-recombination",
+            "low-level-injection-condition",
+            "carrier-lifetime-definition"
+          ]
+        },
+        {
+          "originalFormula": "\\left.\\frac{\\partial p}{\\partial t}\\right|_{\\text{light}} + \\left.\\frac{\\partial p}{\\partial t}\\right|_{\\text{thermal R-G}} = 0",
+          "genericFormula": "\\left.\\frac{\\partial p}{\\partial t}\\right|_{\\text{light}} + \\left.\\frac{\\partial p}{\\partial t}\\right|_{\\text{thermal R-G}} = 0",
+          "description": "Esta equação representa a condição de equilíbrio dinâmico (estado estacionário) para a densidade de lacunas em um semicondutor sob iluminação constante. Ela expressa que a taxa de variação total da concentração de lacunas é nula quando os dois mecanismos opostos se cancelam: (1) a geração óptica de portadores pela luz, que aumenta p, e (2) a recombinação-geração térmica (R-G), que tende a restaurar o equilíbrio térmico diminuindo o excesso de portadores. Em estado estacionário, a geração óptica é exatamente compensada pela recombinação líquida, resultando em uma concentração de lacunas constante no tempo. Esta condição é fundamental para analisar o comportamento de semicondutores sob iluminação contínua e é a base para calcular a concentração de portadores minoritários em excesso gerada pela luz.",
+          "concepts": [
+            "estado estacionário",
+            "geração óptica de portadores",
+            "recombinação-geração térmica",
+            "equilíbrio dinâmico",
+            "portadores minoritários em excesso",
+            "conservação de portadores",
+            "equação de continuidade simplificada",
+            "semicondutor sob iluminação"
+          ],
+          "symbols": [
+            {
+              "symbol": "p",
+              "description": "Concentração de lacunas (portadores positivos) por unidade de volume (cm⁻³ ou m⁻³)"
+            },
+            {
+              "symbol": "t",
+              "description": "Tempo (s)"
+            },
+            {
+              "symbol": "\\frac{\\partial p}{\\partial t}",
+              "description": "Taxa de variação temporal da concentração de lacunas"
+            },
+            {
+              "symbol": "\\left.\\frac{\\partial p}{\\partial t}\\right|_{\\text{light}}",
+              "description": "Taxa de variação de lacunas devido à geração óptica pela luz incidente; é positiva pois a luz gera pares elétron-lacuna"
+            },
+            {
+              "symbol": "\\left.\\frac{\\partial p}{\\partial t}\\right|_{\\text{thermal R-G}}",
+              "description": "Taxa de variação de lacunas devido à recombinação-geração térmica; é negativa em condições de excesso de portadores, representando a recombinação líquida"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-generation-recombination",
+            "domain": "carrier-transport"
+          },
+          "keywords": [
+            "steady-state",
+            "carrier",
+            "generation",
+            "recombination",
+            "optical",
+            "thermal",
+            "holes",
+            "minority-carrier",
+            "continuity",
+            "excess-carrier",
+            "illumination",
+            "balance"
+          ],
+          "graphVisualization": {
+            "hasGraph": false,
+            "graphType": null,
+            "graphParameters": []
+          },
+          "relatedFormulas": [
+            "continuity-equation-holes",
+            "minority-carrier-lifetime",
+            "excess-carrier-concentration",
+            "optical-generation-rate",
+            "shockley-hall-read-recombination",
+            "carrier-concentration-equilibrium"
+          ]
+        },
+        {
+          "originalFormula": "G_L - \\frac{\\Delta p_n}{\\tau_p} = 0",
+          "genericFormula": "G_L - \\frac{\\Delta p_n}{\\tau_p} = 0",
+          "description": "Esta equação representa o balanço em regime estacionário entre a geração óptica de portadores minoritários (lacunas) e sua recombinação em um semicondutor tipo-n. O termo G_L representa a taxa de geração de portadores por iluminação (fotogeração), enquanto Δp_n/τ_p representa a taxa de recombinação das lacunas em excesso. Em regime estacionário, a variação temporal da concentração de portadores é nula, portanto geração e recombinação se equilibram exatamente. Essa condição é fundamental para determinar a concentração de portadores minoritários em excesso sob iluminação contínua, sendo a base de análise de fotodetectores, células solares e outros dispositivos optoeletrônicos.",
+          "concepts": [
+            "geração óptica de portadores",
+            "recombinação de portadores minoritários",
+            "regime estacionário",
+            "portadores em excesso",
+            "equação de continuidade simplificada",
+            "fotogeração",
+            "tempo de vida de portadores minoritários",
+            "semicondutor tipo-n"
+          ],
+          "symbols": [
+            {
+              "symbol": "G_L",
+              "description": "Taxa de geração óptica (fotogeração) de pares elétron-lacuna por unidade de volume e tempo, induzida por iluminação [cm⁻³·s⁻¹]"
+            },
+            {
+              "symbol": "\\Delta p_n",
+              "description": "Concentração de lacunas em excesso no semicondutor tipo-n, definida como Δp_n = p_n - p_{n0}, onde p_{n0} é a concentração de equilíbrio [cm⁻³]"
+            },
+            {
+              "symbol": "\\tau_p",
+              "description": "Tempo de vida das lacunas minoritárias no semicondutor tipo-n, representa o tempo médio antes da recombinação [s]"
+            },
+            {
+              "symbol": "\\frac{\\Delta p_n}{\\tau_p}",
+              "description": "Taxa de recombinação das lacunas em excesso por unidade de volume e tempo [cm⁻³·s⁻¹]"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-generation-recombination",
+            "domain": "optoelectronics"
+          },
+          "keywords": [
+            "generation",
+            "recombination",
+            "minority-carrier",
+            "excess-carrier",
+            "steady-state",
+            "photogeneration",
+            "lifetime",
+            "continuity",
+            "holes",
+            "n-type",
+            "optical",
+            "balance"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-concentration",
+            "graphParameters": [
+              "excess carrier concentration Δp_n",
+              "generation rate G_L",
+              "minority carrier lifetime τ_p",
+              "illumination intensity"
+            ]
+          },
+          "relatedFormulas": [
+            "continuity-equation-holes",
+            "minority-carrier-diffusion-equation",
+            "excess-carrier-concentration-steady-state",
+            "recombination-rate",
+            "photoconductivity"
+          ]
+        },
+        {
+          "originalFormula": "\\Delta p_n(t \\rightarrow \\infty) = G_L \\tau_p",
+          "genericFormula": "\\Delta p_n(t \\rightarrow \\infty) = G_L \\tau_p",
+          "description": "Esta fórmula descreve a concentração de excesso de portadores minoritários (lacunas) em regime estacionário em um semicondutor tipo-n submetido à geração óptica uniforme e contínua. Quando o tempo tende ao infinito, o sistema atinge o equilíbrio dinâmico entre a taxa de geração fotônica G_L e a taxa de recombinação dos portadores. Nesse estado estacionário, o excesso de lacunas Δp_n é dado pelo produto da taxa de geração G_L pelo tempo de vida das lacunas τ_p. Intuitivamente, quanto maior a iluminação ou o tempo de vida do portador, maior será o excesso de portadores em regime estacionário. Esta expressão é fundamental para analisar fotodetectores, células solares e dispositivos que operam sob iluminação contínua.",
+          "concepts": [
+            "excesso de portadores minoritários",
+            "geração óptica",
+            "recombinação",
+            "regime estacionário",
+            "tempo de vida de portadores",
+            "semicondutores tipo-n",
+            "fotogeração",
+            "equilíbrio dinâmico"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\Delta p_n(t \\rightarrow \\infty)",
+              "description": "Concentração de excesso de lacunas (portadores minoritários) em regime estacionário em semicondutor tipo-n"
+            },
+            {
+              "symbol": "G_L",
+              "description": "Taxa de geração óptica (fotogeração) de pares elétron-lacuna por unidade de volume e tempo [cm⁻³·s⁻¹]"
+            },
+            {
+              "symbol": "\\tau_p",
+              "description": "Tempo de vida das lacunas minoritárias, que representa o tempo médio antes da recombinação [s]"
+            },
+            {
+              "symbol": "t \\rightarrow \\infty",
+              "description": "Limite temporal indicando condição de regime estacionário (estado estável)"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-generation-recombination",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "excess carriers",
+            "minority carriers",
+            "holes",
+            "generation",
+            "recombination",
+            "lifetime",
+            "steady-state",
+            "optical generation",
+            "n-type semiconductor",
+            "photoexcitation",
+            "carrier concentration",
+            "carrier"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "transient-response",
+            "graphParameters": [
+              "excess carrier concentration",
+              "time",
+              "generation rate",
+              "carrier lifetime"
+            ]
+          },
+          "relatedFormulas": [
+            "continuity-equation-holes",
+            "minority-carrier-lifetime",
+            "excess-carrier-transient",
+            "SRH-recombination",
+            "photoconductivity",
+            "delta-pn-transient"
+          ]
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [],
+  "bookTitle": "Modular Series On Solid State Devices",
+  "author": "Unknown",
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103
+  ],
+  "lastUpdated": "2026-05-09T15:42:40.614Z"
+}

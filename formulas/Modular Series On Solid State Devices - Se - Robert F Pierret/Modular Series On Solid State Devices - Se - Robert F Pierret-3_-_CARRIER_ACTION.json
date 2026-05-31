@@ -1,0 +1,472 @@
+{
+  "chapter": "3 - CARRIER ACTION",
+  "section": "3.5.4 Quasi-Fermi Levels",
+  "questions": [],
+  "answers": [],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "\\langle x \\rangle = \\int_{0}^{\\infty} x \\Delta p_n(x)\\, dx \\Bigg/ \\int_{0}^{\\infty} \\Delta p_n(x)\\, dx = L_p",
+      "genericFormula": "\\langle x \\rangle = \\frac{\\int_{0}^{\\infty} x \\, \\Delta p_n(x)\\, dx}{\\int_{0}^{\\infty} \\Delta p_n(x)\\, dx} = L_p",
+      "description": "Esta fórmula calcula o valor médio (esperança matemática) da posição x dos portadores minoritários em excesso — buracos injetados em uma região do tipo n — ponderado pela distribuição espacial de portadores em excesso Δp_n(x). O resultado é exatamente o comprimento de difusão de buracos L_p, que representa a distância média percorrida pelos buracos antes de se recombinarem com elétrons. Fisicamente, L_p é a distância característica de decaimento exponencial da concentração de buracos injetados: Δp_n(x) = Δp_n(0)·exp(−x/L_p). A integral do numerador pondera cada posição x pela densidade local de portadores em excesso, enquanto a integral do denominador normaliza esse peso total. O resultado ⟨x⟩ = L_p demonstra que o comprimento de difusão tem significado estatístico direto: é o deslocamento médio dos portadores minoritários injetados antes da recombinação, conectando o conceito microscópico de difusão ao parâmetro macroscópico L_p.",
+      "concepts": [
+        "portadores minoritários",
+        "comprimento de difusão",
+        "recombinação de portadores",
+        "valor esperado de posição",
+        "difusão em semicondutores",
+        "injeção de portadores",
+        "buracos em excesso",
+        "distribuição exponencial de portadores",
+        "transporte de portadores",
+        "média ponderada espacial"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\langle x \\rangle",
+          "description": "Valor médio (esperança) da posição dos portadores minoritários em excesso, ponderado pela distribuição espacial Δp_n(x)"
+        },
+        {
+          "symbol": "x",
+          "description": "Posição espacial medida a partir da junção (ou ponto de injeção), em metros ou centímetros"
+        },
+        {
+          "symbol": "\\Delta p_n(x)",
+          "description": "Concentração de buracos em excesso (portadores minoritários) na região do tipo n em função da posição x, dada por Δp_n(0)·exp(−x/L_p)"
+        },
+        {
+          "symbol": "dx",
+          "description": "Elemento diferencial de posição ao longo da direção de difusão"
+        },
+        {
+          "symbol": "L_p",
+          "description": "Comprimento de difusão de buracos: distância média percorrida pelos buracos minoritários antes de se recombinarem. Definido como L_p = √(D_p · τ_p)"
+        },
+        {
+          "symbol": "D_p",
+          "description": "Coeficiente de difusão de buracos (implícito em L_p), relacionado à mobilidade pela relação de Einstein: D_p = (kT/q)·μ_p"
+        },
+        {
+          "symbol": "\\tau_p",
+          "description": "Tempo de vida (lifetime) dos buracos minoritários antes da recombinação (implícito em L_p)"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "minority-carrier-diffusion",
+        "domain": "device-physics"
+      },
+      "keywords": [
+        "minority carrier",
+        "diffusion length",
+        "hole",
+        "recombination",
+        "carrier transport",
+        "excess carrier",
+        "injection",
+        "mean position",
+        "exponential decay",
+        "semiconductor",
+        "p-n junction",
+        "average displacement",
+        "spatial distribution",
+        "lifetime",
+        "diffusion"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "carrier-distribution",
+        "graphParameters": [
+          "posição x",
+          "concentração de buracos em excesso Δp_n(x)",
+          "comprimento de difusão L_p como posição média",
+          "decaimento exponencial exp(−x/L_p)"
+        ]
+      },
+      "relatedFormulas": [
+        "diffusion-length-Lp",
+        "excess-minority-carrier-distribution",
+        "continuity-equation-holes",
+        "Einstein-relation",
+        "minority-carrier-lifetime",
+        "Fick-second-law",
+        "p-n-junction-current",
+        "Shockley-diode-equation"
+      ]
+    },
+    {
+      "originalFormula": "L_p = \\sqrt{D_p \\tau_p} = \\sqrt{(kT/q)\\mu_p \\tau_p} = [(0.026)(458)(10^{-6})]^{1/2} \\approx 3.5 \\times 10^{-3} \\text{ cm}",
+      "genericFormula": "L_p = \\sqrt{D_p \\tau_p} = \\sqrt{\\frac{kT}{q} \\mu_p \\tau_p}",
+      "description": "O comprimento de difusão de lacunas (L_p) representa a distância média que uma lacuna percorre por difusão antes de se recombinar com um elétron. É uma grandeza fundamental no estudo do transporte de portadores minoritários em semicondutores. Fisicamente, L_p é definido como a raiz quadrada do produto entre o coeficiente de difusão das lacunas (D_p) e o tempo de vida das lacunas (τ_p). Através da relação de Einstein, D_p pode ser substituído por (kT/q)μ_p, conectando o comprimento de difusão à mobilidade das lacunas. No exemplo numérico fornecido, utiliza-se kT/q = 0.026 V (tensão térmica à temperatura ambiente ~300 K), μ_p = 458 cm²/V·s (mobilidade das lacunas no silício) e τ_p = 10⁻⁶ s (tempo de vida das lacunas), resultando em L_p ≈ 3.5 × 10⁻³ cm. Esse comprimento é crucial para determinar a resposta de dispositivos como diodos e transistores bipolares, pois define a escala espacial de variação das concentrações de portadores minoritários fora do equilíbrio.",
+      "concepts": [
+        "comprimento de difusão",
+        "portadores minoritários",
+        "difusão de lacunas",
+        "recombinação de portadores",
+        "relação de Einstein",
+        "transporte de portadores",
+        "tensão térmica",
+        "tempo de vida de lacunas",
+        "mobilidade de portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "L_p",
+          "description": "Comprimento de difusão das lacunas (holes): distância média percorrida por difusão antes da recombinação [cm]"
+        },
+        {
+          "symbol": "D_p",
+          "description": "Coeficiente de difusão das lacunas [cm²/s]"
+        },
+        {
+          "symbol": "\\tau_p",
+          "description": "Tempo de vida das lacunas: tempo médio até a recombinação [s]"
+        },
+        {
+          "symbol": "k",
+          "description": "Constante de Boltzmann: k = 1.381 × 10⁻²³ J/K"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta [K]"
+        },
+        {
+          "symbol": "q",
+          "description": "Carga elementar do elétron: q = 1.602 × 10⁻¹⁹ C"
+        },
+        {
+          "symbol": "\\mu_p",
+          "description": "Mobilidade das lacunas: velocidade de deriva por unidade de campo elétrico [cm²/V·s]"
+        },
+        {
+          "symbol": "\\frac{kT}{q}",
+          "description": "Tensão térmica (V_T): aproximadamente 0.026 V a 300 K [V]"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-transport",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "diffusion length",
+        "minority carrier",
+        "holes",
+        "recombination",
+        "diffusion",
+        "mobility",
+        "Einstein relation",
+        "thermal voltage",
+        "carrier lifetime",
+        "transport",
+        "carrier"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "minority-carrier-profile",
+        "graphParameters": [
+          "position",
+          "hole-concentration",
+          "diffusion-length",
+          "recombination"
+        ]
+      },
+      "relatedFormulas": [
+        "Einstein-relation-Dp",
+        "minority-carrier-diffusion-equation",
+        "diode-minority-carrier-distribution",
+        "diffusion-length-electrons-Ln",
+        "carrier-lifetime-recombination",
+        "Fermi-Dirac-distribution",
+        "carrier-concentration-np"
+      ]
+    },
+    {
+      "originalFormula": "n_0 = n_i e^{(E_F - E_i)/kT}",
+      "genericFormula": "n_0 = n_i \\, e^{(E_F - E_i)/k_BT}",
+      "description": "Esta fórmula expressa a concentração de elétrons em equilíbrio térmico (n₀) em um semicondutor em função do nível de Fermi (E_F) e do nível intrínseco de Fermi (E_i). Ela é derivada da estatística de Fermi-Dirac combinada com a densidade de estados na banda de condução. Quando E_F está acima de E_i (caso de semicondutor tipo-n), a exponencial é maior que 1 e n₀ > n_i, indicando excesso de elétrons em relação ao material intrínseco. Quando E_F está abaixo de E_i (caso tipo-p), n₀ < n_i. Esta relação é fundamental para determinar o tipo de dopagem e a posição do nível de Fermi em semicondutores extrínsecos, sendo amplamente utilizada na análise de dispositivos como diodos, transistores e células solares.",
+      "concepts": [
+        "concentração de portadores em equilíbrio",
+        "estatística de Fermi-Dirac",
+        "nível de Fermi",
+        "nível intrínseco de Fermi",
+        "semicondutor extrínseco",
+        "dopagem tipo-n",
+        "dopagem tipo-p",
+        "concentração intrínseca de portadores",
+        "equilíbrio térmico",
+        "distribuição de Boltzmann"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_0",
+          "description": "Concentração de elétrons livres em equilíbrio térmico (cm⁻³)"
+        },
+        {
+          "symbol": "n_i",
+          "description": "Concentração intrínseca de portadores: número de elétrons (ou buracos) por unidade de volume no semicondutor puro em equilíbrio (cm⁻³)"
+        },
+        {
+          "symbol": "E_F",
+          "description": "Nível de Fermi: energia na qual a probabilidade de ocupação por um elétron é de 50%, determinado pelo tipo e grau de dopagem (eV)"
+        },
+        {
+          "symbol": "E_i",
+          "description": "Nível intrínseco de Fermi: posição do nível de Fermi no semicondutor puro (intrínseco), aproximadamente no meio do gap (eV)"
+        },
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann: k_B ≈ 8,617 × 10⁻⁵ eV/K, relaciona energia térmica à temperatura absoluta"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta do semicondutor em equilíbrio térmico (K)"
+        },
+        {
+          "symbol": "k_BT",
+          "description": "Energia térmica: a temperatura ambiente (T = 300 K), k_BT ≈ 0,02585 eV, escala de energia que governa a distribuição estatística dos portadores"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "carrier",
+        "concentration",
+        "electron",
+        "Fermi",
+        "Fermi-Dirac",
+        "intrinsic",
+        "equilibrium",
+        "energy",
+        "level",
+        "band",
+        "doping",
+        "n-type",
+        "p-type",
+        "Boltzmann",
+        "semiconductor",
+        "distribution",
+        "state"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "energy",
+          "Fermi-level",
+          "intrinsic-level",
+          "carrier-concentration",
+          "temperature"
+        ]
+      },
+      "relatedFormulas": [
+        "p_0 = n_i e^{(E_i - E_F)/kT}",
+        "n_0 p_0 = n_i^2",
+        "n_i = sqrt(N_c N_v) e^{-E_g/2kT}",
+        "Fermi-Dirac distribution",
+        "E_F determination by doping",
+        "charge neutrality condition"
+      ]
+    },
+    {
+      "originalFormula": "p_0 = n_i e^{(E_i - E_F)/kT}",
+      "genericFormula": "p_0 = n_i \\, e^{(E_i - E_F)/kT}",
+      "description": "Esta fórmula descreve a concentração de equilíbrio de lacunas (portadores majoritários ou minoritários) em um semicondutor em função do nível de Fermi. Ela é derivada da estatística de Fermi-Dirac e expressa como a posição relativa do nível de Fermi (E_F) em relação ao nível intrínseco (E_i) determina a densidade de lacunas. Quando E_F está abaixo de E_i (semicondutor tipo-p), o expoente é positivo e p_0 > n_i, indicando predominância de lacunas. É amplamente utilizada na análise de dispositivos semicondutores como diodos e transistores bipolares.",
+      "concepts": [
+        "concentração de equilíbrio de lacunas",
+        "estatística de Fermi-Dirac",
+        "nível de Fermi",
+        "nível intrínseco",
+        "semicondutor tipo-p",
+        "portadores de carga",
+        "equilíbrio termodinâmico",
+        "lei de ação de massas"
+      ],
+      "symbols": [
+        {
+          "symbol": "p_0",
+          "description": "Concentração de equilíbrio de lacunas (holes) no semicondutor, em cm⁻³"
+        },
+        {
+          "symbol": "n_i",
+          "description": "Concentração intrínseca de portadores, característica do material semicondutor em uma dada temperatura, em cm⁻³"
+        },
+        {
+          "symbol": "E_i",
+          "description": "Nível de energia intrínseco de Fermi, localizado aproximadamente no meio do gap de energia para um semicondutor puro, em eV"
+        },
+        {
+          "symbol": "E_F",
+          "description": "Nível de energia de Fermi, que determina a probabilidade de ocupação dos estados eletrônicos, em eV"
+        },
+        {
+          "symbol": "k",
+          "description": "Constante de Boltzmann, k ≈ 8,617 × 10⁻⁵ eV/K"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta do semicondutor, em Kelvin (K)"
+        },
+        {
+          "symbol": "kT",
+          "description": "Energia térmica, que representa a escala de energia associada à agitação térmica do sistema, aproximadamente 0,026 eV a 300 K"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "holes",
+        "lacunas",
+        "carrier",
+        "concentration",
+        "equilibrium",
+        "Fermi",
+        "intrinsic",
+        "level",
+        "energy",
+        "band",
+        "Fermi-Dirac",
+        "distribution",
+        "semiconductor",
+        "p-type",
+        "thermal"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "energy",
+          "Fermi-level",
+          "intrinsic-level",
+          "temperature",
+          "carrier-concentration"
+        ]
+      },
+      "relatedFormulas": [
+        "n_0 = n_i * exp((E_F - E_i)/kT)",
+        "n_0 * p_0 = n_i^2",
+        "Fermi-Dirac distribution",
+        "n_i = sqrt(N_c * N_v) * exp(-E_g / 2kT)",
+        "E_F position in doped semiconductor"
+      ]
+    }
+  ],
+  "bookTitle": "Modular Series On Solid State Devices",
+  "author": "Unknown",
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108
+  ],
+  "lastUpdated": "2026-05-09T15:53:49.815Z"
+}

@@ -1,0 +1,1010 @@
+{
+  "chapter": "9",
+  "section": "Metal–Semiconductor and Semiconductor Heterojunctions",
+  "questions": [
+    {
+      "number": "TYU 9.2",
+      "text": "Repeat TYU 9.1 for an ideal palladium-to-n-type GaAs Schottky diode with the same impurity concentration.",
+      "formulas": []
+    },
+    {
+      "number": "Example 9.5",
+      "text": "Calculate the ideal reverse-saturation current densities of a Schottky barrier diode and a pn junction diode.",
+      "formulas": [
+        {
+          "originalFormula": "J_{s} = A^{*}T^{2} \\exp \\left( -\\frac{\\phi_{b}}{kT} \\right)",
+          "genericFormula": "J_{s} = A^{*}T^{2} \\exp \\left( -\\frac{\\phi_{b}}{kT} \\right)",
+          "description": "Esta fórmula representa a densidade de corrente de saturação em um semicondutor, que é a corrente que flui através de um material quando ele está em equilíbrio térmico. A densidade de corrente de saturação é uma medida importante para entender o comportamento de dispositivos semicondutores, como diodos e transistores, sob diferentes condições de temperatura.",
+          "concepts": [
+            "Densidade de corrente",
+            "Temperatura",
+            "Efeito da barreira de potencial",
+            "Constante de Boltzmann",
+            "Exponencial de energia térmica"
+          ],
+          "symbols": [
+            {
+              "symbol": "J_{s}",
+              "description": "Densidade de corrente de saturação, que indica a quantidade de corrente elétrica que flui por unidade de área em um semicondutor."
+            },
+            {
+              "symbol": "A^{*}",
+              "description": "Fator de proporcionalidade que depende das propriedades do material semicondutor e da estrutura do dispositivo."
+            },
+            {
+              "symbol": "T",
+              "description": "Temperatura absoluta do semicondutor, medida em Kelvin, que afeta a movimentação de portadores de carga."
+            },
+            {
+              "symbol": "\\phi_{b}",
+              "description": "Barreira de potencial, que é a energia necessária para que um portador de carga (como um elétron) supere a barreira e contribua para a corrente."
+            },
+            {
+              "symbol": "k",
+              "description": "Constante de Boltzmann, que relaciona a temperatura com a energia em sistemas térmicos, sendo uma constante fundamental na física estatística."
+            },
+            {
+              "symbol": "\\exp",
+              "description": "Função exponencial, que descreve como a densidade de corrente varia de forma exponencial com a energia térmica e a barreira de potencial."
+            }
+          ]
+        },
+        {
+          "originalFormula": "J_{s} = \\frac{e D_{n} n_{p}}{L_{n}} + \\frac{e D_{p} n_{n}}{L_{p}}",
+          "genericFormula": "J_{s} = \\frac{e D_{n} n_{p}}{L_{n}} + \\frac{e D_{p} n_{n}}{L_{p}}",
+          "description": "Esta fórmula representa a densidade de corrente de difusão em um semicondutor, que é a soma das contribuições de elétrons e lacunas. Ela mostra como a movimentação de portadores de carga (elétrons e lacunas) em um material semicondutor gera uma corrente elétrica.",
+          "concepts": [
+            "Densidade de corrente",
+            "Difusão de portadores de carga",
+            "Semicondutores",
+            "Elétrons e lacunas",
+            "Propriedades de transporte em materiais"
+          ],
+          "symbols": [
+            {
+              "symbol": "J_{s}",
+              "description": "Representa a densidade de corrente de difusão, que é a quantidade de carga que passa por uma unidade de área em um determinado tempo."
+            },
+            {
+              "symbol": "e",
+              "description": "Representa a carga elementar, que é a carga elétrica de um único elétron."
+            },
+            {
+              "symbol": "D_{n}",
+              "description": "Representa o coeficiente de difusão dos elétrons, que indica a capacidade dos elétrons de se moverem através do semicondutor."
+            },
+            {
+              "symbol": "n_{p}",
+              "description": "Representa a concentração de lacunas, que são os portadores de carga positiva em um semicondutor."
+            },
+            {
+              "symbol": "L_{n}",
+              "description": "Representa o comprimento de difusão dos elétrons, que é a distância média que os elétrons podem se mover antes de recombinarem."
+            },
+            {
+              "symbol": "D_{p}",
+              "description": "Representa o coeficiente de difusão das lacunas, que indica a capacidade das lacunas de se moverem através do semicondutor."
+            },
+            {
+              "symbol": "n_{n}",
+              "description": "Representa a concentração de elétrons, que são os portadores de carga negativa em um semicondutor."
+            },
+            {
+              "symbol": "L_{p}",
+              "description": "Representa o comprimento de difusão das lacunas, que é a distância média que as lacunas podem se mover antes de recombinarem."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "Exercise Problem 9.5",
+      "text": "Using the results of Example 9.5, determine the forward-bias voltages required to produce a current of 10 μA in each diode. Assume each cross-sectional area is 10^{-4} cm^{2}.",
+      "formulas": []
+    },
+    {
+      "number": "Ex 9.6",
+      "text": "A pn junction diode and a Schottky diode have equal cross-sectional areas and have forward-bias currents of 0.5 mA. The reverse-saturation current of the Schottky diode is 5 \\times 10^{-7} A. The difference in forward-bias voltage between the two diodes is 0.30 V. Determine the reverse-saturation current of the pn junction diode.",
+      "formulas": [
+        {
+          "originalFormula": "V_{a} - V_{s} = 0.30",
+          "genericFormula": "V_{a} - V_{s} = C",
+          "description": "Esta fórmula representa a diferença de potencial elétrico entre dois pontos, onde 'V_a' é o potencial em um ponto específico e 'V_s' é o potencial em outro ponto. A diferença entre esses dois potenciais é igual a uma constante 'C'.",
+          "concepts": [
+            "Diferença de potencial elétrico",
+            "Potencial elétrico",
+            "Circuitos elétricos"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_a",
+              "description": "Representa o potencial elétrico em um ponto específico do circuito."
+            },
+            {
+              "symbol": "V_s",
+              "description": "Representa o potencial elétrico em outro ponto do circuito."
+            },
+            {
+              "symbol": "C",
+              "description": "Representa uma constante que indica a diferença de potencial entre os dois pontos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "9.4",
+      "text": "(a) The reverse-saturation currents of a pn junction and a Schottky diode are 10^{-14} A and 10^{-9} A, respectively. Determine the required forward-bias voltages in the pn junction diode and Schottky diode to produce a current of 100 \\mu A in each diode. (b) Repeat part (a) for forward bias currents of 1 mA.",
+      "formulas": [
+        {
+          "originalFormula": "I = I_{s} \\left( e^{\\frac{qV}{kT}} - 1 \\right)",
+          "genericFormula": "I = I_{s} \\left( e^{\\frac{qV}{kT}} - 1 \\right)",
+          "description": "Esta fórmula representa a corrente elétrica que flui através de um diodo em função da tensão aplicada. Ela mostra como a corrente depende da tensão e de outras constantes físicas, sendo fundamental para entender o comportamento dos semicondutores.",
+          "concepts": [
+            "Corrente elétrica",
+            "Tensão elétrica",
+            "Diodo",
+            "Semicondutores",
+            "Efeito térmico"
+          ],
+          "symbols": [
+            {
+              "symbol": "I",
+              "description": "Representa a corrente elétrica que flui através do diodo, medida em amperes."
+            },
+            {
+              "symbol": "I_{s}",
+              "description": "É a corrente de saturação do diodo, que é a corrente mínima que flui quando a tensão é zero, representando a corrente reversa."
+            },
+            {
+              "symbol": "e",
+              "description": "É a base do logaritmo natural, uma constante matemática que aparece em muitos fenômenos naturais, especialmente em crescimento exponencial."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elementar, que é a carga de um único elétron, medida em coulombs."
+            },
+            {
+              "symbol": "V",
+              "description": "É a tensão elétrica aplicada ao diodo, medida em volts."
+            },
+            {
+              "symbol": "k",
+              "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia térmica em sistemas físicos, medida em joules por kelvin."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta do sistema, medida em kelvins."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "text": "Sketch the energy-band diagram of zero-biased, reverse-biased, and forward-biased Schottky barrier diodes.",
+      "formulas": []
+    },
+    {
+      "number": "2",
+      "text": "Describe the charge flow in a forward-biased Schottky barrier diode.",
+      "formulas": []
+    },
+    {
+      "number": "9.5",
+      "text": "Repeat Problem 9.4, parts (b) through (d), if the experimentally determined barrier height is found to be \\phi_{b} = 0.88 V."
+    },
+    {
+      "number": "9.6",
+      "text": "(a) A Pt-n Si junction with N_{d} = 10^{15} cm^{-3} has a cross-sectional area of A = 10^{-4} cm^{2}. Let T = 300 K. Using the data shown in Figure 9.5, determine the junction capacitance at (i) V_{k} = 1 V and (ii) V_{k} = 5 V. (b) Repeat part (a) for a doping concentration of N_{d} = 10^{16} cm^{-3}."
+    },
+    {
+      "number": "9.7",
+      "text": "A Schottky diode with n-type GaAs at T = 300 K yields the \\frac{1}{C^{\\prime}} versus V_{k} plot shown in Figure P9.7, where C^{\\prime} is the capacitance per cm^{2}. Determine (a) \\phi_{b}, (b) N_{d}, (c) \\phi_{s}, and (d) \\phi_{b}."
+    },
+    {
+      "number": "9.8",
+      "text": "Consider a W-n type silicon Schottky barrier at T = 300 K with N_{d} = 5 \\times 10^{15} cm^{-3}. Use the data in Figure 9.5 to determine the barrier height. (a) Determine \\phi_{b}, and (b) Using the values of |E_{max}| from part (a), determine the Schottky barrier lowering parameters \\Delta \\phi and \\xi."
+    },
+    {
+      "number": "9.9",
+      "text": "Starting with Equation (9.12), derive Equations (9.14) and (9.15)."
+    },
+    {
+      "number": "9.10",
+      "text": "A Al-un-GaAs Schottky diode at T = 300 K is doped at a concentration of N_{d} = 10^{16} cm^{-3}. Use the data in Figure 9.5 to determine the barrier height. Then determine (a) \\phi_{b}, (b) \\xi, and |E_{max}| for zero bias. (b) Determine the reverse-bias voltage at which the Schottky barrier lowering \\Delta \\phi will be 5 percent of the barrier height."
+    },
+    {
+      "number": "9.11",
+      "text": "Consider n-type silicon doped at N_{d} = 10^{16} cm^{-3} with a gold contact to form a Schottky diode. Investigate the effect of Schottky barrier lowering. (a) Plot the Schottky barrier lowering \\Delta \\phi versus reverse-biased voltage over the range 0 \\leq V_{k} \\leq 50 V. (b) Plot the ratio J_{s}(V_{k})/J_{s}(V_{k} = 0) over the same range of reverse-biased voltage."
+    },
+    {
+      "number": "9.12",
+      "text": "The energy-band diagram of a Schottky diode is shown in Figure 9.6. Assume the following parameters: \\phi_{b} = 5.2 V \\phi_{b} = 0.10 V \\phi_{b} = 0.60 V E_{g} = 1.43 eV \\delta = 25 \\text{Å} \\epsilon_{s} = (13.1)\\epsilon_{0} \\chi = 4.07 V N_{d} = 10^{16} cm^{-3} (a) Determine the theoretical barrier height \\phi_{b} without interface states. (b) Determine the barrier height with interface states. (c) Repeat parts (a) and (b) if \\phi_{b} = 4.5 V."
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "Example 9.5",
+      "text": "The ideal reverse-saturation current density of the pn junction diode can be determined from Equation (9.28) as follows: J_{s} = (1.6 \\times 10^{-19})(25)(2.25 \\times 10^{10}) \\div (1.58 \\times 10^{-10}) + (1.6 \\times 10^{-19})(10)(2.25 \\times 10^{10}) \\div (1.0 \\times 10^{-10}) = 5.7 \\times 10^{-13} + 3.6 \\times 10^{-11} = 3.66 \\times 10^{-11} \\text{ A/cm}^{2}.",
+      "formulas": [
+        {
+          "originalFormula": "J_{s} = (1.6 \\times 10^{-19})(25)(2.25 \\times 10^{10}) \\div (1.58 \\times 10^{-10}) + (1.6 \\times 10^{-19})(10)(2.25 \\times 10^{10}) \\div (1.0 \\times 10^{-10})",
+          "genericFormula": "J_{s} = (q)(N_{1})(A) \\div (d_{1}) + (q)(N_{2})(A) \\div (d_{2})",
+          "description": "Esta fórmula calcula a densidade de corrente de um semicondutor, levando em consideração duas contribuições diferentes para a corrente, cada uma associada a diferentes concentrações de portadores de carga e distâncias características.",
+          "concepts": [
+            "Densidade de corrente",
+            "Portadores de carga",
+            "Concentração de portadores",
+            "Distância característica"
+          ],
+          "symbols": [
+            {
+              "symbol": "J_{s}",
+              "description": "Representa a densidade de corrente no semicondutor, que é a quantidade de corrente elétrica que flui por unidade de área."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elementar, que é a carga de um único elétron, uma constante fundamental na física."
+            },
+            {
+              "symbol": "N_{1}",
+              "description": "Representa a concentração de portadores de carga do primeiro tipo, que pode ser elétrons ou lacunas, dependendo do tipo de semicondutor."
+            },
+            {
+              "symbol": "A",
+              "description": "Representa a área através da qual a corrente está fluindo, essencial para calcular a densidade de corrente."
+            },
+            {
+              "symbol": "d_{1}",
+              "description": "Representa a distância característica associada ao primeiro tipo de portador de carga, que influencia a mobilidade e a eficiência do transporte de carga."
+            },
+            {
+              "symbol": "N_{2}",
+              "description": "Representa a concentração de portadores de carga do segundo tipo, similar ao primeiro, mas pode ser diferente em valor."
+            },
+            {
+              "symbol": "d_{2}",
+              "description": "Representa a distância característica associada ao segundo tipo de portador de carga, que também afeta o transporte de carga no semicondutor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Ex 9.6",
+      "text": "The reverse-saturation current of the pn junction diode can be determined using the diode equation.",
+      "formulas": [
+        {
+          "originalFormula": "I_{s} = I_{F} \\left( e^{\\frac{qV}{kT}} - 1 \\right)",
+          "genericFormula": "I_{s} = I_{F} \\left( e^{\\frac{qV}{kT}} - 1 \\right)",
+          "description": "Esta fórmula representa a corrente de saturação em um diodo, que é a corrente que flui através do diodo quando ele está polarizado diretamente. A fórmula mostra como a corrente depende da tensão aplicada, da carga do elétron e da temperatura do sistema.",
+          "concepts": [
+            "corrente elétrica",
+            "polarização de diodos",
+            "exponencial",
+            "temperatura",
+            "carga elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_{s}",
+              "description": "representa a corrente de saturação do diodo, que é a corrente máxima que flui quando o diodo está polarizado diretamente."
+            },
+            {
+              "symbol": "I_{F}",
+              "description": "representa a corrente de saturação inversa, que é a corrente que flui quando o diodo está polarizado inversamente."
+            },
+            {
+              "symbol": "e",
+              "description": "é a base do logaritmo natural, um número irracional que é aproximadamente igual a 2,71828, usado em funções exponenciais."
+            },
+            {
+              "symbol": "q",
+              "description": "representa a carga do elétron, que é uma constante fundamental na física, aproximadamente igual a 1,602 x 10^{-19} coulombs."
+            },
+            {
+              "symbol": "V",
+              "description": "representa a tensão aplicada ao diodo, medida em volts, que influencia a corrente que flui através do diodo."
+            },
+            {
+              "symbol": "k",
+              "description": "é a constante de Boltzmann, que relaciona a temperatura com a energia térmica, aproximadamente igual a 1,38 x 10^{-23} joules por kelvin."
+            },
+            {
+              "symbol": "T",
+              "description": "representa a temperatura do sistema, medida em kelvins, que afeta a movimentação de portadores de carga no diodo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "9.4",
+      "text": "For (a), the forward-bias voltages can be calculated using the diode equation for both diodes. For (b), repeat the calculations with the new current values.",
+      "formulas": [
+        {
+          "originalFormula": "V = \\frac{kT}{q} \\ln \\left( \\frac{I}{I_{s}} + 1 \\right)",
+          "genericFormula": "V = \\frac{kT}{q} \\ln \\left( \\frac{I}{I_{s}} + 1 \\right)",
+          "description": "Esta fórmula relaciona a tensão V em um diodo com a corrente I que passa por ele, levando em consideração a temperatura do sistema e a corrente de saturação do diodo. Ela é fundamental para entender o comportamento de diodos em circuitos eletrônicos.",
+          "concepts": [
+            "Tensão em um diodo",
+            "Corrente elétrica",
+            "Temperatura em sistemas semicondutores",
+            "Corrente de saturação"
+          ],
+          "symbols": [
+            {
+              "symbol": "V",
+              "description": "Representa a tensão elétrica em volts que aparece nos terminais do diodo."
+            },
+            {
+              "symbol": "k",
+              "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura do sistema em Kelvin, que afeta a movimentação das cargas elétricas."
+            },
+            {
+              "symbol": "q",
+              "description": "É a carga elementar, que representa a carga de um único elétron, em coulombs."
+            },
+            {
+              "symbol": "I",
+              "description": "Representa a corrente elétrica em amperes que flui através do diodo."
+            },
+            {
+              "symbol": "I_{s}",
+              "description": "É a corrente de saturação do diodo, que é a corrente mínima que flui quando o diodo está em polarização reversa."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "\\phi_m",
+      "genericFormula": "\\phi_m",
+      "description": "A fórmula representa o potencial elétrico de um material semicondutor em equilíbrio, conhecido como potencial de Fermi. Este potencial é uma medida da energia necessária para adicionar um elétron ao sistema e é fundamental para entender o comportamento elétrico dos semicondutores.",
+      "concepts": [
+        "Potencial elétrico",
+        "Equilíbrio térmico",
+        "Semicondutores",
+        "Energia de Fermi"
+      ],
+      "symbols": [
+        {
+          "symbol": "φ_m",
+          "description": "Representa o potencial elétrico de um material semicondutor em equilíbrio, que indica a energia necessária para adicionar um elétron ao sistema."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\phi_s",
+      "genericFormula": "\\phi_s",
+      "description": "A fórmula representa o potencial elétrico de superfície em um semicondutor, que é uma medida da energia potencial elétrica por unidade de carga em uma determinada posição na superfície do material.",
+      "concepts": [
+        "Potencial elétrico",
+        "Semicondutores",
+        "Superfície de materiais"
+      ],
+      "symbols": [
+        {
+          "symbol": "φ_s",
+          "description": "Representa o potencial elétrico de superfície, que indica a energia potencial elétrica por unidade de carga em uma superfície de um semicondutor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E_c",
+      "genericFormula": "E_c",
+      "description": "A fórmula representa a energia de um portador de carga em um semicondutor, especificamente a energia de um elétron na banda de condução.",
+      "concepts": [
+        "Energia de portadores de carga",
+        "Bandas de energia em semicondutores",
+        "Condução elétrica em materiais semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_c",
+          "description": "Representa a energia da banda de condução em um semicondutor, que é a energia mínima necessária para que um elétron possa se mover livremente e contribuir para a condução elétrica."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E_v",
+      "genericFormula": "E_v",
+      "description": "A fórmula representa a energia do nível de valência em um material semicondutor. Este nível é crucial para entender como os elétrons se comportam dentro do material e como eles podem ser excitados para conduzir eletricidade.",
+      "concepts": [
+        "Níveis de energia em semicondutores",
+        "Condução elétrica",
+        "Excitação de elétrons"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_v",
+          "description": "Representa a energia do nível de valência, que é o nível de energia mais alto que os elétrons ocupam em um material semicondutor à temperatura zero."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E_F",
+      "genericFormula": "E_F",
+      "description": "A fórmula representa a energia de Fermi, que é o nível de energia mais alto ocupado por elétrons em um material a temperatura zero absoluto. Essa energia é crucial para entender as propriedades eletrônicas de semicondutores e metais.",
+      "concepts": [
+        "Energia de Fermi",
+        "Níveis de energia em sólidos",
+        "Propriedades eletrônicas de materiais",
+        "Temperatura zero absoluto"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_F",
+          "description": "Representa a energia de Fermi, que é a energia máxima ocupada por elétrons em um material a temperaturas muito baixas."
+        }
+      ]
+    },
+    {
+      "originalFormula": "x_n",
+      "genericFormula": "x_n",
+      "description": "A fórmula representa uma sequência ou um termo específico dentro de uma sequência, onde 'n' indica a posição do termo na sequência. Essa notação é comum em matemática e física para denotar elementos de uma série ou sequência numérica.",
+      "concepts": [
+        "Sequências",
+        "Termos de uma sequência",
+        "Indexação"
+      ],
+      "symbols": [
+        {
+          "symbol": "x_n",
+          "description": "Representa o n-ésimo termo de uma sequência, onde 'n' é um índice que indica a posição desse termo na sequência."
+        }
+      ]
+    },
+    {
+      "originalFormula": "W",
+      "genericFormula": "W",
+      "description": "A letra W representa o trabalho realizado por uma força em um sistema. O trabalho é uma medida da energia transferida quando uma força é aplicada a um objeto e este se desloca na direção da força.",
+      "concepts": [
+        "Trabalho",
+        "Energia",
+        "Força",
+        "Deslocamento"
+      ],
+      "symbols": [
+        {
+          "symbol": "W",
+          "description": "Representa o trabalho realizado, que é a energia transferida quando uma força é aplicada a um objeto ao longo de um deslocamento."
+        }
+      ]
+    },
+    {
+      "originalFormula": "F = -\\frac{e^{2}}{4\\pi\\epsilon_{0}(2x)^{2}} = -eE",
+      "genericFormula": "F = -\\frac{e^{2}}{4\\pi\\epsilon_{0}(r)^{2}} = -eE",
+      "description": "Esta fórmula representa a força elétrica entre duas cargas pontuais, onde a força é inversamente proporcional ao quadrado da distância entre elas. A primeira parte da equação mostra a força calculada a partir da lei de Coulomb, enquanto a segunda parte expressa a força em termos do campo elétrico gerado por uma carga.",
+      "concepts": [
+        "Força elétrica",
+        "Lei de Coulomb",
+        "Campo elétrico",
+        "Cargas elétricas"
+      ],
+      "symbols": [
+        {
+          "symbol": "F",
+          "description": "Representa a força elétrica atuando entre as cargas."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elétrica elementar, que é a carga de um elétron ou de um próton."
+        },
+        {
+          "symbol": "π",
+          "description": "Representa a constante matemática pi, que é a razão entre a circunferência de um círculo e seu diâmetro."
+        },
+        {
+          "symbol": "ε_{0}",
+          "description": "Representa a permissividade do vácuo, que é uma constante que mede a capacidade do vácuo de permitir a formação de campos elétricos."
+        },
+        {
+          "symbol": "x",
+          "description": "Representa a distância entre as duas cargas elétricas."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa o campo elétrico gerado por uma carga, que é a força por unidade de carga."
+        }
+      ]
+    },
+    {
+      "originalFormula": "J_{s} = A^{*}T^{2} \\exp \\left( -\\frac{\\phi_{b}}{kT} \\right)",
+      "genericFormula": "J_{s} = A^{*}T^{2} \\exp \\left( -\\frac{\\phi_{b}}{kT} \\right)",
+      "description": "Não foi possível gerar descrição automática",
+      "concepts": [],
+      "symbols": [],
+      "rawText": "{\n  \"originalFormula\": \"J_{s} = A^{*}T^{2} \\exp \\left( -\\\\frac{\\\\phi_{b}}{kT} \\\\right)\",\n  \"genericFormula\": \"J_{s} = A^{*}T^{2} \\exp \\\\left( -\\\\frac{\\\\phi_{b}}{kT} \\\\right)\",\n  \"description\": \"Esta fórmula representa a densidade de corrente de saturação em um semicondutor, que é a corrente que flui em um dispositivo quando ele está em equilíbrio térmico. A densidade de corrente é influenciada pela temperatura e pela energia de barreira do material.\",\n  \"concepts\": [\n    \"Densidade de corrente\",\n    \"Temperatura\",\n    \"Energia de barreira\",\n    \"Constante de Boltzmann\",\n    \"Efeito da temperatura na condutividade\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"J_{s}\",\n      \"description\": \"Representa a densidade de corrente de saturação, que é a quantidade de corrente elétrica por unidade de área em um semicondutor.\"\n    },\n    {\n      \"symbol\": \"A^{*}\",\n      \"description\": \"É uma constante que depende das propriedades do material semicondutor e da estrutura do dispositivo, refletindo a eficiência de geração de portadores de carga.\"\n    },\n    {\n      \"symbol\": \"T\",\n      \"description\": \"Representa a temperatura absoluta do sistema, medida em Kelvin, que afeta a energia térmica dos portadores de carga.\"\n    },\n    {\n      \"symbol\": \"\\\\phi_{b}\",\n      \"description\": \"É a energia de barreira do material, que é a energia necessária para que os portadores de carga superem a barreira potencial e contribuam para a corrente.\"\n    },\n    {\n      \"symbol\": \"k\",\n      \"description\": \"É a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos, desempenhando um papel fundamental na estatística térmica.\"\n    },\n    {\n      \"symbol\": \"\\\\exp\",\n      \"description\": \"Representa a função exponencial, que é uma função matemática que descreve o crescimento ou decaimento exponencial, muito utilizada em processos térmicos e de transporte de carga.\"\n    }\n  ]\n}"
+    },
+    {
+      "originalFormula": "J_{s} = \\frac{e D_{n} n_{p}}{L_{n}} + \\frac{e D_{p} n_{n}}{L_{p}}",
+      "genericFormula": "J_{s} = \\frac{e D_{n} n_{p}}{L_{n}} + \\frac{e D_{p} n_{n}}{L_{p}}",
+      "description": "Esta fórmula representa a densidade de corrente de saturação em um semicondutor, que é a soma das contribuições de portadores de carga do tipo n (elétrons) e do tipo p (lacunas). A densidade de corrente é uma medida de quão rapidamente a carga elétrica está se movendo através de um material.",
+      "concepts": [
+        "Densidade de corrente",
+        "Portadores de carga",
+        "Semicondutores",
+        "Difusão de portadores",
+        "Equilíbrio de cargas"
+      ],
+      "symbols": [
+        {
+          "symbol": "J_{s}",
+          "description": "Representa a densidade de corrente de saturação, que indica a quantidade de carga que passa por uma área unitária em um determinado tempo."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a quantidade de carga elétrica transportada por um único elétron."
+        },
+        {
+          "symbol": "D_{n}",
+          "description": "Representa o coeficiente de difusão dos portadores do tipo n, que indica a capacidade dos elétrons de se moverem através do semicondutor."
+        },
+        {
+          "symbol": "n_{p}",
+          "description": "Representa a densidade de portadores do tipo p, que são as lacunas no semicondutor, indicando quantas lacunas estão disponíveis para conduzir corrente."
+        },
+        {
+          "symbol": "L_{n}",
+          "description": "Representa a largura da região onde os portadores do tipo n estão presentes, influenciando a quantidade de corrente que pode fluir."
+        },
+        {
+          "symbol": "D_{p}",
+          "description": "Representa o coeficiente de difusão dos portadores do tipo p, que indica a capacidade das lacunas de se moverem através do semicondutor."
+        },
+        {
+          "symbol": "n_{n}",
+          "description": "Representa a densidade de portadores do tipo n, que são os elétrons no semicondutor, indicando quantos elétrons estão disponíveis para conduzir corrente."
+        },
+        {
+          "symbol": "L_{p}",
+          "description": "Representa a largura da região onde os portadores do tipo p estão presentes, influenciando a quantidade de corrente que pode fluir."
+        }
+      ]
+    },
+    {
+      "originalFormula": "J = A^*T^2 \\exp \\left( -\\frac{E_{v}}{kT} \\right)",
+      "genericFormula": "J = A^*T^2 \\exp \\left( -\\frac{E_{v}}{kT} \\right)",
+      "description": "Esta fórmula representa a densidade de corrente elétrica em um material semicondutor em função da temperatura. Ela descreve como a corrente elétrica (ou densidade de corrente) varia com a temperatura e a energia de ativação necessária para que os portadores de carga se movam através do material.",
+      "concepts": [
+        "Densidade de corrente elétrica",
+        "Temperatura",
+        "Energia de ativação",
+        "Constante de Boltzmann",
+        "Efeito da temperatura na condutividade dos semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "J",
+          "description": "Representa a densidade de corrente elétrica, que é a quantidade de carga elétrica que passa por uma unidade de área em um determinado intervalo de tempo."
+        },
+        {
+          "symbol": "A^*",
+          "description": "É uma constante que depende das propriedades do material e da estrutura do semicondutor, relacionada à mobilidade dos portadores de carga."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura absoluta do sistema, medida em Kelvin, que influencia a energia cinética dos portadores de carga."
+        },
+        {
+          "symbol": "E_{v}",
+          "description": "É a energia de ativação necessária para que os portadores de carga superem a barreira de energia e contribuam para a corrente elétrica."
+        },
+        {
+          "symbol": "k",
+          "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos, sendo fundamental na descrição do comportamento térmico das partículas."
+        },
+        {
+          "symbol": "\\exp",
+          "description": "Representa a função exponencial, que é uma função matemática que cresce rapidamente e é usada para modelar fenômenos que envolvem crescimento ou decaimento exponencial."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395
+  ],
+  "lastUpdated": "2026-05-08T22:15:40.574Z"
+}

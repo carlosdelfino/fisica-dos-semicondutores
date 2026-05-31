@@ -1,0 +1,394 @@
+{
+  "chapter": "3.4 Density of States Function",
+  "section": "N/A",
+  "questions": [
+    {
+      "number": "Objective",
+      "text": "Calculate the density of states per unit volume over a particular energy range.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "Objective",
+      "text": "Consider the density of states for a free electron given by Equation (3.69). Calculate the density of states per unit volume with energies between 0 and 1 eV.",
+      "formulas": [
+        {
+          "originalFormula": "g(E) = \\frac{4\\pi(2m)^{3/2}}{\\hbar^{3}} \\sqrt{E}",
+          "genericFormula": "g(E) = \\frac{4\\pi(2m)^{3/2}}{\\hbar^{3}} \\sqrt{E}",
+          "description": "Esta fórmula representa a densidade de estados em um sistema quântico, que indica quantos estados disponíveis existem para as partículas em uma determinada energia. A densidade de estados é importante para entender como as partículas se distribuem em diferentes energias em um material.",
+          "concepts": [
+            "densidade de estados",
+            "energia",
+            "mecânica quântica",
+            "estatística quântica"
+          ],
+          "symbols": [
+            {
+              "symbol": "g(E)",
+              "description": "representa a densidade de estados, que é o número de estados quânticos disponíveis por unidade de energia."
+            },
+            {
+              "symbol": "m",
+              "description": "representa a massa da partícula que está sendo considerada no sistema."
+            },
+            {
+              "symbol": "\\hbar",
+              "description": "representa a constante de Planck reduzida, que é uma constante fundamental na mecânica quântica, relacionada à quantização de energia."
+            },
+            {
+              "symbol": "E",
+              "description": "representa a energia do sistema ou da partícula em questão."
+            }
+          ],
+          "chapter": "3.4 Density of States Function",
+          "section": "N/A",
+          "source": "answer",
+          "questionNumber": "Objective",
+          "page": 1
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "g(k) = \\frac{mk^{2} dk}{\\pi^{2} a^{3}}",
+      "genericFormula": "g(k) = \\frac{m k^{2} dk}{\\pi^{2} a^{3}}",
+      "description": "Esta fórmula representa a densidade de estados em um sistema quântico, onde g(k) indica quantos estados estão disponíveis para uma partícula em um intervalo específico de momento, considerando a dependência do vetor de onda k.",
+      "concepts": [
+        "Densidade de estados",
+        "Mecânica quântica",
+        "Vetores de onda",
+        "Quantização do momento"
+      ],
+      "symbols": [
+        {
+          "symbol": "g(k)",
+          "description": "Representa a densidade de estados em função do vetor de onda k, indicando quantos estados estão disponíveis para as partículas com esse vetor de onda."
+        },
+        {
+          "symbol": "m",
+          "description": "Representa a massa da partícula que está sendo considerada no sistema."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa o vetor de onda, que está relacionado ao momento da partícula e à sua energia na mecânica quântica."
+        },
+        {
+          "symbol": "dk",
+          "description": "Representa um pequeno intervalo de variação do vetor de onda k, que é usado para calcular a densidade de estados em uma faixa específica."
+        },
+        {
+          "symbol": "\\pi",
+          "description": "Uma constante matemática que representa a razão entre a circunferência de um círculo e seu diâmetro, aproximadamente igual a 3,14159."
+        },
+        {
+          "symbol": "a",
+          "description": "Representa um parâmetro que pode estar relacionado ao volume ou à dimensão do sistema em que as partículas estão sendo consideradas."
+        }
+      ],
+      "chapter": "3.4 Density of States Function",
+      "section": "N/A",
+      "source": "standalone",
+      "page": 17
+    },
+    {
+      "originalFormula": "k^{2} = \\frac{2mE}{\\hbar^{2}}",
+      "genericFormula": "k^{2} = \\frac{2mE}{\\hbar^{2}}",
+      "description": "Esta fórmula relaciona o quadrado do número de onda com a energia de uma partícula e suas propriedades físicas, como a massa e a constante de Planck reduzida. O número de onda é uma medida que descreve a natureza ondulatória das partículas em mecânica quântica.",
+      "concepts": [
+        "Número de onda",
+        "Energia de partículas",
+        "Mecânica quântica",
+        "Constante de Planck reduzida"
+      ],
+      "symbols": [
+        {
+          "symbol": "k",
+          "description": "Representa o número de onda, que está relacionado à frequência e ao comprimento de onda de uma onda associada a uma partícula."
+        },
+        {
+          "symbol": "m",
+          "description": "Representa a massa da partícula, que é uma medida da quantidade de matéria que ela contém."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa a energia da partícula, que é a capacidade de realizar trabalho ou causar mudanças em um sistema."
+        },
+        {
+          "symbol": "\\hbar",
+          "description": "Representa a constante de Planck reduzida, que é uma constante fundamental na mecânica quântica e relaciona a energia de uma partícula à sua frequência."
+        }
+      ],
+      "chapter": "3.4 Density of States Function",
+      "section": "N/A",
+      "source": "standalone",
+      "page": 33
+    },
+    {
+      "originalFormula": "k = \\frac{1}{\\hbar} \\sqrt{2mE}",
+      "genericFormula": "k = \\frac{1}{\\hbar} \\sqrt{2mE}",
+      "description": "Esta fórmula representa a relação entre a constante de onda, a energia e a massa de uma partícula em um contexto quântico. A constante de onda é uma medida de quão 'espalhada' está a onda associada à partícula, e esta relação mostra como a energia e a massa influenciam essa constante.",
+      "concepts": [
+        "Constante de onda",
+        "Energia de uma partícula",
+        "Massa de uma partícula",
+        "Princípio da mecânica quântica"
+      ],
+      "symbols": [
+        {
+          "symbol": "k",
+          "description": "Representa a constante de onda, que está relacionada ao comprimento de onda da onda associada à partícula."
+        },
+        {
+          "symbol": "ℏ",
+          "description": "É a constante de Planck reduzida, que é uma constante fundamental na mecânica quântica, relacionada à quantização da energia."
+        },
+        {
+          "symbol": "m",
+          "description": "Representa a massa da partícula, que é uma medida da quantidade de matéria que ela contém."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa a energia da partícula, que é a capacidade da partícula de realizar trabalho ou causar mudanças."
+        }
+      ],
+      "chapter": "3.4 Density of States Function",
+      "section": "N/A",
+      "source": "standalone",
+      "page": 49
+    },
+    {
+      "originalFormula": "dk = \\frac{1}{\\hbar} \\sqrt{\\frac{m}{2E}} dE",
+      "genericFormula": "dk = \\frac{1}{\\hbar} \\sqrt{\\frac{m}{2E}} dE",
+      "description": "Esta fórmula relaciona a variação do vetor de onda, representado por dk, com a variação da energia, representada por dE, em um sistema quântico. Ela é utilizada para entender como as propriedades de partículas em um potencial dependem da energia que elas possuem.",
+      "concepts": [
+        "quantização de energia",
+        "vetor de onda",
+        "mecânica quântica",
+        "relação de dispersão"
+      ],
+      "symbols": [
+        {
+          "symbol": "dk",
+          "description": "representa a variação do vetor de onda, que está relacionado à quantidade de movimento de uma partícula em um sistema quântico."
+        },
+        {
+          "symbol": "\\hbar",
+          "description": "é a constante de Planck reduzida, que relaciona a energia de uma partícula à sua frequência e é fundamental na mecânica quântica."
+        },
+        {
+          "symbol": "m",
+          "description": "representa a massa da partícula, que é uma medida da quantidade de matéria que ela contém."
+        },
+        {
+          "symbol": "E",
+          "description": "é a energia da partícula, que pode ser interpretada como a capacidade de realizar trabalho ou causar mudanças em um sistema."
+        },
+        {
+          "symbol": "dE",
+          "description": "representa uma pequena variação na energia da partícula, que é utilizada para analisar como mudanças na energia afetam o vetor de onda."
+        }
+      ],
+      "chapter": "3.4 Density of States Function",
+      "section": "N/A",
+      "source": "standalone",
+      "page": 65
+    },
+    {
+      "originalFormula": "g(E) dE = \\frac{m\\pi}{\\hbar^{2}} \\left( \\frac{2mE}{\\hbar^{2}} \\right)^{\\frac{1}{2}} \\cdot \\frac{1}{\\hbar} \\sqrt{m/2E} dE",
+      "genericFormula": "g(E) dE = \\frac{m\\pi}{\\hbar^{2}} \\left( \\frac{2mE}{\\hbar^{2}} \\right)^{\\frac{1}{2}} \\cdot \\frac{1}{\\hbar} \\sqrt{m/2E} dE",
+      "description": "Esta fórmula representa a densidade de estados em um sistema quântico, que descreve quantos estados estão disponíveis para uma partícula em uma determinada energia. A densidade de estados é uma função importante na física de semicondutores, pois ajuda a entender como as partículas se distribuem em diferentes níveis de energia.",
+      "concepts": [
+        "Densidade de estados",
+        "Energia quântica",
+        "Partículas em um potencial",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "g(E)",
+          "description": "Representa a densidade de estados, que indica quantos estados estão disponíveis para uma partícula em uma energia específica."
+        },
+        {
+          "symbol": "dE",
+          "description": "Um pequeno intervalo de energia, usado para calcular a quantidade de estados disponíveis em uma faixa de energia."
+        },
+        {
+          "symbol": "m",
+          "description": "Representa a massa da partícula que está sendo considerada no sistema quântico."
+        },
+        {
+          "symbol": "\\hbar",
+          "description": "Representa a constante de Planck reduzida, que é uma constante fundamental na mecânica quântica e relaciona a energia de um fóton à sua frequência."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa a energia da partícula, que é a variável de interesse na densidade de estados."
+        },
+        {
+          "symbol": "\\pi",
+          "description": "Uma constante matemática que representa a razão entre a circunferência de um círculo e seu diâmetro, frequentemente utilizada em fórmulas relacionadas a geometria e ondas."
+        }
+      ],
+      "chapter": "3.4 Density of States Function",
+      "section": "N/A",
+      "source": "standalone",
+      "page": 81
+    },
+    {
+      "originalFormula": "g(E) = \\frac{4\\pi(2m)^{3/2}}{\\hbar^{3}} \\sqrt{E}",
+      "genericFormula": "g(E) = \\frac{4\\pi(2m)^{3/2}}{\\hbar^{3}} \\sqrt{E}",
+      "description": "Esta fórmula representa a densidade de estados em um sistema quântico, que indica quantos estados disponíveis existem para partículas em uma determinada energia. A densidade de estados é uma função importante na física de semicondutores e na teoria quântica, pois ajuda a entender como as partículas se distribuem em diferentes níveis de energia.",
+      "concepts": [
+        "Densidade de estados",
+        "Energia de partículas",
+        "Mecânica quântica",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "g(E)",
+          "description": "Representa a densidade de estados, que é o número de estados quânticos disponíveis por unidade de energia."
+        },
+        {
+          "symbol": "m",
+          "description": "Representa a massa da partícula que está sendo considerada no sistema."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa a energia da partícula, que é a variável na qual a densidade de estados é calculada."
+        },
+        {
+          "symbol": "\\hbar",
+          "description": "Representa a constante de Planck reduzida, que é uma constante fundamental na mecânica quântica e relaciona a energia de um fóton à sua frequência."
+        },
+        {
+          "symbol": "\\pi",
+          "description": "Representa a constante matemática pi, que é a razão entre a circunferência de um círculo e seu diâmetro, frequentemente utilizada em fórmulas que envolvem geometria."
+        }
+      ],
+      "chapter": "3.4 Density of States Function",
+      "section": "N/A",
+      "source": "standalone",
+      "page": 97
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112
+  ],
+  "lastUpdated": "2026-05-08T18:19:13.010712",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
+}

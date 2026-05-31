@@ -1,0 +1,1398 @@
+{
+  "chapter": "10.1 The Two-Terminal MOS Structure",
+  "section": "unknown",
+  "questions": [
+    {
+      "number": "Ex 10.1",
+      "text": "Consider an oxide-to-p-type silicon junction at T = 300 K. The impurity doping concentration in the silicon is N_a = 2 \\times 10^{15} \\, \\text{cm}^{-3}. Calculate the maximum space charge width. Does the space charge width increase or decrease as the p-type doping concentration decreases?",
+      "formulas": [
+        {
+          "originalFormula": "\\phi_{b} = V_{t} \\ln \\left( \\frac{N_{a}}{n_{i}} \\right)",
+          "genericFormula": "\\phi_{b} = V_{t} \\ln \\left( \\frac{N_{a}}{n_{i}} \\right)",
+          "description": "Esta fórmula representa a energia de potencial de um semicondutor tipo p, que é a diferença de energia necessária para mover um portador de carga em um material semicondutor. Ela é calculada em função da temperatura, da concentração de dopantes do tipo aceito e da concentração intrínseca de portadores de carga no semicondutor.",
+          "concepts": [
+            "Energia de potencial",
+            "Semicondutores",
+            "Dopagem",
+            "Concentração de portadores de carga",
+            "Temperatura"
+          ],
+          "symbols": [
+            {
+              "symbol": "φ_{b}",
+              "description": "Representa a energia de potencial de um semicondutor tipo p, que é a energia necessária para mover um portador de carga."
+            },
+            {
+              "symbol": "V_{t}",
+              "description": "Representa a tensão térmica, que é uma medida da energia térmica disponível por portador de carga em um semicondutor a uma determinada temperatura."
+            },
+            {
+              "symbol": "N_{a}",
+              "description": "Representa a concentração de dopantes do tipo aceito (ou dopantes p) no semicondutor, que são átomos que criam lacunas para portadores de carga positiva."
+            },
+            {
+              "symbol": "n_{i}",
+              "description": "Representa a concentração intrínseca de portadores de carga no semicondutor, que é a quantidade de portadores de carga que existem no material sem dopagem."
+            }
+          ]
+        },
+        {
+          "originalFormula": "x_{sr} = \\left( \\frac{4 \\epsilon_{0} \\phi_{b}}{e N_{a}} \\right)^{1/2}",
+          "genericFormula": "x_{sr} = \\left( \\frac{4 \\epsilon_{0} \\phi_{b}}{e N_{a}} \\right)^{1/2}",
+          "description": "Esta fórmula representa a distância de depleção em uma junção p-n, que é a região onde ocorre a separação de cargas devido à diferença de dopagem entre os materiais semicondutores. A distância de depleção é crucial para entender como as junções semicondutoras funcionam em dispositivos eletrônicos.",
+          "concepts": [
+            "Junção p-n",
+            "Distância de depleção",
+            "Dopagem de semicondutores",
+            "Campo elétrico em semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "x_{sr}",
+              "description": "Representa a distância de depleção na junção p-n, que é a largura da região onde não existem portadores de carga livres."
+            },
+            {
+              "symbol": "\\epsilon_{0}",
+              "description": "É a permissividade do vácuo, que mede a capacidade de um material de permitir a formação de um campo elétrico."
+            },
+            {
+              "symbol": "\\phi_{b}",
+              "description": "É a energia de potencial de barreira, que representa a energia necessária para mover um portador de carga através da junção p-n."
+            },
+            {
+              "symbol": "e",
+              "description": "É a carga elementar, que é a quantidade de carga elétrica transportada por um único elétron."
+            },
+            {
+              "symbol": "N_{a}",
+              "description": "É a concentração de dopantes do tipo aceitor (p) no semicondutor, que determina a quantidade de portadores de carga positiva disponíveis."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "Ex 10.2",
+      "text": "Repeat Example 10.2 for a semiconductor doping of N_a = 10^{16} cm^{-3}.",
+      "formulas": []
+    },
+    {
+      "number": "10.3",
+      "text": "Calculate the flat-band voltage for a MOS capacitor with a p-type semiconductor substrate.",
+      "formulas": [
+        {
+          "originalFormula": "V_{FB} = \\Phi_{m} - \\frac{Q_{f}}{C_{ox}}",
+          "genericFormula": "V_{FB} = \\Phi_{m} - \\frac{Q_{f}}{C_{ox}}",
+          "description": "Esta fórmula representa a tensão de flat-band (V_{FB}) em um dispositivo semicondutor, que é a tensão necessária para que a energia de Fermi do semicondutor se alinhe com a energia do nível de Fermi do metal, considerando a carga acumulada na interface e a capacitância do óxido.",
+          "concepts": [
+            "Tensão de flat-band",
+            "Energia de Fermi",
+            "Capacitância",
+            "Carga acumulada"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{FB}",
+              "description": "Representa a tensão de flat-band, que é a tensão na qual a banda de energia do semicondutor se alinha com a banda de energia do metal."
+            },
+            {
+              "symbol": "\\Phi_{m}",
+              "description": "Representa a função de trabalho do metal, que é a energia necessária para remover um elétron do metal até o nível de vácuo."
+            },
+            {
+              "symbol": "Q_{f}",
+              "description": "Representa a carga acumulada na interface entre o semicondutor e o óxido, que pode influenciar a tensão de flat-band."
+            },
+            {
+              "symbol": "C_{ox}",
+              "description": "Representa a capacitância do óxido, que é a capacidade do material de armazenar carga elétrica por unidade de tensão."
+            }
+          ]
+        },
+        {
+          "originalFormula": "C_{ox} = \\frac{\\epsilon_{ox}}{t_{ox}}",
+          "genericFormula": "C_{ox} = \\frac{\\epsilon_{ox}}{t_{ox}}",
+          "description": "Esta fórmula representa a capacitância por unidade de área de uma camada de óxido em um transistor de efeito de campo (MOSFET). A capacitância é uma medida de quão bem um componente pode armazenar carga elétrica. No contexto de semicondutores, a capacitância do óxido é crucial para o funcionamento dos dispositivos, pois influencia a operação e a eficiência dos transistores.",
+          "concepts": [
+            "Capacitância",
+            "Camada de óxido",
+            "Transistor de efeito de campo (MOSFET)",
+            "Armazenamento de carga elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "C_{ox}",
+              "description": "Representa a capacitância por unidade de área da camada de óxido."
+            },
+            {
+              "symbol": "\\epsilon_{ox}",
+              "description": "Representa a permissividade elétrica do material do óxido, que é uma medida de como o material responde a um campo elétrico."
+            },
+            {
+              "symbol": "t_{ox}",
+              "description": "Representa a espessura da camada de óxido, que é a distância física entre as placas do capacitor formado pelo óxido."
+            }
+          ]
+        },
+        {
+          "originalFormula": "Q_{ox} = (5 \\times 10^{10})(1.6 \\times 10^{-19}) = 8 \\times 10^{-9} \\text{ C/cm}^{2}",
+          "genericFormula": "Q_{ox} = N \\times q",
+          "description": "Esta fórmula representa a carga elétrica por unidade de área em um material dielétrico, especificamente em uma camada de óxido em dispositivos semicondutores. A carga é calculada multiplicando o número de portadores de carga por unidade de área pela carga elementar.",
+          "concepts": [
+            "Carga elétrica",
+            "Dielétricos",
+            "Semicondutores",
+            "Portadores de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "Q_{ox}",
+              "description": "Representa a carga elétrica total por unidade de área no óxido, medida em coulombs por centímetro quadrado."
+            },
+            {
+              "symbol": "N",
+              "description": "Representa o número de portadores de carga por unidade de área, que pode ser elétrons ou lacunas, dependendo do tipo de material."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elementar, que é a carga de um único elétron, aproximadamente igual a 1.6 vezes 10 elevado a menos 19 coulombs."
+            }
+          ]
+        },
+        {
+          "originalFormula": "V_{FB} = \\Phi_{m} - \\frac{Q_{f}}{C_{ox}}",
+          "genericFormula": "V_{FB} = \\Phi_{m} - \\frac{Q_{f}}{C_{ox}}",
+          "description": "Esta fórmula representa a tensão de flat-band (V_{FB}) em um dispositivo semicondutor, que é a tensão necessária para que a camada de semicondutor esteja em um estado onde não há acúmulo ou depleção de portadores de carga na interface entre o semicondutor e o óxido. Essa tensão é influenciada pelo trabalho de função do metal e pela carga fixa no óxido.",
+          "concepts": [
+            "Tensão de flat-band",
+            "Trabalho de função",
+            "Carga fixa",
+            "Capacitância do óxido"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{FB}",
+              "description": "Representa a tensão de flat-band, que é a tensão na qual a camada de semicondutor não apresenta acúmulo ou depleção de portadores de carga."
+            },
+            {
+              "symbol": "\\Phi_{m}",
+              "description": "Representa o trabalho de função do metal, que é a energia necessária para mover um elétron do nível de Fermi do metal para o vácuo."
+            },
+            {
+              "symbol": "Q_{f}",
+              "description": "Representa a carga fixa no óxido, que é a quantidade de carga que está presente no óxido e que influencia a distribuição de cargas no semicondutor."
+            },
+            {
+              "symbol": "C_{ox}",
+              "description": "Representa a capacitância do óxido, que é uma medida da capacidade do óxido de armazenar carga elétrica."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "Ex 10.5",
+      "text": "Consider a MOS capacitor with silicon dioxide and an n-type silicon substrate at T = 300 K with the following parameters: p+ polysilicon gate, N_a = 2 \\times 10^{16} cm^{-3}, k_{ox} = 20 \\, \\text{Å}, and \\epsilon_{si} = 5 \\times 10^{10} cm^{-2}. Determine the threshold voltage. Is the capacitor an enhancement mode or depletion mode device?",
+      "formulas": []
+    },
+    {
+      "number": "TYU 10.1 (a)",
+      "text": "Consider an oxide-to-n-type silicon junction at T = 300 K. The impurity doping concentration in the silicon is N_d = 8 \\times 10^{15} cm^{-3}. Calculate the maximum space charge width in the silicon.",
+      "formulas": []
+    },
+    {
+      "number": "TYU 10.1 (b)",
+      "text": "Repeat part (a) for a doping concentration of N_d = 4 \\times 10^{16} cm^{-3}.",
+      "formulas": []
+    },
+    {
+      "number": "3",
+      "text": "Why does the space charge region in the semiconductor of a MOS capacitor reach a maximum width once the inversion layer is formed?",
+      "formulas": []
+    },
+    {
+      "number": "4",
+      "text": "Define surface potential. Does the surface potential change significantly with gate voltage once threshold is reached?",
+      "formulas": []
+    },
+    {
+      "number": "5",
+      "text": "Sketch the energy-band diagram through a MOS structure with a p-type substrate and an n+ polysilicon gate under zero bias.",
+      "formulas": []
+    },
+    {
+      "number": "6",
+      "text": "Define the flat-band voltage. Sketch the energy-band diagram in a MOS capacitor at flat band.",
+      "formulas": []
+    },
+    {
+      "number": "7",
+      "text": "Define the threshold voltage. What is the surface potential at the threshold voltage?",
+      "formulas": []
+    },
+    {
+      "number": "8",
+      "text": "Sketch the C–V characteristics of a MOS capacitor with an n-type substrate under the low-frequency condition. How do the characteristics change for the high-frequency condition?",
+      "formulas": []
+    },
+    {
+      "number": "9",
+      "text": "Indicate the approximate capacitance at flat band on the C–V characteristic of a MOS capacitor with a p-type substrate under the high-frequency condition.",
+      "formulas": []
+    },
+    {
+      "number": "10",
+      "text": "What is the effect on the C–V characteristics of a MOS capacitor with a p-type substrate if the amount of positive trapped oxide charge increases?",
+      "formulas": []
+    },
+    {
+      "number": "11",
+      "text": "Qualitatively sketch the inversion charge density in the channel region when the transistor is biased in the saturation region. Repeat for the case when the transistor is biased in the nonsaturation region.",
+      "formulas": []
+    },
+    {
+      "number": "13",
+      "text": "Define V_{ds}(sat).",
+      "formulas": []
+    },
+    {
+      "number": "14",
+      "text": "Define enhancement mode and depletion mode for both n-channel and p-channel devices.",
+      "formulas": []
+    },
+    {
+      "number": "15",
+      "text": "Sketch the charge distribution through a MOS capacitor with a p-type substrate when biased in the inversion mode. Write the charge neutrality equation.",
+      "formulas": []
+    },
+    {
+      "number": "16",
+      "text": "Discuss why the threshold voltage changes when a reverse-biased source-to-substrate voltage is applied to a MOSFET.",
+      "formulas": []
+    },
+    {
+      "number": "10.2 (a)",
+      "text": "Calculate the maximum space charge width x_{s} and the maximum space charge density |Q_{ox}(max)| in a MOS capacitor with a p-type silicon substrate at T = 300 K for doping concentrations of (i) N_{a} = 7 \\times 10^{15} cm^{-3} and (ii) N_{a} = 3 \\times 10^{16} cm^{-3}.",
+      "formulas": []
+    },
+    {
+      "number": "10.2 (b)",
+      "text": "Repeat part (a) for T = 350 K.",
+      "formulas": []
+    },
+    {
+      "number": "10.3 (a)",
+      "text": "Consider a MOS capacitor at T = 300 K with an n-type silicon substrate. Determine the silicon doping concentration such that |Q_{ox}(max)| = 1.25 \\times 10^{-6} C/cm^{2}.",
+      "formulas": []
+    },
+    {
+      "number": "10.3 (b)",
+      "text": "What is the surface potential that results in the maximum space charge width?",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "Ex 10.1",
+      "text": "The maximum space charge width can be calculated using the given values.",
+      "formulas": [
+        {
+          "originalFormula": "x_{sr} = \\left( \\frac{4 \\epsilon_{0} \\phi_{b}}{e N_{a}} \\right)^{1/2}",
+          "genericFormula": "x_{sr} = \\left( \\frac{4 \\epsilon_{0} \\phi_{b}}{e N_{a}} \\right)^{1/2}",
+          "description": "Esta fórmula representa a distância de depleção em um semicondutor, que é a região onde os portadores de carga (elétrons e lacunas) são escassos devido à ionização de dopantes. Essa distância é importante para entender como os semicondutores se comportam em dispositivos eletrônicos.",
+          "concepts": [
+            "Distância de depleção",
+            "Dopagem em semicondutores",
+            "Campo elétrico",
+            "Potencial elétrico"
+          ],
+          "symbols": [
+            {
+              "symbol": "x_{sr}",
+              "description": "Representa a distância de depleção, que é a largura da região onde os portadores de carga são escassos."
+            },
+            {
+              "symbol": "\\epsilon_{0}",
+              "description": "É a permissividade do vácuo, uma constante que mede a capacidade de um material em permitir a formação de campos elétricos."
+            },
+            {
+              "symbol": "\\phi_{b}",
+              "description": "É o potencial de barreira, que representa a energia necessária para mover um portador de carga através da junção de um semicondutor."
+            },
+            {
+              "symbol": "e",
+              "description": "É a carga elementar, que é a carga de um único elétron, representando a quantidade de carga elétrica."
+            },
+            {
+              "symbol": "N_{a}",
+              "description": "É a concentração de dopantes aceitadores em um semicondutor, que influencia a quantidade de lacunas disponíveis para condução elétrica."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Ex 10.2",
+      "text": "For silicon at T = 300 K, we may calculate φ_{ms}",
+      "formulas": [
+        {
+          "originalFormula": "\\phi_{ms} = \\phi_{m} - \\left( \\chi' + \\frac{E_{c}}{2e} + \\phi_{p} \\right)",
+          "genericFormula": "\\phi_{ms} = \\phi_{m} - \\left( \\chi' + \\frac{E_{c}}{2e} + \\phi_{p} \\right)",
+          "description": "Esta fórmula representa a diferença de potencial de contato entre um metal e um semicondutor. Ela é utilizada para calcular a barreira de potencial que se forma na interface entre esses dois materiais, levando em consideração diferentes contribuições energéticas.",
+          "concepts": [
+            "Diferença de potencial",
+            "Barreira de potencial",
+            "Interação entre metais e semicondutores",
+            "Energia de afinidade",
+            "Energia de banda"
+          ],
+          "symbols": [
+            {
+              "symbol": "φ_{ms}",
+              "description": "Representa a diferença de potencial de contato entre o metal e o semicondutor."
+            },
+            {
+              "symbol": "φ_{m}",
+              "description": "Representa o potencial de trabalho do metal, que é a energia necessária para remover um elétron do metal."
+            },
+            {
+              "symbol": "χ'",
+              "description": "Representa a energia de afinidade do semicondutor, que é a energia necessária para adicionar um elétron ao semicondutor."
+            },
+            {
+              "symbol": "E_{c}",
+              "description": "Representa a energia da borda da banda de condução do semicondutor, que é o nível de energia onde os elétrons podem se mover livremente."
+            },
+            {
+              "symbol": "e",
+              "description": "Representa a carga elementar, que é a carga elétrica de um único elétron."
+            },
+            {
+              "symbol": "φ_{p}",
+              "description": "Representa o potencial de ionização do semicondutor, que é a energia necessária para remover um elétron de um átomo do semicondutor."
+            }
+          ]
+        },
+        {
+          "originalFormula": "\\phi_{ms} = 3.20 - \\left( 3.25 + 0.560 + 0.288 \\right) = -0.898 \\, V",
+          "genericFormula": "\\phi_{ms} = A - \\left( B + C + D \\right)",
+          "description": "Esta fórmula representa a diferença de potencial de trabalho entre o metal e o semicondutor, que é uma medida importante na física de semicondutores. A diferença de potencial de trabalho é crucial para entender como os dispositivos semicondutores funcionam, especialmente em junções p-n.",
+          "concepts": [
+            "Diferença de potencial",
+            "Potencial de trabalho",
+            "Juncões semicondutoras"
+          ],
+          "symbols": [
+            {
+              "symbol": "φ_{ms}",
+              "description": "Representa a diferença de potencial de trabalho entre o metal e o semicondutor."
+            },
+            {
+              "symbol": "A",
+              "description": "Um valor constante que representa um potencial de referência no contexto da fórmula."
+            },
+            {
+              "symbol": "B",
+              "description": "Um valor que contribui para o potencial total, representando uma característica do material ou do sistema em questão."
+            },
+            {
+              "symbol": "C",
+              "description": "Outro valor que representa uma contribuição adicional ao potencial, geralmente relacionado a propriedades físicas do semicondutor."
+            },
+            {
+              "symbol": "D",
+              "description": "Um terceiro valor que também contribui para o potencial total, podendo estar associado a fatores como dopagem ou temperatura."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "10.3",
+      "text": "The flat-band voltage is determined to be V_{FB} = -1.1 - \\frac{-8 \\times 10^{-9}}{1.726 \\times 10^{-7}} = -1.15 V.",
+      "formulas": [
+        {
+          "originalFormula": "V_{FB} = -1.1 - \\frac{-8 \\times 10^{-9}}{1.726 \\times 10^{-7}}",
+          "genericFormula": "V_{FB} = A - \\frac{B}{C}",
+          "description": "Esta fórmula representa a tensão de flat-band (V_{FB}) em um dispositivo semicondutor, que é uma medida da tensão necessária para que a camada de carga no semicondutor se torne neutra em relação ao seu ambiente. Essa tensão é crucial para entender o comportamento elétrico de dispositivos como transistores e capacitores.",
+          "concepts": [
+            "Tensão de flat-band",
+            "Semicondutores",
+            "Carga elétrica",
+            "Dispositivos eletrônicos"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{FB}",
+              "description": "Representa a tensão de flat-band, que é a tensão na qual a camada de carga do semicondutor se torna neutra."
+            },
+            {
+              "symbol": "A",
+              "description": "Um valor constante que representa uma parte da tensão de flat-band, que pode incluir efeitos de dopagem ou características do material."
+            },
+            {
+              "symbol": "B",
+              "description": "Um valor que representa a carga elétrica em um determinado volume, que influencia a tensão de flat-band."
+            },
+            {
+              "symbol": "C",
+              "description": "Um valor que representa a capacitância ou uma constante relacionada ao dispositivo semicondutor, que afeta a resposta elétrica do sistema."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Ex 10.5",
+      "text": "The threshold voltage is determined by the equation V_{T} = -\\left[ | \\phi_{S}(max) | - Q_{i} \\cdot \\frac{( \\epsilon_{ox} )}{( \\epsilon_{si} )} + \\phi_{ms} - 2 \\phi_{f} \\right]",
+      "formulas": [
+        {
+          "originalFormula": "V_{T} = -\\left[ | \\phi_{S}(max) | - Q_{i} \\cdot \\frac{( \\epsilon_{ox} )}{( \\epsilon_{si} )} + \\phi_{ms} - 2 \\phi_{f} \\right]",
+          "genericFormula": "V_{T} = -\\left[ | \\phi_{S}(max) | - Q_{i} \\cdot \\frac{( \\epsilon_{ox} )}{( \\epsilon_{si} )} + \\phi_{ms} - 2 \\phi_{f} \\right]",
+          "description": "Esta fórmula representa a tensão de limiar (V_T) em um dispositivo semicondutor, que é a tensão mínima necessária para que o dispositivo comece a conduzir corrente. A fórmula leva em consideração diversos fatores que influenciam essa tensão, como a carga de interface, as propriedades do material do óxido e do semicondutor, e as energias de trabalho.",
+          "concepts": [
+            "Tensão de limiar",
+            "Cargas de interface",
+            "Permissividade do óxido",
+            "Permissividade do semicondutor",
+            "Energia de trabalho"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{T}",
+              "description": "Representa a tensão de limiar, que é a tensão mínima necessária para que um dispositivo semicondutor comece a conduzir corrente."
+            },
+            {
+              "symbol": "\\phi_{S}(max)",
+              "description": "Representa o potencial máximo de superfície, que é a energia potencial na superfície do semicondutor."
+            },
+            {
+              "symbol": "Q_{i}",
+              "description": "Representa a carga de interface, que é a quantidade de carga acumulada na interface entre o semicondutor e o óxido."
+            },
+            {
+              "symbol": "\\epsilon_{ox}",
+              "description": "Representa a permissividade do óxido, que é uma medida de como o material do óxido responde a um campo elétrico."
+            },
+            {
+              "symbol": "\\epsilon_{si}",
+              "description": "Representa a permissividade do semicondutor, que é uma medida de como o material semicondutor responde a um campo elétrico."
+            },
+            {
+              "symbol": "\\phi_{ms}",
+              "description": "Representa a energia de trabalho do metal em relação ao semicondutor, que é a energia necessária para mover uma carga do metal para o semicondutor."
+            },
+            {
+              "symbol": "\\phi_{f}",
+              "description": "Representa a energia de Fermi, que é o nível de energia mais alto que os elétrons ocupam a temperatura zero."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "TYU 10.1 (a)",
+      "text": "The maximum space charge width can be calculated using the formula W_{max} = \\sqrt{\\frac{2 \\epsilon_{si} V_{bi}}{q N_d}}.",
+      "formulas": [
+        {
+          "originalFormula": "W_{max} = \\sqrt{\\frac{2 \\epsilon_{si} V_{bi}}{q N_d}}",
+          "genericFormula": "W_{max} = \\sqrt{\\frac{2 \\epsilon V_{bi}}{q N_d}}",
+          "description": "Esta fórmula representa a largura máxima de uma região de depleção em um semicondutor dopado, que é a distância ao longo da qual os portadores de carga são efetivamente removidos devido à formação de um campo elétrico interno. Essa largura é crucial para entender como os semicondutores se comportam em dispositivos eletrônicos.",
+          "concepts": [
+            "Região de depleção",
+            "Dopagem de semicondutores",
+            "Campo elétrico em semicondutores",
+            "Equilíbrio térmico em semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "W_{max}",
+              "description": "Representa a largura máxima da região de depleção em um semicondutor."
+            },
+            {
+              "symbol": "\\epsilon_{si}",
+              "description": "Representa a permissividade elétrica do silício, que é uma medida de como o material responde a um campo elétrico."
+            },
+            {
+              "symbol": "V_{bi}",
+              "description": "Representa a tensão de built-in, que é a tensão interna que se forma na junção de um semicondutor devido à diferença de concentração de portadores de carga."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elementar, que é a carga de um único elétron, usada para quantificar a carga elétrica."
+            },
+            {
+              "symbol": "N_d",
+              "description": "Representa a concentração de dopantes do tipo n, que são átomos adicionados ao semicondutor para aumentar a quantidade de portadores de carga negativa."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "TYU 10.1 (b)",
+      "text": "Repeat the calculation using the new doping concentration.",
+      "formulas": [
+        {
+          "originalFormula": "W_{max} = \\sqrt{\\frac{2 \\epsilon_{si} V_{bi}}{q N_d}}",
+          "genericFormula": "W_{max} = \\sqrt{\\frac{2 \\epsilon V_{bi}}{q N_d}}",
+          "description": "Esta fórmula calcula a largura máxima da região de depleção em um semicondutor, que é a área onde não há portadores de carga devido à ionização de dopantes. Essa largura é importante para entender como os semicondutores se comportam em dispositivos eletrônicos, como diodos e transistores.",
+          "concepts": [
+            "Região de depleção",
+            "Dopagem de semicondutores",
+            "Potencial de built-in",
+            "Permissividade do material",
+            "Carga elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "W_{max}",
+              "description": "Representa a largura máxima da região de depleção em um semicondutor."
+            },
+            {
+              "symbol": "\\epsilon_{si}",
+              "description": "Representa a permissividade do material semicondutor, que indica a capacidade do material de armazenar carga elétrica."
+            },
+            {
+              "symbol": "V_{bi}",
+              "description": "Representa o potencial de built-in, que é a diferença de potencial elétrico que se forma na junção de um semicondutor dopado."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elementar, que é a carga de um único elétron ou próton."
+            },
+            {
+              "symbol": "N_d",
+              "description": "Representa a concentração de dopantes do tipo n no semicondutor, que influencia a quantidade de portadores de carga disponíveis."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "x_{sr} = \\left( \\frac{4 e \\phi_{b}}{e N_{a}} \\right)^{1/2}",
+      "genericFormula": "x_{sr} = \\left( \\frac{4 e \\phi_{b}}{e N_{a}} \\right)^{1/2}",
+      "description": "Esta fórmula representa a profundidade de depleção em um semicondutor dopado, que é a distância a partir da interface onde a concentração de portadores de carga se torna significativamente menor devido à presença de uma barreira potencial.",
+      "concepts": [
+        "Profundidade de depleção",
+        "Dopagem de semicondutores",
+        "Barreira potencial",
+        "Concentração de portadores de carga"
+      ],
+      "symbols": [
+        {
+          "symbol": "x_{sr}",
+          "description": "Representa a profundidade de depleção, que é a distância em um semicondutor onde a concentração de portadores de carga é reduzida."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a menor unidade de carga elétrica que existe, associada a partículas como elétrons."
+        },
+        {
+          "symbol": "\\phi_{b}",
+          "description": "Representa a altura da barreira potencial, que é a energia necessária para mover um portador de carga através da interface entre dois materiais semicondutores."
+        },
+        {
+          "symbol": "N_{a}",
+          "description": "Representa a concentração de dopantes aceitadores em um semicondutor, que são átomos que criam lacunas ao aceitarem elétrons."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\phi_{b} = V_{t} \\ln \\left( \\frac{N_{a}}{n_{i}} \\right)",
+      "genericFormula": "\\phi_{b} = V_{t} \\ln \\left( \\frac{N_{a}}{n_{i}} \\right)",
+      "description": "Esta fórmula representa a energia de potencial de barreira em um semicondutor, que é a energia necessária para mover uma carga através da junção p-n. Ela é influenciada pela temperatura e pela concentração de portadores de carga.",
+      "concepts": [
+        "Energia de potencial de barreira",
+        "Semicondutores",
+        "Junção p-n",
+        "Concentração de portadores de carga",
+        "Temperatura"
+      ],
+      "symbols": [
+        {
+          "symbol": "φ_{b}",
+          "description": "Representa a energia de potencial de barreira, que é a energia necessária para mover uma carga através da junção p-n."
+        },
+        {
+          "symbol": "V_{t}",
+          "description": "Representa a tensão térmica, que é uma medida da energia térmica disponível por carga em um semicondutor a uma determinada temperatura."
+        },
+        {
+          "symbol": "N_{a}",
+          "description": "Representa a concentração de átomos dopantes do tipo aceito (p) em um semicondutor, que influencia a quantidade de portadores de carga positiva."
+        },
+        {
+          "symbol": "n_{i}",
+          "description": "Representa a concentração intrínseca de portadores de carga em um semicondutor puro, que é a quantidade de elétrons e lacunas presentes sem dopagem."
+        }
+      ]
+    },
+    {
+      "originalFormula": "n_i = n_i \\exp \\left( \\frac{\\phi_{F}}{V_{T}} \\right) \\cdot \\exp \\left( \\frac{\\Delta \\phi_{t}}{V_{T}} \\right)",
+      "genericFormula": "n_i = n_i \\exp \\left( \\frac{\\phi_{F}}{V_{T}} \\right) \\cdot \\exp \\left( \\frac{\\Delta \\phi_{t}}{V_{T}} \\right)",
+      "description": "Esta fórmula representa a densidade de portadores intrínsecos em um semicondutor, levando em consideração a energia de Fermi e a variação do potencial de energia. Ela mostra como a densidade de portadores varia em função da temperatura e da energia de ativação.",
+      "concepts": [
+        "Densidade de portadores intrínsecos",
+        "Energia de Fermi",
+        "Potencial térmico",
+        "Efeito da temperatura na condutividade dos semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_i",
+          "description": "Representa a densidade de portadores intrínsecos no semicondutor."
+        },
+        {
+          "symbol": "φ_F",
+          "description": "Representa a energia de Fermi, que é o nível de energia mais alto ocupado por elétrons em um material a temperatura zero."
+        },
+        {
+          "symbol": "V_T",
+          "description": "Representa o potencial térmico, que é uma medida da energia térmica disponível por unidade de carga em um sistema a uma temperatura específica."
+        },
+        {
+          "symbol": "Δφ_t",
+          "description": "Representa a variação do potencial de energia, que pode ser causada por fatores como impurezas ou campos elétricos no semicondutor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "n_{i} = n_{i} \\exp \\left( \\frac{\\phi_{F}}{V_{T}} \\right)",
+      "genericFormula": "n_{i} = n_{i} \\exp \\left( \\frac{\\phi}{V_{T}} \\right)",
+      "description": "Esta fórmula representa a concentração de portadores intrínsecos em um semicondutor em função da energia de Fermi e da temperatura. Ela mostra como a densidade de portadores varia com a energia de Fermi em relação à temperatura do sistema.",
+      "concepts": [
+        "Concentração de portadores intrínsecos",
+        "Energia de Fermi",
+        "Temperatura térmica",
+        "Exponencialidade em semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_{i}",
+          "description": "Representa a concentração de portadores intrínsecos em um semicondutor, que é a quantidade de elétrons ou lacunas presentes no material."
+        },
+        {
+          "symbol": "\\phi_{F}",
+          "description": "Representa a energia de Fermi, que é o nível de energia mais alto ocupado por elétrons em um material a temperatura zero absoluto."
+        },
+        {
+          "symbol": "V_{T}",
+          "description": "Representa a tensão térmica, que é uma medida da energia térmica disponível por partícula em um sistema a uma temperatura específica."
+        }
+      ]
+    },
+    {
+      "originalFormula": "n_{n} = n_{n} \\exp \\left( \\frac{\\Delta \\phi_{t}}{V_{T}} \\right)",
+      "genericFormula": "n_{n} = n_{n} \\exp \\left( \\frac{\\Delta \\phi_{t}}{V_{T}} \\right)",
+      "description": "Esta fórmula representa a densidade de portadores de carga em um semicondutor, considerando a variação do potencial químico em relação à temperatura térmica do sistema. Ela mostra como a densidade de portadores é afetada pela diferença de potencial químico e pela temperatura.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Potencial químico",
+        "Temperatura térmica",
+        "Efeito da temperatura na condutividade elétrica"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_{n}",
+          "description": "Representa a densidade de portadores de carga do tipo n, que são elétrons em um semicondutor."
+        },
+        {
+          "symbol": "\\Delta \\phi_{t}",
+          "description": "Representa a diferença de potencial químico, que é a variação do potencial que influencia a distribuição de portadores de carga."
+        },
+        {
+          "symbol": "V_{T}",
+          "description": "Representa a tensão térmica, que é uma medida da energia térmica disponível por portador de carga em função da temperatura do sistema."
+        },
+        {
+          "symbol": "\\exp",
+          "description": "Representa a função exponencial, que é uma função matemática que descreve o crescimento ou decaimento exponencial, comum em processos físicos como a distribuição de portadores em semicondutores."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\phi_{ms} = \\phi_{m} - \\left( \\chi' + \\frac{E_{c}}{2e} + \\phi_{p} \\right)",
+      "genericFormula": "\\phi_{ms} = \\phi_{m} - \\left( \\chi' + \\frac{E_{c}}{2e} + \\phi_{p} \\right)",
+      "description": "Esta fórmula representa a diferença de potencial de contato entre um metal e um semicondutor, levando em consideração a função de trabalho do metal, a afinidade eletrônica do semicondutor, a energia de condução e a tensão de polarização.",
+      "concepts": [
+        "Potencial de contato",
+        "Função de trabalho do metal",
+        "Afinidade eletrônica",
+        "Energia de condução",
+        "Tensão de polarização"
+      ],
+      "symbols": [
+        {
+          "symbol": "φ_{ms}",
+          "description": "Representa a diferença de potencial de contato entre o metal e o semicondutor."
+        },
+        {
+          "symbol": "φ_{m}",
+          "description": "É a função de trabalho do metal, que indica a energia necessária para remover um elétron do metal."
+        },
+        {
+          "symbol": "χ'",
+          "description": "Refere-se à afinidade eletrônica do semicondutor, que é a energia liberada quando um elétron é adicionado ao semicondutor."
+        },
+        {
+          "symbol": "E_{c}",
+          "description": "Representa a energia de condução do semicondutor, que é a energia mínima necessária para que um elétron se mova através do material."
+        },
+        {
+          "symbol": "e",
+          "description": "É a carga elementar, que é a carga de um único elétron."
+        },
+        {
+          "symbol": "φ_{p}",
+          "description": "Refere-se à tensão de polarização, que é a diferença de potencial aplicada ao semicondutor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\phi_{ms} = \\phi_{m} - \\phi_{s}",
+      "genericFormula": "\\phi_{ms} = \\phi_{m} - \\phi_{s}",
+      "description": "Esta fórmula representa a diferença de potencial elétrico entre um metal e um semicondutor. A diferença de potencial é importante para entender como os portadores de carga se comportam na interface entre esses dois materiais, influenciando a formação da barreira de potencial.",
+      "concepts": [
+        "Diferença de potencial elétrico",
+        "Barreira de potencial",
+        "Interação entre materiais condutores e semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "φ_{ms}",
+          "description": "Representa a diferença de potencial elétrico entre o metal e o semicondutor."
+        },
+        {
+          "symbol": "φ_{m}",
+          "description": "Representa o potencial elétrico do metal em relação a um referencial padrão."
+        },
+        {
+          "symbol": "φ_{s}",
+          "description": "Representa o potencial elétrico do semicondutor em relação ao mesmo referencial padrão."
+        }
+      ]
+    },
+    {
+      "originalFormula": "V_{G} = V_{FB} = \\Phi_{m} - \\frac{Q_{f}}{C_{ox}}",
+      "genericFormula": "V_{G} = V_{FB} = \\Phi_{m} - \\frac{Q_{f}}{C_{ox}}",
+      "description": "Esta fórmula representa a relação entre a tensão de porta em um transistor de efeito de campo (FET) e a tensão de flatband, que é a tensão na qual a energia de banda do semicondutor é plana. A fórmula mostra como a tensão de porta é afetada pela carga acumulada na interface do semicondutor e pela capacitância do óxido.",
+      "concepts": [
+        "Transistor de Efeito de Campo (FET)",
+        "Tensão de Porta",
+        "Tensão de Flatband",
+        "Capacitância do Óxido",
+        "Carga na Interface"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_{G}",
+          "description": "Representa a tensão aplicada na porta do transistor."
+        },
+        {
+          "symbol": "V_{FB}",
+          "description": "Representa a tensão de flatband, onde não há campo elétrico na interface do semicondutor."
+        },
+        {
+          "symbol": "\\Phi_{m}",
+          "description": "Representa a função de trabalho do metal, que é a energia necessária para remover um elétron do metal."
+        },
+        {
+          "symbol": "Q_{f}",
+          "description": "Representa a carga na interface do semicondutor, que pode afetar a tensão de porta."
+        },
+        {
+          "symbol": "C_{ox}",
+          "description": "Representa a capacitância do óxido, que é a capacidade do material isolante entre a porta e o semicondutor de armazenar carga elétrica."
+        }
+      ]
+    },
+    {
+      "originalFormula": "C_{ox} = \\frac{\\epsilon_{ox}}{t_{ox}}",
+      "genericFormula": "C_{ox} = \\frac{\\epsilon_{ox}}{t_{ox}}",
+      "description": "Esta fórmula representa a capacitância por unidade de área de um óxido em um dispositivo semicondutor, como um transistor. A capacitância é uma medida de quão bem um material pode armazenar carga elétrica, e neste caso, é influenciada pela permissividade do material do óxido e pela espessura do óxido.",
+      "concepts": [
+        "Capacitância",
+        "Permissividade elétrica",
+        "Espessura do material",
+        "Dispositivos semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "C_{ox}",
+          "description": "Representa a capacitância por unidade de área do óxido."
+        },
+        {
+          "symbol": "\\epsilon_{ox}",
+          "description": "Representa a permissividade elétrica do material do óxido, que indica a capacidade do material de permitir a passagem de um campo elétrico."
+        },
+        {
+          "symbol": "t_{ox}",
+          "description": "Representa a espessura do óxido, que é a distância entre as placas do capacitor formado pelo óxido e o material subjacente."
+        }
+      ]
+    },
+    {
+      "originalFormula": "V_{T} = -0.296 \\, \\text{V} = -0.3 \\, \\text{V}",
+      "genericFormula": "V_{T} = -0.296 \\, \\text{V} = -0.3 \\, \\text{V}",
+      "description": "Não foi possível gerar descrição automática",
+      "concepts": [],
+      "symbols": [],
+      "rawText": "{\n  \"originalFormula\": \"V_{T} = -0.296 \\, \\\\text{V} = -0.3 \\, \\\\text{V}\",\n  \"genericFormula\": \"V_{T} = V_{T_{valor}}\",\n  \"description\": \"Esta fórmula representa a tensão de limiar, que é um valor específico de tensão em um circuito, muitas vezes utilizado em dispositivos semicondutores para indicar o ponto em que um dispositivo começa a conduzir corrente.\",\n  \"concepts\": [\n    \"Tensão de limiar\",\n    \"Circuitos elétricos\",\n    \"Semicondutores\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"V_{T}\",\n      \"description\": \"Representa a tensão de limiar, que é a tensão necessária para que um dispositivo semicondutor comece a conduzir corrente elétrica.\"\n    },\n    {\n      \"symbol\": \"V_{T_{valor}}\",\n      \"description\": \"Representa um valor específico de tensão que pode ser usado para indicar a tensão de limiar em diferentes contextos ou dispositivos.\"\n    }\n  ]\n}"
+    },
+    {
+      "originalFormula": "x_{eff} = \\frac{4 \\left( e \\cdot \\phi_{ms} \\right)^{1/2}}{( \\epsilon_{N} )} \\left[ \\frac{( 411.7)(8.85 \\times 10^{-14})(0.407)}{(1.6 \\times 10^{-19})(10^{10})} \\right]^{1/2}",
+      "genericFormula": "x_{eff} = \\frac{4 \\left( e \\cdot \\phi_{ms} \\right)^{1/2}}{( \\epsilon_{N} )} \\left[ \\frac{A \\cdot B \\cdot C}{D \\cdot E} \\right]^{1/2}",
+      "description": "Esta fórmula calcula a espessura efetiva de uma camada de semicondutor, levando em consideração a energia de potencial, a permissividade do material e outras constantes físicas. O resultado é importante para entender como os semicondutores se comportam em dispositivos eletrônicos.",
+      "concepts": [
+        "Espessura efetiva de semicondutores",
+        "Energia de potencial",
+        "Permissividade elétrica",
+        "Constantes físicas"
+      ],
+      "symbols": [
+        {
+          "symbol": "x_{eff}",
+          "description": "Representa a espessura efetiva da camada de semicondutor."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a menor unidade de carga elétrica."
+        },
+        {
+          "symbol": "\\phi_{ms}",
+          "description": "Representa a energia de potencial entre o semicondutor e o metal."
+        },
+        {
+          "symbol": "\\epsilon_{N}",
+          "description": "Representa a permissividade elétrica do material semicondutor."
+        },
+        {
+          "symbol": "A",
+          "description": "Uma constante que pode representar uma propriedade física específica do sistema em questão."
+        },
+        {
+          "symbol": "B",
+          "description": "Representa a permissividade do vácuo, uma constante física fundamental."
+        },
+        {
+          "symbol": "C",
+          "description": "Uma constante que pode representar uma propriedade física específica do sistema em questão."
+        },
+        {
+          "symbol": "D",
+          "description": "Representa a carga elementar, que é a menor unidade de carga elétrica."
+        },
+        {
+          "symbol": "E",
+          "description": "Um fator de escala que pode representar a densidade de portadores em um semicondutor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "V_{T} = -\\left[ | \\phi_{S}(max) | - Q_{i} \\cdot \\frac{( \\epsilon_{ox} )}{( \\epsilon_{si} )} + \\phi_{ms} - 2 \\phi_{f} \\right]",
+      "genericFormula": "V_{T} = -\\left[ | \\phi_{S}(max) | - Q_{i} \\cdot \\frac{( \\epsilon_{ox} )}{( \\epsilon_{si} )} + \\phi_{ms} - 2 \\phi_{f} \\right]",
+      "description": "Esta fórmula representa a tensão de limiar (V_T) em um dispositivo semicondutor, que é a tensão necessária para que o dispositivo comece a conduzir corrente. A fórmula leva em consideração várias contribuições que afetam essa tensão, como a carga de interface, a diferença de potencial entre os materiais e a energia de Fermi.",
+      "concepts": [
+        "Tensão de limiar",
+        "Carga de interface",
+        "Diferença de potencial",
+        "Energia de Fermi",
+        "Materiais semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_{T}",
+          "description": "Representa a tensão de limiar do dispositivo semicondutor, que é a tensão mínima necessária para que o dispositivo comece a conduzir eletricidade."
+        },
+        {
+          "symbol": "| \\phi_{S}(max) |",
+          "description": "Representa o valor absoluto do potencial de superfície máximo, que é uma medida da energia potencial na superfície do semicondutor."
+        },
+        {
+          "symbol": "Q_{i}",
+          "description": "Representa a carga de interface, que é a quantidade de carga acumulada na interface entre dois materiais, influenciando a tensão de limiar."
+        },
+        {
+          "symbol": "\\epsilon_{ox}",
+          "description": "Representa a permissividade elétrica do óxido, que é uma propriedade do material que indica como ele responde a um campo elétrico."
+        },
+        {
+          "symbol": "\\epsilon_{si}",
+          "description": "Representa a permissividade elétrica do silício, que é uma propriedade do material semicondutor que afeta a distribuição de cargas."
+        },
+        {
+          "symbol": "\\phi_{ms}",
+          "description": "Representa a diferença de potencial entre o metal e o semicondutor, que é um fator importante na determinação da tensão de limiar."
+        },
+        {
+          "symbol": "\\phi_{f}",
+          "description": "Representa a energia de Fermi do semicondutor, que é a energia máxima que os elétrons podem ter em um material à temperatura zero."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458
+  ],
+  "lastUpdated": "2026-05-08T22:30:47.673Z"
+}

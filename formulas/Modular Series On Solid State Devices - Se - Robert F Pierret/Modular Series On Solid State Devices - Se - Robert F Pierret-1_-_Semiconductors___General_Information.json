@@ -1,0 +1,388 @@
+{
+  "chapter": "1 - Semiconductors — General Information",
+  "section": "1.1 General Material Properties / 1.1.1 Composition",
+  "questions": [],
+  "answers": [],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "Al_x Ga_{1-x} As",
+      "genericFormula": "\\text{Al}_x\\text{Ga}_{1-x}\\text{As}",
+      "description": "Liga ternária semicondutora de Alumínio-Gálio-Arsênio (AlGaAs), onde x representa a fração molar de Alumínio substituindo o Gálio na rede cristalina do GaAs. Esta liga é fundamental em heteroestruturas e dispositivos optoeletrônicos de alta performance. Ao variar x entre 0 e 1, é possível ajustar continuamente o bandgap do material entre o valor do GaAs puro (~1,42 eV, gap direto) e do AlAs puro (~2,16 eV, gap indireto). Para x < 0,45, o material possui gap direto, tornando-o adequado para lasers e LEDs. Para x > 0,45, o gap torna-se indireto. O AlGaAs possui parâmetro de rede muito próximo ao do GaAs (~0,3% de descasamento), permitindo crescimento epitaxial de altíssima qualidade, essencial para heteroestruturas como poços quânticos, fios quânticos e pontos quânticos, além de transistores de alta mobilidade eletrônica (HEMT) e lasers de dupla heteroestrutura.",
+      "concepts": [
+        "liga ternária semicondutora",
+        "bandgap sintonizável",
+        "heteroestruturas",
+        "gap direto e indireto",
+        "epitaxia por feixe molecular (MBE)",
+        "MOCVD",
+        "parâmetro de rede",
+        "poço quântico",
+        "confinamento quântico",
+        "optoeletrônica",
+        "HEMT",
+        "laser semicondutor",
+        "fração molar",
+        "engenharia de bandas"
+      ],
+      "symbols": [
+        {
+          "symbol": "x",
+          "description": "Fração molar de Alumínio (Al), variando de 0 a 1; controla a composição da liga e, consequentemente, o bandgap e outras propriedades eletrônicas"
+        },
+        {
+          "symbol": "1 - x",
+          "description": "Fração molar de Gálio (Ga) na liga; decresce à medida que x aumenta"
+        },
+        {
+          "symbol": "\\text{Al}",
+          "description": "Alumínio, elemento do grupo III da tabela periódica, substitui parcialmente o Gálio na rede zinc-blende"
+        },
+        {
+          "symbol": "\\text{Ga}",
+          "description": "Gálio, elemento do grupo III, forma a base do composto GaAs com bandgap direto de ~1,42 eV a 300 K"
+        },
+        {
+          "symbol": "\\text{As}",
+          "description": "Arsênio, elemento do grupo V da tabela periódica, ocupa os sítios aniônicos da rede cristalina zinc-blende em toda a composição da liga"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "band-structure",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "AlGaAs",
+        "ternary alloy",
+        "bandgap",
+        "band",
+        "direct gap",
+        "indirect gap",
+        "heterostructure",
+        "quantum well",
+        "confinement",
+        "optoelectronics",
+        "HEMT",
+        "epitaxy",
+        "composition",
+        "mole fraction",
+        "band engineering",
+        "GaAs",
+        "AlAs",
+        "semiconductor alloy",
+        "laser",
+        "LED"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "bandgap-vs-composition",
+        "graphParameters": [
+          "bandgap energy (eV)",
+          "mole fraction x",
+          "direct gap region (0 ≤ x < 0.45)",
+          "indirect gap region (0.45 < x ≤ 1)",
+          "lattice parameter vs composition",
+          "band alignment (type-I)"
+        ]
+      },
+      "relatedFormulas": [
+        "Vegard's Law",
+        "bandgap-AlGaAs-direct",
+        "bandgap-AlGaAs-indirect",
+        "quantum-well-energy-levels",
+        "Schrodinger-envelope-function",
+        "effective-mass-AlGaAs",
+        "heterojunction-band-offset",
+        "HEMT-2DEG-density",
+        "Fermi-Dirac-distribution"
+      ]
+    },
+    {
+      "originalFormula": "GaAs_{1-x}P_x",
+      "genericFormula": "\\text{GaAs}_{1-x}\\text{P}_x",
+      "description": "Esta fórmula representa a liga ternária semicondutora GaAsP (Arsenieto-Fosfeto de Gálio), onde x é a fração molar de fósforo (P) substituindo o arsênio (As) na rede cristalina. Para x = 0, obtém-se GaAs puro (gap direto, Eg ≈ 1,42 eV a 300K); para x = 1, obtém-se GaP puro (gap indireto, Eg ≈ 2,26 eV a 300K). A transição de gap direto para indireto ocorre em torno de x ≈ 0,45. Esse material é amplamente utilizado em LEDs e lasers, especialmente na faixa do espectro visível (vermelho, laranja, amarelo), sendo um dos primeiros materiais usados em dispositivos optoeletrônicos práticos. A composição x permite o ajuste (bandgap engineering) da energia de gap e, consequentemente, do comprimento de onda emitido.",
+      "concepts": [
+        "liga ternária semicondutora",
+        "engenharia de bandgap",
+        "gap direto e indireto",
+        "fração molar",
+        "optoeletrônica",
+        "emissão de luz",
+        "estrutura cristalina zincblende",
+        "substituição isoeletrônica",
+        "transição de fase do bandgap"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\text{Ga}",
+          "description": "Gálio – elemento do grupo III que forma o cátion da rede cristalina"
+        },
+        {
+          "symbol": "\\text{As}",
+          "description": "Arsênio – elemento do grupo V, ânion parcialmente substituído pelo fósforo"
+        },
+        {
+          "symbol": "\\text{P}",
+          "description": "Fósforo – elemento do grupo V que substitui parcialmente o arsênio na rede"
+        },
+        {
+          "symbol": "x",
+          "description": "Fração molar de fósforo, variando de 0 a 1 (0 = GaAs puro; 1 = GaP puro)"
+        },
+        {
+          "symbol": "1 - x",
+          "description": "Fração molar de arsênio remanescente na liga"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "band-structure",
+        "domain": "optoelectronics"
+      },
+      "keywords": [
+        "GaAsP",
+        "ternary alloy",
+        "bandgap engineering",
+        "direct gap",
+        "indirect gap",
+        "LED",
+        "laser",
+        "mole fraction",
+        "compound semiconductor",
+        "III-V semiconductor",
+        "band",
+        "gap",
+        "energy",
+        "optoelectronics",
+        "visible light",
+        "composition"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "bandgap-vs-composition",
+        "graphParameters": [
+          "mole fraction x (0 to 1)",
+          "bandgap energy Eg (eV)",
+          "direct gap region (0 ≤ x ≤ 0.45)",
+          "indirect gap region (0.45 < x ≤ 1)",
+          "transition point x ≈ 0.45"
+        ]
+      },
+      "relatedFormulas": [
+        "Vegard's Law",
+        "Bandgap bowing parameter",
+        "LED emission wavelength",
+        "Kronig-Penney model",
+        "k·p perturbation theory",
+        "Fermi-Dirac distribution",
+        "carrier concentration"
+      ]
+    },
+    {
+      "originalFormula": "Hg_{1-x}Cd_x Te",
+      "genericFormula": "\\text{Hg}_{1-x}\\text{Cd}_x\\text{Te}",
+      "description": "Esta é a fórmula química do mercúrio-cádmio-telureto (MCT ou HgCdTe), um semicondutor ternário de composição variável formado pela liga entre HgTe e CdTe. O parâmetro x (0 ≤ x ≤ 1) representa a fração molar de CdTe na liga, permitindo ajuste contínuo da largura de banda proibida (bandgap) desde valores negativos (HgTe puro, semimetal topológico, x=0) até ~1,6 eV (CdTe puro, x=1). Para x ≈ 0,2–0,3, o material apresenta bandgap na faixa do infravermelho médio (~0,1–0,5 eV), tornando-o extremamente importante para detectores infravermelhos. O ponto crítico ocorre em x ≈ 0,16–0,17, onde a transição semimetal-semicondutor ocorre. A possibilidade de engenharia do bandgap por composição torna o HgCdTe o material de eleição para fotodetectores de alta performance em missões espaciais, sistemas de visão noturna e sensoriamento térmico.",
+      "concepts": [
+        "semicondutor ternário",
+        "liga semicondutora",
+        "engenharia de bandgap",
+        "banda proibida ajustável",
+        "detector infravermelho",
+        "transição semimetal-semicondutor",
+        "estrutura zinc-blende",
+        "fração molar",
+        "mercúrio-cádmio-telureto",
+        "MCT",
+        "bandgap negativo",
+        "infravermelho médio e longo"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\text{Hg}",
+          "description": "Mercúrio (Mercury) – elemento do grupo IIB com número atômico 80; no HgTe forma um semimetal com bandgap negativo"
+        },
+        {
+          "symbol": "\\text{Cd}",
+          "description": "Cádmio (Cadmium) – elemento do grupo IIB com número atômico 48; no CdTe forma um semicondutor com bandgap ~1,6 eV"
+        },
+        {
+          "symbol": "\\text{Te}",
+          "description": "Telúrio (Tellurium) – elemento do grupo VIA com número atômico 52; forma a subrede aniônica da liga"
+        },
+        {
+          "symbol": "x",
+          "description": "Fração molar de CdTe na liga (0 ≤ x ≤ 1); parâmetro de composição que controla continuamente o bandgap do material"
+        },
+        {
+          "symbol": "1 - x",
+          "description": "Fração molar de HgTe na liga; complementar à fração de CdTe"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "band-structure",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "HgCdTe",
+        "MCT",
+        "mercury cadmium telluride",
+        "ternary semiconductor",
+        "bandgap engineering",
+        "tunable bandgap",
+        "infrared detector",
+        "narrow bandgap",
+        "semimetal",
+        "zinc-blende",
+        "composition",
+        "alloy",
+        "band",
+        "gap",
+        "energy",
+        "infrared",
+        "detector",
+        "carrier",
+        "effective-mass"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "bandgap-vs-composition",
+        "graphParameters": [
+          "bandgap",
+          "composition x",
+          "temperature",
+          "wavelength cutoff"
+        ]
+      },
+      "relatedFormulas": [
+        "Varshni-equation",
+        "Vegard-law",
+        "Hansen-bandgap-HgCdTe",
+        "Fermi-Dirac-distribution",
+        "effective-mass-HgCdTe",
+        "intrinsic-carrier-concentration",
+        "Schrodinger-equation",
+        "k·p-perturbation-theory",
+        "photodetector-cutoff-wavelength"
+      ]
+    },
+    {
+      "originalFormula": "Ga_x In_{1-x} As_{1-y} P_y",
+      "genericFormula": "\\text{Ga}_x\\text{In}_{1-x}\\text{As}_{1-y}\\text{P}_y",
+      "description": "Esta expressão representa o composto semicondutor quaternário GaInAsP, um dos mais importantes materiais para aplicações optoeletrônicas. A composição é controlada por dois parâmetros independentes: x (fração molar de Ga em relação a In no sub-retículo metálico) e y (fração molar de P em relação a As no sub-retículo não-metálico). Ao variar x e y de forma independente, é possível ajustar simultaneamente o parâmetro de rede e o bandgap do material, permitindo crescimento epitaxial com casamento de rede em substratos como InP (quando 0 ≤ x ≤ 0,47 e y ≈ 2,2x) e cobrindo bandgaps de aproximadamente 0,75 eV a 1,35 eV, faixa espectral de 0,92 µm a 1,65 µm. Este material é amplamente utilizado em lasers, fotodetectores e amplificadores ópticos para telecomunicações nas janelas de 1,3 µm e 1,55 µm.",
+      "concepts": [
+        "semicondutor quaternário",
+        "liga semicondutora",
+        "composição molar",
+        "engenharia de bandgap",
+        "casamento de rede (lattice matching)",
+        "epitaxia",
+        "optoeletrônica",
+        "interpolação de Vegard",
+        "sub-retículo cristalino",
+        "estrutura zincblende"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\text{Ga}",
+          "description": "Gálio — elemento do grupo III, contribui para o sub-retículo de cátions junto com o Índio"
+        },
+        {
+          "symbol": "\\text{In}",
+          "description": "Índio — elemento do grupo III, forma a base do sub-retículo de cátions"
+        },
+        {
+          "symbol": "\\text{As}",
+          "description": "Arsênio — elemento do grupo V, componente dominante do sub-retículo de ânions para y pequeno"
+        },
+        {
+          "symbol": "\\text{P}",
+          "description": "Fósforo — elemento do grupo V, componente do sub-retículo de ânions; aumenta o bandgap e reduz o parâmetro de rede"
+        },
+        {
+          "symbol": "x",
+          "description": "Fração molar de Gálio no sub-retículo de cátions; 0 ≤ x ≤ 1. Para x = 0: InAs(1-y)Py; para x = 1: GaAs(1-y)Py"
+        },
+        {
+          "symbol": "1 - x",
+          "description": "Fração molar de Índio no sub-retículo de cátions, complementar a x"
+        },
+        {
+          "symbol": "y",
+          "description": "Fração molar de Fósforo no sub-retículo de ânions; 0 ≤ y ≤ 1. Para y = 0: GaxIn(1-x)As; para y = 1: GaxIn(1-x)P"
+        },
+        {
+          "symbol": "1 - y",
+          "description": "Fração molar de Arsênio no sub-retículo de ânions, complementar a y"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "alloy-composition",
+        "domain": "optoelectronics"
+      },
+      "keywords": [
+        "quaternary alloy",
+        "bandgap engineering",
+        "lattice matching",
+        "InP substrate",
+        "GaInAsP",
+        "optoelectronics",
+        "telecom wavelength",
+        "1550nm",
+        "1310nm",
+        "Vegard law",
+        "mole fraction",
+        "III-V semiconductor",
+        "compound semiconductor",
+        "epitaxy",
+        "laser material",
+        "photodetector",
+        "band structure",
+        "effective mass"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "composition-bandgap-lattice-parameter",
+        "graphParameters": [
+          "mole fraction x (Ga content)",
+          "mole fraction y (P content)",
+          "bandgap energy (eV)",
+          "lattice parameter (Å)",
+          "emission wavelength (µm)",
+          "lattice mismatch with InP (%)"
+        ]
+      },
+      "relatedFormulas": [
+        "Vegard's Law",
+        "Bandgap bowing equation",
+        "Al_x Ga_{1-x} As",
+        "In_x Ga_{1-x} As",
+        "GaAs bandgap",
+        "InP bandgap",
+        "InAs bandgap",
+        "GaP bandgap",
+        "lattice parameter interpolation",
+        "effective mass interpolation",
+        "k·p perturbation theory"
+      ]
+    }
+  ],
+  "bookTitle": "Modular Series On Solid State Devices",
+  "author": "Unknown",
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "lastUpdated": "2026-05-09T14:18:19.441Z"
+}

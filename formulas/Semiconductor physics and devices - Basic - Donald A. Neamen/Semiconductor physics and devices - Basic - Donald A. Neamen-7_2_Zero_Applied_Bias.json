@@ -1,0 +1,539 @@
+{
+  "chapter": "7.2 Zero Applied Bias",
+  "section": "7.2.1 Built-in Potential Barrier",
+  "questions": [
+    {
+      "number": "Ex. 7.1 (a)",
+      "text": "Calculate the built-in potential barrier in a silicon pn junction at T = 300 K for (i) N_d = 5 \\times 10^{15} \\text{ cm}^{-3}, N_a = 10^{17} \\text{ cm}^{-3} and (ii) N_a = 2 \\times 10^{16} \\text{ cm}^{-3}.",
+      "formulas": [
+        {
+          "originalFormula": "V_{bi} = V_t \\ln \\left( \\frac{N_a}{n_i^2} \\right)",
+          "genericFormula": "V_{bi} = V_t \\ln \\left( \\frac{N_a}{n_i^2} \\right)",
+          "description": "Esta fórmula representa a tensão de built-in (ou tensão de polarização interna) em uma junção de semicondutor, que é a tensão que se estabelece na interface entre um semicondutor dopado do tipo p e um dopado do tipo n, devido à diferença de concentração de portadores de carga.",
+          "concepts": [
+            "Tensão de built-in",
+            "Dopagem em semicondutores",
+            "Equilíbrio de cargas",
+            "Concentração de portadores de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{bi}",
+              "description": "Representa a tensão de built-in, que é a diferença de potencial elétrico que se estabelece na junção de dois tipos de semicondutores."
+            },
+            {
+              "symbol": "V_t",
+              "description": "Representa a tensão térmica, que é uma medida da energia térmica disponível por unidade de carga em um semicondutor a uma temperatura específica."
+            },
+            {
+              "symbol": "N_a",
+              "description": "Representa a concentração de dopantes do tipo aceitor (p), que são átomos que criam lacunas e aumentam a quantidade de portadores de carga positiva no semicondutor."
+            },
+            {
+              "symbol": "n_i",
+              "description": "Representa a concentração intrínseca de portadores de carga em um semicondutor puro, que é a quantidade de elétrons e lacunas presentes em um semicondutor não dopado."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "Ex. 7.1 (b)",
+      "text": "Repeat part (a) for a GaAs pn junction.",
+      "formulas": [
+        {
+          "originalFormula": "V_{bi} = V_t \\ln \\left( \\frac{N_a}{n_i^2} \\right)",
+          "genericFormula": "V_{bi} = V_t \\ln \\left( \\frac{N_a}{n_i^2} \\right)",
+          "description": "Esta fórmula representa a tensão de built-in (tensão interna) em uma junção de um semicondutor, que é a tensão que se estabelece devido à diferença de concentrações de portadores de carga em dois materiais semicondutores diferentes, como um semicondutor tipo p e um tipo n.",
+          "concepts": [
+            "Tensão de built-in",
+            "Semicondutores",
+            "Concentração de portadores de carga",
+            "Equilíbrio térmico"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{bi}",
+              "description": "Representa a tensão de built-in, que é a diferença de potencial elétrico que se forma na junção de dois materiais semicondutores devido à diferença nas concentrações de dopantes."
+            },
+            {
+              "symbol": "V_t",
+              "description": "Representa a tensão térmica, que é uma medida da energia térmica disponível para os portadores de carga em um semicondutor, e é proporcional à temperatura do material."
+            },
+            {
+              "symbol": "N_a",
+              "description": "Representa a concentração de dopantes do tipo aceitor (p), que são átomos que criam lacunas (portadores positivos) no semicondutor."
+            },
+            {
+              "symbol": "n_i",
+              "description": "Representa a concentração intrínseca de portadores de carga (elétrons e lacunas) em um semicondutor puro, sem dopagem."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "Ex. 7.1 (a)",
+      "text": "The built-in potential barrier is determined from Equation (7.10) as V_{bi} = V_t \\ln \\left( \\frac{N_a}{n_i^2} \\right) = 0.713 \\text{ V}.",
+      "formulas": [
+        {
+          "originalFormula": "V_{bi} = V_t \\ln \\left( \\frac{N_a}{n_i^2} \\right)",
+          "genericFormula": "V_{bi} = V_t \\ln \\left( \\frac{N_a}{n_i^2} \\right)",
+          "description": "Esta fórmula representa a tensão de built-in (ou tensão de junção) em um semicondutor dopado, que é a tensão que se forma na junção de um semicondutor tipo p e um semicondutor tipo n. Essa tensão é crucial para entender o funcionamento de dispositivos semicondutores, como diodos e transistores.",
+          "concepts": [
+            "Tensão de built-in",
+            "Dopagem de semicondutores",
+            "Equilíbrio de cargas",
+            "Propriedades elétricas de materiais semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{bi}",
+              "description": "Representa a tensão de built-in, que é a diferença de potencial elétrico que se forma na junção de dois materiais semicondutores dopados."
+            },
+            {
+              "symbol": "V_t",
+              "description": "Representa a tensão térmica, que é uma medida da energia térmica disponível por unidade de carga em um semicondutor, geralmente dependente da temperatura."
+            },
+            {
+              "symbol": "N_a",
+              "description": "Representa a concentração de dopantes do tipo p, ou seja, a quantidade de átomos que introduzem lacunas no material semicondutor."
+            },
+            {
+              "symbol": "n_i",
+              "description": "Representa a concentração intrínseca de portadores de carga em um semicondutor puro, que é a quantidade de elétrons e lacunas presentes em equilíbrio térmico."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "Ex. 7.1 (b)",
+      "text": "The built-in potential barrier for the GaAs pn junction can be calculated similarly.",
+      "formulas": [
+        {
+          "originalFormula": "V_{bi} = V_t \\ln \\left( \\frac{N_a}{n_i^2} \\right)",
+          "genericFormula": "V_{bi} = V_t \\ln \\left( \\frac{N_a}{n_i^2} \\right)",
+          "description": "Esta fórmula representa a tensão de built-in (ou tensão de equilíbrio) em uma junção p-n. Essa tensão é importante em dispositivos semicondutores, pois determina a diferença de potencial que se forma na interface entre os materiais dopados, influenciando o comportamento elétrico do dispositivo.",
+          "concepts": [
+            "Tensão de built-in",
+            "Junção p-n",
+            "Dopagem de semicondutores",
+            "Equilíbrio térmico"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{bi}",
+              "description": "Representa a tensão de built-in, que é a diferença de potencial elétrico que se forma na junção de um semicondutor dopado p e um dopado n."
+            },
+            {
+              "symbol": "V_t",
+              "description": "Representa a tensão térmica, que é uma medida da energia térmica disponível por carga elétrica em um semicondutor a uma temperatura específica."
+            },
+            {
+              "symbol": "N_a",
+              "description": "Representa a concentração de átomos dopantes do tipo aceito (p) no semicondutor, que influencia a quantidade de portadores de carga positiva."
+            },
+            {
+              "symbol": "n_i",
+              "description": "Representa a concentração intrínseca de portadores de carga (elétrons e lacunas) em um semicondutor puro, que depende da temperatura e do material."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "E_{F} = E_{c} - eV_{bi}",
+      "genericFormula": "E_{F} = E_{c} - eV_{bi}",
+      "description": "Esta fórmula representa a relação entre a energia do nível de Fermi em um semicondutor e a energia da banda de condução, levando em conta a tensão de built-in. O nível de Fermi é uma medida da energia dos elétrons em um material, enquanto a energia da banda de condução é o nível de energia onde os elétrons podem se mover livremente e conduzir eletricidade. A tensão de built-in é a diferença de potencial que se forma em uma junção de semicondutores.",
+      "concepts": [
+        "Nível de Fermi",
+        "Energia da banda de condução",
+        "Tensão de built-in",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{F}",
+          "description": "Representa a energia do nível de Fermi, que é a energia máxima que os elétrons podem ter em um material a temperatura zero."
+        },
+        {
+          "symbol": "E_{c}",
+          "description": "Representa a energia da banda de condução, que é o nível de energia onde os elétrons podem se mover livremente e contribuir para a condução elétrica."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a carga elétrica de um único elétron."
+        },
+        {
+          "symbol": "V_{bi}",
+          "description": "Representa a tensão de built-in, que é a diferença de potencial elétrico que se forma em uma junção de semicondutores devido à separação de cargas."
+        }
+      ]
+    },
+    {
+      "originalFormula": "E_{F} = E_{v} + eV_{bi}",
+      "genericFormula": "E_{F} = E_{v} + eV_{bi}",
+      "description": "Esta fórmula representa a relação entre a energia do nível de Fermi, a energia do nível de valência e a tensão de barreira interna em um semicondutor. O nível de Fermi é uma medida da energia dos elétrons em um material, enquanto a energia do nível de valência é a energia máxima que os elétrons podem ocupar em um material. A tensão de barreira interna é a energia necessária para mover um elétron de um lado da junção do semicondutor para o outro.",
+      "concepts": [
+        "Nível de Fermi",
+        "Energia do nível de valência",
+        "Tensão de barreira interna",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{F}",
+          "description": "Representa a energia do nível de Fermi, que é o nível de energia mais alto ocupado por elétrons em um material a temperatura zero."
+        },
+        {
+          "symbol": "E_{v}",
+          "description": "Representa a energia do nível de valência, que é a energia máxima que os elétrons podem ocupar em um material semicondutor."
+        },
+        {
+          "symbol": "e",
+          "description": "Representa a carga elementar, que é a carga elétrica de um único elétron."
+        },
+        {
+          "symbol": "V_{bi}",
+          "description": "Representa a tensão de barreira interna, que é a diferença de potencial elétrico que impede a movimentação de elétrons entre duas regiões de um semicondutor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "V_{bi} = V_t \\ln \\left( \\frac{N_a}{n_i^2} \\right)",
+      "genericFormula": "V_{bi} = V_t \\ln \\left( \\frac{N_a}{n_i^2} \\right)",
+      "description": "Esta fórmula representa a tensão de built-in (tensão interna) em uma junção p-n de um semicondutor. Essa tensão é crucial para entender como os semicondutores se comportam em dispositivos eletrônicos, especialmente em diodos e transistores.",
+      "concepts": [
+        "Tensão de built-in",
+        "Semicondutores",
+        "Junção p-n",
+        "Concentrações de portadores de carga"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_{bi}",
+          "description": "Representa a tensão de built-in da junção p-n, que é a diferença de potencial elétrico que se forma na interface entre os materiais dopados p e n."
+        },
+        {
+          "symbol": "V_t",
+          "description": "Representa a tensão térmica, que é uma medida da energia térmica disponível por portador de carga em um semicondutor a uma temperatura específica."
+        },
+        {
+          "symbol": "N_a",
+          "description": "Representa a concentração de dopantes do tipo aceitor (p) no material semicondutor, que influencia a quantidade de portadores de carga positiva."
+        },
+        {
+          "symbol": "n_i",
+          "description": "Representa a concentração intrínseca de portadores de carga no semicondutor, que é a quantidade de elétrons e lacunas presentes em um semicondutor puro."
+        }
+      ]
+    },
+    {
+      "originalFormula": "V_t = \\frac{kT}{e}",
+      "genericFormula": "V_t = \\frac{kT}{e}",
+      "description": "Esta fórmula representa a tensão térmica, que é a tensão gerada em um semicondutor devido à temperatura. Ela é importante para entender como a temperatura afeta o comportamento elétrico dos materiais semicondutores.",
+      "concepts": [
+        "Tensão térmica",
+        "Temperatura",
+        "Constante de Boltzmann",
+        "Carga elementar"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_t",
+          "description": "Representa a tensão térmica, que é a tensão associada à energia térmica dos portadores de carga em um semicondutor."
+        },
+        {
+          "symbol": "k",
+          "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura em Kelvin, que é uma medida da energia térmica de um sistema."
+        },
+        {
+          "symbol": "e",
+          "description": "É a carga elementar, que é a menor unidade de carga elétrica que pode existir isoladamente."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270
+  ],
+  "lastUpdated": "2026-05-08T21:28:37.988Z"
+}

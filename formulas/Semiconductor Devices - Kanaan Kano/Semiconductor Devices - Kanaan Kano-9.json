@@ -1,0 +1,1683 @@
+{
+  "chapter": "9",
+  "questions": [
+    {
+      "number": "1",
+      "text": "Derive an expression for the conductance \\( \\frac{\\partial I_C}{\\partial V_{EC}} \\) at a constant \\( V_{EB} \\).",
+      "formulas": [
+        {
+          "originalFormula": "\\frac{\\partial I_C}{\\partial V_{EC}}",
+          "genericFormula": "\\frac{\\partial I}{\\partial V}",
+          "description": "Esta fórmula representa a taxa de variação da corrente de coletor em relação à tensão entre o emissor e o coletor em um transistor. Em outras palavras, ela indica como a corrente que flui através do coletor muda quando a tensão entre o emissor e o coletor é alterada.",
+          "concepts": [
+            "Transistores",
+            "Corrente elétrica",
+            "Tensão elétrica",
+            "Derivadas parciais"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_C",
+              "description": "Representa a corrente que flui através do coletor do transistor."
+            },
+            {
+              "symbol": "V_{EC}",
+              "description": "Representa a tensão entre o emissor e o coletor do transistor."
+            }
+          ],
+          "chapter": "9",
+          "source": "question",
+          "questionNumber": "1",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "number": "9.1",
+      "text": "Write the expression for the collector current I_C in a PNP BJT.",
+      "formulas": [
+        {
+          "originalFormula": "I_C = -qAD_p \\frac{dp}{dx}/W_B = \\left( \\frac{qAD_p}{W_B} \\right) p_0 \\exp \\left( \\frac{qV_{EB}}{kT} \\right)",
+          "genericFormula": "I_C = -qAD_p \\frac{dp}{dx}/W_B = \\left( \\frac{qAD_p}{W_B} \\right) p_0 \\exp \\left( \\frac{qV_{EB}}{kT} \\right)",
+          "description": "Essa fórmula representa a corrente de carga em um semicondutor, levando em consideração a difusão de portadores de carga e a influência de um campo elétrico. A corrente é influenciada pela concentração de portadores, a mobilidade deles e a diferença de potencial aplicada.",
+          "concepts": [
+            "Corrente elétrica",
+            "Difusão de portadores de carga",
+            "Campo elétrico",
+            "Concentração de portadores",
+            "Mobilidade de portadores",
+            "Efeito de temperatura"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_C",
+              "description": "Representa a corrente de carga em um semicondutor."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elementar, que é a carga de um único elétron."
+            },
+            {
+              "symbol": "A",
+              "description": "Representa a área da seção transversal do semicondutor através da qual a corrente flui."
+            },
+            {
+              "symbol": "D_p",
+              "description": "Representa o coeficiente de difusão dos portadores de carga do tipo positivo (buracos)."
+            },
+            {
+              "symbol": "dp/dx",
+              "description": "Representa a variação da densidade de portadores de carga em relação à posição, indicando como a concentração muda ao longo do material."
+            },
+            {
+              "symbol": "W_B",
+              "description": "Representa a largura da região de depleção em um dispositivo semicondutor."
+            },
+            {
+              "symbol": "p_0",
+              "description": "Representa a concentração de portadores de carga do tipo positivo (buracos) em equilíbrio térmico."
+            },
+            {
+              "symbol": "V_{EB}",
+              "description": "Representa a tensão aplicada entre a junção emissora e a base em um transistor."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia térmica."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta em Kelvin."
+            }
+          ],
+          "chapter": "9",
+          "source": "question",
+          "questionNumber": "9.1",
+          "page": 16
+        }
+      ]
+    },
+    {
+      "number": "9.2",
+      "text": "What is the expression for the conductance \\frac{\\partial I_C}{\\partial V_{EC}}?",
+      "formulas": [
+        {
+          "originalFormula": "\\frac{\\partial I_C}{\\partial V_{EC}} = \\left( \\frac{dI_C}{dW_B} \\right) \\left( \\frac{dW_B}{dV_{EC}} \\right)",
+          "genericFormula": "\\frac{\\partial I}{\\partial V} = \\left( \\frac{dI}{dW} \\right) \\left( \\frac{dW}{dV} \\right)",
+          "description": "Esta fórmula representa a relação entre a variação da corrente de coletor em relação à variação da tensão de emissor-coletor, que é influenciada pela variação da largura da base em relação à corrente de coletor e à tensão de emissor-coletor. Em outras palavras, ela mostra como a mudança na largura da base de um transistor afeta a corrente de coletor quando a tensão de emissor-coletor é alterada.",
+          "concepts": [
+            "Derivadas parciais",
+            "Transistores",
+            "Corrente elétrica",
+            "Tensão elétrica",
+            "Largura da base"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_C",
+              "description": "Representa a corrente que flui através do coletor de um transistor."
+            },
+            {
+              "symbol": "V_{EC}",
+              "description": "Representa a tensão entre o emissor e o coletor de um transistor."
+            },
+            {
+              "symbol": "W_B",
+              "description": "Representa a largura da base de um transistor, que é a região entre o emissor e o coletor."
+            },
+            {
+              "symbol": "dI_C",
+              "description": "Representa uma pequena variação na corrente de coletor."
+            },
+            {
+              "symbol": "dW_B",
+              "description": "Representa uma pequena variação na largura da base."
+            },
+            {
+              "symbol": "dV_{EC}",
+              "description": "Representa uma pequena variação na tensão entre o emissor e o coletor."
+            }
+          ],
+          "chapter": "9",
+          "source": "question",
+          "questionNumber": "9.2",
+          "page": 32
+        }
+      ]
+    },
+    {
+      "number": "9.3",
+      "text": "Rewrite Equation (9.2) in terms of \\frac{\\partial I_C}{\\partial V_{EC}}.",
+      "formulas": [
+        {
+          "originalFormula": "\\frac{\\partial I_C}{\\partial V_{EC}} = \\left( -\\frac{I_C}{W_B} \\right) \\frac{dW_B}{dV_{EC}}",
+          "genericFormula": "\\frac{\\partial I}{\\partial V} = \\left( -\\frac{I}{W} \\right) \\frac{dW}{dV}",
+          "description": "Esta fórmula representa a taxa de variação da corrente coletora em relação à tensão entre o emissor e o coletor em um transistor, mostrando como a corrente muda quando a largura da base do transistor é alterada em resposta a mudanças na tensão.",
+          "concepts": [
+            "Corrente elétrica",
+            "Tensão elétrica",
+            "Transistores",
+            "Largura da base",
+            "Derivadas parciais"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_C",
+              "description": "Representa a corrente que flui do coletor do transistor."
+            },
+            {
+              "symbol": "V_{EC}",
+              "description": "Representa a tensão entre o emissor e o coletor do transistor."
+            },
+            {
+              "symbol": "W_B",
+              "description": "Representa a largura da base do transistor, que é a região entre o emissor e o coletor."
+            },
+            {
+              "symbol": "dW_B/dV_{EC}",
+              "description": "Representa a taxa de variação da largura da base em relação à variação da tensão entre o emissor e o coletor."
+            }
+          ],
+          "chapter": "9",
+          "source": "question",
+          "questionNumber": "9.3",
+          "page": 47
+        }
+      ]
+    },
+    {
+      "number": "9.4",
+      "text": "What is the expression for the Early voltage V_A?",
+      "formulas": [
+        {
+          "originalFormula": "V_A = -W_B \\frac{dV_{EC}}{dW_B}",
+          "genericFormula": "V_A = -W_B \\frac{dV_{EC}}{dW_B}",
+          "description": "Esta fórmula relaciona a variação do potencial elétrico em um ponto A com o trabalho realizado por uma força em um sistema, considerando a variação do potencial elétrico em relação ao trabalho. O sinal negativo indica que um aumento no trabalho realizado resulta em uma diminuição do potencial elétrico em A.",
+          "concepts": [
+            "Potencial elétrico",
+            "Trabalho realizado por uma força",
+            "Derivada e variação de grandezas"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_A",
+              "description": "Representa o potencial elétrico no ponto A."
+            },
+            {
+              "symbol": "W_B",
+              "description": "Representa o trabalho realizado por uma força no sistema B."
+            },
+            {
+              "symbol": "V_{EC}",
+              "description": "Representa o potencial elétrico em um ponto de referência, que pode variar com o trabalho realizado."
+            },
+            {
+              "symbol": "dV_{EC}",
+              "description": "Representa a variação do potencial elétrico em relação a uma pequena mudança no trabalho realizado."
+            },
+            {
+              "symbol": "dW_B",
+              "description": "Representa uma pequena variação no trabalho realizado pelo sistema B."
+            }
+          ],
+          "chapter": "9",
+          "source": "question",
+          "questionNumber": "9.4",
+          "page": 63
+        }
+      ]
+    },
+    {
+      "number": "9.5",
+      "text": "Write the modified Ebers-Moll equation for I_C assuming operation in the active region.",
+      "formulas": [
+        {
+          "originalFormula": "I_C = I_s \\left[ \\exp \\left( \\frac{qV_{EB}}{kT} \\right) - 1 \\right] \\left[ 1 + \\frac{V_{EC}}{V_A} \\right]",
+          "genericFormula": "I_C = I_s \\left[ \\exp \\left( \\frac{qV_{EB}}{kT} \\right) - 1 \\right] \\left[ 1 + \\frac{V_{EC}}{V_A} \\right]",
+          "description": "Esta fórmula representa a corrente de coletor em um transistor bipolar, levando em consideração a corrente de saturação, a tensão entre o emissor e a base, a temperatura e a tensão de coletor a emissor. Ela mostra como a corrente de coletor depende da tensão aplicada e de outros fatores que influenciam o comportamento do transistor.",
+          "concepts": [
+            "Transistor bipolar",
+            "Corrente de coletor",
+            "Corrente de saturação",
+            "Efeito da temperatura",
+            "Tensão de polarização"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_C",
+              "description": "Representa a corrente que flui do coletor do transistor."
+            },
+            {
+              "symbol": "I_s",
+              "description": "É a corrente de saturação do transistor, que é uma constante característica do dispositivo."
+            },
+            {
+              "symbol": "q",
+              "description": "É a carga elementar, que representa a carga de um elétron."
+            },
+            {
+              "symbol": "V_{EB}",
+              "description": "É a tensão entre o emissor e a base do transistor."
+            },
+            {
+              "symbol": "k",
+              "description": "É a constante de Boltzmann, que relaciona a temperatura com a energia térmica em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "É a temperatura absoluta medida em Kelvin."
+            },
+            {
+              "symbol": "V_{EC}",
+              "description": "É a tensão entre o emissor e o coletor do transistor."
+            },
+            {
+              "symbol": "V_A",
+              "description": "É a tensão de avalanche, que é uma característica do transistor que afeta seu funcionamento em altas tensões."
+            }
+          ],
+          "chapter": "9",
+          "source": "question",
+          "questionNumber": "9.5",
+          "page": 78
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Calculate the storage time t_{s} using Q_{B}(0).",
+      "formulas": [
+        {
+          "originalFormula": "t_{s} = 2.5 \\times 10^{-7} \\ln\\left(\\frac{27.5}{20}\\right)",
+          "genericFormula": "t_{s} = 2.5 \\times 10^{-7} \\ln\\left(\\frac{27.5}{20}\\right)",
+          "description": "Não foi possível gerar descrição automática",
+          "concepts": [],
+          "symbols": [],
+          "rawText": "{\n  \"originalFormula\": \"t_{s} = 2.5 \\times 10^{-7} \\ln\\\\left(\\\\frac{27.5}{20}\\\\right)\",\n  \"genericFormula\": \"t_{s} = k \\\\ln\\\\left(\\\\frac{a}{b}\\\\right)\",\n  \"description\": \"Esta fórmula representa o tempo de resposta ou o tempo de estabilização de um sistema em função de uma razão entre duas quantidades. O tempo é proporcional ao logaritmo natural da razão entre essas quantidades, multiplicado por uma constante.\",\n  \"concepts\": [\n    \"logaritmo natural\",\n    \"razão entre quantidades\",\n    \"tempo de resposta\",\n    \"estabilização de sistemas\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"t_{s}\",\n      \"description\": \"representa o tempo de estabilização ou resposta do sistema.\"\n    },\n    {\n      \"symbol\": \"k\",\n      \"description\": \"é uma constante que determina a relação entre o logaritmo e o tempo de estabilização.\"\n    },\n    {\n      \"symbol\": \"a\",\n      \"description\": \"representa uma quantidade inicial ou um valor de referência que está sendo comparado.\"\n    },\n    {\n      \"symbol\": \"b\",\n      \"description\": \"representa outra quantidade que está sendo usada como base de comparação com a quantidade a.\"\n    }\n  ]\n}",
+          "chapter": "9",
+          "source": "question",
+          "questionNumber": "2",
+          "page": 94
+        }
+      ]
+    },
+    {
+      "number": "a",
+      "text": "Operation is in the active mode so that V_{EB} is positive and V_{CB} is negative and the magnitudes of both are much greater than \\frac{kT}{q}.",
+      "formulas": []
+    },
+    {
+      "number": "b",
+      "text": "The width of the base is much smaller than the diffusion length of minority carriers in the base so that a linear distribution of hole density results.",
+      "formulas": []
+    },
+    {
+      "number": "c",
+      "text": "Low-level injection of holes from the emitter into the base.",
+      "formulas": []
+    },
+    {
+      "number": "Q9-8",
+      "text": "To switch a transistor (PNP) from cutoff to saturation, what should happen to the hole density in the base and how is this accomplished?",
+      "formulas": []
+    },
+    {
+      "number": "Q9-9",
+      "text": "Explain clearly the meaning of each of the charge-control equations.",
+      "formulas": []
+    },
+    {
+      "number": "Q9-10",
+      "text": "By what mechanism is the turn-ON time reduced?",
+      "formulas": []
+    },
+    {
+      "number": "9.4(a)",
+      "text": "Determine the punchthrough voltage.",
+      "formulas": []
+    },
+    {
+      "number": "9.4(b)",
+      "text": "Determine the average value of the electric field intensity at punchthrough.",
+      "formulas": []
+    },
+    {
+      "number": "9.5(a)",
+      "text": "Determine the breakdown voltage for active operation in the common-base mode.",
+      "formulas": []
+    },
+    {
+      "number": "9.5(b)",
+      "text": "Determine the punchthrough voltage.",
+      "formulas": []
+    },
+    {
+      "number": "9.6",
+      "text": "Determine the output resistance at I_C = 1μA and V_CB = -10V.",
+      "formulas": []
+    },
+    {
+      "number": "9.7",
+      "text": "Derive an expression for the output resistance r_o in terms of I_C, W_B, L_{PB}, and dW_B/dV_{BC}.",
+      "formulas": []
+    },
+    {
+      "number": "9.8",
+      "text": "Show that the transport factor of a BJT is given approximately by δ = \\frac{1}{1 + \\tau_B/\\tau_P}.",
+      "formulas": [
+        {
+          "originalFormula": "\\delta = \\frac{1}{1 + \\tau_B/\\tau_P}",
+          "genericFormula": "\\delta = \\frac{1}{1 + \\tau_B/\\tau_P}",
+          "description": "Esta fórmula representa a fração de um determinado parâmetro que é afetada por dois tempos característicos, onde um tempo é associado a um processo de recombinação e o outro a um processo de captura de portadores de carga. A fórmula indica como a relação entre esses dois tempos influencia a eficiência de um fenômeno em semicondutores.",
+          "concepts": [
+            "Recombinação de portadores de carga",
+            "Captura de portadores de carga",
+            "Tempos característicos em semicondutores",
+            "Eficácia de processos em materiais semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "δ",
+              "description": "Representa a fração ou a eficiência de um processo em semicondutores."
+            },
+            {
+              "symbol": "τ_B",
+              "description": "Representa o tempo característico de recombinação de portadores de carga."
+            },
+            {
+              "symbol": "τ_P",
+              "description": "Representa o tempo característico de captura de portadores de carga."
+            }
+          ],
+          "chapter": "9",
+          "source": "question",
+          "questionNumber": "9.8",
+          "page": 109
+        }
+      ]
+    },
+    {
+      "number": "9.9(a)",
+      "text": "Determine the turn-ON time.",
+      "formulas": []
+    },
+    {
+      "number": "9.9(b)",
+      "text": "Determine the storage time.",
+      "formulas": []
+    },
+    {
+      "number": "9.10(a)",
+      "text": "Use the Ebers-Moll expression for I_C in the active region of operation of an NPN BJT.",
+      "formulas": []
+    },
+    {
+      "number": "9.10(b)",
+      "text": "For what maximum approximate value of v_i is the small-signal equivalent circuit valid?",
+      "formulas": []
+    },
+    {
+      "number": "9.11(a)",
+      "text": "Determine g_m.",
+      "formulas": []
+    },
+    {
+      "number": "9.11(b)",
+      "text": "Determine r_π.",
+      "formulas": []
+    },
+    {
+      "number": "9.11(c)",
+      "text": "Determine r_o.",
+      "formulas": []
+    },
+    {
+      "number": "9.12(a)",
+      "text": "Determine C_j.",
+      "formulas": []
+    },
+    {
+      "number": "9.12(b)",
+      "text": "Determine C_b.",
+      "formulas": []
+    },
+    {
+      "number": "9.13 (a)",
+      "text": "Determine the base storage capacitance C_{b}.",
+      "formulas": []
+    },
+    {
+      "number": "9.13 (b)",
+      "text": "Determine the emitter junction capacitance.",
+      "formulas": []
+    },
+    {
+      "number": "9.14 (a)",
+      "text": "Determine r_{π} at T = 300K.",
+      "formulas": []
+    },
+    {
+      "number": "9.14 (b)",
+      "text": "Determine f_{T} at T = 300K.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "1",
+      "text": "Q_{B}(200ns) = 27.5pC",
+      "formulas": []
+    },
+    {
+      "questionNumber": "2",
+      "text": "t_{s} = 79.6ns",
+      "formulas": []
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "V_{EC} = V_{EB} + V_{BC}",
+      "genericFormula": "V_{EC} = V_{EB} + V_{BC}",
+      "description": "Esta fórmula representa a relação entre as tensões em um transistor bipolar, onde a tensão entre o emissor e o coletor é igual à soma das tensões entre o emissor e a base, e entre a base e o coletor. Essa relação é fundamental para entender o funcionamento dos transistores em circuitos eletrônicos.",
+      "concepts": [
+        "Transistor bipolar",
+        "Tensão elétrica",
+        "Circuitos eletrônicos",
+        "Polarização de transistores"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_{EC}",
+          "description": "Representa a tensão entre o emissor e o coletor do transistor."
+        },
+        {
+          "symbol": "V_{EB}",
+          "description": "Representa a tensão entre o emissor e a base do transistor."
+        },
+        {
+          "symbol": "V_{BC}",
+          "description": "Representa a tensão entre a base e o coletor do transistor."
+        }
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 125
+    },
+    {
+      "originalFormula": "B V_{CBO}",
+      "genericFormula": "B V_{CBO}",
+      "description": "Esta fórmula representa a relação entre a corrente de coletor e a tensão entre coletor e base em um transistor bipolar. A corrente de coletor é influenciada pela tensão aplicada entre o coletor e a base, o que é fundamental para o funcionamento do transistor em circuitos eletrônicos.",
+      "concepts": [
+        "Transistor bipolar",
+        "Corrente de coletor",
+        "Tensão entre coletor e base"
+      ],
+      "symbols": [
+        {
+          "symbol": "B",
+          "description": "Representa um fator de proporcionalidade que relaciona a corrente de coletor com a tensão entre coletor e base."
+        },
+        {
+          "symbol": "V_{CBO}",
+          "description": "Representa a tensão entre o coletor e a base de um transistor bipolar, que é um parâmetro importante para determinar o comportamento do transistor em um circuito."
+        }
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 141
+    },
+    {
+      "originalFormula": "B V_{CEO}",
+      "genericFormula": "B V_{CEO}",
+      "description": "Esta fórmula representa a relação entre a corrente de coletor e a tensão entre o coletor e a emissor em um transistor bipolar. Ela é fundamental para entender o funcionamento de transistores em circuitos eletrônicos.",
+      "concepts": [
+        "Transistor bipolar",
+        "Corrente de coletor",
+        "Tensão coletor-emissor"
+      ],
+      "symbols": [
+        {
+          "symbol": "B",
+          "description": "Representa a corrente de base do transistor, que é a corrente que controla a operação do transistor."
+        },
+        {
+          "symbol": "V_{CEO}",
+          "description": "Representa a tensão entre o coletor e o emissor do transistor, que é a diferença de potencial elétrico entre essas duas regiões."
+        }
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 156
+    },
+    {
+      "originalFormula": "V_{EC} = -V_{A}",
+      "genericFormula": "V_{EC} = -V_{A}",
+      "description": "Essa fórmula expressa a relação entre a tensão no coletor-emissor de um transistor e a tensão no terminal A. Ela indica que a tensão no coletor-emissor é igual à tensão no terminal A, mas com sinal invertido. Isso é importante em circuitos eletrônicos, pois ajuda a entender como as tensões se comportam em relação umas às outras.",
+      "concepts": [
+        "Transistores",
+        "Tensão elétrica",
+        "Circuitos eletrônicos"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_{EC}",
+          "description": "Representa a tensão entre o coletor e o emissor de um transistor."
+        },
+        {
+          "symbol": "V_{A}",
+          "description": "Representa a tensão em um terminal específico, denominado A, que pode ser parte de um circuito maior."
+        }
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 172
+    },
+    {
+      "originalFormula": "x_{CB} = x_{CO} \\left[ 1 + \\left( \\frac{I_C}{I_o} \\right) \\right]^{-0.5}",
+      "genericFormula": "x_{CB} = x_{CO} \\left[ 1 + \\left( \\frac{I_C}{I_o} \\right) \\right]^{-0.5}",
+      "description": "Esta fórmula representa a relação entre a concentração de portadores de carga em um semicondutor e a corrente elétrica que flui através dele. Especificamente, ela descreve como a concentração de portadores de carga em uma região de um dispositivo semicondutor varia em função da corrente de coletor e da corrente de saturação.",
+      "concepts": [
+        "Semicondutores",
+        "Concentração de portadores de carga",
+        "Corrente elétrica",
+        "Transistores"
+      ],
+      "symbols": [
+        {
+          "symbol": "x_{CB}",
+          "description": "Representa a concentração de portadores de carga na base de um transistor."
+        },
+        {
+          "symbol": "x_{CO}",
+          "description": "Representa a concentração de portadores de carga em condições de equilíbrio ou saturação."
+        },
+        {
+          "symbol": "I_C",
+          "description": "Representa a corrente de coletor, que é a corrente que flui do coletor para o emissor em um transistor."
+        },
+        {
+          "symbol": "I_o",
+          "description": "Representa a corrente de saturação, que é a corrente mínima necessária para que o transistor opere em sua região ativa."
+        }
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 187
+    },
+    {
+      "originalFormula": "p(x) = p_0 - \\frac{p_0}{W_B} x",
+      "genericFormula": "p(x) = p_0 - \\frac{p_0}{W_B} x",
+      "description": "Esta fórmula representa a variação da pressão em função da posição em um determinado sistema. Ela mostra como a pressão diminui linearmente à medida que nos afastamos de um ponto de referência, levando em consideração a largura da barreira.",
+      "concepts": [
+        "Pressão",
+        "Variação linear",
+        "Barreiras em semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "p(x)",
+          "description": "Representa a pressão em um ponto específico x dentro do sistema."
+        },
+        {
+          "symbol": "p_0",
+          "description": "Representa a pressão inicial ou de referência no ponto de origem do sistema."
+        },
+        {
+          "symbol": "W_B",
+          "description": "Representa a largura da barreira, que influencia a taxa de variação da pressão ao longo da posição x."
+        },
+        {
+          "symbol": "x",
+          "description": "Representa a posição ao longo do eixo onde a pressão está sendo medida."
+        }
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 203
+    },
+    {
+      "originalFormula": "Q_{SAT} = I_{CSAT} \\cdot t_{B} = 20pC",
+      "genericFormula": "Q_{SAT} = I_{CSAT} \\cdot t_{B}",
+      "description": "Esta fórmula representa a carga elétrica total armazenada em um capacitor saturado, que é o produto da corrente que flui para o capacitor e o tempo durante o qual essa corrente flui. A carga é medida em coulombs.",
+      "concepts": [
+        "Carga elétrica",
+        "Corrente elétrica",
+        "Tempo",
+        "Capacitores"
+      ],
+      "symbols": [
+        {
+          "symbol": "Q_{SAT}",
+          "description": "Representa a carga elétrica total armazenada no capacitor saturado, medida em coulombs."
+        },
+        {
+          "symbol": "I_{CSAT}",
+          "description": "Representa a corrente elétrica que flui para o capacitor durante o processo de saturação, medida em amperes."
+        },
+        {
+          "symbol": "t_{B}",
+          "description": "Representa o tempo durante o qual a corrente flui para o capacitor, medido em segundos."
+        }
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 218
+    },
+    {
+      "originalFormula": "C_{bu} = \\frac{W_{b}^{2} I_{C}}{2 D_{p} V_{A}}",
+      "genericFormula": "C_{bu} = \\frac{W^{2} I_{C}}{2 D_{p} V_{A}}",
+      "description": "Esta fórmula representa a capacitância de um dispositivo semicondutor, onde a capacitância é uma medida da capacidade do dispositivo de armazenar carga elétrica. A fórmula relaciona a capacitância com a largura do dispositivo, a corrente que passa por ele, a distância de separação entre as placas do capacitor e a tensão aplicada.",
+      "concepts": [
+        "Capacitância",
+        "Carga elétrica",
+        "Corrente elétrica",
+        "Tensão elétrica",
+        "Geometria do dispositivo"
+      ],
+      "symbols": [
+        {
+          "symbol": "C_{bu}",
+          "description": "Representa a capacitância do dispositivo semicondutor, que indica a quantidade de carga que pode ser armazenada por unidade de tensão."
+        },
+        {
+          "symbol": "W_{b}",
+          "description": "Representa a largura do dispositivo semicondutor, que influencia na área disponível para armazenar carga."
+        },
+        {
+          "symbol": "I_{C}",
+          "description": "Representa a corrente que flui através do dispositivo, que afeta a quantidade de carga que pode ser acumulada."
+        },
+        {
+          "symbol": "D_{p}",
+          "description": "Representa a distância entre as placas do capacitor, que afeta a capacitância; quanto menor a distância, maior a capacitância."
+        },
+        {
+          "symbol": "V_{A}",
+          "description": "Representa a tensão aplicada ao dispositivo, que é a força que impulsiona a carga elétrica através do circuito."
+        }
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 234
+    },
+    {
+      "originalFormula": "C_{bu} = \\frac{C_{b} I_{C}}{8 m V_{A}} = \\frac{k T C_{b}}{q V_{A}}",
+      "genericFormula": "C_{bu} = \\frac{C_{b} I_{C}}{8 m V_{A}} = \\frac{k T C_{b}}{q V_{A}}",
+      "description": "Esta fórmula representa a capacitância de um capacitor em um circuito eletrônico, onde a capacitância é influenciada por diversos parâmetros, como a corrente, a temperatura e a tensão aplicada. A fórmula mostra como a capacitância pode ser expressa de duas maneiras equivalentes, dependendo dos parâmetros considerados.",
+      "concepts": [
+        "Capacitância",
+        "Corrente elétrica",
+        "Temperatura",
+        "Tensão elétrica",
+        "Constante de Boltzmann",
+        "Carga elétrica"
+      ],
+      "symbols": [
+        {
+          "symbol": "C_{bu}",
+          "description": "Representa a capacitância do capacitor em questão."
+        },
+        {
+          "symbol": "C_{b}",
+          "description": "Representa a capacitância de um capacitor de referência ou capacitância básica."
+        },
+        {
+          "symbol": "I_{C}",
+          "description": "Representa a corrente elétrica que passa pelo circuito."
+        },
+        {
+          "symbol": "m",
+          "description": "Representa uma constante que pode estar relacionada a um fator de correção ou uma propriedade do material."
+        },
+        {
+          "symbol": "V_{A}",
+          "description": "Representa a tensão elétrica aplicada ao circuito."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura do sistema em Kelvin."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica elementar, que é a carga de um único elétron."
+        }
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 250
+    },
+    {
+      "originalFormula": "f_T = \\frac{g_m}{2\\pi(C_{\\pi} + C_u)} \\quad (9.88)",
+      "genericFormula": "f_T = \\frac{g_m}{2\\pi(C_{\\pi} + C_u)}",
+      "description": "Esta fórmula representa a frequência de transição de um transistor em um circuito, que é a frequência na qual o ganho do transistor começa a cair. É um parâmetro importante para entender o comportamento de amplificadores e circuitos de alta frequência.",
+      "concepts": [
+        "Frequência de transição",
+        "Transistores",
+        "Capacitância",
+        "Ganho do transistor"
+      ],
+      "symbols": [
+        {
+          "symbol": "f_T",
+          "description": "Representa a frequência de transição do transistor, que é a frequência máxima na qual o transistor pode operar eficientemente."
+        },
+        {
+          "symbol": "g_m",
+          "description": "Representa a transcondutância do transistor, que é uma medida de quão bem o transistor pode controlar a corrente de saída em resposta a uma tensão de entrada."
+        },
+        {
+          "symbol": "C_{\\pi}",
+          "description": "Representa a capacitância entre a base e o emissor do transistor, que afeta a resposta em frequência do dispositivo."
+        },
+        {
+          "symbol": "C_u",
+          "description": "Representa a capacitância de carga do circuito, que também influencia a frequência de operação do transistor."
+        },
+        {
+          "symbol": "\\pi",
+          "description": "É uma constante matemática que representa a razão entre a circunferência de um círculo e seu diâmetro, aproximadamente igual a 3.14159."
+        }
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 265
+    },
+    {
+      "originalFormula": "\\tau_T = C_{\\pi} + C_u = \\frac{C_b}{g_m} + \\frac{C_u + C_{je}}{g_m} \\quad (9.89)",
+      "genericFormula": "\\tau_T = C_{\\pi} + C_u = \\frac{C_b}{g_m} + \\frac{C_u + C_{je}}{g_m}",
+      "description": "Esta fórmula representa o tempo de resposta total de um circuito, levando em consideração as capacitâncias envolvidas e a transcondutância do dispositivo. O tempo de resposta é crucial para entender como um circuito se comporta em resposta a variações de sinal.",
+      "concepts": [
+        "Capacitância",
+        "Transcondutância",
+        "Tempo de resposta em circuitos",
+        "Circuitos eletrônicos"
+      ],
+      "symbols": [
+        {
+          "symbol": "τ_T",
+          "description": "Representa o tempo de resposta total do circuito, que é um indicador de quão rapidamente o circuito pode responder a mudanças de sinal."
+        },
+        {
+          "symbol": "C_π",
+          "description": "Representa a capacitância de entrada do transistor, que afeta como o sinal de entrada é processado pelo circuito."
+        },
+        {
+          "symbol": "C_u",
+          "description": "Representa a capacitância de carga, que é a capacitância que o circuito precisa carregar ou descarregar durante a operação."
+        },
+        {
+          "symbol": "C_b",
+          "description": "Representa a capacitância de base do transistor, que é uma parte importante na determinação da resposta do circuito."
+        },
+        {
+          "symbol": "g_m",
+          "description": "Representa a transcondutância do transistor, que é uma medida de quão eficientemente o transistor pode controlar a corrente de saída em resposta a uma tensão de entrada."
+        },
+        {
+          "symbol": "C_je",
+          "description": "Representa a capacitância de junção de emissor, que é uma capacitância adicional que pode afetar o desempenho do circuito."
+        }
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 281
+    },
+    {
+      "originalFormula": "\\tau_T = \\tau_B + \\frac{C_u + C_{je}}{g_m} \\quad (9.90)",
+      "genericFormula": "\\tau_T = \\tau_B + \\frac{C_u + C_{je}}{g_m}",
+      "description": "Esta fórmula representa o tempo de atraso total em um circuito, que é a soma do tempo de atraso básico e um termo adicional que depende das capacitâncias e da transcondutância. O tempo de atraso total é importante para entender a velocidade de resposta de circuitos eletrônicos, especialmente em aplicações de alta frequência.",
+      "concepts": [
+        "Tempo de atraso",
+        "Capacitância",
+        "Transcondutância",
+        "Circuitos eletrônicos"
+      ],
+      "symbols": [
+        {
+          "symbol": "τ_T",
+          "description": "Representa o tempo de atraso total do circuito."
+        },
+        {
+          "symbol": "τ_B",
+          "description": "Representa o tempo de atraso básico do circuito, que é o atraso sem considerar os efeitos adicionais."
+        },
+        {
+          "symbol": "C_u",
+          "description": "Representa a capacitância de entrada do circuito, que é a capacidade de armazenar carga elétrica na entrada."
+        },
+        {
+          "symbol": "C_{je}",
+          "description": "Representa a capacitância de junção, que é a capacitância associada a uma junção p-n em dispositivos semicondutores."
+        },
+        {
+          "symbol": "g_m",
+          "description": "Representa a transcondutância, que é a relação entre a variação da corrente de saída e a variação da tensão de entrada em um dispositivo ativo, como um transistor."
+        }
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 296
+    },
+    {
+      "originalFormula": "Q_{G} = qA \\int_{0}^{W_{B}} n(x)dx",
+      "genericFormula": "Q_{G} = qA \\int_{0}^{W} n(x)dx",
+      "description": "Esta fórmula representa a carga total acumulada em uma região específica de um semicondutor, onde a carga é obtida pela integração da densidade de portadores de carga ao longo de uma largura definida. A carga total é influenciada pela densidade de portadores e pela área da seção transversal considerada.",
+      "concepts": [
+        "Carga elétrica",
+        "Densidade de portadores de carga",
+        "Integração em cálculo",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "Q_{G}",
+          "description": "Representa a carga total acumulada na região considerada do semicondutor."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elementar de um portador de carga, como um elétron ou um buraco."
+        },
+        {
+          "symbol": "A",
+          "description": "Representa a área da seção transversal da região onde a carga está sendo calculada."
+        },
+        {
+          "symbol": "W_{B}",
+          "description": "Representa a largura da região ao longo da qual a densidade de portadores é integrada."
+        },
+        {
+          "symbol": "n(x)",
+          "description": "Representa a densidade de portadores de carga em função da posição x dentro da região considerada."
+        },
+        {
+          "symbol": "x",
+          "description": "Representa a variável de integração, que indica a posição ao longo da largura da região onde a densidade de portadores é medida."
+        }
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 312
+    },
+    {
+      "originalFormula": "Q_{G0} = qA \\int_{0}^{W_{B}} N_{DB}dx",
+      "genericFormula": "Q_{G0} = qA \\int_{0}^{W_{B}} N_{DB}dx",
+      "description": "Esta fórmula representa a carga total acumulada em uma região específica de um semicondutor, onde a carga é obtida pela integração da densidade de portadores de carga ao longo de uma largura definida. A carga total é influenciada pela densidade de portadores e pela área da seção transversal considerada.",
+      "concepts": [
+        "Carga elétrica",
+        "Densidade de portadores",
+        "Integração em cálculo",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "Q_{G0}",
+          "description": "Representa a carga total acumulada na região considerada do semicondutor."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elementar, que é a carga de um único elétron."
+        },
+        {
+          "symbol": "A",
+          "description": "Representa a área da seção transversal através da qual a carga está sendo considerada."
+        },
+        {
+          "symbol": "N_{DB}",
+          "description": "Representa a densidade de portadores de carga, que indica quantos portadores existem por unidade de volume em um determinado ponto do semicondutor."
+        },
+        {
+          "symbol": "W_{B}",
+          "description": "Representa a largura da região ao longo da qual a densidade de portadores está sendo integrada."
+        },
+        {
+          "symbol": "dx",
+          "description": "Representa um elemento infinitesimal de largura, utilizado na integração para somar as contribuições da densidade de portadores ao longo da largura total."
+        }
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 327
+    },
+    {
+      "originalFormula": "Q_{G} = Q_{G0} + Q_{E} + Q_{C} + Q_{F} + Q_{R}",
+      "genericFormula": "Q_{G} = Q_{G0} + Q_{E} + Q_{C} + Q_{F} + Q_{R}",
+      "description": "Esta fórmula representa a carga total acumulada em um sistema, onde a carga total é a soma de várias contribuições. Cada termo da equação representa uma forma diferente de carga que se acumula ao longo do tempo, permitindo entender como diferentes fatores influenciam a carga total em um dispositivo ou sistema.",
+      "concepts": [
+        "Carga elétrica",
+        "Acúmulo de carga",
+        "Contribuições de diferentes fontes de carga"
+      ],
+      "symbols": [
+        {
+          "symbol": "Q_{G}",
+          "description": "Representa a carga total acumulada no sistema."
+        },
+        {
+          "symbol": "Q_{G0}",
+          "description": "Representa a carga inicial do sistema antes de qualquer contribuição adicional."
+        },
+        {
+          "symbol": "Q_{E}",
+          "description": "Representa a carga proveniente de uma fonte externa, como uma bateria ou gerador."
+        },
+        {
+          "symbol": "Q_{C}",
+          "description": "Representa a carga acumulada devido a processos de capacitância no sistema."
+        },
+        {
+          "symbol": "Q_{F}",
+          "description": "Representa a carga gerada por fenômenos de fricção ou atrito."
+        },
+        {
+          "symbol": "Q_{R}",
+          "description": "Representa a carga resultante de reações químicas ou processos de ionização."
+        }
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 343
+    },
+    {
+      "originalFormula": "Q_{G0} = net \\, majority \\, carrier \\, charge \\, commensurate \\, with \\, space \\, charge \\, neutrality",
+      "genericFormula": "Q_{G0} = net \\, majority \\, carrier \\, charge \\, commensurate \\, with \\, space \\, charge \\, neutrality",
+      "description": "Não foi possível gerar descrição automática",
+      "concepts": [],
+      "symbols": [],
+      "rawText": "{\n  \"originalFormula\": \"Q_{G0} = net \\, majority \\, carrier \\, charge \\, commensurate \\, with \\, space \\, charge \\, neutrality\",\n  \"genericFormula\": \"Q_{G0} = net \\, majority \\, carrier \\, charge \\, commensurate \\, with \\, space \\, charge \\, neutrality\",\n  \"description\": \"Esta fórmula representa a carga líquida dos portadores majoritários em um semicondutor, que deve estar em equilíbrio com a neutralidade de carga espacial. Em outras palavras, a quantidade de carga positiva dos portadores majoritários deve ser igual à quantidade de carga negativa para manter o sistema em equilíbrio elétrico.\",\n  \"concepts\": [\n    \"Carga elétrica\",\n    \"Portadores majoritários\",\n    \"Neutralidade de carga\",\n    \"Equilíbrio elétrico\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"Q_{G0}\",\n      \"description\": \"Representa a carga líquida dos portadores majoritários em um semicondutor.\"\n    },\n    {\n      \"symbol\": \"net \\, majority \\, carrier \\, charge\",\n      \"description\": \"Refere-se à quantidade total de carga elétrica contribuída pelos portadores majoritários, que são os portadores de carga que predominam no material semicondutor.\"\n    },\n    {\n      \"symbol\": \"space \\, charge \\, neutrality\",\n      \"description\": \"É o princípio que afirma que a carga total em uma região deve ser zero, ou seja, a soma das cargas positivas e negativas deve se igualar para manter o equilíbrio elétrico.\"\n    }\n  ]\n}",
+      "chapter": "9",
+      "source": "standalone",
+      "page": 358
+    },
+    {
+      "originalFormula": "N_{AE} = 10^{20} \\text{ cm}^{-3}",
+      "genericFormula": "N_{AE} = N_{0} \\text{ cm}^{-3}",
+      "description": "Esta fórmula representa a densidade de portadores de carga em um semicondutor, especificamente a densidade de elétrons ou lacunas que contribuem para a condução elétrica. O valor numérico indica a quantidade de portadores por centímetro cúbico.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Semicondutores",
+        "Condução elétrica"
+      ],
+      "symbols": [
+        {
+          "symbol": "N_{AE}",
+          "description": "Representa a densidade de portadores de carga em um semicondutor, que pode ser elétrons ou lacunas."
+        },
+        {
+          "symbol": "10^{20}",
+          "description": "Um valor numérico que indica a quantidade de portadores de carga por centímetro cúbico."
+        },
+        {
+          "symbol": "cm^{-3}",
+          "description": "Unidade de medida que representa a densidade, indicando o número de portadores por cada centímetro cúbico."
+        }
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 374
+    },
+    {
+      "originalFormula": "N_{DB} = 10^{16} \\text{ cm}^{-3}",
+      "genericFormula": "N_{DB} = N_{DB,0}",
+      "description": "Esta fórmula representa a densidade de dopantes em um semicondutor, que é a quantidade de átomos dopantes por centímetro cúbico. Neste caso, a densidade é dada como um valor específico, mas na forma genérica, ela é representada como uma variável que pode assumir diferentes valores.",
+      "concepts": [
+        "Dopagem de semicondutores",
+        "Densidade de portadores",
+        "Estrutura cristalina"
+      ],
+      "symbols": [
+        {
+          "symbol": "N_{DB}",
+          "description": "Representa a densidade de dopantes em um semicondutor, ou seja, a quantidade de átomos dopantes por unidade de volume."
+        },
+        {
+          "symbol": "10^{16}",
+          "description": "Este número indica a quantidade de dopantes por centímetro cúbico, sendo um valor específico que pode variar em diferentes contextos."
+        },
+        {
+          "symbol": "cm^{-3}",
+          "description": "Representa a unidade de medida para a densidade, que é centímetro cúbico, indicando que a densidade é calculada em relação a um volume de um centímetro cúbico."
+        }
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 390
+    },
+    {
+      "originalFormula": "D_{PB} = 30 \\text{ cm}^{2}/\\text{s}",
+      "genericFormula": "D_{PB} = k \\text{ cm}^{2}/\\text{s}",
+      "description": "Esta fórmula representa o coeficiente de difusão de uma substância, que indica a taxa na qual as partículas se espalham em um meio. O coeficiente de difusão é uma medida importante em processos como a difusão de gases, líquidos e sólidos.",
+      "concepts": [
+        "Difusão",
+        "Coeficiente de difusão",
+        "Movimento de partículas"
+      ],
+      "symbols": [
+        {
+          "symbol": "D_{PB}",
+          "description": "Representa o coeficiente de difusão da substância em questão, que mede a rapidez com que as partículas se movem através de um meio."
+        },
+        {
+          "symbol": "k",
+          "description": "Um valor genérico que representa a taxa de difusão, que pode variar dependendo do material e das condições experimentais."
+        }
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 405
+    },
+    {
+      "originalFormula": "\\tau_{p} = 10 \\mu s",
+      "genericFormula": "\\tau_{p} = T",
+      "description": "Esta fórmula representa o tempo de vida de portadores de carga em um semicondutor, que é o tempo médio que um portador, como um elétron ou um buraco, permanece em um estado excitado antes de recombinar.",
+      "concepts": [
+        "Tempo de vida dos portadores de carga",
+        "Recombinação de portadores",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "τ_{p}",
+          "description": "Representa o tempo de vida dos portadores de carga, que indica quanto tempo, em média, um portador permanece livre antes de recombinar."
+        },
+        {
+          "symbol": "10 \\mu s",
+          "description": "Um valor específico que indica a duração do tempo de vida dos portadores, onde '10' é um número e 'μs' significa microsegundos, uma unidade de tempo."
+        }
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 421
+    },
+    {
+      "originalFormula": "A = 10^{-3} cm^{2}",
+      "genericFormula": "A = 10^{-3} cm^{2}",
+      "description": "Não foi possível gerar descrição automática",
+      "concepts": [],
+      "symbols": [],
+      "rawText": "{\n  \"originalFormula\": \"A = 10^{-3} cm^{2}\",\n  \"genericFormula\": \"A = k \\, cm^{2}\",\n  \"description\": \"Esta fórmula representa a área de uma superfície em centímetros quadrados. O valor específico dado é uma medida de área, e a fórmula genérica indica que a área pode ser representada por uma constante multiplicada por centímetros quadrados.\",\n  \"concepts\": [\n    \"Área\",\n    \"Unidades de medida\",\n    \"Geometria\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"A\",\n      \"description\": \"Representa a área da superfície em centímetros quadrados.\"\n    },\n    {\n      \"symbol\": \"k\",\n      \"description\": \"Representa uma constante que pode assumir diferentes valores, dependendo da área específica que está sendo medida.\"\n    }\n  ]\n}",
+      "chapter": "9",
+      "source": "standalone",
+      "page": 436
+    },
+    {
+      "originalFormula": "W_{B} = 12 \\mu m",
+      "genericFormula": "W_{B} = L",
+      "description": "Esta fórmula representa a largura de uma estrutura, onde 'W_B' é a largura em micrômetros. A largura é uma medida importante em semicondutores, pois influencia as propriedades elétricas e térmicas do material.",
+      "concepts": [
+        "largura de estruturas semicondutoras",
+        "micrômetros como unidade de medida",
+        "impacto da largura nas propriedades elétricas"
+      ],
+      "symbols": [
+        {
+          "symbol": "W_{B}",
+          "description": "Representa a largura da estrutura em micrômetros."
+        },
+        {
+          "symbol": "\\mu m",
+          "description": "É uma unidade de medida que representa um micrômetro, que é um milionésimo de metro."
+        }
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 452
+    },
+    {
+      "originalFormula": "T = 300 \\text{K}",
+      "genericFormula": "T = T_0",
+      "description": "Esta fórmula representa a temperatura em Kelvin, onde o valor específico de 300 Kelvin é frequentemente utilizado como uma referência padrão em experimentos e cálculos na física e na engenharia, especialmente em contextos relacionados a semicondutores e termodinâmica.",
+      "concepts": [
+        "Temperatura",
+        "Escala Kelvin",
+        "Termodinâmica"
+      ],
+      "symbols": [
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura em Kelvin, uma unidade de medida da temperatura que é parte do Sistema Internacional de Unidades."
+        },
+        {
+          "symbol": "T_0",
+          "description": "Representa uma temperatura de referência, que pode ser qualquer valor em Kelvin, dependendo do contexto do experimento ou cálculo."
+        }
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 467
+    },
+    {
+      "originalFormula": "I_{C} = 2 \\text{ mA}",
+      "genericFormula": "I_{C} = I_{C_{valor}}",
+      "description": "Esta fórmula representa a corrente elétrica que flui através de um componente, que neste caso é um transistor em modo ativo. A corrente é medida em miliamperes, e o valor específico dado é de 2 miliamperes.",
+      "concepts": [
+        "corrente elétrica",
+        "transistores",
+        "circuitos elétricos"
+      ],
+      "symbols": [
+        {
+          "symbol": "I_{C}",
+          "description": "Representa a corrente que flui através do coletor de um transistor."
+        },
+        {
+          "symbol": "2",
+          "description": "Um valor numérico que indica a quantidade de corrente em miliamperes."
+        },
+        {
+          "symbol": "mA",
+          "description": "Uma unidade de medida que representa miliamperes, onde um miliampere é um milésimo de ampere."
+        }
+      ],
+      "chapter": "9",
+      "source": "standalone",
+      "page": 483
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498
+  ],
+  "lastUpdated": "2026-05-08T18:19:13.329407",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
+}

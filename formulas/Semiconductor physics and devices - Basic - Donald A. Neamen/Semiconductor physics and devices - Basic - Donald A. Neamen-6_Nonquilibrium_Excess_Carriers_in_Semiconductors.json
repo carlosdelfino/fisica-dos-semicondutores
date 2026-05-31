@@ -1,0 +1,694 @@
+{
+  "chapter": "6 Nonquilibrium Excess Carriers in Semiconductors",
+  "section": "Exercise Problem",
+  "questions": [
+    {
+      "number": "Ex 6.5",
+      "text": "Consider the result of Example 6.5. Let D_p = 10 \\, \\text{cm}^2/\\text{s}, \\tau_p = 10^{-7} \\, \\text{s}, \\mu_p = 400 \\, \\text{cm}^2/\\text{V s}, and E = 100 \\, \\text{V/cm}. (a) Determine \\delta p for t = 10^{-7} \\, \\text{s} at (i) x = 20 \\, \\mu\\text{m}, (ii) x = 40 \\, \\mu\\text{m}, and (iii) x = 60 \\, \\mu\\text{m}. (b) Determine \\delta p for x = 40 \\, \\mu\\text{m} at (i) t = 5 \\times 10^{-8} \\, \\text{s}, (ii) t = 10^{-7} \\, \\text{s}, and (iii) t = 2 \\times 10^{-7} \\, \\text{s}. Compare the results to the curves shown in Figure 6.9."
+    },
+    {
+      "number": "TYU 6.5",
+      "text": "As a good approximation, the peak value of a normalized excess carrier concentration, given by Equation (6.70), occurs at x = μ_eE. Assume the following parameters: τ_p = 5 μs, D_p = 10 cm²/s, μ_p = 386 cm²/V·s, and E = 10 V/cm. Calculate the peak value at (a) t = 1 μs, (b) t = 5 μs, (c) t = 15 μs, and (d) t = 25 μs. What are the corresponding values of x for parts (a) to (d)?",
+      "formulas": [
+        {
+          "originalFormula": "n(x,t) = n_{0} e^{-t/τ} (P)",
+          "genericFormula": "n(x,t) = n_{0} e^{-t/\\tau} (P)",
+          "description": "Esta fórmula representa a densidade de portadores de carga em um semicondutor ao longo do tempo, considerando a sua diminuição exponencial. Aqui, a densidade de portadores em um determinado ponto e tempo é calculada a partir de uma densidade inicial, que decai exponencialmente com o tempo, caracterizada por uma constante de tempo.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Decaimento exponencial",
+            "Constante de tempo",
+            "Semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "n(x,t)",
+              "description": "Representa a densidade de portadores de carga em um ponto específico x e em um instante de tempo t."
+            },
+            {
+              "symbol": "n_{0}",
+              "description": "É a densidade inicial de portadores de carga no semicondutor, antes de qualquer decaimento ocorrer."
+            },
+            {
+              "symbol": "e",
+              "description": "É a base do logaritmo natural, uma constante matemática que é aproximadamente igual a 2.71828, usada para descrever processos de crescimento e decaimento exponencial."
+            },
+            {
+              "symbol": "t",
+              "description": "Representa o tempo, que é a variável que indica quanto tempo se passou desde o início da observação do sistema."
+            },
+            {
+              "symbol": "τ",
+              "description": "É a constante de tempo que caracteriza a taxa de decaimento da densidade de portadores de carga, indicando quão rapidamente a densidade diminui ao longo do tempo."
+            },
+            {
+              "symbol": "P",
+              "description": "Representa um fator adicional que pode estar relacionado a outras condições do sistema, como a presença de um campo elétrico ou a temperatura, que pode influenciar a densidade de portadores."
+            }
+          ],
+          "chapter": "6 Nonquilibrium Excess Carriers in Semiconductors",
+          "section": "Exercise Problem",
+          "source": "question",
+          "questionNumber": "TYU 6.5",
+          "page": 1
+        },
+        {
+          "originalFormula": "n(x,t) = n_{0} e^{-\frac{x}{L_{p}}} (q)",
+          "genericFormula": "n(x,t) = n_{0} e^{-\frac{x}{L_{p}}}",
+          "description": "Esta fórmula representa a densidade de portadores de carga em um semicondutor em função da posição e do tempo. A densidade de portadores diminui exponencialmente à medida que nos afastamos de uma fonte de portadores, caracterizada por uma distância característica chamada comprimento de penetração.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Decaimento exponencial",
+            "Comprimento de penetração"
+          ],
+          "symbols": [
+            {
+              "symbol": "n(x,t)",
+              "description": "Representa a densidade de portadores de carga em uma posição x e em um tempo t."
+            },
+            {
+              "symbol": "n_{0}",
+              "description": "É a densidade inicial de portadores de carga, ou seja, a densidade de portadores na posição de origem."
+            },
+            {
+              "symbol": "e",
+              "description": "É a base do logaritmo natural, uma constante matemática que é aproximadamente igual a 2.71828, usada em funções exponenciais."
+            },
+            {
+              "symbol": "x",
+              "description": "Representa a posição ao longo do material semicondutor, onde a densidade de portadores está sendo medida."
+            },
+            {
+              "symbol": "L_{p}",
+              "description": "É o comprimento de penetração, uma medida que indica a distância na qual a densidade de portadores diminui significativamente."
+            }
+          ],
+          "chapter": "6 Nonquilibrium Excess Carriers in Semiconductors",
+          "section": "Exercise Problem",
+          "source": "question",
+          "questionNumber": "TYU 6.5",
+          "page": 35
+        }
+      ]
+    },
+    {
+      "number": "TYU 6.6",
+      "text": "The excess carrier concentration, given by Equation (6.70), is to be calculated at distances of one diffusion length away from the peak value. Using the parameters given in TYU 6.5, calculate the values of δp for (a) t = 1 μs at (i) x = 1.093 × 10^{-2} cm and (ii) x = -3.21 × 10^{-2} cm; (b) t = 5 μs at (i) x = 2.64 × 10^{-2} cm and (ii) x = 1.22 × 10^{-2} cm; (c) t = 15 μs at (i) x = 6.50 × 10^{-2} cm and (ii) x = 5.08 × 10^{-2} cm.",
+      "formulas": []
+    },
+    {
+      "number": "6.20",
+      "text": "Neglecting surface effects, (a) determine the steady-state excess electron and hole concentrations as a function of distance into the semiconductor, and (b) calculate the steady-state electron and hole diffusion current densities as a function of distance into the semiconductor.",
+      "formulas": []
+    },
+    {
+      "number": "6.21",
+      "text": "In a p-type silicon semiconductor, excess carriers are being generated at the end of the bar at x = 0 as shown in Figure P16.19. The uniform doping concentrations are N_a = 7 \\times 10^{16} \\text{cm}^{-3} and N_d = 2 \\times 10^{16} \\text{cm}^{-3}. (a) Calculate \\delta n and the electron and hole diffusion current densities at x = 0. (b) Repeat part (a) for x = 5 \\times 10^{-3} \\text{cm}. (c) Repeat part (a) for x = 15 \\times 10^{-3} \\text{cm}.",
+      "formulas": []
+    },
+    {
+      "number": "6.22",
+      "text": "Consider an n-type silicon. Excess carriers are generated at x = 0 such as shown in Figure 6.6. A constant electric field E_s is applied in the +x direction. Show that the steady-state excess carrier concentration is given by δn(x) = A \\exp(s_x x) \\text{ for } x > 0 \\text{ and } δp(x) = A \\exp(s_x x) \\text{ for } x < 0.",
+      "formulas": [
+        {
+          "originalFormula": "s_{x} = \\frac{\\mu_{n} E_{s}}{D_{n}}",
+          "genericFormula": "s_{x} = \\frac{\\mu_{n} E_{s}}{D_{n}}",
+          "description": "Esta fórmula representa a relação entre a mobilidade dos portadores de carga em um semicondutor, o campo elétrico aplicado e a difusão dos portadores. Ela é utilizada para calcular a densidade de corrente em um material semicondutor sob a influência de um campo elétrico.",
+          "concepts": [
+            "Mobilidade dos portadores de carga",
+            "Campo elétrico",
+            "Difusão de portadores",
+            "Semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "s_{x}",
+              "description": "Representa a densidade de corrente em um semicondutor, que é a quantidade de carga que passa por uma unidade de área em um determinado intervalo de tempo."
+            },
+            {
+              "symbol": "μ_{n}",
+              "description": "Representa a mobilidade dos portadores de carga negativa (elétrons) em um semicondutor, que é uma medida de quão facilmente os elétrons podem se mover através do material quando um campo elétrico é aplicado."
+            },
+            {
+              "symbol": "E_{s}",
+              "description": "Representa a intensidade do campo elétrico aplicado ao semicondutor, que influencia o movimento dos portadores de carga."
+            },
+            {
+              "symbol": "D_{n}",
+              "description": "Representa o coeficiente de difusão dos portadores de carga negativa (elétrons) no semicondutor, que mede a tendência dos elétrons de se espalharem devido a um gradiente de concentração."
+            }
+          ]
+        },
+        {
+          "originalFormula": "\\beta = \\frac{\\mu_{p} L_{p} E_{s}}{2D_{p}}",
+          "genericFormula": "\\beta = \\frac{\\mu L E}{2D}",
+          "description": "Esta fórmula representa a relação entre a mobilidade dos portadores de carga, o comprimento de uma região de semicondutor, a intensidade do campo elétrico aplicado e a difusividade dos portadores de carga. Ela é utilizada para calcular um parâmetro que pode ser importante na análise do transporte de carga em materiais semicondutores.",
+          "concepts": [
+            "Mobilidade dos portadores de carga",
+            "Comprimento de uma região de semicondutor",
+            "Campo elétrico",
+            "Difusividade dos portadores de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "β",
+              "description": "Representa um parâmetro que pode estar relacionado ao transporte de carga em semicondutores."
+            },
+            {
+              "symbol": "μ",
+              "description": "Representa a mobilidade dos portadores de carga, que é uma medida de quão rapidamente os portadores podem se mover através do semicondutor quando um campo elétrico é aplicado."
+            },
+            {
+              "symbol": "L",
+              "description": "Representa o comprimento de uma região de semicondutor, que pode influenciar o comportamento dos portadores de carga dentro desse material."
+            },
+            {
+              "symbol": "E",
+              "description": "Representa a intensidade do campo elétrico aplicado, que afeta a velocidade dos portadores de carga."
+            },
+            {
+              "symbol": "D",
+              "description": "Representa a difusividade dos portadores de carga, que é uma medida de como os portadores se espalham em um material devido a gradientes de concentração."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "6.23",
+      "text": "Plot the excess carrier concentration δp(x) versus x from Problem 6.22 for (a) E_s = 0 and (b) E_s = 10 \\text{ V/cm}.",
+      "formulas": []
+    },
+    {
+      "number": "6.24",
+      "text": "Consider the semiconductor described in Problem 6.19. Assume a constant electric field E_s is applied in the +x direction. (a) Derive the expression for the steady-state excess electron concentration. (b) Plot δn versus x for (i) E_s = 0 and (ii) E_s = 12 \\text{ V/cm}. (c) Explain the general characteristics of the two curves plotted in part (b).",
+      "formulas": []
+    },
+    {
+      "number": "6.25",
+      "text": "Assume that a p-type semiconductor is in thermal equilibrium for t < 0 and has an infinite minority carrier lifetime. Also assume that the semiconductor is uniformly illuminated, resulting in a uniform generation rate, g'(t), which is given by g'(t) = G_0 for 0 < t < T and g'(t) = 0 for t < 0 and t > T. Find the excess minority carrier concentration as a function of time.",
+      "formulas": []
+    },
+    {
+      "number": "6.26",
+      "text": "Consider the n-type semiconductor shown in Figure P26.26. Illumination produces a constant excess carrier generation rate, G_0, in the region -L < x < L. Assume that the",
+      "formulas": []
+    },
+    {
+      "number": "6.34",
+      "text": "Consider n-type GaAs doped at N_{d} = 10^{16} cm^{-3}. (a) For an excess concentration of \\delta p = (0.02)N_{d}, determine (i) E_{n} - E_{i} and (ii) E_{n} - E_{F}. (b) Repeat part (a) for \\delta p = (0.1)N_{d}.",
+      "formulas": []
+    },
+    {
+      "number": "6.35",
+      "text": "A p-type gallium arsenide semiconductor at T = 300 K is doped at N_{a} = 10^{16} cm^{-3}. The excess carrier concentration varies linearly from 10^{14} cm^{-3} to zero over a distance of 50 μm. Plot the position of the quasi-Fermi levels with respect to the intrinsic Fermi level versus distance.",
+      "formulas": []
+    },
+    {
+      "number": "6.36",
+      "text": "Consider p-type silicon at T = 300 K doped to N_{a} = 5 \\times 10^{14} cm^{-3}. Assume excess carriers are present and assume that E_{F} - E_{i} = (0.01)kT. (a) Does this condition correspond to low injection? Why or why not? (b) Determine E_{F} - E_{i}.",
+      "formulas": []
+    },
+    {
+      "number": "6.37",
+      "text": "An n-type silicon sample is doped with donors at a concentration of N_{d} = 10^{18} cm^{-3}. Excess carriers are generated such that the excess hole concentration is given by \\delta p(x) = 10^{14} e^{-x/(10^{-6} cm)}. Plot the function E_{n} - E_{F} versus x over the range 0 ≤ x ≤ 4 \\times 10^{-4}.",
+      "formulas": []
+    },
+    {
+      "number": "6.38",
+      "text": "An n-type silicon semiconductor is doped at N_{d} = 2 \\times 10^{16} cm^{-3}. (a) Plot E_{n} - E_{F} as a function of x over the range 10^{11} ≤ \\delta p ≤ 10^{15} cm^{-3}. (b) Repeat part (a) for E_{n} - E_{F}.",
+      "formulas": []
+    },
+    {
+      "number": "6.39",
+      "text": "Consider Equation (6.99) and the definitions of \\tau_{n} and \\tau_{p} by Equations (6.103) and (6.104). Let n' = p' = n_{i}. Assume that in a particular region of a semiconductor, n = p = 0. (a) Determine the recombination rate R. (b) Explain what this result means physically.",
+      "formulas": []
+    },
+    {
+      "number": "6.40",
+      "text": "Again consider Equation (6.99) and the definitions of \\tau_{n} and \\tau_{p} given by Equations (6.103) and (6.104). Let \\tau_{n} = 10^{-7} s and \\tau_{p} = 5 \\times 10^{-7} s. Also let n' = p' = n_{i} = 10^{10} cm^{-3}. Assume very low injection so that n \\gg p. Calculate R_{b} for an n-type semiconductor which is (a) n-type (n_{0} \\gg p_{0}), (b) intrinsic (n_{0} = p_{0} = n_{i}), and (c) p-type (p_{0} \\gg n_{0}).",
+      "formulas": []
+    },
+    {
+      "number": "*6.41",
+      "text": "Consider an n-type semiconductor as shown in Figure P6.41, doped at N_{d} = 10^{16} cm^{-3} and with a uniform excess carrier generation rate equal to g' = 10^{8} cm^{-3}s^{-1}. Assume that D_{n} = 10 cm^{2}s^{-1} and \\tau_{p} = 10^{-7} s. The electric field is zero. (a) Determine the steady-state excess minority carrier concentration versus x if the surface recombination velocity at x = 0 is (i) s = 0, (ii) s = 2000 cm/s, and (iii) s = \\infty. (b) Calculate the excess minority carrier concentration at x = 0 for (i) s = 0, (ii) s = 2000 cm/s, and (iii) s = \\infty.",
+      "formulas": []
+    }
+  ],
+  "answers": [],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "p'(x, t) = \\frac{1}{(4 \\pi D_p)^{1/2}} \\exp \\left[ -\\frac{(x - \\mu_p E t)}{4 D_p t} \\right]",
+      "genericFormula": "p'(x, t) = \\frac{1}{(4 \\pi D_p)^{1/2}} \\exp \\left[ -\\frac{(x - \\mu_p E t)}{4 D_p t} \\right]",
+      "description": "Esta fórmula representa a densidade de probabilidade de encontrar uma partícula em uma posição x em um determinado tempo t, considerando a difusão da partícula em um meio. A fórmula é uma solução da equação de difusão e descreve como a probabilidade de localização da partícula se espalha ao longo do tempo.",
+      "concepts": [
+        "Difusão",
+        "Densidade de probabilidade",
+        "Equação de difusão",
+        "Movimento browniano"
+      ],
+      "symbols": [
+        {
+          "symbol": "p'(x, t)",
+          "description": "Representa a densidade de probabilidade de encontrar a partícula na posição x no tempo t."
+        },
+        {
+          "symbol": "D_p",
+          "description": "É o coeficiente de difusão da partícula, que mede a taxa de espalhamento da partícula em um meio."
+        },
+        {
+          "symbol": "μ_p",
+          "description": "É a média da velocidade da partícula, que indica a direção e a intensidade do movimento da partícula."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa a força ou campo que atua sobre a partícula, influenciando seu movimento."
+        },
+        {
+          "symbol": "t",
+          "description": "É o tempo, que indica o momento em que estamos avaliando a densidade de probabilidade."
+        },
+        {
+          "symbol": "x",
+          "description": "É a posição ao longo da qual estamos avaliando a densidade de probabilidade da partícula."
+        },
+        {
+          "symbol": "π",
+          "description": "É uma constante matemática que representa a razão entre a circunferência de um círculo e seu diâmetro, aproximadamente igual a 3,14159."
+        },
+        {
+          "symbol": "exp",
+          "description": "É a função exponencial, que descreve o crescimento ou decaimento de quantidades em muitos processos físicos."
+        }
+      ],
+      "chapter": "6 Nonquilibrium Excess Carriers in Semiconductors",
+      "section": "Exercise Problem",
+      "source": "standalone",
+      "page": 69
+    },
+    {
+      "originalFormula": "\\delta p(x, t) = \\frac{e^{-t/\\tau_p}}{(4 \\pi D_p)^{1/2}} \\exp \\left[ -\\frac{(x - \\mu_p E t)}{4 D_p t} \\right]",
+      "genericFormula": "\\delta p(x, t) = \\frac{e^{-t/\\tau}}{(4 \\pi D)^{1/2}} \\exp \\left[ -\\frac{(x - \\mu E t)}{4 D t} \\right]",
+      "description": "Esta fórmula descreve a distribuição de uma quantidade física, como a densidade de probabilidade ou a concentração de partículas, em função da posição e do tempo. Ela leva em consideração a difusão e o movimento de partículas em um meio, onde a dispersão ao longo do tempo e do espaço é influenciada por parâmetros como a difusividade e a mobilidade.",
+      "concepts": [
+        "difusão",
+        "distribuição de probabilidade",
+        "movimento de partículas",
+        "tempo de relaxação",
+        "difusividade"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\delta p",
+          "description": "Representa a variação ou a distribuição da quantidade física em função da posição e do tempo."
+        },
+        {
+          "symbol": "x",
+          "description": "Representa a posição no espaço onde a quantidade física está sendo avaliada."
+        },
+        {
+          "symbol": "t",
+          "description": "Representa o tempo em que a distribuição da quantidade física está sendo considerada."
+        },
+        {
+          "symbol": "e",
+          "description": "É a base do logaritmo natural, um número irracional que é fundamental em várias áreas da matemática e da física, utilizado aqui para descrever o decaimento exponencial."
+        },
+        {
+          "symbol": "\\tau_p",
+          "description": "Representa o tempo de relaxação, que é um parâmetro que mede o tempo necessário para que a quantidade física atinja um estado de equilíbrio ou uma distribuição estável."
+        },
+        {
+          "symbol": "D_p",
+          "description": "Representa a difusividade da quantidade física, que é uma medida de quão rapidamente as partículas se espalham em um meio."
+        },
+        {
+          "symbol": "\\mu_p",
+          "description": "Representa a mobilidade da quantidade física, que é uma medida de quão rapidamente as partículas se movem sob a influência de um campo elétrico."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa a intensidade de um campo elétrico que pode influenciar o movimento das partículas."
+        }
+      ],
+      "chapter": "6 Nonquilibrium Excess Carriers in Semiconductors",
+      "section": "Exercise Problem",
+      "source": "standalone",
+      "page": 103
+    },
+    {
+      "originalFormula": "\\nabla \\cdot E = \\frac{p}{\\epsilon}",
+      "genericFormula": "\\nabla \\cdot E = \\frac{p}{\\epsilon}",
+      "description": "Esta fórmula representa a relação entre a divergência do campo elétrico e a densidade de carga elétrica em um meio. A divergência do campo elétrico indica como o campo elétrico se espalha ou se concentra em um ponto específico do espaço, enquanto a densidade de carga elétrica representa a quantidade de carga elétrica por unidade de volume.",
+      "concepts": [
+        "Campo elétrico",
+        "Divergência",
+        "Densidade de carga elétrica",
+        "Permissividade do meio"
+      ],
+      "symbols": [
+        {
+          "symbol": "∇ ⋅ E",
+          "description": "Representa a divergência do campo elétrico, que indica a taxa na qual o campo elétrico se expande ou se contrai em um ponto específico."
+        },
+        {
+          "symbol": "p",
+          "description": "Representa a densidade de carga elétrica, que é a quantidade de carga elétrica presente em um determinado volume."
+        },
+        {
+          "symbol": "ε",
+          "description": "Representa a permissividade do meio, que é uma medida da capacidade do meio de permitir a formação de um campo elétrico dentro dele."
+        }
+      ],
+      "chapter": "6 Nonquilibrium Excess Carriers in Semiconductors",
+      "section": "Exercise Problem",
+      "source": "standalone",
+      "page": 137
+    },
+    {
+      "originalFormula": "J = \\sigma E",
+      "genericFormula": "J = \\sigma E",
+      "description": "Esta fórmula representa a relação entre a densidade de corrente elétrica e o campo elétrico em um material condutor. Ela mostra que a densidade de corrente, que é a quantidade de carga elétrica que passa por uma unidade de área em um determinado tempo, é proporcional ao campo elétrico aplicado ao material. O coeficiente de proporcionalidade é a condutividade elétrica do material.",
+      "concepts": [
+        "Densidade de corrente elétrica",
+        "Campo elétrico",
+        "Condutividade elétrica"
+      ],
+      "symbols": [
+        {
+          "symbol": "J",
+          "description": "Representa a densidade de corrente elétrica, que é a quantidade de carga elétrica que flui através de uma unidade de área em um tempo específico."
+        },
+        {
+          "symbol": "σ",
+          "description": "Representa a condutividade elétrica do material, que indica a capacidade do material de conduzir eletricidade. Materiais com alta condutividade permitem que a corrente elétrica flua mais facilmente."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa o campo elétrico, que é uma região ao redor de uma carga elétrica onde outras cargas experimentam uma força. O campo elétrico é responsável por mover as cargas elétricas dentro do material."
+        }
+      ],
+      "chapter": "6 Nonquilibrium Excess Carriers in Semiconductors",
+      "section": "Exercise Problem",
+      "source": "standalone",
+      "page": 171
+    },
+    {
+      "originalFormula": "\\nabla \\cdot J = -\\frac{\\partial p}{\\partial t}",
+      "genericFormula": "\\nabla \\cdot J = -\\frac{\\partial p}{\\partial t}",
+      "description": "Esta fórmula representa a relação entre a divergência de um vetor de corrente e a variação temporal de uma quantidade de densidade, que pode ser interpretada como a taxa de mudança da densidade de partículas em um determinado volume. Em outras palavras, ela descreve como a corrente de partículas está relacionada à sua densidade que está mudando com o tempo.",
+      "concepts": [
+        "Divergência de um vetor",
+        "Vetor de corrente",
+        "Variação temporal",
+        "Densidade de partículas"
+      ],
+      "symbols": [
+        {
+          "symbol": "∇ · J",
+          "description": "A divergência de um vetor de corrente, que mede a taxa na qual a quantidade de corrente está saindo de um ponto em um campo."
+        },
+        {
+          "symbol": "p",
+          "description": "Representa a densidade de partículas, que é a quantidade de partículas por unidade de volume em um determinado espaço."
+        },
+        {
+          "symbol": "∂/∂t",
+          "description": "Um operador que indica a derivada parcial em relação ao tempo, mostrando como uma quantidade muda ao longo do tempo."
+        }
+      ],
+      "chapter": "6 Nonquilibrium Excess Carriers in Semiconductors",
+      "section": "Exercise Problem",
+      "source": "standalone",
+      "page": 205
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263
+  ],
+  "lastUpdated": "2026-05-08T21:25:08.712Z",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
+}

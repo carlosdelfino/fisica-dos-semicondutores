@@ -1,0 +1,974 @@
+{
+  "chapter": "3",
+  "questions": [
+    {
+      "number": "a",
+      "text": "Determine n_i^2 using the values of N_c and N_v from Table 1 and using an E_g of 1.12 eV.",
+      "formulas": [
+        {
+          "originalFormula": "n_i^2 = N_c N_v e^{-E_g/kT}",
+          "genericFormula": "n_i^2 = N_c N_v e^{-E_g/kT}",
+          "description": "Esta fórmula relaciona a densidade de portadores intrínsecos de carga elétrica em um semicondutor com a densidade de estados na banda de condução e na banda de valência, além da energia de bandgap e da temperatura do sistema. Ela é fundamental para entender como a temperatura e a estrutura eletrônica do material afetam a condutividade elétrica.",
+          "concepts": [
+            "Densidade de portadores intrínsecos",
+            "Densidade de estados",
+            "Energia de bandgap",
+            "Temperatura",
+            "Semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "n_i",
+              "description": "Representa a densidade de portadores intrínsecos, que é a quantidade de elétrons ou lacunas presentes em um semicondutor em equilíbrio térmico."
+            },
+            {
+              "symbol": "N_c",
+              "description": "Representa a densidade de estados na banda de condução, que indica quantos estados eletrônicos estão disponíveis para os elétrons na banda de condução do semicondutor."
+            },
+            {
+              "symbol": "N_v",
+              "description": "Representa a densidade de estados na banda de valência, que indica quantos estados eletrônicos estão disponíveis para as lacunas na banda de valência do semicondutor."
+            },
+            {
+              "symbol": "E_g",
+              "description": "Representa a energia de bandgap, que é a diferença de energia entre a banda de condução e a banda de valência, essencial para determinar a condutividade do semicondutor."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos, sendo fundamental na descrição do comportamento térmico das partículas."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta do sistema, medida em Kelvin, que influencia a energia térmica dos portadores de carga no semicondutor."
+            }
+          ],
+          "chapter": "3",
+          "source": "question",
+          "questionNumber": "a",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "number": "b",
+      "text": "At T = 600K, determine E_g from the relation in Table 2-2, to be 1.032 eV. Using Eq. (3.24) and n_i(300K) = 10^{10} cm^{-3}, calculate n_i(600K).",
+      "formulas": [
+        {
+          "originalFormula": "n_i^2(600K) = (600) \\left( \\frac{exp(-1.032/(8.62 \\times 10^{-5} \\times 600))}{exp(-1.12/(8.62 \\times 10^{-5} \\times 300))} \\right)",
+          "genericFormula": "n_i^2(T) = (T) \\left( \\frac{exp(-E_g1/(k \\times T))}{exp(-E_g2/(k \\times T_0))} \\right)",
+          "description": "Esta fórmula calcula a densidade de portadores intrínsecos de um semicondutor a uma temperatura específica, considerando a relação entre a temperatura e a energia de bandgap do material.",
+          "concepts": [
+            "Densidade de portadores intrínsecos",
+            "Temperatura",
+            "Energia de bandgap",
+            "Constante de Boltzmann",
+            "Efeito da temperatura na condutividade elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "n_i",
+              "description": "Densidade de portadores intrínsecos, que representa a quantidade de elétrons e buracos gerados espontaneamente em um semicondutor."
+            },
+            {
+              "symbol": "T",
+              "description": "Temperatura em Kelvin, que é uma medida da energia térmica dos portadores no material."
+            },
+            {
+              "symbol": "E_g1",
+              "description": "Energia de bandgap do semicondutor a uma temperatura específica, que é a energia mínima necessária para que um elétron se mova da banda de valência para a banda de condução."
+            },
+            {
+              "symbol": "E_g2",
+              "description": "Energia de bandgap do semicondutor a uma temperatura de referência, geralmente a temperatura ambiente."
+            },
+            {
+              "symbol": "k",
+              "description": "Constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+            },
+            {
+              "symbol": "T_0",
+              "description": "Temperatura de referência, normalmente considerada como a temperatura ambiente, que é utilizada para comparação."
+            }
+          ],
+          "chapter": "3",
+          "source": "question",
+          "questionNumber": "b",
+          "page": 42
+        }
+      ]
+    },
+    {
+      "number": "3.4a",
+      "text": "Calculate the density of the majority and of the minority carriers at T = 300K.",
+      "formulas": [
+        {
+          "originalFormula": "n_{p} = n_{i}^{2} = 1 \\times 10^{20}",
+          "genericFormula": "n_{p} = n_{i}^{2}",
+          "description": "Esta fórmula representa a relação entre a concentração de portadores de carga em um semicondutor intrínseco, onde 'n_p' é a concentração de portadores de carga do tipo positivo (buracos) e 'n_i' é a concentração de portadores intrínsecos (elétrons e buracos) no material. A fórmula indica que a concentração de buracos é igual ao quadrado da concentração de portadores intrínsecos.",
+          "concepts": [
+            "Semicondutores",
+            "Portadores de carga",
+            "Concentração de portadores",
+            "Equilíbrio de carga em semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "n_{p}",
+              "description": "Representa a concentração de portadores de carga do tipo positivo, ou seja, a quantidade de buracos disponíveis em um semicondutor."
+            },
+            {
+              "symbol": "n_{i}",
+              "description": "Representa a concentração de portadores intrínsecos, que é a quantidade de elétrons e buracos em um semicondutor puro, sem dopagem."
+            }
+          ],
+          "chapter": "3",
+          "source": "question",
+          "questionNumber": "3.4a",
+          "page": 84
+        },
+        {
+          "originalFormula": "n + N_{A} = p + N_{D}",
+          "genericFormula": "n + N_{A} = p + N_{D}",
+          "description": "Esta fórmula representa o equilíbrio de cargas em um semicondutor dopado, onde a soma das portadoras de carga negativa (elétrons) e a concentração de átomos do dopante do tipo aceito (aceitadores) é igual à soma das portadoras de carga positiva (lacunas) e a concentração de átomos do dopante do tipo doador (doadores).",
+          "concepts": [
+            "Equilíbrio de cargas em semicondutores",
+            "Dopagem de semicondutores",
+            "Portadoras de carga (elétrons e lacunas)",
+            "Concentrações de dopantes"
+          ],
+          "symbols": [
+            {
+              "symbol": "n",
+              "description": "representa a densidade de portadoras de carga negativa, ou seja, a quantidade de elétrons livres em um semicondutor."
+            },
+            {
+              "symbol": "N_{A}",
+              "description": "representa a concentração de átomos dopantes do tipo aceito, que introduzem lacunas no semicondutor."
+            },
+            {
+              "symbol": "p",
+              "description": "representa a densidade de portadoras de carga positiva, ou seja, a quantidade de lacunas presentes no semicondutor."
+            },
+            {
+              "symbol": "N_{D}",
+              "description": "representa a concentração de átomos dopantes do tipo doador, que fornecem elétrons ao semicondutor."
+            }
+          ],
+          "chapter": "3",
+          "source": "question",
+          "questionNumber": "3.4a",
+          "page": 125
+        },
+        {
+          "originalFormula": "n + 9 \\times 10^{16} = p + 10^{17}",
+          "genericFormula": "n + N_{d} = p + N_{a}",
+          "description": "Esta fórmula representa a relação entre a densidade de portadores de carga em um semicondutor dopado. Aqui, n é a densidade de elétrons livres, p é a densidade de lacunas, N_{d} é a densidade de dopantes do tipo n, e N_{a} é a densidade de dopantes do tipo p. A equação indica que a soma dos portadores de carga do tipo n e a densidade de dopantes do tipo n é igual à soma dos portadores de carga do tipo p e a densidade de dopantes do tipo p.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Dopagem de semicondutores",
+            "Equilíbrio de cargas em semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "n",
+              "description": "Representa a densidade de elétrons livres em um semicondutor, que são os portadores de carga negativa."
+            },
+            {
+              "symbol": "p",
+              "description": "Representa a densidade de lacunas em um semicondutor, que são os portadores de carga positiva."
+            },
+            {
+              "symbol": "N_{d}",
+              "description": "Representa a densidade de dopantes do tipo n, que adicionam elétrons ao semicondutor."
+            },
+            {
+              "symbol": "N_{a}",
+              "description": "Representa a densidade de dopantes do tipo p, que criam lacunas no semicondutor."
+            }
+          ],
+          "chapter": "3",
+          "source": "question",
+          "questionNumber": "3.4a",
+          "page": 167
+        },
+        {
+          "originalFormula": "n \\approx 10^{16} \\ \\text{cm}^{-3}",
+          "genericFormula": "n \\approx N \\ \\text{cm}^{-3}",
+          "description": "Esta fórmula representa a densidade de portadores de carga em um material semicondutor, onde 'n' é o número de portadores de carga por centímetro cúbico. A densidade de portadores é uma medida importante para entender as propriedades elétricas do semicondutor.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Semicondutores",
+            "Propriedades elétricas dos materiais"
+          ],
+          "symbols": [
+            {
+              "symbol": "n",
+              "description": "Representa a densidade de portadores de carga, que é o número de portadores (como elétrons ou lacunas) por unidade de volume, geralmente expressa em centímetros cúbicos."
+            },
+            {
+              "symbol": "N",
+              "description": "Representa uma quantidade genérica que pode ser utilizada para indicar a densidade de portadores de carga em um material semicondutor, sem um valor específico."
+            }
+          ],
+          "chapter": "3",
+          "source": "question",
+          "questionNumber": "3.4a",
+          "page": 208
+        },
+        {
+          "originalFormula": "p = \\frac{n_{i}^{2}}{n} = 10^{4} \\text{cm}^{-3}",
+          "genericFormula": "p = \\frac{n_{i}^{2}}{n}",
+          "description": "Esta fórmula representa a densidade de portadores de carga em um semicondutor intrínseco, onde p é a densidade de portadores de carga positiva (buracos), n_i é a densidade intrínseca de portadores de carga e n é a densidade de portadores de carga negativa (elétrons).",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Semicondutores",
+            "Teoria de bandas",
+            "Equilíbrio térmico"
+          ],
+          "symbols": [
+            {
+              "symbol": "p",
+              "description": "Representa a densidade de portadores de carga positiva, ou buracos, em um semicondutor."
+            },
+            {
+              "symbol": "n_{i}",
+              "description": "Representa a densidade intrínseca de portadores de carga em um semicondutor, que é a quantidade de elétrons e buracos gerados termicamente em equilíbrio."
+            },
+            {
+              "symbol": "n",
+              "description": "Representa a densidade de portadores de carga negativa, ou elétrons, em um semicondutor."
+            }
+          ],
+          "chapter": "3",
+          "source": "question",
+          "questionNumber": "3.4a",
+          "page": 250
+        }
+      ]
+    },
+    {
+      "number": "3.4b",
+      "text": "Calculate the density of the majority and of the minority carriers at T = 600K.",
+      "formulas": [
+        {
+          "originalFormula": "n p = 11.137 \\times 10^{30}",
+          "genericFormula": "n p = N",
+          "description": "Esta fórmula representa o produto da densidade de portadores de carga negativa (elétrons) e a densidade de portadores de carga positiva (lacunas) em um material semicondutor. O resultado desse produto é uma medida importante para entender as propriedades elétricas do semicondutor.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Semicondutores",
+            "Equilíbrio de portadores",
+            "Propriedades elétricas de materiais"
+          ],
+          "symbols": [
+            {
+              "symbol": "n",
+              "description": "Representa a densidade de portadores de carga negativa, que são os elétrons presentes no semicondutor."
+            },
+            {
+              "symbol": "p",
+              "description": "Representa a densidade de portadores de carga positiva, que são as lacunas deixadas por elétrons no semicondutor."
+            },
+            {
+              "symbol": "N",
+              "description": "Representa o produto da densidade de portadores de carga negativa e a densidade de portadores de carga positiva, que é uma constante que pode ser utilizada para caracterizar o material semicondutor."
+            }
+          ],
+          "chapter": "3",
+          "source": "question",
+          "questionNumber": "3.4b",
+          "page": 291
+        },
+        {
+          "originalFormula": "n + 9 \\times 10^{16} = p + 10^{17}",
+          "genericFormula": "n + N_{D} = p + N_{A}",
+          "description": "Esta fórmula representa a condição de equilíbrio de carga em um semicondutor dopado, onde a densidade de portadores de carga negativa (elétrons) e a densidade de portadores de carga positiva (lacunas) se igualam em um sistema que contém dopantes do tipo n e p.",
+          "concepts": [
+            "Equilíbrio de carga em semicondutores",
+            "Dopagem de semicondutores",
+            "Densidade de portadores de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "n",
+              "description": "Representa a densidade de portadores de carga negativa, ou seja, o número de elétrons livres por unidade de volume no semicondutor."
+            },
+            {
+              "symbol": "p",
+              "description": "Representa a densidade de portadores de carga positiva, ou seja, o número de lacunas (cargas positivas) por unidade de volume no semicondutor."
+            },
+            {
+              "symbol": "N_{D}",
+              "description": "Representa a densidade de dopantes do tipo n, que são átomos que fornecem elétrons adicionais ao semicondutor."
+            },
+            {
+              "symbol": "N_{A}",
+              "description": "Representa a densidade de dopantes do tipo p, que são átomos que criam lacunas ao retirar elétrons do semicondutor."
+            }
+          ],
+          "chapter": "3",
+          "source": "question",
+          "questionNumber": "3.4b",
+          "page": 333
+        },
+        {
+          "originalFormula": "n \\approx 1.1 \\times 10^{16} \\text{cm}^{-3}",
+          "genericFormula": "n \\approx C \\times 10^{D} \\text{cm}^{-3}",
+          "description": "Esta fórmula representa a densidade de portadores de carga, especificamente elétrons, em um material semicondutor. O valor indica quantos elétrons estão presentes por centímetro cúbico no material.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Semicondutores",
+            "Elétrons como portadores de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "n",
+              "description": "Representa a densidade de portadores de carga, que é a quantidade de portadores, como elétrons, por unidade de volume."
+            },
+            {
+              "symbol": "C",
+              "description": "Um coeficiente que representa uma constante de proporcionalidade na densidade de portadores, que pode variar dependendo do material e das condições."
+            },
+            {
+              "symbol": "D",
+              "description": "Um expoente que indica a ordem de grandeza da densidade de portadores, ajudando a expressar a magnitude do valor em termos de potências de dez."
+            }
+          ],
+          "chapter": "3",
+          "source": "question",
+          "questionNumber": "3.4b",
+          "page": 374
+        },
+        {
+          "originalFormula": "p = \\frac{n_{i}^{2}}{n} = 1.014 \\times 10^{15} \\text{cm}^{-3}",
+          "genericFormula": "p = \\frac{n_{i}^{2}}{n}",
+          "description": "Esta fórmula representa a densidade de portadores de carga negativa, que é a concentração de buracos em um semicondutor intrínseco. A densidade de buracos é calculada a partir do quadrado da densidade de portadores intrínsecos dividido pela densidade de portadores livres.",
+          "concepts": [
+            "Semicondutores",
+            "Densidade de portadores de carga",
+            "Buracos",
+            "Portadores intrínsecos"
+          ],
+          "symbols": [
+            {
+              "symbol": "p",
+              "description": "Representa a densidade de buracos, que são os portadores de carga positiva em um semicondutor."
+            },
+            {
+              "symbol": "n_{i}",
+              "description": "Representa a densidade de portadores intrínsecos, que é a concentração de elétrons em um semicondutor puro em equilíbrio térmico."
+            },
+            {
+              "symbol": "n",
+              "description": "Representa a densidade de portadores livres, que é a concentração de elétrons disponíveis para condução em um semicondutor dopado."
+            }
+          ],
+          "chapter": "3",
+          "source": "question",
+          "questionNumber": "3.4b",
+          "page": 416
+        }
+      ]
+    },
+    {
+      "number": "3.1",
+      "text": "Draw the energy band diagrams, showing E_{C}, E_{V}, E_{F}, and E_{i} for the following; assuming all impurities are ionized, a) Intrinsic silicon at 300K. b) Silicon doped with 10^{17} boron atoms cm^{-3} at 300K.",
+      "formulas": []
+    },
+    {
+      "number": "3.2",
+      "text": "A silicon sample is doped with 10^{16} cm^{-3} of phosphorus atoms. Assume that all phosphorus atoms are ionized at 300K and determine: i) The electron density n_{0}. ii) The hole density p_{0}. iii) The location of the Fermi level with respect to E_{i}.",
+      "formulas": []
+    },
+    {
+      "number": "3.3",
+      "text": "Repeat Problem 3.2 if the phosphorus doping is at a level of 10^{18} cm^{-3}.",
+      "formulas": []
+    },
+    {
+      "number": "3.4",
+      "text": "Repeat Problem 3.2 for a boron doping of 10^{16} cm^{-3}.",
+      "formulas": []
+    },
+    {
+      "number": "3.5",
+      "text": "The Fermi level in a silicon sample at equilibrium is located 0.40 eV below the middle of the band gap. At T = 300K, a) Determine the probability of occupancy of a state located at the middle of the band gap. b) Determine the probability of occupancy of the acceptor states if the acceptor states are located at 0.04 eV above the top of the valence band. c) Check if the assumption of complete ionization in part (b) is valid.",
+      "formulas": []
+    },
+    {
+      "number": "3.6",
+      "text": "The effective conduction band density of states is N_{C} = 3.22 \\times 10^{19} cm^{-3} and the effective valence band density of states is N_{V} = 1.83 \\times 10^{19} cm^{-3}. Assume that N_{C} and N_{V} are located at the conduction band and valence band edges respectively. Let T = 300K. a) For Problem 3.5, determine the thermal equilibrium electron density. b) Determine the thermal equilibrium hole density. c) Calculate the p_{0}n_{0} product.",
+      "formulas": []
+    },
+    {
+      "number": "3.7",
+      "text": "In a silicon sample at equilibrium the Fermi level is located above the middle of the band gap by 0.38 eV. The phosphorus donor states are located 0.04 eV below the conduction band. Determine the percentage ionization of the phosphorus atoms at T = 300K.",
+      "formulas": []
+    },
+    {
+      "number": "3.8",
+      "text": "A silicon sample at 300K has an acceptor density of 10^{15} cm^{-3}. Determine: a) The hole density. b) The electron density.",
+      "formulas": []
+    },
+    {
+      "number": "3.9",
+      "text": "A certain silicon sample at 300K has p_{0} = 4 \\times 10^{10} cm^{-3}. Determine: a) The electron density. b) The acceptor density if the donor density is 1.25 \\times 10^{10} cm^{-3}.",
+      "formulas": []
+    },
+    {
+      "number": "3.10",
+      "text": "A certain silicon sample at 300K has N_{D} = 1 \\times 10^{16} cm^{-3} and N_{A} = 0.8 \\times 10^{16} cm^{-3}. Determine: a) The majority carrier density. b) The minority carrier density.",
+      "formulas": []
+    },
+    {
+      "number": "3.18",
+      "text": "In the band diagram shown below, which carrier has the larger kinetic energy? Explain the reason for your answer.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "a",
+      "text": "n_i^2 = 0.9772 \\times 10^{20} cm^{-6}, n_i = 9.885 \\times 10^{9} cm^{-3}",
+      "formulas": []
+    },
+    {
+      "questionNumber": "b",
+      "text": "n_i(600K) = 3.337 \\times 10^{15} cm^{-3}",
+      "formulas": [
+        {
+          "originalFormula": "n_i(600K) = 1.137 \\times 10^{11}",
+          "genericFormula": "n_i(T) = C",
+          "description": "Esta fórmula representa a concentração de portadores intrínsecos em um semicondutor a uma temperatura específica. Neste caso, a temperatura é de 600 Kelvin, e a concentração é dada em termos de um valor específico.",
+          "concepts": [
+            "Concentração de portadores intrínsecos",
+            "Temperatura em Kelvin",
+            "Semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "n_i",
+              "description": "Representa a concentração de portadores intrínsecos em um semicondutor, que são elétrons e lacunas que se geram devido à energia térmica."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura em Kelvin, uma escala de temperatura que é amplamente utilizada em ciência e engenharia, especialmente em contextos que envolvem fenômenos térmicos."
+            },
+            {
+              "symbol": "C",
+              "description": "Representa uma constante que, neste contexto, seria um valor específico da concentração de portadores intrínsecos a uma temperatura dada."
+            }
+          ],
+          "chapter": "3",
+          "source": "answer",
+          "questionNumber": "b",
+          "page": 457
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498
+  ],
+  "lastUpdated": "2026-05-08T18:19:13.862751",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
+}

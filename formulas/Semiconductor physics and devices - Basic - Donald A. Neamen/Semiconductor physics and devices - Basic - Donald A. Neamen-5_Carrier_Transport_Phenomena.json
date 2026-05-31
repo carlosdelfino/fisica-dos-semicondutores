@@ -1,0 +1,904 @@
+{
+  "chapter": "5 Carrier Transport Phenomena",
+  "section": "Exercise Problem 5.3",
+  "questions": [
+    {
+      "number": "Ex 5.3",
+      "text": "Determine the (a) hole mobility, (b) conductivity, and (c) resistivity.",
+      "formulas": [
+        {
+          "originalFormula": "\\sigma \\approx 16 \\; (\\Omega \\cdot \\text{cm})^{-1}",
+          "genericFormula": "\\sigma \\approx C \\; (\\Omega \\cdot \\text{cm})^{-1}",
+          "description": "Esta fórmula representa a condutividade elétrica de um material, que é uma medida de quão bem o material pode conduzir eletricidade. Quanto maior o valor da condutividade, melhor o material é em permitir a passagem de corrente elétrica.",
+          "concepts": [
+            "Condutividade elétrica",
+            "Resistividade",
+            "Corrente elétrica",
+            "Material semicondutor"
+          ],
+          "symbols": [
+            {
+              "symbol": "σ",
+              "description": "Representa a condutividade elétrica do material, que indica a capacidade do material de conduzir eletricidade."
+            },
+            {
+              "symbol": "Ω",
+              "description": "Representa a unidade de resistência elétrica, chamada ohm, que é usada para medir a resistência de um material ao fluxo de corrente elétrica."
+            },
+            {
+              "symbol": "cm",
+              "description": "Representa centímetros, que é uma unidade de medida de comprimento utilizada para descrever dimensões físicas."
+            },
+            {
+              "symbol": "C",
+              "description": "Representa uma constante que pode ser substituída por um valor específico de condutividade elétrica em diferentes contextos ou materiais."
+            }
+          ],
+          "chapter": "5 Carrier Transport Phenomena",
+          "section": "Exercise Problem 5.3",
+          "source": "question",
+          "questionNumber": "Ex 5.3",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "number": "5.29",
+      "text": "Consider a sample of silicon at T = 300 K. Assume that the electron concentration varies linearly with distance, as shown in Figure P5.29. The diffusion current density is found to be J_e = 0.19 A/cm². If the electron diffusion coefficient is D_e = 25 cm²/s, determine the electron concentration at x = 0.",
+      "formulas": []
+    },
+    {
+      "number": "5.30",
+      "text": "The steady-state electron distribution in silicon can be approximated by a linear function of x. The maximum electron concentration occurs at x = 0 and is n(0) = 2 × 10^16 cm⁻³. At x = 0.012 cm, the electron concentration is 5 × 10^15 cm⁻³. If the electron diffusion coefficient is D_e = 27 cm²/s, determine the electron diffusion current density.",
+      "formulas": []
+    },
+    {
+      "number": "5.31",
+      "text": "The electron diffusion current density in a semiconductor is a constant and is given by J_e = -2 A/cm². The electron concentration at x = 0 is n(0) = 1.015 cm⁻³. (a) Calculate the electron concentration at x = 20 μm if the material is silicon with D_e = 30 cm²/s. (b) Repeat part (a) if the material is GaAs with D_e = 230 cm²/s.",
+      "formulas": []
+    },
+    {
+      "number": "5.32",
+      "text": "The hole concentration in p-type GaAs is given by p(x) = 10^{10} + L_x/y cm⁻³ for -L ≤ x ≤ 0 where L = 12 μm. The hole diffusion coefficient is D_h = 10 cm²/s. Calculate the hole diffusion current density at (a) x = 0, (b) x = -6 μm, and (c) x = -12 μm.",
+      "formulas": []
+    },
+    {
+      "number": "5.33",
+      "text": "In silicon, the electron concentration is given by n(x) = 10^{16}e^{-x/2} for x ≥ 0 and the hole concentration is given by p(x) = 5 × 10^{16}e^{x/5} cm⁻³ for x ≤ 0. The parameter values are L_e = 2 × 10^{-2} cm and L_p = 5 × 10^{-2} cm for s = 0. The electron and hole diffusion coefficients are D_e = 25 cm²/s and D_h = 10 cm²/s, respectively. The total current density is defined as the sum of the electron and hole diffusion current densities at x = 0. Calculate the total current density.",
+      "formulas": []
+    },
+    {
+      "number": "5.34",
+      "text": "The concentration of holes in a semiconductor is given by p(x) = 5 × 10^{15}e^{-x/6} cm⁻³ for x ≥ 0. Determine the hole diffusion current density at (a) x = 0 and (b) x = L, if the material is (i) silicon with D_h = 10 cm²/s and L_h = 50 μm, and (ii) germanium with D_h = 48 cm²/s and L_h = 22.5 μm.",
+      "formulas": []
+    },
+    {
+      "number": "5.35",
+      "text": "The electron concentration in silicon at T = 300 K is given by n(x) = 10^{16}e^{-\\frac{x}{18}} cm⁻³ where x is measured in μm and is limited to 0 ≤ x ≤ 25 μm. The electron diffusion coefficient is D_e = 25 cm²/s and the electron mobility is μ_e = 960 cm²/V·s. The total electron current density through the semiconductor is constant and equal to.",
+      "formulas": []
+    },
+    {
+      "number": "5.45 (a)",
+      "text": "Determine the electron diffusion coefficient if the electron mobility is \\mu_{n} = 1150 \\\text{ cm}^2/\\\text{V s}.",
+      "formulas": [
+        {
+          "originalFormula": "D_{n} = \\mu_{n} \\frac{kT}{q}",
+          "genericFormula": "D_{n} = \\mu_{n} \\frac{kT}{q}",
+          "description": "Esta fórmula representa a relação entre a difusividade dos portadores de carga negativa (elétrons) em um semicondutor e sua mobilidade, temperatura e carga elétrica. A difusividade é uma medida de quão rapidamente os elétrons se espalham em um material semicondutor devido a um gradiente de concentração.",
+          "concepts": [
+            "Difusividade",
+            "Mobilidade de portadores de carga",
+            "Temperatura",
+            "Carga elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "D_{n}",
+              "description": "Representa a difusividade dos portadores de carga negativa, que indica a taxa de difusão dos elétrons em um semicondutor."
+            },
+            {
+              "symbol": "\\mu_{n}",
+              "description": "Representa a mobilidade dos portadores de carga negativa, que é a capacidade dos elétrons de se moverem através do semicondutor quando um campo elétrico é aplicado."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura do sistema em Kelvin, que influencia a energia térmica dos portadores de carga."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elétrica elementar, que é a carga de um único elétron."
+            }
+          ],
+          "chapter": "5 Carrier Transport Phenomena",
+          "section": "Exercise Problem 5.3",
+          "source": "question",
+          "questionNumber": "5.45 (a)",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "number": "5.45 (b)",
+      "text": "Determine the hole mobility if the hole diffusion coefficient is D_{p} = 8 \\\text{ cm}^2/\\\text{s}.",
+      "formulas": [
+        {
+          "originalFormula": "\\mu_{p} = \\frac{D_{p} q}{kT}",
+          "genericFormula": "\\mu_{p} = \\frac{D_{p} q}{kT}",
+          "description": "Esta fórmula representa a mobilidade dos portadores de carga positiva, que são os buracos em um semicondutor. A mobilidade é uma medida de quão rapidamente os portadores de carga podem se mover através do material quando um campo elétrico é aplicado.",
+          "concepts": [
+            "Mobilidade dos portadores de carga",
+            "Difusão de portadores em semicondutores",
+            "Relação entre temperatura e transporte de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "μ_{p}",
+              "description": "Representa a mobilidade dos portadores de carga positiva (buracos) em um semicondutor, que indica a facilidade com que esses portadores se movem sob a influência de um campo elétrico."
+            },
+            {
+              "symbol": "D_{p}",
+              "description": "Representa o coeficiente de difusão dos portadores de carga positiva (buracos), que quantifica a taxa de movimento dos buracos devido a um gradiente de concentração."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elementar, que é a carga de um único elétron ou buraco. É uma constante fundamental na física que mede a quantidade de carga elétrica."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos. É uma constante fundamental que aparece em várias equações da termodinâmica e da física estatística."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta em Kelvin, que é uma medida da energia térmica média das partículas em um sistema. A temperatura afeta o comportamento dos portadores de carga em semicondutores."
+            }
+          ],
+          "chapter": "5 Carrier Transport Phenomena",
+          "section": "Exercise Problem 5.3",
+          "source": "question",
+          "questionNumber": "5.45 (b)",
+          "page": 26
+        }
+      ]
+    },
+    {
+      "number": "5.46",
+      "text": "Determine (a) the Hall voltage and (b) the Hall field.",
+      "formulas": [
+        {
+          "originalFormula": "V_{H} = \\frac{B I}{n q} L",
+          "genericFormula": "V_{H} = \\frac{B I}{n q} L",
+          "description": "Esta fórmula representa a tensão de Hall, que é gerada quando uma corrente elétrica passa através de um material condutor em um campo magnético. A tensão de Hall é uma medida da separação de cargas elétricas que ocorre devido à interação entre a corrente e o campo magnético.",
+          "concepts": [
+            "Tensão de Hall",
+            "Corrente elétrica",
+            "Campo magnético",
+            "Movimento de cargas",
+            "Semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{H}",
+              "description": "Representa a tensão de Hall, que é a diferença de potencial gerada perpendicularmente à corrente e ao campo magnético."
+            },
+            {
+              "symbol": "B",
+              "description": "Representa a densidade do fluxo magnético, que indica a força do campo magnético aplicado ao material."
+            },
+            {
+              "symbol": "I",
+              "description": "Representa a corrente elétrica que flui através do material condutor."
+            },
+            {
+              "symbol": "n",
+              "description": "Representa a densidade de portadores de carga no material, ou seja, o número de portadores de carga por unidade de volume."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elétrica de um único portador de carga, como um elétron."
+            },
+            {
+              "symbol": "L",
+              "description": "Representa o comprimento do material condutor na direção da corrente elétrica."
+            }
+          ],
+          "chapter": "5 Carrier Transport Phenomena",
+          "section": "Exercise Problem 5.3",
+          "source": "question",
+          "questionNumber": "5.46",
+          "page": 38
+        },
+        {
+          "originalFormula": "E_{H} = \\frac{V_{H}}{L}",
+          "genericFormula": "E_{H} = \\frac{V_{H}}{L}",
+          "description": "Esta fórmula representa a relação entre a intensidade do campo elétrico gerado em um material semicondutor e a tensão aplicada sobre ele, dividida pelo comprimento do material. O campo elétrico é uma medida de como a força elétrica é distribuída em uma região do espaço.",
+          "concepts": [
+            "Campo elétrico",
+            "Tensão elétrica",
+            "Comprimento do material"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{H}",
+              "description": "Representa a intensidade do campo elétrico, que indica a força por unidade de carga que atua sobre uma carga elétrica em um ponto específico."
+            },
+            {
+              "symbol": "V_{H}",
+              "description": "Representa a tensão elétrica, que é a diferença de potencial elétrico entre dois pontos em um circuito ou material."
+            },
+            {
+              "symbol": "L",
+              "description": "Representa o comprimento do material ou da região onde o campo elétrico está sendo considerado, que influencia a intensidade do campo gerado pela tensão aplicada."
+            }
+          ],
+          "chapter": "5 Carrier Transport Phenomena",
+          "section": "Exercise Problem 5.3",
+          "source": "question",
+          "questionNumber": "5.46",
+          "page": 51
+        }
+      ]
+    },
+    {
+      "number": "5.47",
+      "text": "Calculate (a) the Hall voltage, (b) the Hall field, and (c) the carrier mobility.",
+      "formulas": [
+        {
+          "originalFormula": "V_{H} = \\frac{B I}{n q} L",
+          "genericFormula": "V_{H} = \\frac{B I}{n q} L",
+          "description": "Esta fórmula representa a tensão Hall, que é gerada quando uma corrente elétrica passa por um condutor em um campo magnético. A tensão Hall é uma medida da força eletromotriz que se desenvolve perpendicularmente à direção da corrente e do campo magnético.",
+          "concepts": [
+            "Tensão Hall",
+            "Corrente elétrica",
+            "Campo magnético",
+            "Movimento de cargas em um condutor"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{H}",
+              "description": "Representa a tensão Hall, que é a diferença de potencial elétrico gerada em um condutor devido à presença de um campo magnético."
+            },
+            {
+              "symbol": "B",
+              "description": "Representa a intensidade do campo magnético aplicado ao condutor. É uma medida da força do campo magnético."
+            },
+            {
+              "symbol": "I",
+              "description": "Representa a corrente elétrica que flui através do condutor. É a quantidade de carga elétrica que passa por um ponto em um circuito por unidade de tempo."
+            },
+            {
+              "symbol": "n",
+              "description": "Representa a densidade de portadores de carga no condutor. É o número de portadores de carga por unidade de volume."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elétrica de um único portador de carga, como um elétron. É uma medida da quantidade de eletricidade que um portador transporta."
+            },
+            {
+              "symbol": "L",
+              "description": "Representa o comprimento do condutor ao longo do qual a tensão Hall é medida. É a distância entre os pontos onde a tensão é medida."
+            }
+          ],
+          "chapter": "5 Carrier Transport Phenomena",
+          "section": "Exercise Problem 5.3",
+          "source": "question",
+          "questionNumber": "5.47",
+          "page": 64
+        },
+        {
+          "originalFormula": "E_{H} = \\frac{V_{H}}{L}",
+          "genericFormula": "E_{H} = \\frac{V_{H}}{L}",
+          "description": "Esta fórmula representa a relação entre a força eletromotriz Hall e a tensão Hall em um material condutor submetido a um campo magnético. A força eletromotriz Hall é gerada devido à separação de cargas elétricas em um condutor, resultando em uma tensão que pode ser medida.",
+          "concepts": [
+            "Força Eletromotriz Hall",
+            "Tensão Hall",
+            "Campo Magnético",
+            "Condutores Elétricos"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{H}",
+              "description": "Representa a força eletromotriz Hall, que é a tensão gerada em um condutor devido à presença de um campo magnético perpendicular à corrente elétrica."
+            },
+            {
+              "symbol": "V_{H}",
+              "description": "Representa a tensão Hall, que é a diferença de potencial medida entre dois pontos em um condutor quando ele está exposto a um campo magnético."
+            },
+            {
+              "symbol": "L",
+              "description": "Representa a largura do condutor na direção perpendicular ao fluxo de corrente e ao campo magnético, que influencia a magnitude da tensão Hall."
+            }
+          ],
+          "chapter": "5 Carrier Transport Phenomena",
+          "section": "Exercise Problem 5.3",
+          "source": "question",
+          "questionNumber": "5.47",
+          "page": 76
+        },
+        {
+          "originalFormula": "\\mu = \\frac{I}{n q E}",
+          "genericFormula": "\\mu = \\frac{I}{n q E}",
+          "description": "Esta fórmula representa a mobilidade de portadores de carga em um semicondutor, que é uma medida de quão rapidamente os portadores (como elétrons ou lacunas) podem se mover através do material quando um campo elétrico é aplicado.",
+          "concepts": [
+            "Mobilidade de portadores de carga",
+            "Corrente elétrica",
+            "Densidade de portadores de carga",
+            "Carga elétrica",
+            "Campo elétrico"
+          ],
+          "symbols": [
+            {
+              "symbol": "μ",
+              "description": "Representa a mobilidade dos portadores de carga, que indica a facilidade com que eles se movem sob a influência de um campo elétrico."
+            },
+            {
+              "symbol": "I",
+              "description": "Representa a corrente elétrica, que é o fluxo de carga elétrica que passa por um ponto em um circuito por unidade de tempo."
+            },
+            {
+              "symbol": "n",
+              "description": "Representa a densidade de portadores de carga, que é a quantidade de portadores (elétrons ou lacunas) por unidade de volume no semicondutor."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elétrica de um único portador, que é uma constante que define a quantidade de carga que um elétron ou uma lacuna possui."
+            },
+            {
+              "symbol": "E",
+              "description": "Representa o campo elétrico aplicado, que é uma força por unidade de carga que atua sobre os portadores de carga no semicondutor."
+            }
+          ],
+          "chapter": "5 Carrier Transport Phenomena",
+          "section": "Exercise Problem 5.3",
+          "source": "question",
+          "questionNumber": "5.47",
+          "page": 89
+        }
+      ]
+    },
+    {
+      "number": "5.48 (a)",
+      "text": "Determine (a) the conductivity type, (b) majority carrier concentration, and (c) majority carrier mobility.",
+      "formulas": [
+        {
+          "originalFormula": "\\sigma = n q \\mu",
+          "genericFormula": "\\sigma = n q \\mu",
+          "description": "Esta fórmula representa a condutividade elétrica de um material semicondutor. A condutividade elétrica é uma medida de quão bem um material pode conduzir eletricidade, e nesta expressão, ela é determinada pela densidade de portadores de carga, a carga de cada portador e a mobilidade dos portadores de carga.",
+          "concepts": [
+            "Condutividade elétrica",
+            "Densidade de portadores de carga",
+            "Carga elétrica",
+            "Mobilidade dos portadores de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "σ",
+              "description": "Representa a condutividade elétrica do material, que indica a capacidade do material de conduzir eletricidade."
+            },
+            {
+              "symbol": "n",
+              "description": "Representa a densidade de portadores de carga no material, ou seja, o número de portadores de carga por unidade de volume."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elétrica de cada portador de carga, que é uma constante fundamental da eletricidade."
+            },
+            {
+              "symbol": "μ",
+              "description": "Representa a mobilidade dos portadores de carga, que é uma medida de quão rapidamente os portadores de carga podem se mover através do material quando um campo elétrico é aplicado."
+            }
+          ],
+          "chapter": "5 Carrier Transport Phenomena",
+          "section": "Exercise Problem 5.3",
+          "source": "question",
+          "questionNumber": "5.48 (a)",
+          "page": 102
+        },
+        {
+          "originalFormula": "n = \\frac{I}{q V_{H}}",
+          "genericFormula": "n = \\frac{I}{q V_{H}}",
+          "description": "Esta fórmula representa a densidade de portadores de carga em um semicondutor, onde a densidade é calculada a partir da corrente elétrica que passa pelo material, dividida pelo produto da carga elementar e a tensão de Hall.",
+          "concepts": [
+            "Densidade de portadores de carga",
+            "Corrente elétrica",
+            "Carga elementar",
+            "Tensão de Hall"
+          ],
+          "symbols": [
+            {
+              "symbol": "n",
+              "description": "Representa a densidade de portadores de carga, que indica quantos portadores existem por unidade de volume no semicondutor."
+            },
+            {
+              "symbol": "I",
+              "description": "Representa a corrente elétrica que flui através do semicondutor, medida em amperes."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elementar, que é a quantidade de carga elétrica transportada por um único elétron, aproximadamente igual a 1,6 x 10^-19 coulombs."
+            },
+            {
+              "symbol": "V_{H}",
+              "description": "Representa a tensão de Hall, que é a tensão gerada em um material condutor ou semicondutor quando ele é colocado em um campo magnético e uma corrente elétrica é aplicada."
+            }
+          ],
+          "chapter": "5 Carrier Transport Phenomena",
+          "section": "Exercise Problem 5.3",
+          "source": "question",
+          "questionNumber": "5.48 (a)",
+          "page": 114
+        }
+      ]
+    },
+    {
+      "number": "5.50",
+      "text": "Find (a) the conductivity type, (b) the majority carrier concentration, (c) the mobility, and (d) the resistivity.",
+      "formulas": [
+        {
+          "originalFormula": "\\sigma = n q \\mu",
+          "genericFormula": "\\sigma = n q \\mu",
+          "description": "Esta fórmula representa a condutividade elétrica de um material semicondutor. A condutividade elétrica é uma medida de quão bem um material pode conduzir eletricidade, e depende da densidade de portadores de carga, da carga dos portadores e da mobilidade desses portadores.",
+          "concepts": [
+            "Condutividade elétrica",
+            "Densidade de portadores de carga",
+            "Carga elétrica",
+            "Mobilidade dos portadores de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "σ",
+              "description": "Representa a condutividade elétrica do material, que indica a capacidade do material de conduzir corrente elétrica."
+            },
+            {
+              "symbol": "n",
+              "description": "Representa a densidade de portadores de carga, que é o número de portadores de carga por unidade de volume no material."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elétrica de cada portador de carga, que é uma constante que indica a quantidade de eletricidade que cada portador transporta."
+            },
+            {
+              "symbol": "μ",
+              "description": "Representa a mobilidade dos portadores de carga, que é uma medida de quão rapidamente os portadores de carga podem se mover através do material quando um campo elétrico é aplicado."
+            }
+          ],
+          "chapter": "5 Carrier Transport Phenomena",
+          "section": "Exercise Problem 5.3",
+          "source": "question",
+          "questionNumber": "5.50",
+          "page": 127
+        },
+        {
+          "originalFormula": "\\rho = \\frac{1}{\\sigma}",
+          "genericFormula": "\\rho = \\frac{1}{\\sigma}",
+          "description": "Esta fórmula relaciona a resistividade de um material com sua condutividade elétrica. A resistividade é uma medida da capacidade de um material em resistir ao fluxo de corrente elétrica, enquanto a condutividade é a capacidade de um material em conduzir corrente elétrica. Assim, a fórmula indica que a resistividade é o inverso da condutividade.",
+          "concepts": [
+            "Resistividade",
+            "Condutividade elétrica",
+            "Fluxo de corrente elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "ρ",
+              "description": "Representa a resistividade do material, que é uma propriedade que indica quão bem o material resiste ao fluxo de corrente elétrica."
+            },
+            {
+              "symbol": "σ",
+              "description": "Representa a condutividade elétrica do material, que é uma propriedade que indica quão bem o material permite a passagem de corrente elétrica."
+            }
+          ],
+          "chapter": "5 Carrier Transport Phenomena",
+          "section": "Exercise Problem 5.3",
+          "source": "question",
+          "questionNumber": "5.50",
+          "page": 140
+        }
+      ]
+    },
+    {
+      "number": "5.51 (a)",
+      "text": "What is the relationship between I_{N} and N_{d}?",
+      "formulas": []
+    },
+    {
+      "number": "5.52",
+      "text": "Discuss the effect of misalignment on the Hall voltage.",
+      "formulas": []
+    },
+    {
+      "number": "5.53",
+      "text": "Describe the two-probe method for determining the conductivity type of a semiconductor.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "Ex 5.3",
+      "text": "The calculations yield the following results based on the given impurity concentrations and mobility.",
+      "formulas": [
+        {
+          "originalFormula": "\\mu_p = 510 \\; \\text{cm}^2/\\text{V-s}",
+          "genericFormula": "\\mu_p = x \\; \\text{cm}^2/\\text{V-s}",
+          "description": "Esta fórmula representa a mobilidade dos portadores de carga positiva (buracos) em um semicondutor, que é uma medida de quão rapidamente esses portadores podem se mover através do material quando um campo elétrico é aplicado.",
+          "concepts": [
+            "Mobilidade dos portadores de carga",
+            "Semicondutores",
+            "Campo elétrico",
+            "Transporte de carga elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\mu_p",
+              "description": "Representa a mobilidade dos portadores de carga positiva, que indica a eficiência com que os buracos se movem em resposta a um campo elétrico."
+            },
+            {
+              "symbol": "510",
+              "description": "Um valor numérico específico que representa a mobilidade em centímetros quadrados por volt-segundo, mas que na forma genérica é substituído por uma variável."
+            },
+            {
+              "symbol": "\\text{cm}^2",
+              "description": "Unidade de medida que representa centímetros quadrados, utilizada para expressar a área na qual os portadores de carga se movem."
+            },
+            {
+              "symbol": "\\text{V}",
+              "description": "Representa volts, que é a unidade de medida da tensão elétrica, indicando a força que impulsiona os portadores de carga."
+            },
+            {
+              "symbol": "\\text{s}",
+              "description": "Representa segundos, que é a unidade de medida do tempo, utilizada para indicar a duração do movimento dos portadores de carga."
+            }
+          ],
+          "chapter": "5 Carrier Transport Phenomena",
+          "section": "Exercise Problem 5.3",
+          "source": "answer",
+          "questionNumber": "Ex 5.3",
+          "page": 152
+        },
+        {
+          "originalFormula": "\\sigma = \\frac{L}{RA} = \\frac{5 \\times 10^{-2}}{(10)(10^{-5})} = 0.50 \\; (\\Omega \\cdot \\text{cm})^{-1}",
+          "genericFormula": "\\sigma = \\frac{L}{RA}",
+          "description": "Esta fórmula representa a condutividade elétrica de um material, que é uma medida de quão bem ele conduz eletricidade. A condutividade é inversamente proporcional à resistência do material e depende de suas dimensões e da resistividade do material.",
+          "concepts": [
+            "Condutividade elétrica",
+            "Resistência elétrica",
+            "Geometria do material",
+            "Resistividade"
+          ],
+          "symbols": [
+            {
+              "symbol": "σ",
+              "description": "Representa a condutividade elétrica do material, que indica a capacidade do material de conduzir corrente elétrica."
+            },
+            {
+              "symbol": "L",
+              "description": "Representa o comprimento do material através do qual a corrente elétrica está fluindo."
+            },
+            {
+              "symbol": "R",
+              "description": "Representa a resistência elétrica do material, que é a oposição que o material oferece ao fluxo de corrente elétrica."
+            },
+            {
+              "symbol": "A",
+              "description": "Representa a área da seção transversal do material, que é a área pela qual a corrente elétrica passa."
+            }
+          ],
+          "chapter": "5 Carrier Transport Phenomena",
+          "section": "Exercise Problem 5.3",
+          "source": "answer",
+          "questionNumber": "Ex 5.3",
+          "page": 165
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "I = \\frac{V}{R} = \\frac{5}{10} = 0.5 \\; \\text{mA}",
+      "genericFormula": "I = \\frac{V}{R}",
+      "description": "Esta fórmula representa a relação entre a corrente elétrica, a tensão e a resistência em um circuito elétrico. Ela nos diz que a corrente que flui em um circuito é igual à tensão aplicada dividida pela resistência do circuito.",
+      "concepts": [
+        "Corrente elétrica",
+        "Tensão elétrica",
+        "Resistência elétrica",
+        "Lei de Ohm"
+      ],
+      "symbols": [
+        {
+          "symbol": "I",
+          "description": "Representa a corrente elétrica, que é a quantidade de carga elétrica que passa por um ponto em um circuito em um determinado período de tempo."
+        },
+        {
+          "symbol": "V",
+          "description": "Representa a tensão elétrica, que é a diferença de potencial elétrico entre dois pontos em um circuito. É a força que impulsiona a corrente elétrica."
+        },
+        {
+          "symbol": "R",
+          "description": "Representa a resistência elétrica, que é a oposição que um material oferece ao fluxo de corrente elétrica. É medida em ohms."
+        }
+      ],
+      "chapter": "5 Carrier Transport Phenomena",
+      "section": "Exercise Problem 5.3",
+      "source": "standalone",
+      "page": 178
+    },
+    {
+      "originalFormula": "A = \\frac{I}{J} = \\frac{0.5 \\times 10^{-3}}{50} = 10^{-5} \\; \\text{cm}^2",
+      "genericFormula": "A = \\frac{I}{J}",
+      "description": "Esta fórmula representa a área A em função da corrente I e da densidade de corrente J. A área é calculada dividindo-se a corrente total pela densidade de corrente, que é a corrente por unidade de área.",
+      "concepts": [
+        "Área",
+        "Corrente elétrica",
+        "Densidade de corrente"
+      ],
+      "symbols": [
+        {
+          "symbol": "A",
+          "description": "Representa a área através da qual a corrente elétrica está fluindo, medida em centímetros quadrados."
+        },
+        {
+          "symbol": "I",
+          "description": "Representa a corrente elétrica total que flui através da área, medida em amperes."
+        },
+        {
+          "symbol": "J",
+          "description": "Representa a densidade de corrente, que é a corrente elétrica por unidade de área, medida em amperes por centímetro quadrado."
+        }
+      ],
+      "chapter": "5 Carrier Transport Phenomena",
+      "section": "Exercise Problem 5.3",
+      "source": "standalone",
+      "page": 190
+    },
+    {
+      "originalFormula": "L = \\frac{V}{E} = \\frac{5}{100} = 5 \\times 10^{-2} \\; \\text{cm}",
+      "genericFormula": "L = \\frac{V}{E}",
+      "description": "Esta fórmula representa a relação entre a distância percorrida por uma carga elétrica em um campo elétrico, onde L é a distância, V é a tensão elétrica aplicada e E é a intensidade do campo elétrico. A fórmula indica que a distância é diretamente proporcional à tensão e inversamente proporcional à intensidade do campo.",
+      "concepts": [
+        "Tensão elétrica",
+        "Campo elétrico",
+        "Movimento de cargas elétricas"
+      ],
+      "symbols": [
+        {
+          "symbol": "L",
+          "description": "Representa a distância percorrida pela carga elétrica, medida em centímetros."
+        },
+        {
+          "symbol": "V",
+          "description": "Representa a tensão elétrica aplicada, medida em volts."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa a intensidade do campo elétrico, medida em volts por centímetro."
+        }
+      ],
+      "chapter": "5 Carrier Transport Phenomena",
+      "section": "Exercise Problem 5.3",
+      "source": "standalone",
+      "page": 203
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215
+  ],
+  "lastUpdated": "2026-05-08T18:19:12.961749",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
+}

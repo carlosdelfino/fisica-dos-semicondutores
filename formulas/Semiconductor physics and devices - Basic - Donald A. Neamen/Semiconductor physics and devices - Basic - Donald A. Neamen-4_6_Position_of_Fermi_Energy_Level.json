@@ -1,0 +1,630 @@
+{
+  "chapter": "4.6 Position of Fermi Energy Level",
+  "section": "Exercise Problem",
+  "questions": [
+    {
+      "number": "Ex 4.11",
+      "text": "Consider silicon at T = 300 K. Calculate the thermal-equilibrium electron and hole concentrations for impurity concentrations of (a) N_a = 4 \\times 10^{16} \\, \\text{cm}^{-3}, N_d = 8 \\times 10^{15} \\, \\text{cm}^{-3} and (d) N_a = N_d = 3 \\times 10^{15} \\, \\text{cm}^{-3}.",
+      "formulas": [
+        {
+          "originalFormula": "n_i = \\frac{n_{i0}^2}{N_a - N_d}",
+          "genericFormula": "n_i = \\frac{n_{i}^2}{N_a - N_d}",
+          "description": "Esta fórmula representa a concentração de portadores intrínsecos em um semicondutor dopado, onde a quantidade de portadores intrínsecos é influenciada pela diferença entre a concentração de átomos doadores e a concentração de átomos aceitadores.",
+          "concepts": [
+            "Semicondutores",
+            "Dopagem de semicondutores",
+            "Portadores de carga",
+            "Equilíbrio de carga em semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "n_i",
+              "description": "Representa a concentração de portadores intrínsecos no semicondutor."
+            },
+            {
+              "symbol": "n_{i0}",
+              "description": "Representa a concentração inicial de portadores intrínsecos antes da dopagem."
+            },
+            {
+              "symbol": "N_a",
+              "description": "Representa a concentração de átomos aceitadores no semicondutor."
+            },
+            {
+              "symbol": "N_d",
+              "description": "Representa a concentração de átomos doadores no semicondutor."
+            }
+          ],
+          "chapter": "4.6 Position of Fermi Energy Level",
+          "section": "Exercise Problem",
+          "source": "question",
+          "questionNumber": "Ex 4.11",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "number": "TYU 4.11",
+      "text": "Consider a compensated GaAs semiconductor at T = 300 K doped at N_a = 5 \\times 10^{15} \\, \\text{cm}^{-3} and N_d = 2 \\times 10^{16} \\, \\text{cm}^{-3}. Calculate the thermal equilibrium electron and hole concentrations.",
+      "formulas": []
+    },
+    {
+      "number": "TYU 4.12",
+      "text": "Silicon is doped at N_a = 10^{15} \\, \\text{cm}^{-3} and N_d = 0. (a) Plot the concentration of electrons versus temperature over the range 300 \\, \\text{K} \\leq T \\leq 600 \\, \\text{K}. Calculate the temperature at which the electron concentration is equal to 1.1 \\times 10^{15} \\, \\text{cm}^{-3}.",
+      "formulas": []
+    },
+    {
+      "number": "TYU 4.13",
+      "text": "A silicon device with n-type material is to be operated at T = 550 K. At this temperature, the intrinsic carrier concentration must contribute no more than 5 percent of the total electron concentration. Determine the minimum donor concentration required to meet this specification.",
+      "formulas": []
+    },
+    {
+      "number": "Ex 4.12",
+      "text": "Consider silicon at T = 300 K with doping concentrations of N_{d} = 8 \\times 10^{15} \\, \\text{cm}^{-3} and N_{a} = 5 \\times 10^{18} \\, \\text{cm}^{-3}. Determine the position of the Fermi energy level with respect to E_{i}.",
+      "formulas": [
+        {
+          "originalFormula": "E_{F} - E_{i} = k_{T} \\ln \\left( \\frac{n_{0}}{n_{i}} \\right)",
+          "genericFormula": "E_{F} - E_{i} = k_{T} \\ln \\left( \\frac{n_{0}}{n_{i}} \\right)",
+          "description": "Esta fórmula relaciona a diferença de energia entre o nível de Fermi e o nível de energia intrínseca em um semicondutor com a concentração de portadores de carga. Ela é fundamental para entender como a temperatura e a concentração de portadores influenciam as propriedades elétricas do material.",
+          "concepts": [
+            "Nível de Fermi",
+            "Energia intrínseca",
+            "Concentração de portadores",
+            "Temperatura",
+            "Termodinâmica"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{F}",
+              "description": "Representa o nível de Fermi, que é o nível de energia mais alto ocupado por elétrons em um material a temperatura zero absoluto."
+            },
+            {
+              "symbol": "E_{i}",
+              "description": "Representa o nível de energia intrínseca, que é a energia do semicondutor quando não há dopagem e é em equilíbrio térmico."
+            },
+            {
+              "symbol": "k_{T}",
+              "description": "Representa a constante de Boltzmann multiplicada pela temperatura em Kelvin, que relaciona a energia térmica média dos portadores de carga com a temperatura do sistema."
+            },
+            {
+              "symbol": "n_{0}",
+              "description": "Representa a concentração de portadores de carga livres no semicondutor, que pode ser elétrons em um semicondutor do tipo n ou lacunas em um semicondutor do tipo p."
+            },
+            {
+              "symbol": "n_{i}",
+              "description": "Representa a concentração de portadores intrínsecos, que é a quantidade de portadores de carga em um semicondutor puro, sem dopagem."
+            }
+          ],
+          "chapter": "4.6 Position of Fermi Energy Level",
+          "section": "Exercise Problem",
+          "source": "question",
+          "questionNumber": "Ex 4.12",
+          "page": 18
+        },
+        {
+          "originalFormula": "E_{F} - E_{c} = k_{T} \\ln \\left( \\frac{N_{d}}{p_{0}} \\right)",
+          "genericFormula": "E_{F} - E_{c} = k_{T} \\ln \\left( \\frac{N_{d}}{p_{0}} \\right)",
+          "description": "Esta fórmula relaciona a diferença de energia entre o nível de Fermi e o nível de condução em um semicondutor dopado. Ela mostra como essa diferença de energia depende da concentração de dopantes do tipo n e da concentração de portadores de carga do tipo p.",
+          "concepts": [
+            "Nível de Fermi",
+            "Nível de condução",
+            "Dopagem de semicondutores",
+            "Equilíbrio de cargas",
+            "Termodinâmica em semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{F}",
+              "description": "Representa o nível de Fermi, que é a energia máxima ocupada por elétrons em um material a temperatura zero absoluto."
+            },
+            {
+              "symbol": "E_{c}",
+              "description": "Representa o nível de condução, que é a energia mínima necessária para que um elétron se mova livremente através do semicondutor."
+            },
+            {
+              "symbol": "k_{T}",
+              "description": "Representa a constante de Boltzmann multiplicada pela temperatura, que relaciona a energia térmica média dos portadores de carga com a temperatura do sistema."
+            },
+            {
+              "symbol": "N_{d}",
+              "description": "Representa a concentração de dopantes do tipo n, que são átomos adicionados ao semicondutor para aumentar a quantidade de elétrons disponíveis para condução."
+            },
+            {
+              "symbol": "p_{0}",
+              "description": "Representa a concentração de portadores de carga do tipo p, que são lacunas ou buracos deixados por elétrons em um semicondutor."
+            }
+          ],
+          "chapter": "4.6 Position of Fermi Energy Level",
+          "section": "Exercise Problem",
+          "source": "question",
+          "questionNumber": "Ex 4.12",
+          "page": 36
+        },
+        {
+          "originalFormula": "E_{F} - E_{v} = k_{T} \\ln \\left( \\frac{N_{a}}{n_{i}} \\right)",
+          "genericFormula": "E_{F} - E_{v} = k_{T} \\ln \\left( \\frac{N_{a}}{n_{i}} \\right)",
+          "description": "Esta fórmula representa a diferença de energia entre o nível de Fermi e o nível de valência em um semicondutor dopado. Ela relaciona a concentração de dopantes aceitores com a concentração intrínseca de portadores de carga, mostrando como a temperatura e a dopagem influenciam a posição do nível de Fermi.",
+          "concepts": [
+            "Nível de Fermi",
+            "Nível de valência",
+            "Temperatura",
+            "Dopagem de semicondutores",
+            "Concentração de portadores de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{F}",
+              "description": "Representa o nível de Fermi, que é o nível de energia mais alto ocupado por elétrons em um material a temperatura zero absoluto."
+            },
+            {
+              "symbol": "E_{v}",
+              "description": "Representa o nível de valência, que é o nível de energia mais alto ocupado por elétrons em uma banda de valência em um semicondutor."
+            },
+            {
+              "symbol": "k_{T}",
+              "description": "Representa a constante de Boltzmann multiplicada pela temperatura, que relaciona a energia térmica média dos portadores de carga à temperatura do sistema."
+            },
+            {
+              "symbol": "N_{a}",
+              "description": "Representa a concentração de átomos dopantes aceitores em um semicondutor, que são impurezas que criam buracos na estrutura de bandas."
+            },
+            {
+              "symbol": "n_{i}",
+              "description": "Representa a concentração intrínseca de portadores de carga em um semicondutor, que é a quantidade de elétrons e buracos gerados termicamente em um material puro."
+            }
+          ],
+          "chapter": "4.6 Position of Fermi Energy Level",
+          "section": "Exercise Problem",
+          "source": "question",
+          "questionNumber": "Ex 4.12",
+          "page": 54
+        }
+      ]
+    },
+    {
+      "number": "Ex 4.13",
+      "text": "Determine the maximum doping at which the Boltzmann approximation is still valid. Assume the limit is such that E_{F} - E_{i} = 3kT.",
+      "formulas": [
+        {
+          "originalFormula": "E_{n} - E_{F} = \\frac{E_{i} - E_{c}}{2} - (E_{F} - E_{v}) = kT \\ln \\left( \\frac{N_{c}}{n_{i}} \\right)",
+          "genericFormula": "E_{n} - E_{F} = \\frac{E_{i} - E_{c}}{2} - (E_{F} - E_{v}) = kT \\ln \\left( \\frac{N_{c}}{n_{i}} \\right)",
+          "description": "Esta fórmula relaciona a diferença de energia entre o nível de energia do elétron e o nível de Fermi em um semicondutor com a temperatura e a concentração de portadores de carga. Ela mostra como a energia de um elétron em um semicondutor é influenciada por fatores como a temperatura e a densidade de estados disponíveis.",
+          "concepts": [
+            "Nível de Fermi",
+            "Energia de elétrons em semicondutores",
+            "Temperatura",
+            "Densidade de estados",
+            "Equilíbrio térmico"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_{n}",
+              "description": "Representa a energia do nível de elétrons em um semicondutor."
+            },
+            {
+              "symbol": "E_{F}",
+              "description": "Representa o nível de Fermi, que é o nível de energia mais alto ocupado por elétrons a temperatura zero."
+            },
+            {
+              "symbol": "E_{i}",
+              "description": "Representa a energia de um nível intrínseco no semicondutor."
+            },
+            {
+              "symbol": "E_{c}",
+              "description": "Representa a energia do nível de condução, que é o nível de energia onde os elétrons podem se mover livremente."
+            },
+            {
+              "symbol": "E_{v}",
+              "description": "Representa a energia do nível de valência, que é o nível de energia onde os elétrons estão ligados aos átomos."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a constante de Boltzmann, que relaciona temperatura e energia em sistemas térmicos."
+            },
+            {
+              "symbol": "T",
+              "description": "Representa a temperatura absoluta do sistema em Kelvin."
+            },
+            {
+              "symbol": "N_{c}",
+              "description": "Representa a densidade de estados no nível de condução do semicondutor."
+            },
+            {
+              "symbol": "n_{i}",
+              "description": "Representa a concentração de portadores intrínsecos no semicondutor."
+            }
+          ],
+          "chapter": "4.6 Position of Fermi Energy Level",
+          "section": "Exercise Problem",
+          "source": "question",
+          "questionNumber": "Ex 4.13",
+          "page": 72
+        }
+      ]
+    },
+    {
+      "number": "4.48",
+      "text": "Consider germanium with an acceptor concentration of N_a = 10^{15} \\, \\text{cm}^{-3} and a donor concentration of N_d = 0. Consider temperatures of T = 200, 400, and 600 K. Calculate the position of the Fermi level with respect to the intrinsic Fermi level at these temperatures.",
+      "formulas": []
+    },
+    {
+      "number": "4.49",
+      "text": "Consider silicon at T = 300 K with donor concentrations of N_d = 10^{14}, 10^{15}, 10^{16}, and 10^{17} \\, \\text{cm}^{-3}. Assume N_a = 0. (a) Calculate the position of the Fermi energy level with respect to the conduction band for these donor concentrations. (b) Determine the position of the Fermi energy level with respect to the intrinsic Fermi energy level for the donor concentrations given in part (a).",
+      "formulas": []
+    },
+    {
+      "number": "4.50",
+      "text": "A silicon device is doped with donor impurity atoms at a concentration of 10^{15} \\, \\text{cm}^{-3}. For the device to operate properly, the intrinsic carriers must contribute no more than 5 percent to the total electron concentration. (a) What is the maximum temperature that the device may operate? (b) What is the change in E_c from T = 300 K to the maximum temperature value determined in part (a)? (c) Is the Fermi level closer or further from the intrinsic value at the higher temperature?",
+      "formulas": []
+    },
+    {
+      "number": "4.51",
+      "text": "Silicon is doped with acceptor impurity atoms at a concentration of N_a = 3 \\times 10^{15} \\, \\text{cm}^{-3}. Assume N_d = 0. Plot the position of the Fermi energy level with respect to the intrinsic Fermi energy level over the temperature range of 200 \\leq T \\leq 600 \\, \\text{K}.",
+      "formulas": []
+    },
+    {
+      "number": "4.52",
+      "text": "Consider GaAs at T = 300 K with N_a = 0. (a) Plot the position of the Fermi energy level with respect to the intrinsic Fermi energy level as a function of the acceptor impurity concentration over the range of 10^{14} \\leq N_a \\leq 10^{17} \\, \\text{cm}^{-3}. (b) Plot the position of the Fermi energy level with respect to the valence-band energy over the same acceptor impurity concentration as given in part (a).",
+      "formulas": []
+    },
+    {
+      "number": "4.53",
+      "text": "For a particular semiconductor, E_i = 1.50 \\, \\text{eV}, m^* = 10 \\, m_e, T = 300 K, and n_i = 1 \\times 10^{10} \\, \\text{cm}^{-3}. (a) Determine the position of the intrinsic Fermi energy level with respect to the edge of the bandgap. (b) Impurity atoms are added so that the Fermi energy level is 0.45 eV below the center of the bandgap. (i) Are acceptor or donor atoms added? (ii) What is the concentration of impurity atoms added?",
+      "formulas": []
+    },
+    {
+      "number": "4.54",
+      "text": "(a) Silicon at T = 300 K is doped with donor impurity atoms at a concentration of N_d = 6 \\times 10^{15} \\, \\text{cm}^{-3}. (i) Determine E_c - E_i. (ii) Calculate the concentration of additional donor impurity atoms that must be added to move the Fermi energy level a distance kT closer to the conduction band edge. (b) Repeat part (a) for GaAs if the original donor impurity concentration is N_d = 1 \\times 10^{15} \\, \\text{cm}^{-3}.",
+      "formulas": []
+    },
+    {
+      "number": "4.55",
+      "text": "GaAs at T = 300 K is doped with donor impurity atoms at a concentration of 7 \\times 10^{15} \\, \\text{cm}^{-3}. Additional impurity atoms are to be added such that the Fermi level is 0.55 eV above the intrinsic Fermi level. Determine the type (donor or acceptor) and concentration of impurity atoms to be added.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "Ex 4.13",
+      "text": "We can then solve for the doping as N_{e} = n_{i} \\exp \\left( \\frac{0.437}{0.0259} \\right) \\ln \\left( \\frac{N_{c}}{n_{i}} \\right) = 3.2 \\times 10^{17} \\, \\text{cm}^{-3}.",
+      "formulas": [
+        {
+          "originalFormula": "N_{e} = n_{i} \\exp \\left( \\frac{0.437}{0.0259} \\right) = 3.2 \\times 10^{17} \\, \\text{cm}^{-3}",
+          "genericFormula": "N_{e} = n_{i} \\exp \\left( \\frac{0.437}{0.0259} \\right) = 3.2 \\times 10^{17} \\, \\text{cm}^{-3}",
+          "description": "Não foi possível gerar descrição automática",
+          "concepts": [],
+          "symbols": [],
+          "rawText": "```json\n{\n  \"originalFormula\": \"N_{e} = n_{i} \\exp \\\\left( \\\\frac{0.437}{0.0259} \\\\right) = 3.2 \\\\times 10^{17} \\\\, \\\\text{cm}^{-3}\",\n  \"genericFormula\": \"N_{e} = n_{i} \\exp \\\\left( \\\\frac{E_{g}}{k_{B} T} \\\\right)\",\n  \"description\": \"Esta fórmula representa a densidade de portadores de carga eletrônica em um semicondutor intrínseco em função da densidade de portadores intrínsecos, da energia da banda proibida e da temperatura. Ela mostra como a temperatura e a energia da banda proibida afetam a quantidade de elétrons disponíveis para condução elétrica.\",\n  \"concepts\": [\n    \"Densidade de portadores de carga\",\n    \"Semicondutores\",\n    \"Energia da banda proibida\",\n    \"Temperatura\",\n    \"Exponencial\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"N_{e}\",\n      \"description\": \"Representa a densidade de portadores de carga eletrônica no semicondutor, geralmente medida em número de portadores por centímetro cúbico.\"\n    },\n    {\n      \"symbol\": \"n_{i}\",\n      \"description\": \"Representa a densidade de portadores intrínsecos, que é a quantidade de portadores de carga em um semicondutor puro sem dopagem.\"\n    },\n    {\n      \"symbol\": \"E_{g}\",\n      \"description\": \"Representa a energia da banda proibida do semicondutor, que é a energia necessária para que um elétron se mova da banda de valência para a banda de condução.\"\n    },\n    {\n      \"symbol\": \"k_{B}\",\n      \"description\": \"Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos.\"\n    },\n    {\n      \"symbol\": \"T\",\n      \"description\": \"Representa a temperatura do sistema, geralmente medida em Kelvin.\"\n    },\n    {\n      \"symbol\": \"exp\",\n      \"description\": \"Representa a função exponencial, que é uma função matemática que descreve o crescimento ou decaimento de quantidades em muitos fenômenos físicos.\"\n    }\n  ]\n}\n```",
+          "chapter": "4.6 Position of Fermi Energy Level",
+          "section": "Exercise Problem",
+          "source": "answer",
+          "questionNumber": "Ex 4.13",
+          "page": 90
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "E_{F} - E_{n} = k_{T} \\ln \\left( \\frac{n_{0}}{n_{i}} \\right)",
+      "genericFormula": "E_{F} - E_{n} = k_{T} \\ln \\left( \\frac{n_{0}}{n_{i}} \\right)",
+      "description": "Esta fórmula relaciona a diferença de energia entre o nível de Fermi e um nível de energia específico em um semicondutor com a razão entre a densidade de portadores de carga e a densidade intrínseca de portadores. Ela é fundamental para entender como a temperatura e a concentração de portadores afetam as propriedades eletrônicas de materiais semicondutores.",
+      "concepts": [
+        "Nível de Fermi",
+        "Energia de nível",
+        "Densidade de portadores",
+        "Temperatura",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{F}",
+          "description": "Representa o nível de Fermi, que é a energia máxima ocupada por elétrons em um material a temperatura zero."
+        },
+        {
+          "symbol": "E_{n}",
+          "description": "Representa a energia de um nível específico no semicondutor, que pode ser um nível de impureza ou um nível de condução."
+        },
+        {
+          "symbol": "k_{T}",
+          "description": "Representa a constante de Boltzmann multiplicada pela temperatura, que é uma medida da energia térmica disponível para os portadores de carga."
+        },
+        {
+          "symbol": "n_{0}",
+          "description": "Representa a densidade de portadores de carga em um semicondutor dopado, ou seja, a quantidade de portadores que contribuem para a condução elétrica."
+        },
+        {
+          "symbol": "n_{i}",
+          "description": "Representa a densidade intrínseca de portadores, que é a quantidade de portadores presentes em um semicondutor puro, sem dopagem."
+        }
+      ],
+      "chapter": "4.6 Position of Fermi Energy Level",
+      "section": "Exercise Problem",
+      "source": "standalone",
+      "page": 107
+    },
+    {
+      "originalFormula": "E_{F} - E_{c} = k_{T} \\ln \\left( \\frac{N_{d}}{p_{0}} \\right)",
+      "genericFormula": "E_{F} - E_{c} = k_{T} \\ln \\left( \\frac{N_{d}}{p_{0}} \\right)",
+      "description": "Esta fórmula relaciona a diferença de energia entre o nível de Fermi e o nível de condução em um semicondutor dopado, com a temperatura e as concentrações de portadores de carga. Ela é fundamental para entender como a dopagem afeta as propriedades elétricas do material.",
+      "concepts": [
+        "Nível de Fermi",
+        "Nível de condução",
+        "Dopagem de semicondutores",
+        "Equilíbrio térmico",
+        "Concentração de portadores de carga"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{F}",
+          "description": "Representa o nível de Fermi, que é a energia máxima ocupada por elétrons em um material a temperatura zero absoluto."
+        },
+        {
+          "symbol": "E_{c}",
+          "description": "Representa o nível de condução, que é a energia mínima necessária para que um elétron possa se mover livremente e contribuir para a condução elétrica."
+        },
+        {
+          "symbol": "k_{T}",
+          "description": "Representa a constante de Boltzmann multiplicada pela temperatura absoluta, que é uma medida da energia térmica disponível para os portadores de carga."
+        },
+        {
+          "symbol": "N_{d}",
+          "description": "Representa a concentração de átomos dopantes que fornecem elétrons adicionais ao semicondutor, aumentando sua condutividade."
+        },
+        {
+          "symbol": "p_{0}",
+          "description": "Representa a concentração de lacunas, que são os locais onde não há elétrons e que também contribuem para a condução elétrica em semicondutores."
+        }
+      ],
+      "chapter": "4.6 Position of Fermi Energy Level",
+      "section": "Exercise Problem",
+      "source": "standalone",
+      "page": 125
+    },
+    {
+      "originalFormula": "E_{F} - E_{v} = k_{T} \\ln \\left( \\frac{N_{a}}{n_{i}} \\right)",
+      "genericFormula": "E_{F} - E_{v} = k_{T} \\ln \\left( \\frac{N_{a}}{n_{i}} \\right)",
+      "description": "Esta fórmula relaciona a diferença de energia entre o nível de Fermi e o nível de valência em um semicondutor dopado, em função da concentração de dopantes e da densidade de portadores intrínsecos. Ela é fundamental para entender como a dopagem afeta as propriedades elétricas do material.",
+      "concepts": [
+        "Nível de Fermi",
+        "Nível de valência",
+        "Temperatura térmica",
+        "Dopagem de semicondutores",
+        "Concentração de portadores",
+        "Equilíbrio térmico"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{F}",
+          "description": "Representa o nível de energia do nível de Fermi, que é o nível de energia mais alto ocupado por elétrons em um material a temperatura zero absoluto."
+        },
+        {
+          "symbol": "E_{v}",
+          "description": "Representa o nível de energia da banda de valência, que é a banda de energia onde os elétrons estão normalmente presentes em um semicondutor."
+        },
+        {
+          "symbol": "k_{T}",
+          "description": "Representa a constante de Boltzmann multiplicada pela temperatura em Kelvin, que relaciona a energia térmica média dos portadores de carga em um material."
+        },
+        {
+          "symbol": "N_{a}",
+          "description": "Representa a concentração de dopantes aceitadores em um semicondutor, que são átomos que criam buracos na estrutura eletrônica do material."
+        },
+        {
+          "symbol": "n_{i}",
+          "description": "Representa a densidade de portadores intrínsecos, que é a quantidade de portadores de carga (elétrons e buracos) presentes em um semicondutor puro sem dopagem."
+        }
+      ],
+      "chapter": "4.6 Position of Fermi Energy Level",
+      "section": "Exercise Problem",
+      "source": "standalone",
+      "page": 143
+    },
+    {
+      "originalFormula": "n_{i} = 3 \\times 10^{17} \\, \\text{cm}^{-3}",
+      "genericFormula": "n_{i} = N \\, \\text{cm}^{-3}",
+      "description": "Esta fórmula representa a densidade de portadores intrínsecos em um semicondutor, que é a quantidade de portadores de carga (elétrons e lacunas) presentes em um material semicondutor puro em equilíbrio térmico.",
+      "concepts": [
+        "Densidade de portadores intrínsecos",
+        "Semicondutores",
+        "Equilíbrio térmico"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_{i}",
+          "description": "Representa a densidade de portadores intrínsecos, que é a quantidade de elétrons e lacunas por centímetro cúbico em um semicondutor puro."
+        },
+        {
+          "symbol": "N",
+          "description": "Representa uma densidade genérica de portadores, que pode ser ajustada conforme o contexto do semicondutor em questão."
+        }
+      ],
+      "chapter": "4.6 Position of Fermi Energy Level",
+      "section": "Exercise Problem",
+      "source": "standalone",
+      "page": 161
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178
+  ],
+  "lastUpdated": "2026-05-08T18:19:12.852948",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
+}

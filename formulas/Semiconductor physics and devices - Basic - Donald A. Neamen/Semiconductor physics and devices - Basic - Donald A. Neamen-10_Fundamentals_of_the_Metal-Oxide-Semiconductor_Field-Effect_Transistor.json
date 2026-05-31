@@ -1,0 +1,1176 @@
+{
+  "chapter": "10 Fundamentals of the Metal-Oxide-Semiconductor Field-Effect Transistor",
+  "section": "10.2 CAPACITANCE–VOLTAGE CHARACTERISTICS",
+  "questions": [
+    {
+      "number": "TYU 10.2",
+      "text": "Consider an n+ polysilicon gate in a MOS structure with a p-type silicon substrate. The doping concentration of the silicon is N_{a} = 3 \\times 10^{16} \\text{ cm}^{-3}. Using Equation (10.16), find the value of \\phi_{ms}.",
+      "formulas": [
+        {
+          "originalFormula": "\\phi_{ms} = V_{t} - \\frac{qN_{a}}{C_{ox}}",
+          "genericFormula": "\\phi_{ms} = V_{t} - \\frac{qN_{a}}{C_{ox}}",
+          "description": "Esta fórmula representa a diferença de potencial entre o metal e o semicondutor em um dispositivo semicondutor, levando em consideração a tensão de limiar, a carga do portador e a capacitância da camada de óxido.",
+          "concepts": [
+            "Diferença de potencial",
+            "Tensão de limiar",
+            "Carga elétrica",
+            "Concentração de dopantes",
+            "Capacitância"
+          ],
+          "symbols": [
+            {
+              "symbol": "φ_{ms}",
+              "description": "Representa a diferença de potencial entre o metal e o semicondutor."
+            },
+            {
+              "symbol": "V_{t}",
+              "description": "Representa a tensão de limiar, que é a tensão mínima necessária para que ocorra a condução no dispositivo semicondutor."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elementar, que é a carga elétrica de um único elétron."
+            },
+            {
+              "symbol": "N_{a}",
+              "description": "Representa a concentração de dopantes do tipo aceito, que são átomos adicionados ao semicondutor para aumentar a quantidade de portadores de carga positiva."
+            },
+            {
+              "symbol": "C_{ox}",
+              "description": "Representa a capacitância da camada de óxido, que é uma medida da capacidade de armazenar carga elétrica na interface entre o metal e o semicondutor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "TYU 10.3",
+      "text": "Repeat TYU 10.2 for a p+ polysilicon gate using Equation (10.17).",
+      "formulas": [
+        {
+          "originalFormula": "\\phi_{ms} = V_{t} - \\frac{qN_{d}}{C_{ox}}",
+          "genericFormula": "\\phi_{ms} = V_{t} - \\frac{qN_{d}}{C_{ox}}",
+          "description": "Esta fórmula representa a diferença de potencial de trabalho entre o metal e o semicondutor em um dispositivo semicondutor, como um transistor. Ela é importante para entender como os portadores de carga se comportam na interface entre o metal e o semicondutor.",
+          "concepts": [
+            "Potencial de trabalho",
+            "Capacitância",
+            "Dopagem de semicondutores",
+            "Cargas elétricas"
+          ],
+          "symbols": [
+            {
+              "symbol": "φ_{ms}",
+              "description": "Representa a diferença de potencial de trabalho entre o metal e o semicondutor."
+            },
+            {
+              "symbol": "V_{t}",
+              "description": "Representa o potencial de tensão aplicado ao dispositivo semicondutor."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elementar, que é a carga de um único elétron."
+            },
+            {
+              "symbol": "N_{d}",
+              "description": "Representa a concentração de dopantes do tipo doador no semicondutor, que influencia a quantidade de portadores de carga disponíveis."
+            },
+            {
+              "symbol": "C_{ox}",
+              "description": "Representa a capacitância da camada de óxido que separa o metal do semicondutor, influenciando a capacidade de acumular carga."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "TYU 10.4",
+      "text": "Consider the MOS capacitor described in Exercise TYU 10.3. The oxide thickness is t_{ox} = 16 \\text{ nm} = 160 \\text{ Å} and the oxide charge density is Q_{ox} = 8 \\times 10^{10} \\text{ cm}^{-2}. Determine the flat-band voltage.",
+      "formulas": [
+        {
+          "originalFormula": "V_{fb} = \\phi_{ms} + \\frac{Q_{ox}}{C_{ox}}",
+          "genericFormula": "V_{fb} = \\phi_{ms} + \\frac{Q_{ox}}{C_{ox}}",
+          "description": "Esta fórmula representa a tensão de flatband (V_fb) em um dispositivo semicondutor, que é a tensão na qual a camada de semicondutor se torna plana, ou seja, não há acúmulo ou depleção de portadores de carga na interface entre o semicondutor e a camada de óxido. A tensão de flatband é importante para entender o comportamento elétrico de transistores e outros dispositivos semicondutores.",
+          "concepts": [
+            "Tensão de flatband",
+            "Interface semicondutor-óxido",
+            "Acúmulo e depleção de portadores de carga",
+            "Capacitância do óxido"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{fb}",
+              "description": "Representa a tensão de flatband, que é a tensão na qual a camada de semicondutor se torna plana."
+            },
+            {
+              "symbol": "\\phi_{ms}",
+              "description": "Representa a diferença de trabalho entre o metal e o semicondutor, que é uma medida da energia necessária para mover um portador de carga do semicondutor para o metal."
+            },
+            {
+              "symbol": "Q_{ox}",
+              "description": "Representa a carga acumulada na interface entre o óxido e o semicondutor, que pode afetar a tensão de flatband devido à sua influência no campo elétrico."
+            },
+            {
+              "symbol": "C_{ox}",
+              "description": "Representa a capacitância da camada de óxido, que é uma medida de como a camada de óxido armazena carga elétrica."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "TYU 10.5",
+      "text": "Consider an n+ polysilicon gate on silicon dioxide with a p-type silicon substrate doped to N_{a} = 3 \\times 10^{16} \\text{ cm}^{-3}. Assume Q_{ox} = 5 \\times 10^{10} \\text{ cm}^{-2}. Determine the required oxide thickness such that the threshold voltage is V_{th} = -0.65 \\text{ V}.",
+      "formulas": [
+        {
+          "originalFormula": "V_{th} = V_{fb} + \\frac{1}{2}V_{sb} + \\frac{Q_{ox}}{C_{ox}}",
+          "genericFormula": "V_{th} = V_{fb} + \\frac{1}{2}V_{sb} + \\frac{Q_{ox}}{C_{ox}}",
+          "description": "Esta fórmula representa a tensão de limiar (V_th) de um transistor de efeito de campo (MOSFET), que é a tensão mínima necessária para que o transistor comece a conduzir. A tensão de limiar é influenciada por vários fatores, incluindo a tensão de flatband, a tensão de substrato e a carga acumulada na camada de óxido.",
+          "concepts": [
+            "Tensão de limiar",
+            "Transistor de efeito de campo (MOSFET)",
+            "Tensão de flatband",
+            "Tensão de substrato",
+            "Carga de óxido",
+            "Capacitância do óxido"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{th}",
+              "description": "Representa a tensão de limiar do transistor, que é a tensão necessária para iniciar a condução."
+            },
+            {
+              "symbol": "V_{fb}",
+              "description": "Representa a tensão de flatband, que é a tensão na qual a energia de bandas do semicondutor se alinha com a energia do óxido."
+            },
+            {
+              "symbol": "V_{sb}",
+              "description": "Representa a tensão entre o substrato e a fonte, que influencia a formação da região de depleção no transistor."
+            },
+            {
+              "symbol": "Q_{ox}",
+              "description": "Representa a carga acumulada na camada de óxido, que afeta a capacitância e a tensão de limiar do transistor."
+            },
+            {
+              "symbol": "C_{ox}",
+              "description": "Representa a capacitância da camada de óxido, que é a capacidade do óxido de armazenar carga elétrica."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "Ex 10.9",
+      "text": "A silicon MOSFET has the following parameters: N_a = 10^{16} \\, \\text{cm}^{-3} and t_{ox} = 12 \\, \\text{nm} = 120 \\, \\text{Å}. Calculate (a) the body-effect coefficient and (b) the change in threshold voltage for (i) V_{gs} = 1 \\, \\text{V} and (ii) V_{gs} = 2 \\, \\text{V}.",
+      "formulas": [
+        {
+          "originalFormula": "I_{A} = 2 \\, \\text{V} \\cdot A_{V} (V_{gs} - V_{th})",
+          "genericFormula": "I_{A} = 2 \\, \\text{V} \\cdot A_{V} (V_{gs} - V_{th})",
+          "description": "Não foi possível gerar descrição automática",
+          "concepts": [],
+          "symbols": [],
+          "rawText": "{\n  \"originalFormula\": \"I_{A} = 2 \\, \\text{V} \\cdot A_{V} (V_{gs} - V_{th})\",\n  \"genericFormula\": \"I_{A} = K \\cdot A_{V} (V_{gs} - V_{th})\",\n  \"description\": \"Esta fórmula representa a corrente de dreno em um transistor de efeito de campo (FET) em função da tensão de porta a fonte, a tensão de limiar e um fator de ganho que depende do dispositivo. Ela mostra como a corrente varia com a diferença entre a tensão aplicada e a tensão de limiar.\",\n  \"concepts\": [\n    \"Transistor de efeito de campo (FET)\",\n    \"Corrente elétrica\",\n    \"Tensão de porta a fonte\",\n    \"Tensão de limiar\",\n    \"Ganho do transistor\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"I_{A}\",\n      \"description\": \"Representa a corrente que flui através do transistor, especificamente a corrente de dreno.\"\n    },\n    {\n      \"symbol\": \"V\",\n      \"description\": \"Um fator constante que representa a relação entre a corrente e a tensão no dispositivo.\"\n    },\n    {\n      \"symbol\": \"A_{V}\",\n      \"description\": \"Representa o ganho de tensão do transistor, que indica quanto a tensão de saída é amplificada em relação à tensão de entrada.\"\n    },\n    {\n      \"symbol\": \"V_{gs}\",\n      \"description\": \"É a tensão entre a porta e a fonte do transistor, que controla a operação do dispositivo.\"\n    },\n    {\n      \"symbol\": \"V_{th}\",\n      \"description\": \"É a tensão de limiar, que é a tensão mínima necessária para que o transistor comece a conduzir corrente.\"\n    }\n  ]\n}"
+        },
+        {
+          "originalFormula": "A_{V} = 4 \\, \\text{V} \\cdot A_{V} (q) \\cdot \\epsilon_{0} = 4 \\, \\text{V} \\cdot A_{V} (d) \\cdot \\text{uS}",
+          "genericFormula": "A_{V} = 4 \\, \\text{V} \\cdot A_{V} (q) \\cdot \\epsilon_{0} = 4 \\, \\text{V} \\cdot A_{V} (d) \\cdot \\text{uS}",
+          "description": "Não foi possível gerar descrição automática",
+          "concepts": [],
+          "symbols": [],
+          "rawText": "```json\n{\n  \"originalFormula\": \"A_{V} = 4 \\, \\text{V} \\cdot A_{V} (q) \\cdot \\epsilon_{0} = 4 \\, \\text{V} \\cdot A_{V} (d) \\cdot \\text{uS}\",\n  \"genericFormula\": \"A_{V} = k \\cdot A_{V}(q) \\cdot \\epsilon_{0} = k \\cdot A_{V}(d) \\cdot \\text{uS}\",\n  \"description\": \"Esta fórmula representa a relação entre a capacitância de um sistema, onde A_{V} é a capacitância total, e envolve a contribuição de diferentes fatores, como a carga elétrica e a permissividade do meio. A fórmula mostra como a capacitância é influenciada por variáveis como a carga e a distância entre as placas do capacitor.\",\n  \"concepts\": [\n    \"Capacitância\",\n    \"Carga elétrica\",\n    \"Permissividade do vácuo\",\n    \"Condutividade\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"A_{V}\",\n      \"description\": \"Representa a capacitância total do sistema.\"\n    },\n    {\n      \"symbol\": \"k\",\n      \"description\": \"Um fator constante que representa a relação entre a tensão e a capacitância, neste caso, é igual a 4 V.\"\n    },\n    {\n      \"symbol\": \"A_{V}(q)\",\n      \"description\": \"Representa a capacitância associada à carga elétrica no sistema.\"\n    },\n    {\n      \"symbol\": \"ε_{0}\",\n      \"description\": \"Representa a permissividade do vácuo, que é uma constante que mede a capacidade do espaço vazio de permitir a formação de campos elétricos.\"\n    },\n    {\n      \"symbol\": \"A_{V}(d)\",\n      \"description\": \"Representa a capacitância associada à distância entre as placas do capacitor.\"\n    },\n    {\n      \"symbol\": \"uS\",\n      \"description\": \"Representa a unidade de condutância, que é a inversa da resistência elétrica.\"\n    }\n  ]\n}\n```"
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "text": "Sketch the energy-band diagrams in the semiconductor of the MOS capacitor under various bias conditions.",
+      "formulas": []
+    },
+    {
+      "number": "2",
+      "text": "Describe the process by which an inversion layer of charge is created in a MOS capacitor.",
+      "formulas": []
+    },
+    {
+      "number": "3",
+      "text": "Discuss the reason the space charge width reaches a maximum value once the inversion layer is formed.",
+      "formulas": []
+    },
+    {
+      "number": "4",
+      "text": "Discuss what is meant by the metal–semiconductor work function difference and why this value is different between aluminum, n+ polysilicon, and p+ polysilicon gates.",
+      "formulas": []
+    },
+    {
+      "number": "5",
+      "text": "Describe what is meant by flat-band voltage.",
+      "formulas": []
+    },
+    {
+      "number": "6",
+      "text": "Define threshold voltage.",
+      "formulas": []
+    },
+    {
+      "number": "7",
+      "text": "Sketch the C–V characteristics of a MOS capacitor with p-type and n-type semiconductors under high-frequency and low-frequency conditions.",
+      "formulas": []
+    },
+    {
+      "number": "8",
+      "text": "Discuss the effects of fixed trapped oxide charge and interface states on the C–V characteristics.",
+      "formulas": []
+    },
+    {
+      "number": "9",
+      "text": "Sketch the cross sections of n-channel and p-channel MOSFET structures.",
+      "formulas": []
+    },
+    {
+      "number": "10",
+      "text": "Explain the basic operation of the MOSFET.",
+      "formulas": []
+    },
+    {
+      "number": "11",
+      "text": "Discuss the I–V characteristics of the MOSFET when biased in the nonsaturation and saturation regions.",
+      "formulas": []
+    },
+    {
+      "number": "12",
+      "text": "Describe the substrate bias effects on the threshold voltage.",
+      "formulas": []
+    },
+    {
+      "number": "13",
+      "text": "Sketch the small-signal equivalent circuit, including capacitances, of the MOSFET, and explain the physical origin of each capacitance.",
+      "formulas": []
+    },
+    {
+      "number": "14",
+      "text": "Discuss the condition that defines the cutoff frequency of a MOSFET.",
+      "formulas": []
+    },
+    {
+      "number": "15",
+      "text": "Sketch the cross section of a CMOS structure.",
+      "formulas": []
+    },
+    {
+      "number": "16",
+      "text": "Discuss what is meant by latch-up in a CMOS structure.",
+      "formulas": []
+    },
+    {
+      "number": "10.21",
+      "text": "Plot the threshold voltage of a p-channel MOSFET versus n-type substrate doping concentration similar to Figure 10.22. Consider both n+ and p+ polysilicon gates. Use reasonable device parameters.",
+      "formulas": []
+    },
+    {
+      "number": "10.22",
+      "text": "Consider an NMOS device with the parameters given in Problem 10.12. Plot V_{t} versus I_{D} over the range 20 \\leq I_{D} \\leq 500 A.",
+      "formulas": []
+    },
+    {
+      "number": "10.23",
+      "text": "An ideal MOS capacitor with an n+ polysilicon gate has a silicon dioxide thickness t_{ox} = 12 nm = 120 A on a p-type silicon substrate doped at N_{A} = 10^{16} cm^{-3}. Determine the capacitance C_{ox}, C_{dep}, and C_{inv} at (a) f = 1 Hz and (b) f = 1 MHz. (c) Determine V_{FB} and V_{G}. (d) Sketch C' / C_{ox} versus V_{G} for parts (a) and (b).",
+      "formulas": [
+        {
+          "originalFormula": "C_{ox} = \\frac{\\epsilon_{ox}}{t_{ox}}",
+          "genericFormula": "C_{ox} = \\frac{\\epsilon_{ox}}{t_{ox}}",
+          "description": "Esta fórmula representa a capacitância de uma camada isolante de óxido em um dispositivo semicondutor, como um transistor. A capacitância é uma medida de quão bem um capacitor pode armazenar carga elétrica. Neste caso, a capacitância é determinada pela permissividade do material do óxido e pela espessura da camada de óxido.",
+          "concepts": [
+            "Capacitância",
+            "Permissividade",
+            "Espessura do material",
+            "Dispositivos semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "C_{ox}",
+              "description": "Representa a capacitância da camada de óxido, que indica a capacidade de armazenar carga elétrica."
+            },
+            {
+              "symbol": "\\epsilon_{ox}",
+              "description": "Representa a permissividade do material do óxido, que é uma medida de como o material pode permitir a passagem de um campo elétrico."
+            },
+            {
+              "symbol": "t_{ox}",
+              "description": "Representa a espessura da camada de óxido, que é a distância entre as placas do capacitor formadas pelo óxido e o material subjacente."
+            }
+          ]
+        },
+        {
+          "originalFormula": "C_{dep} = \\frac{\\epsilon_{s}}{W}",
+          "genericFormula": "C_{dep} = \\frac{\\epsilon}{W}",
+          "description": "Esta fórmula representa a capacitância de uma camada de depleção em um semicondutor, que é uma medida de quão bem essa camada pode armazenar carga elétrica. A capacitância é inversamente proporcional à largura da camada de depleção e diretamente proporcional à permissividade do material semicondutor.",
+          "concepts": [
+            "Capacitância",
+            "Camada de depleção",
+            "Permissividade elétrica",
+            "Semicondutores"
+          ],
+          "symbols": [
+            {
+              "symbol": "C_{dep}",
+              "description": "Representa a capacitância da camada de depleção, que indica a capacidade de armazenar carga elétrica nessa região."
+            },
+            {
+              "symbol": "\\epsilon",
+              "description": "Representa a permissividade elétrica do material semicondutor, que é uma medida de como o material responde a um campo elétrico e influencia a capacidade de armazenar carga."
+            },
+            {
+              "symbol": "W",
+              "description": "Representa a largura da camada de depleção, que é a distância ao longo da qual a carga elétrica é separada no semicondutor."
+            }
+          ]
+        },
+        {
+          "originalFormula": "C_{inv} = \\frac{C_{ox}}{1 + \\frac{C_{ox}}{C_{dep}}}",
+          "genericFormula": "C_{inv} = \\frac{C_{ox}}{1 + \\frac{C_{ox}}{C_{dep}}}",
+          "description": "Esta fórmula representa a capacitância inversa de um dispositivo semicondutor, que é uma medida de como a carga elétrica se acumula em uma estrutura de semicondutor quando uma tensão é aplicada. A capacitância inversa é importante para entender o comportamento de dispositivos como transistores de efeito de campo (FETs).",
+          "concepts": [
+            "Capacitância",
+            "Semicondutores",
+            "Transistores de efeito de campo",
+            "Acúmulo de carga elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "C_{inv}",
+              "description": "Capacitância inversa, que indica a capacidade de um dispositivo semicondutor de armazenar carga elétrica sob uma tensão aplicada."
+            },
+            {
+              "symbol": "C_{ox}",
+              "description": "Capacitância do óxido, que é a capacitância associada à camada de óxido isolante em um dispositivo semicondutor."
+            },
+            {
+              "symbol": "C_{dep}",
+              "description": "Capacitância de depleção, que é a capacitância associada à região de depleção em um semicondutor, onde não há portadores de carga disponíveis."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10.24",
+      "text": "Repeat Problem 10.23 for an ideal MOS capacitor with a p+ polysilicon gate and n-type silicon substrate doped at N_{D} = 5 \\times 10^{14} cm^{-3}.",
+      "formulas": []
+    },
+    {
+      "number": "10.25",
+      "text": "Using superposition, show that the shift in the flat-band voltage due to a charge distribution ρ(x) in the oxide is given by ΔV_{FB} = -\\frac{1}{C_{ox}} \\int_{0}^{t_{ox}} \\rho(x) dx.",
+      "formulas": [
+        {
+          "originalFormula": "\\Delta V_{FB} = -\\frac{1}{C_{ox}} \\int_{0}^{t_{ox}} \\rho(x) dx",
+          "genericFormula": "\\Delta V_{FB} = -\\frac{1}{C_{ox}} \\int_{0}^{t_{ox}} \\rho(x) dx",
+          "description": "Esta fórmula representa a variação do potencial de fermi na interface entre um semicondutor e um óxido, levando em conta a densidade de carga no óxido. A variação do potencial é inversamente proporcional à capacitância do óxido e está relacionada à integral da densidade de carga ao longo da espessura do óxido.",
+          "concepts": [
+            "Potencial de Fermi",
+            "Capacitância",
+            "Densidade de carga",
+            "Espessura do óxido",
+            "Integração em cálculo"
+          ],
+          "symbols": [
+            {
+              "symbol": "ΔV_{FB}",
+              "description": "Representa a variação do potencial de Fermi na interface entre o semicondutor e o óxido."
+            },
+            {
+              "symbol": "C_{ox}",
+              "description": "Capacitância do óxido, que é uma medida da capacidade do óxido de armazenar carga elétrica."
+            },
+            {
+              "symbol": "t_{ox}",
+              "description": "Espessura do óxido, que é a distância através da qual a densidade de carga é integrada."
+            },
+            {
+              "symbol": "ρ(x)",
+              "description": "Densidade de carga no óxido em função da posição x, que representa a quantidade de carga por unidade de volume em diferentes pontos ao longo da espessura do óxido."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10.26",
+      "text": "Using the results of Problem 10.25, calculate the shift in flat-band voltage for the following oxide charge distributions: (a) Q_{it} = 8 \\times 10^{10} cm^{-2} is entirely located at the oxide–semiconductor interface, (b) Q_{it} = 8 \\times 10^{10} cm^{-2} is uniformly distributed throughout the oxide, and (c) Q_{it} = 8 \\times 10^{10} cm^{-2} forms a triangular distribution with the peak at the oxide–semiconductor interface and is zero at the metal–oxide interface.",
+      "formulas": []
+    },
+    {
+      "number": "10.28",
+      "text": "Consider a MOS capacitor with a p-type substrate. Assume that donor-type interface traps exist only at midgap (i.e., E_{n}). Sketch the high-frequency C–V curve from accumulation to inversion. Compare this sketch to the ideal C–V plot.",
+      "formulas": []
+    },
+    {
+      "number": "10.29",
+      "text": "Consider an SOS capacitor as shown in Figure P10.29. Assume the SiO_{2} is ideal (no trapped charge) and has a thickness of t_{ox} = 500 A. The doping concentrations are N_{D} = 10^{16} cm^{-3} and N_{E} = 10^{16} cm^{-3}. (a) Sketch the energy-band diagram through the device for (i) flat band, (ii) V_{G} = +3 V, and (iii) V_{G} = -3 V. (b) Calculate the flat-band voltage. (c) Estimate the voltage across the oxide for (i) V_{C} = +3 V and (ii) V_{G} = -3 V. (d) Sketch the high-frequency C–V characteristic curve.",
+      "formulas": []
+    },
+    {
+      "number": "10.47",
+      "text": "(a) An ideal n-channel MOSFET has parameters \\(L = 18 \\text{ nm}\\), \\(V_{GS} = 2.0 \\text{ V}\\), and \\(V_{T} = 0.4 \\text{ V}\\). The measured current in the saturation region is \\(I_{D(sat)} = 0.8 \\text{ mA}\\) when biased at \\(V_{DS} = 2.0 \\text{ V}\\. Determine the (i) process conduction parameter and (ii) width-to-length ratio.",
+      "formulas": [
+        {
+          "originalFormula": "I_{D(sat)} = \\frac{1}{2} \\mu_n C_{ox} \\frac{W}{L} (V_{GS} - V_{T})^2",
+          "genericFormula": "I_{D(sat)} = \\frac{1}{2} \\mu C_{ox} \\frac{W}{L} (V_{GS} - V_{T})^2",
+          "description": "Esta fórmula representa a corrente de dreno em saturação de um transistor de efeito de campo (MOSFET) quando ele está operando na região de saturação. A corrente de dreno é uma medida de quanto corrente flui através do transistor quando uma tensão é aplicada entre o gate e o source, superando uma tensão de limiar.",
+          "concepts": [
+            "Transistor de efeito de campo (MOSFET)",
+            "Corrente de dreno",
+            "Região de saturação",
+            "Mobilidade de portadores",
+            "Capacitância de óxido",
+            "Relação largura-comprimento"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_{D(sat)}",
+              "description": "Representa a corrente de dreno em saturação do transistor."
+            },
+            {
+              "symbol": "\\mu_n",
+              "description": "Representa a mobilidade dos portadores de carga (elétrons) no canal do transistor."
+            },
+            {
+              "symbol": "C_{ox}",
+              "description": "Representa a capacitância por unidade de área do óxido que separa o gate do canal do transistor."
+            },
+            {
+              "symbol": "W",
+              "description": "Representa a largura do canal do transistor."
+            },
+            {
+              "symbol": "L",
+              "description": "Representa o comprimento do canal do transistor."
+            },
+            {
+              "symbol": "V_{GS}",
+              "description": "Representa a tensão entre o gate e o source do transistor."
+            },
+            {
+              "symbol": "V_{T}",
+              "description": "Representa a tensão de limiar, que é a tensão mínima necessária para que o transistor comece a conduzir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10.48",
+      "text": "(a) Consider the n-channel MOSFET described in Problem 10.37. (a) Calculate \\(g_{m}\\), \\(V_{DS} = 0.10 \\text{ V}\\). (b) Find \\(I_{D}\\) for \\(V_{GS} = 1.5 \\text{ V}\\).",
+      "formulas": [
+        {
+          "originalFormula": "g_{m} = \\mu_n C_{ox} \\frac{W}{L} (V_{GS} - V_{T})",
+          "genericFormula": "g_{m} = \\mu C_{ox} \\frac{W}{L} (V_{GS} - V_{T})",
+          "description": "Esta fórmula representa a transcondutância de um transistor de efeito de campo (FET), que é uma medida de quão eficientemente o transistor pode controlar a corrente que flui através dele em resposta a uma variação na tensão de porta. Em outras palavras, ela indica quanto a corrente de dreno muda em relação a uma mudança na tensão de porta, considerando a largura e o comprimento do canal do transistor.",
+          "concepts": [
+            "Transcondutância",
+            "Transistor de efeito de campo (FET)",
+            "Mobilidade dos portadores de carga",
+            "Capacitância da camada de óxido",
+            "Relação largura/comprimento do canal",
+            "Tensão de porta e tensão de limiar"
+          ],
+          "symbols": [
+            {
+              "symbol": "g_{m}",
+              "description": "Representa a transcondutância do transistor, que é a razão entre a variação da corrente de dreno e a variação da tensão de porta."
+            },
+            {
+              "symbol": "\\mu_n",
+              "description": "Representa a mobilidade dos portadores de carga, que é uma medida de quão rapidamente os portadores de carga (elétrons, no caso de transistores n) podem se mover através do material semicondutor."
+            },
+            {
+              "symbol": "C_{ox}",
+              "description": "Representa a capacitância da camada de óxido, que é a capacitância associada à camada de óxido isolante que separa o terminal da porta do canal do transistor."
+            },
+            {
+              "symbol": "W",
+              "description": "Representa a largura do canal do transistor, que influencia a quantidade de corrente que pode fluir através do dispositivo."
+            },
+            {
+              "symbol": "L",
+              "description": "Representa o comprimento do canal do transistor, que também afeta a corrente e a transcondutância do dispositivo."
+            },
+            {
+              "symbol": "V_{GS}",
+              "description": "Representa a tensão entre o terminal da porta e a fonte do transistor, que controla a condução do transistor."
+            },
+            {
+              "symbol": "V_{T}",
+              "description": "Representa a tensão de limiar do transistor, que é a tensão mínima necessária para que o transistor comece a conduzir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10.50",
+      "text": "(a) An n-channel MOSFET has the following parameters: \\(N_{d} = 5 \\times 10^{16} \\text{ cm}^{-3}\\), \\(L = 15 \\text{ nm}\\), \\(\\mu_{n} = 450 \\text{ cm}^{2}/\\text{V s}\\), \\(V_{T} = -0.5 \\text{ V}\\), \\(V_{GS} = 2.0 \\text{ V}\\), and \\(W = 8 \\text{ µm}\\). (a) Determine the body-effect coefficient. (b) Plot \\(V_{DS}(sat)\\) versus \\(V_{GS}\\) over the range \\(0.5 \\text{ V} \\leq V_{GS} \\leq 2.0 \\text{ V}\\).",
+      "formulas": [
+        {
+          "originalFormula": "\\gamma = \\sqrt{\\frac{2qN_{a}}{\\epsilon_{0}}}",
+          "genericFormula": "\\gamma = \\sqrt{\\frac{2qN}{\\epsilon}}",
+          "description": "Esta fórmula representa a constante de um parâmetro físico relacionado à mobilidade de portadores de carga em um semicondutor. A constante é influenciada pela quantidade de portadores de carga e pela permissividade do meio.",
+          "concepts": [
+            "Mobilidade de portadores de carga",
+            "Semicondutores",
+            "Permissividade do meio",
+            "Densidade de portadores de carga"
+          ],
+          "symbols": [
+            {
+              "symbol": "γ",
+              "description": "Representa a constante que está relacionada à mobilidade dos portadores de carga em um semicondutor."
+            },
+            {
+              "symbol": "q",
+              "description": "Representa a carga elétrica de um portador, que pode ser um elétron ou um buraco em um semicondutor."
+            },
+            {
+              "symbol": "N_{a}",
+              "description": "Representa a densidade de portadores de carga do tipo aceito (ou dopante do tipo p) em um semicondutor."
+            },
+            {
+              "symbol": "ε_{0}",
+              "description": "Representa a permissividade do vácuo, que é uma constante que descreve como um campo elétrico interage com o meio."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10.52",
+      "text": "(a) A p-channel MOSFET has an oxide thickness of \\(t_{ox} = 20 \\text{ nm}\\) and a substrate doping of \\(N_{a} = 5 \\times 10^{16} \\text{ cm}^{-3}\\). (a) Find the body-effect coefficient. (b) Determine the body-to-source voltage, \\(V_{BS}\\), such that the threshold voltage, \\(V_{T}\\), from the \\(I_{D} = 0\\) curve is \\(\\Delta V_{T} = -0.22 \\text{ V}\\).",
+      "formulas": [
+        {
+          "originalFormula": "V_{T} = V_{T0} + \\gamma (\\sqrt{V_{SB} + \\phi_{F}} - \\sqrt{\\phi_{F}})",
+          "genericFormula": "V_{T} = V_{T0} + \\gamma (\\sqrt{V_{SB} + \\phi_{F}} - \\sqrt{\\phi_{F}})",
+          "description": "Esta fórmula representa a tensão de limiar de um transistor de efeito de campo (FET) em função de outros parâmetros, como a tensão de substrato e o potencial de depleção. Ela mostra como a tensão de limiar varia com a tensão de substrato aplicada e o potencial de depleção do material semicondutor.",
+          "concepts": [
+            "Transistor de efeito de campo (FET)",
+            "Tensão de limiar",
+            "Tensão de substrato",
+            "Potencial de depleção",
+            "Efeito da tensão de substrato na operação do transistor"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{T}",
+              "description": "Representa a tensão de limiar do transistor, que é a tensão mínima necessária para que o transistor comece a conduzir."
+            },
+            {
+              "symbol": "V_{T0}",
+              "description": "É a tensão de limiar inicial do transistor, sem a influência de outras tensões aplicadas."
+            },
+            {
+              "symbol": "\\gamma",
+              "description": "É um fator de correção que representa a sensibilidade da tensão de limiar em relação à tensão de substrato aplicada."
+            },
+            {
+              "symbol": "V_{SB}",
+              "description": "Representa a tensão entre o substrato e a fonte do transistor, que influencia a operação do dispositivo."
+            },
+            {
+              "symbol": "\\phi_{F}",
+              "description": "É o potencial de depleção do material semicondutor, que é uma medida da energia necessária para criar uma camada de depleção no semicondutor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10.55",
+      "text": "(a) Consider an ideal n-channel MOSFET with a width-to-length ratio of \\(\\frac{W}{L} = 10\\), an electron mobility of \\(\\mu_{n} = 400 \\text{ cm}^{2}/\\text{V s}\\), an oxide thickness of \\(t_{ox} = 475 \\text{ A}\\), and a threshold voltage of \\(V_{T} = 0.65 \\text{ V}\\). (c) Determine the minimum value of source resistance so that the saturation transconductance, \\(g_{m}\\), is reduced by no more than 20 percent from its ideal value when \\(V_{GS} = 5 \\text{ V}\\).",
+      "formulas": [
+        {
+          "originalFormula": "g_{m} = \\frac{2I_{D}}{V_{GS} - V_{T}}",
+          "genericFormula": "g_{m} = \\frac{2I_{D}}{V_{GS} - V_{T}}",
+          "description": "Esta fórmula representa a transcondutância de um transistor de efeito de campo (FET), que é uma medida de quão eficientemente o dispositivo pode controlar a corrente de saída em relação à tensão de entrada. A transcondutância é uma característica importante que indica a sensibilidade do transistor a variações na tensão de porta.",
+          "concepts": [
+            "Transcondutância",
+            "Transistor de efeito de campo (FET)",
+            "Corrente de dreno",
+            "Tensão de porta",
+            "Tensão de limiar"
+          ],
+          "symbols": [
+            {
+              "symbol": "g_{m}",
+              "description": "Representa a transcondutância, que é a razão entre a variação da corrente de dreno e a variação da tensão de porta, indicando a eficiência do transistor em amplificar sinais."
+            },
+            {
+              "symbol": "I_{D}",
+              "description": "Representa a corrente que flui através do dreno do transistor, que é a corrente de saída que o transistor fornece em resposta à tensão de entrada."
+            },
+            {
+              "symbol": "V_{GS}",
+              "description": "Representa a tensão entre a porta e o fonte do transistor, que controla a quantidade de corrente que flui do dreno para a fonte."
+            },
+            {
+              "symbol": "V_{T}",
+              "description": "Representa a tensão de limiar do transistor, que é a tensão mínima necessária na porta para que o transistor comece a conduzir corrente entre o dreno e a fonte."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "answers": [],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "C = \\frac{dQ}{dV}",
+      "genericFormula": "C = \\frac{dQ}{dV}",
+      "description": "Esta fórmula representa a capacitância de um capacitor, que é a capacidade de armazenar carga elétrica por unidade de diferença de potencial elétrico. Em outras palavras, ela nos diz quanto de carga elétrica um capacitor pode armazenar para cada unidade de voltagem aplicada.",
+      "concepts": [
+        "Capacitância",
+        "Carga elétrica",
+        "Diferença de potencial elétrico",
+        "Capacitores"
+      ],
+      "symbols": [
+        {
+          "symbol": "C",
+          "description": "Representa a capacitância, que é uma medida da capacidade de um capacitor de armazenar carga elétrica."
+        },
+        {
+          "symbol": "dQ",
+          "description": "Representa a variação da carga elétrica armazenada no capacitor."
+        },
+        {
+          "symbol": "dV",
+          "description": "Representa a variação da diferença de potencial elétrico aplicada ao capacitor."
+        }
+      ]
+    },
+    {
+      "originalFormula": "V_{fb} = \\phi_{ms} + \\frac{Q_{ox}}{C_{ox}}",
+      "genericFormula": "V_{fb} = \\phi_{ms} + \\frac{Q_{ox}}{C_{ox}}",
+      "description": "Esta fórmula representa a tensão de flatband em um semicondutor, que é a tensão necessária para que a energia de Fermi do semicondutor se alinhe com a energia do nível de referência na presença de uma camada de óxido. A tensão de flatband é crucial para entender o comportamento de dispositivos semicondutores, especialmente em transistores de efeito de campo.",
+      "concepts": [
+        "Tensão de flatband",
+        "Energia de Fermi",
+        "Camada de óxido",
+        "Capacitância"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_{fb}",
+          "description": "Representa a tensão de flatband, que é a tensão na qual não há campo elétrico na região do semicondutor."
+        },
+        {
+          "symbol": "\\phi_{ms}",
+          "description": "Representa a diferença de trabalho entre o metal e o semicondutor, que é uma medida da energia necessária para mover um elétron do semicondutor para o metal."
+        },
+        {
+          "symbol": "Q_{ox}",
+          "description": "Representa a carga na interface entre o óxido e o semicondutor, que pode influenciar a tensão de flatband ao afetar a distribuição de cargas."
+        },
+        {
+          "symbol": "C_{ox}",
+          "description": "Representa a capacitância da camada de óxido, que é uma medida de sua capacidade de armazenar carga elétrica."
+        }
+      ]
+    },
+    {
+      "originalFormula": "V_{th} = V_{fb} + \\frac{1}{2}V_{sb} + \\frac{Q_{ox}}{C_{ox}}",
+      "genericFormula": "V_{th} = V_{fb} + \\frac{1}{2}V_{sb} + \\frac{Q_{ox}}{C_{ox}}",
+      "description": "Esta fórmula representa a tensão de limiar (V_{th}) de um transistor de efeito de campo (FET), que é a tensão mínima necessária para que o transistor comece a conduzir corrente. A tensão de limiar é influenciada por vários fatores, incluindo a tensão de trabalho do substrato, a carga no óxido e a capacitância do óxido.",
+      "concepts": [
+        "Tensão de limiar em transistores",
+        "Efeito de campo em semicondutores",
+        "Capacitância e carga em materiais dielétricos"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_{th}",
+          "description": "Tensão de limiar, que é a tensão mínima necessária para que o transistor comece a conduzir corrente."
+        },
+        {
+          "symbol": "V_{fb}",
+          "description": "Tensão de flatband, que é a tensão na qual a banda de energia do semicondutor se alinha com a do óxido, sem a presença de carga elétrica."
+        },
+        {
+          "symbol": "V_{sb}",
+          "description": "Tensão de substrato para fonte, que representa a diferença de potencial entre a fonte do transistor e o substrato."
+        },
+        {
+          "symbol": "Q_{ox}",
+          "description": "Carga no óxido, que é a quantidade de carga elétrica armazenada no material isolante que separa o canal do transistor do gate."
+        },
+        {
+          "symbol": "C_{ox}",
+          "description": "Capacitância do óxido, que é a capacidade do material isolante de armazenar carga elétrica por unidade de tensão."
+        }
+      ]
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465
+  ],
+  "lastUpdated": "2026-05-08T22:34:37.274Z"
+}

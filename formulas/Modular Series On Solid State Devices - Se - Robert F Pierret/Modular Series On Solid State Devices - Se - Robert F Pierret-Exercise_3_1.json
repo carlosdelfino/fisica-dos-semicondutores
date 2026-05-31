@@ -1,0 +1,823 @@
+{
+  "chapter": "Exercise 3.1",
+  "questions": [
+    {
+      "number": "3.1a",
+      "text": "If the semiconductor is taken to be Si maintained at T = 300 K (E_G = 1.12 eV, n_i = 1.18 × 10^10/cm³, and kT = 0.0259 eV), determine the resistivity of the x > W/2 portion of the semiconductor.",
+      "formulas": [
+        {
+          "originalFormula": "E_G = 1.12 \\text{ eV}",
+          "genericFormula": "E_G",
+          "description": "O gap de energia (ou bandgap) do silício a temperatura ambiente (300 K) é aproximadamente 1,12 eV. Este valor representa a diferença de energia entre o topo da banda de valência e o fundo da banda de condução. O bandgap é uma das propriedades mais fundamentais de um semicondutor, pois determina sua condutividade elétrica, absorção óptica e comportamento em dispositivos eletrônicos. Para o silício, este valor de 1,12 eV classifica-o como semicondutor de gap indireto, o que significa que a transição entre banda de valência e banda de condução envolve uma mudança no vetor de onda k. O bandgap diminui com o aumento da temperatura, seguindo aproximadamente a relação de Varshni.",
+          "concepts": [
+            "bandgap",
+            "gap de energia",
+            "banda de valência",
+            "banda de condução",
+            "semicondutor intrínseco",
+            "gap indireto",
+            "silício",
+            "estrutura de bandas",
+            "temperatura ambiente"
+          ],
+          "symbols": [
+            {
+              "symbol": "E_G",
+              "description": "Gap de energia (bandgap): diferença de energia entre o topo da banda de valência e o fundo da banda de condução, medida em elétron-volts (eV)"
+            },
+            {
+              "symbol": "\\text{eV}",
+              "description": "Elétron-volt: unidade de energia equivalente a 1,602 × 10⁻¹⁹ J, comumente usada em física de semicondutores e física atômica"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "band-structure",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "bandgap",
+            "energy",
+            "gap",
+            "band",
+            "silicon",
+            "conduction",
+            "valence",
+            "semiconductor",
+            "intrinsic",
+            "indirect-gap",
+            "eV",
+            "300K"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "energy-band",
+            "graphParameters": [
+              "energy",
+              "momentum",
+              "wave-vector k",
+              "conduction band",
+              "valence band",
+              "bandgap"
+            ]
+          },
+          "relatedFormulas": [
+            "Varshni-equation",
+            "Fermi-Dirac-distribution",
+            "intrinsic-carrier-concentration",
+            "effective-density-of-states",
+            "pn-junction-built-in-potential"
+          ]
+        },
+        {
+          "originalFormula": "n_i = 1.18 \\times 10^{10} /\\text{cm}^3",
+          "genericFormula": "n_i = \\sqrt{N_c N_v} \\exp\\left(-\\frac{E_g}{2k_BT}\\right)",
+          "description": "A concentração intrínseca de portadores n_i representa o número de elétrons (ou lacunas) por unidade de volume em um semicondutor puro (intrínseco) em equilíbrio térmico. Para o silício (Si) a 300 K (temperatura ambiente), o valor padrão é aproximadamente 1.18 × 10^10 cm^-3. Este parâmetro é fundamental para determinar as propriedades elétricas do semicondutor, pois define o ponto de referência para dopagem e cálculo de concentrações de portadores em dispositivos. A concentração intrínseca cresce exponencialmente com a temperatura, sendo extremamente sensível ao gap de energia E_g do material. Em semicondutores dopados, n_i serve como referência na relação de massa de ação: n × p = n_i².",
+          "concepts": [
+            "concentração intrínseca de portadores",
+            "equilíbrio térmico",
+            "semicondutor intrínseco",
+            "geração térmica de pares elétron-lacuna",
+            "lei da ação de massa",
+            "densidade de estados efetiva",
+            "gap de energia"
+          ],
+          "symbols": [
+            {
+              "symbol": "n_i",
+              "description": "Concentração intrínseca de portadores (elétrons ou lacunas) em equilíbrio térmico no semicondutor puro, em cm^-3"
+            },
+            {
+              "symbol": "N_c",
+              "description": "Densidade efetiva de estados na banda de condução, em cm^-3"
+            },
+            {
+              "symbol": "N_v",
+              "description": "Densidade efetiva de estados na banda de valência, em cm^-3"
+            },
+            {
+              "symbol": "E_g",
+              "description": "Energia do gap (banda proibida) do semicondutor, em eV"
+            },
+            {
+              "symbol": "k_B",
+              "description": "Constante de Boltzmann, k_B = 8.617 × 10^-5 eV/K"
+            },
+            {
+              "symbol": "T",
+              "description": "Temperatura absoluta em Kelvin (K); valor de referência: T = 300 K"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-concentration",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "intrinsic",
+            "carrier",
+            "concentration",
+            "silicon",
+            "thermal equilibrium",
+            "energy",
+            "gap",
+            "band",
+            "ni",
+            "density",
+            "state",
+            "Fermi-Dirac",
+            "mass action"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-concentration-vs-temperature",
+            "graphParameters": [
+              "intrinsic carrier concentration",
+              "temperature",
+              "bandgap energy"
+            ]
+          },
+          "relatedFormulas": [
+            "law-of-mass-action",
+            "Fermi-Dirac-distribution",
+            "effective-density-of-states-Nc",
+            "effective-density-of-states-Nv",
+            "electron-concentration-n-type",
+            "hole-concentration-p-type",
+            "Fermi-level-intrinsic"
+          ]
+        },
+        {
+          "originalFormula": "kT = 0.0259 \\text{ eV}",
+          "genericFormula": "k_B T",
+          "description": "A energia térmica kT é um dos parâmetros mais fundamentais em física de semicondutores e física estatística. À temperatura ambiente (T = 300 K), o produto da constante de Boltzmann (k_B = 8.617 × 10⁻⁵ eV/K) pela temperatura resulta em aproximadamente 0.0259 eV (ou 26 meV). Este valor serve como escala de energia de referência para comparar a energia de excitação térmica com outras energias do sistema, como o gap de energia de semicondutores, energias de ionização de dopantes e larguras de banda. Quando a energia de um estado é muito maior que kT, a ocupação térmica é exponencialmente suprimida (regime de Boltzmann); quando comparável a kT, os efeitos térmicos são significativos. É essencial para calcular concentrações de portadores, correntes de difusão e comportamento de dispositivos semicondutores em temperatura ambiente.",
+          "concepts": [
+            "energia térmica",
+            "temperatura ambiente",
+            "estatística de Boltzmann",
+            "agitação térmica",
+            "distribuição de Fermi-Dirac",
+            "física estatística",
+            "excitação térmica de portadores"
+          ],
+          "symbols": [
+            {
+              "symbol": "k_B",
+              "description": "Constante de Boltzmann: k_B = 8.617 × 10⁻⁵ eV/K = 1.381 × 10⁻²³ J/K. Relaciona energia térmica à temperatura absoluta."
+            },
+            {
+              "symbol": "T",
+              "description": "Temperatura absoluta em Kelvin. Para temperatura ambiente, T = 300 K é o valor de referência padrão."
+            },
+            {
+              "symbol": "k_B T",
+              "description": "Energia térmica do sistema à temperatura T. Representa a escala característica de flutuações de energia devido à agitação térmica."
+            },
+            {
+              "symbol": "0.0259 \\text{ eV}",
+              "description": "Valor numérico da energia térmica a 300 K, equivalente a aproximadamente 26 meV ou 4.14 × 10⁻²¹ J."
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-statistics",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "thermal energy",
+            "Boltzmann",
+            "temperature",
+            "kT",
+            "room temperature",
+            "carrier",
+            "statistics",
+            "Fermi-Dirac",
+            "energy",
+            "distribution",
+            "concentration",
+            "semiconductor"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "energy-temperature",
+            "graphParameters": [
+              "thermal energy",
+              "temperature",
+              "Boltzmann constant"
+            ]
+          },
+          "relatedFormulas": [
+            "Fermi-Dirac distribution",
+            "intrinsic carrier concentration",
+            "Boltzmann approximation",
+            "Einstein relation",
+            "carrier mobility",
+            "np product"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "3.1b",
+      "text": "An electron located at x = W/2 attempts to move over to the x < -W/2 region of the semiconductor without changing its total energy. What is the minimum kinetic energy the electron must have in order to accomplish this feat?",
+      "formulas": []
+    },
+    {
+      "number": "3.1c",
+      "text": "Sketch the electrostatic potential (V) inside the semiconductor as a function of x.",
+      "formulas": []
+    },
+    {
+      "number": "3.1d",
+      "text": "Sketch the electric field (ε) inside the semiconductor as a function of x.",
+      "formulas": []
+    },
+    {
+      "number": "3.1e",
+      "text": "The semiconductor is in equilibrium. How does one deduce this fact from the energy band diagram?",
+      "formulas": []
+    },
+    {
+      "number": "3.1f",
+      "text": "What is the electron current density (J_N) and hole current density (J_p) at x = 0?",
+      "formulas": []
+    },
+    {
+      "number": "3.1g",
+      "text": "Is there an electron drift current at x = 0? If there is a drift current, what is the direction of the current flow?",
+      "formulas": []
+    },
+    {
+      "number": "3.1h",
+      "text": "Is there an electron diffusion current at x = 0? If there is a diffusion current, what is the direction of the current flow?",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "3.1a",
+      "text": "The x > W/2 portion of the semiconductor is n-type. From Fig. 3.5 one deduces μ_n ≈ 1350 cm²/V-sec. (Making use of the Fig. 3.7 resistivity plot one concludes ρ ≈ 8 Ω-cm.)",
+      "formulas": [
+        {
+          "originalFormula": "N_D \\approx n = n_i e^{(E_F - E_i)/kT} = n_i e^{E_G/4kT} = (1.18 \\times 10^{10}) e^{1.12/0.1036}",
+          "genericFormula": "N_D \\approx n = n_i e^{(E_F - E_i)/kT} = n_i e^{E_G/4kT}",
+          "description": "Esta expressão descreve a concentração de elétrons em um semicondutor tipo-n levemente dopado, no regime em que o nível de Fermi está próximo ao meio do gap. Quando a concentração de doadores N_D é muito maior que n_i, mas ainda mantém E_F próximo de E_i, podemos aproximar n ≈ N_D. A posição do nível de Fermi em relação ao nível intrínseco E_i determina o grau de dopagem. No caso especial em que E_F se localiza exatamente a E_G/4 acima de E_i (ou seja, a um quarto do gap acima do meio do gap), obtemos a expressão simplificada com E_G/4kT. Os valores numéricos utilizam n_i = 1.18 × 10^10 cm⁻³ (silício a 300 K), E_G = 1.12 eV e 4kT = 4 × 0.02585 eV ≈ 0.1036 eV, resultando em uma concentração de portadores correspondente à condição do problema 3.1a.",
+          "concepts": [
+            "nível de Fermi",
+            "concentração intrínseca de portadores",
+            "estatística de Fermi-Dirac",
+            "semicondutor tipo-n",
+            "nível intrínseco",
+            "dopagem de semicondutores",
+            "aproximação de neutralidade de carga",
+            "energia do gap"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_D",
+              "description": "Concentração de átomos doadores ionizados (cm⁻³)"
+            },
+            {
+              "symbol": "n",
+              "description": "Concentração de elétrons livres na banda de condução (cm⁻³)"
+            },
+            {
+              "symbol": "n_i",
+              "description": "Concentração intrínseca de portadores do semicondutor (cm⁻³); para Si a 300 K: n_i ≈ 1.18 × 10¹⁰ cm⁻³"
+            },
+            {
+              "symbol": "E_F",
+              "description": "Energia do nível de Fermi (eV)"
+            },
+            {
+              "symbol": "E_i",
+              "description": "Energia do nível intrínseco de Fermi, localizado aproximadamente no meio do gap (eV)"
+            },
+            {
+              "symbol": "E_G",
+              "description": "Largura da banda proibida (bandgap) do semicondutor; para Si: E_G = 1.12 eV"
+            },
+            {
+              "symbol": "k",
+              "description": "Constante de Boltzmann: k = 8.617 × 10⁻⁵ eV/K"
+            },
+            {
+              "symbol": "T",
+              "description": "Temperatura absoluta em Kelvin; a 300 K: kT ≈ 0.02585 eV"
+            },
+            {
+              "symbol": "kT",
+              "description": "Energia térmica; a 300 K: kT ≈ 0.02585 eV, portanto 4kT ≈ 0.1036 eV"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-concentration",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "carrier",
+            "concentration",
+            "Fermi",
+            "level",
+            "intrinsic",
+            "donor",
+            "doping",
+            "energy",
+            "gap",
+            "band",
+            "silicon",
+            "Fermi-Dirac",
+            "distribution",
+            "n-type",
+            "bandgap",
+            "thermal"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "energy-band",
+            "graphParameters": [
+              "energy",
+              "Fermi-level",
+              "intrinsic-level",
+              "bandgap",
+              "temperature",
+              "carrier-concentration"
+            ]
+          },
+          "relatedFormulas": [
+            "Fermi-Dirac-distribution",
+            "mass-action-law",
+            "intrinsic-carrier-concentration",
+            "charge-neutrality",
+            "electron-concentration-general",
+            "hole-concentration-general"
+          ]
+        },
+        {
+          "originalFormula": "N_D = 5.85 \\times 10^{14} /\\text{cm}^3",
+          "genericFormula": "N_D",
+          "description": "Concentração de dopantes doadores (N_D) em um semicondutor tipo-n. Representa a densidade volumétrica de átomos doadores introduzidos intencionalmente na rede cristalina do semicondutor. Neste caso, o valor N_D = 5.85 × 10¹⁴ cm⁻³ é uma concentração de dopagem leve a moderada para o silício (cuja concentração intrínseca ni ≈ 1.5 × 10¹⁰ cm⁻³ a 300 K), resultado típico de cálculos que envolvem a equação de neutralidade de carga ou a relação entre concentração de portadores majoritários e minoritários. Esta concentração determina a posição do nível de Fermi, a resistividade do material e o comportamento elétrico do dispositivo.",
+          "concepts": [
+            "dopagem de semicondutores",
+            "semicondutor tipo-n",
+            "átomos doadores",
+            "neutralidade de carga",
+            "concentração de portadores",
+            "nível de Fermi",
+            "resistividade"
+          ],
+          "symbols": [
+            {
+              "symbol": "N_D",
+              "description": "Concentração de dopantes doadores (átomos que doam elétrons à banda de condução), expressa em cm⁻³"
+            },
+            {
+              "symbol": "\\text{cm}^{-3}",
+              "description": "Unidade de concentração volumétrica (número de átomos por centímetro cúbico)"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "doping-concentration",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "donor",
+            "doping",
+            "concentration",
+            "n-type",
+            "carrier",
+            "impurity",
+            "Fermi-level",
+            "neutrality",
+            "majority-carrier",
+            "semiconductor"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "energy-band",
+            "graphParameters": [
+              "Fermi level position",
+              "donor energy level",
+              "conduction band",
+              "valence band",
+              "doping concentration"
+            ]
+          },
+          "relatedFormulas": [
+            "charge-neutrality",
+            "mass-action-law",
+            "Fermi-level-n-type",
+            "electron-concentration",
+            "hole-concentration",
+            "resistivity-n-type"
+          ]
+        },
+        {
+          "originalFormula": "\\rho = \\frac{1}{q \\mu_n N_D} = \\frac{1}{(1.6 \\times 10^{-19})(1.35 \\times 10^3)(5.85 \\times 10^{14})} = 7.91 \\ \\Omega\\text{-cm}",
+          "genericFormula": "\\rho = \\frac{1}{q \\mu_n N_D}",
+          "description": "Esta fórmula calcula a resistividade elétrica de um semicondutor tipo-n dopado, onde a condução é dominada por elétrons. A resistividade é inversamente proporcional à concentração de doadores ionizados N_D, à mobilidade dos elétrons μ_n e à carga elementar q. Em semicondutores extrínsecos tipo-n com dopagem moderada, praticamente todos os átomos doadores estão ionizados em temperatura ambiente, fornecendo elétrons à banda de condução. A resistividade é uma propriedade fundamental do material que determina a resistência elétrica de dispositivos e componentes semicondutores. Neste exemplo, com N_D = 5.85×10¹⁴ cm⁻³ e μ_n = 1350 cm²/V·s (mobilidade típica do silício), obtém-se ρ = 7.91 Ω·cm, valor característico de silício levemente dopado tipo-n.",
+          "concepts": [
+            "resistividade elétrica",
+            "semicondutor tipo-n",
+            "dopagem extrínsecat",
+            "mobilidade de portadores",
+            "concentração de doadores",
+            "transporte de carga",
+            "condutividade elétrica",
+            "ionização de impurezas"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\rho",
+              "description": "Resistividade elétrica do semicondutor (Ω·cm ou Ω·m)"
+            },
+            {
+              "symbol": "q",
+              "description": "Carga elementar do elétron: q = 1.6 × 10⁻¹⁹ C"
+            },
+            {
+              "symbol": "\\mu_n",
+              "description": "Mobilidade dos elétrons no semicondutor (cm²/V·s); para Si em temperatura ambiente ≈ 1350 cm²/V·s"
+            },
+            {
+              "symbol": "N_D",
+              "description": "Concentração de átomos doadores ionizados (cm⁻³); fornece elétrons à banda de condução em semicondutores tipo-n"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "resistivity",
+            "conductivity",
+            "carrier",
+            "mobility",
+            "donor",
+            "doping",
+            "n-type",
+            "transport",
+            "electron",
+            "concentration",
+            "semiconductor"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "resistivity-vs-doping",
+            "graphParameters": [
+              "resistivity",
+              "donor-concentration",
+              "mobility",
+              "temperature"
+            ]
+          },
+          "relatedFormulas": [
+            "conductivity-intrinsic",
+            "carrier-concentration-n-type",
+            "mobility-lattice-scattering",
+            "Fermi-Dirac",
+            "ohms-law",
+            "Hall-effect"
+          ]
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "N_D \\approx n = n_i e^{(E_F - E_i)/kT} = n_i e^{E_G/4kT}",
+      "genericFormula": "N_D \\approx n = n_i e^{(E_F - E_i)/k_B T} = n_i e^{E_G/4k_B T}",
+      "description": "Esta fórmula descreve a concentração de elétrons livres em um semicondutor do tipo N levemente dopado, onde o nível de Fermi está próximo ao meio do gap. Quando a dopagem é moderada e a temperatura não é muito baixa, praticamente todos os doadores estão ionizados e a concentração de portadores majoritários (elétrons) é aproximadamente igual à concentração de doadores N_D. A expressão n_i e^{(E_F - E_i)/kT} é derivada da estatística de Fermi-Dirac na aproximação de Boltzmann, relacionando a concentração de elétrons com a posição do nível de Fermi em relação ao nível intrínseco E_i. A igualdade final n_i e^{E_G/4kT} ocorre numa condição especial em que o nível de Fermi está posicionado exatamente a E_G/4 acima do nível intrínseco, situação que emerge em semicondutores com dopagem específica onde a separação entre E_F e E_i equivale a um quarto do gap de energia. Esta expressão é fundamental para calcular concentrações de portadores em dispositivos semicondutores e para entender como o nível de Fermi se desloca com a dopagem.",
+      "concepts": [
+        "semicondutor tipo N",
+        "concentração de portadores",
+        "nível de Fermi",
+        "nível intrínseco",
+        "ionização de doadores",
+        "estatística de Boltzmann",
+        "gap de energia",
+        "portadores majoritários",
+        "concentração intrínseca",
+        "aproximação de Boltzmann"
+      ],
+      "symbols": [
+        {
+          "symbol": "N_D",
+          "description": "Concentração de átomos doadores ionizados (dopantes tipo N) em cm⁻³"
+        },
+        {
+          "symbol": "n",
+          "description": "Concentração de elétrons livres na banda de condução em cm⁻³"
+        },
+        {
+          "symbol": "n_i",
+          "description": "Concentração intrínseca de portadores (elétrons ou buracos no semicondutor puro) em cm⁻³"
+        },
+        {
+          "symbol": "E_F",
+          "description": "Nível de Fermi: energia que define a distribuição estatística dos elétrons no material (em eV)"
+        },
+        {
+          "symbol": "E_i",
+          "description": "Nível intrínseco de Fermi: posição do nível de Fermi no semicondutor intrinseco, aproximadamente no meio do gap (em eV)"
+        },
+        {
+          "symbol": "E_G",
+          "description": "Energia de gap do semicondutor: diferença de energia entre a banda de valência e a banda de condução (em eV)"
+        },
+        {
+          "symbol": "k_B",
+          "description": "Constante de Boltzmann: k_B = 1,381 \\times 10^{-23} J/K = 8,617 \\times 10^{-5} eV/K"
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura absoluta do semicondutor em Kelvin (K)"
+        },
+        {
+          "symbol": "k_B T",
+          "description": "Energia térmica: a 300 K equivale a aproximadamente 0,026 eV (25,9 meV)"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-concentration",
+        "domain": "solid-state"
+      },
+      "keywords": [
+        "carrier",
+        "concentration",
+        "donor",
+        "Fermi",
+        "intrinsic",
+        "energy",
+        "gap",
+        "band",
+        "n-type",
+        "Boltzmann",
+        "distribution",
+        "electron",
+        "doping",
+        "level",
+        "majority-carrier",
+        "semiconductor"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "energy-band",
+        "graphParameters": [
+          "energy",
+          "Fermi level position",
+          "band gap",
+          "intrinsic level",
+          "conduction band",
+          "valence band",
+          "temperature"
+        ]
+      },
+      "relatedFormulas": [
+        "Fermi-Dirac distribution",
+        "mass action law (n*p = ni^2)",
+        "intrinsic carrier concentration",
+        "charge neutrality condition",
+        "Boltzmann approximation",
+        "p-type carrier concentration",
+        "Fermi level in n-type semiconductor"
+      ]
+    },
+    {
+      "originalFormula": "\\rho = \\frac{1}{q \\mu_n N_D}",
+      "genericFormula": "\\rho = \\frac{1}{q \\mu_n N_D}",
+      "description": "Esta fórmula descreve a resistividade elétrica de um semicondutor do tipo n fortemente dopado, onde a condutividade é dominada pelos elétrons fornecidos pelos doadores ionizados. A resistividade é inversamente proporcional à carga elementar (q), à mobilidade dos elétrons (μₙ) e à concentração de dopantes doadores (N_D). Quanto maior a dopagem ou a mobilidade dos portadores majoritários, menor a resistividade e maior a condutividade do material. Esta expressão é válida quando a concentração de portadores intrínsecos é desprezível frente à dopagem, ou seja, n ≈ N_D. É amplamente usada no projeto de resistores integrados, cálculo de corrente em dispositivos e caracterização elétrica de amostras semicondutoras por técnicas como a medida de quatro pontas (four-point probe) ou efeito Hall.",
+      "concepts": [
+        "resistividade elétrica",
+        "condutividade elétrica",
+        "semicondutor tipo n",
+        "dopagem de semicondutores",
+        "mobilidade de portadores",
+        "portadores majoritários",
+        "lei de Ohm microscópica",
+        "ionização de doadores",
+        "transporte de carga"
+      ],
+      "symbols": [
+        {
+          "symbol": "\\rho",
+          "description": "Resistividade elétrica do semicondutor (Ω·cm ou Ω·m)"
+        },
+        {
+          "symbol": "q",
+          "description": "Carga elementar do elétron (1,602 × 10⁻¹⁹ C)"
+        },
+        {
+          "symbol": "\\mu_n",
+          "description": "Mobilidade dos elétrons no semicondutor (cm²/V·s), que depende da temperatura e da concentração de impurezas"
+        },
+        {
+          "symbol": "N_D",
+          "description": "Concentração de dopantes doadores ionizados (cm⁻³), que fornece os elétrons livres como portadores majoritários"
+        }
+      ],
+      "taxonomy": {
+        "category": "semiconductor-physics",
+        "subcategory": "carrier-transport",
+        "domain": "device-physics"
+      },
+      "keywords": [
+        "resistivity",
+        "conductivity",
+        "carrier",
+        "mobility",
+        "doping",
+        "donor",
+        "n-type",
+        "transport",
+        "majority-carrier",
+        "four-point-probe",
+        "Hall-effect",
+        "Ohm"
+      ],
+      "graphVisualization": {
+        "hasGraph": true,
+        "graphType": "resistivity-vs-doping",
+        "graphParameters": [
+          "resistivity",
+          "donor-concentration",
+          "mobility",
+          "temperature"
+        ]
+      },
+      "relatedFormulas": [
+        "conductivity-general",
+        "sigma = q mu_n n + q mu_p p",
+        "mobility-Matthiessen",
+        "Hall-effect",
+        "four-point-probe-resistivity",
+        "Ohm-law-microscopic",
+        "carrier-concentration-n-type"
+      ]
+    }
+  ],
+  "processedPages": [
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124
+  ],
+  "lastUpdated": "2026-05-09T17:49:30.695Z",
+  "bookTitle": "Modular Series On Solid State Devices",
+  "author": "Unknown"
+}

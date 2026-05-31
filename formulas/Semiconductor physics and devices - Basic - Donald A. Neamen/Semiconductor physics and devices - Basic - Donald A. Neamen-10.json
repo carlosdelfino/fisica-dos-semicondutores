@@ -1,0 +1,1832 @@
+{
+  "chapter": "10",
+  "section": "Fundamentals of the Metal–Oxide–Semiconductor Field-Effect Transistor",
+  "questions": [
+    {
+      "number": "1",
+      "text": "Define and derive the expression for the threshold voltage, which is a basic parameter of the MOSFET.",
+      "formulas": []
+    },
+    {
+      "number": "2",
+      "text": "Discuss various physical structures of MOSFETs, including enhancement and depletion mode devices.",
+      "formulas": []
+    },
+    {
+      "number": "3",
+      "text": "Derive the ideal current–voltage relationship of the MOSFET.",
+      "formulas": []
+    },
+    {
+      "number": "4",
+      "text": "Develop the small-signal equivalent circuit of the MOSFET. This circuit is used to relate small-signal currents and voltages in analog circuits.",
+      "formulas": []
+    },
+    {
+      "number": "5",
+      "text": "Derive the frequency limiting factors of the MOSFET.",
+      "formulas": []
+    },
+    {
+      "number": "Ex 10.6",
+      "text": "Consider a MOS capacitor with the following parameters: n+ polysilicon gate, N_{d} = 3 \\times 10^{16} \\, \\text{cm}^{-3}, t_{ox} = 8 \\, \\text{nm} = 80 \\, \\text{Å}, and Q_{2}' = 2 \\times 10^{-6} \\, \\text{cm}^{-2}. Determine the ratios C_{min}/C_{ox} and C_{i}/C_{ox}.",
+      "formulas": []
+    },
+    {
+      "number": "10.89",
+      "text": "Determine the input current I_{I}.",
+      "formulas": [
+        {
+          "originalFormula": "I_{I} = j\\omega[C_{G_{T}} + C_{D_{T}}] \\left( 1 + g_{m}R_{L} \\right) \\frac{1}{1 + j\\omega R_{C_{T}}C_{G_{T}}}V_{GS}",
+          "genericFormula": "I = j\\omega[C_{G} + C_{D}] \\left( 1 + g_{m}R_{L} \\right) \\frac{1}{1 + j\\omega R_{C}C_{G}}V_{GS}",
+          "description": "Esta fórmula representa a corrente de saída em um circuito que envolve capacitores e transistores, levando em consideração a frequência da operação e a resposta em frequência do circuito. A corrente é influenciada por capacitâncias, resistências e a tensão de porta do transistor.",
+          "concepts": [
+            "Corrente elétrica",
+            "Capacitância",
+            "Resistência",
+            "Transistores",
+            "Análise em frequência"
+          ],
+          "symbols": [
+            {
+              "symbol": "I",
+              "description": "Representa a corrente elétrica que flui através do circuito."
+            },
+            {
+              "symbol": "j",
+              "description": "Representa a unidade imaginária, utilizada na análise de circuitos em regime alternado para lidar com a fase das ondas."
+            },
+            {
+              "symbol": "ω",
+              "description": "Representa a frequência angular, que é a taxa de variação da fase de uma onda em radianos por segundo."
+            },
+            {
+              "symbol": "C_{G}",
+              "description": "Representa a capacitância do capacitor de entrada do transistor, que armazena carga elétrica."
+            },
+            {
+              "symbol": "C_{D}",
+              "description": "Representa a capacitância do capacitor de drenagem, que também armazena carga elétrica no circuito."
+            },
+            {
+              "symbol": "g_{m}",
+              "description": "Representa a transconductância do transistor, que é uma medida de quão bem o transistor pode controlar a corrente de saída com a tensão de entrada."
+            },
+            {
+              "symbol": "R_{L}",
+              "description": "Representa a resistência de carga, que é a resistência conectada à saída do circuito."
+            },
+            {
+              "symbol": "R_{C}",
+              "description": "Representa a resistência do capacitor de entrada, que influencia a resposta em frequência do circuito."
+            },
+            {
+              "symbol": "V_{GS}",
+              "description": "Representa a tensão entre a porta e a fonte do transistor, que controla a operação do transistor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10.92",
+      "text": "What is the ideal load current?",
+      "formulas": [
+        {
+          "originalFormula": "I_{D} = g_{m}V_{GS}",
+          "genericFormula": "I_{D} = g_{m}V_{GS}",
+          "description": "Esta fórmula representa a corrente de dreno em um transistor de efeito de campo (FET) em função da transcondutância e da tensão de porta-fonte. A corrente de dreno é a corrente que flui do dreno para a fonte do transistor, e é influenciada pela tensão aplicada entre a porta e a fonte.",
+          "concepts": [
+            "Transistor de efeito de campo (FET)",
+            "Corrente elétrica",
+            "Transcondutância",
+            "Tensão de porta-fonte"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_{D}",
+              "description": "Representa a corrente que flui do dreno para a fonte do transistor."
+            },
+            {
+              "symbol": "g_{m}",
+              "description": "Representa a transcondutância do transistor, que é a relação entre a variação da corrente de dreno e a variação da tensão de porta-fonte."
+            },
+            {
+              "symbol": "V_{GS}",
+              "description": "Representa a tensão entre a porta e a fonte do transistor, que controla a operação do dispositivo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10.94",
+      "text": "What is the magnitude of the current gain?",
+      "formulas": [
+        {
+          "originalFormula": "\\left| \\frac{I_{D}}{I_{I}} \\right| = \\frac{g_{m}}{2\\pi f_{T}(C_{G_{T}} + C_{M})}",
+          "genericFormula": "\\left| \\frac{I_{D}}{I_{I}} \\right| = \\frac{g_{m}}{2\\pi f_{T}(C_{G_{T}} + C_{M})}",
+          "description": "Esta fórmula representa a relação entre a corrente de drenagem e a corrente de entrada em um transistor, considerando a influência da transcondutância e da capacitância total do circuito em uma frequência específica.",
+          "concepts": [
+            "Transistor",
+            "Transcondutância",
+            "Capacitância",
+            "Frequência de operação"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_{D}",
+              "description": "Representa a corrente que flui do dreno do transistor."
+            },
+            {
+              "symbol": "I_{I}",
+              "description": "Representa a corrente que entra no transistor."
+            },
+            {
+              "symbol": "g_{m}",
+              "description": "Representa a transcondutância do transistor, que é a razão entre a variação da corrente de drenagem e a variação da tensão de entrada."
+            },
+            {
+              "symbol": "f_{T}",
+              "description": "Representa a frequência de transição, que é a frequência na qual o ganho do transistor começa a cair."
+            },
+            {
+              "symbol": "C_{G_{T}}",
+              "description": "Representa a capacitância de entrada do transistor, que é a capacitância entre o terminal de gate e o terminal de fonte."
+            },
+            {
+              "symbol": "C_{M}",
+              "description": "Representa a capacitância de carga ou capacitância de Miller, que é uma capacitância adicional que afeta o desempenho do transistor em altas frequências."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10.95",
+      "text": "Find the cutoff frequency f_{T}.",
+      "formulas": [
+        {
+          "originalFormula": "f_{T} = \\frac{g_{m}}{2\\pi(C_{G_{T}} + C_{M})} = \\frac{g_{m}}{2\\pi C_{G}}",
+          "genericFormula": "f_{T} = \\frac{g_{m}}{2\\pi(C_{G} + C_{M})}",
+          "description": "Esta fórmula representa a frequência de corte de um amplificador, que é a frequência na qual a resposta do amplificador começa a cair significativamente. Essa frequência é influenciada pela transcondutância do dispositivo e pelas capacitâncias envolvidas no circuito.",
+          "concepts": [
+            "Frequência de corte",
+            "Transcondutância",
+            "Capacitância",
+            "Circuitos eletrônicos"
+          ],
+          "symbols": [
+            {
+              "symbol": "f_{T}",
+              "description": "Representa a frequência de corte do amplificador, que indica a frequência na qual a amplificação do sinal começa a diminuir."
+            },
+            {
+              "symbol": "g_{m}",
+              "description": "Representa a transcondutância do dispositivo, que é uma medida de quão bem o dispositivo pode controlar a corrente de saída em relação à tensão de entrada."
+            },
+            {
+              "symbol": "C_{G_{T}}",
+              "description": "Representa a capacitância de entrada do transistor ou amplificador, que afeta a resposta em frequência do circuito."
+            },
+            {
+              "symbol": "C_{M}",
+              "description": "Representa a capacitância de carga ou capacitância de saída do circuito, que também influencia a frequência de corte."
+            },
+            {
+              "symbol": "C_{G}",
+              "description": "Representa a capacitância total que inclui a capacitância de entrada e a capacitância de carga, usada na simplificação da fórmula."
+            },
+            {
+              "symbol": "2\\pi",
+              "description": "Um fator constante que aparece em muitas fórmulas relacionadas a ondas e frequências, representando a relação entre frequência e período."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10.4",
+      "text": "Determine the metal–semiconductor work function difference \\phi_{ms} in a MOS structure with p-type silicon for the case when the gate is (a) aluminum, (b) n^{+} polysilicon, and (c) p^{+} polysilicon.",
+      "formulas": []
+    },
+    {
+      "number": "10.5",
+      "text": "The silicon impurity doping concentration in an aluminum-silicon dioxide-silicon MOS device is N_{s} = 4 \\\times 10^{16} \\\text{cm}^{-3}. Using the parameters in Example 10.2, determine the metal–semiconductor work function difference \\phi_{ms}.",
+      "formulas": []
+    },
+    {
+      "number": "10.6",
+      "text": "Consider a MOS capacitor with an n-type silicon substrate. A metal–semiconductor work function difference of \\phi_{ms} = -0.30 \\\text{ V} is required. Determine the silicon doping concentration required to meet this specification when the gate is (a) n^{+} silicon, (b) p^{+} polysilicon, and (c) aluminum. If a particular gate cannot meet this specification, explain why.",
+      "formulas": []
+    },
+    {
+      "number": "10.7",
+      "text": "Consider the MOS capacitor described in Problem 10.5. For an oxide thickness of t_{ox} = 20 \\\text{ nm} = 200 \\\text{ Å} and an oxide charge of Q_{i}^{'} = 5 \\\times 10^{10} \\\text{ cm}^{-2}, calculate the flat-band voltage.",
+      "formulas": []
+    },
+    {
+      "number": "10.8",
+      "text": "Consider an n^{+} polysilicon–silicon dioxide–n-type silicon MOS structure. Let N_{s} = 4 \\\times 10^{16} \\\text{ cm}^{-3}. Calculate the ideal flat-band voltage for t_{ox} = 20 \\\text{ nm}. (b) Considering the results of part (a), determine the shift in flat-band voltage for (i) Q_{i}^{'} = 4 \\\times 10^{10} \\\text{ cm}^{-2} and (ii) Q_{i}^{'} = 10^{11} \\\text{ cm}^{-2}. (c) Repeat parts (a) and (b) for an oxide thickness of t_{ox} = 12 \\\text{ nm} = 120 \\\text{ Å}.",
+      "formulas": []
+    },
+    {
+      "number": "10.9",
+      "text": "Consider an aluminum gate–silicon dioxide–p-type silicon MOS structure with V_{GS} = 450 A. The silicon doping is N_{A} = 2 \\times 10^{16} cm^{-3} and the flat-band voltage is V_{FB} = -1.0 V. Determine the fixed oxide charge Q_{ox}.",
+      "formulas": []
+    },
+    {
+      "number": "10.10",
+      "text": "Consider a MOS device with a n-type silicon substrate with N_{D} = 2 \\times 10^{16} cm^{-3}. The oxide thickness is t_{ox} = 15 nm = 150 \\text{ Å} and the equivalent oxide charge is Q_{i} = 7 \\times 10^{-10} cm^{-2}. Calculate the threshold voltage for (a) an n^{+} poly-silicon gate, (b) a p^{+} poly-silicon gate, and (c) an aluminum gate.",
+      "formulas": []
+    },
+    {
+      "number": "10.11",
+      "text": "Repeat Problem 10.10 for an n-type silicon substrate with a doping of N_{D} = 3 \\times 10^{15} cm^{-3}.",
+      "formulas": []
+    },
+    {
+      "number": "10.12",
+      "text": "A 400-Å oxide is grown on p-type silicon with N_{A} = 5 \\times 10^{15} cm^{-3}. The flat-band voltage is -0.9 V. Calculate the surface potential at the threshold inversion point as well as the threshold voltage assuming negligible oxide charge. Also find the maximum space charge width for this device.",
+      "formulas": []
+    },
+    {
+      "number": "10.13",
+      "text": "A MOS device with an aluminum gate is fabricated on a p-type silicon substrate. The oxide thickness is t_{ox} = 22 nm = 220 Å and the trapped oxide charge is Q_{i} = 4 \\times 10^{-10} cm^{-2}. The measured threshold voltage is V_{T} = 0.45 V. Determine the p-type doping concentration.",
+      "formulas": []
+    },
+    {
+      "number": "10.14",
+      "text": "Consider a MOS device with the following parameters: p^{+} poly-silicon gate, n-type silicon substrate, t_{ox} = 18 nm = 180 Å, and Q_{i} = 4 \\times 10^{-10} cm^{-2}. Determine the silicon doping concentration such that the threshold voltage is in the range -0.35 < V_{T} < -0.25 V.",
+      "formulas": []
+    },
+    {
+      "number": "10.15",
+      "text": "Repeat Problem 10.13 for an n-type silicon substrate if the measured threshold voltage is V_{T} = -0.975 V. Determine the n-type doping concentration.",
+      "formulas": []
+    },
+    {
+      "number": "10.16",
+      "text": "An n^{+} poly-silicon gate–silicon dioxide–silicon MOS capacitor has an oxide thickness t_{ox} = 18 nm = 180 Å and a doping of N_{D} = 10^{15} cm^{-3}. The oxide charge density is Q_{i} = 6 \\times 10^{-10} cm^{-2}. Calculate the (a) flat band voltage and (b) threshold voltage.",
+      "formulas": []
+    },
+    {
+      "number": "10.17",
+      "text": "Consider a MOS capacitor with an n^{+} poly-silicon gate and n-type silicon substrate. Assume N_{A} = 10^{16} cm^{-3} and let E_{n} = E_{i} - E_{F} = 0.2 eV in the n^{+} polysilicon. Assume the oxide has a thickness of t_{ox} = 300 Å. Also assume that \\chi (polysilicon) = \\chi (single-crystal silicon). (a) Sketch the energy-band diagrams (i) for V_{G} = 0 and (ii) at flat band. (b) Calculate the metal–semiconductor work function difference; (c) Calculate the threshold voltage for the ideal case of zero fixed oxide charge and zero interface states.",
+      "formulas": []
+    },
+    {
+      "number": "10.18",
+      "text": "The threshold voltage of an n-channel MOSFET is given by Equation (10.13a). Plot V_{T} versus temperature over the range 200 \\leq T \\leq 450 K. Consider both n^{+} poly-silicon gate and an n^{+} poly-silicon gate. Assume the work functions are independent of temperature and use device parameters similar to those in Example 10.4.",
+      "formulas": []
+    },
+    {
+      "number": "10.19",
+      "text": "Plot the threshold voltage of an n-channel MOSFET versus p-type substrate doping concentration similar to Figure 10.21. Consider both n^{+} and p^{+} polysilicon gates. Use reasonable device parameters.",
+      "formulas": []
+    },
+    {
+      "number": "10.33",
+      "text": "Consider an n-channel MOSFET with the following parameters: k_{n} = 0.18 mA/V^{2}, L/W = 8, and V_{th} = 0.4 V. Determine the drain current I_{D} for (a) V_{GS} = 0.2 V; (b) V_{GS} = 1.2 V; (c) V_{GS} = 0.8 V; V_{DS} = 2.5 V; and (d) V_{GS} = 1.2 V, V_{DS} = 2.5 V.",
+      "formulas": [
+        {
+          "originalFormula": "I_{D} = k_{n} \\left( (V_{GS} - V_{th}) V_{DS} - \\frac{V_{DS}^{2}}{2} \\right)",
+          "genericFormula": "I_{D} = k_{n} \\left( (V_{GS} - V_{th}) V_{DS} - \\frac{V_{DS}^{2}}{2} \\right)",
+          "description": "Esta fórmula representa a corrente de dreno em um transistor de efeito de campo (FET) no modo de saturação, onde a corrente depende da tensão entre o gate e a fonte, a tensão de limiar e a tensão entre o dreno e a fonte. Ela mostra como a corrente varia com essas tensões, considerando a resistência do canal do transistor.",
+          "concepts": [
+            "Transistor de Efeito de Campo (FET)",
+            "Corrente de Dreno",
+            "Tensão de Gate-Source",
+            "Tensão de Limiar",
+            "Tensão de Dreno-Source"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_{D}",
+              "description": "Representa a corrente que flui do dreno para a fonte no transistor."
+            },
+            {
+              "symbol": "k_{n}",
+              "description": "É a constante de transcondutância do transistor, que indica a eficiência do dispositivo em converter a tensão de gate em corrente."
+            },
+            {
+              "symbol": "V_{GS}",
+              "description": "É a tensão entre o gate e a fonte do transistor, que controla a corrente que flui pelo dispositivo."
+            },
+            {
+              "symbol": "V_{th}",
+              "description": "É a tensão de limiar do transistor, que é a tensão mínima necessária para que o transistor comece a conduzir."
+            },
+            {
+              "symbol": "V_{DS}",
+              "description": "É a tensão entre o dreno e a fonte do transistor, que influencia a quantidade de corrente que flui pelo transistor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10.34",
+      "text": "A p-channel MOSFET has the following parameters: k_{p} = 0.10 mA/V^{2}, L/W = 15, and V_{th} = -0.4 V. Calculate the drain current I_{D} for (a) V_{GS} = -0.8 V, V_{DS} = -0.25 V; (b) V_{GS} = -1.0 V; (c) V_{GS} = -1.2 V, V_{DS} = -2.0 V.",
+      "formulas": [
+        {
+          "originalFormula": "I_{D} = k_{p} \\left( (V_{GS} - V_{th}) V_{DS} - \\frac{V_{DS}^{2}}{2} \\right)",
+          "genericFormula": "I_{D} = k_{p} \\left( (V_{GS} - V_{th}) V_{DS} - \\frac{V_{DS}^{2}}{2} \\right)",
+          "description": "Esta fórmula representa a corrente de dreno em um transistor de efeito de campo (FET) no modo de saturação, onde a corrente é uma função da tensão entre o gate e a fonte, a tensão entre o dreno e a fonte, e alguns parâmetros do dispositivo.",
+          "concepts": [
+            "Transistor de Efeito de Campo (FET)",
+            "Corrente de Dreno",
+            "Tensão de Gate-SOURCE",
+            "Tensão de Dreno-SOURCE",
+            "Tensão de limiar"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_{D}",
+              "description": "Representa a corrente que flui do dreno para a fonte no transistor."
+            },
+            {
+              "symbol": "k_{p}",
+              "description": "É a constante de transcondutância do transistor, que indica a eficiência do dispositivo em converter a tensão de gate em corrente."
+            },
+            {
+              "symbol": "V_{GS}",
+              "description": "É a tensão entre o terminal do gate e o terminal da fonte do transistor."
+            },
+            {
+              "symbol": "V_{th}",
+              "description": "É a tensão de limiar, que é a tensão mínima necessária no gate para que o transistor comece a conduzir."
+            },
+            {
+              "symbol": "V_{DS}",
+              "description": "É a tensão entre o terminal do dreno e o terminal da fonte do transistor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10.35",
+      "text": "The parameters of an n-channel MOSFET are k_{n} = 0.6 mA/V^{2} and V_{th} = 0.8 V. The drain current is 1 mA with applied voltages of V_{GS} = 1.4 V, V_{DS} = 0, and V_{DS} = 4 V. (a) What is the W/L value? (b) What is the value of I_{D} for V_{GS} = 1.85 V, V_{DS} = 0, and V_{DS} = 6 V?",
+      "formulas": [
+        {
+          "originalFormula": "I_{D} = k_{n} \\left( (V_{GS} - V_{th}) V_{DS} - \\frac{V_{DS}^{2}}{2} \\right)",
+          "genericFormula": "I_{D} = k_{n} \\left( (V_{GS} - V_{th}) V_{DS} - \\frac{V_{DS}^{2}}{2} \\right)",
+          "description": "Esta fórmula representa a corrente de dreno em um transistor de efeito de campo (FET) na região de saturação. Ela mostra como a corrente depende das tensões aplicadas entre o gate e a fonte, e entre o dreno e a fonte, além de um parâmetro que caracteriza o dispositivo.",
+          "concepts": [
+            "Transistor de efeito de campo (FET)",
+            "Corrente elétrica",
+            "Tensão de gate-source",
+            "Tensão de dreno-source",
+            "Parâmetro de transcondutância"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_{D}",
+              "description": "Representa a corrente que flui do dreno para a fonte no transistor."
+            },
+            {
+              "symbol": "k_{n}",
+              "description": "É um parâmetro que caracteriza a transcondutância do transistor, indicando a eficiência com que a tensão de gate controla a corrente de dreno."
+            },
+            {
+              "symbol": "V_{GS}",
+              "description": "É a tensão aplicada entre o gate e a fonte do transistor, que controla a condução do dispositivo."
+            },
+            {
+              "symbol": "V_{th}",
+              "description": "É a tensão de limiar do transistor, abaixo da qual o transistor não conduz corrente significativa."
+            },
+            {
+              "symbol": "V_{DS}",
+              "description": "É a tensão aplicada entre o dreno e a fonte do transistor, que influencia a corrente de dreno."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10.36",
+      "text": "Consider a p-channel MOSFET with the following parameters: k_{p} = 0.12 mA/V^{2} and L/W = 20. The drain current is 100 μA with applied voltages of V_{GS} = 0, V_{DS} = 0, and V_{th} = -1.0 V. Determine the V_{th} value. (b) Determine the drain current I_{D} for V_{GS} = -0.4 V, V_{DS} = 1.0 V, and V_{DS} = 1.5 V.",
+      "formulas": [
+        {
+          "originalFormula": "I_{D} = k_{p} \\left( (V_{GS} - V_{th}) V_{DS} - \\frac{V_{DS}^{2}}{2} \\right)",
+          "genericFormula": "I_{D} = k_{p} \\left( (V_{GS} - V_{th}) V_{DS} - \\frac{V_{DS}^{2}}{2} \\right)",
+          "description": "Esta fórmula representa a corrente de dreno em um transistor de efeito de campo (FET) na região de saturação. A corrente de dreno é influenciada pela tensão entre a porta e a fonte, a tensão entre o dreno e a fonte, e as características do transistor.",
+          "concepts": [
+            "Transistor de efeito de campo (FET)",
+            "Corrente elétrica",
+            "Tensão",
+            "Região de saturação",
+            "Parâmetros do transistor"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_{D}",
+              "description": "Representa a corrente que flui do dreno do transistor para o fonte."
+            },
+            {
+              "symbol": "k_{p}",
+              "description": "É um parâmetro que representa a transcondutância do transistor, indicando a eficiência com que a tensão de porta controla a corrente de dreno."
+            },
+            {
+              "symbol": "V_{GS}",
+              "description": "É a tensão entre a porta e a fonte do transistor, que controla a formação do canal condutor."
+            },
+            {
+              "symbol": "V_{th}",
+              "description": "É a tensão de limiar, que é o valor mínimo de V_{GS} necessário para que o transistor comece a conduzir."
+            },
+            {
+              "symbol": "V_{DS}",
+              "description": "É a tensão entre o dreno e a fonte, que influencia a quantidade de corrente que flui através do transistor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10.37",
+      "text": "An ideal n-channel MOSFET has the following parameters: V_{th} = 0.45 V, μ_{n} = 425 cm^{2}/V·s, L = 11 nm = 110 Å, W = 20 μm, and L = 1.2 μm. (a) Plot I_{D} versus V_{DS} for 0 ≤ V_{DS} ≤ 3 V and for V_{GS} = 0, 0.6, 1.2, 1.8, and 2.4 V. Indicate each curve the V_{DS}(sat) point. (b) Plot I_{D}(sat) versus V_{GS} for V_{DS} = 2.4 V.",
+      "formulas": [
+        {
+          "originalFormula": "I_{D} = \\frac{1}{2} k_{n} (V_{GS} - V_{th})^{2}",
+          "genericFormula": "I_{D} = \\frac{1}{2} k (V_{GS} - V_{th})^{2}",
+          "description": "Esta fórmula representa a corrente de dreno em um transistor de efeito de campo (FET) na região de saturação. Ela mostra como a corrente de dreno depende da tensão entre a porta e a fonte, subtraindo a tensão de limiar, e como essa diferença é elevada ao quadrado, multiplicada por um fator constante.",
+          "concepts": [
+            "Transistor de Efeito de Campo (FET)",
+            "Corrente elétrica",
+            "Tensão",
+            "Região de saturação"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_{D}",
+              "description": "Representa a corrente que flui do dreno do transistor."
+            },
+            {
+              "symbol": "k_{n}",
+              "description": "É a constante de transcondutância do transistor, que indica a eficiência do dispositivo em converter a tensão em corrente."
+            },
+            {
+              "symbol": "V_{GS}",
+              "description": "É a tensão entre a porta e a fonte do transistor, que controla a corrente que flui através do dispositivo."
+            },
+            {
+              "symbol": "V_{th}",
+              "description": "É a tensão de limiar do transistor, que é a tensão mínima necessária entre a porta e a fonte para que o transistor comece a conduzir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10.38",
+      "text": "Consider an ideal p-channel MOSFET with the following parameters: V_{th} = -0.35 V, μ_{p} = 210 cm^{2}/V·s, L = 11 nm = 110 Å, W = 35 μm, and L = 1.2 μm. (a) Plot I_{D} versus V_{DS} for 0 ≤ V_{DS} ≤ 3 V and for V_{GS} = -0.6, -1.2, -1.8, and -2.4 V. Indicate each curve the V_{DS}(sat) point. (b) Plot I_{D}(sat) versus V_{GS} for V_{DS} = -2.4 V.",
+      "formulas": [
+        {
+          "originalFormula": "I_{D} = \\frac{1}{2} k_{p} (V_{GS} - V_{th})^{2}",
+          "genericFormula": "I_{D} = \\frac{1}{2} k_{p} (V_{GS} - V_{th})^{2}",
+          "description": "Esta fórmula representa a corrente de dreno em um transistor de efeito de campo (FET) no modo de saturação. Ela mostra como a corrente que flui através do transistor depende da diferença de tensão entre a porta e a fonte, subtraída da tensão de limiar, e como essa diferença influencia a corrente de dreno.",
+          "concepts": [
+            "Transistor de efeito de campo (FET)",
+            "Corrente de dreno",
+            "Tensão de porta",
+            "Tensão de limiar",
+            "Modo de saturação"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_{D}",
+              "description": "Representa a corrente que flui do dreno para a fonte no transistor."
+            },
+            {
+              "symbol": "k_{p}",
+              "description": "É a constante de transcondutância do transistor, que indica a eficiência do dispositivo em converter a tensão de porta em corrente de dreno."
+            },
+            {
+              "symbol": "V_{GS}",
+              "description": "É a tensão entre a porta e a fonte do transistor, que controla a corrente que flui através do dispositivo."
+            },
+            {
+              "symbol": "V_{th}",
+              "description": "É a tensão de limiar, que é o valor mínimo de V_{GS} necessário para que o transistor comece a conduzir corrente."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10.39",
+      "text": "Consider an n-channel MOSFET with the same parameters as described in Problem 10.37 except that V_{th} = -0.8 V. (a) Plot I_{D} versus V_{DS} for 0 ≤ V_{DS} ≤ 3 V and for V_{GS} = -0.8, -0.4, and +1.6 V. (b) Plot I_{D}(sat) versus V_{GS} for -0.8 ≤ V_{GS} ≤ 3 V.",
+      "formulas": [
+        {
+          "originalFormula": "I_{D} = \\frac{1}{2} k_{n} (V_{GS} - V_{th})^{2}",
+          "genericFormula": "I_{D} = \\frac{1}{2} k_{n} (V_{GS} - V_{th})^{2}",
+          "description": "Esta fórmula representa a corrente de dreno em um transistor de efeito de campo (FET) no modo de saturação. Ela mostra como a corrente que flui do dreno para a fonte depende da diferença de tensão entre a porta e a fonte, subtraída de uma tensão de limiar.",
+          "concepts": [
+            "Transistor de efeito de campo (FET)",
+            "Corrente de dreno",
+            "Tensão de porta",
+            "Tensão de limiar",
+            "Modo de saturação"
+          ],
+          "symbols": [
+            {
+              "symbol": "I_{D}",
+              "description": "Representa a corrente que flui do dreno para a fonte do transistor."
+            },
+            {
+              "symbol": "k_{n}",
+              "description": "É a constante de transcondutância do transistor, que indica a eficiência com que a tensão de porta controla a corrente de dreno."
+            },
+            {
+              "symbol": "V_{GS}",
+              "description": "É a tensão entre a porta e a fonte do transistor, que controla a condução do dispositivo."
+            },
+            {
+              "symbol": "V_{th}",
+              "description": "É a tensão de limiar, que é o valor mínimo de V_{GS} necessário para que o transistor comece a conduzir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10.40",
+      "text": "Consider an n-channel enhancement mode MOSFET based as shown in Figure P10.40. Sketch the current-voltage characteristics I_{D} versus V_{GS} for (a) V_{GS} = 0, (b) V_{GS} = V_{th}/2, and (c) V_{GS} = 2V_{th}.",
+      "formulas": []
+    },
+    {
+      "number": "10.41",
+      "text": "Figure P10.41 shows the cross section of an NMOS device that includes source and drain resistances. These resistances take into account the bulk ' semiconductor-to-resistance and the ohmic contact resistance. The current-voltage relations can be generated by replacing V_{GS} by V_{G} - I_{D}R_{S} and V_{DS} by V_{D} - I_{D}R_{D} in the equations. Assume transistor parameters for V_{I} = V_{D} and k_{n} = 1 mA/V^{2}. (a) Plot the following curves on the same graph: I_{D} versus V_{GS} for V_{D} = 2 V and V_{GS} = 3 V over the range 0 ≤ V_{D} ≤ 5 V for (i) R_{D} = R_{S} = 0 and (ii) R_{D} = R_{S} = 1 kΩ.",
+      "formulas": []
+    },
+    {
+      "number": "10.42",
+      "text": "An n-channel MOSFET has the same parameters as given in Problem P10.37. The gate terminal is connected to the drain terminal. Plot I_{D} versus V_{DS} for 0 ≤ V_{DS} ≤ 5 V. Determine the range of V_{DS} over which the transistor is biased in the non-saturation and saturation regions.",
+      "formulas": []
+    },
+    {
+      "number": "10.43",
+      "text": "The channel conductance for a p-channel MOSFET is defined as g_{m} = \\frac{\\partial I_{D}}{\\partial V_{GS}}|_{V_{GS}}.",
+      "formulas": [
+        {
+          "originalFormula": "g_{m} = \\frac{\\partial I_{D}}{\\partial V_{GS}}\\bigg|_{V_{GS}}",
+          "genericFormula": "g_{m} = \\frac{\\partial I_{D}}{\\partial V_{GS}}\\bigg|_{V_{GS}}",
+          "description": "Esta fórmula representa a transcondutância de um transistor de efeito de campo (FET), que é uma medida de quão eficientemente o dispositivo pode controlar a corrente de drenagem em resposta a uma variação na tensão de porta. Em outras palavras, quanto a corrente de drenagem muda quando a tensão de porta é alterada.",
+          "concepts": [
+            "Transcondutância",
+            "Transistor de Efeito de Campo (FET)",
+            "Corrente de Drenagem",
+            "Tensão de Porta"
+          ],
+          "symbols": [
+            {
+              "symbol": "g_{m}",
+              "description": "Representa a transcondutância do transistor, que indica a taxa de variação da corrente de drenagem em relação à variação da tensão de porta."
+            },
+            {
+              "symbol": "I_{D}",
+              "description": "Representa a corrente que flui do dreno do transistor, que é a corrente controlada pela tensão aplicada na porta."
+            },
+            {
+              "symbol": "V_{GS}",
+              "description": "Representa a tensão entre a porta e a fonte do transistor, que é a tensão que controla a operação do transistor."
+            },
+            {
+              "symbol": "\\partial",
+              "description": "Representa a operação de derivada parcial, que indica a taxa de variação de uma quantidade em relação a outra, mantendo outras variáveis constantes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10.44",
+      "text": "The transconductance of an n-channel MOSFET is found to be g_m = \\frac{\\partial I_D}{\\partial V_{GS}} = 1.25 \\, \\text{mA/V} when measured at V_{DS} = 50 \\, \\text{mV}. The threshold voltage is V_{T} = 0.3 \\, \\text{V}. (a) Determine the conductance parameter k_{n}. (b) What is the current at V_{GS} = 0.8 \\, \\text{V} and V_{DS} = 50 \\, \\text{mV}? Determine the current at V_{GS} = 0.8 \\, \\text{V} and V_{DS} = 1.5 \\, \\text{V}."
+    },
+    {
+      "number": "10.45",
+      "text": "The experimental characteristics of an ideal n-channel MOSFET biased in the saturation region are shown in Figure P10.45. If W/L = 10 and l_{n} = 425 \\, \\text{Å}, determine V_{T} and \\mu."
+    },
+    {
+      "number": "10.46",
+      "text": "One curve of an n-channel MOSFET is characterized by the following parameters: I_{D}(sat) = 2 \\times 10^{-4} \\, \\text{A}, V_{GS}(sat) = 4 \\, \\text{V}, and V_{T} = 0.8 \\, \\text{V}. (a) What is the gate voltage? (b) What is the value of the conduction parameter? (c) If V_{G} = 2 \\, \\text{V} and V_{DS} = 2 \\, \\text{V}, determine I_{D}. (d) If V_{G} = 3 \\, \\text{V} and V_{DS} = 1 \\, \\text{V}, determine I_{D}. (e) For each of the conditions given in (c) and (d), sketch the inversion charge density and depletion region through the channel."
+    },
+    {
+      "number": "10.58",
+      "text": "Design an ideal silicon n-channel MOSFET with a polysilicon gate to have a threshold voltage of V_{th} = 0.65 V. Assume an oxide thickness of t_{ox} = 300 \\, \\text{Å}, a channel length of L = 1.25 \\, \\mu m, and a nominal value of Q_{i} = 1.5 \\times 10^{11} \\, \\text{cm}^{-2}. It is desired to have a drain current of I_{D} = 50 \\, \\mu A at V_{GS} = 2.5 \\, V and V_{DS} = 0.1 \\, V. Determine the substrate doping concentration, channel width, and type of gate required.",
+      "formulas": []
+    },
+    {
+      "number": "10.59",
+      "text": "Design an ideal silicon n-channel depletion mode MOSFET with a polysilicon gate to have a threshold voltage of V_{th} = -0.65 \\, V. Assume an oxide thickness of t_{ox} = 300 \\, \\text{Å}, a channel length of L = 1.25 \\, \\mu m, and a nominal value of Q_{i} = 1.5 \\times 10^{11} \\, \\text{cm}^{-2}. It is desired to have a drain current of I_{D} = 50 \\, \\mu A at V_{GS} = 2.5 \\, V and V_{DS} = 0.1 \\, V. Determine the type of gate, substrate doping concentration, and channel width required.",
+      "formulas": []
+    },
+    {
+      "number": "10.60",
+      "text": "Consider the CMOS inverter circuit shown in Figure 10.59a. Ideal n- and p-channel devices are to be designed with channel lengths of L = 2.5 \\, \\mu m and oxide thicknesses of t_{ox} = 450 \\, \\text{Å}. Assume the inversion channel mobilities are one-half the bulk values. The threshold voltages of the n- and p-channel transistors are to be +0.5 \\, V and -0.5 \\, V, respectively. The drain current is to be I_{D} = 0.256 \\, mA when the input voltage to the inverter is 1.5 \\, V and 3.5 \\, V with V_{DD} = 5 \\, V. The gate material is to be the same in each device. Determine the type of gate, substrate doping concentrations, and channel widths.",
+      "formulas": []
+    },
+    {
+      "number": "10.61",
+      "text": "A complementary pair of ideal n-channel and p-channel MOSFETs is to be designed to produce the same I-V characteristics when they are equivalently biased. The devices are to have the same oxide thickness of 250 \\, \\text{Å} and the same channel length of L = 2 \\, \\mu m. Assume the SiO_{2} layer is ideal. The n-channel device is to have a channel width of W = 20 \\, \\mu m. Assume constant inversion layer mobilities of \\mu_{n} = 600 \\, \\text{cm}^{2}/V \\cdot s and \\mu_{p} = 220 \\, \\text{cm}^{2}/V \\cdot s. (a) Determine p-type and n-type substrate doping concentrations. (b) What are the threshold voltages? (c) What is the width of the p-channel device?",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "Ex 10.6",
+      "text": "If we assume the oxide capacitance per unit area is C_{ox} = 1.9175 \\times 10^{-7} \\, \\text{F/cm}^{2} and the channel length and width are L = 2 \\, \\mu\\text{m} and W = 20 \\, \\mu\\text{m}, respectively, then the total gate oxide capacitance is C_{total} = C_{ox} \\cdot L \\cdot W = (1.9175 \\times 10^{-7} \\, \\text{F/cm}^{2})(2 \\times 10^{-6} \\, \\text{m})(20 \\times 10^{-4} \\, \\text{m}) = 7.67 \\times 10^{-14} \\, \\text{F} = 0.0767 \\, \\text{pF} = 76.7 \\, \\text{fF}.",
+      "formulas": [
+        {
+          "originalFormula": "C_{total} = C_{ox} \\cdot L \\cdot W = (1.9175 \\times 10^{-7} \\, \\text{F/cm}^{2})(2 \\times 10^{-6} \\, \\text{m})(20 \\times 10^{-4} \\, \\text{m})",
+          "genericFormula": "C_{total} = C_{ox} \\cdot L \\cdot W",
+          "description": "Esta fórmula representa a capacitância total de um capacitor de óxido, que é calculada multiplicando a capacitância por unidade de área do óxido, a largura e o comprimento do capacitor. A capacitância total é uma medida de quão bem o capacitor pode armazenar carga elétrica.",
+          "concepts": [
+            "Capacitância",
+            "Capacitância por unidade de área",
+            "Dimensões do capacitor",
+            "Armazenamento de carga elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "C_{total}",
+              "description": "Representa a capacitância total do capacitor, que indica a quantidade total de carga que pode ser armazenada por unidade de tensão."
+            },
+            {
+              "symbol": "C_{ox}",
+              "description": "Representa a capacitância por unidade de área do óxido, que é uma propriedade do material isolante utilizado no capacitor."
+            },
+            {
+              "symbol": "L",
+              "description": "Representa o comprimento do capacitor, que é uma das dimensões físicas que afetam a capacitância total."
+            },
+            {
+              "symbol": "W",
+              "description": "Representa a largura do capacitor, que é outra dimensão física que influencia a capacitância total."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "10.89",
+      "text": "I_{I} = j\\omega[C_{G_{T}} + C_{D_{T}}] \\left( 1 + g_{m}R_{L} \\right) \\frac{1}{1 + j\\omega R_{C_{T}}C_{G_{T}}}V_{GS}",
+      "formulas": []
+    },
+    {
+      "questionNumber": "10.92",
+      "text": "I_{D} = g_{m}V_{GS}",
+      "formulas": []
+    },
+    {
+      "questionNumber": "10.94",
+      "text": "\\left| \\frac{I_{D}}{I_{I}} \\right| = \\frac{g_{m}}{2\\pi f_{T}(C_{G_{T}} + C_{M})}",
+      "formulas": []
+    },
+    {
+      "questionNumber": "10.95",
+      "text": "f_{T} = \\frac{g_{m}}{2\\pi(C_{G_{T}} + C_{M})} = \\frac{g_{m}}{2\\pi C_{G}}",
+      "formulas": []
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "C' = \\frac{\\epsilon}{d} \\quad (10.1)",
+      "genericFormula": "C' = \\frac{\\epsilon}{d}",
+      "description": "Esta fórmula representa a capacitância de um capacitor em função da permissividade do material entre suas placas e a distância entre elas. A capacitância é uma medida da capacidade de um capacitor de armazenar carga elétrica.",
+      "concepts": [
+        "Capacitância",
+        "Permissividade",
+        "Distância entre placas",
+        "Capacitores"
+      ],
+      "symbols": [
+        {
+          "symbol": "C'",
+          "description": "Representa a capacitância do capacitor, que é a capacidade de armazenar carga elétrica por unidade de tensão."
+        },
+        {
+          "symbol": "ε",
+          "description": "Representa a permissividade do material entre as placas do capacitor, que indica a capacidade do material de permitir a passagem de campo elétrico."
+        },
+        {
+          "symbol": "d",
+          "description": "Representa a distância entre as placas do capacitor, que afeta a quantidade de carga que pode ser armazenada."
+        }
+      ]
+    },
+    {
+      "originalFormula": "Q' = C' V \\quad (10.2)",
+      "genericFormula": "Q = C V",
+      "description": "Esta fórmula representa a relação entre a carga elétrica armazenada em um capacitor, a capacitância do capacitor e a tensão aplicada a ele. Em outras palavras, a carga elétrica é igual à capacitância multiplicada pela tensão.",
+      "concepts": [
+        "Capacitância",
+        "Carga elétrica",
+        "Tensão elétrica"
+      ],
+      "symbols": [
+        {
+          "symbol": "Q",
+          "description": "Representa a carga elétrica armazenada no capacitor, que é medida em coulombs."
+        },
+        {
+          "symbol": "C",
+          "description": "Representa a capacitância do capacitor, que é uma medida de sua capacidade de armazenar carga elétrica, medida em farads."
+        },
+        {
+          "symbol": "V",
+          "description": "Representa a tensão elétrica aplicada ao capacitor, medida em volts."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\phi_{s} = 2\\phi_{p}",
+      "genericFormula": "\\phi_{s} = 2\\phi_{p}",
+      "description": "Esta fórmula relaciona duas quantidades, onde a quantidade representada por phi sub s é o dobro da quantidade representada por phi sub p. Isso pode ser interpretado em contextos onde uma variável é proporcional a outra, indicando que, para cada unidade de phi sub p, existem duas unidades de phi sub s.",
+      "concepts": [
+        "Proporcionalidade",
+        "Relações entre variáveis",
+        "Física de semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "φ_{s}",
+          "description": "Representa uma quantidade específica, que pode ser uma função ou característica em um sistema físico, como potencial ou fluxo."
+        },
+        {
+          "symbol": "φ_{p}",
+          "description": "Representa outra quantidade específica, que é a metade da quantidade representada por φ_{s}, indicando uma relação de dependência entre as duas."
+        }
+      ]
+    },
+    {
+      "originalFormula": "k_{j} = k_{T}",
+      "genericFormula": "k_{j} = k_{T}",
+      "description": "Esta fórmula indica que a constante de Boltzmann em um determinado contexto, representada por k_{j}, é igual à constante de Boltzmann em temperatura, representada por k_{T}. Isso sugere que, sob certas condições, as propriedades térmicas de um sistema podem ser descritas de maneira equivalente.",
+      "concepts": [
+        "Constante de Boltzmann",
+        "Temperatura",
+        "Equilíbrio térmico"
+      ],
+      "symbols": [
+        {
+          "symbol": "k_{j}",
+          "description": "Representa a constante de Boltzmann em um determinado contexto ou condição específica."
+        },
+        {
+          "symbol": "k_{T}",
+          "description": "Representa a constante de Boltzmann em relação à temperatura, geralmente usada em contextos térmicos e estatísticos."
+        }
+      ]
+    },
+    {
+      "originalFormula": "n = n_i \\exp \\left[ \\frac{E_F - E_i}{kT} \\right]",
+      "genericFormula": "n = n_i \\exp \\left[ \\frac{E_F - E_i}{kT} \\right]",
+      "description": "Esta fórmula descreve a densidade de portadores de carga em um semicondutor intrínseco em função da energia de Fermi, da energia de ionização dos portadores e da temperatura. Ela mostra como a concentração de portadores livres (n) varia com a energia disponível e a temperatura do sistema.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Energia de Fermi",
+        "Energia de ionização",
+        "Temperatura",
+        "Semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "n",
+          "description": "Representa a densidade de portadores de carga livres no semicondutor."
+        },
+        {
+          "symbol": "n_i",
+          "description": "Representa a densidade intrínseca de portadores de carga em um semicondutor puro, sem dopagem."
+        },
+        {
+          "symbol": "E_F",
+          "description": "Representa a energia de Fermi, que é o nível de energia mais alto ocupado por elétrons a temperatura zero."
+        },
+        {
+          "symbol": "E_i",
+          "description": "Representa a energia de ionização, que é a energia necessária para remover um elétron de um átomo ou molécula no semicondutor."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa a constante de Boltzmann, que relaciona a temperatura com a energia em sistemas físicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura do sistema em Kelvin, que é uma medida da energia térmica dos portadores de carga."
+        }
+      ]
+    },
+    {
+      "originalFormula": "n_s = n_i \\exp \\left[ \\frac{e(\\phi_p + \\Delta \\phi)}{kT} \\right] = n_i \\exp \\left[ \\phi_p + \\Delta \\phi \\right] \\quad (10.10a)",
+      "genericFormula": "n_s = n_i \\exp \\left[ \\frac{e(\\phi_p + \\Delta \\phi)}{kT} \\right] = n_i \\exp \\left[ \\phi_p + \\Delta \\phi \\right]",
+      "description": "Esta fórmula descreve a densidade de portadores de carga em um semicondutor dopado, levando em consideração a energia potencial associada à dopagem e a temperatura do sistema. Ela mostra como a densidade de portadores de carga livres (n_s) depende da densidade intrínseca (n_i) e de fatores como a energia potencial (phi_p) e a variação de energia potencial (Delta phi).",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Dopagem de semicondutores",
+        "Energia térmica",
+        "Efeito da temperatura na condutividade"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_s",
+          "description": "Densidade de portadores de carga livres no semicondutor dopado."
+        },
+        {
+          "symbol": "n_i",
+          "description": "Densidade de portadores de carga intrínseca no semicondutor puro."
+        },
+        {
+          "symbol": "e",
+          "description": "Carga elementar, que é a menor unidade de carga elétrica."
+        },
+        {
+          "symbol": "phi_p",
+          "description": "Energia potencial associada à dopagem do semicondutor."
+        },
+        {
+          "symbol": "Delta phi",
+          "description": "Variação da energia potencial, que pode ser causada por diferentes fatores, como a presença de campos elétricos."
+        },
+        {
+          "symbol": "k",
+          "description": "Constante de Boltzmann, que relaciona a temperatura com a energia térmica em sistemas físicos."
+        },
+        {
+          "symbol": "T",
+          "description": "Temperatura do sistema, medida em Kelvin, que influencia a energia térmica dos portadores de carga."
+        }
+      ]
+    },
+    {
+      "originalFormula": "C_{min} = \\frac{\\epsilon_{ox}}{t_{ox} + \\left( \\frac{\\epsilon_{ox}}{\\epsilon_{si}} \\right) x_{tr}}",
+      "genericFormula": "C_{min} = \\frac{\\epsilon_{ox}}{t_{ox} + \\left( \\frac{\\epsilon_{ox}}{\\epsilon_{si}} \\right) x_{tr}}",
+      "description": "Esta fórmula representa a capacitância mínima de um capacitor formado por um óxido de silício, levando em consideração a espessura do óxido e a relação entre as permissividades do óxido e do silício. A capacitância é uma medida de quão bem um capacitor pode armazenar carga elétrica.",
+      "concepts": [
+        "Capacitância",
+        "Permissividade elétrica",
+        "Espessura do dielétrico",
+        "Estrutura de dispositivos semicondutores"
+      ],
+      "symbols": [
+        {
+          "symbol": "C_{min}",
+          "description": "Representa a capacitância mínima do capacitor."
+        },
+        {
+          "symbol": "\\epsilon_{ox}",
+          "description": "Representa a permissividade elétrica do óxido de silício."
+        },
+        {
+          "symbol": "t_{ox}",
+          "description": "Representa a espessura do óxido de silício."
+        },
+        {
+          "symbol": "\\epsilon_{si}",
+          "description": "Representa a permissividade elétrica do silício."
+        },
+        {
+          "symbol": "x_{tr}",
+          "description": "Representa a distância de transição, que pode estar relacionada a características de interface entre materiais."
+        }
+      ]
+    },
+    {
+      "originalFormula": "C_{FB} = \\frac{\\epsilon_{ox}}{t_{ox}} \\sqrt{\\frac{V_{FB}}{e_{n}}}",
+      "genericFormula": "C_{FB} = \\frac{\\epsilon}{t} \\sqrt{\\frac{V}{e}}",
+      "description": "Esta fórmula representa a capacitância de uma estrutura de transistor de efeito de campo (MOSFET) em função da permissividade do material isolante, a espessura do isolante, a tensão de polarização e a carga do portador. A capacitância é uma medida de quão bem um sistema pode armazenar carga elétrica.",
+      "concepts": [
+        "Capacitância",
+        "Permissividade",
+        "Espessura do isolante",
+        "Tensão de polarização",
+        "Carga de portador"
+      ],
+      "symbols": [
+        {
+          "symbol": "C_{FB}",
+          "description": "Representa a capacitância da estrutura, que indica a capacidade de armazenar carga elétrica."
+        },
+        {
+          "symbol": "\\epsilon_{ox}",
+          "description": "Representa a permissividade do material isolante, que é uma medida de como o material responde a um campo elétrico."
+        },
+        {
+          "symbol": "t_{ox}",
+          "description": "Representa a espessura do material isolante, que afeta a capacitância e a eficiência do dispositivo."
+        },
+        {
+          "symbol": "V_{FB}",
+          "description": "Representa a tensão de polarização, que é a tensão aplicada para controlar o comportamento do dispositivo."
+        },
+        {
+          "symbol": "e_{n}",
+          "description": "Representa a carga do portador, que é a quantidade de carga elétrica associada aos portadores de carga no material."
+        }
+      ]
+    },
+    {
+      "originalFormula": "C_{min} = 2.925 \\times 10^{-8} \\, \\text{F/cm}^{2}",
+      "genericFormula": "C_{min} = 2.925 \\times 10^{-8} \\, \\text{F/cm}^{2}",
+      "description": "Não foi possível gerar descrição automática",
+      "concepts": [],
+      "symbols": [],
+      "rawText": "{\n  \"originalFormula\": \"C_{min} = 2.925 \\times 10^{-8} \\, \\text{F/cm}^{2}\",\n  \"genericFormula\": \"C_{min} = k \\, \\text{F/cm}^{2}\",\n  \"description\": \"Esta fórmula representa a capacitância mínima, que é uma medida da capacidade de um material ou dispositivo de armazenar carga elétrica por unidade de área. A capacitância é fundamental em circuitos eletrônicos e semicondutores, pois influencia o desempenho e a eficiência dos dispositivos.\",\n  \"concepts\": [\"Capacitância\", \"Armazenamento de carga elétrica\", \"Dispositivos eletrônicos\", \"Semicondutores\"],\n  \"symbols\": [\n    {\n      \"symbol\": \"C_{min}\",\n      \"description\": \"Representa a capacitância mínima, que é a quantidade mínima de carga elétrica que pode ser armazenada por unidade de área em um capacitor ou material.\"\n    },\n    {\n      \"symbol\": \"k\",\n      \"description\": \"Um valor constante que representa a capacitância mínima em farads por centímetro quadrado, que varia de acordo com o material ou dispositivo em questão.\"\n    }\n  ]\n}"
+    },
+    {
+      "originalFormula": "C_{FB} = 1.091 \\times 10^{-7} \\, \\text{F/cm}^{2}",
+      "genericFormula": "C_{FB} = 1.091 \\times 10^{-7} \\, \\text{F/cm}^{2}",
+      "description": "Não foi possível gerar descrição automática",
+      "concepts": [],
+      "symbols": [],
+      "rawText": "{\n  \"originalFormula\": \"C_{FB} = 1.091 \\times 10^{-7} \\, \\text{F/cm}^{2}\",\n  \"genericFormula\": \"C_{FB} = k \\, \\text{F/cm}^{2}\",\n  \"description\": \"Esta fórmula representa a capacitância de uma estrutura de semicondutor, especificamente a capacitância de uma camada de óxido em uma interface de semicondutor, expressa em farads por centímetro quadrado.\",\n  \"concepts\": [\n    \"Capacitância\",\n    \"Semicondutores\",\n    \"Estruturas de óxido\",\n    \"Interface de semicondutor\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"C_{FB}\",\n      \"description\": \"Representa a capacitância da estrutura, que é a capacidade de armazenar carga elétrica por unidade de tensão aplicada.\"\n    },\n    {\n      \"symbol\": \"F\",\n      \"description\": \"Representa o farad, que é a unidade de medida da capacitância no Sistema Internacional de Unidades.\"\n    },\n    {\n      \"symbol\": \"cm\",\n      \"description\": \"Representa centímetros, que é uma unidade de medida de comprimento no Sistema Internacional de Unidades.\"\n    },\n    {\n      \"symbol\": \"2\",\n      \"description\": \"Indica que a capacitância é medida por unidade de área, ou seja, por centímetro quadrado.\"\n    },\n    {\n      \"symbol\": \"k\",\n      \"description\": \"Representa uma constante que pode variar dependendo das características específicas do material ou da estrutura em questão.\"\n    }\n  ]\n}"
+    },
+    {
+      "originalFormula": "C_{min}/C_{ox} = 0.1525",
+      "genericFormula": "C_{min}/C_{ox} = k",
+      "description": "Esta fórmula representa a relação entre a capacitância mínima de um dispositivo semicondutor e a capacitância de óxido, onde a razão é igual a uma constante k. Essa relação é importante para entender como a capacitância afeta o desempenho do dispositivo.",
+      "concepts": [
+        "Capacitância",
+        "Dispositivos semicondutores",
+        "Óxido de silício",
+        "Desempenho elétrico"
+      ],
+      "symbols": [
+        {
+          "symbol": "C_{min}",
+          "description": "Representa a capacitância mínima que um dispositivo semicondutor pode ter, que é crucial para o funcionamento adequado do dispositivo."
+        },
+        {
+          "symbol": "C_{ox}",
+          "description": "Representa a capacitância do óxido, que é uma camada isolante em dispositivos semicondutores, como transistores, e desempenha um papel fundamental na operação do dispositivo."
+        },
+        {
+          "symbol": "k",
+          "description": "Uma constante que representa a razão entre a capacitância mínima e a capacitância do óxido, que pode variar dependendo das características do dispositivo."
+        }
+      ]
+    },
+    {
+      "originalFormula": "C_{FB}/C_{ox} = 0.569",
+      "genericFormula": "\\frac{C_{FB}}{C_{ox}} = k",
+      "description": "Esta fórmula representa a relação entre a capacitância de uma camada de óxido de um capacitor de efeito de campo (C_{ox}) e a capacitância de uma camada de interface (C_{FB}), onde k é uma constante que pode variar dependendo das condições do sistema. Essa relação é importante para entender como as capacitâncias interagem em dispositivos semicondutores.",
+      "concepts": [
+        "Capacitância",
+        "Capacitores",
+        "Semicondutores",
+        "Dispositivos eletrônicos"
+      ],
+      "symbols": [
+        {
+          "symbol": "C_{FB}",
+          "description": "Representa a capacitância da camada de interface, que é a capacitância associada à interface entre o semicondutor e a camada de óxido."
+        },
+        {
+          "symbol": "C_{ox}",
+          "description": "Representa a capacitância da camada de óxido, que é a capacitância associada ao material isolante que está em contato com o semicondutor."
+        },
+        {
+          "symbol": "k",
+          "description": "Representa uma constante que indica a relação entre as duas capacitâncias, podendo ser influenciada por fatores como a geometria do dispositivo e as propriedades dos materiais envolvidos."
+        }
+      ]
+    },
+    {
+      "originalFormula": "V_{FB} = \\phi_{ms} - \\frac{Q_{ox}'}{C_{ox}}",
+      "genericFormula": "V_{FB} = \\phi_{ms} - \\frac{Q_{ox}'}{C_{ox}}",
+      "description": "Esta fórmula representa a tensão de flatband (V_{FB}) em um dispositivo semicondutor, que é a tensão necessária para que a camada de semicondutor esteja em uma condição de equilíbrio, onde não há acúmulo ou depleção de portadores de carga na interface entre o semicondutor e o óxido. A tensão de flatband é uma característica importante para entender o comportamento elétrico de transistores de efeito de campo (FETs) e outros dispositivos semicondutores.",
+      "concepts": [
+        "Tensão de flatband",
+        "Interface semicondutor-óxido",
+        "Equilíbrio de portadores de carga",
+        "Transistores de efeito de campo (FETs)"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_{FB}",
+          "description": "Representa a tensão de flatband, que é a tensão na qual a camada de semicondutor está em equilíbrio sem acúmulo ou depleção de portadores de carga."
+        },
+        {
+          "symbol": "\\phi_{ms}",
+          "description": "Representa a diferença de trabalho entre o semicondutor e o metal, que indica a energia necessária para mover um portador de carga do semicondutor para o metal."
+        },
+        {
+          "symbol": "Q_{ox}'",
+          "description": "Representa a carga de oxidação efetiva, que é a quantidade de carga acumulada na interface entre o óxido e o semicondutor, influenciando a tensão de flatband."
+        },
+        {
+          "symbol": "C_{ox}",
+          "description": "Representa a capacitância do óxido, que é a capacidade do material de armazenar carga elétrica por unidade de tensão aplicada."
+        }
+      ]
+    },
+    {
+      "originalFormula": "I_D = \\mu_n |Q_{inv}| V_{GS} (V_{GS} - V_T)",
+      "genericFormula": "I_D = \\mu_n |Q_{inv}| V_{GS} (V_{GS} - V_T)",
+      "description": "Esta fórmula representa a corrente de dreno em um transistor de efeito de campo (FET) no modo de saturação. Ela mostra como a corrente que flui do dreno para a fonte depende da mobilidade dos portadores de carga, da carga acumulada no canal do transistor e das tensões aplicadas entre o gate e a fonte, bem como entre o gate e o dreno.",
+      "concepts": [
+        "Transistor de Efeito de Campo (FET)",
+        "Corrente de Dreno",
+        "Mobilidade dos Portadores de Carga",
+        "Tensão de Gate",
+        "Tensão de Limiar"
+      ],
+      "symbols": [
+        {
+          "symbol": "I_D",
+          "description": "Representa a corrente que flui do dreno para a fonte no transistor."
+        },
+        {
+          "symbol": "\\mu_n",
+          "description": "Representa a mobilidade dos portadores de carga negativa (elétrons) no canal do transistor."
+        },
+        {
+          "symbol": "|Q_{inv}|",
+          "description": "Representa a carga acumulada no canal do transistor, que é influenciada pela tensão aplicada no gate."
+        },
+        {
+          "symbol": "V_{GS}",
+          "description": "Representa a tensão entre o gate e a fonte do transistor, que controla a quantidade de corrente que pode fluir através do transistor."
+        },
+        {
+          "symbol": "V_T",
+          "description": "Representa a tensão de limiar, que é a tensão mínima necessária para que o transistor comece a conduzir corrente."
+        }
+      ]
+    },
+    {
+      "originalFormula": "V_{GS} - V_{DS}(sat) = V_{T}",
+      "genericFormula": "V_{GS} - V_{DS}(sat) = V_{T}",
+      "description": "Esta fórmula relaciona a tensão entre o terminal de porta e o terminal de fonte de um transistor de efeito de campo (FET) com a tensão de saturação e a tensão de limiar do dispositivo. Ela indica que a diferença entre a tensão de porta e a tensão de drenagem em saturação é igual à tensão de limiar, que é o valor mínimo necessário para que o transistor comece a conduzir.",
+      "concepts": [
+        "Transistor de efeito de campo (FET)",
+        "Tensão de porta (VGS)",
+        "Tensão de drenagem em saturação (VDS(sat))",
+        "Tensão de limiar (VT)"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_{GS}",
+          "description": "Representa a tensão entre o terminal de porta e o terminal de fonte do transistor, que controla a condução do dispositivo."
+        },
+        {
+          "symbol": "V_{DS}(sat)",
+          "description": "Representa a tensão entre o terminal de drenagem e o terminal de fonte quando o transistor está em modo de saturação, ou seja, quando ele está totalmente ligado e conduzindo corrente."
+        },
+        {
+          "symbol": "V_{T}",
+          "description": "Representa a tensão de limiar do transistor, que é a tensão mínima necessária para que o transistor comece a conduzir corrente entre o terminal de drenagem e o terminal de fonte."
+        }
+      ]
+    },
+    {
+      "originalFormula": "V_{DS}(sat) = V_{GS} - V_{T}",
+      "genericFormula": "V_{DS}(sat) = V_{GS} - V_{T}",
+      "description": "Esta fórmula representa a tensão de dreno a fonte em saturação de um transistor de efeito de campo (FET), que é a tensão necessária para que o transistor opere na região de saturação. Essa condição é importante para garantir que o transistor funcione como um interruptor ou amplificador.",
+      "concepts": [
+        "Transistor de efeito de campo (FET)",
+        "Região de saturação",
+        "Tensão de porta a fonte",
+        "Tensão de limiar"
+      ],
+      "symbols": [
+        {
+          "symbol": "V_{DS}(sat)",
+          "description": "Representa a tensão entre o dreno e a fonte do transistor quando ele está na região de saturação."
+        },
+        {
+          "symbol": "V_{GS}",
+          "description": "Representa a tensão entre a porta e a fonte do transistor, que controla a corrente que flui através do dispositivo."
+        },
+        {
+          "symbol": "V_{T}",
+          "description": "Representa a tensão de limiar, que é a tensão mínima necessária na porta para que o transistor comece a conduzir."
+        }
+      ]
+    },
+    {
+      "originalFormula": "I_D = \\frac{W \\mu_{n} C_{ox}}{2 L} (V_{GS} - V_{T})^{2} \\quad (10.45a)",
+      "genericFormula": "I_D = \\frac{W \\mu C_{ox}}{2 L} (V_{GS} - V_{T})^{2}",
+      "description": "Esta fórmula representa a corrente de dreno em um transistor de efeito de campo (FET) na região de saturação. Ela mostra como a corrente depende de várias características do dispositivo e das tensões aplicadas.",
+      "concepts": [
+        "Transistor de efeito de campo (FET)",
+        "Corrente elétrica",
+        "Mobilidade de portadores",
+        "Capacitância de óxido",
+        "Tensão de porta",
+        "Tensão de limiar"
+      ],
+      "symbols": [
+        {
+          "symbol": "I_D",
+          "description": "Representa a corrente que flui do dreno do transistor."
+        },
+        {
+          "symbol": "W",
+          "description": "Representa a largura do canal do transistor."
+        },
+        {
+          "symbol": "\\mu_{n}",
+          "description": "Representa a mobilidade dos portadores de carga (elétrons, no caso de transistores n)."
+        },
+        {
+          "symbol": "C_{ox}",
+          "description": "Representa a capacitância do óxido que separa o gate do canal do transistor."
+        },
+        {
+          "symbol": "L",
+          "description": "Representa o comprimento do canal do transistor."
+        },
+        {
+          "symbol": "V_{GS}",
+          "description": "Representa a tensão entre o gate e a fonte do transistor."
+        },
+        {
+          "symbol": "V_{T}",
+          "description": "Representa a tensão de limiar, que é a tensão mínima necessária para que o transistor comece a conduzir."
+        }
+      ]
+    },
+    {
+      "originalFormula": "I_D = \\frac{k'}{2} \\cdot \\frac{W}{L} (V_{GS} - V_{T})^{2} \\quad (10.45b)",
+      "genericFormula": "I_D = \\frac{k'}{2} \\cdot \\frac{W}{L} (V_{GS} - V_{T})^{2}",
+      "description": "Esta fórmula representa a corrente de dreno em um transistor de efeito de campo (FET) na região de saturação. Ela mostra como a corrente que flui através do transistor depende de várias características do dispositivo e das tensões aplicadas.",
+      "concepts": [
+        "Transistor de Efeito de Campo (FET)",
+        "Corrente de Dreno",
+        "Tensão de Porta-Sourça",
+        "Tensão de limiar",
+        "Relação entre largura e comprimento do canal"
+      ],
+      "symbols": [
+        {
+          "symbol": "I_D",
+          "description": "representa a corrente que flui do dreno para a fonte no transistor."
+        },
+        {
+          "symbol": "k'",
+          "description": "é uma constante que representa a mobilidade dos portadores de carga no canal do transistor, afetando a eficiência da corrente."
+        },
+        {
+          "symbol": "W",
+          "description": "é a largura do canal do transistor, que influencia a quantidade de corrente que pode fluir."
+        },
+        {
+          "symbol": "L",
+          "description": "é o comprimento do canal do transistor, que também afeta a corrente e a resistência do canal."
+        },
+        {
+          "symbol": "V_{GS}",
+          "description": "é a tensão entre a porta e a fonte do transistor, que controla a quantidade de corrente que flui através do dispositivo."
+        },
+        {
+          "symbol": "V_{T}",
+          "description": "é a tensão de limiar, que é a tensão mínima necessária para que o transistor comece a conduzir."
+        }
+      ]
+    },
+    {
+      "originalFormula": "I_D = K_{n} (V_{GS} - V_{T})^{2}",
+      "genericFormula": "I_D = K (V_{GS} - V_{T})^{2}",
+      "description": "Esta fórmula representa a corrente de dreno em um transistor de efeito de campo (FET) na região de saturação. A corrente de dreno é a corrente que flui do dreno para a fonte do transistor, e depende da tensão entre a porta e a fonte, bem como de um parâmetro que caracteriza a transcondutância do dispositivo.",
+      "concepts": [
+        "Transistor de Efeito de Campo (FET)",
+        "Corrente de Dreno",
+        "Tensão de Porta-SFonte",
+        "Transcondutância"
+      ],
+      "symbols": [
+        {
+          "symbol": "I_D",
+          "description": "Representa a corrente que flui do dreno para a fonte do transistor."
+        },
+        {
+          "symbol": "K_n",
+          "description": "É um parâmetro que representa a transcondutância do transistor, que indica a eficiência do dispositivo em controlar a corrente de dreno com a tensão de porta."
+        },
+        {
+          "symbol": "V_{GS}",
+          "description": "É a tensão entre a porta e a fonte do transistor, que controla a quantidade de corrente que pode fluir através do dispositivo."
+        },
+        {
+          "symbol": "V_{T}",
+          "description": "É a tensão de limiar do transistor, que é o valor mínimo da tensão entre a porta e a fonte necessário para que o transistor comece a conduzir."
+        }
+      ]
+    },
+    {
+      "originalFormula": "J_s = \\sigma E_{i} \\quad (10.46)",
+      "genericFormula": "J_s = \\sigma E",
+      "description": "Esta fórmula representa a densidade de corrente elétrica em um material semicondutor, que é proporcional ao campo elétrico aplicado e à condutividade do material.",
+      "concepts": [
+        "Densidade de corrente elétrica",
+        "Condutividade elétrica",
+        "Campo elétrico"
+      ],
+      "symbols": [
+        {
+          "symbol": "J_s",
+          "description": "Representa a densidade de corrente elétrica, que é a quantidade de carga elétrica que passa por uma unidade de área em um material por unidade de tempo."
+        },
+        {
+          "symbol": "σ",
+          "description": "Representa a condutividade elétrica do material, que indica a capacidade do material de conduzir eletricidade. Materiais com alta condutividade permitem que a corrente flua mais facilmente."
+        },
+        {
+          "symbol": "E",
+          "description": "Representa o campo elétrico aplicado ao material, que é uma força que atua sobre as cargas elétricas, fazendo com que elas se movam e gerem corrente elétrica."
+        }
+      ]
+    },
+    {
+      "originalFormula": "\\sigma = \\mu_{n} n(y)",
+      "genericFormula": "\\sigma = \\mu n",
+      "description": "Esta fórmula representa a relação entre a condutividade elétrica de um material semicondutor e a mobilidade dos portadores de carga, multiplicada pela densidade de portadores de carga. A condutividade elétrica é uma medida de quão bem um material pode conduzir eletricidade.",
+      "concepts": [
+        "Condutividade elétrica",
+        "Mobilidade dos portadores de carga",
+        "Densidade de portadores de carga"
+      ],
+      "symbols": [
+        {
+          "symbol": "σ",
+          "description": "Representa a condutividade elétrica do material, que indica a capacidade do material de conduzir corrente elétrica."
+        },
+        {
+          "symbol": "μ_{n}",
+          "description": "Representa a mobilidade dos portadores de carga negativos, que é uma medida de quão rapidamente os elétrons podem se mover através do material quando um campo elétrico é aplicado."
+        },
+        {
+          "symbol": "n(y)",
+          "description": "Representa a densidade de portadores de carga, que é o número de portadores de carga (elétrons, neste caso) por unidade de volume do material."
+        }
+      ]
+    },
+    {
+      "originalFormula": "C_{M} = C_{G_{T}}(1 + g_{m}R_{L})",
+      "genericFormula": "C_{M} = C_{G_{T}}(1 + g_{m}R_{L})",
+      "description": "Esta fórmula representa a capacitância total de um circuito em função da capacitância de entrada e do ganho de transcondutância, levando em consideração a resistência de carga. Ela é utilizada em circuitos eletrônicos, especialmente em amplificadores, para calcular como a capacitância é afetada por outros componentes do circuito.",
+      "concepts": [
+        "Capacitância",
+        "Transcondutância",
+        "Resistência de carga",
+        "Circuitos eletrônicos"
+      ],
+      "symbols": [
+        {
+          "symbol": "C_{M}",
+          "description": "Representa a capacitância total do circuito."
+        },
+        {
+          "symbol": "C_{G_{T}}",
+          "description": "Representa a capacitância de entrada do circuito, que é a capacitância vista na entrada do amplificador."
+        },
+        {
+          "symbol": "g_{m}",
+          "description": "Representa a transcondutância, que é uma medida de quão bem o circuito pode converter uma tensão de entrada em uma corrente de saída."
+        },
+        {
+          "symbol": "R_{L}",
+          "description": "Representa a resistência de carga, que é a resistência conectada à saída do circuito e que afeta o desempenho do amplificador."
+        }
+      ]
+    },
+    {
+      "originalFormula": "g_m = \\frac{\\partial I_D}{\\partial V_{GS}}",
+      "genericFormula": "g_m = \\frac{\\partial I}{\\partial V}",
+      "description": "Esta fórmula representa a transcondutância de um transistor, que é uma medida de quão sensível a corrente de dreno é em relação à variação da tensão de porta-fonte. Em outras palavras, ela indica o quanto a corrente que flui através do transistor muda quando a tensão na porta é alterada.",
+      "concepts": [
+        "Transcondutância",
+        "Transistor",
+        "Corrente de dreno",
+        "Tensão de porta-fonte"
+      ],
+      "symbols": [
+        {
+          "symbol": "g_m",
+          "description": "Representa a transcondutância do transistor, que é a razão de mudança da corrente de dreno em relação à mudança da tensão de porta-fonte."
+        },
+        {
+          "symbol": "I_D",
+          "description": "Representa a corrente que flui do dreno para a fonte no transistor."
+        },
+        {
+          "symbol": "V_{GS}",
+          "description": "Representa a tensão entre a porta e a fonte do transistor, que controla a operação do dispositivo."
+        }
+      ]
+    },
+    {
+      "originalFormula": "I_{D}(sat) = 2 \\times 10^{-4} \\, \\text{A}",
+      "genericFormula": "I_{D}(sat) = k \\, \\text{A}",
+      "description": "Esta fórmula representa a corrente de saturação de um dispositivo semicondutor, como um transistor, quando ele está em sua condição de operação máxima, ou seja, quando não pode aumentar mais a corrente mesmo que a tensão de entrada continue a aumentar.",
+      "concepts": [
+        "Corrente de saturação",
+        "Transistores",
+        "Semicondutores",
+        "Condições de operação"
+      ],
+      "symbols": [
+        {
+          "symbol": "I_{D}(sat)",
+          "description": "Representa a corrente de drenagem em estado de saturação, que é a corrente máxima que o dispositivo pode conduzir sob condições específicas."
+        },
+        {
+          "symbol": "k",
+          "description": "Um valor genérico que representa a corrente de saturação, que pode variar dependendo do dispositivo e das condições de operação."
+        }
+      ]
+    },
+    {
+      "originalFormula": "V_{GS}(sat) = 4 \\, \\text{V}",
+      "genericFormula": "V_{GS}(sat) = 4 \\, \\text{V}",
+      "description": "Não foi possível gerar descrição automática",
+      "concepts": [],
+      "symbols": [],
+      "rawText": "{\n  \"originalFormula\": \"V_{GS}(sat) = 4 \\, \\\\text{V}\",\n  \"genericFormula\": \"V_{GS}(sat) = V\",\n  \"description\": \"Esta fórmula representa a tensão de gate-source em um transistor de efeito de campo (FET) quando ele atinge a saturação. A tensão de saturação é o valor mínimo necessário para que o transistor comece a conduzir de forma eficiente, permitindo que a corrente flua entre o dreno e a fonte.\",\n  \"concepts\": [\n    \"Transistor de efeito de campo (FET)\",\n    \"Tensão de gate-source\",\n    \"Saturação do transistor\"\n  ],\n  \"symbols\": [\n    {\n      \"symbol\": \"V_{GS}(sat)\",\n      \"description\": \"Representa a tensão entre o terminal de gate e o terminal de source do transistor quando ele está em estado de saturação.\"\n    },\n    {\n      \"symbol\": \"V\",\n      \"description\": \"Representa uma tensão genérica, que pode ser qualquer valor de tensão em volts.\"\n    }\n  ]\n}"
+    },
+    {
+      "originalFormula": "V_{T} = 0.8 \\, \\text{V}",
+      "genericFormula": "V_{T} = 0.8 \\, \\text{V}",
+      "description": "Não foi possível gerar descrição automática",
+      "concepts": [],
+      "symbols": [],
+      "rawText": "{\n  \"originalFormula\": \"V_{T} = 0.8 \\, \\\\text{V}\",\n  \"genericFormula\": \"V_{T} = V\",\n  \"description\": \"Esta fórmula representa a tensão de limiar, que é o valor de tensão necessário para que um dispositivo semicondutor, como um transistor, comece a conduzir corrente. O valor de 0.8 volts é um exemplo específico dessa tensão de limiar.\",\n  \"concepts\": [\"tensão de limiar\", \"transistores\", \"semicondutores\", \"condução elétrica\"],\n  \"symbols\": [\n    {\n      \"symbol\": \"V_{T}\",\n      \"description\": \"Representa a tensão de limiar, que é a tensão mínima necessária para que um dispositivo semicondutor comece a operar ou conduzir corrente.\"\n    },\n    {\n      \"symbol\": \"V\",\n      \"description\": \"Representa uma tensão genérica, que pode ser qualquer valor de tensão em um contexto elétrico.\"\n    }\n  ]\n}"
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467
+  ],
+  "lastUpdated": "2026-05-08T22:34:55.617Z",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
+}

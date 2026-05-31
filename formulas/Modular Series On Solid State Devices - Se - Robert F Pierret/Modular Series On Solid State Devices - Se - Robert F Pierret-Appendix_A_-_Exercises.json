@@ -1,0 +1,457 @@
+{
+  "chapter": "Appendix A - Exercises",
+  "section": "Exercise 1.1 and Exercise 1.2",
+  "questions": [
+    {
+      "number": "1.1",
+      "text": "If the lattice constant or unit cell side-length in Si is a = 5.43 × 10⁻⁸ cm, what is the distance (d) from the center of one Si atom to the center of its nearest neighbor?",
+      "formulas": [
+        {
+          "originalFormula": "a = 5.43 \\times 10^{-8} \\text{ cm}",
+          "genericFormula": "a = d_{\\text{Si}}",
+          "description": "Parâmetro de rede cristalina do Silício (Si), que representa a distância entre os átomos em uma célula unitária cúbica de face centrada (FCC) com base diatomica, também conhecida como estrutura diamante. O Silício possui estrutura cristalina do tipo diamante, onde cada átomo está ligado a quatro outros átomos em arranjo tetraédrico. O parâmetro de rede a = 5.43 Å (angstroms) ou equivalentemente 5.43 × 10⁻⁸ cm é uma constante experimental fundamental que determina propriedades físicas como densidade atômica, estrutura de bandas e propriedades eletrônicas do material. Este valor é medido à temperatura ambiente (300 K) e é amplamente utilizado em cálculos de física e engenharia de semicondutores.",
+          "concepts": [
+            "parâmetro de rede",
+            "estrutura cristalina",
+            "estrutura diamante",
+            "célula unitária",
+            "rede cúbica de face centrada (FCC)",
+            "semicondutor elementar",
+            "silício",
+            "cristalografia"
+          ],
+          "symbols": [
+            {
+              "symbol": "a",
+              "description": "Parâmetro de rede cristalina: distância entre átomos adjacentes na célula unitária cúbica do Silício, medida em centímetros ou angstroms"
+            },
+            {
+              "symbol": "5.43 \\times 10^{-8} \\text{ cm}",
+              "description": "Valor numérico do parâmetro de rede do Silício à temperatura ambiente (300 K), equivalente a 5.43 Å (angstroms)"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "crystal-structure",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "lattice",
+            "parameter",
+            "silicon",
+            "crystal",
+            "diamond",
+            "FCC",
+            "unit-cell",
+            "semiconductor",
+            "atomic-spacing",
+            "angstrom"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "crystal-structure",
+            "graphParameters": [
+              "lattice constant",
+              "atomic positions",
+              "unit cell dimensions",
+              "bond length"
+            ]
+          },
+          "relatedFormulas": [
+            "atomic-density",
+            "miller-indices",
+            "bragg-diffraction",
+            "density-of-states",
+            "band-structure-silicon"
+          ]
+        }
+      ]
+    },
+    {
+      "number": "1.2a",
+      "text": "For a cubic crystal lattice: Determine the Miller indices for the plane and direction vector shown in Fig. E1.2(a).",
+      "formulas": []
+    },
+    {
+      "number": "1.2b",
+      "text": "For a cubic crystal lattice: Sketch the plane and direction vector characterized by (110) and [110], respectively.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "1.1",
+      "text": "As noted in the Fig. 1.4 caption, the atom in the upper front corner of the Si unit cell and the atom along the cube diagonal one-fourth of the way down the diagonal are nearest neighbors. Since the diagonal of a cube is equal to √3 times a side length, one concludes d = (1/4)√3·a = (√3/4)(5.43 × 10⁻⁸) = 2.35 × 10⁻⁸ cm.",
+      "formulas": [
+        {
+          "originalFormula": "d = \\frac{1}{4}\\sqrt{3}\\, a",
+          "genericFormula": "d = \\frac{\\sqrt{3}}{4} a",
+          "description": "Esta fórmula descreve a distância interatômica d entre átomos vizinhos mais próximos na estrutura cristalina do tipo diamante (ou zinc-blende), onde a é o parâmetro de rede (constante de rede) do cristal cúbico. Na estrutura diamante, cada átomo está ligado a quatro vizinhos dispostos nos vértices de um tetraedro regular inscrito no cubo. A distância entre um átomo na origem e seu vizinho mais próximo ao longo da diagonal do cubo menor corresponde exatamente a (√3/4)a. Essa relação geométrica é fundamental para semicondutores como Silício (Si) e Germânio (Ge), que cristalizam na estrutura diamante, e para compostos III-V como GaAs, que cristalizam na estrutura zinc-blende (idêntica à diamante, mas com dois tipos de átomo). Conhecer d é essencial para calcular densidade de empacotamento atômico, energia de ligação e propriedades mecânicas dos cristais.",
+          "concepts": [
+            "estrutura cristalina diamante",
+            "estrutura zinc-blende",
+            "parâmetro de rede",
+            "distância interatômica",
+            "ligação covalente",
+            "geometria cristalina",
+            "semicondutores elementares",
+            "semicondutores compostos III-V",
+            "empacotamento atômico"
+          ],
+          "symbols": [
+            {
+              "symbol": "d",
+              "description": "Distância interatômica entre átomos vizinhos mais próximos na estrutura diamante ou zinc-blende (em metros ou ångströms)"
+            },
+            {
+              "symbol": "a",
+              "description": "Parâmetro de rede (constante de rede) do cristal cúbico, correspondendo ao comprimento da aresta do cubo unitário"
+            },
+            {
+              "symbol": "\\frac{\\sqrt{3}}{4}",
+              "description": "Fator geométrico derivado da diagonal do cubo menor que conecta átomos vizinhos na estrutura diamante; equivale numericamente a aproximadamente 0,4330"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "crystal-structure",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "crystal",
+            "lattice",
+            "lattice-parameter",
+            "interatomic-distance",
+            "diamond-structure",
+            "zinc-blende",
+            "silicon",
+            "germanium",
+            "GaAs",
+            "unit-cell",
+            "nearest-neighbor",
+            "covalent-bond",
+            "geometry"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "crystal-structure",
+            "graphParameters": [
+              "lattice-parameter a",
+              "interatomic-distance d",
+              "atomic-positions"
+            ]
+          },
+          "relatedFormulas": [
+            "atomic-packing-factor-diamond",
+            "atomic-density",
+            "lattice-parameter-zinc-blende",
+            "nearest-neighbor-fcc",
+            "bond-length"
+          ]
+        },
+        {
+          "originalFormula": "d = \\frac{\\sqrt{3}}{4}(5.43 \\times 10^{-8}) = 2.35 \\times 10^{-8} \\text{ cm}",
+          "genericFormula": "d = \\frac{\\sqrt{3}}{4} a_0",
+          "description": "Esta fórmula calcula a distância interatômica (d) entre átomos mais próximos na estrutura cristalina do Silício (Si), que possui estrutura do tipo diamante (cúbica de face centrada com base de dois átomos). Na estrutura diamante, cada átomo está ligado a quatro vizinhos mais próximos dispostos tetraedricamente. A distância entre dois átomos vizinhos é dada por d = (√3/4)·a₀, onde a₀ é o parâmetro de rede (constante de rede). Para o Silício, a₀ = 5.43 Å = 5.43 × 10⁻⁸ cm, resultando em d ≈ 2.35 Å = 2.35 × 10⁻⁸ cm. Essa distância é fundamental para entender propriedades de ligação covalente, densidade atômica e estrutura eletrônica do semicondutor.",
+          "concepts": [
+            "estrutura cristalina do diamante",
+            "parâmetro de rede",
+            "distância interatômica",
+            "ligação covalente",
+            "estrutura cúbica de face centrada (FCC)",
+            "semicondutor elementar",
+            "coordenação tetraédrica",
+            "silício cristalino"
+          ],
+          "symbols": [
+            {
+              "symbol": "d",
+              "description": "Distância interatômica entre os átomos mais próximos na estrutura cristalina (nearest-neighbor distance)"
+            },
+            {
+              "symbol": "a_0",
+              "description": "Parâmetro de rede (constante de rede) do cristal; para o Silício, a₀ = 5.43 × 10⁻⁸ cm = 5.43 Å"
+            },
+            {
+              "symbol": "\\frac{\\sqrt{3}}{4}",
+              "description": "Fator geométrico da estrutura diamante que relaciona a distância entre vizinhos mais próximos ao parâmetro de rede; decorre da geometria da célula unitária FCC com base de dois átomos"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "crystal-structure",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "crystal",
+            "lattice",
+            "silicon",
+            "diamond-structure",
+            "interatomic-distance",
+            "lattice-constant",
+            "nearest-neighbor",
+            "FCC",
+            "covalent-bond",
+            "unit-cell",
+            "semiconductor",
+            "atomic-spacing"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "crystal-structure",
+            "graphParameters": [
+              "lattice constant a₀",
+              "atomic positions",
+              "nearest-neighbor distance d",
+              "tetrahedral geometry"
+            ]
+          },
+          "relatedFormulas": [
+            "atomic-density-diamond",
+            "miller-indices",
+            "surface-density",
+            "volumetric-density",
+            "FCC-lattice-parameter"
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "1.2a",
+      "text": "The intercepts of the plane are −1, 1, and 2 along the x, y, and z coordinate axes, respectively. Taking [1/intercept]s yields −1, 1, ½. Multiplying by 2 to obtain the lowest whole number set, and enclosing in parentheses, gives (2̄21) for the Miller indices of the plane. The direction vector has projections of 2a, a, and 0 along the x, y, and z coordinate axes, respectively. The Miller indices for the direction are then [210].",
+      "formulas": [
+        {
+          "originalFormula": "\\left[\\frac{1}{\\text{intercept}}\\right] \\Rightarrow -1,\\, 1,\\, \\frac{1}{2}",
+          "genericFormula": "\\left[\\frac{1}{\\text{intercept}_i}\\right] \\Rightarrow h_i,\\, k_i,\\, l_i",
+          "description": "Esta expressão representa o procedimento para determinar os Índices de Miller de um plano cristalográfico a partir das interseções (intercepts) do plano com os eixos cristalográficos. O método consiste em: (1) identificar os pontos onde o plano intercepta cada eixo a, b e c em unidades dos parâmetros de rede; (2) tomar o inverso (recíproco) de cada intercept; (3) reduzir os valores a inteiros mais simples na mesma proporção. No exemplo fornecido, os recíprocos 1/(-1), 1/1 e 1/(1/2) resultam nos índices de Miller (h, k, l) = (-1, 1, 2), escrito convencionalmente como (\\bar{1}12), indicando um plano específico na rede cristalina. Índices negativos são representados com uma barra sobre o número. Este procedimento é fundamental na descrição de estruturas cristalinas e na interpretação de padrões de difração de raios X.",
+          "concepts": [
+            "Índices de Miller",
+            "planos cristalográficos",
+            "rede cristalina",
+            "intercepts cristalográficos",
+            "recíproco dos intercepts",
+            "notação cristalográfica",
+            "difração de raios X",
+            "simetria cristalina",
+            "parâmetros de rede",
+            "células unitárias"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\text{intercept}",
+              "description": "Intercept (interseção) do plano cristalográfico com um eixo cristalográfico, expresso em unidades do parâmetro de rede correspondente"
+            },
+            {
+              "symbol": "\\frac{1}{\\text{intercept}}",
+              "description": "Recíproco do intercept, operação central no método de determinação dos Índices de Miller"
+            },
+            {
+              "symbol": "h",
+              "description": "Primeiro Índice de Miller, associado ao eixo cristalográfico a"
+            },
+            {
+              "symbol": "k",
+              "description": "Segundo Índice de Miller, associado ao eixo cristalográfico b"
+            },
+            {
+              "symbol": "l",
+              "description": "Terceiro Índice de Miller, associado ao eixo cristalográfico c"
+            },
+            {
+              "symbol": "-1",
+              "description": "Intercept negativo ao longo do eixo a, indicando que o plano intercepta o eixo na direção negativa; índice de Miller resultante: \\bar{1}"
+            },
+            {
+              "symbol": "1",
+              "description": "Intercept unitário ao longo do eixo b, resultando no índice de Miller k = 1"
+            },
+            {
+              "symbol": "\\frac{1}{2}",
+              "description": "Intercept fracionário ao longo do eixo c (intercepta a metade do parâmetro de rede), resultando no índice de Miller l = 2 após inversão"
+            },
+            {
+              "symbol": "\\Rightarrow",
+              "description": "Símbolo de implicação indicando a transformação dos intercepts nos índices de Miller após inversão e simplificação"
+            },
+            {
+              "symbol": "(hkl)",
+              "description": "Notação padrão dos Índices de Miller para um plano cristalográfico específico"
+            },
+            {
+              "symbol": "\\bar{h}",
+              "description": "Notação com barra sobre o índice, indicando valor negativo do índice de Miller"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "crystal-structure",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "Miller indices",
+            "crystal plane",
+            "intercept",
+            "reciprocal lattice",
+            "crystallography",
+            "lattice",
+            "band-structure",
+            "X-ray diffraction",
+            "crystal symmetry",
+            "unit cell",
+            "hkl notation",
+            "semiconductor crystal"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "crystal-plane",
+            "graphParameters": [
+              "eixos cristalográficos a, b, c",
+              "intercepts do plano",
+              "orientação do plano (hkl)",
+              "parâmetros de rede"
+            ]
+          },
+          "relatedFormulas": [
+            "Bragg-Law",
+            "Reciprocal-Lattice-Vector",
+            "Lattice-Spacing-dhkl",
+            "Structure-Factor",
+            "Weiss-Zone-Law"
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "1.2b",
+      "text": "For the (110) plane, [1/intercept]s = 1, 1, 0. The normalized x, y, z axes intercepts of the plane are therefore 1, 1, ∞; the plane intersects the x-axis at a, the y-axis at a, and is parallel to the z-axis. In a cubic crystal the [110] direction is normal to the (110) plane. The deduced plane and direction are as sketched in Fig. E1.2(b).",
+      "formulas": []
+    }
+  ],
+  "standaloneFormulas": [],
+  "bookTitle": "Modular Series On Solid State Devices",
+  "author": "Unknown",
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121
+  ],
+  "lastUpdated": "2026-05-09T16:15:45.775Z"
+}

@@ -1,0 +1,1430 @@
+{
+  "chapter": "1",
+  "questions": [
+    {
+      "number": "Example 1.2",
+      "text": "Determine the density of silicon given Avogadro's number is 6.023 × 10^{23} atoms/mole.",
+      "formulas": [
+        {
+          "originalFormula": "\\text{Density} = \\frac{5 \\times 10^{22} \\text{ atoms/cm}^3 \\times 28.09 \\text{ g/mole}}{6.023 \\times 10^{23} \\text{ atoms/mole}} = 2.33 \\text{ g/cm}^3",
+          "genericFormula": "\\text{Density} = \\frac{N \\times M}{N_A}",
+          "description": "Esta fórmula calcula a densidade de uma substância em gramas por centímetro cúbico, utilizando o número de átomos por centímetro cúbico, a massa molar da substância e o número de Avogadro.",
+          "concepts": [
+            "Densidade",
+            "Massa Molar",
+            "Número de Avogadro",
+            "Conversão de unidades"
+          ],
+          "symbols": [
+            {
+              "symbol": "Density",
+              "description": "Representa a densidade da substância, que é a quantidade de massa por unidade de volume."
+            },
+            {
+              "symbol": "N",
+              "description": "Representa o número de átomos por centímetro cúbico da substância."
+            },
+            {
+              "symbol": "M",
+              "description": "Representa a massa molar da substância em gramas por mole."
+            },
+            {
+              "symbol": "N_A",
+              "description": "Representa o número de Avogadro, que é a quantidade de átomos ou moléculas em um mole, aproximadamente igual a 6.023 x 10^23."
+            }
+          ],
+          "chapter": "1",
+          "source": "question",
+          "questionNumber": "Example 1.2",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "text": "What is the relation E = hv an expression of?",
+      "formulas": [
+        {
+          "originalFormula": "E = h \\cdot v",
+          "genericFormula": "E = h \\cdot f",
+          "description": "Esta fórmula representa a relação entre a energia de um fóton e a sua frequência. A energia de um fóton é diretamente proporcional à frequência da radiação eletromagnética, o que significa que quanto maior a frequência, maior a energia do fóton.",
+          "concepts": [
+            "energia do fóton",
+            "frequência da radiação eletromagnética",
+            "constante de Planck"
+          ],
+          "symbols": [
+            {
+              "symbol": "E",
+              "description": "representa a energia do fóton, que é a quantidade de trabalho que pode ser realizado por esse fóton."
+            },
+            {
+              "symbol": "h",
+              "description": "é a constante de Planck, uma constante fundamental da física que relaciona a energia de um fóton à sua frequência."
+            },
+            {
+              "symbol": "v",
+              "description": "representa a frequência da radiação eletromagnética, que é o número de ciclos que ocorrem em um segundo."
+            }
+          ],
+          "chapter": "1",
+          "source": "question",
+          "questionNumber": "1",
+          "page": 21
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "What is a light quantum labeled as?",
+      "formulas": []
+    },
+    {
+      "number": "3",
+      "text": "According to Einstein's theory, how are matter and energy related?",
+      "formulas": [
+        {
+          "originalFormula": "E = mc^2",
+          "genericFormula": "E = mc^2",
+          "description": "Esta fórmula expressa a equivalência entre massa e energia, mostrando que a energia de um objeto é igual à sua massa multiplicada pelo quadrado da velocidade da luz. Isso significa que uma pequena quantidade de massa pode ser convertida em uma grande quantidade de energia.",
+          "concepts": [
+            "Equivalência massa-energia",
+            "Teoria da relatividade",
+            "Velocidade da luz"
+          ],
+          "symbols": [
+            {
+              "symbol": "E",
+              "description": "Representa a energia total de um sistema ou objeto, medida em joules."
+            },
+            {
+              "symbol": "m",
+              "description": "Representa a massa de um objeto, medida em quilogramas."
+            },
+            {
+              "symbol": "c",
+              "description": "Representa a velocidade da luz no vácuo, que é uma constante universal, aproximadamente 299.792.458 metros por segundo."
+            }
+          ],
+          "chapter": "1",
+          "source": "question",
+          "questionNumber": "3",
+          "page": 42
+        }
+      ]
+    },
+    {
+      "number": "b",
+      "text": "Applying Postulate 1 on page 15, at x = 0, gives Ψ_{1} = Ψ_{2} and \\frac{dΨ_{1}}{dx} = \\frac{dΨ_{2}}{dx}. In order for Ψ to remain finite as x → ∞, B must equal zero. The solutions at x = 0 must match so that C sin ax + D cos ax|_{x=0} = A e^{-d_{0}|_{x=0}}.",
+      "formulas": [
+        {
+          "originalFormula": "C \\sin(ax) + D \\cos(ax) \\bigg|_{x=0} = A e^{-d_{0}} \\bigg|_{x=0}",
+          "genericFormula": "C \\sin(ax) + D \\cos(ax) \\bigg|_{x=0} = A e^{-d_{0}} \\bigg|_{x=0}",
+          "description": "Esta fórmula representa uma condição inicial ou de contorno em um problema físico, onde a combinação de funções seno e cosseno é igual a uma função exponencial em um ponto específico. Isso é comum em problemas de ondas ou oscilações, onde a posição inicial de uma onda é determinada por uma combinação de suas amplitudes e frequências.",
+          "concepts": [
+            "Oscilações",
+            "Ondas",
+            "Condições de contorno",
+            "Funções trigonométricas",
+            "Funções exponenciais"
+          ],
+          "symbols": [
+            {
+              "symbol": "C",
+              "description": "Um coeficiente que representa a amplitude da parte senoidal da função."
+            },
+            {
+              "symbol": "D",
+              "description": "Um coeficiente que representa a amplitude da parte cosenoidal da função."
+            },
+            {
+              "symbol": "a",
+              "description": "Um parâmetro que está relacionado à frequência da onda ou oscilação."
+            },
+            {
+              "symbol": "x",
+              "description": "A variável independente que representa a posição ao longo de um eixo, frequentemente o espaço."
+            },
+            {
+              "symbol": "A",
+              "description": "Um coeficiente que representa a amplitude da função exponencial."
+            },
+            {
+              "symbol": "d_{0}",
+              "description": "Um parâmetro que pode representar uma constante de decaimento ou uma distância característica associada à função exponencial."
+            }
+          ],
+          "chapter": "1",
+          "source": "question",
+          "questionNumber": "b",
+          "page": 63
+        }
+      ]
+    },
+    {
+      "number": "E1-3",
+      "text": "A tennis player serves a 75g ball at a speed of 200 km/h. If the uncertainty in the velocity of the ball is 10 cm/s, determine the uncertainty in its position.",
+      "formulas": [
+        {
+          "originalFormula": "\\Delta x = 1.4 \\times 10^{-32} \\text{ m}",
+          "genericFormula": "\\Delta x = a \\text{ m}",
+          "description": "Esta fórmula representa uma variação de posição ou deslocamento em um espaço muito pequeno, que é da ordem de 10 elevado a menos 32 metros. Isso é uma medida extremamente pequena, geralmente associada a escalas subatômicas, como a distância entre partículas elementares.",
+          "concepts": [
+            "Deslocamento",
+            "Escalas subatômicas",
+            "Medidas em física"
+          ],
+          "symbols": [
+            {
+              "symbol": "Δx",
+              "description": "Representa a variação de posição ou deslocamento em um espaço, indicando a diferença entre duas posições."
+            },
+            {
+              "symbol": "a",
+              "description": "Representa um valor genérico que pode ser substituído por qualquer número que indique uma variação de posição em metros."
+            }
+          ],
+          "chapter": "1",
+          "source": "question",
+          "questionNumber": "E1-3",
+          "page": 84
+        }
+      ]
+    },
+    {
+      "number": "E1-4",
+      "text": "Use Schrodinger’s second postulate to determine the expression for A in the solution of Schrodinger’s equation, in one dimension, for the infinitely deep potential well.",
+      "formulas": [
+        {
+          "originalFormula": "A = \\sqrt{\\frac{2}{a}}",
+          "genericFormula": "A = \\sqrt{\\frac{2}{a}}",
+          "description": "Esta fórmula representa a relação entre a área A e uma variável a, onde A é calculada a partir da raiz quadrada de uma fração. Essa fração tem o número 2 como numerador e a variável a como denominador. Essa relação pode ser utilizada em contextos onde a área está relacionada a uma quantidade que varia com a variável a.",
+          "concepts": [
+            "Área",
+            "Raiz quadrada",
+            "Relação inversa"
+          ],
+          "symbols": [
+            {
+              "symbol": "A",
+              "description": "Representa a área, que é uma medida da extensão de uma superfície em duas dimensões."
+            },
+            {
+              "symbol": "a",
+              "description": "Representa uma variável que pode estar relacionada a um parâmetro do sistema, como comprimento ou outra medida que influencia a área."
+            }
+          ],
+          "chapter": "1",
+          "source": "question",
+          "questionNumber": "E1-4",
+          "page": 104
+        }
+      ]
+    },
+    {
+      "number": "E1-5",
+      "text": "Determine the energy in eV of an electron for n = 1 in the infinitely deep well when a = 50Å.",
+      "formulas": [
+        {
+          "originalFormula": "E = 14.92 \\times 10^{-3} \\text{ eV}",
+          "genericFormula": "E = k \\times 10^{-n} \\text{ eV}",
+          "description": "Esta fórmula representa a energia de uma partícula ou de um estado quântico em elétron-volts, onde o valor específico é uma constante multiplicada por uma potência de dez.",
+          "concepts": [
+            "Energia",
+            "Elétron-volt",
+            "Estados quânticos"
+          ],
+          "symbols": [
+            {
+              "symbol": "E",
+              "description": "Representa a energia de uma partícula ou sistema em elétron-volts."
+            },
+            {
+              "symbol": "k",
+              "description": "Uma constante que representa a magnitude da energia em relação a uma potência de dez."
+            },
+            {
+              "symbol": "n",
+              "description": "Um número inteiro que indica a potência de dez pela qual a constante é multiplicada."
+            }
+          ],
+          "chapter": "1",
+          "source": "question",
+          "questionNumber": "E1-5",
+          "page": 125
+        }
+      ]
+    },
+    {
+      "number": "1.1",
+      "text": "Determine the density of GaAs given the lattice constant L = 5.65Å, and the molecular weight is 144.63/mole. Avogadro's number is 6.02 \\times 10^{23} atoms/mole.",
+      "formulas": []
+    },
+    {
+      "number": "1.2",
+      "text": "Use the Bohr model for the hydrogen atom to plot potential energy and total energy as the radius r from the proton increases. Clearly identify the magnitudes of the kinetic energy at two separate radii.",
+      "formulas": []
+    },
+    {
+      "number": "1.3",
+      "text": "Determine the velocity of an electron in the ground state of the hydrogen atom.",
+      "formulas": []
+    },
+    {
+      "number": "1.4",
+      "text": "The laws of classical physics apply to the motion of a particle provided the dimensions of the system are much larger than the deBroglie wavelength. For the following electrons, determine whether the laws of classical physics apply:",
+      "formulas": []
+    },
+    {
+      "number": "1.4a",
+      "text": "An electron is accelerated in the beam of a cathode-ray tube that has an accelerating voltage of 30KV.",
+      "formulas": []
+    },
+    {
+      "number": "1.4b",
+      "text": "An electron that is accelerated by a potential of 100V in a device whose dimensions are of the order of 2cm/s.",
+      "formulas": []
+    },
+    {
+      "number": "1.4c",
+      "text": "An electron in a hydrogen atom.",
+      "formulas": []
+    },
+    {
+      "number": "1.5",
+      "text": "Determine the energy of a photon having wavelengths \\lambda = 10,000Å and \\lambda = 10Å. Express the energy in eV and J.",
+      "formulas": []
+    },
+    {
+      "number": "1.6",
+      "text": "The antenna of an AM radio station transmitter radiates 100KW of power at 1000KHz.",
+      "formulas": []
+    },
+    {
+      "number": "1.6a",
+      "text": "Calculate the energy of each radiated photon.",
+      "formulas": []
+    },
+    {
+      "number": "1.6b",
+      "text": "Calculate the number of photons radiated per second.",
+      "formulas": []
+    },
+    {
+      "number": "1.7",
+      "text": "An oscillator is operating at a frequency of 10MHz.",
+      "formulas": []
+    },
+    {
+      "number": "1.7a",
+      "text": "Calculate the energy of the quantum of radiation of the oscillator.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "Example 1.2",
+      "text": "The density of silicon is 2.33 g/cm³.",
+      "formulas": []
+    },
+    {
+      "questionNumber": "1",
+      "text": "It is an expression of Planck's quantum hypothesis that energy is absorbed or emitted in quanta, the size of a quantum being hv.",
+      "formulas": []
+    },
+    {
+      "questionNumber": "2",
+      "text": "A light quantum is labeled a photon.",
+      "formulas": []
+    },
+    {
+      "questionNumber": "3",
+      "text": "Matter and energy are related by E = mc^2, and a photon would have a mass of hv/c^2 and momentum hv/c.",
+      "formulas": [
+        {
+          "originalFormula": "E = mc^2",
+          "genericFormula": "E = mc^2",
+          "description": "Esta fórmula expressa a relação entre a energia (E) de um objeto e sua massa (m), mostrando que a energia é igual à massa multiplicada pelo quadrado da velocidade da luz (c). Isso significa que uma pequena quantidade de massa pode ser convertida em uma grande quantidade de energia, o que é fundamental na física moderna, especialmente em reações nucleares.",
+          "concepts": [
+            "Energia",
+            "Massa",
+            "Velocidade da luz",
+            "Equivalência massa-energia"
+          ],
+          "symbols": [
+            {
+              "symbol": "E",
+              "description": "Representa a energia total de um sistema ou objeto, medida em joules."
+            },
+            {
+              "symbol": "m",
+              "description": "Representa a massa do objeto, medida em quilogramas."
+            },
+            {
+              "symbol": "c",
+              "description": "Representa a velocidade da luz no vácuo, que é uma constante universal, aproximadamente 299.792.458 metros por segundo."
+            }
+          ],
+          "chapter": "1",
+          "source": "answer",
+          "questionNumber": "3",
+          "page": 146
+        },
+        {
+          "originalFormula": "p = \\frac{h}{\\lambda}",
+          "genericFormula": "p = \\frac{h}{\\lambda}",
+          "description": "Esta fórmula relaciona a quantidade de movimento de uma partícula, como um fóton, com seu comprimento de onda. A quantidade de movimento é uma medida de quão difícil é parar um objeto em movimento, e no caso de partículas como fótons, ela é inversamente proporcional ao comprimento de onda da luz.",
+          "concepts": [
+            "quantidade de movimento",
+            "comprimento de onda",
+            "fótons",
+            "princípio da dualidade onda-partícula"
+          ],
+          "symbols": [
+            {
+              "symbol": "p",
+              "description": "representa a quantidade de movimento da partícula, que é uma medida de sua inércia em movimento."
+            },
+            {
+              "symbol": "h",
+              "description": "é a constante de Planck, uma constante fundamental na física que relaciona a energia de um fóton com a frequência da luz."
+            },
+            {
+              "symbol": "λ",
+              "description": "é o comprimento de onda da onda associada à partícula, que é a distância entre dois picos consecutivos da onda."
+            }
+          ],
+          "chapter": "1",
+          "source": "answer",
+          "questionNumber": "3",
+          "page": 167
+        }
+      ]
+    },
+    {
+      "questionNumber": "b",
+      "text": "Therefore, D = A. By matching the derivatives at x = 0, we have aC = \\frac{A}{d_{0}} and C = \\frac{A}{a_{0}}. Hence, B = 0, D = A, and C = -\\frac{A}{a_{0}}.",
+      "formulas": [
+        {
+          "originalFormula": "D = A",
+          "genericFormula": "D = A",
+          "description": "Esta fórmula representa uma igualdade entre duas grandezas, onde D é igual a A. Isso pode ser interpretado como uma relação de equivalência entre duas quantidades, indicando que elas têm o mesmo valor ou efeito em um determinado contexto.",
+          "concepts": [
+            "igualdade",
+            "equivalência",
+            "grandezas físicas"
+          ],
+          "symbols": [
+            {
+              "symbol": "D",
+              "description": "D representa uma grandeza ou quantidade que está sendo comparada ou igualada a outra."
+            },
+            {
+              "symbol": "A",
+              "description": "A representa outra grandeza ou quantidade que é igual à grandeza D."
+            }
+          ],
+          "chapter": "1",
+          "source": "answer",
+          "questionNumber": "b",
+          "page": 187
+        },
+        {
+          "originalFormula": "aC = \\frac{A}{d_{0}}",
+          "genericFormula": "aC = \\frac{A}{d}",
+          "description": "Esta fórmula representa a relação entre a capacitância de um capacitor, a área das placas do capacitor e a distância entre elas. A capacitância é uma medida de quão bem um capacitor pode armazenar carga elétrica.",
+          "concepts": [
+            "Capacitância",
+            "Área das placas do capacitor",
+            "Distância entre as placas",
+            "Armazenamento de carga elétrica"
+          ],
+          "symbols": [
+            {
+              "symbol": "aC",
+              "description": "Representa a capacitância do capacitor, que é a capacidade de armazenar carga elétrica por unidade de tensão."
+            },
+            {
+              "symbol": "A",
+              "description": "Representa a área das placas do capacitor, que influencia diretamente a quantidade de carga que pode ser armazenada."
+            },
+            {
+              "symbol": "d",
+              "description": "Representa a distância entre as placas do capacitor, que afeta a força do campo elétrico e, portanto, a capacitância."
+            }
+          ],
+          "chapter": "1",
+          "source": "answer",
+          "questionNumber": "b",
+          "page": 208
+        },
+        {
+          "originalFormula": "C = \\frac{A}{a_{0}}",
+          "genericFormula": "C = \\frac{A}{a}",
+          "description": "Esta fórmula representa a relação entre a capacitância de um capacitor, a área das placas e a distância entre elas. A capacitância é uma medida de quão bem um capacitor pode armazenar carga elétrica.",
+          "concepts": [
+            "Capacitância",
+            "Área das placas do capacitor",
+            "Distância entre as placas do capacitor"
+          ],
+          "symbols": [
+            {
+              "symbol": "C",
+              "description": "Representa a capacitância do capacitor, que indica a quantidade de carga que ele pode armazenar por unidade de tensão."
+            },
+            {
+              "symbol": "A",
+              "description": "Representa a área da superfície das placas do capacitor. Quanto maior a área, maior a capacitância."
+            },
+            {
+              "symbol": "a",
+              "description": "Representa a distância entre as placas do capacitor. Quanto menor a distância, maior a capacitância."
+            }
+          ],
+          "chapter": "1",
+          "source": "answer",
+          "questionNumber": "b",
+          "page": 229
+        },
+        {
+          "originalFormula": "B = 0, D = A, C = -\\frac{A}{a_{0}}",
+          "genericFormula": "B = 0, D = A, C = -\\frac{A}{a}",
+          "description": "Esta fórmula representa um conjunto de relações que podem estar associadas a um sistema físico, onde B é igual a zero, D é igual a A, e C é uma fração que relaciona A com uma constante a. Essa relação pode ser utilizada em contextos como equilíbrio de forças ou propriedades de materiais.",
+          "concepts": [
+            "Equilíbrio de forças",
+            "Relações proporcionais",
+            "Propriedades de materiais"
+          ],
+          "symbols": [
+            {
+              "symbol": "B",
+              "description": "Representa uma variável que é igual a zero, indicando que não há contribuição ou efeito dessa variável no sistema."
+            },
+            {
+              "symbol": "D",
+              "description": "Representa uma variável que é igual a A, sugerindo que D é diretamente proporcional ou igual a A em valor."
+            },
+            {
+              "symbol": "C",
+              "description": "Representa uma variável que é calculada como a razão entre A e uma constante a, indicando uma relação inversa entre A e a."
+            },
+            {
+              "symbol": "A",
+              "description": "Representa uma variável que pode ser uma quantidade física, como força, área ou outra medida relevante no contexto do problema."
+            },
+            {
+              "symbol": "a",
+              "description": "Representa uma constante que pode ser uma propriedade do sistema, como uma constante de proporcionalidade ou uma medida característica do material."
+            }
+          ],
+          "chapter": "1",
+          "source": "answer",
+          "questionNumber": "b",
+          "page": 250
+        }
+      ]
+    },
+    {
+      "questionNumber": "E1-3",
+      "text": "Ans: \\Delta x = 1.4 \\times 10^{-32} m",
+      "formulas": []
+    },
+    {
+      "questionNumber": "E1-4",
+      "text": "Ans: A = \\sqrt{\\frac{2}{a}}",
+      "formulas": []
+    },
+    {
+      "questionNumber": "E1-5",
+      "text": "Ans: E = 14.92 \\times 10^{-3} eV",
+      "formulas": []
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "Density = \\frac{8}{\\text{volume}} = 5 \\times 10^{22} \\text{ atoms/cm}^3",
+      "genericFormula": "Density = \\frac{C}{\\text{volume}}",
+      "description": "Esta fórmula representa a densidade de um material, que é a quantidade de átomos presentes em um determinado volume. A densidade é uma propriedade física importante que ajuda a entender como os átomos estão organizados em uma substância.",
+      "concepts": [
+        "Densidade",
+        "Volume",
+        "Quantidade de átomos",
+        "Propriedades físicas de materiais"
+      ],
+      "symbols": [
+        {
+          "symbol": "Density",
+          "description": "Representa a densidade do material, que é a quantidade de massa por unidade de volume."
+        },
+        {
+          "symbol": "C",
+          "description": "Representa uma constante que indica a quantidade total de átomos no material considerado."
+        },
+        {
+          "symbol": "volume",
+          "description": "Representa o espaço tridimensional ocupado pelo material, medido em unidades cúbicas."
+        }
+      ],
+      "chapter": "1",
+      "source": "standalone",
+      "page": 270
+    },
+    {
+      "originalFormula": "E_{n} = nhv \\quad \\text{for } n = 0,1,2,3,\\ldots",
+      "genericFormula": "E_{n} = nhv",
+      "description": "Esta fórmula representa a energia quantizada de um sistema em níveis discretos, onde cada nível de energia é determinado por um número quântico. A energia é proporcional ao número quântico multiplicado pela constante de Planck e pela frequência da radiação associada.",
+      "concepts": [
+        "quantização de energia",
+        "números quânticos",
+        "constante de Planck",
+        "frequência da radiação"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_{n}",
+          "description": "representa a energia do nível quântico n do sistema."
+        },
+        {
+          "symbol": "n",
+          "description": "é um número quântico que assume valores inteiros não negativos, indicando o nível de energia do sistema."
+        },
+        {
+          "symbol": "h",
+          "description": "é a constante de Planck, que relaciona a energia de um fóton à sua frequência."
+        },
+        {
+          "symbol": "v",
+          "description": "representa a frequência da radiação associada ao nível de energia."
+        }
+      ],
+      "chapter": "1",
+      "source": "standalone",
+      "page": 291
+    },
+    {
+      "originalFormula": "F = -\\frac{q^2}{4\\pi\\epsilon_0 r^2}",
+      "genericFormula": "F = -\\frac{q_1 q_2}{4\\pi\\epsilon_0 r^2}",
+      "description": "Esta fórmula representa a força eletrostática entre duas cargas pontuais. A força é inversamente proporcional ao quadrado da distância entre as cargas e diretamente proporcional ao produto das magnitudes das cargas. O sinal negativo indica que a força é atrativa se as cargas forem de sinais opostos e repulsiva se forem do mesmo sinal.",
+      "concepts": [
+        "Força eletrostática",
+        "Cargas elétricas",
+        "Lei de Coulomb",
+        "Campo elétrico",
+        "Distância entre cargas"
+      ],
+      "symbols": [
+        {
+          "symbol": "F",
+          "description": "Representa a força eletrostática entre as duas cargas."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a magnitude de uma das cargas elétricas."
+        },
+        {
+          "symbol": "\\pi",
+          "description": "É uma constante matemática que representa a razão entre a circunferência de um círculo e seu diâmetro, aproximadamente igual a 3,14159."
+        },
+        {
+          "symbol": "\\epsilon_0",
+          "description": "É a permissividade do vácuo, uma constante que mede a capacidade de um campo elétrico de se estabelecer no vácuo."
+        },
+        {
+          "symbol": "r",
+          "description": "Representa a distância entre as duas cargas elétricas."
+        }
+      ],
+      "chapter": "1",
+      "source": "standalone",
+      "page": 312
+    },
+    {
+      "originalFormula": "\\mathcal{E} = \\frac{q}{4\\pi\\epsilon_0 r^2}",
+      "genericFormula": "\\mathcal{E} = \\frac{q}{4\\pi\\epsilon_0 r^2}",
+      "description": "Esta fórmula representa o campo elétrico gerado por uma carga pontual em um ponto do espaço. O campo elétrico é uma medida da força que uma carga elétrica exerceria sobre uma carga de teste colocada nesse ponto.",
+      "concepts": [
+        "Campo elétrico",
+        "Cargas elétricas",
+        "Lei de Coulomb",
+        "Permissividade do vácuo",
+        "Distância entre cargas"
+      ],
+      "symbols": [
+        {
+          "symbol": "E",
+          "description": "Representa o campo elétrico, que é uma quantidade vetorial que indica a força por unidade de carga que uma carga de teste experimentaria em um ponto no espaço."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica que está gerando o campo elétrico. É uma medida da quantidade de eletricidade que a carga possui."
+        },
+        {
+          "symbol": "ε₀",
+          "description": "Representa a permissividade do vácuo, que é uma constante que descreve como um campo elétrico se comporta no vácuo. Ela influencia a força entre cargas elétricas."
+        },
+        {
+          "symbol": "r",
+          "description": "Representa a distância entre a carga que gera o campo elétrico e o ponto onde o campo está sendo medido. É uma medida linear que afeta a intensidade do campo elétrico."
+        },
+        {
+          "symbol": "π",
+          "description": "Representa a constante matemática pi, que é a razão entre a circunferência de um círculo e seu diâmetro. É uma constante que aparece em várias fórmulas da física e matemática."
+        }
+      ],
+      "chapter": "1",
+      "source": "standalone",
+      "page": 333
+    },
+    {
+      "originalFormula": "V = -\\int_{0}^{x} \\mathcal{E} \\, dx",
+      "genericFormula": "V = -\\int_{0}^{x} \\mathcal{E} \\, dx",
+      "description": "Esta fórmula representa a relação entre a diferença de potencial elétrico, V, e o campo elétrico, \\mathcal{E}, ao longo de uma distância x. Ela nos mostra como a energia potencial elétrica muda quando uma carga se move em um campo elétrico.",
+      "concepts": [
+        "Diferença de potencial elétrico",
+        "Campo elétrico",
+        "Integração em cálculo",
+        "Energia potencial elétrica"
+      ],
+      "symbols": [
+        {
+          "symbol": "V",
+          "description": "Representa a diferença de potencial elétrico entre dois pontos em um campo elétrico."
+        },
+        {
+          "symbol": "\\int",
+          "description": "Representa a operação de integração, que é uma forma de somar infinitas pequenas quantidades ao longo de um intervalo."
+        },
+        {
+          "symbol": "0",
+          "description": "Representa o limite inferior da integração, que indica o ponto inicial ao longo do qual a diferença de potencial está sendo calculada."
+        },
+        {
+          "symbol": "x",
+          "description": "Representa a posição final ao longo do qual a diferença de potencial está sendo calculada, a partir do ponto inicial."
+        },
+        {
+          "symbol": "\\mathcal{E}",
+          "description": "Representa a intensidade do campo elétrico, que é uma medida da força elétrica por unidade de carga em um ponto específico do espaço."
+        },
+        {
+          "symbol": "dx",
+          "description": "Representa um pequeno deslocamento na direção do eixo x, que é utilizado na integração para somar as contribuições do campo elétrico ao longo do caminho."
+        }
+      ],
+      "chapter": "1",
+      "source": "standalone",
+      "page": 353
+    },
+    {
+      "originalFormula": "V = \\int_{\\infty}^{r} -\\frac{q}{4\\pi\\epsilon_0 r^2} \\, dr",
+      "genericFormula": "V = \\int_{\\infty}^{r} -\\frac{q}{4\\pi\\epsilon_0 r^2} \\, dr",
+      "description": "Esta fórmula representa o potencial elétrico V gerado por uma carga pontual q em um ponto a uma distância r da carga. O potencial elétrico é uma medida da energia potencial por unidade de carga em um campo elétrico e é calculado através da integral da força elétrica ao longo da distância até a carga.",
+      "concepts": [
+        "Potencial elétrico",
+        "Cargas elétricas",
+        "Campo elétrico",
+        "Integração em cálculo"
+      ],
+      "symbols": [
+        {
+          "symbol": "V",
+          "description": "Representa o potencial elétrico em um ponto específico no espaço, medido em volts."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a carga elétrica pontual que está gerando o campo elétrico, medida em coulombs."
+        },
+        {
+          "symbol": "r",
+          "description": "Representa a distância radial do ponto onde o potencial está sendo calculado até a carga elétrica, medida em metros."
+        },
+        {
+          "symbol": "ε_0",
+          "description": "Representa a permissividade do vácuo, que é uma constante que descreve como um campo elétrico se comporta no vácuo, medida em farads por metro."
+        },
+        {
+          "symbol": "π",
+          "description": "Representa a constante matemática pi, que é a razão entre a circunferência de um círculo e seu diâmetro, aproximadamente igual a 3,14159."
+        }
+      ],
+      "chapter": "1",
+      "source": "standalone",
+      "page": 374
+    },
+    {
+      "originalFormula": "W(P.E.) = V(-q) = -\\frac{q^2}{4\\pi\\epsilon_0 r}",
+      "genericFormula": "W(P.E.) = V(-q) = -\\frac{q^2}{4\\pi\\epsilon_0 r}",
+      "description": "Esta fórmula representa a energia potencial elétrica entre duas cargas puntuais. A energia potencial elétrica é a energia armazenada devido à posição de uma carga em um campo elétrico gerado por outra carga. A fórmula mostra como essa energia depende da magnitude das cargas, da distância entre elas e da constante do meio em que as cargas estão localizadas.",
+      "concepts": [
+        "Energia potencial elétrica",
+        "Campo elétrico",
+        "Interação entre cargas elétricas",
+        "Constante dielétrica do meio"
+      ],
+      "symbols": [
+        {
+          "symbol": "W(P.E.)",
+          "description": "Representa a energia potencial elétrica entre duas cargas."
+        },
+        {
+          "symbol": "V(-q)",
+          "description": "Representa o potencial elétrico gerado por uma carga negativa."
+        },
+        {
+          "symbol": "q",
+          "description": "Representa a magnitude da carga elétrica."
+        },
+        {
+          "symbol": "\\epsilon_0",
+          "description": "Representa a permissividade do vácuo, que é uma constante que mede a capacidade de um meio para permitir a formação de um campo elétrico."
+        },
+        {
+          "symbol": "r",
+          "description": "Representa a distância entre as duas cargas pontuais."
+        },
+        {
+          "symbol": "4\\pi",
+          "description": "Um fator que aparece na fórmula devido à geometria esférica do campo elétrico gerado por uma carga pontual."
+        }
+      ],
+      "chapter": "1",
+      "source": "standalone",
+      "page": 395
+    },
+    {
+      "originalFormula": "E = \\frac{h}{v}",
+      "genericFormula": "E = \\frac{h}{v}",
+      "description": "Esta fórmula relaciona a energia de uma partícula com sua frequência. Ela nos diz que a energia é diretamente proporcional à constante de Planck e inversamente proporcional à velocidade da onda associada à partícula.",
+      "concepts": [
+        "Energia",
+        "Frequência",
+        "Constante de Planck",
+        "Ondas"
+      ],
+      "symbols": [
+        {
+          "symbol": "E",
+          "description": "Representa a energia da partícula ou onda."
+        },
+        {
+          "symbol": "h",
+          "description": "É a constante de Planck, uma constante fundamental na física que relaciona a energia de um fóton à sua frequência."
+        },
+        {
+          "symbol": "v",
+          "description": "Representa a velocidade da onda associada à partícula."
+        }
+      ],
+      "chapter": "1",
+      "source": "standalone",
+      "page": 416
+    },
+    {
+      "originalFormula": "\\lambda mv = h",
+      "genericFormula": "\\lambda mv = h",
+      "description": "Esta fórmula relaciona o comprimento de onda de uma partícula com sua quantidade de movimento e a constante de Planck. Ela é fundamental na mecânica quântica, mostrando que partículas podem exibir propriedades de ondas.",
+      "concepts": [
+        "Comprimento de onda",
+        "Quantidade de movimento",
+        "Constante de Planck",
+        "Dualidade onda-partícula"
+      ],
+      "symbols": [
+        {
+          "symbol": "λ",
+          "description": "Representa o comprimento de onda, que é a distância entre dois pontos consecutivos em uma onda, como cristas ou vales."
+        },
+        {
+          "symbol": "m",
+          "description": "Representa a massa da partícula, que é uma medida da quantidade de matéria que ela contém."
+        },
+        {
+          "symbol": "v",
+          "description": "Representa a velocidade da partícula, que é a taxa de variação da posição da partícula em relação ao tempo."
+        },
+        {
+          "symbol": "h",
+          "description": "Representa a constante de Planck, que é uma constante fundamental na física quântica, usada para descrever a quantização da energia."
+        }
+      ],
+      "chapter": "1",
+      "source": "standalone",
+      "page": 436
+    },
+    {
+      "originalFormula": "\\Psi_{1} = \\frac{A}{a_{0}} \\sin(ax) + A \\cos(ax)",
+      "genericFormula": "\\Psi_{1} = \\frac{A}{a_{0}} \\sin(ax) + A \\cos(ax)",
+      "description": "Esta fórmula representa uma função de onda, que é uma solução para a equação de Schrödinger em sistemas quânticos. A função de onda descreve o comportamento de partículas em um espaço quântico e é fundamental para entender a mecânica quântica.",
+      "concepts": [
+        "Função de onda",
+        "Mecânica quântica",
+        "Equação de Schrödinger",
+        "Oscilações",
+        "Física de partículas"
+      ],
+      "symbols": [
+        {
+          "symbol": "Ψ_{1}",
+          "description": "Representa a função de onda do sistema, que contém informações sobre a probabilidade de encontrar uma partícula em uma determinada posição."
+        },
+        {
+          "symbol": "A",
+          "description": "É uma constante que representa a amplitude da onda, indicando a intensidade da função de onda."
+        },
+        {
+          "symbol": "a_{0}",
+          "description": "É uma constante que pode representar um parâmetro de escala, como a distância de referência em um sistema físico."
+        },
+        {
+          "symbol": "a",
+          "description": "É um coeficiente que está relacionado à frequência da onda, indicando como a função de onda oscila em relação à posição."
+        },
+        {
+          "symbol": "x",
+          "description": "Representa a posição ao longo do espaço onde a função de onda é avaliada."
+        }
+      ],
+      "chapter": "1",
+      "source": "standalone",
+      "page": 457
+    },
+    {
+      "originalFormula": "\\Psi_{2} = A e^{-x/d_{0}}",
+      "genericFormula": "\\Psi_{2} = A e^{-x/d}",
+      "description": "Esta fórmula representa uma função exponencial que descreve como uma quantidade, denotada por Psi, varia em relação à posição x. A função é frequentemente utilizada em contextos como a decaimento de uma onda ou a distribuição de uma propriedade em um material, onde a quantidade diminui exponencialmente à medida que a posição se afasta de um ponto de referência.",
+      "concepts": [
+        "Função exponencial",
+        "Decaimento exponencial",
+        "Distribuição de propriedades em materiais"
+      ],
+      "symbols": [
+        {
+          "symbol": "Ψ_{2}",
+          "description": "Representa a quantidade ou propriedade que está sendo medida ou analisada, como uma função da posição."
+        },
+        {
+          "symbol": "A",
+          "description": "É uma constante que representa a amplitude ou o valor inicial da função no ponto de referência."
+        },
+        {
+          "symbol": "e",
+          "description": "É a base do logaritmo natural, aproximadamente igual a 2.71828, que é uma constante matemática fundamental em cálculos envolvendo crescimento e decaimento exponencial."
+        },
+        {
+          "symbol": "x",
+          "description": "Representa a posição ou a variável independente na qual a função está sendo avaliada."
+        },
+        {
+          "symbol": "d_{0}",
+          "description": "É uma constante que define a taxa de decaimento da função, indicando a distância na qual a quantidade Ψ diminui significativamente."
+        }
+      ],
+      "chapter": "1",
+      "source": "standalone",
+      "page": 478
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498
+  ],
+  "lastUpdated": "2026-05-08T18:19:13.890202",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
+}

@@ -1,0 +1,955 @@
+{
+  "chapter": "6 Fabrication Technology",
+  "questions": [
+    {
+      "number": "Example 6.2",
+      "text": "Determine the thickness of silicon that is consumed when a silicon dioxide layer of thickness x_0 is grown on the surface by thermal oxidation.",
+      "formulas": [
+        {
+          "originalFormula": "V_{SiO_2} = \\frac{60.08 \\, g/mole}{2.21 \\, g/cm^3} = 27.23 \\, cm^3",
+          "genericFormula": "V_{SiO_2} = \\frac{M}{D}",
+          "description": "Esta fórmula representa o volume molar de um material, neste caso, o dióxido de silício (SiO2). O volume molar é o volume ocupado por um mol de uma substância e é calculado dividindo-se a massa molar da substância pela sua densidade.",
+          "concepts": [
+            "volume molar",
+            "massa molar",
+            "densidade"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{SiO_2}",
+              "description": "Representa o volume molar do dióxido de silício, que é o volume ocupado por um mol dessa substância."
+            },
+            {
+              "symbol": "M",
+              "description": "Representa a massa molar da substância, que é a quantidade de massa de um mol de átomos ou moléculas, geralmente expressa em gramas por mol."
+            },
+            {
+              "symbol": "D",
+              "description": "Representa a densidade da substância, que é a relação entre a massa e o volume, expressa em gramas por centímetro cúbico."
+            }
+          ],
+          "chapter": "6 Fabrication Technology",
+          "source": "question",
+          "questionNumber": "Example 6.2",
+          "page": 1
+        },
+        {
+          "originalFormula": "V_{Si} = \\frac{28.09 \\, g/mole}{2.33 \\, g/cm^3} = 12.055 \\, cm^3",
+          "genericFormula": "V_{Si} = \\frac{M}{\\rho}",
+          "description": "Esta fórmula representa o volume molar de um material, que é o volume ocupado por um mol desse material. No caso, estamos considerando o silício, e a fórmula nos permite calcular quanto espaço ele ocupa em relação à sua massa molar e densidade.",
+          "concepts": [
+            "Volume molar",
+            "Massa molar",
+            "Densidade"
+          ],
+          "symbols": [
+            {
+              "symbol": "V_{Si}",
+              "description": "Representa o volume molar do silício, que é o volume ocupado por um mol de silício."
+            },
+            {
+              "symbol": "M",
+              "description": "Representa a massa molar do material, que é a quantidade de massa de um mol desse material, geralmente expressa em gramas por mol."
+            },
+            {
+              "symbol": "\\rho",
+              "description": "Representa a densidade do material, que é a massa por unidade de volume, geralmente expressa em gramas por centímetro cúbico."
+            }
+          ],
+          "chapter": "6 Fabrication Technology",
+          "source": "question",
+          "questionNumber": "Example 6.2",
+          "page": 36
+        }
+      ]
+    },
+    {
+      "number": "6.1",
+      "text": "A silicon crystal is to be grown by the Czochralski process and is to have in the melt an arsenic concentration of 5 × 10^{15} atoms/cm^{3}. The segregation coefficient of arsenic in silicon is 0.3. Determine the initial arsenic concentration in the crystal.",
+      "formulas": []
+    },
+    {
+      "number": "6.2",
+      "text": "A silicon crystal is to be grown by the Czochralski process and is to contain 5 × 10^{15} boron atoms/cm^{3}. Given k_{o} for boron is 0.8:",
+      "formulas": [],
+      "subquestions": [
+        {
+          "letter": "a",
+          "text": "Determine the initial concentration of boron atoms in the melt to produce the required density.",
+          "formulas": []
+        },
+        {
+          "letter": "b",
+          "text": "If the initial amount of silicon in the crucible is 50kg, how many grams of boron should be added?",
+          "formulas": []
+        }
+      ]
+    },
+    {
+      "number": "6.3",
+      "text": "A crystal of silicon is to be grown using the Czochralski process. The melt contains 10kg of silicon to which is added 1mg of phosphorus. Given k_{o} (phosphorus) = 0.35, atomic weight of silicon = 28.09, atomic weight of phosphorus = 30.97, and density of phosphorus = 0.35g/cm^{3}, determine the initial dopant concentration in the solid at the beginning of the growth if the atomic density of silicon is 5 × 10^{22} cm^{-3}.",
+      "formulas": []
+    },
+    {
+      "number": "6.4",
+      "text": "In the diffusion process, Q is defined as the total number of atoms per unit area of the semiconductor.",
+      "formulas": [
+        {
+          "originalFormula": "Q(t) = \\int_{0}^{\\infty} C(x,t)dx",
+          "genericFormula": "Q(t) = \\int_{0}^{\\infty} C(x,t)dx",
+          "description": "Esta fórmula representa a quantidade total de carga elétrica acumulada em um determinado tempo t, que é obtida através da integração da densidade de carga C ao longo de uma dimensão x, desde zero até o infinito.",
+          "concepts": [
+            "Integração",
+            "Densidade de carga elétrica",
+            "Carga elétrica",
+            "Tempo"
+          ],
+          "symbols": [
+            {
+              "symbol": "Q(t)",
+              "description": "Representa a quantidade total de carga elétrica acumulada no tempo t."
+            },
+            {
+              "symbol": "C(x,t)",
+              "description": "Denota a densidade de carga elétrica em uma posição x e em um tempo t."
+            },
+            {
+              "symbol": "x",
+              "description": "Representa a posição ao longo da dimensão em que a densidade de carga está sendo considerada."
+            },
+            {
+              "symbol": "t",
+              "description": "Representa o tempo em que a carga está sendo acumulada."
+            }
+          ],
+          "chapter": "6 Fabrication Technology",
+          "source": "question",
+          "questionNumber": "6.4",
+          "page": 72
+        },
+        {
+          "originalFormula": "C(x,t) = C_{s} \\text{erfc} \\left[ \\frac{x}{(2VDt)} \\right]",
+          "genericFormula": "C(x,t) = C_{s} \\text{erfc} \\left[ \\frac{x}{(2VDt)} \\right]",
+          "description": "Esta fórmula representa a concentração de uma substância em um determinado ponto e tempo, considerando a difusão da substância em um meio. A função erfc, que é a função complementar do erro, é utilizada para descrever como a concentração se distribui ao longo do espaço em função do tempo.",
+          "concepts": [
+            "Difusão",
+            "Concentração",
+            "Função complementar do erro",
+            "Transporte de massa"
+          ],
+          "symbols": [
+            {
+              "symbol": "C(x,t)",
+              "description": "Representa a concentração da substância em um ponto específico x e em um tempo específico t."
+            },
+            {
+              "symbol": "C_{s}",
+              "description": "Representa a concentração da substância em estado estacionário, ou seja, a concentração máxima que pode ser alcançada quando o sistema atinge um equilíbrio."
+            },
+            {
+              "symbol": "erfc",
+              "description": "É a função complementar do erro, que descreve a probabilidade de um valor aleatório em uma distribuição normal estar acima de um certo limite. No contexto da difusão, ela ajuda a modelar como a concentração se espalha ao longo do tempo."
+            },
+            {
+              "symbol": "x",
+              "description": "Representa a posição no espaço onde estamos medindo a concentração da substância."
+            },
+            {
+              "symbol": "t",
+              "description": "Representa o tempo em que estamos medindo a concentração da substância."
+            },
+            {
+              "symbol": "V",
+              "description": "Representa a velocidade de difusão da substância no meio, que é uma medida de quão rapidamente a substância se espalha."
+            },
+            {
+              "symbol": "D",
+              "description": "Representa o coeficiente de difusão, que é uma constante que quantifica a taxa de difusão da substância em um meio específico."
+            }
+          ],
+          "chapter": "6 Fabrication Technology",
+          "source": "question",
+          "questionNumber": "6.4",
+          "page": 107
+        }
+      ]
+    },
+    {
+      "number": "6.5",
+      "text": "A certain process requires a boron predeposition diffusion step into an N-type wafer. The wafer has been uniformly doped, prior to this step, by 1 × 10^{15} phosphorus atoms/cm^{3}. The predeposition step is carried out at 1000°C for 30 minutes. The diffusion coefficient, D_{o}, of boron in silicon at 1000°C is 1.78 × 10^{-14} cm^{2}/s and the solid solubility of both boron and phosphorus in silicon is assumed to be 3 × 10^{20} cm^{-3} at the relevant temperature. Determine:",
+      "formulas": [],
+      "subquestions": [
+        {
+          "letter": "a",
+          "text": "The diffusion length for this step.",
+          "formulas": []
+        }
+      ]
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "Example 6.2",
+      "text": "Since 1 mole of SiO_2 uses up 1 mole of silicon over the same area, we have the relationship between the thickness of silicon consumed and the thickness of SiO_2.",
+      "formulas": [
+        {
+          "originalFormula": "x_{o} \\text{ consumes } 0.44 x_{0} \\text{ of the silicon.}",
+          "genericFormula": "x_{o} \\text{ consumes } k \\cdot x_{0} \\text{ of the silicon.}",
+          "description": "Esta fórmula representa a quantidade de silício consumido por um determinado processo ou elemento, onde uma fração específica do total de silício disponível é utilizada.",
+          "concepts": [
+            "Consumo de material",
+            "Silício como material semicondutor",
+            "Relação entre quantidades em processos físicos"
+          ],
+          "symbols": [
+            {
+              "symbol": "x_{o}",
+              "description": "Representa a quantidade de silício que está sendo consumida ou utilizada em um determinado processo."
+            },
+            {
+              "symbol": "x_{0}",
+              "description": "Representa a quantidade total de silício disponível antes do consumo."
+            },
+            {
+              "symbol": "k",
+              "description": "Representa a fração do total de silício que é consumida, que neste caso é 0.44, indicando que 44% do total é utilizado."
+            }
+          ],
+          "chapter": "6 Fabrication Technology",
+          "source": "answer",
+          "questionNumber": "Example 6.2",
+          "page": 143
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "n_i = 2.5 \\times 10^{13} \\text{cm}^{-3} \\text{ at } T = 300K",
+      "genericFormula": "n_i = C \\text{cm}^{-3} \\text{ at } T = T_0",
+      "description": "Esta fórmula representa a concentração de portadores intrínsecos em um semicondutor a uma temperatura específica. O valor de n_i indica quantas partículas portadoras de carga (elétrons ou lacunas) existem por centímetro cúbico no material.",
+      "concepts": [
+        "Concentração de portadores intrínsecos",
+        "Semicondutores",
+        "Temperatura",
+        "Equilíbrio térmico"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_i",
+          "description": "Representa a concentração de portadores intrínsecos, que são elétrons e lacunas gerados espontaneamente em um semicondutor."
+        },
+        {
+          "symbol": "C",
+          "description": "Um valor constante que representa a concentração de portadores intrínsecos em um semicondutor em condições específicas."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura em Kelvin, que influencia a geração de portadores em um semicondutor."
+        },
+        {
+          "symbol": "T_0",
+          "description": "Uma temperatura de referência, que neste caso é 300 Kelvin, onde a concentração de portadores é medida."
+        }
+      ],
+      "chapter": "6 Fabrication Technology",
+      "source": "standalone",
+      "page": 178
+    },
+    {
+      "originalFormula": "n_i = 10^{15} \\, \\text{cm}^{-3} \\, \\text{ at } T = 400K",
+      "genericFormula": "n_i = N \\, \\text{cm}^{-3} \\, \\text{ at } T = T_{0}",
+      "description": "Esta fórmula representa a concentração de portadores intrínsecos em um semicondutor a uma temperatura específica. O valor indica quantas partículas carregadas estão presentes em um centímetro cúbico do material.",
+      "concepts": [
+        "Concentração de portadores intrínsecos",
+        "Semicondutores",
+        "Temperatura e seu efeito nas propriedades dos materiais"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_i",
+          "description": "Representa a concentração de portadores intrínsecos, ou seja, a quantidade de elétrons e lacunas gerados espontaneamente em um semicondutor puro."
+        },
+        {
+          "symbol": "N",
+          "description": "Representa um valor genérico que indica a concentração de portadores intrínsecos em um semicondutor, que varia de acordo com a temperatura e o material."
+        },
+        {
+          "symbol": "cm^{-3}",
+          "description": "Indica a unidade de medida da concentração, que é o número de partículas por centímetro cúbico."
+        },
+        {
+          "symbol": "T",
+          "description": "Representa a temperatura em Kelvin, que é uma medida da energia térmica do sistema e afeta a geração de portadores em semicondutores."
+        },
+        {
+          "symbol": "T_{0}",
+          "description": "Representa uma temperatura específica em Kelvin, que é utilizada para determinar a concentração de portadores intrínsecos."
+        }
+      ],
+      "chapter": "6 Fabrication Technology",
+      "source": "standalone",
+      "page": 214
+    },
+    {
+      "originalFormula": "E_g = 1.12 \\text{ eV} \\text{ for silicon}",
+      "genericFormula": "E_g = E_g^{gen}",
+      "description": "Esta fórmula representa a energia de bandgap de um material semicondutor, especificamente o silício, que é a energia mínima necessária para mover um elétron da banda de valência para a banda de condução.",
+      "concepts": [
+        "Energia de bandgap",
+        "Semicondutores",
+        "Banda de valência",
+        "Banda de condução"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_g",
+          "description": "Representa a energia de bandgap, que é a diferença de energia entre a banda de valência e a banda de condução em um material semicondutor."
+        }
+      ],
+      "chapter": "6 Fabrication Technology",
+      "source": "standalone",
+      "page": 250
+    },
+    {
+      "originalFormula": "E_g = 0.66 \\text{ eV for germanium}",
+      "genericFormula": "E_g = E_g^{genérico}",
+      "description": "Esta fórmula representa a energia de bandgap de um material semicondutor, especificamente o germânio. A energia de bandgap é a quantidade mínima de energia necessária para mover um elétron da banda de valência para a banda de condução, permitindo assim que o material conduza eletricidade.",
+      "concepts": [
+        "Energia de bandgap",
+        "Semicondutores",
+        "Condução elétrica",
+        "Banda de valência",
+        "Banda de condução"
+      ],
+      "symbols": [
+        {
+          "symbol": "E_g",
+          "description": "Representa a energia de bandgap do material, que é a diferença de energia entre a banda de valência e a banda de condução."
+        }
+      ],
+      "chapter": "6 Fabrication Technology",
+      "source": "standalone",
+      "page": 285
+    },
+    {
+      "originalFormula": "T_{melt} = 1690 \\, K",
+      "genericFormula": "T_{melt} = 1690 \\, K",
+      "description": "Não foi possível gerar descrição automática",
+      "concepts": [],
+      "symbols": [],
+      "rawText": "{\n  \"originalFormula\": \"T_{melt} = 1690 \\, K\",\n  \"genericFormula\": \"T_{melt} = T\",\n  \"description\": \"Esta fórmula representa a temperatura de fusão de um material, que é a temperatura na qual ele passa do estado sólido para o estado líquido.\",\n  \"concepts\": [\"temperatura de fusão\", \"mudança de estado\", \"propriedades térmicas dos materiais\"],\n  \"symbols\": [\n    {\n      \"symbol\": \"T_{melt}\",\n      \"description\": \"Representa a temperatura de fusão, que é a temperatura específica em que um material sólido se transforma em líquido.\"\n    },\n    {\n      \"symbol\": \"T\",\n      \"description\": \"Representa uma temperatura genérica, que pode ser usada para indicar qualquer temperatura em um contexto físico.\"\n    }\n  ]\n}",
+      "chapter": "6 Fabrication Technology",
+      "source": "standalone",
+      "page": 321
+    },
+    {
+      "originalFormula": "T_{melting} = 1685 \\, K",
+      "genericFormula": "T_{melting} = 1685 \\, K",
+      "description": "Não foi possível gerar descrição automática",
+      "concepts": [],
+      "symbols": [],
+      "rawText": "{\n  \"originalFormula\": \"T_{melting} = 1685 \\, K\",\n  \"genericFormula\": \"T_{melting} = T\",\n  \"description\": \"Esta fórmula representa a temperatura de fusão de um material, que é a temperatura na qual ele passa do estado sólido para o estado líquido.\",\n  \"concepts\": [\"temperatura de fusão\", \"mudança de estado\", \"propriedades térmicas dos materiais\"],\n  \"symbols\": [\n    {\n      \"symbol\": \"T_{melting}\",\n      \"description\": \"Representa a temperatura de fusão, que é a temperatura específica em que um material sólido se transforma em líquido.\"\n    },\n    {\n      \"symbol\": \"K\",\n      \"description\": \"Representa a unidade Kelvin, que é uma escala de temperatura utilizada na física e na engenharia, onde zero Kelvin é o ponto de referência absoluto.\"\n    }\n  ]\n}",
+      "chapter": "6 Fabrication Technology",
+      "source": "standalone",
+      "page": 356
+    },
+    {
+      "originalFormula": "SiH_{4} \\rightarrow Si + 2H_{2}",
+      "genericFormula": "A \\rightarrow B + C",
+      "description": "Esta fórmula representa uma reação química onde o silano (SiH4) se decompõe em silício (Si) e hidrogênio (H2). É um exemplo de uma reação de decomposição, onde uma substância se quebra em duas ou mais substâncias mais simples.",
+      "concepts": [
+        "reação química",
+        "decomposição",
+        "substâncias químicas",
+        "equilíbrio químico"
+      ],
+      "symbols": [
+        {
+          "symbol": "SiH_{4}",
+          "description": "Representa o silano, um composto químico que contém um átomo de silício e quatro átomos de hidrogênio."
+        },
+        {
+          "symbol": "Si",
+          "description": "Representa o silício, um elemento químico que é um semicondutor amplamente utilizado na indústria eletrônica."
+        },
+        {
+          "symbol": "H_{2}",
+          "description": "Representa o hidrogênio molecular, que é uma molécula composta por dois átomos de hidrogênio."
+        }
+      ],
+      "chapter": "6 Fabrication Technology",
+      "source": "standalone",
+      "page": 392
+    },
+    {
+      "originalFormula": "SiC_{4} + H_{2} \\rightarrow Si + 4HC_{l}",
+      "genericFormula": "A + B \\rightarrow C + D",
+      "description": "Esta fórmula representa uma reação química onde o carbeto de silício (SiC4) reage com hidrogênio (H2) para formar silício (Si) e ácido clorídrico (HCl). Essa reação é um exemplo de como compostos químicos podem ser transformados em outros compostos através de interações químicas.",
+      "concepts": [
+        "Reação química",
+        "Transformação de compostos",
+        "Equilíbrio químico"
+      ],
+      "symbols": [
+        {
+          "symbol": "SiC_{4}",
+          "description": "Representa o carbeto de silício, um composto químico que contém silício e carbono."
+        },
+        {
+          "symbol": "H_{2}",
+          "description": "Representa o hidrogênio molecular, uma forma diatômica do elemento hidrogênio."
+        },
+        {
+          "symbol": "Si",
+          "description": "Representa o silício, um elemento químico que é um semicondutor amplamente utilizado na eletrônica."
+        },
+        {
+          "symbol": "HCl",
+          "description": "Representa o ácido clorídrico, uma solução aquosa de cloreto de hidrogênio, que é um ácido forte."
+        },
+        {
+          "symbol": "4",
+          "description": "Um coeficiente que indica que quatro moléculas de ácido clorídrico são produzidas na reação."
+        }
+      ],
+      "chapter": "6 Fabrication Technology",
+      "source": "standalone",
+      "page": 427
+    },
+    {
+      "originalFormula": "R = \\frac{L}{\\sigma A}",
+      "genericFormula": "R = \\frac{L}{\\sigma A}",
+      "description": "Esta fórmula representa a resistência elétrica de um material condutor, onde a resistência é diretamente proporcional ao comprimento do condutor e inversamente proporcional à área da seção transversal e à condutividade do material.",
+      "concepts": [
+        "Resistência elétrica",
+        "Condutividade",
+        "Geometria do condutor"
+      ],
+      "symbols": [
+        {
+          "symbol": "R",
+          "description": "Representa a resistência elétrica do material, que é uma medida de quão difícil é para a corrente elétrica passar através dele."
+        },
+        {
+          "symbol": "L",
+          "description": "Representa o comprimento do condutor, que é a distância que a corrente elétrica deve percorrer através do material."
+        },
+        {
+          "symbol": "σ",
+          "description": "Representa a condutividade elétrica do material, que é uma medida de quão bem o material conduz eletricidade. Materiais com alta condutividade permitem que a corrente passe mais facilmente."
+        },
+        {
+          "symbol": "A",
+          "description": "Representa a área da seção transversal do condutor, que é a área através da qual a corrente elétrica flui. Uma área maior permite que mais corrente passe."
+        }
+      ],
+      "chapter": "6 Fabrication Technology",
+      "source": "standalone",
+      "page": 463
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498
+  ],
+  "lastUpdated": "2026-05-08T18:19:13.612556",
+  "bookTitle": "Semiconductor Devices",
+  "author": "Kanaan Kano"
+}

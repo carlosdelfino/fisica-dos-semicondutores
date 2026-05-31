@@ -1,0 +1,492 @@
+{
+  "chapter": "6.1 Carrier Generation and Recombination",
+  "section": "6.1.1 The Semiconductor in Equilibrium",
+  "questions": [
+    {
+      "number": "1",
+      "text": "Apply the ambipolar transport equation to various situations to determine the time behavior and spatial behavior of excess carriers.",
+      "formulas": []
+    },
+    {
+      "number": "2",
+      "text": "Define the quasi-Fermi energy level.",
+      "formulas": []
+    },
+    {
+      "number": "3",
+      "text": "Analyze the effect of defects in a semiconductor on the excess carrier lifetime.",
+      "formulas": []
+    },
+    {
+      "number": "4",
+      "text": "Analyze the effect of defects at a semiconductor surface on the excess carrier concentration.",
+      "formulas": []
+    },
+    {
+      "number": "Objective",
+      "text": "Determine the behavior of excess carriers as a function of time.",
+      "formulas": []
+    }
+  ],
+  "answers": [
+    {
+      "questionNumber": "Objective",
+      "text": "Assume that excess carriers have been generated uniformly in a semiconductor to a concentration of \\delta n(0) = 10^{15} \\, \\text{cm}^{-3}. The forcing function generating the excess carriers turns off at time t = 0. Assuming the excess carrier lifetime is \\tau_0 = 10^{-6} \\, \\text{s}, determine \\delta n(t) for t > 0.",
+      "formulas": [
+        {
+          "originalFormula": "\\delta n(t) = \\delta n(0)e^{-t/\\tau_0} = 10^{15} e^{-t/10^{-6}} \\, \\text{cm}^{-3}",
+          "genericFormula": "\\delta n(t) = \\delta n(0)e^{-t/\\tau_0}",
+          "description": "Esta fórmula descreve como a densidade de portadores de carga em um semicondutor diminui ao longo do tempo após uma perturbação inicial. A quantidade de portadores, representada por \\delta n, decai exponencialmente com o tempo, onde \\delta n(0) é a densidade inicial de portadores e \\tau_0 é a constante de tempo que caracteriza a taxa de decaimento.",
+          "concepts": [
+            "Decaimento exponencial",
+            "Densidade de portadores de carga",
+            "Semicondutores",
+            "Constante de tempo"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\delta n(t)",
+              "description": "Representa a densidade de portadores de carga no semicondutor em um tempo t após a perturbação."
+            },
+            {
+              "symbol": "\\delta n(0)",
+              "description": "Representa a densidade inicial de portadores de carga no semicondutor antes de qualquer decaimento."
+            },
+            {
+              "symbol": "e",
+              "description": "É a base do logaritmo natural, um número irracional que é aproximadamente igual a 2,71828, usado em funções exponenciais."
+            },
+            {
+              "symbol": "-t/\\tau_0",
+              "description": "Representa a razão entre o tempo t e a constante de tempo \\tau_0, que determina a taxa de decaimento da densidade de portadores."
+            },
+            {
+              "symbol": "\\tau_0",
+              "description": "É a constante de tempo que caracteriza a rapidez com que a densidade de portadores de carga diminui após a perturbação."
+            }
+          ],
+          "chapter": "6.1 Carrier Generation and Recombination",
+          "section": "6.1.1 The Semiconductor in Equilibrium",
+          "source": "answer",
+          "questionNumber": "Objective",
+          "page": 1
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [
+    {
+      "originalFormula": "n = n_0 + \\delta n",
+      "genericFormula": "n = n_0 + \\delta n",
+      "description": "Esta fórmula representa a densidade de portadores de carga em um semicondutor, onde a densidade total é a soma da densidade inicial de portadores e uma variação na densidade de portadores.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Semicondutores",
+        "Variação na densidade de portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "n",
+          "description": "Representa a densidade total de portadores de carga no semicondutor."
+        },
+        {
+          "symbol": "n_0",
+          "description": "Representa a densidade inicial de portadores de carga antes de qualquer variação."
+        },
+        {
+          "symbol": "\\delta n",
+          "description": "Representa a variação na densidade de portadores de carga, que pode ser causada por fatores como dopagem ou mudanças nas condições ambientais."
+        }
+      ],
+      "chapter": "6.1 Carrier Generation and Recombination",
+      "section": "6.1.1 The Semiconductor in Equilibrium",
+      "source": "standalone",
+      "page": 32
+    },
+    {
+      "originalFormula": "p = p_0 + \\delta p",
+      "genericFormula": "p = p_0 + \\delta p",
+      "description": "Esta fórmula representa a pressão total em um sistema, onde a pressão total é a soma da pressão inicial e uma variação de pressão. É usada para entender como a pressão em um sistema pode mudar devido a diferentes fatores.",
+      "concepts": [
+        "Pressão",
+        "Variação de pressão",
+        "Equilíbrio de forças"
+      ],
+      "symbols": [
+        {
+          "symbol": "p",
+          "description": "Representa a pressão total no sistema."
+        },
+        {
+          "symbol": "p_0",
+          "description": "Representa a pressão inicial do sistema antes de qualquer variação."
+        },
+        {
+          "symbol": "\\delta p",
+          "description": "Representa a variação na pressão, que pode ser positiva ou negativa, indicando um aumento ou diminuição da pressão."
+        }
+      ],
+      "chapter": "6.1 Carrier Generation and Recombination",
+      "section": "6.1.1 The Semiconductor in Equilibrium",
+      "source": "standalone",
+      "page": 64
+    },
+    {
+      "originalFormula": "n_p \\neq n_{i}^{2}",
+      "genericFormula": "n_p \\neq n_{i}^{2}",
+      "description": "Esta fórmula representa uma condição que relaciona a densidade de portadores de carga em um semicondutor tipo p (n_p) com a densidade intrínseca de portadores de carga (n_i) ao quadrado. A desigualdade indica que a densidade de portadores de carga do semicondutor tipo p não é igual ao quadrado da densidade intrínseca, o que é uma condição importante para a análise de semicondutores.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Semicondutores",
+        "Semicondutores tipo p",
+        "Densidade intrínseca"
+      ],
+      "symbols": [
+        {
+          "symbol": "n_p",
+          "description": "Representa a densidade de portadores de carga do semicondutor tipo p, que é a quantidade de lacunas disponíveis para condução elétrica."
+        },
+        {
+          "symbol": "n_i",
+          "description": "Representa a densidade intrínseca de portadores de carga em um semicondutor puro, que é a quantidade de elétrons e lacunas presentes em equilíbrio térmico."
+        }
+      ],
+      "chapter": "6.1 Carrier Generation and Recombination",
+      "section": "6.1.1 The Semiconductor in Equilibrium",
+      "source": "standalone",
+      "page": 96
+    },
+    {
+      "originalFormula": "R_n = -\\frac{d\\delta n(t)}{dt} = \\alpha_p \\beta_p \\delta n(t) = \\frac{\\delta n(t)}{\\tau_0}",
+      "genericFormula": "R_n = -\\frac{d\\delta n(t)}{dt} = \\alpha_p \\beta_p \\delta n(t) = \\frac{\\delta n(t)}{\\tau}",
+      "description": "Esta fórmula representa a taxa de variação da densidade de portadores de carga em um semicondutor, onde R_n é a taxa de recombinação, que pode ser expressa de diferentes maneiras. A primeira parte mostra que a taxa de variação da densidade de portadores é igual a menos a derivada da densidade de portadores em relação ao tempo. A segunda parte relaciona essa taxa à densidade de portadores e a um produto de coeficientes, enquanto a terceira parte expressa a densidade de portadores em função de um tempo característico de vida dos portadores.",
+      "concepts": [
+        "Recombinação de portadores de carga",
+        "Densidade de portadores",
+        "Taxa de variação",
+        "Tempo de vida dos portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "R_n",
+          "description": "Representa a taxa de recombinação de portadores de carga no semicondutor."
+        },
+        {
+          "symbol": "d\\delta n(t)/dt",
+          "description": "Representa a taxa de variação da densidade de portadores de carga em relação ao tempo."
+        },
+        {
+          "symbol": "\\alpha_p",
+          "description": "Representa um coeficiente que está relacionado à eficiência da recombinação dos portadores de carga do tipo positivo."
+        },
+        {
+          "symbol": "\\beta_p",
+          "description": "Representa um coeficiente que está relacionado à eficiência da recombinação dos portadores de carga do tipo positivo em um processo específico."
+        },
+        {
+          "symbol": "\\delta n(t)",
+          "description": "Representa a densidade de portadores de carga em um dado instante de tempo."
+        },
+        {
+          "symbol": "\\tau_0",
+          "description": "Representa o tempo característico de vida dos portadores de carga antes de se recombinarem."
+        }
+      ],
+      "chapter": "6.1 Carrier Generation and Recombination",
+      "section": "6.1.1 The Semiconductor in Equilibrium",
+      "source": "standalone",
+      "page": 127
+    },
+    {
+      "originalFormula": "R_p = R_n = \\frac{\\delta n(t)}{\\tau_0}",
+      "genericFormula": "R_p = R_n = \\frac{\\delta n}{\\tau_0}",
+      "description": "Esta fórmula representa a relação entre a variação da densidade de portadores de carga em um semicondutor e o tempo de vida dos portadores. Aqui, R_p e R_n são as taxas de recombinação de portadores positivos e negativos, respectivamente, e dependem da variação da densidade de portadores ao longo do tempo e do tempo de vida dos portadores.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Recombinação de portadores",
+        "Tempo de vida dos portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "R_p",
+          "description": "Representa a taxa de recombinação de portadores positivos em um semicondutor."
+        },
+        {
+          "symbol": "R_n",
+          "description": "Representa a taxa de recombinação de portadores negativos em um semicondutor."
+        },
+        {
+          "symbol": "\\delta n(t)",
+          "description": "Representa a variação da densidade de portadores de carga ao longo do tempo."
+        },
+        {
+          "symbol": "\\tau_0",
+          "description": "Representa o tempo de vida médio dos portadores de carga no semicondutor, que indica quanto tempo, em média, um portador permanece livre antes de recombinar."
+        }
+      ],
+      "chapter": "6.1 Carrier Generation and Recombination",
+      "section": "6.1.1 The Semiconductor in Equilibrium",
+      "source": "standalone",
+      "page": 159
+    },
+    {
+      "originalFormula": "R_n = R_p = \\frac{\\delta n(t)}{\\tau_0}",
+      "genericFormula": "R_n = R_p = \\frac{\\delta n(t)}{\\tau_0}",
+      "description": "Esta fórmula representa a relação entre a densidade de portadores de carga em um semicondutor e o tempo de recombinação desses portadores. Aqui, R_n e R_p são as taxas de recombinação para portadores negativos e positivos, respectivamente, enquanto \\delta n(t) é a variação na densidade de portadores ao longo do tempo e \\tau_0 é o tempo médio de vida dos portadores.",
+      "concepts": [
+        "Densidade de portadores de carga",
+        "Recombinação de portadores",
+        "Tempo de vida dos portadores"
+      ],
+      "symbols": [
+        {
+          "symbol": "R_n",
+          "description": "Representa a taxa de recombinação dos portadores negativos em um semicondutor."
+        },
+        {
+          "symbol": "R_p",
+          "description": "Representa a taxa de recombinação dos portadores positivos em um semicondutor."
+        },
+        {
+          "symbol": "\\delta n(t)",
+          "description": "Representa a variação na densidade de portadores de carga ao longo do tempo, indicando quantos portadores estão disponíveis para recombinar."
+        },
+        {
+          "symbol": "\\tau_0",
+          "description": "Representa o tempo médio de vida dos portadores de carga, ou seja, o tempo médio que um portador permanece livre antes de recombinar."
+        }
+      ],
+      "chapter": "6.1 Carrier Generation and Recombination",
+      "section": "6.1.1 The Semiconductor in Equilibrium",
+      "source": "standalone",
+      "page": 191
+    }
+  ],
+  "processedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222
+  ],
+  "lastUpdated": "2026-05-08T18:19:12.811594",
+  "bookTitle": "Semiconductor Physics and Devices - Basic",
+  "author": "Donald A. Neamen"
+}

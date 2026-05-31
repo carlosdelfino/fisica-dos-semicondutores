@@ -1,0 +1,1010 @@
+{
+  "chapter": "Answers — Set B",
+  "questions": [],
+  "answers": [
+    {
+      "questionNumber": "13",
+      "text": "b ... Since n_0 ≈ N_D = 10^15/cm^3 and p_0 = n_i^2/n_0 ≈ 10^5/cm^3, there is a carrier deficit inside the cited region of the sample. Whenever there is a carrier deficit the generation rate is greater than the recombination rate.",
+      "formulas": [
+        {
+          "originalFormula": "p_0 \\simeq N_A = 10^{15}/\\text{cm}^3; \\quad n_0 = n_i^2/p_0 = 10^5/\\text{cm}^3",
+          "genericFormula": "p_0 \\simeq N_A; \\quad n_0 = \\frac{n_i^2}{p_0}",
+          "description": "Em um semicondutor tipo-p com dopagem completa, a concentração de lacunas em equilíbrio térmico é aproximadamente igual à concentração de aceitadores ionizados (N_A), pois cada átomo aceitador gera uma lacuna. A concentração de elétrons minoritários é obtida pela lei da ação de massas (n_0 · p_0 = n_i²), que é uma consequência do equilíbrio termodinâmico e da distribuição de Fermi-Dirac. Para silício a 300 K com N_A = 10¹⁵ cm⁻³ e n_i ≈ 10¹⁰ cm⁻³, obtém-se n_0 = n_i²/N_A = 10²⁰/10¹⁵ = 10⁵ cm⁻³. Isso demonstra que a dopagem tipo-p aumenta drasticamente as lacunas (portadores majoritários) e suprime os elétrons (portadores minoritários) em relação ao semicondutor intrínseco, mantendo o produto n_0·p_0 = n_i² constante.",
+          "concepts": [
+            "semicondutor tipo-p",
+            "concentração de portadores em equilíbrio",
+            "lei da ação de massas",
+            "dopagem com aceitadores",
+            "portadores majoritários e minoritários",
+            "neutralidade elétrica",
+            "equilíbrio termodinâmico",
+            "concentração intrínseca"
+          ],
+          "symbols": [
+            {
+              "symbol": "p_0",
+              "description": "Concentração de lacunas em equilíbrio térmico (portadores majoritários no tipo-p), em cm⁻³"
+            },
+            {
+              "symbol": "N_A",
+              "description": "Concentração de dopantes aceitadores ionizados, em cm⁻³ (aqui N_A = 10¹⁵ cm⁻³)"
+            },
+            {
+              "symbol": "n_0",
+              "description": "Concentração de elétrons em equilíbrio térmico (portadores minoritários no tipo-p), em cm⁻³"
+            },
+            {
+              "symbol": "n_i",
+              "description": "Concentração intrínseca de portadores do semicondutor (para Si a 300 K, n_i ≈ 10¹⁰ cm⁻³)"
+            },
+            {
+              "symbol": "n_i^2",
+              "description": "Produto constante das concentrações de elétrons e lacunas em equilíbrio, dado pela lei da ação de massas: n_0 \\cdot p_0 = n_i^2"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-concentration",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "carrier",
+            "concentration",
+            "p-type",
+            "acceptor",
+            "majority",
+            "minority",
+            "equilibrium",
+            "mass-action",
+            "intrinsic",
+            "doping",
+            "holes",
+            "electrons",
+            "Fermi-Dirac",
+            "band",
+            "neutrality"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-concentration",
+            "graphParameters": [
+              "doping concentration N_A",
+              "electron concentration n_0",
+              "hole concentration p_0",
+              "intrinsic concentration n_i",
+              "temperature"
+            ]
+          },
+          "relatedFormulas": [
+            "lei-da-acao-de-massas",
+            "concentracao-intrinseca",
+            "nivel-de-Fermi-tipo-p",
+            "neutralidade-eletrica",
+            "distribuicao-Fermi-Dirac",
+            "concentracao-tipo-n"
+          ]
+        },
+        {
+          "originalFormula": "p = p_0 + \\Delta p = 1.1 \\times 10^{15}/\\text{cm}^3",
+          "genericFormula": "p = p_0 + \\Delta p",
+          "description": "Esta fórmula representa a concentração total de buracos (lacunas) em um semicondutor sob excitação óptica ou injeção de portadores. A concentração total de buracos 'p' é a soma da concentração de buracos no equilíbrio térmico 'p_0' com o excesso de buracos gerados '\\Delta p' por iluminação ou injeção externa. No contexto da resposta 13, o valor numérico 1.1 × 10^15 cm^-3 representa a densidade total de buracos resultante após a perturbação do equilíbrio térmico. Este conceito é fundamental para entender o comportamento de semicondutores sob condições de não-equilíbrio, como em dispositivos fotovoltaicos, fotodetectores e diodos emissores de luz.",
+          "concepts": [
+            "portadores minoritários e majoritários",
+            "excesso de portadores",
+            "geração e recombinação",
+            "não-equilíbrio térmico",
+            "injeção de portadores",
+            "geração óptica",
+            "concentração de buracos",
+            "semicondutores tipo-p e tipo-n"
+          ],
+          "symbols": [
+            {
+              "symbol": "p",
+              "description": "Concentração total de buracos (lacunas) no semicondutor sob condições de não-equilíbrio, em cm^-3"
+            },
+            {
+              "symbol": "p_0",
+              "description": "Concentração de buracos no equilíbrio térmico (sem excitação externa), em cm^-3"
+            },
+            {
+              "symbol": "\\Delta p",
+              "description": "Excesso de concentração de buracos gerado por excitação óptica ou injeção externa de portadores, em cm^-3"
+            },
+            {
+              "symbol": "1.1 \\times 10^{15} \\text{ cm}^{-3}",
+              "description": "Valor numérico específico da concentração total de buracos calculada para o problema em questão"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-concentration",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "carrier",
+            "concentration",
+            "holes",
+            "excess-carriers",
+            "non-equilibrium",
+            "optical-generation",
+            "injection",
+            "recombination",
+            "minority-carrier",
+            "majority-carrier",
+            "p-type",
+            "thermal-equilibrium"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-concentration",
+            "graphParameters": [
+              "concentração de buracos",
+              "concentração de elétrons",
+              "nível de Fermi",
+              "posição espacial",
+              "tempo de recombinação"
+            ]
+          },
+          "relatedFormulas": [
+            "n = n_0 + Delta_n",
+            "Lei de ação das massas: n_0 * p_0 = n_i^2",
+            "Fermi-Dirac distribution",
+            "taxa de geração e recombinação",
+            "tempo de vida de portadores minoritários",
+            "equação de continuidade"
+          ]
+        },
+        {
+          "originalFormula": "n = n_0 + \\Delta n \\simeq 10^{14}/\\text{cm}^3",
+          "genericFormula": "n = n_0 + \\Delta n",
+          "description": "Esta fórmula descreve a concentração total de elétrons em um semicondutor sob excitação (por exemplo, iluminação ou injeção de portadores). A concentração total n é a soma da concentração de equilíbrio n_0 (concentração de elétrons no escuro ou sem perturbação) com o excesso de portadores Δn gerado pela excitação externa. No exemplo numérico, o resultado é aproximadamente 10¹⁴ cm⁻³, indicando que a concentração de portadores em excesso domina ou é comparável à concentração de equilíbrio. Esta expressão é fundamental na análise de semicondutores fora do equilíbrio, como em fotodetectores, células solares e dispositivos de estado sólido submetidos a iluminação ou injeção elétrica.",
+          "concepts": [
+            "concentração de portadores",
+            "excesso de portadores",
+            "equilíbrio termodinâmico",
+            "semicondutor fora do equilíbrio",
+            "geração de portadores",
+            "fotoexcitação",
+            "injeção de portadores",
+            "densidade de elétrons"
+          ],
+          "symbols": [
+            {
+              "symbol": "n",
+              "description": "Concentração total de elétrons no semicondutor (em cm⁻³), incluindo portadores de equilíbrio e em excesso"
+            },
+            {
+              "symbol": "n_0",
+              "description": "Concentração de elétrons no equilíbrio térmico (sem excitação externa), em cm⁻³"
+            },
+            {
+              "symbol": "\\Delta n",
+              "description": "Concentração de elétrons em excesso gerados por excitação externa (fotogeração, injeção elétrica, etc.), em cm⁻³"
+            },
+            {
+              "symbol": "10^{14}/\\text{cm}^3",
+              "description": "Valor numérico aproximado da concentração total de elétrons no exemplo dado, equivalente a 10¹⁴ elétrons por centímetro cúbico"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-concentration",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "carrier",
+            "concentration",
+            "electron",
+            "excess",
+            "equilibrium",
+            "non-equilibrium",
+            "generation",
+            "semiconductor",
+            "photoexcitation",
+            "injection",
+            "density"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-concentration",
+            "graphParameters": [
+              "carrier concentration",
+              "time",
+              "illumination intensity",
+              "temperature"
+            ]
+          },
+          "relatedFormulas": [
+            "Fermi-Dirac distribution",
+            "mass-action law (n*p = ni^2)",
+            "minority carrier lifetime",
+            "continuity equation",
+            "excess carrier recombination",
+            "Einstein relation"
+          ]
+        },
+        {
+          "originalFormula": "\\rho \\simeq \\frac{1}{(1.6 \\times 10^{-19})[(1350)(10^{14}) + (460)(1.1 \\times 10^{15})]} = 9.75 \\text{ ohm-cm}",
+          "genericFormula": "\\rho = \\frac{1}{q(\\mu_n n + \\mu_p p)}",
+          "description": "Esta fórmula calcula a resistividade elétrica de um semicondutor com a presença simultânea de elétrons e lacunas como portadores de carga. A resistividade é o inverso da condutividade elétrica total, que é determinada pela soma das contribuições de cada tipo de portador — elétrons na banda de condução (com densidade n e mobilidade μ_n) e lacunas na banda de valência (com densidade p e mobilidade μ_p). No exemplo numérico, utilizam-se μ_n = 1350 cm²/V·s, n = 10¹⁴ cm⁻³, μ_p = 460 cm²/V·s e p = 1.1×10¹⁵ cm⁻³, resultando em ρ ≈ 9.75 Ω·cm. Esta situação é típica de semicondutores do tipo p ou semicondutores intrínsecos com dopagem moderada, onde ambos os tipos de portadores contribuem significativamente para a condução.",
+          "concepts": [
+            "resistividade elétrica",
+            "condutividade elétrica",
+            "mobilidade de portadores",
+            "concentração de portadores",
+            "transporte de carga",
+            "semicondutor tipo p",
+            "condução bipolar",
+            "lei de Ohm microscópica"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\rho",
+              "description": "Resistividade elétrica do semicondutor, em Ω·cm"
+            },
+            {
+              "symbol": "q",
+              "description": "Carga elementar do elétron, q = 1.6 × 10⁻¹⁹ C"
+            },
+            {
+              "symbol": "\\mu_n",
+              "description": "Mobilidade dos elétrons no semicondutor, em cm²/V·s (aqui μ_n = 1350 cm²/V·s para o silício)"
+            },
+            {
+              "symbol": "n",
+              "description": "Concentração de elétrons livres na banda de condução, em cm⁻³ (aqui n = 10¹⁴ cm⁻³)"
+            },
+            {
+              "symbol": "\\mu_p",
+              "description": "Mobilidade das lacunas no semicondutor, em cm²/V·s (aqui μ_p = 460 cm²/V·s para o silício)"
+            },
+            {
+              "symbol": "p",
+              "description": "Concentração de lacunas na banda de valência, em cm⁻³ (aqui p = 1.1 × 10¹⁵ cm⁻³)"
+            },
+            {
+              "symbol": "\\sigma",
+              "description": "Condutividade elétrica total, σ = q(μ_n n + μ_p p), inverso da resistividade"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "resistivity",
+            "conductivity",
+            "carrier",
+            "mobility",
+            "electron",
+            "hole",
+            "transport",
+            "concentration",
+            "silicon",
+            "p-type",
+            "bipolar",
+            "ohm"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "resistivity-vs-doping",
+            "graphParameters": [
+              "resistivity",
+              "carrier-concentration",
+              "doping",
+              "temperature",
+              "mobility"
+            ]
+          },
+          "relatedFormulas": [
+            "conductivity-general",
+            "Fermi-Dirac-distribution",
+            "carrier-concentration-intrinsic",
+            "mobility-vs-doping",
+            "Hall-effect",
+            "drift-current-density",
+            "charge-neutrality"
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "14",
+      "text": "b ... V has the same shape as the 'upsidedown' of the bands.",
+      "formulas": []
+    },
+    {
+      "questionNumber": "15",
+      "text": "c ... ε is proportional to the slope of the bands.",
+      "formulas": []
+    },
+    {
+      "questionNumber": "16",
+      "text": "a ... E_F is invariant with position.",
+      "formulas": []
+    },
+    {
+      "questionNumber": "17",
+      "text": "b ... E_F approaches E_v near x = 0.",
+      "formulas": []
+    },
+    {
+      "questionNumber": "18",
+      "text": "c ... Using n = n_i e^{(E_F - E_i)/kT} in nondegenerate regions. From the diagram: (i) E_F - E_i = constant, n = constant for x < -W and x > W. (ii) E_F - E_i becomes negative and n is at a minimum near x = 0. Only sketch (c) has the proper general shape.",
+      "formulas": [
+        {
+          "originalFormula": "n = n_i e^{(E_F - E_i)/kT} \\quad (\\text{in nondegenerate regions})",
+          "genericFormula": "n = n_i \\, e^{(E_F - E_i)/k_B T}",
+          "description": "Esta fórmula descreve a concentração de elétrons livres em regiões não degeneradas de um semicondutor, expressando n em termos da concentração intrínseca n_i e da posição do nível de Fermi E_F em relação ao nível intrínseco E_i. Quando E_F está acima de E_i (semicondutor tipo n), a concentração de elétrons é maior que n_i. Quando E_F está abaixo de E_i (tipo p), n < n_i. A condição de não degenerescência (E_F pelo menos alguns kT abaixo da banda de condução) garante que a distribuição de Fermi-Dirac possa ser aproximada pela distribuição de Maxwell-Boltzmann, tornando a expressão exponencial válida. Esta equação é fundamental para modelar dispositivos semicondutores como transistores e diodos.",
+          "concepts": [
+            "concentração de portadores de carga",
+            "nível de Fermi",
+            "nível intrínseco",
+            "distribuição de Maxwell-Boltzmann",
+            "aproximação não degenerada",
+            "semicondutores tipo n e tipo p",
+            "estatística de Fermi-Dirac",
+            "equilíbrio termodinâmico"
+          ],
+          "symbols": [
+            {
+              "symbol": "n",
+              "description": "Concentração de elétrons livres no semicondutor (cm⁻³)"
+            },
+            {
+              "symbol": "n_i",
+              "description": "Concentração intrínseca de portadores de carga — número de elétrons (ou buracos) gerados termicamente no material puro (cm⁻³)"
+            },
+            {
+              "symbol": "E_F",
+              "description": "Nível de Fermi — energia à qual a probabilidade de ocupação é 50% no equilíbrio termodinâmico (eV)"
+            },
+            {
+              "symbol": "E_i",
+              "description": "Nível de Fermi intrínseco — posição do nível de Fermi no material intrínseco, aproximadamente no meio do gap (eV)"
+            },
+            {
+              "symbol": "k_B",
+              "description": "Constante de Boltzmann (k_B ≈ 8.617 × 10⁻⁵ eV/K)"
+            },
+            {
+              "symbol": "T",
+              "description": "Temperatura absoluta do sistema (K)"
+            },
+            {
+              "symbol": "k_B T",
+              "description": "Energia térmica — escala de energia característica das flutuações térmicas (~0.026 eV a 300 K)"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-concentration",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "carrier",
+            "concentration",
+            "electron",
+            "Fermi",
+            "intrinsic",
+            "level",
+            "energy",
+            "distribution",
+            "nondegenerate",
+            "Boltzmann",
+            "equilibrium",
+            "band",
+            "doping",
+            "n-type",
+            "p-type"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "energy-band",
+            "graphParameters": [
+              "Fermi level position E_F",
+              "intrinsic level E_i",
+              "electron concentration n",
+              "temperature T",
+              "bandgap"
+            ]
+          },
+          "relatedFormulas": [
+            "Fermi-Dirac distribution",
+            "hole concentration p = n_i exp((E_i - E_F)/kT)",
+            "mass action law np = n_i^2",
+            "intrinsic carrier concentration n_i",
+            "Boltzmann approximation",
+            "charge neutrality condition"
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "19",
+      "text": "c ... Drift current density for electrons at x = x_i where n = n_i (E_F = E_i).",
+      "formulas": [
+        {
+          "originalFormula": "J_{N|\\text{drift}} = q\\mu_n n \\mathcal{E}",
+          "genericFormula": "J_{N|\\text{drift}} = q \\mu_n n \\mathcal{E}",
+          "description": "Esta fórmula descreve a densidade de corrente de deriva (drift) dos elétrons em um semicondutor sob a ação de um campo elétrico externo. Quando um campo elétrico é aplicado ao material, os elétrons livres na banda de condução são acelerados na direção oposta ao campo (por serem negativamente carregados), gerando um fluxo de corrente. A densidade de corrente de deriva é proporcional à concentração de elétrons (n), à mobilidade dos elétrons (μₙ), à carga elementar (q) e ao campo elétrico aplicado (ε). A mobilidade traduz a facilidade com que os elétrons se movem no cristal em resposta ao campo elétrico, sendo limitada por mecanismos de espalhamento como vibrações da rede cristalina (fônons) e impurezas ionizadas. Este mecanismo de transporte é fundamental para a compreensão e modelagem de dispositivos semicondutores como diodos, transistores e células solares.",
+          "concepts": [
+            "corrente de deriva",
+            "transporte de portadores",
+            "mobilidade de elétrons",
+            "campo elétrico",
+            "corrente elétrica em semicondutores",
+            "espalhamento de portadores",
+            "banda de condução",
+            "lei de Ohm microscópica"
+          ],
+          "symbols": [
+            {
+              "symbol": "J_{N|\\text{drift}}",
+              "description": "Densidade de corrente de deriva dos elétrons (A/cm²), componente da corrente total devida ao campo elétrico"
+            },
+            {
+              "symbol": "q",
+              "description": "Carga elementar do elétron (1,602 × 10⁻¹⁹ C), valor positivo usado na convenção de corrente convencional"
+            },
+            {
+              "symbol": "\\mu_n",
+              "description": "Mobilidade dos elétrons (cm²/V·s), mede a facilidade com que os elétrons se movem no semicondutor sob ação de campo elétrico"
+            },
+            {
+              "symbol": "n",
+              "description": "Concentração de elétrons livres na banda de condução (cm⁻³), portadores de carga negativos"
+            },
+            {
+              "symbol": "\\mathcal{E}",
+              "description": "Campo elétrico aplicado (V/cm), força motriz responsável pelo movimento de deriva dos portadores"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "drift",
+            "current",
+            "carrier",
+            "electron",
+            "mobility",
+            "electric-field",
+            "transport",
+            "conductivity",
+            "current-density",
+            "semiconductor",
+            "conduction-band",
+            "scattering"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "current-field",
+            "graphParameters": [
+              "current-density",
+              "electric-field",
+              "carrier-concentration",
+              "mobility",
+              "temperature"
+            ]
+          },
+          "relatedFormulas": [
+            "drift-current-holes",
+            "total-current-density",
+            "diffusion-current-electrons",
+            "Einstein-relation",
+            "Ohm-law-microscopic",
+            "mobility-temperature-dependence",
+            "drift-velocity"
+          ]
+        },
+        {
+          "originalFormula": "n = n_i \\quad (E_F = E_i) \\text{ at } x = x_i",
+          "genericFormula": "n = n_i \\quad (E_F = E_i) \\text{ at } x = x_i",
+          "description": "Esta expressão estabelece a condição de neutralidade intrínseca em um semicondutor: quando o nível de Fermi (E_F) coincide com o nível intrínseco de Fermi (E_i), a concentração de elétrons livres (n) é igual à concentração intrínseca de portadores (n_i). Isso ocorre em uma posição específica x = x_i dentro do dispositivo, como em uma junção p-n, onde a região de depleção separa as regiões dopadas. Neste ponto, o semicondutor comporta-se como se fosse intrinsecamente puro, sem predominância de portadores de nenhum tipo. Essa condição é fundamental para localizar o ponto de inversão entre regiões tipo-n e tipo-p.",
+          "concepts": [
+            "nível de Fermi",
+            "nível intrínseco de Fermi",
+            "concentração intrínseca de portadores",
+            "neutralidade intrínseca",
+            "junção p-n",
+            "região de depleção",
+            "semicondutor intrínseco",
+            "ponto de inversão"
+          ],
+          "symbols": [
+            {
+              "symbol": "n",
+              "description": "Concentração de elétrons livres no semicondutor (cm⁻³)"
+            },
+            {
+              "symbol": "n_i",
+              "description": "Concentração intrínseca de portadores, característica do material semicondutor à temperatura T (cm⁻³)"
+            },
+            {
+              "symbol": "E_F",
+              "description": "Nível de Fermi, energia que indica a probabilidade de ocupação dos estados eletrônicos (eV)"
+            },
+            {
+              "symbol": "E_i",
+              "description": "Nível intrínseco de Fermi, posição do nível de Fermi em um semicondutor intrinsecamente puro, aproximadamente no meio do gap (eV)"
+            },
+            {
+              "symbol": "x",
+              "description": "Posição espacial dentro do semicondutor ou dispositivo (cm ou μm)"
+            },
+            {
+              "symbol": "x_i",
+              "description": "Posição específica onde o semicondutor exibe comportamento intrínseco, ou seja, onde E_F = E_i (cm ou μm)"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-concentration",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "intrinsic",
+            "carrier",
+            "concentration",
+            "Fermi",
+            "level",
+            "intrinsic-level",
+            "junction",
+            "depletion",
+            "inversion",
+            "neutrality",
+            "band",
+            "energy",
+            "state",
+            "distribution"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "energy-band",
+            "graphParameters": [
+              "position x",
+              "energy E",
+              "Fermi level E_F",
+              "intrinsic level E_i",
+              "carrier concentration n"
+            ]
+          },
+          "relatedFormulas": [
+            "Fermi-Dirac distribution",
+            "mass-action law (n·p = n_i²)",
+            "carrier concentration n = n_i·exp((E_F - E_i)/kT)",
+            "p-n junction depletion approximation",
+            "built-in potential V_bi"
+          ]
+        },
+        {
+          "originalFormula": "\\mathcal{E} = \\frac{1}{q} \\frac{dE_i}{dx} = \\frac{1}{q} \\frac{\\Delta E_i}{\\Delta x} = -\\frac{1}{q} \\frac{[E_{\\text{peak}} - E_c(W)]}{W}",
+          "genericFormula": "\\mathcal{E} = \\frac{1}{q} \\frac{dE_i}{dx} = -\\frac{1}{q} \\frac{E_{\\text{peak}} - E_c(W)}{W}",
+          "description": "Esta fórmula descreve o campo elétrico interno em uma junção p-n ou heterojunção, relacionando-o ao gradiente espacial do nível intrínseco de Fermi E_i. O campo elétrico surge da variação espacial do potencial eletrostático na região de depleção. A expressão diferencial (dE_i/dx) representa a taxa contínua de variação do nível intrínseco com a posição, enquanto a forma discreta (ΔE_i/Δx) é usada em aproximações numéricas ou análises de segmentos discretos. A expressão final calcula o campo médio na região de depleção de largura W, como a diferença entre o nível intrínseco no pico (E_peak) e o valor de E_c na borda da região de depleção, normalizada pela largura W e pela carga elementar q. Este resultado é fundamental para entender a barreira de potencial, o campo de depleção e o comportamento retificador de diodos.",
+          "concepts": [
+            "campo elétrico interno",
+            "região de depleção",
+            "nível intrínseco de Fermi",
+            "junção p-n",
+            "gradiente de potencial eletrostático",
+            "barreira de potencial",
+            "diagrama de bandas de energia",
+            "aproximação de depleção",
+            "heterojunção"
+          ],
+          "symbols": [
+            {
+              "symbol": "\\mathcal{E}",
+              "description": "Campo elétrico interno (V/m ou V/cm)"
+            },
+            {
+              "symbol": "q",
+              "description": "Carga elementar do elétron (1,602 × 10⁻¹⁹ C)"
+            },
+            {
+              "symbol": "E_i",
+              "description": "Nível intrínseco de Fermi (nível de energia médio do gap, usado como referência do potencial eletrostático)"
+            },
+            {
+              "symbol": "\\frac{dE_i}{dx}",
+              "description": "Gradiente espacial contínuo do nível intrínseco de Fermi em relação à posição x"
+            },
+            {
+              "symbol": "\\frac{\\Delta E_i}{\\Delta x}",
+              "description": "Aproximação discreta do gradiente do nível intrínseco de Fermi"
+            },
+            {
+              "symbol": "E_{\\text{peak}}",
+              "description": "Valor máximo (pico) do nível intrínseco de Fermi na região de depleção, tipicamente localizado na interface da junção"
+            },
+            {
+              "symbol": "E_c(W)",
+              "description": "Energia da banda de condução avaliada na borda da região de depleção, na posição x = W"
+            },
+            {
+              "symbol": "W",
+              "description": "Largura total da região de depleção (m ou cm)"
+            },
+            {
+              "symbol": "x",
+              "description": "Coordenada espacial ao longo da direção de crescimento ou da junção"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "junction-electrostatics",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "electric-field",
+            "depletion-region",
+            "intrinsic-level",
+            "junction",
+            "band-bending",
+            "potential-barrier",
+            "p-n-junction",
+            "Fermi-level",
+            "conduction-band",
+            "built-in-field",
+            "carrier",
+            "energy-band"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "energy-band",
+            "graphParameters": [
+              "position x",
+              "energy E",
+              "E_i(x)",
+              "E_c(x)",
+              "E_v(x)",
+              "depletion width W",
+              "electric field profile"
+            ]
+          },
+          "relatedFormulas": [
+            "Poisson-equation",
+            "built-in-potential",
+            "depletion-approximation",
+            "Fermi-Dirac-distribution",
+            "carrier-concentration-intrinsic",
+            "junction-built-in-voltage"
+          ]
+        },
+        {
+          "originalFormula": "J_{N|\\text{drift}} = -\\mu_n n_i [E_{\\text{peak}} - E_c(W)]/W",
+          "genericFormula": "J_{N|\\text{drift}} = -\\mu_n n_i \\frac{E_{\\text{peak}} - E_c(W)}{W}",
+          "description": "Esta fórmula descreve a densidade de corrente de deriva dos elétrons em uma região de depleção ou campo elétrico interno de um semicondutor, aproximada sob a hipótese de variação linear do campo elétrico. O campo elétrico médio efetivo é estimado como a diferença entre o pico do campo elétrico (E_peak) e o valor da energia da banda de condução na posição W, dividido pela largura W da região. A corrente de deriva é proporcional à mobilidade dos elétrons, à concentração intrínseca e ao campo elétrico médio. O sinal negativo indica que os elétrons se movem no sentido oposto ao campo elétrico, contribuindo para uma corrente no sentido do campo. Esta expressão é frequentemente utilizada na análise de junções p-n, diodos e regiões de depleção onde o campo elétrico varia espacialmente.",
+          "concepts": [
+            "corrente de deriva",
+            "densidade de corrente",
+            "mobilidade de portadores",
+            "campo elétrico interno",
+            "região de depleção",
+            "concentração intrínseca",
+            "banda de condução",
+            "transporte de elétrons",
+            "aproximação linear do campo elétrico"
+          ],
+          "symbols": [
+            {
+              "symbol": "J_{N|\\text{drift}}",
+              "description": "Densidade de corrente de deriva dos elétrons (A/cm²)"
+            },
+            {
+              "symbol": "\\mu_n",
+              "description": "Mobilidade dos elétrons no semicondutor (cm²/V·s)"
+            },
+            {
+              "symbol": "n_i",
+              "description": "Concentração intrínseca de portadores (cm⁻³)"
+            },
+            {
+              "symbol": "E_{\\text{peak}}",
+              "description": "Valor de pico do campo elétrico na região analisada (V/cm)"
+            },
+            {
+              "symbol": "E_c(W)",
+              "description": "Energia da banda de condução avaliada na posição W, usada para estimar o campo elétrico local (V/cm ou eV)"
+            },
+            {
+              "symbol": "W",
+              "description": "Largura da região de depleção ou região de campo elétrico (cm)"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "device-physics"
+          },
+          "keywords": [
+            "drift",
+            "current",
+            "carrier",
+            "mobility",
+            "electric-field",
+            "depletion",
+            "intrinsic",
+            "conduction-band",
+            "electron",
+            "junction",
+            "transport",
+            "band"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "energy-band",
+            "graphParameters": [
+              "position",
+              "electric-field",
+              "band-energy",
+              "current-density"
+            ]
+          },
+          "relatedFormulas": [
+            "drift-current-general",
+            "Fermi-Dirac",
+            "depletion-width",
+            "Poisson-semiconductor",
+            "total-current-density",
+            "diffusion-current"
+          ]
+        }
+      ]
+    },
+    {
+      "questionNumber": "20",
+      "text": "b ... Under equilibrium conditions J_{P|drift} + J_{P|diff} = 0. Therefore:",
+      "formulas": [
+        {
+          "originalFormula": "J_{P|\\text{diff}} = -J_{P|\\text{drift}} = -q\\mu_p p \\mathcal{E}",
+          "genericFormula": "J_{P|\\text{diff}} = -J_{P|\\text{drift}} = -q\\mu_p p \\mathcal{E}",
+          "description": "Esta fórmula descreve a condição de equilíbrio para portadores de carga positiva (lacunas) em um semicondutor não homogêneo em equilíbrio termodinâmico. Em equilíbrio, a corrente de difusão de lacunas é exatamente igual e oposta à corrente de deriva, resultando em corrente líquida nula. A corrente de deriva de lacunas é dada por J_{P|drift} = q*µ_p*p*ε, onde o campo elétrico interno ε surge da não homogeneidade do material (por exemplo, dopagem não uniforme ou gradiente de banda). O sinal negativo indica que as correntes se cancelam mutuamente: o gradiente de concentração de lacunas gera difusão em uma direção, enquanto o campo elétrico interno empurra as lacunas na direção oposta. Esta condição é fundamental para derivar a relação de Einstein entre mobilidade e coeficiente de difusão.",
+          "concepts": [
+            "equilíbrio termodinâmico",
+            "corrente de difusão",
+            "corrente de deriva",
+            "campo elétrico interno",
+            "lacunas",
+            "mobilidade de portadores",
+            "semicondutor não homogêneo",
+            "corrente líquida nula",
+            "relação de Einstein"
+          ],
+          "symbols": [
+            {
+              "symbol": "J_{P|\\text{diff}}",
+              "description": "Densidade de corrente de difusão de lacunas (A/cm²)"
+            },
+            {
+              "symbol": "J_{P|\\text{drift}}",
+              "description": "Densidade de corrente de deriva de lacunas (A/cm²)"
+            },
+            {
+              "symbol": "q",
+              "description": "Carga elementar do elétron (1,602 × 10⁻¹⁹ C)"
+            },
+            {
+              "symbol": "\\mu_p",
+              "description": "Mobilidade das lacunas (cm²/V·s), relaciona a velocidade de deriva ao campo elétrico aplicado"
+            },
+            {
+              "symbol": "p",
+              "description": "Concentração de lacunas (cm⁻³)"
+            },
+            {
+              "symbol": "\\mathcal{E}",
+              "description": "Campo elétrico interno (V/cm), gerado pelo gradiente de potencial no semicondutor não homogêneo"
+            }
+          ],
+          "taxonomy": {
+            "category": "semiconductor-physics",
+            "subcategory": "carrier-transport",
+            "domain": "solid-state"
+          },
+          "keywords": [
+            "carrier",
+            "diffusion",
+            "drift",
+            "current",
+            "mobility",
+            "electric-field",
+            "equilibrium",
+            "holes",
+            "non-homogeneous",
+            "Einstein-relation",
+            "balance",
+            "transport"
+          ],
+          "graphVisualization": {
+            "hasGraph": true,
+            "graphType": "carrier-current-balance",
+            "graphParameters": [
+              "posição",
+              "concentração de lacunas",
+              "campo elétrico",
+              "corrente de difusão",
+              "corrente de deriva"
+            ]
+          },
+          "relatedFormulas": [
+            "Fick's-Law-holes",
+            "drift-current-holes",
+            "Einstein-relation",
+            "total-current-holes",
+            "Fermi-Dirac-distribution",
+            "continuity-equation",
+            "drift-current-electrons",
+            "diffusion-current-electrons"
+          ]
+        }
+      ]
+    }
+  ],
+  "standaloneFormulas": [],
+  "processedPages": [
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124
+  ],
+  "lastUpdated": "2026-05-09T17:49:30.725Z",
+  "bookTitle": "Modular Series On Solid State Devices",
+  "author": "Unknown"
+}
