@@ -795,7 +795,7 @@ Emojis:
 - **Plan** - Planejar funcionalidades, requisitos e arquitetura
 - **Do** - Implementar seguindo planejamento com código limpo e logs
 - **Check** - Executar testes completos verificando requisitos
-- **Loop** - Iterar baseado em feedback e logs
+- **Log** - Iterar baseado em feedback e logs
 
 ### 17.2 Validação (validacao_da_das_correcoes_e_testes.md)
 - Testes unitários para funções individuais
@@ -881,14 +881,14 @@ Emojis:
 3. Usar workflows em `.windsurf/workflows/`
 4. Atualizar documentação e este mapa
 
----
 
-**Resumo:** Mapa completo da aplicação Física dos Semicondutores para orientação de agentes de IA e desenvolvimento eficiente.
-**Data de Criação:** 2026-05-23
+
+---
+**Resumo:** Arquivo markdown gerenciado com histórico automático
+**Data de Criação:** 2026-05-30
 **Autor:** Carlos Delfino
 **Versão:** 1.0
-**Última Atualização:** 2026-05-23
+**Última Atualização:** 2026-05-30
 **Atualizado por:** Carlos Delfino
 **Histórico de Alterações:**
-- 2026-05-23 - Atualizado por Carlos Delfino - Adicionado a representação de uma celula cristalin...
-- 2026-05-23 - Criado por Carlos Delfino - Versão 1.0 (mapeamento inicial completo da aplicação)
+- 2026-05-30 - Criado por Carlos Delfino - Versão 1.0
