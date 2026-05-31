@@ -65,6 +65,67 @@ export default {
       'support-us': '💖 支持我们',
       community: '🤝 在 GitHub 上协作',
       community_title: '加入 GitHub 讨论论坛 — 需要 GitHub 账号才能参与协作'
+    },
+    quantumAtom: '⚛️ 量子原子模型'
+  },
+  quantumAtom: {
+    title: '量子原子模型',
+    subtitle: '根据量子力学的现代原子观',
+    alt: '量子原子模型，显示原子核、电子云和轨道',
+    sections: {
+      nucleus: {
+        title: '原子核',
+        content: '原子核包含质子（正电荷）和中子（不带电荷），占据原子的大部分质量。核内粒子由强核力束缚在一起。'
+      },
+      electronCloud: {
+        title: '电子云',
+        content: '与玻尔模型不同，电子不沿固定轨道运动。它们由概率云描述——即更有可能找到电子的区域。该电子云由波函数 ψ(r) 表示。'
+      },
+      orbitals: {
+        title: '原子轨道',
+        content: '轨道是空间中找到电子概率较高的区域。每个轨道都有特征形状：s 轨道为球形，p 轨道为哑铃形，d 轨道更复杂，等等。形状由量子数决定。'
+      },
+      waveFunction: {
+        title: '波函数',
+        content: '电子在数学上由波函数 ψ(x,y,z,t) 描述。波函数的平方 |ψ|² 表示在给定位置找到电子的概率密度。这是量子力学玻恩诠释的基础。'
+      },
+      uncertainty: {
+        title: '不确定性原理',
+        content: '由维尔纳·海森堡提出，该原理指出无法同时以任意精度知道粒子的位置和动量。Δx·Δp ≥ ℏ/2。这意味着位置知道得越精确，对动量了解得越少，反之亦然。'
+      }
+    },
+    comparison: {
+      title: '原子模型的演变',
+      rutherford: {
+        title: '卢瑟福模型（1911）',
+        items: [
+          '原子如太阳系：致密的核与绕行的电子',
+          '通过 α 粒子实验发现原子核',
+          '电子处于任意轨道（无量子化）',
+          '无法解释原子稳定性（电子应落入核内）',
+          '与观测到的原子光谱不符'
+        ]
+      },
+      bohr: {
+        title: '玻尔模型（1913）',
+        items: [
+          '电子处于固定、量子化的圆形轨道',
+          '假设存在不辐射的稳定轨道',
+          '能量在离散能级上量子化',
+          '解释了氢光谱，但不适用于多电子原子',
+          '经典物理与量子物理的混合（半经典）'
+        ]
+      },
+      quantum: {
+        title: '量子模型（1926 至今）',
+        items: [
+          '电子处于概率云中',
+          '位置由概率分布描述',
+          '通过量子数（n、l、m、s）实现量子化',
+          '可解释所有原子和分子',
+          '与不确定性原理一致'
+        ]
+      }
     }
   },
   controlPanel: {
@@ -216,7 +277,8 @@ export default {
       about: '关于本项目',
       author: '作者',
       contribute: '贡献 — 通过 Pull Request 提供批评与建议',
-      repository: '代码仓库'
+      repository: '代码仓库',
+      network: '网站网络'
     },
     project: {
       p1body: '本项目旨在帮助学习半导体物理,并将随我自身学习进展持续扩充。它使用 Claude Opus 4.7 作为结对编程伙伴,并用 SWE-1.6 进行较小的调整,基于 Donald A. Neamen 所著《Semiconductor Physics and Devices》的阅读构建,辅以 Modular Series on Solid State Devices(Robert F. Pierret 等)系列。',
@@ -224,6 +286,7 @@ export default {
     },
     authorInfo: {
       name: '姓名:',
+      website: '网站:',
       email: '邮箱:',
       whatsapp: 'WhatsApp:',
       community: 'WhatsApp 社区 — 半导体物理:',

@@ -293,7 +293,8 @@ export default {
       about: 'About the project',
       author: 'Author',
       contribute: 'Contribute — feedback and suggestions via Pull Request',
-      repository: 'Repository'
+      repository: 'Repository',
+      network: 'Site Network'
     },
     project: {
       p1body: 'This project aims to facilitate learning of Semiconductor Physics and will be continuously expanded as my own studies progress. It was built using Claude Opus 4.7 as a pair-programming partner, with SWE-1.6 for minor adjustments, based on my readings of the book Semiconductor Physics and Devices by Donald A. Neamen, complemented by the Modular Series on Solid State Devices (Robert F. Pierret et al.).',
